@@ -202,13 +202,13 @@ class GCN(nn.Module):
 
 def pool(h, mask, type='max'):
     if type == 'max':
-        h = h.masked_fill(mask, -constant.INFINITY_NUMBER)
+        h = h.masked_fill(mask.bool(), -constant.INFINITY_NUMBER)
         return torch.max(h, 1)[0]
     elif type == 'avg':
-        h = h.masked_fill(mask, 0)
+        h = h.masked_fill(mask.bool(), 0)
         return h.sum(1) / (mask.size(1) - mask.float().sum(1))
     else:
-        h = h.masked_fill(mask, 0)
+        h = h.masked_fill(mask.bool(), 0)
         return h.sum(1)
 
 
