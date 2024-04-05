@@ -2,14 +2,12 @@
 GCN model for definition extraction.
 """
 
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
-import numpy as np
-import random
 
-from model.tree import Tree, head_to_tree, tree_to_adj
 from utils import constant, torch_utils
 
 
@@ -21,7 +19,7 @@ class GCNClassifier(nn.Module):
         self.opt = opt
         self.gcn_model = GCNRelationModel(opt, emb_matrix=emb_matrix)
         in_dim = opt['hidden_dim']
-        self.classifier = nn.Linear(in_dim*2, opt['num_class'])
+        self.classifier = nn.Linear(in_dim * 2, opt['num_class'])
         self.selector = nn.Sequential(nn.Linear(in_dim, 1), nn.Sigmoid())
 
         in_dim = opt['hidden_dim']
@@ -31,7 +29,7 @@ class GCNClassifier(nn.Module):
         self.out_mlp = nn.Sequential(*layers)
 
         self.sent_classifier = nn.Sequential(nn.Linear(in_dim, 1), nn.Sigmoid())
-        self.term_classifier = nn.Sequential(nn.Linear(in_dim*2, 1), nn.Sigmoid())
+        self.term_classifier = nn.Sequential(nn.Linear(in_dim * 2, 1), nn.Sigmoid())
         self.opt = opt
 
     def conv_l2(self):
@@ -55,7 +53,8 @@ class GCNClassifier(nn.Module):
 
         selections = self.selector(gcn_outputs)
 
-        defs_out = pool(outputs, defs.unsqueeze(2).byte(), type=pool_type).repeat(1, outputs.shape[1]).view(*outputs.shape)
+        defs_out = pool(outputs, defs.unsqueeze(2).byte(), type=pool_type).repeat(1, outputs.shape[1]).view(
+            *outputs.shape)
         term_selections = self.term_classifier(torch.cat([defs_out, outputs], dim=2))
 
         return logits, sent_logits.squeeze(), selections.squeeze(), term_def, not_term_def, term_selections
@@ -192,12 +191,11 @@ class GCN(nn.Module):
         for l in range(self.layers):
             Ax = adj.bmm(gcn_inputs)
             AxW = self.W[l](Ax)
-            AxW = AxW + self.W[l](gcn_inputs) # self loop
+            AxW = AxW + self.W[l](gcn_inputs)  # self loop
             AxW = AxW / denom
 
             gAxW = F.relu(AxW)
             gcn_inputs = self.gcn_drop(gAxW) if l < self.layers - 1 else gAxW
-
 
         return lstm_outs, masks.unsqueeze(2), gcn_inputs
 

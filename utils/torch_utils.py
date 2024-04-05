@@ -3,8 +3,8 @@ Utility functions for torch.
 """
 
 import torch
-from torch import nn, optim
 from torch.optim import Optimizer
+
 
 ### class
 class MyAdagrad(Optimizer):
@@ -23,15 +23,15 @@ class MyAdagrad(Optimizer):
 
     def __init__(self, params, lr=1e-2, lr_decay=0, init_accu_value=0.1, weight_decay=0):
         defaults = dict(lr=lr, lr_decay=lr_decay, init_accu_value=init_accu_value, \
-                weight_decay=weight_decay)
+                        weight_decay=weight_decay)
         super(MyAdagrad, self).__init__(params, defaults)
 
         for group in self.param_groups:
             for p in group['params']:
                 state = self.state[p]
                 state['step'] = 0
-                state['sum'] = torch.ones(p.data.size()).type_as(p.data) *\
-                        init_accu_value
+                state['sum'] = torch.ones(p.data.size()).type_as(p.data) * \
+                               init_accu_value
 
     def share_memory(self):
         for group in self.param_groups:
@@ -78,6 +78,7 @@ class MyAdagrad(Optimizer):
                         if grad_indices.dim() == 0 or values.dim() == 0:
                             return constructor()
                         return constructor(grad_indices, values, size)
+
                     state['sum'].add_(make_sparse(grad_values.pow(2)))
                     std = state['sum']._sparse_mask(grad)
                     std_values = std._values().sqrt_().add_(1e-10)
@@ -89,6 +90,7 @@ class MyAdagrad(Optimizer):
 
         return loss
 
+
 ### torch specific functions
 def get_optimizer(name, parameters, lr, l2=0):
     if name == 'sgd':
@@ -97,17 +99,19 @@ def get_optimizer(name, parameters, lr, l2=0):
         # use my own adagrad to allow for init accumulator value
         return MyAdagrad(parameters, lr=lr, init_accu_value=0.1, weight_decay=l2)
     elif name == 'adam':
-        return torch.optim.Adam(parameters, weight_decay=l2) # use default lr
+        return torch.optim.Adam(parameters, weight_decay=l2)  # use default lr
     elif name == 'adamax':
-        return torch.optim.Adamax(parameters, weight_decay=l2) # use default lr
+        return torch.optim.Adamax(parameters, weight_decay=l2)  # use default lr
     elif name == 'adadelta':
         return torch.optim.Adadelta(parameters, lr=lr, weight_decay=l2)
     else:
         raise Exception("Unsupported optimizer: {}".format(name))
 
+
 def change_lr(optimizer, new_lr):
     for param_group in optimizer.param_groups:
         param_group['lr'] = new_lr
+
 
 def flatten_indices(seq_lens, width):
     flat = []
@@ -116,10 +120,12 @@ def flatten_indices(seq_lens, width):
             flat.append(i * width + j)
     return flat
 
+
 def set_cuda(var, cuda):
     if cuda:
         return var.cuda()
     return var
+
 
 def keep_partial_grad(grad, topk):
     """
@@ -128,6 +134,7 @@ def keep_partial_grad(grad, topk):
     assert topk < grad.size(0)
     grad.data[topk:].zero_()
     return grad
+
 
 ### model IO
 def save(model, optimizer, opt, filename):
@@ -141,6 +148,7 @@ def save(model, optimizer, opt, filename):
     except BaseException:
         print("[ Warning: model saving failed. ]")
 
+
 def load(model, optimizer, filename):
     try:
         dump = torch.load(filename)
@@ -153,10 +161,10 @@ def load(model, optimizer, filename):
     opt = dump['config']
     return model, optimizer, opt
 
+
 def load_config(filename):
     try:
         dump = torch.load(filename)
     except BaseException:
         print("[ Fail: model loading failed. ]")
     return dump['config']
-

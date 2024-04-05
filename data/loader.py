@@ -4,16 +4,19 @@ Data loader.
 
 import json
 import random
-import torch
-import numpy as np
 from collections import Counter
 
-from utils import constant, helper, vocab
+import numpy as np
+import torch
+
+from utils import constant
+
 
 class DataLoader(object):
     """
     Load data from json files, preprocess and prepare batches.
     """
+
     def __init__(self, filename, batch_size, opt, vocab, evaluation=False):
         self.batch_size = batch_size
         self.opt = opt
@@ -32,14 +35,14 @@ class DataLoader(object):
             indices = list(range(len(data)))
             random.shuffle(indices)
             data = [data[i] for i in indices]
-        self.id2label = dict([(v,k) for k,v in self.label2id.items()])
-        self.sent_id2label = dict([(v,k) for k,v in self.sent_label2id.items()])
+        self.id2label = dict([(v, k) for k, v in self.label2id.items()])
+        self.sent_id2label = dict([(v, k) for k, v in self.sent_label2id.items()])
         self.labels = [[self.id2label[l]] for d in data for l in d[-2]]
         self.sent_labels = [self.sent_id2label[d[-1]] for d in data]
         self.num_examples = len(data)
 
         # chunk into batches
-        data = [data[i:i+batch_size] for i in range(0, len(data), batch_size)]
+        data = [data[i:i + batch_size] for i in range(0, len(data), batch_size)]
         self.data = data
         print("{} batches created for {}".format(len(data), filename))
 
@@ -56,14 +59,14 @@ class DataLoader(object):
             assert any([x == -1 for x in head])
             l = len(tokens)
             labels = [self.label2id[l] for l in d['labels']]
-            dep_path = [0]*len(d['tokens'])
+            dep_path = [0] * len(d['tokens'])
             for i in d['dep_path']:
                 if i != -1:
                     dep_path[i] = 1
-            adj = np.zeros((len(d['heads']),len(d['heads'])))
+            adj = np.zeros((len(d['heads']), len(d['heads'])))
             for i, h in enumerate(d['heads']):
-                    adj[i][h] = 1
-                    adj[h][i] = 1
+                adj[i][h] = 1
+                adj[h][i] = 1
             counter = Counter(d['labels'])
             terms = [0] * len(d['labels'])
             defs = [0] * len(d['labels'])
@@ -75,7 +78,8 @@ class DataLoader(object):
                         defs[i] = 1
             if self.opt['only_label'] == 1 and not self.eval:
                 if d['label'] != 'none':
-                    processed += [(tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])]
+                    processed += [
+                        (tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])]
             else:
                 processed += [(tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])]
         return processed
@@ -131,14 +135,17 @@ class DataLoader(object):
         for i in range(self.__len__()):
             yield self.__getitem__(i)
 
+
 def map_to_ids(tokens, vocab):
     ids = [vocab[t] if t in vocab else constant.UNK_ID for t in tokens]
     return ids
 
+
 def get_positions(start_idx, end_idx, length):
     """ Get subj/obj position sequence. """
-    return list(range(-start_idx, 0)) + [0]*(end_idx - start_idx + 1) + \
-            list(range(1, length-end_idx))
+    return list(range(-start_idx, 0)) + [0] * (end_idx - start_idx + 1) + \
+        list(range(1, length - end_idx))
+
 
 def get_long_tensor(tokens_list, batch_size):
     """ Convert list of list of tokens to a padded LongTensor. """
@@ -148,6 +155,7 @@ def get_long_tensor(tokens_list, batch_size):
         tokens[i, :len(s)] = torch.LongTensor(s)
     return tokens
 
+
 def get_float_tensor2D(tokens_list, batch_size):
     """ Convert list of list of tokens to a padded LongTensor. """
     token_len = max(len(x) for x in tokens_list)
@@ -156,13 +164,15 @@ def get_float_tensor2D(tokens_list, batch_size):
         tokens[i, :len(s), :len(s)] = torch.FloatTensor(s)
     return tokens
 
+
 def sort_all(batch, lens):
     """ Sort all fields by descending order of lens, and return the original indices. """
     unsorted_all = [lens] + [range(len(lens))] + list(batch)
     sorted_all = [list(t) for t in zip(*sorted(zip(*unsorted_all), reverse=True))]
     return sorted_all[2:], sorted_all[1]
 
+
 def word_dropout(tokens, dropout):
     """ Randomly dropout tokens (IDs) and replace them with <UNK> tokens. """
     return [constant.UNK_ID if x != constant.UNK_ID and np.random.random() < dropout \
-            else x for x in tokens]
+                else x for x in tokens]

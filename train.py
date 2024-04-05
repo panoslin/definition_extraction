@@ -2,18 +2,15 @@
 Train a model on Textbook.
 """
 
-import os
-import sys
-from datetime import datetime
-import time
-import numpy as np
-import random
 import argparse
+import os
+import random
+import time
+from datetime import datetime
 from shutil import copyfile
+
+import numpy as np
 import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.autograd import Variable
 
 from data.loader import DataLoader
 from model.trainer import GCNTrainer
@@ -42,9 +39,11 @@ parser.add_argument('--sent_loss', type=float, default=100.0, help='')
 parser.add_argument('--dep_path_loss', type=float, default=100.0, help='')
 parser.add_argument('--consistency_loss', type=float, default=1.0, help='')
 
-parser.add_argument('--prune_k', default=-1, type=int, help='Prune the dependency tree to <= K distance off the dependency path; set to -1 for no pruning.')
+parser.add_argument('--prune_k', default=-1, type=int,
+                    help='Prune the dependency tree to <= K distance off the dependency path; set to -1 for no pruning.')
 parser.add_argument('--conv_l2', type=float, default=0, help='L2-weight decay on conv layers only.')
-parser.add_argument('--pooling', choices=['max', 'avg', 'sum'], default='max', help='Pooling function type. Default max.')
+parser.add_argument('--pooling', choices=['max', 'avg', 'sum'], default='max',
+                    help='Pooling function type. Default max.')
 parser.add_argument('--pooling_l2', type=float, default=0, help='L2-penalty for all pooling output.')
 parser.add_argument('--mlp_layers', type=int, default=2, help='Number of output mlp layers.')
 parser.add_argument('--no_adj', dest='no_adj', action='store_true', help="Zero out adjacency matrix for ablation.")
@@ -113,7 +112,8 @@ helper.ensure_dir(model_save_dir, verbose=True)
 # save config
 helper.save_config(opt, model_save_dir + '/config.json', verbose=True)
 vocab.save(model_save_dir + '/vocab.pkl')
-file_logger = helper.FileLogger(model_save_dir + '/' + opt['log'], header="# epoch\ttrain_loss\tsent_loss\tdep_path_loss\tdev_loss\tdev_score\tbest_dev_score")
+file_logger = helper.FileLogger(model_save_dir + '/' + opt['log'],
+                                header="# epoch\ttrain_loss\tsent_loss\tdep_path_loss\tdev_loss\tdev_score\tbest_dev_score")
 
 # print model info
 helper.print_config(opt)
@@ -130,7 +130,7 @@ else:
     trainer = GCNTrainer(model_opt)
     trainer.load(model_file)
 
-id2label = dict([(v,k) for k,v in label2id.items()])
+id2label = dict([(v, k) for k, v in label2id.items()])
 dev_score_history = []
 current_lr = opt['lr']
 
@@ -140,7 +140,7 @@ format_str = '{}: step {}/{} (epoch {}/{}), loss = {:.6f}, sent_loss = {:.6f}, d
 max_steps = len(train_batch) * opt['num_epoch']
 
 # start training
-for epoch in range(1, opt['num_epoch']+1):
+for epoch in range(1, opt['num_epoch'] + 1):
     train_loss = 0
     train_sent_loss = 0
     train_dep_path_loss = 0
@@ -153,8 +153,8 @@ for epoch in range(1, opt['num_epoch']+1):
         train_dep_path_loss += dep_path_loss
         if global_step % opt['log_step'] == 0:
             duration = time.time() - start_time
-            print(format_str.format(datetime.now(), global_step, max_steps, epoch,\
-                    opt['num_epoch'], loss, sent_loss, dep_path_loss, duration, current_lr))
+            print(format_str.format(datetime.now(), global_step, max_steps, epoch, \
+                                    opt['num_epoch'], loss, sent_loss, dep_path_loss, duration, current_lr))
 
     # eval on dev
     print("Evaluating on dev set...")
@@ -164,17 +164,22 @@ for epoch in range(1, opt['num_epoch']+1):
         preds, _, loss, _ = trainer.predict(batch)
         predictions += preds
         dev_loss += loss
-    predictions = [[id2label[l+1]] for p in predictions for l in p]
-    train_loss = train_loss / train_batch.num_examples * opt['batch_size'] # avg loss per batch
-    train_sent_loss = train_sent_loss / train_batch.num_examples * opt['batch_size'] # avg loss per batch
-    train_dep_path_loss = train_dep_path_loss / train_batch.num_examples * opt['batch_size'] # avg loss per batch
+    predictions = [[id2label[l + 1]] for p in predictions for l in p]
+    train_loss = train_loss / train_batch.num_examples * opt['batch_size']  # avg loss per batch
+    train_sent_loss = train_sent_loss / train_batch.num_examples * opt['batch_size']  # avg loss per batch
+    train_dep_path_loss = train_dep_path_loss / train_batch.num_examples * opt['batch_size']  # avg loss per batch
     dev_loss = dev_loss / dev_batch.num_examples * opt['batch_size']
 
     dev_p, dev_r, dev_f1 = scorer.score(dev_batch.gold(), predictions, method='macro')
-    print("epoch {}: train_loss = {:.6f}, train_sent_loss = {:.6f}, train_dep_path_loss = {:.6f}, dev_loss = {:.6f}, dev_f1 = {:.4f}".format(epoch,\
-        train_loss, train_sent_loss, train_dep_path_loss, dev_loss, dev_f1))
+    print(
+        "epoch {}: train_loss = {:.6f}, train_sent_loss = {:.6f}, train_dep_path_loss = {:.6f}, dev_loss = {:.6f}, dev_f1 = {:.4f}".format(
+            epoch, \
+            train_loss, train_sent_loss, train_dep_path_loss, dev_loss, dev_f1))
     dev_score = dev_f1
-    file_logger.log("{}\t{:.6f}\t{:.6f}\t{:.6f}\t{:.6f}\t{:.4f}\t{:.4f}".format(epoch, train_loss, train_sent_loss, train_dep_path_loss, dev_loss, dev_score, max([dev_score] + dev_score_history)))
+    file_logger.log("{}\t{:.6f}\t{:.6f}\t{:.6f}\t{:.6f}\t{:.4f}\t{:.4f}".format(epoch, train_loss, train_sent_loss,
+                                                                                train_dep_path_loss, dev_loss,
+                                                                                dev_score,
+                                                                                max([dev_score] + dev_score_history)))
 
     # save
     model_file = model_save_dir + '/checkpoint_epoch_{}.pt'.format(epoch)
@@ -182,8 +187,8 @@ for epoch in range(1, opt['num_epoch']+1):
     if epoch == 1 or dev_score > max(dev_score_history):
         copyfile(model_file, model_save_dir + '/best_model.pt')
         print("new best model saved.")
-        file_logger.log("new best model saved at epoch {}: {:.2f}\t{:.2f}\t{:.2f}"\
-            .format(epoch, dev_p*100, dev_r*100, dev_score*100))
+        file_logger.log("new best model saved at epoch {}: {:.2f}\t{:.2f}\t{:.2f}" \
+                        .format(epoch, dev_p * 100, dev_r * 100, dev_score * 100))
     if epoch % opt['save_epoch'] != 0:
         os.remove(model_file)
 

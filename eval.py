@@ -1,14 +1,15 @@
 """
 Run evaluation with saved models.
 """
-import random, json
 import argparse
-from tqdm import tqdm
+import random
+
 import torch
+from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
-from sklearn.metrics import confusion_matrix
+from tqdm import tqdm
 
 from data.loader import DataLoader
 from model.trainer import GCNTrainer
@@ -26,6 +27,7 @@ parser.add_argument('--seed', type=int, default=1234)
 parser.add_argument('--cuda', type=bool, default=torch.cuda.is_available())
 parser.add_argument('--cpu', action='store_true')
 args = parser.parse_args()
+
 
 def repack(tokens, lens):
     output = []
@@ -46,6 +48,7 @@ def repack(tokens, lens):
     if len(token) > 0:
         output.append(token)
     return output
+
 
 torch.manual_seed(args.seed)
 random.seed(1234)
@@ -92,8 +95,8 @@ lens = [len(p) for p in predictions]
 
 predictions = [[id2label[l + 1]] for p in predictions for l in p]
 sent_predictions = [sent_id2label[p] for p in sent_predictions]
-#print(len(predictions))
-#print(len(batch.gold()))
+# print(len(predictions))
+# print(len(batch.gold()))
 p, r, f1 = scorer.score(batch.gold(), predictions, verbose=True, verbose_output=args.per_class == 1)
 
 print('scroes from sklearn: ')
@@ -118,10 +121,12 @@ cm = confusion_matrix(batch.gold(), predictions, labels=['B-Term', 'I-Term', 'B-
                                                          'B-Qualifier', 'I-Qualifier', 'O'])
 with open('report/confusion_matrix.txt', 'w') as file:
     for row in cm:
-        file.write(('{:5d},' * len(row)).format(*row.tolist())+'\n')
+        file.write(('{:5d},' * len(row)).format(*row.tolist()) + '\n')
 print("confusion matrix created!")
 
-print('sentence predicitons accuracy: ', sum([1 if sent_predictions[i] == batch.sent_gold()[i] else 0 for i in range(len(sent_predictions))])/len(sent_predictions))
+print('sentence predicitons accuracy: ',
+      sum([1 if sent_predictions[i] == batch.sent_gold()[i] else 0 for i in range(len(sent_predictions))]) / len(
+          sent_predictions))
 
 # p, r, f1 = scorer.score(batch.sent_gold(), sent_predictions, verbose=True, verbose_output=args.per_class == 1, task='sent')
 # print('sent p: ', p)
@@ -135,8 +140,12 @@ for p in predictions:
         pred_sent.append('none')
     else:
         pred_sent.append('definition')
-print('predictions by tagging accuracy: ', sum([1 if pred_sent[i] == batch.sent_gold()[i] else 0 for i in range(len(sent_predictions))])/len(sent_predictions))
-print('predictions by tagging match with sent predictions: ', sum([1 if sent_predictions[i] == pred_sent[i] else 0 for i in range(len(sent_predictions))])/len(sent_predictions))
+print('predictions by tagging accuracy: ',
+      sum([1 if pred_sent[i] == batch.sent_gold()[i] else 0 for i in range(len(sent_predictions))]) / len(
+          sent_predictions))
+print('predictions by tagging match with sent predictions: ',
+      sum([1 if sent_predictions[i] == pred_sent[i] else 0 for i in range(len(sent_predictions))]) / len(
+          sent_predictions))
 
 true_positives = 0
 true_negative = 0
@@ -153,10 +162,9 @@ for i in range(len(sent_predictions)):
     if sent_predictions[i] == 'none' and batch.sent_gold()[i] == 'none':
         true_negative += 1
 
-p = true_positives/(true_positives+false_positive)
-r = true_positives/(true_positives+false_negative)
-f1 = 2*p*r/(p+r)
-
+p = true_positives / (true_positives + false_positive)
+r = true_positives / (true_positives + false_negative)
+f1 = 2 * p * r / (p + r)
 
 print('sentence precision: ', p)
 print('sentence recall: ', r)

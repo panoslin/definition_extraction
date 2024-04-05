@@ -2,18 +2,19 @@
 A trainer class.
 """
 
+import random
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
-import numpy as np
 from torchcrf import CRF
 
 from model.gcn import GCNClassifier
-from utils import constant, torch_utils
+from utils import torch_utils
 
-import random
 random.seed(1234)
+
 
 class Trainer(object):
     def __init__(self, opt, emb_matrix=None):
@@ -39,9 +40,9 @@ class Trainer(object):
 
     def save(self, filename, epoch):
         params = {
-                'model': self.model.state_dict(),
-                'config': self.opt,
-                }
+            'model': self.model.state_dict(),
+            'config': self.opt,
+        }
         try:
             torch.save(params, filename)
             print("model saved to {}".format(filename))
@@ -63,6 +64,7 @@ def unpack_batch(batch, cuda):
     lens = batch[1].eq(0).long().sum(1).squeeze()
     return inputs, labels, sent_labels, dep_path, tokens, head, lens
 
+
 class GCNTrainer(Trainer):
     def __init__(self, opt, emb_matrix=None):
         self.opt = opt
@@ -78,7 +80,6 @@ class GCNTrainer(Trainer):
             self.crf.cuda()
             self.bc.cuda()
         self.optimizer = torch_utils.get_optimizer(opt['optim'], self.parameters, opt['lr'])
-
 
     def update(self, batch):
         inputs, labels, sent_labels, dep_path, tokens, head, lens = unpack_batch(batch, self.opt['cuda'])
@@ -105,13 +106,12 @@ class GCNTrainer(Trainer):
         selection_loss = self.bc(selections.view(-1, 1), dep_path.view(-1, 1))
         loss += self.opt['dep_path_loss'] * selection_loss
 
-        term_def_loss = -self.opt['consistency_loss'] * (term_def-not_term_def)
+        term_def_loss = -self.opt['consistency_loss'] * (term_def - not_term_def)
         loss += term_def_loss
-        #loss += self.opt['consistency_loss'] * not_term_def
+        # loss += self.opt['consistency_loss'] * not_term_def
 
         term_loss = self.opt['sent_loss'] * self.bc(term_selections.view(-1, 1), terms.float().view(-1, 1))
         loss += term_loss
-
 
         loss_val = loss.item()
         # backward
@@ -149,5 +149,6 @@ class GCNTrainer(Trainer):
         sent_predictions = sent_logits.round().long().data.cpu().numpy()
 
         if unsort:
-            _, predictions, probs, sent_predictions = [list(t) for t in zip(*sorted(zip(orig_idx, predictions, probs, sent_predictions)))]
+            _, predictions, probs, sent_predictions = [list(t) for t in zip(*sorted(
+                zip(orig_idx, predictions, probs, sent_predictions)))]
         return predictions, probs, loss.item(), sent_predictions
