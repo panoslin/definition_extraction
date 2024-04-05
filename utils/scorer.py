@@ -169,7 +169,7 @@ if __name__ == "__main__":
     # Check that the lengths match
     if len(prediction) != len(key):
         print("Gold and prediction file must have same number of elements: %d in gold vs %d in prediction" % (
-        len(key), len(prediction)))
+            len(key), len(prediction)))
         exit(1)
 
     # Score the predictions

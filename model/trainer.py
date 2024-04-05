@@ -16,40 +16,6 @@ from utils import torch_utils
 random.seed(1234)
 
 
-class Trainer(object):
-    def __init__(self, opt, emb_matrix=None):
-        raise NotImplementedError
-
-    def update(self, batch):
-        raise NotImplementedError
-
-    def predict(self, batch):
-        raise NotImplementedError
-
-    def update_lr(self, new_lr):
-        torch_utils.change_lr(self.optimizer, new_lr)
-
-    def load(self, filename):
-        try:
-            checkpoint = torch.load(filename)
-        except BaseException:
-            print("Cannot load model from {}".format(filename))
-            exit()
-        self.model.load_state_dict(checkpoint['model'])
-        self.opt = checkpoint['config']
-
-    def save(self, filename, epoch):
-        params = {
-            'model': self.model.state_dict(),
-            'config': self.opt,
-        }
-        try:
-            torch.save(params, filename)
-            print("model saved to {}".format(filename))
-        except BaseException:
-            print("[Warning: Saving failed... continuing anyway.]")
-
-
 def unpack_batch(batch, cuda):
     if cuda:
         inputs = [Variable(b.cuda()) for b in batch[:7]]
@@ -65,8 +31,9 @@ def unpack_batch(batch, cuda):
     return inputs, labels, sent_labels, dep_path, tokens, head, lens
 
 
-class GCNTrainer(Trainer):
+class GCNTrainer:
     def __init__(self, opt, emb_matrix=None):
+        super().__init__(opt, emb_matrix)
         self.opt = opt
         self.emb_matrix = emb_matrix
         self.model = GCNClassifier(opt, emb_matrix=emb_matrix)
@@ -152,3 +119,41 @@ class GCNTrainer(Trainer):
             _, predictions, probs, sent_predictions = [list(t) for t in zip(*sorted(
                 zip(orig_idx, predictions, probs, sent_predictions)))]
         return predictions, probs, loss.item(), sent_predictions
+
+    def update_lr(self, new_lr):
+        """
+        This function updates the learning rate of the optimizer used by the Trainer.
+        It sets a new learning rate new_lr for all parameter groups in the optimizer.
+
+        The learning rate influences the speed and quality of the learning process
+        """
+        for param_group in self.optimizer.param_groups:
+            param_group['lr'] = new_lr
+
+    def load(self, filename):
+        """
+        The load function loads a model from the given filename using torch.load.
+
+        It then loads the state dictionary of the model and the configuration from the checkpoint.
+
+        If an exception occurs during the loading process,
+        it prints an error message and exits the program.
+        """
+        try:
+            checkpoint = torch.load(filename)
+        except BaseException:
+            print("Cannot load model from {}".format(filename))
+            exit()
+        self.model.load_state_dict(checkpoint['model'])
+        self.opt = checkpoint['config']
+
+    def save(self, filename, epoch):
+        params = {
+            'model': self.model.state_dict(),
+            'config': self.opt,
+        }
+        try:
+            torch.save(params, filename)
+            print("model saved to {}".format(filename))
+        except BaseException:
+            print("[Warning: Saving failed... continuing anyway.]")

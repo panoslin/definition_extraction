@@ -12,7 +12,7 @@ import torch
 from utils import constant
 
 
-class DataLoader(object):
+class DataLoader:
     """
     Load data from json files, preprocess and prepare batches.
     """
@@ -27,6 +27,7 @@ class DataLoader(object):
 
         with open(filename) as infile:
             data = json.load(infile)
+
         self.raw_data = data
         data = self.preprocess(data, vocab, opt)
 
@@ -35,6 +36,7 @@ class DataLoader(object):
             indices = list(range(len(data)))
             random.shuffle(indices)
             data = [data[i] for i in indices]
+
         self.id2label = dict([(v, k) for k, v in self.label2id.items()])
         self.sent_id2label = dict([(v, k) for k, v in self.sent_label2id.items()])
         self.labels = [[self.id2label[l]] for d in data for l in d[-2]]
@@ -53,11 +55,12 @@ class DataLoader(object):
             tokens = list(d['tokens'])
             if opt['lower']:
                 tokens = [t.lower() for t in tokens]
+
             tokens = map_to_ids(tokens, vocab.word2id)
             pos = map_to_ids(d['pos'], constant.POS_TO_ID)
             head = [int(x) for x in d['heads']]
             assert any([x == -1 for x in head])
-            l = len(tokens)
+
             labels = [self.label2id[l] for l in d['labels']]
             dep_path = [0] * len(d['tokens'])
             for i in d['dep_path']:
@@ -67,21 +70,23 @@ class DataLoader(object):
             for i, h in enumerate(d['heads']):
                 adj[i][h] = 1
                 adj[h][i] = 1
+
             counter = Counter(d['labels'])
             terms = [0] * len(d['labels'])
             defs = [0] * len(d['labels'])
+
             if counter['B-Term'] == 1 and counter['B-Definition'] == 1:
                 for i, l in enumerate(d['labels']):
                     if 'Term' in l:
                         terms[i] = 1
                     if 'Definition' in l:
                         defs[i] = 1
-            if self.opt['only_label'] == 1 and not self.eval:
-                if d['label'] != 'none':
-                    processed += [
-                        (tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])]
-            else:
-                processed += [(tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])]
+
+            if self.eval or self.opt['only_label'] != 1 or d['label'] != 'none':
+                processed.append(
+                    (tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])
+                )
+
         return processed
 
     def gold(self):
@@ -98,8 +103,10 @@ class DataLoader(object):
         """ Get a batch with index. """
         if not isinstance(key, int):
             raise TypeError
+
         if key < 0 or key >= len(self.data):
             raise IndexError
+
         batch = self.data[key]
         batch_size = len(batch)
         batch = list(zip(*batch))
@@ -111,7 +118,10 @@ class DataLoader(object):
 
         # word dropout
         if not self.eval:
-            words = [word_dropout(sent, self.opt['word_dropout']) for sent in batch[0]]
+            words = [
+                word_dropout(sent, self.opt['word_dropout'])
+                for sent in batch[0]
+            ]
         else:
             words = batch[0]
 
@@ -129,7 +139,7 @@ class DataLoader(object):
 
         sent_labels = torch.FloatTensor(batch[8])
 
-        return (words, masks, pos, head, terms, defs, adj, labels, sent_labels, dep_path, orig_idx)
+        return words, masks, pos, head, terms, defs, adj, labels, sent_labels, dep_path, orig_idx
 
     def __iter__(self):
         for i in range(self.__len__()):
@@ -141,18 +151,13 @@ def map_to_ids(tokens, vocab):
     return ids
 
 
-def get_positions(start_idx, end_idx, length):
-    """ Get subj/obj position sequence. """
-    return list(range(-start_idx, 0)) + [0] * (end_idx - start_idx + 1) + \
-        list(range(1, length - end_idx))
-
-
 def get_long_tensor(tokens_list, batch_size):
     """ Convert list of list of tokens to a padded LongTensor. """
     token_len = max(len(x) for x in tokens_list)
     tokens = torch.LongTensor(batch_size, token_len).fill_(constant.PAD_ID)
     for i, s in enumerate(tokens_list):
         tokens[i, :len(s)] = torch.LongTensor(s)
+
     return tokens
 
 
@@ -174,5 +179,7 @@ def sort_all(batch, lens):
 
 def word_dropout(tokens, dropout):
     """ Randomly dropout tokens (IDs) and replace them with <UNK> tokens. """
-    return [constant.UNK_ID if x != constant.UNK_ID and np.random.random() < dropout \
-                else x for x in tokens]
+    return [
+        constant.UNK_ID if x != constant.UNK_ID and np.random.random() < dropout else x
+        for x in tokens
+    ]

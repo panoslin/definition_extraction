@@ -87,8 +87,7 @@ init_time = time.time()
 
 # make opt
 opt = vars(args)
-label2id = constant.LABEL_TO_ID
-opt['num_class'] = len(label2id)
+opt['num_class'] = len(constant.LABEL_TO_ID)
 
 # load vocab
 vocab_file = opt['vocab_dir'] + '/vocab.pkl'
@@ -100,20 +99,22 @@ assert emb_matrix.shape[0] == vocab.size
 assert emb_matrix.shape[1] == opt['emb_dim']
 
 # load data
-print("Loading data from {} with batch size {}...".format(opt['data_dir'], opt['batch_size']))
+print(f"Loading data from {opt['data_dir']} with batch size {opt['batch_size']}...")
 train_batch = DataLoader(opt['data_dir'] + '/train.json', opt['batch_size'], opt, vocab, evaluation=False)
 dev_batch = DataLoader(opt['data_dir'] + '/dev.json', opt['batch_size'], opt, vocab, evaluation=True)
 
 model_id = opt['id'] if len(opt['id']) > 1 else '0' + opt['id']
 model_save_dir = opt['save_dir'] + '/' + model_id
 opt['model_save_dir'] = model_save_dir
-helper.ensure_dir(model_save_dir, verbose=True)
+os.makedirs(model_save_dir, exist_ok=True)
 
 # save config
 helper.save_config(opt, model_save_dir + '/config.json', verbose=True)
 vocab.save(model_save_dir + '/vocab.pkl')
-file_logger = helper.FileLogger(model_save_dir + '/' + opt['log'],
-                                header="# epoch\ttrain_loss\tsent_loss\tdep_path_loss\tdev_loss\tdev_score\tbest_dev_score")
+file_logger = helper.FileLogger(
+    model_save_dir + '/' + opt['log'],
+    header="# epoch\ttrain_loss\tsent_loss\tdep_path_loss\tdev_loss\tdev_score\tbest_dev_score"
+)
 
 # print model info
 helper.print_config(opt)
@@ -124,19 +125,20 @@ if not opt['load']:
 else:
     # load pretrained model
     model_file = opt['model_file']
-    print("Loading model from {}".format(model_file))
+    print(f"Loading model from {model_file}")
     model_opt = torch_utils.load_config(model_file)
     model_opt['optim'] = opt['optim']
     trainer = GCNTrainer(model_opt)
     trainer.load(model_file)
 
-id2label = dict([(v, k) for k, v in label2id.items()])
+id2label = dict([(v, k) for k, v in constant.LABEL_TO_ID.items()])
 dev_score_history = []
 current_lr = opt['lr']
 
 global_step = 0
 global_start_time = time.time()
-format_str = '{}: step {}/{} (epoch {}/{}), loss = {:.6f}, sent_loss = {:.6f}, dep_path_loss = {:.6f} ({:.3f} sec/batch), lr: {:.6f}'
+format_str = ('{}: step {}/{} (epoch {}/{}), loss = {:.6f}, sent_loss = {:.6f}, dep_path_loss = {:.6f} ({:.3f} '
+              'sec/batch), lr: {:.6f}')
 max_steps = len(train_batch) * opt['num_epoch']
 
 # start training
@@ -153,8 +155,10 @@ for epoch in range(1, opt['num_epoch'] + 1):
         train_dep_path_loss += dep_path_loss
         if global_step % opt['log_step'] == 0:
             duration = time.time() - start_time
-            print(format_str.format(datetime.now(), global_step, max_steps, epoch, \
-                                    opt['num_epoch'], loss, sent_loss, dep_path_loss, duration, current_lr))
+            print(format_str.format(
+                datetime.now(), global_step, max_steps, epoch,
+                opt['num_epoch'], loss, sent_loss, dep_path_loss, duration, current_lr
+            ))
 
     # eval on dev
     print("Evaluating on dev set...")
@@ -172,33 +176,39 @@ for epoch in range(1, opt['num_epoch'] + 1):
 
     dev_p, dev_r, dev_f1 = scorer.score(dev_batch.gold(), predictions, method='macro')
     print(
-        "epoch {}: train_loss = {:.6f}, train_sent_loss = {:.6f}, train_dep_path_loss = {:.6f}, dev_loss = {:.6f}, dev_f1 = {:.4f}".format(
-            epoch, \
-            train_loss, train_sent_loss, train_dep_path_loss, dev_loss, dev_f1))
+        f"epoch {epoch}: train_loss = {train_loss:.6f}, "
+        f"train_sent_loss = {train_sent_loss:.6f}, "
+        f"train_dep_path_loss = {train_dep_path_loss:.6f}, "
+        f"dev_loss = {dev_loss:.6f}, dev_f1 = {dev_f1:.4f}"
+    )
     dev_score = dev_f1
-    file_logger.log("{}\t{:.6f}\t{:.6f}\t{:.6f}\t{:.6f}\t{:.4f}\t{:.4f}".format(epoch, train_loss, train_sent_loss,
-                                                                                train_dep_path_loss, dev_loss,
-                                                                                dev_score,
-                                                                                max([dev_score] + dev_score_history)))
+    file_logger.log(
+        f"{epoch}\t{train_loss:.6f}\t{train_sent_loss:.6f}"
+        f"\t{train_dep_path_loss:.6f}\t{dev_loss:.6f}"
+        f"\t{dev_score:.4f}\t{max([dev_score] + dev_score_history):.4f}"
+    )
 
     # save
-    model_file = model_save_dir + '/checkpoint_epoch_{}.pt'.format(epoch)
+    model_file = model_save_dir + f'/checkpoint_epoch_{epoch}.pt'
     trainer.save(model_file, epoch)
     if epoch == 1 or dev_score > max(dev_score_history):
         copyfile(model_file, model_save_dir + '/best_model.pt')
-        print("new best model saved.")
-        file_logger.log("new best model saved at epoch {}: {:.2f}\t{:.2f}\t{:.2f}" \
-                        .format(epoch, dev_p * 100, dev_r * 100, dev_score * 100))
+    print("new best model saved.")
+    file_logger.log(
+        f"new best model saved at epoch {epoch}: {dev_p * 100:.2f}\t{dev_r * 100:.2f}\t{dev_score * 100:.2f}"
+    )
     if epoch % opt['save_epoch'] != 0:
         os.remove(model_file)
 
     # lr schedule
-    if len(dev_score_history) > opt['decay_epoch'] and dev_score <= dev_score_history[-1] and \
-            opt['optim'] in ['sgd', 'adagrad', 'adadelta']:
+    if (
+            len(dev_score_history) > opt['decay_epoch'] and
+            dev_score <= dev_score_history[-1] and
+            opt['optim'] in ['sgd', 'adagrad', 'adadelta']
+    ):
         current_lr *= opt['lr_decay']
-        trainer.update_lr(current_lr)
 
+    trainer.update_lr(current_lr)
     dev_score_history += [dev_score]
-    print("")
 
-print("Training ended with {} epochs.".format(epoch))
+    print("Training ended with {} epochs.".format(epoch))

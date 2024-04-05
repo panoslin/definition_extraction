@@ -108,11 +108,6 @@ def get_optimizer(name, parameters, lr, l2=0):
         raise Exception("Unsupported optimizer: {}".format(name))
 
 
-def change_lr(optimizer, new_lr):
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = new_lr
-
-
 def flatten_indices(seq_lens, width):
     flat = []
     for i, l in enumerate(seq_lens):
