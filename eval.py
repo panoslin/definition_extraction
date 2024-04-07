@@ -2,6 +2,7 @@
 Run evaluation with saved models.
 """
 import argparse
+import os
 import random
 
 import torch
@@ -61,6 +62,7 @@ elif args.cuda:
 model_file = args.model_dir + '/' + args.model
 print("Loading model from {}".format(model_file))
 opt = torch_utils.load_config(model_file)
+opt['cuda'] = torch.cuda.is_available()
 trainer = GCNTrainer(opt)
 trainer.load(model_file)
 
@@ -125,6 +127,7 @@ print("{} set evaluate result: {:.2f}\t{:.2f}\t{:.2f}".format(args.dataset, p, r
 
 cm = confusion_matrix(batch.gold(), predictions, labels=['B-Term', 'I-Term', 'B-Definition', 'I-Definition',
                                                          'B-Qualifier', 'I-Qualifier', 'O'])
+os.makedirs('report', exist_ok=True)
 with open('report/confusion_matrix.txt', 'w') as file:
     for row in cm:
         file.write(('{:5d},' * len(row)).format(*row.tolist()) + '\n')
@@ -133,11 +136,6 @@ print("confusion matrix created!")
 print('sentence predicitons accuracy: ',
       sum([1 if sent_predictions[i] == batch.sent_gold()[i] else 0 for i in range(len(sent_predictions))]) / len(
           sent_predictions))
-
-# p, r, f1 = scorer.score(batch.sent_gold(), sent_predictions, verbose=True, verbose_output=args.per_class == 1, task='sent')
-# print('sent p: ', p)
-# print('sent r: ', r)
-# print('sent f1: ', f1)
 
 pred_sent = []
 predictions = repack(predictions, lens)

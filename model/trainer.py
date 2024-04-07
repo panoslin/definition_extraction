@@ -17,14 +17,16 @@ random.seed(1234)
 
 
 def unpack_batch(batch, cuda):
-    if cuda:
+    if torch.cuda.is_available():
         inputs = [Variable(b.cuda()) for b in batch[:7]]
         labels = Variable(batch[7].cuda())
         sent_labels = Variable(batch[8].cuda())
         dep_path = Variable(batch[9].cuda())
     else:
-        print("Error")
-        exit(1)
+        inputs = [Variable(b) for b in batch[:7]]
+        labels = Variable(batch[7])
+        sent_labels = Variable(batch[8])
+        dep_path = Variable(batch[9])
     tokens = batch[0]
     head = batch[3]
     lens = batch[1].eq(0).long().sum(1).squeeze()
@@ -33,7 +35,6 @@ def unpack_batch(batch, cuda):
 
 class GCNTrainer:
     def __init__(self, opt, emb_matrix=None):
-        super().__init__(opt, emb_matrix)
         self.opt = opt
         self.emb_matrix = emb_matrix
         self.model = GCNClassifier(opt, emb_matrix=emb_matrix)
@@ -41,7 +42,7 @@ class GCNTrainer:
         self.parameters = [p for p in self.model.parameters() if p.requires_grad]
         self.crf = CRF(self.opt['num_class'], batch_first=True)
         self.bc = nn.BCELoss()
-        if opt['cuda']:
+        if torch.cuda.is_available():
             self.model.cuda()
             self.criterion.cuda()
             self.crf.cuda()
@@ -142,8 +143,7 @@ class GCNTrainer:
         try:
             checkpoint = torch.load(filename)
         except BaseException:
-            print("Cannot load model from {}".format(filename))
-            exit()
+            checkpoint = torch.load(filename, map_location=torch.device('cpu'))
         self.model.load_state_dict(checkpoint['model'])
         self.opt = checkpoint['config']
 

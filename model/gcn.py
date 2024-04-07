@@ -216,7 +216,7 @@ def rnn_zero_state(batch_size, hidden_dim, num_layers, bidirectional=True, use_c
     total_layers = num_layers * 2 if bidirectional else num_layers
     state_shape = (total_layers, batch_size, hidden_dim)
     h0 = c0 = Variable(torch.zeros(*state_shape), requires_grad=False)
-    if use_cuda:
+    if torch.cuda.is_available():
         return h0.cuda(), c0.cuda()
     else:
         return h0, c0

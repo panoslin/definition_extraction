@@ -161,5 +161,6 @@ def load_config(filename):
     try:
         dump = torch.load(filename)
     except BaseException:
-        print("[ Fail: model loading failed. ]")
+        dump = torch.load(filename, map_location=torch.device('cpu'))
+
     return dump['config']
