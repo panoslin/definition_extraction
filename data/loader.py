@@ -17,19 +17,14 @@ class DataLoader:
     Load data from json files, preprocess and prepare batches.
     """
 
-    def __init__(self, filename, batch_size, opt, vocab, evaluation=False):
-        self.batch_size = batch_size
+    def __init__(self, filename, opt, vocab, evaluation=False):
+        self.batch_size = opt['batch_size']
         self.opt = opt
         self.vocab = vocab
         self.eval = evaluation
-        self.label2id = constant.LABEL_TO_ID
-        self.sent_label2id = constant.SENT_LABEL_TO_ID
 
         with open(filename) as infile:
-            data = json.load(infile)
-
-        self.raw_data = data
-        data = self.preprocess(data, vocab, opt)
+            data = self.preprocess(json.load(infile), vocab, opt)
 
         # shuffle for training
         if not evaluation:
@@ -37,54 +32,62 @@ class DataLoader:
             random.shuffle(indices)
             data = [data[i] for i in indices]
 
-        self.id2label = dict([(v, k) for k, v in self.label2id.items()])
-        self.sent_id2label = dict([(v, k) for k, v in self.sent_label2id.items()])
+        self.id2label = dict([(v, k) for k, v in constant.LABEL_TO_ID.items()])
+        self.sent_id2label = dict([(v, k) for k, v in constant.SENT_LABEL_TO_ID.items()])
         self.labels = [[self.id2label[l]] for d in data for l in d[-2]]
         self.sent_labels = [self.sent_id2label[d[-1]] for d in data]
-        self.num_examples = len(data)
+        self.size = len(data)
 
         # chunk into batches
-        data = [data[i:i + batch_size] for i in range(0, len(data), batch_size)]
+        data = [data[i:i + opt['batch_size']] for i in range(0, len(data), opt['batch_size'])]
         self.data = data
-        print("{} batches created for {}".format(len(data), filename))
+        print(f"{len(data)} batches created for {filename}")
 
-    def preprocess(self, data, vocab, opt):
+    def preprocess(self, dataset, vocab, opt):
         """ Preprocess the data and convert to ids. """
         processed = []
-        for d in data:
-            tokens = list(d['tokens'])
+        for sentence in dataset:
+            tokens = list(sentence['tokens'])
             if opt['lower']:
                 tokens = [t.lower() for t in tokens]
 
-            tokens = map_to_ids(tokens, vocab.word2id)
-            pos = map_to_ids(d['pos'], constant.POS_TO_ID)
-            head = [int(x) for x in d['heads']]
+            tokens = [vocab.word2id[token] for token in tokens]
+            pos = [constant.POS_TO_ID[pos] for pos in sentence['pos']]
+            labels = [constant.LABEL_TO_ID[label] for label in sentence['labels']]
+
+            # Parses the dependency head information
+            head = [int(x) for x in sentence['heads']]
+            # checks for at least one root in the dependency tree
             assert any([x == -1 for x in head])
 
-            labels = [self.label2id[l] for l in d['labels']]
-            dep_path = [0] * len(d['tokens'])
-            for i in d['dep_path']:
+            # Initializes dependency path representation
+            dep_path = [0] * len(sentence['tokens'])
+            for i in sentence['dep_path']:
                 if i != -1:
                     dep_path[i] = 1
-            adj = np.zeros((len(d['heads']), len(d['heads'])))
-            for i, h in enumerate(d['heads']):
+
+            # Constructs adjacency matrix
+            # indicating direct connections between tokens.
+            adj = np.zeros((len(sentence['heads']), len(sentence['heads'])))
+            for i, h in enumerate(sentence['heads']):
                 adj[i][h] = 1
                 adj[h][i] = 1
 
-            counter = Counter(d['labels'])
-            terms = [0] * len(d['labels'])
-            defs = [0] * len(d['labels'])
+            if self.eval or self.opt['only_label'] != 1 or sentence['label'] != 'none':
+                counter = Counter(sentence['labels'])
+                terms = [0] * len(sentence['labels'])
+                defs = [0] * len(sentence['labels'])
+                # Identifies 'Term' and 'Definition' entities within the labels, marking their positions.
+                if counter['B-Term'] == 1 and counter['B-Definition'] == 1:
+                    for i, label in enumerate(sentence['labels']):
+                        if 'Term' in label:
+                            terms[i] = 1
+                        if 'Definition' in label:
+                            defs[i] = 1
 
-            if counter['B-Term'] == 1 and counter['B-Definition'] == 1:
-                for i, l in enumerate(d['labels']):
-                    if 'Term' in l:
-                        terms[i] = 1
-                    if 'Definition' in l:
-                        defs[i] = 1
-
-            if self.eval or self.opt['only_label'] != 1 or d['label'] != 'none':
                 processed.append(
-                    (tokens, pos, head, terms, defs, dep_path, adj, labels, self.sent_label2id[d['label']])
+                    (
+                    tokens, pos, head, terms, defs, dep_path, adj, labels, constant.SENT_LABEL_TO_ID[sentence['label']])
                 )
 
         return processed
@@ -144,11 +147,6 @@ class DataLoader:
     def __iter__(self):
         for i in range(self.__len__()):
             yield self.__getitem__(i)
-
-
-def map_to_ids(tokens, vocab):
-    ids = [vocab[t] if t in vocab else constant.UNK_ID for t in tokens]
-    return ids
 
 
 def get_long_tensor(tokens_list, batch_size):

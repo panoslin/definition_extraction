@@ -6,15 +6,22 @@ import os
 import random
 
 import torch
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import f1_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
+from sklearn.metrics import (
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+)
 from tqdm import tqdm
 
 from data.loader import DataLoader
 from model.trainer import GCNTrainer
-from utils import torch_utils, scorer, constant, helper
+from utils import (
+    torch_utils,
+    scorer,
+    constant,
+    helper,
+)
 from utils.vocab import Vocab
 
 parser = argparse.ArgumentParser()
@@ -74,13 +81,7 @@ assert opt['vocab_size'] == vocab.size, "Vocab size must match that in the saved
 # load data
 data_file = opt['data_dir'] + '/{}.json'.format(args.dataset)
 print("Loading data from {} with batch size {}...".format(data_file, opt['batch_size']))
-batch = DataLoader(
-    data_file,
-    opt['batch_size'],
-    opt,
-    vocab,
-    evaluation=True
-)
+batch = DataLoader(data_file, opt, vocab, evaluation=True)
 
 helper.print_config(opt)
 label2id = constant.LABEL_TO_ID

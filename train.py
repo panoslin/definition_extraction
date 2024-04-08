@@ -14,7 +14,12 @@ import torch
 
 from data.loader import DataLoader
 from model.trainer import GCNTrainer
-from utils import torch_utils, scorer, constant, helper
+from utils import (
+    torch_utils,
+    scorer,
+    constant,
+    helper,
+)
 from utils.vocab import Vocab
 
 parser = argparse.ArgumentParser()
@@ -39,11 +44,15 @@ parser.add_argument('--sent_loss', type=float, default=100.0, help='')
 parser.add_argument('--dep_path_loss', type=float, default=100.0, help='')
 parser.add_argument('--consistency_loss', type=float, default=1.0, help='')
 
-parser.add_argument('--prune_k', default=-1, type=int,
-                    help='Prune the dependency tree to <= K distance off the dependency path; set to -1 for no pruning.')
+parser.add_argument(
+    '--prune_k', default=-1, type=int,
+    help='Prune the dependency tree to <= K distance off the dependency path; set to -1 for no pruning.'
+)
 parser.add_argument('--conv_l2', type=float, default=0, help='L2-weight decay on conv layers only.')
-parser.add_argument('--pooling', choices=['max', 'avg', 'sum'], default='max',
-                    help='Pooling function type. Default max.')
+parser.add_argument(
+    '--pooling', choices=['max', 'avg', 'sum'], default='max',
+    help='Pooling function type. Default max.'
+)
 parser.add_argument('--pooling_l2', type=float, default=0, help='L2-penalty for all pooling output.')
 parser.add_argument('--mlp_layers', type=int, default=2, help='Number of output mlp layers.')
 parser.add_argument('--no_adj', dest='no_adj', action='store_true', help="Zero out adjacency matrix for ablation.")
@@ -100,8 +109,8 @@ assert emb_matrix.shape[1] == opt['emb_dim']
 
 # load data
 print(f"Loading data from {opt['data_dir']} with batch size {opt['batch_size']}...")
-train_batch = DataLoader(opt['data_dir'] + '/train.json', opt['batch_size'], opt, vocab, evaluation=False)
-dev_batch = DataLoader(opt['data_dir'] + '/dev.json', opt['batch_size'], opt, vocab, evaluation=True)
+train_batch = DataLoader(opt['data_dir'] + '/train.json', opt, vocab, evaluation=False)
+dev_batch = DataLoader(opt['data_dir'] + '/dev.json', opt, vocab, evaluation=True)
 
 model_id = opt['id'] if len(opt['id']) > 1 else '0' + opt['id']
 model_save_dir = opt['save_dir'] + '/' + model_id
@@ -155,10 +164,12 @@ for epoch in range(1, opt['num_epoch'] + 1):
         train_dep_path_loss += dep_path_loss
         if global_step % opt['log_step'] == 0:
             duration = time.time() - start_time
-            print(format_str.format(
-                datetime.now(), global_step, max_steps, epoch,
-                opt['num_epoch'], loss, sent_loss, dep_path_loss, duration, current_lr
-            ))
+            print(
+                format_str.format(
+                    datetime.now(), global_step, max_steps, epoch,
+                    opt['num_epoch'], loss, sent_loss, dep_path_loss, duration, current_lr
+                )
+            )
 
     # eval on dev
     print("Evaluating on dev set...")
@@ -169,10 +180,10 @@ for epoch in range(1, opt['num_epoch'] + 1):
         predictions += preds
         dev_loss += loss
     predictions = [[id2label[l + 1]] for p in predictions for l in p]
-    train_loss = train_loss / train_batch.num_examples * opt['batch_size']  # avg loss per batch
-    train_sent_loss = train_sent_loss / train_batch.num_examples * opt['batch_size']  # avg loss per batch
-    train_dep_path_loss = train_dep_path_loss / train_batch.num_examples * opt['batch_size']  # avg loss per batch
-    dev_loss = dev_loss / dev_batch.num_examples * opt['batch_size']
+    train_loss = train_loss / train_batch.size * opt['batch_size']  # avg loss per batch
+    train_sent_loss = train_sent_loss / train_batch.size * opt['batch_size']  # avg loss per batch
+    train_dep_path_loss = train_dep_path_loss / train_batch.size * opt['batch_size']  # avg loss per batch
+    dev_loss = dev_loss / dev_batch.size * opt['batch_size']
 
     dev_p, dev_r, dev_f1 = scorer.score(dev_batch.gold(), predictions, method='macro')
     print(
