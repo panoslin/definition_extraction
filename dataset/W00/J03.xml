@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J03">
+
+		<paper id="3005">
+			<definition id="0">
+				<sentence>The BNC is a large , synchronic corpus , consisting of 90 million words of text and 10 million words of speech .</sentence>
+				<definiendum id="0">BNC</definiendum>
+				<definiens id="0">a large , synchronic corpus , consisting of 90 million words of text and 10 million words of speech</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The BNC is a balanced corpus ( i.e. , it was compiled so as to represent a wide range of present day British English ) .</sentence>
+				<definiendum id="0">BNC</definiendum>
+				<definiens id="0">a balanced corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The spoken part consists of spontaneous conversations , recorded from volunteers balanced by age , region , and social class .</sentence>
+				<definiendum id="0">spoken part</definiendum>
+				<definiens id="0">consists of spontaneous conversations , recorded from volunteers balanced by age , region , and social class</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Gsearch ( Corley et al. 2001 ) , a chart parser that detects syntactic patterns in a tagged corpus by exploiting a user-specified context-free grammar and a syntactic query , was used to extract all nouns occurring in a head-modifier relationship with one of the 30 adjectives .</sentence>
+				<definiendum id="0">Gsearch</definiendum>
+				<definiens id="0">a chart parser that detects syntactic patterns in a tagged corpus by exploiting a user-specified context-free grammar and a syntactic query , was used to extract all nouns occurring in a head-modifier relationship with one of the 30 adjectives</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For the present study , we applied the procedure used by Lapata , McDonald , and Keller ( 1999 ) and Lapata , Keller , and McDonald ( 2001 ) to noun-noun bigrams and to verb-object bigrams , creating a set of 90 seen and 90 unseen bigrams for each type of predicate-argument relationship .</sentence>
+				<definiendum id="0">McDonald</definiendum>
+				<definiens id="0">2001 ) to noun-noun bigrams and to verb-object bigrams , creating a set of 90 seen</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( 1 ) C = { ( w 2 , w 3 ) | w 1 w 2 w 3 w 4 ; w 1 , w 4 negationslash∈ N ; w 2 , w 3 ∈ N } Here , w 1 w 2 w 3 w 4 denotes the occurrence of a sequence of four words and N is the set of words tagged as nouns in the corpus .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the set of words tagged as nouns in the corpus</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>C is the set of compounds identified by Lauer’s ( 1995 ) heuristic .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the set of compounds identified by Lauer’s ( 1995 ) heuristic</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Lexicon entries contain part-of-speech and subcategorization information .</sentence>
+				<definiendum id="0">Lexicon entries</definiendum>
+				<definiens id="0">contain part-of-speech and subcategorization information</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>In contrast to Gsearch and Cass , MINIPAR produces all possible parses for a given sentence .</sentence>
+				<definiendum id="0">MINIPAR</definiendum>
+				<definiens id="0">produces all possible parses for a given sentence</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The following search terms were used for adjective-noun , noun-noun , and verb-object bigrams , respectively : ( 2 ) `` A N '' , where A is the adjective and N is the singular or plural form of the noun .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the singular or plural form of the noun</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>( 3 ) `` N1 N2 '' , where N1 is the singular form of the first noun and N2 is the singular or plural form of the second noun .</sentence>
+				<definiendum id="0">N1</definiendum>
+				<definiendum id="1">N2</definiendum>
+				<definiens id="0">the singular form of the first noun</definiens>
+				<definiens id="1">the singular or plural form of the second noun</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>( 4 ) `` V Det N '' , where V is the infinitive , singular present , plural present , past , perfect , or gerund form of the verb , Det is the determiner the , the determiner a , or the empty string , and N is the singular or plural form of the noun .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiendum id="1">Det</definiendum>
+				<definiendum id="2">N</definiendum>
+				<definiens id="0">the infinitive , singular present , plural present , past , perfect , or gerund form of the verb</definiens>
+				<definiens id="1">the determiner the , the determiner a , or the empty string</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Adjective-Noun Noun-Noun Verb-Object AltaVista 2 9 1 Google 2 5 0 NANTC 76 82 78 Table 6 Descriptive statistics for Web counts , corpus counts , and counts re-created using class-based smoothing ( log-transformed ) .</sentence>
+				<definiendum id="0">Adjective-Noun Noun-Noun</definiendum>
+				<definiens id="0">statistics for Web counts , corpus counts , and counts re-created using class-based smoothing ( log-transformed )</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Adjective-Noun Noun-Noun Verb-Object Min Max Mean SD Min Max Mean SD Min Max Mean SD Seen Bigrams AltaVista 1.15 5.84 3.72 1.02 .60 6.16 3.52 1.22 .48 5.86 3.42 1.13 Google 1.54 6.11 4.01 1.01 .90 6.30 3.80 1.23 .60 5.96 3.70 1.11 BNC 0 2.19 .89 .69 0 2.14 .74 .64 0 2.55 .68 .58 NANTC .30 2.84 .84 .96 .30 3.02 .56 .94 -.30 3.73 1.90 .98 Smoothing .06 2.32 1.28 .51 .70 1.71 .30 .61 -.51 2.07 .53 .57 Unseen Bigrams AltaVista .30 5.00 1.50 .99 .30 3.97 1.20 1.14 .30 3.88 1.55 1.06 Google .30 4.11 1.79 .95 .30 4.15 1.60 1.12 0 4.19 1.90 1.04 Smoothing .03 2.10 1.25 .46 -1.01 1.93 .28 .66 -.70 1.95 .53 .58 Table 7 Average factor by which Web counts are larger than BNC counts ( seen bigrams ) .</sentence>
+				<definiendum id="0">Adjective-Noun Noun-Noun Verb-Object Min</definiendum>
+				<definiens id="0">Average factor by which Web counts are larger than BNC counts ( seen bigrams )</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>N is the number of subjects used in each experiment .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of subjects used in each experiment</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Adjective-Noun Bigrams Noun-Noun Bigrams Verb-Object Bigrams N Min Max Mean SD N Min Max Mean SD N Min Max Mean SD Seen 30 -.85 .11 -.13 .22 25 -.15 .69 .40 .21 27 -.52 .45 .12 .24 Unseen 41 -.56 .37 -.07 .20 25 -.49 .52 -.01 .23 21 -.51 .28 -.16 .22 consisted of three phases : ( 1 ) a calibration phase , designed to familiarize subjects with the task , in which they had to estimate the length of five horizontal lines ; ( 2 ) a practice phase , in which subjects judged the plausibility of eight bigrams ( similar to the ones in the stimulus set ) ; ( 3 ) the main experiment , in which each subject judged one of the six stimulus sets ( 90 bigrams ) .</sentence>
+				<definiendum id="0">Adjective-Noun Bigrams Noun-Noun Bigrams Verb-Object Bigrams N Min Max Mean SD N Min Max Mean SD N Min Max Mean SD</definiendum>
+				<definiens id="0">1 ) a calibration phase , designed to familiarize subjects with the task , in which they had to estimate the length of five horizontal lines ; ( 2 ) a practice phase , in which subjects judged the plausibility of eight bigrams</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The results show that both AltaVista and Google counts correlate well with plausibility judgments for seen bigrams .</sentence>
+				<definiendum id="0">Google</definiendum>
+				<definiens id="0">counts correlate well with plausibility judgments for seen bigrams</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Intersubject agreement gives an upper bound for the task and allows us to interpret how well our Web-based method performs in relation to humans .</sentence>
+				<definiendum id="0">Intersubject agreement</definiendum>
+				<definiens id="0">gives an upper bound for the task and allows us to interpret how well our Web-based method performs in relation to humans</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>AltaVista counts for seen bigrams are a better predictor of human judgments than BNC and NANTC counts .</sentence>
+				<definiendum id="0">AltaVista</definiendum>
+			</definition>
+			<definition id="19">
+				<sentence>Because a given word is not always represented by a single class in the taxonomy ( i.e. , the argument co-occurring with a predicate can generally be the realization of one of several conceptual classes ) , Lapata , Keller , and McDonald ( 2001 ) constructed the frequency counts for a predicate-argument bigram for each conceptual class by dividing the contribution from the argument by the number of classes to which it belongs .</sentence>
+				<definiendum id="0">McDonald</definiendum>
+				<definiens id="0">the realization of one of several conceptual classes ) , Lapata , Keller , and</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>From a data set of 1,280,712 ( v , n ) pairs ( obtained from the BNC using Carroll and Rooth’s [ 1998 ] parser ) , they randomly selected 3,000 pairs , with each pair containing a fairly frequent verb and noun ( only verbs and nouns that occurred between 30 and 3,000 times in the data were considered ) .</sentence>
+				<definiendum id="0">n ) pairs</definiendum>
+				<definiens id="0">] parser ) , they randomly selected 3,000 pairs , with each pair containing a fairly frequent verb</definiens>
+				<definiens id="1">verbs and nouns that occurred between 30 and 3,000 times in the data were considered )</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="22">
+				<sentence>Selection and Information : A Class-Based Approach to Lexical Relationships .</sentence>
+				<definiendum id="0">Selection</definiendum>
+				<definiendum id="1">Information</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>For each 〈English , French X 〉 pair , where X is one of the sets of translations derived from the three separate MT on-line systems ( see above ) , we derive separate marker lexicons for each of the 218,697 source phrases and target translations .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">one of the sets of translations derived from the three separate MT on-line systems ( see above )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Once chunks are derived from 〈source , target〉 alignments , patterns are computed from the derived chunks by means of the following algorithm : “for each pair of chunk pairs 〈〈C S1 , C T1 〉 , 〈C S2 , C T2 〉〉 , ifC S1 is a substring in C S2 and C T1 is a substring in C T2 , then 〈P S , P T 〉 is a pattern pair where P S equals C S2 with C S1 replaced by a variable V and P T equals C T2 with C T1 replaced by V” ( Block 2000 , pages 414–415 ) .</sentence>
+				<definiendum id="0">following algorithm</definiendum>
+				<definiendum id="1">ifC S1</definiendum>
+				<definiendum id="2">C T1</definiendum>
+				<definiens id="0">derived from 〈source , target〉 alignments , patterns are computed from the derived chunks by means of the</definiens>
+				<definiens id="1">a substring in C T2</definiens>
+				<definiens id="2">a pattern pair where P S equals C S2 with C S1 replaced by a variable V and P T equals C T2 with C T1 replaced by V”</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>When knowledge sources are combined , it is Table 10 Ranking of “best” translation for NPs : Chunks derived from more that one on-line MT system .</sentence>
+				<definiendum id="0">knowledge sources</definiendum>
+				<definiens id="0">Chunks derived from more that one on-line MT system</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Input : A group hire lawyers to provide information about clients .</sentence>
+				<definiendum id="0">Input</definiendum>
+				<definiens id="0">A group hire lawyers to provide information about clients</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>When NPs are considered , system C considerably outperforms the other two systems , obtaining a score of 3 for quality in 10.2 % more cases than its nearest challenger , system B. When chunks from different systems are combined , again we see that combinations with chunks derived from system C outperform those that omit them : BC and AC improve over AB by 10 % and 18 % , respectively , and ABC shows a further increase .</sentence>
+				<definiendum id="0">ABC</definiendum>
+				<definiens id="0">its nearest challenger , system B. When chunks from different systems</definiens>
+			</definition>
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>An easy problem is usually a problem that one solves easily ( so problem is the object of solve ) , and a difficult language is a language that one learns , speaks , or writes with difficulty ( so language is the object of learn , speak , and write ) .</sentence>
+				<definiendum id="0">difficult language</definiendum>
+				<definiens id="0">a language that one learns , speaks , or writes with difficulty ( so language is the object of learn , speak , and write )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Adjectives like good allow either verb-subject or verb-object interpretations : a good cook is a cook who cooks well , whereas good soup is a soup that tastes good .</sentence>
+				<definiendum id="0">good soup</definiendum>
+				<definiens id="0">a soup that tastes good</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>By choosing the ordering 〈e , v , o〉 for the variables e , v , and o , we can factor P ( e , o , v ) as follows : P ( e , o , v ) =P ( e ) · P ( v | e ) · P ( o | e , v ) ( 11 ) The probabilities P ( e ) , P ( v | e ) , and P ( o | e , v ) can be estimated using maximum likelihood as follows : ˆ P ( e ) = f ( e ) N ( 12 ) ˆ P ( v | e ) = f ( v , e ) f ( e ) ( 13 ) ˆ P ( o | e , v ) = f ( o , e , v ) f ( e , v ) ( 14 ) 269 Lapata and Lascarides Logical Metonymy Table 4 Most frequent complements of enjoy and film .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">P ( o | e , v ) = f ( o , e , v</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>f ( enjoy , e ) f ( ﬁlm , e ) play 44 make 176 watch 42 be 154 work with 35 see 89 read 34 watch 65 make 27 show 42 see 24 produce 29 meet 23 have 24 go to 22 use 21 use 17 do 20 take 15 get 18 Although P ( e ) and P ( v | e ) can be estimated straightforwardly from a corpus ( f ( e ) amounts to the number of the times a given verb e is attested , N is the number of verbs found in the corpus ( excluding modals and auxiliaries ) , and P ( v | e ) can be obtained through parsing , by counting the number of times a verb v takes e as its complement ) , the estimation of P ( o | e , v ) is problematic .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of verbs found in the corpus ( excluding modals and auxiliaries ) , and P ( v | e ) can be obtained through parsing , by counting the number of times a verb v takes e as its complement ) , the estimation of P ( o | e , v ) is problematic</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In Section 2.4.1 we introduce a naive model of verbal metonymy that does not take the contribution of the metonymic verb into account ; metonymic interpretations ( i.e. , verbs ) are simply expressed in terms of their conditional dependence on their objects .</sentence>
+				<definiendum id="0">metonymic interpretations</definiendum>
+				<definiens id="0">verbs ) are simply expressed in terms of their conditional dependence on their objects</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>joint distribution of the following variables : the metonymic verb v , its subject s , its object o , and the implicit interpretation e. By choosing the ordering 〈e , v , s , o〉 , wecan factor P ( e , o , s , v ) as follows : P ( e , o , s , v ) =P ( e ) · P ( v | e ) · P ( s | e , v ) · P ( o | e , v , s ) ( 32 ) The terms P ( e ) and P ( v | e ) are easy to estimate from the BNC .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">the metonymic verb v</definiens>
+				<definiens id="1">( v | e ) are easy to estimate from the BNC</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Furthermore , the only type of data available to us for the estimation of P ( s | e , v ) and P ( o | e , v , s ) is the partially parsed BNC , which is not annotated with information regarding the interpretation of metonymies .</sentence>
+				<definiendum id="0">P (</definiendum>
+				<definiens id="0">o | e , v , s ) is the partially parsed BNC , which is not annotated with information regarding the interpretation of metonymies</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>This means that P ( s | e , v ) and P ( o | e , v , s ) need to be approximated somehow .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">( o | e , v , s ) need to be approximated somehow</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Comparison against norming data is a strict test on unseen data that was not constructed explicitly to evaluate our model but is independently motivated and does not take our corpus ( i.e. , the BNC ) or our particular task into account .</sentence>
+				<definiendum id="0">BNC</definiendum>
+				<definiens id="0">a strict test on unseen data</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>This can be expressed as the joint probability P ( a , e , n , rel ) , where e is the verbal predicate modified by the adverb a ( directly derived from the adjective present in the adjectivenoun combination ) bearing the argument relation rel ( i.e. , subject or object ) to the head noun n. By choosing the ordering 〈e , n , a , rel〉 for the variables a , e , n , and rel , wecan rewrite P ( a , e , n , rel ) , using the chain rule , as follows : P ( a , e , n , rel ) =P ( e ) · P ( n | e ) · P ( a | e , n ) · P ( rel | e , n , a ) ( 40 ) Although the terms P ( e ) and P ( n | e ) can be straightforwardly estimated from the BNC ( see ( 12 ) for P ( e ) ; P ( n | e ) can be obtained by counting the number of times a noun n co-occurs with a verb e either as its subject or object ) , the estimation of P ( a | e , n ) and P ( rel | e , n , a ) faces problems similar to those for metonymic verbs .</sentence>
+				<definiendum id="0">e</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiendum id="2">rel</definiendum>
+				<definiendum id="3">n</definiendum>
+				<definiendum id="4">n</definiendum>
+				<definiens id="0">the verbal predicate modified by the adverb a ( directly derived from the adjective present in the adjectivenoun combination ) bearing the argument relation rel ( i.e. , subject or object</definiens>
+				<definiens id="1">the variables a , e , n , and</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>( 62 ) Shakespeare wo yomu Shakespeare ACC read ‘read Shakespeare’ Given a metonymy of the form ARV , the appropriateness of a noun B as an interpretation of A is defined as L Q ( B | A , R , V ) = P ( B | A , Q ) P ( R , V | B ) P ( R , V ) ( 63 ) where V is the verb in the metonymic expression , A is its object , R is A’s case marker ( e.g. , wo ( accusative ) ) , B is the noun A stands for , and Q is the relation Q bears to A ( e.g. , no ) .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiendum id="1">Q</definiendum>
+				<definiens id="0">yomu Shakespeare ACC read ‘read Shakespeare’ Given a metonymy of the form ARV , the appropriateness of a noun B as an interpretation of A is defined as L Q ( B | A , R , V ) = P ( B | A , Q ) P ( R , V | B ) P ( R , V ) ( 63 ) where V is the verb in the metonymic expression , A is its object , R is A’s case marker ( e.g. , wo ( accusative ) ) ,</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>6 WebExp is a set of Java classes for conducting psycholinguistic experiments over the World Wide Web .</sentence>
+				<definiendum id="0">WebExp</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>Selection and Information : A Class-Based Approach to Lexical Relationships .</sentence>
+				<definiendum id="0">Selection</definiendum>
+				<definiendum id="1">Information</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>Here , I is the length of the target string , and J is the length of the source string .</sentence>
+				<definiendum id="0">J</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The argmax operation denotes the search problem ( i.e. , the generation of the output sentence in the target language ) .</sentence>
+				<definiendum id="0">argmax operation</definiendum>
+				<definiens id="0">the generation of the output sentence in the target language )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Berger et al. ( 1994 ) describes the French-to-English Candide translation system , which uses the translation model proposed in Brown et al. ( 1993 ) .</sentence>
+				<definiendum id="0">French-to-English Candide translation system</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>An inverted alignment is defined as follows : inverted alignment : i → j = b i Here , a target position i is mapped to a source position j. The coverage constraint for an inverted alignment is not expressed by the notation : Each source position j should be “hit” exactly once by the path of the inverted alignment b I 1 = b 1 ···b i ···b I .</sentence>
+				<definiendum id="0">inverted alignment</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>sentence e I 1 of length I = J for an observed source sentence f J 1 of length J : max I braceleftBigg p ( J | I ) · max e I 1 { p ( e I 1 ) · p ( f J 1 | e I 1 ) } bracerightBigg ( 2 ) ∼ = max I braceleftBigg p ( J | I ) · max e I 1 braceleftBigg I productdisplay i=1 p ( e i | e i−1 , e i−2 ) · max b I 1 I productdisplay i=1 [ p ( b i | b i−1 , J ) · p ( f b i | e i ) ] bracerightBiggbracerightBigg = max I braceleftBigg p ( J | I ) · max e I 1 , b I 1 braceleftBigg I productdisplay i=1 [ p ( e i | e i−1 , e i−2 ) · p ( b i | b i−1 , J ) · p ( f b i | e i ) ] bracerightBiggbracerightBigg The following notation is used : e i−1 , e i−2 are the immediate predecessor target words , e i is the word to be hypothesized , p ( e i | e i−1 , e i−2 ) denotes the trigram language model probability , p ( f b i | e i ) denotes the lexicon probability for translating the target word e i as source word f b i , and p ( b i | b i−1 , J ) is the distortion probability for covering source position b i after source position b i−1 .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiens id="0">an observed source sentence f J 1 of length J : max I braceleftBigg p ( J | I ) · max e I 1 { p ( e I 1 ) · p ( f J 1 | e I 1</definiens>
+				<definiens id="1">the word to be hypothesized , p ( e i | e i−1</definiens>
+				<definiens id="2">the distortion probability for covering source position b i after source position b i−1</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The final path output by the translation algorithm will contain exactly one triple ( e prime , e , j ) for each source position j. The algorithm processes subsets of partial hypotheses with coverage sets C of increasing cardinality c. For a trigram language model , the partial hypotheses are of the form ( e prime , e , C , j ) , where e prime , e are the last two target words , C is a coverage set for the already covered source positions , and j is the last covered position .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiendum id="1">j</definiendum>
+				<definiens id="0">a coverage set for the already covered source positions</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The complexity of the algorithm is O ( E 3 ·J 2 ·2 J ) , where E is the size of the target language vocabulary .</sentence>
+				<definiendum id="0">E</definiendum>
+				<definiens id="0">the size of the target language vocabulary</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>l min ( C ) =min c/∈C c u ( C ) =card ( { c | c /∈Cand c &lt; r max ( C ) } ) m ( C ) =card ( { c | c ∈Cand c &gt; l min ( C ) } ) w ( C ) =r max ( C ) − l min ( C ) r max ( C ) is the rightmost covered and l min ( C ) is the leftmost uncovered source position .</sentence>
+				<definiendum id="0">c /∈Cand c &lt; r max</definiendum>
+				<definiens id="0">the rightmost covered and l min</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>u ( C ) is the number of “skipped” positions , and m ( C ) is the number of “moved” positions .</sentence>
+				<definiendum id="0">u ( C )</definiendum>
+				<definiens id="0">the number of “skipped” positions</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The function w ( C ) describes the “window” size in which the word reordering takes place .</sentence>
+				<definiendum id="0">function w</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>For each source language word f the list of its possible translations e is sorted according to p ( f | e ) · p uni ( e ) where p uni ( e ) is the unigram probability of the target language word e. Only the best n o target words e are hypothesized during the search process ( e.g. , during the experiments to hypothesize , the best n o = 50 words was sufficient .</sentence>
+				<definiendum id="0">p uni</definiendum>
+				<definiens id="0">the unigram probability of the target language word e. Only the best n o target words e are hypothesized during the search process ( e.g. , during the experiments to hypothesize , the best n o = 50 words was sufficient</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The following evaluation criteria are employed : • WER ( word error rate ) : The WER is computed as the minimum number of substitution , insertion , and deletion operations that have to be performed to convert the generated string into the reference target string .</sentence>
+				<definiendum id="0">WER</definiendum>
+				<definiens id="0">the minimum number of substitution , insertion</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The following two test corpora are used for the translation experiments : TEST-331 : This test set consists of 331 test sentences .</sentence>
+				<definiendum id="0">test set</definiendum>
+				<definiens id="0">consists of 331 test sentences</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The translation probability p dic ( f | e ) for the dictionary entry ( f , e ) is defined as p dic ( f | e ) =    1 N e if ( f , e ) is in dictionary 0 otherwise where N e is the number of source words listed as translations of the target word e. The dictionary probability p dic ( f | e ) is linearly combined with the automatically trained translation probabilities p aut ( f | e ) to obtain smoothed probabilities p ( f | e ) : p ( f | e ) = ( 1 −λ ) · p dic ( f | e ) +λ· p aut ( f | e ) For the translation experiments , the value of the interpolation parameter is fixed at λ = 0.5 .</sentence>
+				<definiendum id="0">translation probability p dic</definiendum>
+				<definiendum id="1">e )</definiendum>
+				<definiendum id="2">e</definiendum>
+				<definiens id="0">p dic ( f | e ) =    1 N e if ( f , e ) is in dictionary 0 otherwise where N</definiens>
+				<definiens id="1">the number of source words listed as translations of the target word e. The dictionary probability p dic ( f | e ) is linearly combined with the automatically trained translation probabilities p aut ( f | e ) to obtain smoothed probabilities p ( f | e ) : p ( f | e ) = ( 1 −λ ) · p dic ( f | e ) +λ· p aut ( f | e ) For the translation experiments</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The German finite verbs bin ( second example ) and k¨onnten ( third example ) are too far away from the personal pronouns ich and Sie ( six c and t C is reported ; for simplicity reasons we do not change the notation .</sentence>
+				<definiendum id="0">German finite verbs bin</definiendum>
+				<definiens id="0">third example ) are too far away from the personal pronouns ich and Sie ( six c</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The following reordering strings are used in this article : Word reordering Description string epsilon1 The empty string denotes the reordering restriction in which ( short : MON ) no reordering is allowed .</sentence>
+				<definiendum id="0">empty string</definiendum>
+				<definiens id="0">the reordering restriction in which ( short : MON ) no reordering is allowed</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Acknowledgments This work has been supported as part of the Verbmobil project ( contract number 01 IV 601 A ) by the German Federal Ministry of Education , Science , Research and Technology and as part of the Eutrans 132 Computational Linguistics Volume 29 , Number 1 project ( ESPRIT project number 30268 ) by the European Community .</sentence>
+				<definiendum id="0">ESPRIT</definiendum>
+				<definiens id="0">project number 30268 ) by the European Community</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>Ambiguity is a central problem in natural language parsing .</sentence>
+				<definiendum id="0">Ambiguity</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Following Hopcroft and Ullman ( 1979 ) , we define a context-free grammar G as a 4-tuple ( N , Σ , A , R ) , where N is a set of nonterminal symbols , Σ is an alphabet , A is a distinguished start symbol in N , and R is a finite set of rules , in which each rule is of the form X → β for some X ∈ N , β ∈ ( N ∪Σ ) ∗ .</sentence>
+				<definiendum id="0">context-free grammar G</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiendum id="2">Σ</definiendum>
+				<definiendum id="3">R</definiendum>
+				<definiendum id="4">, β ∈</definiendum>
+				<definiens id="0">a set of nonterminal symbols ,</definiens>
+				<definiens id="1">a finite set of rules , in which each rule is of the form X → β for some X ∈ N</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A probabilistic context-free grammar is a simple modification of a context-free grammar in which each rule in the grammar has an associated probability P ( β | X ) .</sentence>
+				<definiendum id="0">probabilistic context-free grammar</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The probability of a given tree-sentence pair ( T , S ) derived by n applications of context-free rules LHS i → RHS i ( where LHS stands for “left-hand side , ” RHS for “right-hand side” ) , 1 ≤ i ≤ n , under the PCFG is P ( T , S ) = n productdisplay i=1 P ( RHS i | LHS i ) Booth and Thompson ( 1973 ) specify the conditions under which the PCFG does in fact define a distribution over the possible derivations ( trees ) generated by the underlying grammar .</sentence>
+				<definiendum id="0">LHS</definiendum>
+				<definiens id="0">The probability of a given tree-sentence pair ( T , S ) derived by n applications of context-free rules</definiens>
+				<definiens id="1">1973 ) specify the conditions under which the PCFG does in fact define a distribution over the possible derivations ( trees ) generated by the underlying grammar</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>If the model probabilities P ( T , S ) are the same as the true distribution generating training and test examples , returning the most likely tree under P ( T , S ) will be optimal in terms of minimizing the expected error rate ( number of incorrect trees ) on newly drawn test examples .</sentence>
+				<definiendum id="0">S )</definiendum>
+				<definiens id="0">the same as the true distribution generating training and test examples</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In the Penn Treebank ( Marcus , Santorini , and Marcinkiewicz 1993 ) , which is the source of data for our experiments , the rules are either internal to the tree , where LHS is a nonterminal and RHS is a string of one or more nonterminals , or lexical , where LHS is a part-of-speech tag and RHS is a word .</sentence>
+				<definiendum id="0">LHS</definiendum>
+				<definiendum id="1">RHS</definiendum>
+				<definiendum id="2">LHS</definiendum>
+				<definiendum id="3">RHS</definiendum>
+				<definiens id="0">a nonterminal and</definiens>
+				<definiens id="1">a string of one or more nonterminals , or lexical , where</definiens>
+				<definiens id="2">a part-of-speech tag</definiens>
+				<definiens id="3">a word</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Thus we write a nonterminal as X ( x ) , where x = 〈w , t〉 and X is a constituent label .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a constituent label</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>where |V| is the number of words in the vocabulary and |T| is the number of part-ofspeech tags ) .</sentence>
+				<definiendum id="0">|V|</definiendum>
+				<definiens id="0">the number of words in the vocabulary and |T| is the number of part-ofspeech tags )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The simplest solution would be to use the maximum-likelihood estimate as in equation ( 1 ) , for example , 594 Computational Linguistics Volume 29 , Number 4 estimating the probability associated with S ( bought , VBD ) → NP ( week , NN ) NP ( IBM , NNP ) VP ( bought , VBD ) as P ( NP ( week , NN ) NP ( IBM , NNP ) VP ( bought , VBD ) | S ( bought , VBD ) ) = Count ( S ( bought , VBD ) → NP ( week , NN ) NP ( IBM , NNP ) VP ( bought , VBD ) ) Count ( S ( bought , VBD ) ) But the addition of lexical items makes the statistics for this estimate very sparse : The count for the denominator is likely to be relatively low , and the number of outcomes ( possible lexicalized RHSs ) is huge , meaning that the numerator is very likely to be zero .</sentence>
+				<definiendum id="0">NNP ) VP</definiendum>
+				<definiendum id="1">VBD</definiendum>
+				<definiendum id="2">VBD ) ) Count ( S ( bought , VBD</definiendum>
+				<definiens id="0">possible lexicalized RHSs ) is huge</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The first thing to note is that each internal rule in a lexicalized PCFG has the form 4 P ( h ) → L n ( l n ) ... L 1 ( l 1 ) H ( h ) R 1 ( r 1 ) ... R m ( r m ) ( 2 ) H is the head-child of the rule , which inherits the headword/tag pair h from its parent P. L 1 ( l 1 ) ... L n ( l n ) and R 1 ( r 1 ) ... R m ( r m ) are left and right modifiers of H. Either n or m may be zero , and n = m = 0 for unary rules .</sentence>
+				<definiendum id="0">H</definiendum>
+				<definiens id="0">the form 4 P ( h ) → L n ( l n ) ... L 1 ( l 1 ) H ( h ) R 1 ( r 1 ) ... R m</definiens>
+				<definiens id="1">inherits the headword/tag pair h from its parent P. L 1 ( l 1 ) ... L n ( l n ) and R 1 ( r 1 ) ... R m ( r m ) are left and right modifiers of H. Either n or m may be zero , and n = m = 0 for unary rules</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>They always take the form P ( h ) → w where P is a part-of-speech tag , h is a word-tag pair 〈w , t〉 , and the rule rewrites to just the word w. ( See Figure 2 for examples of lexical rules . )</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">a part-of-speech tag</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>( 2 ) is similar : P ( NP-C ( bill ) , VP-C ( funding ) |VP , VB , was ) =P ( NP-C ( bill ) |VP , VB , was ) ∗ P ( VP-C ( funding ) |VP , VB , was ) is a bad independence assumption .</sentence>
+				<definiendum id="0">=P ( NP-C</definiendum>
+				<definiens id="0">a bad independence assumption</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>12 To use an example to illustrate the problems , take the rule NP ( man ) → NP ( man ) CC ( and ) NP ( dog ) , which has probability P h ( NP|NP , man ) × P l ( STOP|NP , NP , man ) × P r ( CC ( and ) |NP , NP , man ) × P r ( NP ( dog ) |NP , NP , man ) × P r ( STOP|NP , NP , man ) The independence assumptions mean that the model fails to learn that there is always exactly one phrase following the coordinator ( CC ) .</sentence>
+				<definiendum id="0">CC</definiendum>
+				<definiens id="0">STOP|NP , NP , man ) The independence assumptions mean that the model fails to learn that there is always exactly one phrase following the coordinator ( CC )</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>For the preceding example this would give probability P h ( NP|NP , man ) ×P l ( STOP|NP , NP , man ) × P r ( NP ( dog ) , coord=1|NP , NP , man ) × P r ( STOP|NP , NP , man ) × P cc ( CC , and | NP , NP , NP , man , dog ) Note the new type of parameter , P cc , for the generation of the coordinator word and POS tag .</sentence>
+				<definiendum id="0">POS</definiendum>
+				<definiens id="0">STOP|NP , NP , man ) × P cc ( CC , and | NP , NP , NP , man , dog ) Note the new type of parameter , P cc , for the generation of the coordinator word</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Under this model , NP ( Vinken ) → NPB ( Vinken ) , ( , ) ADJP ( old ) would have probability P h ( NPB|NP , Vinken ) × P l ( STOP|NP , NPB , Vinken ) × P r ( ADJP ( old ) , coord=0 , punc=1|NP , NPB , Vinken ) × P r ( STOP|NP , NPB , bought ) × P p ( , ,| NP , NPB , ADJP , Vinken , old ) ( 7 ) P p is a new parameter type for generation of punctuation tag/word pairs .</sentence>
+				<definiendum id="0">ADJP</definiendum>
+				<definiendum id="1">P p</definiendum>
+				<definiens id="0">P p ( , ,| NP , NPB , ADJP , Vinken , old )</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Back-off P h ( H | ... ) P g ( G | ... ) P L1 ( L i ( lt i ) , c , p | ... ) P L2 ( lw i | ... ) level P lc ( LC | ... ) P R1 ( R i ( rt i ) , c , p | ... ) P R2 ( rw i | ... ) P rc ( RC | ... ) i , lt i , c , p , P , H , w , t , ∆ , LC i , lt i , c , p , P , H , t , ∆ , LC 3P , H∆ , LC lt i Table 1 shows the various levels of back-off for each type of parameter in the model .</sentence>
+				<definiendum id="0">LC 3P</definiendum>
+				<definiens id="0">c , p | ... ) P L2 ( lw i | ... ) level P lc ( LC | ... ) P R1 ( R i ( rt i ) , c , p | ... ) P R2 ( rw i | ... ) P rc ( RC | ... ) i , lt i , c , p , P , H , w , t , ∆ , LC i , lt i , c , p , P , H , t , ∆ ,</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Note that we decompose P L ( L i ( lw i , lt i ) , c , p | P , H , w , t , ∆ , LC ) ( where lw i and lt i are the word and POS tag generated with nonterminal L i , c and p are the coord and punc flags associated with the nonterminal , and ∆ is the distance measure ) into the product P L1 ( L i ( lt i ) , c , p | P , H , w , t , ∆ , LC ) × P L2 ( lw i | L i , lt i , c , p , P , H , w , t , ∆ , LC ) These two probabilities are then smoothed separately .</sentence>
+				<definiendum id="0">∆</definiendum>
+				<definiendum id="1">LC</definiendum>
+				<definiens id="0">the distance measure</definiens>
+				<definiens id="1">c , p | P , H , w , t , ∆ ,</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>First , say that the most specific estimate e 1 = n 1 f 1 ; that is , f 1 is the value of the denominator count in the relative frequency estimate .</sentence>
+				<definiendum id="0">First</definiendum>
+			</definition>
+			<definition id="18">
+				<sentence>The algorithm has complexity O ( n 5 ) , where n is the number of words in the string .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of words in the string</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>CBs is the average number of crossing brackets per sentence .</sentence>
+				<definiendum id="0">CBs</definiendum>
+				<definiens id="0">the average number of crossing brackets per sentence</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>A dependency is defined as a triple with the following elements ( see Figure 12 for an example tree and its associated dependencies ) : Table 3 Recall and precision for different constituent types , for section 0 of the treebank with model 2 .</sentence>
+				<definiendum id="0">dependency</definiendum>
+				<definiens id="0">a triple with the following elements</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Label is the nonterminal label ; Proportion is the percentage of constituents in the treebank section 0 that have this label ; Count is the number of constituents that have this label .</sentence>
+				<definiendum id="0">Label</definiendum>
+				<definiendum id="1">Proportion</definiendum>
+				<definiendum id="2">Count</definiendum>
+				<definiens id="0">the nonterminal label ;</definiens>
+				<definiens id="1">the number of constituents that have this label</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Rank Cumulative Percentage Count Relation Recall Precision percentage 1 29.65 29.65 11786 NPB TAG TAG L 94.60 93.46 2 40.55 10.90 4335 PP TAG NP-C R 94.72 94.04 3 48.72 8.17 3248 S VP NP-C L 95.75 95.11 4 54.03 5.31 2112 NP NPB PP R 84.99 84.35 5 59.30 5.27 2095 VP TAG NP-C R 92.41 92.15 6 64.18 4.88 1941 VP TAG VP-C R 97.42 97.98 7 68.71 4.53 1801 VP TAG PP R 83.62 81.14 8 73.13 4.42 1757 TOP TOP S R 96.36 96.85 9 74.53 1.40 558 VP TAG SBAR-C R 94.27 93.93 10 75.83 1.30 518 QP TAG TAG R 86.49 86.65 11 77.08 1.25 495 NP NPB NP R 74.34 75.72 12 78.28 1.20 477 SBAR TAG S-C R 94.55 92.04 13 79.48 1.20 476 NP NPB SBAR R 79.20 79.54 14 80.40 0.92 367 VP TAG ADVP R 74.93 78.57 15 81.30 0.90 358 NPB TAG NPB L 97.49 92.82 16 82.18 0.88 349 VP TAG TAG R 90.54 93.49 17 82.97 0.79 316 VP TAG SG-C R 92.41 88.22 18 83.70 0.73 289 NP NP NP R CC 55.71 53.31 19 84.42 0.72 287 SVPPPL 90.24 81.96 20 85.14 0.72 286 SBAR WHNP SG-C R 90.56 90.56 21 85.79 0.65 259 VP TAG ADJP R 83.78 80.37 22 86.43 0.64 255 S VP ADVP L 90.98 84.67 23 86.95 0.52 205 NP NPB VP R 77.56 72.60 24 87.45 0.50 198 ADJP TAG TAG L 75.76 70.09 25 87.93 0.48 189 NPB TAG TAG R 74.07 75.68 26 88.40 0.47 187 VP TAG NP R 66.31 74.70 27 88.85 0.45 180 VP TAG SBAR R 74.44 72.43 28 89.29 0.44 174 VP VP VP R CC 74.14 72.47 29 89.71 0.42 167 NPB TAG ADJP L 65.27 71.24 30 90.11 0.40 159 VP TAG SG R 60.38 68.57 31 90.49 0.38 150 VP TAG S-C R 74.67 78.32 32 90.81 0.32 129 SSSRCC 72.09 69.92 33 91.12 0.31 125 PP TAG SG-C R 94.40 89.39 34 91.43 0.31 124 QP TAG TAG L 77.42 83.48 35 91.72 0.29 115 S VP TAG L 86.96 90.91 36 92.00 0.28 110 NPB TAG QP L 80.91 81.65 37 92.27 0.27 106 SINV VP NP R 88.68 95.92 38 92.53 0.26 104 S VP S-C L 93.27 78.86 39 92.79 0.26 102 NP NP NP R 30.39 25.41 40 93.02 0.23 90 ADJP TAG PP R 75.56 78.16 41 93.24 0.22 89 TOP TOP SINV R 96.63 94.51 42 93.45 0.21 85 ADVP TAG TAG L 74.12 73.26 43 93.66 0.21 83 SBAR WHADVP S-C R 97.59 98.78 44 93.86 0.20 81 S VP SBAR L 88.89 85.71 45 94.06 0.20 79 VP TAG ADVP L 51.90 49.40 46 94.24 0.18 73 SINV VP S L 95.89 92.11 47 94.40 0.16 63 NP NPB SG R 88.89 81.16 48 94.55 0.15 58 S VP PRN L 25.86 48.39 49 94.70 0.15 58 NX TAG TAG R 10.34 75.00 50 94.83 0.13 53 NP NPB PRN R 45.28 60.00 613 Collins Head-Driven Statistical Models for NL Parsing Table 6 Accuracy for various types/subtypes of dependency ( part 1 ) .</sentence>
+				<definiendum id="0">SBAR WHADVP S-C R 97.59 98.78 44 93.86 0.20 81 S VP SBAR</definiendum>
+			</definition>
+			<definition id="23">
+				<sentence>CBs is the average number of crossing brackets per sentence .</sentence>
+				<definiendum id="0">CBs</definiendum>
+				<definiens id="0">the average number of crossing brackets per sentence</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>Most striking is the way that the probability of STOP increases with increasing distance : from 71 % to 89 % to 98 % in the NP case , from 8 % to 60 % to 96 % in the verb case .</sentence>
+				<definiendum id="0">Most striking</definiendum>
+				<definiens id="0">the way that the probability of STOP increases with increasing distance</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>An alternative to the surface string feature would be a predicate such as were any of the previous modifiers in X , where X is a set of nonterminals that are likely to contain a verb , such as VP , SBAR , S , orSG .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a set of nonterminals that are likely to contain a verb , such as VP , SBAR , S , orSG</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>621 Collins Head-Driven Statistical Models for NL Parsing Figure 17 Alternative annotation styles for a noun phrase with a noun head N , left modifiers X1 , X2 , and right modifiers Y1 , Y2 : ( a ) the Penn Treebank style of analysis ( one level of structure for each bar level , although note that both the nonrecursive and the recursive noun phrases are labeled NP ; ( b ) an alternative but equivalent binary branching representation ; ( a prime ) our modification of the Penn Treebank style to differentiate recursive and nonrecursive NPs ( in some sense NPB is a bar 1 structure and NP is a bar 2 structure ) .</sentence>
+				<definiendum id="0">recursive noun phrases</definiendum>
+				<definiendum id="1">NPB</definiendum>
+				<definiendum id="2">NP</definiendum>
+				<definiens id="0">a bar 1 structure and</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>The spirit of this implementation is that the top-level rules VP → VP PP and NP → NP PP would be modified to VP → VP ( +rverb ) PP and NP → NP ( +rmod ) PP , respectively , where ( +rverb ) means a phrase in which the head has a verb in its right modifiers , and ( +rmod ) means a phrase that has at least one right modifier to the head .</sentence>
+				<definiendum id="0">+rverb )</definiendum>
+			</definition>
+			<definition id="28">
+				<sentence>CBs is the average number of crossing brackets per sentence .</sentence>
+				<definiendum id="0">CBs</definiendum>
+				<definiens id="0">the average number of crossing brackets per sentence</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>The estimation method in model 2 effectively estimates the probability of a rule as P lc ( LC | VP , told ) × P rc ( RC | VP , told ) × P ( Rule | VP , told , LC , RC ) The left and right subcategorization frames , LC and RC , are chosen first .</sentence>
+				<definiendum id="0">LC</definiendum>
+				<definiens id="0">told , LC , RC ) The left and right subcategorization frames</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>Grammatical trigrams : A probabilistic model of link grammar .</sentence>
+				<definiendum id="0">Grammatical trigrams</definiendum>
+				<definiens id="0">A probabilistic model of link grammar</definiens>
+			</definition>
+			<definition id="31">
+				<sentence>TINA : A natural language system for spoken language applications .</sentence>
+				<definiendum id="0">TINA</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>STRAND ( Resnik 1998 , 1999 ) is an architecture for structural translation recognition , acquiring natural data .</sentence>
+				<definiendum id="0">STRAND</definiendum>
+				<definiens id="0">an architecture for structural translation recognition</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A parent page is one that contains hypertext links to different-language versions of a document ; for example , if we were looking for English and French bitexts , the page at the left in Figure 2 would lead us to one such candidate pair .</sentence>
+				<definiendum id="0">parent page</definiendum>
+				<definiens id="0">one that contains hypertext links to different-language versions of a document</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A sibling page is a page in one language that itself contains a link to a version of the same page in another language ; for example , the page at the right of Figure 2 contains a link on the left that says “This page in english.”</sentence>
+				<definiendum id="0">sibling page</definiendum>
+				<definiens id="0">a page in one language that itself contains a link to a version of the same page in another language</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Texts that are translations of one another tend to be similar in length , and it is reasonable to assume that for text E in language 1 and text F in language 2 , length ( E ) ≈ C·length ( F ) , where C is a constant tuned for the language pair .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">reasonable to assume that for text E in language 1 and text F in language 2 , length ( E ) ≈ C·length ( F ) , where</definiens>
+				<definiens id="1">a constant tuned for the language pair</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Sentence-like chunk pairs were defined as those in which the English side was 5–50 whitespace-delimited tokens long and that began with an uppercase alphabetic character and contained at least one token from an English stop list .</sentence>
+				<definiendum id="0">Sentence-like chunk pairs</definiendum>
+				<definiens id="0">those in which the English side was 5–50 whitespace-delimited tokens long and that began with an uppercase alphabetic character and contained at least one token from an English stop list</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>BITS appears to consider all possible combinations of Web page pairs in the two languages ( i.e. , the full cross product within each site ) and filters out bad pairs by using a large bilingual dictionary to compute a content-based similarity score and comparing that score to a threshold .</sentence>
+				<definiendum id="0">BITS</definiendum>
+				<definiens id="0">appears to consider all possible combinations of Web page pairs in the two languages ( i.e. , the full cross product within each site ) and filters out bad pairs by using a large bilingual dictionary to compute a content-based similarity score and comparing that score to a threshold</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>5 In addition to cross-lingual lexical matching , BITS filters out candidate pairs that do not match well in terms of file size , anchors ( numbers , acronyms , and some named entities ) , or paragraph counts .</sentence>
+				<definiendum id="0">BITS</definiendum>
+				<definiens id="0">filters out candidate pairs that do not match well in terms of file size , anchors ( numbers , acronyms , and some named entities ) , or paragraph counts</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In addition , STRAND has been reimplemented by David Martinez and colleagues at Informatika Fakultatea in the Basque Country ( personal communication ) , in order to perform exploratory experiments for discovering English-Basque document pairs .</sentence>
+				<definiendum id="0">STRAND</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>The final lexicon consists of all word pairs with nonzero probability and contains 132,155 entries .</sentence>
+				<definiendum id="0">final lexicon</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>N is the number of examples for which judgment comparison was possible in each case ( human judges were sometimes undecided ; those cases are ignored in computing κ ) .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of examples for which judgment comparison was possible in each case ( human judges were sometimes undecided ; those cases are ignored in computing κ )</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>12 The Internet Archive provides public access to the data via the Wayback Machine Web interface .</sentence>
+				<definiendum id="0">Internet Archive</definiendum>
+				<definiens id="0">provides public access to the data via the Wayback Machine Web interface</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Mining terabytes on the Archive presents a number of challenges : • The Archive is a temporal database , but it is not stored in temporal order .</sentence>
+				<definiendum id="0">Archive</definiendum>
+				<definiens id="0">a temporal database</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>15 The Archive intends to release these cluster tools under the GNU Public License .</sentence>
+				<definiendum id="0">Archive</definiendum>
+				<definiens id="0">intends to release these cluster tools under the GNU Public License</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>30 In contrast , the STRAND collections , which are available to the community in the form of URL pairs , are modest in size : The English-Chinese collection contains fewer than 3,500 document pairs , and the English-French fewer than 2,500 .</sentence>
+				<definiendum id="0">STRAND collections</definiendum>
+				<definiens id="0">The English-Chinese collection contains fewer than 3,500 document pairs</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>However , the Internet Archive’s Wayback Machine provides a way to distribute persistent URLs .</sentence>
+				<definiendum id="0">Internet Archive’s Wayback Machine</definiendum>
+				<definiens id="0">provides a way to distribute persistent URLs</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Parallel strands : A preliminary investigation into mining the Web for bilingual text .</sentence>
+				<definiendum id="0">Parallel strands</definiendum>
+				<definiens id="0">A preliminary investigation into mining the Web for bilingual text</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>The simplest discourse anaphors are coreferential : definite pronouns and definite NPs that denote one ( or more ) discourse referents in focus within the current discourse of the relation between adjacent units within a text , Marcu’s guide to RST annotation ( Marcu 1999 ) has added an “embedded” version of each RST relation in order to handle examples such as ( 24 ) .</sentence>
+				<definiendum id="0">relation</definiendum>
+				<definiens id="0">definite pronouns and definite NPs that denote one ( or more ) discourse referents in focus within the current discourse of the relation between adjacent units within a text , Marcu’s guide to RST annotation ( Marcu 1999 ) has added an “embedded” version of each RST</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>would be written e 4 : upset ( DPRO , s ) ∧ sue ( s ) where DPRO is the anaphoric variable contributed by the demonstrative pronoun this .</sentence>
+				<definiendum id="0">DPRO</definiendum>
+				<definiens id="0">upset ( DPRO , s ) ∧ sue ( s ) where</definiens>
+				<definiens id="1">the anaphoric variable contributed by the demonstrative pronoun this</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>if ( VE , x ) ] σ ≡ if ( VE , σ ) , where complement ( VE , EV ) With variable EV resolved to an eventuality in the discourse context , it is the resulting relation ( viewed as an abstract object ) that serves as one argument to R , with δ serving as the other .</sentence>
+				<definiendum id="0">complement</definiendum>
+				<definiens id="0">variable EV resolved to an eventuality in the discourse context</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Summary We have indicated four ways in which we have found the relation associated with a discourse adverbial to interact with a relation R triggered by adjacency or conveyed by structural connectives or , in some cases , by another relational anaphor : α and R. α ( σ , e i ) is an argument of R. α is parasitic on R. α is a defeasible rule that incorporates R. We do not know whether this list is exhaustive or whether a discourse adverbial always behaves the same way vis-`a-vis other relations .</sentence>
+				<definiendum id="0">e i )</definiendum>
+				<definiens id="0">discourse adverbial to interact with a relation R triggered by adjacency or conveyed by structural connectives or</definiens>
+				<definiens id="1">parasitic on R. α is a defeasible rule that incorporates R. We do not know whether this list is exhaustive or whether a discourse adverbial always behaves the same way vis-`a-vis other relations</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>As shown in Figure 16 , this example involves two initial trees ( α : so , α : because mid ) for the structural connectives so and because ; an auxiliary tree for the structural connective but ( β : but ) , since but functions as a simple conjunction to continue the description of the situation under discussion ; an auxiliary tree ( β : then ) for the discourse adverbial then ; and initial trees for the four individual clauses T1–T4 .</sentence>
+				<definiendum id="0">auxiliary tree</definiendum>
+				<definiens id="0">a simple conjunction to continue the description of the situation under discussion</definiens>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>If that seems too broad , the one qualification we allow relates to the domains and contexts in which the word is used rather than its denotation : A corpus is a collection of texts when considered as an object of language or literary study .</sentence>
+				<definiendum id="0">corpus</definiendum>
+				<definiens id="0">a collection of texts when considered as an object of language or literary study</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Text is an information object , and a computer’s hard disk is as valid a place to go for its realization as the printed page or anywhere else .</sentence>
+				<definiendum id="0">Text</definiendum>
+				<definiens id="0">an information object</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The EU MEANING project ( Rigau et al. 2002 ) takes forward the exploration of the Web as a data source for word sense disambiguation , working from the premise that within a domain , words often have just one meaning , and that domains can be identified on the Web .</sentence>
+				<definiendum id="0">EU MEANING project</definiendum>
+				<definiens id="0">a data source for word sense disambiguation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>AnswerBus ( Zheng 2002 ) will answer questions posed in English , German , French , Spanish , Italian , and Portuguese .</sentence>
+				<definiendum id="0">AnswerBus</definiendum>
+				<definiens id="0">answer questions posed in English , German , French , Spanish , Italian , and Portuguese</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>MEMODATA contains 30,000 entries for five languages : French , English , Italian , German , Spanish .</sentence>
+				<definiendum id="0">MEMODATA</definiendum>
+				<definiens id="0">contains 30,000 entries for five languages : French , English , Italian , German , Spanish</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Web is a dirty corpus , but expected usage is much more frequent than what might be considered noise .</sentence>
+				<definiendum id="0">Web</definiendum>
+				<definiens id="0">a dirty corpus</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The Open Directory Project ( at 〈dmoz.org〉 ) is a collaborative , volunteer project for classifying Web pages into a taxonomic hierarchy .</sentence>
+				<definiendum id="0">Open Directory Project</definiendum>
+				<definiens id="0">a collaborative , volunteer project for classifying Web pages into a taxonomic hierarchy</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>• They do not present enough context for each instance ( Google provides a fragment of around ten words ) .</sentence>
+				<definiendum id="0">Google</definiendum>
+				<definiens id="0">provides a fragment of around ten words )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Web searches could be specified in terms of lemmas , constituents ( e.g. , noun phrase ) , and grammatical relations rather than strings .</sentence>
+				<definiendum id="0">Web searches</definiendum>
+				<definiens id="0">could be specified in terms of lemmas , constituents ( e.g. , noun phrase ) , and grammatical relations rather than strings</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Meaning : A roadmap to knowledge technologies .</sentence>
+				<definiendum id="0">Meaning</definiendum>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>The parser consists of a cascade of stages .</sentence>
+				<definiendum id="0">parser</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>FASTUS uses a five-stage cascaded system , with each stage consisting of nondeterministic finite-state machines .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">uses a five-stage cascaded system , with each stage consisting of nondeterministic finite-state machines</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Here each IG i denotes relevant inflectional features including the part of speech for the root , for the first IG , and for any of the derived forms .</sentence>
+				<definiendum id="0">IG i</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>+Caus : causative verb , PastPart : derived past participle , P3sg : third-person singular possessive agreement , A3sg : third-person singular number-person agreement , +Zero : zero derivation with no overt morpheme , +Pnon : no possessive agreement , +Loc : locative case , +Pos : positive polarity .</sentence>
+				<definiendum id="0">+Pnon</definiendum>
+				<definiendum id="1">+Pos</definiendum>
+				<definiens id="0">causative verb</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Finite-state transducers are finite-state devices with transitions labeled by pairs of symbols ( u : l ) , u denoting the “upper” symbol and l denoting the “lower” symbol .</sentence>
+				<definiendum id="0">Finite-state transducers</definiendum>
+				<definiens id="0">finite-state devices with transitions labeled by pairs of symbols ( u : l ) , u denoting the “upper” symbol</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The symbols L ( eft ) R ( ight ) , M ( iddle ) L , MR , and RL are regular expressions that encode constraints on the bounding channel symbols that are used to enforce some of the configurational constraints described earlier .</sentence>
+				<definiendum id="0">symbols L ( eft ) R</definiendum>
+				<definiens id="0">regular expressions that encode constraints on the bounding channel symbols that are used to enforce some of the configurational constraints described earlier</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Let RightChannelSymbols = [ `` 1 '' | `` 0 '' | `` s '' | `` o '' | `` m '' | `` p '' | `` c '' | `` d '' | `` t '' | `` l '' | `` f '' | `` i '' ] ; and LeftChannelSymbols = [ `` 1 '' | `` 0 '' | `` S '' | `` O '' | `` M '' | `` P '' | `` C '' | `` D '' | `` T '' | `` L '' | `` F '' | `` I '' ] ; These four regular expressions are defined as follows : a. The matching IG is a word-final IG ( has a @ marker ) b. The right-side topmost channel is empty ( channel symbol nearest to ) is 0 ) c. The IG is not linked to any other in any of the lower channels d. No links in any of the lower channels cross into this segment ( that is , there are no 1s in lower channels . )</sentence>
+				<definiendum id="0">LeftChannelSymbols</definiendum>
+				<definiendum id="1">matching IG</definiendum>
+				<definiens id="0">a word-final IG ( has a @ marker ) b. The right-side topmost channel is empty ( channel symbol nearest to ) is 0 ) c. The IG is not linked to any other in any of the lower channels d. No links in any of the lower channels cross into this segment</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>14 The parsing transducer consists of a transducer that inserts an empty channel followed by transducers that implement steps 2 to 4 described at the beginning of section 6.2 .</sentence>
+				<definiendum id="0">parsing transducer</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>o. RemoveBraces ; The transducer AddChannel is a simple transducer that adds a pair of 0 channel symbols around the ( ... ) in the IGs .</sentence>
+				<definiendum id="0">transducer AddChannel</definiendum>
+				<definiens id="0">a simple transducer that adds a pair of 0 channel symbols around the ( ... ) in the IGs</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>o. operator denotes the composition operation ( denoted using ◦ in section 5 ) for finite-state transducers in the XRCE regular expression language .</sentence>
+				<definiendum id="0">o. operator</definiendum>
+				<definiens id="0">the composition operation ( denoted using ◦ in section 5 ) for finite-state transducers in the XRCE regular expression language</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Robinson’s axioms ( see section 3 ) do not seem to disallow cyclic dependency links ( unless the antisymmetry is interpreted to apply over the transitive closure of the “depends on” relationship ) , but configurations involving cycles are not assumed to correspond to legitimate dependency structures .</sentence>
+				<definiendum id="0">Robinson’s axioms</definiendum>
+				<definiens id="0">interpreted to apply over the transitive closure of the “depends on” relationship ) , but configurations involving cycles are not assumed to correspond to legitimate dependency structures</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>When both left-to-right and right-to-left links exists in a grammar , it is conceivable that two left-to-right rules may separately posit two left-to-right links , so that IG A links to IG B , IG B ( or the word-final IG of the word to which B belongs ) links to IG C , and later in a subsequent iteration , a right-to-left rule posits a link from IG C ( or the word-final IG of the word to which C belongs ) to IG A , where IG A precedes IG B , which precedes IG C in linear order .</sentence>
+				<definiendum id="0">IG B</definiendum>
+				<definiendum id="1">IG A precedes IG B</definiendum>
+				<definiens id="0">the word-final IG of the word to which B belongs ) links to IG C</definiens>
+				<definiens id="1">precedes IG C in linear order</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>D 2 ... C ... ... D k ... H where D i are the dependent IGs that are coordinated and C represents the conjunction IGs ( for , ( comma ) , and , and or ) , and H is the head IG , we effectively thread a “long link” ( possibly spanning multiple channels ) from D 1 to H. If the link between D k and H is labeled L , then dependent D i links to the following C with link L , and this C links to D i+1 with L. This is conceptually equivalent to the following : The “logical” link with label L from conjoined dependent X and Y to their head Z is implemented with three actual links of type L : X–and , and–Y , and Y–Z. If there are additional conjunctions and conjuncts , we continue to add ( as required ) one link of type L per word : Linking conjoined dependents ( W and X and Y ) toZ is implemented with links W–and , and–X , X–and , and–Y , and Y–Z. One feature of Turkish simplifies this threading a bit : The left conjunct IG has to immediately precede the conjunction IG .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiendum id="1">IGs</definiendum>
+				<definiendum id="2">H</definiendum>
+				<definiendum id="3">H</definiendum>
+				<definiens id="0">the head IG</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>For instance , for i = 2 , this would be defined as follows : Unlinked_2 = ~ [ [ $ [ `` &lt; `` LeftChannelSymbols* `` ( `` AnyIG `` @ '' `` ) '' [ `` 0 '' | 1 ] * `` &gt; '' ] ] ^ &gt; 2 ] ; which rejects configurations having more than two word-final IGs whose right channel symbols contain only 0s and 1s ( i.e. , they do not link to some other IG as a dependent ) .</sentence>
+				<definiendum id="0">LeftChannelSymbols* `` ( `` AnyIG `` @ '' `` )</definiendum>
+				<definiens id="0">follows : Unlinked_2 = ~</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>We measured the total link length ( TLL ) in a dependency parse counting the IGs the links pass over in the linear representation and ordered the dependency parses based on the TLL of the dependency tree .</sentence>
+				<definiendum id="0">TLL</definiendum>
+				<definiendum id="1">IGs</definiendum>
+				<definiens id="0">the links pass over in the linear representation and ordered the dependency parses based on the TLL of the dependency tree</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>FASTUS : A cascaded finite state transducer for extracting information from natural language text .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>Grammatical trigrams : A probabilistic model of link grammars .</sentence>
+				<definiendum id="0">Grammatical trigrams</definiendum>
+			</definition>
+			<definition id="17">
+				<sentence>FSA utilities : A toolbox to manipulate finite-state automata .</sentence>
+				<definiendum id="0">FSA utilities</definiendum>
+				<definiens id="0">A toolbox to manipulate finite-state automata</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The generation of referring expressions is one of the most common tasks in natural language generation and has been addressed by many researchers in the past two decades , including Appelt ( 1985 ) , Reiter ( 1990 ) , Dale and Haddock ( 1991 ) , Dale ( 1992 ) , Dale and Reiter ( 1995 ) , Horacek ( 1997 ) , Stone and Webber ( 1998 ) , Krahmer and Theune ( 1998 , 2002 ) , Bateman ( 1999 ) , and van Deemter ( 2000 , 2002 ) .</sentence>
+				<definiendum id="0">van Deemter</definiendum>
+				<definiens id="0">one of the most common tasks in natural language generation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For instance , as soon as an upper bound K is defined on the number of edges in a distinguishing graph , the problem loses its intractability ( for relatively small K ) and becomes solvable , in the worst case , in polynomial O ( n K ) time , where n is number of edges in the graph G. Restricting the problem in such a way is rather harmless for our current purposes , as it prohibits the generation only of distinguishing descriptions with more than K properties , and for all practical purposes K can be small ( referring expressions usually express a limited number of properties ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of edges in a distinguishing graph</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>If H = 〈V H , E H 〉 is a subgraph of G , then the costs of H , denoted as cost ( H ) , can be given by summing over the costs associated with the vertices and edges of H. Formally : cost ( H ) = summationdisplay v∈V H cost ( v ) + summationdisplay e∈E H cost ( e ) In fact , this is only one possible way to define a cost function .</sentence>
+				<definiendum id="0">E H 〉</definiendum>
+				<definiens id="0">a subgraph of G , then the costs of H , denoted as cost ( H ) , can be given by summing over the costs associated with the vertices and edges of H. Formally : cost ( H ) = summationdisplay v∈V H cost</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Suppose the scene graph G is as given in Figure 3 and that we want to generate a referring expression for object d 1 62 Computational Linguistics Volume 29 , Number 1 makeReferringExpression ( v ) { bestGraph : = ⊥ ; H : = 〈 { v } , ∅〉 ; return findGraph ( v , bestGraph , H ) ; } findGraph ( v , bestGraph , H ) { if [ bestGraph negationslash= ⊥ and cost ( bestGraph ) ≤ cost ( H ) ] then return bestGraph fi ; distractors : = { n | n ∈ V G ∧ matchGraphs ( v , H , n , G ) ∧ n negationslash= v } ; if distractors = ∅ then return H fi ; for each edge e ∈ G.neighbors ( H ) do I : = findGraph ( v , bestGraph , H + e ) ; if [ bestGraph = ⊥ or cost ( I ) ≤ cost ( bestGraph ) ] then bestGraph : = I fi ; rof ; return bestGraph ; } Figure 6 Sketch of the main function ( makeReferringExpression ) and the subgraph construction function ( findGraph ) .</sentence>
+				<definiendum id="0">return findGraph</definiendum>
+				<definiens id="0">= { n | n ∈ V G ∧ matchGraphs ( v , H , n</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>Quantifiers are elements of natural and logical languages ( such as each , no , and some in English and ∀ and ∃ in predicate calculus ) that have certain semantic properties .</sentence>
+				<definiendum id="0">Quantifiers</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>ˆ P ( c ) represents the empirical prior probability of a class c , and k is simply a constant ( .25 in this case ) chosen to try to get a mix of features for different classes at the top of the list .</sentence>
+				<definiendum id="0">ˆ P ( c )</definiendum>
+				<definiens id="0">the empirical prior probability of a class c</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The probability of a word string w 1−n is therefore defined as in equation ( 4 ) , where Q ranges over all possible Q-structures in the set Q and S ranges over all possible syntactic structures in the set S. P ( w 1−n ) = summationdisplay S∈S , Q∈Q P ( S , Q | w 1−n ) ( 4 ) = summationdisplay S∈S , Q∈Q P ( S | w 1−n ) P ( Q | S , w 1−n ) ( 5 ) Equation ( 5 ) shows how we can use the definition of conditional probability to break our calculation of the language model probability into two parts .</sentence>
+				<definiendum id="0">probability of a word string w 1−n</definiendum>
+				<definiendum id="1">Q</definiendum>
+				<definiens id="0">ranges over all possible Q-structures in the set Q and S ranges over all possible syntactic structures in the set S. P ( w 1−n ) = summationdisplay S∈S</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The first of these parts , P ( S | w 1−n ) , which we may abbreviate as simply P ( S ) , is the probability of a particular syntactic tree structure’s being assigned to a particular word string .</sentence>
+				<definiendum id="0">P ( S | w 1−n</definiendum>
+				<definiens id="0">the probability of a particular syntactic tree structure’s being assigned to a particular word string</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>As noted above , we model syntax as a probabilistic phrase structure grammar ( PCFG ) , and in particular , we use a treebank grammar ( Charniak 1996 ) trained on the Penn Treebank .</sentence>
+				<definiendum id="0">PCFG</definiendum>
+				<definiens id="0">a probabilistic phrase structure grammar (</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A PCFG defines the probability of a string of words as the sum of the probabilities of all admissible phrase structure parses ( trees ) for that string .</sentence>
+				<definiendum id="0">PCFG</definiendum>
+				<definiens id="0">the probability of a string of words as the sum of the probabilities of all admissible phrase structure parses ( trees ) for that string</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>That is , for each rule N → φ used in the treebank , we add the rule to the grammar and set its probability to C ( N→φ ) summationtext ψ C ( N→ψ ) , where C ( · ) denotes the “count” or a rule ( i.e. , the number of times it is used in the corpus ) .</sentence>
+				<definiendum id="0">C ( · )</definiendum>
+				<definiens id="0">the “count” or a rule ( i.e. , the number of times it is used in the corpus )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>“TOP” is a special “start” symbol that may expand to any of the symbols found at the root of a tree in the corpus .</sentence>
+				<definiendum id="0">“TOP”</definiendum>
+				<definiens id="0">a special “start” symbol that may expand to any of the symbols found at the root of a tree in the corpus</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Appendix : Selected Codes Used to Annotate Syntactic Categories in the Penn Treebank , from Marcus et al. ( 1993 ) and Bies et al. ( 1995 ) Part-of-speech tags Tag Meaning Tag Meaning CC Conjunction RB Adverb CD Cardinal number RBR Comparative adverb DT Determiner RBS Superlative adverb IN Preposition TO “to” JJ Adjective UH Interjection JJR Comparative adjective VB Verb in base form JJS Superlative adjective VBD Past-tense verb NN Singular or mass noun VBG Gerundive verb NNS Plural noun VBN Past participial verb NNP Singular proper noun VBP Non-3sg , presentNNPS Plural proper noun tense verb PDT Predeterminer VBZ 3sg , present-tense verb PRP Personal pronoun WP WH pronoun PRP $ Possessive pronoun WP $ Possessive WH pronoun 95 Higgins and Sadock Modeling Scope Preferences Phrasal categories Code Meaning Code Meaning ADJP Adjective phrase SBAR Clause introduced by ADVP Adverb phrase a subordinating INTJ Interjection conjunction NP Noun phrase SBARQ Clause introduced by PP Prepositional phrase a WH phrase QP Quantifier phrase ( i.e. , SINV Inverted declarative measure/amount sentence phrase ) SQ Inverted yes/no S Declarative clause question following the WH phrase in SBARQ VP Verb phrase Acknowledgments The authors are grateful for an Academic Technology Innovation Grant from the University of Chicago , which helped to make this work possible , and to John Goldsmith , Terry Regier , Anne Pycha , and Bob Moore , whose advice and collaboration have considerably aided the research reported in this article .</sentence>
+				<definiendum id="0">WH phrase QP Quantifier phrase</definiendum>
+				<definiens id="0">categories Code Meaning Code Meaning ADJP Adjective phrase SBAR Clause introduced by ADVP Adverb phrase a subordinating INTJ Interjection conjunction NP Noun phrase SBARQ Clause introduced by PP Prepositional phrase a</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Logical Form : Its Structure and Derivation .</sentence>
+				<definiendum id="0">Logical Form</definiendum>
+				<definiens id="0">Its Structure and Derivation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>The GA model consists of a population with a number of chromosomes , each representing a possible vowel system .</sentence>
+				<definiendum id="0">GA model</definiendum>
+				<definiens id="0">consists of a population with a number of chromosomes , each representing a possible vowel system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For the first criterion , the objective is to minimize the following fitness function : F 1 = n−1 summationdisplay i=1 n summationdisplay j=i+1 1 d 2 ij ( 1 ) where d ij is the perceptual distance between vowels i and j. Various metrics for calculating perceptual distance between vowels have been proposed based on perceptual experiments manipulating different combinations of formants and amplitudes of speech signals ( Schwartz et al. 1997a ) .</sentence>
+				<definiendum id="0">objective</definiendum>
+				<definiens id="0">metrics for calculating perceptual distance between vowels have been proposed based on perceptual experiments manipulating different combinations of formants</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A tone language is a language having lexically contrastive pitch on each syllable ( Pike 1948 ) .</sentence>
+				<definiendum id="0">tone language</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Markedness is a method of representing the linguist’s knowledge of a phonological system .</sentence>
+				<definiendum id="0">Markedness</definiendum>
+				<definiens id="0">a method of representing the linguist’s knowledge of a phonological system</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>Finding relevant information in any language on the increasingly multilingual World Wide Web poses a real challenge for current information retrieval ( IR ) systems .</sentence>
+				<definiendum id="0">IR</definiendum>
+				<definiens id="0">information in any language on the increasingly multilingual World Wide Web poses a real challenge for current information retrieval</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Current search engines do not provide the functionality for cross-language IR ( CLIR ) , that is , the ability to retrieve relevant documents written in languages different from that of the query ( without the query’s being translated manually into the other language ( s ) of interest ) .</sentence>
+				<definiendum id="0">CLIR</definiendum>
+				<definiens id="0">that is , the ability to retrieve relevant documents written in languages different from that of the query ( without the query’s being translated manually into the other language ( s ) of interest )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>From a more theoretical point of view , CLIR is a process that , taken as a whole , is composed of query translation , document indexing , and document matching .</sentence>
+				<definiendum id="0">CLIR</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The challenge for CLIR is to measure to what extent these concepts ( or word senses ) are related .</sentence>
+				<definiendum id="0">challenge for CLIR</definiendum>
+				<definiens id="0">to measure to what extent these concepts ( or word senses ) are related</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>An alternative way of integrating translation and IR is to create “structured queries , ” in which translations are modeled as synonyms ( Pirkola 1998 ) .</sentence>
+				<definiendum id="0">IR</definiendum>
+				<definiens id="0">to create “structured queries , ” in which translations are modeled as synonyms</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>LDC has tried to collect additional parallel corpora , resorting at times to manual collection ( Ma 1999 ) .</sentence>
+				<definiendum id="0">LDC</definiendum>
+				<definiens id="0">has tried to collect additional parallel corpora , resorting at times to manual collection</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>SILC employs n-gram statistical language models to determine the most probable language and encoding schema for a text .</sentence>
+				<definiendum id="0">SILC</definiendum>
+				<definiens id="0">employs n-gram statistical language models to determine the most probable language and encoding schema for a text</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Stemming is an IR technique whereby morphologically related word forms are reduced to a common form : a stem .</sentence>
+				<definiendum id="0">Stemming</definiendum>
+				<definiens id="0">an IR technique whereby morphologically related word forms are reduced to a common form : a stem</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Stemming is a form of conflation : Equivalence classes of tokens help to reduce the variance in index terms .</sentence>
+				<definiendum id="0">Stemming</definiendum>
+				<definiens id="0">a form of conflation : Equivalence classes of tokens help to reduce the variance in index terms</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Suffix strippers remove suffixes in an iterative fashion using rudimental morphological knowledge encoded in context-sensitive patterns .</sentence>
+				<definiendum id="0">Suffix strippers</definiendum>
+				<definiens id="0">remove suffixes in an iterative fashion using rudimental morphological knowledge encoded in context-sensitive patterns</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>English-French English-Italian Number of 1-1 alignments 1018K 196K Number of tokens 6.7M/7.1M 1.2M/1.3M Number of unique stems 200K/173K 102K/87K P ( T | S ) , where S is a source language text and T is a target language text .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">T</definiendum>
+				<definiens id="0">a source language text</definiens>
+				<definiens id="1">a target language text</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Typically , P ( T | S ) is rewritten as P ( T | S ) = P ( T ) P ( S | T ) P ( S ) following Bayes’ law .</sentence>
+				<definiendum id="0">P ( T | S</definiendum>
+				<definiens id="0">P ( T | S ) = P ( T ) P ( S | T ) P ( S ) following Bayes’ law</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The P ( s | t ) distribution is estimated from a corpus of aligned sentences like the one we have produced from our Web-mined collection of bilingual documents , using the expectation maximization ( EM ) algorithm ( Baum 1972 ) to find the parameters that maximize the likelihood of the training set .</sentence>
+				<definiendum id="0">P (</definiendum>
+				<definiens id="0">s | t ) distribution is estimated from a corpus of aligned sentences like the</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>We have opted for a simple approach that addresses both issues , namely , applying a smoothing step based on linear interpolation with a background model estimated on a large document collection , since we do not have a collection of millions of queries : log P ( Q | D ) = n summationdisplay i=1 c ( Q , τ i ) log ( ( 1 −λ ) P ( τ i | M D ) +λP ( τ i | M C ) ) ( 3 ) Here , P ( τ i | M C ) denotes the marginal probability of observing the term τ i , which can be estimated on a large background corpus , and λ is the smoothing parameter .</sentence>
+				<definiendum id="0">λ</definiendum>
+				<definiens id="0">the marginal probability of observing the term τ i , which can be estimated on a large background corpus</definiens>
+				<definiens id="1">the smoothing parameter</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The score of a document that misses important terms should be lowered more than that of a document that misses an unimportant term .</sentence>
+				<definiendum id="0">score of a document</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>Symbol Explanation Q Query has representation Q = { T 1 , T 2 , ... , T n } D Query has representation D = { T 1 , T 2 , ... , T n } M Q Query language model M D Document language model M C Background language model τ i index term s i term in the source language t i term in the target language λ smoothing parameter c ( x ) counts of x that scores be comparable across different queries ( Spitters and Kraaij 2001 ) .</sentence>
+				<definiendum id="0">Symbol Explanation Q Query</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>The model measures how much better than the background model the document model can encode events from the query model ; or in information-theoretic terms , it can be interpreted as the difference between two cross entropies : NLLR ( Q | D ) = n summationdisplay i=1 P ( τ i | Q ) log P ( τ i | D k ) P ( τ i | C ) = H ( X | c ) − H ( X | d ) ( 7 ) In ( 7 ) , X is a random variable with the probability distribution p ( τ i ) =p ( τ i | M Q ) , and c and d are probability mass functions representing the marginal distribution and the document model .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a random variable with the probability distribution p ( τ i ) =p ( τ i | M Q ) , and c</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>CLIR is a special case of ad hoc retrieval , and usually a document length–based prior can enhance results significantly .</sentence>
+				<definiendum id="0">CLIR</definiendum>
+				<definiens id="0">a special case of ad hoc retrieval</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>We will do this by decomposing the problem into two components that are easier to estimate : P ( t i | M Q s ) = L summationdisplay j P ( s j , t i | M Q s ) = L summationdisplay j P ( t i | s j , M Q s ) P ( s j | M Q s ) ≈ L summationdisplay j P ( t i | s j ) P ( s j | M Q s ) ( 8 ) where L is the size of the source vocabulary .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">easier to estimate : P ( t i | M Q s ) = L summationdisplay j P ( s j , t i | M Q s ) = L summationdisplay j P ( t i | s j , M Q s ) P ( s j | M Q s ) ≈ L summationdisplay j P ( t i | s j ) P ( s j | M Q s ) ( 8 ) where</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Now we can substitute the query model P ( τ i | M Q ) in formula ( 7 ) with the target language query model in ( 8 ) and , after a similar substitution operation for P ( τ i | M C ) , we arrive at CLIR model QT : NLLR-QT ( Q s | D t ) = n summationdisplay i=1 L summationdisplay j=1 P ( t i | s j ) P ( s j | M Q s ) log ( 1 −λ ) P ( t i | M D t ) +λP ( t i | M C t ) P ( t i | M C t ) ( 9 ) Another way to embed translation into the IR model is to estimate the document model in the source language : P ( s i | M D t ) = N summationdisplay j P ( s i , t j | M D t ) = N summationdisplay j P ( s i | t j , M D t ) P ( t j | M D t ) ≈ N summationdisplay j P ( s i | t j ) P ( t j | M D t ) ( 10 ) where N is the size of the target vocabulary .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">NLLR-QT ( Q s | D t</definiens>
+				<definiens id="1">Another way to embed translation into the IR model is to estimate the document model in the source language : P ( s i | M D t ) = N summationdisplay j P ( s i , t j | M D t ) = N summationdisplay j P ( s i | t j , M D t ) P ( t j | M D t ) ≈ N summationdisplay j P ( s i | t j</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>The synonym operator for CLIR can be formalized as the following class equivalence model ( assuming n translations t j for term s i and N unique terms in the target language ) : P ( class ( s i ) | M D t ) = summationtext n j c ( t j , D t ) summationtext N j c ( t j , D t ) = N summationdisplay j δ ( s i , t j ) P ( t j | M D t ) ( 12 ) 403 Kraaij , Nie , and Simard Embedding Web-Based Statistical Models in CLIR where P ( class ( s i ) | M D t ) is the probability that a member of the equivalence class of s i is generated by the language model M D t and δ ( s i , t j ) = braceleftBigg 1ift j ∈ class ( s i ) 0ift j /∈ class ( s i ) ( 13 ) Here c ( t j , D t ) is the term frequency ( counts ) of term t j in document D t .</sentence>
+				<definiendum id="0">synonym operator for CLIR</definiendum>
+				<definiens id="0">the following class equivalence model ( assuming n translations t j for term s i and N unique terms in the target language ) : P ( class ( s i ) | M D t ) = summationtext n j c</definiens>
+				<definiens id="1">the term frequency ( counts ) of term t j in document D t</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>( Relevance judgments are a human-produced resource that states , for a subset of a document collection , whether a document is relevant for a particular query . )</sentence>
+				<definiendum id="0">Relevance judgments</definiendum>
+				<definiens id="0">a human-produced resource that states , for a subset of a document collection</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Each CLEF topic consists of three parts : title , description , and narrative .</sentence>
+				<definiendum id="0">CLEF topic</definiendum>
+			</definition>
+			<definition id="23">
+				<sentence>The corresponding precision at this rank number is defined as the number of relevant documents found in the ranks equal to or higher than the respective rank r divided by n. Relevant documents that are not retrieved are assigned a precision of zero .</sentence>
+				<definiendum id="0">corresponding precision</definiendum>
+			</definition>
+			<definition id="24">
+				<sentence>The average precision for a given query is defined as the average value of the precision pr over all known relevant documents d ij for that query .</sentence>
+				<definiendum id="0">average precision for a given query</definiendum>
+				<definiens id="0">the average value of the precision pr over all known relevant documents d ij for that query</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>Finally , the mean average precision can be calculated by averaging the average precision over all M queries : MAP = 1 M M summationdisplay j=1 1 N j N j summationdisplay i=1 pr ( d ij ) , where pr ( d ij ) = braceleftbigg r n i n i , ifd ij retrieved and n i ≤ C 0 , in other cases ( 14 ) Here , n i denotes the rank of the document d ij , which has been retrieved and is relevant for query j , r n i is the number of relevant documents found up to and including rank n i , N j is the total number of relevant documents of query j , M is the total number of queries , and C is the cutoff rank ( C is 1,000 for TREC experiments ) .</sentence>
+				<definiendum id="0">mean average precision</definiendum>
+				<definiendum id="1">N j</definiendum>
+				<definiendum id="2">M</definiendum>
+				<definiendum id="3">C</definiendum>
+				<definiens id="0">d ij ) , where pr ( d ij ) = braceleftbigg r n i n i , ifd ij retrieved and n i ≤ C 0 , in other cases ( 14 ) Here , n i denotes the rank of the document d ij , which has been retrieved and is relevant for query j , r n i is the number of relevant documents found up to and including rank n i</definiens>
+				<definiens id="1">the total number of relevant documents of query j ,</definiens>
+				<definiens id="2">the total number of queries , and</definiens>
+				<definiens id="3">1,000 for TREC experiments )</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>An equivalence class is a group of runs that do not differ significantly ( e.g. , in terms of mean average precision ) from one another in terms of performance .</sentence>
+				<definiendum id="0">equivalence class</definiendum>
+				<definiens id="0">a group of runs that do not differ significantly</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>The comparison of the naive dictionary-like replacement method , which does not involve any normalization for the number of translations per term ( NAIVE ) , with QTEQ shows that normalization ( i.e. a minimal probabilistic embedding ) is essential .</sentence>
+				<definiendum id="0">NAIVE</definiendum>
+				<definiens id="0">does not involve any normalization for the number of translations per term (</definiens>
+				<definiens id="1">a minimal probabilistic embedding ) is essential</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>We devised two supplementary pruning techniques that effectively removed the 20 Another method that interprets multiple translations as synonyms is a special case of the latter .</sentence>
+				<definiendum id="0">synonyms</definiendum>
+				<definiens id="0">a special case of the latter</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>Consider a simple example like the following , taken from a patient information leaflet ( PIL ) : ( 1 ) Are you taking any of the following : • Anticoagulants ?</sentence>
+				<definiendum id="0">PIL</definiendum>
+				<definiens id="0">a simple example like the following , taken from a patient information leaflet</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( b ) Elixir is a white cream .</sentence>
+				<definiendum id="0">Elixir</definiendum>
+				<definiens id="0">a white cream</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( c ) Elixir is a white cream .</sentence>
+				<definiendum id="0">c ) Elixir</definiendum>
+				<definiens id="0">a white cream</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>STOP USING THE CREAM B AND TELL YOUR DOCTOR AS SOON AS POSSIBLE C ( Betnovate leaflet , Glaxo ; from APBI 1997 ) Careful reading of the text , combined with world knowledge , suggests that the following logical condition holds between the propositional content of A and the pair B and C : IF &lt; condition of patient worsens during treatment &gt; THEN &lt; patient must stop taking cream &gt; AND &lt; patient must tell patient’s doctor &gt; ENDIF In other words , the rhetorical relation of condition holds between A as satellite and the complex of B and C ( joined by a list relation ) as nucleus .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">Careful reading of the text , combined with world knowledge , suggests that the following logical condition holds between the propositional content of A and the pair B and</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>We will describe here the formal theory of document structure that we have developed as part of the ICONOCLAST system ( Power 2000 ; Bouayad-Agha , Power , and Scott 2000 ; Bouayad-Agha 2000 ; Bouayad-Agha , Scott , and Power 2001 ) , which generates multiple versions of the same message in different styles ( i.e. , with different wording and layout ) .</sentence>
+				<definiendum id="0">ICONOCLAST system</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>to L 5 ( chapter ) or whatever hierarchy of units the author decides to employ ; the indentation is a value in the range I 0 ... I Max , where I 0 means that the unit is not indented at all , I 1 means it is indented one place , and so forth , with I Max representing the deepest embedding that the author is prepared to contemplate .</sentence>
+				<definiendum id="0">indentation</definiendum>
+				<definiendum id="1">I 0</definiendum>
+				<definiens id="0">a value in the range I 0 ... I Max , where</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>cur in the same text-clause or in different text-clauses ( or higher units ) but must be ordered so that the discourse connective is located in the final span ( i.e. , the second span in the case of a nucleus-satellite relation ) : ( 27 ) Elixir has no significant side effects , but never give it to other patients .</sentence>
+				<definiendum id="0">Elixir</definiendum>
+				<definiens id="0">has no significant side effects , but never give it to other patients</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>• If N R is a nonterminal node , labeled with a rhetorical relation , what discourse connective ( if any ) should express this relation in the document structure ?</sentence>
+				<definiendum id="0">N R</definiendum>
+				<definiens id="0">a nonterminal node , labeled with a rhetorical relation</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The value must lie in the range 1 ... S , where S is the total number of sisters ( including N R ) .</sentence>
+				<definiendum id="0">S</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>Root Indentation : It makes no sense for a whole document to be an indented item , so to realize the root constituent C we may stipulate that indentation ( C ) = I 0 .</sentence>
+				<definiendum id="0">Root Indentation</definiendum>
+				<definiens id="0">It makes no sense for a whole document to be an indented item , so to realize the root constituent C we may stipulate that indentation ( C ) = I 0</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>This time the constraint Coordinating Conjunction applies , fixing the position values but leaving several possiblities for level : Constituent Level Indentation Position Connective A ( approve ) { L 0 ... L 2 } I 0 P 2 C 0 B ( ban ) { L 0 ... L 2 } I 0 P 1 C 0 C ( concession ) L 3 I 0 P 1 C but Enumerating on one of the level variables , for instance , level ( A ) , we can now try in turn the values L 0 , L 1 , and L 2 ( text-phrase , text-clause , and text-sentence ) ; by Sister Equality , any choice will be copied across to level ( B ) , so that we obtain only three further solutions rather than nine : Solution 3 : The FDA bans Elixir , but it approves ElixirPlus .</sentence>
+				<definiendum id="0">level</definiendum>
+				<definiens id="0">The FDA bans Elixir , but it approves ElixirPlus</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Here is a simple example of this defect ( repetition of although ) , followed by an alternative solution that avoids the defect : The FDA approves ElixirPlus although it bans Elixir although Elixir has been thoroughly tested .</sentence>
+				<definiendum id="0">FDA</definiendum>
+				<definiens id="0">approves ElixirPlus although it bans Elixir although Elixir has been thoroughly tested</definiens>
+			</definition>
+</paper>
+
+		<paper id="4004">
+			<definition id="0">
+				<sentence>For selectional preference acquisition we applied the analysis system to the 90 million words of the written portion of the British National Corpus ( BNC ) ; the parser produced complete analyses for around 60 % of the sentences and partial analyses for over 95 % of the remainder .</sentence>
+				<definiendum id="0">National Corpus</definiendum>
+				<definiens id="0">the parser produced complete analyses for around 60 % of the sentences and partial analyses for over 95 % of the remainder</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Our method exploits the hyponym links given for nouns ( e.g. , cheese is a hyponym of food ) , the troponym links for verbs 2 ( e.g. , limp is a troponym of walk ) , and the “similar-to” relationship given for adjectives ( e.g. , one sense of cheap is similar to flimsy ) .</sentence>
+				<definiendum id="0">cheese</definiendum>
+				<definiendum id="1">limp</definiendum>
+				<definiens id="0">a troponym of walk )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Let NC be the set of noun synsets ( noun classes ) in WordNet : NC = { nc ∈ WordNet } , and NS be the set of noun senses 3 in Wordnet : NS = { ns ∈ WordNet } .</sentence>
+				<definiendum id="0">NS</definiendum>
+				<definiens id="0">NS = { ns ∈ WordNet }</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>MDL finds the best TCM by considering the cost ( in bits ) of describing both the model and the argument head data encoded in the model .</sentence>
+				<definiendum id="0">MDL</definiendum>
+				<definiens id="0">finds the best TCM by considering the cost ( in bits ) of describing both the model and the argument head data encoded in the model</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>N is the sample of the argument head data .</sentence>
+				<definiendum id="0">N</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Precision ( % ) Baseline precision ( % ) Nouns 58.5 51.7 Polysemous nouns 36.8 25.8 Verbs 40.9 29.7 Polysemous verbs 38.1 25.3 Adjectives 49.8 48.6 Polysemous adjectives 35.5 24.0 Nouns , verbs , and adjectives 51.1 44.9 Polysemous nouns , verbs , and adjectives 36.8 27.3 do not include in the following the coarse-grained results ; they are just slightly better than the fine-grained results , which seems to be typical of other systems .</sentence>
+				<definiendum id="0">Precision ( % ) Baseline precision</definiendum>
+				<definiens id="0">seems to be typical of other systems</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Light and Greiff ( 2002 ) summarize some earlier WSD results for automatically acquired selectional preferences .</sentence>
+				<definiendum id="0">Light</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>We define an alignment between the two word strings as a subset of the Cartesian product of the word positions ; that is , an 21 Och and Ney Comparison of Statistical Alignment Models alignment A is defined as A⊆ { ( j , i ) : j = 1 , ... , J ; i = 1 , ... , I } ( 1 ) Modeling the alignment as an arbitrary relation between source and target language positions is quite general .</sentence>
+				<definiendum id="0">Alignment Models alignment A</definiendum>
+				<definiens id="0">an alignment between the two word strings as a subset of the Cartesian product of the word positions ; that is , an 21 Och and Ney Comparison of Statistical</definiens>
+				<definiens id="1">an arbitrary relation between source and target language positions is quite general</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>the translation probability Pr ( f J 1 | e I 1 ) , which describes the relationship between a source language string f J 1 and a target language string e I 1 .</sentence>
+				<definiendum id="0">translation probability Pr</definiendum>
+				<definiens id="0">describes the relationship between a source language string f J 1 and a target language string e I 1</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>C ( e ) and C ( f ) denote the count of e in the target sentences and the count of f in the source sentences , respectively .</sentence>
+				<definiendum id="0">C ( f</definiendum>
+				<definiens id="0">the count of e in the target sentences and the count of f in the source sentences , respectively</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The fertility φ i of a word e i in position i is defined as the number of aligned source words : φ i = summationdisplay j δ ( a j , i ) ( 19 ) The fertility-based alignment models contain a probability p ( φ | e ) that the target word e is aligned to φ words .</sentence>
+				<definiendum id="0">fertility-based alignment models contain</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Fertility-based alignment models use the following decomposition and assumptions : 2 Pr ( f J 1 , a J 1 | e I 1 ) =Pr ( f J 1 , B I 0 | e I 1 ) ( 21 ) = Pr ( B 0 | B I 1 ) · I productdisplay i=1 Pr ( B i | B i−1 1 , e I 1 ) ·Pr ( f J 1 | B I 0 , e I 1 ) ( 22 ) = p ( B 0 | B I 1 ) · I productdisplay i=1 p ( B i | B i−1 , e i ) · I productdisplay i=0 productdisplay j∈B i p ( f j | e i ) ( 23 ) As might be seen from this equation , we have tacitly assumed that the set B 0 of words aligned with the empty word is generated only after the nonempty positions have and Mercer ( 1993 ) includes a more refined derivation of the fertility-based alignment models .</sentence>
+				<definiendum id="0">Fertility-based alignment models</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The HMM predicts the distance between subsequent source language positions , whereas Model 4 predicts the distance between subsequent target language positions .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">predicts the distance between subsequent source language positions</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In general , we can perform a log-linear combination of several models p k ( f , a | e ) , k = 1 , ... , K by p 6 ( f , a | e ) = producttext K k=1 p k ( f , a | e ) α k summationtext a prime , f prime producttext K k=1 p k ( f prime , a prime | e ) α k ( 30 ) The interpolation parameters α k are determined in such a way that the alignment quality on held-out data is optimized .</sentence>
+				<definiendum id="0">f</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>In the M-step , the lexicon parameters are computed : p ( f | e ) = summationtext s c ( f | e ; f s , e s ) summationtext s , f c ( f | e ; f s , e s ) ( 36 ) Similarly , the alignment and fertility probabilities can be estimated for all other alignment models ( Brown , Della Pietra , Della Pietra , and Mercer 1993 ) .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">s , e s ) summationtext s , f c ( f | e ; f s , e s ) ( 36 ) Similarly , the alignment and fertility probabilities can be estimated for all other alignment models ( Brown</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The alignment probability is set to p ( j | i , J ) =1/J for each source word aligned with the empty word .</sentence>
+				<definiendum id="0">alignment probability</definiendum>
+				<definiens id="0">each source word aligned with the empty word</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The neighborhood N ( a ) of an alignment a is then defined as the set of all alignments that differ by one move or one swap from alignment a : N ( a ) = { a prime : ∃ i , j : a prime = m [ i , j ] ( a ) ∨∃ j 1 , j 2 : a prime = s [ j 1 , j 2 ] ( a ) } ( 43 ) For one step of the greedy search algorithm , we define the following hill-climbing operator ( for Model 3 ) , which yields for an alignment a the most probable alignment b ( a ) in the neighborhood N ( a ) : b ( a ) =argmax a prime ∈N ( a ) p 3 ( a prime | e , f ) ( 44 ) Similarly , we define a hill-climbing operator for the other alignment models .</sentence>
+				<definiendum id="0">neighborhood N ( a ) of an alignment</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the set of all alignments that differ by one move or one swap from alignment a</definiens>
+				<definiens id="1">a prime = s [ j 1 , j 2 ] ( a ) } ( 43 ) For one step of the greedy search algorithm</definiens>
+				<definiens id="2">yields for an alignment a the most probable alignment b ( a ) in the neighborhood N ( a ) : b ( a ) =argmax a prime ∈N ( a ) p 3 ( a prime | e , f ) ( 44 ) Similarly</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>To efficiently obtain the alignment and lexicon probability counts , we introduce the following auxiliary quantities that use the move and swap matrices that are available after performing the hill climbing described above : • probability of all alignments in the neighborhood N ( a ) : Pr ( N ( a ) | e , f ) = summationdisplay a prime ∈N ( a ) Pr ( a prime | e , f ) ( 53 ) = Pr ( a | e , f ) ·   1 + summationdisplay i , j M ij + summationdisplay j , j prime S jj prime   ( 54 ) • probability of all alignments in the neighborhood N ( a ) that differ in position j from alignment a : Pr ( N j ( a ) | e , f ) = summationdisplay a prime ∈N ( a ) Pr ( a prime | e , f ) ( 1 −δ ( a j , a prime j ) ) ( 55 ) = Pr ( a | e , f )   summationdisplay i M ij + summationdisplay j prime ( S jj prime + S j prime j )   ( 56 ) For the alignment counts c ( j | i ; e , f ) and the lexicon counts c ( f | e ; e , f ) , we have c ( j | i ; e , f ) = braceleftBigg Pr ( N ( a ) | e , f ) −Pr ( N j ( a ) | e , f ) if i=a j Pr ( a | e , f ) parenleftBig M ij + summationtext j prime δ ( a j prime , i ) · ( S jj prime+S j prime j ) parenrightBig if inegationslash=a j ( 57 ) c ( f | e ; e , f ) = summationdisplay i summationdisplay j c ( j | i ; e , f ) ·δ ( f , f j ) ·δ ( e , e i ) ( 58 ) To obtain the fertility probability counts and the count for p 1 efficiently , we introduce the following auxiliary quantities : • probability of all alignments that have an increased fertility for position i : Pr ( N +1 i ( a ) | e , f ) =Pr ( a | f , e )   summationdisplay j ( 1 −δ ( a j , i ) ) · M ij   ( 59 ) • probability of all alignments that have a decreased fertility for position i : Pr ( N −1 i ( a ) | e , f ) =Pr ( a | e , f )   summationdisplay j δ ( a j , i ) summationdisplay i prime M i prime j   ( 60 ) 49 Och and Ney Comparison of Statistical Alignment Models • probability of all alignments that have an unchanged fertility for position i : Pr ( N +0 i ( a ) | e , f ) =Pr ( N ( a ) | e , f ) −Pr ( N +1 i ( a ) | e , f ) −Pr ( N −1 i ( a ) | e , f ) ( 61 ) These quantities do not depend on swaps , since a swap does not change the fertilities of an alignment .</sentence>
+				<definiendum id="0">prime ∈N</definiendum>
+				<definiens id="0">use the move and swap matrices that are available after performing the hill climbing described above : • probability of all alignments in the neighborhood N ( a ) : Pr ( N ( a ) | e , f ) = summationdisplay a</definiens>
+				<definiens id="1">a ) that differ in position j from alignment a : Pr ( N j ( a ) | e , f ) = summationdisplay a prime ∈N ( a ) Pr ( a prime | e</definiens>
+			</definition>
+</paper>
+
+		<paper id="3006">
+			<definition id="0">
+				<sentence>These senses are grouped in synsets , together with their synonym terms , and linked to broader ( more general ) synsets via hypernymy relations : 6 senses of circuit Sense 1 : { circuit , electrical circuit , electric circuit } = &gt; { electrical device } Sense 2 : { tour , circuit } = &gt; { journey , journeying } Sense 3 : { circuit } = &gt; { path , route , itinerary } Sense 4 : { circuit ( judicial division ) } = &gt; { group , grouping } Sense 5 : { racing circuit , circuit } = &gt; { racetrack , racecourse , raceway , track } Sense 6 : { lap , circle , circuit } = &gt; { locomotion , travel } Our algorithm associates circuit 1 ( electric circuit ) with ODP directories such as business/industries/electronics and electrical/contract manufacturers 487 Santamar´ıa , Gonzalo , and Verdejo Association of Web Directories with Word Senses whereas circuit 5 ( racing circuit ) is tagged with directories such as sports/motorsports/auto racing/tracks sports/equestrian/racing/tracks sports/motorsports/auto racing/formula one Every ODP directory has an associated URL , which contains a description of the directory and a number of Web sites that have been manually listed as pertaining to the directory topic , accompanied by brief descriptions of each site .</sentence>
+				<definiendum id="0">Our algorithm associates circuit 1</definiendum>
+				<definiens id="0">grouped in synsets , together with their synonym terms</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>DDC categories , on the other hand , are a stable domain characterization compared to Web directories .</sentence>
+				<definiendum id="0">DDC categories</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>v ( d , w ) is the basis for making candidate assignments of suitable senses for directory d : If one of the components v ( d , w ) j is not null , we assign the sense w j to the directory d. If all components are null , the directory is provisionally classified as noise or new sense .</sentence>
+				<definiendum id="0">w )</definiendum>
+				<definiens id="0">the basis for making candidate assignments of suitable senses for directory d : If one of</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The confidence score is a linear combination of these factors , weighted according to an empirical estimation of their relevance : C ( d , w j ) = 4 summationdisplay i=1 α i C i ( d , w j ) where C 1 ( d , w j ) = braceleftbigg 1 , if query ( w j ) retrieves d 0 , otherwise C 2 ( d , w j ) =1 − k n C 3 ( d , w j ) =    1 , if v j ≥ 5 ( v j + 5 ) /10 , if 1 &lt; v j ≤ 4 j = 1 C 4 ( d , w j ) = v j − max inegationslash=j ( v i ) , summationtext n i=1 v i where v is the association vector v ( d , w ) , n the number of senses , k the number of senses for which v j is non-null , and α i are coefficients empirically adjusted to ( α 1 , α 2 , α 3 , α 4 ) = 492 Computational Linguistics Volume 29 , Number 3 ( 0.1 , 0.15 , 0.4 , 0.35 ) .</sentence>
+				<definiendum id="0">confidence score</definiendum>
+				<definiendum id="1">v</definiendum>
+				<definiens id="0">a linear combination of these factors , weighted according to an empirical estimation of their relevance : C ( d , w j</definiens>
+				<definiens id="1">d , w ) , n the number of senses , k the number of senses for which v j is non-null , and α i are coefficients empirically adjusted to ( α 1</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Coverage measures how many senses can be characterized with directories , assuming that every domainspecific sense should receive at least one directory .</sentence>
+				<definiendum id="0">Coverage measures</definiendum>
+				<definiens id="0">how many senses can be characterized with directories , assuming that every domainspecific sense should receive at least one directory</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Duluth system is a freely available supervised WSD system that participated in the Senseval 2 competition .</sentence>
+				<definiendum id="0">Duluth system</definiendum>
+				<definiens id="0">a freely available supervised WSD system that participated in the Senseval 2 competition</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Wordnet : An on-line lexical database .</sentence>
+				<definiendum id="0">Wordnet</definiendum>
+				<definiens id="0">An on-line lexical database</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>Presuppositions triggered by genitive constructions ( as in example ( 8 ) ) and factives ( as in example ( 9 ) ) are known to accommodate easily .</sentence>
+				<definiendum id="0">genitive constructions</definiendum>
+				<definiens id="0">known to accommodate easily</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Presupposition is a genuine discourse phenomenon .</sentence>
+				<definiendum id="0">Presupposition</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>DRT is one of several formal semantic frameworks designed to deal with the problems related to discourse anaphora , but it is certainly unrivaled with respect to its impressive coverage of linguistic phenomena .</sentence>
+				<definiendum id="0">DRT</definiendum>
+				<definiens id="0">one of several formal semantic frameworks designed to deal with the problems related to discourse anaphora , but it is certainly unrivaled with respect to its impressive coverage of linguistic phenomena</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>xy WOMAN ( x ) SNORT ( x ) y=x COLLAPSE ( y ) Here x and y are discourse referents for a woman and she , respectively .</sentence>
+				<definiendum id="0">xy WOMAN</definiendum>
+				<definiens id="0">COLLAPSE ( y ) Here x and y are discourse referents for a woman and she , respectively</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A DRS B subordinates a DRS B prime if B prime appears as a condition of B as argument of a negation , disjunction , or antecedent of a conditional , or if they form a DRS-condition of the form B ⇒ B prime .</sentence>
+				<definiendum id="0">DRS B</definiendum>
+				<definiens id="0">subordinates a DRS B prime if B prime appears as a condition of B as argument of a negation , disjunction , or antecedent of a conditional , or if they form a DRS-condition of the form B ⇒ B prime</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>To integrate presuppositions into the representation of discourse , Van der Sandt introduces sentence-DRSs , DRSs that are defined as a triple of a set of discourse referents , a set of conditions , and a ( possibly empty ) set of DRSs ( Van der Sandt 1992 , page 354 ) .</sentence>
+				<definiendum id="0">DRSs</definiendum>
+				<definiens id="0">the representation of discourse , Van der Sandt introduces sentence-DRSs ,</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>ux BUTCH ( u ) RETIRE ( u ) FLOYD ( x ) RETIRE ( x ) ¬ x=y y RETIRE ( y ) In principle , sentence-DRSs can have any number of anaphoric entities in their A-structures .</sentence>
+				<definiendum id="0">ux BUTCH</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>DRSs capture the semantic content of a discourse .</sentence>
+				<definiendum id="0">DRSs</definiendum>
+				<definiens id="0">capture the semantic content of a discourse</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The syntax of DRSs and DRS-conditions is defined by simultaneuous recursion , with respect to a set of first-order variables and a vocabulary describing the predicate symbols and their respective arities .</sentence>
+				<definiendum id="0">simultaneuous recursion</definiendum>
+				<definiens id="0">a set of first-order variables and a vocabulary describing the predicate symbols and their respective arities</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>x MAN ( x ) SMILE ( x ) SMOKE ( x ) x WOMAN ( x ) This sentence-DRS contains an A-structure with a single DRS. It is unclear whether the occurrence of variable x in the condition SMOKE ( x ) is bound by the discourse referent x in the outermost DRS or by the discourse referent declared in the DRS within the A-structure .</sentence>
+				<definiendum id="0">x MAN ( x ) SMILE ( x ) SMOKE ( x ) x WOMAN</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>The syntax of α-DRSs is defined as follows : Definition The syntax of α-DRSs is defined on the basis of the following four clauses : 1 ... x n } is a finite ordered set of variables and { γ 1 ... γ m } is a finite ordered set of α-DRS-conditions , then the ordered pair 〈 { x 1 ... x n } , { γ 1 ... γ m } 〉 is a basic α-DRS .</sentence>
+				<definiendum id="0">syntax of α-DRSs</definiendum>
+				<definiendum id="1">α-DRSs</definiendum>
+				<definiendum id="2">〉</definiendum>
+				<definiens id="0">a finite ordered set of variables and { γ 1 ... γ m } is a finite ordered set of α-DRS-conditions , then the ordered pair 〈 { x 1 ... x n } , { γ 1 ... γ m }</definiens>
+				<definiens id="1">a basic α-DRS</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>For variables that are declared as discourse referents in a DRS , σ increases the values for these variables by one .</sentence>
+				<definiendum id="0">σ</definiendum>
+				<definiens id="0">increases the values for these variables by one</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The main predicate of the algorithm consists of the following two clauses : resolve ( C , B , B ) ← presup-free ( B ) , consistent ( B ) , informative ( C , B ) .</sentence>
+				<definiendum id="0">main predicate of the algorithm</definiendum>
+				<definiens id="0">consists of the following two clauses : resolve ( C , B , B ) ← presup-free ( B ) , consistent ( B ) , informative ( C , B )</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>A valuable heuristic is one that distinguishes subordinated levels of discourse in the old DRS ( i.e. , the DRS capturing the portion of the discourse processed so far ) from subordinated levels of discourse in the DRS of the newly processed utterance .</sentence>
+				<definiendum id="0">valuable heuristic</definiendum>
+				<definiens id="0">one that distinguishes subordinated levels of discourse in the old DRS ( i.e. , the DRS capturing the portion of the discourse processed so far ) from subordinated levels of discourse in the DRS of the newly processed utterance</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Open Agent Architecture ( OAA ) ( Cheyer and Martin 2001 ) is used as prototyping environment to implement the presupposition resolution component as part of a natural language understanding system .</sentence>
+				<definiendum id="0">Open Agent Architecture ( OAA )</definiendum>
+				<definiens id="0">Martin 2001 ) is used as prototyping environment to implement the presupposition resolution component as part of a natural language understanding system</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>OAA is a collection of software agents that communicate with each other via a facilitator , a piece of middleware that distributes requests to appropriate agents and returns the responses to the requester .</sentence>
+				<definiendum id="0">OAA</definiendum>
+				<definiens id="0">a collection of software agents that communicate with each other via a facilitator , a piece of middleware that distributes requests to appropriate agents and returns the responses to the requester</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Binding is violated when a ( di ) transitive verb has a reflexive pronoun as object and the discourse referents for the agent and patient denote different objects , or when a ( di ) transitive verb has a nonreflexive object and the discourse referents for agent and patient denote the same object .</sentence>
+				<definiendum id="0">Binding</definiendum>
+				<definiens id="0">a reflexive pronoun as object and the discourse referents for the agent and patient denote different objects , or when a ( di ) transitive verb has a nonreflexive object and the discourse referents for agent and patient denote the same object</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The three ( disjoint ) top concepts in this ontology are GROUP ( a collection of things ) , SITUATION ( a condition in which certain propositions hold or do not hold ) , and THING ( an individual object that is talked about ) .</sentence>
+				<definiendum id="0">SITUATION</definiendum>
+				<definiendum id="1">THING (</definiendum>
+			</definition>
+			<definition id="18">
+				<sentence>OBJECTS are divided into ARTIFACTS ( human-made things ) , NATURAL-OBJECTS ( things that are found in nature ) , and SUBSTANCES ( things that are indivisible ) .</sentence>
+				<definiendum id="0">OBJECTS</definiendum>
+				<definiens id="0">human-made things ) , NATURAL-OBJECTS ( things that are found in nature ) , and SUBSTANCES ( things that are indivisible )</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The PROLOG inference engine then attempts to prove a sortal incompatibility by trying to find an instance of a discourse referent that has two conflicting properties , within the transitive closure of the is-a relation , here implemented via the predicate sort .</sentence>
+				<definiendum id="0">PROLOG inference engine</definiendum>
+				<definiens id="0">attempts to prove a sortal incompatibility by trying to find an instance of a discourse referent that has two conflicting properties , within the transitive closure of the is-a relation , here implemented via the predicate sort</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Asserting this to the database as basic ( MAN ( a ) ) and basic ( WOMAN ( a ) ) , it is possible to conclude sort ( MAN ( a ) ) as well as sort ( WOMAN ( a ) ) .</sentence>
+				<definiendum id="0">MAN</definiendum>
+				<definiendum id="1">WOMAN</definiendum>
+				<definiendum id="2">MAN</definiendum>
+				<definiendum id="3">WOMAN</definiendum>
+				<definiens id="0">a ) )</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>The corpus , collected in the IBL project ( Lauria et al. 2001 ) , comprises 283 utterances in 72 different route instructions , spoken by 24 different native English speakers .</sentence>
+				<definiendum id="0">IBL project</definiendum>
+				<definiens id="0">comprises 283 utterances in 72 different route instructions , spoken by 24 different native English speakers</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>For this particular task the model builder MACE and the theorem prover SPASS clearly outperformed the other inference engines ; they were able to find an answer within 30 seconds for 66 % of the 283 inference problems assigned to them ( the majority of the DRSs being consistent ) in CPU times varying from 2.5 to 29.9 seconds ( average 13.0 secs ) .</sentence>
+				<definiendum id="0">theorem prover SPASS</definiendum>
+				<definiens id="0">outperformed the other inference engines ; they were able to find an answer within 30 seconds for 66 % of the 283 inference problems assigned to them ( the majority of the DRSs being consistent ) in CPU times varying from 2.5 to 29.9 seconds ( average 13.0 secs )</definiens>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>WordNet ( Fellbaum 1998 ) and EuroWordNet ( Vossen 1998 ) organize the lexicon conceptually as a network of terms , each of which is associated with a partition into 157 Ploux and Ji A Model for Matching Semantic Maps Synsets ( a Synset being a small group of synonyms that label a concept ) .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiendum id="1">EuroWordNet</definiendum>
+				<definiens id="0">a network of terms , each of which is associated with a partition into 157 Ploux and Ji A Model for Matching Semantic Maps Synsets ( a Synset being a small group of synonyms that label a concept</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For each entry , the initial matrix M ij contains nc rows ( where nc stands for the number of cliques ) and ns columns ( where ns stands for the number of terms ) .</sentence>
+				<definiendum id="0">nc</definiendum>
+				<definiens id="0">the number of terms</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The middle column contains the generic values ( when they exist ) that interconnect the different meanings of the word .</sentence>
+				<definiendum id="0">middle column</definiendum>
+				<definiens id="0">contains the generic values ( when they exist ) that interconnect the different meanings of the word</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The example of insensible is a good representative of the various patterns that can appear .</sentence>
+				<definiendum id="0">insensible</definiendum>
+				<definiens id="0">a good representative of the various patterns that can appear</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The rank defines a spreading parameter ( in the model , a rank of zero means that the two cliques are unrelated and the target clique represents an out-of-range meaning in the translation operation ; a rank of three or more represents a highly cohesive semantic link ) .</sentence>
+				<definiendum id="0">clique</definiendum>
+				<definiens id="0">represents an out-of-range meaning in the translation operation</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The correspondences are determined by taking the product of the following matrices : M tr = M S cs ∗ T sc ∗ M primeC cs where M S cs is the source-clique/source-term matrix defined as in monolingual processing ( see Section 2 ) , T sc is the matrix that defines the translation between the source terms and the target terms ( T sc [ i ] [ j ] =1if and only if term j translates term i in the initial database ) , and M primeC cs is the transposed target-clique/target-term matrix .</sentence>
+				<definiendum id="0">S cs</definiendum>
+				<definiendum id="1">T sc</definiendum>
+				<definiendum id="2">M primeC cs</definiendum>
+				<definiens id="0">determined by taking the product of the following matrices : M tr = M S cs ∗ T sc ∗ M primeC cs where M</definiens>
+				<definiens id="1">the matrix that defines the translation between the source terms and the target terms ( T sc [ i ] [ j ] =1if and only if term j translates term i in the initial database</definiens>
+				<definiens id="2">the transposed target-clique/target-term matrix</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The model software allows a user to choose a candidate word in the target language according to its synonym neighborhood .</sentence>
+				<definiendum id="0">model software</definiendum>
+				<definiens id="0">allows a user to choose a candidate word in the target language according to its synonym neighborhood</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>Secondary affiliation is the German Research Center for Artificial Intelligence ( DFKI ) .</sentence>
+				<definiendum id="0">Secondary affiliation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>136 Computational Linguistics Volume 29 , Number 1 Initializer : y : [ B →•γ , j , j ] braceleftbigg ( y : B → γ ) ∈ P 0 ≤ j ≤ n Scanner : x 1 : [ A → α • aβ , i , j ] x 1 : [ A → αa • β , i , j + 1 ]    ( y 1 : A → αaβ ) ∈ P 0 ≤ i ≤ j &lt; n a j+1 = a Completer : x 1 : [ A → α • Bβ , i , j ] x 2 : [ B → γ • , j , k ] x 1 + x 2 : [ A → αB • β , i , k ]    ( y 1 : A → αBβ ) ∈ P ( y 2 : B → γ ) ∈ P 0 ≤ i ≤ j ≤ k ≤ n Goal items : [ S → γ •,0 , n ] for any ( y : S → γ ) ∈ P , where S is the start symbol Figure 1 Weighted deduction system for bottom-up parsing .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">A → αBβ ) ∈ P ( y 2 : B → γ ) ∈ P 0 ≤ i ≤ j ≤ k ≤ n Goal items : [ S → γ •,0 , n ] for any ( y : S → γ ) ∈ P , where</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>137 Nederhof Weighted Deductive Parsing Starter : y : [ S →•γ,0,0 ] braceleftbig ( y : S → γ ) ∈ P , where S is the start symbol Predictor : x 1 : [ A → α • Bβ , i , j ] y 2 : [ B →•γ , j , j ]    ( y 1 : A → αBβ ) ∈ P ( y 2 : B → γ ) ∈ P 0 ≤ i ≤ j ≤ n Scanner , completer and set of goal items are as in Figure 1 .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">A → αBβ ) ∈ P ( y 2 : B → γ ) ∈ P 0 ≤ i ≤ j ≤ n Scanner , completer</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Starter : ( y , y ) : [ S →•γ,0,0 ] braceleftbig ( y : S → γ ) ∈ P , where S is the start symbol Scanner : ( z 1 , x 1 ) : [ A → α • aβ , i , j ] ( z 1 , x 1 ) : [ A → αa • β , i , j + 1 ]    ( y 1 : A → αaβ ) ∈ P 0 ≤ i ≤ j &lt; n a j+1 = a Predictor : ( z 1 , x 1 ) : [ A → α • Bβ , i , j ] ( z 1 + y 2 , y 2 ) : [ B →•γ , j , j ]    ( y 1 : A → αBβ ) ∈ P ( y 2 : B → γ ) ∈ P 0 ≤ i ≤ j ≤ n Completer : ( z 1 , x 1 ) : [ A → α • Bβ , i , j ] ( z 2 , x 2 ) : [ B → γ • , j , k ] ( z 1 + x 2 , x 1 + x 2 ) : [ A → αB • β , i , k ]    ( y 1 : A → αBβ ) ∈ P ( y 2 : B → γ ) ∈ P 0 ≤ i ≤ j ≤ k ≤ n Set of goal items is as in Figure 1 .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">A → αBβ ) ∈ P ( y 2 : B → γ</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The number of productions in c ( G , w ) is determined by the number of ways we can instantiate inference rules , which in the case of Figure 1 is O ( |G| 2 · n 3 ) , where |G| is the size of G in terms of the total number of occurrences of terminals and nonterminals in productions .</sentence>
+				<definiendum id="0">|G|</definiendum>
+				<definiens id="0">the size of G in terms of the total number of occurrences of terminals and nonterminals in productions</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>140 Computational Linguistics Volume 29 , Number 1 • E is the set of items I 0 /∈ D such that there is at least one inference rule from the deduction system that can be instantiated to a production of the form I 0 → I 1 ···I m , for some m ≥ 0 , with weight function f , where I 1 , ... , I m ∈ D. • For each such I 0 ∈ E , let ν ( I 0 ) be the minimal weight f ( µ ( I 1 ) , ... , µ ( I m ) ) for all such instantiated inference rules .</sentence>
+				<definiendum id="0">E</definiendum>
+				<definiens id="0">the set of items I 0 /∈ D such that there is at least one inference rule from the deduction system that can be instantiated to a production of the form I 0 → I 1 ···I m , for some m ≥ 0 , with weight function f , where I 1 , ... , I m ∈ D. • For each such I 0 ∈ E , let ν ( I 0 ) be the minimal weight f ( µ ( I 1 ) , ... , µ ( I m</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Following Cormen , Leiserson , and Rivest ( 1990 ) , this factor is O ( log ( bardblc ( G , w ) bardbl ) ) , where bardblc ( G , w ) bardbl is the number of nonterminals in c ( G , w ) , which is an upper bound on the number of elements on the priority queue at any given time .</sentence>
+				<definiendum id="0">bardblc ( G , w ) bardbl</definiendum>
+				<definiens id="0">the number of nonterminals in c ( G , w ) , which is an upper bound on the number of elements on the priority queue at any given time</definiens>
+			</definition>
+</paper>
+
+	</volume>

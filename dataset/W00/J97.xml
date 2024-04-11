@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J97">
+
+		<paper id="4004">
+			<definition id="0">
+				<sentence>For instance , there exists an optimal algorithm that can identify all and only critical points , and thus all unambiguous token boundaries , in time proportional to the input character string length but independent of the size of the tokenization dictionary .</sentence>
+				<definiendum id="0">optimal algorithm</definiendum>
+				<definiens id="0">all unambiguous token boundaries , in time proportional to the input character string length but independent of the size of the tokenization dictionary</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The alphabet size is the number of characters in the alphabet and is denoted IGI .</sentence>
+				<definiendum id="0">alphabet size</definiendum>
+				<definiens id="0">the number of characters in the alphabet and is denoted IGI</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>e is a character string over G. e is called the empty character string .</sentence>
+				<definiendum id="0">e</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The length of a character string S is the number of characters in the string and is denoted ISI .</sentence>
+				<definiendum id="0">length of a character string S</definiendum>
+				<definiens id="0">the number of characters in the string</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A dictionary D is a set of character strings over the alphabet G. That is , D = { x , y , z ... . } C_ G* .</sentence>
+				<definiendum id="0">G. That</definiendum>
+				<definiens id="0">a set of character strings over the alphabet</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>v is a word string over D. v is called the empty word string .</sentence>
+				<definiendum id="0">v</definiendum>
+				<definiens id="0">a word string over D. v is called the empty word string</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>If W is a word string over D and w is a word in D , then Ww is a word string over D. W ' is a word string over D if and only if its being so follows from ( 1 ) and ( 2 ) .</sentence>
+				<definiendum id="0">Ww</definiendum>
+				<definiens id="0">a word string over D</definiens>
+				<definiens id="1">a word string over D. W ' is a word string</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The length of a word string W is the number of words in the string and is denoted IW I. We let D* denote the set containing all word strings over D , including v and let D + denote the set of all word strings over D but excluding v. Example 1 ( cont . )</sentence>
+				<definiendum id="0">length of a word string W</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>The character string generation operation G is a mapping G : D* ~ E* defined as : G ( v ) = e. word .</sentence>
+				<definiendum id="0">character string generation operation G</definiendum>
+				<definiens id="0">a mapping G : D* ~ E* defined as : G ( v ) = e. word</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The character string thisishisbook is the generated character string of the word string `` this is his book '' .</sentence>
+				<definiendum id="0">character string thisishisbook</definiendum>
+				<definiens id="0">the generated character string of the word string</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Definition 4 The character string tokenization operation T is a mapping TD : ~* -- -* 2 D* defined as : if S is a character string in G* , then TD ( S ) is the set of dictionary word strings mapped by the character string generation operation G to the character string S. That is , To ( S ) = { WIG ( W ) = S , W E D* } .</sentence>
+				<definiendum id="0">character string tokenization operation T</definiendum>
+				<definiendum id="1">TD ( S )</definiendum>
+				<definiens id="0">a mapping TD : ~* -- -* 2 D* defined as : if S is a character string in G*</definiens>
+				<definiens id="1">the set of dictionary word strings mapped by the character string generation operation G to the character string S. That is , To ( S ) = { WIG ( W ) = S , W E D* }</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Let G be an alphabet , D a dictionary , and S a character string over the alphabet .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">a character string over the alphabet</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>In addition , let To ( S ) be the tokenization set of S on D. Definition 8 Position p in character string S = cl ... Cn is a critical point , if for any word string W = wl ... wm in To ( S ) , there exists an index k , 0 &lt; k &lt; m , such that G ( wl ... Wk ) =cl ... Cp and G ( Wk+l..</sentence>
+				<definiendum id="0">Cn</definiendum>
+				<definiens id="0">the tokenization set of S on D. Definition 8 Position p in character string S = cl ...</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The poset TD ( abcd ) = { a/b/c/d , a/b/cd , a/bc/d , a/bcd , ab/c/d , ab/cd , abc/d } has three minimal elements : abc/d , ab/cd , a/bcd .</sentence>
+				<definiendum id="0">poset TD</definiendum>
+				<definiens id="0">minimal elements : abc/d , ab/cd , a/bcd</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Definition 10 The character string critical tokenization operation CD is a mapping CD : ~* -- ~ ( TD ( S ) , G ) } .</sentence>
+				<definiendum id="0">CD</definiendum>
+				<definiens id="0">character string critical tokenization operation</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Any word string W in CD ( S ) is a critically tokenized word string , or simply a critical tokenization , or CT tokenization for short , of the character string S. And CD ( S ) is the set of critical tokenizations .</sentence>
+				<definiendum id="0">CD ( S )</definiendum>
+				<definiens id="0">a critically tokenized word string , or simply a critical tokenization , or CT tokenization for short , of the character string S. And</definiens>
+				<definiens id="1">the set of critical tokenizations</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>580 Guo Critical Tokenization In other words , the critical tokenization operation maps any character string to its set of critical tokenizations .</sentence>
+				<definiendum id="0">critical tokenization operation</definiendum>
+				<definiens id="0">maps any character string to its set of critical tokenizations</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Y is a true subtokenization of X and X is a true supertokenization of Y , if Y is a subtokenization of X and X ~ Y. Example 1 ( cont . )</sentence>
+				<definiendum id="0">Y</definiendum>
+				<definiendum id="1">X</definiendum>
+				<definiens id="0">a true subtokenization of X and</definiens>
+				<definiens id="1">a subtokenization of X</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Lemma 3 Y is a subtokenization of X if and only if X &lt; Y. Proof If X &lt; Y , by definition , for any substring Xs of X , there exists substring Ys of Y , such that \ [ Xs\ [ &lt; \ [ Ys\ [ and G ( X~ ) = G ( Y~ ) .</sentence>
+				<definiendum id="0">Y</definiendum>
+				<definiens id="0">a subtokenization of X if and only if X &lt; Y. Proof If X &lt; Y , by definition , for any substring Xs of X , there exists substring Ys of Y , such that \ [ Xs\ [ &lt; \ [ Ys\ [ and G ( X~ ) = G ( Y~ )</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>That is , for any tokenization Y , Y E To ( S ) , there exists critical tokenization X , X E Co ( S ) , such that X is a supertokenization of Y. Moreover , if Y is a critical tokenization and X is its supertokenization , there is X = Y. Proof By definition , for any tokenization Y , Y E To ( S ) , there is a critical tokenization X , X E Co ( S ) , such that X _ Y. By Lemma 3 , it would be the same as saying that X is a supertokenization of Y. The second part of the theorem is from the definition of critical tokenization .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a critical tokenization</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Definition 12 Let Y , be an alphabet , D a dictionary , and S a character string over the alphabet .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">a character string over the alphabet</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Definition 13 Let ~ be an alphabet , D a dictionary , and S a character string over the alphabet .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">a character string over the alphabet</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Let E be an alphabet , D a dictionary , and S a character string over the alphabet .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">a character string over the alphabet</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>ai , bl ... bj , and S are each a word , then there is conjunctive ambiguity in S. The segment S , which is itself a word , contains other words .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">conjunctive ambiguity in S. The segment S , which is itself a word , contains other words</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>The segment bl ... bj is known as an overlap , which is usually one character long .</sentence>
+				<definiendum id="0">segment bl ... bj</definiendum>
+				<definiens id="0">an overlap , which is usually one character long</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>Moreover , disjunctive ( overlapping ) ambiguity is a special case of critical ambiguity in tokenization , since for the character string S = al . . . aibl . . . bjc , . . . Ck , both `` al..</sentence>
+				<definiendum id="0">disjunctive ( overlapping ) ambiguity</definiendum>
+				<definiens id="0">a special case of critical ambiguity in tokenization , since for the character string S = al</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Definition 14 A tokenization W = wl ... Wm E TD ( S ) is a forward maximum tokenization of S over and D , or FT tokenization for short , if , for any k , 1 &lt; k &lt; m , there exist i and j , 1 &lt; i &lt; j &lt; n , such that 5 .</sentence>
+				<definiendum id="0">Wm E TD ( S )</definiendum>
+				<definiens id="0">a forward maximum tokenization of S over and D</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>C ( wl ... Wk-1 ) = ci_ , Wk = Ci ... Cj , and For any j ' , j &lt; j ' &lt; n , there is ci ... cj , ~ D. The forward maximum tokenization operation , or FT operation for short , is a mapping FD : ~* ~ 2 D* defined as : for any S E ~* , FD ( S ) = { W I W is a FT tokenization of S over G and D } .</sentence>
+				<definiendum id="0">FT operation</definiendum>
+				<definiens id="0">for any S E ~* , FD ( S ) = { W I W is a FT tokenization of S over G and D }</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>FD ( S ) = { `` the blueprint '' } , i.e. , the word string `` the blueprint '' is the only FT tokenization for the character string S = theblueprint .</sentence>
+				<definiendum id="0">FD</definiendum>
+				<definiens id="0">FT tokenization for the character string S = theblueprint</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>Wm C To ( S ) is a backward maximum tokenization of S over G and D , or BT tokenization for short , if for any k , 1 &lt; k &lt; m , there exist i and j , 1 &lt; i G j &lt; n , such that The backward maximum tokenization operation is a mapping BD : ~* -~ 2 D '' defined as : for any S E ~* , Bo ( S ) = { W I W is a BT tokenization of S over ~ and D } .</sentence>
+				<definiendum id="0">Wm C To ( S )</definiendum>
+				<definiendum id="1">BT tokenization</definiendum>
+				<definiendum id="2">maximum tokenization operation</definiendum>
+				<definiens id="0">a backward maximum tokenization of S over G and D , or</definiens>
+				<definiens id="1">for any S E ~* , Bo ( S ) = { W I W is a BT tokenization of S over ~ and D }</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>\ [ \ ] Definition 16 The shortest tokenization operation SD is a mapping SD : ~* -- * 2 D defined as : for any S in ~* , SD ( S ) = { W I IW\ [ = minW'ETD ( s ) IW'I } '' Every tokenization W in SD ( S ) is a shortest tokenization , or ST tokenization for short , of the character string S. In other words , a tokenization W of a character string S is a shortest tokenization if and only if the word string has the minimum word string length among all possible tokenizations .</sentence>
+				<definiendum id="0">tokenization operation SD</definiendum>
+				<definiens id="0">a shortest tokenization , or ST tokenization for short , of the character string S. In other words , a tokenization W of a character string S is a shortest tokenization if and only if the word string has the minimum word string length among all possible tokenizations</definiens>
+			</definition>
+			<definition id="31">
+				<sentence>Clearly , the ST tokenization ab/c/de , which fulfills the principle of maximum tokenization and is the desired tokenization in some cases , is neither FT nor BT tokenization .</sentence>
+				<definiendum id="0">ST tokenization ab/c/de</definiendum>
+				<definiens id="0">fulfills the principle of maximum tokenization and is the desired tokenization in some cases , is neither FT nor BT tokenization</definiens>
+			</definition>
+			<definition id="32">
+				<sentence>desired tokenization , in many contexts , is `` ~ ~ / J~ / ~r~ -~ 590 Guo Critical Tokenization The relationship between the operations of sentence derivation and sentence parsing in the theory of parsing , translation , and compiling ( Aho and Ullman 1972 ) is an obvious analogue with the relationship between the operations of character string generation and character string tokenization that are defined in this paper .</sentence>
+				<definiendum id="0">compiling</definiendum>
+				<definiens id="0">an obvious analogue with the relationship between the operations of character string generation and character string tokenization that</definiens>
+			</definition>
+			<definition id="33">
+				<sentence>Although it is a well known fact that some sentences may have several derivations or parses , the focus has always been either on ( 1 ) grammar enhancement , such as introducing semantic categories and consistency checking rules ( selectional restrictions ) , not to mention those great works on grammar formalisms , or on ( 2 ) ambiguity resolution , such as introducing various heuristics and tricks including leftmost parsing and operator preferences ( Aho and Ullman 1972 ; Aho , Sethi , and Ullman 1986 ; Alien 1995 ; Grosz , Jones , and Webber 1986 ) .</sentence>
+				<definiendum id="0">checking rules</definiendum>
+				<definiendum id="1">operator preferences</definiendum>
+				<definiens id="0">selectional restrictions ) , not to mention those great works on grammar formalisms , or on ( 2 ) ambiguity resolution</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>TR2 adds the constraint on discourse structure and TR3 adds to this the salience constraint ( and is the same as Rule 5 ) .</sentence>
+				<definiendum id="0">TR2</definiendum>
+				<definiendum id="1">TR3</definiendum>
+				<definiendum id="2">salience constraint</definiendum>
+				<definiens id="0">adds the constraint on discourse structure and</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>Definite relations are a convenient way of encoding the interaction of lexical rules , as they readily support various program transformations to improve the encoding : We show that the definite relations produced by the compiler can be refined by program transformation techniques to increase efficiency .</sentence>
+				<definiendum id="0">Definite relations</definiendum>
+				<definiens id="0">a convenient way of encoding the interaction of lexical rules , as they readily support various program transformations to improve the encoding : We show that the definite relations produced by the compiler</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The signature consists of the type hierarchy defining which types of objects exist and the appropriateness conditions specifying which objects have which features defined on them to represent their properties .</sentence>
+				<definiendum id="0">signature</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>When C is the common information , and D1 , ... , Dk are the definitions of the interaction predicate called , we use distributivity to factor out C in ( C A D1 ) V - .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiendum id="1">D1 , ... , Dk</definiendum>
+				<definiens id="0">the common information</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>V ( C A Dk ) : We compute C A ( D1 V ... V Dk ) , where the r ) are assumed to contain no further common factors .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiendum id="1">Dk )</definiendum>
+				<definiens id="0">We compute C A ( D1 V ... V Dk ) , where the r ) are assumed to contain no further common factors</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>Previous work has included analyses of ( 1 ) human-human dialogues in relevant task domains ; ( 2 ) Wizard-of-Oz dialogues in which a human ( the Wizard ) simulates the role of the computer as a way of testing out an initial model ; and ( 3 ) humancomputer dialogues based on initial implementations of computational models .</sentence>
+				<definiendum id="0">Wizard )</definiendum>
+				<definiens id="0">simulates the role of the computer as a way of testing out an initial model</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Consequently , WOZ studies can provide an indication of the types of adaptations that humans will make in human-computer interaction .</sentence>
+				<definiendum id="0">WOZ</definiendum>
+				<definiens id="0">provide an indication of the types of adaptations that humans will make in human-computer interaction</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Whittaker and Stenton ( 1988 ) propose a definition for dialogue control based on the utterance type of the speaker ( question , assertion , command , or prompt ) as follows : • Question : The speaker has control unless the question directly followed a question or command by the other conversant .</sentence>
+				<definiendum id="0">Whittaker</definiendum>
+				<definiens id="0">The speaker has control unless the question directly followed a question or command by the other conversant</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the absence of errors in completing task actions , the natural transition from subdialogue to subdialogue is described by the following regular expression : I+A+ ( D+R*T+ ) nF where `` + '' denotes that one or more utterances will be spoken in the given subdialogue , `` , '' denotes that zero or more utterances will be spoken in the given subdialogue , and n represents the number of individual repairs in the problem .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">described by the following regular expression : I+A+ ( D+R*T+ ) nF where `` + '' denotes that one or more utterances will be spoken in the given subdialogue , `` , '' denotes that zero or more utterances will be spoken in the given subdialogue , and</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>2 A period , for example , can denote a decimal point , an abbreviation , the end of a sentence , or even an abbreviation at the end of a sentence .</sentence>
+				<definiendum id="0">abbreviation</definiendum>
+				<definiens id="0">the end of a sentence , or even an abbreviation at the end of a sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>STYLE defines a sentence as a string of words ending in one of : period , exclamation point , question mark , or backslash-period ( the latter of which can be used by an author to mark an imperative sentence ending ) .</sentence>
+				<definiendum id="0">STYLE</definiendum>
+				<definiens id="0">defines a sentence as a string of words ending in one of : period , exclamation point , question mark , or backslash-period ( the latter of which can be used by an author to mark an imperative sentence ending )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The boundary disambiguation module is part of a comprehensive preprocess pipeline that utilizes a list of 75 abbreviations and a series of over 100 hand-crafted rules to identify sentence boundaries , as well as titles , date and time expressions , and abbreviations .</sentence>
+				<definiendum id="0">boundary disambiguation module</definiendum>
+				<definiens id="0">part of a comprehensive preprocess pipeline that utilizes a list of 75 abbreviations and a series of over 100 hand-crafted rules to identify sentence boundaries , as well as titles , date and time expressions</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Satz system works in two modes -- learning mode and disambiguation mode .</sentence>
+				<definiendum id="0">Satz system</definiendum>
+				<definiens id="0">works in two modes -- learning mode and disambiguation mode</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Input Text Tokenization Part-of-speech Lookup Descriptor array construction Classification by learning algorithm Text withsentence boundaries disambiguated The first stage of the process is lexical analysis , which breaks the input text ( a stream of characters ) into tokens .</sentence>
+				<definiendum id="0">Text Tokenization Part-of-speech Lookup Descriptor array construction Classification</definiendum>
+				<definiens id="0">breaks the input text ( a stream of characters ) into tokens</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Satz tokenizer is implemented using the UNIX tool LEX ( Lesk and Schmidt 1975 ) and is modeled on the tokenizer used by the PARTS part-of-speech tagger ( Church 1988 ) .</sentence>
+				<definiendum id="0">Satz tokenizer</definiendum>
+				<definiendum id="1">UNIX tool LEX</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The network accepts k • 20 input values , where k is the size of the context and 20 is the number of elements in the descriptor array described in Section 3.3 .</sentence>
+				<definiendum id="0">k</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>A commonly-used squashing function -- due to its mathematical properties , which assist in network training -- is the sigrnoidal function , given byf ( hi ) = ~'1 where hi is the node input and T is a constant to adjust the slope of the sigmoid .</sentence>
+				<definiendum id="0">hi</definiendum>
+				<definiendum id="1">T</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>The Alembic module was used to disambiguate the sentence boundaries in all cases except when one of the five problematic abbreviations was encountered ; in these cases , Satz ( in neural network mode ) was used to determine the role of the period following the abbreviation .</sentence>
+				<definiendum id="0">Satz</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>First , our domain experts ( one employed full-time ) constructed the Biology Knowledge Base ( Porter et al. 1988 ) , a very large structure representing more than 180,000 facts about botanical anatomy , physiology , and development .</sentence>
+				<definiendum id="0">domain experts</definiendum>
+				<definiens id="0">structure representing more than 180,000 facts about botanical anatomy , physiology , and development</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In the spirit of EDGE ( Cawsey 1992 ) and PAULINE ( Hovy 1990 ) , which synthesize work in interactive explanation systems and generational pragmatics , respectively , KNIGHT addresses a broad range of issues , all in the context of semantically rich , large-scale knowledge bases : • Robust Knowledge-Base Access : KNIGHT exploits a library of robust knowledge-base access methods that insulate discourse planners from the idiosyncracies and errors in knowledge bases .</sentence>
+				<definiendum id="0">KNIGHT</definiendum>
+				<definiendum id="1">Knowledge-Base Access</definiendum>
+				<definiens id="0">addresses a broad range of issues , all in the context of semantically rich , large-scale knowledge bases : • Robust</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The explanation planner considers the desired length of explanations and the relative importance of subtopics as it constructs explanation plans encoding content and organization .</sentence>
+				<definiendum id="0">explanation planner</definiendum>
+				<definiens id="0">considers the desired length of explanations and the relative importance of subtopics as it constructs explanation plans encoding content and organization</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , to more cleanly evaluate the explanation planning work , we have developed a robust realization system that is built on FUF ( Elhadad 1992 ) , a unification-based implementation of a large systemic grammar .</sentence>
+				<definiendum id="0">FUF</definiendum>
+				<definiens id="0">a unification-based implementation of a large systemic grammar</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Gametogenesis is a step of gametophyte development .</sentence>
+				<definiendum id="0">Gametogenesis</definiendum>
+				<definiens id="0">a step of gametophyte development</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Response : The root system is part of the plant and is connected to the mainstem .</sentence>
+				<definiendum id="0">Response</definiendum>
+				<definiens id="0">The root system is part of the plant and is connected to the mainstem</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>• Coherence : A global assessment of the overall quality of the explanations generated by a system .</sentence>
+				<definiendum id="0">Coherence</definiendum>
+				<definiens id="0">A global assessment of the overall quality of the explanations generated by a system</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>These knowledge bases consist of highly interconnected networks of ( at least ) tens of thousands of facts .</sentence>
+				<definiendum id="0">knowledge bases</definiendum>
+				<definiens id="0">consist of highly interconnected networks of ( at least ) tens of thousands of facts</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>There are three classes of accessors : those that are applicable to all concepts ( As-Kind-Of and Functional ) , those that are applicable to objects ( Partonomic-Connection and Substructural ) , and those that are applicable to processes ( Auxiliary-Process -- which includes 71 Computational Linguistics Volume 23 , Number 1 View Access Request Knowledge Base Access~ I ~ ( ~n~ raw-material i Chlor !</sentence>
+				<definiendum id="0">Partonomic-Connection</definiendum>
+				<definiens id="0">Auxiliary-Process -- which includes 71 Computational Linguistics Volume 23 , Number 1 View Access Request Knowledge Base Access~ I ~</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>It is important to emphasize the following distinction between discourse knowledge and explanation plans : discourse knowledge specifies the content and organization for a class of explanations , e.g. , explanations of processes , whereas explanation plans specify the content and organization for a specific explanation , e.g. , an explanation of how photosynthesis produces sugar .</sentence>
+				<definiendum id="0">discourse knowledge</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Explanation Design Packages emerged from an effort to accelerate the representation of discourse knowledge without sacrificing expressiveness .</sentence>
+				<definiendum id="0">Explanation Design Packages</definiendum>
+				<definiens id="0">emerged from an effort to accelerate the representation of discourse knowledge without sacrificing expressiveness</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>EDPs give discourse-knowledge engineers an appropriate set of abstractions for specifying the content and organization of explanations .</sentence>
+				<definiendum id="0">discourse-knowledge</definiendum>
+				<definiens id="0">engineers an appropriate set of abstractions for specifying the content and organization of explanations</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>To mirror the structure of expository texts , an EDP contains a hierarchy of nodes , which provides the global organization of explanations .</sentence>
+				<definiendum id="0">EDP</definiendum>
+				<definiens id="0">provides the global organization of explanations</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Explanation planning is the task of determining the content and organization of explanations .</sentence>
+				<definiendum id="0">Explanation planning</definiendum>
+				<definiens id="0">the task of determining the content and organization of explanations</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>81 Computational Linguistics Volume 23 , Number 1 Explanation generation begins when the user poses a query , which includes a verbosity specification that comes in the form of a qualitative rating expressing the desired length of the explanation ( Figure 6 ) .</sentence>
+				<definiendum id="0">query</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>Explanation planning is a synthetic task in which multiple resources are consulted to assemble data structures that specify the content and organization of explanations .</sentence>
+				<definiendum id="0">Explanation planning</definiendum>
+				<definiens id="0">a synthetic task in which multiple resources are consulted to assemble data structures that specify the content and organization of explanations</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>1° The explanation planner invokes the EDP Selector , which chooses an Explanation Design Package from the EDP library .</sentence>
+				<definiendum id="0">EDP Selector</definiendum>
+				<definiens id="0">chooses an Explanation Design Package from the EDP library</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>11 APPLY EDP is a recursive algorithm .</sentence>
+				<definiendum id="0">APPLY EDP</definiendum>
+				<definiens id="0">a recursive algorithm</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>For each of the topic 's content specification nodes , the Applier invokes the DETERMINE CONTENT algorithm , which itself invokes KB accessors named in the EDP 's content specification nodes .</sentence>
+				<definiendum id="0">Applier</definiendum>
+				<definiens id="0">invokes the DETERMINE CONTENT algorithm , which itself invokes KB accessors named in the EDP 's content specification nodes</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Functional descriptions encode both semantic information ( case assignments ) and structural information ( phrasal constituent embeddings ) .</sentence>
+				<definiendum id="0">Functional descriptions</definiendum>
+				<definiens id="0">encode both semantic information ( case assignments ) and structural information</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Syntactically , a functional description is a set of attribute and value pairs ( a v ) ( collectively called a feature set ) , where a is an attribute ( a feature ) and v is either an atomic value or a nested feature set .</sentence>
+				<definiendum id="0">functional description</definiendum>
+				<definiendum id="1">v</definiendum>
+				<definiens id="0">a set of attribute and value pairs ( a v ) ( collectively called a feature set )</definiens>
+				<definiens id="1">either an atomic value or a nested feature set</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>We assigned explanations to judges using an allocation policy that obeyed the following four constraints : • System-Human Division : Each judge received explanations that were approximately evenly divided between those that were produced by KNIGHT and those that were produced by biologists .</sentence>
+				<definiendum id="0">System-Human Division</definiendum>
+				<definiens id="0">Each judge received explanations that were approximately evenly divided between those that were produced by KNIGHT and those that were produced by biologists</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>• Object-Process Division : Each judge received explanations that were approximately evenly divided between objects and processes .</sentence>
+				<definiendum id="0">Object-Process Division</definiendum>
+				<definiens id="0">Each judge received explanations that were approximately evenly divided between objects and processes</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>STREAK , which constructs summaries of basketball games , is part of a larger effort by J. Robin , K. McKeown , and their colleagues at Columbia and Bellcore to develop robust document generation systems ( McKeown , Robin , and Kukich 1995 ) .</sentence>
+				<definiendum id="0">STREAK</definiendum>
+				<definiens id="0">constructs summaries of basketball games</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>The KNIGHT , EDGE , and EXAMPLE GENERATOR evaluations employed humans as judges , while the ANA and STREAK evaluations had `` artificial judges '' in the form of corpora , and PAULINE was evaluated without judges .</sentence>
+				<definiendum id="0">STREAK</definiendum>
+				<definiens id="0">evaluations had `` artificial judges '' in the form of corpora , and PAULINE was evaluated without judges</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>KNIGHT is the only system to have been evaluated in the context of a semantically rich , large-scale knowledge base .</sentence>
+				<definiendum id="0">KNIGHT</definiendum>
+				<definiens id="0">the only system to have been evaluated in the context of a semantically rich , large-scale knowledge base</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>KNIGHT , ROMPER ( McCoy 1989 ) , and Suthers ' work ( Suthers 1988 , 1993 ) use these types of views to determine the content of their explanations .</sentence>
+				<definiendum id="0">ROMPER</definiendum>
+				<definiendum id="1">Suthers</definiendum>
+			</definition>
+			<definition id="27">
+				<sentence>Paris extended schemata to generate descriptions of complex objects in a manner that is appropriate for the user 's level of expertise ( Paris 1988 ) , and ROMPER 's schemata include information about the content of propositions to be selected , as well as their communicative role .</sentence>
+				<definiendum id="0">Paris</definiendum>
+				<definiens id="0">extended schemata to generate descriptions of complex objects in a manner that is appropriate for the user 's level of expertise ( Paris 1988 ) , and ROMPER 's schemata include information about the content of propositions to be selected , as well as their communicative role</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>Hovy 's ( 1993 ) Structurer is a hierarchical planner whose operators instantiate relations from RST .</sentence>
+				<definiendum id="0">Structurer</definiendum>
+				<definiens id="0">a hierarchical planner whose operators instantiate relations from RST</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>An explanation system must be able to select from a knowledge base precisely those facts that enable it to construct a response to a user 's question , organize this information , and translate the formal representational structures found in knowledge bases to natural language .</sentence>
+				<definiendum id="0">explanation system</definiendum>
+				<definiens id="0">a knowledge base precisely those facts that enable it to construct a response to a user 's question , organize this information , and translate the formal representational structures found in knowledge bases to natural language</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>/-class -- *R-class\ ] where • x indicates whether the rule is applied to the beginning or end of a word and has two possible values , b-beginning and e-end ; • S is the affix to be segmented ; it is deleted ( - ) from the beginning or end of an unknown word according to the value of x ; • M is the mutative segment ( possibly empty ) , which should be added ( + ) to the result string after the segmentation ; • /-class is the required Pos-class ( set of one or more pos-tags ) of the stem ; the result string after the -S and +M operations should be checked ( ? )</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">M</definiendum>
+				<definiens id="0">the rule is applied to the beginning or end of a word and has two possible values , b-beginning and e-end ; •</definiens>
+				<definiens id="1">the affix to be segmented ; it is deleted ( - ) from the beginning or end of an unknown word according to the value of x ; •</definiens>
+				<definiens id="2">the mutative segment ( possibly empty )</definiens>
+				<definiens id="3">the required Pos-class ( set of one or more pos-tags ) of the stem ; the result string after the -S</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Since a word can take on several different POS-tags , in the lexicon it can be represented as a \ [ string/Pos-class\ ] record , where the POs-class is a set of one or more POS-tags .</sentence>
+				<definiendum id="0">POs-class</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Thus the nth entry of the lexicon ( Wn ) can be represented as \ [ W C\ ] n where W is the surface lexical form and C is its pos-class .</sentence>
+				<definiendum id="0">W</definiendum>
+				<definiens id="0">the surface lexical form</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If the subtraction results in an non-empty string and the mutative segment is not duplicated in the affix , the system creates a morphological rule with the POs-class of the shorter word ( Cj ) as the/-class , the POS-class of the longer word ( Ci ) as the R-class and the segmented affix itself in the S field .</sentence>
+				<definiendum id="0">Cj</definiendum>
+				<definiens id="0">the R-class and the segmented affix itself in the S field</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>\ ] 2/ ( B 1 ) where • B is the number of bootstrap replications ; • 0* ( b ) is the mean estimate of the bth bootstrap replication ; • 0 '' ( . )</sentence>
+				<definiendum id="0">• B</definiendum>
+				<definiens id="0">the number of bootstrap replications</definiens>
+				<definiens id="1">the mean estimate of the bth bootstrap replication ; • 0 ''</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Russian morphology : An engineering approach .</sentence>
+				<definiendum id="0">Russian morphology</definiendum>
+				<definiens id="0">An engineering approach</definiens>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>The rule interpreter begins processing a word by setting its current position to the rightmost grapheme .</sentence>
+				<definiendum id="0">rule interpreter</definiendum>
+				<definiens id="0">begins processing a word by setting its current position to the rightmost grapheme</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The grapheme string is matched using a simple right-to-left text compare , and the context strings are matched by a recursive procedure that interprets the pattern string built by the rule compiler .</sentence>
+				<definiendum id="0">grapheme string</definiendum>
+				<definiens id="0">interprets the pattern string built by the rule compiler</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This time , however , we are always going from a morphophonemic to a phonetic realization as in : { x } ~ \ [ Yl / \ [ w\ ] \ [ z\ ] ; where { x } is an archiphoneme or abstract morphophoneme , \ [ y\ ] is some phonetic sequence , and \ [ w\ ] and \ [ z\ ] are some environment E , where E is either phonemic or phonetic .</sentence>
+				<definiendum id="0">E</definiendum>
+				<definiens id="0">an archiphoneme or abstract morphophoneme</definiens>
+				<definiens id="1">either phonemic or phonetic</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Example of letter-to-sound ( morph ) rules that would have already assigned primary stress : ation ~ \ [ 1 l\ [ eI\ ] =\ [ O\ ] \ [ J~\ [ i\ ] \ [ n\ ] / -+ ; • \ [ eI\ ] has primary stressed ( marked \ [ 1\ ] ) as in transformation ; • \ [ f\ ] Ii\ ] \ [ nl is unstressed ( marked \ [ 0\ ] ) • = is a syllable boundary .</sentence>
+				<definiendum id="0">primary stress</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Text normalization , i.e. , replacing numbers , abbreviations , and acronyms , by their full text equivalents , and grapheme-to-phoneme transcription can be achieved using this formalism .</sentence>
+				<definiendum id="0">Text normalization</definiendum>
+				<definiens id="0">abbreviations , and acronyms , by their full text equivalents</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>external characters : ele2e3 is a string .</sentence>
+				<definiendum id="0">ele2e3</definiendum>
+				<definiens id="0">a string</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>begin { Block i } rule 1 rule n end ( number ) : ( Is ) -- * ( rs ) / ( lc ) ( rc ) ; where number is the rule label ; Is ( left string ) is the string to be replaced ; rs ( right string ) is the string replacing Is ; Ic ( left context ) represents the strings to be found on the left side of Is ; rc ( right context ) represents the strings to be found on the right of Is .</sentence>
+				<definiendum id="0">number</definiendum>
+				<definiens id="0">the rule label ; Is ( left string</definiens>
+				<definiens id="1">the string to be replaced ; rs ( right string</definiens>
+				<definiens id="2">the string replacing Is ; Ic ( left context ) represents the strings to be found on the left side of Is ; rc ( right context ) represents the strings to be found on the right of Is</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Example 8 The ai string in French words like bienfaisant , con trefaisait , faisait , faisan , satisfaisant , etc. , is pronounced \ [ o\ ] but not in faisceau , chauffais where the corresponding phoneme is an \ [ E\ ] .</sentence>
+				<definiendum id="0">corresponding phoneme</definiendum>
+				<definiens id="0">ai string in French words like bienfaisant , con trefaisait , faisait , faisan , satisfaisant , etc. , is pronounced \ [ o\ ] but not in faisceau , chauffais where the</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>French uses the concept of a class that allows for the grouping of strings having a common property , thus reducing the number of rules .</sentence>
+				<definiendum id="0">French</definiendum>
+				<definiens id="0">uses the concept of a class that allows for the grouping of strings having a common property , thus reducing the number of rules</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>CV Phonology : A Generative Theory of the Syllable .</sentence>
+				<definiendum id="0">CV Phonology</definiendum>
+				<definiens id="0">A Generative Theory of the Syllable</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>SRS text-to-phoneme rules : A three-level rule strategy .</sentence>
+				<definiendum id="0">SRS text-to-phoneme rules</definiendum>
+				<definiens id="0">A three-level rule strategy</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Letter-to-phoneme rules : A semi-automatic discovery procedure .</sentence>
+				<definiendum id="0">Letter-to-phoneme rules</definiendum>
+				<definiens id="0">A semi-automatic discovery procedure</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>Ellipsis is a pervasive phenomenon in natural language , and it has been a major topic of study in theoretical linguistics and computational linguistics in the past several decades ( Ross 1967 ; Sag 1976 ; Williams 1997 ; Hankamer and Sag 1976 ; Webber 1978 ; Lappin 1984 ; Sag and Hankamer 1984 ; Chao 1987 ; Ristad 1990 ; Harper 1990 ; Kitagawa 1991 ; Dalrymple , Shieber , and Pereira 1991 ; Lappin 1992 ; Hardt 1993 ; Kehler 1993 ; Fiengo and May 1994 ) .</sentence>
+				<definiendum id="0">Ellipsis</definiendum>
+				<definiens id="0">a pervasive phenomenon in natural language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A VP must be ruled out if the VPE is within a nonquantificational argument ; when a VPE occurs in an adjunct position , the `` containing '' VP is a permissible antecedent .</sentence>
+				<definiendum id="0">VP</definiendum>
+				<definiens id="0">a permissible antecedent</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The VP headed by tells is modified by the adverbial phrase ( labeled ADVP ) containing the VPE .</sentence>
+				<definiendum id="0">VP</definiendum>
+				<definiens id="0">headed by tells is modified by the adverbial phrase ( labeled ADVP ) containing the VPE</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>There is an additional penalty for a VP antecedent with a be-form auxiliary , if the VPE is a do-form .</sentence>
+				<definiendum id="0">VPE</definiendum>
+				<definiens id="0">a do-form</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Composite Factor is a combination of Post-Filter , Syntactic Filter , and Clause-Rel .</sentence>
+				<definiendum id="0">Composite Factor</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The Preference Factors in the system were selected and developed in an iterative testing and refinement process .</sentence>
+				<definiendum id="0">Preference Factors</definiendum>
+				<definiens id="0">in the system were selected and developed in an iterative testing and refinement process</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>UH Interjection 18 For example , Asher ( 1993 ) claims that VPE requires a discourse relation between VPE and antecedent clauses .</sentence>
+				<definiendum id="0">VPE</definiendum>
+				<definiens id="0">requires a discourse relation between VPE and antecedent clauses</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>X Null elements Adjective phrase Adverb phrase Noun phrase Prepositional phrase Simple declarative clause Clause introduced by subordinating conjunction or 0 ( see below ) Direct question introduced by wh-word or wh-phrase Declarative sentence with subject-aux inversion Subconstituent of SBARQ excluding wh-word or wh-phrase Verb phrase Wh-adverb phrase Wh-noun phrase Wh-prepositional phrase Constituent of unknown or uncertain category `` Understood '' subject of infinitive or imperative Zero variant of that in subordinate clauses Trace -- marks position where moved wh-constituent is interpreted Marks position where preposition is interpreted in pied-piping contexts Acknowledgments This work was partially supported by a Villanova University Summer Research Grant , and National Science Foundation Career Grant IRI-9502257 .</sentence>
+				<definiendum id="0">X Null</definiendum>
+				<definiendum id="1">Clause</definiendum>
+				<definiens id="0">elements Adjective phrase Adverb phrase Noun phrase Prepositional phrase Simple declarative clause</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>The linguistic structure of Grosz and Sidner 's ( 1986 ) discourse model consists of multiutterance segments and structural relations among them , yielding a discourse tree structure .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiens id="0">consists of multiutterance segments and structural relations among them , yielding a discourse tree structure</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The corpus consists of 20 spoken narrative monologues known as the Pear stories , originally collected by Chafe ( 1980 ) .</sentence>
+				<definiendum id="0">corpus</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Reliability metrics ( Krippendorff 1980 ; Carletta 1996 ) are designed to give a robust measure of how well distinct sets of data agree with , or replicate , one another .</sentence>
+				<definiendum id="0">Reliability metrics</definiendum>
+				<definiens id="0">designed to give a robust measure of how well distinct sets of data agree with</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Where L is the length of a narrative i , the actual frequency of cases where N subjects agree in narrative i is multiplied by 100/L , where 100 is the average narrative length .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">the length of a narrative i</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The value of Do ( proportion of observed disagreements ) is then simply ~ , where M is the total number of mismatches ( j being the potential number of matches ) .</sentence>
+				<definiendum id="0">M</definiendum>
+				<definiens id="0">the total number of mismatches ( j being the potential number of matches )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Cue-prosody , which encodes a combination of prosodic and cue word features , was motivated by an analysis of errors on our training data , as described in Section 4.3.1 .</sentence>
+				<definiendum id="0">Cue-prosody</definiendum>
+				<definiens id="0">encodes a combination of prosodic and cue word features</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Recall is the ratio of correctly hypothesized boundaries to target boundaries .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">the ratio of correctly hypothesized boundaries to target boundaries</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In Litman and Passonneau ( 1995b ) , we also present relaxed IR metrics that penalize near misses less heavily ( cases where an algorithm does not place a boundary at a statistically validated boundary location , but does place one within one phrase of the validated boundary ) .</sentence>
+				<definiendum id="0">IR</definiendum>
+				<definiens id="0">metrics that penalize near misses less heavily ( cases where an algorithm does not place a boundary at a statistically validated boundary location , but does place one within one phrase of the validated boundary )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Precision is the most likely metric to be improved .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">the most likely metric to be improved</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The `` Learning 1 '' algorithm performs better on the set defined by T = 3 ( Table 9 ) ; Error Analysis ( Table 7 ) and `` Learning 2 '' ( Table 9 ) perform better on the T = 4 set .</sentence>
+				<definiendum id="0">Error Analysis</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>• Cross-ranking constraints , which arise from the fact that an input network of content units is not isomorphic with the resulting linguistic structure , allowing a single content unit to be realized by surface elements of various linguistic ranks ( cross-ranking proper ) , or multiple content units to be realized by the same surface element ( merging ) .</sentence>
+				<definiendum id="0">Cross-ranking constraints</definiendum>
+				<definiens id="0">cross-ranking proper ) , or multiple content units to be realized by the same surface element ( merging )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Realizing all relations in the Figure 2 input as clauses would result in rather cumbersome sentences such as : Programming is the kind of assignments of the class whose topic is AI and the number of these assignments is six .</sentence>
+				<definiendum id="0">Programming</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Minimally , syntagmatic decisions indude determining the main process , which constrains the set of possible verbs , s For example , in paraphrase ( 4 ) of Figure 2 , this means choosing : • To map the relation class_assignt as the main process of the sentence .</sentence>
+				<definiendum id="0">main process</definiendum>
+				<definiens id="0">syntagmatic decisions indude determining the</definiens>
+				<definiens id="1">constrains the set of possible verbs , s For example</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Then , the Lexical Chooser selects the actual words that are used to realize each role .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+				<definiens id="0">selects the actual words</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>FUF ( Functional Unification Formalism ) is a programming language based on functional unification ( Kay 1979 ) .</sentence>
+				<definiendum id="0">FUF ( Functional Unification Formalism )</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>FUF is the formalism part of the package , a language in which to encode the various knowledge sources needed by a generator .</sentence>
+				<definiendum id="0">FUF</definiendum>
+				<definiens id="0">the formalism part of the package , a language in which to encode the various knowledge sources needed by a generator</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>SURGE is the data part of the package , an encoded knowledge source usable by any generator .</sentence>
+				<definiendum id="0">SURGE</definiendum>
+				<definiens id="0">the data part of the package , an encoded knowledge source usable by any generator</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The resulting lexicalized thematic tree is then unified with SURGE , which produces the final sentence .</sentence>
+				<definiendum id="0">SURGE</definiendum>
+				<definiens id="0">produces the final sentence</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>In this case , the Lexical Chooser decides to map a semantic relation to a simple clause .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+				<definiens id="0">decides to map a semantic relation to a simple clause</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The next task of the Lexical Chooser is to select a word or phrase to realize the relation CLASS_ASSIGNT .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Such planning is a major source of paraphrasing power , and since it is controlled by pragmatic factors ( as explained in Section 4 ) it also increases the sensitivity of the generator to the situation of enunciation .</sentence>
+				<definiendum id="0">Such planning</definiendum>
+				<definiens id="0">a major source of paraphrasing power , and since it is controlled by pragmatic factors</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>This non-isomorphism between syntactic and semantic structures is a pervasive phenomenon , as illustrated by Talmy 's extensive cross-linguistic analysis of constructions expressing motion and causation ( Talmy 1976 , 1983 ) .</sentence>
+				<definiendum id="0">causation</definiendum>
+				<definiens id="0">a pervasive phenomenon , as illustrated by Talmy 's extensive cross-linguistic analysis of constructions expressing motion</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>This discrepancy between the structures of the input and output of the Lexical Chooser imposes two constraints : since several semantic units can be realized by the same lexical item , the Lexical Chooser must be able to merge semantic units , and since the same semantic unit can be realized at different syntactic levels , the Lexical Chooser must be able to handle cross-ranking realization -- that is , to dispatch a semantic unit from a given level in the semantic network onto several different ranks of the syntactic structure .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+				<definiens id="0">cross-ranking realization -- that is , to dispatch a semantic unit from a given level in the semantic network onto several different ranks of the syntactic structure</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>In the Lexical Chooser of ADVISOR-II , the AO mapping mechanism also interacts with the phrase planning component and maps the AO to a dedicated evaluative clause -- producing in our example the complex clause AI has seven assignments ; therefore it is difficult .</sentence>
+				<definiendum id="0">AO mapping mechanism</definiendum>
+				<definiens id="0">the phrase planning component and maps the AO to a dedicated evaluative clause -- producing in our example the complex clause AI has seven assignments</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>In this case , the Lexical Chooser goes the wrong way and must backtrack .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+				<definiens id="0">goes the wrong way and must backtrack</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>• ( V1 , N2 ) and &lt; V2 , N1 ) are not verb-object collocations. We observed the influence of interlexical constraints in our corpus of newswire basketball reports used in developing STREAK. The act of performing strictly better than ever before can alternatively be lexicalized by the collocations to break a record or to post a high. However , even though the elements of the collocation are dependent on different portions of the input network , they are not interchangeable. One can say neither ? to break a high nor ? to post a record. For other relations , the words are interchangeable ; for example , one can say either to equal a high or to equal a record. The input for these collocations is shown in Figure 18. It includes two relations : performance ( player , statistic ) and improve ( performance , maximum ) , which indicate that a player 's performance improves some previously set maximum. The verb of the collocation realizes these two semantic relations , such as to break or to post simultaneously indicating ( I ) a relation between a player and one of its game statistics and ( 2 ) that this statistic is strictly higher than some previous maximum. If , in contrast , the statistic was even with the previous maximum , then the verb equal or match would be selected instead. Whether the object is high or record depends on the type of maximum. In this domain , a maximum can occur for a variety of different reference sets. It can be a maximum for a player , for a team , or for a league. The noun high is used when the performance is a maximum of past performances by the same player while record is used when it is maximum over past performances of other players as well. These semantic constraints on individual word choice are orthogonal to the interlexical constraints between verb and object. It is possible , therefore , to encode interlexical constraints in various locations in the Lexical Chooser. One possibility is to encode the verb-object collocation with the lexicalization options for the predicate. This means that both the lexicalization of the predicate and that of its collocationally constrained argument are chosen all at once. Such simultaneous choices hinder the modularity of the Lexical Chooser and declarative representation of individual constraints. With this organization , the choice of verb must be indexed by the semantic constraints from the arguments even though these constraints do not directly influence predicate choice. Furthermore , if this constraint is encoded in the lexical entry for the predicate , it will have to be repeated for the other domain relations that can take the same concept as an argument , such as equal. This is undesirable since the verbs for lexicalizing this relation are not collocationally restricted , as indicated by the validity of all the following forms : to equal a high , to match a high , to equal a record , to match a record. A second possibility is to represent the semantic constraints on verb and noun choice separately ; where there are several possible verbs for a given semantic constraint , the verb is chosen randomly. The collocational constraints between verb and noun are represented with the noun in this scheme. In this case , modularity in the representation of individual constraints is preserved. Semantic constraints on the respective lexicalizations of the predicate and its argument are independently encoded. However , the orthogonal interlexical constraint can trigger backtracking : for example , if the verb to break is first randomly chosen for the relation improve and then the noun high gets selected because the input indicates the player as the reference set for the maximum concept , the Lexical Chooser must backtrack to select the verb post instead. 227 Computational Linguistics Volume 23 , Number 2 semr structural floating % Relation 1 marked as structural by the content planner % Stockton scored 45 points name performance \ [ cat player\ ] actor \ [ 1\ ] name Stockton relation1 surname John perf \ [ 2\ ] value 45 unit points % Relation 2 marked as floating by the content planner % This performance improves Stockton 's maximum relation2 args past_perf \ [ 3\ ] \ [ \ ] % Past performance that the new performance \ [ 2\ ] improves : % Maximum of the set of all scoring+ performances scored by Stockton cat maximum cat set ref _set generic_elf actor \ [ 1\ ] cat statistic perf unit points Figure 18 Test input for the sentence John Stockton posted a high with 45 points. In order to both preserve modularity and avoid backtracking , the solution is to delay the choice of one collocate until the other one is chosen. We have implemented this in FUF through a control mechanism termed : wait , which allows explicit representation of the interlexical constraints along with modular representation of the individual semantic constraints on word choice. The : wait mechanism is used to indicate that a particular choice should be delayed until some other specific choice point in the grammar. Again , the grammar writer must know that the two decisions are interdependent , but does not need to know which one will take priority. Here , the choice of verb is delayed until the head of the object is selected. Figure 19 shows how the : wait annotation of FUF implements such a delay. In this case , the choice of verb is suspended until its object noun collocates have been chosen. Therefore , no backtracking occurs even though the respective semantic constraints on the lexicalization of the predicate and its argument are kept separate. The : wait annotation is a general control facility that allows optimizing a FUG whenever it is known that two decision classes are dependent on one another. The case illustrated in this paper , where these two decisions classes are verb choice and object head noun choice , is only one of the many types of optimizations made possible by the use of : wait ( see Elhadad \ [ 1993c\ ] for other types ) . In this section , we present four applications , developed at Columbia , which use FUF for lexical choice. The first two use a very similar approach to ADVISOR-II , while the last two incorporate the same model within distinct system architectures. 228 Elhadad , McKeown , and Robin Floating Constraints in Lexical Choice DEF-ALT LEX_SCORE % Branch 1 : ... % Branch 2 : Verbs merging a PERFORMANCE structural relation % and an IMPROVE floating relation % Unifies with result of clause planning on input of Fig.18 process \ [ semr\ [ nameperformance\ ] \ ] roles perf \ [ 1\ ] GIVEN floating GIVEN \ [ Process i semr \ [ name improve \ ] \ ] i \ ] floating new_perf \ [ 1\ ] roles oldqoer f \ [ cat maximum \ ] : ! IMPROVE-MAX_VERBS DEF-ALT IMPROVE_MAX_VERBS % Choice of verb delayed until object is lexicalized : order random wait ( participants affected head lex \ / % Purely lexical test since done when object noun already chosen % Branch 1 : break a record process \ [ lex `` break '' \ ] affected head \ [ lex `` record '' \ ] \ ] % Recurse on both arguments lex_cset &lt; \ [ \ ] \ [ \ ] &gt; % Branch 2 : post process participants lex-cset a high \ [ lex `` post '' \ ] agent \ [ 3\ ] affected \ [ 4\ ] \ [ head \ [ lex % Recurse on both arguments ( L31 t4\ ] &gt; `` high '' \ ] \ ] \ ] `` DEF-CONJ LEX-MAX semr \ [ cat maximum\ ] cat np ALT SEMANTIC-CONSTRAINT-ON-NOUN % Choose noun for max .</sentence>
+				<definiendum id="0">wait annotation</definiendum>
+				<definiens id="0">not verb-object collocations. We observed the influence of interlexical constraints in our corpus of newswire basketball reports used in developing STREAK. The act of performing strictly better than ever before can alternatively be lexicalized by the collocations to break a record or to post a high. However</definiens>
+				<definiens id="1">includes two relations : performance ( player , statistic ) and improve ( performance , maximum ) , which indicate that a player 's performance improves some previously set maximum. The verb of the collocation realizes these two semantic relations , such as to break or to post simultaneously indicating ( I ) a relation between a player and one of its game statistics</definiens>
+				<definiens id="2">possible , therefore , to encode interlexical constraints in various locations in the Lexical Chooser. One possibility is to encode the verb-object collocation with the lexicalization options for the predicate. This means that both the lexicalization of the predicate and that of its collocationally constrained argument are chosen all at once. Such simultaneous choices hinder the modularity of the Lexical Chooser and declarative representation of individual constraints. With this organization</definiens>
+				<definiens id="3">undesirable since the verbs for lexicalizing this relation are not collocationally restricted , as indicated by the validity of all the following forms : to equal a high , to match a high , to equal a record , to match a record. A second possibility is to represent the semantic constraints on verb</definiens>
+				<definiens id="4">% Maximum of the set of all scoring+ performances scored by Stockton cat maximum cat set ref _set generic_elf actor \ [ 1\ ] cat statistic perf unit points Figure 18 Test input for the sentence John</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>PLANDOC is an automated documentation system under joint development by Columbia and Bellcore .</sentence>
+				<definiendum id="0">PLANDOC</definiendum>
+				<definiens id="0">an automated documentation system under joint development by Columbia and Bellcore</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>STREAK handles the structural constraints and the floating constraints in two separate passes .</sentence>
+				<definiendum id="0">STREAK</definiendum>
+				<definiens id="0">handles the structural constraints and the floating constraints in two separate passes</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Structural constraints are handled during an initial draft-building pass and floating constraints during a subsequent revision pass .</sentence>
+				<definiendum id="0">Structural constraints</definiendum>
+				<definiens id="0">an initial draft-building pass and floating constraints during a subsequent revision pass</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The syntactic realization component deals with agreements , ordering of constituents , choice of closed-class words , and in most systems can also perform syntactic transformations on the structure provided by the Lexical Chooser ( such as passivization , dative movement , there-insertion , or it-extraposition ) .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+				<definiens id="0">such as passivization , dative movement , there-insertion , or it-extraposition )</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Furthermore , within this framework we have developed an algorithm for lexical selection , and the consequent building of syntactic structure , such that at each choice point in the structure , the Lexical Chooser considers all semantic concepts that can be realized , choosing a word that conveys as many as possible or discharging a concept to dependent linguistic sites , at the end checking that all concepts have been covered .</sentence>
+				<definiendum id="0">Lexical Chooser</definiendum>
+				<definiens id="0">considers all semantic concepts that can be realized , choosing a word</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>In Winston P.J. and R.H. Brown , editors , Artificial Intelligence : An MIT Perspective .</sentence>
+				<definiendum id="0">Artificial Intelligence</definiendum>
+				<definiens id="0">An MIT Perspective</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>An overview of surge : A reusable comprehensive syntactic realization component .</sentence>
+				<definiendum id="0">overview of surge</definiendum>
+				<definiens id="0">A reusable comprehensive syntactic realization component</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>Phred : a generator for natural language interfaces .</sentence>
+				<definiendum id="0">Phred</definiendum>
+			</definition>
+			<definition id="24">
+				<sentence>Nigel : a systemic grammar for text generation .</sentence>
+				<definiendum id="0">Nigel</definiendum>
+				<definiens id="0">a systemic grammar for text generation</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>The Generation Gap : The Problem of Expressibility in Text Planning .</sentence>
+				<definiendum id="0">Generation Gap</definiendum>
+				<definiens id="0">The Problem of Expressibility in Text Planning</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>In some cases , the resulting corpus provides training data for spoken language systems ( Hirschman et al. 1993 ) , is used as a target for improved systems ( Moore , Lemaire , and Rosenblum 1996 ) , or forms a test set for evaluating the performance of an existing natural language system ( Whittaker and Stenton 1989 ; Hirschman et al. 1993 ) .</sentence>
+				<definiendum id="0">spoken language systems</definiendum>
+				<definiens id="0">a test set for evaluating the performance of an existing natural language system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A transaction is a subdialogue that accomplishes one major step in the participants ' plan for achieving the task ( Isard and Carletta 1995 ) .</sentence>
+				<definiendum id="0">transaction</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Each transaction consists of a sequence of conversational games , where a conversational game is a set of utterances starting with an initiation ( e.g. , a request for information ) and encompassing all successive utterances until the purpose of the game has been fullfilled or the game has been abandoned .</sentence>
+				<definiendum id="0">transaction</definiendum>
+				<definiens id="0">consists of a sequence of conversational games , where a conversational game is a set of utterances starting with an initiation ( e.g. , a request for information ) and encompassing all successive utterances until the purpose of the game has been fullfilled or the game has been abandoned</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Each game consists of a sequence of moves , each of which is classified as either an initiative ( e.g. , instruction , explanation ) or a response ( e.g. , reply , acknowledgment ) .</sentence>
+				<definiendum id="0">game</definiendum>
+				<definiens id="0">consists of a sequence of moves , each of which is classified as either an initiative ( e.g. , instruction , explanation ) or a response ( e.g. , reply , acknowledgment )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Initiative is varied by setting the system 's initiative to directive or declarative mode .</sentence>
+				<definiendum id="0">Initiative</definiendum>
+				<definiens id="0">setting the system 's initiative to directive or declarative mode</definiens>
+			</definition>
+</paper>
+
+		<paper id="3005">
+			<definition id="0">
+				<sentence>The stranded auxiliary in the second clause ( henceforth , the target clause ) marks a vestigial verb phrase ( VP ) , a meaning for which is to be recovered from another clause ( henceforth , the source clause ) , in this case , the first clause .</sentence>
+				<definiendum id="0">VP</definiendum>
+				<definiens id="0">marks a vestigial verb phrase</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>The inversion transduction grammar ( ITG ) formalism only minimally extends the generative power of a simple transduction grammar , yet turns out to be surprisingly effective .</sentence>
+				<definiendum id="0">inversion transduction grammar</definiendum>
+				<definiens id="0">the generative power of a simple transduction grammar , yet turns out to be surprisingly effective</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The constituent alignment includes a word alignment as a by-product .</sentence>
+				<definiendum id="0">constituent alignment</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Formally , an inversion transduction grammar , or ITG , is denoted by G = ( N , W1 , W2 , T¢ , S ) , where dV is a finite set of nonterminals , W1 is a finite set of words ( terminals ) of language 1 , } 4 ; 2 is a finite set of words ( terminals ) of language 2 , T¢ is a finite set of rewrite rules ( productions ) , and S E A/ '' is the start symbol .</sentence>
+				<definiendum id="0">ITG</definiendum>
+				<definiendum id="1">dV</definiendum>
+				<definiendum id="2">W1</definiendum>
+				<definiendum id="3">T¢</definiendum>
+				<definiens id="0">a finite set of nonterminals</definiens>
+				<definiens id="1">a finite set of words ( terminals ) of language 1</definiens>
+				<definiens id="2">a finite set of words ( terminals ) of language 2</definiens>
+				<definiens id="3">a finite set of rewrite rules ( productions )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If ¢ E LI ( G ) and ¢ C L2 ( G ) , then G ' contains a single production of the form S ~ ~ c/c , where S ~ is the start symbol of G ~ and does not appear on the right-hand side of any production of G ' ; otherwise G ' contains no productions of the form A ~ c/c .</sentence>
+				<definiendum id="0">S ~</definiendum>
+				<definiens id="0">the start symbol of G ~ and does not appear on the right-hand side of any production of G ' ; otherwise G ' contains no productions of the form A ~ c/c</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( LEFT ( q ) ) = ~* ( ffq ) ) ( ~ ( q ) ) ( 12 ) ~ ( RIGHT ( q ) ) = ~q ( ~ ( q ) ) ( f ( q ) ) ( 13 ) The time complexity of this algorithm in the general case is O ( N3T3V3 ) , where N is the number of distinct nonterminals and T and V are the lengths of the two sentences .</sentence>
+				<definiendum id="0">LEFT</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the number of distinct nonterminals and T and V are the lengths of the two sentences</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Algorithms for subsentential alignment have been developed as well as granularities of the character ( Church 1993 ) , word ( Dagan , Church , and Gale 1993 ; Fung and Church 1994 ; Fung and McKeown 1994 ) , collocation ( Smadja 1992 ) , and specially segmented ( Kupiec 1993 ) levels .</sentence>
+				<definiendum id="0">specially segmented</definiendum>
+				<definiens id="0">developed as well as granularities of the character ( Church 1993 )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Recursion For all English constituents es , t and all i , u , v such that ~ Ki &lt; N 0 &lt; ~ &lt; ~ &lt; V / 6~ ) uv ( i ) -max ai_r , k. , 6s st , , u ( jst ) 6s~ , ,cu , v ( kst ) ( 19 ) u &lt; U &lt; v ust stj , . , , V~uv ( i ) = argmax6s , &amp; t , u , u ( jst ) 6s , ,t , U , v ( kst ) ( 20 ) u &lt; UKv 6~uv ( i ) = max ai_ ( j~tka } 6s , S , , , U , v ( jst ) 6s , t , t , u , U ( kst ) ( 21 ) u &lt; U &lt; v v ( } ( i~ stuv , , = argmax 6s , S , t , U , v ( jst ) 6S , t , t , u , U ( kst ) ( 22 ) u &lt; UKv { ( s , S~t , u , v~\ ] ( f ( q ) ) ) if Oq ( £ ( q ) ) = \ [ \ ] L~FT ( q ) = ( s , Gt , v~ ) ( e ( q ) ) , v ) if Oq ( e ( q ) ) = ( &gt; ( 23 ) 399 Computational Linguistics Volume 23 , Number 3 ( Sst , t , v~\ ] ( g ( q ) ) , v ) if Oq ( g ( q ) ) = \ [ \ ] RIGHT ( q ) ( 24 ) ( Sst , t , u , v~ ) ( e ( q ) ) ) if Oq ( f ( q ) ) = 0 g ( LEFT ( q ) ) = jst ( 25 ) ~ ( RIGHT ( q ) ) = kst ( 26 ) The time complexity for this constrained version of the algorithm drops from O ( NBT3V 3 ) to O ( TV3 ) .</sentence>
+				<definiendum id="0">U</definiendum>
+				<definiens id="0">u &lt; U &lt; v v ( } ( i~ stuv , , = argmax 6s , S , t</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Two-level morphology : A general computational model for word-form recognition and production .</sentence>
+				<definiendum id="0">Two-level morphology</definiendum>
+				<definiens id="0">A general computational model for word-form recognition and production</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>Let 7-1 be a p-subsequential transducer representing f , T1 = ( Ql , i1 , F1 , E , A , 61 , a1 , pl ) , and 7 '' 2 = ( Q2 , i2 , F2 , A , ~,62 , cr2 , P2 ) a q-subsequential transducer representing g. pl and p2 denote the final output functions of T1 and r2 , which map F1 to ( A* ) P and F2 to ( f~* ) q , respectively , pl ( r ) represents , for instance , the set of final output strings at a final state r. Define the pq-subsequential transducer T = ( Q , i , F , E , f~,6 , a , p ) by Q = Q1 x Q2 , i = ( il , i2 ) , F - { ( 91,92 ) E Q : 91 c F1,62 ( q2 , p1 ( q1 ) ) f3 F2 ~ 0 } , with the following transition and output functions : Va E E , V ( ql , q2 ) E Q,6 ( ( ql , q2 ) , a ) = ( 61 ( ql , a ) ,62 ( q2 , al ( ql , a ) ) ) o ' ( ( ql , q2 ) , a ) = cra ( q2 , crl ( ql , a ) ) and with the final output function defined by : V ( ql , q2 ) E F , p ( ( ql , q2 ) ) =a2 ( q2 , Pl ( ql ) ) p2 ( 6 ( q2 , Pl ( ql ) ) ) Clearly , according to the definition of composition , the transducer ~realizes g of .</sentence>
+				<definiendum id="0">P2 )</definiendum>
+				<definiendum id="1">pl</definiendum>
+				<definiens id="0">a p-subsequential transducer representing f , T1 = ( Ql , i1 , F1 , E , A , 61 , a1 , pl )</definiens>
+				<definiens id="1">a q-subsequential transducer representing g. pl and p2 denote the final output functions of T1 and r2</definiens>
+				<definiens id="2">the pq-subsequential transducer T = ( Q , i , F , E , f~,6 , a , p ) by Q = Q1 x Q2</definiens>
+				<definiens id="3">q1 ) ) f3 F2 ~ 0 } , with the following transition and output functions : Va E E , V ( ql , q2 ) E Q,6 ( ( ql</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Let d~ be the semimetric defined by : V ( u , v ) E \ [ ( A* ) P\ ] 2 , d'p ( U , V ) = max d ( ui , vj ) l &lt; i , j &lt; p ( 5 ) The following theorem that follows then gives that characterization. Theorem 8 Letf be a rational function mapping E* to ( A* ) P. f is p-subsequential iff it has bounded variation ( using the semimetric d~ on ( A* ) P ) . Proof According to the previous theorem the condition is sufficient since : V ( u , v ) c &lt; a'p ( u , v ) Conversely if f is p-subsequential , let T = ( Q , i , F , ~ , A , 6 , or , p ) be a p-subsequential transducer representing f , where p = ( pl ... .. pp ) is the output function mapping Q to ( A* ) P. Let N and M be defined by : N= max Ipi ( q ) l and M= max Icffq , a ) l ( 6 ) qEF , l &lt; id &lt; p aE~ , qEQ We denote by Dom ( T ) the set of strings accepted by T. Let k &gt; 0 and ( ul , U2 ) E \ [ Dora ( T ) \ ] 2 such that d ( ul , u2 ) _ &lt; k. Then , there exists u E E* such that : U 1 = UVl , U 2 = UV2 , and \ [ vii + Iv2l G k ( 7 ) Hence , f ( Ul ) = { cr ( i , u ) rr ( ~ ( i , u ) , vl ) pj ( 6 ( i , ul ) ) : 1 G j &lt; p } f ( u2 ) = { rr ( i , u ) cr ( 6 ( i , u ) , v2 ) Pj ( ~ ( i , u2 ) ) : 1 &lt; j &lt; p } ( 8 ) Let K = kM + 2N .</sentence>
+				<definiendum id="0">pp )</definiendum>
+				<definiens id="0">gives that characterization. Theorem 8 Letf be a rational function mapping E* to ( A* ) P. f is p-subsequential iff it has bounded variation ( using the semimetric d~ on ( A* ) P ) . Proof According to the previous theorem the condition is sufficient since : V ( u</definiens>
+				<definiens id="1">p-subsequential , let T = ( Q , i , F , ~ , A , 6 , or , p ) be a p-subsequential transducer representing f , where p = ( pl ... ..</definiens>
+				<definiens id="2">l &lt; id &lt; p aE~ , qEQ We denote by Dom ( T ) the set of strings accepted by T. Let k &gt; 0 and ( ul , U2 ) E \ [ Dora ( T ) \ ] 2 such that d ( ul</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Definition More formally a string-to-weight subsequential transducer `` r = ( Q , i , F , ~ , 6 , or , ) ~ , p ) is an 8-tuple , with : • Q the set of its states , • i E Q its initial state , • F c_ Q the set of final states , • G the input alphabet , • 6 the transition function mapping Q x E to Q , 6 can be extended as in the string case to map Q x G* to Q , • cr the output function , which maps Q x G to 7 % + , cr can also be extended to Q x ~ , * , • ; ~ E T4+ the initial weight , • p the final weight function mapping F to T4+ .</sentence>
+				<definiendum id="0">p )</definiendum>
+				<definiendum id="1">output function</definiendum>
+				<definiens id="0">the initial weight , • p the final weight function mapping F to T4+</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Recall that one can define a metric on E* by : d ( u , v ) = lu\ [ + Iv\ [ 21u A v\ [ ( 10 ) where we denote by u A v the longest common prefix of two strings u and v in E* .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">a metric on E* by : d ( u , v ) = lu\ [ + Iv\ [ 21u A v\ [ ( 10 ) where we denote by u A v the longest common prefix of two strings u and v in E*</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>284 Mohri Transducers in Language and Speech 9 10 11 12 13 14 15 Figure 10 Power Series Determinization ( T~ , T2 ) 2 ) ~2 ~ ( ~E~AI ( i ) iEI1 3 i2 *-U { ( i , ) ~21 ® ~1 ( i ) ) } iEI1 5 while Q # 0 6 do q2 ~-head\ [ Q\ ] 7 if ( there exists ( q , x ) E q2 such that q E F1 ) 8 then F2 * -- F2 U { q2 } / : } 2 ( q2 ) *-~ X @ PA ( q ) qEFl , ( q , x ) Eq2 for each a such that F ( q2 , a ) # 0 do a2 ( q2 , a ) * ( ~ \ [ x® ( ~ cq ( t ) \ ] ( q , x ) EI ' ( q2 , a ) t= ( q , a , crl ( t ) , nl ( t ) ) EE1 62 ( q2 , a ) *-U { ( q '' ED \ [ cr2 ( q2 '' a ) \ ] -l®x ( gal ( t ) } q'Ev ( q2 , a ) ( q , x , t ) ET ( q2 , a ) , nl ( t ) =q ' if ( 62 ( q2 , a ) is a new state ) then ENQUEUE ( Q , 62 ( q2 , a ) ) DEQUEUE ( Q ) Algorithm for the determinization of a transducer ~-~ representing a power series defined on the semiring ( S , E3 , ® , 0 , i ) .</sentence>
+				<definiendum id="0">x® ( ~ cq</definiendum>
+				<definiens id="0">a ) t= ( q , a , crl ( t ) , nl ( t )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The subsets q2 are the states of the resulting transducer , q2 is a final state of T2 iff it contains at least one pair ( q , x ) , with q a final state of ~1 ( lines 7-8 ) .</sentence>
+				<definiendum id="0">q2</definiendum>
+				<definiens id="0">a final state of T2 iff it contains at least one pair ( q , x ) , with q a final state of ~1 ( lines 7-8 )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The sets F ( q2 , a ) , 7 ( q2 , a ) , and v ( q2 , a ) used in the algorithm are defined by : • F ( q2 , a ) = { ( q , x ) E q2 : 3t = ( q , a , rrl ( t ) , nl ( t ) ) E El } • 7 ( q2 , a ) = { ( q , x , t ) E q2 x El : t= ( q , a , cq ( t ) , nl ( t ) ) E El } • ~ ( q2 , a ) = { q ' : 3 ( q , x ) E q2,3t = ( q , a , rrfft ) , q ' ) E El } F ( q2 , a ) denotes the set of pairs ( q , x ) , elements of the subset q2 , having transitions labeled with the input a. 7 ( q2 , a ) denotes the set of triples ( q , x , t ) where ( q , x ) is a pair in q2 such that q admits a transition with input label a. v ( q2 , a ) is the set of states q ' that can be reached by transitions labeled with a from the states of the subset q2 .</sentence>
+				<definiendum id="0">F ( q2</definiendum>
+				<definiendum id="1">v ( q2</definiendum>
+				<definiendum id="2">F ( q2</definiendum>
+				<definiendum id="3">q , x ) E q2,3t</definiendum>
+				<definiendum id="4">)</definiendum>
+				<definiendum id="5">x )</definiendum>
+				<definiendum id="6">)</definiendum>
+				<definiens id="0">a ) = { ( q , x ) E q2 : 3t = ( q , a , rrl ( t ) , nl ( t ) ) E El } • 7 ( q2 , a ) = { ( q , x , t ) E q2 x El : t= ( q , a , cq ( t ) , nl ( t ) ) E El } • ~</definiens>
+				<definiens id="1">the set of pairs ( q , x ) , elements of the subset q2 , having transitions labeled with the input a. 7 ( q2 , a</definiens>
+				<definiens id="2">the set of triples ( q , x , t ) where ( q ,</definiens>
+				<definiens id="3">a pair in q2 such that q admits a transition with input label a. v ( q2 , a</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Given two transducers T1 = ( Q1 , E , I1 , F1 , El , A1 , pl ) and T2 = ( Q2 , G , /2 , F2 , E2 , A2 , # 2 ) , we define the cross product of T1 and T2 as the transducer : T1 X T2 = ( Q1 x Q2 , G , I1 x I2 , F1 x F2 , E , A , # ) with outputs in 7 '' 4+ x T4+ such that t = ( ( ql , q2 ) , a , ( Xl , x2 ) , ( q~ , q~ ) ) E Q1 x E x 14+ x 74+ x Q2 is a transition of T1 x T2 , namely t E E , iff ( ql , a , xl , q~ ) E E1 and ( q2 , a , x2 , ¢2 ) E E2 .</sentence>
+				<definiendum id="0">q~ , q~ ) ) E Q1 x E</definiendum>
+				<definiens id="0">the transducer : T1 X T2 = ( Q1 x Q2 , G , I1 x I2 , F1 x F2 , E , A , # ) with outputs in 7 '' 4+ x T4+ such that t = ( ( ql</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>/V ' , c ( q ' , uv k ) = ) ~1 ( / ' ) q81 ( i ' , u , q ' ) + k01 ( q ' , v , q ' ) or2 ( /2 , uv k ) ~2 Let ) ~ and 0 be defined by : ) ~ = ( , ~1 ( i ' ) ) ~1 ( i ) ) q ( l ( i ' , u , q ' ) 01 ( i , u , q ) ) 0 = Ol ( q ' , v , q ' ) Offq , v , q ) ( 19 ) We have : 'Ok E N , c ( q ' , uv k ) c ( q , uv k ) = ~ + k~ ) ( 20 ) Since ( 1 ~ 0 , equation 20 shows that the subsets 62 ( i2 , uv k ) are all distinct .</sentence>
+				<definiendum id="0">i2 , uv k</definiendum>
+				<definiens id="0">'Ok E N , c ( q ' , uv k</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Let K C T~ be the finite set of real numbers defined by : K= ( ¢ ( t~ ) -cr ( ti ) ) : l &lt; k &lt; 2iQ1\ ] 2-1 , Vi &lt; _k ( ti , tl ) EE We define A by the following : • The set of states of A is defined by Q = Q1 x Q1 x K , • The set of initial states by I = h x/1 x { 0 } , • The set of final states by F = F1 x F1 x K , • The set of transitions by : E = { ( ( ql , q2 , c ) , a , ( q~ , q~2 , c ' ) ) E. Q x E x Q : 3 ( ql , a , x , q2 ) E El , ' ' ' x ' x } . ( ql , a , x , q2 ) EEl , C'-C= 292 Mohri Transducers in Language and Speech By construction , two states ql and q2 of Q can be reached by the same string u , lut &lt; 21Qll 2 1 , iff there exists c E K such that ( ql , q2 , c ) can be reached from I in A. The set of such ( ql , q2 , c ) is exactly the transitive closure of I in A. The transitive closure of I can be determined in time linear in the size of A , O ( IQI + IEI ) . Two such states ql and q2 are not twins iff there exists a path in A from ( ql , q2 , 0 ) to ( ql , q2 , c ) , with c # 0. Indeed , this is exactly equivalent to the existence of cycles at ql and q2 with the same input label and distinct output weights. According to lemma 2 , it suffices to test the twins property for strings of length less than 21Qll 2 1. So the following gives an algorithm to test the twins property of a transducer ~-1 : , Compute the transitive closure of h T ( I ) . Determine the set of pairs ( ql , q2 ) of T ( I ) with distinct states ql # q2For each such { ql , q2 } , compute the transitive closure of ( ql , q2 , 0 ) in A. If it contains ( ql , q2 , c ) with c # 0 , then ~-1 does not have the twins property. The operations used in the algorithm ( computation of the transitive closure , determination of the set of states ) can all be done in polynomial time with respect to the size of A , using classical algorithms ( Aho , Hopcroft , and Ullman 1974 ) . \ [ \ ] This provides an algorithm for testing the twins property of an unambiguous trim transducer T. It is very useful when T is known to be unambiguous. In many practical cases , the transducer one wishes to determinize is ambiguous. It is always possible to construct an unambiguous transducer T ' from T ( Eilenberg 1974-1976 ) . The complexity of such a construction is exponential in the worst case. Thus the overall complexity of the test of determinizability is also exponentia ! in the worst case. Notice that if one wishes to construct the result of the determinization of T for a given input string w , one does not need to expand the whole result of the determinization , but only the necessary part of the determinized transducer. When restricted to a finite set the function realized by any transducer is subsequentiable , since it has bounded variation ? Acyclic transducers have the twins property , so they are determinizable. Therefore , it is always possible to expand the result of the determinization algorithm for a finite set of input strings , even if T is not determinizable. The determinization algorithm that we previously presented applies as well to transducers mapping strings to other semirings. We gave the pseudocode of the algorithm in the general case. The algorithm applies for instance to the real semiring ( 7 '' 4 , + , . , 0,1 ) . One can also verify that ( ~* U { oc } , A , . , cx~ , e ) , where A denotes the longest common prefix operation and • concatenation , o~ a new element such that for any string w E ( ~* U { ~ } ) , w A oo = oo A w = w and woo = eo. w = oo , defines a left semiring } ° We call this semiring the string semiring. The algorithm of Figure 10 used with the string semiring is exactly the determinization algorithm for subsequentiable string-to-string transducers , as defined by Mohri ( 1994c ) . The cross product of two semirings defines a semiring. The algorithm also applies when the semiring is the cross product of can be generalized to any rational subset Y of E* such that the restriction of S , the function T realizes , to Y has bounded variation. 10 A left semiring is a semiring that may lack right distributivity. 293 Computational Linguistics Volume 23 , Number 2 a : b/3 Figure 13 Transducer 7-1 with outputs in ~* x 74. a : b/3 ~ c : c/5 = b.a/~ d : a/~ Figure 14 Sequential transducer r2 with outputs in ~ , ,* x 74 obtained from fll by determinization. ( E* U { cx~ } , A , . , cx~ , c ) and ( T4+ U { oo } , min , + , oo , 0 ) , which allows transducers outputting pairs of strings and weights to be determined. The determinization algorithm for such transducers is illustrated in Figures 13 and 14. Subsets in this algorithm are made of triples ( q , w , x ) E Q x E* u { oo } x 7-4 u { cx~ } , where q is a state of the initial transducer , w a residual string , and x a residual output weight. We here define a minimization algorithm for subsequential power series defined on the tropical semiring , which extends the algorithm defined by Mohri ( 1994b ) in the case of string-to-string transducers. For any subset L of G* and any string u we define u-lL by : u-IL = { w : uw E L } ( 22 ) Recall that L is a regular language iff there exists a finite number of distinct u-lL Nerode ( 1958 ) . In a similar way , given a power series S we define a new power series u-is by : n u-iS = y~ ( S , uw ) w ( 23 ) wE~* 11 One can prove that S , a power series defined on a field , is rational if it admits a finite number of independent u-iS ( Carlyle and Paz 1971 ) . This is the equivalent , for power series , of Nerode 's theorem for regular languages. 294 Mohri Transducers in Language and Speech For any subsequential power series S we can now define the following relation on ~ , * : V ( u , v ) E ~* , u Rs v 4=~ 3k E T4 , ( u-lsupp ( S ) = v-lsupp ( S ) ) and ( \ [ u-iS -1 -V S\ ] /u-lsupp ( S ) = k ) ( 24 ) It is easy to show that Rs is an equivalence relation. ( u-lsupp ( S ) = v-lsupp ( S ) ) defines the equivalence relation for regular languages. Rs is a finer relation. The additional condition in the definition of Rs is that the restriction of the power series \ [ u-iS -v-iS\ ] to u-lsupp ( S ) = v-lsupp ( S ) is constant. The following lemma shows that if there exists a subsequential transducer T computing S with a number of states equal to the number of equivalence classes of Rs , then T is a minimal transducer computing f. Lemma 3 If S is a subsequential power series defined on the tropical semiring , Rs has a finite number of equivalence classes. This number is bounded by the number of states of any subsequential transducer realizing S. Proof Let T - ( Q , i , F , ~ , 6 , or , ~ , p ) be a subsequential transducer realizing S. Clearly , ~ ( U , V ) E ( ~* ) 2 , 6 ( i , u ) = 6 ( i , v ) ~ Vw E u-lsupp ( S ) ,6 ( i , uw ) E F ~ 6 ( i , vw ) E F u-lsupp ( S ) = v-lsupp ( S ) Also , if u-lsupp ( S ) = v-lsupp ( S ) , V ( u , v ) E ( ~ , ) 2 , 6 ( i , u ) = 6 ( i , v ) ~ VW E u-lsupp ( S ) , ( S , uw ) ( S , vw ) = or ( i , u ) ¢ ( i , v ) 4=~ \ [ u-iS v-lS\ ] /u-~supp ( S ) = cr ( i , u ) cr ( i , v ) So V ( u , v ) E ( G , ) 2 , 6 ( i , u ) = 6 ( i , v ) ~ ( uRsv ) . This proves the lemma. \ [ \ ] The following theorem proves the existence of a minimal subsequential transducer representing S. Theorem 14 For any subsequential function S , there exists a minimal subsequential transducer computing it. Its number of states is equal to the index of Rs. Proof Given a subsequential power series S , we define a power series f by : Vu E ~* : u-lsupp ( S ) = 0 , ( f , u ) = 0 Vu E G* : u-lsupp ( S ) # O , u ) = min ( S , uw ) wEu-lsupp ( S ) We then define a subsequential transducer T = ( Q , i , F , ~ , 6 , or , ) ~ , p ) by : 12 • Q= { ~ : uEG* } ; 12 We denote by ~ the equivalence class of u E G*. 295 Computational Linguistics Volume 23 , Number 2 • i=~ ; • F = { a : u E ~ , * Msupp ( S ) } ; • Vu e ~* , Va e ~,6 ( a , a ) = Ca ; • vu ~ y , * , va ~ z , ~ ( ~ , a ) = ( f , u~ ) ( f , u ) ; • , ~ = ff , ~ ) ; • VqEQ , p ( q ) =0. Since the index of Rs is finite , Q and F are well-defined. The definition of 6 does not depend on the choice of the element u in ~ , since for any a E ~ , u Rs v implies ( ua ) Rs ( va ) . The definition of rr is also independent of this choice , since by definition of Rs , if uRsv , then ( ua ) Rs ( va ) and there exists k E T4 such that Vw E ~* , ( S , uaw ) ( S , vaw ) = ( S , uw ) ( S , vw ) = k. Notice that the definition of G implies that : Vw ~ s* , ¢ ( i , w ) = ( f , w ) ff , ~ ) ( 25 ) So : Vw E supp ( S ) , A + ¢r ( i , w ) + p ( q ) -= ( f , w ) = rnin ( S , ww ' ) w ' ew-lsupp ( S ) S is subsequential , hence : Vw ' E w-lsupp ( S ) , ( S , ww ' ) &lt; ( S , w ) . Since Vw E supp ( S ) , ¢ E w-lsupp ( S ) , we have : m : m ( S , ww ' ) = ( S , w ) w ' ew-lsupp ( S ) T realizes S. This ends the proof of the theorem. \ [ \ ] Given a subsequential transducer T = ( Q , i , F , G , 6 , cr , A , p ) , we can define for each state q E Q , d ( q ) by : d ( q ) -rnin ( er ( q , w ) + p ( 6 ( q , w ) ) ) ( 26 ) 6 ( q , w ) EF Definition We define a new operation of pushing , which applies to any transducer T. In particular , if T is subsequential the result of the application of pushing to T is a new subsequential transducer T ' -- ( Q , i , F , ~.. , 6 , er ' , A ' , p ' ) that only differs from T by its output weights in the following way : • ' = ; ~ + , ~ ( i ) ; • V ( q , a ) E Q x Z , G ' ( q , a ) = rr ( q , a ) +d ( 6 ( q , a ) ) -d ( q ) ; • Vq E Q , # ( q ) = O. According to the definition of d , we have : Vw E G* : 6 ( q , aw ) E F , d ( q ) &lt; cr ( q , a ) + er ( 6 ( q , a ) , w ) + p ( 6 ( 6 ( q , a ) , w ) ) This implies that : a ( q ) &lt; _ o ( q , a ) + a ( 6 ( q , a ) ) So , ¢r ~ is well-defined : v ( q , a ) ~ Q x z , ~ ' ( q , a ) &gt; o 296 Mohri Transducers in Language and Speech Lemma 4 Let T ' be the transducer obtained from T by pushing .</sentence>
+				<definiendum id="0">K C T~</definiendum>
+				<definiendum id="1">q</definiendum>
+				<definiens id="0">the finite set of real numbers defined by : K= ( ¢ ( t~ ) -cr ( ti ) ) : l &lt; k &lt; 2iQ1\ ] 2-1 , Vi &lt; _k ( ti , tl ) EE We define A by the following : • The set of states of A is defined by Q = Q1 x Q1 x K , • The set of initial states by I = h x/1 x { 0 } , • The set of final states by F = F1 x F1 x K , • The set of transitions by : E = { ( ( ql , q2 , c ) , a , ( q~ , q~2 , c ' ) ) E. Q x E x Q : 3 ( ql , a , x , q2 ) E El , ' ' ' x ' x } . ( ql , a , x , q2 ) EEl , C'-C= 292 Mohri Transducers in Language and Speech By construction , two states ql and q2 of Q can be reached by the same string u , lut &lt; 21Qll 2 1 , iff there exists c E K such that ( ql , q2 , c ) can be reached from I in A. The set of such ( ql , q2 , c ) is exactly the transitive closure of I in A. The transitive closure of I can be determined in time linear in the size of A , O ( IQI + IEI ) . Two such states ql and q2 are not twins iff there exists a path in A from ( ql , q2 , 0 ) to ( ql , q2 , c ) , with c # 0. Indeed , this is exactly equivalent to the existence of cycles at ql and q2 with the same input label and distinct output weights. According to lemma 2 , it suffices to test the twins property for strings of length less than 21Qll 2 1. So the following gives an algorithm to test the twins property of a transducer ~-1 : , Compute the transitive closure of h T ( I ) . Determine the set of pairs ( ql , q2 ) of T ( I ) with distinct states ql # q2For each such { ql , q2 } , compute the transitive closure of ( ql , q2 , 0 ) in A. If it contains ( ql , q2 , c ) with c # 0 , then ~-1 does not have the twins property. The operations used in the algorithm ( computation of the transitive closure , determination of the set of states ) can all be done in polynomial time with respect to the size of A , using classical algorithms ( Aho , Hopcroft , and Ullman 1974 ) . \ [ \ ] This provides an algorithm for testing the twins property of an unambiguous trim transducer T. It is very useful when T is known to be unambiguous. In many practical cases , the transducer one wishes to determinize is ambiguous. It is always possible to construct an unambiguous transducer T ' from T ( Eilenberg 1974-1976 ) . The complexity of such a construction is exponential in the worst case. Thus the overall complexity of the test of determinizability is also exponentia ! in the worst case. Notice that if one wishes to construct the result of the determinization of T for a given input string w , one does not need to expand the whole result of the determinization , but only the necessary part of the determinized transducer. When restricted to a finite set the function realized by any transducer is subsequentiable , since it has bounded variation ? Acyclic transducers have the twins property , so they are determinizable. Therefore , it is always possible to expand the result of the determinization algorithm for a finite set of input strings , even if T is not determinizable. The determinization algorithm that we previously presented applies as well to transducers mapping strings to other semirings. We gave the pseudocode of the algorithm in the general case. The algorithm applies for instance to the real semiring ( 7 '' 4 , + , . , 0,1 ) . One can also verify that ( ~* U { oc } , A , . , cx~ , e ) , where A denotes the longest common prefix operation and • concatenation , o~ a new element such that for any string w E ( ~* U { ~ } ) , w A oo = oo A w = w and woo = eo. w = oo , defines a left semiring } ° We call this semiring the string semiring. The algorithm of Figure 10 used with the string semiring is exactly the determinization algorithm for subsequentiable string-to-string transducers , as defined by Mohri ( 1994c ) . The cross product of two semirings defines a semiring. The algorithm also applies when the semiring is the cross product of can be generalized to any rational subset Y of E* such that the restriction of S , the function T realizes , to Y has bounded variation. 10 A left semiring is a semiring that may lack right distributivity. 293 Computational Linguistics Volume 23 , Number 2 a : b/3 Figure 13 Transducer 7-1 with outputs in ~* x 74. a : b/3 ~ c : c/5 = b.a/~ d : a/~ Figure 14 Sequential transducer r2 with outputs in ~ , ,* x 74 obtained from fll by determinization. ( E* U { cx~ } , A , . , cx~ , c ) and ( T4+ U { oo } , min , + , oo , 0 ) , which allows transducers outputting pairs of strings and weights to be determined. The determinization algorithm for such transducers is illustrated in Figures 13 and 14. Subsets in this algorithm are made of triples ( q , w , x ) E Q x E* u { oo } x 7-4 u { cx~ }</definiens>
+				<definiens id="1">a state of the initial transducer , w a residual string , and x a residual output weight. We here define a minimization algorithm for subsequential power series defined on the tropical semiring , which extends the algorithm defined by Mohri ( 1994b ) in the case of string-to-string transducers. For any subset L of G* and any string u we define u-lL by : u-IL = { w : uw E L } ( 22 ) Recall that L is a regular language iff there exists a finite number of distinct u-lL Nerode ( 1958 ) . In a similar way , given a power series S we define a new power series u-is by : n u-iS = y~ ( S , uw ) w ( 23 ) wE~* 11 One can prove that S , a power series defined on a field , is rational if it admits a finite number of independent u-iS ( Carlyle and Paz 1971 ) . This is the equivalent , for power series , of Nerode 's theorem for regular languages. 294 Mohri Transducers in Language and Speech For any subsequential power series S we can now define the following relation on ~ , * : V ( u , v ) E ~* , u Rs v 4=~ 3k E T4 , ( u-lsupp ( S ) = v-lsupp ( S ) ) and ( \ [ u-iS -1 -V S\ ] /u-lsupp ( S ) = k ) ( 24 ) It is easy to show that Rs is an equivalence relation. ( u-lsupp ( S ) = v-lsupp ( S ) ) defines the equivalence relation for regular languages. Rs is a finer relation. The additional condition in the definition of Rs is that the restriction of the power series \ [ u-iS -v-iS\ ] to u-lsupp ( S ) = v-lsupp ( S ) is constant. The following lemma shows that if there exists a subsequential transducer T computing S with a number of states equal to the number of equivalence classes of Rs , then T is a minimal transducer computing f. Lemma 3 If S is a subsequential power series defined on the tropical semiring , Rs has a finite number of equivalence classes. This number is bounded by the number of states of any subsequential transducer realizing S. Proof Let T - ( Q , i , F , ~ , 6 , or , ~ , p ) be a subsequential transducer realizing S. Clearly , ~ ( U , V ) E ( ~* ) 2 , 6 ( i , u ) = 6 ( i , v ) ~ Vw E u-lsupp ( S ) ,6 ( i , uw ) E F ~ 6 ( i , vw ) E F u-lsupp ( S ) = v-lsupp ( S ) Also , if u-lsupp ( S ) = v-lsupp ( S ) , V ( u , v ) E ( ~ , ) 2 , 6 ( i , u ) = 6 ( i , v ) ~ VW E u-lsupp ( S ) , ( S , uw ) ( S , vw ) = or ( i , u ) ¢ ( i , v ) 4=~ \ [ u-iS v-lS\ ] /u-~supp ( S ) = cr ( i , u ) cr ( i , v ) So V ( u , v ) E ( G , ) 2 , 6 ( i , u ) = 6 ( i , v ) ~ ( uRsv ) . This proves the lemma. \ [ \ ] The following theorem proves the existence of a minimal subsequential transducer representing S. Theorem 14 For any subsequential function S , there exists a minimal subsequential transducer computing it. Its number of states is equal to the index of Rs. Proof Given a subsequential power series S , we define a power series f by : Vu E ~* : u-lsupp ( S ) = 0 , ( f , u ) = 0 Vu E G* : u-lsupp ( S ) # O , u ) = min ( S , uw ) wEu-lsupp ( S ) We then define a subsequential transducer T = ( Q , i , F , ~ , 6 , or , ) ~ , p ) by : 12 • Q= { ~ : uEG* } ; 12 We denote by ~ the equivalence class of u E G*. 295 Computational Linguistics Volume 23 , Number 2 • i=~ ; • F = { a : u E ~ , * Msupp ( S ) } ; • Vu e ~* , Va e ~,6 ( a , a ) = Ca ; • vu ~ y , * , va ~ z , ~ ( ~ , a ) = ( f , u~ ) ( f , u ) ; • , ~ = ff , ~ ) ; • VqEQ , p ( q ) =0. Since the index of Rs is finite , Q and F are well-defined. The definition of 6 does not depend on the choice of the element u in ~ , since for any a E ~ , u Rs v implies ( ua ) Rs ( va ) . The definition of rr is also independent of this choice , since by definition of Rs , if uRsv , then ( ua ) Rs ( va ) and there exists k E T4 such that Vw E ~* , ( S , uaw ) ( S , vaw ) = ( S , uw ) ( S , vw ) = k. Notice that the definition of G implies that : Vw ~ s* , ¢ ( i , w ) = ( f , w ) ff , ~ ) ( 25 ) So : Vw E supp ( S ) , A + ¢r ( i , w ) + p ( q ) -= ( f , w ) = rnin ( S , ww ' ) w ' ew-lsupp ( S ) S is subsequential , hence : Vw ' E w-lsupp ( S ) , ( S , ww ' ) &lt; ( S , w ) . Since Vw E supp ( S ) , ¢ E w-lsupp ( S )</definiens>
+				<definiens id="2">m ( S , ww ' ) = ( S , w ) w ' ew-lsupp ( S ) T realizes S. This ends the proof of the theorem. \ [ \ ] Given a subsequential transducer T = ( Q , i , F , G , 6 , cr , A , p ) , we can define for each state q E Q , d ( q ) by : d ( q ) -rnin ( er ( q , w ) + p ( 6 ( q , w ) ) ) ( 26 ) 6 ( q , w ) EF Definition We define a new operation of pushing , which applies to any transducer T. In particular , if T is subsequential the result of the application of pushing to T is a new subsequential transducer T ' -- ( Q , i , F , ~.. , 6 , er ' , A ' , p ' ) that only differs from T by its output weights in the following way : • ' = ; ~ + , ~ ( i ) ; • V ( q , a ) E Q x Z , G ' ( q , a ) = rr ( q , a ) +d ( 6 ( q , a ) ) -d ( q ) ; • Vq E Q , # ( q ) = O. According to the definition of d , we have : Vw E G* : 6 ( q , aw ) E F , d ( q ) &lt; cr ( q , a ) + er ( 6 ( q , a ) , w ) + p ( 6 ( 6 ( q , a ) , w ) ) This implies that : a ( q ) &lt; _ o ( q , a ) + a ( 6 ( q , a ) ) So , ¢r ~ is well-defined : v ( q , a ) ~ Q x z , ~ ' ( q , a ) &gt; o 296 Mohri Transducers in Language and Speech Lemma 4 Let T ' be the transducer obtained from T by pushing</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Clearly , pushing does not change the number of transitions of T and automatan minimization , which consists of merging equivalent states , reduces or does not change this number .</sentence>
+				<definiendum id="0">automatan minimization</definiendum>
+				<definiens id="0">consists of merging equivalent states , reduces or does not change this number</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The weight of the path can be interpreted as a negative log of the probability of that sentence given the sequence of acoustic observations ( utterance ) .</sentence>
+				<definiendum id="0">weight of the path</definiendum>
+				<definiens id="0">a negative log of the probability of that sentence given the sequence of acoustic observations ( utterance )</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>W2 contains a path labeled with s and with a total weight equal to the minimum of the weights of the paths of W1 .</sentence>
+				<definiendum id="0">W2</definiendum>
+				<definiens id="0">contains a path labeled with s and with a total weight equal to the minimum of the weights of the paths of W1</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>In fact , the time complexity of determinization can be expressed in terms of the initial and resulting lattices , W1 and W2 , by O ( l~ I log IGl ( IWllIW21 ) 2 ) , where IWll and IW21 denote the sizes of W1 and W2 .</sentence>
+				<definiendum id="0">W1</definiendum>
+				<definiens id="0">I log IGl ( IWllIW21 ) 2 ) , where IWll and IW21 denote the sizes of W1 and W2</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Walker and Whittaker ( 1990 ) mark utterances as assertions , commands , questions , or prompts ( utterances that do not express proposition content ) in an investigation of mixed initiative in dialogue .</sentence>
+				<definiendum id="0">Walker</definiendum>
+				<definiens id="0">1990 ) mark utterances as assertions , commands , questions , or prompts ( utterances that do not express proposition content ) in an investigation of mixed initiative in dialogue</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A typical transaction is a subdialogue that gets the route follower to draw one route segment on the map .</sentence>
+				<definiendum id="0">typical transaction</definiendum>
+				<definiens id="0">a subdialogue that gets the route follower to draw one route segment on the map</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In these and later examples , G denotes the instruction giver , the participant who knows the route , and F , the instruction follower , the one who is being told the route .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiens id="0">the instruction giver</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A conversational game is a sequence of moves starting with an initiation and encompassing all moves up until that initiation 's purpose is either fulfilled or abandoned .</sentence>
+				<definiendum id="0">conversational game</definiendum>
+				<definiens id="0">a sequence of moves starting with an initiation and encompassing all moves up until that initiation 's purpose is either fulfilled or abandoned</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The third is accuracy , which requires coders to code in the same way as some known standard .</sentence>
+				<definiendum id="0">accuracy</definiendum>
+				<definiens id="0">requires coders to code in the same way as some known standard</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>K = ( P ( A ) P ( E ) ) / ( 1 P ( E ) ) , where P ( A ) is the proportion of times that the coders agree and P ( E ) is the proportion of times that one would expect them to agree by chance .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">P ( A )</definiendum>
+				<definiens id="0">the proportion of times that the coders agree and P ( E ) is the proportion of times that one would expect them to agree by chance</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>For agreed initiations themselves , agreement was very high ( K -~ .95 , N = 243 , k = 4 ) on whether the initiation was a command ( the INSTRUCT move ) , a statement ( the EXPLAIN move ) , or one of the question types ( QUERY-YN , QUERY-W , CHECK , or ALIGN ) .</sentence>
+				<definiendum id="0">statement</definiendum>
+				<definiendum id="1">ALIGN</definiendum>
+				<definiens id="0">QUERY-YN , QUERY-W , CHECK , or</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>However , coders had a little more difficulty ( K = .75 , N = 132 , k = 4 ) distinguishing between different types of moves that all contribute new , unelicited information ( INSTRUCT , EXPLAIN , and CLARIFY ) .</sentence>
+				<definiendum id="0">CLARIFY</definiendum>
+				<definiens id="0">k = 4 ) distinguishing between different types of moves that all contribute new , unelicited information ( INSTRUCT , EXPLAIN , and</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Game and move coding are currently being used to study intonation both in oneword English utterances ( Kowtko 1995 ) and in longer utterances across languages ( Grice et al. 1995 ) , the differences between audio-only , face-to-face , text-based , and video-mediated communication ( Doherty-Sneddon et al. , forthcoming ; Newlands , Anderson , and Mullin 1996 ) , and the characteristics of dialogue where one of the participants is a nonfluent Broca-type aphasic ( Merrison , Anderson , and Doherty-Sneddon 1994 ) .</sentence>
+				<definiendum id="0">video-mediated communication</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>Prolog is a particularly useful language for the implementation of a head-corner parser for constraint-based grammars because : • Prolog provides a built-in unification operation .</sentence>
+				<definiendum id="0">Prolog</definiendum>
+				<definiens id="0">a particularly useful language for the implementation of a head-corner parser for constraint-based grammars because : • Prolog provides a built-in unification operation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>• Prolog is a high-level language ; this enables the application of partial evaluation techniques .</sentence>
+				<definiendum id="0">Prolog</definiendum>
+				<definiens id="0">a high-level language</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In Section 6 it will be shown that the head-corner parser , which uses a mixture of bottom-up and top-down processing , can be applied in a similar fashion by using underspecification in the top goal .</sentence>
+				<definiendum id="0">head-corner parser</definiendum>
+				<definiens id="0">uses a mixture of bottom-up and top-down processing</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The head-corner parser is one of the parsers that is being developed as part of the NWO Priority Programme on Language and Speech Technology .</sentence>
+				<definiendum id="0">head-corner parser</definiendum>
+				<definiens id="0">one of the parsers that is being developed as part of the NWO Priority Programme on Language and Speech Technology</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>An important goal of the Programme is the implementation of a spoken dialogue system for public transport information ( the OVIS system ) .</sentence>
+				<definiendum id="0">Programme</definiendum>
+				<definiens id="0">the implementation of a spoken dialogue system for public transport information ( the OVIS system )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The headcorner predicate constructs ( in a bottom-up fashion ) larger and larger head-corners .</sentence>
+				<definiendum id="0">headcorner predicate constructs</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>As before , the head-corner relation is the reflexive and transitive closure of the head relation .</sentence>
+				<definiendum id="0">head-corner relation</definiendum>
+				<definiens id="0">the reflexive and transitive closure of the head relation</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>To distinguish the two uses , we use the relation lex_head_link , which is a subset of the head_link relation in which the head category is a possible lexical category .</sentence>
+				<definiendum id="0">relation lex_head_link</definiendum>
+				<definiendum id="1">category</definiendum>
+				<definiens id="0">a subset of the head_link relation in which the head</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The gap_head_link relation is a subset of the head_link relation in which the head category is a possible gap .</sentence>
+				<definiendum id="0">gap_head_link relation</definiendum>
+				<definiendum id="1">category</definiendum>
+				<definiens id="0">a subset of the head_link relation in which the head</definiens>
+				<definiens id="1">a possible gap</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Finally , in the Dutch OVIS grammar ( in which verb-second is implemented by gap-threading ) no hidden head-recursion occurs , as long as the head-corner table includes information about the feature vslash , which encodes whether or not a v-gap is expected .</sentence>
+				<definiendum id="0">OVIS grammar</definiendum>
+				<definiendum id="1">vslash</definiendum>
+				<definiens id="0">encodes whether or not a v-gap is expected</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>For example , the category x ( A , B , f ( A , B ) , g ( A , h ( B , i ( C ) ) ) ) may be weakened into : x ( A , B , f ( _ , _ ) , g ( _ , _ ) ) If we assume that the predicate weaken/2 relates a term t to a weakened version tw , such that tw subsumes t , then ( 15 ) is the improved version of the parse predicate : parse_with_weakening ( Cat , P0 , P , E0 , E ) • ( 15 ) weaken ( Cat , WeakenedCat ) , parse ( WeakenedCat , P0 , P , E0 , E ) , Cat=WeakenedCat .</sentence>
+				<definiendum id="0">category x ( A , B , f</definiendum>
+				<definiendum id="1">B</definiendum>
+				<definiendum id="2">parse_with_weakening</definiendum>
+				<definiens id="0">the improved version of the parse predicate</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The history table is a lexicalized tree substitution grammar , in which all nodes ( except substitution nodes ) are associated with a rule identifier ( of the original grammar ) .</sentence>
+				<definiendum id="0">history table</definiendum>
+				<definiens id="0">a lexicalized tree substitution grammar , in which all nodes ( except substitution nodes ) are associated with a rule identifier ( of the original grammar )</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The head-corner parser is one of the parsers developed within the NWO Priority Programme on Language and Speech Technology .</sentence>
+				<definiendum id="0">head-corner parser</definiendum>
+				<definiens id="0">one of the parsers developed within the NWO Priority Programme on Language and Speech Technology</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The connection predicate can be specified simply as the reflexive and transitive closure of the transition relation between states : connect ion ( A , A ) .</sentence>
+				<definiendum id="0">connection predicate</definiendum>
+				<definiens id="0">the reflexive and transitive closure of the transition relation between states : connect ion</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Moreover it uses memorization , and it ensures that the predicate succeeds at most once : connection ( A , B ) : ( var ( A ) - &gt; true ; var ( B ) - &gt; true ; A= : =B - &gt; true ; B &lt; A - &gt; fail ; ok_conn ( A , B ) - &gt; true ; fail_conn ( A , B ) - &gt; fail ; wordgraph : trans ( A , _ , X , _ ) , connection ( X , B ) % word-graphs are acyclic - &gt; assertz ( ok_conn ( A , B ) ) ( 20 ) 445 Computational Linguistics Volume 23 , Number 3 ; assertz ( fail_conn ( A , B ) ) , fail .</sentence>
+				<definiendum id="0">ok_conn</definiendum>
+				<definiendum id="1">wordgraph : trans</definiendum>
+				<definiendum id="2">ok_conn</definiendum>
+				<definiendum id="3">A , B</definiendum>
+				<definiendum id="4">fail_conn</definiendum>
+				<definiens id="0">A , B ) ) , fail</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The top category ( start symbol ) of the OVIS grammar is defined as the category max ( gem ) .</sentence>
+				<definiendum id="0">top category</definiendum>
+				<definiendum id="1">OVIS grammar</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>This notion of word accuracy is an approximation of semantic accuracy ( or `` concept accuracy '' ) .</sentence>
+				<definiendum id="0">word accuracy</definiendum>
+				<definiens id="0">an approximation of semantic accuracy</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The string comparison is defined by the minimal number of deletions and insertions that is required to turn the first string into the second ( Levenshtein distance ) , although it may be worthwhile to investigate other measures .</sentence>
+				<definiendum id="0">string comparison</definiendum>
+				<definiens id="0">the minimal number of deletions and insertions that is required to turn the first string into the second ( Levenshtein distance ) , although it may be worthwhile to investigate other measures</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The precompiled grammar , which is used by the chart parsers , contains 92 rules .</sentence>
+				<definiendum id="0">precompiled grammar</definiendum>
+				<definiens id="0">used by the chart parsers , contains 92 rules</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The input for the parser consists of a test set of 5,000 word-graphs , randomly taken from a corpus of more than 25,000 word-graphs .</sentence>
+				<definiendum id="0">input for the parser</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>Many utterances consists of less than five words .</sentence>
+				<definiendum id="0">Many utterances</definiendum>
+			</definition>
+			<definition id="21">
+				<sentence>The left-corner relation contains 440 pairs ; the lexical left-corner relation 452 van Noord Efficient Head-Corner Parsing Table 6 Total and average CPU-time and maximum space requirements for a set of 25 sentences ( MiMo2 grammar ) .</sentence>
+				<definiendum id="0">left-corner relation</definiendum>
+				<definiens id="0">contains 440 pairs ; the lexical left-corner relation 452 van Noord Efficient Head-Corner Parsing Table 6 Total and average CPU-time and maximum space requirements for a set of 25 sentences ( MiMo2 grammar )</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>The first test set consists of 129 short sentences ( mean length 6.7 words ) .</sentence>
+				<definiendum id="0">first test set</definiendum>
+			</definition>
+			<definition id="23">
+				<sentence>The second test set consists of 100 longer and much more complex sentences .</sentence>
+				<definiendum id="0">second test set</definiendum>
+				<definiens id="0">consists of 100 longer and much more complex sentences</definiens>
+			</definition>
+</paper>
+
+		<paper id="2005">
+			<definition id="0">
+				<sentence>Grammatical functions ( GF 's ) are predicted by case inflections ( markers ) on the head nouns of noun phrases ( NPs ) and postpositional particles in postpositional phrases ( PPs ) .</sentence>
+				<definiendum id="0">Grammatical functions</definiendum>
+				<definiens id="0">predicted by case inflections ( markers ) on the head nouns of noun phrases ( NPs ) and postpositional particles in postpositional phrases</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>To express this more formally , let G = { gl , g2 ... . } be the set of relevant GF 's , C = { cl , c2 , ... } be the set of NP case markers , and cToG be a mapping from case markers to GF 's , such that cToG ( c ) , c E C is ( are ) the grammatical function ( s ) predictable from c. In our case , cToG ( c ) is actually a finite disjunction gil V gi2 V ... of functions .</sentence>
+				<definiendum id="0">cToG</definiendum>
+				<definiendum id="1">c E C</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The trick is to delay the evaluation of encoding schema of constituent NPs till an appropriate moment , while maintaining a persistent data structure , such as a symbol table , to keep track of the points of forward reference ( at which actual function names get instantiated ) and their local environments ( the internal f-structure of the constituent NPs ) .</sentence>
+				<definiendum id="0">NPs</definiendum>
+				<definiens id="0">the internal f-structure of the constituent</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Locate-ing a construct like ( f n ) where both f and n are already defined placeholder and nameholder , respectively , returns ( a pointer to ) the `` value '' part of the pair in the f-structure ( pointed at by ) f , whose name is ( pointed at by ) n. The extended semantics of Locate is therefore : Locate\ [ d\ ] , where d has the form ( x y ) .</sentence>
+				<definiendum id="0">d</definiendum>
+				<definiens id="0">f n ) where both f and n are already defined placeholder and nameholder , respectively , returns ( a pointer to ) the `` value '' part of the pair in the f-structure ( pointed at by ) f , whose name is ( pointed at by ) n. The extended semantics of Locate</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A symbol table entry ( f , n ) satisfies an m-structure schemata ( # g qi ) = vi projected by the verb V of a sentence S , iff is the f-structure of S , and the structure ( f n ) , where n is treated as an atom , contains the pair \ [ qi vi\ ] .</sentence>
+				<definiendum id="0">symbol table entry</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">satisfies an m-structure schemata ( # g qi ) = vi projected by the verb V of a sentence S , iff is the f-structure of S</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The operator Search takes the entire set m-structure schema for a particular GF and carries out the process described in the previous paragraph .</sentence>
+				<definiendum id="0">operator Search</definiendum>
+				<definiens id="0">takes the entire set m-structure schema for a particular GF and carries out the process described in the previous paragraph</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In Rambow ( 1994 ) , a V-TAG parser ( a Tree Adjoint Grammar extended to handle scrambling and other aspects ) is implemented through the { } -BEPDA , 4 which uses sets of auxiliary trees as unfulfilled nominal subcategorization .</sentence>
+				<definiendum id="0">V-TAG parser</definiendum>
+				<definiens id="0">a Tree Adjoint Grammar extended to handle scrambling and other aspects</definiens>
+				<definiens id="1">uses sets of auxiliary trees as unfulfilled nominal subcategorization</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>We have implemented the operators Locate ( modified as suggested in the text ) , Merge ( as an object-oriented unification method ) , Include , and Search , and are in the process of creating an effective objectoriented parser for c-structure generation .</sentence>
+				<definiendum id="0">Merge</definiendum>
+				<definiens id="0">implemented the operators Locate ( modified as suggested in the text ) ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>Statistical machine translation ( SMT ) can be understood as a word-by-word model consisting of two submodels : a language model for generating a source text segment S and a translation model for mapping S to its translation T. They recommend using a bilingual corpus to train the parameters of translation probability , Pr ( S I T ) in the translation model .</sentence>
+				<definiendum id="0">SMT</definiendum>
+				<definiens id="0">a word-by-word model consisting of two submodels : a language model for generating a source text segment S and a translation model for mapping S to its translation T. They recommend using a bilingual corpus to train the parameters of translation probability , Pr ( S I T ) in the translation model</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A section , paragraph , sentence , phrase , collocation , or word can be aligned to its translation ( Kupiec 1993 ; Smadja , McKeown , and Hatzivassiloglou 1996 ) .</sentence>
+				<definiendum id="0">word</definiendum>
+				<definiens id="0">paragraph , sentence , phrase , collocation , or</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Gale and Church ( 1991b ) present an alternative algorithm that does not estimate and store probabilities for all word pairs to reduce memory requirement and to ensure robustness of probability estimation .</sentence>
+				<definiendum id="0">alternative algorithm</definiendum>
+				<definiens id="0">does not estimate and store probabilities for all word pairs to reduce memory requirement and to ensure robustness of probability estimation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The proposed algorithm , called ClassAlign , relies on an automatic procedure to acquire class-based alignment rules ; it does not employ word-by-word translation probabilities , nor does it use an iterative EM algorithm for estimating such probabilities .</sentence>
+				<definiendum id="0">ClassAlign</definiendum>
+				<definiens id="0">relies on an automatic procedure to acquire class-based alignment rules ; it does not employ word-by-word translation probabilities</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Given that the translations for a headword ( dictionary translations , DTs for short ) can be extracted from a bilingual MRD such as the LecDOCE , a word in S can be aligned at a high precision rate with its DTs found in T. Headword-and-translation pairs are a reliable knowledge source for word alignment .</sentence>
+				<definiendum id="0">DTs</definiendum>
+				<definiens id="0">a reliable knowledge source for word alignment</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Consider a text and translation pair ( S , T ) , a word s in S , and its ICT , t in T. Let DTs denote the set of translations listed in the LecDOCE for the headword s. Recall that if for a word t in T , there is a dt in DTs such that t matches dt completely or partially , then , t is likely to be the ICT of s. Taking advantage of this phenomenon , DictAlign computes the set WT = { t \ ] t is a word in T } and calculates the similarity between each t and the DTs relevant to S. A similarity measure based on the unweighted Dice coefficient ( Dice 1945 ) can be given as follows : 2 x Id n tl ( 1 ) Sim ( d , t ) id \ [ + it I where d , t Idl Itl la n tl = Mandarin morpheme strings , = the number of the morphemes in d , = the number of the morphemes in t , = the number of the morphemes in the intersection of d and t. Based on this similarity measure , the likelihood of a connection can be associated with the following formulation that links the likelihood of a connection to similarity with a DT : DTSim ( s , t ) = max Sire ( d , t ) ( 2 ) dEDTs For instance , consider the following sentence and its Mandarin translation , focusing on the word encounter : S = He encountered many difficulties .</sentence>
+				<definiendum id="0">translation pair ( S , T )</definiendum>
+				<definiendum id="1">DictAlign</definiendum>
+				<definiens id="0">a word s in S , and its ICT , t in T. Let DTs denote the set of translations listed in the LecDOCE for the headword s. Recall that if for a word t in T , there is a dt in DTs such that t matches dt completely or partially</definiens>
+				<definiens id="1">computes the set WT = { t \ ] t is a word in T } and calculates the similarity between each t and the DTs relevant to S. A similarity measure based on the unweighted Dice coefficient ( Dice 1945 ) can be given as follows : 2 x Id n tl ( 1 ) Sim ( d , t ) id \ [ + it I where d , t Idl Itl la n tl = Mandarin morpheme strings , = the number of the morphemes in d , = the number of the morphemes in t , = the number of the morphemes in the intersection of d and t. Based on this similarity measure , the likelihood of a connection can be associated with the following formulation that links the likelihood of a connection to similarity with a DT : DTSim ( s , t ) = max Sire ( d , t ) ( 2 ) dEDTs For instance , consider the following sentence and its Mandarin translation , focusing on the word encounter : S = He encountered many difficulties</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Step 6 : For each word s , produce a connection ( s , t ) , if DTSim ( s , t ) is maximized over t E WT and DTSim ( s , t ) &gt; hi where hi is a preset threshold .</sentence>
+				<definiendum id="0">hi</definiendum>
+				<definiens id="0">s , t ) is maximized over t E WT and DTSim ( s , t ) &gt; hi where</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The Dice coefficient ( Dice 1945 ) is a similarity measure that gauges the ratio of the members in one collection being identical to those of another collection .</sentence>
+				<definiendum id="0">Dice coefficient</definiendum>
+				<definiens id="0">a similarity measure that gauges the ratio of the members in one collection being identical to those of another collection</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>This ratio can be easily measured using the Dice coefficient as follows : From ( a , Y ) + ~ To ( X , b ) ClassSim ( X , Y ) = acx bEY IX\ [ + \ ] Y\ ] ( 4 ) where IXI = the total number of the words in X , IYI = the total number of the words in Y , From ( a , Y ) = 1 , if ( 3y E Y ) ( a , y ) E ALLCONN , = 0 , otherwise , treated as such because of their high frequency in the LDOCE and their involvement in diverse LLOCE topics and CILIN categories .</sentence>
+				<definiendum id="0">Dice coefficient</definiendum>
+				<definiendum id="1">IXI =</definiendum>
+				<definiendum id="2">high frequency</definiendum>
+				<definiens id="0">the total number of the words in X</definiens>
+				<definiens id="1">the total number of the words in Y</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Connection ( s , t ) exhibits high lexical and conceptual similarit ) 5 i.e. , ConceptSim ( s , t ) ~ hi and DTSim ( s , t ) &gt; h2 .</sentence>
+				<definiendum id="0">Connection</definiendum>
+				<definiens id="0">s , t ) ~ hi and DTSim ( s , t ) &gt; h2</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Connection ( s , t ) exhibits high lexical similarity , i.e. , ConceptSim ( s , t ) &lt; hi and DTSim ( s , t ) _ &gt; h2 .</sentence>
+				<definiendum id="0">Connection</definiendum>
+				<definiens id="0">s , t ) &lt; hi and DTSim ( s , t ) _ &gt; h2</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Otherwise , ConceptSim ( s , t ) &lt; hi and DTSim ( s , t ) &lt; h2 .</sentence>
+				<definiendum id="0">DTSim (</definiendum>
+				<definiens id="0">s , t ) &lt; h2</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>To this end , we define dislocation , dis , for the connection ( s , t ) of the ith and jth words in S and T to denote I ( J -j ' ) ( i i ' ) \ [ , where i ' is the position of a word s ' sharing the minimum syntactic structure with s , and s ' translates into t ' , the j'th word in T. Short of syntactic analysis , dis ( i , j ) can be calculated with respect to a nearby connection in CONN , the initial connections established by DictAlign .</sentence>
+				<definiendum id="0">i '</definiendum>
+				<definiens id="0">s , t ) of the ith and jth words in S and T to denote I ( J -j ' ) ( i i ' ) \ [</definiens>
+				<definiens id="1">the position of a word s ' sharing the minimum syntactic structure with s , and s ' translates into t '</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>In light of this , dislocation can be defined as follows : dis ( i , j ) = ( \ [ j -j'\ [ if 3 ( j ' ) ( i , j ' ) E CONN , min ( \ [ dL\ [ , \ [ dR\ [ ) otherwise , ( 9 ) where i = the sequence number of s in S , j = the sequence number of t in T , 4 dL = ( j -- jL ) -- ( i -- iL ) , dR = ( j -- jR ) -- ( i -- iR ) , ( iL , jL ) = argmax ( i , ,j , ) ecoNN &lt; i i ' , ( &amp; , jR ) = argmin ( i , ,j , ) ecoNN &gt; i / ' , CONN &lt; i = { ( k , l ) \ [ kth and Ith word in ( S , T ) form a connection in CONN , k &lt; i } , 329 Computational Linguistics Volume 23 , Number 2 : : : :i.~ ; z : : : : : : . : : . : : : I i : .. : : : 've never known such a \ [ : : : ::1~ : . : : : , mb : h~ ! as ~i : i : ,~you~ : :~ : :~ : :~ : ~ ... ... .. : .i ? : .lii. : : : : :i : : 2 3 4 5 6 : : i : : : ::8 : : : :i : :~ : : :i : :i~ : .O : . : : ! i : i 5 : ii : .i : ~ : ~ : : : i ! ~ : ili ~ : . : ~ : i~ : : : :~. : ~\ ] : ~ : :.i ? .i ! w : : : ! : : : : : : : : : : : : : : : : : : : : : : : : : i : : : i. : : : : : : : : : : : : : : : : ii : . : : : :. : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : ~ 0 1 2 3 4 3 ' : :i : ~ i : ~ : ~ i~ : ~i : : : : : : : : i : ~ i : ~i , i : : ! : : i z : ~ : : : ~ ! i : : i~ : :~ ! ~ : : : :ii , ~ : : : : : ::3 ! i : : : ; : : : ii : ii~i : : ; 2 : :i- : : 0 0 1 2 3 j z : : : : ! : ~ : :~ : ~ : ~ : ~i : ! : ! : i : 2 ! i : ilili : \ ] ~ : : : :~ : ! ii : :i.i~i. ! i : :i.~.i~-i~8 : .i~ : i~ : ~.ii~ : : : : . ' : • ! : :.. ~ ' : '' . ' : .. : x : . : : : : : : : : : : : : : : : : : : : : : : : : :. : . : : : : : : : : : : : : : : : : : : : : : : : : 5 , 4 3 2 \ ] 3 ~ : : : :~ iii : : ii~ : 2 : : : i : .i : :.~. : :i ' : : : : : ~ii : i : . : :.ii : :~ ! ~ : :~ : i ! ! ii : : ' , . , . : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : 0 : : : : : : : : ' : ' '' ' : : : : `` : , : : : : ' , : : '' '' : : • ' : : '' : : : : : i ; '' \ [ ' : : ' : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : o : : : : i : :1:1 : : : : : : : : i ; I0 i~ : 8 7 6 5 4 ~ : : : 3 : : : :i : : : : : : : : : : : : : : : : : : : : : : : : : 0 l : ~ : .~ : :~ ) ~ : : $ : ~ } i~ : i : .i i ! ! .ii : ~i : i~iiii~iO : :ii.~ ; i~i~ : ii~ } : ii Figure 3 Dislocation values for the example-translation pair ( E12 , C12 ) . Each connection candidate in ( E12 , C12 ) is represented as a cell. The connections in CONN are shown as a bold face 0. Each of these zero dislocation values extends vertically , incrementing by one for each upward or downward move , resulting in a shaded vertical bar of dislocation values. All other connections take their dislocation values from the minimum diagonal projection of the related cell on the two bounding bars. For instance , the projections of the connection ( such , ~_~ ) ( shaded in figure ) on the left and right bounding bars ( /-connections and lazy-connections ) are 2 and 1 , respectively. Therefore , the dislocation value is 1 , the minimum of 2 and 1. CONN &gt; i = { ( k , I ) I kth and Ith word in ( S , T ) form a connection in CONN , k &gt; i } , CONN = the initial connections established according to DT .</sentence>
+				<definiendum id="0">CONN =</definiendum>
+				<definiens id="0">the sequence number of s in S , j = the sequence number of t in T , 4 dL = ( j -- jL ) -- ( i -- iL ) , dR = ( j -- jR ) -- ( i -- iR ) , ( iL , jL ) = argmax ( i , ,j , ) ecoNN &lt; i i '</definiens>
+				<definiens id="1">k , l ) \ [ kth and Ith word in ( S , T ) form a connection in CONN</definiens>
+				<definiens id="2">ii~ } : ii Figure 3 Dislocation values for the example-translation pair ( E12 , C12 ) . Each connection candidate in ( E12 , C12 ) is represented as a cell. The connections in CONN are shown as a bold face 0. Each of these zero dislocation values extends vertically , incrementing by one for each upward or downward move , resulting in a shaded vertical bar of dislocation values. All other connections take their dislocation values from the minimum diagonal projection of the related cell on the two bounding bars. For instance , the projections of the connection ( such , ~_~ ) ( shaded in figure ) on the left and right bounding bars ( /-connections and lazy-connections</definiens>
+			</definition>
+			<definition id="14">
+				<sentence># True Conceptual and Lexical Condictions # Candidates Connections MLE of t ( s , t ) ConceptSim ( s , t ) ~ 0.05 and DTSim ( s , t ) ~ 0.3 508 ConceptSim ( s , t ) ~ 0.05 and DTSim ( s , t ) &lt; 0.3 167 ConceptSim ( s , t ) &lt; 0.05 and DTSim ( s , t ) &gt; 0.3 1,589 ConceptSim ( s , t ) &lt; 0.05 and DTSim ( s , t ) &lt; 0.3 14,687 481 h 0.947 84 t2 0.503 499 t3 0.193 165 t4 0.011 Table 10 Maximum likelihood estimation ( MLE ) of DE Dislocation # Candidates # True Connections MLE of d ( i , j ) dis = 0 2,158 893 dl 0.414 dis = 1 3,445 210 d2 0.061 dis = 2 2,805 31 d3 0.011 dis &gt; 3 9,543 95 d4 0.010 conceptual , and positional factors .</sentence>
+				<definiendum id="0">ConceptSim</definiendum>
+				<definiendum id="1">MLE</definiendum>
+				<definiens id="0">s , t ) &gt; 0.3 1,589 ConceptSim ( s , t ) &lt; 0.05 and DTSim ( s , t</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>( ClassAlign ) Class-based word alignment for a pair of sentences ( S , T ) .</sentence>
+				<definiendum id="0">ClassAlign</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>By this notion , English is an SVO language in which the verb typically follows the subject and precedes the object .</sentence>
+				<definiendum id="0">English</definiendum>
+				<definiens id="0">an SVO language in which the verb typically follows the subject and precedes the object</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>As a result of facts such as these , many linguists contend that Mandarin is a language in transition from SVO to SOV .</sentence>
+				<definiendum id="0">Mandarin</definiendum>
+				<definiens id="0">a language in transition from SVO to SOV</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The closed test set consists of 200 examples and their Mandarin translations randomly selected from the LecDOCE .</sentence>
+				<definiendum id="0">closed test set</definiendum>
+				<definiens id="0">consists of 200 examples and their Mandarin translations randomly selected from the LecDOCE</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The open test set consists of 200 sentences randomly drawn from the English and Chinese versions of the LightShip User 's Guide .</sentence>
+				<definiendum id="0">open test set</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>As mentioned in the previous section , collocation is one of the reasons why in-context translation usually deviates from the dictionary translation .</sentence>
+				<definiendum id="0">collocation</definiendum>
+				<definiens id="0">one of the reasons why in-context translation usually deviates from the dictionary translation</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>( C25 ) ~g~~~ @ , J ; ~~o ClassAlign achieves a degree of generality in the sense that a true connection can be identified , even when it occurs only rarel } ~ or not at all , in the training corpus .</sentence>
+				<definiendum id="0">~~o ClassAlign</definiendum>
+				<definiens id="0">achieves a degree of generality in the</definiens>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>The paper expresses these rules ( which focus mainly on consonant sequences ) formally and points out their limitations in terms of formal word expressions that can be completely and correctly hyphenated .</sentence>
+				<definiendum id="0">rules</definiendum>
+				<definiens id="0">focus mainly on consonant sequences ) formally and points out their limitations in terms of formal word expressions that can be completely and correctly hyphenated</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Respectively , c1\ [ c2c*c3\ ] e is the expression for the set of substrings of lemma 2 ( b ) .</sentence>
+				<definiendum id="0">e</definiendum>
+				<definiens id="0">the expression for the set of substrings of lemma 2 ( b )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>As it has been previously defined , the term vowel refers to a single vowel or vowel character ; V is the set of vowels .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">a single vowel or vowel character ;</definiens>
+				<definiens id="1">the set of vowels</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Patterns in Table 2 constitute maximal vowel tokens , which can be derived by a lexical analysis process , while patterns in Table 1 consist of single vowels and consonants .</sentence>
+				<definiendum id="0">maximal vowel tokens</definiendum>
+				<definiens id="0">can be derived by a lexical analysis process , while patterns in Table 1 consist of single vowels and consonants</definiens>
+			</definition>
+</paper>
+
+		<paper id="4005">
+			<definition id="0">
+				<sentence>In Brew 's case , we can view type expansion as a stochastic choice from a finite set of rules of form X -- * ~i , where X is the type to expand and each ~i is a sequence of introduced child types .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a sequence of introduced child types</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A re-entrancy decision is a stochastic choice between two rules , X -- * yes and X -- * no , where X is the type of the node being considered for re-entrancy .</sentence>
+				<definiendum id="0">re-entrancy decision</definiendum>
+				<definiens id="0">a stochastic choice between two rules , X -- * yes and X -- * no , where X is the type of the node being considered for re-entrancy</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In Eisele 's case , expanding a goal term can be viewed as a stochastic choice among a finite set of rules X -- -* ~i , where X is the predicate of the goal term and each ~i is a program clause whose head has predicate X. The parameters of the models are essentially weights on such rules , representing the probability of choosing ~i when making a choice of type X. In these terms , Brew and Eisele propose estimating parameters as the empirical relative frequency of the corresponding rules .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">~i</definiendum>
+				<definiens id="0">a program clause whose head has predicate X. The parameters of the models are essentially weights on such rules</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Random fields can be seen as a generalization of Markov chains and stochastic branching processes .</sentence>
+				<definiendum id="0">Random fields</definiendum>
+				<definiens id="0">a generalization of Markov chains and stochastic branching processes</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Random fields are a particular class of multidimensional random processes , that is , processes corresponding to probability distributions over an arbitrary graph .</sentence>
+				<definiendum id="0">Random fields</definiendum>
+				<definiens id="0">a particular class of multidimensional random processes , that is , processes corresponding to probability distributions over an arbitrary graph</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>fiB '' ~3 = ~ '' 5 '' ~ = In parsing , we use the probability distribution ql ( x ) defined by model M1 to disambiguate : the grammar assigns some set of trees { Xl ... .. Xn } to a sentence or , and we 600 Abney Stochastic Attribute-Value Grammars • o°°°° '' S `` ' '' ' , .</sentence>
+				<definiendum id="0">probability distribution ql</definiendum>
+				<definiendum id="1">grammar</definiendum>
+				<definiens id="0">assigns some set of trees { Xl ... .. Xn } to a sentence or , and we 600 Abney Stochastic Attribute-Value Grammars • o°°°° '' S `` ' '' '</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Let ¢2 ( x ) be the weight that M2 assigns to dag x ; it is defined to be the product of the weights of the rules used to generate x. For example , the weight ¢2 ( xl ) assigned to tree xl of Figure 7 is 2/9 , computed as in Figure 8 .</sentence>
+				<definiendum id="0">¢2 ( x</definiendum>
+				<definiens id="0">the weight that M2 assigns to dag x ; it is defined to be the product of the weights of the rules used to generate x. For example</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>We might define the distribution q for an AV grammar with weight function ~b as : q ( X ) =z~ ( X ) where Z is the normalizing constant : xEL ( G ) In particular , for ~2 , we have Z = 2/9 + 1/18 + 1/4 + 1/4 = 7/9 .</sentence>
+				<definiendum id="0">Z</definiendum>
+				<definiens id="0">the normalizing constant : xEL ( G ) In particular , for ~2</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>is its frequency function , that is , fi ( x ) is the number of times that feature i occurs in configuration x. ( For most purposes , a feature can be identified with its frequency function ; I will not always make a careful distinction between them . )</sentence>
+				<definiendum id="0">fi ( x )</definiendum>
+				<definiens id="0">the number of times that feature i occurs in configuration</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Random sampling involves creating a corpus that is representative of a given model distribution q ( x ) .</sentence>
+				<definiendum id="0">Random sampling</definiendum>
+				<definiens id="0">involves creating a corpus that is representative of a given model distribution q</definiens>
+			</definition>
+</paper>
+
+		<paper id="3006">
+			<definition id="0">
+				<sentence>Sentence ( 6d ) constitutes a Retain , in which CF ( U6d ) is Tony and Cb ( U6d ) is Terry .</sentence>
+				<definiendum id="0">Sentence ( 6d )</definiendum>
+				<definiens id="0">constitutes a Retain , in which CF</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>473 Computational Linguistics Volume 23 , Number 3 the new Cp ) and an object pronoun ( the referent of which will be the new Cb ) .</sentence>
+				<definiendum id="0">object pronoun</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>TextTiling makes use of patterns of lexical co-occurrence and distribution .</sentence>
+				<definiendum id="0">TextTiling</definiendum>
+				<definiens id="0">makes use of patterns of lexical co-occurrence and distribution</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>More specifically , TextTiling is meant to apply to expository text that is not heavily stylized or structured , and for simplicity does not make use of headings or other kinds of orthographic information .</sentence>
+				<definiendum id="0">TextTiling</definiendum>
+				<definiens id="0">meant to apply to expository text that is not heavily stylized or structured</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This approach , called TileBars , allows the user to make informed decisions about which documents and which passages of those documents to view , based on the distributional behavior of the query terms in the documents .</sentence>
+				<definiendum id="0">TileBars</definiendum>
+				<definiens id="0">allows the user to make informed decisions about which documents and which passages of those documents to view , based on the distributional behavior of the query terms in the documents</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The use of the term subtopic here is meant to signify pieces of text `` about '' something and is not to be confused with the topic/comment distinction ( Grimes 1975 ) , also known as the given/new contrast ( Kuno 1972 ) , found within individual sentences .</sentence>
+				<definiendum id="0">use of the term subtopic</definiendum>
+				<definiens id="0">meant to signify pieces of text `` about '' something and is not to be confused with the topic/comment distinction ( Grimes 1975 ) , also known as the given/new contrast ( Kuno 1972 ) , found within individual sentences</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>40 Hearst TextTiling continental movement , shoreline acreage , and habitability gives way to a discussion of binary and unary star systems .</sentence>
+				<definiendum id="0">habitability</definiendum>
+				<definiens id="0">gives way to a discussion of binary and unary star systems</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>TextTiling attempts a coarser-grained analysis and so gets away with using a simpler feature set .</sentence>
+				<definiendum id="0">TextTiling</definiendum>
+				<definiens id="0">attempts a coarser-grained analysis and so gets away with using a simpler feature set</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Another limitation of the Morris algorithm is that it does not take advantage of , or discuss how to account for , the tendency for multiple simultaneous chains to occur over the same intention ( each chain corresponds to one intention ) .</sentence>
+				<definiendum id="0">same intention</definiendum>
+				<definiens id="0">or discuss how to account for , the tendency for multiple simultaneous chains to occur over the</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>As one part of this goal , they seek what is called the text segment , which is defined as `` a contiguous piece of text that is linked internally , but largely disconnected from the adjacent text .</sentence>
+				<definiendum id="0">text segment</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>According to Carletta ( 1996 ) , K measures pairwise agreement among a set of coders making category judgments , correcting for expected chance agreement as follows : KP ( A ) -P ( E ) 1 -P ( E ) where P ( A ) is the proportion of times that the coders agree and P ( E ) is the proportion of times that they would be expected to agree by chance .</sentence>
+				<definiendum id="0">KP ( A ) -P</definiendum>
+				<definiendum id="1">P ( A )</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>Internal numbers indicate location of gaps between paragraphs ; x-axis indicates token-sequence gap number , y-axis indicates judge number , a break in a horizontal line indicates a judge-specified segment break .</sentence>
+				<definiendum id="0">x-axis</definiendum>
+				<definiens id="0">indicates token-sequence gap number</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Baseline shows the scores for an algorithm that assigns a boundary 39 % of the time ( the average overall ) , Tiling ( V ) indicates the vocabulary introduction version of computing lexical scores with token-sequence size w = 20 , and Tiling ( B ) indicates the blocks version with token-sequence size w = 20 and block size k = 10 .</sentence>
+				<definiendum id="0">V )</definiendum>
+				<definiens id="0">indicates the vocabulary introduction version of computing lexical scores with token-sequence size w = 20 , and Tiling ( B ) indicates the blocks version with token-sequence size w = 20 and block size k = 10</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>However , paragraph 19 begins with an introductory phrase type that strongly signals a change in subtopic : For the last two centuries , astronomers have studied ... . The final paragraph is a summary of the entire text ; the algorithm recognizes the change in terminology from the preceding paragraphs and marks a boundary , but only two of the readers chose to differentiate the summary ; for this reason the algorithm is judged to have made an error even though this sectioning decision is reasonable .</sentence>
+				<definiendum id="0">final paragraph</definiendum>
+				<definiendum id="1">algorithm</definiendum>
+				<definiens id="0">recognizes the change in terminology from the preceding paragraphs and marks a boundary</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>Aspects of Text Structure : An Investigation of the Lexical Organisation of Text .</sentence>
+				<definiendum id="0">Text Structure</definiendum>
+				<definiens id="0">An Investigation of the Lexical Organisation of Text</definiens>
+			</definition>
+</paper>
+
+	</volume>

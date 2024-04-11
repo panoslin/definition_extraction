@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="C67">
+
+		<paper id="1018">
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>INTRODUCTION TRANSFORMATION DE STRUCTURES ARBORESCENTES 1 ° D~finition des structures arborescentes a ) n-graphe b ) Structure c ) Structure arborescente 2 ° Representation des structures arborescentes et des arborescences munies d'une relation d'ordre restreinte 3 ° Chemins et relations sur une structure arborescente a ) Propri~t~s poss~d~es par un sommet b ) Construction des relations simples c ) Construction des relations multiples 4 ° Reconnaissance d'une figure dans une structure arborescente a ) Schema de figure b ) Figures dans une arborescence munie d'une relation d'ordre restreinte c ) Figures dans une structure arborescente 5 ° Transformations a ) Famille d~arborescences b ) D~composition d'une arborescence c ) Insertion d'arborescence d ) Transformations synth~tiques e ) Transformations 6 ° Grammaires trans~ormationnelles a ) R~gle de transformation Bur une structure ~partie gauche ~ partie droite applic~tio~~ d'une r~gle de transformation ~criture et exemples b ) Gra~naires transformationnelles II PROGRAMMATION l ° Representation d'une structure 2 ° Description de la reconnaissance a ) Balayage g~n~ral b ) Recherche d'une figure correspondant ~ une pertte gauche de r~gle donn~e 3 ° Application des transformations I~I APPLICATION .</sentence>
+				<definiendum id="0">Application</definiendum>
+				<definiens id="0">PROGRAMMATION l ° Representation d'une structure 2 ° Description de la reconnaissance a ) Balayage g~n~ral b</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>, Xp ) L'extension de ce pr~dicat est l'ensemble des x E X qui rendent ce pr~dlcat vrai , b ) Figures dans une arborescence munie d'une relation d'ordre restreinte / Ddsignons toujours par~ cette arborescence ; X est l'ensemble de ses sonanets et XoeX e~ Fun schema de figure comportant n relations : Au pr~dicat d'l variable F ( X ) on associe le pr~dlcat &amp; n % I variables F ( n+l ) ( x , Xl , ... , x n ) d~duit de F ( X ) en supprimant les quantificateurs qui lient les variables Xl , ... , x n. On appeile ~ une figure de schema F et de pivot x dans~ tout dl~ment de 0 l'ensemble des ( n+l ) -uples ( Xo , Xl , ... , Xn ) o~ Xo , Xl , ... , XnGX et F ( n+l ) ( Xo , Xl , ... ' , x n ) est vrai .</sentence>
+				<definiendum id="0">Xl , ... , XnGX et F ( n+l )</definiendum>
+				<definiens id="0">Fun schema de figure comportant n relations : Au pr~dicat d'l variable F ( X ) on associe le pr~dlcat &amp; n % I variables F ( n+l ) ( x , Xl , ... , x n ) d~duit de F</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Les transformations d'insertion seront noises sans y adjoindre le d~tachement n4cessaire , impiicitement ~fini u On notera ehaque~transfor~ation de la m~me mani~re que des relations : Exemple : `` x AINE y `` signifie suppression de y ' et insurer y comme AINE de x ° Par abus du langage , on notera de m~me l'~change `` `` xECH y `` Et les transformations ne portant que sur un soul sommet : `` ¢ DETA y : '' `` ¢ABS y `` La composition de transformations ~l~mentairespourra se noter par une liste ( programme ) ~ ex~cuter .</sentence>
+				<definiendum id="0">Et</definiendum>
+				<definiens id="0">les transformations ne portant que sur un soul sommet : `` ¢ DETA y : ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( CE ) ( FREQUENT ) ( DEUTERON ) ( REACTION ) fj~e ~_~s IEPITHETE \ ] ( NUCLEAIRE ) Comme chaque symbole du vocabulaire port~ par la structure initiale comprend un nom de r~g\ ] e synt~axiqueet une quantit~ appreciable d'informations , il est pr4f4rable de ne consid~rer d'aberd que le nom de r~gle pour la recherche d'une figure ob~issant ~ un schema donn4 .</sentence>
+				<definiendum id="0">CE</definiendum>
+				<definiens id="0">) ( FREQUENT ) ( DEUTERON ) ( REACTION ) fj~e ~_~s IEPITHETE \ ] ( NUCLEAIRE ) Comme chaque symbole du vocabulaire port~ par</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Une d~rogation l'ordre de progression dans les noyaux successifs a lieu dans deux cas : On rencontre un mot falsant partie d'une tournure idiomatique ( priorit4 absolue ) On rencontre une coordination ( priorit4 relative ) Lorsqu'il ne reste plus des points `` ~tiquet~s '' l'algorithme de transformation s'arr @ te .</sentence>
+				<definiendum id="0">Une d~rogation l'ordre de progression dans les noyaux</definiendum>
+				<definiens id="0">successifs a lieu dans deux cas : On rencontre un mot falsant partie d'une tournure idiomatique ( priorit4 absolue ) On rencontre une coordination ( priorit4 relative ) Lorsqu'il ne reste plus des points `` ~tiquet~s '' l'algorithme de transformation s'arr @ te</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>The kernel sentence forms ( for English ) are defined as the string of class marks N ~ ~ followed by one of the kernel Object strings : ~ , N , ~ , ~P__~ , __~ , e~ , D , A ( m Noun ; ~ : ~ense/aux ; ~ : verb ; ~ : preposition ; D : adverb ; ~ : adjective ; ~ : zero ) .</sentence>
+				<definiendum id="0">kernel sentence forms</definiendum>
+				<definiendum id="1">~</definiendum>
+				<definiens id="0">the string of class marks N ~ ~ followed by one of the kernel Object strings : ~ , N , ~ , ~P__~ , __~ , e~ , D , A ( m Noun</definiens>
+			</definition>
+</paper>
+
+		<paper id="1034">
+</paper>
+
+		<paper id="1037">
+</paper>
+
+		<paper id="1020">
+</paper>
+
+		<paper id="1024">
+</paper>
+
+		<paper id="1027">
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>b. The Fulcrum II uses an iterative principle .</sentence>
+				<definiendum id="0">Fulcrum II</definiendum>
+				<definiens id="0">uses an iterative principle</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>MAIN PROCESSING SUBROUTINE , MPS ( detailed syntactic identification ) MPS-A MPS-B Preliminary sequence : coordinate adverbs ( semantic check ) ; attach ~Ke and Heto adverb , modifier , or pronoun ; assign He to nominals , as applicable ; package adverbs mo~ing other adverbs with their heads , creating adverbial blocks .</sentence>
+				<definiendum id="0">MPS</definiendum>
+				<definiendum id="1">attach ~Ke</definiendum>
+				<definiens id="0">detailed syntactic identification ) MPS-A MPS-B Preliminary sequence : coordinate adverbs ( semantic check</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+</paper>
+
+		<paper id="1023">
+</paper>
+
+		<paper id="1022">
+</paper>
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>Ainsl deux immeubles peuvent dif~rer au niveau de la composition ( par la nature ou l'importance du stock ) et de plus ayant m~me compostions il peuvent diff~rer par l'expression ( par la disposition des appartements ) .</sentence>
+				<definiendum id="0">Ainsl deux</definiendum>
+				<definiens id="0">immeubles peuvent dif~rer au niveau de la composition ( par la nature ou l'importance du stock</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+</paper>
+
+		<paper id="1016">
+</paper>
+
+		<paper id="1014">
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>On y trouvera des phrases nominales ~ tous les quatre cas'purs , et d'autres avec les pr4positions suivantes : ~is , an , auf , aus , bei , his , his auf , bis an , ... , dutch , entlang , gegen , gen , in , mit , nach , Uber , urn , unter , yon , vor~ wider , zu .</sentence>
+				<definiendum id="0">y trouvera des phrases nominales</definiendum>
+				<definiens id="0">bis an , ... , dutch , entlang , gegen , gen , in , mit , nach , Uber , urn , unter</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>Done : a ) */ , Iz , / B ) *I~11,1 c ) *l.ll Les sch4mas possibles , c'est-~-dire autoris4s par les 4 r~gles sont • wS '' 1 sy llabe pr~tonique 2 syllabes pr4toniques au-del~ de Z syllabes pr 4toniques /02 , / lloz , / loZ~l , l ooz , / ... llooz , l , /lOOOZ , / ... Comment est alors r4gie la position de l'accent /I/ ( accent secondalre ) au-del~ de deux syllabes pr6toniques ?</sentence>
+				<definiendum id="0">Done</definiendum>
+				<definiens id="0">a ) */</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>The system consists of the three major analytic components ; a program for performing morphological analyses and deriving a segmentation algorithm for sentences in any language ; a syntactic learning program that formulates context free and context sensitive phrase structure rules ( monolingual learning component to be added later ) ; and a machine translation program that learns to translate in both directions between the query language ( English ) and the language of the llve informant via bi-lingual transformations .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiendum id="1">structure rules</definiendum>
+				<definiens id="0">consists of the three major analytic components ; a program for performing morphological analyses and deriving a segmentation algorithm for sentences in any language ; a syntactic learning program that formulates context free and context sensitive phrase</definiens>
+				<definiens id="1">monolingual learning component to be added later ) ; and a machine translation program that learns to translate in both directions between the query language ( English ) and the language of the llve informant via bi-lingual transformations</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>At present generative grammar consists of two components : a phrase structure compgnent and a transformational one ( I do not touch upon the problems of the phonemic and morphophonemic levels ) .</sentence>
+				<definiendum id="0">generative grammar</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The matrix component consists of a regular elementary matrix ~rammar , containing only ( ordered ) elementary context free rules , with Solvable main decision problems , and which generates in a natural way discontinous structures .</sentence>
+				<definiendum id="0">matrix component</definiendum>
+				<definiens id="0">consists of a regular elementary matrix ~rammar , containing only ( ordered ) elementary context free rules , with Solvable main decision problems , and which generates in a natural way discontinous structures</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The dictionary of the language consists of triplets ( word , proper semantic matrix , definition ) called lexical issues .</sentence>
+				<definiendum id="0">dictionary of the language</definiendum>
+				<definiens id="0">consists of triplets ( word , proper semantic matrix , definition ) called lexical issues</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The semantic regularity of a sentence is defined as the condition of the semantic regularity of all the configurations in the configurational analysis of the sentence .</sentence>
+				<definiendum id="0">semantic regularity of a sentence</definiendum>
+				<definiens id="0">the condition of the semantic regularity of all the configurations in the configurational analysis of the sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>~0OS~ ) I l~m A~T~AL ACT~ARTEFACT ( ANIMATE INGS ) II ( oF 0H00a ) ( wHo CHOOSm ) I I '' les d±soa'ssions '' I AC VI ) `` les membres/ ' \ [ ~l `` Deliberations '' It becomes evident , then , that if we are to make a ~r Chlne account for the translations~ which good human anslators actually produce~using the kind of modern which has been reported o~ this paper , the problem is that of finding the ~ structures of the dlctionary-entries from the data actually given by a bilingual corpus ; for the construction of the squareforming templates must depend on thesethat is if the template-glossary and the bi-llngual dictionary are to interlock .</sentence>
+				<definiendum id="0">A~T~AL ACT~ARTEFACT</definiendum>
+				<definiens id="0">the ~ structures of the dlctionary-entries from the data actually given by a bilingual corpus</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Z APPENDIX B ( c ) , ,I 0 ~- '' J Z 0 Z Z -m -i-I-Z W ~I : D : D 0 0 bW Ud Z Z Z I-i -- -- , C ' UJ Ld 0 0 Z 0 Z Z W ~ '' 0 0 &gt; nO ¢ .</sentence>
+				<definiendum id="0">Z APPENDIX B</definiendum>
+				<definiens id="0">( c ) , ,I 0 ~- '' J Z 0 Z Z -m -i-I-Z W ~I : D : D 0 0 bW Ud Z Z Z I-i -- --</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>A Markov Grammar is defined as a Markov Source with the following propertie s : Assume that there are n+ 1 states , say S O , S1 , ... , Sn , in the source .</sentence>
+				<definiendum id="0">Markov Grammar</definiendum>
+				<definiens id="0">a Markov Source with the following propertie s : Assume that there are n+ 1 states , say S O , S1 , ... , Sn , in the source</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>S O is defined as the initial state and S is defined as the final state and the other n states are called intermediate states .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">the initial state and</definiens>
+				<definiens id="1">the final state and the other n states are called intermediate states</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The length of a sentence is defined as the number of letters in the sentence .</sentence>
+				<definiendum id="0">length of a sentence</definiendum>
+				<definiens id="0">the number of letters in the sentence</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>= x.H. 1 1 i= 0 where x = ( x0 , x z , ... , Xn_l ) is defined as the stationary distribution-~ the source obtained when S O and S n are identified ; thus x is defined as the ( unique ) solution to the set of simultaneous equations ( z ) xM 1 = x x0 + X l + '' '' + Xn-1 = 1 where M 1 is formed by shifting the last and first columns and then omitting the last row and column .</sentence>
+				<definiendum id="0">x z , ... , Xn_l )</definiendum>
+				<definiens id="0">the stationary distribution-~ the source obtained when S O and S n are identified</definiens>
+				<definiens id="1">the ( unique ) solution to the set of simultaneous equations ( z ) xM 1 = x x0 + X l + '' '' + Xn-1 = 1 where M 1 is formed by shifting the last and first columns and then omitting the last row and column</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>composed grammar be calculated according to the formula : ( 4 ) H ( M ' ) = H ( M ) + xipik `` ~I `` H ( M| ) 1 + xiPik ( ~1 1 ) where H ( M ) is the entropy of the grammar M when there is an ordinary connection ( with probability Pik ) between the states S i and Sk , and where x. is 1 the inherent probability of being in the state S. under the same conditions .</sentence>
+				<definiendum id="0">xiPik</definiendum>
+				<definiendum id="1">H ( M )</definiendum>
+				<definiens id="0">1 the inherent probability of being in the state S. under the same conditions</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>With more convenient notations we can write ( 7 ) as ( E P ) t = Pt where E is the unit matrix , P is the probability matrix ( with P = 0 ) and nn Pt is the vector with components Pi ( t ) =~ Pim tim ' i = 0 , 1 ... . , n. m The application of ~he lemma for computing the numbers ~k in formula ( 6 ) is now the following .</sentence>
+				<definiendum id="0">E</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiendum id="2">Pt</definiendum>
+				<definiens id="0">the unit matrix</definiens>
+				<definiens id="1">the vector with components Pi ( t ) =~ Pim tim ' i = 0 , 1 ... . , n. m The application of ~he lemma for computing the numbers ~k in formula ( 6 ) is now the following</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>Col. C represents the multiple-regression coefficients found in predicting the pooled human ratings with 30 independent proxes found in the essays by the computer program of PEG-IA .</sentence>
+				<definiendum id="0">Col. C</definiendum>
+				<definiens id="0">the multiple-regression coefficients found in predicting the pooled human ratings with 30 independent proxes found in the essays by the computer program of PEG-IA</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( Continued ) Table 4 ( Continued ) of ( 5 ) , KERNEL would establish a set of elementary propositfons , and STRUC would encode the relationships among these elements .</sentence>
+				<definiendum id="0">Continued</definiendum>
+				<definiens id="0">establish a set of elementary propositfons , and STRUC would encode the relationships among these elements</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>The starting point ( Figure I ) is a German adverbial phrase , which is to be analyzed and then converted into a factor formula by means of a morpho-nomo-transformation .</sentence>
+				<definiendum id="0">Figure I )</definiendum>
+				<definiens id="0">a German adverbial phrase , which is to be analyzed and then converted into a factor formula by means of a morpho-nomo-transformation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>c ) Zorpho-nomo , and nomo-morpho-transformation : A transfer from the morpho-level to the homo-level or vice versa .</sentence>
+				<definiendum id="0">nomo-morpho-transformation</definiendum>
+				<definiens id="0">A transfer from the morpho-level to the homo-level or vice versa</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>NA = a positive integer indicating the position of the first character of a string in the array BLOCK to be handled by t~ subroutine .</sentence>
+				<definiendum id="0">NA</definiendum>
+				<definiens id="0">a positive integer indicating the position of the first character of a string in the array BLOCK to be handled by t~ subroutine</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The 36 machlne-words of this array are subsequently packed with the aid of the subroutine PAKR into one location ( containing 36 bits ) , the ones and blanks of the 36 columns on the card resulting in ones and zeros in the respective bits of one machine-word .</sentence>
+				<definiendum id="0">PAKR</definiendum>
+				<definiens id="0">containing 36 bits ) , the ones and blanks of the 36 columns on the card resulting in ones and zeros in the respective bits of one machine-word</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>LBIT is used for storing or deleting grammatical information during the analysis process .</sentence>
+				<definiendum id="0">LBIT</definiendum>
+				<definiens id="0">used for storing or deleting grammatical information during the analysis process</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The result of this function , stored in J , is zero if the NAth character is unequal to any of the characters of the table , otherwise it is a positive integer not greater than NTAB , indicating that the NAth character of the array BLOCK is equal to the Jth character of TABLE .</sentence>
+				<definiendum id="0">BLOCK</definiendum>
+				<definiens id="0">a positive integer not greater than NTAB , indicating that the NAth character of the array</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>VOC,5 ) IF ( K ) 1905,1915,1905 ENG ( 1 , I ) ~ WORD ( 5 ) I = I+I GO TO 1480 EWD is the array where the English words were brought after the dIB~ionary lookup and ENG where they are brought d~ring the analysis .</sentence>
+				<definiendum id="0">EWD</definiendum>
+				<definiens id="0">the array where the English words were brought after the dIB~ionary lookup</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>575 EWD ( 1 , IL ) = CSW0 ( WORD ( 50 ) , EWD ( I , IL ) ,2 ) K = IL-I CALL SHA2 ( EWD ( 1 , K ) ,1,52,4,1 ) EWD ( 1 , K ) -CSWO ( WORD ( 40 ) , EWD ( 1 , K ) , 5 ) CALL SHA2 ( EWD ( 1 , K ) ,1,55,5,1 ) GO TO 550 In statement 575 the preposition `` of '' ( WORD ( 50 ) ) , chosen in this case as the translation of the Hebrew p~epcsitional prefix B , is composed with the first part of the name of the month which follows it .</sentence>
+				<definiendum id="0">K ) -CSWO</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Format : CALL SHA2 ( BLOCK , NA , N , NSHIFT , IND ) NSHIFT is the number of positions we want to shift a string of N characters , starting from the NAth character in the array BLOCK .</sentence>
+				<definiendum id="0">IND ) NSHIFT</definiendum>
+				<definiens id="0">the number of positions we want to shift a string of N characters , starting from the NAth character in the array BLOCK</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Format : CALL SHA2 ( BLOCK , NA , N , NSHIFT , IND ) NSHIFT is the number of positions we want to shift a string of N characters , starting from the NAth character in the array BLOCK .</sentence>
+				<definiendum id="0">IND ) NSHIFT</definiendum>
+				<definiens id="0">the number of positions we want to shift a string of N characters , starting from the NAth character in the array BLOCK</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>The assignment rules are simply transferred , and since V is the substitute for the axiom category S , it is taken as the axiom for the DG .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">the substitute for the axiom category S</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>We now have three varieties of X , namely : X , XI , and X2 , where X is the unstarred variety , X I is the marked constituent of Y , and X 2 of Z. ( If X does not occur unstarred , only X and X I are needed . )</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">X I</definiendum>
+				<definiens id="0">the unstarred variety ,</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Whenever E is a dependent of A , then either a second B or a C are also dependents , and if a second B is a dependent of A , D is also .</sentence>
+				<definiendum id="0">E</definiendum>
+				<definiens id="0">a dependent of A , then either a second B or a C are also dependents , and if a second B is a dependent of A</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>There the set of strings derivable from A of the DG is the union of the set of strings derivable from S and Z of the SPG , and the set derivable fromB is the union d the set derivable from W and V. Hays says that a D-tree and a P-tree correspond if they correspond relationally and if the category at the origin of every complete subtree of the D-tree is substantively equivalent to the category labeling the complete subtree of the P-tree related to it .</sentence>
+				<definiendum id="0">DG</definiendum>
+				<definiendum id="1">fromB</definiendum>
+				<definiens id="0">the union of the set of strings derivable from S and Z of the SPG</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Bar-Hillel , Y. , Perles , M. , and Shamir , E. `` On formal properties of phrase structure grammars , '' in R. D. Luce , R. Bush , and E. Galanter ( eds . )</sentence>
+				<definiendum id="0">E. Galanter</definiendum>
+				<definiens id="0">On formal properties of phrase structure grammars</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The tabular parser : A parsing program for phrase structure and dependency .</sentence>
+				<definiendum id="0">tabular parser</definiendum>
+				<definiens id="0">A parsing program for phrase structure and dependency</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>A binary relation on V is defined as a set R of ordered pairs &lt; x , p , where x , y s V. The proposition that x stands in relation R toy will be denoted by xRy. The dcmain~Y ( R ) , range ~ ( R ) , and field ~ ( F ) of relation R are , respectively , defined by the sets \ [ x : ( ~y ) ( xRy ) \ ] ; ( y : ( ~Lx ) ( xRy ) } ; \ [ x : ( ~y ) ( xRy ) } U ( y : ( ~x ) ( xRy ) \ ] The complement , union , intersection , and converse relstions are defined by x~y = -.x~ ; x ( RUS ) y x~vxSy ; x ( RnS ) y `` x~x~ ; xR'ly -yRx The identity relation I and null relation ~ are defined by xIy ~ x=y ; ~y ( x~x ) , V~ ( y~y ) The product .and power relations are defined by xRISy = ( .~z ) \ [ xRz ^zSy\ ] ; R n =RIR n'l n~ 1 Inclusion and equality of relations are defined by RC S =xRy == &gt; xSy ; R = S m R c SA S c R Later we will use the following elementary theorems which are stated here without proof : Theorem : R g S == &gt; R `` I c_ S `` I m -Theorem : R c S ~ &gt; S c R Theorem : ( R'I ) `` I = R Theorem : ( RIS ) IT : RI ( SIT ) Theorem : ( RIS ) `` I = S'IIR `` I Theorem : IIR = RII = R Theorem : s -r = &gt; RIs=RIT ^ SIR=TIR Under the assumption that synonymy and antonymy are ternary relations on the set C of all content words , the following definitions will be used : xSiY = word x is a synonym of word y with respect to the intension i ( or word x is synonymous in sense i to word y ) xAiY -= word x is an antonym of word y with respect to the intension i ( or word x is antonymous in sense i to word y ) We will assume that the synonymy and antonymy relations are defined Jointly and implicitly bythe following set of axioms rather than separately as in Edmundson ( 1965 ) .</sentence>
+				<definiendum id="0">; x ( RnS ) y `` x~x~ ; xR'ly -yRx</definiendum>
+				<definiens id="0">a set R of ordered pairs &lt; x , p , where x , y s V. The proposition that x stands in relation R toy will be denoted by xRy. The dcmain~Y ( R ) , range ~ ( R ) , and field ~ ( F ) of relation R are , respectively , defined by the sets \ [ x : ( ~y ) ( xRy ) \ ] ; ( y : ( ~Lx ) ( xRy ) } ; \ [ x : ( ~y ) ( xRy ) } U ( y : ( ~x ) ( xRy ) \ ] The complement , union , intersection , and converse relstions are defined by x~y = -.x~ ; x ( RUS ) y x~vxSy</definiens>
+				<definiens id="1">The identity relation I and null relation ~ are defined by xIy ~ x=y ; ~y ( x~x ) , V~ ( y~y ) The product .and power relations are defined by xRISy = ( .~z ) \ [ xRz ^zSy\ ] ; R n =RIR n'l n~ 1 Inclusion and equality of relations are defined by RC S =xRy == &gt; xSy ; R = S m R c SA S c R Later we will use the following elementary theorems which are stated here without proof : Theorem : R g S == &gt; R `` I c_ S `` I m -Theorem : R c S ~ &gt; S c R Theorem : ( R'I ) `` I = R Theorem : ( RIS ) IT : RI ( SIT ) Theorem : ( RIS ) `` I = S'IIR `` I Theorem : IIR = RII = R Theorem : s -r = &gt; RIs=RIT ^ SIR=TIR Under the assumption that synonymy and antonymy are ternary relations on the set C of all content words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Axiom 1 ( Reflexive ) : ( Vx ) \ [ xSix\ ] Axium 2 ( Symmetric ) : ( Vx ) ( Vy ) \ [ xSiY = &gt; xS ; Iy\ ] Axium 3 ( Transitive ) : ( Vx ) ( Vy ) ( Vz ) \ [ xSiY A YSiZ : &gt; Axi~n 4 ( Irreflexive ) : ( Vx ) \ [ x~ix\ ] Axiun 5 ( Symmetric ) : ( Vx ) ( Vy ) \ [ xAiY = &gt; xA ; ly\ ] Axi~n 6 ( Antitransitive ) : ( Vx ) ( Vy ) ( Vz ) \ [ xAiY A YAiZ Aximm 7 ( Right-identity ) : ( Vx ) ( Vy ) ( Vz ) \ [ xAiY A YSiZ Axiom 8 ( Nonempty ) : ( Vy ) ( : ~x ) \ [ xAiY\ ] xSiz\ ] ~ &gt; xSiz\ ] ~ &gt; xAiz\ ] The properties named in Axiams 6 and 7 were coined for this study .</sentence>
+				<definiendum id="0">Symmetric</definiendum>
+				<definiendum id="1">Nonempty ) : ( Vy</definiendum>
+				<definiens id="0">) : ( Vx ) ( Vy ) \ [ xSiY = &gt; xS</definiens>
+				<definiens id="1">Transitive ) : ( Vx ) ( Vy ) ( Vz ) \ [ xSiY A YSiZ : &gt; Axi~n 4 ( Irreflexive ) : ( Vx ) \ [ x~ix\ ] Axiun 5 ( Symmetric ) : ( Vx ) ( Vy ) \ [ xAiY = &gt; xA</definiens>
+				<definiens id="2">Antitransitive ) : ( Vx ) ( Vy ) ( Vz ) \</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The synonym class of a word y is defined by si ( Y ) '= \ [ x : xSiY\ ] which may be extended to an arbitrary set E of words by si ( E ) = { x : ( .</sentence>
+				<definiendum id="0">synonym class of a word y</definiendum>
+				<definiens id="0">si ( Y ) '= \ [ x : xSiY\ ] which may be extended to an arbitrary set E of words by si ( E )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>AIS = SIA Proof : AIS -- A = A `` A = ( AIS ) `` l = ( A'lls'l ) `` l -SIA From the above two theorems it follows that : Theorem : SIA = A Proof : S~A =A IS =A. As a special case we ~et : Theorem : A 3 =AIA =AIS =A. In fact , we have the generalization : S if n even Theorem : An = A if n odd Proof : For n even , A n = A 2k = ( A2 ) k = ~ = S. For n odd , A n = A 2k+l = AI ( A2 ) k = AtS = A. Next , several theorems about synonym classes and antonym classes will he stated and proved .</sentence>
+				<definiendum id="0">Proof</definiendum>
+				<definiens id="0">An = A if n odd Proof : For n even , A n = A 2k = ( A2 ) k = ~ = S. For n odd , A n = A 2k+l = AI ( A2 ) k = AtS = A. Next , several theorems about synonym classes</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Suppose that for every pair &lt; x , y &gt; Of words in the vocabulary V of a language exactly one of the following ternary relations holds : ( 1 ) x and y are synonymous , xSy 2 ) x and y are antonymous , xAy 3 ) neither ( 1 ) nor 42 ) , xMy This can be expressed by ( Vx ) ( Vy ) \ [ x , ~ e v -- -- - &gt; xs~Vx~vvx~\ ] which is an exclusive disjunction .</sentence>
+				<definiendum id="0">Vx )</definiendum>
+				<definiens id="0">y &gt; Of words in the vocabulary V of a language exactly one of the following ternary relations holds : ( 1 ) x and y are synonymous</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>c.~N '' ~x. \ [ ~x ~ ~x n N x\ ] Axiom 3 : ( vy ) CVSx ) CZs~ , ) \ [ y ~ s x ~ &gt; ~y ~ ~1 Axiom ~ : ( Vx ) ( Vy ) ( ~x ) ( aNy ) Ix ~ y -- -- -- &gt; Nx n Ny -~\ ] These axioms can be pictured informally by the following Euler N x N~ N x Nx Ny Define a neighborhood n~ ( x ) of a word x as any subset of the synonym class si ( x ) o~ x that cSntalns x , i.e. , X e ni ( x ) ~ si ( x ) Wain , forreasons of notational simplicity , the subscript denoting the intension i will be emitted whenever possible .</sentence>
+				<definiendum id="0">X e ni</definiendum>
+				<definiens id="0">a neighborhood n~ ( x ) of a word x as any subset of the synonym class si ( x ) o~ x that cSntalns x</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Theorem : ( Vy ) ( Vn ( x ) ) ( ~n ( y ) ) \ [ y e n ( x ) == &gt; n ( y ) c_ n ( x ) \ ] Proof : For arbitrary y e n ( x ) , let n ( y ) = n ( x ) .</sentence>
+				<definiendum id="0">Theorem</definiendum>
+				<definiens id="0">( Vy ) ( Vn ( x ) ) ( ~n ( y ) ) \ [ y e n ( x ) == &gt; n ( y ) c_ n ( x ) \ ] Proof : For arbitrary y e n ( x )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>But y e n ( x ) implies s ( x ) = s ( y ) since y e n ( x ) c_ s ( x ) = { z : zSx\ ] implies ySx and ySx implies s ( y ) = s ( x ) ° Then n ( y ) c_ s ( y ) since n ( y ) = n ( x ) c_ s ( x ) = s ( y ) .</sentence>
+				<definiendum id="0">y e n</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>~ ( SIV\ ] S 2 \ [ LLP2 ~ L objet U Po ' avez Lav -- -6~r/ | , |I INDUCT ( ~ ) I Z Ldif f~rer\ ] s11~\ ] s2 L~\ ] P0 ( T , ~ ) chang~ T \ [ ~\ ] R date &lt; T , ~ ) T\ [ ~\ ] Rdate tY~de \ ] \ [ objet\ ] ieuJ • -~o \ [ de /~-~~D~CT &lt; ~ ) \ ] langag , Fo~ : S I~ a\ ] S 2 L 3 b\ ] ... Po z \ [ parler\ ] P~ \ [ maniarq -7s~mantiquement identiques , pas plus que le d~coupage syntaxique different que subit une m~me information dans l'~nonc~ , ne sont pris en consideration que pour autant que ces fairs de langue permettent de desceller soit la subordination des descriptions ~l~mentaires , soit la distribution d'op~rateurs d'insistance ( v. les exemples aux pages 3-5 ) .</sentence>
+				<definiendum id="0">Fo~</definiendum>
+				<definiendum id="1">autant que</definiendum>
+				<definiens id="0">pas plus que le d~coupage syntaxique different que subit une m~me information dans l'~nonc~ , ne sont pris en consideration que pour</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>Otherwise , we select the atom whose row or column contains the least number of 1 ~s. To analyze a string of words we assign to each word one symbol of the type ABCDE , where C is the set of numerators in all the word ts category symbols , B is the set of nominator atoms appearing immediately before the numerator in any one of the word 's category symbols , etc .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiendum id="1">B</definiendum>
+				<definiens id="0">the set of numerators in all the word ts category symbols</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>Program-statements are elements of the intermediate alphabet and have no other theoretical standing or significance .</sentence>
+				<definiendum id="0">Program-statements</definiendum>
+				<definiens id="0">elements of the intermediate alphabet and have no other theoretical standing or significance</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+</paper>
+
+		<paper id="1021">
+</paper>
+
+		<paper id="1031">
+</paper>
+
+	</volume>

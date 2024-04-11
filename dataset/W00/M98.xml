@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="M98">
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>A Sample Stack Here `` ... '' represents other elements lower on the stack and period # 28the punctuation mark # 29 represents the most recently added element .</sentence>
+				<definiendum id="0">Sample Stack Here `` ... ''</definiendum>
+				<definiens id="0">represents other elements lower on the stack</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>XI wants a list of quasi-logical predicates .</sentence>
+				<definiendum id="0">XI</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>template writer The template writer is a prolog program that simply scans through the discourse model .</sentence>
+				<definiendum id="0">template writer</definiendum>
+				<definiens id="0">a prolog program that simply scans through the discourse model</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>GATE provides a Tipster compatible database mechanism .</sentence>
+				<definiendum id="0">GATE</definiendum>
+				<definiens id="0">provides a Tipster compatible database mechanism</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>XI : A knowledge representation language based on cross-classi # 0Ccation and inheritance .</sentence>
+				<definiendum id="0">XI</definiendum>
+				<definiens id="0">A knowledge representation language based on cross-classi # 0Ccation and inheritance</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+</paper>
+
+		<paper id="1011">
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>BACKGROUND The LOLITA ( Large-scale , Object-based , Linguistic Interactor , Translator , and Analyser ) system is designed as a general purpose Natural Language Processing ( NLP ) system and has been under development at the University of Durham since 1986 .</sentence>
+				<definiendum id="0">LOLITA</definiendum>
+				<definiens id="0">a general purpose Natural Language Processing ( NLP ) system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This core platform provides two main facilities : analysis , which converts text to a logical representation of its meaning , and generation , which expresses information represented in this logical form as text .</sentence>
+				<definiendum id="0">analysis</definiendum>
+				<definiendum id="1">generation</definiendum>
+				<definiens id="0">converts text to a logical representation of its meaning , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Semantic Network The SemNet is a 100,000+ node , directed hyper-graph .</sentence>
+				<definiendum id="0">SemNet</definiendum>
+				<definiens id="0">a 100,000+ node , directed hyper-graph</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>OVERVIEW LaSIE-II is a highly modularised system , made up of 9 TIPSTER-compliant modules , pictured in Figure 1 as executed interactively through the GATE Graphical Interface .</sentence>
+				<definiendum id="0">OVERVIEW LaSIE-II</definiendum>
+				<definiens id="0">a highly modularised system , made up of 9 TIPSTER-compliant modules</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Discourse Interpreter Adds the QLF representationtoa semanticnet , which encodesthe system'sdomain model as a hierarchy of concepts .</sentence>
+				<definiendum id="0">QLF representationtoa semanticnet</definiendum>
+				<definiens id="0">a hierarchy of concepts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>GATE manages all the information about the texts that is produced by each module , and provides graphical tools for visualising that information , selecting control # 0Dow through di # 0Berent module combinations and running the IE system over sets of texts .</sentence>
+				<definiendum id="0">GATE</definiendum>
+				<definiens id="0">manages all the information about the texts that is produced by each module</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>A collocation is a habitual word combination , such as # 5Cweather a storm '' , # 5C # 0Cle a lawsuit '' , and # 5Cthe falling yen '' .</sentence>
+				<definiendum id="0">collocation</definiendum>
+				<definiens id="0">a habitual word combination</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Freq is the frequency of the word in the context , LogL is the log likelihood ratio between the word and the context # 5B1 # 5D .</sentence>
+				<definiendum id="0">Freq</definiendum>
+				<definiendum id="1">LogL</definiendum>
+				<definiens id="0">the frequency of the word in the context</definiens>
+				<definiens id="1">the log likelihood ratio between the word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>The TIME sub-type is defined as a temporal unit shorter than a full day , such as second , minute , or hour .</sentence>
+				<definiendum id="0">TIME sub-type</definiendum>
+				<definiens id="0">a temporal unit shorter than a full day , such as second , minute , or hour</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The DATE sub-type is a temporal unit of a full day or longer .</sentence>
+				<definiendum id="0">DATE sub-type</definiendum>
+				<definiens id="0">a temporal unit of a full day or longer</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>Cache records the occurrences of all the possible candidates in a paragraph .</sentence>
+				<definiendum id="0">Cache</definiendum>
+				<definiens id="0">records the occurrences of all the possible candidates in a paragraph</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Two surnames together P ( C 12 ) *P ( C 2 ) *P ( C 3 ) using female training table &gt; Threshold 3 , P ( C 2 ) *P ( C 3 ) using female training table &gt; Threshold 4 and P ( C 12 ) *P ( C 2 ) *P ( C 3 ) using female training table &gt; P ( C 12 ) *P ( C 2 ) *P ( C 3 ) using male training table where C 1 , C 2 and C 3 are a continuous sequence of characters in a sentence , and they denote surname and names , respectively , C 11 and C 12 denote the first and the second surnames , P ( C i ) is the probability of C i to be a surname or a name .</sentence>
+				<definiendum id="0">P ( C i )</definiendum>
+				<definiens id="0">a continuous sequence of characters in a sentence , and they denote surname and names , respectively , C 11 and C 12 denote the first and the second surnames</definiens>
+				<definiens id="1">the probability of C i to be a surname or a name</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>OrganizationName GC6 OrganizationName OrganizationNameKeyword e.g. , G7BGD4G66 GF4GCE OrganizationName GC6 CountryName OrganizationNameKeyword e.g. , G04G66 GACG63GCB OrganizationName GC6 PersonName OrganizationNameKeyword e.g. , GDCG74GF2 G6EGC5G65 6 OrganizationName GC6 CountryName { D|DD } OrganizationNameKeyword where D is a content word .</sentence>
+				<definiendum id="0">D</definiendum>
+				<definiens id="0">a content word</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The string `` GFAG35G5BG1AG9CG4AG2F '' is lack of keyword , so it is missed .</sentence>
+				<definiendum id="0">GFAG35G5BG1AG9CG4AG2F</definiendum>
+				<definiens id="0">lack of keyword , so it is missed</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>BACKGROUND UMIST’s participation in the MUC-7 NE task was conducted with a recently constructed module of a larger system whose main purpose is text categorization .</sentence>
+				<definiendum id="0">BACKGROUND UMIST’s participation</definiendum>
+				<definiens id="0">text categorization</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The semantics field comes from lookup in a database which has information on words and phrases belonging to the categories of named entities themselves as well as to categories that occur as prefixes or suffixes of names .</sentence>
+				<definiendum id="0">semantics field</definiendum>
+				<definiens id="0">comes from lookup in a database which has information on words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>C bf represents the initial certainty of a proposition or that based on accumulated evidence so far .</sentence>
+				<definiendum id="0">C bf</definiendum>
+				<definiens id="0">the initial certainty of a proposition or that based on accumulated evidence so far</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>C X is the certainty value for the same proposition , attributable on the basis of anewruleX , not previously considered .</sentence>
+				<definiendum id="0">C X</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Acknowledgments FACILE ( Fast and Accurate Categorisation of Information by Language Engineering ) is a collaborative project cofunded by the European Union under contract LE2440 .</sentence>
+				<definiendum id="0">Acknowledgments FACILE</definiendum>
+				<definiens id="0">a collaborative project cofunded by the European Union under contract LE2440</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>Information extraction in the sense of the Message Understanding Conferences has been traditionally defined as the extraction of information from a text in the form of text strings and processed text strings which are placed into slots labeled to indicate the kind of information that can fill them .</sentence>
+				<definiendum id="0">Information extraction</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>SPECIAL USAGE NOTES : defined as follows : ORG_GOVT -the government of a country , state , municipality , etc. , or government body such as a government ministry , agency , commission , or committee .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Thus , the phrases enclosed between asterisks in the following examples are allowable fills for ENT_DESCRIPTOR for Commander Bates ' plane that crashed outside of Nashville : `` an F-14A `` Tomcat '' fighter jet '' `` an F-14 from Squadron 213 '' DEFINITION : LOCATION is a task-independent object that is separate from the predefined ENTITY object .</sentence>
+				<definiendum id="0">LOCATION</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>SPECIAL USAGE NOTES : CITY -a town , city , port , suburb , or other local settlement PROVINCE -a state , province , island or similar subnational geographically or politically defined area COUNTRY -a nation , country , colony , federation of countries such as the Confederation of Independent States ( the former USSR ) , or other similar national entity REGION -an international region such as Eastern Europe , the Pacific Rim , or the Malay Archipelago WATER -a body of water such as the Atlantic Ocean or the Straits of Florida .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The ARTIFACT ENTITY assumes a scenariospecific IE task that includes sports equipment such as golf clubs ( and excludes such things as `` golf club parts '' ) and specifies where they are used in the ENT_CATEGORY slot .</sentence>
+				<definiendum id="0">ARTIFACT ENTITY</definiendum>
+				<definiens id="0">assumes a scenariospecific IE task that includes sports equipment such as golf clubs ( and excludes such things as `` golf club parts '' ) and specifies where they are used in the ENT_CATEGORY slot</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>However , the Globe Staff is an optional organization because it is a part of the Boston Globe , so his relationship to the Globe Staff will essentially be optional .</sentence>
+				<definiendum id="0">Globe Staff</definiendum>
+				<definiens id="0">an optional organization because it is a part of the Boston Globe</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The ARTIFACT ENTITY assumes a scenariospecific IE task that includes sports equipment such as golf clubs ( and excludes such things as `` golf club parts '' ) and specifies where they are used in the ENT_CATEGORY slot .</sentence>
+				<definiendum id="0">ARTIFACT ENTITY</definiendum>
+				<definiens id="0">assumes a scenariospecific IE task that includes sports equipment such as golf clubs ( and excludes such things as `` golf club parts '' ) and specifies where they are used in the ENT_CATEGORY slot</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>SPECIAL USAGE NOTES : See section 11.2.5 and time-guidelines-supplement-07aug97 .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>11.2.2.5 MISSION_TYPE Slot DEFINITION : A general categorization of the type of mission being performed .</sentence>
+				<definiendum id="0">MISSION_TYPE Slot DEFINITION</definiendum>
+				<definiens id="0">A general categorization of the type of mission being performed</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>SPECIAL USAGE NOTES : descriptor , as defined in the Information Extraction Task Definition .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+				<definiendum id="1">descriptor</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>11.2.3.2 VEHICLE_TYPE Slot DEFINITION : A categorization of the type of launch vehicle .</sentence>
+				<definiendum id="0">VEHICLE_TYPE Slot DEFINITION</definiendum>
+				<definiens id="0">A categorization of the type of launch vehicle</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>11.2.4.3 PAYLOAD_TYPE Slot DEFINITION : A categorization of the type of payload being carried by the launch vehicle .</sentence>
+				<definiendum id="0">PAYLOAD_TYPE Slot DEFINITION</definiendum>
+				<definiens id="0">A categorization of the type of payload being carried by the launch vehicle</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>SPECIAL USAGE NOTES : COMMS -payload is for transmitting or receiving communications , such as cellular telephone traffic , e.g. communications satellite INTELL -payload receives or transmits intelligence information , e.g. intelligence satellite WEATHER -payload receives or transmits weather information , e.g. weather satellite TV -payload transmits or receives TV signals , e.g. digital TV satellite DESTRUCTION -payload is used for destructive purposes , e.g. missiles .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+				<definiens id="0">cellular telephone traffic , e.g. communications satellite INTELL -payload receives or transmits intelligence information , e.g. intelligence satellite WEATHER -payload receives or transmits weather information , e.g. weather satellite TV -payload transmits or receives TV signals</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>SPECIAL USAGE NOTES : as a city , nation , or region .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+				<definiens id="0">a city , nation , or region</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+</paper>
+
+		<paper id="1024">
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>SIFT : AN INTEGRATED TE/TR EXTRACTION SYSTEM Introduction At the sentence level , the SIFT system ( “Statistics for Information From Text” ) employs a unified statistical process to map from words to semantic structures .</sentence>
+				<definiendum id="0">SIFT</definiendum>
+				<definiens id="0">AN INTEGRATED TE/TR EXTRACTION SYSTEM Introduction At the sentence level , the SIFT system ( “Statistics for Information From Text” ) employs a unified statistical process to map from words to semantic structures</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Separate probabilities are maintained for left ( pre ) and right ( post ) modifiers : P c c c c wL m p hp m p ( | , , , ) −1 , e.g. P per np s vp null saidL ( / | , , , ) P c c c c wR m p hp m p ( | , , , ) −1 , e.g. P null s vp null saidR ( | , , , ) Part-of-speech tags , tm , for modifiers are predicted based on the modifier , cm , the part-of-speech tag of the head word , th , and the head word itself , wh : P t c t wm m h h ( | , , ) , e.g. P per nnp per np vbd said ( / | / , , ) Head words , wm , for modifiers are predicted based on the modifier , cm , the part-of-speech tag of the modifier word , tm , the part-of-speech tag of the head word , th , and the head word itself , wh : P w c t t wm m m h h ( | , , ) , , e.g. P nance per np per nnp vbd said ( | / , / , , ) 6 Finally , word features , fm , for modifiers are predicted based on the modifier , cm , the part-of-speech tag of the modifier word , tm , the part-of-speech tag of the head word , th , the head word itself , wh , and whether or not the modifier head word , wm , is known or unknown .</sentence>
+				<definiendum id="0">wm</definiendum>
+				<definiens id="0">P c c c c wL m p hp m p ( | , , , ) −1 , e.g. P per np s vp null saidL ( / | , , , ) P c c c c wR m p hp m p ( | , , , ) −1 , e.g. P null s vp null saidR ( | , , , ) Part-of-speech tags , tm , for modifiers are predicted based on the modifier , cm , the part-of-speech tag of the head word , th , and the head word itself</definiens>
+				<definiens id="1">predicted based on the modifier , cm , the part-of-speech tag of the modifier word , tm , the part-of-speech tag of the head word , th , and the head word itself , wh : P w c t t wm m m h h ( | , , ) , , e.g. P nance per np per nnp vbd said ( | / , / , , ) 6 Finally , word features , fm , for modifiers are predicted based on the modifier , cm , the part-of-speech tag of the modifier word , tm , the part-of-speech tag of the head word , th , the head word itself</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>It is a classifier model that considers all pairs of entities in a message whose types are compatible with a given relation ; for example , a Person and an Organization would suggest a possible Employee_Of .</sentence>
+				<definiendum id="0">Person</definiendum>
+				<definiens id="0">a classifier model that considers all pairs of entities in a message whose types are compatible with a given relation ; for example , a</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Content Features While the structural features learn general facts about the patterns in which related references occur and the text that surrounds them , the content features learn about the actual names and descriptors of entities seen to be related in the training data .</sentence>
+				<definiendum id="0">Content Features While</definiendum>
+				<definiens id="0">the structural features learn general facts about the patterns in which related references occur and the text that surrounds them , the content features learn about the actual names and descriptors of entities seen to be related in the training data</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The HMM labels each word either with one of the desired classes ( e.g. , person , organization , etc. ) or with the label NOT-A-NAME ( to represent “none of the desired classes” ) .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">labels each word either with one of the desired classes</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Features used in the MUC-7 version of the system include several features pertaining to numeric expressions , capitalization , and membership in lists of important words ( e.g. known corporate designators ) .</sentence>
+				<definiendum id="0">Features</definiendum>
+				<definiens id="0">used in the MUC-7 version of the system include several features pertaining to numeric expressions , capitalization , and membership in lists of important words</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The cross sentence model is the system component that tries to find further relations beyond those identified by the sentence-level model .</sentence>
+				<definiendum id="0">cross sentence model</definiendum>
+				<definiens id="0">the system component that tries to find further relations beyond those identified by the sentence-level model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The semantic vicinity ofanodeinanetwork consists of the nodes and the arcs reachable from that node by traversing a small number of arcs .</sentence>
+				<definiendum id="0">semantic vicinity ofanodeinanetwork</definiendum>
+				<definiens id="0">consists of the nodes and the arcs reachable from that node by traversing a small number of arcs</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>Each class_def string is a quadruple of tokens : of object .</sentence>
+				<definiendum id="0">class_def string</definiendum>
+				<definiens id="0">a quadruple of tokens : of object</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Default : the empty list .</sentence>
+				<definiendum id="0">Default</definiendum>
+				<definiens id="0">the empty list</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Default : the empty list .</sentence>
+				<definiendum id="0">Default</definiendum>
+				<definiens id="0">the empty list</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Default : the vertical bar character , ( `` | '' ) .</sentence>
+				<definiendum id="0">Default</definiendum>
+				<definiens id="0">the vertical bar character , ( `` | '' )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Default : the `` star '' character ( `` * '' ) .</sentence>
+				<definiendum id="0">Default</definiendum>
+				<definiens id="0">the `` star '' character ( `` * '' )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Each slot definition consists of six tokens : only looks to see that it is n't `` set '' or `` string '' ) .</sentence>
+				<definiendum id="0">slot definition</definiendum>
+				<definiens id="0">consists of six tokens : only looks to see that it is n't `` set '' or `` string '' )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>IsoQuest used the NameTag Configuration to recognize proper names and other key phrases in text , and mapped the product’s extraction tags to the MUC-7 NE tags .</sentence>
+				<definiendum id="0">IsoQuest</definiendum>
+				<definiens id="0">used the NameTag Configuration to recognize proper names and other key phrases in text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>NetOwl Extractor provides access to the extracted information through a flexible API , and IsoQuest used a small application program to process the documents and write the SGML output .</sentence>
+				<definiendum id="0">IsoQuest</definiendum>
+				<definiens id="0">used a small application program to process the documents and write the SGML output</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Although previous versions of NetOwl Extractor consisted of a software engine separate from the data configuration files , the software engine contained configuration-specific code and information .</sentence>
+				<definiendum id="0">NetOwl Extractor</definiendum>
+				<definiens id="0">consisted of a software engine separate from the data configuration files , the software engine contained configuration-specific code and information</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>NetOwl Extractor 3.0 includes a compiler that creates a configuration file from data source files , illustrated in Figure 2 .</sentence>
+				<definiendum id="0">NetOwl Extractor 3.0</definiendum>
+				<definiens id="0">includes a compiler that creates a configuration file from data source files</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>3 Multiple Configurations NetOwl Extractor permits a single CPU process to open multiple configuration files .</sentence>
+				<definiendum id="0">Multiple Configurations NetOwl Extractor</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Visual Extractor NetOwl Extractor provides a development graphical user interface ( GUI ) called Visual Extractor , which is implemented in Java .</sentence>
+				<definiendum id="0">Visual Extractor NetOwl Extractor</definiendum>
+				<definiens id="0">provides a development graphical user interface ( GUI ) called Visual Extractor , which is implemented in Java</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Figure 4 : Visual Extractor NAMED ENTITY CUSTOM CONFIGURATION Without modification , NetOwl Extractor’s NameTag Configuration identifies all of the types of names and phrases included in the Named Entity task specification .</sentence>
+				<definiendum id="0">NetOwl Extractor’s NameTag Configuration</definiendum>
+				<definiens id="0">identifies all of the types of names and phrases included in the Named Entity task specification</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>However , the Named Entity tag specification does contain a few significant differences to the product specification of NameTag , such as tagging numeric and temporal 5 ranges as one tag where as the NameTag Configuration breaks them into two separate tags .</sentence>
+				<definiendum id="0">Named Entity tag specification</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>For these reasons , IsoQuest created a Named Entity custom configuration based on the core NameTag Configuration .</sentence>
+				<definiendum id="0">IsoQuest</definiendum>
+				<definiens id="0">created a Named Entity custom configuration based on the core NameTag Configuration</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>TIME ( TEMPORAL ) TIMEX ( DATE ) ( TIME ) DATE and TIME were assigned based on the time unit .</sentence>
+				<definiendum id="0">TIME ( TEMPORAL ) TIMEX</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Test Run Recall Precision F-Measure CPU Time ( seconds ) Speed ( Meg/hour ) Official 90 93 91.60 3.6 382 Optional 74 93 82.61 2.7 513 ALLCAPS 78 96 81.96 4.9 279 Table 2 : NE Test Results IsoQuest performed an additional experimental run using the case-insensitive configuration against the upper-case version of the test data .</sentence>
+				<definiendum id="0">Test Run Recall Precision F-Measure CPU Time</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>Strangely , the Named Entity task is defined as a domain-independent task , yet the MUC committee selected samples of New York Times articles that focused on particular domains .</sentence>
+				<definiendum id="0">Named Entity task</definiendum>
+				<definiens id="0">a domain-independent task , yet the MUC committee selected samples of New York Times articles that focused on particular domains</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The NameTag Configuration does not rely on static lists of proper names although it can accommodate them .</sentence>
+				<definiendum id="0">NameTag Configuration</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>Test set ORGANIZATION ( REC/PRE ) PERSON ( REC/PRE ) LOCATION ( REC/PRE ) Dry run ( unmodified ) 85/99 94/98 96/98 Dry run ( 3/98 ) 94/99 93/98 96/97 Formal ( 3/98 ) 87/89 94/97 93/95 Formal ( modified ) 93/95 96/99 96/95 Table 5 : ENAMEX Performance Improvement Due To Lexicon Modifications Configurations of NetOwl Extractor are customizable and users are encouraged to make minor adjustments to their configuration to optimize their performance .</sentence>
+				<definiendum id="0">Test set ORGANIZATION ( REC/PRE ) PERSON ( REC/PRE ) LOCATION</definiendum>
+				<definiens id="0">ENAMEX Performance Improvement Due To Lexicon Modifications Configurations of NetOwl Extractor are customizable and users are encouraged to make minor adjustments to their configuration to optimize their performance</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Finally , NetOwl Extractor identified “CNN” as an ORGANIZATION but failed to determine that the phrase “beam MTV , CNN and other channels” indicates that “CNN” is a channel and not an organization , according to the Named Entity task specification .</sentence>
+				<definiendum id="0">NetOwl Extractor identified “CNN”</definiendum>
+				<definiendum id="1">“CNN”</definiendum>
+				<definiens id="0">an ORGANIZATION but failed to determine that the phrase “beam MTV</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>IsoQuest , a wholly-owned subsidiary of SRA International Inc. , is a leading provider of information discovery products that automatically extract , analyze , index , categorize and summarize text documents .</sentence>
+				<definiendum id="0">IsoQuest</definiendum>
+				<definiens id="0">a leading provider of information discovery products that automatically extract , analyze , index , categorize and summarize text documents</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>SYSTEM ARCHITECTURE MENE consists of a set of C++ and Perl modules which forms a wrapper around an M.E. toolkit # 5B6 # 5D which computes the values of the alpha parameters of equation 2 from a pair of training # 0Cles created by MENE .</sentence>
+				<definiendum id="0">SYSTEM ARCHITECTURE MENE</definiendum>
+				<definiens id="0">consists of a set of C++ and Perl modules which forms a wrapper around an M.E. toolkit # 5B6 # 5D which computes the values of the alpha parameters of equation 2 from a pair of training # 0Cles created by MENE</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+</paper>
+
+		<paper id="1012">
+</paper>
+
+		<paper id="1025">
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>The IDENT relation is symmetrical ( if A is IDENT to B , then B is IDENT to A ) , and it is transitive ( if A is IDENT to B and B is IDENT to C , then A is IDENT to C , and C is IDENT to A ) .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">if A is IDENT to B and B is IDENT to C , then A is IDENT to C , and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The annotation of coreference is to be performed within the text delimited by the SLUG , DATE , NWORDS , PREAMBLE , TEXT , and TRAILER tags .</sentence>
+				<definiendum id="0">annotation of coreference</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>An extensional descriptor is an enumeration of the member ( s ) of a set by ( unique ) names .</sentence>
+				<definiendum id="0">extensional descriptor</definiendum>
+				<definiens id="0">an enumeration of the member ( s ) of a set by ( unique ) names</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>An intensional description is a predicate that is true of an entity or set of entities -that it , it characterizes or defines the members of the set : `` the prime numbers '' , `` the president of Chrysler Corporation '' .</sentence>
+				<definiendum id="0">intensional description</definiendum>
+				<definiens id="0">a predicate that is true of an entity or set of entities -that it</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The MAXimal string includes the entire maximal conjoined noun phrase .</sentence>
+				<definiendum id="0">MAXimal string</definiendum>
+				<definiens id="0">includes the entire maximal conjoined noun phrase</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>lttok is a tokeniser which looks at the characters in the input stream and bundles them into tokens .</sentence>
+				<definiendum id="0">lttok</definiendum>
+				<definiens id="0">a tokeniser which looks at the characters in the input stream and bundles them into tokens</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Xxxx+ is a sequence of capitalised words ; DD is a digit ; PROF is a profession # 28director , manager , analyst , etc. # 29 ; REL is a relative # 28sister , nephew , etc. # 29 ; JJ* is a sequence of zero or more adjectives ; LOC is a known location ; PERSON-NAME is a valid person name recognized by a name grammar .</sentence>
+				<definiendum id="0">Xxxx+</definiendum>
+				<definiendum id="1">DD</definiendum>
+				<definiendum id="2">PROF</definiendum>
+				<definiendum id="3">REL</definiendum>
+				<definiendum id="4">LOC</definiendum>
+				<definiendum id="5">PERSON-NAME</definiendum>
+				<definiens id="0">a digit</definiens>
+				<definiens id="1">a sequence of zero or more adjectives</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>We note that this is simply one fewer than the number of elements in the partition , that is , m # 28S # 29 = # 28jp # 28S # 29j,1 # 29 : Looking in isolation at a single equivalence class in the key , the recall error for that class is just the number of missing links divided by the number of correct links , i.e. , m # 28S # 29 c # 28S # 29 : Recall in turn is c # 28S # 29 , m # 28S # 29 c # 28S # 29 ; which equals # 28jSj,1 # 29 , # 28jp # 28S # 29j,1 # 29 jSj,1 : The whole expression can now be simpli # 0Ced to jSj , jp # 28S # 29j jSj,1 : # 281 # 29 Finally , extending this measure from a single key equivalence class to an entire set T simply requires summing over the key equivalence classes .</sentence>
+				<definiendum id="0">i.e.</definiendum>
+				<definiens id="0">the number of missing links divided by the number of correct links ,</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The # 0Cnal precision and recall numbers are computed by the following two formulae : Final Precision = N X i=1 w i # 03 Precision i Final Recall = N X i=1 w i # 03 Recall i where N is the number of entities in the document , and w i is the weight assigned to entity i in the document .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">w i</definiendum>
+				<definiens id="0">the number of entities in the document , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>CogNIAC Proper Noun Resolution CogNIAC is the most general purpose coreference resolution component of the system .</sentence>
+				<definiendum id="0">CogNIAC Proper Noun Resolution CogNIAC</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>CogNIAC Common Noun Resolution Common noun coreference is an important part of coreference , but it is very di # 0Ecult to accurately resolve .</sentence>
+				<definiendum id="0">CogNIAC Common Noun Resolution Common noun coreference</definiendum>
+				<definiens id="0">an important part of coreference</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>Entities The Entities are defined as follows : An organization object consists of : organization 's name and aliases found in the text , a type slot of ORGANIZATION , one descriptor phrase , and the category of the organization : ORG_CO , ORG_GOVT , or ORG_OTHER .</sentence>
+				<definiendum id="0">Entities</definiendum>
+				<definiens id="0">follows : An organization object consists of : organization 's name and aliases found in the text , a type slot of ORGANIZATION , one descriptor phrase , and the category of the organization : ORG_CO , ORG_GOVT , or ORG_OTHER</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A person object consists of : person 's name and aliases found in the text , a type slot of PERSON , one descriptor phrase , and the category of the person : PER_CIV or PER_MIL An artifact object consists of : artifact 's name and aliases found in the text , a type slot of ARTIFACT , one descriptor phrase , and the category of the artifact : ART_AIR , ART_LAND , or ART_WATER .</sentence>
+				<definiendum id="0">person object</definiendum>
+				<definiens id="0">consists of : person 's name and aliases found in the text , a type slot of PERSON , one descriptor phrase , and the category of the person : PER_CIV or PER_MIL An artifact object consists of : artifact 's name and aliases found in the text , a type slot of ARTIFACT , one descriptor phrase , and the category of the artifact : ART_AIR , ART_LAND , or ART_WATER</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Locations Locations are defined as follows : A location object consists of : locale found in the text , the country where the locale exists , and the locale type : CITY , PROVINCE , COUNTRY , REGION , AIRPORT , or UNK .</sentence>
+				<definiendum id="0">Locations Locations</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>When this problem was fixed , recall and precision for ent_name improved to 76 and 77 , with the overall organization recall and * * * SUMMARY SCORES * * * POS ACT COR PAR INC MIS SPU NON REC PRE UND OVG SUB ERR SUBTASK SCORES person 469 560 457 0 0 12 103 0 97 82 3 18 0 20 OBJ SCORES entity 469 560 457 0 0 12 103 0 97 82 3 18 0 20 SLOT SCORES entity ent_name 568 564 491 0 14 63 59 1 86 87 11 10 3 22 ent_type 469 560 457 0 0 12 103 0 97 82 3 18 0 20 ent_descrip 302 335 184 0 61 57 90 147 61 55 19 27 25 53 ent_categor 469 560 444 0 13 12 103 28 95 79 3 18 3 22 obj_status 0 0 0 0 0 0 0 4 0 0 0 0 0 0 comment 0 0 0 0 0 0 0 13 0 0 0 0 0 0 ALL SLOTS 1808 2019 1576 0 88 144 355 193 87 78 8 18 5 27 P &amp; R 2P &amp; R P &amp; 2R F-MEASURES 82.36 79.72 85.18 precision improving to 80 and 77 .</sentence>
+				<definiendum id="0">PAR INC MIS SPU NON REC PRE UND OVG SUB ERR</definiendum>
+				<definiens id="0">precision improving to 80 and 77</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>If one were to make all of the changes specified , AATM7’s overall scores would be improved to : The NLToolset continues to improve , as it is applied to new problems , whether real-world application or standardized test .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">continues to improve , as it is applied to new problems , whether real-world application or standardized test</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+</paper>
+
+	</volume>

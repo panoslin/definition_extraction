@@ -3,15 +3,9 @@ A class for basic vocab operations.
 """
 import os
 import pickle
-import random
 from collections import defaultdict
 
-import numpy as np
-
 from utils.constant import UNK_ID
-
-random.seed(1234)
-np.random.seed(1234)
 
 
 class Vocab:

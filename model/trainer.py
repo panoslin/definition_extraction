@@ -16,30 +16,17 @@ from utils import torch_utils
 random.seed(1234)
 
 
-def unpack_batch(batch, cuda):
-    if torch.cuda.is_available():
-        inputs = [Variable(b.cuda()) for b in batch[:7]]
-        labels = Variable(batch[7].cuda())
-        sent_labels = Variable(batch[8].cuda())
-        dep_path = Variable(batch[9].cuda())
-    else:
-        inputs = [Variable(b) for b in batch[:7]]
-        labels = Variable(batch[7])
-        sent_labels = Variable(batch[8])
-        dep_path = Variable(batch[9])
-    tokens = batch[0]
-    head = batch[3]
-    lens = batch[1].eq(0).long().sum(1).squeeze()
-    return inputs, labels, sent_labels, dep_path, tokens, head, lens
-
-
 class GCNTrainer:
     def __init__(self, opt, emb_matrix=None):
         self.opt = opt
         self.emb_matrix = emb_matrix
         self.model = GCNClassifier(opt, emb_matrix=emb_matrix)
         self.criterion = nn.CrossEntropyLoss(reduction="none")
-        self.parameters = [p for p in self.model.parameters() if p.requires_grad]
+        self.parameters = [
+            parameter
+            for parameter in self.model.parameters()
+            if parameter.requires_grad
+        ]
         self.crf = CRF(self.opt['num_class'], batch_first=True)
         self.bc = nn.BCELoss()
         if torch.cuda.is_available():
@@ -47,10 +34,15 @@ class GCNTrainer:
             self.criterion.cuda()
             self.crf.cuda()
             self.bc.cuda()
-        self.optimizer = torch_utils.get_optimizer(opt['optim'], self.parameters, opt['lr'])
+
+        self.optimizer = torch_utils.get_optimizer(
+            opt['optim'],
+            self.parameters,
+            opt['lr']
+        )
 
     def update(self, batch):
-        inputs, labels, sent_labels, dep_path, tokens, head, lens = unpack_batch(batch, self.opt['cuda'])
+        inputs, labels, sent_labels, dep_path, tokens, head, lens = self.unpack_batch(batch, self.opt['cuda'])
 
         _, _, _, _, terms, _, _ = inputs
 
@@ -89,7 +81,7 @@ class GCNTrainer:
         return loss_val, sent_loss.item(), term_loss.item()
 
     def predict(self, batch, unsort=True):
-        inputs, labels, sent_labels, dep_path, tokens, head, lens = unpack_batch(batch, self.opt['cuda'])
+        inputs, labels, sent_labels, dep_path, tokens, head, lens = self.unpack_batch(batch, self.opt['cuda'])
 
         orig_idx = batch[-1]
         # forward
@@ -104,12 +96,6 @@ class GCNTrainer:
         mask[mask == -1.] = 1.
         mask = mask.byte()
         loss = -self.crf(logits, labels, mask=mask)
-
-        # self.crf.transitions[0][4] = -1
-        # self.crf.transitions[0][5] = -1
-        # self.crf.transitions[0][6] = -1
-        # self.crf.transitions[1][5] = -1
-        # self.crf.transitions[1][6] = -1
 
         probs = F.softmax(logits, dim=1)
         predictions = self.crf.decode(logits, mask=mask)
@@ -149,7 +135,7 @@ class GCNTrainer:
 
     def save(self, filename, epoch):
         params = {
-            'model': self.model.state_dict(),
+            'model':  self.model.state_dict(),
             'config': self.opt,
         }
         try:
@@ -157,3 +143,21 @@ class GCNTrainer:
             print("model saved to {}".format(filename))
         except BaseException:
             print("[Warning: Saving failed... continuing anyway.]")
+
+    @staticmethod
+    def unpack_batch(batch, cuda):
+        if torch.cuda.is_available():
+            inputs = [Variable(b.cuda()) for b in batch[:7]]
+            labels = Variable(batch[7].cuda())
+            sent_labels = Variable(batch[8].cuda())
+            dep_path = Variable(batch[9].cuda())
+        else:
+            inputs = [Variable(b) for b in batch[:7]]
+            labels = Variable(batch[7])
+            sent_labels = Variable(batch[8])
+            dep_path = Variable(batch[9])
+
+        tokens = batch[0]
+        head = batch[3]
+        lens = batch[1].eq(0).long().sum(1).squeeze()
+        return inputs, labels, sent_labels, dep_path, tokens, head, lens

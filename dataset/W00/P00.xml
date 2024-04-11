@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="P00">
+
+		<paper id="1047">
+			<definition id="0">
+				<sentence>V is a nite set of nodes ranged over by u ; v ; w , and E V V is a set of edges denoted by e. The indegree of each node is at most 1 ; each tree has exactly one root , i.e. a node with indegree 0 .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">a nite set of nodes ranged over by u ; v ; w , and E V V is a set of edges</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A ( nite ) constructor tree is a pair ( T ; L ) consisting of a tree T = ( V ; E ) , a node labeling L : V !</sentence>
+				<definiendum id="0">constructor tree</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The dominance relationship u v holds i there is a path from u to v in E ; the labeling relationship u : f ( v1 ; : : : ; vn ) holds i u is labeled by the n-ary symbol f and has the children v1 ; : : : ; vn in this order ; that is , L ( u ) = f , ar ( f ) = n , f ( u ; v1 ) ; : : : ; ( u ; vn ) g E , and L ( ( u ; vi ) ) = i for all 1 i n. A dominance constraint ’ is a conjunction of dominance , inequality , and labeling literals of the following form where ar ( f ) = n : ’ : := ’ ^ ’0 j X Y j X6=Y j X : f ( X1 ; : : : ; Xn ) X 1 X 2 Y X f Fig .</sentence>
+				<definiendum id="0">dominance constraint ’</definiendum>
+				<definiens id="0">labeled by the n-ary symbol f and has the children v1 ; : : : ; vn in this order</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Satis ability of normal dominance constraints is O ( ( k+1 ) 3n2 log n ) , where n is the number of variables in the constraint , and k is the maximum number of dominance edges into the same node in the constraint graph .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">k</definiendum>
+				<definiens id="0">the number of variables in the constraint</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>C is hypernormal and simple , so no two dominance edges in C emanate from the same node ; hence , the new edge is the only dominance edge in C1 emanating from X , and C1 is a hypernormal cycle in the undirected graph of ’1 .</sentence>
+				<definiendum id="0">C1</definiendum>
+				<definiens id="0">hypernormal and simple , so no two dominance edges in C emanate from the same node</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Furthermore , the maximal length of a &lt; increasing chain of constraints is bounded by n2 , where n is the number of variables .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of variables</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Thus , applications of ( Distr ) can only be iterated a nite number of times on constraints without simple hypernormal cycles ( given redundancy elimination ) , and it follows by induction that ’ is satis able .</sentence>
+				<definiendum id="0">Distr</definiendum>
+				<definiens id="0">iterated a nite number of times on constraints without simple hypernormal cycles ( given redundancy elimination ) , and it follows by induction that ’ is satis able</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Perfect weighted matching in an undirected graph G = ( V ; E ) with edge weights is the problem of selecting a subset E0 of edges such that each node is adjacent to exactly one edge in E0 , and the sum of the weights of the edges in E0 is maximal .</sentence>
+				<definiendum id="0">Perfect weighted</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>A constraint graph can be tested for simple hypernormal cycles in time O ( ( k + 1 ) 3n2 log n ) , where n is the number of variables and k is the maximum number of dominance edges into the same node .</sentence>
+				<definiendum id="0">constraint graph</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiendum id="2">k</definiendum>
+				<definiens id="0">the number of variables</definiens>
+				<definiens id="1">the maximum number of dominance edges into the same node</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>On the other hand , distribution is an equivalence transformation , which preserves the total set of solved forms of the constraints after the same iteration .</sentence>
+				<definiendum id="0">distribution</definiendum>
+				<definiendum id="1">equivalence transformation</definiendum>
+				<definiens id="0">preserves the total set of solved forms of the constraints after the same iteration</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>6 enumerates exactly the irredundant solved forms of a normal dominance constraint ’ in time O ( ( k +1 ) 4n4N log n ) , where N is the number of irredundant solved forms , n is the number of variables , and k is the maximum number of dominance edges into the same node .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiendum id="2">k</definiendum>
+				<definiens id="0">the number of irredundant solved forms</definiens>
+				<definiens id="1">the number of variables , and</definiens>
+				<definiens id="2">the maximum number of dominance edges into the same node</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Dominance graphs are unlabeled , directed graphs G = ( V ; E ] D ) with tree edges E and dominance edges D. Nodes with no incoming tree edges are called roots , and nodes with no outgoing ones are called leaves ; dominance edges only go from leaves to roots .</sentence>
+				<definiendum id="0">Dominance graphs</definiendum>
+				<definiens id="0">directed graphs G = ( V ; E ] D ) with tree edges E and dominance edges D. Nodes with no incoming tree edges are called roots , and nodes with no outgoing ones are called leaves ; dominance edges only go from leaves to roots</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>A con guration of G is a graph G0 = ( V ; E ] E0 ) such that every edge in D is realized by a path in G0 .</sentence>
+				<definiendum id="0">con guration of G</definiendum>
+				<definiens id="0">a graph G0 = ( V ; E ] E0 ) such that every edge in D is realized by a path in G0</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>We have given an O ( n2 log n ) satis ability algorithm for them and integrated it into an algorithm that enumerates all irredundant solved forms in time O ( Nn4 log n ) , where N is the number of irredundant solved forms .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of irredundant solved forms</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="1021">
+</paper>
+
+		<paper id="1003">
+</paper>
+
+		<paper id="1068">
+			<definition id="0">
+				<sentence>LTAG ( Lexicalized Tree Adjoining Grammar ) is a lexicalized grammatical formalism ( XTAG Research Group , 1995 ) .</sentence>
+				<definiendum id="0">LTAG</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Comparing HPSG ( Head-driven Phrase Structure Grammar ) ( C.Pollard et al. , 1994 ) and LTAG , the well-known two ( almost- ) lexicalized grammars , LTAG looked more simple and especially convenient for sentence generation necessary in diagnosis .</sentence>
+				<definiendum id="0">HPSG ( Head-driven Phrase Structure Grammar )</definiendum>
+				<definiendum id="1">LTAG</definiendum>
+				<definiens id="0">almost- ) lexicalized grammars , LTAG looked more simple and especially convenient for sentence generation necessary in diagnosis</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A YP or TP consists of a head word and its sibling phrases on it’s left semantically modifying the head word .</sentence>
+				<definiendum id="0">YP or TP</definiendum>
+				<definiens id="0">consists of a head word and its sibling phrases on it’s left semantically modifying the head word</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the case of expression for giving and receiving bene ts , for example as shown in TaFigure 3 : Examples of Tree Structure ble 1 , the empathy relational constraints are embedded in each of the lexical items for the underlined word along with the case information for \ ( ga ) '' , \ ( ni ) '' Though the indicated three expressions have the same propositional function of expressing giving-bene t whose giver is x and givee is y , \camera '' is placed on the side of x , y , y with \angles '' towards y , x , x respectively .</sentence>
+				<definiendum id="0">givee</definiendum>
+				<definiens id="0">Examples of Tree Structure ble 1 , the empathy relational constraints are embedded in each of the lexical items for the underlined word along with the case information for \ ( ga ) ''</definiens>
+				<definiens id="1">placed on the side of x , y , y with \angles '' towards y , x , x respectively</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Suppose the situation E ( XjZ ) &lt; E ( YjZ ) is given , where X , Y , Z stand for \the nurse '' , \the locutor’s son '' , \the locutor '' , respectively , for instance , the parser can diagnose the following. English : \ The nurse ( : X ) reads the book to my son ( : Y ) . `` : I ( : Z ) am the locutor. Japanese : incorrect \ `` ( hobo-san ga watashi no musuko ni hon wo yondeTable 1 : Situational Constrains in Lexicon Expressions Case Information Empathy constraint x y ( x ga y ni shite-ageru ) x , y E ( xjz ) &gt; E ( yjz ) x y ( x ga y ni shite-kureru ) x , y E ( xjz ) &lt; E ( yjz ) y x ( y ga x ni shite-morau ) y , x E ( yjz ) &gt; E ( xjz ) locutor z : x give bene t to y ageru . )</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">y E</definiendum>
+				<definiendum id="2">x E</definiendum>
+				<definiens id="0">Situational Constrains in Lexicon Expressions Case Information Empathy constraint x y</definiens>
+				<definiens id="1">( yjz ) &gt; E ( xjz ) locutor z : x give bene t to y ageru</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The list of words , to be used in the composition , corresponding to the semantic elements .</sentence>
+				<definiendum id="0">list of words</definiendum>
+				<definiens id="0">used in the composition , corresponding to the semantic elements</definiens>
+			</definition>
+</paper>
+
+		<paper id="1048">
+</paper>
+
+		<paper id="1053">
+			<definition id="0">
+				<sentence>simpl ( x ) , which eliminates all marked symbols from x , if they exist .</sentence>
+				<definiendum id="0">simpl ( x )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>As a subordinate segment preceding the segment that dominates it , the satellite is popped from the stack before the dominant segment ( the nucleus ) is pushed in the stack-based model , and therefore it is not included among the discourse segments that are searched to resolve co-references .</sentence>
+				<definiendum id="0">segment</definiendum>
+				<definiens id="0">the nucleus ) is pushed in the stack-based model , and therefore it is not included among the discourse segments that are searched to resolve co-references</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For example , in text fragment ( 3 ) , taken from the MUC corpus , the coreferential equivalence class for the pronoun he in C3 includes Saloman Brothers analyst Jeff Canin in B3 and he in A3 .</sentence>
+				<definiendum id="0">MUC corpus</definiendum>
+				<definiendum id="1">coreferential equivalence class</definiendum>
+				<definiens id="0">for the pronoun he in C3 includes Saloman Brothers analyst Jeff Canin in B3 and he in A3</definiens>
+			</definition>
+</paper>
+
+		<paper id="1036">
+</paper>
+
+		<paper id="1033">
+</paper>
+
+		<paper id="1049">
+</paper>
+
+		<paper id="1005">
+</paper>
+
+		<paper id="1008">
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>Note that neither P ( f | ph ) nor P ( le | al ) are modeled directly in the previous approaches to error modeling .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">( le | al ) are modeled directly in the previous approaches to error modeling</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For a particular partition R∈Part ( w ) , where |R|=j ( R consists of j contiguous segments ) , let R i be the i th segment .</sentence>
+				<definiendum id="0">|R|=j</definiendum>
+				<definiendum id="1">R</definiendum>
+				<definiens id="0">consists of j contiguous segments</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For instance , the 2-best accuracy is the percentage of time the correct answer is one of the top two answers returned by the system .</sentence>
+				<definiendum id="0">answer</definiendum>
+				<definiens id="0">one of the top two answers returned by the system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1057">
+			<definition id="0">
+				<sentence>The tree set of hG ; G 0 i , T # 28hG ; G 0 i # 29 , is f G # 5BT # 28G 0 # 29 # 5D , where f G is the yield function of G and T # 28G 0 # 29 is the tree set of G 0 .</sentence>
+				<definiendum id="0">f G</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The parser consists of rules over items of one of the following forms , where w 1 # 01 # 01 # 01w n is the input ; # 11 , # 11 h , and # 11 l specify nodes of the grammar ; i , j , k , and l are integers between 0 and n inclusive ; and code is either + or , : # 0F # 5B # 11 ; code ; i ; , ; , ; l ; , ; , # 5D and # 5B # 11 ; code ; i ; j ; k ; l ; , ; , # 5D function as in a CKY-style parser for standard TAG # 28Vijay-Shanker , 1987 # 29 : the subtree rooted by # 11 2 T derives a tree whose fringe is w i # 01 # 01 # 01w l if T is initial , or w i # 01 # 01 # 01w j Fw k # 01 # 01 # 01w l if T is the lower auxiliary tree of a set and F is the label of its foot node .</sentence>
+				<definiendum id="0">parser</definiendum>
+				<definiendum id="1">code</definiendum>
+				<definiendum id="2">F</definiendum>
+				<definiens id="0">consists of rules over items of one of the following forms</definiens>
+				<definiens id="1">the input ; # 11 , # 11 h , and # 11 l specify nodes of the grammar ; i , j , k , and l are integers between 0 and n inclusive</definiens>
+				<definiens id="2">the subtree rooted by # 11 2 T derives a tree whose fringe</definiens>
+				<definiens id="3">the lower auxiliary tree of a set</definiens>
+				<definiens id="4">the label of its foot node</definiens>
+			</definition>
+			<definition id="2">
+				<sentence># 0F # 5B # 11 ; code ; i ; j ; k ; l ; , ; # 11 l # 5D speci # 0Ces that the segment h # 11 ; # 11 l i derives a tree whose fringe is w i # 01 # 01 # 01w j Lw k # 01 # 01 # 01w l , where L is the label of # 11 l .</sentence>
+				<definiendum id="0">L</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence># 0F # 5B # 11 ; code ; i ; j ; k ; l ; # 11 h ; # 11 l # 5D speci # 0Ces , if # 11 belongs to the upper tree of a set , that the subtree rooted by # 11 , the segment h # 11 h ; # 11 l i , and the lower tree concatenated together derive a tree whose fringe is w i # 01 # 01 # 01w j Fw k # 01 # 01 # 01w l , where F is the label of the lower foot node .</sentence>
+				<definiendum id="0">F</definiendum>
+				<definiens id="0">the label of the lower foot node</definiens>
+			</definition>
+</paper>
+
+		<paper id="1046">
+</paper>
+
+		<paper id="1058">
+			<definition id="0">
+				<sentence>Lexicalized TAG is such a formalism , because it assigns to each sentence not only a parse tree , which is built out of elementary trees and is interpreted as encoding constituency , but a derivation tree , which records how the various elementary trees were combined together and is commonly intepreted as encoding dependency .</sentence>
+				<definiendum id="0">Lexicalized TAG</definiendum>
+				<definiens id="0">records how the various elementary trees were combined together and is commonly intepreted as encoding dependency</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The derivation tree encodes this process , with each arc corresponding to a composition operation .</sentence>
+				<definiendum id="0">derivation tree</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence># 29 TAG In a lexicalized TAG , because each composition brings together two lexical items , every composition probability involves a bilexical dependency .</sentence>
+				<definiendum id="0">composition probability</definiendum>
+				<definiens id="0">involves a bilexical dependency</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>That is , PTAG generates an entire elementary tree at once , conditioned on the entire elementary tree being modi # 0Ced .</sentence>
+				<definiendum id="0">PTAG</definiendum>
+				<definiens id="0">generates an entire elementary tree at once , conditioned on the entire elementary tree being modi # 0Ced</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+</paper>
+
+		<paper id="1035">
+</paper>
+
+		<paper id="1034">
+</paper>
+
+		<paper id="1070">
+			<definition id="0">
+				<sentence>SUPAR 's architecture consists of three independent modules : lexical analysis , syntactic analysis , and a resolution module for natural language processing problems , such as pronominal anaphora .</sentence>
+				<definiendum id="0">SUPAR 's architecture</definiendum>
+				<definiens id="0">consists of three independent modules : lexical analysis , syntactic analysis , and a resolution module for natural language processing problems , such as pronominal anaphora</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The # 0Crst one is a standard IR system that retrieves relevant documents for queries .</sentence>
+				<definiendum id="0"># 0Crst one</definiendum>
+				<definiens id="0">a standard IR system that retrieves relevant documents for queries</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This measure is computed as : idf # 28t # 29=log # 28 N df # 28t # 29 # 29 # 281 # 29 where N is the total number of documents in the collection and df # 28t # 29 is the number of documents which contains term t. Query expansion consists of stemming terms using a version of the Porter stemmer .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the total number of documents in the collection and df # 28t # 29 is the number of documents which contains term t. Query expansion consists of stemming terms using a version of the Porter stemmer</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>SUPAR 's architecture consists of three independent modules that interact with one other .</sentence>
+				<definiendum id="0">SUPAR 's architecture</definiendum>
+				<definiens id="0">consists of three independent modules that interact with one other</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>SUPAR works sentence by sentence from the input text , but stores information from previous sentences , which it uses in other modules , # 28e .</sentence>
+				<definiendum id="0">SUPAR</definiendum>
+				<definiens id="0">works sentence by sentence from the input text , but stores information from previous sentences , which it uses in other modules</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+</paper>
+
+		<paper id="1067">
+			<definition id="0">
+				<sentence>Chinese sentences must be segmented before word translation training , because written Chinese consists of a character stream without space between words .</sentence>
+				<definiendum id="0">Chinese sentences</definiendum>
+				<definiens id="0">word translation training , because written Chinese consists of a character stream without space between words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Domain-specific Terms A domain-specific term is defined as a string that consists of more than one successive word and has certain occurrences in a text collection within a specific domain .</sentence>
+				<definiendum id="0">Domain-specific Terms A domain-specific term</definiendum>
+				<definiens id="0">a string that consists of more than one successive word and has certain occurrences in a text collection within a specific domain</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The spelling help works on the word or phrase level .</sentence>
+				<definiendum id="0">spelling help</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>For a pinyin string , PENS tries to translate it into the corresponding English word or phrase directly .</sentence>
+				<definiendum id="0">PENS</definiendum>
+				<definiens id="0">tries to translate it into the corresponding English word or phrase directly</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The input of the ranking algorithm is a query Q , as described above , Q is a Chinese word string , as shown below Q= T 1 , T 2 , T 3 , …T k Theoutputisasetofrelevantbilingual example sentence pairs in the form of , S= { ( Chinsent , Engsent ) | Relevance ( Q , Chinsent ) &gt; Ga5G3G52G55G3Relevance ( Q , Engsent ) &gt; Ga5G60 where Chinsent is a Chinese sentence , and Engsent is an English sentence , and Ga5G3G4cG56G3G44G3 G57G4bG55G48G56G4bG52G4fG47G11G3 For each sentence , the relevance score is computed in two parts , 1 ) the bonus which represents the similarity of input query and the target sentence , and 2 ) the penalty , which represents the dissimilarity of input query and the target sentence .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiendum id="1">Chinsent</definiendum>
+				<definiendum id="2">Engsent</definiendum>
+				<definiens id="0">a Chinese word string</definiens>
+				<definiens id="1">an English sentence</definiens>
+				<definiens id="2">the bonus which represents the similarity of input query and the target sentence</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The bonus is computed by the following formula : WhereG2d6 W j is the weight of the jth word in query Q , which will be described later , tf ij is the number of the jth word occurring in sentence i , n is the number of the sentences in corpus , df j is the number of ij L j dfn m j ij tfW i Bonus / ) /log ( ) 1 log ( ×∑ = ×= sentence which contains Wj , andL i is the number of word in the ith sentence .</sentence>
+				<definiendum id="0">tf ij</definiendum>
+				<definiendum id="1">df j</definiendum>
+				<definiendum id="2">andL i</definiendum>
+				<definiens id="0">the number of the sentences in corpus</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Let A denotes the number of sentences which is selected by both human and the machine , B denotes the number of sentences which is selected only by the machine , and C denotes the number of sentences which is selected only by human .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiendum id="1">C</definiendum>
+				<definiens id="0">the number of sentences which is selected by both human and the machine</definiens>
+				<definiens id="1">the number of sentences which is selected only by the machine , and</definiens>
+				<definiens id="2">the number of sentences which is selected only by human</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>Finding simple and non-recursive base Noun Phrase ( baseNP ) is an important subtask for many natural language processing applications , such as partial parsing , information retrieval and machine translation .</sentence>
+				<definiendum id="0">baseNP )</definiendum>
+				<definiens id="0">an important subtask for many natural language processing applications , such as partial parsing , information retrieval and machine translation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A baseNP is a simple noun phrase that does not contain other noun phrase recursively , for example , the elements within [ ... ] in the following example are baseNPs , where NNS , IN VBG etc are part-of-speech tags [ as defined in M. Marcus 1993 ] .</sentence>
+				<definiendum id="0">baseNP</definiendum>
+				<definiens id="0">a simple noun phrase that does not contain other noun phrase recursively , for example , the elements within [ ... ] in the following example are baseNPs , where NNS , IN VBG etc are part-of-speech tags</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Before describing our algorithm , we introduce some notations we will use Let us express an input sentence E as a word sequence and a sequence of POS respectively as follows : nn wwwwE 121 ... − = nn ttttT 121 ... − = Where n is the number of words in the sentence , i t is the POS tag of the word i w .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of words in the sentence</definiens>
+				<definiens id="1">the POS tag of the word i w</definiens>
+			</definition>
+</paper>
+
+		<paper id="1062">
+</paper>
+
+		<paper id="1043">
+			<definition id="0">
+				<sentence>Participants of the conferences develop systems to perform common inform a tion extraction tasks , defined by the conference organizers .</sentence>
+				<definiendum id="0">Participants of the conferences develop</definiendum>
+				<definiens id="0">systems to perform common inform a tion extraction tasks , defined by the conference organizers</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Causal links are words used to link clauses or phrases , indicating a causal relation between them .</sentence>
+				<definiendum id="0">Causal links</definiendum>
+				<definiens id="0">words used to link clauses or phrases , indicating a causal relation between them</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The pa t terns represent different words and sentence structures that indicate the presence of a causal relation and which parts of the sentence repr e sent which roles in the causal situation .</sentence>
+				<definiendum id="0">pa t terns</definiendum>
+				<definiens id="0">represent different words and sentence structures that indicate the presence of a causal relation and which parts of the sentence repr e sent which roles in the causal situation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A conceptual graph is a graph with the nodes representing concepts and the directed arcs representing relations between concepts .</sentence>
+				<definiendum id="0">conceptual graph</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Role_indicator refers to a slot in the causeeffect template , and can take the form : • role_label which is the name of a slot in the cause-effect template • role_label = “value” , where value is a character string that should be entered in the slot in the cause-effect template ( if “value” is not specified , the part of the sentence that matches the concept_label is entered in the slot ) .</sentence>
+				<definiendum id="0">value</definiendum>
+				<definiens id="0">a character string that should be entered in the slot in the cause-effect template ( if “value” is not specified , the part of the sentence that matches the concept_label is entered in the slot )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The matching process involves a kind of spreading activation in both the causality pattern graph and the sentence graph , starting from the node representing the causality identifier .</sentence>
+				<definiendum id="0">matching process</definiendum>
+				<definiens id="0">involves a kind of spreading activation in both the causality pattern graph and the sentence graph , starting from the node representing the causality identifier</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Procedures are a t tached to the nodes to check whether there is a match and to extract words to fill in the slots in the cause-effect template .</sentence>
+				<definiendum id="0">Procedures</definiendum>
+				<definiens id="0">a match and to extract words to fill in the slots in the cause-effect template</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Recall is the percentage of the slots filled by the human analysts that are co r rectly filled by the computer program .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">the percentage of the slots filled by the human analysts that are co r rectly filled by the computer program</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Precision is the percentage of slots filled by the computer program that are correct ( i.e. the text entered in the slot is the same as that entered by the human analysts ) .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">the percentage of slots filled by the computer program</definiens>
+			</definition>
+</paper>
+
+		<paper id="1075">
+			<definition id="0">
+				<sentence>Corpus analysis is an important means as a way to understand the evolution of language usage by its people .</sentence>
+				<definiendum id="0">Corpus analysis</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1017">
+</paper>
+
+		<paper id="1030">
+</paper>
+
+		<paper id="1065">
+			<definition id="0">
+				<sentence>The probability computation will be described in the next section ; the features include : Phrase Type : This feature indicates the syntactic type of the phrase expressing the semantic roles : examples include nounphrase # 28NP # 29 , verb phrase # 28VP # 29 , and clause # 28S # 29 .</sentence>
+				<definiendum id="0">probability computation</definiendum>
+				<definiens id="0">the syntactic type of the phrase expressing the semantic roles</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>As an example of how this feature is useful , in communication frames , the Speaker is likely appear a a noun phrase , Topic as a prepositional phrase or noun phrase , and Mediumas a prepostional phrase , as in : # 5CWe talked about the proposal over the phone . ''</sentence>
+				<definiendum id="0">Topic</definiendum>
+				<definiens id="0">likely appear a a noun phrase</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Grammatical Function : This feature attempts to indicate a constituent 's syntactic relation to the rest of the sentence , S NP PRP VP VBD NP SBAR IN S NNP VP VBD NP PP PRP IN NP NN Goal SourceTheme Target NP He heard the sound of liquid slurping in a metal container as approached him from behindFarrell Figure 2 : A sample sentence with parser output # 28above # 29 and FrameNet annotation # 28below # 29 .</sentence>
+				<definiendum id="0">Grammatical Function</definiendum>
+				<definiendum id="1">FrameNet</definiendum>
+				<definiens id="0">This feature attempts to indicate a constituent 's syntactic relation to the rest of the sentence</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Position : This feature simply indicates whether the constituent to be labeled occurs before or after the predicate de # 0Cning the semantic frame .</sentence>
+				<definiendum id="0">Position</definiendum>
+				<definiens id="0">This feature simply indicates whether the constituent to be labeled occurs before or after the predicate de # 0Cning the semantic frame</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Coverage indicates the percentage of the test data for which the conditioning event had been seen in training data .</sentence>
+				<definiendum id="0">Coverage</definiendum>
+				<definiens id="0">indicates the percentage of the test data for which the conditioning event had been seen in training data</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Accuracy is the proportion of covered test data for which the correct role is predicted , and Performance , simply the product of coverage and accuracy , is the overall percentage of test data for which the correct role is predicted .</sentence>
+				<definiendum id="0">Accuracy</definiendum>
+				<definiens id="0">the proportion of covered test data for which the correct role is predicted</definiens>
+				<definiens id="1">the overall percentage of test data for which the correct role is predicted</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The test set consists of 7900 observations .</sentence>
+				<definiendum id="0">test set</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1072">
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>As the speech recognition degrades , the POMDP policy acquires reward more slowly , but makes fewer mistakes and blind guesses compared to a conventional MDP policy .</sentence>
+				<definiendum id="0">POMDP policy</definiendum>
+				<definiens id="0">acquires reward more slowly , but makes fewer mistakes and blind guesses compared to a conventional MDP policy</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A Partially Observable Markov Decision Process ( POMDP ) is a natural way of modelling dialogue processes , especially when the state of the system is viewed as the state of the user .</sentence>
+				<definiendum id="0">Partially Observable Markov Decision Process</definiendum>
+				<definiendum id="1">POMDP )</definiendum>
+				<definiens id="0">a natural way of modelling dialogue processes</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The POMDP framework provides a principled mechanism for modelling uncertainty about what the user is trying to accomplish .</sentence>
+				<definiendum id="0">POMDP framework</definiendum>
+				<definiens id="0">provides a principled mechanism for modelling uncertainty about what the user is trying to accomplish</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The POMDP consists of an underlying , unobservable Markov Decision Process .</sentence>
+				<definiendum id="0">POMDP</definiendum>
+				<definiens id="0">consists of an underlying , unobservable Markov Decision Process</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The POMDP plans in belief space ; each belief consists of a probability distribution over the set of states , representing the respective probability that the user is in each of these states .</sentence>
+				<definiendum id="0">POMDP</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The optimal strategy for a POMDP is one that prescribes action selection that maximises the expected reward .</sentence>
+				<definiendum id="0">POMDP</definiendum>
+				<definiens id="0">one that prescribes action selection that maximises the expected reward</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Flo uses the Sphinx II speech recognition system ( Ravishankar , 1996 ) , and the Festival speech synthesis system ( Black et al. , 1999 ) .</sentence>
+				<definiendum id="0">Flo</definiendum>
+				<definiens id="0">uses the Sphinx II speech recognition system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>Arabic is a highly inflectional language with 85 % of words derived from tri-lateral roots ( AlFedaghi and Al-Anzi 1989 ) .</sentence>
+				<definiendum id="0">Arabic</definiendum>
+				<definiens id="0">a highly inflectional language with 85 % of words derived from tri-lateral roots</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A cluster absorbs a word as long as its SC to another cluster item exceeds the threshold ( van Rijsbergen 1979 ) .</sentence>
+				<definiendum id="0">cluster</definiendum>
+				<definiens id="0">absorbs a word as long as its SC to another cluster item exceeds the threshold ( van Rijsbergen 1979 )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>r rb ( 2 ) SC ( Dice ) 2 ( 3 ) / ( 6+6 ) = 0.50 2 ( 0 ) / ( 2+2 ) = 0 Table 5 : Inflected words from the same root : mrr ( passed ) String Unique 2-grams with affixes Unique 2-grams without affixes mstmr ( continuous ) ms st tm mr ( 4 ) mr ( 1 ) mr ( passed ) mr ( 1 ) mr ( 1 ) SC ( Dice ) 2 ( 1 ) / ( 4+1 ) = 0.40 2 ( 1 ) / ( 1+1 ) = 1.0 Table 6 : Infix derivation from root wqf ( stopped ) post light stemming String Unique 2-grams without cross Unique di-grams with cross qaf qa af ( 2 ) qa af qf ( 3 ) wqf wq qf ( 2 ) wq qf ( 2 ) SC ( Dice ) 2 ( 0 ) / ( 2+2 ) = 0 2 ( 1 ) / ( 2+3 ) = 0.4 weighting : Our objective is to define an algorithm which gives suitable precedence to root consonants .</sentence>
+				<definiendum id="0">SC</definiendum>
+				<definiens id="0">0.4 weighting : Our objective is to define an algorithm which gives suitable precedence to root consonants</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Dice’s equation boosts the importance of unique shared substrings between word pairs , by doubling their evidence .</sentence>
+				<definiendum id="0">Dice’s equation</definiendum>
+				<definiens id="0">boosts the importance of unique shared substrings between word pairs</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Female plurals add the -at suffix , or change word final -h to -at , as in mdrsh ( teacher ) , mdrsat .</sentence>
+				<definiendum id="0">Female plurals</definiendum>
+				<definiens id="0">add the -at suffix , or change word final -h to -at</definiens>
+			</definition>
+</paper>
+
+		<paper id="1055">
+			<definition id="0">
+				<sentence>Parallel texts ( texts that are mutual translations ) are valuable sources of information for bilingual lexicography .</sentence>
+				<definiendum id="0">Parallel texts</definiendum>
+				<definiens id="0">mutual translations ) are valuable sources of information for bilingual lexicography</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For each language , we included : • five texts with Written Questions asked by members of the European Parliament to the European Commission and their corresponding answers ( average : about 60k words or 100 pages / text ) ; 1 Danish ( da ) , Dutch ( nl ) , English ( en ) , French ( fr ) , German ( de ) , Greek ( el ) , Italian ( it ) , Portuguese ( pt ) and Spanish ( es ) .</sentence>
+				<definiendum id="0">Portuguese ( pt</definiendum>
+				<definiens id="0">• five texts with Written Questions asked by members of the European Parliament to the European Commission and their corresponding answers</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Actually , equal frequency words helped Jean-François Champollion to decipher the Rosetta Stone for there was a name of a King ( Ptolemy V ) which occurred the same number of times in the ‘parallel texts’ of the stone .</sentence>
+				<definiendum id="0">Jean-François Champollion</definiendum>
+				<definiens id="0">to decipher the Rosetta Stone for there was a name of a King ( Ptolemy V ) which occurred the same number of times in the ‘parallel texts’ of the stone</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We will use the z-statistics instead since t = z = 3.27 for large samples of points ( above 120 ) ; • n is the number of points ; • s is the standard deviation from the expected value yˆ at co-ordinate x ( see Thomas Wonnacott &amp; Ronald Wonnacott , 1990 , p. 379 ) : baxy n yy s n i i += − − = ∑ = ˆ where , 2 ) ˆ ( 1 • X is the average value of the various x i : ∑ = = n i i x n X 1 1 We ran our alignment algorithm on the parallel texts of 10 language pairs as described in section Pair Written Questions Debates Judgements Average pt-da 128 ( 5 % ) 56 ( 2 % ) 114 ( 35 % ) 63 ( 2 % ) pt-de 124 ( 5 % ) 99 ( 2 % ) 53 ( 15 % ) 102 ( 3 % ) pt-el 118 ( 5 % ) 115 ( 6 % ) 60 ( 20 % ) 115 ( 6 % ) pt-en 88 ( 3 % ) 102 ( 4 % ) 50 ( 19 % ) 101 ( 4 % ) pt-es 59 ( 1 % ) 55 ( 1 % ) 143 ( 21 % ) 56 ( 1 % ) pt-fi -- -- 60 ( 26 % ) 60 ( 26 % ) pt-fr 148 ( 5 % ) 113 ( 2 % ) 212 ( 49 % ) 117 ( 2 % ) pt-it 117 ( 4 % ) 104 ( 2 % ) 25 ( 6 % ) 105 ( 2 % ) pt-nl 120 ( 5 % ) 73 ( 1 % ) 53 ( 15 % ) 77 ( 2 % ) pt-sv -- -- 74 ( 23 % ) 74 ( 23 % ) Average 113 ( 4 % ) 90 ( 2 % ) 84 ( 23 % ) 92 ( 2 % ) Sub-corpus Table 4 : Average number of correspondence points in the first non-misalignment ( average ratio of filtered and initial candidate correspondence points inside brackets ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">X</definiendum>
+				<definiens id="0">the number of points</definiens>
+			</definition>
+</paper>
+
+		<paper id="1050">
+</paper>
+
+		<paper id="1045">
+			<definition id="0">
+				<sentence>Parallel uni cation exploits parallelism inherent of graph uni cation itself , whereas concurrent uni cation exploits parallelism at the context-free grammar backbone .</sentence>
+				<definiendum id="0">Parallel uni cation</definiendum>
+				<definiens id="0">exploits parallelism inherent of graph uni cation itself</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Copy returns references with an o set , allowing them to be directly stored in arcs .</sentence>
+				<definiendum id="0">Copy</definiendum>
+				<definiens id="0">returns references with an o set , allowing them to be directly stored in arcs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Unify ( dg1 ; dg2 ) Unify1 ( ref in1 ; ref in2 ) throw Uni cationFailedException Unify1 ( r1 ; r2 ) Push arc to fwtab [ idx1 ] .comp arcs Forward ( ( dg1 ; idx1 ) ; ( dg2 ; idx2 ) ) fwtab [ idx1 ] .</sentence>
+				<definiendum id="0">Unify</definiendum>
+				<definiens id="0">.comp arcs Forward ( ( dg1 ; idx1</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , Pereira’s mechanism incurs a log ( n ) overhead for accessing the changes ( where n is the number of nodes in a graph ) , resulting in an O ( nlogn ) time algorithm .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of nodes in a graph ) , resulting in an O ( nlogn ) time algorithm</definiens>
+			</definition>
+</paper>
+
+		<paper id="1042">
+</paper>
+
+		<paper id="1060">
+			<definition id="0">
+				<sentence>That is : ) | ( maxarg STPT T best = ( 1 ) where S denotes the given sentence , T denotes the set of all the candidate parsing trees that conform to the grammar , P ( T|S ) denotes the probability of parsing tree T for the given sentence S. The task of probabilistic evaluation model in syntactic parsing is the estimation of P ( T|S ) .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">T</definiendum>
+				<definiendum id="2">P ( T|S )</definiendum>
+				<definiens id="0">the given sentence</definiens>
+				<definiens id="1">the set of all the candidate parsing trees that conform to the grammar</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>That is , ∏ ∏ = = − = = = n i ii n i ii n ShrP SrrrrP SrrrPSTP 1 1 121 21 ) , | ( ) , , , ,| ( ) | , , , ( ) | ( G16 G16 ( 2 ) Where , 121 , , , −i rrr G16 denotes a derivation rule sequence , h i denotes the partial parsing tree derived from 121 , , , −i rrr G16 .</sentence>
+				<definiendum id="0">−i rrr G16</definiendum>
+				<definiens id="0">n i ii n i ii n ShrP SrrrrP SrrrPSTP 1 1 121 21 ) , | ( ) , , , ,| ( ) | , , , ( ) |</definiens>
+				<definiens id="1">a derivation rule sequence</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>G7A Predictive Information Quantity ( PIQ ) ) ; ( RFPIQ , the predictive information quantity of feature type F to predict derivation rule R , is defined as the difference between the entropy of R and the conditional entropy of R on condition that the feature type F is known .</sentence>
+				<definiendum id="0">G7A Predictive Information Quantity ( PIQ ) ) ; ( RFPIQ</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>G7A Predictive Information Gain ( PIG ) For the prediction of rule R , PIG ( F x ; R|F 1 , F 2 , ... , F i ) , the predictive information gain of taking F x as a variant model on top of a baseline model employing F 1 , F 2 , ... , F i as feature type combination , is defined as the difference between the conditional entropy of predicting R based on feature type combination F 1 , F 2 , ... , F i and the conditional entropy of predicting R based on feature type combination F 1 , F 2 , ... , F i , F x . )</sentence>
+				<definiendum id="0">G7A Predictive Information Gain ( PIG</definiendum>
+				<definiendum id="1">PIG ( F x ; R|F 1</definiendum>
+				<definiens id="0">the predictive information gain of taking F x as a variant model on top of a baseline model employing F 1 , F 2 , ... , F i as feature type combination</definiens>
+				<definiens id="1">the difference between the conditional entropy of predicting R based on feature type combination F 1</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>PIR ( F x , { F 1 , F 2 , ... , F i } ; R ) denotes the redundant information between feature type F x and feature type combination { F 1 , F 2 , ... , F i } in predicting R , which is defined as the difference between PIQ ( F x ; R ) and PIG ( F x ; R|F 1 , F 2 , ... , F i ) .</sentence>
+				<definiendum id="0">PIR</definiendum>
+				<definiendum id="1">R )</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>G7A Predictive Information Summation ( PIS ) PIS ( F 1 , F 2 , ... , F m ; R ) , the predictive information summation of feature type combination F 1 , F 2 , ... , F m , is defined as the total information that F 1 , F 2 , ... , F m can provide for the prediction of a derivation rule .</sentence>
+				<definiendum id="0">G7A Predictive Information Summation ( PIS ) PIS</definiendum>
+				<definiendum id="1">F 2 , ... , F</definiendum>
+				<definiendum id="2">, F m</definiendum>
+				<definiens id="0">m ; R ) , the predictive information summation of feature type combination F 1 , F 2 , ...</definiens>
+				<definiens id="1">the total information that F 1 , F 2 , ... , F m can provide for the prediction of a derivation rule</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Exactly , ∑ = − += m i ii m FFRFPIGRFPIQ RFFFPIS 2 111 21 ) , ,| ; ( ) ; ( ) ; , , , ( G16 G16 ( 8 ) types The predicted event of our experiment is the derivation rule to extend the current nonterminal node .</sentence>
+				<definiendum id="0">G16 G16</definiendum>
+				<definiens id="0">the derivation rule to extend the current nonterminal node</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>ii i ks skk ew ikeew −= ≤≤−−= ∏ += 1 1 , ) 1 ( 1 ( 12 ) where e k denotes the escape probability of context ) , , , ( 21 k fff G16 , that is , the probability in which ( f 1 , f 2 , ... , f k , r ) is unseen in the corpus .</sentence>
+				<definiendum id="0">e k</definiendum>
+				<definiens id="0">the escape probability of context ) , , , ( 21 k fff G16 , that is , the probability in which ( f 1</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Exactly , escape probability is defined as        −= ≤≤ = ∑ ∑ ∈ ∈ 1,0 0 , ) ˆ , , ... , , ( ) ˆ , , ... , , ( ˆ 21 ˆ 21 k ik rfffc rfffd e Rr k Rr k k ( 13 ) where    = &gt; = 0 ) ˆ , , ... , , ( ,0 0 ) ˆ , , ... , , ( ,1 ) ˆ , , ... , , ( 21 21 21 rfffcif rfffcif rfffd k k k ( 14 ) In the above blending model , a special probability ∑ ∈ − = Rr rc rP ˆ 1 ) ˆ ( 1 ) ( is used , where all derivation rules are given an equal probability .</sentence>
+				<definiendum id="0">escape probability</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>In Table-1 , “Y” in PIQ ( X of Y ; R ) represents the node , “X” represents the constitute label , the headword or POS of the headword of the node .</sentence>
+				<definiendum id="0">“X”</definiendum>
+				<definiens id="0">the constitute label , the headword or POS of the headword of the node</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>G7A Data : In Table-2 , SR represents the structural relation between the current node and the node that the given feature type related to .</sentence>
+				<definiendum id="0">SR</definiendum>
+				<definiens id="0">the structural relation between the current node</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>SD represents the structural distance between the current node and the node that the given feature type related to .</sentence>
+				<definiendum id="0">SD</definiendum>
+				<definiens id="0">the structural distance between the current node and the node that the given feature type related to</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Table-3 : The predictive information quantity of the selected history and objective feature types Class Feature type PIQ ( Y ; R ) History feature type Y= headword of the parent 2.3253 Y= the first word in the objective word sequence 3.2398Objective feature type Y= the second word in the objective word sequence 3.0071 G7A Conclusion Either of the predictive information quantity of the first word and the second word in the objective word sequence is larger than that of the headword of the parent node which has the largest predictive information quantity among all of the history feature type candidates .</sentence>
+				<definiendum id="0">PIQ</definiendum>
+				<definiens id="0">The predictive information quantity of the selected history and objective feature types Class Feature type</definiens>
+				<definiens id="1">has the largest predictive information quantity among all of the history feature type candidates</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>That is , ) 16 ( ) , , , | ; ( 21 } , , 2 , 1 { 1 maxarg ji j FFF i F i F j FFFRFPIGF G16 G16∉ Ω∈ + = G7A Data : Among the feature types mentioned above , the optimal feature type combination ( i.e. the feature type combination with the largest predictive information summation ) which is composed of 6 feature types is , the headword of the current node ( type1 ) , the headword of the parent node ( type2 ) , the headword of the grandpa node ( type3 ) , the first word in the objective word sequence ( type4 ) , the first word in the objective word sequence which have the possibility to act as the headword of the current constitute ( type5 ) , the headword of the right brother node ( type6 ) .</sentence>
+				<definiendum id="0">headword of the right brother node</definiendum>
+				<definiens id="0">the feature type combination with the largest predictive information summation ) which is composed of 6 feature types is , the headword of the current node</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+</paper>
+
+		<paper id="1025">
+</paper>
+
+		<paper id="1063">
+			<definition id="0">
+				<sentence>cluster created in the step2 and other object ( dictionary ) or cluster already made .</sentence>
+				<definiendum id="0">cluster</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Constructing hierarchy POS-tagged Corpus Linguistic filter Abbreviation and Translation pairs extraction Candidate term Frequency based Weighing Transliterated Word detection Transliterated word Based Weighting Complement Unregistered Term Scoring by hierarchy Eliminate Common Word Dictionary based Weighting Statistical Weight Transliterated Word Weight Dictionary Weight Term Recognition Figure 2 .</sentence>
+				<definiendum id="0">Constructing hierarchy POS-tagged Corpus</definiendum>
+				<definiens id="0">Linguistic filter Abbreviation and Translation pairs extraction Candidate term Frequency based Weighing Transliterated Word detection Transliterated word Based Weighting Complement Unregistered Term Scoring by hierarchy Eliminate Common Word Dictionary based Weighting Statistical Weight Transliterated Word Weight Dictionary Weight Term Recognition Figure 2</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>domains using the formula ( 2.1 ) ( Maynard and Ananiadou , 1998 ) where Depth i : the depth of the domain i node in the hierarchy Common ij : the depth of the deepest node sharing between the domain i and the domain j in the path from the root .</sentence>
+				<definiendum id="0">Depth i</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>In the formula ( 2.1 ) , the depth of the node is defined as a distance from the root – the depth of a root is 1 .</sentence>
+				<definiendum id="0">depth of the node</definiendum>
+				<definiens id="0">a distance from the root – the depth of a root is 1</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>1.2 ( 2 ji ij ij depthdepth Common similarity + × = ) 2.2 ( 1 ) ( 1 ∑ = = N i ti similarity N termScore where W : the number of words in the term ‘α‘ dof i : the number of domain that words in the term appear in the domain tagged corpus .</sentence>
+				<definiendum id="0">W</definiendum>
+				<definiens id="0">the number of words in the term</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>where |α| is the number of words in the term α trans ( α ) is the number of transliterated words in the term α The three individual weights described above are combined according to the following formula ( 4.1 ) called Term Weight ( W Term ) for identifying the relevant terms .</sentence>
+				<definiendum id="0">)</definiendum>
+				<definiens id="0">the number of words in the term α trans ( α</definiens>
+				<definiens id="1">the number of transliterated words in the term α The three individual weights described above are combined according to the following formula ( 4.1 ) called Term Weight ( W Term ) for identifying the relevant terms</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A precision rate means that the proportion of correct answers to the extracted results by the system .</sentence>
+				<definiendum id="0">precision rate</definiendum>
+				<definiens id="0">the proportion of correct answers to the extracted results by the system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>Syntactic constituents are assigned relative prosodic weight according to the following rule : ( 1 ) NSR : In a configuration [ C AB ] , ifC is a phrasal category , B is strong .</sentence>
+				<definiendum id="0">ifC</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The minimum requirements for these are that we have , first , a way of representing nested prosodic domains , and second , a way of marking the strong element ( Designated Terminal Element ; DTE ) in a given domain .</sentence>
+				<definiendum id="0">DTE</definiendum>
+				<definiens id="0">a way of representing nested prosodic domains , and second , a way of marking the strong element ( Designated Terminal Element ;</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>AF w fasten w w the s cloak s w at w the s collar Figure 1 : Non-binary Metrical Tree pros lnr full p-wrd mtr DOM : list ( pros ) DTE : full lnr-mtr DOM : list ( lnr ) A8CW1CX DTE : 1 full-mtr DOM : list ( full ) Figure 2 : Prosodic Signature In terms of the attribute-value logic , we therefore postulate a type mtr of metrical tree which introduces the feature DOM ( prosodic domain ) whose value is a list of prosodic elements , and a feature DTE whose value is a full prosodic object : ( 5 ) mtr AX AY DOM list ( pros ) DTE full AZ Fig 2 displays the prosodic signature for the grammar .</sentence>
+				<definiendum id="0">AF</definiendum>
+				<definiendum id="1">mtr AX AY DOM list ( pros</definiendum>
+				<definiendum id="2">prosodic signature</definiendum>
+				<definiens id="0">introduces the feature DOM ( prosodic domain ) whose value is a list of prosodic elements</definiens>
+				<definiens id="1">a full prosodic object : ( 5 )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The function mkMtr ( make metrical tree ) ( encoded as a relational constraint in ( 7 ) ) takes a list consisting of all the daughters’ phonologies and builds an appropriate prosodic object ϕ .</sentence>
+				<definiendum id="0">function mkMtr</definiendum>
+				<definiens id="0">make metrical tree ) ( encoded as a relational constraint in ( 7 ) ) takes a list consisting of all the daughters’ phonologies and builds an appropriate prosodic object ϕ</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In the longer term , the intention is to integrate prosodic realisation within the framework of an HPSG-based concept-to-speech system .</sentence>
+				<definiendum id="0">intention</definiendum>
+				<definiens id="0">to integrate prosodic realisation within the framework of an HPSG-based concept-to-speech system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1061">
+			<definition id="0">
+				<sentence>1 , where # ( x ) = P n i=1 i ( x ) , and k ( xjy ) = p ( x ) = P x2X ( y ) p ( x ) is the conditional probability of a parse x given the sentence y and the current parameter value  .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">the conditional probability of a parse x given the sentence y and the current parameter value </definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Class-based estimated frequencies are introduced in Prescher et al. ( 2000 ) as the frequency f ( v ; ; n ) of a ( v ; ; n ) -pair in the training corpus , weighted by the best estimate of the class-membership probability p ( cjv ; ; n ) of an EM-based clustering model on ( v ; ; n ) -pairs , i.e. , f c ( v ; ; n ) = max c2C p ( cjv ; ; n ) ( f ( v ; ; n ) + 1 ) .</sentence>
+				<definiendum id="0">f c</definiendum>
+				<definiens id="0">-pair in the training corpus , weighted by the best estimate of the class-membership probability p</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In order to compare the contribution of unambiguous and ambiguous sentences to the estimation results , we extracted a subcorpus of 4,000 sentences , for which the LFG grammar produced a unique parse , from the full train2 The German LFG grammar is being implemented in the Xerox Linguistic Environment ( XLE , see Maxwell and Kaplan ( 1996 ) ) as part of the Parallel Grammar ( ParGram ) project at the IMS Stuttgart .</sentence>
+				<definiendum id="0">Xerox Linguistic Environment ( XLE</definiendum>
+				<definiens id="0">part of the Parallel Grammar ( ParGram ) project at the IMS Stuttgart</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Basic models consist of 190 congurational properties as described in Sec .</sentence>
+				<definiendum id="0">Basic models</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1040">
+</paper>
+
+		<paper id="1054">
+			<definition id="0">
+				<sentence>A bilingual dictionary consists of rules that map a part of the representation of a source sentence to a target representation by taking grammatical differences ( such as the word order between the source and target languages ) into consideration .</sentence>
+				<definiendum id="0">bilingual dictionary</definiendum>
+				<definiens id="0">consists of rules that map a part of the representation of a source sentence to a target representation by taking grammatical differences ( such as the word order between the source and target languages ) into consideration</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The term frequency is the frequency in the document ( group ) .</sentence>
+				<definiendum id="0">term frequency</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>It is usually calculated as a logarithm of N divided by df where N is the number of the documents ( groups ) and df is the frequency of documents ( groups ) that include the word .</sentence>
+				<definiendum id="0">df</definiendum>
+				<definiens id="0">a logarithm of N divided by df where N is the number of the documents ( groups</definiens>
+				<definiens id="1">the frequency of documents ( groups ) that include the word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>Experimental studies of interactive language use have shed light on the cognitive and interpersonal processes that shape conversation ; corpora are the emergent products of these processes .</sentence>
+				<definiendum id="0">corpora</definiendum>
+				<definiens id="0">light on the cognitive and interpersonal processes that shape conversation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Speakers signal their Feeling-of-Knowing ( FOK ) when answering a question by the displays they put on right before the answer ( or right before they respond with I don’t know ) ( Brennan &amp; Williams , 1995 ; Smith &amp; Clark , 1993 ) .</sentence>
+				<definiendum id="0">Feeling-of-Knowing</definiendum>
+				<definiens id="0">answering a question by the displays they put on right before the answer ( or right before they respond with I don’t know )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Grounding is the process by which people coordinate their conversational activities , establishing , for instance , that they understand one another well enough for current purposes .</sentence>
+				<definiendum id="0">Grounding</definiendum>
+				<definiens id="0">the process by which people coordinate their conversational activities</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>First is a methodological point : corpus data and dialogue feature coding are particularly useful when they include systematic information about the tasks conversants were engaged in .</sentence>
+				<definiendum id="0">First</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1041">
+			<definition id="0">
+				<sentence>Most previous work on summarization focused on extractive methods , investigating issues such as cue phrases ( Luhn , 1958 ) , positional indicators ( Edmundson , 1964 ) , lexical occurrence statistics ( Mathis et al. , 1973 ) , probabilistic measures for token salience ( Salton et al. , 1997 ) , and the use of implicit discourse structure ( Marcu , 1997 ) .</sentence>
+				<definiendum id="0">positional indicators</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Zero Level–Performance Evaluation : The zero-level model , that we have discussed so far , works surprisingly well , given its strong independence assumptions and very limited vocabulary .</sentence>
+				<definiendum id="0">Zero Level–Performance Evaluation</definiendum>
+				<definiens id="0">The zero-level model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1073">
+			<definition id="0">
+				<sentence>N-gram LM estimates the probability of a word given previous words , P ( w n |w 1 , … , w n-1 ) .</sentence>
+				<definiendum id="0">N-gram LM</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">estimates the probability of a word given previous words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>N-gram LM estimates the probability of a word given the n-1 previous words , P ( w n |w 1 , … , w n-1 ) .</sentence>
+				<definiendum id="0">N-gram LM</definiendum>
+				<definiens id="0">estimates the probability of a word given the n-1 previous words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Perplexity is the most common metric for evaluating a bigram LM .</sentence>
+				<definiendum id="0">Perplexity</definiendum>
+				<definiens id="0">the most common metric for evaluating a bigram LM</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>It is defined as , ∑ = = − − N i ii wwP N PP 1 1 ) | ( log 1 2 ( 1 ) where N is the length of the testing data .</sentence>
+				<definiendum id="0">N</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>It is of the form :    &gt; = − −− − otherwisewPw wwcwwP wwP ii iiiid ii ) ( ) ( 0 ) , ( ) | ( ) | ( 1 11 1 α ( 2 ) where c ( w i-1 , w i ) is the frequency of word pair ( w i-1 , w i ) in training data , P d represents the Good-Turing discounted estimate for seen word pairs , and α ( w i-1 ) is a normalization factor .</sentence>
+				<definiendum id="0">c</definiendum>
+				<definiendum id="1">P d</definiendum>
+				<definiendum id="2">α</definiendum>
+				<definiens id="0">the frequency of word pair ( w i-1 , w i ) in training data</definiens>
+				<definiens id="1">represents the Good-Turing discounted estimate for seen word pairs</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The goal of bigram pruning is to remove uncommon explicit bigram estimates P ( w n |w n-1 ) from the model to reduce the number of parameters , while minimizing the performance loss .</sentence>
+				<definiendum id="0">bigram pruning</definiendum>
+				<definiens id="0">the model to reduce the number of parameters</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The relative entropy measure can be expressed as a relative change in training data perplexity .</sentence>
+				<definiendum id="0">relative entropy measure</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>IDF is defined as follows : ) log ( i i df N IDF = ( 5 ) where , in the case of bigram distribution , N is the total number of documents , and df i is the number of documents that the contain word pair ( w i-1 , w i ) .</sentence>
+				<definiendum id="0">IDF</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiendum id="2">df i</definiendum>
+				<definiens id="0">follows : ) log ( i i df N IDF = ( 5 ) where , in the case of bigram distribution ,</definiens>
+				<definiens id="1">the total number of documents , and</definiens>
+				<definiens id="2">the number of documents that the contain word pair ( w i-1 , w i )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>α and β are parameters that can be fit using the observed mean λ and the observed inverse document frequency IDF as follow : N cf =λ ( 9 ) df N IDF log= ( 10 ) df dfcf IDF − =−×= 12λβ ( 11 ) β λ α = ( 12 ) where again , cf is the total number of occurrence of word w i in the collection , df is the number of documents in the collection that w i occurs in , and N is the total number of documents .</sentence>
+				<definiendum id="0">observed inverse document frequency IDF</definiendum>
+				<definiendum id="1">cf</definiendum>
+				<definiendum id="2">df</definiendum>
+				<definiendum id="3">N</definiendum>
+				<definiens id="0">the total number of occurrence of word w i in the collection</definiens>
+				<definiens id="1">the total number of documents</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Accordingly , cf is the total number of occurrence of a word pair ( w i-1 , w i ) in the collection , df is the number of documents that contain ( w i-1 , w i ) , andN is the total number of documents .</sentence>
+				<definiendum id="0">df</definiendum>
+				<definiendum id="1">andN</definiendum>
+				<definiens id="0">the total number of occurrence of a word pair</definiens>
+				<definiens id="1">the total number of documents</definiens>
+			</definition>
+</paper>
+
+		<paper id="1079">
+</paper>
+
+		<paper id="1077">
+			<definition id="0">
+				<sentence>The Matra system is a tool for human aided machine translation from English to Hindi for news stories .</sentence>
+				<definiendum id="0">Matra system</definiendum>
+				<definiens id="0">a tool for human aided machine translation from English to Hindi for news stories</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The English to Hindi anusaaraka system follows the basic principles of information preservation .</sentence>
+				<definiendum id="0">anusaaraka system</definiendum>
+				<definiens id="0">follows the basic principles of information preservation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>Figure 1 Sample additive multiattribute value function ( AMVF ) The argumentation strategy has been implemented as part of a complete argument generator .</sentence>
+				<definiendum id="0">AMVF</definiendum>
+				<definiens id="0">part of a complete argument generator</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Other modules of the generator include a microplanner , which performs aggregation , pronominalization and makes decisions about cue phrases and scalar adjectives , along with a sentence realizer , which extends previous work on realizing evaluative statements ( Elhadad 1995 ) .</sentence>
+				<definiendum id="0">microplanner</definiendum>
+				<definiens id="0">performs aggregation , pronominalization and makes decisions about cue phrases and scalar adjectives , along with a sentence realizer , which extends previous work on realizing evaluative statements</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Formally , an AMVF predicts the value ) ( ev of an entity e as follows : v ( e ) = v ( x1 , … , xn ) = Σwi vi ( xi ) , where ( x1 , … , xn ) is the vector of attribute values for an entity e ∀attribute i , vi is the component value function , which maps the least preferable xi to 0 , the most preferable to 1 , and the other xi to values in [ 0,1 ] wi is the weight for attribute i , with 0≤ wi ≤1 and Σwi =1 wi is equal to the product of all the weights from the root of the value tree to the attribute i A function vo ( e ) can also be defined for each objective .</sentence>
+				<definiendum id="0">AMVF</definiendum>
+				<definiendum id="1">xn )</definiendum>
+				<definiendum id="2">vi</definiendum>
+				<definiens id="0">predicts the value ) ( ev of an entity e as follows : v ( e ) = v ( x1 , … , xn ) = Σwi vi ( xi )</definiens>
+				<definiens id="1">maps the least preferable xi to 0</definiens>
+				<definiens id="2">the weight for attribute i , with 0≤ wi ≤1 and Σwi =1 wi is equal to the product of all the weights from the root of the value tree to the attribute i A function vo</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We call this measure s-compellingness and provide the following definition : s-compellingness ( o , e , refo ) = ( A ) ∗ ( B ) = = w ( o , refo ) ∗ max [ [ vo ( e ) ] ; [ 1 – vo ( e ) ] ] , where − o is an objective , e is an entity , refo is an ancestor of o in the value tree − w ( o , refo ) is the product of the weights of all the links from o to refo − vo is the component value function for leaf objectives ( i.e. , attributes ) , and it is the recursive evaluation over children ( o ) for nonleaf objectives Given a measure of an objective 's strength , a predicate indicating whether an objective should be included in an argument ( i.e. , worth mentioning ) can be defined as follows : s-notably-compelling ?</sentence>
+				<definiendum id="0">− o</definiendum>
+				<definiendum id="1">e</definiendum>
+				<definiendum id="2">refo</definiendum>
+				<definiendum id="3">refo )</definiendum>
+				<definiens id="0">s-compellingness ( o , e , refo ) = ( A ) ∗ ( B ) = = w</definiens>
+				<definiens id="1">the product of the weights of all the links from o to refo − vo is the component value function for leaf objectives ( i.e. , attributes ) , and it is the recursive evaluation over children ( o ) for nonleaf objectives Given a measure of an objective 's strength , a predicate indicating whether an objective should be included in an argument ( i.e. , worth mentioning</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( o , opop , e , refo ) ≡ s-compellingness ( o , e , refo )  &gt; µx+kσx , where − o , e , and refo are defined as in the previous Def ; opop is an objective population ( e.g. , siblings ( o ) ) , and opop &gt; 2 − p∈ opop ; x∈X = s-compellingness ( p , e , refo )  − µx is the mean of X , σx is the standard deviation and k is a user-defined constant Similar measures for the comparison of two entities are defined and extensively discussed in ( Klein 1994 ) .</sentence>
+				<definiendum id="0">opop</definiendum>
+				<definiendum id="1">k</definiendum>
+				<definiens id="0">an objective population</definiens>
+				<definiens id="1">the mean of X , σx is the standard deviation</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The IDEA environment provides the user with a set of powerful visualization and direct manipulation techniques that facilitate the user’s autonomous exploration of the set of alternatives and the selection of the preferred alternatives .</sentence>
+				<definiendum id="0">IDEA environment</definiendum>
+				<definiens id="0">provides the user with a set of powerful visualization and direct manipulation techniques that facilitate the user’s autonomous exploration of the set of alternatives and the selection of the preferred alternatives</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Towards an Information Visualization Workspace : Combining Multiple Means of Expression .</sentence>
+				<definiendum id="0">Information Visualization Workspace</definiendum>
+				<definiens id="0">Combining Multiple Means of Expression</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>A secondary goal is to outline a novel approach to the conversion of graphemes to phonemes ( g2p ) which uses a context-free grammar ( cfg ) to generate all sequences of phonemes corresponding to a given orthographic input word and then ranks the hypotheses according to the probabilistic information coded in the syllable classes .</sentence>
+				<definiendum id="0">secondary goal</definiendum>
+				<definiendum id="1">g2p</definiendum>
+				<definiens id="0">uses a context-free grammar ( cfg ) to generate all sequences of phonemes corresponding to a given orthographic input word and then ranks the hypotheses according to the probabilistic information coded in the syllable classes</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The EM algorithm ( Dempster et al. , 1977 ) is directed at maximizing the incomplete data log-likelihood L = P y ~p ( y ) lnp ( y ) as a function of the probability distribution p for a given empirical probability distribution ~p. Our application is an instance of the EM-algorithm for context-free models ( Baum et al. , 1970 ) , from which simple re-estimation formulae can be derived .</sentence>
+				<definiendum id="0">EM algorithm</definiendum>
+				<definiens id="0">a function of the probability distribution p for a given empirical probability distribution ~p. Our application is an instance of the EM-algorithm for context-free models ( Baum et al. , 1970</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Recently , Bouma ( 2000 ) has reported a word accuracy of 92.6 % for Dutch , using a `lazy ' training strategy on data aligned with the correct phoneme string , and a hand-crafted system that relied on a large set of rule templates and a many-to-one mapping of characters to graphemes preceding the actual g2p conversion .</sentence>
+				<definiendum id="0">`lazy</definiendum>
+				<definiens id="0">' training strategy on data aligned with the correct phoneme string , and a hand-crafted system that relied on a large set of rule templates and a many-to-one mapping of characters to graphemes preceding the actual g2p conversion</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>Memory-based ( also known as lazy , nearest neighbor , instance-based , or case-based ) approaches to classification work by storing all of the instances in the training data , along with their classes .</sentence>
+				<definiendum id="0">Memory-based</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1076">
+			<definition id="0">
+				<sentence>Each element of the table helps to check the correction of a syllable based on the column position of initial consonants and the row position of rhyme patterns , for example , the syllable lamf ( work ) in the TELEX form , is composed of the initial consonant l and rhyme pattern am with by low falling tone ( or grave accent ) f. Each element of the table can be understood as : syllables used in Vietnamese .</sentence>
+				<definiendum id="0">syllable lamf</definiendum>
+				<definiens id="0">syllables used in Vietnamese</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Vietools works on syllables converted to TELEX .</sentence>
+				<definiendum id="0">Vietools</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1074">
+			<definition id="0">
+				<sentence>Although omni-directional , translation involving Tagalog excludes morpho logical and syntactic aspects of the language Another software is the Filipino Language Software , which includes Tagalog , Visayan , Cebuano , and Ilocano languages .</sentence>
+				<definiendum id="0">Filipino Language Software</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1019">
+</paper>
+
+		<paper id="1044">
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>Prepositional phrase attachment is a common source of ambiguity in natural language processing .</sentence>
+				<definiendum id="0">Prepositional phrase attachment</definiendum>
+				<definiens id="0">a common source of ambiguity in natural language processing</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Given a 4-tuple of the form ( V , N 1 , P , N 2 ) , where V is the head verb , N 1 is the head noun of the object of V , P is a preposition , and N 2 is the head noun of the prepositional complement , the goal is to classify as either adverbial attachment ( attaching to V ) or adjectival attachment ( attaching to N 1 ) .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">the head verb</definiens>
+				<definiens id="1">the head noun of the object of V</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>F EATURES ( V , * , * , * ) ( V , * , P , * ) ( * , N 1 , * , N 2 ) ( V , N 1 , * , * ) ( V , * , * , N 2 ) ( * , N 1 , P , N 2 ) ( V , N 1 , P , * ) ( V , * , P , N 2 ) ( * , * , P , * ) ( V , N 1 , * , N 2 ) ( * , N 1 , * , * ) ( * , * , * , N 2 ) ( V , N 1 , P , N 2 ) ( * , N 1 , P , * ) ( * , * , P , N 2 ) with object salad in Figure 1 ( e.g. add , consume , cover , … ) and the cohort of salad consists of nouns that appeared as object of eat in Figure 1 ( e.g. almond , apple , bean , … ) .</sentence>
+				<definiendum id="0">F EATURES</definiendum>
+				<definiendum id="1">V</definiendum>
+				<definiens id="0">V , * , * , * ) ( V , * , P , * ) ( * , N 1 , * , N 2 ) ( V , N 1 , * , * ) ( V , * , * , N 2 ) ( * , N 1 , P , N 2 ) ( V , N 1 , P , * ) ( V , * , P , N 2 ) ( * , * , P , * ) ( V , N 1 , * , N 2 ) ( * , N 1 , * , * ) ( * , * , *</definiens>
+				<definiens id="1">consists of nouns that appeared as object of eat in Figure 1 ( e.g. almond , apple , bean , … )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We describe the different classifiers below : cl base : the baseline described in Section 7.2 cl R1 : uses a maximum entropy model ( Ratnaparkhi et al. , 1994 ) cl BR 5 : uses transformation-based learning ( Brill and Resnik , 1994 ) cl CB : uses a backed-off model ( Collins and Brooks , 1995 ) cl SN : induces a decision tree with a sense-tagged corpus , using a semantic dictionary ( Stetina and Nagao , 1997 ) cl HR 6 : uses lexical preference ( Hindle and Rooth , 1993 ) cl R2 : uses a heuristic extraction of unambiguous attachments ( Ratnaparkhi , 1998 ) cl PL : uses the algorithm described in this paper Our classifier outperforms all previous unsupervised techniques and approaches the performance of supervised algorithm .</sentence>
+				<definiendum id="0">maximum entropy model</definiendum>
+				<definiens id="0">uses lexical preference</definiens>
+				<definiens id="1">uses a heuristic extraction of unambiguous attachments ( Ratnaparkhi , 1998 ) cl PL : uses the algorithm described in this</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>The event-aligner component uses a very simple method , intended to serve as a baseline method , and to gain an understanding of the issues involved .</sentence>
+				<definiendum id="0">event-aligner component</definiendum>
+				<definiens id="0">uses a very simple method , intended to serve as a baseline method</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+</paper>
+
+		<paper id="1069">
+</paper>
+
+		<paper id="1071">
+</paper>
+
+		<paper id="1064">
+</paper>
+
+		<paper id="1066">
+</paper>
+
+		<paper id="1016">
+</paper>
+
+		<paper id="1018">
+</paper>
+
+		<paper id="1023">
+</paper>
+
+		<paper id="1078">
+</paper>
+
+		<paper id="1052">
+			<definition id="0">
+				<sentence>Discourse consists of a sequence of textual segments and each segment consists of a sequence of utterances .</sentence>
+				<definiendum id="0">Discourse</definiendum>
+				<definiens id="0">consists of a sequence of textual segments and each segment consists of a sequence of utterances</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>Therefore , a feminine subject would use the same form : Jane es un genio ( Jane is a genius ) .</sentence>
+				<definiendum id="0">Jane</definiendum>
+				<definiens id="0">a genius )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>A parsing system in the LiLFeS system , which adopts a naive CKY algorithm without any sophistication , shows similar performance as that of LKB which uses a more re # 0Cned algorithm to # 0Clter out unnecessary uni # 0Ccation .</sentence>
+				<definiendum id="0">parsing system</definiendum>
+				<definiendum id="1">LKB</definiendum>
+				<definiens id="0">adopts a naive CKY algorithm without any sophistication</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>SLUNG exploits the property of HPSG that allows under-speci # 0Ced constraints .</sentence>
+				<definiendum id="0">SLUNG</definiendum>
+				<definiens id="0">exploits the property of HPSG that allows under-speci # 0Ced constraints</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+</paper>
+
+		<paper id="1039">
+			<definition id="0">
+				<sentence>10900 11000 11100 11200 11300 11400 11500 11600 11700 Cohesion Score Location in Text [ words ] ( 4.4 ) ( 4.4.1 ) minimal FC minimal BC moving average range EP FC &lt; BC FC &gt; BC C FC BC TBCS Section Boundary BYCXCVD9D6CT BDBM BXDCCPD1D4D0CT D3CU CCBUBVCB BWCTD8CTCRD8CXD3D2 D8CWCT D6CTCUCTD6CTD2CRCT D4D3CXD2D8 D3CU D8CWCT ACD6D7D8 CPDACTD6CPCVCTCS D7CRD3D6CTB8 CPD2CS BUBV CXD7B8 BUCPCRCZDBCPD6CS BVD3CWCTD7CXD3D2B8 CP D7CTD6CXCTD7 D3CU CPDACTD6CPCVCTCS DACPD0D9CTD7 D4D0D3D8D8CTCS CPD8 D8CWCT D6CTCUCTD6CTD2CRCT D4D3CXD2D8 D3CU D8CWCT D0CPD7D8 CPDACTD6CPCVCTCS D7CRD3D6CTBA CBCXD2CRCT D8CWCT D8CTDCD8D9CPD0 CPD6CTCP CYD9D7D8 CQCTCUD3D6CT D8CWCT D4D3CXD2D8 CPD8 DBCWCXCRCW BYBVD4D0D3D8D8CTCS CXD7 CPD0DBCPDDD7 CXD2 D8CWCT D0CTCUD8 DBCXD2CSD3DB DBCWCTD2 D3D2CT D3CU D8CWCT CPDACTD6CPCVCTCS CRD3CWCTD7CXD3D2 D7CRD3D6CTD7 CXD7 CRCPD0CRD9D0CPD8CTCSB8 BYBVCXD2B9 CSCXCRCPD8CTD7 D8CWCT D7D8D6CTD2CVD8CW D3CU CUD3D6DBCPD6CS B4D0CTCUD8B9D8D3B9D6CXCVCWD8B5 CRD3CWCTD7CXD3D2 CPD8 CP D4D3CXD2D8BA BVD3D2DACTD6D7CTD0DDB8 BUBV CXD2CSCXCRCPD8CTD7 D8CWCT D7D8D6CTD2CVD8CW D3CU CQCPCRCZDBCPD6CS CRD3CWCTD7CXD3D2 CPD8 CP D4D3CXD2D8BA C1D2 D8CWCT ACCVD9D6CTB8 BXC8 CXD7B8 BXD5D9CXD0CXCQD6CXD9D1 C8D3CXD2D8B8 D8CWCT D4D3CXD2D8 CPD8 DBCWCXCRCW BYBV CPD2CS BUBV CWCPDACT CPD2 CXCSCTD2D8CXB9 CRCPD0 DACPD0D9CTBA CCCWCT CPD0CVD3D6CXD8CWD1 CRCWCTCRCZD7 CUD3D6 BYBV CPD2CS BUBV D7D8CPD6D8CXD2CV CUD6D3D1 D8CWCT CQCTCVCXD2D2CXD2CV D8CXD0D0 D8CWCT CTD2CS D3CU D8CWCT D7D3D9D6CRCT D8CTDCD8BN CPD2CS CXD8 D6CTCRD3D6CSD7 CP CCBUBVCBB8CPD7 CSCTD4CXCRD8CTCS CQDDD8CWCTD6CTCRD8CPD2CVD0CTB8 DBCWCTD2CTDACTD6 CPD2 CTD5D9CXB9 D0CXCQD6CXD9D1 D4D3CXD2D8 CXD7 CSCTD8CTCRD8CTCS B4D7CTCT B4C6CPCZCPD3B8 BDBLBLBLB5 CUD3D6 D1D3D6CT CXD2CUD3D6D1CPD8CXD3D2B5BA 640 B ( 4 ) 1280 B ( 3 ) 2560 B ( 2 ) 5120 B ( 1 ) entire B ( 0 ) 0 2000 4000 6000 8000 10000 12000 14000 16000 18000 Window Width [ words ] Location in Text [ words ] ( 4.2 ) ( 4.2.1 ) ( 4.2.2 ) ( ref ) ( 4.3 ) ( 4.3.1 ) ( 4.3.2 ) ( 4.3.3 ) ( ref ) ( 4.4 ) ( 4.4.1 ) ( 4.4.2 ) ( 4.4.3 ) ( 4.4.4 ) ( ref ) [ 0 ] [ 0 ] [ 1 ] [ 2 ] [ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 0 ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ] [ 6 ] [ 7 ] [ 8 ] [ 9 ] [ 10 ] [ 6 ] TBCS Section Boundary BYCXCVD9D6CT BEBM BXDCCPD1D4D0CT D3CU CCCWCTD1CPD8CXCR C0CXCTD6CPD6CRCWDD BYD3D6 CP D7CPD1D4D0CT D8CTDCD8B8 BYCXCVD9D6CT BE D7CWD3DBD7 D8CWCT D6CTB9 D7D9D0D8CXD2CV D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD D8CWCPD8 DBCPD7 CSCTD8CTCRD8CTCS CCCPCQD0CT BDBM BTCRCRD9D6CPCRDD D3CU CCCWCTD1CPD8CXCR C0CXCTD6CPD6CRCWDD BWCTD8CTCRD8CXD3D2 CFCXD2CSD3DB BUD3D9D2CSCPD6DD AZ C7D6CXCVCXD2CPD0 CCBUBVCB CDD2CXACCTCS CCBUBVCB DBCXCSD8CW CRD3D6BA D6CTD7BA CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 BHBDBEBC BD BE BDBCBC B4BEBEB5 BHBC B4BDBDB5 BDBCBC B4BCBABFB5 BHBC B4BCBABDB5 BEBHBIBC BE BG BDBCBC B4BEBEB5 BHBC B4BDBDB5 BHBC B4BCBABHB5 BEBH B4BCBABFB5 BDBEBKBC BF BDBC BDBCBC B4BEBJB5 BFBC B4BKBABDB5 BIBJ B4BDBABGB5 BEBC B4BCBABGB5 BIBGBC BFBC BGBE BLBC B4BEBFB5 BIBG B4BDBIB5 BHBJ B4BEBABFB5 BGBC B4BDBABJB5 BFBEBC BDBDBG BDBIBF BIBJ B4BEBEB5 BGBJ B4BDBIB5 BGBI B4BGBABHB5 BFBF B4BFBABEB5 BDBIBC BDBKBG BFBIBH BJBC B4BEBEB5 BFBH B4BDBDB5 BHBD B4BLBABDB5 BEBH B4BGBABIB5 BKBC BFBEBE BKBDBF BHBJ B4BEBHB5 BEBF B4BDBCB5 BHBJ B4BEBDB5 BEBF B4BKBABEB5 BGBC BGBCBF BDBIBKBD BHBE B4BEBHB5 BDBF B4BIBABEB5 BJBD B4BGBEB5 BDBJ B4BDBCB5 CCCWCT ACCVD9D6CTD7 CXD2 D4CPD6CTD2D8CWCTD7CTD7 CPD6CT D8CWCT CQCPD7CTD0CXD2CT D6CPD8CTD7BA CQDDD8CWCTCPCUD3D6CTD1CTD2D8CXD3D2CTCS D4D6D3CRCTCSD9D6CT D9D7CXD2CV DACPD6DDB9 CXD2CV DBCXD2CSD3DB DBCXCSD8CWD7 B4D8CWCT D3D6CSCXD2CPD8CTD7B5BA BXCPCRCW CWD3D6B9 CXDED3D2D8CPD0 D7CTD5D9CTD2CRCT D3CU D6CTCRD8CPD2CVD0CTD7 CSCTD4CXCRD8D7 CP D0CXD7D8 D3CU CCBUBVCBD7 CSCTD8CTCRD8CTCS D9D7CXD2CV CP D7D4CTCRCXACCR DBCXD2CSD3DB DBCXCSD8CWBA CCD3 D2CPD6D6D3DB D8CWCT DBCXCSD8CW D3CU CRCPD2CSCXCSCPD8CT D7CTCRD8CXD3D2D7B8 D8CWCT CPD0CVD3D6CXD8CWD1 D8CWCTD2 D9D2CXACCTD7 CP CCBUBVCB DBCXD8CW CPD2B9 D3D8CWCTD6 CCBUBVCB CXD2 D8CWCT D0CPDDCTD6 CXD1D1CTCSCXCPD8CT CQCTD0D3DBBA C1D8 CRD3D2D8CXD2D9CTCS D8CWCT D4D6D3CRCTD7D7 D9D2D8CXD0 CCBUBVCBD7 CXD2 CPD0D0 D0CPDDB9 CTD6D7B8 CUD6D3D1 D8CWCT D8D3D4 D8D3 D8CWCT CQD3D8D8D3D1B8 CPD6CT D9D2CXACCTCSBA BTCUD8CTD6 D8CWCPD8B8 CXD8 D3D9D8D4D9D8D7 D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD CPD7 CP D7CTD8 D3CU D0CXD7D8D7 D3CU CCBUBVCB CSCPD8CPBM CXBM D0CPDDCTD6 CXD2CSCTDC D3CU D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD BUB4CXB5CJCYCLBM CCBUBVCB CSCPD8CP CRD3D2D8CPCXD2CXD2CV D8CWCT CUD3D0D0D3DBCXD2CV CSCPD8CP D1CTD1CQCTD6D7BM CTD4BM CTD5D9CXD0CXCQD6CXD9D1 D4D3CXD2D8 D6CPD2CVCTBM D8CWCTD1CPD8CXCR CQD3D9D2CSCPD6DD CRCPD2CSCXCSCPD8CT D7CTCRD8CXD3D2BA C1D2 BYCXCVD9D6CT BEB8 CUD3D6 CTDCCPD1D4D0CTB8 BUB4BDB5CJBDCL CXD7 D9D2CXACCTCS DBCXD8CW BUB4BEB5CJBDCLBNBUB4BFB5CJBGCLBNBUB4BGB5CJBICLBNBMBMBMB8 CPD2CS D8CWCT DACPD0B9 D9CTD7 D3CU CXD8D7 CSCPD8CP D1CTD1CQCTD6D7 B4CTD4 CPD2CS D6CPD2CVCTB5 CPD6CT D6CTD4D0CPCRCTCS CQDD D8CWD3D7CT D3CU D8CWCT D9D2CXACCTCS CCBUBVCB CXD2 D8CWCT CQD3D8D8D3D1 D0CPDDCTD6B8 DBCWCXCRCW CWCPD7 CQCTCTD2 CSCTD8CTCRD8CTCS D9D7CXD2CV D8CWCT D1CXD2CXD1D9D1 DBCXD2CSD3DB DBCXCSD8CW B4BGBC DBD3D6CSD7B5BA BFBABDBABE CACTD7D9D0D8D7 D3CU CCCWCTD1CPD8CXCR C0CXCTD6CPD6CRCWDD BWCTD8CTCRD8CXD3D2 CCCPCQD0CT BD D7D9D1D1CPD6CXDECTD7 D8CWCT CPCRCRD9D6CPCRDD D3CU D8CWCTB9 D1CPD8CXCR CWCXCTD6CPD6CRCWDD CSCTD8CTCRD8CXD3D2 CXD2 CPD2 CTDCD4CTD6CXD1CTD2D8 D9D7CXD2CV D8CWCT CUD3D0D0D3DBCXD2CV D8CWD6CTCT CZCXD2CSD7 D3CU C2CPD4CPD2CTD7CT D8CTDCD8 CPD7 D8CTD7D8 CSCPD8CPBM CP D8CTCRCWD2CXCRCPD0 D7D9D6DACTDD D6CTD4D3D6D8 BE D8CWCPD8 CRD3D2D7CXD7D8D7 D3CU D8CWD6CTCT D1CPCXD2 D7CTCRD8CXD3D2D7 CPD2CS CRD3D2B9 D8CPCXD2D7 BDBJB8BKBDBI CRD3D2D8CTD2D8 DBD3D6CSD7BN CTCXCVCWD8 D7CTD6CXCTD7 D3CU BE CKC8D6D3CVD6CTD7D7 CACTD4D3D6D8 D3CU CCCTCRCWD2CXCRCPD0 BVD3D1D1CXD8D8CTCT D3D2 C6CTD8B9 DBD3D6CZ BTCRCRCTD7D7AY CXD2 CBD9D6DACTDD D3D2 C6CPD8D9D6CPD0 C4CPD2CVD9CPCVCT C8D6D3CRCTD7D7B9 CXD2CV CBDDD7D8CTD1D7 CQDD C2CPD4CPD2 BXD0CTCRD8D6D3D2CXCR C1D2CSD9D7D8D6DD BWCTDACTD0D3D4B9 D1CTD2D8 BTD7D7D3CRCXCPD8CXD3D2B8 CRCWCPD4D8CTD6 BGB8 D4D4BA BDBDBJDFBDBLBJB8 C5CPD6BA BDBLBLBJBA D2CTDBD7D4CPD4CTD6 CRD3D0D9D1D2D7 BF B8 CTCPCRCWD3CUDBCWCXCRCW CRD3D2D7CXD7D8D7 D3CU BG D8D3 BEBG CPD6D8CXCRD0CTD7 CRD3D2D8CPCXD2CXD2CV CPCQD3D9D8 BGBCBC DBD3D6CSD7BN CPD2CS D8DBCTD0DACT CTCRD3D2D3D1CXCR D6CTD7CTCPD6CRCW D6CTD4D3D6D8D7 BG B8 CTCPCRCW D3CU DBCWCXCRCW CRD3D2D7CXD7D8D7 D3CU CPCQD3D9D8 D8CTD2 CPD6D8CXCRD0CTD7 CRD3D2B9 D8CPCXD2CXD2CV BFBF D8D3 BEB8BFBJBH DBD3D6CSD7BA C1D2 D8CWCT D8CPCQD0CTB8 CRD3D6BA CSCTD2D3D8CTD7 D8CWCT D2D9D1CQCTD6 D3CU D8CWCT CRD3D6D6CTCRD8 CSCPD8CP DACPD0D9CTD7 CRD3D1D4D3D7CTCS D3CU D8CWCT D7D8CPD6D8CXD2CV D4D3CXD2D8D7 D3CU D7CTCRD8CXD3D2D7 D8CWCPD8 CRD3D2D8CPCXD2 D8CWCT D7CPD1CT D2D9D1B9 CQCTD6 D3CU DBD3D6CSD7 D3D6 D1D3D6CT D8CWCPD2 D8CWCT DBCXD2CSD3DB DBCXCSD8CW D0CXD7D8CTCS CXD2 D8CWCT D7CPD1CT D6D3DB BH BA C1D2 CPCSCSCXD8CXD3D2B8 D6CTD7BA CSCTB9 D2D3D8CTD7 D8CWCT D2D9D1CQCTD6 D3CU CCBUBVCBD7BA CCCWCT D3D6CXCVCXD2CPD0 CCBUBVCB CRD3D0D9D1D2D7 D0CXD7D8 D8CWCT D6CTCRCPD0D0 CPD2CS D4D6CTCRCXD7CXD3D2 D6CPD8CTD7 D3CU CSCTD8CTCRD8CTCS CCBUBVCBD7 CQCTCUD3D6CT CCBUBVCB D9D2CXACCRCPB9 D8CXD3D2B8 CPD2CS D8CWCT D9D2CXACCTCS CCBUBVCB CRD3D0D9D1D2D7 D0CXD7D8 D8CWD3D7CT D6CPD8CTD7 CPCUD8CTD6 CCBUBVCB D9D2CXACCRCPD8CXD3D2BA C7D2 CTCPCRCW D0CPDDCTD6B8 D8CWCT DBCXCSD8CW D3CU CRCPD2CSCXCSCPD8CT D7CTCRD8CXD3D2D7 CUD3D6 D3D6CXCVCXD2CPD0 CCBUBVCB CXD7 CPCQD3D9D8 CWCPD0CU D3CU D8CWCT DBCXD2CSD3DB DBCXCSD8CWBN CPD2CS D8CWCPD8 D3CU D9D2CXACCTCS CCBUBVCB CXD7 BEBH DBD3D6CSD7 B4CPCQD3D9D8 CWCPD0CU D3CU D8CWCT D1CXD2CXD1D9D1 DBCXD2CSD3DB DBCXCSD8CWB5BA CCCWCT ACCVD9D6CTD7 D7CWD3DBD2 CXD2 D4CPD6CTD2D8CWCTD7CTD7 CPD6CT D8CWCT CQCPD7CTD0CXD2CT D6CPD8CTD7 CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 D6CPD2CSD3D1 D7CTD0CTCRD8CXD3D2BA CCCWCPD8 CXD7B8 D4CPD6D8D7 CPD6CT D6CPD2CSD3D1D0DD D7CTD0CTCRD8CTCS CUD6D3D1 D8CWCT D7D3D9D6CRCT D8CTDCD8 DBCWD3D7CT D8D3D8CPD0 D7CXDECT CXD7 CTD5D9CPD0 D8D3 D8CWCT D8D3D8CPD0 CPD6CTCP D7CXDECT D3CU CCBUBVCBD7BA BTD7 D8CWCT CQD3D9D2CSCPD6DD ACCVD9D6CTD7 CXD2CSCXCRCPD8CTB8 D8CWCT D4D6D3B9 D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CSCTCRD3D1D4D3D7CTD7 CP D8CTDCD8 CXD2D8D3 D8CTDCB9 D8D9CPD0 D9D2CXD8D7 D3CU CPCQD3D9D8 CTD5D9CXDACPD0CTD2D8 DBCXD2CSD3DB DBCXCSD8CWD7BA C1D2 CPCSCSCXD8CXD3D2B8 D8CWCT D6CPD8CTD7 D3CU CSCTD8CTCRD8CTCS CCBUBVCBD7 CPD6CT CRD0CTCPD6D0DD D0CPD6CVCTD6 D8CWCPD2 D8CWCTCXD6 CQCPD7CTD0CXD2CTD7BA BYD9D6D8CWCTD6B9 BF C7CQD8CPCXD2CTCS CUD6D3D1 D8CWCT BWCPCXD0DD CHD3D1CXD9D6CX C7D2B9D0CXD2CT B4CWD8D8D4BMBBBBDBDBDBBADDD3D1CXD9D6CXBACRD3BACYD4BBB5BA BG C5D3D2D8CWD0DD D6CTD4D3D6D8D7 DBD6CXD8D8CTD2 CUD3D6 CP C2CPD4CPD2CTD7CT CRD3D1D4CPD2DD CQDD CP C2CPD4CPD2CTD7CT D4D6D3CUCTD7D7D3D6 D0CXDACXD2CV CXD2 D8CWCT CDBACBBABTBA BH C7D2D0DD CWCTCPCSCXD2CVD7 CPD2CS CXD2D8CTD2D8CXD3D2CPD0 CQD6CTCPCZD7B8 D7D9CRCW CPD7 D7DDD1CQD3D0 D0CXD2CTD7 CXD2D7CTD6D8CTCS D8D3 D7CTD4CPD6CPD8CT CP D4D6D3D0D3CVD9CT D3D6 CTD4CXB9 D0D3CVD9CT CUD6D3D1 CP D1CPCXD2 CQD3CSDDB8CPD6CTD9D7CTCS CPD7 CRD3D6D6CTCRD8 CQD3D9D2CSB9 CPD6CXCTD7BA BTD7 CP D6CTD7D9D0D8B8 D8CWCT D4D6CTCRCXD7CXD3D2 D6CPD8CTD7 D3CU D9D7CXD2CV D7D1CPD0D0CTD6 DBCXD2CSD3DB DBCXCSD8CWD7 D8CTD2CS D8D3 CSCTCVD6CPCSCT CQCTCRCPD9D7CT D3CU CXD2D7D9ÆCRCXCTD2D8 CPD1D3D9D2D8D7 D3CU CRD3D6D6CTCRD8 CSCPD8CPBA D1D3D6CTB8 CUD3D6 D8DBD3 D6CTD0CPD8CXDACTD0DD D0CPD6CVCT D7CTD6CXCTD7 D3CU D2CTDBD7B9 D4CPD4CTD6 CRD3D0D9D1D2D7B8 D8CWCT D1CPCYD3D6 CQD3D9D2CSCPD6CXCTD7 DBCTD6CT CSCTD8CTCRD8CTCS D4D6D3D4CTD6D0DDBA CCCWCPD8 CXD7B8 D9D7CXD2CV D0CPD6CVCTD6 DBCXD2B9 CSD3DB DBCXCSD8CWD7B8 D8CWD3D7CT CQD3D9D2CSCPD6CXCTD7 DBCTD6CT D7CTD0CTCRD8CXDACTD0DD CSCTD8CTCRD8CTCS D8CWCPD8 D7CTD4CPD6CPD8CT CVD6D3D9D4D7 D3CU CRD3D0D9D1D2D7 CQDD D8CWCTCXD6 D7D9CQD8D3D4CXCRD7BA BYD3D6 CTDCCPD1D4D0CTB8 D8CWCT D7D8CPD6D8CXD2CV D4D3CXD2D8 D3CU CP D7CTD8 D3CU D8CWD6CTCT CRD3D2D7CTCRD9D8CXDACT CRD3D0D9D1D2D7 CXCSCTD2D8CXCRCPD0D0DD CTD2D8CXD8D0CTCS CKCCCWCT BZD6CTCPD8 BVD9D0D8D9D6CPD0 CACTDAB9 D3D0D9D8CXD3D2AY CXD2 D8CWCT CKBVCWCXD2CTD7CT CACTDAD3D0D9D8CXD3D2AY D7CTD6CXCTD7 DBCPD7 CSCTD8CTCRD8CTCS D9D7CXD2CV BDB8BEBKBC DBD3D6CS DBCXCSD8CW DBCXD2CSD3DBB8 CPD7 DBCTD0D0 CPD7 D8CWD3D7CT D3CU D3D8CWCTD6 D8CWD6CTCT D7CTD8D7 D3CU CRD3D2D7CTCRB9 D9D8CXDACT CRD3D0D9D1D2D7 CTD2D8CXD8D0CTCS CXCSCTD2D8CXCRCPD0D0DDBA CCCWD9D7B8 D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CXD7 CTDCD4CTCRD8CTCS D8D3 CQCT CTABCTCRB9 D8CXDACT CUD3D6 CPD6CQCXD8D6CPD6CXD0DD D7CTD0CTCRD8CXD2CV D8CWCT D7CXDECT D3CU D8CTDCB9 D8D9CPD0 D9D2CXD8D7 CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 CSCXABCTD6CTD2D8 CVD6CPCSCXD2CV D8D3D4CXCRD7BA C0D3DBCTDACTD6B8 D8CWCTD6CT CPD6CT D4D6D3CQD0CTD1D7 CPCQD3D9D8 CWD3DBD8D3 CSCTD8CTD6D1CXD2CT CP CQD3D9D2CSCPD6DD D4D3CXD2D8 CXD2 D8CWCT D6CPD2CVCT CSCTB9 ACD2CTCS CQDD CP CCBUBVCBBA BTD0D8CWD3D9CVCW D8CWCT D4D6CTDACXD3D9D7D0DD D4D9CQD0CXD7CWCTCS CPD0CVD3D6CXD8CWD1 B4C6CPCZCPD3B8 BDBLBLBLB5 CSCTD8CTD6B9 D1CXD2CTD7 CP CQD3D9D2CSCPD6DD D4D3CXD2D8 DBCXD8CW D1CXD2CXD1CPD0 D4D3CXD2D8D7 D3CU CRD3CWCTD7CXD3D2 D7CRD3D6CTD7 CUD3D6 D8CWCT D7D1CPD0D0CTD7D8 DBCXD2CSD3DB DBCXCSD8CWB8 D8CWCT CPCRCRD9D6CPCRDD CSCTCVD6CPCSCTD7 D7D9CQD7D8CPD2D8CXCPD0D0DD B4D7CTCT CCCPCQD0CT BFB5BA CCCWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXB9 ACCRCPD8CXD3D2 CPD0CVD3D6CXD8CWD1 CVCXDACTD2 CQCTD0D3DB CXD7 CP D7D3D0D9D8CXD3D2 D8D3 D8CWCXD7 D4D6D3CQD0CTD1BA BFBABE BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 C1D2 D8CWCT D7CTCRD3D2CS D7D8CPCVCTB8 CUD6D3D1 D7CTD2D8CTD2CRCTD7 CXD2 CP CCBUBVCBB8 D8CWCT CPD0CVD3D6CXD8CWD1 CXCSCTD2D8CXACCTD7 CP CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTB8 CXD2CSCXCRCPD8CXD2CV DBCWCTD6CT CP D8D3D4CXCR CRD3D6D6CTB9 D7D4D3D2CSCXD2CV D8D3 CP D8CTDCD8D9CPD0 D9D2CXD8 D4D6D3CQCPCQD0DD D7D8CPD6D8D7B8 CPD2CS D7CTD0CTCRD8D7 CP D0CTCPCS D7CTD2D8CTD2CRCT D8CWCPD8 D4D6D3CQCPCQD0DD CXD2B9 CSCXCRCPD8CTD7 D8CWCT CRD3D2D8CTD2D8D7 D3CU D7D9CQD7CTD5D9CTD2D8 D4CPD6D8D7 CXD2 D8CWCT D7CPD1CT D8CTDCD8D9CPD0 D9D2CXD8BA BYCXCVD9D6CT BF D7CWD3DBD7 D8CWCT CPD0CVD3B9 D6CXD8CWD1 CXD2 CSCTD8CPCXD0BA BFBABEBABD BYD3D6DBCPD6CSBBBUCPCRCZDBCPD6CS CACTD0CTDACPD2CRCT BVCPD0CRD9D0CPD8CXD3D2 C1D2 D7D8CTD4D7 BE CPD2CS BFB8 CQD3D9D2CSCPD6CXCTD7 CPD6CT CXCSCTD2D8CXACCTCS CPD2CS D0CTCPCS D7CTD2D8CTD2CRCTD7 CPD6CT D7CTD0CTCRD8CTCS CQCPD7CTCS D3D2 D8DBD3 CZCXD2CSD7 D3CU D6CTD0CTDACPD2CRCT D7CRD3D6CTD7 CUD3D6 CP D7CTD2D8CTD2CRCTBM CUD3D6B9 DBCPD6CS D6CTD0CTDACPD2CRCT CXD2CSCXCRCPD8CXD2CV D8CWCT D7CTD2D8CTD2CRCT D6CTD0CTB9 DACPD2CRCT D8D3 D8CWCT D8CTDCD8D9CPD0 D9D2CXD8 CXD1D1CTCSCXCPD8CTD0DD CPCUD8CTD6 D8CWCT D7CTD2D8CTD2CRCTB8 CPD2CS CQCPCRCZDBCPD6CS D6CTD0CTDACPD2CRCT CXD2CSCXCRCPD8B9 CXD2CV D8CWCT D7CTD2D8CTD2CRCT D6CTD0CTDACPD2CRCT D8D3 D8CWCT D8CTDCD8D9CPD0 D9D2CXD8 CXD1D1CTCSCXCPD8CTD0DD CQCTCUD3D6CT D8CWCT D7CTD2D8CTD2CRCTBA CCCWCT CSCXABCTD6B9 CTD2CRCT CQCTD8DBCTCTD2 D8CWCT CUD3D6DBCPD6CS CPD2CS D8CWCT CQCPCRCZDBCPD6CS D6CTD0CTDACPD2CRCT CXD7 D6CTCUCTD6D6CTCS D8D3 CPD7 D6CTD0CPD8CXDACT CUD3D6DBCPD6CSD6CTD0B9 BDBA BTD7D7CXCVD2 D8CWCT D8CPD6CVCTD8 D0CPDDCTD6 CPD7 D8CWCT CQD3D8D8D3D1 D0CPDDCTD6 D3CU D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDDBM CXAWCX D1CPDC BA BEBA BYD3D6 CTCPCRCW CCBUBVCB CXD2 D8CWCT D8CPD6CVCTD8 D0CPDDCTD6B8 BUB4CXB5CJCYCLB8 CSD3 CWCT CUD3D0D0D3DBCXD2CVBM B4CPB5 C1CU CX AW CX D1CPDC B8 D8CWCTD2 D7CTD0CTCRD8 CPD2CS CXCSCTD2D8CXCUDD CPD0D0 D7CTD2D8CTD2CRCTD7 CXD2 BUB4CXB5CJCYCLBMD6CPD2CVCT CPD7 BUD3D9D2CSB9 CPD6DD CBCTD2D8CTD2CRCT BVCPD2CSCXCRCPD8CTD7 B4BUBACBBABVBAB5BN D3D8CWB9 CTD6DBCXD7CTB8 D7CTD0CTCRD8 CPD2CS CXCSCTD2D8CXCUDD D8CWCT D7CTD2D8CTD2CRCTD7 CXD2 BUB4CXB5CJCYCLBMD6CPD2CVCT D0D3CRCPD8CTCS CQCTCUD3D6CT D3D6 CXCSCTD2D8CXB9 CRCPD0 D8D3 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT D3CU BUB4CXB7BDB5 CPD7 BUBACBBABVBA B4CQB5 BYD6D3D1 D8CWCT BUBACBBABVBAB8CXCSCTD2D8CXCUDD CP D7CTD2D8CTD2CRCT CPD7 CP BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT B4BUBACBBAB5B8 DBCWD3D7CT D6CTD0B9 CPD8CXDACTCUD3D6DBCPD6CS D6CTD0CTDACPD2CRCT CXD7 CVD6CTCPD8CTD6 D8CWCPD2 BC CPD2CS CWCPD7 D8CWCT D1D3D7D8 CXD2CRD6CTD1CTD2D8 CUD6D3D1 D8CWCPD8 D3CU D8CWCT D4D6CTDACXD3D9D7 D7CTD2D8CTD2CRCTBA B4CRB5 BTD1D3D2CV D8CWCT D7CTD2D8CTD2CRCTD7 CXD2 D8CWCT BUBACBBABVBA D0D3B9 CRCPD8CTCS CPCUD8CTD6 D3D6 CXCSCTD2D8CXCRCPD0 D8D3 D8CWCT BUBACBBAB8 D7CTD0CTCRD8 D8CWCT D7CTD2D8CTD2CRCT D8CWCPD8 CWCPD7 D8CWCT CVD6CTCPD8CTD7D8 CUD3D6B9 DBCPD6CS D6CTD0CTDACPD2CRCT CPD7 CP C4CTCPCS CBCTD2D8CTD2CRCT B4C4BACBBAB5BA BFBA C1CU CXBQBDB8 D8CWCTD2 CXAWCXA0BDB8 CPD2CS D6CTD4CTCPD8 CUD6D3D1 D7D8CTD4 BEBA BYCXCVD9D6CT BFBM BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 BTD0CVD3D6CXD8CWD1 CTDACPD2CRCTBA BYD3D6DBCPD6CS D3D6 CQCPCRCZDBCPD6CS D6CTD0CTDACPD2CRCT CXD7 CRCPD0CRD9B9 D0CPD8CTCS D9D7CXD2CV D8CWCT CUD3D6D1D9D0CP CQCTD0D3DBB8 DBCWCTD6CT CTDACTD6DD D8CTDCD8D9CPD0 D9D2CXD8 CXD7 D4CPD6D8CXD8CXD3D2CTCS CPD8 D8CWCT CTD5D9CXD0CXCQD6CXD9D1 D4D3CXD2D8D7 D3CU D8DBD3 CPCSCYCPCRCTD2D8 CCBUBVCBD7 CXD2 D8CWCT D8CPD6CVCTD8 D0CPDDCTD6B8 D8CWCT CTD5D9CXD0CXCQD6CXD9D1 D4D3CXD2D8 D3CU CTCPCRCW CCBUBVCB CXD7 CXD2CXD8CXCPD0D0DD D7CTD8 CQDD D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD CSCTD8CTCRB9 D8CXD3D2 CPD0CVD3D6CXD8CWD1B8 CPD2CS D8CWCT D4D3CXD2D8 CXD7 D6CTD4D0CPCRCTCS CQDD D8CWCT D0D3CRCPD8CXD3D2 D3CU D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CPCUD8CTD6 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXD7 CXCSCTD2D8CXACCTCS B4CXBACTBAB8 D7D8CTD4 BECQ CXD7 CRD3D1D4D0CTD8CTCSB5BA D6 CBBND9 BP BD CYCBCY CG D8BECB D8CU D8BND9 CYD9CY A2D0D3CVB4 CYBWCY CSCU D8 B5B5 CYCBCY D8D3D8CPD0 D2D9D1CQCTD6 D3CU D8CTD6D1D7 CXD2 D7CTD2D8CTD2CRCT CB CYD9CY D8D3D8CPD0 D2D9D1CQCTD6 D3CU D8CTD6D1D7 CXD2 D8CTDCD8D9CPD0 D9D2CXD8 D9 D8CU D8BND9 CUD6CTD5D9CTD2CRDD D3CU D8CTD6D1 D8 CXD2 D8CTDCD8D9CPD0 D9D2CXD8 D9 CYBWCY D8D3D8CPD0 D2D9D1CQCTD6 D3CU ACDCCTCSB9DBCXCSD8CW B4BKBC DBD3D6CSD7B5 CQD0D3CRCZD7 CXD2 D8CWCT D7D3D9D6CRCT D8CTDCD8 CSCU D8 D8D3D8CPD0 D2D9D1CQCTD6 D3CU ACDCCTCSB9DBCXCSD8CW CQD0D3CRCZD7 DBCWCTD6CT D8CTD6D1 D8 CPD4D4CTCPD6D7 CCCWCT D9D7CT D3CU D8CWCXD7 CUD3D6D1D9D0CP DBCPD7 D4D6D3D4D3D7CTCS CPD7 CPD2 CTABCTCRD8CXDACT CPD2CS D7CXD1D4D0CT D1CTCPD7D9D6CT CUD3D6 D8CTD6D1 CXD1B9 D4D3D6D8CPD2CRCT CTD7D8CXD1CPD8CXD3D2 B4C6CPCZCPD3B8 BDBLBLBKB5 BI BA C1D8 CXD7 CP BI BTD2 CTDCD4CTD6CXD1CTD2D8 D6CTD4D3D6D8CTCS CXD2 B4C6CPCZCPD3B8 BDBLBLBKB5 CXD2CSCXB9 CCCPCQD0CT BEBM BXDCCPD1D4D0CT D3CU BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 CACTD0CTDACPD2CRCT CBCTD2D8CTD2CRCT CJD4CPD6D8CXCPD0D0DD D4D6CTD7CTD2D8CTCSCL C4D3CRCPD8CXD3D2 BUCPCRCZDBCPD6CS BYD3D6DBCPD6CS CACTD0CPD8CXDACT B4D8D6CPD2D7D0CPD8CXD3D2B5 C7BMCABM BDBDBDBEBE BC BCBABCBDBJ BCBABCBDBJ CJb  B8 BKBICL B4CJCHD3D7CWCXD1D9D6CP CTD8BA CPD0CLB5 BDBDBDBEBG BCBABCBEBD BCBABCBCBG B9BCBABCBDBJb a��BM AY�w� � � Z����AYB8�B8 D4D4BABFBFB9BGBCB8 BDBLBKBI B4CHD3D7CWCXD1D9D6CPB8 C3CTD2CYCX BABABA BM BTD9D8D3D1CPD8CXCR BXDCD8D6CPCRD8CXD3D2 CBDDD7D8CTD1 D3CU BABABAB5 BUBMCBBM BDBDBDBGBI BC BCBABCBDBI BCBABCBDBI BGBABGBAUg����B4CBCTCPD6CRCW BXD2CVCXD2CTB5 C4BMCBBM BDBDBDBGBK BCBABCBCBH BCBABCBEBE BCBABCBDBJ\\px� � $ �C����tSZ��mMoCb� { B4CCCWCXD7 D7CTCRD8CXD3D2 D6CTD4D3D6D8D7 D3D2 BABABA D3CU CXD2D8CTD0D0CXCVCTD2D8 CXD2CUD3D6D1CPD8CXD3D2 CPCRCRCTD7D7BAB5 BDBDBDBJBC BCBABCBDBC BCBABCBDBI BCBABCBCBI� &lt; w� �wCt� �b����xz�pK� { B4CCCWCT CZCTDD CXD7D7D9CT D3CU D8CWCT D6CTD4D3D6D8D7 CXD2 D8CWCT CUD3D0D0D3DBCXD2CV CRD0CPD9D7CTD7 CXD7 BABABA B5 D1D3CSCXACCTCS DACTD6D7CXD3D2 D3CU CTD2D8D6D3D4DDB8 DBCWCTD6CT CXD2CUD3D6D1CPB9 D8CXD3D2 CQCXD8 B4D0D3CV D4CPD6D8 D3CU D8CWCT CUD3D6D1D9D0CPB5 CXD7 CRCPD0CRD9B9 D0CPD8CTCS CQDD D6CTCSD9CRCXD2CV D8CWCT CTABCTCRD8 D3CU D8CTD6D1 D6CTD4CTD8CXB9 D8CXD3D2D7 CXD2 CP D7CWD3D6D8 D4CTD6CXD3CSBA CCCWCT D1D3CSCXACCRCPD8CXD3D2 DBCPD7 CSD3D2CT D8D3 CXD2CRD6CTCPD7CT D8CWCT D7CRD3D6CTD7 CUD3D6 CPD2 CXD1D4D3D6D8CPD2D8 D8CTD6D1 CWCXCVCWCTD6B8 CQCPD7CTCS D3D2 D8CWCT D6CTD4D3D6D8CTCS D3CQD7CTD6DACPB9 D8CXD3D2 D8CWCPD8 CRD3D2D8CTD2D8 CQCTCPD6CXD2CV DBD3D6CSD7 D8CTD2CS D8D3 D3CRCRD9D6 CXD2 CRD0D9D1D4D7 B4BUD3D3CZD7D8CTCXD2 CTD8 CPD0BAB8 BDBLBLBKB5BA BFBABEBABE BXDCCPD1D4D0CT D3CU BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 CCCPCQD0CT BE D7D9D1D1CPD6CXDECTD7 CPD2 CTDCCPD1D4D0CT D3CU CQD3D9D2CSB9 CPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 D3CU CP CCBUBVCB D0D3CRCPD8CTCS CYD9D7D8 CQCTCUD3D6CT D8CWCT BDBEB8BCBCBCD8CW DBD3D6CS CXD2 BYCXCVD9D6CT BEBA BXDAB9 CTD6DD D6D3DB CXD2 D8CWCT D8CPCQD0CT CTDCCRCTD4D8 D8CWCT ACD6D7D8 D6D3DBB8 DBCWCXCRCW CXD7 D1CPD6CZCTCS DBCXD8CW C7BMCABMB8 D7CWD3DBD7 CP CRCPD2CSCXCSCPD8CT D7CTD2B9 D8CTD2CRCTBA CCCWCT D6D3DBD1CPD6CZCTCS BUBMCBBM D7CWD3DBD7 CP CQD3D9D2CSB9 CPD6DD D7CTD2D8CTD2CRCTB8 DBCWCXCRCW CWCPD7 D4D3D7CXD8CXDACT D6CTD0CPD8CXDACT CUD3D6B9 DBCPD6CS D6CTD0CTDACPD2CRCT B4BCBABCBDBI CXD2 D8CWCT CUD3D9D6D8CW CRD3D0D9D1D2 D3CU D8CWCT D6D3DBB5 CPD2CS D8CWCT CVD6CTCPD8CTD7D8 CXD2CRD6CTD1CTD2D8 CUD6D3D1 D8CWCT D4D6CTDACXD3D9D7 DACPD0D9CT B4B9BCBABCBDBJB5BA CCCWCT D6D3DB D1CPD6CZCTCS C4BMCBBM D7CWD3DBD7 CP D0CTCPCS D7CTD2D8CTD2CRCTB8 DBCWCXCRCW CWCPD7 D8CWCT CVD6CTCPD8B9 CTD7D8 CUD3D6DBCPD6CS D6CTD0CTDACPD2CRCT B4BCBABCBEBE CXD2 D8CWCT D8CWCXD6CS CRD3D0B9 D9D1D2 D3CU D8CWCT D6D3DBB5 CPD1D3D2CV CPD0D0 D7CTD2D8CTD2CRCTD7 CPCUD8CTD6 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTBA BFBABEBABF BXDACPD0D9CPD8CXD3D2 D3CU BUD3D9D2CSCPD6DD C1CSCTD2D8CXACCRCPD8CXD3D2 CCCPCQD0CT BF D7CWD3DBD7 D6CTCRCPD0D0 CPD2CS D4D6CTCRCXD7CXD3D2 D6CPD8CTD7 D3CU D8CWCT CQD3D9D2CSCPD6DD CXCSCTD2D8CXACCRCPD8CXD3D2 CPD0CVD3D6CXD8CWD1 CXD2 D8CWCT D7CPD1CT CUD3D6D1CPD8 CPD7 CCCPCQD0CT BDBA BVD3D1D4CPD6CTCS DBCXD8CW D8CWCT D6CTD7D9D0D8D7 D3CQD8CPCXD2CTCS D9D7CXD2CV D8CWCT D4D6CTDACXD3D9D7 DACTD6D7CXD3D2 D3CU D8CWCT CPD0CVD3D6CXD8CWD1 B4C6CPCZCPD3B8 BDBLBLBLB5B8 CPD7 D7CWD3DBD2 CXD2 D8CWCT D1CXD2CXD1CPD0 CRD3CWCTD7CXD3D2 CRD3D0D9D1D2D7B8 D8CWCT D4D6D3D4D3D7CTCS CPD0B9 CVD3D6CXD8CWD1 CXCSCTD2D8CXACCTD7 D1D3D6CT CPCRCRD9D6CPD8CT CQD3D9D2CSCPD6CXCTD7 CRCPD8CTD7 D8CWCPD8 CWCTCPCSCXD2CV D8CTD6D1D7 B4CXBACTBAB8 D8CTD6D1D7 CPD4D4CTCPD6CTCS CXD2 CWCTCPCSB9 CXD2CVD7B5 CPD6CT CTABCTCRD8CXDACTD0DD CSCTD8CTCRD8CTCS CQDD D7CRD3D6CXD2CV D8CTD6D1D7 DBCXD8CW D8CWCT D4CPD6D8 D3CU D8CWCT CUD3D6D1D9D0CP CXD2 D8CWCT D7D9D1D1CPD8CXD3D2 D3D4CTD6CPD8D3D6BA B4D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CRD3D0D9D1D2D7B5BA C1D2 CPCSB9 CSCXD8CXD3D2B8 CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 DBCPD7 D7D9CRCRCTD7D7CUD9D0 CUD3D6 BJBHB1 D3CU D8CWCT CRD3D6D6CTCRD8 CCBUBVCBD7B8 D8CWCPD8 CXD7B8 CCBUBVCBD7 CXD2CRD0D9CSCXD2CV CRD3D6D6CTCRD8 CQD3D9D2CSCPD6CXCTD7 BJ B4D7CTCT D9D2CXACCTCSCCBUBVCBCXD2 CCCPCQD0CT BDB5BA CCCWD9D7B8 D8CWCT D4D6D3D4D3D7CTCS CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 CPD0CVD3D6CXD8CWD1 CXD7 CYD9CSCVCTCS D8D3 CQCT CTABCTCRD8CXDACTBA CCCPCQD0CT BF CPD0D7D3 D7D9D1D1CPD6CXDECTD7 CP CUCTCPD8D9D6CT D3CU D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 D8CWCPD8 CXD8 D8CTD2CSD7 D8D3 CSCTD8CTCRD8 CPD2CS CXCSCTD2D8CXCUDD CWCTCPCSCXD2CVD7 CPD7 CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 B4D8CWCT CWCTCPCSCXD2CV D6CPD8CT CRD3D0D9D1D2D7B5BA BYD3D6 D8CWCT D4CPD6D8 CRD3D6B9 D6CTD7D4D3D2CSCXD2CV D8D3 D0CPD6CVCTD6 D8CTDCD8D9CPD0 D9D2CXD8D7B8 DBCWCXCRCW D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 D1CPCXD2D0DD D9D7CTCSB8 D8CWCT ACCVD9D6CTD7 CXD2 D8CWCT D3DACTD6CPD0D0 CRD3D0D9D1D2D7 CXD2CSCXCRCPD8CT D8CWCPD8 CWCPD0CU D3CU CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 D3D6 D1D3D6CT CPD6CT CXCSCTD2D8CXCRCPD0 D8D3 CWCTCPCSCXD2CVD7 CXD2 D8CWCT D3D6CXCVCXD2CPD0 D8CTDCD8BN CPD2CS D8CWCT ACCVD9D6CTD7 CXD2 D8CWCT CXCSCTD2D8CXACCRCPD8CXD3D2 CRD3D0D9D1D2D7 CXD2CSCXCRCPD8CT D8CWCPD8 D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CXCSCTD2D8CXACCTD7 CWCTCPCSCXD2CVD7 CPD7 CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 CUD3D6 D1D3D6CT D8CWCPD2 BKBCB1 D3CU D8CWCT CRCPD7CT DBCWCTD6CT CCBUBVCBD7 CXD2CRD0D9CSCXD2CV CWCTCPCSCXD2CVD7BA BFBABF CBD9D1D1CPD6DD BVD3D2D7D8D6D9CRD8CXD3D2 C1D2 D8CWCT D8CWCXD6CS CPD2CS D0CPD7D8 D7D8CPCVCTB8 D8CWCT CPD0CVD3D6CXD8CWD1 D3D9D8D4D9D8D7 D8CWCT CQD3D9D2CSCPD6DD CPD2CS D0CTCPCS D7CTD2D8CTD2CRCTD7 D3CU CCBUBVCBD7 D3D2 CP D0CPDDCTD6 D8CWCPD8 D4D6D3CQCPCQD0DD CRD3D6D6CTD7D4D3D2CSD7 D8D3 D8D3D4CXCRD7 D3CU CPD4D4D6D3D4D6CXCPD8CT CVD6CPCSCXD2CVBA BUCPD7CTCS D3D2 D8CWCT D6CPD8CXD3 D3CU D7D3D9D6CRCT D8CTDCD8 D7CXDECT D8D3 CP CVCXDACTD2 D7D9D1D1CPD6DD D7CXDECTB8 D8CWCT CPD0CVD3D6CXD8CWD1 CRCWD3D3D7CTD7 CP D0CPDDCTD6 D8CWCPD8 CRD3D2B9 D8CPCXD2D7 CPD2 CPD4D4D6D3D4D6CXCPD8CT D2D9D1CQCTD6 D3CU CCBUBVCBD7B8 CPD2CS CVCTD2CTD6CPD8CTD7 CP D7D9D1D1CPD6DD DBCXD8CW D7D3D1CT CQD6CTCPCZD7 D8D3 CXD2B9 CSCXCRCPD8CT D8CWCTD1CPD8CXCR CRCWCPD2CVCTD7BA BYD3D6 CTDCCPD1D4D0CTB8 D8D3 CVCTD2CTD6CPD8CT CP BDB8BCBCBCB9CRCWCPD6CPCRD8CTD6 D7D9D1D1CPD6DD CRD3D2D7CXD7D8CXD2CV D3CU D7CTDACTD6CPD0 D4CPD6D8D7 D3CU CPD4B9 D4D6D3DCCXD1CPD8CTD0DD BEBCBC CRCWCPD6CPCRD8CTD6D7 CUD3D6 CTCPCRCW D8D3D4CXCRB8 CP D8CTDCD8 CSCTCRD3D1D4D3D7CXD8CXD3D2 CRD3D2D7CXD7D8CXD2CV D3CU ACDACT D8CTDCD8D9CPD0 BJ BYD3D6 D8CWCT CRD3D6D6CTCRD8 CCBUBVCBD7B8 D8CWCT CPDACTD6CPCVCT D2D9D1CQCTD6 D3CU CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CRCPD2CSCXCSCPD8CTD7 CXD7 BGBABGBA D9D2CXD8D7 CXD7 CPD4D4D6D3D4D6CXCPD8CT CUD3D6 D7D9D1D1CPD6CXDECPD8CXD3D2BA CBCXD2CRCT D8CWCT D7CPD1D4D0CT D8CTDCD8 D9D7CTCS CWCTD6CT DBCPD7 CSCTCRD3D1D4D3D7CTCS CXD2D8D3 ACDACT D8CTDCD8D9CPD0 D9D2CXD8D7 D3D2 D8CWCT BUB4BEB5 D0CPDDCTD6 B4D7CTCT BYCXCVD9D6CT BEB5B8 CXD8 D3D9D8D4D9D8D7 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 CPD2CS D0CTCPCS D7CTD2D8CTD2CRCTD7 D3CU CPD0D0 CCBUBVCBD7 CXD2 BUB4BEB5BA BG BWCXD7CRD9D7D7CXD3D2 BYCXCVD9D6CT BH D7CWD3DBD7 CP D3D2CTB9D4CPCVCT D7D9D1D1CPD6DD D3CU CP D8CTCRCWB9 D2CXCRCPD0 D7D9D6DACTDD D6CTD4D3D6D8B8 DBCWCTD6CT B4CPB5 CXD7 CP D4CPD6D8 D3CU D8CWCT D7D9D1D1CPD6DD CPD9D8D3D1CPD8CXCRCPD0D0DD CVCTD2CTD6CPD8CTCSB8 CPD2CS B4CQB5 CXD7 CXD8D7 D8D6CPD2D7D0CPD8CXD3D2BA C1D8 CRD3D6D6CTD7D4D3D2CSD7 D8D3 D8CWCT D4CPD6D8 D3CU D8CWCT D7D3D9D6CRCT D8CTDCD8 CQCTD8DBCTCTD2 BUB4BDB5CJBDCL CPD2CS BUB4BDB5CJBECL B4CXD2 BYCXCVD9D6CT BEB5BA C1D8 CXD7 CRD3D1D4D3D7CTCS D3CU D8CWD6CTCT D4CPD6D8D7 CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 BUB4BEB5CJBDCLB8 BUB4BEB5CJBECLB8 CPD2CS BUB4BFB5CJBICLBA BXCPCRCW D4CPD6D8 CRD3D2D7CXD7D8D7 D3CU CP CQD3D9D2CSCPD6DDD7CTD2B9 D8CTD2CRCTB8 D4D6CTD7CTD2D8CTCS CPD7 CP CWCTCPCSCXD2CVB8 CUD3D0D0D3DBCTCS CQDD CP D0CTCPCS D7CTD2D8CTD2CRCTBA C1D2 CRD3D1D4CPD6CXD7D3D2 DBCXD8CW D8CWCT CZCTDDDBD3D6CSB9CQCPD7CTCS D7D9D1D1CPD6DD D7CWD3DBD2 CXD2 BYCXCVD9D6CT BGB8 CVCTD2CTD6CPD8CTCS CXD2 D8CWCT D4D6D3CRCTD7D7 CSCTD7CRD6CXCQCTCS CXD2 CBCTCRD8CXD3D2 BEB8 D8CWCT D3D2CTB9D4CPCVCT D7D9D1D1CPD6DD CVCXDACTD7 CP CVD3D3CS CXD1D4D6CTD7D7CXD3D2 CPD7 CQCTCXD2CV CTCPD7DD D8D3 D9D2CSCTD6D7D8CPD2CSBA C1D2 CUCPCRD8B8 DBCWCTD2 DBCT CXD2B9 CUD3D6D1CPD0D0DD CPD7CZCTCS D1D3D6CT D8CWCPD2 ACDACT CRD3D0D0CTCPCVD9CTD7 D8D3 D7D8CPD8CT D8CWCTCXD6 CXD1D4D6CTD7D7CXD3D2 D3CU D8CWCTD7CT D7D9D1D1CPD6CXCTD7B8 D8CWCTDD CPCVD6CTCTCS DBCXD8CW D8CWCXD7 D4D3CXD2D8BA BTD7 CSCTD7CRD6CXCQCTCS CXD2 CBCTCRD8CXD3D2 BEB8 D3D2CT D3CU D8CWCT D6CTCPD7D3D2D7 CUD3D6 D8CWCT CVD3D3CS CXD1D4D6CTD7D7CXD3D2 D7CWD3D9D0CS CQCT D8CWCT CSCXABCTD6CTD2CRCT CXD2 CRD3CWCTD6B9 CTD2CRCTBA CCCWCT D6CTD0CPD8CXD3D2D7CWCXD4 CPD1D3D2CV D7CTD2D8CTD2CRCTD7 CXD2 D8CWCT CZCTDDDBD3D6CSB9CQCPD7CTCS D7D9D1D1CPD6DD CXD7 D2D3D8 CRD0CTCPD6BN CRD3D2B9 DACTD6D7CTD0DDB8 D8CWCT D7CTCRD3D2CS D7CTD2D8CTD2CRCT D3CU D8CWCT D3D2CTB9D4CPCVCT D7D9D1D1CPD6DD CXD2D8D6D3CSD9CRCTD7 D8CWCT D3D9D8D0CXD2CT D3CU D8CWCT CRD0CPD9D7CTB8 CPD2CS CXD8 CXD7 CRD0D3D7CTD0DD D6CTD0CPD8CTCS D8D3 D8CWCT D7CTD2D8CTD2CRCTD7 D8CWCPD8 CUD3D0D0D3DB CXD8BA CCCWCT CUCPCRD8 D8CWCPD8 D8CWCT D3D2CTB9D4CPCVCT D7D9D1B9 D1CPD6DD D4D6D3DACXCSCTD7 CPD8 D0CTCPD7D8 D8DBD3 D7CTD2D8CTD2CRCTD7B8 CXD2CRD0D9CSB9 CXD2CV CP CWCTCPCSCXD2CVB8 CUD3D6 CTCPCRCW D8D3D4CXCR CXD7 CPD0D7D3 CRD3D2D7CXCSCTD6CTCS D8D3 D1CPCZCT CRD3CWCTD6CTD2CRCT D7D8D6D3D2CVBA BTD7 D7CWD3DBD2 CXD2 CCCPCQD0CT BFB8 D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3B9 D6CXD8CWD1 CXD7 CTDCD4CTCRD8CTCS D8D3 CTDCD8D6CPCRD8 CWCTCPCSCXD2CVD7 CTABCTCRB9 D8CXDACTD0DDBA C0D3DBCTDACTD6B8 D8CWCTD6CT CXD7 CP D4D6D3CQD0CTD1 D8CWCPD8 CSCTB9 D8CTCRD8CTCS CWCTCPCSCXD2CVD7 CSD3 D2D3D8 CPD0DBCPDDD7 CRD3D6D6CTD7D4D3D2CS D8D3 D8D3D4CXCRD7 D3CU CPD4D4D6D3D4D6CXCPD8CT CVD6CPCSCXD2CVBA BYD3D6 CTDCCPD1D4D0CTB8 D8CWCT D7CTCRD3D2CS CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXD2 D8CWCT CTDCCPD1B9 D4D0CT CXD7 D2D3D8 CPD4D4D6D3D4D6CXCPD8CT CQCTCRCPD9D7CT CXD8 CXD7 CP CWCTCPCSCXD2CV D3CU CP D7D9CQCRD0CPD9D7CT D1D9CRCW D7D1CPD0D0CTD6 D8CWCPD2 D8CWCT DBCXD2CSD3DB DBCXCSD8CW CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 BUB4BEB5CJBECLB8 CPD2CS CXD8D7 D4D6CTB9 DACXD3D9D7 D7CTD2D8CTD2CRCT CKBGBABFBABE CCCTCRCWD2CXCRCPD0 CCD6CTD2CS D3CU C1CA CCCTCRCWD2CXD5D9CTD7AY CXD7 D1D3D6CT CPD4D4D6D3D4D6CXCPD8CT D3D2CTBA CCCWCXD7 CTDCCPD1D4D0CT CXD7 CPD0D7D3 D6CTD0CPD8CTCS D8D3 CPD2D3D8CWCTD6 D0CXD1B9 CXD8CPD8CXD3D2 D3CU D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1BA CBCXD2CRCT D8CWCTD6CT CXD7 D2D3 D3D9D8D0CXD2CT CSCTD7CRD6CXD4D8CXD3D2 CXD2 D8CWCT D7D9CQD7CTD5D9CTD2D8 D4CPD6D8 D3CU D8CWCT CWCTCPCSCXD2CV D3CU CRD0CPD9D7CT BGBABFBABEB8 D8CWCT D4D6D3B9 D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CRD3D9D0CS D2D3D8 CVCTD2CTD6CPD8CT CP CRD3CWCTD6B9 CTD2D8 CTDCD8D6CPCRD8 CXCU CXD8 CWCPCS CXCSCTD2D8CXACCTCS D8CWCT CWCTCPCSCXD2CV CPD7 CP CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTBA C1D8 CXD7 CP CUD9D8D9D6CT CXD7D7D9CT D8D3 CSCTDACTD0D3D4 D1D3D6CT CTD0CPCQB9 D3D6CPD8CTCS CPD0CVD3D6CXD8CWD1 CUD3D6 D7D9D1D1CPD6CXDECXD2CV CSCTD8CTCRD8CTCS D8D3D4CXCRD7 CTD7D4CTCRCXCPD0D0DD CUD3D6 D8CWCT D9D7CTD6 DBCWD3 DBCPD2D8D7 D6CXCRCWCTD6 CXD2CUD3D6D1CPD8CXD3D2 D8CWCPD2 D8CWCPD8 CRCPD2 CQCT D4D6D3DACXCSCTCS CXD2 CP CTDCD8D6CPCRD8 CRD3D2D7CXD7D8CXD2CV D3CU D8DBD3 D3D6 D8CWD6CTCT D7CTD2D8CTD2CRCTD7BA BH BVD3D2CRD0D9D7CXD3D2 CCCWCXD7 D4CPD4CTD6 CWCPD7 D4D6D3D4D3D7CTCS CPD2 CPD0CVD3D6CXD8CWD1 CUD3D6 D3D2CTB9 D4CPCVCT D7D9D1D1CPD6CXDECPD8CXD3D2 D8D3 CWCTD0D4 CP D9D7CTD6 D7CZCXD1 CP D0D3D2CV D8CTDCD8BA C1D8 CWCPD7 D1CPCXD2D0DD CSCTD7CRD6CXCQCTCS CPD2CS D6CTB9 D4D3D6D8CTCS D8CWCT CTABCTCRD8CXDACTD2CTD7D7 D3CU D8CWCT CQD3D9D2CSCPD6DD D7CTD2B9 D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 D4CPD6D8 D3CU D8CWCT CPD0CVD3D6CXD8CWD1BA C1D8 CWCPD7 CPD0D7D3 CSCXD7CRD9D7D7CTCS D8CWCT D6CTCPCSCPCQCXD0CXD8DD D3CU D3D2CTB9D4CPCVCT D7D9D1D1CPD6CXCTD7BA CCCWCT CTABCTCRD8CXDACTD2CTD7D7 D3CU D7D8D6D9CRD8D9D6CTCS D7D9D1D1CPD6CXCTD7 D9D7CXD2CV D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDDCXD7CPD2 CXD7D7D9CT CUD3D6 CUD9D8D9D6CT CTDACPD0D9CPD8CXD3D2BA CACTCUCTD6CTD2CRCTD7 BTBA BUD3D3CZD7D8CTCXD2B8 CBBA CCBA C3D0CTCXD2B8 CPD2CS CCBA CACPCXD8CPBA BDBLBLBKBA BVD0D9D1D4CXD2CV D4D6D3D4CTD6D8CXCTD7 D3CU CRD3D2D8CTD2D8B9CQCTCPD6CXD2CV DBD3D6CSD7BA C2D3D9D6D2CPD0 D3CU D8CWCT BTD1CTD6CXCRCPD2 CBD3CRCXCTD8DD CUD3D6 C1D2CUD3D6D1CPB9 D8CXD3D2 CBCRCXCTD2CRCTB8 BGBLB4BEB5BMBDBCBEDFBDBDBGBA C5CXCRCWCPCTD0 BTBAC3BA C0CPD0CXCSCPDD CPD2CS CAD9D5CPCXDDCP C0CPD7CPD2BA BDBLBJBIBA BVD3CWCTD7CXD3D2 CXD2 BXD2CVD0CXD7CWBA C4D3D2CVD1CPD2B8 C4D3D2CSD3D2BA C5CPD6D8CX BTBA C0CTCPD6D7D8BA BDBLBLBGBA C5D9D0D8CXB9D4CPD6CPCVD6CPD4CW D7CTCVD1CTD2B9 D8CPD8CXD3D2 D3CU CTDCD4D3D7CXD8D3D6DD D8CTDCD8BA C1D2 C8D6D3CRBA D3CU D8CWCT BFBED2CS BTD2D2D9CPD0 C5CTCTD8CXD2CV D3CU BTD7D7D3CRCXCPD8CXD3D2 CUD3D6 BVD3D1D4D9D8CPB9 D8CXD3D2CPD0 C4CXD2CVD9CXD7D8CXCRD7B8 D4CPCVCTD7 BLDFBDBIBA CHD3D7CWCXD3 C6CPCZCPD3BA BDBLBLBKBA BTD9D8D3D1CPD8CXCR CZCTDDDBD3D6CS CTDCD8D6CPCRB9 D8CXD3D2 CQCPD7CTCS D3D2 D8CWCT D8D3D4CXCR D7D8D6D9CRD8D9D6CT D3CU CP D8CTDCD8BA C1C8CBC2 CBC1BZ C6D3D8CTD7 BYC1B9BHBCB9BDBA B4CXD2 C2CPD4CPD2CTD7CTB5BA CHD3D7CWCXD3 C6CPCZCPD3BA BDBLBLBLBA CCCWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD CSCTD8CTCRB9 D8CXD3D2 D3CU CP D8CTDCD8 D9D7CXD2CV D0CTDCCXCRCPD0 CRD3CWCTD7CXD3D2BA C2D3D9D6D2CPD0 D3CU D8CWCT BTD7D7D3CRCXCPD8CXD3D2 CUD3D6 C6CPD8D9D6CPD0 C4CPD2CVD9CPCVCT C8D6D3CRCTD7D7B9 CXD2CVB8 BIB4BIB5BMBKBFDFBDBDBEBA B4CXD2 C2CPD4CPD2CTD7CTB5BA BZCTD6CPD6CS CBCPD0D8D3D2B8 BTD1CXD8 CBCXD2CVCWCPD0B8 BVCWD6CXD7 BUD9CRCZD0CTDDB8 CPD2CS C5CPD2CSCPD6 C5CXD8D6CPBA BDBLBLBIBA BTD9D8D3D1CPD8CXCR D8CTDCD8 CSCTCRD3D1B9 D4D3D7CXD8CXD3D2 D9D7CXD2CV D8CTDCD8 D7CTCVD1CTD2D8D7 CPD2CS D8CTDCD8 D8CWCTD1CTD7BA C1D2 C8D6D3CRBA D3CU C0DDD4CTD6D8CTDCD8 B3BLBIB8 D4CPCVCTD7 BHBFDFBIBHBA D8CWCT BTD7B9 D7D3CRCXCPD8CXD3D2 CUD3D6 BVD3D1D4D9D8CXD2CV C5CPCRCWCXD2CTD6DDBA CHCPCPCZD3DACHCPCPD6CXBA BDBLBLBKBA CCCTDCD4D0D3D6CT DF CTDCD4D0D3D6CXD2CV CTDCD4D3D7B9 CXD8D3D6DD D8CTDCD8D7 DACXCP CWCXCTD6CPD6CRCWCXCRCPD0 D6CTD4D6CTD7CTD2D8CPD8CXD3D2BA C1D2 C8D6D3CRBA D3CU BVCEC1BY B3BLBKB8 D4CPCVCTD7 BEBHDFBFBDBA BTD7D7D3CRCXCPD8CXD3D2 CUD3D6 BVD3D1D4D9D8CPD8CXD3D2CPD0 C4CXD2CVD9CXD7D8CXCRD7BA CCCPCQD0CT BFBM BXDACPD0D9CPD8CXD3D2 D3CU BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 CFCXD2CSD3DB BUD3D9D2CSCPD6DD AZ C5CXD2CXD1CPD0 CRD3CWCTD7CXD3D2 BUD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT C0CTCPCSCXD2CV D6CPD8CT DBCXCSD8CW CRD3D6BA D6CTD7BA CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 C7DACTD6CPD0D0 C1CSCTD2D8CXACCRCPD8CXD3D2 BHBDBEBC BD BE BC B4BCBABDB5 BC B4BABCBHB5 BDBCBC B4BCBABDB5 BHBC B4BABCBHB5 BDBCBC B4BIBABIB5 BDBCBC B4BEBLB5 BEBHBIBC BE BG BC B4BCBABEB5 BC B4BCBABDB5 BDBCBC B4BCBABEB5 BHBC B4BABCBHB5 BDBCBC B4BIBABIB5 BDBCBC B4BEBLB5 BDBEBKBC BF BDBC BFBF B4BCBABHB5 BDBC B4BCBABEB5 BIBJ B4BCBABHB5 BEBC B4BCBABEB5 BKBC B4BIBABIB5 BKBC B4BFBCB5 BIBGBC BFBC BGBE BEBJ B4BDBABCB5 BDBL B4BCBABJB5 BGBJ B4BDBABCB5 BFBF B4BCBABJB5 BIBJ B4BIBABFB5 BKBK B4BFBGB5 BFBEBC BDBDBG BDBIBF BEBI B4BDBABKB5 BDBK B4BDBABFB5 BGBC B4BDBABKB5 BEBK B4BDBABFB5 BHBG B4BHBABCB5 BKBE B4BFBDB5 BDBIBC BDBKBG BFBIBH BEBK B4BFBABHB5 BDBG B4BDBABKB5 BGBF B4BFBABHB5 BEBE B4BDBABKB5 BFBJ B4BGBABKB5 BJBJ B4BEBKB5 BKBC BFBEBE BKBDBF BEBL B4BJBABKB5 BDBE B4BFBABDB5 BGBH B4BJBABKB5 BDBK B4BFBABDB5 BEBF B4BGBABKB5 BJBC B4BEBIB5 BGBC BGBCBF BDBIBKBD BFBJ B4BDBJB5 BL B4BFBABLB5 BGBI B4BDBIB5 BDBD B4BFBABLB5 BDBE B4BGBABKB5 BHBK B4BEBIB5 CCCWCT ACCVD9D6CTD7 CXD2 D4CPD6CTD2D8CWCTD7CTD7 CPD6CT D8CWCT CQCPD7CTD0CXD2CT D6CPD8CTD7BA BGBABF������ �wUg���� ��hUg ^ S����h�tz� � S�xUgw 0 � q`sMz�����_ Z`t����t O��mZ �zsrw� �Us^�oM� { ��hzUg����U ) B`h��� : Ur Gts� tm�oz��� : �r GtsloVhh�zby�X �As �C� sbh�tz���T��bM� � ��^ RU [ U �Aqs� { � �D8CU~CXCSCUM�qxz o�t ��^�h �w� o�w OA S�zfw o�U { �t Zqb� � SD8CUqzfw o��� { U { B� �t Zqb� � Swo : CXCSCUw ut�lofw o�w OA^� : �=b� OpK� { �CJO�B8 BLBECLwZ������w�� � � �T���� ���w ��t 0b� � : �-�b� ��tz���� �� { T� ���� � � $ s��� � : tCQ� Op K� { � DDCP D4CPD6D8 D3CU CP D7D9D1D1CPD6DD CRD3D2CSCTD2D7CTCS D8D3 BDBABFB1 D3CU D8CWCT D7D3D9D6CRCT D8CTDCD8 B4CPB5 C7D6CXCVCXD2CPD0 BGBABF C1D2D8CTD6D2CTD8 CBCTD6DACXCRCTD7 BABABA CCCWCTDD CPD6CT CPD0D7D3 CTD2CWCPD2CRCTCS DBCXD8CW D7D3D1CT D8CTCRCWD2CXD5D9CTD7B8 D7D9CRCWCPD7CTD0CXD1CXD2CPD8CXD2CV CWCXCVCW CUD6CTD5D9CTD2CRDD DBD3D6CSD7B8 DBCTCXCVCWCXD2CV CP D8CTD6D1 CXD2 CSD3CRD9D1CTD2D8 D8CXD8D0CTD7 CPD2CS CWCTCPCSCXD2CVD7B8 CTD8CRBAB8 D8D3 CPCRCWCXCTDACT CWCXCVCW D4D6CTCRCXD7CXD3D2BA BABABA BABABA C1D2 CPCSCSCXD8CXD3D2B8 D7CXD2CRCT D8CWCT CVD6CTCPD8D0DD CXD2CRD6CTCPD7CXD2CV CPD1D3D9D2D8D3CU D4CPCVCTD7 D4D6D3DACXCSCTCS CQDDCPD2C1D2D8CTD6D2CTD8 D7CTD6DACXCRCT CRCPD9D7CTD7 CP CVD6CTCPD8 CXD2CRD6CTCPD7CT D3CU CPDACTD6CPCVCT CWCXD8 D2D9D1CQCTD6 CUD3D6 CP D5D9CTD6DDB8 D1D3D6CT CTABCTCRD8CXDACT CPD9D8D3D1CPD8CXCR D8CTDCD8 D7D9D1D1CPD6CXDECPD8CXD3D2 D8CTCRCWD2CXD5D9CT CXD7 D6CTD5D9CXD6CTCS CUD3D6 CWCTD0D4CXD2CV CP D9D7CTD6 D8D3 ACD2CS D3D9D8 D6CTD5D9CXD6CTCS CXD2CUD3D6D1CPD8CXD3D2 D5D9CXCRCZD0DDBA BABABA BABABA CCCUA1CXCSCU D1CTD8CWD3CS DBCTCXCVCWD7 CP D8CTD6D1 CXD2 CP CSD3CRD9D1CTD2D8 DBCXD8CW CP D4D6D3CSD9CRD8 D3CU D8CWCT D8CTD6D1 CUD6CTD5D9CTD2CRDD B4D8CUB5 CXD2 CP CSD3CRD9D1CTD2D8 CPD2CS CXD2DACTD6D7CT CSD3CRD9D1CTD2D8 CUD6CTD5D9CTD2CRDD B4CXCSCUB5B8 CXBACTBAB8 CXD2DACTD6D7CT D3CU D8CWCT D2D9D1CQCTD6 D3CU CSD3CRD9D1CTD2D8 D8CWCPD8 D8CWCT D8CTD6D1 CPD4D4CTCPD6D7BA BABABA BABABA CJC3CPDBCPCXB8 BLBECL BT CSD3CRD9D1CTD2D8 CRD0CPD7D7CXACCRCPD8CXD3D2 D1CTD8CWD3CS CRCPD0B9 CRD9D0CPD8CTD7 CP D7CRD3D6CT CQCPD7CTCS D3D2 AV BE DACPD0D9CTD7 D3CU D2D3D8 D3D2D0DD CZCTDDDBD3D6CS CUD6CTD5D9CTD2CRCXCTD7 CQD9D8 CPD0D7D3 D7CTD1CPD2D8CXCR CUD6CTD5D9CTD2CRCXCTD7 CRD3D6D6CTD7D4D3D2CSB9 CXD2CV D8D3 D3CRCRD9D6D6CTD2CRCTD7 D3CU CPCQD7D8D6CPCRD8CTCS D7CTD1CPD2D8CXCR CRCPD8CTCVD3D6DD CXD2 D8CPD6CVCTD8 CSCXDACXD7CXD3D2D7BA BABABA B4CQB5 CCD6CPD2D7D0CPD8CXD3D2 BYCXCVD9D6CT BGBM BXDCCPD1D4D0CT D3CU C3CTDDDBD3D6CSB9CQCPD7CTCS CBD9D1B9 D1CPD6DD B4D4CPD6D8CXCPD0D0DD D4D6CTD7CTD2D8CTCSB5 ������ �wUg����CJBGBABF� �CL � �pxzCFCFCF �wUg����q</sentence>
+				<definiendum id="0">4.2.1 ) ( 4.2.2 ) ( ref ) ( 4.3 ) ( 4.3.1 ) ( 4.3.2 ) ( 4.3.3 )</definiendum>
+				<definiens id="0">minimal FC minimal BC moving average range EP FC &lt; BC FC &gt; BC C FC BC TBCS Section Boundary BYCXCVD9D6CT BDBM BXDCCPD1D4D0CT D3CU CCBUBVCB BWCTD8CTCRD8CXD3D2 D8CWCT D6CTCUCTD6CTD2CRCT D4D3CXD2D8 D3CU D8CWCT ACD6D7D8 CPDACTD6CPCVCTCS D7CRD3D6CTB8 CPD2CS BUBV CXD7B8 BUCPCRCZDBCPD6CS BVD3CWCTD7CXD3D2B8 CP D7CTD6CXCTD7 D3CU CPDACTD6CPCVCTCS DACPD0D9CTD7 D4D0D3D8D8CTCS CPD8 D8CWCT D6CTCUCTD6CTD2CRCT D4D3CXD2D8 D3CU D8CWCT D0CPD7D8 CPDACTD6CPCVCTCS D7CRD3D6CTBA CBCXD2CRCT D8CWCT D8CTDCD8D9CPD0 CPD6CTCP CYD9D7D8 CQCTCUD3D6CT D8CWCT D4D3CXD2D8 CPD8 DBCWCXCRCW BYBVD4D0D3D8D8CTCS CXD7 CPD0DBCPDDD7 CXD2 D8CWCT D0CTCUD8 DBCXD2CSD3DB DBCWCTD2 D3D2CT D3CU D8CWCT CPDACTD6CPCVCTCS CRD3CWCTD7CXD3D2 D7CRD3D6CTD7 CXD7 CRCPD0CRD9D0CPD8CTCSB8 BYBVCXD2B9 CSCXCRCPD8CTD7 D8CWCT D7D8D6CTD2CVD8CW D3CU CUD3D6DBCPD6CS B4D0CTCUD8B9D8D3B9D6CXCVCWD8B5 CRD3CWCTD7CXD3D2 CPD8 CP D4D3CXD2D8BA BVD3D2DACTD6D7CTD0DDB8 BUBV CXD2CSCXCRCPD8CTD7 D8CWCT D7D8D6CTD2CVD8CW D3CU CQCPCRCZDBCPD6CS CRD3CWCTD7CXD3D2 CPD8 CP D4D3CXD2D8BA C1D2 D8CWCT ACCVD9D6CTB8 BXC8 CXD7B8 BXD5D9CXD0CXCQD6CXD9D1 C8D3CXD2D8B8 D8CWCT D4D3CXD2D8 CPD8 DBCWCXCRCW BYBV CPD2CS BUBV CWCPDACT CPD2 CXCSCTD2D8CXB9 CRCPD0 DACPD0D9CTBA CCCWCT CPD0CVD3D6CXD8CWD1 CRCWCTCRCZD7 CUD3D6 BYBV CPD2CS BUBV D7D8CPD6D8CXD2CV CUD6D3D1 D8CWCT CQCTCVCXD2D2CXD2CV D8CXD0D0 D8CWCT CTD2CS D3CU D8CWCT D7D3D9D6CRCT D8CTDCD8BN CPD2CS CXD8</definiens>
+				<definiens id="1">TBCS Section Boundary BYCXCVD9D6CT BEBM BXDCCPD1D4D0CT D3CU CCCWCTD1CPD8CXCR C0CXCTD6CPD6CRCWDD BYD3D6 CP D7CPD1D4D0CT D8CTDCD8B8 BYCXCVD9D6CT BE D7CWD3DBD7 D8CWCT D6CTB9 D7D9D0D8CXD2CV D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD D8CWCPD8 DBCPD7 CSCTD8CTCRD8CTCS CCCPCQD0CT BDBM BTCRCRD9D6CPCRDD D3CU CCCWCTD1CPD8CXCR C0CXCTD6CPD6CRCWDD BWCTD8CTCRD8CXD3D2 CFCXD2CSD3DB BUD3D9D2CSCPD6DD AZ C7D6CXCVCXD2CPD0 CCBUBVCB CDD2CXACCTCS CCBUBVCB DBCXCSD8CW CRD3D6BA D6CTD7BA CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 BHBDBEBC BD BE BDBCBC B4BEBEB5 BHBC</definiens>
+				<definiens id="2">CTCPCRCWD3CUDBCWCXCRCW CRD3D2D7CXD7D8D7 D3CU BG D8D3 BEBG CPD6D8CXCRD0CTD7 CRD3D2D8CPCXD2CXD2CV CPCQD3D9D8 BGBCBC DBD3D6CSD7BN CPD2CS D8DBCTD0DACT CTCRD3D2D3D1CXCR D6CTD7CTCPD6CRCW D6CTD4D3D6D8D7 BG B8 CTCPCRCW D3CU DBCWCXCRCW CRD3D2D7CXD7D8D7 D3CU CPCQD3D9D8 D8CTD2 CPD6D8CXCRD0CTD7 CRD3D2B9 D8CPCXD2CXD2CV BFBF D8D3 BEB8BFBJBH DBD3D6CSD7BA C1D2 D8CWCT D8CPCQD0CTB8 CRD3D6BA CSCTD2D3D8CTD7 D8CWCT D2D9D1CQCTD6 D3CU D8CWCT CRD3D6D6CTCRD8 CSCPD8CP DACPD0D9CTD7 CRD3D1D4D3D7CTCS D3CU D8CWCT D7D8CPD6D8CXD2CV D4D3CXD2D8D7 D3CU D7CTCRD8CXD3D2D7 D8CWCPD8 CRD3D2D8CPCXD2 D8CWCT D7CPD1CT D2D9D1B9 CQCTD6 D3CU DBD3D6CSD7 D3D6 D1D3D6CT D8CWCPD2 D8CWCT DBCXD2CSD3DB DBCXCSD8CW D0CXD7D8CTCS CXD2 D8CWCT D7CPD1CT D6D3DB BH BA C1D2 CPCSCSCXD8CXD3D2B8 D6CTD7BA CSCTB9 D2D3D8CTD7 D8CWCT D2D9D1CQCTD6 D3CU CCBUBVCBD7BA CCCWCT D3D6CXCVCXD2CPD0 CCBUBVCB CRD3D0D9D1D2D7 D0CXD7D8 D8CWCT D6CTCRCPD0D0 CPD2CS D4D6CTCRCXD7CXD3D2 D6CPD8CTD7 D3CU CSCTD8CTCRD8CTCS CCBUBVCBD7 CQCTCUD3D6CT CCBUBVCB D9D2CXACCRCPB9 D8CXD3D2B8 CPD2CS D8CWCT D9D2CXACCTCS CCBUBVCB CRD3D0D9D1D2D7 D0CXD7D8 D8CWD3D7CT D6CPD8CTD7 CPCUD8CTD6 CCBUBVCB D9D2CXACCRCPD8CXD3D2BA C7D2 CTCPCRCW D0CPDDCTD6B8 D8CWCT DBCXCSD8CW D3CU CRCPD2CSCXCSCPD8CT D7CTCRD8CXD3D2D7 CUD3D6 D3D6CXCVCXD2CPD0 CCBUBVCB CXD7 CPCQD3D9D8 CWCPD0CU D3CU D8CWCT DBCXD2CSD3DB DBCXCSD8CWBN CPD2CS D8CWCPD8 D3CU D9D2CXACCTCS CCBUBVCB CXD7 BEBH DBD3D6CSD7 B4CPCQD3D9D8 CWCPD0CU D3CU D8CWCT D1CXD2CXD1D9D1 DBCXD2CSD3DB DBCXCSD8CWB5BA CCCWCT ACCVD9D6CTD7 D7CWD3DBD2 CXD2 D4CPD6CTD2D8CWCTD7CTD7 CPD6CT D8CWCT CQCPD7CTD0CXD2CT D6CPD8CTD7 CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 D6CPD2CSD3D1 D7CTD0CTCRD8CXD3D2BA CCCWCPD8 CXD7B8 D4CPD6D8D7 CPD6CT D6CPD2CSD3D1D0DD D7CTD0CTCRD8CTCS CUD6D3D1 D8CWCT D7D3D9D6CRCT D8CTDCD8 DBCWD3D7CT D8D3D8CPD0 D7CXDECT CXD7 CTD5D9CPD0 D8D3 D8CWCT D8D3D8CPD0 CPD6CTCP D7CXDECT D3CU CCBUBVCBD7BA BTD7 D8CWCT CQD3D9D2CSCPD6DD ACCVD9D6CTD7 CXD2CSCXCRCPD8CTB8 D8CWCT D4D6D3B9 D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CSCTCRD3D1D4D3D7CTD7 CP D8CTDCD8 CXD2D8D3 D8CTDCB9 D8D9CPD0 D9D2CXD8D7 D3CU CPCQD3D9D8 CTD5D9CXDACPD0CTD2D8 DBCXD2CSD3DB DBCXCSD8CWD7BA C1D2 CPCSCSCXD8CXD3D2B8 D8CWCT D6CPD8CTD7 D3CU CSCTD8CTCRD8CTCS CCBUBVCBD7 CPD6CT CRD0CTCPD6D0DD D0CPD6CVCTD6 D8CWCPD2 D8CWCTCXD6 CQCPD7CTD0CXD2CTD7BA BYD9D6D8CWCTD6B9 BF C7CQD8CPCXD2CTCS CUD6D3D1 D8CWCT BWCPCXD0DD CHD3D1CXD9D6CX C7D2B9D0CXD2CT B4CWD8D8D4BMBBBBDBDBDBBADDD3D1CXD9D6CXBACRD3BACYD4BBB5BA BG C5D3D2D8CWD0DD D6CTD4D3D6D8D7 DBD6CXD8D8CTD2 CUD3D6 CP C2CPD4CPD2CTD7CT CRD3D1D4CPD2DD CQDD CP C2CPD4CPD2CTD7CT D4D6D3CUCTD7D7D3D6 D0CXDACXD2CV CXD2 D8CWCT CDBACBBABTBA BH C7D2D0DD CWCTCPCSCXD2CVD7 CPD2CS CXD2D8CTD2D8CXD3D2CPD0 CQD6CTCPCZD7B8 D7D9CRCW CPD7 D7DDD1CQD3D0 D0CXD2CTD7 CXD2D7CTD6D8CTCS D8D3 D7CTD4CPD6CPD8CT CP D4D6D3D0D3CVD9CT D3D6 CTD4CXB9 D0D3CVD9CT CUD6D3D1 CP D1CPCXD2 CQD3CSDDB8CPD6CTD9D7CTCS CPD7 CRD3D6D6CTCRD8 CQD3D9D2CSB9 CPD6CXCTD7BA BTD7 CP D6CTD7D9D0D8B8 D8CWCT D4D6CTCRCXD7CXD3D2 D6CPD8CTD7 D3CU D9D7CXD2CV D7D1CPD0D0CTD6 DBCXD2CSD3DB DBCXCSD8CWD7 D8CTD2CS D8D3 CSCTCVD6CPCSCT CQCTCRCPD9D7CT D3CU CXD2D7D9ÆCRCXCTD2D8 CPD1D3D9D2D8D7 D3CU CRD3D6D6CTCRD8 CSCPD8CPBA D1D3D6CTB8 CUD3D6 D8DBD3 D6CTD0CPD8CXDACTD0DD D0CPD6CVCT D7CTD6CXCTD7 D3CU D2CTDBD7B9 D4CPD4CTD6 CRD3D0D9D1D2D7B8 D8CWCT D1CPCYD3D6 CQD3D9D2CSCPD6CXCTD7 DBCTD6CT CSCTD8CTCRD8CTCS D4D6D3D4CTD6D0DDBA CCCWCPD8 CXD7B8 D9D7CXD2CV D0CPD6CVCTD6 DBCXD2B9 CSD3DB DBCXCSD8CWD7B8 D8CWD3D7CT CQD3D9D2CSCPD6CXCTD7 DBCTD6CT D7CTD0CTCRD8CXDACTD0DD CSCTD8CTCRD8CTCS D8CWCPD8 D7CTD4CPD6CPD8CT CVD6D3D9D4D7 D3CU CRD3D0D9D1D2D7 CQDD D8CWCTCXD6 D7D9CQD8D3D4CXCRD7BA BYD3D6 CTDCCPD1D4D0CTB8 D8CWCT D7D8CPD6D8CXD2CV D4D3CXD2D8 D3CU CP D7CTD8 D3CU D8CWD6CTCT CRD3D2D7CTCRD9D8CXDACT CRD3D0D9D1D2D7 CXCSCTD2D8CXCRCPD0D0DD CTD2D8CXD8D0CTCS CKCCCWCT BZD6CTCPD8 BVD9D0D8D9D6CPD0 CACTDAB9 D3D0D9D8CXD3D2AY CXD2 D8CWCT CKBVCWCXD2CTD7CT CACTDAD3D0D9D8CXD3D2AY D7CTD6CXCTD7 DBCPD7 CSCTD8CTCRD8CTCS D9D7CXD2CV BDB8BEBKBC DBD3D6CS DBCXCSD8CW DBCXD2CSD3DBB8 CPD7 DBCTD0D0 CPD7 D8CWD3D7CT D3CU D3D8CWCTD6 D8CWD6CTCT D7CTD8D7 D3CU CRD3D2D7CTCRB9 D9D8CXDACT CRD3D0D9D1D2D7 CTD2D8CXD8D0CTCS CXCSCTD2D8CXCRCPD0D0DDBA CCCWD9D7B8 D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CXD7 CTDCD4CTCRD8CTCS D8D3 CQCT CTABCTCRB9 D8CXDACT CUD3D6 CPD6CQCXD8D6CPD6CXD0DD D7CTD0CTCRD8CXD2CV D8CWCT D7CXDECT D3CU D8CTDCB9 D8D9CPD0 D9D2CXD8D7 CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 CSCXABCTD6CTD2D8 CVD6CPCSCXD2CV D8D3D4CXCRD7BA C0D3DBCTDACTD6B8 D8CWCTD6CT CPD6CT D4D6D3CQD0CTD1D7 CPCQD3D9D8 CWD3DBD8D3 CSCTD8CTD6D1CXD2CT CP CQD3D9D2CSCPD6DD D4D3CXD2D8 CXD2 D8CWCT D6CPD2CVCT CSCTB9 ACD2CTCS CQDD CP CCBUBVCBBA BTD0D8CWD3D9CVCW D8CWCT D4D6CTDACXD3D9D7D0DD D4D9CQD0CXD7CWCTCS CPD0CVD3D6CXD8CWD1 B4C6CPCZCPD3B8 BDBLBLBLB5 CSCTD8CTD6B9 D1CXD2CTD7 CP CQD3D9D2CSCPD6DD D4D3CXD2D8 DBCXD8CW D1CXD2CXD1CPD0 D4D3CXD2D8D7 D3CU CRD3CWCTD7CXD3D2 D7CRD3D6CTD7 CUD3D6 D8CWCT D7D1CPD0D0CTD7D8 DBCXD2CSD3DB DBCXCSD8CWB8 D8CWCT CPCRCRD9D6CPCRDD CSCTCVD6CPCSCTD7 D7D9CQD7D8CPD2D8CXCPD0D0DD B4D7CTCT CCCPCQD0CT BFB5BA CCCWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXB9 ACCRCPD8CXD3D2 CPD0CVD3D6CXD8CWD1 CVCXDACTD2 CQCTD0D3DB CXD7 CP D7D3D0D9D8CXD3D2 D8D3 D8CWCXD7 D4D6D3CQD0CTD1BA BFBABE BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 C1D2 D8CWCT D7CTCRD3D2CS D7D8CPCVCTB8 CUD6D3D1 D7CTD2D8CTD2CRCTD7 CXD2 CP CCBUBVCBB8 D8CWCT CPD0CVD3D6CXD8CWD1 CXCSCTD2D8CXACCTD7 CP CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTB8 CXD2CSCXCRCPD8CXD2CV DBCWCTD6CT CP D8D3D4CXCR CRD3D6D6CTB9 D7D4D3D2CSCXD2CV D8D3 CP D8CTDCD8D9CPD0 D9D2CXD8 D4D6D3CQCPCQD0DD D7D8CPD6D8D7B8 CPD2CS D7CTD0CTCRD8D7 CP D0CTCPCS D7CTD2D8CTD2CRCT D8CWCPD8 D4D6D3CQCPCQD0DD CXD2B9 CSCXCRCPD8CTD7 D8CWCT CRD3D2D8CTD2D8D7 D3CU D7D9CQD7CTD5D9CTD2D8 D4CPD6D8D7 CXD2 D8CWCT D7CPD1CT D8CTDCD8D9CPD0 D9D2CXD8BA BYCXCVD9D6CT BF D7CWD3DBD7 D8CWCT CPD0CVD3B9 D6CXD8CWD1 CXD2 CSCTD8CPCXD0BA BFBABEBABD BYD3D6DBCPD6CSBBBUCPCRCZDBCPD6CS CACTD0CTDACPD2CRCT BVCPD0CRD9D0CPD8CXD3D2 C1D2 D7D8CTD4D7 BE CPD2CS BFB8 CQD3D9D2CSCPD6CXCTD7 CPD6CT CXCSCTD2D8CXACCTCS CPD2CS D0CTCPCS D7CTD2D8CTD2CRCTD7 CPD6CT D7CTD0CTCRD8CTCS CQCPD7CTCS D3D2 D8DBD3 CZCXD2CSD7 D3CU D6CTD0CTDACPD2CRCT D7CRD3D6CTD7 CUD3D6 CP D7CTD2D8CTD2CRCTBM CUD3D6B9 DBCPD6CS D6CTD0CTDACPD2CRCT CXD2CSCXCRCPD8CXD2CV D8CWCT D7CTD2D8CTD2CRCT D6CTD0CTB9 DACPD2CRCT D8D3 D8CWCT D8CTDCD8D9CPD0 D9D2CXD8 CXD1D1CTCSCXCPD8CTD0DD CPCUD8CTD6 D8CWCT D7CTD2D8CTD2CRCTB8 CPD2CS CQCPCRCZDBCPD6CS D6CTD0CTDACPD2CRCT CXD2CSCXCRCPD8B9 CXD2CV D8CWCT D7CTD2D8CTD2CRCT D6CTD0CTDACPD2CRCT D8D3 D8CWCT D8CTDCD8D9CPD0 D9D2CXD8 CXD1D1CTCSCXCPD8CTD0DD CQCTCUD3D6CT D8CWCT D7CTD2D8CTD2CRCTBA CCCWCT CSCXABCTD6B9 CTD2CRCT CQCTD8DBCTCTD2 D8CWCT CUD3D6DBCPD6CS CPD2CS D8CWCT CQCPCRCZDBCPD6CS D6CTD0CTDACPD2CRCT CXD7 D6CTCUCTD6D6CTCS D8D3 CPD7 D6CTD0CPD8CXDACT CUD3D6DBCPD6CSD6CTD0B9 BDBA BTD7D7CXCVD2 D8CWCT D8CPD6CVCTD8 D0CPDDCTD6 CPD7 D8CWCT CQD3D8D8D3D1 D0CPDDCTD6 D3CU D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDDBM CXAWCX D1CPDC BA BEBA BYD3D6 CTCPCRCW CCBUBVCB CXD2 D8CWCT D8CPD6CVCTD8 D0CPDDCTD6B8 BUB4CXB5CJCYCLB8 CSD3 CWCT CUD3D0D0D3DBCXD2CVBM B4CPB5 C1CU CX AW CX D1CPDC B8 D8CWCTD2 D7CTD0CTCRD8 CPD2CS CXCSCTD2D8CXCUDD CPD0D0 D7CTD2D8CTD2CRCTD7 CXD2 BUB4CXB5CJCYCLBMD6CPD2CVCT CPD7 BUD3D9D2CSB9 CPD6DD CBCTD2D8CTD2CRCT BVCPD2CSCXCRCPD8CTD7 B4BUBACBBABVBAB5BN D3D8CWB9 CTD6DBCXD7CTB8 D7CTD0CTCRD8 CPD2CS CXCSCTD2D8CXCUDD D8CWCT D7CTD2D8CTD2CRCTD7 CXD2 BUB4CXB5CJCYCLBMD6CPD2CVCT D0D3CRCPD8CTCS CQCTCUD3D6CT D3D6 CXCSCTD2D8CXB9 CRCPD0 D8D3 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT D3CU BUB4CXB7BDB5 CPD7 BUBACBBABVBA B4CQB5 BYD6D3D1 D8CWCT BUBACBBABVBAB8CXCSCTD2D8CXCUDD CP D7CTD2D8CTD2CRCT CPD7 CP BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT B4BUBACBBAB5B8 DBCWD3D7CT D6CTD0B9 CPD8CXDACTCUD3D6DBCPD6CS D6CTD0CTDACPD2CRCT CXD7 CVD6CTCPD8CTD6 D8CWCPD2 BC CPD2CS CWCPD7 D8CWCT D1D3D7D8 CXD2CRD6CTD1CTD2D8 CUD6D3D1 D8CWCPD8 D3CU D8CWCT D4D6CTDACXD3D9D7 D7CTD2D8CTD2CRCTBA B4CRB5 BTD1D3D2CV D8CWCT D7CTD2D8CTD2CRCTD7 CXD2 D8CWCT BUBACBBABVBA D0D3B9 CRCPD8CTCS CPCUD8CTD6 D3D6 CXCSCTD2D8CXCRCPD0 D8D3 D8CWCT BUBACBBAB8 D7CTD0CTCRD8 D8CWCT D7CTD2D8CTD2CRCT D8CWCPD8 CWCPD7 D8CWCT CVD6CTCPD8CTD7D8 CUD3D6B9 DBCPD6CS D6CTD0CTDACPD2CRCT CPD7 CP C4CTCPCS CBCTD2D8CTD2CRCT B4C4BACBBAB5BA BFBA C1CU CXBQBDB8 D8CWCTD2 CXAWCXA0BDB8 CPD2CS D6CTD4CTCPD8 CUD6D3D1 D7D8CTD4 BEBA BYCXCVD9D6CT BFBM BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 BTD0CVD3D6CXD8CWD1 CTDACPD2CRCTBA BYD3D6DBCPD6CS D3D6 CQCPCRCZDBCPD6CS D6CTD0CTDACPD2CRCT CXD7 CRCPD0CRD9B9 D0CPD8CTCS D9D7CXD2CV D8CWCT CUD3D6D1D9D0CP CQCTD0D3DBB8 DBCWCTD6CT CTDACTD6DD D8CTDCD8D9CPD0 D9D2CXD8 CXD7 D4CPD6D8CXD8CXD3D2CTCS CPD8 D8CWCT CTD5D9CXD0CXCQD6CXD9D1 D4D3CXD2D8D7 D3CU D8DBD3 CPCSCYCPCRCTD2D8 CCBUBVCBD7 CXD2 D8CWCT D8CPD6CVCTD8 D0CPDDCTD6B8 D8CWCT CTD5D9CXD0CXCQD6CXD9D1 D4D3CXD2D8 D3CU CTCPCRCW CCBUBVCB CXD7 CXD2CXD8CXCPD0D0DD D7CTD8 CQDD D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD CSCTD8CTCRB9 D8CXD3D2 CPD0CVD3D6CXD8CWD1B8 CPD2CS D8CWCT D4D3CXD2D8 CXD7 D6CTD4D0CPCRCTCS CQDD D8CWCT D0D3CRCPD8CXD3D2 D3CU D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CPCUD8CTD6 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXD7 CXCSCTD2D8CXACCTCS B4CXBACTBAB8 D7D8CTD4 BECQ CXD7 CRD3D1D4D0CTD8CTCSB5BA D6 CBBND9 BP BD CYCBCY CG D8BECB D8CU D8BND9 CYD9CY A2D0D3CVB4 CYBWCY CSCU D8 B5B5 CYCBCY D8D3D8CPD0 D2D9D1CQCTD6 D3CU D8CTD6D1D7 CXD2 D7CTD2D8CTD2CRCT CB CYD9CY D8D3D8CPD0 D2D9D1CQCTD6 D3CU D8CTD6D1D7 CXD2 D8CTDCD8D9CPD0 D9D2CXD8 D9 D8CU D8BND9 CUD6CTD5D9CTD2CRDD D3CU D8CTD6D1 D8 CXD2 D8CTDCD8D9CPD0 D9D2CXD8 D9 CYBWCY D8D3D8CPD0 D2D9D1CQCTD6 D3CU ACDCCTCSB9DBCXCSD8CW B4BKBC DBD3D6CSD7B5 CQD0D3CRCZD7 CXD2 D8CWCT D7D3D9D6CRCT D8CTDCD8 CSCU D8 D8D3D8CPD0 D2D9D1CQCTD6 D3CU ACDCCTCSB9DBCXCSD8CW CQD0D3CRCZD7 DBCWCTD6CT D8CTD6D1 D8 CPD4D4CTCPD6D7 CCCWCT D9D7CT D3CU D8CWCXD7 CUD3D6D1D9D0CP DBCPD7 D4D6D3D4D3D7CTCS CPD7 CPD2 CTABCTCRD8CXDACT CPD2CS D7CXD1D4D0CT D1CTCPD7D9D6CT CUD3D6 D8CTD6D1 CXD1B9 D4D3D6D8CPD2CRCT CTD7D8CXD1CPD8CXD3D2 B4C6CPCZCPD3B8 BDBLBLBKB5 BI BA C1D8 CXD7 CP BI BTD2 CTDCD4CTD6CXD1CTD2D8 D6CTD4D3D6D8CTCS CXD2 B4C6CPCZCPD3B8 BDBLBLBKB5 CXD2CSCXB9 CCCPCQD0CT BEBM BXDCCPD1D4D0CT D3CU BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 CACTD0CTDACPD2CRCT CBCTD2D8CTD2CRCT CJD4CPD6D8CXCPD0D0DD D4D6CTD7CTD2D8CTCSCL C4D3CRCPD8CXD3D2 BUCPCRCZDBCPD6CS BYD3D6DBCPD6CS CACTD0CPD8CXDACT B4D8D6CPD2D7D0CPD8CXD3D2B5 C7BMCABM BDBDBDBEBE BC BCBABCBDBJ BCBABCBDBJ CJb  B8 BKBICL B4CJCHD3D7CWCXD1D9D6CP CTD8BA CPD0CLB5 BDBDBDBEBG BCBABCBEBD BCBABCBCBG B9BCBABCBDBJb a��BM AY�w� � � Z����AYB8�B8 D4D4BABFBFB9BGBCB8 BDBLBKBI B4CHD3D7CWCXD1D9D6CPB8 C3CTD2CYCX BABABA BM BTD9D8D3D1CPD8CXCR BXDCD8D6CPCRD8CXD3D2 CBDDD7D8CTD1 D3CU BABABAB5 BUBMCBBM BDBDBDBGBI BC BCBABCBDBI BCBABCBDBI BGBABGBAUg����B4CBCTCPD6CRCW BXD2CVCXD2CTB5 C4BMCBBM BDBDBDBGBK BCBABCBCBH BCBABCBEBE BCBABCBDBJ\\px� � $ �C����tSZ��mMoCb� { B4CCCWCXD7 D7CTCRD8CXD3D2 D6CTD4D3D6D8D7 D3D2 BABABA D3CU CXD2D8CTD0D0CXCVCTD2D8 CXD2CUD3D6D1CPD8CXD3D2 CPCRCRCTD7D7BAB5 BDBDBDBJBC BCBABCBDBC BCBABCBDBI BCBABCBCBI� &lt; w� �wCt� �b����xz�pK� { B4CCCWCT CZCTDD CXD7D7D9CT D3CU D8CWCT D6CTD4D3D6D8D7 CXD2 D8CWCT CUD3D0D0D3DBCXD2CV CRD0CPD9D7CTD7 CXD7 BABABA B5 D1D3CSCXACCTCS DACTD6D7CXD3D2 D3CU CTD2D8D6D3D4DDB8 DBCWCTD6CT CXD2CUD3D6D1CPB9 D8CXD3D2 CQCXD8 B4D0D3CV D4CPD6D8 D3CU D8CWCT CUD3D6D1D9D0CPB5 CXD7 CRCPD0CRD9B9 D0CPD8CTCS CQDD D6CTCSD9CRCXD2CV D8CWCT CTABCTCRD8 D3CU D8CTD6D1 D6CTD4CTD8CXB9 D8CXD3D2D7 CXD2 CP D7CWD3D6D8 D4CTD6CXD3CSBA CCCWCT D1D3CSCXACCRCPD8CXD3D2 DBCPD7 CSD3D2CT D8D3 CXD2CRD6CTCPD7CT D8CWCT D7CRD3D6CTD7 CUD3D6 CPD2 CXD1D4D3D6D8CPD2D8 D8CTD6D1 CWCXCVCWCTD6B8 CQCPD7CTCS D3D2 D8CWCT D6CTD4D3D6D8CTCS D3CQD7CTD6DACPB9 D8CXD3D2 D8CWCPD8 CRD3D2D8CTD2D8 CQCTCPD6CXD2CV DBD3D6CSD7 D8CTD2CS D8D3 D3CRCRD9D6 CXD2 CRD0D9D1D4D7 B4BUD3D3CZD7D8CTCXD2 CTD8 CPD0BAB8 BDBLBLBKB5BA BFBABEBABE BXDCCPD1D4D0CT D3CU BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 CCCPCQD0CT BE D7D9D1D1CPD6CXDECTD7 CPD2 CTDCCPD1D4D0CT D3CU CQD3D9D2CSB9 CPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 D3CU CP CCBUBVCB D0D3CRCPD8CTCS CYD9D7D8 CQCTCUD3D6CT D8CWCT BDBEB8BCBCBCD8CW DBD3D6CS CXD2 BYCXCVD9D6CT BEBA BXDAB9 CTD6DD D6D3DB CXD2 D8CWCT D8CPCQD0CT CTDCCRCTD4D8 D8CWCT ACD6D7D8 D6D3DBB8 DBCWCXCRCW CXD7 D1CPD6CZCTCS DBCXD8CW C7BMCABMB8 D7CWD3DBD7 CP CRCPD2CSCXCSCPD8CT D7CTD2B9 D8CTD2CRCTBA CCCWCT D6D3DBD1CPD6CZCTCS BUBMCBBM D7CWD3DBD7 CP CQD3D9D2CSB9 CPD6DD D7CTD2D8CTD2CRCTB8 DBCWCXCRCW CWCPD7 D4D3D7CXD8CXDACT D6CTD0CPD8CXDACT CUD3D6B9 DBCPD6CS D6CTD0CTDACPD2CRCT B4BCBABCBDBI CXD2 D8CWCT CUD3D9D6D8CW CRD3D0D9D1D2 D3CU D8CWCT D6D3DBB5 CPD2CS D8CWCT CVD6CTCPD8CTD7D8 CXD2CRD6CTD1CTD2D8 CUD6D3D1 D8CWCT D4D6CTDACXD3D9D7 DACPD0D9CT B4B9BCBABCBDBJB5BA CCCWCT D6D3DB D1CPD6CZCTCS C4BMCBBM D7CWD3DBD7 CP D0CTCPCS D7CTD2D8CTD2CRCTB8 DBCWCXCRCW CWCPD7 D8CWCT CVD6CTCPD8B9 CTD7D8 CUD3D6DBCPD6CS D6CTD0CTDACPD2CRCT B4BCBABCBEBE CXD2 D8CWCT D8CWCXD6CS CRD3D0B9 D9D1D2 D3CU D8CWCT D6D3DBB5 CPD1D3D2CV CPD0D0 D7CTD2D8CTD2CRCTD7 CPCUD8CTD6 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTBA BFBABEBABF BXDACPD0D9CPD8CXD3D2 D3CU BUD3D9D2CSCPD6DD C1CSCTD2D8CXACCRCPD8CXD3D2 CCCPCQD0CT BF D7CWD3DBD7 D6CTCRCPD0D0 CPD2CS D4D6CTCRCXD7CXD3D2 D6CPD8CTD7 D3CU D8CWCT CQD3D9D2CSCPD6DD CXCSCTD2D8CXACCRCPD8CXD3D2 CPD0CVD3D6CXD8CWD1 CXD2 D8CWCT D7CPD1CT CUD3D6D1CPD8 CPD7 CCCPCQD0CT BDBA BVD3D1D4CPD6CTCS DBCXD8CW D8CWCT D6CTD7D9D0D8D7 D3CQD8CPCXD2CTCS D9D7CXD2CV D8CWCT D4D6CTDACXD3D9D7 DACTD6D7CXD3D2 D3CU D8CWCT CPD0CVD3D6CXD8CWD1 B4C6CPCZCPD3B8 BDBLBLBLB5B8 CPD7 D7CWD3DBD2 CXD2 D8CWCT D1CXD2CXD1CPD0 CRD3CWCTD7CXD3D2 CRD3D0D9D1D2D7B8 D8CWCT D4D6D3D4D3D7CTCS CPD0B9 CVD3D6CXD8CWD1 CXCSCTD2D8CXACCTD7 D1D3D6CT CPCRCRD9D6CPD8CT CQD3D9D2CSCPD6CXCTD7 CRCPD8CTD7 D8CWCPD8 CWCTCPCSCXD2CV D8CTD6D1D7 B4CXBACTBAB8 D8CTD6D1D7 CPD4D4CTCPD6CTCS CXD2 CWCTCPCSB9 CXD2CVD7B5 CPD6CT CTABCTCRD8CXDACTD0DD CSCTD8CTCRD8CTCS CQDD D7CRD3D6CXD2CV D8CTD6D1D7 DBCXD8CW D8CWCT D4CPD6D8 D3CU D8CWCT CUD3D6D1D9D0CP CXD2 D8CWCT D7D9D1D1CPD8CXD3D2 D3D4CTD6CPD8D3D6BA B4D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CRD3D0D9D1D2D7B5BA C1D2 CPCSB9 CSCXD8CXD3D2B8 CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 DBCPD7 D7D9CRCRCTD7D7CUD9D0 CUD3D6 BJBHB1 D3CU D8CWCT CRD3D6D6CTCRD8 CCBUBVCBD7B8 D8CWCPD8 CXD7B8 CCBUBVCBD7 CXD2CRD0D9CSCXD2CV CRD3D6D6CTCRD8 CQD3D9D2CSCPD6CXCTD7 BJ B4D7CTCT D9D2CXACCTCSCCBUBVCBCXD2 CCCPCQD0CT BDB5BA CCCWD9D7B8 D8CWCT D4D6D3D4D3D7CTCS CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 CPD0CVD3D6CXD8CWD1 CXD7 CYD9CSCVCTCS D8D3 CQCT CTABCTCRD8CXDACTBA CCCPCQD0CT BF CPD0D7D3 D7D9D1D1CPD6CXDECTD7 CP CUCTCPD8D9D6CT D3CU D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 D8CWCPD8 CXD8 D8CTD2CSD7 D8D3 CSCTD8CTCRD8 CPD2CS CXCSCTD2D8CXCUDD CWCTCPCSCXD2CVD7 CPD7 CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 B4D8CWCT CWCTCPCSCXD2CV D6CPD8CT CRD3D0D9D1D2D7B5BA BYD3D6 D8CWCT D4CPD6D8 CRD3D6B9 D6CTD7D4D3D2CSCXD2CV D8D3 D0CPD6CVCTD6 D8CTDCD8D9CPD0 D9D2CXD8D7B8 DBCWCXCRCW D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 D1CPCXD2D0DD D9D7CTCSB8 D8CWCT ACCVD9D6CTD7 CXD2 D8CWCT D3DACTD6CPD0D0 CRD3D0D9D1D2D7 CXD2CSCXCRCPD8CT D8CWCPD8 CWCPD0CU D3CU CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 D3D6 D1D3D6CT CPD6CT CXCSCTD2D8CXCRCPD0 D8D3 CWCTCPCSCXD2CVD7 CXD2 D8CWCT D3D6CXCVCXD2CPD0 D8CTDCD8BN CPD2CS D8CWCT ACCVD9D6CTD7 CXD2 D8CWCT CXCSCTD2D8CXACCRCPD8CXD3D2 CRD3D0D9D1D2D7 CXD2CSCXCRCPD8CT D8CWCPD8 D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CXCSCTD2D8CXACCTD7 CWCTCPCSCXD2CVD7 CPD7 CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 CUD3D6 D1D3D6CT D8CWCPD2 BKBCB1 D3CU D8CWCT CRCPD7CT DBCWCTD6CT CCBUBVCBD7 CXD2CRD0D9CSCXD2CV CWCTCPCSCXD2CVD7BA BFBABF CBD9D1D1CPD6DD BVD3D2D7D8D6D9CRD8CXD3D2 C1D2 D8CWCT D8CWCXD6CS CPD2CS D0CPD7D8 D7D8CPCVCTB8 D8CWCT CPD0CVD3D6CXD8CWD1 D3D9D8D4D9D8D7 D8CWCT CQD3D9D2CSCPD6DD CPD2CS D0CTCPCS D7CTD2D8CTD2CRCTD7 D3CU CCBUBVCBD7 D3D2 CP D0CPDDCTD6 D8CWCPD8 D4D6D3CQCPCQD0DD CRD3D6D6CTD7D4D3D2CSD7 D8D3 D8D3D4CXCRD7 D3CU CPD4D4D6D3D4D6CXCPD8CT CVD6CPCSCXD2CVBA BUCPD7CTCS D3D2 D8CWCT D6CPD8CXD3 D3CU D7D3D9D6CRCT D8CTDCD8 D7CXDECT D8D3 CP CVCXDACTD2 D7D9D1D1CPD6DD D7CXDECTB8 D8CWCT CPD0CVD3D6CXD8CWD1 CRCWD3D3D7CTD7 CP D0CPDDCTD6 D8CWCPD8 CRD3D2B9 D8CPCXD2D7 CPD2 CPD4D4D6D3D4D6CXCPD8CT D2D9D1CQCTD6 D3CU CCBUBVCBD7B8 CPD2CS CVCTD2CTD6CPD8CTD7 CP D7D9D1D1CPD6DD DBCXD8CW D7D3D1CT CQD6CTCPCZD7 D8D3 CXD2B9 CSCXCRCPD8CT D8CWCTD1CPD8CXCR CRCWCPD2CVCTD7BA BYD3D6 CTDCCPD1D4D0CTB8 D8D3 CVCTD2CTD6CPD8CT CP BDB8BCBCBCB9CRCWCPD6CPCRD8CTD6 D7D9D1D1CPD6DD CRD3D2D7CXD7D8CXD2CV D3CU D7CTDACTD6CPD0 D4CPD6D8D7 D3CU CPD4B9 D4D6D3DCCXD1CPD8CTD0DD BEBCBC CRCWCPD6CPCRD8CTD6D7 CUD3D6 CTCPCRCW D8D3D4CXCRB8 CP D8CTDCD8 CSCTCRD3D1D4D3D7CXD8CXD3D2 CRD3D2D7CXD7D8CXD2CV D3CU ACDACT D8CTDCD8D9CPD0 BJ BYD3D6 D8CWCT CRD3D6D6CTCRD8 CCBUBVCBD7B8 D8CWCT CPDACTD6CPCVCT D2D9D1CQCTD6 D3CU CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CRCPD2CSCXCSCPD8CTD7 CXD7 BGBABGBA D9D2CXD8D7 CXD7 CPD4D4D6D3D4D6CXCPD8CT CUD3D6 D7D9D1D1CPD6CXDECPD8CXD3D2BA CBCXD2CRCT D8CWCT D7CPD1D4D0CT D8CTDCD8 D9D7CTCS CWCTD6CT DBCPD7 CSCTCRD3D1D4D3D7CTCS CXD2D8D3 ACDACT D8CTDCD8D9CPD0 D9D2CXD8D7 D3D2 D8CWCT BUB4BEB5 D0CPDDCTD6 B4D7CTCT BYCXCVD9D6CT BEB5B8 CXD8 D3D9D8D4D9D8D7 D8CWCT CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTD7 CPD2CS D0CTCPCS D7CTD2D8CTD2CRCTD7 D3CU CPD0D0 CCBUBVCBD7 CXD2 BUB4BEB5BA BG BWCXD7CRD9D7D7CXD3D2 BYCXCVD9D6CT BH D7CWD3DBD7 CP D3D2CTB9D4CPCVCT D7D9D1D1CPD6DD D3CU CP D8CTCRCWB9 D2CXCRCPD0 D7D9D6DACTDD D6CTD4D3D6D8B8 DBCWCTD6CT B4CPB5 CXD7 CP D4CPD6D8 D3CU D8CWCT D7D9D1D1CPD6DD CPD9D8D3D1CPD8CXCRCPD0D0DD CVCTD2CTD6CPD8CTCSB8 CPD2CS B4CQB5 CXD7 CXD8D7 D8D6CPD2D7D0CPD8CXD3D2BA C1D8 CRD3D6D6CTD7D4D3D2CSD7 D8D3 D8CWCT D4CPD6D8 D3CU D8CWCT D7D3D9D6CRCT D8CTDCD8 CQCTD8DBCTCTD2 BUB4BDB5CJBDCL CPD2CS BUB4BDB5CJBECL B4CXD2 BYCXCVD9D6CT BEB5BA C1D8 CXD7 CRD3D1D4D3D7CTCS D3CU D8CWD6CTCT D4CPD6D8D7 CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 BUB4BEB5CJBDCLB8 BUB4BEB5CJBECLB8 CPD2CS BUB4BFB5CJBICLBA BXCPCRCW D4CPD6D8 CRD3D2D7CXD7D8D7 D3CU CP CQD3D9D2CSCPD6DDD7CTD2B9 D8CTD2CRCTB8 D4D6CTD7CTD2D8CTCS CPD7 CP CWCTCPCSCXD2CVB8 CUD3D0D0D3DBCTCS CQDD CP D0CTCPCS D7CTD2D8CTD2CRCTBA C1D2 CRD3D1D4CPD6CXD7D3D2 DBCXD8CW D8CWCT CZCTDDDBD3D6CSB9CQCPD7CTCS D7D9D1D1CPD6DD D7CWD3DBD2 CXD2 BYCXCVD9D6CT BGB8 CVCTD2CTD6CPD8CTCS CXD2 D8CWCT D4D6D3CRCTD7D7 CSCTD7CRD6CXCQCTCS CXD2 CBCTCRD8CXD3D2 BEB8 D8CWCT D3D2CTB9D4CPCVCT D7D9D1D1CPD6DD CVCXDACTD7 CP CVD3D3CS CXD1D4D6CTD7D7CXD3D2 CPD7 CQCTCXD2CV CTCPD7DD D8D3 D9D2CSCTD6D7D8CPD2CSBA C1D2 CUCPCRD8B8 DBCWCTD2 DBCT CXD2B9 CUD3D6D1CPD0D0DD CPD7CZCTCS D1D3D6CT D8CWCPD2 ACDACT CRD3D0D0CTCPCVD9CTD7 D8D3 D7D8CPD8CT D8CWCTCXD6 CXD1D4D6CTD7D7CXD3D2 D3CU D8CWCTD7CT D7D9D1D1CPD6CXCTD7B8 D8CWCTDD CPCVD6CTCTCS DBCXD8CW D8CWCXD7 D4D3CXD2D8BA BTD7 CSCTD7CRD6CXCQCTCS CXD2 CBCTCRD8CXD3D2 BEB8 D3D2CT D3CU D8CWCT D6CTCPD7D3D2D7 CUD3D6 D8CWCT CVD3D3CS CXD1D4D6CTD7D7CXD3D2 D7CWD3D9D0CS CQCT D8CWCT CSCXABCTD6CTD2CRCT CXD2 CRD3CWCTD6B9 CTD2CRCTBA CCCWCT D6CTD0CPD8CXD3D2D7CWCXD4 CPD1D3D2CV D7CTD2D8CTD2CRCTD7 CXD2 D8CWCT CZCTDDDBD3D6CSB9CQCPD7CTCS D7D9D1D1CPD6DD CXD7 D2D3D8 CRD0CTCPD6BN CRD3D2B9 DACTD6D7CTD0DDB8 D8CWCT D7CTCRD3D2CS D7CTD2D8CTD2CRCT D3CU D8CWCT D3D2CTB9D4CPCVCT D7D9D1D1CPD6DD CXD2D8D6D3CSD9CRCTD7 D8CWCT D3D9D8D0CXD2CT D3CU D8CWCT CRD0CPD9D7CTB8 CPD2CS CXD8 CXD7 CRD0D3D7CTD0DD D6CTD0CPD8CTCS D8D3 D8CWCT D7CTD2D8CTD2CRCTD7 D8CWCPD8 CUD3D0D0D3DB CXD8BA CCCWCT CUCPCRD8 D8CWCPD8 D8CWCT D3D2CTB9D4CPCVCT D7D9D1B9 D1CPD6DD D4D6D3DACXCSCTD7 CPD8 D0CTCPD7D8 D8DBD3 D7CTD2D8CTD2CRCTD7B8 CXD2CRD0D9CSB9 CXD2CV CP CWCTCPCSCXD2CVB8 CUD3D6 CTCPCRCW D8D3D4CXCR CXD7 CPD0D7D3 CRD3D2D7CXCSCTD6CTCS D8D3 D1CPCZCT CRD3CWCTD6CTD2CRCT D7D8D6D3D2CVBA BTD7 D7CWD3DBD2 CXD2 CCCPCQD0CT BFB8 D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3B9 D6CXD8CWD1 CXD7 CTDCD4CTCRD8CTCS D8D3 CTDCD8D6CPCRD8 CWCTCPCSCXD2CVD7 CTABCTCRB9 D8CXDACTD0DDBA C0D3DBCTDACTD6B8 D8CWCTD6CT CXD7 CP D4D6D3CQD0CTD1 D8CWCPD8 CSCTB9 D8CTCRD8CTCS CWCTCPCSCXD2CVD7 CSD3 D2D3D8 CPD0DBCPDDD7 CRD3D6D6CTD7D4D3D2CS D8D3 D8D3D4CXCRD7 D3CU CPD4D4D6D3D4D6CXCPD8CT CVD6CPCSCXD2CVBA BYD3D6 CTDCCPD1D4D0CTB8 D8CWCT D7CTCRD3D2CS CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT CXD2 D8CWCT CTDCCPD1B9 D4D0CT CXD7 D2D3D8 CPD4D4D6D3D4D6CXCPD8CT CQCTCRCPD9D7CT CXD8 CXD7 CP CWCTCPCSCXD2CV D3CU CP D7D9CQCRD0CPD9D7CT D1D9CRCW D7D1CPD0D0CTD6 D8CWCPD2 D8CWCT DBCXD2CSD3DB DBCXCSD8CW CRD3D6D6CTD7D4D3D2CSCXD2CV D8D3 BUB4BEB5CJBECLB8 CPD2CS CXD8D7 D4D6CTB9 DACXD3D9D7 D7CTD2D8CTD2CRCT CKBGBABFBABE CCCTCRCWD2CXCRCPD0 CCD6CTD2CS D3CU C1CA CCCTCRCWD2CXD5D9CTD7AY CXD7 D1D3D6CT CPD4D4D6D3D4D6CXCPD8CT D3D2CTBA CCCWCXD7 CTDCCPD1D4D0CT CXD7 CPD0D7D3 D6CTD0CPD8CTCS D8D3 CPD2D3D8CWCTD6 D0CXD1B9 CXD8CPD8CXD3D2 D3CU D8CWCT D4D6D3D4D3D7CTCS CPD0CVD3D6CXD8CWD1BA CBCXD2CRCT D8CWCTD6CT CXD7 D2D3 D3D9D8D0CXD2CT CSCTD7CRD6CXD4D8CXD3D2 CXD2 D8CWCT D7D9CQD7CTD5D9CTD2D8 D4CPD6D8 D3CU D8CWCT CWCTCPCSCXD2CV D3CU CRD0CPD9D7CT BGBABFBABEB8 D8CWCT D4D6D3B9 D4D3D7CTCS CPD0CVD3D6CXD8CWD1 CRD3D9D0CS D2D3D8 CVCTD2CTD6CPD8CT CP CRD3CWCTD6B9 CTD2D8 CTDCD8D6CPCRD8 CXCU CXD8 CWCPCS CXCSCTD2D8CXACCTCS D8CWCT CWCTCPCSCXD2CV CPD7 CP CQD3D9D2CSCPD6DD D7CTD2D8CTD2CRCTBA C1D8 CXD7 CP CUD9D8D9D6CT CXD7D7D9CT D8D3 CSCTDACTD0D3D4 D1D3D6CT CTD0CPCQB9 D3D6CPD8CTCS CPD0CVD3D6CXD8CWD1 CUD3D6 D7D9D1D1CPD6CXDECXD2CV CSCTD8CTCRD8CTCS D8D3D4CXCRD7 CTD7D4CTCRCXCPD0D0DD CUD3D6 D8CWCT D9D7CTD6 DBCWD3 DBCPD2D8D7 D6CXCRCWCTD6 CXD2CUD3D6D1CPD8CXD3D2 D8CWCPD2 D8CWCPD8 CRCPD2 CQCT D4D6D3DACXCSCTCS CXD2 CP CTDCD8D6CPCRD8 CRD3D2D7CXD7D8CXD2CV D3CU D8DBD3 D3D6 D8CWD6CTCT D7CTD2D8CTD2CRCTD7BA BH BVD3D2CRD0D9D7CXD3D2 CCCWCXD7 D4CPD4CTD6 CWCPD7 D4D6D3D4D3D7CTCS CPD2 CPD0CVD3D6CXD8CWD1 CUD3D6 D3D2CTB9 D4CPCVCT D7D9D1D1CPD6CXDECPD8CXD3D2 D8D3 CWCTD0D4 CP D9D7CTD6 D7CZCXD1 CP D0D3D2CV D8CTDCD8BA C1D8 CWCPD7 D1CPCXD2D0DD CSCTD7CRD6CXCQCTCS CPD2CS D6CTB9 D4D3D6D8CTCS D8CWCT CTABCTCRD8CXDACTD2CTD7D7 D3CU D8CWCT CQD3D9D2CSCPD6DD D7CTD2B9 D8CTD2CRCT CXCSCTD2D8CXACCRCPD8CXD3D2 D4CPD6D8 D3CU D8CWCT CPD0CVD3D6CXD8CWD1BA C1D8 CWCPD7 CPD0D7D3 CSCXD7CRD9D7D7CTCS D8CWCT D6CTCPCSCPCQCXD0CXD8DD D3CU D3D2CTB9D4CPCVCT D7D9D1D1CPD6CXCTD7BA CCCWCT CTABCTCRD8CXDACTD2CTD7D7 D3CU D7D8D6D9CRD8D9D6CTCS D7D9D1D1CPD6CXCTD7 D9D7CXD2CV D8CWCT D8CWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDDCXD7CPD2 CXD7D7D9CT CUD3D6 CUD9D8D9D6CT CTDACPD0D9CPD8CXD3D2BA CACTCUCTD6CTD2CRCTD7 BTBA BUD3D3CZD7D8CTCXD2B8 CBBA CCBA C3D0CTCXD2B8 CPD2CS CCBA CACPCXD8CPBA BDBLBLBKBA BVD0D9D1D4CXD2CV D4D6D3D4CTD6D8CXCTD7 D3CU CRD3D2D8CTD2D8B9CQCTCPD6CXD2CV DBD3D6CSD7BA C2D3D9D6D2CPD0 D3CU D8CWCT BTD1CTD6CXCRCPD2 CBD3CRCXCTD8DD CUD3D6 C1D2CUD3D6D1CPB9 D8CXD3D2 CBCRCXCTD2CRCTB8 BGBLB4BEB5BMBDBCBEDFBDBDBGBA C5CXCRCWCPCTD0 BTBAC3BA C0CPD0CXCSCPDD CPD2CS CAD9D5CPCXDDCP C0CPD7CPD2BA BDBLBJBIBA BVD3CWCTD7CXD3D2 CXD2 BXD2CVD0CXD7CWBA C4D3D2CVD1CPD2B8 C4D3D2CSD3D2BA C5CPD6D8CX BTBA C0CTCPD6D7D8BA BDBLBLBGBA C5D9D0D8CXB9D4CPD6CPCVD6CPD4CW D7CTCVD1CTD2B9 D8CPD8CXD3D2 D3CU CTDCD4D3D7CXD8D3D6DD D8CTDCD8BA C1D2 C8D6D3CRBA D3CU D8CWCT BFBED2CS BTD2D2D9CPD0 C5CTCTD8CXD2CV D3CU BTD7D7D3CRCXCPD8CXD3D2 CUD3D6 BVD3D1D4D9D8CPB9 D8CXD3D2CPD0 C4CXD2CVD9CXD7D8CXCRD7B8 D4CPCVCTD7 BLDFBDBIBA CHD3D7CWCXD3 C6CPCZCPD3BA BDBLBLBKBA BTD9D8D3D1CPD8CXCR CZCTDDDBD3D6CS CTDCD8D6CPCRB9 D8CXD3D2 CQCPD7CTCS D3D2 D8CWCT D8D3D4CXCR D7D8D6D9CRD8D9D6CT D3CU CP D8CTDCD8BA C1C8CBC2 CBC1BZ C6D3D8CTD7 BYC1B9BHBCB9BDBA B4CXD2 C2CPD4CPD2CTD7CTB5BA CHD3D7CWCXD3 C6CPCZCPD3BA BDBLBLBLBA CCCWCTD1CPD8CXCR CWCXCTD6CPD6CRCWDD CSCTD8CTCRB9 D8CXD3D2 D3CU CP D8CTDCD8 D9D7CXD2CV D0CTDCCXCRCPD0 CRD3CWCTD7CXD3D2BA C2D3D9D6D2CPD0 D3CU D8CWCT BTD7D7D3CRCXCPD8CXD3D2 CUD3D6 C6CPD8D9D6CPD0 C4CPD2CVD9CPCVCT C8D6D3CRCTD7D7B9 CXD2CVB8 BIB4BIB5BMBKBFDFBDBDBEBA B4CXD2 C2CPD4CPD2CTD7CTB5BA BZCTD6CPD6CS CBCPD0D8D3D2B8 BTD1CXD8 CBCXD2CVCWCPD0B8 BVCWD6CXD7 BUD9CRCZD0CTDDB8 CPD2CS C5CPD2CSCPD6 C5CXD8D6CPBA BDBLBLBIBA BTD9D8D3D1CPD8CXCR D8CTDCD8 CSCTCRD3D1B9 D4D3D7CXD8CXD3D2 D9D7CXD2CV D8CTDCD8 D7CTCVD1CTD2D8D7 CPD2CS D8CTDCD8 D8CWCTD1CTD7BA C1D2 C8D6D3CRBA D3CU C0DDD4CTD6D8CTDCD8 B3BLBIB8 D4CPCVCTD7 BHBFDFBIBHBA D8CWCT BTD7B9 D7D3CRCXCPD8CXD3D2 CUD3D6 BVD3D1D4D9D8CXD2CV C5CPCRCWCXD2CTD6DDBA CHCPCPCZD3DACHCPCPD6CXBA BDBLBLBKBA CCCTDCD4D0D3D6CT DF CTDCD4D0D3D6CXD2CV CTDCD4D3D7B9 CXD8D3D6DD D8CTDCD8D7 DACXCP CWCXCTD6CPD6CRCWCXCRCPD0 D6CTD4D6CTD7CTD2D8CPD8CXD3D2BA C1D2 C8D6D3CRBA D3CU BVCEC1BY B3BLBKB8 D4CPCVCTD7 BEBHDFBFBDBA BTD7D7D3CRCXCPD8CXD3D2 CUD3D6 BVD3D1D4D9D8CPD8CXD3D2CPD0 C4CXD2CVD9CXD7D8CXCRD7BA CCCPCQD0CT BFBM BXDACPD0D9CPD8CXD3D2 D3CU BUD3D9D2CSCPD6DD CBCTD2D8CTD2CRCT C1CSCTD2D8CXACCRCPD8CXD3D2 CFCXD2CSD3DB BUD3D9D2CSCPD6DD AZ C5CXD2CXD1CPD0 CRD3CWCTD7CXD3D2 BUD3D9D2CSCPD6DD D7CTD2D8CTD2CRCT C0CTCPCSCXD2CV D6CPD8CT DBCXCSD8CW CRD3D6BA D6CTD7BA CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 CACTCRCPD0D0 C8D6CTCRCXD7CXD3D2 C7DACTD6CPD0D0 C1CSCTD2D8CXACCRCPD8CXD3D2 BHBDBEBC BD BE BC B4BCBABDB5 BC B4BABCBHB5 BDBCBC B4BCBABDB5 BHBC B4BABCBHB5 BDBCBC B4BIBABIB5 BDBCBC B4BEBLB5 BEBHBIBC BE BG BC B4BCBABEB5 BC B4BCBABDB5</definiens>
+			</definition>
+</paper>
+
+		<paper id="1059">
+</paper>
+
+		<paper id="1056">
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>S NP VP Kim eats PRED 'Kim ' NUM SG SUBJ TENSE PRES PRED 'eat ( SUBJ ) ' Figure 1 Bod &amp; Kaplan also introduce the notion of accessibility which they later use for defining the decomposition operations of LFG-DOP : An f-structure unit f is φ-accessible from a node n iff either n is φ-linked to f ( that is , f = φ ( n ) ) or f is contained within φ ( n ) ( that is , there is a chain of attributes that leads from φ ( n ) to f ) .</sentence>
+				<definiendum id="0">NUM SG SUBJ TENSE PRES PRED 'eat</definiendum>
+				<definiens id="0">An f-structure unit f is φ-accessible from a node n iff either n is φ-linked to f ( that is , f = φ ( n )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The fragments for LFG-DOP consist of connected subtrees whose nodes are in φcorrespondence with the correponding sub-units of f-structures .</sentence>
+				<definiendum id="0">The fragments for LFG-DOP</definiendum>
+				<definiens id="0">consist of connected subtrees whose nodes are in φcorrespondence with the correponding sub-units of f-structures</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>To give a precise definition of LFG-DOP fragments , it is convenient to recall the decomposition operations employed by the orginal DOP model which is also known as the `` Tree-DOP '' model ( Bod 1993 , 1998 ) : ( 1 ) Root : the Root operation selects any node of a tree to be the root of the new subtree and erases all nodes except the selected node and the nodes it dominates .</sentence>
+				<definiendum id="0">LFG-DOP fragments</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A derivation for an LFG-DOP representation R is a sequence of fragments the first of which is labeled with S and for which the iterative application of the composition operation produces R. For an illustration of the composition operation , see Bod &amp; Kaplan ( 1998 ) .</sentence>
+				<definiendum id="0">derivation for an LFG-DOP representation R</definiendum>
+				<definiens id="0">a sequence of fragments the first of which is labeled with S and for which the iterative application of the composition operation produces R. For an illustration of the composition operation</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Let CP ( f | CS ) denote the probability of choosing a fragment f from a competition set CS containing f , then the probability of a derivation D = &lt; f1 , f2 ... fk &gt; is ( 2 ) P ( &lt; f1 , f2 ... fk &gt; ) = Πi CP ( fi | CSi ) where the competition probability CP ( f | CS ) is expressed in terms of fragment probabilities P ( f ) : Σf'∈CS P ( f ' ) P ( f ) ( 3 ) CP ( f | CS ) = Bod &amp; Kaplan give three definitions of increasing complexity for the competition set : the first definition groups all fragments that only satisfy the Category-matching condition of the composition operation ; the second definition groups all fragments which satisfy both Categorymatching and Uniqueness ; and the third definition groups all fragments which satisfy Categorymatching , Uniqueness and Coherence .</sentence>
+				<definiendum id="0">CP</definiendum>
+				<definiens id="0">CP ( fi | CSi ) where the competition probability CP ( f | CS ) is expressed in terms of fragment probabilities P ( f ) : Σf'∈CS P ( f '</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We will also use an alternative definition of fragment probability which is a refinement of simple RF .</sentence>
+				<definiendum id="0">fragment probability</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>We accomplish this by a very simple estimator : the Turing-Good estimator ( Good 1953 ) which computes the probability mass of unseen events as n1/N where n1 is the number of singleton events and N is the total number of seen events .</sentence>
+				<definiendum id="0">simple estimator</definiendum>
+				<definiendum id="1">Turing-Good estimator</definiendum>
+				<definiendum id="2">N</definiendum>
+				<definiens id="0">computes the probability mass of unseen events as n1/N where n1 is the number of singleton events</definiens>
+				<definiens id="1">the total number of seen events</definiens>
+			</definition>
+</paper>
+
+		<paper id="1051">
+			<definition id="0">
+				<sentence>Among them , the so-called BACKWARD-LOOKING CENTER ( CB ) , defined as follows : Backward Looking Center ( CB ) CB ( U CXB7BD ) , the BACKWARD-LOOKING CENTER of utterance U CXB7BD , is the highest ranked element of CF ( U CX ) that is realized in U CXB7BD .</sentence>
+				<definiendum id="0">BACKWARD-LOOKING CENTER</definiendum>
+				<definiendum id="1">CB</definiendum>
+				<definiendum id="2">CB ) CB</definiendum>
+				<definiens id="0">the highest ranked element of CF ( U CX ) that is realized in U CXB7BD</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>As a result , centering theory is best viewed as a cluster of theories , each of which specifies the parameters in a different ways : e.g. , ranking has been claimed to depend on grammatical function ( Kameyama , 1985 ; Brennan et al. , 1987 ) , on thematic roles ( Cote , 1998 ) , and on the discourse status of the CFs ( Strube and Hahn , 1999 ) ; there are at least two definitions of what counts as ‘previous utterance’ ( Kameyama , 1998 ; Suri and McCoy , 1994 ) ; and ‘realization’ can be interpreted either in a strict sense , i.e. , by taking a CF to be realized in an utterance only if an NP in that utterance denotes that CF , or in a looser sense , by also counting a CF as ‘realized’ if it is referred to indirectly by means of a bridging reference ( Clark , 1977 ) , i.e. , an anaphoric expression that refers to an object which wasn’t mentioned before but is somehow related to an object that already has , as in the vase ... the handle ( see , e.g. , the discussion in ( Grosz et al. , 1995 ; Walker et al. , 1998b ) ) .</sentence>
+				<definiendum id="0">centering theory</definiendum>
+				<definiens id="0">an object which wasn’t mentioned before but is somehow related to an object that already has</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We annotated attributes of NPs which could be used to define their ranking , including : AF The NP type , cat ( pronoun , proper name , etc. ) AF A few other ‘basic’ syntactic features , num , per , andgen , that could be used to identify contexts in which the antecedent of a pronoun could be identified unambiguously ; AF The grammatical function , gf ; AF ani : whether the object denoted is animate or inanimate AF deix : whether the object is a deictic reference or not The agreement values for these attributes are as follows : Attribute AK Value ani .81 cat .9 deix .81 gen .89 gf .85 num .84 per .9 one of the features of NPs claimed to affect ranking ( Sidner , 1979 ; Cote , 1998 ) that we haven’t so far been able to annotate because of failure to reach acceptable agreement is thematic roles ( AK BP BMBFBH ) .</sentence>
+				<definiendum id="0">AF ani</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The relations we mark up are a subset of those proposed in the ‘extended relations’ version of the MATE scheme ( Poesio et al. , 1999 ) and include set membership ( ELEMENT ) , subset ( SUBSET ) , and ‘generalized possession’ ( POSS ) , which includes part-of relations as well as more traditional ownership relations .</sentence>
+				<definiendum id="0">POSS</definiendum>
+				<definiens id="0">a subset of those proposed in the ‘extended relations’ version of the MATE scheme ( Poesio et al. , 1999 ) and include set membership ( ELEMENT ) , subset ( SUBSET ) , and ‘generalized possession’ (</definiens>
+				<definiens id="1">includes part-of relations as well as more traditional ownership relations</definiens>
+			</definition>
+</paper>
+
+		<paper id="1038">
+			<definition id="0">
+				<sentence>To begin , we start with a collection a47 of a48 a44a50a49a51a45a40a49a52a46a54a53 triplets , where a46 is a human-constructed summary of a44 relative to the query a45 .</sentence>
+				<definiendum id="0">a46</definiendum>
+				<definiens id="0">a human-constructed summary of a44 relative to the query a45</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The learning process involves maximum-likelihood estimation of probabilistic language models and the statistical technique of shrinkage ( Stein , 1955 ) .</sentence>
+				<definiendum id="0">learning process</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>In that case , the training data consists of a48 a44a50a49a51a46a110a53 pairs , where a46 is a summary of the document a44 .</sentence>
+				<definiendum id="0">a46</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Equation ( 1 ) is a search problem : find the summary a46 a138 which maximizes the product of two factors : mary : A document may contain some portions directly relevant to the query , and other sections bearing little or no relation to the query .</sentence>
+				<definiendum id="0">Equation ( 1 )</definiendum>
+				<definiens id="0">a search problem : find the summary a46 a138 which maximizes the product of two factors : mary : A document may contain some portions directly relevant to the query</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Each summary model a96 a111 lives at a leaf node , and the relevancea96a112a89a97a45a142a98a99a46a149a92 of a query to that summary is a convex combination of the distributions at each node Algorithm : Shrinkage for a235a236 estimation Input : Distributions a96 a111 a49a41a96a162a161a237a49a41a96a83a233a162a49a208a96 a234 , a238 a100 a48 a44a50a49a51a45a40a49a52a46a110a53 ( not used to estimate a96 a111 a49a208a96 a161 a49a208a96 a233 a49a208a96a43a234 ) Output Model weights a235a236 a100 a48 a236 a111 a49 a236 a232a239a49 a236 a161a83a49 a236 a233a83a49 a236 a234 a53 a111 a173a254a243a82a244a223a245a165a246a123a247 a111a143a255a1a0a3a2 a4 a2 a191 a5 a192 a4 a191 a5a7a6a38a111 a192 ( similarly for a251a231a49a52a44a50a49a99a47a40a49a91a252 ) a222 a8a10a9a12a11a14a13a12a15 a222 ( similarly for a236 a232 a49 a236 a161 a49 a236 a233 a49 a236 a234 ) along a path from the leaf to the root2 : a17 a35a38a33a94a213a91a84a82a42a19a18a21a20 a226 a212 a226 a35a38a33a43a42a23a22a24a20a128a224a90a212a83a224a94a35a38a33a36a42a10a22 ( 5 ) a20a128a221a110a212a120a221a156a35a38a33a43a42a25a22a26a20a133a219a114a212a220a219a128a35a38a33a36a42a27a22a28a20a128a218a156a212a120a218a237a35a38a33a43a42 We calculate the weighting coefficients a235a236 a100 a48 a236 a111 a49 a236 a232a108a49 a236 a161a237a49 a236 a233a120a49 a236 a234 a53 using the statistical technique known as shrinkage ( Stein , 1955 ) , a simple form of the EM algorithm ( Dempster et al. , 1977 ) .</sentence>
+				<definiendum id="0">summary model a96 a111</definiendum>
+				<definiens id="0">lives at a leaf node</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Call-center data : A collection of questions submitted by customers to the companies Air Canada , Ben and Jerry , Iomagic , and Mylex , along with the answers supplied by company 2By incorporating a a212a83a221 model into the relevance model , equation ( 6 ) has implicitly resurrected the dependence on a37 which we dropped , for the sake of simplicity , in deriving ( 1 ) .</sentence>
+				<definiendum id="0">Call-center data</definiendum>
+				<definiens id="0">A collection of questions submitted by customers to the companies Air Canada , Ben and Jerry , Iomagic , and Mylex , along with the answers supplied by company 2By incorporating a a212a83a221 model into the relevance model , equation ( 6 ) has implicitly resurrected the dependence on a37 which we dropped , for the sake of simplicity</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>∑ = − − = N i ii wwP N PP 1 1 ) | ( log 1 2 ( 2.3 ) where N is the length of the testing data .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the length of the testing data</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Bayes rule is used to divided the objective function ( as equation 4.1 ) into two parts , one is the spelling model for English , the other is the Chinese language model , as shown in equation Goal : ) |Pr ( maxarg ^ PHH H = ( 4.1 ) Bayes Rule : ) Pr ( ) Pr ( ) |Pr ( maxarg ^ P HHP H H = ( 4.2 ) One of the common methods is to consider the English word as one single category , called &lt; English &gt; .</sentence>
+				<definiendum id="0">Bayes rule</definiendum>
+			</definition>
+</paper>
+
+	</volume>

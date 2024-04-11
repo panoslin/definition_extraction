@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J91">
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>The notion of the head of a phrase has a very long history , which stems from the traditional grammar and plays a central role in recent syntactic analysis frameworks such as GB and GPSG ( Sells 1985 ) .</sentence>
+				<definiendum id="0">notion of the head of a phrase</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>( l ) S = bar ( 2 ) S-bar ( 3 ) s ( 4 ) NP ( 5 ) XPDE ( 6 ) VP ( 7 ) V-bar ( 8 ) PP Notations : Operators : -- &gt; S-bar PRTAQ I S PRTAG -- &gt; Topic S -- &gt; ( NP ) VP -- &gt; ( XPDE ) ( QP ) ( ADJ ) N I ( QP ) ( XPDE ) ( ADJ ) N I NPLOC -- &gt; S DE I NP DE IPPDE -- &gt; ( AUX I ADV I PP I NP ) * V-bar -- &gt; v QP I v ( NP ) ( NP I PP I VP i S I S-bar ) -- &gt; PREP NP \ ] : Or Operator , * : Repetition Operator , O : Optional Opera , or , : head Phrasal Categories : S=bar , S-bar , S , NP , XPDE : an Associative Phrase or a Relative/Appositive Clause , VP , V-bar , PP , Topic , QP : Classifier anti Measure Phrase .</sentence>
+				<definiendum id="0">XPDE</definiendum>
+				<definiens id="0">Operators : -- &gt; S-bar PRTAQ I S PRTAG -- &gt; Topic S -- &gt; ( NP ) VP -- &gt; ( XPDE ) ( QP ) ( ADJ ) N I ( QP ) ( XPDE ) ( ADJ ) N I NPLOC -- &gt; S DE I NP DE IPPDE -- &gt;</definiens>
+				<definiens id="1">an Associative Phrase or a Relative/Appositive Clause , VP , V-bar , PP , Topic , QP : Classifier anti Measure Phrase</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Just like a conventional chart ( Kay 1980 ; Winograd 1983 ) , the direction-selective chart is an efficient data structure to record what has been done so far in the course of parsing to avoid duplicate computation .</sentence>
+				<definiendum id="0">direction-selective chart</definiendum>
+				<definiens id="0">an efficient data structure to record what has been done so far in the course of parsing to avoid duplicate computation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Then , based on the head-driven principle and the sample grammar , the word `` q-f ( hit ) , '' according to rule ( 4 ) in the sample grammar , is an initial head ( a transitive verb ) that needs a right neighboring NP to form a V-bar ( that is represented by an F-active edge ; i.e. , edge ( l ) in Figure 11b ) ; the word `` d ' ~ ( children ) , '' based on rule ( 1 ) , is a final head ( a noun ) that either can be an NP by itself ( this is represented by an inactive edge ; i.e. , edge ( 2 ) in Figure 11b ) or needs a left neighboring XPDE to form an NP ( this is represented by a B-active edge ( * ) in Figure 11b ) .</sentence>
+				<definiendum id="0">V-bar</definiendum>
+				<definiendum id="1">B-active edge</definiendum>
+				<definiens id="0">a final head ( a noun</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In our implementation , an empty NP contains three fields : ( 1 ) a field to keep the pointer to indicate its antecendent , ( 2 ) a field to keep where it came from , and ( 3 ) a field to keep the syntactic or semantic constraints on the empty NP for later checking .</sentence>
+				<definiendum id="0">NP</definiendum>
+				<definiens id="0">a field to keep the syntactic or semantic constraints on the empty</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The raise-bind mechanism is a computational approach to deal with the binding of empty categories .</sentence>
+				<definiendum id="0">raise-bind mechanism</definiendum>
+				<definiens id="0">a computational approach to deal with the binding of empty categories</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Processing System for Chinese Language Figure 14 Test Sentc~tc 1 4 5 6 / 10 l.j 16 17 18 19 2O 21 22 23 Avert-age Ratios ~verage Speed of Pi-ocessi~ g ( See/Sen ~nee ) Edge Reduction Ratios 'Test I Test II Test III Test I\ A table showing the edge reduction ratios for the 25 typical sentence examples listed in APPENDIX C and the average reduction ratios for all the 200 test sentences for the four tests campared to Test I. their transitivity into eight different syntactic classes and giving each verb a semantic category that can be used to decide the case frame to solve the problem of serial verb construction .</sentence>
+				<definiendum id="0">semantic category</definiendum>
+				<definiens id="0">See/Sen ~nee ) Edge Reduction Ratios 'Test I Test II Test III Test I\ A table showing the edge reduction ratios for the 25 typical sentence examples listed in APPENDIX C and the average reduction ratios for all the 200 test sentences for the four tests campared to Test I. their transitivity into eight different syntactic classes and giving each verb a</definiens>
+			</definition>
+</paper>
+
+		<paper id="3005">
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>Antonymy is a special lexical association between word pairs .</sentence>
+				<definiendum id="0">Antonymy</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Sentential occurrences of an adjective is the number of sentences in which the adjective occurs in the corpus ; this number is given in columns 1 and 3 , once for each member of an antonym pair .</sentence>
+				<definiendum id="0">Sentential occurrences of an adjective</definiendum>
+				<definiens id="0">the number of sentences in which the adjective occurs in the corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Observed is the number of sentences in which both adjectives occur ; expected is the number expected to have both adjectives by chance ; ratio is the ratio of observed to expected co-occurrences ; rate 1/n indicates that one sentence out of n that have the less frequent adjective produces a co-occurrence with its antonym ; and probability is the probability of observing by chance as many or more co-occurrences than are actually observed .</sentence>
+				<definiendum id="0">Observed</definiendum>
+				<definiendum id="1">; expected</definiendum>
+				<definiendum id="2">ratio</definiendum>
+				<definiendum id="3">probability</definiendum>
+				<definiens id="0">the number of sentences in which both adjectives occur</definiens>
+				<definiens id="1">the ratio of observed to expected co-occurrences</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>This leaves a set of 24 new antonym pairs to test , at least one of whose members occurs adjectivally in no fewer than 50 sentences in the Brown Corpus ( see Table 2 ) .</sentence>
+				<definiendum id="0">Corpus</definiendum>
+				<definiens id="0">one of whose members occurs adjectivally in no fewer than 50 sentences in the Brown</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Sentential occurrences of an adjective is the number of sentences in which the adjective occurs in the corpus ; this number is given in columns 1 and 3 , once for each member of an antonym pair .</sentence>
+				<definiendum id="0">Sentential occurrences of an adjective</definiendum>
+				<definiens id="0">the number of sentences in which the adjective occurs in the corpus</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Observed is the number of sentences in which both adjectives occur ; expected is the number expected to have both adjectives by chance ; ratio is the ratio of observed to expected co-occurrences ; rate 1/n indicates that one sentence out of n that have the less frequent adjective produces a co-occurrence with its antonym ; and probability is the probability of observing by chance as many or more co-occurrences than are actually observed .</sentence>
+				<definiendum id="0">Observed</definiendum>
+				<definiendum id="1">; expected</definiendum>
+				<definiendum id="2">ratio</definiendum>
+				<definiendum id="3">probability</definiendum>
+				<definiens id="0">the number of sentences in which both adjectives occur</definiens>
+				<definiens id="1">the ratio of observed to expected co-occurrences</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Let N be the total number of sentences in the corpus , nl , i the number containing the more frequent adjective in pair i , n2 , i the number containing the less frequent adjective in that pair ; and let fm , i = n~ , JN be the corresponding relative frequencies , where m = 1 or 2 .</sentence>
+				<definiendum id="0">JN</definiendum>
+				<definiens id="0">the number containing the less frequent adjective in that pair</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Perhaps less crucially , it is also a substitution ( not substitutability ) theory : phrasal substitution provides a mechanism , antonym alignment , that yields an explicit pairing of the antonyms and enhances the efficacy of training on the association between them .</sentence>
+				<definiendum id="0">antonym alignment</definiendum>
+				<definiens id="0">yields an explicit pairing of the antonyms and enhances the efficacy of training on the association between them</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The probability qc that this particular combination would be found by chance is The overall probability Qs that exactly s pairs will co-occur by chance is the sum ~cc¢~ qc ; it consists of ( : ) such terms , one for each combination c in Cs .</sentence>
+				<definiendum id="0">probability qc</definiendum>
+				<definiens id="0">the sum ~cc¢~ qc</definiens>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>In speech recognition we are presented with words one at a time , in sequence , and so we would like to calculate the probability P ( s -- * w~w2 ... Wk ... ) that an arbitrary string wlw2 ... Wk is the initial substring of a sentence generated by the given SCFG .</sentence>
+				<definiendum id="0">Wk</definiendum>
+				<definiens id="0">the probability P ( s -- * w~w2 ... Wk ... ) that an arbitrary string wlw2 ...</definiens>
+				<definiens id="1">the initial substring of a sentence generated by the given SCFG</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Let P ( H ( i~j &gt; ) denote the probability P ( H -- ~ wi ... wj ) that starting with the nonterminal H , successive application of grammar rules has produced the sequence wiwi+l..</sentence>
+				<definiendum id="0">P ( H</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>In what follows we will need PL ( H ~ G ) , the sum of the probabilities of all the rules H -- * GIG2 whose first righthand side element is G1 = G. That is , PL ( H -= ' G ) = E P ( H -- * GG2 ) ( 4 ) G2 Next we define the quantity QL ( H c ) = PL ( H -- * G ) + y~PL ( H ~ A1 ) PL ( A1 -* G ) A1 + y~ PL ( H -* A1 ) PL ( A1 ~ A2 ) PL ( A2 -- * G ) + ... A1 , A2 + Z PL ( H A ) P ( A1 C ) + ... A1 , ... , Ak = ~P ( H* , Ga ) ot ( 5 ) which is the sum of probabilities of all trees with root node H that produce G as the leftmost ( first ) nonterminal .</sentence>
+				<definiendum id="0">PL ( H -* A1 ) PL</definiendum>
+				<definiens id="0">H c ) = PL ( H -- * G ) + y~PL ( H ~ A1 ) PL ( A1 -* G ) A1 + y~</definiens>
+				<definiens id="1">the sum of probabilities of all trees with root node H that produce G as the leftmost</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Then equation ( 5 ) can be rewritten in matrix form as QL = PL + p2 + p3 + ... prk + ... ( 17 ) 321 Computational Linguistics Volume 17 , Number 3 where Pi L denotes i-fold multiplication of the matrix PL with itself .</sentence>
+				<definiendum id="0">Pi L</definiendum>
+				<definiens id="0">i-fold multiplication of the matrix PL with itself</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Post-multiplying both sides of ( 17 ) by the matrix PL , subtracting the resulting equation from ( 17 ) , and cancelling terms , we get QL QLPL == PL ( 18 ) Finally , denoting by I the diagonal unit matrix of the same dimension as PL , we get from ( 18 ) the desired solution QL = eg\ [ I -PL\ ] -1 ( 19 ) where \ [ I PL\ ] -I denotes the inverse of the matrix \ [ I PL\ ] .</sentence>
+				<definiendum id="0">-I</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Fortunately , this does not mean carrying out the LRI algorithm N times for each word position k , but only M times , where M is the number of nonterminals of the grammar .</sentence>
+				<definiendum id="0">M</definiendum>
+				<definiens id="0">the number of nonterminals of the grammar</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In fact , a simple modification of the algorithm allows one to compute the probabilities of P ( s -- * wlw2 ... Wk-1 gi ... ) where gi is an element of the set of nonterminals = { gl = s~ g2~ ... , g~ } .</sentence>
+				<definiendum id="0">gi</definiendum>
+				<definiens id="0">a simple modification of the algorithm allows one to compute the probabilities of P ( s -- * wlw2 ... Wk-1 gi ... ) where</definiens>
+				<definiens id="1">an element of the set of nonterminals = { gl = s~ g2~ ... , g~ }</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>The one he labels ( 1 ) resembles the structure of very large number-names in English ( and other NLs ) : NTn ( , NTn-1 ) ... ( , NT ) ( , N ) ( 1 ) In this construction , N indicates a number between I and 999 , T is an abbreviation for thousand , commas indicate an intonational pause , and everything within parentheses is optional .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">a number between I and 999</definiens>
+				<definiens id="1">an abbreviation for thousand</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Yet , whether characteristic ( ii ) is a consequence of a linguistic constraint or of some other type of constraint is a question we leave open till Section 6 .</sentence>
+				<definiendum id="0">constraint</definiendum>
+				<definiens id="0">a consequence of a linguistic constraint or of some other type of</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>LIGs are a restricted type of IGs , which were introduced by Aho ( 1968 ) as an extension of CFGs .</sentence>
+				<definiendum id="0">LIGs</definiendum>
+				<definiens id="0">a restricted type of IGs , which were introduced by Aho ( 1968 ) as an extension of CFGs</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Assume L is a TAL .</sentence>
+				<definiendum id="0">Assume L</definiendum>
+				<definiens id="0">a TAL</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Where n is the constant referred to by the lemma , corresponding to our L , consider the string z -= abn+4abn+3abn+2abn+lab n which is in L. Let us now number the columns of z 1-5 from left to right , where a column is an a followed by bs .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">an a followed by bs</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Here pumping up once or more , i.e. setting i &gt; 1 , 283 Computational Linguistics Volume 17 , Number 3 will not suffice , because the newly created strings remain in L , since they meet the well-formedness conditions of L : Each column contains more instances of b than any one of the columns to its right .</sentence>
+				<definiendum id="0">L</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>IG ( H ) = ( { S , T , U , V , W , X , Z } , { wu , zhao } , { f , g } , P , S ) where P comprises : S -- * Tg W -- * Wf T -- ~ Tf W -- * Xf wu Z T -- * Uf wu Z X -- * Xf U -- * Uf X -- * wu Z U ~ Vf wu Z Zf -- * zhao Z V -- -* Vf Zg ~ zhao V -- * Wf wu Z However , H is not the only proper subset of NC having the characteristic of more than four columns .</sentence>
+				<definiendum id="0">IG</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">comprises : S -- * Tg W -- * Wf T -- ~ Tf W -- * Xf wu Z T -- * Uf wu Z X -- * Xf U -- * Uf X -- * wu Z U ~ Vf wu Z Zf -- * zhao Z V</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>( HG is a Generalized CFG whose compositional operations are restricted to those of CFG plus head-wrapping . )</sentence>
+				<definiendum id="0">HG</definiendum>
+				<definiens id="0">a Generalized CFG whose compositional operations are restricted to those of CFG plus head-wrapping</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Their proof crucially depends on the following assumption ( p. 19 ) : `` Let us 286 Radzinski Chinese Number-Names It follows from this lemma that , for any string in a MCTAL that is longer than a determined constant n associated with this MCTAL , the string has at most 2m pumpable substrings , where m is a fixed number associated with the particular MCTAL .</sentence>
+				<definiendum id="0">m</definiendum>
+				<definiens id="0">a fixed number associated with the particular MCTAL</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>We now investigate if NC possesses the Mildly CS properties .</sentence>
+				<definiendum id="0">NC</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>288 Radzinski Chinese Number-Names A ( utomaton ) efficiently accept exactly K in linear time ( less than 2n ) , ipso facto , polynomial time : ( q0 , a , a , ql ) ( ql , &amp; , b , q2 ) ( q2 , A , b , q2 ) ( q2 , A , # , qf ) ( q2 , k , a , q3 ) ( q3 , b , b , q4 ) ( q4 , b , b , q4 ) ( q4 , b , a , q5 ) ( q4 , b , # , qf ) ( q5 , b , A , q5 ) ( q5 , a , A , q3 ) A THFA consists of a finite control , an input tape , and two read-only heads that move only left to right .</sentence>
+				<definiendum id="0">Radzinski Chinese Number-Names A</definiendum>
+				<definiendum id="1">, q3 ) A THFA</definiendum>
+				<definiens id="0">( utomaton ) efficiently accept exactly K in linear time ( less than 2n ) , ipso facto , polynomial time : ( q0 , a , a , ql ) ( ql , &amp; , b , q2 ) ( q2 , A , b , q2 ) ( q2 , A , # , qf ) ( q2 , k , a , q3 ) ( q3 , b , b , q4 ) ( q4 , b , b , q4 ) ( q4 , b , a , q5 ) ( q4 , b , # , qf ) ( q5 , b , A , q5 ) ( q5 , a , A</definiens>
+				<definiens id="1">consists of a finite control , an input tape , and two read-only heads that move only left to right</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>An input string is accepted iff one of the heads ( or both ) falls off the right edge and enters the final state qf.13 Our THFA ( K ) simultaneously uses its two heads in order to compare the number of bs in every two adjacent columns .</sentence>
+				<definiendum id="0">input string</definiendum>
+				<definiens id="0">accepted iff one of the heads</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>96-97 ) Theorem 4.3.1 If L is a language generated by a grammar of some formalism that is a LCFRS , then L is a semilinear language .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">a semilinear language</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>CG is a consequence of semilinearity .</sentence>
+				<definiendum id="0">CG</definiendum>
+				<definiens id="0">a consequence of semilinearity</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>`` Combinatory Categorial Grammars : Generative Power and Relationship to Linear Context-Free Rewriting Systems , '' Proceedings of the 26th Annual Meeting of the Association for Computational Linguistics , 278-285 .</sentence>
+				<definiendum id="0">Combinatory Categorial Grammars</definiendum>
+				<definiens id="0">Generative Power</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>Conceptual meaning is the cognitive content of words ; it can be expressed by features or by primitives : conceptual meaning is `` deep '' in that it expresses phenomena that are deeply embedded in language .</sentence>
+				<definiendum id="0">Conceptual meaning</definiendum>
+				<definiens id="0">the cognitive content of words ; it can be expressed by features or by primitives</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A semantic knowledge framework in the style of collocative meaning is also adopted in Ace ( Jacobs 1987 ) , which has been used by the TRUMP language analyzer in a variety of applications .</sentence>
+				<definiendum id="0">semantic knowledge framework</definiendum>
+				<definiens id="0">has been used by the TRUMP language analyzer in a variety of applications</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In our previous work on semantic knowledge representation ( Pazienza 1988 , Velardi 1988 , Antonacci 1989 ) we showed that a semantic dictionary in the style of collocative meaning is a powerful basis for semantic interpretation .</sentence>
+				<definiendum id="0">collocative meaning</definiendum>
+				<definiens id="0">a powerful basis for semantic interpretation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In summary : the conceptual relation that interpret that observation ( CRC ) ; CRCs ) .</sentence>
+				<definiendum id="0">CRCs</definiendum>
+				<definiens id="0">the conceptual relation that interpret that observation ( CRC ) ;</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In Smadja ( 1989 ) the system EXTRACT , which uses shallow methods to extensively derive collocates from corpora , is described .</sentence>
+				<definiendum id="0">EXTRACT</definiendum>
+				<definiens id="0">uses shallow methods to extensively derive collocates from corpora , is described</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The system produces a list of tuples ( wl , w2 , f ) , where wl and w2 are two co-occurring words and f is the frequency of appearance in the corpus .</sentence>
+				<definiendum id="0">wl</definiendum>
+				<definiendum id="1">f</definiendum>
+				<definiens id="0">the frequency of appearance in the corpus</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>Therefore , if done correctly , lexical semantics can be a means to reevaluate the very nature of semantic composition in language .</sentence>
+				<definiendum id="0">lexical semantics</definiendum>
+				<definiens id="0">a means to reevaluate the very nature of semantic composition in language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Briefly , type coercion can be defined as follows : 17 Definition Type Coercion : A semantic operation that converts an argument to the type that is expected by a function , where it would otherwise result in a type error .</sentence>
+				<definiendum id="0">Definition Type Coercion</definiendum>
+				<definiens id="0">A semantic operation that converts an argument to the type that is expected by a function</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Example 46 novel translates into : ) ~x\ [ novel ( x ) A Const ( x ) = narrative ' ( x ) A Form ( x ) = book ' ( x ) A Telic ( x ) = , ~y , eT\ [ read ' ( x ) ( y ) ( er ) \ ] A Agent ( x ) = , ~y , er\ [ write ' ( x ) ( y ) ( eT ) \ ] \ ] The coercion operation on the complement in the above examples can be seen as a request to find any transition event associated with the noun .</sentence>
+				<definiendum id="0">Const</definiendum>
+				<definiendum id="1">Form</definiendum>
+				<definiendum id="2">Telic</definiendum>
+				<definiendum id="3">Agent</definiendum>
+				<definiens id="0">a request to find any transition event associated with the noun</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Example 53 Ax \ [ mot orway ( x ) . . . \ [ Tel ic ( x ) = AeV \ [ travel ( cars ) ( e P ) A on ( x ) ( cars ) ( e p ) A fast ( e P ) \ ] \ ] \ ] As our final example of how the qualia structure contributes to the semantic interpretation of a sentence , observe how the nominals window and door in Examples 54 and 55 carry two interpretations ( cf. Lakoff \ [ 1987\ ] and Pustejovsky and Anick \ [ 1988\ ] ) : Example 54 a. John crawled through the window .</sentence>
+				<definiendum id="0">Ax \ [ mot orway</definiendum>
+				<definiendum id="1">ic</definiendum>
+				<definiens id="0">the semantic interpretation of a sentence , observe how the nominals window and door in Examples 54 and 55 carry two interpretations ( cf. Lakoff</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Pustejovsky ( forthcoming ) distinguishes tlhe following systems and the paradigms that lexical items fall into : Example 57 a. Count/Mass Alternations b. Container/Containee Alternations c. Figure/Ground Reversals d. Product/Producer Diathesis e. Plant/Fruit Alternations f. Process/Result Diathesis g. Object/Place Reversals h. State/Thing Alternations i. Place/People Such paradigms provide a means for accounting for the systematic ambiguity that may exist for a lexical item .</sentence>
+				<definiendum id="0">Pustejovsky ( forthcoming )</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Then : Definition A sequence ( Q1 , P1 , ... , Pn ) is an inheritance path , which can be read as the conjunction of ordered pairs { ( xl , yi ) \ [ 1 &lt; i &lt; n } .</sentence>
+				<definiendum id="0">P1 , ... , Pn )</definiendum>
+				<definiens id="0">an inheritance path</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Definition The projective conclusion space , P ( @ R ) , is the set of projective expansions generated from all elements of the conclusion space , ~ , on role R of predicate Q : as : P ( ~R ) = { ( P ( Q1 ) , P ( Qn ) &gt; \ [ ( QI , ... , Qn ) E ~R } .</sentence>
+				<definiendum id="0">QI , ... , Qn</definiendum>
+				<definiens id="0">the set of projective expansions generated from all elements of the conclusion space</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Example 64 release ( T , y , *x* ) escape ( T , *x* ) capture ( T , y , *x* ) turn-in ( T , *x* ) 81 ~ S2 82 _~ $ 1 -~confined ( S2 , y , *x* ) I confined ( S1 , y , *x* ) Formal Telic escape ( T , *x* ) the prisoner escaped I I Det N V NP VP ~ jf S We can therefore use such a procedure as one metric for evaluating the `` proximity '' of a predication ( Quillian 1968 ; Hobbs 1982 ) .</sentence>
+				<definiendum id="0">Telic escape</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Lexical cohesion is the cohesion that arises from semantic relationships between words .</sentence>
+				<definiendum id="0">Lexical cohesion</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The first is called a dominance relation , which occurs when the satisfaction ( i.e. , successful completion ) of one segment 's intention contributes to the satisfaction of another segment 's intention .</sentence>
+				<definiendum id="0">dominance relation</definiendum>
+				<definiens id="0">occurs when the satisfaction ( i.e. , successful completion</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>24 Morris and Hirst Lexical Cohesion Ultimately , the difference between cohesion and coherence is this : cohesion is a term for sticking together ; it means that the text all hangs together .</sentence>
+				<definiendum id="0">coherence</definiendum>
+				<definiendum id="1">cohesion</definiendum>
+				<definiens id="0">a term for sticking together ; it means that the text all hangs together</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Coherence is a term for making sense ; it means that there is sense in the text .</sentence>
+				<definiendum id="0">Coherence</definiendum>
+				<definiens id="0">a term for making sense</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A coherence relation is a relation among clauses or sentences , such as elaboration , support , cause , or exemplification .</sentence>
+				<definiendum id="0">coherence relation</definiendum>
+				<definiens id="0">a relation among clauses or sentences , such as elaboration , support , cause , or exemplification</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Cohesion is a useful indicator of coherence regardless of whether it is used intentionally by writers to create coherence , or is a result of the coherence of text .</sentence>
+				<definiendum id="0">Cohesion</definiendum>
+				<definiens id="0">a useful indicator of coherence regardless of whether it is used intentionally by writers to create coherence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A dictionary explains the meaning of words , whereas a thesaurus aids in finding the words that best express an idea or meaning .</sentence>
+				<definiendum id="0">dictionary</definiendum>
+				<definiens id="0">explains the meaning of words , whereas a thesaurus aids in finding the words that best express an idea or meaning</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The topmost level consists of eight major classes developed by Roget in 1852 : abstract relations , space , physics , matter , sensation , intellect , volition , and affections .</sentence>
+				<definiendum id="0">topmost level</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>Lexical entries constrain the feature structures that can be associated with terminal nodes of the syntactic tree , and phrase structure rules simultaneously constrain the feature structures that can be associated with a parent node and its immediate descendants .</sentence>
+				<definiendum id="0">Lexical entries</definiendum>
+				<definiens id="0">constrain the feature structures that can be associated with terminal nodes of the syntactic tree , and phrase structure rules simultaneously constrain the feature structures that can be associated with a parent node and its immediate descendants</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The unification operation `` combines '' or `` merges '' two elements into a single element that agrees with both of the original elements on the values of all of their defined sequences of attributes , so the unification of two complex elements requires the unification of the values of any attributes they have in common .</sentence>
+				<definiendum id="0">unification operation</definiendum>
+				<definiens id="0">agrees with both of the original elements on the values of all of their defined sequences of attributes</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Example 3 ( continued ) The lexical entry for the determiner die of Figure 4 is the following formula , where x is a ( non-attribute-value ) constant that denotes the feature structure of the determiner , and y and z are constants that are not attribute-value constants .</sentence>
+				<definiendum id="0">x</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>( number ( y , plural ) V ( number ( y , singular ) A gender ( y , feminine ) ) ) Example 4 ( continued ) The lexical entry for the verb swim of Figure 5 is the following formula , where g is a constant that denotes the feature structure of the verb , and e and f are constants that are not attribute-value constants .</sentence>
+				<definiendum id="0">g</definiendum>
+				<definiens id="0">plural ) V ( number ( y , singular ) A gender ( y , feminine ) )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>pred ( g , swim ) A tense ( g , pres ) A subj ( g , e ) A agr ( e , f ) A -~ ( num ( f , sg ) A pers ( f , 3rd ) ) The lexical entries for the determiners this and these of Figure 9 are the following formulae , where u , v , u ~ and v ~ are constants that are not attribute-value constants , and u denotes the feature structure of this and u ~ denotes the feature structure of these .</sentence>
+				<definiendum id="0">sg ) A pers</definiendum>
+				<definiendum id="1">u</definiendum>
+				<definiens id="0">A tense ( g , pres ) A subj ( g , e ) A agr ( e , f ) A -~</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For example , the lexical entry for salmon could be the formula 3f'pred ( e ' , salmon ) A agr ( e ' , f I ) A pers ( f , 3rd ) where fr is an existentially quantified variable .</sentence>
+				<definiendum id="0">fr</definiendum>
+				<definiens id="0">an existentially quantified variable</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>pred ( g , swim ) A tense ( g , pres ) A subj ( g , e ) A agr ( G f ) A hum ( f+ u ) A pers ( f , v ) A -~ ( u = sg A v = 3rd ) 143 Computational Linguistics Volume 17 , Number 2 Example 5 ( continued ) The lexical entries for she and woman of Figure 6 are the formulae ( 13 ) and ( 14 ) , where u denotes the feature structure of the pronoun , v denotes the feature structure of the noun , and w , s , s ' , s ' , i , and i ' are constants that are not attribute-value constants .</sentence>
+				<definiendum id="0">u</definiendum>
+				<definiendum id="1">v</definiendum>
+				<definiens id="0">g , pres ) A subj ( g , e ) A agr ( G f ) A hum ( f+ u ) A pers ( f , v ) A -~ ( u = sg A v</definiens>
+				<definiens id="1">the feature structure of the pronoun ,</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>e = e'A pred ( e ' , salmon ) A agr ( e ' , f ) A pers ( f ' , 3rd ) A pred ( g , swim ) A tense ( g , pres ) A subj ( g , e ) A agr ( G f ) A -~ ( num ( f , sg ) A pers ( f , 3rd ) ) This can be simplified by straightforward applications of axiom schema ( 3 ) , equality substitution , and propositional equivalences to obtain 16b .</sentence>
+				<definiendum id="0">pred ( g</definiendum>
+				<definiendum id="1">agr</definiendum>
+				<definiendum id="2">sg ) A pers</definiendum>
+				<definiens id="0">applications of axiom schema ( 3 ) , equality substitution</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>e = e'A f = f'A e = uA pred ( e , salmon ) A pers ( f , 3rd ) A pred ( g , swim ) A tense ( g , pres ) A subj ( g , e ) A agr ( e , f ) A -~num ( f , sg ) A def ( e~ + ) A agr ( e~ v ) A num ( v , sg ) A pers ( v , 3rd ) .</sentence>
+				<definiendum id="0">salmon</definiendum>
+				<definiendum id="1">agr</definiendum>
+				<definiendum id="2">f</definiendum>
+				<definiendum id="3">num</definiendum>
+				<definiens id="0">e~ + ) A agr ( e~ v</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>e = e'A f = f'A e = uA f = vA pred ( e , salmon ) A pers ( f , 3rd ) A pred ( g , swim ) A tense ( g , pres ) A subj ( g , e ) A agr ( G f ) A -~num ( ~ , sg ) A def ( G + ) A agr ( e , f ) A num ( f , sg ) A pers ( f,3rd ) .</sentence>
+				<definiendum id="0">num</definiendum>
+				<definiens id="0">e'A f = f'A e = uA f = vA pred ( e , salmon ) A pers ( f , 3rd ) A pred ( g , swim ) A tense ( g , pres ) A subj ( g , e ) A agr ( G f ) A -~num ( ~ , sg ) A def ( G + ) A agr</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>cat ( v , n ) A index ( v , i ' ) A refs-in ( v , s ' ) A refs-out ( v , s ' ) A singleton ( i ' , w ) A union ( s ' , w , s '' ) A null ( s ' ) A Vu ( in ( u , s '' ) ~ u = i ' ) .</sentence>
+				<definiendum id="0">n ) A index</definiendum>
+				<definiendum id="1">refs-in</definiendum>
+				<definiendum id="2">refs-out</definiendum>
+				<definiens id="0">s ' , w , s '' ) A null ( s ' ) A Vu ( in ( u , s '' ) ~ u = i ' )</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>First , the axioms should be expressed in clausal form , i.e. in the form 3xl ... xnV yl ... yn A1 A ... A Am -- ~ B1 V ... V Bn where the Ai and Bj are atoms .</sentence>
+				<definiendum id="0">yn A1</definiendum>
+				<definiens id="0">A ... A Am -- ~ B1 V ... V Bn where the Ai and Bj are atoms</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>Common Lisp is a good host language for this approach , because there are primitives for accessing and altering the global function name space .</sentence>
+				<definiendum id="0">Common Lisp</definiendum>
+				<definiens id="0">a good host language for this approach</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( let ( ( table ( make-hash-table : test test ) ) ) ( serf ( get name 'memo ) table ) # ' ( lambda ( &amp; rest args ) ( let ( ( k ( funcall key args ) ) ) ( multiple-value-bind ( val found ) ( gethash k table ) ( if found val ( setf ( gethash k table ) ( apply fn args ) ) ) ) ) ) ) ) ( defun memoize ( fn-name &amp; key ( key # 'first ) ( test # 'eql ) ) `` Replace fn-name 's global definition with a memoized version . ''</sentence>
+				<definiendum id="0">defun memoize</definiendum>
+				<definiens id="0">test test</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( let ( ( table ( funcall maker ) ) ) ( serf ( get name 'memo ) table ) # ' ( lambda ( ~rest args ) ( multiple-value-bind ( val found ) ( funcall getter args table ) ( if found val ( funcall putter args ( apply fn args ) table ) ) ) ) ) ) ( defun memoize ( fn-name &amp; rest memo-keys ) `` Replace fn-name 's global definition with a memoized version . ''</sentence>
+				<definiendum id="0">funcall putter args</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>A paragraph can be thought of as a grammatical unit in the following sense : it is the discourse unit in which a functional ( or a predicate-argument ) structure can be definitely assigned to sentences/strings .</sentence>
+				<definiendum id="0">predicate-argument</definiendum>
+				<definiens id="0">a grammatical unit in the following sense : it is the discourse unit in which a functional ( or a</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Definitions • A theory is a finite set of sentences Sent ( formulas without free variables in some formal language ) .</sentence>
+				<definiendum id="0">Definitions</definiendum>
+				<definiendum id="1">theory</definiendum>
+				<definiens id="0">a finite set of sentences Sent ( formulas without free variables in some formal language )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>These theories are partially ordered ; and their partial orders are written as &lt; enter ( x , y ) , or &lt; enter , or &lt; i , or simply &lt; , depending on context. This is our way of making formal the asymmetry of plausibility of different meanings of a predicate. Again , a way of exploiting it will be shown below. 179 Computational Linguistics Volume 17 , Number 2 Definition A referential level R is a structure R = { ( ¢ , &lt; ¢ ) : ¢ E Formulae } where -- -for each ¢- &lt; ¢ is a partially ordered ( by a relation of plausibility ) collection of implications ¢ ~ T¢. The term ¢ -- * T stands for the theory { ¢ -- * ~ : ~E T } , and ~ ) -- -* { ¢1 , ¢2 , '' `` } abbreviates { ¢ -- * ¢1 , ¢ -- * ¢2 , ... } . It is convenient to assume also that all formulas , except `` laws '' -- which are supposed to be always true -- -have the least preferred empty interpretation ~. We suppose also that interpretations are additionally ranked according to the canonical partial ordering on subformulas. The ranking provides a natural method of dealing with exceptions , as in the case of finding an interpretation of ~ &amp; p &amp; fl with R containing ( ~ -- * y ) , ( c~ &amp; fl ~ -~y ) , where -~y would be preferred to ywif both are consistent , and both defaults are equally preferred. This means that preference is given to more specific information. For instance , the sentence The officer went out and struck the flag will get the reading `` lowered the flag , '' if the appropriate theory of strike ( x , y ) &amp; flag ( y ) is part of background knowledge ; if not , it will be understood as `` hit the flag. '' The referential level ( R , &lt; ) may contain the theories listed below. Since we view a dictionary as an ( imperfect ) embodiment of a referential level , we have derived the formulas in every theory T¢ from a dictionary definition of the term ¢. We believe that even such a crude model can be useful in practice , but a refinement of this model will be needed to have a sophisticated theory of a working natural language understanding system. enter ( x , y ) -- . { come_in ( x , y ) ; place ( y ) ; ... } ( el ) /* enter -- to come into a place */ enter ( x , y ) -- * join ( x , y ) &amp; group ( y ) ; typically : professionals ( y ) } ( e2 ) /* enter -- to join a group ; typically of professionals */ ship ( x ) -- * { large_boat ( x ) ; 3y carry ( x , y ) &amp; ( people ( y ) v goods ( y ) ) ; ... } ( shl ) /* ship -- a large boat for carrying people or goods on the sea */ ship ( x ) -- - , { ( large , aircraft ( x ) V space_vehicle ( x ) ) ; ... } bring ( x , y ) -- * { carry ( x , y ) ; ... } bring ( x , y ) -- . { cause ( x , y ) ; ... } disease ( y ) -- - , { illness ( y ) ; ... } /* disease ( sh2 ) ( bl ) /* bring -- to carry */ ( b2 ) /* bring -- to cause */ ( de1 ) illness caused by an infection */ 180 Zadrozny and Jensen Semantics of Paragraphs disaster ( y ) ~ { ... ; 3x cause ( y , x ) &amp; harm ( x ) . . . } port ( x ) ~ { harbor ( x ) ; ... } ( ... ) ( dr1 ) /* disaster -- -causes a harm */ ( pl ) /* port -- harbor */ Note : We leave undefined the semantics of adverbs such as typically in ( e2 ) . This adverb appears in the formula as an operator ; our purpose in choosing this representation is to call the reader 's attention to the fact that for any real applications the theories will have to be more complex and very likely written in a higher order language ( cf. Section 4 ) . The theories , which we describe here only partially , restricting ourselves to their relevant parts , represent the meanings of concepts. We assume as before that ( el ) is more plausible than ( e2 ) , i.e. e2 &lt; enter el ; similarly , for ( shl ) , ( sh2 ) and &lt; ship , etc. This particular ordering of theories is based on the ordering of meanings of the corresponding words in dictionaries ( derived and less frequent meanings have lower priority ) . But one can imagine deriving such orderings by other means , such as statistics. The partial order &lt; enter has the theories { el , e2 , ~ } as its domain ; ~ is the least preferred empty interpretation corresponding to our lack of knowledge about the predicate ; it is used when both ( el ) and ( e2 ) are inconsistent with a current object theory. The domain is ordered by the relation of preference ~ &lt; enter e2 &lt; enter el. The theory ( el ) will always be used in constructing theories and models of paragraphs in which the expression `` enter '' ( in any grammatical form ) appears , unless assuming it would lead to an inconsistency. In such a case , the meaning of `` to enter '' would change to ( e2 ) , or some other theory belonging to R. We would like to stress three points now : ( 1 ) the above implications are based on the definitions that actually occur in dictionaries ; ( 2 ) the ordering can actually be found in some dictionaries -- it is not our own arbitrary invention ; ( 3 ) it is natural to treat a dictionary definition as a theory , since it expresses `` the analysis of a set of facts in their relation to one another , '' different definitions corresponding to possible different analyses. ( Encyclopedia articles are even more theory-like. ) In this sense , the notion of a referential level is a formalization of a real phenomenon. Obviously , dictionaries or encyclopedias do not include all knowledge an agent must have to function in the world , or a program should possess in order to understand any kind of discourse. Although the exact boundary between world knowledge and lexical knowledge is impossible to draw , we do know that lexicons usually contain very little information about human behavior or temporal relations among objects of the world. Despite all these differences , we may assume that world knowledge and lexical knowledge ( its proper subset ) have a similar formal structure. And in the examples that we present , it is the structure that matters. The next few pages will be devoted to an analysis of the interaction of background knowledge with a logical representation of a text. We will describe two modes of such an interaction ; both seem to be present in our understanding of language. One exploits differences in plausibility of the meanings of words and phrases , in the absence of context ( e.g. , the difference between a central and a peripheral sense , or between a frequent and a rare meaning ) . The other one takes advantage of connections between those meanings. We do not claim that this is the only possible such analysis ; rather , 181 Computational Linguistics Volume 17 , Number 2 we present a formal model which can perhaps be eventually disproved and replaced by a better one. As far as we know , this is the first such formal proposal. are represented graphically ; more plausible theories are positioned higher. A path through this graph chooses an interpretation of the sentence S. For instance , the path fint = { el , shl~ pl , bl , dl } and S say together that A large boat ( ship ) that carries people or goods came into the harbor and carried a disease ( illness ) . Since it is the `` highest '' path , fint is the most plausible ( relative to R ) interpretation of the words that appear in the sentence. Because it is also consistent , it will be chosen as a best interpretation of S , ( cf. Zadrozny 1987a , 1987b ) . Another theory , consisting of f~ = { el , sh2 , pl , b2~ dl } and S , saying that A space vehicle came into the harbor and caused a disease~illness is less plausible according to that ordering. As it turns out , f~ is never constructed in the process of building an interpretation of a paragraph containing the sentence S , unless assuming fint would lead to a contradiction , for instance within the higher level context of a science fiction story. The collection of these most plausible consistent interpretations of a given theory T is denoted by PT &lt; ( T ) . Then fint belongs to PT &lt; ( Th ( { S } ) ) , but this is not true for f'. Note : One should remember that , in general , because all our orderings are partial , there can be more than one most plausible interpretation of a sentence or a paragraph , and more that one `` next best '' interpretation. Moreover , to try to impose a total order on all the paths ( i.e. the cartesian product defined in Section 3.3.2 ) would be a mistake ; it would mean that ambiguities , represented in our formalism by existence of more than one ( `` best'0 interpretation of a text , are outlawed. sented below. Any path through the graph of Figure 1 is an element .of the cartesian product I'I~Esubformulas ( S ) ( ~I , of the partial orderings. Figure 2 explains the geometric intuitions we associate with the product and the ordering. The product itself is given by the following definition : Definition Let F be a collection of formulas ~e , e G m , for some natural number m ; and let , for each e , &lt; e be a partial ordering on the collection theories of ~be. Define : { ¢e ... . , ¢e G , } II ( F ) ~1 -- \ [ ( e= 0c : ( Ve G m ) ( 31 &lt; ne ) ~ ( e ) = ~de -'~ Z~\ ] } e~m We denote by &lt; the partial order induced on II ( F ) by the orderings &lt; e and the canonical ordering of subformulas ( a formula is `` greater '' than its subformulas ) . The geometrical meaning of this ordering can be expressed as `` higher paths are more important provided they pass through the most specific nodes. '' 182 Zadrozny and Jensen Semantics of Paragraphs ///S fint~ . , .. , ,~1 .e I c -- -- -s h I bit _.. i fl.j `` ~ J ~ ... .. , ,1~1 e2 sh2 , b2 '' a a I I I a a Q Figure 1 The partial ordering of theories of the referential level R and the ordering of interpretations. Since ( shl ) and ( bl ) dominate ( respectively ) ( sh2 ) and ( b2 ) , the path f , nt represents a more plausible interpretation than ft. &lt; 1 &lt; 2 &lt; 5 `` flag '' `` strike '' `` strike ~ flag '' ( 2 ) `` cloth '' `` hit/anger '' `` lower '' j ( I ) ( 4 ) `` tail '' ( 3 ) `` music '' Figure 2 The cartesian product I-I &lt; i=- &lt; 1 x &lt; 2 x K3 can be depicted as a collection of all paths through the graphs representing the partial orderings ; a path chooses only one element from each ordering -- thus ( 1 ) and ( 2 ) are `` legal '' paths , while ( 4 ) is not. Also , more plausible theories appear higher : `` cloth '' &gt; `` music '' &gt; ~ .</sentence>
+				<definiendum id="0">Again</definiendum>
+				<definiendum id="1">-~y</definiendum>
+				<definiendum id="2">referential level</definiendum>
+				<definiendum id="3">aircraft</definiendum>
+				<definiendum id="4">fint</definiendum>
+				<definiendum id="5">nt</definiendum>
+				<definiens id="0">&lt; enter ( x , y ) , or &lt; enter , or &lt; i , or simply &lt; , depending on context. This is our way of making formal the asymmetry of plausibility of different meanings of a predicate.</definiens>
+				<definiens id="1">a structure R = { ( ¢ , &lt; ¢ ) : ¢ E Formulae } where -- -for each ¢- &lt; ¢ is a partially ordered ( by a relation of plausibility ) collection of implications ¢ ~ T¢. The term ¢ -- * T stands for the theory { ¢ -- * ~ : ~E T } , and ~ ) -- -* { ¢1 , ¢2 , '' `` } abbreviates { ¢ -- * ¢1 , ¢ -- * ¢2 , ... } . It is convenient to assume also that all formulas , except `` laws '' -- which are supposed to be always true -- -have the least preferred empty interpretation ~. We suppose also that interpretations are additionally ranked according to the canonical partial ordering on subformulas. The ranking provides a natural method of dealing with exceptions , as in the case of finding an interpretation of ~ &amp; p &amp; fl with R containing ( ~ -- * y )</definiens>
+				<definiens id="2">a sophisticated theory of a working natural language understanding system. enter ( x , y ) -- . { come_in ( x , y ) ; place ( y ) ; ... } ( el ) /* enter -- to come into a place */ enter ( x , y ) -- * join ( x , y ) &amp; group ( y ) ; typically : professionals ( y ) } ( e2 ) /* enter -- to join a group ; typically of professionals */ ship ( x ) -- * { large_boat ( x ) ; 3y carry ( x , y ) &amp; ( people ( y ) v goods ( y ) ) ; ... } ( shl ) /* ship -- a large boat for carrying people or goods on the sea */ ship ( x ) -- -</definiens>
+				<definiens id="3">y ) ; ... } /* disease ( sh2 ) ( bl ) /* bring -- to carry */ ( b2 ) /* bring -- to cause */ ( de1 ) illness caused by an infection */ 180 Zadrozny and Jensen Semantics of Paragraphs disaster</definiens>
+				<definiens id="4">-causes a harm */ ( pl ) /* port -- harbor */ Note : We leave undefined the semantics of adverbs such as typically in ( e2 ) . This adverb appears in the formula as an operator</definiens>
+				<definiens id="5">the least preferred empty interpretation corresponding to our lack of knowledge about the predicate ; it is used when both ( el ) and ( e2 ) are inconsistent with a current object theory. The domain is ordered by the relation of preference ~ &lt; enter e2 &lt; enter el. The theory ( el ) will always be used in constructing theories and models of paragraphs in which the expression `` enter '' ( in any grammatical form ) appears</definiens>
+				<definiens id="6">the above implications are based on the definitions that actually occur in dictionaries</definiens>
+				<definiens id="7">the analysis of a set of facts in their relation to one another , '' different definitions corresponding to possible different analyses. ( Encyclopedia articles are even more theory-like.</definiens>
+				<definiens id="8">a formalization of a real phenomenon. Obviously , dictionaries or encyclopedias do not include all knowledge an agent must have to function in the world , or a program should possess in order to understand any kind of discourse. Although the exact boundary between world knowledge and lexical knowledge is impossible to draw , we do know that lexicons usually contain very little information about human behavior or temporal relations among objects of the world. Despite all these differences</definiens>
+				<definiens id="9">differences in plausibility of the meanings of words and phrases , in the absence of context ( e.g. , the difference between a central and a peripheral sense , or between a frequent and a rare meaning ) . The other one takes advantage of connections between those meanings. We do not claim that this is the only possible such analysis</definiens>
+				<definiens id="10">a best interpretation of S , ( cf. Zadrozny 1987a , 1987b ) . Another theory , consisting of f~ = { el , sh2 , pl , b2~ dl } and S , saying that A space vehicle came into the harbor and caused a disease~illness is less plausible according to that ordering. As it turns out , f~ is never constructed in the process of building an interpretation of a paragraph containing the sentence S</definiens>
+				<definiens id="11">one most plausible interpretation of a sentence or a paragraph , and more that one `` next best '' interpretation. Moreover , to try to impose a total order on all the paths ( i.e. the cartesian product defined in Section 3.3.2 ) would be a mistake ; it would mean that ambiguities , represented in our formalism by existence of more than one ( `` best'0 interpretation of a text , are outlawed. sented below. Any path through the graph of Figure 1 is an element .of the cartesian product I'I~Esubformulas ( S ) ( ~I , of the partial orderings. Figure 2 explains the geometric intuitions we associate with the product and the ordering. The product itself is given by the following definition : Definition Let F be a collection of formulas ~e , e G m , for some natural number m ; and let , for each e , &lt; e be a partial ordering on the collection theories of ~be. Define : { ¢e ... . , ¢e G , } II ( F ) ~1 -- \ [ ( e= 0c : ( Ve G m ) ( 31 &lt; ne ) ~ ( e ) = ~de -'~ Z~\ ] } e~m We denote by &lt; the partial order induced on II ( F ) by the orderings &lt; e and the canonical ordering of subformulas ( a formula is `` greater '' than its subformulas ) . The geometrical meaning of this ordering can be expressed as `` higher paths are more important provided they pass through the most specific nodes. '' 182 Zadrozny and Jensen Semantics of Paragraphs ///S fint~ . , .. , ,~1 .e I c -- -- -s h I bit _.. i fl.j `` ~ J ~ ... .. , ,1~1 e2 sh2 , b2 '' a a I I I a a Q Figure 1 The partial ordering of theories of the referential level R and the ordering of interpretations. Since ( shl ) and ( bl ) dominate ( respectively ) ( sh2 ) and ( b2 ) , the path f</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Each element of the cartesian product I-\ [ &lt; i represents a set of possible meanings. These meanings can be combined in various ways , the simplest of which consists of taking their union as we did in 3.3.1. But a paragraph is n't just a sum of its sentences , as a sentence is n't simply a concatenation of its phrases. The cohesion devices -- such as `` but , '' `` unless , '' `` since '' -- arrange sentences together , and they also have semantic functions. This is reflected , for instance , in the way various pieces of background knowledge are pasted together. Fortunately , at this point we can abstract from this by introducing an operator variable ® whose meaning will be , as a default , that of a set theoretic union , U ; but , as we describe it in Section 6.2 , it can sometimes be changed to a more sophisticated join operator. There , when considering the semantics of `` but , '' we 'll see that referential level theories can be combined in slightly more complicated ways. In other words , a partial theory corresponding to a paragraph can not be just a sum of the theories of its sentencesIthe arrangement of those theories should obey the metalevel composition rules , which give the semantics of connectives. However , from a purely formal point of view , @ can be any function producing a theory from a collection of theories. The cartesian product represents all possible amalgamations of these elementary theories. In other words , this product is the space of possible combinations of meanings , some of which will be inconsistent with the object level theory T. We can immediately exclude the inconsistent combinations , eliminating at least some nonsense : I : I ( F ) = { f E II ( F ) : ®f is consistent with T } It remains now to fill in the details of the construction of PT &lt; . We assume that a text P can be translated into a ( ground ) theory/5 ( a set of logical sentences ) ; T = Th ( P ) is the set of logical consequences of P. We denote by F the set Form ( Th ( _fi ) ) -- the set of all subformulas of Th ( /5 ) , about which we shall seek information at the referential level R. If F = { ~bl ( C'~ ) , ... , ~b , ( C'n ) } ( ~/is a collection of constants that are arguments of ~bi ) , is this theory , we have to describe a method of augmenting it with the background knowledge. We can assume without loss of generality that each ~i ( ~i ) in F has , in R , a corresponding partial order &lt; i of theories of ~i ( xi ) . We now substitute the constants c'i for the variables xi inside the theories of &lt; i. With a slight abuse of notation , we will use the same symbol &lt; i for the new ordering. The product spaces II ( F ) and I : I ( F ) can then be defined as before , with the new orderings in place of the ones with variables. Notice that if only some of the variables of ~bi ( ~i ) were bound by c'i , the same construction would work. We have arrived then at a general method of linking object level formulas with their theories from R. Now we can define PT &lt; ( T ) of the theory T as the set of most likely consistent theories of T given by ( H ( F ) , &lt; ) , where F = Form ( T ) : PT &lt; ( T ) = { TUT ' : T'= ®f and f is a maximal element of ( I~I ( F ) , &lt; ) } Notice that PT &lt; ( T ) can contain more than one theory , meaning that T is ambiguous. This is a consequence of the fact that the cartesian product is only partially ordered by &lt; . The main reason for using ground instances ~i ( Ci ) in modifying the orderings is the need to deal with multiple occurrences of the same predicate , as in John went to the bank by the bank. 184 Zadrozny and Jensen Semantics of Paragraphs The above construction is also very close in spirit to Poole 's ( 1988 ) method for default reasoning , where object theories are augmented by ground instances of defaults. discussion of dominance was based on the partial ordering of the theories of R. We want to exploit now another property of the theories of R -- their coherence. Finding an interpretation for a natural language text or sentence typically involves an appeal to coherence. Consider $ 2 : Entering the port , a ship brought a disaster. Using the coherence link between ( b2 ) and ( dr1 ) ( cf. Section 3.2 ) -- the presence of cause ( * , , ) in the theories of `` bring '' and `` disaster '' -- we can find a partial coherent interpretation T E PTc ( Th ( { S2 } ) ) of $ 2. In this interpretation , theories explaining the meanings of terms are chosen on the basis of shared terms. This makes ( b2 ) ( `` to bring '' means `` to cause '' ) plausible and therefore it would be included in T. The formalization of all this is given below : Definitions • The set of all theories about the formulas of T is defined as : Here , we ignore the ordering , because we are interested only in connections between concepts ( represented by words ) . • If t , t r E G ( T ) , t ~ t I , share a predicate , we say that there is a c-link between t and tC A c-path is defined as a chain of c-links ; i.e. if t = ~ -- * T and t ~ = ~ ' -- * T ' belong to a c-path , then ~ ~ ~'. Under this condition , for any predicate , only one of its theories will belong to a c-path. A c-path therefore chooses only one meaning for each term. • C ( T ) will denote the set of all c-paths in G ( T ) consistent with T , i.e. for each p E C ( T ) , Op td T is consistent. This construction is like the one we have encountered when defining I~I ( T ) . The details should be filled out exactly as before ; we leave this to the reader. • We define PTc ( T ) of a theory T as the set of most coherent consistent theories of T given by C ( T ) : PTc ( T ) = { T U T ' : T ' -®p and p is a C maximal element of C ( T ) } Going back to $ 2 , PTc ( Th ( S2 ) ) contains also the interpretation based on the coherence link between `` ship '' and `` bring , '' which involves `` carry. '' Based on the just-described coherence relations , we conclude that sentence $ 2 is ambiguous ; it has two interpretations , based on the two senses of `` bring. '' Resolution of ambiguities involves factors beyond the scope of this section -- for instance , Gricean maxims and topic ( Section 6 ) , or various notions of context ( cf. Small et al. 1988 ) . We will continue the 185 Computational Linguistics Volume 17 , Number 2 topic of the interaction of object level theories with background knowledge by showing how the two methods of using background knowledge can be combined. theory -- is obtained by the iteration : PT ( T ) = PT &lt; ( PTc ( Th ( T ) ) ) PT is well defined after we specify that PT of a set of theories is the set of the PTs ( for both &lt; and C ) : PT { ~ ( { T~ , T2 , ... } ) = PT ( ~ ( T1 ) U PT , \ ] ( T2 ) U ... Notice that coherence does not decide between ( el ) and ( e2 ) given the above R , but the iteration produces two theories of $ 2 , both of which assert that the meaning of `` ship entered '' is `` ship came. '' A ship~boat came into the harbor/port and caused~brought a disaster. A ship~boat came into the harbor/port and carried/brought a disaster. PT ( { S1 } ) contains only one interpretation based on fint '' A ship~boat came into the harbor~port and carried~brought a disease. Partial theories will be the main syntactic constructs in the subsequent sections. In particular , the p-models will be defined as some special models or partial theories of paragraphs. We have shown that finding an interpretation of a sentence depends on two graphtheoretical properties -- coherence and dominance. Coherence is a purely `` associative '' property ; we are interested only in the existence of links between represented concepts/theories. Dominance uses the directionality of the partial orders. A partial theory PT ( T ) of an object theory T corresponding to a paragraph is obtained by joining most plausible theories or sentences , collocations , and words of the paragraph. However , this simple picture must be slightly retouched to account for semantic roles of interand intra-sentential connectives such as `` but , '' and to assure consistency of the partial theory. These modifications have complicated the definitions a little bit. The above definitions capture the fact that even if , in principle , any consistent combination of the mini-theories about predicates can be extended to an interpretation , we are really interested only in the most plausible ones. The theory PT ( T ) is called `` partial '' because it does not contain all knowledge about predicates-less plausible properties are excluded from consideration , although they are accessible should an inconsistency appear. Moreover , the partiality is related to the unutilized possibility of iterating the operator PT ( cf. Section 4 ) . How can we now summarize what we have learned about the three logical levels ? To begin with , one should notice that they are syntactically distinct. If object level theories are expressed by collections of first order formulas , metalevel definitions-e.g. , to express as a default that ® is a set theoretical union -- require another language , 186 Zadrozny and Jensen Semantics of Paragraphs such as higher order logic or set theory , where one can define predicates dealing with models , consistency , and provability. Even if all background knowledge were described , as in our examples , by sets of first order theories , because of the preferences and inconsistencies of meanings , we could not treat R as a flat database of facts -- such a model simply would not be realistic. Rather , R must be treated as a separate logical level for these syntactic reasons , and because of its function -- being a pool of possibly conflicting semantic constraints. The last point may be seen better if we look at some differences between our system and KRYPTON , which also distinguishes between an object theory and background knowledge ( cf. Brachman et al. 1985 ) . KRYPTON 's A-box , encoding the object theory as a set of assertions , uses standard first order logic ; the T-box contains information expressed in a frame-based language equivalent to a fragment of FOL. However , the distinction between the two parts is purely functional -- that is , characterized in terms of the system 's behavior. From the logical point of view , the knowledge base is the union of the two boxes , i.e. a theory , and the entailment is standard. In our system , we also distinguish between the `` definitional '' and factual information , but the `` definitional '' part contains collections of mutually excluding theories , not just of formulas describing a semantic network. Moreover , in addition to proposing this structure of R , we have described the two mechanisms for exploiting it , `` coherence '' and `` dominance , '' which are not variants of the standard first order entailment , but abduction. The idea of using preferences among theories is new , hence it was described in more detail. `` Coherence , '' as outlined above , can be understood as a declarative ( or static ) version of marker passing ( Hirst 1987 ; Charniak 1983 ) , with one difference : the activation spreads to theories that share a predicate , not through the IS-A hierarchy , and is limited to elementary facts about predicates appearing in the text. The metalevel rules we are going to discuss in Section 6 , and that deal with the Gricean maxims and the meaning of `` but , '' can be easily expressed in the languages of set theory or higher order logic , but not everything expressible in those languages makes sense in natural language. Hence , putting limitations on the expressive power of the language of the metalevel will remain as one of many open problems. We are now in a position to use the notion of the referential level in a formal definition of coherence and topic. Having done that , we will turn our attention to the resolution of anaphora , linking it with the provability relation ( abduction ) t-R+M and a metarule postulating that a most plausible model of a paragraph is one in which anaphors have references. Since the example paragraph we analyze has only one connective ( `` and '' ) , we can postpone a discussion of connectives until Section 6. Building an interpretation of a paragraph does not mean finding all of its possible meanings ; the implausible ones should not be computed at all. This viewpoint has been reflected in the definition of a partial theory as a most plausible interpretation of a sequence of predicates. Now we want to restrict the notion of a partial theory by introducing the formal notions of topic and coherence. We can then later ( Section 5.2 ) define p-models -- a category of models corresponding to paragraphs -- as models of coherent theories that satisfy all metalevel conditions. The partial theories pick up from the referential level the most obvious or the most important information about a formula. This immediate information may be insufficient to decide the truth of certain predicates. It would seem therefore that the iteration of the PT operation to form a closure is needed ( cf. Zadrozny 1987b ) . 187 Computational Linguistics Volume 17 , Number 2 However , there are at least three arguments against iterating PT. First of all , iteration would increase the complexity of building a model of a paragraph ; infinite iteration would almost certainly make impossible such a construction in real time. Secondly , the cooperative principle of Grice ( 1975 , 1978 ) , under the assumption that referential levels of a writer and a reader are quite similar , implies that the writer should structure the text in a way that makes the construction of his intended model easy for the reader ; and this seems to imply that he should appeal only to the most direct knowledge of the reader. Finally , it has been shown by Groesser ( 1981 ) that the ratio of derived to explicit information necessary for understanding a piece of text is about 8:1 ; furthermore , our reading of the analysis of five paragraphs by Crothers ( 1979 ) strongly suggests that only the most direct or obvious inferences are being made in the process of building a model or constructing a theory of a paragraph. Thus , for example , we can expect that in the worst case only one or two steps of such an iteration would be needed to find answers to wh-questions. Let P be a paragraph , let /3 = ( $ 1 , ... , Sn ) be its translation into a sequence of logical formulas. The set of all predicates appearing in X will be denoted by Pred ( X ) . Definition Let T be a partial theory of a paragraph P. A sequence of predicates appearing in i6 , denoted by Tp , is called a topic of the paragraph P , if it is a longest sequence satisfying the conditions ( 1 ) and ( 2 ) below : ( a ) Direct reference to the topic : Tp C Pred ( Si ) ( b ) Indirect reference to the topic : If ¢ E Pred ( Si ) &amp; ( ¢ -~ T¢ ) E T , then Tp C Pred ( T¢ ) ( c ) Direct reference to a previous sentence : If ¢ E Pred ( Si ) &amp; ( ~ ~ T¢ ) E T then Pred ( Si_l ) MPred ( ¢ ~ TV~ ) # 9~ ( i ) Existence of a topic sentence : Tp C Pred ( Si ) , for some sentence Si ; ( ii ) Existence of a topic sentence : a theory of Tp belongs to R , i.e. if 0 is the conjunction of predicates of Tp then 0 ~ To E R , for some To. The last two conditions say that either the discussed concept ( topic ) already exists in the background knowledge or it must be introduced in a sentence. For instance , we can see that the sentence The effect of the Black Death was appalling can be assumed to be a topic sentence. The first three conditions make the requirements for a collection of sentences to have a topic. Either every sentence talks about the topic ( as , for instance , the first two sentences of the paragraph about the Black Death ) , or a sentence refers to the topic 188 Zadrozny and Jensen Semantics of Paragraphs through background knowledge -- -- the topic appears in a theory about an entity or a relation of the sentence ( in the case of Within twenty-four hours of infection ... . `` infection '' can be linked to `` disease ' -- cf. Sections 2 and 4.2 ) , or else a sentence elaborates a fragment of the previous sentence ( the theme The effect of ... being developed in In less than ... ) . The definition allows a paragraph to have more than one topic. For instance , a paragraph consisting of John thinks Mary is pretty. John thinks Mary is intelligent. John wants to marry her. can be either about { John ( \ ] ) , Mary ( m ) , think ( j , m , pretty ( m ) ) } , or about John , Mary , and marrying. ( Notice that the condition 2 ( i ) forbids us merging the two topics into a larger one ) . Thus paragraphs can be ambiguous about what constitutes their topics. The point is that they should have one. It is also clear that what constitutes a topic depends on the way the content of paragraph sentences is represented. In the last case , if `` pretty '' were translated into a predicate , and not into a modifier of m ( i.e. an operator ) , `` John thinking about Mary '' could not be a topic , for it would n't be the longest sequence of predicates satisfying the conditions ( 1 ) and ( 2 ) . We 'd like to put forward a hypothesis that this relationship between topics and representations can actually be useful : Because the requirement that a well-formed paragraph should have a topic is a very natural one ( and we can judge pretty well what can be a topic and what ca n't ) , we can obtain a new method for judging semantic representations. Thus , if the naive first order representation containing pretty ( m ) as one of the formulas gives a wrong answer as to what is the topic of the above , or another , paragraph , we can reject it in favor of a ( higher order ) representation in which adjectives and adverbs are operators , not predicates , and which provides us with an intuitively correct topic. Such a method can be used in addition to the standard criteria for judging representations , such as elegance and ability to express semantic generalizations. Definition A partial theory T E PT ( P ) of the paragraph P is coherent iff the paragraph P has a topic. A random permutation of just any sentences about a disease would n't be coherent. But it would be premature to jump to the conclusion that we need more than just existence of a topic as a condition for coherence. Although it may be the case that it will be necessary in the future to introduce notions like `` temporal coherence , '' `` deictic coherence , '' or `` causal coherence , '' there is no need to start multiplying beings now. We can surmise that the random permutations we talk about would produce an inconsistent theory ; hence , the temporal , causal , and other aspects would be dealt with by consistency. But of course at this point it is just a hypothesis. An important aspect of the definition is that coherence has been defined as a property of representation -- in our case , it is a property of a formal theory. The existence of the topic , the direct or indirect allusion to it , and anaphora ( which will be addressed below ) take up the issue of formal criteria for a paragraph definition , which was raised 189 Computational Linguistics Volume 17 , Number 2 by Bond and Hayes ( 1983 ) ( cf. also Section 2.1 ) . The question of paragraph length can probably be attended to by limiting the size of p-models , perhaps after introducing some kind of metric on logical data structures. Still , our definition of coherence may not be restrictive enough : two collections of sentences , one referring to `` black '' ( about black pencils , black pullovers , and black poodles ) , the other one about `` death '' ( war , cancer , etc. ) , connected by a sentence referring to both of these , could be interpreted as one paragraph about the new , broader topic `` black + death. '' This problem may be similar to the situation in which current formal grammars allow nonsensical but parsable collections of words ( e.g. , `` colorless green ideas ... '9 , while before the advent of Chomskyan formalisms , a sentence was defined as the smallest meaningful collection of words ; Fowler ( 1965 , p. 546 ) gives 10 definitions of a sentence. It then seems worth differentiating between the creation of a new concept like `` black + death , '' with a meaning given by a paraphrase of the example collection of sentences , and the acceptance of the new concept -- storing it in R. In our case the concept `` black + death , '' which does not refer to any normal experiences , would be discarded as useless , although the collection of sentences would be recognized as a strange , even if coherent , paragraph. We can also hope for some fine-tuning of the notion of topic , which would prevent many offensive examples. This approach is taken in computational syntactic grammars ( e.g. Jensen 1986 ) ; the number of unlikely parses is severely reduced whenever possible , but no attempt is made to define only the so-called grammatical strings of a language. Finally , as the paragraph is a natural domain in which word senses can be reliably assigned to words or sentences can be syntactically disambiguated , larger chunks of discourse may be needed for precise assignment of topics , which we view as another type of disambiguation. Notice also that for coherence , as defined above , it does not matter whether the topic is defined as a longest , a shortest , or -- simply -- a sequence of predicates satisfying the conditions ( 1 ) and ( 2 ) ; the existence of a sequence is equivalent with the existence of a shortest and a longest sequence. The reason for choosing a longest sequence as the topic is our belief that the topic should rather contain more information about a paragraph than less. At this point it may be proper to comment on the relationship between our theory of coherence and theories advocated by others. We are going to make such a comparison with the theories proposed by J. Hobbs ( 1979 , 1982 ) that represent a more computationally oriented approach to coherence , and those of T.A. van Dijk and W. Kintch ( 1983 ) , who are more interested in addressing psychological and cognitive aspects of discourse coherence. The quoted works seem to be good representatives for each of the directions ; they also point to related literature. The approach we advocate is compatible with the work of these researchers , we believe. There are , however , some interesting differences : first of all , we emphasize the role of paragraphs ; second , we talk about formal principles regulating the organization and use of knowledge in language understanding ; and third , we realize that natural language text ( such as an on-line dictionary ) can , in many cases , provide the type of commonsense background information that Hobbs ( for example ) advocated but did n't know how to access. ( There are also some other , minor , differences. For instance , our three-level semantics does not appeal to possible worlds , as van Dijk and Kintch do ; neither is it objectivist , as Hobbs ' semantics seems to be. ) 190 Zadrozny and Jensen Semantics of Paragraphs We shall discuss only the first two points , since the third one has already been explained. The chief difference between our approach and the other two lies in identifying the paragraph as a domain of coherence. Hobbs , van Dijk , and Kintch distinguish between `` local '' coherence~a property of subsequent sentences -- and `` global '' coherence -- -a property of discourse as a whole. Hobbs explains coherence in terms of an inventory of `` local , '' possibly computable , coherence relations , like `` elaboration , '' `` occasion , '' etc. ( Mann and Thompson 1983 give an even more detailed list of coherence relations than Hobbs. ) Van Dijk and Kintch do this too , but they also describe `` macrostructures '' representing the global content of discourse , and they emphasize psychological and cognitive strategies used by people in establishing discourse coherence. Since we have linked coherence to models of paragraphs , we can talk simply about `` coherence '' -without adjectives -- as a property of these models. To us the first `` local '' domain seems to be too small , and the second `` global '' one too large , for constructing meaningful computational models. To be sure , we believe relations between pairs of sentences are worth investigating , especially in dialogs. However , in written discourse , the smallest domain of coherence is a paragraph , very much as the sentence is the basic domain of grammaticality ( although one can also judge the correctness of phrases ) . To see the advantage of assuming that coherence is a property of a fragment of a text/discourse , and not a relation between subsequent sentences , let us consider for instance the text John took a train from Paris to Istanbul. He likes spinach. According to Hobbs ( 1979 , p. 67 ) , these two sentences are incoherent. However , the same fragment , augmented with the third sentence Mary told him yesterday that the French spinach crop failed and Turkey is the only country ... ( ibid. ) suddenly ( for Hobbs ) becomes coherent. It seems that any analysis of coherence in terms of the relation between subsequent sentences can not explain this sudden change ; after all , the first two sentences did n't change when the third one was added. On the other hand , this change is easily explained when we treat the first two sentences as a paragraph : if the third sentence is not a part of the background knowledge , the paragraph is incoherent. And the paragraph obtained by adding the third sentence is coherent. Moreover , coherence here is clearly the result of the existence of the topic `` John likes spinach. '' We derive coherence from formal principles regulating the organization and use of knowledge in language understanding. Although , like the authors discussed above , we stress the importance of inferencing and background knowledge in determining coherence , we also address the problem of knowledge organization ; for us the central problem is how a model emerges from such an organization. Hobbs sets forth hypotheses about the interaction of background knowledge with sentences that are examined at a given moment ; van Dijk and Kintch provide a wealth of psychological information on that topic. But their analyses of how such knowledge could be used are quasi-formal. Our point of departure is different : we assume a certain simple structure of the referential level ( partial orders ) and a natural way of using the knowledge contained there ( `` coherence links '' + `` most plausible = first '' ) . Then we examine what corresponds to `` topic '' and `` coherence '' -- -they become mathematical concepts. In this sense our work refines these concepts , changes the way of looking at them by linking them to the notion of paragraph , and puts the findings of the other researchers into a new context. 191 Computational Linguistics Volume 17 , Number 2 We argue below that paragraphs can be mapped into models with small , finite universes. We could have chosen another , more abstract semantics , with infinite models , but in this and all cases below we have in mind computational reasons for this enterprise. Thus , as in the case of Kamp 's ( 1981 ) DRS , we shall construct a kind of Herbrand model of texts , with common and proper names translated into unary predicates , intransitive verbs into unary predicates , and transitive verbs into binary predicates. In building the logical model M of a collection of formulas S corresponding to the sentences of a paragraph , we assume that the universe of M contains constants introduced by elements of S , usually by ones corresponding to NPs , and possibly by some formulas picked by the construction from the referential level. However , we are interested not in the relationship between truth conditions and representations of a sentence , but in a formalization of the way knowledge is used to produce a representation of a section of text. Therefore we need not only a logical description of the truth conditions of sentences , as presented by Kamp , but also a formal analysis of how background knowledge and metalevel operations are used in the construction of models. This extension is important and nontrivial ; we doubt that one .can deal effectively with coherence , anaphora , presuppositions or the semantics of connectives without it. We have begun presenting such an analysis in Section 3 , and we continue now. We return now to the example paragraph , to illustrate how the interaction between an object theory and a referential level produces a coherent interpretation of the text ( i.e. , a p-model ) and resolves the anaphoric references. The method will be similar to , but more formal than , what was presented in Section 2. In order not to bore the reader with the same details all over again , we will use a shorter version of the same text. Example 2 PI : In 1347 a ship entered the port of Messina bringing with it the disease that came to be known as the Black Death. P2 : It struck rapidly. P3 : Within twenty-four hours of infection came an agonizing death. will use a logical notation in which formulas may have temporal and event components. We assume that any formal interpretation of time will agree with the intuitive one. So it is not necessary now to present a formal semantics here. The reader may consult recent papers on this subject ( e.g. Moens and Steedman 1987 ; Webber 1987 ) to see what a formal interpretation of events in time might look like. Since sentences can refer to events described by other sentences , we may need also a quotation operator ; Perlis ( 1985 ) describes how first order logic can be augmented with such an operator. Extending and revising Jackendoff 's ( 1983 ) formalism seems to us a correct method to achieve the correspondence between syntax and semantics expressed in the grammatical constraint ( `` that one should prefer a semantic theory that explains otherwise arbitrary generalizations about the syntax and the lexicon '' -- -ibid. ) . However , as noted before , we will use a simplified version of such a logical notation ; we will have only time , event , result , and property as primitives. After these remarks we can begin constructing the model of the example paragraph. We assume 192 Zadrozny and Jensen Semantics of Paragraphs that constants are introduced by NPs. We have then ( i ) Constants s , m , d , i , b , 1347 satisfying : ship ( s ) , Messina ( m ) , disease ( d ) , infection ( i ) , death ( b ) , year ( 1347 ) . ( ii ) Formulae $ 1 : \ [ time : year ( 1347 ) ; event : enter ( s , m ) &amp; ship ( s ) &amp; port ( m ) &amp; bring ( xo , d ) &amp; disease ( d ) &amp; name ( d , BlackDeath ) &amp; ( Xo -s V x0 = d V x0 -m ) \ ] $ 2 : time : past ; event : rapidly : strike ( yo ) &amp; ( yo -s V yo = m V y0 -d ) \ ] $ 3 : 3t , t ' { \ [ time : t ; infection ( i ) \ ] &amp; \ [ time : t ' c ( t , t + 24h ) ; event : come ( b ) &amp; death ( b ) &amp; agonizing ( b ) \ ] } The notation time : ~ ( t ) ; event : fl should be understood as meaning that the event described by the formula fl took place in ( or during ) the time period described by the formula c~ ( t ) , t ranges over instants of time ( not intervals ) . Note. We assume that `` strike '' is used intransitively. But our construction of the p-models of the paragraph would look exactly the same for the transitive meaning , except that we would be expected to infer that people were harmed by the illness. information. The content of this information is of secondary importance we want to stress the formal , logical side of the interaction between the referential level and the object theory. Therefore we represent both in our simplified logical notation , and not in English. All formulas at the referential level below have been obtained by a direct translation of appropriate entries in Webster 's and Longman. The translation in this case was manual , but could be automated. • Referential level ( a fragment ) : ship ( x ) -- , { large : boat ( x ) ; 3ycarry ( x , y ) &amp; ( people ( y ) v goods ( y ) ) &amp; agent ( x ) ; ... } ( shl ) /* ship -- a large boat for carrying people or goods on the sea */ bring ( x , y ) -- * { carry ( x , y ) ; ... } ( bl ) strike ( x , y ) -- * { hit ( x , y ) ; agent ( x ) &amp; patient ( y ) ; ... } strike ( x ) -- ~ { hit ( x ) ; agent ( x ) ; ... } strike ( x ) -- * { illness ( x ) &amp; By suddenly : harm ( x , y ) ; ... } /* bring -- to carry */ ( sla ) ( slb ) /* strike -- -to hit */ ( s2 _ex ) /* strike -- -to harm suddenly ; `` they were struck by illness */ 193 Computational Linguistics Volume 17 , Number 2 disease ( y ) -- -* { illness ( y ) &amp; 3z ( infection ( z ) &amp; causes ( z , y ) ) ; ... } ( dl ) /* disease illness caused by an infection */ death ( x ) -- ~ { 3t , y\ [ x = ' \ [ time : t ; event : die ( y ) &amp; ( ereature. ( y ) v plant ( y ) ) \ ] '\ ] } ( de_l ) /* death -- an event in which a creature or a plant dies */ come ( x ) -- * { 3t\ [ time : t ; event : arrive ( x ) \ ] } ( ct_l ) /* to come -- to arrive ( ... ) in the course of time */ infection ( x ) -- ~ { 3e , y , z\ [ e = event : infect ( y , z ) &amp; person ( y ) &amp; disease ( z ) ) \ ] &amp; x -result ( e ) } ( i_1 ) /* infection -- the result of being infected by a disease */ agonizing ( x ) ~ { 3y causes ( x , y ) &amp; pain ( y ) } ( a_l ) /* agonizing -- -causing great pain */ enter ( x , y ) -. { come_in ( x , y ) ; place ( y ) } ( e_l ) /* enter -- to come into a place */ We have shown , in Section 3 , the role of preferences in building the model of a paragraph. Therefore , to make our exposition clearer , we assume that all the above theories are equally preferred. Still , some interesting things will happen before we arrive at our intended model. finding antecedents of anaphors , we have to introduce a new logical notion -- the relation of weak R + M-abduction. This relation would hold , for instance , between the object theory of our example paragraph and a formula expressing the equality of two constants , i and i ' , denoting ( respectively ) the `` infection '' in the sentence Within twentyfour hours of infection ... . and the `` infection '' of the theory ( dl ) -- a disease is an illness caused by an infection. This equality i = i ' can not be proven , but it may be reasonably assumed -- we know that in this case the infection i ' caused the illness , which , in turn , caused the death. The necessity of this kind of merging of arguments has been recognized before : Charniak and McDermott ( 1985 ) call it abductive unification~matching , Hobbs ( 1978 , 1979 ) refers to such operations using the terms knitting or petty conversational implicature. Neither Hobbs nor Charniak and McDermott tried then to make this notion precise , but the paper by Hobbs et al. ( 1988 ) moves in that direction. The purpose of this subsection is to formalize and explain how assumptions like that one above can be made. Definition A formula ~ is weakly provable from an object theory T , expressed as T t-r ~ , iff there exists a partial theory T E PT ( T ) such that T F ~b , i.e. T proves ~ in logic. ( We call F-r `` weak '' because it is enough to find one partial theory proving a given formula. ) As an example , in the case of the three-sentence paragraph , we have a partial theory T1 based on ( slb ) saying that `` 'it ' hits rapidly , '' and T2 saying that `` an illness ( 'it ' ) harms rapidly '' ( s2_ex ) . Thus both statements are weakly provable. 194 Zadrozny and Jensen Semantics of Paragraphs Since we view the metalevel constraints M rather as rules for choosing models than as special inference rules , the definition of the R+M-abduction is model-theoretic , not proof-theoretic : Definition A preferred model of a theory T is an element of Mods ( T ) that satisfies metalevel constraints contained in M. The set of all preferred models of T is denoted by PM ( T ) . A formula 4 of L ( = ) , the language with equality , is weakly R + M-abductible from an object theory T , denoted by T ~-a+M G iff there exists a partial theory T E PT ( T ) and a preferred model M E PM ( T ) such that M ~ G i.e. 4 is true in at least one preferred model of the partial theory T. Note : The notions of strong provability and strong R + M-abduction can be introduced by replacing `` there exists '' by `` all '' in the above definitions ( cf. Zadrozny 1987b ) . We will have , however , no need for `` strong '' notions in this paper. Also , in a practical system , `` satisfies '' should be probably replaced by `` violates fewest. '' Obviously , it is better to have references of pronouns resolved than not. After all , we assume that texts make sense , and that authors know these references. That applies to references of noun phrases too. On the other hand , there must be some restrictions on possible references ; we would rather assume that `` spinach '' ~ `` train '' ( i.e. V x , y ) ( spinach ( x ) &amp; train ( y ) -- , x # y ) ) , or `` ship '' # `` disease. '' Two elementary conditions limiting the number of equalities are : an equality N1 = N2 may be assumed only if either N1 and N2 are listed as synonyms ( or paraphrases ) or their equality is explicitly asserted by the partial theory T. Of course there are other conditions , like `` typically , the determiner 'a ' introduces a new entity , while 'the ' refers to an already introduced constant. '' ( But notice that in our example paragraph `` infection '' appears without an article. ) All these , and other , guidelines can be articulated in the form of metarules. We define another partial order , this time on models Mods ( T ) of a partial theory T of a paragraph : M1 &gt; = M2 , if M1 , satisfies more R + M-abductible equalities than M2 .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiendum id="1">tC A c-path</definiendum>
+				<definiendum id="2">... , Sn ) be</definiendum>
+				<definiendum id="3">Turkey</definiendum>
+				<definiens id="0">Each element of the cartesian product I-\ [ &lt; i represents a set of possible meanings. These meanings can be combined in various ways , the simplest of which consists of taking their union as we did in 3.3.1. But a paragraph is n't just a sum of its sentences , as a sentence is n't simply a concatenation of its phrases. The cohesion devices -- such as `` but , '' `` unless , '' `` since '' -- arrange sentences together , and they also have semantic functions. This is reflected , for instance , in the way various pieces of background knowledge are pasted together. Fortunately , at this point we can abstract from this by introducing an operator variable ® whose meaning will be , as a default , that of a set theoretic union , U ; but , as we describe it in Section 6.2 , it can sometimes be changed to a more sophisticated join operator. There , when considering the semantics of `` but , '' we 'll see that referential level theories can be combined in slightly more complicated ways. In other words , a partial theory corresponding to a paragraph can not be just a sum of the theories of its sentencesIthe arrangement of those theories should obey the metalevel composition rules , which give the semantics of connectives. However , from a purely formal point of view , @ can be any function producing a theory from a collection of theories. The cartesian product represents all possible amalgamations of these elementary theories. In other words</definiens>
+				<definiens id="1">the space of possible combinations of meanings , some of which will be inconsistent with the object level theory T. We can immediately exclude the inconsistent combinations , eliminating at least some nonsense : I : I ( F ) = { f E II ( F ) : ®f is consistent with T } It remains now to fill in the details of the construction of PT &lt; . We assume that a text P can be translated into a ( ground ) theory/5 ( a set of logical sentences ) ; T = Th ( P ) is the set of logical consequences of P. We denote by F the set Form ( Th ( _fi ) ) -- the set of all subformulas of Th ( /5 ) , about which we shall seek information at the referential level R. If F = { ~bl ( C'~ ) , ... , ~b , ( C'n ) } ( ~/is a collection of constants that are arguments of ~bi ) , is this theory , we have to describe a method of augmenting it with the background knowledge. We can assume without loss of generality that each ~i ( ~i ) in F has , in R , a corresponding partial order &lt; i of theories of ~i ( xi ) . We now substitute the constants c'i for the variables xi inside the theories of &lt; i. With a slight abuse of notation , we will use the same symbol &lt; i for the new ordering. The product spaces II ( F ) and I : I ( F ) can then be defined as before , with the new orderings in place of the ones with variables. Notice that if only some of the variables of ~bi ( ~i ) were bound by c'i , the same construction would work. We have arrived then at a general method of linking object level formulas with their theories from R. Now we can define PT &lt; ( T ) of the theory T as the set of most likely consistent theories of T given by ( H ( F ) , &lt; ) , where F = Form ( T ) : PT &lt; ( T ) = { TUT ' : T'= ®f and</definiens>
+				<definiens id="2">a maximal element of ( I~I ( F ) , &lt; ) } Notice that PT &lt; ( T ) can contain more than one theory , meaning that T is ambiguous. This is a consequence of the fact that the cartesian product is only partially ordered by &lt; . The main reason for using ground instances ~i ( Ci ) in modifying the orderings is the need to deal with multiple occurrences of the same predicate , as in John went to the bank by the bank. 184 Zadrozny and Jensen Semantics of Paragraphs The above construction is also very close in spirit to Poole 's ( 1988 ) method for default reasoning , where object theories are augmented by ground instances of defaults. discussion of dominance was based on the partial ordering of the theories of R. We want to exploit now another property of the theories of R -- their coherence. Finding an interpretation for a natural language text or sentence typically involves an appeal to coherence. Consider $ 2 : Entering the port , a ship brought a disaster. Using the coherence link between ( b2 ) and ( dr1 ) ( cf. Section 3.2 ) -- the presence of cause ( * , , ) in the theories of `` bring '' and `` disaster '' -- we can find a partial coherent interpretation T E PTc ( Th ( { S2 } ) ) of $ 2. In this interpretation , theories explaining the meanings of terms are chosen on the basis of shared terms. This makes ( b2 ) ( `` to bring '' means `` to cause '' ) plausible and therefore it would be included in T. The formalization of all this is given below : Definitions • The set of all theories about the formulas of T is defined as : Here , we ignore the ordering , because we are interested only in connections between concepts ( represented by words ) . • If t , t r E G ( T ) , t ~ t I , share a predicate</definiens>
+				<definiens id="3">a chain of c-links ; i.e. if t = ~ -- * T and t ~ = ~ ' -- * T ' belong to a c-path , then ~ ~ ~'. Under this condition , for any predicate , only one of its theories will belong to a c-path. A c-path therefore chooses only one meaning for each term. • C ( T ) will denote the set of all c-paths in G ( T ) consistent with T , i.e. for each p E C ( T ) , Op td T is consistent. This construction is like the one we have encountered when defining I~I ( T ) . The details should be filled out exactly as before ; we leave this to the reader. • We define PTc ( T ) of a theory T as the set of most coherent consistent theories of T given by C ( T ) : PTc ( T ) = { T U T ' : T ' -®p and p is a C maximal element of C ( T ) } Going back to $ 2 , PTc ( Th ( S2 ) ) contains also the interpretation based on the coherence link between `` ship '' and `` bring , '' which involves `` carry. '' Based on the just-described coherence relations , we conclude that sentence $ 2 is ambiguous ; it has two interpretations , based on the two senses of `` bring. '' Resolution of ambiguities involves factors beyond the scope of this section -- for instance , Gricean maxims and topic ( Section 6 ) , or various notions of context ( cf. Small et al. 1988 ) . We will continue the 185 Computational Linguistics Volume 17 , Number 2 topic of the interaction of object level theories with background knowledge by showing how the two methods of using background knowledge can be combined. theory -- is obtained by the iteration : PT ( T ) = PT &lt; ( PTc ( Th ( T ) ) ) PT is well defined after we specify that PT of a set of theories is the set of the PTs ( for both &lt; and C ) : PT { ~ ( { T~ , T2 , ... } ) = PT ( ~ ( T1 ) U PT , \ ] ( T2 ) U ... Notice that coherence does not decide between ( el ) and ( e2 ) given the above R , but the iteration produces two theories of $ 2 , both of which assert that the meaning of `` ship entered '' is `` ship came. '' A ship~boat came into the harbor/port and caused~brought a disaster. A ship~boat came into the harbor/port and carried/brought a disaster. PT ( { S1 } ) contains only one interpretation based on fint '' A ship~boat came into the harbor~port and carried~brought a disease. Partial theories will be the main syntactic constructs in the subsequent sections. In particular , the p-models will be defined as some special models or partial theories of paragraphs. We have shown that finding an interpretation of a sentence depends on two graphtheoretical properties -- coherence and dominance. Coherence is a purely `` associative '' property ; we are interested only in the existence of links between represented concepts/theories. Dominance uses the directionality of the partial orders. A partial theory PT ( T ) of an object theory T corresponding to a paragraph is obtained by joining most plausible theories or sentences , collocations , and words of the paragraph. However , this simple picture must be slightly retouched to account for semantic roles of interand intra-sentential connectives such as `` but , '' and to assure consistency of the partial theory. These modifications have complicated the definitions a little bit. The above definitions capture the fact that even if , in principle , any consistent combination of the mini-theories about predicates can be extended to an interpretation , we are really interested only in the most plausible ones. The theory PT ( T ) is called `` partial '' because it does not contain all knowledge about predicates-less plausible properties are excluded from consideration , although they are accessible should an inconsistency appear. Moreover , the partiality is related to the unutilized possibility of iterating the operator PT ( cf. Section 4 ) . How can we now summarize what we have learned about the three logical levels ? To begin with , one should notice that they are syntactically distinct. If object level theories are expressed by collections of first order formulas , metalevel definitions-e.g. , to express as a default that ® is a set theoretical union -- require another language , 186 Zadrozny and Jensen Semantics of Paragraphs such as higher order logic or set theory , where one can define predicates dealing with models , consistency , and provability. Even if all background knowledge were described , as in our examples , by sets of first order theories , because of the preferences and inconsistencies of meanings , we could not treat R as a flat database of facts -- such a model simply would not be realistic. Rather , R must be treated as a separate logical level for these syntactic reasons , and because of its function -- being a pool of possibly conflicting semantic constraints. The last point may be seen better if we look at some differences between our system and KRYPTON , which also distinguishes between an object theory and background knowledge ( cf. Brachman et al. 1985 ) . KRYPTON 's A-box , encoding the object theory as a set of assertions , uses standard first order logic ; the T-box contains information expressed in a frame-based language equivalent to a fragment of FOL. However , the distinction between the two parts is purely functional -- that is , characterized in terms of the system 's behavior. From the logical point of view , the knowledge base is the union of the two boxes , i.e. a theory , and the entailment is standard. In our system , we also distinguish between the `` definitional '' and factual information , but the `` definitional '' part contains collections of mutually excluding theories , not just of formulas describing a semantic network. Moreover , in addition to proposing this structure of R , we have described the two mechanisms for exploiting it , `` coherence '' and `` dominance , '' which are not variants of the standard first order entailment , but abduction. The idea of using preferences among theories is new , hence it was described in more detail. `` Coherence , '' as outlined above , can be understood as a declarative ( or static ) version of marker passing ( Hirst 1987 ; Charniak 1983 ) , with one difference : the activation spreads to theories that share a predicate , not through the IS-A hierarchy , and is limited to elementary facts about predicates appearing in the text. The metalevel rules we are going to discuss in Section 6 , and that deal with the Gricean maxims and the meaning of `` but , '' can be easily expressed in the languages of set theory or higher order logic , but not everything expressible in those languages makes sense in natural language. Hence , putting limitations on the expressive power of the language of the metalevel will remain as one of many open problems. We are now in a position to use the notion of the referential level in a formal definition of coherence and topic. Having done that , we will turn our attention to the resolution of anaphora , linking it with the provability relation ( abduction ) t-R+M and a metarule postulating that a most plausible model of a paragraph is one in which anaphors have references. Since the example paragraph we analyze has only one connective ( `` and '' ) , we can postpone a discussion of connectives until Section 6. Building an interpretation of a paragraph does not mean finding all of its possible meanings ; the implausible ones should not be computed at all. This viewpoint has been reflected in the definition of a partial theory as a most plausible interpretation of a sequence of predicates. Now we want to restrict the notion of a partial theory by introducing the formal notions of topic and coherence. We can then later ( Section 5.2 ) define p-models -- a category of models corresponding to paragraphs -- as models of coherent theories that satisfy all metalevel conditions. The partial theories pick up from the referential level the most obvious or the most important information about a formula. This immediate information may be insufficient to decide the truth of certain predicates. It would seem therefore that the iteration of the PT operation to form a closure is needed ( cf. Zadrozny 1987b ) . 187 Computational Linguistics Volume 17 , Number 2 However , there are at least three arguments against iterating PT. First of all , iteration would increase the complexity of building a model of a paragraph ; infinite iteration would almost certainly make impossible such a construction in real time. Secondly , the cooperative principle of Grice ( 1975 , 1978 ) , under the assumption that referential levels of a writer and a reader are quite similar , implies that the writer should structure the text in a way that makes the construction of his intended model easy for the reader ; and this seems to imply that he should appeal only to the most direct knowledge of the reader. Finally , it has been shown by Groesser ( 1981 ) that the ratio of derived to explicit information necessary for understanding a piece of text is about 8:1 ; furthermore , our reading of the analysis of five paragraphs by Crothers ( 1979 ) strongly suggests that only the most direct or obvious inferences are being made in the process of building a model or constructing a theory of a paragraph. Thus , for example , we can expect that in the worst case only one or two steps of such an iteration would be needed to find answers to wh-questions. Let P be a paragraph</definiens>
+				<definiens id="4">its translation into a sequence of logical formulas. The set of all predicates appearing in X will be denoted by Pred ( X ) . Definition Let T be a partial theory of a paragraph P. A sequence of predicates appearing in i6 , denoted by Tp , is called a topic of the paragraph P , if it is a longest sequence satisfying the conditions ( 1 ) and ( 2 ) below : ( a ) Direct reference to the topic : Tp C Pred ( Si ) ( b ) Indirect reference to the topic : If ¢ E Pred ( Si ) &amp; ( ¢ -~ T¢ ) E T , then Tp C Pred ( T¢ ) ( c ) Direct reference to a previous sentence : If ¢ E Pred ( Si ) &amp; ( ~ ~ T¢ ) E T then Pred ( Si_l ) MPred ( ¢ ~ TV~ ) # 9~ ( i ) Existence of a topic sentence : Tp C Pred ( Si ) , for some sentence Si ; ( ii ) Existence of a topic sentence : a theory of Tp belongs to R , i.e. if 0 is the conjunction of predicates of Tp then 0 ~ To E R , for some To. The last two conditions say that either the discussed concept ( topic ) already exists in the background knowledge or it must be introduced in a sentence. For instance , we can see that the sentence The effect of the Black Death was appalling can be assumed to be a topic sentence. The first three conditions make the requirements for a collection of sentences to have a topic. Either every sentence talks about the topic ( as , for instance , the first two sentences of the paragraph about the Black Death ) , or a sentence refers to the topic 188 Zadrozny and Jensen Semantics of Paragraphs through background knowledge -- -- the topic appears in a theory about an entity or a relation of the sentence ( in the case of Within twenty-four hours of infection ... . `` infection '' can be linked to `` disease ' -- cf. Sections 2 and 4.2 ) , or else a sentence elaborates a fragment of the previous sentence ( the theme The effect of ... being developed in In less than ... ) . The definition allows a paragraph to have more than one topic. For instance , a paragraph consisting of John thinks Mary is pretty. John thinks Mary is intelligent. John wants to marry her. can be either about { John ( \ ] ) , Mary ( m ) , think ( j , m , pretty ( m ) ) } , or about John , Mary , and marrying. ( Notice that the condition 2 ( i ) forbids us merging the two topics into a larger one ) . Thus paragraphs can be ambiguous about what constitutes their topics. The point is that they should have one. It is also clear that what constitutes a topic depends on the way the content of paragraph sentences is represented. In the last case , if `` pretty '' were translated into a predicate , and not into a modifier of m ( i.e. an operator ) , `` John thinking about Mary '' could not be a topic , for it would n't be the longest sequence of predicates satisfying the conditions ( 1 ) and ( 2 ) . We 'd like to put forward a hypothesis that this relationship between topics and representations can actually be useful : Because the requirement that a well-formed paragraph should have a topic is a very natural one ( and we can judge pretty well what can be a topic and what ca n't ) , we can obtain a new method for judging semantic representations. Thus , if the naive first order representation containing pretty ( m ) as one of the formulas gives a wrong answer as to what is the topic of the above , or another , paragraph , we can reject it in favor of a ( higher order ) representation in which adjectives and adverbs are operators , not predicates , and which provides us with an intuitively correct topic. Such a method can be used in addition to the standard criteria for judging representations , such as elegance and ability to express semantic generalizations. Definition A partial theory T E PT ( P ) of the paragraph P is coherent iff the paragraph P has a topic. A random permutation of just any sentences about a disease would n't be coherent. But it would be premature to jump to the conclusion that we need more than just existence of a topic as a condition for coherence. Although it may be the case that it will be necessary in the future to introduce notions like `` temporal coherence , '' `` deictic coherence , '' or `` causal coherence , '' there is no need to start multiplying beings now. We can surmise that the random permutations we talk about would produce an inconsistent theory ; hence , the temporal , causal , and other aspects would be dealt with by consistency. But of course at this point it is just a hypothesis. An important aspect of the definition is that coherence has been defined as a property of representation -- in our case , it is a property of a formal theory. The existence of the topic , the direct or indirect allusion to it , and anaphora ( which will be addressed below ) take up the issue of formal criteria for a paragraph definition , which was raised 189 Computational Linguistics Volume 17 , Number 2 by Bond and Hayes ( 1983 ) ( cf. also Section 2.1 ) . The question of paragraph length can probably be attended to by limiting the size of p-models , perhaps after introducing some kind of metric on logical data structures. Still , our definition of coherence may not be restrictive enough : two collections of sentences , one referring to `` black '' ( about black pencils , black pullovers , and black poodles ) , the other one about `` death '' ( war , cancer , etc. ) , connected by a sentence referring to both of these , could be interpreted as one paragraph about the new , broader topic `` black + death. '' This problem may be similar to the situation in which current formal grammars allow nonsensical but parsable collections of words ( e.g. , `` colorless green ideas ... '9 , while before the advent of Chomskyan formalisms , a sentence was defined as the smallest meaningful collection of words ; Fowler ( 1965 , p. 546 ) gives 10 definitions of a sentence. It then seems worth differentiating between the creation of a new concept like `` black + death , '' with a meaning given by a paraphrase of the example collection of sentences , and the acceptance of the new concept -- storing it in R. In our case the concept `` black + death , '' which does not refer to any normal experiences , would be discarded as useless , although the collection of sentences would be recognized as a strange , even if coherent , paragraph. We can also hope for some fine-tuning of the notion of topic , which would prevent many offensive examples. This approach is taken in computational syntactic grammars ( e.g. Jensen 1986 ) ; the number of unlikely parses is severely reduced whenever possible , but no attempt is made to define only the so-called grammatical strings of a language. Finally , as the paragraph is a natural domain in which word senses can be reliably assigned to words or sentences can be syntactically disambiguated , larger chunks of discourse may be needed for precise assignment of topics , which we view as another type of disambiguation. Notice also that for coherence , as defined above , it does not matter whether the topic is defined as a longest , a shortest , or -- simply -- a sequence of predicates satisfying the conditions ( 1 ) and ( 2 ) ; the existence of a sequence is equivalent with the existence of a shortest and a longest sequence. The reason for choosing a longest sequence as the topic is our belief that the topic should rather contain more information about a paragraph than less. At this point it may be proper to comment on the relationship between our theory of coherence and theories advocated by others. We are going to make such a comparison with the theories proposed by J. Hobbs ( 1979 , 1982 ) that represent a more computationally oriented approach to coherence , and those of T.A. van Dijk and W. Kintch ( 1983 ) , who are more interested in addressing psychological and cognitive aspects of discourse coherence. The quoted works seem to be good representatives for each of the directions ; they also point to related literature. The approach we advocate is compatible with the work of these researchers , we believe. There are , however , some interesting differences : first of all , we emphasize the role of paragraphs ; second , we talk about formal principles regulating the organization and use of knowledge in language understanding ; and third , we realize that natural language text ( such as an on-line dictionary ) can , in many cases , provide the type of commonsense background information that Hobbs ( for example ) advocated but did n't know how to access. ( There are also some other , minor , differences. For instance , our three-level semantics does not appeal to possible worlds , as van Dijk and Kintch do ; neither is it objectivist , as Hobbs ' semantics seems to be. ) 190 Zadrozny and Jensen Semantics of Paragraphs We shall discuss only the first two points , since the third one has already been explained. The chief difference between our approach and the other two lies in identifying the paragraph as a domain of coherence. Hobbs , van Dijk , and Kintch distinguish between `` local '' coherence~a property of subsequent sentences -- and `` global '' coherence -- -a property of discourse as a whole. Hobbs explains coherence in terms of an inventory of `` local , '' possibly computable , coherence relations , like `` elaboration , '' `` occasion , '' etc. ( Mann and Thompson 1983 give an even more detailed list of coherence relations than Hobbs. ) Van Dijk and Kintch do this too , but they also describe `` macrostructures '' representing the global content of discourse , and they emphasize psychological and cognitive strategies used by people in establishing discourse coherence. Since we have linked coherence to models of paragraphs , we can talk simply about `` coherence '' -without adjectives -- as a property of these models. To us the first `` local '' domain seems to be too small , and the second `` global '' one too large , for constructing meaningful computational models. To be sure , we believe relations between pairs of sentences are worth investigating , especially in dialogs. However , in written discourse , the smallest domain of coherence is a paragraph , very much as the sentence is the basic domain of grammaticality ( although one can also judge the correctness of phrases ) . To see the advantage of assuming that coherence is a property of a fragment of a text/discourse , and not a relation between subsequent sentences , let us consider for instance the text John took a train from Paris to Istanbul. He likes spinach. According to Hobbs ( 1979 , p. 67 ) , these two sentences are incoherent. However , the same fragment , augmented with the third sentence Mary told him yesterday that the French spinach crop failed and</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The principle articulating preference for having the references resolved can now be expressed as Metarule 1 Assume that T E PT ( P ) is a partial theory of a paragraph P. Every preferred model M E PM ( T ) is a maximal element of the ordering &gt; = of Mods ( T ) .</sentence>
+				<definiendum id="0">principle articulating preference</definiendum>
+				<definiens id="0">a partial theory of a paragraph P. Every preferred model M E PM ( T ) is a maximal element of the ordering &gt; = of Mods ( T )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The rule ( i_1 ) ( infection is a result of being infected by a disease ... ) , dealing with the infection i , introduces a disease dl ; we also know about the existence of the disease d in 1347 .</sentence>
+				<definiendum id="0">infection</definiendum>
+				<definiens id="0">a result of being infected by a disease ... ) , dealing with the infection i , introduces a disease dl</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Definition M is a p-model of a paragraph P iff there exists a coherent partial theory T E PT ( P ) such that M E PM ( T ) .</sentence>
+				<definiendum id="0">Definition M</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>A Gricean Cooperative Principle applies to text , too .</sentence>
+				<definiendum id="0">Gricean Cooperative Principle</definiendum>
+				<definiens id="0">applies to text , too</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>( Elaboration is a relation between two segments of a text .</sentence>
+				<definiendum id="0">Elaboration</definiendum>
+				<definiens id="0">a relation between two segments of a text</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>He knows the combination the relation of elaboration holds between the segment consisting of the first two sentences of the triple and each of the two possible readings : John knows the combination and Bill knows the combination .</sentence>
+				<definiendum id="0">John</definiendum>
+				<definiendum id="1">Bill</definiendum>
+				<definiens id="0">knows the combination and</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Referential level ( a fragment ) cheap ( x ) -- , { ~elegant ( x ) ; poor_quality ( x ) ; -~expensive } ( cl ) expensive ( x ) ~ -~cheap ( x ) ( encl ) yacht ( x ) ~ { ship ( x ) &amp; small ( x ) } ( yl ) elegant ( x ) -- , { ~cheap ( x ) ~ . . . } ( el ) elegant ( x ) &amp; yacht ( x ) -- , { status-symbol ( x ) } ( e_yl ) Note : Compare ( yl ) with ( cl ) ; in ( yl ) smallness is a property of a ship ; this would be more precisely expressed as yacht ( x ) -- * \ [ ship ( x ) ; property : small ( x ) \ ] .</sentence>
+				<definiendum id="0">Referential level</definiendum>
+				<definiendum id="1">smallness</definiendum>
+				<definiens id="0">Compare ( yl ) with ( cl ) ; in ( yl )</definiens>
+				<definiens id="1">a property of a ship</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Our referential level is a collection of partially ordered theories ; we have expressed the fact that a theory of some ¢ is a `` law '' is by deleting the empty interpretation of ¢ from the partial order .</sentence>
+				<definiendum id="0">referential level</definiendum>
+				<definiens id="0">a collection of partially ordered theories ; we have expressed the fact that a theory of some ¢ is a `` law '' is by deleting the empty interpretation of ¢ from the partial order</definiens>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>Most researchers understand that in order to process the name accurately , at least two parameters must be known : ( 1 ) that the string is a name and thus needs to be processed by a special algorithm ; and ( 2 ) that the string must be identified with a particular set of languages or language groups such that the specifics of the pronunciation ( i.e. , the letter-to-sound rules ) can be formally described ( Church 1986 ; Liu and Haas 1988 ; and others ) .</sentence>
+				<definiendum id="0">letter-to-sound rules</definiendum>
+				<definiens id="0">a name and thus needs to be processed by a special algorithm</definiens>
+				<definiens id="1">the string must be identified with a particular set of languages or language groups such that the specifics of the pronunciation ( i.e. , the</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A match is a positive identification and the filter routines stop .</sentence>
+				<definiendum id="0">match</definiendum>
+				<definiens id="0">a positive identification and the filter routines stop</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The trigram analyzer parses the string into trigrams .</sentence>
+				<definiendum id="0">trigram analyzer</definiendum>
+				<definiens id="0">parses the string into trigrams</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A trigram table is a four-dimensional array of trigram elements and language group .</sentence>
+				<definiendum id="0">trigram table</definiendum>
+				<definiens id="0">a four-dimensional array of trigram elements and language group</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The master file contains all grapheme strings and their language group tag .</sentence>
+				<definiendum id="0">master file</definiendum>
+				<definiens id="0">contains all grapheme strings and their language group tag</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For example , if we use an n-deep three-dimensional matrix where n is the number of language groups , then trigram probabilities can be computed from the master file using the following algorithm : compute total number of occurrences of each trigram for all language groups L ( l-n ) for all grapheme strings S in L for all trigrams T in S if ( count \ [ T\ ] \ [ L\ ] = O ) uniq \ [ L\ ] + = 1 count \ [ T\ ] \ [ L\ ] + = i for all possible trigrams T in master sum= 0 for all language groups L sum + = count \ [ T\ ] \ [ L\ ] /uniq \ [ L\ ] for all language groups L if sum &gt; 0 , prob\ [ T\ ] \ [ L\ ] =count \ [ T\ ] \ [ L\ ] /uniq \ [ L\ ] /sum else prob\ [ T\ ] \ [ L\ ] =O.O ; 264 Vitale Algorithm for High Accuracy Name Pronunciation Table 1 Sample matrix of probabilities .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of language groups</definiens>
+				<definiens id="1">compute total number of occurrences of each trigram for all language groups L ( l-n ) for all grapheme strings S in L for all trigrams</definiens>
+				<definiens id="2">] + = i for all possible trigrams T in master sum= 0 for all language groups L sum + = count \ [ T\ ] \ [ L\ ] /uniq \ [ L\ ] for all language groups L if sum &gt; 0</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In the matrix shown in Table 1 , L is a language group , and n is the number of language groups not eliminated by the filter rules .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">a language group , and</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>For example , one could use a standard Bayesian formula that would derive the probability of a language group , given a trigraph T , as P ( LilT ) where P ( TILi ) P ( Li ) P ( Li ) IT ) = Y~ , k P ( TILk ) P ( Lk ) Furthermore , where x is the number of times the token T occurred in the language group Li and y is the number of uniquely occurring tokens in the language group Li , always , where n is the number of language groups ( nonoverlapping ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">use a standard Bayesian formula that would derive the probability of a language group , given a trigraph T , as P ( LilT ) where P ( TILi ) P ( Li ) P ( Li ) IT ) = Y~ , k P ( TILk ) P ( Lk ) Furthermore</definiens>
+				<definiens id="1">the number of times the token T occurred in the language group Li and y is the number of uniquely occurring tokens in the language group Li</definiens>
+				<definiens id="2">the number of language groups ( nonoverlapping )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>1 The method is part of Collative Semantics ( hereafter CS ) , which is a semantics for natural language processing .</sentence>
+				<definiendum id="0">hereafter CS )</definiendum>
+				<definiens id="0">a semantics for natural language processing</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>CS , and hence the met* method , has been implemented in a program called meta5 ( so called because it does more than metaphor ) .</sentence>
+				<definiendum id="0">CS</definiendum>
+				<definiens id="0">does more than metaphor )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A metaphor is identified with the formal notion of a T-MAP which is a pair / F , S / where F is a function that maps vocabulary of the source domain onto vocabulary of the target domain and S is a set of sentences from the source domain which are expected to transfer to the target domain .</sentence>
+				<definiendum id="0">F</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiens id="0">a function that maps vocabulary of the source domain onto vocabulary of the target domain</definiens>
+				<definiens id="1">a set of sentences from the source domain which are expected to transfer to the target domain</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>This means that a literal interpretation of the expression , be it a word , phrase , sentence , or an even larger unit of text , fails to fit the context ( p. 73 , his italics ) , so whether or not a sentence is a metaphor depends upon the context in which it is used : if something is a metaphor then it will be contextually anomalous if interpreted literally ... . Insofar as the violation of selection restrictions can be interpreted in terms of semantic incompatibilities at the lexical level , such violations may sometimes be the basis of the contextual anomaly ( ibid. , p. 74 ) .</sentence>
+				<definiendum id="0">sentence</definiendum>
+				<definiens id="0">a literal interpretation of the expression , be it a word , phrase , sentence , or an even larger unit of text , fails to fit the context ( p. 73 , his italics ) , so whether or not a</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Coercion is handled by `` coercion-relations ; '' for example , a coercion relation could be used to understand that 'Fords ' means `` cars whose CAR-MANUFACTURER is Ford '' ( in Lakoff and Johnson 's terms , this is an example of a PRODUCER FOR PRODUCT metonymic concept ) .</sentence>
+				<definiendum id="0">Coercion</definiendum>
+				<definiens id="0">an example of a PRODUCER FOR PRODUCT metonymic concept</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Martin suggests a two-stage process for interpreting sentences containing metaphors : \ [ 1\ ] parse the sentence to produce a syntactic parse tree plus primal ( semantic ) representation , and \ [ 2\ ] apply inference processes of `` concretion '' and `` metaphoric viewing '' to produce the most detailed semantic representation possible .</sentence>
+				<definiendum id="0">Martin</definiendum>
+				<definiens id="0">suggests a two-stage process for interpreting sentences containing metaphors : \ [ 1\ ] parse the sentence to produce a syntactic parse tree plus primal ( semantic ) representation , and \ [ 2\ ] apply inference processes of `` concretion '' and `` metaphoric viewing '' to produce the most detailed semantic representation possible</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Preferences ( Wilks 1973 ) , selection restrictions ( Katz 1964 ) , and expectations ( Schank 1975 ) are the same ( see Fass 1989c ; Fass and Wilks 1983 ; Wilks and Fass in press ) : all are restrictions possessed by senses of lexical items of certain parts of speech about the semantic classes of lexical items with which they co-occur .</sentence>
+				<definiendum id="0">Preferences</definiendum>
+				<definiens id="0">all are restrictions possessed by senses of lexical items of certain parts of speech about the semantic classes of lexical items with which they co-occur</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Syntactic dependencies consist of pairs of lexical items of certain parts of speech in which the source , an item from one part of speech , applies one or more syntactic constraints to the target , another lexical item .</sentence>
+				<definiendum id="0">Syntactic dependencies</definiendum>
+				<definiens id="0">consist of pairs of lexical items of certain parts of speech in which the source , an item from one part of speech , applies one or more syntactic constraints to the target</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>A single relation consists of one literal , metaphorical , or anomalous relation .</sentence>
+				<definiendum id="0">single relation</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>A multi-relation contains one literal , metaphorical , or anomalous relation plus either a single metonymy or a chain of metonymies .</sentence>
+				<definiendum id="0">multi-relation</definiendum>
+				<definiens id="0">contains one literal , metaphorical , or anomalous relation plus either a single metonymy or a chain of metonymies</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>63 Computational Linguistics Volume 17 , Number 1 CS is a semantics for natural language processing that extends many of the main ideas behind Preference Semantics ( Wilks 1973 ; 1975a ; 1975b ; 1978 ; see also Wilks and Fass in press ) .</sentence>
+				<definiendum id="0">CS</definiendum>
+				<definiendum id="1">Semantics</definiendum>
+				<definiens id="0">a semantics for natural language processing that extends many of the main ideas behind Preference</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Each sense-frame consists of two parts , an arcs section and a node section , that correspond to the genus and differentia commonly found in dictionary definitions ( Amsler 1980 ) .</sentence>
+				<definiendum id="0">sense-frame</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>Crook1 is the sense meaning `` thief '' and crook2 is the shepherd 's tool .</sentence>
+				<definiendum id="0">Crook1</definiendum>
+				<definiens id="0">the shepherd 's tool</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>It1 refers to the word sense being defined by the sense-frame so , for example , crook1 can be substituted for it1 in \ [ it1 , steal1 , valuables1\ ] .</sentence>
+				<definiendum id="0">It1</definiendum>
+				<definiens id="0">the word sense being defined by the sense-frame so , for example</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The second component of CS is the process of collation .</sentence>
+				<definiendum id="0">CS</definiendum>
+				<definiens id="0">the process of collation</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Collation matches the sense-frames of two word senses and finds a system of multiple mappings between those sense-frames , thereby discriminating the semantic relations between the word senses .</sentence>
+				<definiendum id="0">Collation</definiendum>
+				<definiens id="0">matches the sense-frames of two word senses and finds a system of multiple mappings between those sense-frames , thereby discriminating the semantic relations between the word senses</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Violated preferences are network paths denoting exclusion , also known as `` exclusive '' paths .</sentence>
+				<definiendum id="0">Violated preferences</definiendum>
+				<definiens id="0">exclusive '' paths</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The third component of CS is the semantic vector which is a form of representation , like the sense-frame ; but sense-frames represent lexical knowledge , whereas semantic vectors represent coherence .</sentence>
+				<definiendum id="0">CS</definiendum>
+				<definiens id="0">the semantic vector which is a form of representation</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>A semantic vector is a data structure that contains nested labels and ordered arrays structured by a simple dependency syntax .</sentence>
+				<definiendum id="0">semantic vector</definiendum>
+				<definiens id="0">a data structure that contains nested labels and ordered arrays structured by a simple dependency syntax</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The fourth component of CS is the process of screening .</sentence>
+				<definiendum id="0">CS</definiendum>
+				<definiens id="0">the process of screening</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>The lefthand side is the topmost statement and is of the form metonymic_inference_rule ( Source , Target ) .</sentence>
+				<definiendum id="0">lefthand side</definiendum>
+			</definition>
+			<definition id="21">
+				<sentence>The chain consists of ARTIST FOR ART FORM and CONTAINER FOR CONTENTS metonymies .</sentence>
+				<definiendum id="0">chain</definiendum>
+			</definition>
+			<definition id="22">
+				<sentence>The discovered metonymic inference is that johann_ sebastian_bach ( the ARTIST ) composes musical pieces ( the ART FORM ) .</sentence>
+				<definiendum id="0">metonymic inference</definiendum>
+			</definition>
+			<definition id="23">
+				<sentence>The successful metonymic inference , using the ARTIST FOR ART FORM inference rule above , is as follows : \ [ 1\ ] johann_sebastian_bach ( the ARTIST ) is a composer1 , \ [ 2\ ] composers compose1 musical pieces ( the ART FORM ) .</sentence>
+				<definiendum id="0">ARTIST )</definiendum>
+			</definition>
+			<definition id="24">
+				<sentence>ll I |oodl Figure 9 Sister sense-network path between gasoline1 and drink1 ( noun senses ) 72 Fass Discriminating Metonymy Non-relevant cells of animal1 Non-relevant c~lJ~ of carl Cell matches ( SOURCE ) ( TARGET } \ [ \ [ bour=dsl , distinct1 \ ] \ ] \ ] bounds I distinct1 \ ] i sam \ ] extent1 , three dimensional1| , \ [ extent , three d mens ona \ ] ,13 e \ [ behaviourt , solid1| , \ [ behaviourt , sollidl\ ] , ICell matches lanimacyl , livingt\ ] , \ [ animacyl , nonlivingl\ ] , ~2 sister \ ] composition1 , flesh1| , \ ] composition1 , steel1| , ~ cell matches \ ] animal1 , eat1 , food1| , J2 distinctive \ [ biol0gyt , animalt\ ] \ ] I source celts ( of animalt ) \ ] carl , roHt , \ ] on3 , land1|| , | \ ] driver1 , drivel , carl| , 15 distinctive \ ] carl , hayer , \ [ 4 .</sentence>
+				<definiendum id="0">Metonymy Non-relevant</definiendum>
+				<definiens id="0">cells of animal1 Non-relevant c~lJ~ of carl Cell matches ( SOURCE ) ( TARGET } \ [ \ [ bour=dsl , distinct1 \ ] \ ] \ ] bounds I distinct1 \ ] i sam \ ] extent1 , three dimensional1| , \</definiens>
+				<definiens id="1">matches \ ] animal1 , eat1 , food1| , J2 distinctive \ [ biol0gyt , animalt\ ] \ ] I source celts ( of animalt ) \ ] carl</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>conceptual domains ( matches of non-relevant cells ) Figure 11 Semantic vector for a metaphorical semantic relation and solidity .</sentence>
+				<definiendum id="0">conceptual domains</definiendum>
+				<definiens id="0">matches of non-relevant cells ) Figure 11 Semantic vector for a metaphorical semantic relation and solidity</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Use-up-a-resource resembles structural metaphors like TIME IS A RESOURCE and LABOR IS A RESOURCE which , according to Lakoff and Johnson ( 1980 , p. 66 ) , both employ the simple ontological metaphors of TIME IS A SUBSTANCE and AN ACTIVITY IS A SUBSTANCE : These two substance metaphors permit labor and time to be quantified -that is , measured , conceived of as being progressively `` used up , '' and assigned monetary values ; they allow us to view time and labor as things that can be `` used '' for various ends .</sentence>
+				<definiendum id="0">LABOR IS A RESOURCE</definiendum>
+				<definiens id="0">both employ the simple ontological metaphors of TIME IS A SUBSTANCE and AN ACTIVITY IS A SUBSTANCE : These two substance metaphors permit labor and time to be quantified -that is , measured , conceived of as being progressively `` used up , '' and assigned monetary values ; they allow us to view time and labor as things that can be `` used '' for various ends</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>Collation : a process that discriminates the semantic relation ( s ) between two word senses by matching the sense-frames for the word senses \ [ Section 4\ ] .</sentence>
+				<definiendum id="0">Collation</definiendum>
+			</definition>
+			<definition id="28">
+				<sentence>Literal relation : a semantic relation indicated by a satisfied preference \ [ Section 3\ ] .</sentence>
+				<definiendum id="0">Literal relation</definiendum>
+			</definition>
+			<definition id="29">
+				<sentence>Metaphorical relation : a semantic relation indicated by a violated preference and the presence of a relevant analogy \ [ Section 3\ ] .</sentence>
+				<definiendum id="0">Metaphorical relation</definiendum>
+			</definition>
+			<definition id="30">
+				<sentence>Metonymic relation : a semantic relation indicated by failure to satisfy a preference and the presence of one or more conceptual relationships like PART-WHOLE \ [ Section 3\ ] .</sentence>
+				<definiendum id="0">Metonymic relation</definiendum>
+			</definition>
+			<definition id="31">
+				<sentence>Semantic relation : the basis of literalness , metonymy , metaphor , etc. ; found by evaluating lexical semantic constraints in sentences \ [ Section 3\ ] .</sentence>
+				<definiendum id="0">Semantic relation</definiendum>
+			</definition>
+			<definition id="32">
+				<sentence>Semantic vector : a data structure that represents semantic relations by recording the matches produced by collation \ [ Section 4\ ] .</sentence>
+				<definiendum id="0">Semantic vector</definiendum>
+			</definition>
+			<definition id="33">
+				<sentence>Trope : the technical term for a nonliteral figure of speech , e.g. , metaphor , metonymy , simile , understatement ( litotes ) , overstatement ( hyperbole ) , and irony \ [ Section 1\ ] .</sentence>
+				<definiendum id="0">Trope</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>The Standard Generalized Markup Language , commonly referred to as SGML , is an advanced tool in the science of information management that provides its users data portability through standardization .</sentence>
+				<definiendum id="0">Standard Generalized Markup Language</definiendum>
+				<definiens id="0">an advanced tool in the science of information management that provides its users data portability through standardization</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TE X is a computer program that performs tasks of page makeup and typesetting that were traditionally carried out manually .</sentence>
+				<definiendum id="0">TE X</definiendum>
+				<definiens id="0">a computer program that performs tasks of page makeup and typesetting that were traditionally carried out manually</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Text Encoding Initiative ( TEI ) is a cooperative undertaking of the Association for Computers and the Humanities ( ACH ) , the Association for Computational Linguistics ( ACL ) , and the Association for Literary and Linguistic Computing ( ALLC ) .</sentence>
+				<definiendum id="0">Text Encoding Initiative ( TEI )</definiendum>
+				<definiendum id="1">Humanities ( ACH )</definiendum>
+				<definiens id="0">a cooperative undertaking of the Association for Computers and the</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Mitch Marcus in the Department of Computer and Information Science is housing the data of the project ( Association for Computational Linguistics , Data Collection Initiative 1989a , 1989b ) .</sentence>
+				<definiendum id="0">Mitch Marcus</definiendum>
+				<definiens id="0">housing the data of the project</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Appendix E explains the International Standards Organization SGML standard , ISO 114 Book Reviews 8879 .</sentence>
+				<definiendum id="0">Appendix E</definiendum>
+				<definiens id="0">explains the International Standards Organization SGML standard</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An SGML user 's source documents may originate from optical character-recognition scanners , ASCII files , printer files , and word processor output .</sentence>
+				<definiendum id="0">ASCII</definiendum>
+				<definiens id="0">files , printer files , and word processor output</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>System networks fit well with a model of linguistic behavior as goal-directed action , since they encode grammatical information in the form of sets of interconnected choices that a language user needs to make in order to produce apposite and communicative utterances .</sentence>
+				<definiendum id="0">System networks</definiendum>
+				<definiens id="0">encode grammatical information in the form of sets of interconnected choices that a language user needs to make in order to produce apposite and communicative utterances</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Systemic networks form a terminological representation system in the sense of the term used in work on KL-ONE and its successors ( Brachman and Schmolze 1985 ; Nebel 1990 ) .</sentence>
+				<definiendum id="0">Systemic networks</definiendum>
+				<definiens id="0">form a terminological representation system in the sense of the term used in work on KL-ONE and its successors</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The subsumption check fails the moment any of the disjunctive alternatives is found to be a description of a legal object .</sentence>
+				<definiendum id="0">subsumption check</definiendum>
+				<definiens id="0">fails the moment any of the disjunctive alternatives is found to be a description of a legal object</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The system at the top left of Figure 3 is a choice system in which the alternation between feminine , masculine , and neuter is expressed .</sentence>
+				<definiendum id="0">neuter</definiendum>
+				<definiens id="0">a choice system in which the alternation between feminine , masculine</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Where Mellish translates the disjunctive system of Figure 3 ( which carries the feature name NUMBER on its right-hand branch ) as personal V demonstr =_ NUMBER ( 6 ) 390 Chris Brew Systemic Classification and its Efficiency applying Mellish 's translation to our labeling scheme yields the tautologous personal V demonstr =_ personal V demonstr ( 7 ) Intuitively it looks as if the real work that goes on in a system network happens in choice systems , and the other lines exist only in order to link together choice systems in the appropriate ways .</sentence>
+				<definiendum id="0">Mellish</definiendum>
+				<definiens id="0">translates the disjunctive system of Figure 3 ( which carries the feature name NUMBER on its right-hand branch</definiens>
+				<definiens id="1">if the real work that goes on in a system network happens in choice systems</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>3SAT is the problem of determining the satisfiability of a boolean formula , stated in conjunctive normal form , in which exactly three variables occur in each clause of the conjunction .</sentence>
+				<definiendum id="0">3SAT</definiendum>
+				<definiens id="0">the problem of determining the satisfiability of a boolean formula , stated in conjunctive normal form , in which exactly three variables occur in each clause of the conjunction</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A sample input formula for 3SAT is ( x vyv~ ) /x ( y vz v u ) A ( ~vy v u ) A ( xvz v~ ) ( 14 ) 392 Chris Brew Systemic Classification and its Efficiency and the problem is to find an assignment of true and false to variables such that the whole expression comes out true .</sentence>
+				<definiendum id="0">sample input formula for 3SAT</definiendum>
+				<definiens id="0">to find an assignment of true and false to variables such that the whole expression comes out true</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Relaxation is the formal counterpart of the network rewriting described in the last section .</sentence>
+				<definiendum id="0">Relaxation</definiendum>
+				<definiens id="0">the formal counterpart of the network rewriting described in the last section</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The procedure operates on structures of the form I/= { Ei , Ai } where Ei is a set of expressions relating generated features to disjunctive left-hand sides , and Ai is the union of the sets of axioms found to be relevant to these lefthand sides .</sentence>
+				<definiendum id="0">Ei</definiendum>
+				<definiendum id="1">Ai</definiendum>
+				<definiens id="0">a set of expressions relating generated features to disjunctive left-hand sides</definiens>
+				<definiens id="1">the union of the sets of axioms found to be relevant to these lefthand sides</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>What we have with Lex and Rule is a simple phrase structure grammar , albeit one with an infinite set of rules .</sentence>
+				<definiendum id="0">Rule</definiendum>
+				<definiens id="0">a simple phrase structure grammar</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Not only is recognition decidable for context-free languages , but Earley 's ( 1970 ) algorithm is known to decide them in O ( n 3 ) time where n is the length of the input string ( in fact , general CFG parsing algorithms can be constructed from matrix multiplication algorithms with slightly better worst-case asymptotic performance than Earley 's algorithm \ [ Valiant 1975\ ] ) .</sentence>
+				<definiendum id="0">n</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>More formally , we define LexRule ( BasLex ) to be the least relation such that : Definition 8 • BasLex C LexRule ( BasLex ) , and if cr : = b\ [ co , ... , Cn , eo , ... , ek , do , ... , din\ ] E LexRule ( BasLex ) and / / / / b\ [ co , ... , cn , $ , do , ... , dm\ ] ~ b \ [ % , ... , Cn , , $ , do , ... , d~ , \ ] E LexRule I I then cr : = b \ [ % , • • • , C n , ' , eo , ... . , ek , dlo , .</sentence>
+				<definiendum id="0">LexRule ( BasLex )</definiendum>
+				<definiens id="0">if cr : = b\ [ co , ... , Cn , eo , ... , ek , do , ...</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A nominalization rule might be stated in the form : Example 11 siS\ ] ~ n\ [ $ \ ] ( Nominalization ) Applying nominalization to a verbal lexical entry produces a nominal lexical entry with the same arguments .</sentence>
+				<definiendum id="0">nominalization rule</definiendum>
+				<definiens id="0">Nominalization ) Applying nominalization to a verbal lexical entry produces a nominal lexical entry with the same arguments</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Proof Using the previous theorem , we know that there is a bound k on the size of the complements in any lexical entry in LexRule ( BasLex ) , and thus there must only be a finite number of lexical entries with complexity of less than or equal to n. Consequently , I_exRule ( Baslex ) ( n ) is finite and thus a standard finitary categorial grammar lexicon that generates a context-free language .</sentence>
+				<definiendum id="0">I_exRule ( Baslex )</definiendum>
+				<definiens id="0">generates a context-free language</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A generalized rewriting system is a quadruple G = ( V , s , T , R ) where V is a finite set of nonterminal category symbols , s E V is the start symbol , T is a set of terminal symbols , and R C_ ( V* x V* ) U ( V x T ) is a finite set of rewriting rules and lexical insertion rules , which are usually expressed in the forms : Definition 17 • vl ... vn -- -- * Ul '' '' Um where vi : uj E V • v &gt; twherevEVandtET .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiendum id="1">R C_ ( V*</definiendum>
+				<definiendum id="2">V x T )</definiendum>
+				<definiens id="0">a quadruple G = ( V , s , T , R ) where V is a finite set of nonterminal category symbols , s E V is the start symbol</definiens>
+				<definiens id="1">a set of terminal symbols , and</definiens>
+				<definiens id="2">a finite set of rewriting rules and lexical insertion rules , which are usually expressed in the forms : Definition 17 • vl ... vn -- -- * Ul '' '' Um where vi : uj E V • v &gt; twherevEVandtET</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The # symbol keeps track of the true beginning of the sequence being derived .</sentence>
+				<definiendum id="0"># symbol</definiendum>
+				<definiens id="0">keeps track of the true beginning of the sequence being derived</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Considering the first lexical entry , and our last observation , if S ~ V 1 • • • Vn 310 Carpenter CG and HPSG with Lexical Rules according to the generalized rewriting system , then we can derive the lexical entry t : = v\ [ # , Vl , ... , v , \ ] from the lexical entry t : = v\ [ # , s\ ] if ( v , t ) E R. Now suppose that ( vi ~ ti ) C R for 1 &lt; i &lt; n so that h ' '' t , c L ( G ) .</sentence>
+				<definiendum id="0">c L</definiendum>
+				<definiens id="0">= v\ [ # , Vl , ... , v</definiens>
+			</definition>
+</paper>
+
+	</volume>

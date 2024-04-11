@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="M95">
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The scorer sectionizes the data files by creatin g groups based on these document numbers ; each group consists of one each of the three types of input data .</sentence>
+				<definiendum id="0">scorer</definiendum>
+				<definiens id="0">sectionizes the data files by creatin g groups based on these document numbers ; each group consists of one each of the three types of input data</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , singular pieces of textual data , also known as slot fills , may be combine d with others to comprise a larger , cohesive body , or object , of information .</sentence>
+				<definiendum id="0">singular pieces of textual data</definiendum>
+				<definiens id="0">a larger , cohesive body , or object , of information</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Map Mapping is the process by which the scorer aligns answer key objects with a system 's response objects .</sentence>
+				<definiendum id="0">Map Mapping</definiendum>
+				<definiens id="0">the process by which the scorer aligns answer key objects with a system 's response objects</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>VANF is an independent re-implementation of FASTUS [ I ] .</sentence>
+				<definiendum id="0">VANF</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>System Descriptio n VANF consists of • the Facts Extraction Engine ( rules parser and cascaded non-deterministic state machines interpreter ) • the rules set • evidence combiner • basic document scanner and lexicon interfac e • system interface The Facts Extraction Engine uses cascaded non-deterministic state machines ( cascaded NDFSM ) to parse the text and to look for patterns .</sentence>
+				<definiendum id="0">Extraction Engine</definiendum>
+				<definiens id="0">uses cascaded non-deterministic state machines ( cascaded NDFSM ) to parse the text and to look for patterns</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Most important are the actions which assert facts extracted from the text ( in the VANF case , the facts are in the form `` NNN is a name of an entity of type X '' ) .</sentence>
+				<definiendum id="0">NNN</definiendum>
+				<definiens id="0">a name of an entity of type X '' )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>'There is no question , ' says Mr. &lt; ENAMEX TYPE='PERSON ' &gt; Dooner &lt; /ENAMEX &gt; , 'that we are looking for quality acquisitions and &lt; ENAMEX TYPE='ORGANIZATION ' &gt; Ammirati &amp; Puris &lt; /ENAMEX &gt; is a qualit y operation .</sentence>
+				<definiendum id="0">'There</definiendum>
+				<definiens id="0">a qualit y operation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>TEMPLATE ELEMEN T The Template Element ( TE ) task requires extraction of certain general types of information about entitie s and merging of the information about any given entity before presentation in the form of a template ( or `` object '' ) .</sentence>
+				<definiendum id="0">Template Element</definiendum>
+				<definiens id="0">requires extraction of certain general types of information about entitie s and merging of the information about any given entity before presentation in the form of a template ( or `` object '' )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The ORGANIZATION object contains attributes ( `` slots '' ) for the string representing the organization nam e ( ORG_NAME ) , for strings representing any abbreviated versions of the name ( ORG_ALIAS ) , for a string tha t describes the particular organization ( ORG_DESCRIPTOR ) , for a subcategory of the type of organization ( ORG_TYPE , whose permissible values are GOVERNMENT , COMPANY , and OTHER ) , and for canonica l forms of the specific and general location of the organization ( ORG_LOCALE and ORG_COUNTRY ) .</sentence>
+				<definiendum id="0">ORG_NAME</definiendum>
+				<definiens id="0">a subcategory of the type of organization ( ORG_TYPE , whose permissible values are GOVERNMENT , COMPANY , and OTHER ) , and for canonica l forms of the specific and general location of the organization</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In this article , the management succession scenario will be used as the basis fo r discussion ; the details of that scenario are given in appendix F. The management succession template consists of four object types , which are linked together via one-wa y pointers to form a hierarchical structure .</sentence>
+				<definiendum id="0">management succession template</definiendum>
+				<definiens id="0">consists of four object types , which are linked together via one-wa y pointers to form a hierarchical structure</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The ORGANIZATION Template Element objects are presen t at the lowest level along with the PERSON objects , and they are pointed to not only by the IN_AND_OU T object but also by the SUCCESSION_EVENT object .</sentence>
+				<definiendum id="0">ORGANIZATION Template Element</definiendum>
+				<definiendum id="1">PERSON</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Systems are measured for their performance on distinguishing relevant from nonrelevant texts vi a the text filtering metric , which uses the classic information retrieval definitions of recall and precision ( see prefac e to appendix B ) .</sentence>
+				<definiendum id="0">Systems</definiendum>
+				<definiens id="0">uses the classic information retrieval definitions of recall</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Text filtering recall and precision for scenario test sets with approximately 50 % richnes s Whereas the Text Filter row in the score report shows the system ' s ability to do text filtering ( documen t detection ) , the All Objects row and the individual Slot rows show the system 's ability to do information extraction .</sentence>
+				<definiendum id="0">Text Filter row</definiendum>
+				<definiens id="0">ability to do text filtering ( documen t detection ) , the All Objects row and the individual Slot rows show the system 's ability to do information extraction</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The identification of a name as that of an organization ( hence , instantiation of a n ORGANIZATION object ) or as a person ( PERSON object ) is a named entity identification task .</sentence>
+				<definiendum id="0">identification of a name</definiendum>
+				<definiendum id="1">PERSON object )</definiendum>
+				<definiens id="0">a named entity identification task</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>DEFINITION : A pointer to the object that captures relational information on the person assuming a post and / or the person vacating that post .</sentence>
+				<definiendum id="0">DEFINITION</definiendum>
+				<definiens id="0">A pointer to the object that captures relational information on the person assuming a post</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Y will assume post on March 1 '' plus `` MR X IS MOVING TO TH E EAST COAST '' A.2.2.2 NO/UNCLEAR : if all references to the person 's position are in the past tense , but there is no concrete evidence , e.g. , of departure date from old post or arrival date at new post ( if he has to give up old post before taking on new one ) EXAMPLES : 'was ' , 'was previously ' A.3 50 % certainty : Fill is UNCLEAR ( no alternatives ) A.3 .1 If NEW_STATUS =IN : 373 A.3.1 .1 UNCLEAR : if past or present tense is used to relate the event , and if there are no further indicators EXAMPLES : 'named ' , 'approved the election of ' , 'succeeds ' etc .</sentence>
+				<definiendum id="0">Fill</definiendum>
+				<definiens id="0">if past or present tense is used to relate the event</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>Dooner , `` that we are looking for quality acquisitions and Ammirati &amp; Puris is a quality operation .</sentence>
+				<definiendum id="0">Dooner</definiendum>
+				<definiens id="0">a quality operation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>8 , 1987 NUMEX : MONEY $ 6 .4 billion $ 5 .7 billion $ 19 million $ 200 million $ 400 million NUMEX : PERCENT 12 % 286 COREFERENCE TASK : TAGGED STRINGS IN ANSWER KEY FOR WALKTHROUGH ARTICLE KEY CLASS 1 : JAMES CHAIRMAN ( status : OPT ) CHIEF EXECUTIVE OFFICER OF MCCANNERICKSON ( min : OFFICER ) ( status : OPT ) ROBERT L. JAMES , CHAIRMAN AND CHIEF EXECUTIVE OFFICER OF MCCANN-ERICKSON , ( min : ROBERT L. JAMES ) MR. JAMES ( min : JAMES ) MR. JAMES ( min : JAMES ) CHIEF EXECUTIVE OFFICER ( min : OFFICER ) ( status : OPT ) CHAIRMAN ( status : OPT ) MR. JAMES , 57 YEARS OLD , ( min : JAMES ) HE CHAIRMAN ( status : OPT ) CHIEF EXECUTIVE OFFICER ( min : OFFICER ) ( status : OPT ) PRESIDENT ( status : OPT ) MR. JAMES ( min : JAMES ) MR. JAMES ( min : JAMES ) HIS HE HE MR. JAMES ( min : JAMES ) HE HIS MR. JAMES , WHO HAS A REPUTATION AS AN EXTRAORDINARILY TOUGH TASKMASTER , ( min : JAMES ) HE HE HE HIS MR. JAMES ( min : JAMES ) HIS HIS HE HE HE HE MR .</sentence>
+				<definiendum id="0">OPT</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>DOONER JR. ) MR. DOONER ( min : DOONER ) MR. DOONER ( min : DOONER ) MR. DOONER , 45 ( min : DOONER ) MR. DOONER ( min : DOONER ) HIS I HE I I MR. DOONER ( min : DOONER ) MR. DOONER ( min : DOONER ) MR. DOONER , WHO RECENTLY LOST 60 POUNDS OVER THREE-AND-A-HALF MONTHS , ( min : DOONER ) HE HIMSELF HE MR. DOONER ( min : DOONER ) HIS MR. DOONER ( min : DOONER ) HE HE MR. DOONER ( min : DOONER ) HE HE I MR. DOONER ( min : DOONER ) MR. DOONER ( min : DOONER ) I MR. DOONER ( min : DOONER ) MR. DOONER ( min : DOONER ) PRESIDENT ( status : OPT ) MR. DOONER ( min : DOONER ) MR. DOONER ( min : DOONER ) 287 KEY CLASS 4 : HIS PLUSH OFFICE , FILLED WITH PHOTOGRAPHS OF SAILING AS WELL AS HUGE MODELS OF , AMONG OTHER THINGS , A DUTCH TUGBOAT ( min : OFFICE ) HIS OFFICE ( min : OFFICE ) KEY CLASS 5 : SAILBOATING SAILING SAILING SAILING KEY CLASS 6 : MCCANN-ERICKSON THE AGENCY MCCANN-ERICKSON INTERPUBLIC GROUP 'S MCCANN-ERICKSON ( min : MCCANN-ERICKSON ) MCCANN WE OUR MCCANN THEIR MCCANN THE AGENCY MCCANN WE THE AGENCY THE AGENCY MCCANN MCCANN THE AGENCY MCCANN WE ONE OF THE LARGEST WORLD-WIDE AGENCIES ( min : ONE ) ( status : OPT ) THE MCCANN FAMILY ( min : FAMILY ) US MCCANN IT KEY CLASS 7 : COKE COKE COKE COCA-COLA COKE COKE COKE COKE COKE KEY CLASS 8 : CREATIVE ARTISTS AGENCY , THE BIG HOLLYWOOD TALENT AGENCY ( min : CREATIVE ARTISTS AGENCY ) THE BIG HOLLYWOOD TALENT AGENCY ( min : AGENCY ) CAA CAA KEY CLASS 9 : AMMIRATI &amp; PURIS THE AGENCY WITH BILLINGS OF $ 400 MILLION ( min : AGENCY ) AMMIRATI &amp; PURIS KEY CLASS 10 : PRESIDENT ( status : OPT ) MARTIN PURIS , PRESIDENT AND CHIEF EXECUTIVE OFFICER OF AMMIRATI &amp; PURIS , ( min : MARTIN PURIS ) CHIEF EXECUTIVE OFFICER ( min : OFFICER ) KEY CLASS 11 : IT ( status : OPT ) THE TASTER 'S CHOICE COMMERCIALS THAT ARE LIKE A RUNNING SOAP OPERA ( min : COMMERCIALS ) THE COMMERCIALS THAT FEATURE A COUPLE THAT MUST HOLD A RECORD FOR THE LENGTH OF TIME DATING BEFORE KISSING ( min : COMMERCIALS ) KEY CLASS 12 : PETER KIM VICE CHAIRMAN , CHIEF STRATEGY OFFICER , WORLD-WIDE ( min : CHAIRMAN ) ( status : OPT ) KEY CLASS 13 : COKE 'S UBIQUITOUS ADVERTISING ( min : ADVERTISING ) COKE ADVERTISING ( min : ADVERTISING ) KEY CLASS 14 : ADVERTISING THE ADVERTISING BUSINESS ( status : OPT ( min : BUSINESS ) ) ADVERTISING KEY CLASS 15 : OUR CREATIVE WORK ( min : WORK ) THE CREATIVE WORK ( min : WORK ) 288 TEMPLATE ELEMENT ANSWER KEY FOR WALKTHROUGH ARTICLE &lt; ORGANIZATION-9402240133-l &gt; : _ ORG_NAME : `` McCann-Erickson '' ORG_ALIAS : `` McCann '' ORG_DESCRIPTOR : `` one of the largest world-wide agencies '' ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-2 &gt; : = ORG_NAME : `` Interpublic Group '' ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-3 &gt; : = ORG_NAME : `` PaineWebber '' ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-4 &gt; : = ORG_NAME : `` Creative Artists Agency '' ORG_ALIAS : `` CAA '' ORG_DESCRIPTOR : `` the big Hollywood talent agency '' ORG_TYPE : COMPANY ORG_LOCALE : Hollywood CITY ORG_COUNTRY : United States &lt; ORGANIZATION-9402240133-5 &gt; : = ORG_NAME : `` Coca-Cola '' ORG_ALIAS : `` Coke '' ORG_TYPE : COMPANY ORG_LOCALE : Atlanta CITY ORG_COUNTRY : United States &lt; ORGANIZATION-9402240133-6 &gt; : = ORG_NAME : `` Fallon McElligott `` •ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-7 &gt; : = ORG_NAME : `` WPP Group '' ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-8 &gt; : _ ORG_NAME : `` J. Walter Thompson '' ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-9 &gt; : = ORG_NAME : `` Ammirati &amp; Purls '' ORG_DESCRIPTOR : `` the agency with billings of $ 400 million `` / `` a quality operation '' ORG_TYPE : COMPANY &lt; ORGANIZATION-9402240133-10 &gt; : _ ORG_NAME : `` New York Yacht Club '' ORG_TYPE : OTHER &lt; PERSON-9402240133-l &gt; : = PER_NAME : `` John J. Dooner Jr . ``</sentence>
+				<definiendum id="0">DOONER JR. ) MR. DOONER ( min</definiendum>
+				<definiendum id="1">MR. DOONER</definiendum>
+				<definiendum id="2">DUTCH TUGBOAT</definiendum>
+				<definiendum id="3">COKE COKE COKE COCA-COLA COKE COKE COKE COKE COKE</definiendum>
+				<definiens id="0">min : DOONER ) HE HIMSELF HE MR. DOONER ( min : DOONER ) HIS MR. DOONER ( min : DOONER ) HE HE MR. DOONER ( min : DOONER ) HE HE I MR. DOONER ( min : DOONER ) MR. DOONER ( min : DOONER ) I</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>Output consists of two parts : a sequence of lexically seeded charts for input to the parser and a byte-offset/token representation of the initial text for later reconstruction with added markup in the results module .</sentence>
+				<definiendum id="0">Output</definiendum>
+				<definiens id="0">consists of two parts : a sequence of lexically seeded charts for input to the parser and a byte-offset/token representation of the initial text for later reconstruction with added markup in the results module</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Secondly , since the Brill tagger expects one sentence per line and expects each token to be separated b y white space , the text stream is changed into this format before it is fed to the tagger .</sentence>
+				<definiendum id="0">tagger</definiendum>
+				<definiens id="0">expects one sentence per line and expects each token to be separated b y white space</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A trigger word is a word which indicates that the tokens surrounding it are probably a named entit y item and may reliably permit the type or even subtype of the named entity to be determined ( e .</sentence>
+				<definiendum id="0">trigger word</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Named Entity Grammar The grammar rules for Named Entity items constitute a subset of the system 's noun phrase ( NP ) rules .</sentence>
+				<definiendum id="0">NP</definiendum>
+				<definiens id="0">Named Entity Grammar The grammar rules for Named Entity items constitute a subset of the system 's noun phrase</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The non-terminal NNP is the tag for proper name assigned to a single token by the Brill tagger .</sentence>
+				<definiendum id="0">non-terminal NNP</definiendum>
+				<definiens id="0">the tag for proper name assigned to a single token by the Brill tagger</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>g. : orgsocale ( el , e2 ) if in ( el , e2 ) and e2 is an instance of the class location XI provides a simple inheritance mechanism which allows properties to be inherited by classes or instance s lower in the hierarchy .</sentence>
+				<definiendum id="0">e2</definiendum>
+				<definiens id="0">an instance of the class location XI provides a simple inheritance mechanism which allows properties to be inherited by classes or instance s lower in the hierarchy</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Template Element Result s All organisation and person instances are retrieved from the discourse model , and those with name properties are formatted as required and written out directly to a results file .</sentence>
+				<definiendum id="0">Template Element Result</definiendum>
+				<definiens id="0">s All organisation and person instances are retrieved from the discourse model</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>216 Official and unofficial scores for the four tasks : Task NE CO TE ST R P P &amp; R R P R P P &amp; R R P P &amp; R MUC6 official ( incomplete ) 84 94 89.06 0.51 0.71 66 74 69.80 37 73 48.96 MUC6 unofficial ( complete ) 89 93 91 .01 0.54 0.70 68 74 70.80 37 73 48.96 While detailed evaluation of the contribution of system components to all tasks could not be undertake n before the conference , we have been able to partially analyse the behaviour of our NE subsystem .</sentence>
+				<definiendum id="0">MUC6 unofficial</definiendum>
+				<definiens id="0">Official and unofficial scores for the four tasks : Task NE CO TE ST R P P &amp; R R P R P P &amp; R R P P &amp; R MUC6 official</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>XI : A knowledge representation language based on cross-classification and inheritance .</sentence>
+				<definiendum id="0">XI</definiendum>
+				<definiens id="0">A knowledge representation language based on cross-classification and inheritance</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Wordnet : An on-line lexical database .</sentence>
+				<definiendum id="0">Wordnet</definiendum>
+				<definiens id="0">An on-line lexical database</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>Tokenization and Dictionary Look-u p Processing begins with the reading of the document and the identification of the relevant SGML-marke r passages .</sentence>
+				<definiendum id="0">Tokenization</definiendum>
+				<definiens id="0">the reading of the document and the identification of the relevant SGML-marke r passages</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>HASTEN computes the similarity between an annotate d example and the subsequent text , and uses that computation to decide how to analyze it .</sentence>
+				<definiendum id="0">HASTEN</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Similarity Metri c HASTEN uses a metric to compute the similarity between an Egraph and an incoming text unit .</sentence>
+				<definiendum id="0">HASTEN</definiendum>
+				<definiens id="0">uses a metric to compute the similarity between an Egraph and an incoming text unit</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Con fig column lists the name of the particular settings of similarity metric weights and threshold used during the matching , in this case essential-7 0 .</sentence>
+				<definiendum id="0">Con fig column</definiendum>
+				<definiens id="0">lists the name of the particular settings of similarity metric weights and threshold used during the matching</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Extraction Links The Extractor creates semantic representations based on the Egraph matches .</sentence>
+				<definiendum id="0">Extraction Links</definiendum>
+				<definiendum id="1">Extractor</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>As an alternative , HASTEN was configured with weights that created a strong preference for the structural match .</sentence>
+				<definiendum id="0">HASTEN</definiendum>
+				<definiens id="0">configured with weights that created a strong preference for the structural match</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>However , the succession event scenario stil l n – Test Data Official Metric Weights ♦ – Test Data Alternative Metric Weights II – Base Configuration ( threshold .70 ) – Recall Configuration ( threshold .60 ) p – Precision Configuration ( threshold .90 ) au ~ 0.5 A – Training Data U – Base Configuratio n ( threshold .70 ) – Recall Configuration ( threshold .60 ) – Precision Configuration ( threshold .90 ) – Egraph Key Configuration 23 0 -© H CI In Ill \ 1 Recall Figure 15 : Scenario Template Interim Results 0 Interim Test Result 04/28/95 included a few template slots that forced systems to attempt to make subtle and inferential judgements ; namely , the VACANCY_REASON , ON_THE_JOB , and REL_OTHER_ORG slots .</sentence>
+				<definiendum id="0">Precision Configuration</definiendum>
+				<definiendum id="1">Recall Configuration</definiendum>
+				<definiendum id="2">Precision Configuration</definiendum>
+				<definiens id="0">n – Test Data Official Metric Weights ♦ – Test Data Alternative Metric Weights II – Base Configuration ( threshold .70 ) – Recall Configuration ( threshold .60 ) p –</definiens>
+				<definiens id="1">Scenario Template Interim Results 0 Interim Test Result 04/28/95 included a few template slots that forced systems to attempt to make subtle and inferential judgements</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>n Test Data A Training Data ♦ Test Data ( scenario-only ) • Training Data ( scenario-only ) II Base Configuration ( threshold .70 ) ® Recall Configuration ( threshold .60 ) ® Precision Configuratio n ( threshold .90 ) 0 Egraph Key Configuration Figure 14 : micro-MUC Scenario Template Test Result s Figure 14 shows the performance results for the training and test data .</sentence>
+				<definiendum id="0">Recall Configuration</definiendum>
+				<definiendum id="1">Precision Configuratio n</definiendum>
+				<definiens id="0">micro-MUC Scenario Template Test Result s Figure 14 shows the performance results for the training and test data</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>HASTEN has another special module that tries to mutate Egraphs in a variety of ways , based on their similarity with other Egraphs .</sentence>
+				<definiendum id="0">HASTEN</definiendum>
+				<definiens id="0">has another special module that tries to mutate Egraphs in a variety of ways</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>HASTEN consists of 12,675 lines of code , and the development environment consists of 12,450 lines of code .</sentence>
+				<definiendum id="0">HASTEN</definiendum>
+				<definiens id="0">consists of 12,675 lines of code</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Configuration CPU Time ( seconds ) Speed ( Meg/hour ) Real Time ( minutes ) F-Measure BASE 334 ( + 19 ) 2.67 12 53.27 RECALL 525 ( + 19 ) 1 .73 18.6 50.98 PRECISION 310 ( + 19 ) 2.86 11 .2 43.24 Table 16 : Scenario Template Processing Statistics NAMED ENTITY TASK SRA performed the Named Entity task using its commercial name recognition product , called NameTag '' .</sentence>
+				<definiendum id="0">Configuration CPU Time</definiendum>
+				<definiens id="0">Scenario Template Processing Statistics NAMED ENTITY TASK SRA performed the Named Entity task using its commercial name recognition product , called NameTag ''</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>NameTag is a high-speed software program consisting of a C++ engine and name recognition data .</sentence>
+				<definiendum id="0">NameTag</definiendum>
+				<definiens id="0">a high-speed software program consisting of a C++ engine and name recognition data</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>NameTag uses its own tag specification that classifies names and other key phrases , and can either generate SGML annotated tex t or a table of extracted entities .</sentence>
+				<definiendum id="0">NameTag</definiendum>
+				<definiens id="0">uses its own tag specification that classifies names and other key phrases</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The FAST mode reduces the analysis to increase speed with minimal degradation in performance .</sentence>
+				<definiendum id="0">FAST mode</definiendum>
+				<definiens id="0">reduces the analysis to increase speed with minimal degradation in performance</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Configuration Rules CPU Time ( seconds ) Speed ( Meg/hour ) F-Measure BASE 226 3.72 78.68 96.42 FAST 86 3.33 87.73 95.66 FASTEST 59 2.62 111 .76 92.61 NO-NAMES 226 3.67 79.75 94.92 Table 18 : Named Entity Processing Statistic s Table 18 shows the processing time and speed of the four official configurations for the Named Entity test data , run on a Sun SPARCstation 20 .</sentence>
+				<definiendum id="0">Configuration Rules CPU Time</definiendum>
+				<definiens id="0">Named Entity Processing Statistic s Table 18 shows the processing time and speed of the four official configurations for the Named Entity test data , run on a Sun SPARCstation 20</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>TEMPLATE ELEMENT TASK SRA combined the results of NameTag and some additional processing by HASTEN to perform the Template Element task .</sentence>
+				<definiendum id="0">TEMPLATE ELEMENT TASK SRA</definiendum>
+				<definiens id="0">combined the results of NameTag and some additional processing by HASTEN to perform the Template Element task</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>an organization template element , POST : a string fill , IN_AND_OUT : a relational object about each person involve d ( may be more than one ) , VACANCY REASON : a set fill .</sentence>
+				<definiendum id="0">POST</definiendum>
+				<definiendum id="1">IN_AND_OUT</definiendum>
+				<definiens id="0">a string fill</definiens>
+				<definiens id="1">a set fill</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>k , which holds all rules for entering corporate posts ; egress .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">holds all rules for entering corporate posts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>k , which holds all rules for leaving corporate posts ; and activations .</sentence>
+				<definiendum id="0">k</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>k , which holds all macros for the ingress and egress rule packages .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">holds all macros for the ingress and egress rule packages</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>e. macros , which make up all ingress and egress patterns , and by inserting a buffer phrase into one of the egress patterns .</sentence>
+				<definiendum id="0">e. macros</definiendum>
+				<definiens id="0">make up all ingress and egress patterns , and by inserting a buffer phrase into one of the egress patterns</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Adding a buffer phrase allows the pattern matcher to jump over part of the conjunctive phrase in the following sentence : James , 57 years old , is stepping down as chief executive officer on July 1 and will retire as chairman a t the end of the year .</sentence>
+				<definiendum id="0">buffer phrase</definiendum>
+				<definiens id="0">allows the pattern matcher to jump over part of the conjunctive phrase in the following sentence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Of course , the best performance occurs when LOUELLA recognizes all of the organization s present .</sentence>
+				<definiendum id="0">LOUELLA</definiendum>
+				<definiens id="0">recognizes all of the organization s present</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>OFFICIAL NE incomplete ( 29 texts ) -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- SLOT POS ACTT COR PAR INCA SPU MIS NONIREC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ALL OBJECTS 2258 22641 2054 0 681 142 136 01 91 91 6 6 14 3 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- F-MEASURES P &amp; R 2P &amp; R P &amp; 2R 90.84 90.77 90 .92 UNOFFICIAL NE complete ( 30 texts ) -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- SLOT POS ACTT COR PAR INC ' SPU MIS NONIREC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ALL OBJECTS 2276 22961 2128 0 741 94 74 01 93 93 3 4 10 3 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- F-MEASURES P &amp; R 2P &amp; R P &amp; 2R 93.09 92.84 93.33 * * * UNOFFICIAL TASK SUBCATEGORIZATION SCORES * * * = SLOT POS ACTT COR PAR INC ' SPU MIS NONE REC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -Enamex : organization 449 4401 403 0 271 10 19 01 90 92 4 2 12 6 person 373 3781 362 0 41 12 7 01 97 96 2 3 6 1 location 110 1221 100 0 31 19 7 01 91 82 6 16 22 3 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- Timex : date 113 1121 109 0 01 3 4 01 96 97 4 3 6 0 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- Numex : money 76 791 76 0 01 3 0 01 100 96 0 4 4 0 percent 17 171 17 0 01 0 0 01 100 100 0 0 0 0 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- Note that LOUELLA has achieved near-perfection in four of the six subcategories .</sentence>
+				<definiendum id="0">OFFICIAL NE incomplete</definiendum>
+				<definiens id="0">29 texts ) -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- SLOT POS ACTT COR PAR INCA SPU MIS NONIREC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ALL OBJECTS 2258 22641 2054 0 681 142 136 01 91 91 6 6 14 3 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- F-MEASURES P &amp; R 2P &amp; R P &amp; 2R 90.84 90.77 90 .92 UNOFFICIAL NE complete ( 30 texts ) -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- SLOT POS ACTT COR PAR INC ' SPU MIS NONIREC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ALL OBJECTS 2276 22961 2128 0 741 94 74 01 93 93 3 4 10 3 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- F-MEASURES P &amp; R 2P &amp; R P &amp; 2R 93.09 92.84 93.33 * * * UNOFFICIAL TASK SUBCATEGORIZATION SCORES * * * = SLOT POS ACTT COR PAR INC ' SPU MIS NONE REC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>EFFECT ON HUMAN TARGET ( S ) Figure 1 : A sample message and associated filled template from MUC-3 ( terrorist domain ) .</sentence>
+				<definiendum id="0">EFFECT ON HUMAN TARGET</definiendum>
+				<definiens id="0">A sample message and associated filled template from MUC-3 ( terrorist domain )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>BRIDGESTONE SPORTS HAS SO FAR BEEN ENTRUSTING PRODUCTION OF GOLF CLUB PARTS WITH UNION PRECISION CASTING AND OTHER TAIWAN COMPANIES .</sentence>
+				<definiendum id="0">BRIDGESTONE SPORTS</definiendum>
+				<definiens id="0">HAS SO FAR BEEN ENTRUSTING PRODUCTION OF GOLF CLUB PARTS WITH UNION PRECISION CASTING AND OTHER TAIWAN COMPANIES</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>4 &lt; TEMPLATE-0592-1 &gt; : _ DOC NR : 0592 DOC DATE : 241189 DOCUMENT SOURCE : `` Jiji Press Ltd. '' CONTENT : &lt; TIE_UP_RELATIONSHIP-0592-1 &gt; &lt; TIE_UP_RELATIONSHIP-0592-1 &gt; : _ TIE-UP STATUS : EXISTING ENTITY : &lt; ENTITY-0592-1 &gt; &lt; ENTITY-0592-2 &gt; &lt; ENTITY-0592-3 &gt; JOINT VENTURE CO : &lt; ENTITY-0592-4 &gt; OWNERSHIP : &lt; OWNERSHIP-0592-1 &gt; ACTIVITY : &lt; ACTIVITY-0592-1 &gt; &lt; ENTITY-0592-1 &gt; : _ NAME : BRIDGESTONE SPORTS CO ALIASES : `` BRIDGESTONE SPORTS '' `` BRIDGESTON SPORTS '' NATIONALITY : Japan ( COUNTRY ) TYPE : COMPANY ENTITY RELATIONSHIP : &lt; ENTITY_RELATIONSHIP-0592-1 &gt; &lt; ENTITY-0592-2 &gt; : _ NAME : UNION PRECISION CASTING CO ALIASES : `` UNION PRECISION CASTING '' LOCATION : Taiwan ( COUNTRY ) NATIONALITY : Taiwan ( COUNTRY ) TYPE : COMPANY ENTITY RELATIONSHIP : &lt; ENTITY_RELATIONSHIP-0592-1 &gt; &lt; ENTITY-0592-3 &gt; : _ NAME : TAGA CO NATIONALITY : Japan ( COUNTRY ) TYPE : COMPANY ENTITY RELATIONSHIP : &lt; ENTITY_RELATIONSHIP-0592-1 &gt; &lt; ENTITY-0592-4 &gt; : _ NAME : BRIDGESTONE SPORTS TAIWAN CO LOCATION : `` KAOHSIUNG '' ( UNKNOWN ) Taiwan ( COUNTRY ) TYPE : COMPANY ENTITY RELATIONSHIP : &lt; ENTITY_RELATIONSHIP-0592-1 &gt; &lt; INDUSTRY-0592-1 &gt; : _ INDUSTRY-TYPE : PRODUCTION PRODUCT/SERVICE : ( 39 `` 20,000 IRON AND 'METAL WOOD ' [ CLUBS ] '' ) &lt; ENTITY_RELATIONSHIP-0592-1 &gt; : _ ENTITYI : &lt; ENTITY-0592-1 &gt; &lt; ENTITY-0592-2 &gt; &lt; ENTITY-0592-3 &gt; ENTITY2 : &lt; ENTITY-0592-4 &gt; REL OF ENTITY2 TO ENTITYI : CHILD STATUS : CURRENT &lt; ACTIVITY-0592-1 &gt; : _ INDUSTRY : &lt; INDUSTRY-0592-1 &gt; ACTIVITY-SITE : ( Taiwan ( COUNTRY ) &lt; ENTITY-0592-4 &gt; ) START TIME : &lt; TIME-0592-1 &gt; &lt; TIME-0592-1 &gt; : _ DURING : 0190 &lt; OWNERSHIP-0592-1 &gt; : _ OWNED : &lt; ENTITY-0592-4 &gt; TOTAL-CAPITALIZATION : 20000000 TWD OWNERSHIP-'/ , : ( &lt; ENTITY-0592-3 &gt; 10 ) ( &lt; ENTITY-0592-2 &gt; 15 ) ( &lt; ENTITY-0592-1 &gt; 75 ) Figure 3 : A sample filled template from the MUC-5 English joint ventures task .</sentence>
+				<definiendum id="0">UNION PRECISION CASTING '' LOCATION</definiendum>
+				<definiens id="0">COMPANY ENTITY RELATIONSHIP : &lt; ENTITY_RELATIONSHIP-0592-1 &gt; &lt; ENTITY-0592-3 &gt; : _ NAME : TAGA CO NATIONALITY : Japan ( COUNTRY ) TYPE : COMPANY ENTITY RELATIONSHIP : &lt; ENTITY_RELATIONSHIP-0592-1 &gt; &lt; ENTITY-0592-4 &gt; : _ NAME : BRIDGESTONE SPORTS TAIWAN CO LOCATION : `` KAOHSIUNG ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>A lexical item consists of the position of the word in the sentence , the root form of the word , and its feature values .</sentence>
+				<definiendum id="0">lexical item</definiendum>
+				<definiens id="0">consists of the position of the word in the sentence , the root form of the word , and its feature values</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>txt ) ) ) ( prog ( delete-smaller ( low ) ( high ) ) ( assert ( low ) ( high ) ( attvec syn ( PN ( sem ( +money ) ) ) ) ) ) ) A lexical rule consists of a pattern and an action .</sentence>
+				<definiendum id="0">txt ) ) )</definiendum>
+				<definiendum id="1">delete-smaller ( low )</definiendum>
+				<definiendum id="2">attvec syn</definiendum>
+				<definiendum id="3">lexical rule</definiendum>
+				<definiens id="0">consists of a pattern and an action</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A tuple has the format : ( word root cat position modifiee relationship ) where word is a word in the sentence ; root is the root form of word ; if root is `` = '' , then word is in root form ; cat is the lexical category or subcategory of word ; V : IP is the subcategory of verbs tha t take an IP as the complement ; V : [ NP ] is the subcategory of verbs that take a n optional NP as a complement ; modifiee is the word that word modifies ; position indicates the position of modifiee relative to word .</sentence>
+				<definiendum id="0">word</definiendum>
+				<definiendum id="1">root</definiendum>
+				<definiendum id="2">; cat</definiendum>
+				<definiendum id="3">V</definiendum>
+				<definiendum id="4">IP</definiendum>
+				<definiendum id="5">modifiee</definiendum>
+				<definiendum id="6">position</definiendum>
+				<definiens id="0">a word in the sentence ;</definiens>
+				<definiens id="1">the root form of word ; if root is `` = '' , then word is in root form</definiens>
+				<definiens id="2">the lexical category or subcategory of word ;</definiens>
+				<definiens id="3">the subcategory of verbs tha t take an IP as the complement ; V : [ NP ] is the subcategory of verbs that take a n optional NP as a complement ;</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If position is then the word is the head of the sentence ; relationship is the type of the dependency relationship between modifiee and word , such as subj ( subject ) , adjn ( adjunct ) , comps ( first complement ) , spec ( specifier ) , etc .</sentence>
+				<definiendum id="0">relationship</definiendum>
+				<definiens id="0">the head of the sentence ;</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>e. , a part of the headline ) , the action part of ( 7 ) passes the node to a function , called bind-pn-to-same , which searches the previous text for the same proper noun and asserts that the two occurrences are equivalent .</sentence>
+				<definiendum id="0">bind-pn-to-same</definiendum>
+				<definiens id="0">a part of the headline</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Coreference Recognition ( CO ) PIE maintains a set of discourse entities and constraints between them .</sentence>
+				<definiendum id="0">Coreference Recognition</definiendum>
+				<definiendum id="1">CO ) PIE</definiendum>
+				<definiens id="0">maintains a set of discourse entities and constraints between them</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In Government-Binding theory [ 3 ] , the c-command relationship is defined as follows : a node a ccommands another node /3 if ( a ) a does not dominate /3 and ( b ) the parent of a dominates O. Since we use dependency structures instead of constituency structures , the c-command relationship is defined a s follows : a word a c-commands another word /3 if ( a ) a or its modifiee dominates /3 ; and ( b ) a precede s a. • The WordNet [ 1 ] For each pair of noun phrases ( NP1 , NP2 ) , where NP2 precedes NP1 in the text , a manually constructed decision tree computes a weight , using the classification of the heads of NP1 and NP2 in the WordNe t [ 1 ] , as well as their semantic and syntactic features .</sentence>
+				<definiendum id="0">Government-Binding</definiendum>
+				<definiens id="0">a precede s a. • The WordNet [ 1 ] For each pair of noun phrases ( NP1 , NP2 ) , where NP2 precedes NP1 in the text , a manually constructed decision tree computes a weight , using the classification of the heads of NP1 and NP2 in the WordNe t [ 1 ] , as well as their semantic and syntactic features</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>status : OUT The rule double is triggered by the following words : ( 18 ) succeed accede replace follow succession replacement If the trigger is -passive , the IN person is the subject of the trigger or c-commands the trigger .</sentence>
+				<definiendum id="0">person</definiendum>
+				<definiens id="0">the subject of the trigger or c-commands the trigger</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>We combined the output of the following three POS tagger s using a simple voting scheme : Eric Brill 's Rule Based Tagger version 1 .14 [ 2 ] , the XTAG tagger , which is an implementation of Ken Church 's PARTS tagger [ 4 ] and Adwait Ratnaparkhi 's Maximum Entropy Tagger [ 11 ] .</sentence>
+				<definiendum id="0">XTAG tagger</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>WordNet is also consulted to tag such nouns as possibly having sets of individuals as their referent .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">also consulted to tag such nouns as possibly having sets of individuals as their referent</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The WordNet semantic concordance provides frequency information from a fraction of the Brown Corpus for senses of end and other words in the noun database .</sentence>
+				<definiendum id="0">WordNet semantic concordance</definiendum>
+				<definiens id="0">provides frequency information from a fraction of the Brown Corpus for senses of end</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For instance , Apple is a substring of Apple CEO John Sculley , but they can not be coreferent since John Sculley is a person and Apple is a corporation .</sentence>
+				<definiendum id="0">Apple</definiendum>
+				<definiendum id="1">Apple</definiendum>
+				<definiens id="0">a substring of Apple CEO John Sculley , but they can not be coreferent since John Sculley is a person and</definiens>
+				<definiens id="1">a corporation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>The second , rewrite , feature of DXL is illustrated by the abstract rule below , which , for clarity ' s sake , omits the needed variable-assignments : \ A \ B [ X ] C D ( Y ) /E/ _ &gt; C F B This rule specifies a left-context of A after which three obligatory patterns are sought , B-D , where B has some additional condition X placed on it .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">has some additional condition X placed on it</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>A parameter file lists the SGML tags relevant t o the task , in this case &lt; HL &gt; , &lt; TXT &gt; , &lt; DATELINE &gt; , and &lt; DD &gt; .</sentence>
+				<definiendum id="0">parameter file</definiendum>
+				<definiens id="0">lists the SGML tags relevant t o the task</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Lexical Pattern Matcher is the final step in the processing done by the NE system .</sentence>
+				<definiendum id="0">Lexical Pattern Matcher</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>( PP ( PREP `` as '' ) ( S ( NP ( PRO-DET-SPEC `` He '' ) ) ( NP ( N `` chief executive officer '' ) ) ) ( VP ( AUX ( MODAL `` will '' ) ( V `` be '' ) ) F7 : `` on July 1 '' ( VP ( V `` succeeded '' ) ( NP ) ( PP ( PREP `` on `` ) ( PP ( PREP `` by '' ) ( NP ( MONTH `` July '' ) ( NUM `` 1 '' ) ) ) ( NP ( NP ( N `` Mr. '' ) ) F8 : `` and '' ( NP ( NP ( N ( NAME `` Dooner '' ) ) ) ( CONJ `` and '' ) ( PUNCT `` , '' ) F9 : `` will retire as chairman '' ( NUM `` 45 '' ) ( VP ( AUX ( MODAL `` will '' ) ) ( PUNCT `` . '' ) ) ) ) ) ) )</sentence>
+				<definiendum id="0">PP</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiendum id="2">NP</definiendum>
+				<definiendum id="3">VP ( AUX</definiendum>
+				<definiens id="0">PREP `` by '' ) ( NP ( MONTH `` July '' ) ( NUM `` 1 '' ) ) ) ( NP ( NP ( N `` Mr. ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A semantic rule creates a semantic representation of the phrase as an annotation on the syntactic parse .</sentence>
+				<definiendum id="0">semantic rule</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The second sub-component of the semantic interpreter module is a pattern-based sentence interpreter which applie s semantic pattern-action rules to the semantics of each fragment of the sentence .</sentence>
+				<definiendum id="0">semantic interpreter module</definiendum>
+				<definiens id="0">a pattern-based sentence interpreter which applie s semantic pattern-action rules to the semantics of each fragment of the sentence</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The YOBSITUATION event is a flat object combining information from both SUCCESSION and IN-AND-OUT objects for ease of processing .</sentence>
+				<definiendum id="0">YOBSITUATION event</definiendum>
+				<definiens id="0">a flat object combining information from both SUCCESSION and IN-AND-OUT objects for ease of processing</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The message level representation is a list of discourse domain objects ( DDOs ) for the top-level events of interest in the message ( e.g. , SUCCESSION events in the ST domain ) .</sentence>
+				<definiendum id="0">message level representation</definiendum>
+				<definiens id="0">a list of discourse domain objects ( DDOs ) for the top-level events of interest in the message ( e.g. , SUCCESSION events in the ST domain )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The discourse component creates two primary structures : a discourse predicate database and the DDOs .</sentence>
+				<definiendum id="0">discourse component</definiendum>
+				<definiens id="0">creates two primary structures : a discourse predicate database and the DDOs</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Each trigger fragment contains one or more words whose semantics triggered the DDO .</sentence>
+				<definiendum id="0">trigger fragment</definiendum>
+				<definiens id="0">contains one or more words whose semantics triggered the DDO</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -IN-AND-OUT-PERSON-OF : `` Dooner '' ( score= 0 ) `` McCann '' ( score= 4 ) `` official '' ( score= 4 ) `` James '' ( score= 4 ) &lt; = &gt; `` Robert L. James '' `` One '' ( score= 6 ) &lt; = &gt; `` Kevin Goldman '' IN-AND-OUT-NEW-STATUS-OF : POSITION-STATUS-GEN-IN ( score= 0 ) POSITION-STATUS-GEN-OUT ( score= 4 ) Template Generation The template generator takes the DDOs produced by discourse processing and fills out the application-specifi c templates .</sentence>
+				<definiendum id="0">template generator</definiendum>
+				<definiens id="0">takes the DDOs produced by discourse processing and fills out the application-specifi c templates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>The UNO NLP system uses such type equations bi-directionally : for answering questions about the properties of a particular individual , and for matching particular properties against the properties of individuals in it s knowledge base .</sentence>
+				<definiendum id="0">UNO NLP system</definiendum>
+				<definiens id="0">uses such type equations bi-directionally : for answering questions about the properties of a particular individual , and for matching particular properties against the properties of individuals in it s knowledge base</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>265 For any set of English temporal expressions , their information content can be computed and compared , which allows the system to compute answers to the `` Yes-No '' questions about various aspects of time , answers to the `` When ? '</sentence>
+				<definiendum id="0">information content</definiendum>
+				<definiens id="0">allows the system to compute answers to the</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Demonstrated by the pre-MUC6 Research and Implementation Reasoning with Explicit Negative , Disjunctive , and Conjunctive Information at All Syntactic Levels One consequence of this rather unique capability is flat taxonomies ; complex Boolean types need not be stored explicitly , which prevents the unnecessary , but common , exponential growth of a knowledge base .</sentence>
+				<definiendum id="0">Conjunctive Information</definiendum>
+				<definiens id="0">prevents the unnecessary , but common , exponential growth of a knowledge base</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The UNO NLP hierarchy of geographical knowledge contains major geographical information abou t all countries , including capital cities , major and important cities , towns , ports , suburbs , local settlements , geographical and political regions that divide land such as provinces , islands , major ports an d airports , landmarks , monetary , length , area , and volume systems , official languages , major politica l organizations , waters such as seas , lakes , and rivers , and geographical landmarks and points of interes t such as mountains , hills , woods , and national parks .</sentence>
+				<definiendum id="0">UNO NLP hierarchy</definiendum>
+				<definiens id="0">geographical and political regions that divide land such as provinces , islands , major ports an d airports , landmarks , monetary , length , area , and volume systems</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Knowledge Representation module consists of the Boolean algebras module , Knowledg e Base Interpreter , and the Inference Engine module .</sentence>
+				<definiendum id="0">Knowledge Representation module</definiendum>
+				<definiens id="0">consists of the Boolean algebras module , Knowledg e Base Interpreter , and the Inference Engine module</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Knowledge Base Interpreter implements the interpreter of the sets of type equations encoding taxonomic , temporal and geographical knowledge .</sentence>
+				<definiendum id="0">Knowledge Base Interpreter</definiendum>
+				<definiens id="0">implements the interpreter of the sets of type equations encoding taxonomic , temporal and geographical knowledge</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The Learning module consists of functions mixing statistics and inductive learning techniques and i s used for corpus analysis and definite-anaphora-based knowledge acquisition .</sentence>
+				<definiendum id="0">Learning module</definiendum>
+				<definiens id="0">consists of functions mixing statistics and inductive learning techniques and i s used for corpus analysis and definite-anaphora-based knowledge acquisition</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>&lt; ENAMEX TYPE=•PERSON '' &gt; Dooner &lt; /ENAMEX &gt; , 'that we are looking for qualit y acquisitions and Ammirati &amp; Paris is a quality operation .</sentence>
+				<definiendum id="0">Paris</definiendum>
+				<definiens id="0">a quality operation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>While nouns in prenominal positions are markable , the noun which appears at the head of a noun phrase is no t separately markable -it is markable only as part of the entire noun phrase .</sentence>
+				<definiendum id="0">markable</definiendum>
+				<definiens id="0">markable only as part of the entire noun phrase</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Farm-debt mediation is one of the Farm Belt 's success stories .</sentence>
+				<definiendum id="0">Farm-debt mediation</definiendum>
+				<definiens id="0">one of the Farm Belt 's success stories</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>This core platform provides two main facilities : analysis , which converts tex t to a logical representation of its meaning , and generation , which expresses information represented in thi s logical form as text .</sentence>
+				<definiendum id="0">analysis</definiendum>
+				<definiendum id="1">generation</definiendum>
+				<definiens id="0">converts tex t to a logical representation of its meaning , and</definiens>
+				<definiens id="1">expresses information represented in thi s logical form as text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>1 ( Morphology ) t ( Semantics ) '~ Pragmatics ( NL Generator ) Template ASupport J Semantic Network 72 `` retire '' Figure 2 : Example piece of Semantic Net , for the sentence `` John will retire as chairman '' .</sentence>
+				<definiendum id="0">Morphology</definiendum>
+				<definiens id="0">) t ( Semantics ) '~ Pragmatics ( NL Generator</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Semantic Network The SemNet is a 100,000 node , directed hyper-graph .</sentence>
+				<definiendum id="0">SemNet</definiendum>
+				<definiens id="0">a 100,000 node , directed hyper-graph</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Co-reference Like the Named Entity , the Coref task begins with the set of all nodes created or modified during analysis .</sentence>
+				<definiendum id="0">Co-reference Like the Named Entity</definiendum>
+				<definiens id="0">the set of all nodes created or modified during analysis</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Template Elements Using the general template facility , the ORGANIZATION template and the PERSON template ar e defined as event-based templates , since it is possible to find a clear underlying concept ( person or organisation ) from which to produce a template .</sentence>
+				<definiendum id="0">Template Elements Using</definiendum>
+				<definiens id="0">the general template facility , the ORGANIZATION template and the PERSON template ar e defined as event-based templates</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>There is n o clear methodology for evaluation in the NLP field ; however , a well-established and well-known event such a s MUC presents an excellent challenge and provides important resources for evaluation .</sentence>
+				<definiendum id="0">MUC</definiendum>
+				<definiens id="0">presents an excellent challenge and provides important resources for evaluation</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Wordnet : An online lexical database .</sentence>
+				<definiendum id="0">Wordnet</definiendum>
+				<definiens id="0">An online lexical database</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>e. the text contains frequent chemical or mathematical formulas , or names with internal structure , like names for chemical compounds or drugs ) may requir e their own tokenizers , and FASTUS makes an excellent rapid-prototyping tool .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">an excellent rapid-prototyping tool</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A transition is a ternary relation between states and reasons , associating a start state and and end state with a transition reason .</sentence>
+				<definiendum id="0">transition</definiendum>
+				<definiens id="0">a ternary relation between states and reasons</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The system recognizes two kinds of transitions associated with a succession event : a person pivot , which is a transition in which a start state involving a person and a position is related a state involving the same person but a different position , and a position pivot ( which is similar to a 243 succession event ) , which is a transition in which the start and end states involve a single positio n and two different people .</sentence>
+				<definiendum id="0">position pivot</definiendum>
+				<definiens id="0">a transition in which the start</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>Reduction The Reduction components each consist of one or more stages of applying the NLToolset 's pattern matcher to phrases .</sentence>
+				<definiendum id="0">Reduction</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Extraction An Extraction component uses the results of a pattern match to generate an `` expectation '' and fill its slots with pieces of the text matched .</sentence>
+				<definiendum id="0">Extraction An Extraction component</definiendum>
+				<definiens id="0">uses the results of a pattern match to generate an `` expectation '' and fill its slots with pieces of the text matched</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( *SO-HL* *CAP* MARKETING *AMPERSAND* *CAP* MEDIA *DASHES* *CAP* ADVERTISIN G *COLON* *AT* *CAP* JOHN *CAP* DOONER *CAP* WILL *CAP* SUCCEED *CAP* JAMES *AT * *CAP* AT *CAP* HELM OF *CAP* MCCANN *HYPHEN* *CAP* ERICKSON *AT* *DASHES* *AT * *CAP* BY *CAP* KEVIN *CAP* GOLDMAN *EO-HL* ) ( *SO-DD* 102 I *SLASH* 124 I *SLASH* 194 I *EO-DD* ) ( *SOT* *CAP* ONE OF THE MANY DIFFERENCES BETWEEN *CAP* ROBERT *CAP* ABBREV_L *CAP* JAMES *COMMA* CHAIRMAN AND CHIEF-EXECUTIVE-OFFICER OF *CAP* MCCAN N *HYPHEN* *CAP* ERICKSON *COMMA* AND *CAP* JOHN *CAP* ABBREV LJ *CAP* DOONER *CAP* ABBREVJR *COMMA* THE AGENCY *APOSTROPHE-S* PRESIDENT AND CHIEFOPERATING-OFFICER *COMMA* IS QUITE TELLING *COLON* *CAP* ABBREV_MR *CAP* JAMES ENJOYS SAILBOATING *COMMA* WHILE *CAP* ABBREV_MR *CAP* DOONER OWNS A POWERBOAT *PERIOD* ) ( *CAP* HOWEVER *COMMA* ODDS OF THAT HAPPENING ARE SLIM SINCE WORD FROM *CAP * COCA-COLA HEADQUARTERS IN *CAP* ATLANTA IS THAT *CAP* CAA AND OTHER A D AGENCIES *COMMA* SUCH AS *CAP* FALLON *CAP* MCELLIGOTT *COMMA* WILL CONTINU E TO HANDLE *CAP* COCA-COLA ADVERTISING *PERIOD* ) ( *DOUBLEQUOTE* *EO-P* *SO-P* *CAP* ABBREV_MR *CAP* DOONER MET WITH *CAP* MARTIN *CAP* PURIS *COMMA* PRESIDENT AND CHIEF-EXECUTIVE-OFFICER OF *CAP* AMMIRAT I *AMPERSAND* *CAP* PURIS *COMMA* ABOUT *CAP* MCCANN *APOSTROPHE-S* ACQUIRING THE AGENCY WITH BILLINGS OF *DOLLAR* 1400 I MILLION *COMMA* BUT NOTHING HAS MATERIALIZED *PERIOD* ) Figure 2 : After Lexical Analysi s 254 After the Lexical Analysis , the input string has been converted into a list of 52 sentences , each sentenc e containing a list of tokens ; this list includes *CAP* tokens inserted in front of every capitalized token .</sentence>
+				<definiendum id="0">MCCANN *APOSTROPHE-S* ACQUIRING THE AGENCY</definiendum>
+				<definiens id="0">MANY DIFFERENCES BETWEEN *CAP* ROBERT *CAP* ABBREV_L *CAP* JAMES *COMMA* CHAIRMAN AND CHIEF-EXECUTIVE-OFFICER OF *CAP* MCCAN N *HYPHEN* *CAP* ERICKSON *COMMA* AND *CAP* JOHN *CAP* ABBREV LJ *CAP* DOONER *CAP* ABBREVJR *COMMA* THE AGENCY *APOSTROPHE-S* PRESIDENT AND CHIEFOPERATING-OFFICER *COMMA* IS QUITE TELLING *COLON* *CAP* ABBREV_MR *CAP* JAMES ENJOYS SAILBOATING *COMMA* WHILE *CAP* ABBREV_MR *CAP* DOONER OWNS A POWERBOAT *PERIOD* ) ( *CAP* HOWEVER *COMMA* ODDS OF THAT HAPPENING ARE SLIM SINCE WORD FROM *CAP *</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>There are three types of Template Element objects , ORGANIZATION , PERSON , and ARTIFACT .</sentence>
+				<definiendum id="0">Template Element</definiendum>
+				<definiens id="0">objects , ORGANIZATION , PERSON , and ARTIFACT</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>SPECIAL USAGE NOTES : COMPANY -any profit-making or nonprofit legal ( usually ) entity , including universities , partnerships , corporations , proprietorsips , consortiums , enterprises , government-owned corporations , etc .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The literal string that appears in the text , plus a categorization of the place name , appear in this slot as a complex ( two-part ) fill .</sentence>
+				<definiendum id="0">literal string</definiendum>
+				<definiens id="0">appears in the text , plus a categorization of the place name</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>SPECIAL USAGE NOTES : a. The location categories that are to be used for ORG_LOCALE are defined as follows : CITY -a town , city , port , suburb , or other local settlemen t PROVINCE -a state , province , island or similar subnational geographically or politically defined are a COUNTRY -a nation , country , colony , federation of countries such as the Confederation of Independent States ( the former USSR ) , or other similar national entit y REGION -an international region such as Eastern Europe , the Pacific Rim , or the Malay Archipelago UNK -a location whose possible type can not be identified from evidence in the text or from worl d knowledge .</sentence>
+				<definiendum id="0">SPECIAL USAGE NOTES</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>ART_ID Slot DEFINITION : A unique identifier for the artifact .</sentence>
+				<definiendum id="0">ART_ID Slot DEFINITION</definiendum>
+				<definiens id="0">A unique identifier for the artifact</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>DATE Slot DEFINITION : An absolute or relative date or date range .</sentence>
+				<definiendum id="0">DATE Slot DEFINITION</definiendum>
+				<definiens id="0">An absolute or relative date or date range</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The ARTIFACT object assumes a scenario-specific l : E task that includes sports equipment such as golf clubs ( and excludes such things as `` golf club parts '' ) .</sentence>
+				<definiendum id="0">ARTIFACT object</definiendum>
+				<definiens id="0">assumes a scenario-specific l : E task that includes sports equipment such as golf clubs ( and excludes such things as `` golf club parts '' )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>BRIDGESTONE SPORTS HAS SO FAR BEEN ENTRUSTING PRODUCTION OF GOLF CLUB PART S WITH UNION PRECISION CASTING AND OTHER TAIWAN COMPANIES .</sentence>
+				<definiendum id="0">BRIDGESTONE SPORTS</definiendum>
+				<definiens id="0">HAS SO FAR BEEN ENTRUSTING PRODUCTION OF GOLF CLUB PART S WITH UNION PRECISION CASTING AND OTHER TAIWAN COMPANIES</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>The most interesting components in our system are CRYSTAL ( which generates a concept node dictionary ) [ 13 ] , WRAP-UP ( which establishes relational links between entities ) [ 14 , 15 , 16 ] , and RESOLVE ( the coreference analyzer ) [ 8 ] .</sentence>
+				<definiendum id="0">CRYSTAL</definiendum>
+				<definiendum id="1">RESOLVE</definiendum>
+				<definiens id="0">generates a concept node dictionary ) [ 13 ] , WRAP-UP ( which establishes relational links between entities</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>BADGER is domain/task independent and require s no adjustment in order to move from one application to another .</sentence>
+				<definiendum id="0">BADGER</definiendum>
+				<definiens id="0">domain/task independent and require s no adjustment in order to move from one application to another</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>CRYSTAL requires no such human review , and creates CN dictionaries on the basis of machine learnin g techniques [ 13 ] .</sentence>
+				<definiendum id="0">CRYSTAL</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Coreference ( CO ) RESOLVE is a coreference resolution system that uses machine learning techniques to determine coreferen t relationships among relevant phrases in a text .</sentence>
+				<definiendum id="0">Coreference ( CO ) RESOLVE</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>TE is a test of fine-grained information extraction .</sentence>
+				<definiendum id="0">TE</definiendum>
+				<definiens id="0">a test of fine-grained information extraction</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>G. , `` Cognition , Computers and Car Bombs : How Yale Prepared Me for the 90 's '' , in Beliefs , Reasoning , and Decision Making : Psycho-logic in Honor of Bob Abelson ( eds : Schank &amp; Langer ) , Lawrence Erlbaum Associates , Hillsdale , NJ .</sentence>
+				<definiendum id="0">Decision Making</definiendum>
+				<definiens id="0">How Yale Prepared Me for the 90 's '' , in Beliefs , Reasoning , and</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>NUMEX : SPECIFIC GUIDELINES 12 319 The Named Entity task consists of three subtasks ( entity names , temporal expressions , number expressions ) .</sentence>
+				<definiendum id="0">NUMEX</definiendum>
+				<definiendum id="1">Named Entity task</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The TEI ( Text Encoding Initiative ) Guidelines for Electronic Text Encoding and Interchange cove r such identifiers ( plus abbreviations ) together in section 6 .4 and explain that the identifiers comprise `` textual feature s which it is often convenient to distinguish from their surrounding text .</sentence>
+				<definiendum id="0">TEI ( Text Encoding Initiative ) Guidelines for Electronic Text Encoding</definiendum>
+				<definiens id="0">plus abbreviations ) together in section 6 .4 and explain that the identifiers comprise `` textual feature s which it is often convenient to distinguish from their surrounding text</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The tokenization conventions for MUC-6 have an impact on the boundaries of the strings to be tagged .</sentence>
+				<definiendum id="0">tokenization conventions for MUC-6</definiendum>
+				<definiens id="0">have an impact on the boundaries of the strings to be tagged</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>Tractable inference ( Lisp ) IL u u NE markup TE templates 5T templates Figure 1 : Coarse-grained system architecture .</sentence>
+				<definiendum id="0">Tractable inference</definiendum>
+				<definiens id="0">Coarse-grained system architecture</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Finally , the template generation module forms the final TE and S T output by a roughly one-to-one mapping from facts in the inferential database to templates .</sentence>
+				<definiendum id="0">template generation module</definiendum>
+				<definiens id="0">forms the final TE and S T output by a roughly one-to-one mapping from facts in the inferential database to templates</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>All of these preprocess components are implemented with LEX ( the lexical analyzer generator ) and are very fast .</sentence>
+				<definiendum id="0">LEX</definiendum>
+				<definiens id="0">the lexical analyzer generator</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Organizationally-headed noun phrases are labeled as org , regardless of whether they are simple proper names or more complex constituents such as th e 145 * * * TOTAL SLOT SCORES * * * + + + SLOT POS ACTT COR PAR INCI SPU MIS NONI REC PRE UND OVG ERR SU B + + + &lt; enamex &gt; 938 9911 881 0 01 110 57 01 94 89 6 11 16 0 type 938 9911 775 0 1061 110 57 01 83 78 6 11 26 12 text 938 9911 840 0 411 110 57 01 90 85 6 11 20 5 subto 1876 19821 1615 0 1471 220 114 01 86 81 6 11 23 8 + + + ALL OB 2286 24061 1993 0 1631 250 130 01 87 83 6 10 21 8 MATCHD 2156 21561 1993 0 1631 0 0 01 92 92 0 0 8 8 + + + P &amp; R 2P &amp; R P &amp; 2R F-MEASURES 84.95 83 .67 86 .28 * * * TASK SUBCATEGORIZATION SCORES * * * + + + SLOT POS ACTT COR PAR INC ' SPU MIS NONI REC PRE UND OVG ERR SUB + + + Enamex : organi 454 4931 392 0 281 73 34 0I 86 80 7 15 26 7 person 373 3641 292 0 601 12 21 0I 78 80 6 3 24 17 locati 111 1341 91 0 181 25 2 0I 82 68 2 19 33 16 Figure4 : Performance of rules learned for theENAMEXportion of theNEtask ( unofficialscore ) org-corpnp apposition above .</sentence>
+				<definiendum id="0">Organizationally-headed noun phrases</definiendum>
+				<definiendum id="1">SLOT POS ACTT COR PAR INCI SPU MIS NONI REC PRE UND OVG ERR SU</definiendum>
+				<definiens id="0">th e 145 * * * TOTAL SLOT SCORES * * * + + +</definiens>
+				<definiens id="1">.28 * * * TASK SUBCATEGORIZATION SCORES * * * + + + SLOT POS ACTT COR PAR INC ' SPU MIS NONI REC PRE UND OVG ERR SUB + + + Enamex</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Phrase Interpretation Facts enter the propositional database as the result of phrase interpretation .</sentence>
+				<definiendum id="0">Phrase Interpretation Facts</definiendum>
+				<definiens id="0">enter the propositional database as the result of phrase interpretation</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The phrase parses as follows ; note the embedded post semantic phrase types .</sentence>
+				<definiendum id="0">phrase</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>This merging process takes place by iterating over the semantic individuals in the inferential database tha t are of a namable sort ( e.g. , person or organization ) .</sentence>
+				<definiendum id="0">merging process</definiendum>
+				<definiens id="0">takes place by iterating over the semantic individuals in the inferential database tha t are of a namable sort ( e.g. , person or organization )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Indeed , template generation consists of nothing more than reading out the relevant propositions from the database .</sentence>
+				<definiendum id="0">template generation</definiendum>
+				<definiens id="0">consists of nothing more than reading out the relevant propositions from the database</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>PERFORMANCE ANALYSI S We participated in two officially-scored tasks at MUC-6 , named entities and template elements .</sentence>
+				<definiendum id="0">PERFORMANCE ANALYSI S We</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>A organization 86 92 84 92 -2 — name 76 78 77 80 +1 +2 alias 60 79 56 78 -4* -1 descriptor 27 62 16 49 -11* -13* type 83 90 81 89 -2 -1 locale 46 87 43 87 -3 — country 47 88 45 93 -2 +5 person 94 92 95 87 +1 -5* name 93 91 93 84 — _7* alias 94 95 86 96 -8* +1 title 95 96 94 93 -1 -3 All Objects 75 86 73 85 -2 -1 F-Measure , unrevised 80.21 78.52 -1.69 Table 2 : Slot-by-slot performance differences , TE task ( unrevised scores ) .</sentence>
+				<definiendum id="0">TE task</definiendum>
+				<definiens id="0">92 -2 — name 76 78 77 80 +1 +2 alias 60 79 56 78 -4* -1 descriptor 27 62 16 49 -11* -13* type 83 90 81 89 -2 -1 locale 46 87 43 87 -3 — country 47 88 45 93 -2 +5 person 94 92 95 87 +1 -5* name 93 91 93 84 — _7* alias 94 95 86 96 -8* +1 title 95 96 94 93 -1 -3 All Objects 75 86 73 85 -2 -1 F-Measure</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>Basic NE System The Basic system consists of a pipeline of Unix process .</sentence>
+				<definiendum id="0">Basic system</definiendum>
+				<definiens id="0">consists of a pipeline of Unix process</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The system consists of suite of `C ' and lex programs .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">consists of suite of `C ' and lex programs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Recall , however , increases ( with one exception ) steadily over the whole range .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">increases ( with one exception</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>SPU MIS NONI REC PRE UND OVG ERR SUB &lt; enamex &gt; 925 8891 841 0 01 48 84 01 91 95 9 5 14 0 type 925 8891 784 0 571 48 84 01 85 88 9 5 19 7 text 925 8891 755 0 861 48 84 01 82 85 9 5 22 10 subtotals 1850 17781 1539 0 1431 96 168 01 83 86 9 5 21 8 &lt; timex &gt; 111 1081 102 0 01 6 9 01 92 94 8 6 13 0 type 111 1081 102 0 01 6 9 01 92 94 8 6 13 0 text 111 1081 92 0 101 6 9 01 83 85 8 6 21 10 subtotals 222 2161 194 0 101 12 18 01 87 90 8 6 17 5 &lt; numex &gt; 93 1021 91 0 01 11 2 01 98 89 2 11 12 0 type 93 1021 91 0 01 11 2 01 98 89 2 11 12 0 text 93 1021 88 0 31 11 2 01 95 86 2 11 15 3 subtotals 186 2041 179 0 31 22 4 01 96 88 2 11 14 2 ALL OBJECTS 2258 21981 1912 0 1561 130 190 01 85 87 8 6 20 8 MATCHED ONLY 2068 20681 1912 0 1561 0 0 01 92 92 0 0 8 8 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- P &amp; R 2P &amp; R P &amp; 2R F-MEASURES 85.82 86.52 85.13 SLOT POS ACTI COR PAR INC ' SPU MIS NON ' REC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- Enamex : organization 442 3921 330 0 401 22 72 01 75 84 16 6 29 11 person 373 3781 353 0 91 16 11 01 95 93 3 4 9 2 location 110 1191 101 0 81 10 1 01 92 85 1 8 16 7 other 0 01 0 0 01 0 0 01 * * * * * * Timex : date 111 1081 102 0 01 6 9 01 92 94 8 6 13 0 time 0 01 0 0 01 0 0 01 * * * * * * other 0 01 0 0 01 0 0 01 * * * * * * Numex : money 76 771 74 0 01 3 2 01 97 96 3 4 6 0 percent 17 251 17 0 01 8 0 01 100 68 0 32 32 0 other 0 01 0 0 01 0 0 01 * * * * * * * * * DOCUMENT SECTION SCORES * * * SLOT POS ACTT COR PAR INCI SPU MIS NONI REC PRE UND OVG ERR SUB HL 136 1301 115 0 111 4 10 01 84 88 7 3 18 9 DD 60 601 60 0 01 0 0 01 100 100 0 0 0 0 DATELINE 52 501 49 0 11 0 2 01 94 98 4 0 6 2 TXT 2010 19581 1688 0 1441 126 178 01 84 86 9 6 21 8 163 Appendix A Autolearn System Score s SLOT POS ACT ' COR PAR INCI SPU MIS NON ' REC PRE UND OVG ERR SUB &lt; enamex &gt; 915 5141 469 0 01 45 446 01 51 91 49 9 51 0 type 915 5141 445 0 241 45 446 01 49 86 49 9 54 5 text 915 5141 371 0 981 45 446 01 40 72 49 9 61 21 subtotals 1830 10281 816 0 1221 90 892 01 44 79 49 9 58 13 &lt; timex &gt; 111 651 59 0 01 6 52 01 53 91 47 9 50 0 type 111 651 59 0 01 6 52 01 53 91 47 9 50 0 text 111 651 48 0 111 6 52 01 43 74 47 9 59 19 subtotals 222 1301 107 0 111 12 104 01 48 82 47 9 54 9 &lt; numex &gt; 93 721 65 0 01 7 28 01 70 90 30 10 35 0 type 93 721 65 0 01 7 28 01 70 90 30 10 35 0 text 93 721 63 0 21 7 28 01 68 88 30 10 37 3 subtotals 186 1441 128 0 21 14 56 01 69 89 30 10 36 2 ALL OBJECTS 2238 13021 1051 0 1351116 1052 01 47 81 47 9 55 11 MATCHED ONLY 1186 11861 1051 0 1351 0 0 01 89 89 0 0 11 11 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- P &amp; R 2P &amp; R P &amp; 2R F-MEASURES 59 .38 70.57 51.25 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- SLOT POS ACTI COR PAR INC ' SPU MIS NON ' REC PRE UND OVG ERR SUB Enamex : organization 433 2871 251 0 81 28 174 01 58 87 40 10 46 3 person 372 1551 131 0 141 10 227 01 35 84 61 6 66 10 location 110 721 63 0 21 7 45 01 57 88 41 10 46 3 other 0 01 0 0 01 0 0 01 * * * * * * Timex : date 111 651 59 0 01 6 52 01 53 91 47 9 50 0 time 0 01 0 0 01 0 0 01 * * * * * * other 0 01 0 0 01 0 0 01 * * * * * * Numex : money 76 551 52 0 01 3 24 01 68 94 32 5 34 0 percent 17 171 13 0 01 4 4 01 76 76 24 24 38 0 other 0 01 0 0 01 0 0 01 * * * * * * * * DOCUMENT SECTION SCORES * * * SLOT POS ACTI COR PAR INCI SPU MIS NON ' REC PRE UND OVG ERR SUB HL 128 921 65 0 0 71 20 56 01 51 71 44 22 56 10 DD 60 01 0 0 01 0 60 01 0 * 100 * 100 * DATELINE 52 241 24 0 01 0 28 01 46 100 54 0 54 0 TXT 1998 11861 962 0 1281 96 908 01 48 81 45 8 54 12 16 4 Appendix A Basic System Walk-through Score s SLOT POS ACTI COR PAR INCI SPU MIS NONI REC PRE UND OVG ERR SUB -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- - &lt; enamex &gt; 66 521 47 0 01 5 19 01 71 90 29 10 34 0 type 66 521 42 0 51 5 19 01 64 81 29 10 41 11 text 66 521 42 0 51 5 19 Cl 64 81 29 10 41 11 subtotals 132 1041 84 0 101 10 38 01 64 81 29 10 41 11 &lt; timex &gt; 6 51 5 0 01 0 1 01 83 100 17 0 17 0 type 6 51 5 0 01 0 1 01 83 100 17 0 17 0 text 6 51 5 0 01 0 1 01 83 100 17 0 17 0 subtotals 12 101 10 0 01 0 2 01 83 100 17 0 17 0 &lt; numex &gt; 6 71 6 0 01 1 0 01 100 86 0 14 14 0 type 6 71 6 0 01 1 0 01 100 86 0 14 14 0 text 6 71 6 0 01 1 0 01 100 86 0 14 14 0 subtotals 12 141 12 0 01 2 0 01 100 86 0 14 14 0 ALL OBJECTS 156 1281 106 0 101 12 40 01 68 83 26 9 37 9 MATCHED ONLY 116 1161 106 0 101 0 0 01 91 91 0 0 9 9 P &amp; R 2P &amp; R F-MEASURES P &amp; 2R 70 .4874 .65 79 .34 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- SPU MIS NONI -- -- -- -- -- -- -- -- -- -- -- -REC PRE UND OVG ERR SUBSLOT Enamex : POS ACTT COR PAR INC I organization 29 121 5 0 51 2 19 01 17 42 66 17 84 50 person 35 381 35 0 01 3 0 01 100 92 0 8 8 0 location 2 21 2 0 01 0 0 01 100 100 0 0 0 0 other 0 01 0 0 01 0 0 01 * * * * * * Timex : date 6 51 5 0 01 0 1 01 83 100 17 0 17 0 time 0 o l 0 0 o l 0 0 o l * * * * * * other 0 OI 0 0 O1 0 0 OI * * * * * * Numex : money 5 61 5 0 01 1 0 01 100 83 0 17 17 0 percent 1 11 1 0 01 0 0 01 100 100 0 0 0 0 other 0 01 0 0 01 0 0 01 * * * * * * -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- * * * DOCUMENT SECTION SCORES * * * SLOT POS ACTI COR PAR INCI SPU MIS NONI REC PRE UND OVG ERR SUB HL 8 61 6 0 01 0 2 01 75 100 25 0 25 0 DD 2 21 2 0 01 0 0 01 100 100 0 0 0 0 DATELINE 0 01 0 0 01 0 0 01 * * * * * TXT 146 1201 98 0 101 12 38 01 67 82 26 10 38 9 165 Appendix A Autolearn System Walk-through Score s SLOT POS ACT ' COR PAR INC ' SPU MIS NON ' REC PRE UND OVG ERR SUB + + + &lt; enamex &gt; 69 221 20 0 01 2 49 01 29 91 71 9 72 0 type 69 221 20 0 01 2 49 01 29 91 71 9 72 0 text 69 221 18 0 21 2 49 01 26 82 71 9 75 10 subtotals 138 441 38 0 21 4 98 01 28 86 71 9 73 5 &lt; timex &gt; 6 51 5 0 01 0 1 01 83 100 17 0 17 0 type 6 51 5 0 01 0 1 01 83 100 17 0 17 0 text 6 51 4 0 11 0 1 01 67 80 17 0 33 20 subtotals 12 101 9 0 11 0 2 01 75 90 17 0 25 10 &lt; numex &gt; 6 61 6 0 01 0 0 01 100 100 0 0 0 0 type 6 61 6 0 01 0 0 01 100 100 0 0 0 0 text 6 61 5 0 11 0 0 01 83 83 0 0 17 17 subtotals 12 121 11 0 11 0 0 01 92 92 0 0 8 8 + + + ALL OBJECTS 162 661 58 0 41 4 100 01 36 88 62 6 65 6 MATCHED ONLY 62 621 58 0 41 0 0 01 94 94 0 0 6 6 + + + P &amp; R 2P &amp; R P &amp; 2R F-MEASURES 50 .88 68 .08 40.62 + + + SLOT POS ACT ' COR PAR INC ' SPU MIS NONI REC PRE UND OVG ERR SUB + + + Enamex : organization 32 121 12 0 01 0 20 01 38 100 62 0 62 0 person 35 71 6 0 01 1 29 01 17 86 83 14 83 0 location 2 31 2 0 01 1 0 01 100 67 0 33 33 0 other 0 01 0 0 01 0 0 01 * * * * * + + + Timex : date 6 51 5 0 01 0 1 01 83 100 17 0 17 0 time 0 01 0 0 01 0 0 01 * * * * * * other 0 01 0 0 01 0 0 01 * * * * + + + Numex : money 5 51 5 0 01 0 0 01 100 100 0 0 0 0 percent 1 11 1 0 01 0 0 01 100 100 0 0 0 0 other 0 01 0 0 01 0 0 01 * * * * * * + + + * * * DOCUMENT SECTION SCORES * * * + + + SLOT POS ACT ' COR PAR INC ' SPU MIS NON ' REC PRE UND OVG ERR SUB + + + HL 8 21 2 0 01 0 6 01 25 100 75 0 75 0 DD 2 01 0 0 01 0 2 01 0 * 100 * 100 * DATELINE 0 01 0 0 01 0 0 01 * * * * * TXT 152 641 56 0 41 4 92 01 37 88 60 6 64 7 166</sentence>
+				<definiendum id="0">SPU MIS NONI REC PRE UND OVG ERR SUB</definiendum>
+				<definiens id="0">0 01 0 0 01 0 0 01 * * * * * * Timex : date 111 1081 102 0 01 6 9 01 92 94 8 6 13 0 time 0 01 0 0 01 0 0 01 * * * * * * other 0 01 0 0 01 0 0 01 * * * * * * Numex : money 76 771 74 0 01 3 2 01 97 96 3 4 6 0 percent 17 251 17 0 01 8 0 01 100 68 0 32 32 0 other 0 01 0 0 01 0 0 01 * *</definiens>
+				<definiens id="1">59 0 01 6 52 01 53 91 47 9 50 0 type 111 651 59 0 01 6 52 01 53 91 47 9 50 0 text 111 651 48 0 111 6 52 01 43 74 47 9 59 19 subtotals 222 1301 107 0 111 12 104 01 48 82 47 9 54 9 &lt; numex &gt;</definiens>
+				<definiens id="2">1051 0 1351116 1052 01 47 81 47 9 55 11 MATCHED ONLY 1186 11861 1051 0 1351 0 0 01 89 89 0 0 11 11 -- --</definiens>
+				<definiens id="3">01 * * * * * * Timex : date 111 651 59 0 01 6 52 01 53 91 47 9 50 0 time 0 01 0 0 01 0 0 01 * * * * * * other 0 01 0 0 01 0 0 01 * * * * * * Numex : money 76 551 52 0 01 3 24 01 68 94 32 5 34 0 percent 17 171 13 0 01 4 4 01 76 76 24 24 38 0 other 0 01 0 0 01 0 0 01 * * * * * * * * DOCUMENT SECTION SCORES * * * SLOT POS ACTI COR PAR INCI SPU MIS NON ' REC PRE UND OVG ERR</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>c ( S ) – m ( S ) c ( S ) ( ISI – 1 ) – ( Ip ( S ) I -1 ) 47 Finally , we note that extending this measure from a single key equivalence class to a n entire test set T simply requires summing over the key equivalence classes .</sentence>
+				<definiendum id="0">c ( S</definiendum>
+				<definiens id="0">a single key equivalence class to a n entire test set T simply requires summing over the key equivalence classes</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>That is , E ( ISiI — Ip ( Si ) I ) SCORING PRECISION The recall scoring procedure operates by merging the subsets of a key equivalence class that are defined by equivalence classes in the response .</sentence>
+				<definiendum id="0">E ( ISiI — Ip ( Si</definiendum>
+				<definiens id="0">recall scoring procedure operates by merging the subsets of a key equivalence class that are defined by equivalence classes in the response</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>More precisely , given an equivalence class S ' defined by the response , we mus t determine the minimal number of links to be added to the key , so as to ensure that each of the members of the response set is in the same key set .</sentence>
+				<definiendum id="0">equivalence class S</definiendum>
+				<definiens id="0">determine the minimal number of links to be added to the key , so as to ensure that each of the members of the response set is in the same key set</definiens>
+			</definition>
+</paper>
+
+	</volume>

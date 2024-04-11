@@ -23,8 +23,8 @@ class DataLoader:
         self.vocab = vocab
         self.eval = evaluation
 
-        with open(filename) as infile:
-            data = self.preprocess(json.load(infile), vocab, opt)
+        with open(filename) as f:
+            data = self.preprocess(json.load(f), vocab, opt)
 
         # shuffle for training
         if not evaluation:
@@ -87,7 +87,8 @@ class DataLoader:
 
                 processed.append(
                     (
-                    tokens, pos, head, terms, defs, dep_path, adj, labels, constant.SENT_LABEL_TO_ID[sentence['label']])
+                        tokens, pos, head, terms, defs, dep_path, adj, labels,
+                        constant.SENT_LABEL_TO_ID[sentence['label']])
                 )
 
         return processed
@@ -117,28 +118,28 @@ class DataLoader:
 
         # sort all fields by lens for easy RNN operations
         lens = [len(x) for x in batch[0]]
-        batch, orig_idx = sort_all(batch, lens)
+        batch, orig_idx = self.sort_all(batch, lens)
 
         # word dropout
         if not self.eval:
             words = [
-                word_dropout(sent, self.opt['word_dropout'])
+                self.word_dropout(sent, self.opt['word_dropout'])
                 for sent in batch[0]
             ]
         else:
             words = batch[0]
 
         # convert to tensors
-        words = get_long_tensor(words, batch_size)
+        words = self.get_long_tensor(words, batch_size)
         masks = torch.eq(words, 0)
-        pos = get_long_tensor(batch[1], batch_size)
-        head = get_long_tensor(batch[2], batch_size)
-        terms = get_long_tensor(batch[3], batch_size)
-        defs = get_long_tensor(batch[4], batch_size)
-        dep_path = get_long_tensor(batch[5], batch_size).float()
-        adj = get_float_tensor2D(batch[6], batch_size)
+        pos = self.get_long_tensor(batch[1], batch_size)
+        head = self.get_long_tensor(batch[2], batch_size)
+        terms = self.get_long_tensor(batch[3], batch_size)
+        defs = self.get_long_tensor(batch[4], batch_size)
+        dep_path = self.get_long_tensor(batch[5], batch_size).float()
+        adj = self.get_float_tensor2D(batch[6], batch_size)
 
-        labels = get_long_tensor(batch[7], batch_size)
+        labels = self.get_long_tensor(batch[7], batch_size)
 
         sent_labels = torch.FloatTensor(batch[8])
 
@@ -148,36 +149,36 @@ class DataLoader:
         for i in range(self.__len__()):
             yield self.__getitem__(i)
 
+    @staticmethod
+    def get_long_tensor(tokens_list, batch_size):
+        """ Convert list of list of tokens to a padded LongTensor. """
+        token_len = max(len(x) for x in tokens_list)
+        tokens = torch.LongTensor(batch_size, token_len).fill_(constant.PAD_ID)
+        for i, s in enumerate(tokens_list):
+            tokens[i, :len(s)] = torch.LongTensor(s)
 
-def get_long_tensor(tokens_list, batch_size):
-    """ Convert list of list of tokens to a padded LongTensor. """
-    token_len = max(len(x) for x in tokens_list)
-    tokens = torch.LongTensor(batch_size, token_len).fill_(constant.PAD_ID)
-    for i, s in enumerate(tokens_list):
-        tokens[i, :len(s)] = torch.LongTensor(s)
+        return tokens
 
-    return tokens
+    @staticmethod
+    def get_float_tensor2D(tokens_list, batch_size):
+        """ Convert list of list of tokens to a padded LongTensor. """
+        token_len = max(len(x) for x in tokens_list)
+        tokens = torch.FloatTensor(batch_size, token_len, token_len).fill_(constant.PAD_ID)
+        for i, s in enumerate(tokens_list):
+            tokens[i, :len(s), :len(s)] = torch.FloatTensor(s)
+        return tokens
 
+    @staticmethod
+    def sort_all(batch, lens):
+        """ Sort all fields by descending order of lens, and return the original indices. """
+        unsorted_all = [lens] + [range(len(lens))] + list(batch)
+        sorted_all = [list(t) for t in zip(*sorted(zip(*unsorted_all), reverse=True))]
+        return sorted_all[2:], sorted_all[1]
 
-def get_float_tensor2D(tokens_list, batch_size):
-    """ Convert list of list of tokens to a padded LongTensor. """
-    token_len = max(len(x) for x in tokens_list)
-    tokens = torch.FloatTensor(batch_size, token_len, token_len).fill_(constant.PAD_ID)
-    for i, s in enumerate(tokens_list):
-        tokens[i, :len(s), :len(s)] = torch.FloatTensor(s)
-    return tokens
-
-
-def sort_all(batch, lens):
-    """ Sort all fields by descending order of lens, and return the original indices. """
-    unsorted_all = [lens] + [range(len(lens))] + list(batch)
-    sorted_all = [list(t) for t in zip(*sorted(zip(*unsorted_all), reverse=True))]
-    return sorted_all[2:], sorted_all[1]
-
-
-def word_dropout(tokens, dropout):
-    """ Randomly dropout tokens (IDs) and replace them with <UNK> tokens. """
-    return [
-        constant.UNK_ID if x != constant.UNK_ID and np.random.random() < dropout else x
-        for x in tokens
-    ]
+    @staticmethod
+    def word_dropout(tokens, dropout):
+        """ Randomly dropout tokens (IDs) and replace them with <UNK> tokens. """
+        return [
+            constant.UNK_ID if x != constant.UNK_ID and np.random.random() < dropout else x
+            for x in tokens
+        ]

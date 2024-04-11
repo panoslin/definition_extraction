@@ -93,6 +93,10 @@ class MyAdagrad(Optimizer):
 
 ### torch specific functions
 def get_optimizer(name, parameters, lr, l2=0):
+    """
+    an algorithm used to change the attributes of the neural network
+    such as weights and learning rate in order to reduce the losses
+    """
     if name == 'sgd':
         return torch.optim.SGD(parameters, lr=lr, weight_decay=l2)
     elif name in ['adagrad', 'myadagrad']:
@@ -134,9 +138,9 @@ def keep_partial_grad(grad, topk):
 ### model IO
 def save(model, optimizer, opt, filename):
     params = {
-        'model': model.state_dict(),
+        'model':     model.state_dict(),
         'optimizer': optimizer.state_dict(),
-        'config': opt
+        'config':    opt
     }
     try:
         torch.save(params, filename)

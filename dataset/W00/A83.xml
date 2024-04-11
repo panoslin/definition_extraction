@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="A83">
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>A dictionary contains the attributes of ordinary words used by the system to analyse the text .</sentence>
+				<definiendum id="0">dictionary</definiendum>
+				<definiens id="0">contains the attributes of ordinary words used by the system to analyse the text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The dictionary entry for each word consists of three lists of attributes .</sentence>
+				<definiendum id="0">dictionary entry for each word</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>( v ( be2 ... be thin in tpartl ... mennK ) ) ) yl ( @ @ number ( @ ~state ~ : ~ &lt; colourl ... sign ) ( val ( red1 ... sense ) ) ) ) ) ) ) , and `` Who supplies green parts ? '' will give rise to the structure : ( clause ... ( type question ) ( v ( supplyl ... 81ve ( @ @ agent ( n ( query ( d~y ) ) ) ) ~race ( clause V agent ) ) ( clause ( v ( be2 ... be ( @ @ @ gent £n &lt; partl ... ~InS ) ) ) ( @ @ state ( st ( eolourl ... sign ) ( gr , eenl ... , tsee ~.se ) ) ) ) ) ) ) ) ) ) ) ) ) . As these examples sho~ the anal yser 's representations combine expressive power with structural simplicity. Further , the power of the semantic category primitives used to identify text message patterns means that it is possible to achieve far mcre semantic analysis cf a question , far earlier in the frcnt end processing , than can be achieved with frcnt ends conforming tc the Koncllge model. The effectiveness cf the anal yser as a general natural-language prccesslng device has been demcnstrated by its successful application to a range of natural language processing tasks. There is , however , a price to pay , in the database context , for its generality. Natural language makes ocn=acn use of vague concepts ( `` have '' , `` do '' ) , almost content-empty markers ( `` be e , `` of '' ) , and opaque constructions such as compound nouns. Clearl~ front ends where domainspecific information can provide leverage in interpreting these input text items have advantages. and it is not clear how a principled solution to the problems they present can be achieved within the framework of a general-purpose anal yser of the kind described. To provide a domain-specific interpretation of , for example , compounds like `` supplier city '' , an interface would have to be provided oharaeterising domain k~owledge in the semantic terms familiar to the parser , and guaranteeing the provision of explicit structural charaoterlsations of the text constituent which would be available for further exploitation by the parser. To avoid invoking domain knowledge in this way in analysis we have been obliged to accept questicn interpretations which are incomplete in limited respects. That is , we push the ordinary semantic analysis procedures as far as they will go , accepting that they may leave 'dummy ' markers in the dependency structure and compound nominals with ambiguous member words and no explicit extracted structure. B. The Extractor nile the meaning representations constructed by the natural language analyser are general and informative enough to be able to support dlfferent tasks in different applications for different domains , they are not necessarily the best fcrm cf representation for question answering , and specifically for addressing a coded database. After the initial determination of question meaning. therefore , the question is subjected to taskoriented , though not yet domainand databaseoriented , processing. Imposing domain world and database organisatlon restrictions on the question at this stage would be premature , since it cculd ecmplloate or even inhibit possible later inference operations. The idea cf providing a system ccmponent addressing a general linguistic task , withcut throwing away any detailed information not in fact needed for scme specific instance cf that task , like natural language distinctions between quantifiers ignored by the database system , is also an attractive one. The extractor thus emphasises the fact that the input text is a questicn , but carries the detailed semantic information provided by the analyser forward fcr exploitation in the translation phase cf the processing. A gccd way to achieve a question formulation abstracted from the low-level crganisaticn cf the database is to interpret the user 's input as a formal quer~ However our extractor , unlike the equivalent processors described by ( Wocds 1972 ) . ( Warren and Pereira 1981 ) and ( Grcsz et al 1982 ) , does not make any use cf domain-dependent in fcrmaticn , but constructs a icgic expression whose variable ranges and predicate relaticnships are defined in terms cf 83 the general semantic primitives used for ccnstructlng the input question meaning representation. The logic representation of the question which is output by the extractor highlights the search aspects cf the input , formalising them so that the subsequent processes which will eventually generate the search specification for the database management system can locate and focus on them easily ; at the same time , the semantic richness of the original meaning representation is maintained to facilitate the later domain-crlented translation operations. The syntax of the logic representation closely follc~ that defined by ( Wocds 1978 ) : ( For &lt; quantifier &gt; &lt; variable &gt; / &lt; range &gt; : &lt; restrictions on variable &gt; &lt; prcpcslticn &gt; ) , where each cf the restrictions , or the proposition , can themselves be quantified expressions .</sentence>
+				<definiendum id="0">@ @ agent ( n ( query</definiendum>
+				<definiendum id="1">~InS ) ) )</definiendum>
+				<definiendum id="2">effectiveness cf</definiendum>
+				<definiens id="0">the power of the semantic category primitives used to identify text message patterns means that it is possible to achieve far mcre semantic analysis cf a question</definiens>
+				<definiens id="1">the anal yser as a general natural-language prccesslng device has been demcnstrated by its successful application to a range of natural language processing tasks. There is , however , a price to pay , in the database context</definiens>
+				<definiens id="2">obliged to accept questicn interpretations which are incomplete in limited respects. That is , we push the ordinary semantic analysis procedures as far as they will go , accepting that they may leave 'dummy ' markers in the dependency structure and compound nominals with ambiguous member words and no explicit extracted structure. B. The Extractor nile the meaning representations constructed by the natural language analyser are general and informative enough to be able to support dlfferent tasks in different applications for different domains</definiens>
+				<definiens id="3">a questicn , but carries the detailed semantic information provided by the analyser forward fcr exploitation in the translation phase cf the processing. A gccd way to achieve a question formulation abstracted from the low-level crganisaticn cf the database is to interpret the user 's</definiens>
+				<definiens id="4">does not make any use cf domain-dependent in fcrmaticn , but constructs a icgic expression whose variable ranges and predicate relaticnships are defined in terms cf 83 the general semantic primitives used for ccnstructlng the input question meaning representation. The logic representation of the question which is output by the extractor highlights the search aspects cf the input , formalising them so that the subsequent processes which will eventually generate the search specification for the database management system can locate and focus on them easily</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>It may , as ncted , be inccmplete at pcints where domain reference is required , e.g. in the interpretation cf compound ~cuns ; but it carries along , tc the translator , the very large amcunt cf semantic information provided by the case labels and formulae of the meaning representation , which should be adequate to pinpoint the items sought by the user and tc describe them in terms suited to the database management system , so they may be accessed and retrieved .</sentence>
+				<definiendum id="0">meaning representation</definiendum>
+				<definiens id="0">the items sought by the user and tc describe them in terms suited to the database management system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The semantic pattern-matchlnK potential cf the translation module can be exploited to determine the nature of the unresolved domain-specific predications ( both 'dummy ' relationships and those implicit in compound nominals ) , and vacuously defined objects ( 'query ' variables ) .</sentence>
+				<definiendum id="0">semantic pattern-matchlnK potential cf the translation module</definiendum>
+				<definiens id="0">exploited to determine the nature of the unresolved domain-specific predications ( both 'dummy ' relationships and those implicit in compound nominals ) , and vacuously defined objects ( 'query ' variables )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>Here the problem is the placement of the prepositional phrase prior to admission , which could modify the d~r'-~ct -- ~y adjacent noun phrase ( the emergency room ) , but in fact modifies the preceding noun phrase the visit .</sentence>
+				<definiendum id="0">noun phrase</definiendum>
+				<definiens id="0">the placement of the prepositional phrase prior to admission , which could modify the d~r'-~ct -- ~y adjacent</definiens>
+				<definiens id="1">the emergency room</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>phrase PREPTIME : ( INDIC : ( INDIC , TEST , VMD , VPT , VTR , VSHOW , VHAVE ) , TEST : ( INDIC , TEST , VMD , VPT , VTR , VSHOW , VHAVE ) , VMD : ( INDIC , TEST , VMD , VPT , VTR , VSHOW , VHAVE ) , -- - ) , This list contains the information that a time preposition ( PREPTIME , e.g. , prior t_~o ) can appear with a VMD ( medical action word ) as its prepositional object ( e.g. , prior to admission ) , with the prepositional phrase modifying another VMD word ( e.g. , visit ) ; this corresponds to the P-NSTGO-HOST pattern PREPTIME : ( VMD : ( VMD ) ) .</sentence>
+				<definiendum id="0">VMD</definiendum>
+				<definiendum id="1">VMD</definiendum>
+				<definiens id="0">( INDIC : ( INDIC , TEST , VMD , VPT , VTR , VSHOW , VHAVE ) , TEST : ( INDIC , TEST , VMD , VPT , VTR , VSHOW</definiens>
+				<definiens id="1">medical action word ) as its prepositional object ( e.g. , prior to admission ) , with the prepositional phrase modifying another VMD word</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>There is no pattern PREPTIME : ( VMD : ( INST ) ) which would allow prior to admission to modify the INST word ( inst -- \ [ tution word ) emergency room .</sentence>
+				<definiendum id="0">INST word</definiendum>
+				<definiens id="0">no pattern PREPTIME : ( VMD : ( INST ) ) which would allow prior to admission to modify the</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The DIS enables a homograph to be disambiguated , provided that sufficient context is present .</sentence>
+				<definiendum id="0">DIS</definiendum>
+				<definiens id="0">enables a homograph to be disambiguated</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Later ( after anaphora resolution ) the predicate calculus expression is mapped into a retrieval request on the information format ; each predicate is defined as a projection of the information format .</sentence>
+				<definiendum id="0">Later (</definiendum>
+				<definiens id="0">after anaphora resolution ) the predicate calculus expression is mapped into a retrieval request on the information format</definiens>
+				<definiens id="1">a projection of the information format</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Problems arose with the characterization of sentence adjuncts , units of time ( semesters instead of days and months ) , and nouns or noun phrases implying computations ( grade point average , enrollment ) , which we intend to rectify shortly by enriching the DIS .</sentence>
+				<definiendum id="0">Problems</definiendum>
+				<definiens id="0">arose with the characterization of sentence adjuncts , units of time ( semesters instead of days and months ) , and nouns or noun phrases implying computations</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>VMD : ( DOCTOR : ( PT ) ) , VPT : ( PT : ( INDIC ) ) , VTR : ( DOCTOR : ( INDIC , PT , RX , TEST , VTR ) , INST : ( INDIC , PT , RX , TEST , VTR ) ) , VSHOW : ( BODY-PART : ( INDIC ) , TEST : ( INDIC ) ) , VHAVE : ( PT : ( DOCTOR , INDIC , TEST , VTR ) , BODY-PART : ( INDIC ) ) , LIST N-NPOS = * Noun-compoundNoun list e describes which classes of head noun can be modified by which classes of compound noun ( NPOS ) modifier in the form : HEAD-NOUN1 : ( MODIFIER-NOUNII , ... , MODIFIER-NOUNIn ) , HEAD-NOUN2 : ( MODIFIER-NOUN21 , ... , MODIFIER-NOUN2m ) , Thus the compound noun INDIC : ( BODY-PART ) , as in throat in~ection , is allowable , but the compound noun BODY-PART : ( INDIC ) , as in in~ection throat , is not .</sentence>
+				<definiendum id="0">VSHOW</definiendum>
+				<definiendum id="1">TEST</definiendum>
+				<definiendum id="2">VHAVE</definiendum>
+				<definiens id="0">( DOCTOR : ( PT ) ) , VPT : ( PT : ( INDIC ) ) , VTR : ( DOCTOR : ( INDIC , PT , RX , TEST</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>N-LN-COMP-ATT • Noun s Computed Attribute with LeftNoun adjunct BODY-PART : ( INDIC : ( INDIC ) ) • BEGIN : ( INDIC : ( INDIC ) , TEST : ( TEST ) • RX : ( RX ) , VMD : ( VMD ) , VTR : ( VTR ) ) , N-RN-COMP-ATT s * Noun ~ Computed Attribute with RightNoun adjunct BEGIN : ( INDIC= ( INDIC ) , TEST : ( TEST ) , RX : ( RX ) , VMD : ( VMD ) , VTR : ( VTR ) ) , ° .</sentence>
+				<definiendum id="0">TEST</definiendum>
+				<definiendum id="1">RX</definiendum>
+				<definiens id="0">Computed Attribute with LeftNoun adjunct BODY-PART : ( INDIC : ( INDIC ) ) • BEGIN : ( INDIC : ( INDIC ) , TEST : ( TEST ) • RX : ( RX ) , VMD : ( VMD ) , VTR : ( VTR ) ) , N-RN-COMP-ATT s * Noun ~ Computed Attribute with RightNoun adjunct BEGIN : ( INDIC= ( INDIC ) ,</definiens>
+				<definiens id="1">: ( RX ) , VMD : ( VMD ) , VTR : ( VTR ) ) , °</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Sager , N. Natural Language Information Formatting : The Automatic Conversion of Texts to a Structured Data Base .</sentence>
+				<definiendum id="0">Sager , N. Natural Language Information Formatting</definiendum>
+				<definiens id="0">The Automatic Conversion of Texts to a Structured Data Base</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+</paper>
+
+		<paper id="1011">
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>The work has progressed to the point where OUr natural language matrix computer NLC is operative under voice control using the DP-200 and the text processing system is beginning to function using the V-5000 speech recognizer .</sentence>
+				<definiendum id="0">NLC</definiendum>
+				<definiens id="0">the point where OUr natural language matrix computer</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>If ABC* EFH is then recognized , it will be combined with the first utterance so that the scanner considers the seven word slots to contain= s ( A ) sis ) sic ) s ( z ) sis ) s ( F ) s ( G ) sin ) where siX ) is the union of X with its synophones .</sentence>
+				<definiendum id="0">siX )</definiendum>
+				<definiens id="0">F ) s ( G ) sin ) where</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>The system consists of two parts : a natural Language processor for building a formal representation and an application program for building a query in an augmented relational algebra .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">consists of two parts : a natural Language processor for building a formal representation and an application program for building a query in an augmented relational algebra</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The user interface is a limited subset of English .</sentence>
+				<definiendum id="0">user interface</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Transportability is achieved via a dialogue in ASK which drives the Bulk Data Input Capability .</sentence>
+				<definiendum id="0">Transportability</definiendum>
+				<definiens id="0">drives the Bulk Data Input Capability</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>TT s h o u l d comment on t h i s a s p e c t a s w a l l a s o c h e r r e l a t e d a s p e c t s due co t h e i r c o n c e r n f o r b r i n g i n g up t h e s y s t e m on a d e s k t o p c o m p u t e r .</sentence>
+				<definiendum id="0">TT</definiendum>
+				<definiens id="0">a s p e c t a s w a l l a s o c h e r r e l a t e d a s p e c t s due co t h e i r c o n c e r n f o r b r i n g i n g up t h e s y s t e m on a d e s k t o p c o m p u t e r</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>This idea was advocated several years ago by Thompson ( \ [ 966 ) and used in the design of a specialized database query system ( DFACON ) .</sentence>
+				<definiendum id="0">DFACON</definiendum>
+				<definiens id="0">advocated several years ago by Thompson ( \ [ 966 ) and used in the design of a specialized database query system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Probably the most difficult aspect of SIE enginearinE is the provision of a safety factor an ability of the system to recognize inputs that it can not handle .</sentence>
+				<definiendum id="0">SIE enginearinE</definiendum>
+				<definiens id="0">the provision of a safety factor an ability of the system to recognize inputs that it can not handle</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Figure 2 shows the Reaction Information Form ( R/F ) designed to hold the required reaction information , with information supplied for the two paragraphs illustrated in Figure 1 .</sentence>
+				<definiendum id="0">Reaction Information Form</definiendum>
+				<definiens id="0">R/F ) designed to hold the required reaction information , with information supplied for the two paragraphs illustrated in Figure 1</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>5 , The Extraction Sta~e The meaning representation gives a pretty clear indication of the function of items within the RIF in the simple model .</sentence>
+				<definiendum id="0">Extraction Sta~e The meaning representation</definiendum>
+				<definiens id="0">gives a pretty clear indication of the function of items within the RIF in the simple model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>KESEDA is a special case , because It already has a facility established to retrieve data stored In the system and to make inferences based on those data .</sentence>
+				<definiendum id="0">KESEDA</definiendum>
+				<definiens id="0">a special case</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The user interface is a limited dialect of English .</sentence>
+				<definiendum id="0">user interface</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>Human Interface NOMAD uses a generator specifically designed for the naval domain co produce a yell formed translation of the input message .</sentence>
+				<definiendum id="0">Interface NOMAD</definiendum>
+				<definiens id="0">uses a generator specifically designed for the naval domain co produce a yell formed translation of the input message</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The NOMAD system is the latest in a line of `` tolerant* language understanders , beginning with FOUL-UP , all based on the use of knowledge of syntax , semantics and pragmatics at all stages of the understanding process to cope with errors .</sentence>
+				<definiendum id="0">NOMAD system</definiendum>
+				<definiens id="0">the latest in a line of `` tolerant* language understanders , beginning with FOUL-UP , all based on the use of knowledge of syntax , semantics and pragmatics at all stages of the understanding process to cope with errors</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>The Programmed LANguage-based Enquiry System ( PLANES ) [ WALT78 ] uses an ATN based parser and a semantic case frame analysis to understand questions .</sentence>
+				<definiendum id="0">Programmed LANguage-based Enquiry System</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>OVERVIEW OF EUFID EUFID is a general purpose naturallanguage front-end for database management .</sentence>
+				<definiendum id="0">EUFID EUFID</definiendum>
+				<definiens id="0">a general purpose naturallanguage front-end for database management</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A query is a formal representation of a question in either the EUFID intermediate language IL , or in the formal query language of a DBMS .</sentence>
+				<definiendum id="0">query</definiendum>
+				<definiens id="0">a formal representation of a question in either the EUFID intermediate language IL , or in the formal query language of a DBMS</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Taking advantage of the fact that any database can be represented in relational form , EUFID lists each d a t a b a s e g r o u p as if it were a relation .</sentence>
+				<definiendum id="0">EUFID</definiendum>
+				<definiens id="0">lists each d a t a b a s e g r</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>USE OF CONCEPTUAL DEPENDENCY APE-If utilizes Conceptual Dependency theory \ [ Schank , 1972\ ] to represent the meaning of questions .</sentence>
+				<definiendum id="0">USE OF CONCEPTUAL DEPENDENCY APE-If</definiendum>
+				<definiens id="0">utilizes Conceptual Dependency theory \ [ Schank , 1972\ ] to represent the meaning of questions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>F-dC is a kind of FIGHTER which is a kind of AIRPLANE which is an AIRCR~T which is a VEHICLE which is a PICTURE PRODUCER .</sentence>
+				<definiendum id="0">F-dC</definiendum>
+				<definiens id="0">a kind of FIGHTER which is a kind of AIRPLANE which is an AIRCR~T which is a VEHICLE which is a PICTURE PRODUCER</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>KNOBS , by contrast , integrates the natural language capability with multi-faceted problem solving support including critiquing and Benerating tactical plans .</sentence>
+				<definiendum id="0">KNOBS</definiendum>
+				<definiens id="0">integrates the natural language capability with multi-faceted problem solving support including critiquing and Benerating tactical plans</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>APE-II A word definition in APE-II consists of the set of all of its senses .</sentence>
+				<definiendum id="0">APE-II A word definition in APE-II</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>A conceptual expectation instructs the parser to look for a concept in s certain relative position which meets a selectional restriction .</sentence>
+				<definiendum id="0">conceptual expectation</definiendum>
+				<definiens id="0">relative position which meets a selectional restriction</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>, APE-II utilizes the facts that the OCA script is active , and that sending aircraft to a target is a scene of that script , Co determine that `` A/C '' means AIRCRAFT .</sentence>
+				<definiendum id="0">APE-II</definiendum>
+				<definiens id="0">utilizes the facts that the OCA script is active</definiens>
+				<definiens id="1">a scene of that script</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Only some senses will be added to the active memory and if ( DEF-WORD A/C ( SENSE ( AIRCRAFT ) ) ( SENSE ( AIR-CONDITIONER ) ) ) ( DEF-WOED EAT ( SENSE \ [ EAT ACTOR ( NIL ) OBJECT ( NIL ) TO ( *INSIDE I PLACE ( ~STOMACN ~ PART ( NIL\ ] EXPECTATIONS ( \ [ IF ( IN-ACT-SPOT # ANI } ~TE ) THEN ( ( SLOTS ( TO PLACE PART ) ( ACTOR\ ] \ [ IF ( IN-OBj-SPOT *PP* ) PREFER ( # ~OOO ) THEN ( ( SLOTS ( OBJECT\ ] ) ) \ [ DEF-WORD FLY ( SENSE ( FLY OBJECT ( N~L ) ACTOR ( NIL ) INSTE~NT ( $ IIY ) TO ( *PROX* PLACE ( NIL ) ) FROM ( *PROX* PLACE ( NIL ) ) ) EXPECTATIONS ( \ [ IF ( IN-ACT-SPOT AIRCRAFT ) THEN ( ( SLOTS ( OSJECT ) ) ) ~ ELSE ( IF ( IN-ACT-SPOT BIRD ) THEN ( ( SLOTS ( ACTOR ) ( OBJECT ) \ ] ) LEXICAL-EXPECTATIONS ( ( TO ( MAKE-DEF ( OB-PEEP ~ppw ) ( TO PLACE ) ( *~ .</sentence>
+				<definiendum id="0">SLOTS</definiendum>
+				<definiendum id="1">) THEN ( ( SLOTS</definiendum>
+				<definiendum id="2">TO ( MAKE-DEF</definiendum>
+				<definiens id="0">the active memory and if ( DEF-WORD A/C ( SENSE ( AIRCRAFT ) ) ( SENSE ( AIR-CONDITIONER ) ) ) ( DEF-WOED EAT ( SENSE \ [ EAT ACTOR ( NIL ) OBJECT ( NIL ) TO</definiens>
+				<definiens id="1">OBJECT\ ] ) ) \ [ DEF-WORD FLY ( SENSE ( FLY OBJECT ( N~L ) ACTOR ( NIL ) INSTE~NT ( $ IIY ) TO ( *PROX* PLACE ( NIL ) ) FROM ( *PROX* PLACE ( NIL ) ) ) EXPECTATIONS ( \ [ IF ( IN-ACT-SPOT AIRCRAFT</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The causal links used for this type of inference are RESULT ( actions can result in state changes ) , ENABLE ( states can enable action ) , and EESULT-ENA3LE ( an action results in a state which enables an action ) .</sentence>
+				<definiendum id="0">ENABLE (</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>The causal inference process consists of locating a script paCtern of an active script which represents the scene of the script referred to by a question .</sentence>
+				<definiendum id="0">causal inference process</definiendum>
+				<definiens id="0">consists of locating a script paCtern of an active script which represents the scene of the script referred to by a question</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>This is accomplished by a rule that is activated when KNOBS asks the user to specify a plan component .</sentence>
+				<definiendum id="0">KNOBS</definiendum>
+				<definiens id="0">asks the user to specify a plan component</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>KNOBS checks the consistency of the user 's answer and explains a constrainc which has failed .</sentence>
+				<definiendum id="0">KNOBS</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>In 1966 the Institute for Scientific Information ( ISI ) introduced a different type of automatically compiled subject index called PERMUTERM Subject Index ( PSI ) OGarfieid , 19760 , which at present is the main type of SI to the Science Cltation Index and other similar ISI publications .</sentence>
+				<definiendum id="0">PSI</definiendum>
+				<definiens id="0">Scientific Information ( ISI ) introduced a different type of automatically compiled subject index called PERMUTERM Subject Index (</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>137 PSI has the unique ability to make possible the easy retrieval of all titles containing any given pair of informative words .</sentence>
+				<definiendum id="0">PSI</definiendum>
+				<definiens id="0">the unique ability to make possible the easy retrieval of all titles containing any given pair of informative words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>AFRICAN * HORROR ( S ) * AMERICAN * iNDUSTRY ARCHIVES LITERARY * AVANT-GARDE * MAKER ( S ) BLACK * OBSCENE * BRAZILIAN * POLISH * COMPANY PRODDCTION CRITICISM PROPAGANDA DIRECTOR TECHNIQUES DOCUMENTARY * THEORY FESTIVAL ( S ) TV * HISTORY WESTERN * Figure 12 Lie= of word phrases containing the word 'FILM ( S ) ' and appearing at least twice in titles covered during a three months period by \ [ SI 's ARTS and HUMANITIES CITATION INDEA .</sentence>
+				<definiendum id="0">AFRICAN * HORROR</definiendum>
+				<definiens id="0">( S ) * AMERICAN * iNDUSTRY ARCHIVES LITERARY * AVANT-GARDE * MAKER ( S ) BLACK * OBSCENE * BRAZILIAN * POLISH * COMPANY PRODDCTION CRITICISM PROPAGANDA DIRECTOR TECHNIQUES DOCUMENTARY * THEORY FESTIVAL ( S ) TV * HISTORY WESTERN * Figure 12 Lie= of word phrases containing the word 'FILM ( S ) ' and appearing at least twice in titles covered during a three months period by \ [ SI 's ARTS</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>A BSTRA C T This paper describes a NL data base interface which consists oF two parts : a Natural Language Processor ( NLP ) and a data base application program ( DBAP ) .</sentence>
+				<definiendum id="0">BSTRA</definiendum>
+				<definiens id="0">consists oF two parts : a Natural Language Processor ( NLP ) and a data base application program ( DBAP )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The NLP is a general pur !</sentence>
+				<definiendum id="0">NLP</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The DBAP is an algorithm with builds a query in a augmented relational algebra from the output of the NLP .</sentence>
+				<definiendum id="0">DBAP</definiendum>
+				<definiens id="0">an algorithm with builds a query in a augmented relational algebra from the output of the NLP</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the absence of contextual information , the NLP chooses the shortest path .</sentence>
+				<definiendum id="0">NLP</definiendum>
+				<definiens id="0">chooses the shortest path</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The NLP is a general purpose language processor which builds a formal representation of the meaning of the English utterances it is given .</sentence>
+				<definiendum id="0">NLP</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The DBAP is an algorithm with builds a query in an augmented relational algebra from the output of the NLP .</sentence>
+				<definiendum id="0">DBAP</definiendum>
+				<definiens id="0">an algorithm with builds a query in an augmented relational algebra from the output of the NLP</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The remainder of the data base connection is a set of switches which provide information on how to print out the relations .</sentence>
+				<definiendum id="0">remainder of the data base connection</definiendum>
+				<definiens id="0">a set of switches which provide information on how to print out the relations</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>protein ~ , type It , enters Into the semantic pal-~ern : TEST-~STVERB-TES13~ESULT and be can be assigned the class TESI~/ERB , which relates a TEST subject wlth a TESllRESULT object .</sentence>
+				<definiendum id="0">class TESI~/ERB</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>The proposed system consists of two pieces of hardware : ( 1 ) a translator work station ( probably a single-user micro-computer ) and ( 2 ) a `` selective '' machine translation system ( probably running on a mainframe ) .</sentence>
+				<definiendum id="0">proposed system</definiendum>
+				<definiens id="0">consists of two pieces of hardware : ( 1 ) a translator work station ( probably a single-user micro-computer ) and ( 2 ) a `` selective '' machine translation system ( probably running on a mainframe )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The translator work station is a three-level system of aids .</sentence>
+				<definiendum id="0">translator work station</definiendum>
+				<definiens id="0">a three-level system of aids</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>One of the contributions to Computational Linguistics made by the Logic Programming Paradigm has been the Definite Clause Grammar .</sentence>
+				<definiendum id="0">Logic Programming Paradigm</definiendum>
+				<definiens id="0">has been the Definite Clause Grammar</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An Equivalaut ATN Gra~ar ¢lOmq~ V ( defatn ( s ( push npt ( setr subj * ) ( to s/subJ ) ) ) ( s/subJ ( push vp t ( setr vp * ) ( sendr subJvar $ var ) ( to s/end ) ) ) ( s/end ( pop ( list $ quanc $ var ( list $ connect $ aubJ $ vp ) ) $ subj ) ( pop gYp ( null gsubj ) ) ) ( np ( wrd a t ( liftr quant `` ForSome ) ( llftr connect `` And ) ( co np/det ) ) ( wrd every t ( liftr quant `` ForAll ) ( liftr connect `` - &gt; ) ( to np/det ) ) ( cat name t ( setr vat * ) ( to rip/rip ) ) ) ( np/det ( cat n t ( sect var ( gensym ) ) ( setr n ( list * Svar ) ) ( to np/n ) ) ) ( np/n ( wrd ( who that which ) t ( to up/n/who ) ) ( Jump np/np t ) ) ( np/np ( pop gn C ( liftr var ) ) ) ( np/n/who ( push vp t ( sendr subJvar gvar ) ( serf n ( list `` And gn * ) ) ( to np/np ) ) ) ( vp ( cat v t ( setrv * ) ( co vp/v ) ) ) ( vp/v ( push np ( getf trans Sv ) ( sect obJ * ) ( seCt objvar Svar ) ( to vp/vp ) ) ( pop ( list gv $ subjvar ) ( gaff lntrans $ v ) ) ) ( vp/vp ( pop ( list gquant $ objvar ( list $ connect $ obJ ( list gv $ subJvar $ objvar ) ) &gt; $ obj ) ( pop ( flat $ v gsubjvar $ obJvar ) ( null $ obJ ) ) ) ~ ; ( le× &lt; word &gt; &lt; category &gt; &lt; features &gt; &lt; rootform &gt; ) ( lex man n ) ( lex woman n ) ( lax loves v ( intrans crans ) ) ( lax breathes v ( incrans trans ) ) ( lax lives v ( Intrans ) ) ( lex john name ) ( lex mary name ) ( lex fldo name ) 66 Similarly , when we are lookzn8 for a verb phrase , we must know what token ( i.e. variable name or constant ) represents the subject ( if the verb phrase is dominated by a S ) or the head noun ( if the verb phrase acts as a relative clause ) .</sentence>
+				<definiendum id="0">Equivalaut ATN Gra~ar ¢lOmq~ V</definiendum>
+				<definiendum id="1">push npt</definiendum>
+				<definiendum id="2">liftr quant</definiendum>
+				<definiendum id="3">np/np ( pop gn C</definiendum>
+				<definiens id="0">trans Sv ) ( sect obJ * ) ( seCt objvar Svar ) ( to vp/vp ) ) ( pop ( list gv $ subjvar ) ( gaff lntrans $ v ) ) ) ( vp/vp ( pop ( list gquant $ objvar</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>mar with ATN Variables NP ... . ( defatn ( s ( push np ( unify `` ( $ subJvar $ vp es ) * ) ( to s/subJ ) ) ) ( s/subJ ( push vp t ( unify `` $ vp * ) ( tO s/s ) ) ) ( s/s ( pop es t ) ) ( np ( wrd a t ( unify `` $ np ' ( gorSome $ var ( And epred ehole ) ) ) ( to np/det ) ) ( wrd every t ( unify 'Sup `` ( ForAll ever ( = &gt; epred Shole ) ) ) ( to np/det ) ) ( cat name t ( unify 'Sap ' $ hole ) ( unify `` eYrir * ) ( tO np/np ) ) ) ( np/det ( cat n C ( unify `` $ var ( gensym ) ) ( unify `` $ pred `` ( * evar ) ) ( to np/n ) ) ) ( np/n ( wrd ( who that which ) t ( to np/ulwho ) ) ( Jump rip/rip t ) ) ( up/up ( pop ( Slat evar `` $ hole $ np ) t ) ) ( np/n/who ( push vp t ( unify `` $ subJvar ' $ var ) ( unify `` $ pred `` ( And Spred * ) ) ( to up/up ) ) ) ( vp ( cat v ( getf trans * ) ( unify `` $ v `` ( * esubjvar $ obJvar ) ) ( to vp/vtrans ) ) ( cat v ( getf \ [ ntrans * ) ( unify `` $ v ' ( * $ subjvar ) ) ( to vp/vp ) ) ) ( vp/vtrans ( push np t ( unify `` ( $ objvar ev $ vp ) * ) ( tO vp/vp ) ) ) ( vp/vp ( pop evp t ) ) 67 grammar does not try to find `` most-general unifiers '' for complicated sets of terms .</sentence>
+				<definiendum id="0">cat v</definiendum>
+				<definiens id="0">to np/det ) ) ( cat name t</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Zxatple Pa~Ses with the ATW G~am~ `` John loves every woman who breathes '' ( ForAll XI ( - &gt; ( And ( woman Xl ) ( breathes XI ) ) ( loves John Xl ) ) ) `` John loves a woman '' ( ForSome Xl ( And ( woman Xl ) ( loves John XI ) ) ) `` a man loves a woman '' ( ForSome XI ( And ( man X\ [ ) ( ForSome X2 ( And ( woman X2 ) ( loves Xl X2 ) ) ) ) `` every man who lives loves '' ( ForAll Xl ( - &gt; ( And ( man XI ) ( lives XI ) ) ( loves Zi ) ) ) `` every man who loves mary loves a woman who loves john '' ( ForAll Xl ( ' &gt; ( And ( man XI ) ( loves XI mary ) ) ( ForSome X2 ( And ( And ( woman X2 ) ( loves X2 John ) ) ( loves XI X2 ) ) ) ) ) `` every man who loves a woman who loves every dog loves every dog '' ( ForAll XI ( = &gt; ( And ( man XI ) ( ForSome X2 ( And ( And ( woman X2 ) ( ForAll X3 ( = &gt; ( dog X3 ) ( loves X2 X3 ) ) ) ) ( loves Xl X2 ) ) ) ) ( ForAll X4 ( - &gt; ( dog X4 ) ( loves Xl X4 ) ) ) ) ) Bates , M. , Theory and Practice or Augmented Transition Network Grammars , in Natural Language Communication with Computers , ~7 -- '' ~c~ Springer-Verlag , 1978 .</sentence>
+				<definiendum id="0">ForAll XI</definiendum>
+				<definiens id="0">loves John XI</definiens>
+				<definiens id="1">lives XI ) ) ( loves Zi ) ) ) `` every man who loves mary loves a woman who loves john '' ( ForAll Xl ( ' &gt; ( And ( man XI ) ( loves XI mary ) ) ( ForSome X2 ( And ( And ( woman X2 ) ( loves X2 John ) ) ( loves XI X2 ) ) )</definiens>
+				<definiens id="2">loves X2 X3 ) ) ) ) ( loves Xl X2 ) ) ) ) ( ForAll X4 ( - &gt; ( dog X4 ) ( loves Xl X4 ) ) ) ) ) Bates , M. , Theory and Practice or Augmented Transition Network Grammars , in Natural Language Communication with Computers</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>Montague Grammar ( MG ) gives a basis of functlonel analysis .</sentence>
+				<definiendum id="0">Montague Grammar ( MG )</definiendum>
+				<definiens id="0">gives a basis of functlonel analysis</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( 8 ) e ) English oriented Formal Representation ( EFR ) is a version of intensional logic , and gives a rigorous formalism for describing the results of functional analysis .</sentence>
+				<definiendum id="0">EFR</definiendum>
+				<definiens id="0">a version of intensional logic</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>b ) Conceptual Phrase Structure ( CPS ) is a data structure in which syntactic and semantic information of a Japanese lexicel unit or phrase structure are packed .</sentence>
+				<definiendum id="0">CPS )</definiendum>
+				<definiens id="0">a data structure in which syntactic and semantic information of a Japanese lexicel unit or phrase structure are packed</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>ii ) example of CPS for phrase structure : \ [ NP \ [ ADJ `` AKAI '' with ... \ ] \ [ NOUN `` RINGO '' with ... \ ] with ... \ ] ( i0 ) Transfer-generation process for the sentence ( 1 ) looks like : `` I do n't have a book '' ~ ' , ,I have a book '' I // • TRANSFER / ( LAMBDA ( x ) { SENTENCE x \ [ AUX `` NAI '' \ ] } ) TRANS FE R , GENE RAT I ON S WATASHI-WA HON-WO MOTSU , ,- ... _ .</sentence>
+				<definiendum id="0">LAMBDA</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>c ) CPS Form ( CPSF ) is a form which denotes operation or function on CPS domain .</sentence>
+				<definiendum id="0">c ) CPS Form ( CPSF )</definiendum>
+				<definiens id="0">a form which denotes operation or function on CPS domain</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>vii ) Lambda form : e.g. , ( LAMBDA ( x ) ( + PASSIVE ( ) x ) ) Using those description tools , translation process is modeled as a three staged process : Formal description tools have been developed co provide a precise description of the idea mentioned Ln the last section .</sentence>
+				<definiendum id="0">LAMBDA</definiendum>
+				<definiens id="0">( x ) ( + PASSIVE ( ) x ) ) Using those description tools , translation process is modeled as a three staged process : Formal description tools have been developed co provide a precise</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Rule ( II ) says chat EFR for an NP is a form whose function section is EFR for a DET node and whose argument section is EFR for a NOUN node .</sentence>
+				<definiendum id="0">Rule</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>So if we apply the lambda form ( 20 ) to `` known '' entity , say `` it '' , we can obtain sentence structure like : SENTENCE UN PRED NOUN l NP NP JOSHI I / ' , , /'x I SORE WA TSUKUE NO UE NO BLOCK DEARU it a block on the ~able is ( it is a block on the table ) ( 21 ) From this result , we can infer that the lambda form ( 20 ) is equivalent to a noun : NOUN MODIFIER NOUN NP f SN , I TSUKUE NO UE NO BLOCK ( block on the table ) ( 22 ) The extraction rule can be written as a pattern matching rule like : SENTENCE NP NP PRED I \ SORE WA x : NOUN DEARU ( It is ~ z ) x ( 23 ) This rule is called an application rule .</sentence>
+				<definiendum id="0">NOUN MODIFIER NOUN NP f SN</definiendum>
+				<definiendum id="1">NOUN DEARU</definiendum>
+				<definiens id="0">a pattern matching rule like : SENTENCE NP NP PRED I \ SORE WA x</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Unfortunately , we ca n't dispense with lambda forms ; lambda variables are needed to link gap and its antecedent in relative clause , verb and its dependants ( subject , object , etc ) , preposition and its object , etc .</sentence>
+				<definiendum id="0">lambda variables</definiendum>
+				<definiens id="0">subject , object , etc )</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>VP is further decomposed into intransitive verb or cranaltive verb + object .</sentence>
+				<definiendum id="0">VP</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>For example , first order logical form for a sentence : `` this command needs no operand '' ( 267 looks Like : nor ( there-exists x \ [ needs ( `` chis-command '' , x ) &amp; operand ( x ) \ ] ) , ( 27 ) where operator `` not '' , which comes from a determiner `` no '' , is given a wider scope than `` needs '' .</sentence>
+				<definiendum id="0">operand</definiendum>
+				<definiens id="0">comes from a determiner `` no ''</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Hobbs , J.R. and Rosenschein , S.J. ( 1978 ) : Making Computational Sense of Montague 's Incensional Logic , AI 9 , 287-306 .</sentence>
+				<definiendum id="0">Hobbs , J.R.</definiendum>
+				<definiens id="0">Making Computational Sense of Montague 's Incensional Logic</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>The Melby paper offers an architectural sketch of an open-ended translator 's system which could include an MT system as one component .</sentence>
+				<definiendum id="0">Melby paper</definiendum>
+				<definiens id="0">offers an architectural sketch of an open-ended translator 's system which could include an MT system as one component</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>session This session consists of papers by Jensen and Heidorn ; Marsh ; and Granger et al .</sentence>
+				<definiendum id="0">session</definiendum>
+				<definiens id="0">consists of papers by Jensen and Heidorn</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>I INTRODUCTION The REGIS extended command language is a relational data language that allows users to name and describe database objects using natural language phrases .</sentence>
+				<definiendum id="0">REGIS extended command language</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A REGIS database consists of a hierarchical structure of named objects : one or more files , each containing zero or more tables , each composed of zero or more columns of data .</sentence>
+				<definiendum id="0">REGIS database</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Documentation facilities ( if they exist at all ) are not designed to be accessed interactively .</sentence>
+				<definiendum id="0">Documentation facilities</definiendum>
+				<definiens id="0">exist at all ) are not designed to be accessed interactively</definiens>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>RECONSIDER begins by prompting for terms .</sentence>
+				<definiendum id="0">RECONSIDER</definiendum>
+				<definiens id="0">begins by prompting for terms</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>And question ( 3 ) we take to be a comphment that reveals , among other things , that occasionally the utility of RECONSIDER is iu~uted not by the knowledge it eonteuns , but by the means we currently have of accessing it through the narrow window of a 23line CRT terminal .</sentence>
+				<definiendum id="0">RECONSIDER</definiendum>
+				<definiens id="0">a comphment that reveals , among other things</definiens>
+				<definiens id="1">iu~uted not by the knowledge it eonteuns , but by the means</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>OccxR~tiorml exposure : dry cleaning , organic synthesis ; -rfanufacture of antifreeze , dyes , explosives , fuel , leather , plastics .</sentence>
+				<definiendum id="0">OccxR~tiorml exposure</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Pop\ [ e. H. J. , J. Myers , and R. Miller , `` DIALOG : A Model of Diagnostic Logic for Internal Medicme , '' F~roc \ [ nt Joint Ccnf .</sentence>
+				<definiendum id="0">DIALOG</definiendum>
+				<definiens id="0">A Model of Diagnostic Logic for Internal Medicme , '' F~roc \ [ nt Joint Ccnf</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>When NLP is used to parse natural language text , the records describe constituents , and the rules put these constituents together to form ever larger constituent ( or record ) structures .</sentence>
+				<definiendum id="0">NLP</definiendum>
+				<definiens id="0">used to parse natural language text , the records describe constituents</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Natural language is an organic symbol system ; it does not submit to cast-iron control .</sentence>
+				<definiendum id="0">Natural language</definiendum>
+				<definiens id="0">an organic symbol system ; it does not submit to cast-iron control</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>~ ~or ; &lt; in~ system. This paper 'Je~crihes the overall system design snecif~c~Cion t ) .~n£cn we are currently working. ~n cite basic design of the system we attempt to incorporate as much as possible Features of far , escale ~ systems ~hac have proved to be desirable or effective. Thus. Bede is mul~ilinBual by , ~csi ( zn. alqorithms and linRuistic data are striccl~ separated , and the system \ [ s desiRned in ~ore oless independent modules. T~n ~\ [ cron'occssor environment means that ~ : r~r~l ~I '' siz~ ~ro ~ { ~norE , l~E : '4~ta ~cruccures 169 both dynamic ( created by and maniputated during the translation process ) and static ( dictionaries and linguistic rule packages ) are constrained co be as economical in terms of s¢oraBe space and access procedures as possible. Limitations on ~ncore and periohera\ [ storage are important considerations in the system design. In large genera\ [ purpose , HT systems , i= is necessary to assume that faiture to translate the given input correctty is generally not due to incorrectly ~ormed input , bu~ to \ [ nsufficientJy elaborated ~ranslacion algorithms. This is particularly due to =wo problems : the lexical problem of choice of appropriate translation equivalents , and the strategic problem of e~fec~ive analysis of the wide range of syntactic patterns Eound in nacural language. The reduction of these problems via ~he notions of '' controlled vocabu\ [ ary and restricted syntax seems particularly appropriate in the microprocessor environment , since the alternative of makin~ a system |n~tnitely extendable \ [ s probably no~ feasible , Given these constra/nts , it seems feasible to achieve cranstacion via an InCerltngua. ~n ~hich the canonicat structures from the source lan=ua~e are mapped directly onto those of the target language ( s ) , avoidin R any language-pair oriented 'transfer ' sta~e. Translation thus cakes place in ~wu puase~= anaiysls ot source ~ext an~ synthesis of target text. A. Incorporation of recent desL~n ortncio\ [ es ~odern ~ system design can be char~cterLsed hv three principles thac have proved Co be desirable and effective ( Lehmann eta\ [ , tg~ } o : I-\ ] ) : each of these is adhered co in the desiRn oF Rede. Bede Es mutt\ [ lingual by design : early `` ! T systems were designed with specific lan~uaBe-oatrs in mind , and translation algorithms were elaborated on this basis. The main conseouence of this was that source lan~uaRe analysis ~¢as effected within the perspective of the B~ven target \ [ anguaRe , and was therefore often of little or no use on the addition into the system of a further language ( of. ~in~ , IORI:12 ; ~ : in~ Perschke , 1982:28 ) . In Bede , there is a strict separation of algorithms and \ [ inguiscic data : oarlv `` T ~y~ccms '~ere quite sin~n\ [ y 'translation nrc~ra : ~s ' , tnd ~nv underlying linguistic theory which might have been present was inextricably bound up with the program itself. This clearly entailed the disadvantage that any modification of the system had to be done by a skilled programmer ( of. Johnson , IgRO : IAO ) . Furthermore , the side-effects of apparently quite innocent modifications were often quite farreaching and difficult to trace ( see for example Boscad , lq82:130 ) , Although this has only recently become an issue in HT ( e.g. Vauquois , 1979 : I.3 ; 1981=10 ) , it has of course for a long time been standard practice in other areas of knowledge-based programming ( Newell , 1973 ; Davis &amp; King , 1977 ) . The third principle now current in MT and to be incorporated in Bede is that the translation process should be modular. This approach was a feature of the earliest 'second generation ' systems ( of. Vauquois , 1975:33 ) , and is characterised by the general notion that any complicated computational task is best tackled by dividing it up into smaller more or less independent sub-casks which communicate only by means of a strictly defined interface protocol ( Aho et al , 1974 ) . This is typically achieved in the bit environment by a gross division of the translation process into analysis of source language and synthesis of target language , possibly with an intermediate transfer sca~e ( see ! .D below ) , with these phases in turn sub-divided , for example into morphological , lexical and syntactico-semantlc modules. This modularity may be reflected both in the linguistic organisation of the translation process and in the provision of software devices specifically tailored to the relevant sub-task ( Vauquois , 1975:33 ) . This is the case in Bede , where for each sub-task a grammar interpreter is provided which has the property of being no more powerful than necessary for the task in question. This contrasts with the approach taken in TAt~-H~c~o ( TAUM , Ig73 ) , where a single general-purpose device ( Colmerauer 's ( 1970 ) 'O-Systems ' ) is orovided , with the associated disadvantage that for some 'simple ' tasks the superfluous power of the device means that processes are seriously uneconomical. Bede incorporates five such 'grammar types ' with associated individual formalisms and processors : these are described in detail in the second half of this paper. B. The microproce , ssor environment ! t is in the microprocessor basis that the principle interest in this system lies , and , as mentioned above , the main concern is the effects of the restrictions that the environment imposes. Development of the Bede prototype is presently caking place on ZRO-based machines which provide 6Ak bytes of in-core memory and 72Ok bytes of peripheral store on two 5-I/~ '' double-sided double-density floppy disks. The intention is that any commercial version of Bede would run on more powerful processors with larger address space , since we feel chat such machines will soon rival the nopularity of the less powerful ZRO 's as the standard desk-cop hardware. Pro~rarzninR so far has been in Pascal- '' ( Sorcim , 197q ) , a Pascal dialect closely resembling UCSD Pascal , but we are conscious of the fact that both C ( Kernighan &amp; Ritchie , 1978 ) and BCPL ( Richards &amp; WhitbyStrevens , Ig7g ) may be more suitable for some of the software elements , and do not rule out completing the prototype in a number of languages. This adds the burden of designing compatible datastructures and interfaces , and we are currently investigating the relative merits of these languages. Portability and efficiency seem to be in conflict here. Microprocessor-based MT contrasts sharply with the mainframe-based activity , where the significance of problems of economy of storage and efficiency of programs has decreased in recent years. The possibility of introducing an element of human interaction with the system ( of. Kay , Ig80 ; Melby , 1981 ) is also highlighted in this environment. Contrast systems like SYSTRAN ( Toma , 1977 ) and GETA ( Vauquois , 1975 , lq7g ; Boiler &amp; Nedobejkine , IggO ) which work on the principle of large-scale processing in batch mode. Our experience so far is chat the economy and efficiency in data-structure design and in the elaboration of interactions between programs and data and between different modules is of paramount importance. While it is relatively evident thac large-scale HT can be simulated in the microprocessor environment , the cost in real time is tremendous : entirely new design ~nd implementation strategies seem co be called for. The ancient skills of the programmer that have become eroded by the generosity afforded by modern mainframe configurations become highly valued in this microprocessor application. C. Controlled vocabulary and restricted sync @ x The state of the art of language processing is such chat the analysis of a significant range of syntactic patterns has been shown to be possible , and by means of a number of different approaches. Research in this area nowadays is concentrated on the treatment of more problematic constructions ( e.g. Harcus , lqgO ) . This observation has led us tO believe that a degree of success in a small scale MT project can be achieved via the notion of restricting the complexity of acceptable input , so that only constructions that are sure tc ne Correctly analysed are permitted. This notion of restricted syntax ~ has been tried with some success in larger systems ( cf. Elliston , IGYn : Lawson , 107q:81f ; Somers &amp; HcNaught , I9~O : ao~ , resulting both in more accurate translation , and in increased legibility from t~e human point of view. AS Elliston points out , the development ef strict guidelines for writers leads not only t : the use of simpler constructions , but also to =he avoidance of potentially ambiguous text. In either case , the benefits for ~ are obvious. Less obvious however is the acceptability of such constraints ; yet 'restricted syntax ' need noc imply 'baby talk ' , and a reasonably extensive range of constructions can be included. Just as problems of syntactic analysis ca~ : e ( . alleviated by imposing some degree of contrn~ over 150 the syntactic complexity of the input , so the corresponding problem of lexical disambiguation chat large-scale HT systems are faced with can be eased by the notion of controlled vocabulary. A major problem for PIT is the choice of appropriate translation equivalents at the lexical level , a choice often determined by a variety of factors at all linguistic levels ( syntax , semantics , pragmatics ) . In the field of mulCilingual terminology , this problem has been tackled via the concept of terminological equivalence ( WUster , 1971 ) : for a given concept in one language , a translation in another language is established , these being considered by definition to be in oneto-one correspondence. In the case of Beds , where the subject-matter of the texts to be translated is fixed , such an approach for the 'technical terms ' in the corpus is clearly feasible ; the notion is extended as far as possible to general vocabulary as well. For each concept a single term only is permitted , and although the resulting style may appear less mature ( since the use of near synonyms for the sake of variety is not permitted ) , the problems described above are somewhat alleviated. Polysemy is noC entirely avoidable , but if reduced co a bare minimum , and permitted only in specific and acknowledged circumstances , the problem becomes more easily manageable. D. Interlin~ua A significant dichotomy in PIT is between the 'transfer ' and 'tnterlingua ' approaches. The former can be characterised by the use of bilingual transfer modules which convert the results of the analysis of the source language into a representation appropriate for a specific target language. This contrasts wlth the interlingua avproach in which the result of analysis is passed directly co the appropriate synthesis module. It is beyond the scope of the present paper to discuss in detail the relative merits of the two approaches ( see Vauquois , i975 : l &amp; 2ff ; Hutchins , lq78 ) . I~ should however consider soma of the major obstacles inherent in the incerlingua approach. The development of an Interlingua for various purposes ( noc only translation ) has been the subject of philosophical debate for some years , and proposals for ~T have included the use of formalized natural language ( e.g. Hel'~uk , Ig7 &amp; ; Andreev , lg67 ) , artificial languages ( like ~soeranco ) , or various symbolic representations , ~hecher linear ( e.~. BUlcins , I061 ) or otherwise ( e.~. `` ~ilks , 1073 ) . Host of chess approaches are problematic however ( for a thorough discussion of the lncerlingua approach co ~ , see Often &amp; Pacak ( 1071 ) and Barnes ( ig83 ) ) . Nevertheless , some incerlingua-based HT systems have been developed co a considerable degree : for example , the ~renohle team 's first attempts at wT cook this approach ( Veillon , 106R ) , while the TITUS system still in use ac the Ànscicut Textile de France ( Ducroc. Ig72 ; Zinge\ [ , 1~78~ is claimed to be ( ncerlin~u , l-based. 151 It seems that it can be assumed a priori thac an entirely language-independent theoretical representation of a given text is for all practical purposes impossible. A more realistic target seems to be a representation in which significant syntactic differences between the languages in question are neutralized so chat the best one can aim for is a languages-specific ( sic ) representation. This approach implies the definition of an Interlingua which cakes advantage of anything the languages in the system have in common , while accomodating their idiosyncrasies. This mains chat for • system which involves several fairly closely related languages the interlinsua approach is at least feasible , on the understanding that the introduction of a significantly different type of language may involve the complete redefinition of the Incerlingua ( Barnes , 1983 ) . ~rom the point of view of Beds , then , the common base of the languages involved can be used to great advantage. The notion of restricted syntax described above can be employed to filter out constructions chac cause particular problems for the chosen Interlingua representation. There remains however the problem of ~he representation of lexical items in the Interlingua. Theoretical approaches co this problem ( e.g. Andreev , 1967 ) seem quite unsatisfactory. BuC the notion of controlled vocabulary '' seems to offer a solution. If a oneco-one equivalence of 'technical ' terms can be achieved , this leaves only a relatively small area of vocabulary for which an incerlingual representation must be devised. It seems reasonable , on a small scale , co treat general vocaOuiary tn an enelagous way co technical vocabulary , in particular creating lexical items in one language that are ambiguous with respect co any of the ocher languages as 'homographs'. Their 'disambiguation ' must cake place in Analysis as there is no biltgual 'Transfer ' phase , and Synthesis is purely deterministic. While this approach would be quite unsuitable for a larRescale general purpose HT system , in the present context where the problem can be minimised ~c seems Co be a reasonable approach. Our own model for the Bede tnCerlingua has noc yet been finalised. We believe this co be an area for research and experimentation once the system software has been more fully developed. ~ur current hypothesis is chat the InterlinRua will cake the form of a canonical representation of the text in which valency-houndness and ( deep ) ~e will play a significant role. Sentential features such as tense and aspect will be capcured by 'universal ' system of values for the languages involved. This concepcion of an Interlingua clearly falls short of the language-independent pivot representation typically envisaged Ccf. Boitet &amp; NedobeJklne , 1980:2 ) , but we hope : o demonstrate chac it is sufficient for the languages in our system , and chat it could be adapted without significant difficulties to cater for the introduction of other ( related ) Western European languages. We feel chat research in chLs area will , when the time comes , be a siEniflcanc and valuable by-product of the project as a whole. II. DESCRIPTION OF THE SYSTEM DESIGN In this second half of the paper we present a description of the translation process in Bede , as it is currently envisaged. The process is divided broadly into two parts , analysis and synthesis , the interface between the two being provided by the Interlingua. The analysis module uses a Chart-like structure ( cf. Kaplan , 1973 ) and a series of grammars to produce from the source text the Incerlingua tree structure which serves as input to synthesis , where it is rearranged into a valid surface structure for the target language. The 'translation unit ' ( TU ) is taken co be the sentence , or equivalent ( e.g. section heading , title , figure caption ) . Full details of the rule formalisms are given in Somers ( Ig81 ) . A. Strln~ segmentation The TU is first subjected to a two-stage string-segmentation and 'lemmatlsation ' analysis. In the first stage it is compared word by word with a 'stop-list ' of frequently occurring words ( mostly function words ) ; words not found in the stop-list undergo string-segmentatlon analysis , again on a word by word basis. Stringsegmentation rules form a finite-state grammar of affix-stripping rules ( 'A-rules ' ) which handle mostly inflectional morphology. The output is a Chart with labelled arcs indicating lexical unit ( LU ) and possible interpretatio n o£ the stripped affixes , this 'hypothesis ' to be confirmed by dictionary look-up. By way of example , consider ( I~ , a possible French rule , which takes any word ending in -issons ( e.g. finissons or h4rissons ) and constructs an arc on the Chart recording the hypothesis that the word is an inflected form of an '-it ' verb ( i.e. finir or *h4rir ) . ( I ) V + `` -ISSONS '' ~ V ~ `` -IR '' \ [ PERS=I &amp; NUM=PLUR &amp; TENSE=PRES &amp; HOOD=INDIC\ ] At the end of dictionary look-up , a temporary 'sentence dictionary ' is created , consisting of copies of the dictionary entries for ( only ) those LUs found in the current TU. This is purely an efficiency measure. The sentence dictionary may of course include entries for homographs which will later be rejected. B. Structural analysis I. 'P-rules ' The chart then undergoes a two-stage structural analysts. In the first stage , context-sensitive augmented phrase-structure rules ( 'P-rules ' ) work towards creating a single arc spanning the entire TU. Arcs are labelled with appropriate syntactic class and syncactico-semantic feature information and a trace of the lower arcs which have been subsumed from which the parse tree can be simply extracted. The trivial P-rule ( 2 ) iS provided as an examnle. ( 2 ) &lt; NUM ( DET ) =NUM ( N ) &amp; GDR ( DET ) .INT.GDR ( N~ r.. ~ &gt; DET + N -~ NP &lt; GDR ( NP ) : =GDR ( N ) &amp; NUM ( NP 3 : =NLvM ( N ) • P-rules consist of 'condition stipulations ' , a 'geometry ' , and 'assignment stipulations'. The nodes of the Chart are by default identified by the value of the associated variable CLASS , though it is also possible to refer to a node by a local variable name and test for or assign the value of CLASS in the stipulations. Our rule formalisms are quite deliberately designed to reflect the formalisms of traditional linguistics. This formalism allows experimentation with a large number of different context-free parsing algorithms. We are in fact still experimenting in this area. For a similar investigation , though on a machine with significantly different time and space constraints , see Slocum ( 1981 ) . In the second stage of structural analysis , the tree structure implied by the labels and traces on these arcs is disjoined from the Char~ and undergoes general tree-Co-cree-transductions as described by 'T-rules ' , resulting in a single tree structure representing the canonical form of the TU. • The formalism for the T-rules is similar co that for the P-rules , except in the geometry part , where tree structures rather than arc sequences are defined. Consider the necessarily more complex ( though still simplified ) example ( 3~. which regularises a simple English passive. ( 3 ) &lt; LU ( AUX ) = '' BE '' &amp; PART ( V ) =PASTPART &amp; LU ( PREP ) = '' BY '' &amp; CASE ( NP { 2 } ) =ACE ? ; T &gt; S ( NP { I } * AUX V ÷ NP { 2 } ( PREP .</sentence>
+				<definiendum id="0">PIT</definiendum>
+				<definiens id="0">the overall system design snecif~c~Cion t ) .~n£cn we are currently working. ~n cite basic design of the system we attempt to incorporate as much as possible Features of far , escale ~ systems ~hac have proved to be desirable or effective. Thus. Bede is mul~ilinBual by , ~csi ( zn. alqorithms and linRuistic data are striccl~ separated , and the system \ [ s desiRned in ~ore oless independent modules. T~n ~\ [ cron'occssor environment means that ~ : r~r~l ~I '' siz~ ~ro ~ { ~norE , l~E : '4~ta ~cruccures 169 both dynamic ( created by and maniputated during the translation process ) and static ( dictionaries and linguistic rule packages ) are constrained co be as economical in terms of s¢oraBe space and access procedures as possible. Limitations on ~ncore and periohera\ [ storage are important considerations in the system design. In large genera\ [ purpose , HT systems , i= is necessary to assume that faiture to translate the given input correctty is generally not due to incorrectly ~ormed input , bu~ to \ [ nsufficientJy elaborated ~ranslacion algorithms. This is particularly due to =wo problems : the lexical problem of choice of appropriate translation equivalents , and the strategic problem of e~fec~ive analysis of the wide range of syntactic patterns Eound in nacural language. The reduction of these problems via ~he notions of '' controlled vocabu\ [ ary and restricted syntax seems particularly appropriate in the microprocessor environment , since the alternative of makin~ a system |n~tnitely extendable \ [ s probably no~ feasible , Given these constra/nts , it seems feasible to achieve cranstacion via an InCerltngua. ~n ~hich the canonicat structures from the source lan=ua~e are mapped directly onto those of the target language ( s ) , avoidin R any language-pair oriented 'transfer ' sta~e. Translation thus cakes place in ~wu puase~= anaiysls ot source ~ext an~ synthesis of target text. A. Incorporation of recent desL~n ortncio\ [ es ~odern ~ system design can be char~cterLsed hv three principles thac have proved Co be desirable and effective ( Lehmann eta\ [ , tg~ } o : I-\ ] ) : each of these is adhered co in the desiRn oF Rede. Bede Es mutt\ [ lingual by design : early `` ! T systems were designed with specific lan~uaBe-oatrs in mind , and translation algorithms were elaborated on this basis. The main conseouence of this was that source lan~uaRe analysis ~¢as effected within the perspective of the B~ven target \ [ anguaRe , and was therefore often of little or no use on the addition into the system of a further language ( of. ~in~ , IORI:12 ; ~ : in~ Perschke , 1982:28 ) . In Bede , there is a strict separation of algorithms and \ [ inguiscic data : oarlv `` T ~y~ccms '~ere quite sin~n\ [ y 'translation nrc~ra : ~s ' , tnd ~nv underlying linguistic theory which might have been present was inextricably bound up with the program itself. This clearly entailed the disadvantage that any modification of the system had to be done by a skilled programmer ( of. Johnson , IgRO : IAO ) . Furthermore , the side-effects of apparently quite innocent modifications were often quite farreaching and difficult to trace ( see for example Boscad , lq82:130 ) , Although this has only recently become an issue in HT ( e.g. Vauquois , 1979 : I.3 ; 1981=10 ) , it has of course for a long time been standard practice in other areas of knowledge-based programming ( Newell , 1973 ; Davis &amp; King , 1977 ) . The third principle now current in MT and to be incorporated in Bede is that the translation process should be modular. This approach was a feature of the earliest 'second generation ' systems ( of. Vauquois , 1975:33 ) , and is characterised by the general notion that any complicated computational task is best tackled by dividing it up into smaller more or less independent sub-casks which communicate only by means of a strictly defined interface protocol ( Aho et al , 1974 ) . This is typically achieved in the bit environment by a gross division of the translation process into analysis of source language and synthesis of target language , possibly with an intermediate transfer sca~e ( see ! .D below ) , with these phases in turn sub-divided , for example into morphological , lexical and syntactico-semantlc modules. This modularity may be reflected both in the linguistic organisation of the translation process and in the provision of software devices specifically tailored to the relevant sub-task ( Vauquois , 1975:33 ) . This is the case in Bede , where for each sub-task a grammar interpreter is provided which has the property of being no more powerful than necessary for the task in question. This contrasts with the approach taken in TAt~-H~c~o ( TAUM , Ig73 ) , where a single general-purpose device ( Colmerauer 's ( 1970 ) 'O-Systems ' ) is orovided , with the associated disadvantage that for some 'simple ' tasks the superfluous power of the device means that processes are seriously uneconomical. Bede incorporates five such 'grammar types ' with associated individual formalisms and processors : these are described in detail in the second half of this paper. B. The microproce , ssor environment ! t is in the microprocessor basis that the principle interest in this system lies , and , as mentioned above , the main concern is the effects of the restrictions that the environment imposes. Development of the Bede prototype is presently caking place on ZRO-based machines which provide 6Ak bytes of in-core memory and 72Ok bytes of peripheral store on two 5-I/~ '' double-sided double-density floppy disks. The intention is that any commercial version of Bede would run on more powerful processors with larger address space , since we feel chat such machines will soon rival the nopularity of the less powerful ZRO 's as the standard desk-cop hardware. Pro~rarzninR so far has been in Pascal- '' ( Sorcim , 197q ) , a Pascal dialect closely resembling UCSD Pascal , but we are conscious of the fact that both C ( Kernighan &amp; Ritchie , 1978 ) and BCPL ( Richards &amp; WhitbyStrevens , Ig7g ) may be more suitable for some of the software elements , and do not rule out completing the prototype in a number of languages. This adds the burden of designing compatible datastructures and interfaces , and we are currently investigating the relative merits of these languages. Portability and efficiency seem to be in conflict here. Microprocessor-based MT contrasts sharply with the mainframe-based activity , where the significance of problems of economy of storage and efficiency of programs has decreased in recent years. The possibility of introducing an element of human interaction with the system ( of. Kay , Ig80 ; Melby , 1981 ) is also highlighted in this environment. Contrast systems like SYSTRAN ( Toma , 1977 ) and GETA ( Vauquois , 1975 , lq7g ; Boiler &amp; Nedobejkine , IggO ) which work on the principle of large-scale processing in batch mode. Our experience so far is chat the economy and efficiency in data-structure design and in the elaboration of interactions between programs and data and between different modules is of paramount importance. While it is relatively evident thac large-scale HT can be simulated in the microprocessor environment , the cost in real time is tremendous : entirely new design ~nd implementation strategies seem co be called for. The ancient skills of the programmer that have become eroded by the generosity afforded by modern mainframe configurations become highly valued in this microprocessor application. C. Controlled vocabulary and restricted sync @ x The state of the art of language processing is such chat the analysis of a significant range of syntactic patterns has been shown to be possible , and by means of a number of different approaches. Research in this area nowadays is concentrated on the treatment of more problematic constructions ( e.g. Harcus , lqgO ) . This observation has led us tO believe that a degree of success in a small scale MT project can be achieved via the notion of restricting the complexity of acceptable input , so that only constructions that are sure tc ne Correctly analysed are permitted. This notion of restricted syntax ~ has been tried with some success in larger systems ( cf. Elliston , IGYn : Lawson , 107q:81f ; Somers &amp; HcNaught , I9~O : ao~ , resulting both in more accurate translation , and in increased legibility from t~e human point of view. AS Elliston points out , the development ef strict guidelines for writers leads not only t : the use of simpler constructions , but also to =he avoidance of potentially ambiguous text. In either case , the benefits for ~ are obvious. Less obvious however is the acceptability of such constraints ; yet 'restricted syntax ' need noc imply 'baby talk ' , and a reasonably extensive range of constructions can be included. Just as problems of syntactic analysis ca~ : e ( . alleviated by imposing some degree of contrn~ over 150 the syntactic complexity of the input , so the corresponding problem of lexical disambiguation chat large-scale HT systems are faced with can be eased by the notion of controlled vocabulary. A major problem for</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>~ ) s ( ~P ( 2 } ( s ) ~ v + ~p { l } ) &lt; DSF ( NP { 2 } ) : =DSUJ &amp; VOICE ( V ) : =PASSV &amp; DSF ( NP { I } : =DOBJ • Notice the necessity to 'disamb£Ruate ' the two NPs via curly-bracketted disamblRuators ; the possibility of defining a partial geometry via the 'dummy ' symbol ( $ ~ ; and how the AUX and PREP are eliminated in the resulting tree structure. Labellings for nodes are copied over by default unless specifically suppressed. With source-language LUs replaced by unique multiiingual-dictionary addresses , this canonical representation is the Interlingua which is passed for synthesis into the target language ( s~. C. Synthesis Assuming the analysis has been correctly performed , synthesis is a relatively straightforward deterministic process. Synthesis commences with the application of further T-rules which assign new order and structure ~o she Interlingua as appropriate. The synthesis T-rules for a given language can be viewed as analogues ~f the T-rules that are used for analysis of that language , though it is unlikely that for syntbes~s 152 the analysis rules could be simpLy reversed , Once the desired structure has been arrived at , the trees undergo a series of context-sensitive rules used to assign mainly syntactic features co the leaves ( 'L-rules ' ) , for example for the purpose of assigning number and gender concord ( etc. ) . The formalism for the L-rules is aglin similar to that for the p-rules and T-rules , the geOmett'y pert this time definYng a single tree structure with no structural modification implied. A simple example for German is provided here ( 4 ) . ( 4 ) &lt; SF ( NP ) =SUBJ &gt; NP ( Drr + N ) &lt; CASE ( DET ) : =NOH &amp; CASE ( N ) : =NOH &amp; NI~H ( DET ) : =NUH ( NP ) &amp; GDR ( DET ) : -GDR ( N ) &gt; The llst of labelled leaves resulting from the application of L-rules is passed to morphological synthesis ( the superior branches are no longer needed ) , where a finite-state grammar of morpbographemic and afftxation rules ( 'H-rules ' ) is applied to produce the target string .</sentence>
+				<definiendum id="0">VOICE ( V )</definiendum>
+				<definiendum id="1">synthesis</definiendum>
+				<definiendum id="2">afftxation rules</definiendum>
+				<definiens id="0">nodes are copied over by default unless specifically suppressed. With source-language LUs replaced by unique multiiingual-dictionary addresses</definiens>
+				<definiens id="1">a relatively straightforward deterministic process. Synthesis commences with the application of further T-rules</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>The EDR depends on the notion of metrical crees whose purpose it is to give an alternating rhythm to the syllables of a word and define the relative prominence of each syllable within the word .</sentence>
+				<definiendum id="0">EDR</definiendum>
+				<definiens id="0">depends on the notion of metrical crees whose purpose it is to give an alternating rhythm to the syllables of a word and define the relative prominence of each syllable within the word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>Reasoning is a basic paz~c of deep comprehension and involves not only linguistic capabilities ~understanding and dialogue ) but also deduc tion , induction , analogy , generalization , etc. , on common sense and domain specific knowledge .</sentence>
+				<definiendum id="0">Reasoning</definiendum>
+				<definiens id="0">a basic paz~c of deep comprehension and involves not only linguistic capabilities ~understanding and dialogue ) but also deduc tion , induction , analogy , generalization , etc. , on common sense and domain specific knowledge</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>IV THE IR-NLI SYSTEM IR-NLI is conceived as an interactive interface to online information retrieval system suppoz~ing English language interaction .</sentence>
+				<definiendum id="0">IR-NLI SYSTEM IR-NLI</definiendum>
+				<definiens id="0">an interactive interface to online information retrieval system suppoz~ing English language interaction</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Vll STRATEGY GENERATOR The task of the STRATEGY JENEEATCR can be considered from two differen~ poinzs of view : an external one , tha= concerns performing in~ermedia~j 's activity ; an in=ernal one , that rela=es to management and control of REASONING and U~DERSTANDiI ; G ~ 31ALCGUE modules .</sentence>
+				<definiendum id="0">STRATEGY JENEEATCR</definiendum>
+				<definiens id="0">rela=es to management and control of REASONING and U~DERSTANDiI</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>Other formal systems ( e.g. , procedural gr=mm-rs \ [ Winograd , 1972\ ] ) have been applied to semantically deep ( but linguistically Lmpoverished ) domains -or Co excessively lJJniced domains ( e.g. , Smell 's \ [ 1980\ ] `` word expert '' parser seems to have encompassed a vocabulary of less than 20 items ) .</sentence>
+				<definiendum id="0">Other formal systems</definiendum>
+				<definiens id="0">to have encompassed a vocabulary of less than 20 items )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The LRC ) iT system is currently equipped with something over 400 PS rules describing the Source Language ( German ) , and nearly 10,000 lexical entries in each of two languages ( German and the Target Language -English ) .</sentence>
+				<definiendum id="0">LRC</definiendum>
+				<definiens id="0">equipped with something over 400 PS rules describing the Source Language ( German ) , and nearly 10,000 lexical entries in each of two languages ( German and the Target Language -English )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>`` translation units ' , since isolated words and phrases appear frequently ) which were translated from German into acceptable English ; if any change to the translated unit was necessary , however slight , the translation was considered incorrect ; the test runs were made once or twice for each text -once , before the text was ever seen by the LRC staff ( a `` blind '' run ) , and once more , after a few months of system enhancement based in part on the previous results ( a `` follow-up '' run ) ; the project sponsor always provided the LRC with a 171 list of the words and technical terms said to be employed in the text ( the list was sometimes incomplete , as one would expect of human compilations of the vocabulary in a large document ) .</sentence>
+				<definiendum id="0">LRC staff</definiendum>
+				<definiens id="0">after a few months of system enhancement based in part on the previous results ( a `` follow-up '' run</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>Section C descrlbes how the language and data-access components were designed to accommodate the needs of transportability .</sentence>
+				<definiendum id="0">Section C</definiendum>
+				<definiens id="0">descrlbes how the language and data-access components were designed to accommodate the needs of transportability</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TEAM records the lexlcal information specific to a given domain in a lexicon .</sentence>
+				<definiendum id="0">TEAM records</definiendum>
+				<definiens id="0">the lexlcal information specific to a given domain in a lexicon</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In all c a s e s , TEAM w i l l c r e a t e a l e x i c a l e n t r y f o r `` s o p h o m o r e `` and an e n t r y i n t h e c o n c e p t u a l schema to represent the concept of sophomores .</sentence>
+				<definiendum id="0">TEAM</definiendum>
+				<definiens id="0">an e n t r y i n t h e c o n c e p t u a l schema to represent the concept of sophomores</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>DIALOGIC produces the following logical form : ( Query ( WHAT tl ( THING tl ) ( THE p2 ( AND ( PROCESSOR p2 ) ( MAKER-OF p2 MOTOROLA ) ) ( EQ p2 tl ) ) ) ) where WHAT and THE are quantifiers ; 1 tl and p2 are variables ; AND and EQ have their usual interpretation .</sentence>
+				<definiendum id="0">DIALOGIC</definiendum>
+				<definiens id="0">produces the following logical form : ( Query ( WHAT tl ( THING tl ) ( THE p2 ( AND ( PROCESSOR p2 ) ( MAKER-OF p2 MOTOROLA ) ) ( EQ p2 tl ) ) ) ) where WHAT and THE are quantifiers ; 1 tl and p2 are variables ; AND and EQ have their usual interpretation</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>And the relevant database schema Informaclon is : PROCESSOR : PRICE-OF : file-CHIP keyfield- [ D flit-CHIP field ( argl ) = [ D fleld ( arg2 ) -PRICE F. Status and Future Research An initial version of TEAM was implemented in a combination of Incerlisp ( acquisition and DIALOGIC components ) and Prolog ( data access component ) on the DEC2060 , but address space llmicatlons made continued development difficult .</sentence>
+				<definiendum id="0">flit-CHIP field</definiendum>
+				<definiens id="0">data access component ) on the DEC2060 , but address space llmicatlons made continued development difficult</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>MATRES Is a knowledge based system for undorotanding the natural language text of eventoriented massages tn the domains of air activities and space/missile ( S &amp; M ) activities .</sentence>
+				<definiendum id="0">MATRES</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>ATE PROTOTYPE EVENT EVENT TYPE AGENT ( OR OBJECT PLUS OWNER ) TIME OF THE EVENT LOCATION AT WHICH EVENT TOOK PLACE PATIENT , OR ENTITY AFFECTED BY THE EVENT INTERPRETATION OF THE EVENT PROTOTYPE OF SPECIFIC EVENT AIRSPACE VIOLATION AIRCRAFT OWNED BY COUNTRY C TIME AT WHICH VIO '' LATION OCCURRED LOCATION AT WHICH VIOLATION OCCURRED OWNER OF VIOLATED AIRSPACE PROBABLE REASON FOR VIOLATION EVENT EXAMPLE AIRSPACE VIOLATION A UGANOAN FIGHTER AIRCRAFT AT AB ( ~T 0200 HOURS ON 25 APRIL 1978 80ROER NEAR SUAM KENYA PROBABLE RECONNAISSANCE MiSSiON Flguro 1 , Four Aspects of an Event Template .</sentence>
+				<definiendum id="0">ATE PROTOTYPE EVENT EVENT TYPE AGENT ( OR OBJECT PLUS OWNER ) TIME OF THE EVENT LOCATION AT WHICH EVENT TOOK PLACE PATIENT</definiendum>
+				<definiens id="0">THE EVENT INTERPRETATION OF THE EVENT PROTOTYPE OF SPECIFIC EVENT AIRSPACE VIOLATION AIRCRAFT OWNED BY COUNTRY C TIME AT WHICH VIO '' LATION OCCURRED LOCATION AT WHICH VIOLATION OCCURRED OWNER OF VIOLATED AIRSPACE PROBABLE REASON FOR VIOLATION EVENT EXAMPLE AIRSPACE VIOLATION A UGANOAN FIGHTER AIRCRAFT AT AB ( ~T 0200 HOURS ON 25 APRIL 1978 80ROER NEAR SUAM KENYA PROBABLE RECONNAISSANCE MiSSiON Flguro 1 , Four Aspects of an Event Template</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A relational event Involves entitles which stand In an n-sty relation with oath other st a certain Urea or during s fixed time period .</sentence>
+				<definiendum id="0">relational event</definiendum>
+				<definiens id="0">an n-sty relation with oath other st a certain Urea or during s fixed time period</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The device genefetoe ( down arrow ) a report of the giv|m event , In terms of the partlcuisr attributes of the event It la designed to measure .</sentence>
+				<definiendum id="0">device genefetoe</definiendum>
+				<definiens id="0">attributes of the event It la designed to measure</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>The `` semantic parsing '' process begins with marking the `` triggers '' , defined as lexical units which call one or more of the predicative patterns allowed for in the metalanguage .</sentence>
+				<definiendum id="0">semantic parsing</definiendum>
+				<definiens id="0">lexical units which call one or more of the predicative patterns allowed for in the metalanguage</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>the papal court ( social body ) '' .</sentence>
+				<definiendum id="0">papal court</definiendum>
+				<definiens id="0">social body ) ''</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The PAL system of Candace Sidner ( 1979 ; 1981 ) , is a top-down anaphora resolution method which Makes use of the notion of focus ( likened to the theme of the discourse ) .</sentence>
+				<definiendum id="0">PAL system of Candace Sidner</definiendum>
+			</definition>
+</paper>
+
+	</volume>

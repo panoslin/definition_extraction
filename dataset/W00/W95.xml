@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="W95">
+
+		<paper id="0109">
+			<definition id="0">
+				<sentence>A large-scale electronic dictionary is the fundamental component to many natural language and spoken language : processing applications such as spelling correction , grammar checking , text-speech conversion , intelligent Chinese input methods and machine translation .</sentence>
+				<definiendum id="0">large-scale electronic dictionary</definiendum>
+				<definiens id="0">the fundamental component to many natural language and spoken language : processing applications such as spelling correction , grammar checking , text-speech conversion</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In this paper , an automatic approach to constructing an electronic dictionary , which contains lexical entries and their possible parts of speech tags , is proposed .</sentence>
+				<definiendum id="0">electronic dictionary</definiendum>
+				<definiens id="0">contains lexical entries and their possible parts of speech tags</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The reestimation technique , referred to as the Viterbi training procedure for words ( VTW ) , is used mainly to find possible word n-grams by maximizing the likelihood of the segmentation patterns of the segmented text corpus .</sentence>
+				<definiendum id="0">VTW</definiendum>
+				<definiens id="0">used mainly to find possible word n-grams by maximizing the likelihood of the segmentation patterns of the segmented text corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The word segmentation patterns based on the dictionary extracted by the word reestimation process , or the two class classifier , or a concatenation of these two modules , are then automatically tagged with part of speech information with a part of speech reestimation method .</sentence>
+				<definiendum id="0">word segmentation patterns</definiendum>
+				<definiens id="0">based on the dictionary extracted by the word reestimation process</definiens>
+				<definiens id="1">automatically tagged with part of speech information with a part of speech reestimation method</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>~ where Xs is the feature vector ( or score vector ) and Ws is a set of weights , acquired from the seed corpus , for the various components of the score vector .</sentence>
+				<definiendum id="0">Xs</definiendum>
+				<definiendum id="1">Ws</definiendum>
+				<definiens id="0">the feature vector ( or score vector ) and</definiens>
+				<definiens id="1">a set of weights , acquired from the seed corpus , for the various components of the score vector</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The problem of POS tagging can be formulated as the problem of finding the best possible tagging pattern that maximizes the following lexical score \ [ Church 88 , Lin 92\ ] : Sle x = e ( zjlw ) = P ( t~\ [ w~ ) -i/ P ( W ) x l'I P ( t ilt i _ l ) P ( w ilt i ) where Tj is the j-th possible set of lexical tags ( parts of speech ) for the segmentation pattern W. The tagging process can thus be optimized based on the product of the POS tag transition probabilities P ( t ill i_ 1 ) and the distribution for P ( w ilt/ ) .</sentence>
+				<definiendum id="0">Tj</definiendum>
+				<definiens id="0">the j-th possible set of lexical tags ( parts of speech</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The word precision rate is the number of n-grams common to the extracted word list and the standard dictionary divided by the number of n-grams in the extracted word list ; on the contrary , the recall is the number of common n-grams divided by the number of n-grams in the standard dictionary .</sentence>
+				<definiendum id="0">word precision rate</definiendum>
+				<definiendum id="1">recall</definiendum>
+				<definiens id="0">the number of common n-grams divided by the number of n-grams in the standard dictionary</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Table 1 shows the performances in different stages for the Basic Model ( columns 1-4 ) and the Postfiltering Model ( columns 1-6 ) by using the small ( 1000-sentence ) seed corpus .</sentence>
+				<definiendum id="0">Postfiltering Model</definiendum>
+				<definiens id="0">the Basic Model ( columns 1-4 ) and the</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Firstly , the number of word-tag pairs common to the extracted word-tag list and the Word-Tag Dictionary divided by the number of pairs in the extracted list is defined as the raw precision rate ; the raw recall rate is defined similarly as the number of common word-tag pairs divided by the number of word-tag pairs in the Word-Tag Dictionary .</sentence>
+				<definiendum id="0">raw recall rate</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>The per-word precision for a word is defined as the number of tags commonly annotated in the dictionary entry and the extracted word-tag list for the word divided by the number of tags in the extracted word-tag entry for the word .</sentence>
+				<definiendum id="0">per-word precision for a word</definiendum>
+				<definiens id="0">the number of tags commonly annotated in the dictionary entry and the extracted word-tag list for the word divided by the number of tags in the extracted word-tag entry for the word</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Such weighted precision ( or recall ) is defined as the sum of product of the per-word precision ( or recall ) and the word probability taken over each word .</sentence>
+				<definiendum id="0">Such weighted precision</definiendum>
+				<definiens id="0">the sum of product of the per-word precision ( or recall ) and the word probability taken over each word</definiens>
+			</definition>
+</paper>
+
+		<paper id="0112">
+			<definition id="0">
+				<sentence>Information extraction ( IE ) is a natural language processing task that involves extracting predefined types of information from text .</sentence>
+				<definiendum id="0">Information extraction</definiendum>
+				<definiens id="0">a natural language processing task that involves extracting predefined types of information from text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>1 ( ~ ~ World Trade Center ( ~ ( : °ncept N°des : l ~lb was bombed ~ ~ x &gt; was bombed : by terrorists Figure 2 : AutoSlog flowchart AutoSlog uses simple domain-independ .</sentence>
+				<definiendum id="0">AutoSlog</definiendum>
+				<definiens id="0">uses simple domain-independ</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>1 For each `` targeted '' noun phrase , AutoSlog finds the sentence in which it was tagged 2 and passes the sentence to CIRCUS for syntactic analysis .</sentence>
+				<definiendum id="0">AutoSlog</definiendum>
+				<definiens id="0">finds the sentence in which it was tagged 2 and passes the sentence to CIRCUS for syntactic analysis</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>AutoSlog uses several rules to recognize different verb forms .</sentence>
+				<definiendum id="0">AutoSlog</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Given the sentence `` John Smith was killed '' with `` John Smith '' tagged as a victim , AutoSlog generates a concept node that recognizes the pattern `` X was killed '' and extracts X as a victim .</sentence>
+				<definiendum id="0">AutoSlog</definiendum>
+				<definiens id="0">generates a concept node that recognizes the pattern `` X was killed '' and extracts X as a victim</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In contrast , AutoSlog infers the trigger words and patterns on its own but does not generalize them .</sentence>
+				<definiendum id="0">AutoSlog</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>AutoSlog 's heuristics sometimes fail to produce a concept node when the verb is weak ( e.g. , forms of `` to be '' ) , when the linguistic context does match any of the heuristics , or when CIRCUS produces a faulty sentence analysis .</sentence>
+				<definiendum id="0">CIRCUS</definiendum>
+				<definiens id="0">produces a faulty sentence analysis</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>A signature consists of a concept node paired with the word that triggered it , although in the experiments presented in this paper there is a one-to-one correspondence between concept nodes and signatures .</sentence>
+				<definiendum id="0">signature</definiendum>
+				<definiens id="0">consists of a concept node paired with the word that triggered it</definiens>
+			</definition>
+</paper>
+
+		<paper id="0101">
+			<definition id="0">
+				<sentence>5Note an important difference between Markov-mode\ ] based taggers and the transformation-based tagger : the former attempts to maximize the probability of a string , whereas the latter attempts to minimize the number of errors .</sentence>
+				<definiendum id="0">transformation-based tagger</definiendum>
+				<definiens id="0">the former attempts to maximize the probability of a string , whereas the latter attempts to minimize the number of errors</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>So all learned transformations will have the form : Change the tag of a word from X to Y in context C where X is a set of two or more part of speech tags , and Y is a single part of speech tag , such that Y E X. Below we list some transformations that were actually learned by the system .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">Y</definiendum>
+				<definiens id="0">a set of two or more part of speech tags</definiens>
+				<definiens id="1">a single part of speech tag</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For each tag Z E X , Z ~ Y , compute freq ( Y ) / freq ( Z ) • incontext ( Z , C ) where freq ( Y ) is the number of occurrences of words unambiguously tagged with tag Y in the corpus , freq ( Z ) is the number of occurrences of words unambiguously tagged with tag Z in the corpus , and incontext ( Z , C ) is the number of times a word unambiguously tagged with tag Z occurs in context C in the training corpus .</sentence>
+				<definiendum id="0">freq</definiendum>
+				<definiendum id="1">Z )</definiendum>
+				<definiens id="0">the number of occurrences of words unambiguously tagged with tag Z in the corpus</definiens>
+				<definiens id="1">the number of times a word unambiguously tagged with tag Z occurs in context C in the training corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The objective function for this transformation measures this by computing the difference between the number of unambiguous instances of tag Y in context C and the number of unambiguous instances of the most likely tag R in context C , where R E X , R ~ Y , adjusting for relative frequency .</sentence>
+				<definiendum id="0">objective function</definiendum>
+				<definiens id="0">the number of unambiguous instances of the most likely tag R in context C , where R E X</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Unsupervised Learning : Results To test the effectiveness of the above unsupervised learning algorithm , we ran a number of experiments using two different corpora and part of speech tag sets : the Penn Treebank Wall Street Journal Corpus \ [ Marcus et al. , 1993\ ] and the original Brown Corpus \ [ Francis and Kucera , 1982\ ] .</sentence>
+				<definiendum id="0">Unsupervised Learning</definiendum>
+				<definiens id="0">Results To test the effectiveness of the above unsupervised learning algorithm</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A transformation-based system is a processor and not a classifier .</sentence>
+				<definiendum id="0">transformation-based system</definiendum>
+				<definiens id="0">a processor and not a classifier</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The supervised learner learns a second ordered list of transformations .</sentence>
+				<definiendum id="0">supervised learner</definiendum>
+				<definiens id="0">learns a second ordered list of transformations</definiens>
+			</definition>
+</paper>
+
+		<paper id="0105">
+			<definition id="0">
+				<sentence>And my own treatment of selectional constraints ( Resnik , 1993 ) provides a way to describe the plausibility of co-occuffence in terms of WordNet 's semantic categories , using co-occurrence relationships mediated by syntactic structure .</sentence>
+				<definiendum id="0">selectional constraints</definiendum>
+				<definiens id="0">provides a way to describe the plausibility of co-occuffence in terms of WordNet 's semantic categories</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In each case , one begins with known semantic categories ( WordNet synsets , Roget 's numbered classes ) and non-sense-annotated text , and proceeds to a distributional characterization of semantic category behavior using co-occurrence relationships .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">synsets , Roget 's numbered classes ) and non-sense-annotated text , and proceeds to a distributional characterization of semantic category behavior using co-occurrence relationships</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Probability estimates are derived from a corpus by computing freq ( c ) = ~ count ( n ) , ( 2 ) newords ( c ) where words ( c ) is the set of nouns having a sense subsumed by concept c. Probabilities are then computed simply as relative frequency : ~ ( e ) freq ( c ) N ' ( 3 ) 56 where N is the total number of noun instances observed .</sentence>
+				<definiendum id="0">Probability estimates</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">a corpus by computing freq ( c ) = ~ count ( n ) , ( 2 ) newords ( c ) where words ( c ) is the set of nouns having a sense subsumed by concept c. Probabilities are then computed simply</definiens>
+				<definiens id="1">the total number of noun instances observed</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>s , crisis over cancellation of the bug-ridden skybolt missile , and the u.s. offer to supply britain and france with the proved polaris ( time , dec. 28 ) From this , Sussna extracts the following noun grouping to disambiguate : allies strike force attempt plan week accord president prime minister outlines support crisis cancellation bug missile france polaris time These are the non-stopword nouns in the paragraph that appear in WordNet ( he used version 1.2 ) .</sentence>
+				<definiendum id="0">Sussna</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Distributional cluster ( Brown et al. , 1992 ) : head , body , hands , eye , voice , arm , seat , hair , mouth Word 'head ' ( 17 alternatives ) Word 'body ' ( 8 alternatives ) 60 Word 'hands ' ( 10 alternatives ) hand : subconeept of linear unit hired hand , hand , hired man : a hired laborer on a farm or ranch bridge player , hand : `` we need a 4th hand for bridge '' hand , deal : the cards held in a card game by a given player at any given time hand : a round of applause to signify approval ; `` give the little lady a great big hand '' handwriting , cursive , hand , script : something written by hand hand : ability ; `` he wanted to try his hand at singing '' hand , manus , hook , mauler , mitt , paw : the distal extremity of the superior limb hand : subconcept of pointer hand : physical assistance ; `` give me a hand with the chores '' Word 'eye ' ( 4 alternatives ) Word 'voice ' ( 7 alternatives ) voice : the relation of the subject of a verb to the action that the verb denotes spokesperson , spokesman , interpreter , representative , mouthpiece , voice voice , vocalization : the sound made by the vibration of vocal folds articulation , voice : expressing in coherent verbal form ; `` I gave voice to my feelings '' part , voice : the melody carried by a particular voice or instrument in polyphonic music voice : the ability to speak ; `` he lost his voice '' voice : the distinctive sound of a person 's speech ; `` I recognized her voice '' Word 'arm ' ( 6 alternatives ) Word 'seat ' ( 6 alternatives ) Word 'hair ' ( 5 alternatives ) hair , pilus : threadlike keratinous filaments growing from the skin of mammals hair , tomentum : filamentous hairlike growth on a plant hair , follicular growth : subeoncept of externalbody part hair , mane , head of hair : hair on the head hair : hairy covering of an animal or body part Word 'mouth ' ( 5 alternatives ) This group was among classes hand-selected by Brown et al. as `` particularly interesting . ''</sentence>
+				<definiendum id="0">Distributional cluster</definiendum>
+				<definiens id="0">head , body , hands , eye , voice , arm , seat , hair , mouth Word 'head ' ( 17 alternatives ) Word 'body '</definiens>
+				<definiens id="1">a hired laborer on a farm or ranch bridge player</definiens>
+				<definiens id="2">the relation of the subject of a verb to the action that the verb denotes spokesperson , spokesman , interpreter , representative , mouthpiece , voice voice , vocalization : the sound made by the vibration of vocal folds articulation , voice : expressing in coherent verbal form</definiens>
+				<definiens id="3">filamentous hairlike growth on a plant hair , follicular growth : subeoncept of externalbody part hair , mane , head of hair : hair on the head hair : hairy covering of an animal or body part Word 'mouth ' ( 5 alternatives</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>61 Distributional cluster ( Brown et al. , 1992 ) : tie , jacket , suit Word 'tie ' ( 7 alternatives ) draw , standoff , tie , stalemate affiliation , association , tie , tie-up : a social or business relationship tie , crosstie , sleeper : subconcept of brace , bracing necktie , tie link , linkup , tie , tie-in : something that serves to join or link drawstring , string , tie : cord used as a fastener tie , tie beam : used to prevent two rafters , e.g. , from spreading apart Word 'jacket ' ( 4 alternatives ) Word 'suit ' ( 4 alternatives ) This cluster was derived by Brown et al. using a modification of their algorithm , designed to uncover `` semantically sticky '' clusters .</sentence>
+				<definiendum id="0">Distributional cluster</definiendum>
+				<definiens id="0">a social or business relationship tie , crosstie</definiens>
+				<definiens id="1">used to prevent two rafters</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Distributional cluster ( Brown et al. , 1992 ) : cost , expense , risk , profitability , deferral , earmarks , capstone , cardinality , mintage , reseller Word 'cost ' ( 2 alternatives ) Word 'expense ' ( 2 alternatives ) Word 'risk ' ( 2 alternatives ) Word 'profitability ' ( 1 alternatives ) Word 'deferral ' ( 3 alternatives ) Word 'earmarks ' ( 2 alternatives ) Word 'capstone ' ( 1 alternatives ) Word 'eardinality ' Not in WordNet Word 'mintage ' ( 1 alternatives ) 62 Word 'reseller ' Not in WordNet This cluster was one presented by Brown et al. as a randomly-selected class , rather than one hand-picked for its coherence .</sentence>
+				<definiendum id="0">Distributional cluster</definiendum>
+				<definiens id="0">cost , expense , risk , profitability , deferral , earmarks , capstone , cardinality , mintage , reseller Word 'cost ' ( 2 alternatives ) Word 'expense ' ( 2 alternatives ) Word 'risk ' ( 2 alternatives ) Word 'profitability ' ( 1 alternatives ) Word 'deferral ' ( 3 alternatives ) Word 'earmarks ' ( 2 alternatives</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Machine-generated thesaurus entry ( Grefenstette , 1994 ) : method , test , mean , procedure , technique Word 'method ' ( 2 alternatives ) Word 'test ' ( 7 alternatives ) 63 Word 'mean ' ( 1 alternatives ) Word 'proeedure ' ( 4 alternatives ) Word 'technique ' ( 2 alternatives ) I chose this grouping at random from a thesaurus created automatically by Grefenstette 's syntacticodistributional methods , using the MED corpus of medical abstracts as its source .</sentence>
+				<definiendum id="0">Machine-generated thesaurus entry</definiendum>
+				<definiens id="0">method , test , mean , procedure , technique Word 'method ' ( 2 alternatives</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>To use an example from the previous section , category # 590 ( `` Writing '' ) contains the following : writing , chirography , penman ship , quill driving , typewriting , writing , manuscript , MS , these presents , stroke of the pen , dash of the pen , coupe de plume , line , headline , pen and ink , letter , uncial writing , cuneiform character , arrowhead , Ogham , Runes , hieroglyphic , contraction , Devanagari , Nagari , script , shorthand , stenography , secret writing , writing in cipher , cryptography , stenography , copy , transcript , rescript , rough copy , fair copy , handwriting , signature , sign manual , autograph , monograph , holograph , hand , fist , calligraphy , good hand , running hand , flowing hand , cursive hand , legible hand , bold hand , bad hand , cramped hand , crabbed hand , illegible hand , scribble , ill-formed letters , pothooks and hangers , stationery , pen , quill , goose quill , pencil , style , paper , foolscap , parchment , veUum , papyrus , tablet , slate , marble , pillar , table , blackboard , ink bottle , ink horn , ink pot , ink stand , ink well , typewriter , transcription , inscription , superscription , graphology , composition , authorship , writer , scribe , amanuensis , scrivener , secretary , clerk , penman , copyist , transcriber , quill driver , stenographer , typewriter , typist , writer for the press Any word or phrase in that group that appears in the noun taxonomy for WordNet would be a candidate as a test instance -for example , line , or secret writing .</sentence>
+				<definiendum id="0">MS</definiendum>
+				<definiens id="0">headline , pen and ink , letter , uncial writing , cuneiform character , arrowhead , Ogham , Runes , hieroglyphic , contraction , Devanagari , Nagari , script , shorthand , stenography , secret writing , writing in cipher , cryptography , stenography , copy , transcript , rescript , rough copy , fair copy , handwriting , signature , sign manual , autograph , monograph , holograph</definiens>
+				<definiens id="1">cursive hand , legible hand , bold hand , bad hand , cramped hand , crabbed hand , illegible hand , scribble , ill-formed letters , pothooks and hangers , stationery , pen , quill , goose quill , pencil , style , paper , foolscap , parchment , veUum , papyrus , tablet , slate , marble , pillar , table , blackboard , ink bottle , ink horn , ink pot , ink stand , ink well , typewriter , transcription , inscription , superscription , graphology , composition , authorship , writer , scribe , amanuensis , scrivener , secretary , clerk , penman , copyist , transcriber , quill driver , stenographer , typewriter , typist , writer for the press Any word or phrase in that group that appears in the noun taxonomy for WordNet would be a candidate as a test instance -for example , line , or secret writing</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">An on-line lexical database</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Selection and Information : A Class-Based Approach to Lexical Relationships .</sentence>
+				<definiendum id="0">Selection</definiendum>
+				<definiendum id="1">Information</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0110">
+			<definition id="0">
+				<sentence>IDF is defined as -log2dfw/D , where D is the number of documents in the collection and dfw is the document frequency , the number of documents that contain w. Obviously , there is a strong relationship between document frequency , dfw , and word frequency , fw .</sentence>
+				<definiendum id="0">IDF</definiendum>
+				<definiendum id="1">D</definiendum>
+				<definiendum id="2">dfw</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Prg ( k ) is the probability of k instances of w in a document .</sentence>
+				<definiendum id="0">Prg ( k )</definiendum>
+				<definiens id="0">the probability of k instances of w in a document</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The ~ parameter determines the fraction of relevant and irrelevant documents .</sentence>
+				<definiendum id="0">~ parameter</definiendum>
+				<definiens id="0">determines the fraction of relevant and irrelevant documents</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We should n't expect to see two or more instances of boycott in the same document ( unless there is some sort of hidden dependency that goes beyond the Poisson ) .</sentence>
+				<definiendum id="0">hidden dependency</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0108">
+			<definition id="0">
+				<sentence>A prediction suffix tree ( PST ) T over U is a finite tree with nodes labeled by distinct elements of U* such that the root is labeled by the empty sequence e , and if s is a son of s ' and s ' is labeled by a 6 U* then s is labeled by wa for some w 6 U. Therefore , in practice it is enough to associate each non-root node with the first word in its label , and the full label of any node can be reconstructed by following the path from the node to the root .</sentence>
+				<definiendum id="0">prediction suffix tree</definiendum>
+				<definiendum id="1">PST</definiendum>
+				<definiendum id="2">s</definiendum>
+				<definiens id="0">a finite tree with nodes labeled by distinct elements of U* such that the root is labeled by the empty sequence e</definiens>
+				<definiens id="1">a son of s ' and s ' is labeled by a 6 U* then s is labeled by wa for some w</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The mixture elements are drawn from some pre-specified set T , which in our case is typically the set of all PSTs with maximal depth &lt; D for some suitably chosen D. For each PST T E T and each observation sequence wl , ... , wn , T 's likelihood ( or evidence ) P ( wl , ... , wnlT ) on that observation sequence is given by : n P ( wl , . . . , w , IT ) -II 70~ ( , ol ... .. wi_l ) ( wi ) , ( 1 ) i : l where CT ( wo ) = e is the null ( empty ) context .</sentence>
+				<definiendum id="0">CT</definiendum>
+				<definiens id="0">PST T E T and each observation sequence wl , ... , wn , T 's likelihood ( or evidence</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>, wn-1 , w , ) ( 2 ) P ( w~'lwl '' '' `` 'wn-1 ) = P ( wl , ... , wn-1 ) _ ETeTPo ( T ) P ( Wl , ' '' , wn-I , Wnl T ) -~TeTPo ( T ) P ( wl , ... , wn-1 IT ) ' ( 3 ) where Po ( T ) is the prior probability of the PST , T. A nMve computation of ( 3 ) would be infeasible , because of the size of 7 '' .</sentence>
+				<definiendum id="0">Po ( T )</definiendum>
+				<definiens id="0">the prior probability of the PST</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Let us also assume that all the trees have maximal depth D. Then Po ( T ) = a '~ ( 1 a ) ~2 , where n~ is the number of leaves of T of depth less than the maximal depth and n2 is the number of internal nodes of T. To evaluate the likelihood of the whole mixture we build a tree of maximal depth D containing all observation sequence suffixes of length up to D. Thus the tree contains a node s iff s - ( wi-k+l , ... , wi ) with 1 &lt; k _ &lt; D , 1 &lt; i &lt; n. At each node s we keep two variablesJ The first , ~In practice , we keep only a ratio related to the two variables , as explained in detail in the next section .</sentence>
+				<definiendum id="0">n~</definiendum>
+				<definiendum id="1">n2</definiendum>
+				<definiens id="0">the number of leaves of T of depth less than the maximal depth and</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Lmixn ( s ) is calculated recursively as follows : Lmiz~ ( s ) = o~L , ~ ( s ) + ( 1 c~ ) IX Lmixn ( us ) , ( 6 ) ueU The recursive computation of the mixture likelihood terminates at the leaves : Lmiz , ~ ( s ) = L , ~ ( s ) if Isl = D. ( 7 ) In summary , the mixture likelihood values are updated as follows : Lmiz~ ( s ) = { L~ ( s ) o~Ln ( s ) + ( 1 or ) \ [ Iueu rmixn ( us ) Lmix , ~_l ( s ) s = C ( wl , ... , w , _i ) , Is\ ] = D s = C ( wl , ... , W , _l ) , Isl &lt; D otherwise ( 8 ) At first sight it would appear that the update of Lmixn would require contributions from an arbitrarily large subtree , since U may be arbitrarily large .</sentence>
+				<definiendum id="0">Lmixn</definiendum>
+				<definiens id="0">the mixture likelihood values are updated as follows : Lmiz~ ( s ) = { L~ ( s ) o~Ln ( s ) + ( 1 or ) \ [ Iueu rmixn ( us ) Lmix , ~_l ( s ) s = C ( wl , ... , w</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Therefore , Lrniz , ~ ( e ) = ~ Po ( T ) P ( wl , ... , wnIT ) , TET ( I0 ) where T is the set of trees of maximal depth D and e is the null context ( the root node ) .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiendum id="1">e</definiendum>
+				<definiens id="0">the null context ( the root node )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>It remains to describe how the probabilities , P ( wls ) = 7s ( w ) are estimated from empirical counts .</sentence>
+				<definiendum id="0">P (</definiendum>
+				<definiens id="0">wls ) = 7s ( w ) are estimated from empirical counts</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Our initial experiments used the Brown corpus , the Gutenberg Bible , and Milton 's Paradise Lost as sources of training and test material .</sentence>
+				<definiendum id="0">Brown corpus</definiendum>
+				<definiendum id="1">Gutenberg Bible</definiendum>
+				<definiens id="0">sources of training and test material</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The PST learning algorithm allocates a proper node for the phrase whereas a bigram or trigram model captures only atruncated version of the statistical dependencies among words in the phrase .</sentence>
+				<definiendum id="0">PST learning algorithm</definiendum>
+				<definiens id="0">allocates a proper node for the phrase whereas a bigram or trigram model captures only atruncated version of the statistical dependencies among words in the phrase</definiens>
+			</definition>
+</paper>
+
+		<paper id="0103">
+			<definition id="0">
+				<sentence>A transformation is a rule which makes an attachment decision depending on up to 3 elements of the ( v , nl , p , n2 ) quadruple .</sentence>
+				<definiendum id="0">transformation</definiendum>
+				<definiens id="0">a rule which makes an attachment decision depending on up to 3 elements of the ( v , nl , p</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Here f ( w , p ) is the number of times preposition p is seen attached to word w in the table .</sentence>
+				<definiendum id="0">p )</definiendum>
+				<definiens id="0">the number of times preposition p is seen attached to word w in the table</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This is effectively a comparison of the maximum likelihood estimates of/ ) ( pll , nl ) and P ( PI ( } , v ) , a different measure from the backed-off estimate which gives i5 ( lIv , p , nl ) .</sentence>
+				<definiendum id="0">P ( PI</definiendum>
+				<definiens id="0">( } , v ) , a different measure from the backed-off estimate which gives i5 ( lIv , p , nl )</definiens>
+			</definition>
+</paper>
+
+		<paper id="0102">
+			<definition id="0">
+				<sentence>Learning a lexicon consists of finding a grammar that reduces the entropy of a training character sequence .</sentence>
+				<definiendum id="0">Learning a lexicon</definiendum>
+				<definiens id="0">consists of finding a grammar that reduces the entropy of a training character sequence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>edby is a common English character sequence that occurs in passive constructions fike `` She was passed by the runner '' .</sentence>
+				<definiendum id="0">edby</definiendum>
+				<definiens id="0">a common English character sequence that occurs in passive</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>VP ( A ) V PP P N In English , verbs and prepositions in configuration ( A ) are closely coupled semantically , probably more closely than prepositions and nouns , and we would expect that the mutual information between the verb and preposition would be greater than between the preposition and noun , and greater still than between the verb and the noun .</sentence>
+				<definiendum id="0">VP</definiendum>
+				<definiens id="0">verbs and prepositions in configuration ( A ) are closely coupled semantically , probably more closely than prepositions and nouns , and we would expect that the mutual information between the verb</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In ( A ) , it completely ignores the relation between the verb and the prepositional phrase , save to predict that a prepositional phrase ( any prepositional phrase ) will follow the verb .</sentence>
+				<definiendum id="0">prepositional phrase</definiendum>
+				<definiens id="0">any prepositional phrase ) will follow the verb</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>So , the grammar S=~DP DP~CPD CP : :v-APC AP~ABP BP~ B assigns higher probabilities to the corpus , even though it fails to model the dependency between A and D. This is a general problem with SCFGs : there is no way to optimally model multiple ordered adjunction without increasing the number of nonterminals .</sentence>
+				<definiendum id="0">grammar S=~DP DP~CPD CP</definiendum>
+				<definiens id="0">a general problem with SCFGs : there is no way to optimally model multiple ordered adjunction without increasing the number of nonterminals</definiens>
+			</definition>
+</paper>
+
+		<paper id="0106">
+			<definition id="0">
+				<sentence>SITGs are a generalization of context-free grammars that have several desirable properties for parallel corpus analysis ; a brief summary of these properties is given in Section 2 .</sentence>
+				<definiendum id="0">SITGs</definiendum>
+				<definiens id="0">a generalization of context-free grammars that have several desirable properties for parallel corpus analysis</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An ITG is a context-free grammar that generates output on two separate streams , together with a matching that associates the corresponding tokens and constituents of each stream .</sentence>
+				<definiendum id="0">ITG</definiendum>
+				<definiens id="0">a context-free grammar that generates output on two separate streams</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Thus , the following are two distinct productions in an ITG : C ~ \ [ AB\ ] c ( A B ) Consider each nonterminal symbol to stand for a pair of matched strings , so that for example ( A1 , A2 ) denotes the string-pair generated by A. The operator \ [ \ ] performs the `` usual '' pairwise concatenation so that \ [ AB\ ] yields the string-pair ( C1 , C2 ) where C1 = AiB~ and C~ = A2B2 .</sentence>
+				<definiendum id="0">A2 )</definiendum>
+				<definiens id="0">] c ( A B ) Consider each nonterminal symbol to stand for a pair of matched strings</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A stochastic inversion transduction grammar is an ITG where a probability is associated with each production , subject to the constraint that ( ai_\ [ jk\ ] + ai~ ( jk ) ) + Z bi ( x , y ) = 1 l_ &lt; j , k &lt; N l_ &lt; x &lt; Wa l &lt; y &lt; W2 where ai_..~\ ] = P ( i ~ \ [ jk\ ] li ) , bi ( x , y ) = P ( i ~ x/yli ) , W1 and W2 are the vocabulary sizes of the two languages , and N is the number of nonterrninal categories. Under the stochastic formulation , the objective of parsing is to find the maximum-likelihood parse for a given sentence pair. A general algorithm for this is given in Wu ( 1995b ) . The following convenient theorem is proved in Wu ( 1995b ) , which indicates that any ITG can be converted to a normal form , where all productions are either lexical productions or binary-fanout productions : Theorem 1 For any inversion transduction grammar G , there exists an equivalent inversion transduction grammar G ' in which every production takes one of the following forms : S -- -~ e/e A ~ x/e A ~ \ [ BC\ ] A ~ x/y A ~ e/y A ~ ( BC ) 71 A \ [ A A\ ] A ( A A } A ~ ui/vj A ui/E bej A ~ e/vj for all i , j English-Chinese lexical translations for all i English vocabulary for all j Chinese vocabulary Figure 2 : A simple constituent-matching ITG. The algorithms in this paper assume that ITGs are in this normal form , with one slight relaxation. Lexical productions of the form A ~ x/y may generate multiple-word sequences , i.e. , x and g may each be more than one word. This does not affect the generative power , but allows probabilities to be placed on collocation translations. The form is called lexical normal form. ITGs impose two desirable classes of constraints on the space of possible matchings between sentences. Crossing constraints prohibit arrangements where the matchings between subtrees cross each another , unless the subtrees ' immediate parent constituents are also matched to each other. Aside from linguistic motivations stemming from the compositionality principle , this constraint is important for computational reasons , to avoid exponential bilingual matching times. Fanout constraints limit the number of direct sub-constituents of any single constituent , i.e. , the number of subtrees whose matchings may cross at any level. We have shown that ITGs inherently permit nearly free matchings for fanouts up to four , with strong constraints thereafter creating a rapid falloff in the proportion of matchings permitted ( Wu 1995a ) . This characteristic gives ITGs just the right degree of flexibility needed to map syntactic structures interlingually. Because the expressiveness of ITGs naturally constrains the space of possible matchings in a highly appropriate fashion , the possibility arises that the information supplied by a word-translation lexicon alone may be adequately discriminating to match constituents , without language-specific monolingual grammars for the source and target languages , simply by bringing the ITG constraints to bear in tandem with lexical matching. That is , the bilingual SITG parsing algorithm can perform constituent identification and matching using only a generic , language-independent bracketing grammar. Several earlier experiments ( Wu 1995a ) tested out variants of this hypothesis , using generic SITGs similar to the one shown in Figure 2 , which employs only one nonterminal category. The first two productions are sufficient to generate all possible matchings of ITG expressiveness ( this follows from the normal form theorem ) . The remaining productions are all lexical. Productions of the A -- + ui/v~ form list all word translations found in the translation lexicon , and the others list all potential singletons without corresponding translations. Thus , a parser with this grammar can build a bilingual parse tree for any possible ITG matching on a pair of input sentences. Probabilities on the grammar are placed as follows. The bii distribution encodes the English-Chinese translation lexicon with degrees of probability on each potential word translation. A small e-constant can be chosen for the probabilities bl , and b , i , so that the optimal matching resorts to these productions only when it is otherwise impossible to match the singletons. The result is that the maximum-likelihood parser selects the parse tree that best meets the combined lexical translation preferences , as expressed by the bij probabilities. Performance , as reported in Wu ( 1995a ) , was encouraging , with precision on automatically-filtered 72 Chinese : ~ { ~ ~ ~ { ~ + ~ iE ~ o English : They are right to do so A\ [ They/ { ~ A &lt; are/* right/~E~ to/* */~ do/ { ~ so/* &gt; A .</sentence>
+				<definiendum id="0">stochastic inversion transduction grammar</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the vocabulary sizes of the two languages</definiens>
+				<definiens id="1">the number of nonterrninal categories. Under the stochastic formulation , the objective of parsing is to find the maximum-likelihood parse for a given sentence</definiens>
+				<definiens id="2">any inversion transduction grammar G , there exists an equivalent inversion transduction grammar G ' in which every production takes one of the following forms : S --</definiens>
+				<definiens id="3">important for computational reasons , to avoid exponential bilingual matching times. Fanout constraints limit the number of direct sub-constituents of any single constituent , i.e. , the number of subtrees whose matchings may cross at any level. We have shown that ITGs inherently permit nearly free matchings for fanouts up to four , with strong constraints thereafter creating a rapid falloff in the proportion of matchings permitted ( Wu 1995a ) . This characteristic gives ITGs just the right degree of flexibility needed to map syntactic structures interlingually. Because the expressiveness of ITGs naturally constrains the space of possible matchings in a highly appropriate fashion , the possibility arises that the information supplied by a word-translation lexicon alone may be adequately discriminating to match constituents , without language-specific monolingual grammars for the source and target languages</definiens>
+				<definiens id="4">all lexical. Productions of the A -- + ui/v~ form list all word translations found in the translation lexicon</definiens>
+				<definiens id="5">the maximum-likelihood parser selects the parse tree that best meets the combined lexical translation preferences</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>73 SO SO SO -- -- ~ SO SO SO SO SO V2 V2 V2 V2 V2 Vl V1 V1 V1 V0 PP PP N1 N1 N1 N1 NO -- + \ [ so so\ ] ( so so ) Is so\ ] ( s so ) \ [ NI v2 I ( N1 V2 ) IN1 Vl\ ] ( N1 Vl ) \ [ N1 VB\ ] ( NI VB ) \ [ NP V2\ ] ( NP V2 ) \ [ NP V1\ ] ( NP V1 ) \ [ NP VB\ ] ( NP VB ) \ [ V2 PP\ ] ( V2 PP ) \ [ Vl PP\ ] ( Vl PP ) \ [ VB PP\ ] ( VB PP ) \ [ V1 N1\ ] ( V1 N1 ) IV1 NP\ ] ( V1 NP ) \ [ VBN1\ ] ( VB NI ) \ [ V0 NIl ( V0 N1 ) \ [ VB NP\ ] ( VB NP ) \ [ V0 NP\ ] ( V0 NP ) \ [ VB V0\ ] ( VB V0 ) \ [ INN1\ ] ( INN1 ) \ [ IN NP\ ] ( IN NP ) \ [ N1 PP\ ] ( N1 PP ) \ [ NP PP\ ] ( NP PP ) \ [ DT NO\ ] ( DT NO ) \ [ DT NN\ ] ( DT NN ) \ [ NN NG \ [ ( NN NO ) start symbol ditransitive verb phrases transitive verb phrases verb sequences prepositional phrases noun phrases complex nominals Figure 4 : Syntactic productions of a stochastic constituent-matching ITG .</sentence>
+				<definiendum id="0">] ( VB NI ) \ [ V0 NIl ( V0 N1</definiendum>
+				<definiens id="0">PP PP N1 N1 N1 N1 NO -- + \ [ so so\ ] ( so so ) Is so\ ] ( s so ) \ [ NI v2 I ( N1 V2</definiens>
+				<definiens id="1">Syntactic productions of a stochastic constituent-matching ITG</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( jk ) = P\ [ i ~ ( jk ) used I i used , S =~ E/C , , I ) \ ] Substitution yields a re-estimation procedure for A : T T V V ( 21 ) hi -- ~k\ ] = , =0 t ... . 0o=~s= , u=~ , T T V V E E E 8=0 t=8 ~=Ov=~ T T V V t v 8=0 t=8 u=O V=U S= , s V=~ ( 22 ) 5~_ ( jk ) = T T V V The behavior of a typical training run is shown in Figure 7 .</sentence>
+				<definiendum id="0">Substitution</definiendum>
+				<definiens id="0">yields a re-estimation procedure for A : T T V V ( 21 ) hi -- ~k\ ] = , =0 t ... . 0o=~s= , u=~ , T T V V E E E 8=0 t=8 ~=Ov=~ T T V V t v 8=0 t=8 u=O V=U S= , s V=~ ( 22 ) 5~_ ( jk ) = T T V V The behavior of a</definiens>
+			</definition>
+</paper>
+
+		<paper id="0107">
+			<definition id="0">
+				<sentence>e I Candidate Rules Cu nt Corpus ~1 Select Rule \ ] ¢ Apply Rule I Figure 1 : Transformation-Based Learning \ [ N Eastern Airlines N\ ] \ [ N ' creditors N\ ] \ [ V have begun exploring v\ ] \ [ N alternative approaches N\ ] \ [ N to a Chapter 11 reorganization N\ ] \ [ Y because v\ ] \ [ g they Y\ ] \ [ Y are unhappy v\ ] \ [ g with the carrier N\ ] \ [ g 's latest proposal N\ ] • \ [ N Indexing N\ ] \ [ N for the most part N\ ] \ [ v has involved simply buying v\ ] \ [ w and then holding v\ ] \ [ Y stocks N\ ] \ [ Y in the correct mix N\ ] \ [ Y to mirror V\ ] \ [ g a stock market barometer g\ ] • These two kinds of chunk structure derived from the Treebank data were encoded as chunk tags attached to each word and provided the targets for the transformation-based learning .</sentence>
+				<definiendum id="0">Transformation-Based Learning</definiendum>
+				<definiens id="0">] \ [ g a stock market barometer g\ ] • These two kinds of chunk structure derived from the Treebank data were encoded as chunk tags attached to each word</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In the experiments that partitioned text into N and V chunks , we use the chunk tag set { BN , N , BV , V , P ) , where BN marks the first word and N the succeeding words in an N-type group while BY and Y play the same role for V-type groups .</sentence>
+				<definiendum id="0">BN marks</definiendum>
+				<definiens id="0">the first word</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Punctuation marks , which are ignored in Abney 's chunk grammar , but which the Treebank data treats as normal lexical items with their own part-of-speech tags , are unambiguously assigned the chunk tag P. Items tagged P are allowed to appear within N or V chunks ; they are irrelevant as far as chunk boundaries are concerned , but they are still available to be matched against as elements of the left hand sides of rules .</sentence>
+				<definiendum id="0">Punctuation marks</definiendum>
+				<definiens id="0">V chunks ; they are irrelevant as far as chunk boundaries are concerned , but they are still available to be matched against as elements of the left hand sides of rules</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , even though the confusion matrix does not usefully subdivide the space of possible rules when the tag set is this small , it is still possible to apply a similar optimization by sorting the entire list of candidate rules on the basis of their positive scores , and then processing the candidate rules ( which means determining their negative scores and thus their net scores ) in order of decreasing positive scores .</sentence>
+				<definiendum id="0">candidate rules</definiendum>
+				<definiens id="0">means determining their negative scores and thus their net scores ) in order of decreasing positive scores</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Treebank tags the words `` and '' and frequently `` , '' with the part-of-speech tag CC , which the baseline system again predicted would fall most often outside of a baseNP 3 .</sentence>
+				<definiendum id="0">Treebank</definiendum>
+				<definiens id="0">tags the words `` and '' and frequently `` , '' with the part-of-speech tag CC , which the baseline system again predicted would fall</definiens>
+			</definition>
+</paper>
+
+		<paper id="0114">
+			<definition id="0">
+				<sentence>Note that this list consists of many single character words which have ambiguities in Chinese , English words which should have been part of a compound word , multiple translations of a single word in English , etc .</sentence>
+				<definiendum id="0">English</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0115">
+			<definition id="0">
+				<sentence>Recall is the fraction of the source language 's vocabulary that appears in the lexicon .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">the fraction of the source language 's vocabulary that appears in the lexicon</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In other words , the relative magnitude of dependence between S and its candidate translations was used as a maximum likelihood estimator of the translations of S. 189 The POS Filter is a predicate filter .</sentence>
+				<definiendum id="0">POS Filter</definiendum>
+				<definiens id="0">a predicate filter</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>190 The MRBD Filter is an oracle filter .</sentence>
+				<definiendum id="0">MRBD Filter</definiendum>
+				<definiens id="0">an oracle filter</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>It is based on the assumption that if a candidate translation pair ( S , T ) appears in an oracle list of likely translations , then T is the correct translation of S in their sentence i pair , and there are no other translations of S or T in that sentence pair .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">the correct translation of S in their sentence i pair , and there are no other translations of S or T in that sentence pair</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For example , BIBLE evaluations were used to find the precise optimum value for the LCSR cut-off in the Cognate Filter .</sentence>
+				<definiendum id="0">BIBLE</definiendum>
+				<definiens id="0">evaluations were used to find the precise optimum value for the LCSR cut-off in the Cognate Filter</definiens>
+			</definition>
+</paper>
+
+		<paper id="0113">
+			<definition id="0">
+				<sentence>Words Extracted from Susanne Corpus for Some Susanne Tags SusannelTags Words LOB Tags CC and plus &amp; And ond CC IW with WITHOUT without WITH With IN NNlux NN 2 WM physics math politics mathematics Athletics associates &lt; apos &gt; m am ai &lt; bbold &gt; &lt; bital &gt; rrL NN NNS BEM &lt; No Match &gt; 163 Column three in Table 1 denotes the correct mapping to LOB tags .</sentence>
+				<definiendum id="0">Words</definiendum>
+				<definiens id="0">Extracted from Susanne Corpus for Some Susanne Tags SusannelTags Words LOB Tags CC and plus &amp; And ond CC IW with WITHOUT without WITH With IN NNlux NN</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In these three mappings , LOB tag IN is the most frequent and the only one mapping , and IN is a candidate for IW .</sentence>
+				<definiendum id="0">LOB tag IN</definiendum>
+				<definiendum id="1">IN</definiendum>
+				<definiens id="0">a candidate for IW</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Definition 1 : ( For Two Parts of Speech ) a=F ( Pl , P2 ) b=F ( P2 ) -F ( P l , p 2 ) c=F ( P 1 ) -F ( p l , P2 ) d=N-a-b-c where Pi denotes part-of-speech i , F ( p 1 , P2 ) is the frequency of which P2 follows p 1 , F ( Pl ) and F ( P2 ) are the frequencies of Pl and P2 , and N is the corpus size in terms of the number of words in training corpus .</sentence>
+				<definiendum id="0">Pi</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">part-of-speech i</definiens>
+				<definiens id="1">the frequency of which P2 follows p 1 , F ( Pl ) and F ( P2 ) are the frequencies of Pl and P2 , and</definiens>
+				<definiens id="2">the corpus size in terms of the number of words in training corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>F ( cl , c2 ) is the frequency of which c 2 follows el , F ( cl ) and F ( c2 ) are the frequencies ofc 1 and c2 , and N is the corpus size m terms of the number of words in training corpus .</sentence>
+				<definiendum id="0">F ( cl</definiendum>
+				<definiendum id="1">F ( cl</definiendum>
+				<definiendum id="2">N</definiendum>
+				<definiens id="0">the frequency of which c 2 follows el ,</definiens>
+				<definiens id="1">the corpus size m terms of the number of words in training corpus</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Definition 3 : ( For Two Parts of Speech ) a = F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) b = F ( \ [ Pi\ ] ) F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) e = F ( \ [ Pi+l\ ] ) F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) d=N-a-b -c where Pi denotes part-of-speech i , F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) is the frequency of which Pi+l follows Pi , F ( \ [ Pi\ ] ) and F ( \ [ Pi+l\ ] ) are the frequencies of Pi and Pi+l , and N is the corpus size in terms of the number of words in training corpus .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">( For Two Parts of Speech ) a = F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) b = F ( \ [ Pi\ ] ) F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) e = F ( \ [ Pi+l\ ] ) F ( \ [ Pi\ ] , \ [ Pi+l\ ] ) d=N-a-b -c where Pi denotes part-of-speech i</definiens>
+				<definiens id="1">the frequency of which Pi+l follows Pi , F ( \ [ Pi\ ] ) and F ( \ [ Pi+l\ ] ) are the frequencies of Pi and Pi+l , and</definiens>
+				<definiens id="2">the corpus size in terms of the number of words in training corpus</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Probabilistic Chunker ( A_Sequence Of Tags ) Begin Output ( `` \ [ `` ) ; Position=l ; Calculate ~2 a for Current Position By Definition 3 ; Position=Position+ 1 ; While ( Position &lt; N ) Begin Calculate , l,2b for Current Position By Definition 3 ; Output ( A_Sequence Of Tags\ [ Position-l\ ] ) ; If ( , l,2a &lt; , I,2b ) Then Output ( `` \ ] \ [ `` ) ; ~2a= ( I ) 2b ; Position=Position+ l ; End End Output ( A_Sequence Of Tags\ [ N-l\ ] ) ; Output ( `` \ ] \ [ `` ) ; Output ( A_Sequence Of Tags\ [ N\ ] ) ; Output ( `` \ ] '' ) ; Definition 4 : ( For Three Parts of Speech ) Left Chunk a = F ( \ [ pi , Pi+l\ ] , \ [ Pi+2\ ] ) b = F ( \ [ Pi+2\ ] ) F ( \ [ pi , Pi+l\ ] , \ [ Pi+2\ ] ) c = F ( \ [ Pi , Pi+l\ ] ) `` F ( \ [ Pi , Pi+l\ ] , \ [ Pi+2\ ] ) d=N-a-b -c where Pi denotes part-of-speech i , F ( \ [ Pi , Pi+l\ ] , \ [ Pi+2\ ] ) is the frequency of which Pi+l , Pi+2 follows Pi , F ( \ [ pi , Pi+l\ ] ) and F ( \ [ Pi+2\ ] ) are the frequencies of ( pi , Pi+l ) and Pi+2 , and N is the corpus size m terms of the number of words in training corpus .</sentence>
+				<definiendum id="0">Probabilistic Chunker ( A_Sequence Of Tags ) Begin Output</definiendum>
+				<definiendum id="1">While</definiendum>
+				<definiendum id="2">Output</definiendum>
+				<definiendum id="3">N</definiendum>
+				<definiens id="0">Position=Position+ l ; End End Output ( A_Sequence Of Tags\ [ N-l\ ] ) ; Output ( `` \ ] \ [ `` ) ; Output ( A_Sequence Of Tags\ [ N\ ] ) ; Output ( `` \ ] '' ) ; Definition 4 : ( For Three Parts of Speech ) Left Chunk a = F ( \ [ pi , Pi+l\ ] , \ [ Pi+2\ ] ) b = F ( \ [ Pi+2\ ] ) F ( \ [ pi , Pi+l\ ] , \ [ Pi+2\ ] ) c = F ( \ [ Pi , Pi+l\ ] ) `` F ( \ [ Pi , Pi+l\ ] , \ [ Pi+2\ ] ) d=N-a-b -c where Pi denotes part-of-speech i</definiens>
+				<definiens id="1">the frequency of which Pi+l , Pi+2 follows Pi , F ( \ [ pi , Pi+l\ ] ) and F ( \ [ Pi+2\ ] ) are the frequencies of ( pi , Pi+l ) and Pi+2 , and</definiens>
+				<definiens id="2">the corpus size m terms of the number of words in training corpus</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Right Chunk a = F ( \ [ Pi\ ] , \ [ pi+ 1 , Pi+2\ ] ) b = F ( \ [ Pi+l , Pi+2\ ] ) F ( \ [ Pi\ ] , \ [ Pi+I , Pi+2\ ] ) c = F ( \ [ Pi\ ] ) F ( \ [ Pi\ ] , \ [ Pi+l , Pi+2\ ] ) d=N-a-b -c where Pi denotes part-of-speech i , F ( \ [ Pi\ ] , \ [ Pi+I , Pi+2\ ] ) is the frequency of which Pi+l , Pi+2 follows Pi , F ( \ [ pi\ ] ) and F ( \ [ Pi+l , Pi+2\ ] ) are the frequencies of Pi and ( Pi+l , Pi+2 ) , and N is the corpus size in terms of the number of words m training corpus .</sentence>
+				<definiendum id="0">F ( \</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">) b = F ( \ [ Pi+l , Pi+2\ ] ) F ( \ [ Pi\ ] , \ [ Pi+I , Pi+2\ ] ) c = F ( \ [ Pi\ ] ) F ( \ [ Pi\ ] , \ [ Pi+l , Pi+2\ ] ) d=N-a-b -c where Pi denotes part-of-speech i</definiens>
+				<definiens id="1">the frequency of which Pi+l , Pi+2 follows Pi ,</definiens>
+				<definiens id="2">the corpus size in terms of the number of words m training corpus</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Assume the chunk length is the number of tags in a chunk .</sentence>
+				<definiendum id="0">Assume the chunk length</definiendum>
+				<definiens id="0">the number of tags in a chunk</definiens>
+			</definition>
+</paper>
+
+		<paper id="0111">
+			<definition id="0">
+				<sentence>( : p ( WlW2 ) ) l ( WlW2 ) = l°g~ , p ( wl ) p ( w2 ) where p ( wlw2 ) is the frequency in the data collection of the two-word compound ( wl , w2 ) ; and p ( wl ) and p ( w2 ) the frequency of the word constituents .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiens id="0">the frequency in the data collection of the two-word compound</definiens>
+			</definition>
+</paper>
+
+		<paper id="0104">
+			<definition id="0">
+				<sentence>We treat context-sensitive spelling correction as a task of word disambiguation .</sentence>
+				<definiendum id="0">context-sensitive spelling correction</definiendum>
+				<definiens id="0">a task of word disambiguation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The straightforward way would be to use a. maximum likelihood estimate -we 42 would count Mi , the total number of occurrences of wi in the training corpus , and mi , the number of such occurrences for which cj occurred within ±k words , and we would then take the ratio mi/~4i.2 Unfortunately , we may not have enough training data to get an accurate estimate this way .</sentence>
+				<definiendum id="0">mi</definiendum>
+				<definiens id="0">the total number of occurrences of wi in the training corpus , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We then ignore a context word c if : l &lt; i &lt; n l &lt; i &lt; n where mi and Mi are defined as above. In other words , e is ignored if it practically never occurs within the context of any wi , or if it practically always occurs within the context of every wi. In the former case , we have insufficient data to measure its presence ; in the latter , its absence. Besides the reason of insufficient data , a second reason to ignore a context word is if it does not help discriminate among the words in the confusion set. For instance , if we are trying to decide between I and me , then the presence of the in the context probably does not help. By ignoring such words , we eliminate a source of noise in our discrimination procedure , as well as reducing storage requirements and run time. To determine whether a context word e is a useful discriminator , we run a chi-squa.re test \ [ Fleiss , 1981\ ] to check for an association between the presence of c and the choice of word in the confusion set. If the observed association is not judged to be significant , a then c is discarded. The significance level is currently set to 0.05. Figure 1 pulls together the points of the preceding discussion into an outline of the method of context words. In the training phase , it identifies a list of context words that are useful for discriminating among the words in the confusion set. At run time , it estimates the probability of each word in the confusion set. It starts with the prior probabilities , and multiplies them by the likelihood of each context word fl'om its list that appears in the ±k-word window of the target word. Finally , it selects the word in the confusion set with the greatest probability. The main parameter to tune for the method of context words is k , the half-width of the context window. Previous work \ [ Yarowsky , 1994\ ] shows that smaller values of k ( 3 or 4 ) work well for resolving local syntactic ambiguities , while larger values ( 20 to 50 ) are suitable for resolving semantic ambiguities. We tried the values 3 , 6 , 12 , and 24 on some practice confusion sets ( not shown here ) , and found that k = 3 generally did best , indicating that most of the action , for our task and confusion sets , comes fl'om local syntax. In the rest of this paper , this value of k will be used. =We are interpreting the condition `` cj occurs within a =l=k-word window of wi '' as a binary feature -either it happens , or it does not. This allows us to handle context words in the same Bayesian framework as will be used later for other binary features ( see Section 3.3 ) . A more conventional interpretation is to take into account the number of occurrences of each cj within the : :l=k-word window , and to estimate p ( cjlwi ) accordingly. However , either interpretation is valid , as long as it is applied consistently -that is , both when estimating the likelihoods from training data , and when classifying test. cases. 3An association is significant if the probability that it occurred by chance is low. This is not a statement about the strength of the association. Even a weak association may be judged significant if there are enough data to support it. Measures of the strength of association will be discussed in Section 3.4. 43 Training phase ( 1 ) Propose all words as candidate context words. ( 2 ) Count occurrences of each candidate context word in the training corpus. ( 3 ) Prune context words that have insufficient data or are uninformative discriminators. ( 4 ) Store the remaining context words ( and their associated statistics ) for use at run time. Run time ( 1 ) Initialize the probability for each word in the confusion set to its prior probability. ( 2 ) Go through the list of context words that was saved during training. For each context word that appears in the context of the ambiguous target word , update the probabilities. ( 3 ) Choose the word in the confusion set with the highest probability. Figure 1 : Outline of the method of context words. Table 2 shows the effect of varying k for our usual collection of confusion sets. It can be seen that performance generally degrades as k increases. The reason is that the method starts picking up spurious correlations in the training corpus. Table 4 gives some examples of the context words learned for the confusion set { peace , piece } , with k = 24. The context words coTTs , united , nations , etc. , all imply peace , and appear to be plausible ( although united and nations are a counterexample to our earlier assumption of independence ) . On the other hand , consider the context word how , which allegedly also implies peace. If we look back at the training corpus for the supporting data for this word , we find excerpts such as : But oh , how I do sometimes need just a moment of rest , and peace ... No matter how earnest is our quest for guaranteed peace ... How best to destroy your peace ? There does not seem to be a necessary connection here between how and peace ; the correlation is probably spurious. Although we are using a chi-square test expressly to filter out such spurious correlations , we can only expect the test to catch 95 % of them ( given that the significance level was set to 0.05 ) . As mentioned above , most of the legitimate context words show up for small k ; thus as k gets large , the limited number of legitimate context words gets overwhelmed by the 5 % of the spurious correlations that make it through our filter. The method of context words is good at capturing generalities that depend on the presence of nearby words , but not their order. When order matters , other more syntax-based methods , such as collocations and trigrams , are appropriate. In the work reported here , the method of collocations was used to capture order dependencies. A collocation expresses a pattern of syntactic elements around the target word. We allow two types of syntactic elements : words , and part-of-speech tags. Going back to the { desert , dessert } example , a collocation that would imply desert might be : PREP the 44 Confusion set whether I its past than being effect your number council ri se between led except peace there principle sight Baseline Avg no. of context words Cwords Cwords Cwords Cwords :1=3 =t=6 =i:12 =t=24 27.9 36.9 55.9 92.9 Table 2 : Performance of the method of context words as a function of k , the half-width of the context window. The bottom line of the table shows the number of context words learned , averaged over all confusion sets , also as a function of k. This collocation would match the sentences : Travelers entering from the desert were confounded ... ... along with some guerrilla fighting in the desert. ... two ladies who lay pinkly nude beside him in the desert ... Matching part-of-speech tags ( here , PREP ) against the sentence is done by first tagging each word in the sentence with its set of possible part-of-speech tags , obtained from a dictionary. For instance , walk has the tag set { NS , V } , corresponding to its use as a singular noun and as a verb. 4 For a tag to match a word , the tag must be a member of the word 's tag set. The reason we use tag sets , instead of running a tagger on the sentence to produce unique tags , is that taggers need to look at all words in the sentence , which is impossible when the target word is taken to be ambiguous ( but see the trigram method in Section 4 ) . The method of collocations was implemented in much the same way as the method of context words. The idea. is to discriminate among the words wi in the confusion set by identifying the collocations that tend to occur around each wi. An ambiguous target word is then classified by finding all collocations that match its context. Each collocation provides some degree of evidence 4Our tag inventory contains 40 tags , and includes the usual categories for determiners , nouns , verbs , modals , etc. , a few specialized tags ( for be , have , and do ) , and a dozen compound tags ( such as V+PRO for let 's ) . 45 for each word in the confusion set. This evidence is combined using Bayes ' rule. In the end , the wi with the highest probability , given the evidence , is selected. A new complication arises for collocations , however , in that collocations , unlike context words , can not be assumed independent. Consider , for example , the following collocations for desert : PREP the in the the __ These collocations are highly interdependent -we will say they conflict. To deal with this problem , we invoke our earlier observation that there is no need to use all the evidence. If two pieces of evidence conflict , we simply eliminate one of them , and base our decision on the rest of the evidence. We identify conflicts by the heuristic that two collocations conflict iff they overlap. The overlapping portion is the factor they have in common , and thus represents their lack of independence. This is only a heuristic because we could imagine collocations that do not overlap , but still conflict. Note , incidentally , that there can be at most two non-conflicting collocations for any decision -one matching on the left-hand side of the target word , and one on the right. Having said that we resolve conflicts between two collocations by eliminating one of them , we still need to specify which one. Our approach is to assign each one a strength , just as Yarowsky \ [ 1994\ ] does in his hybrid method , and to eliminate the one with the lower strength. This preserves the strongest non-conflicting evidence as the basis for our answer. The strength of a collocation reflects its reliability for decision-making ; a further discussion of strength is deferred to Section 3.4. Figure 2 ties together the preceding discussion into an outline of the method of collocations. The method is described in terms of `` features '' rather than `` collocations '' to reflect its full generality ; the features could be context words as well a.s collocations. In fact , the method subsumes the method of context words -it does everything that method does , and resolves conflicts among its features as well. To facilitate the conflict resolution , it sorts the features by decreasing strength. Like the method of context words , the method of collocations has one main parameter to tune : e , the maximum number of syntactic elements in a collocation. Since the number of collocations grows exponentially with e , it was only practical to vary g from 1 to 3. We tried this on some practice confusion sets , and found that all values of g gave roughly comparable performance. We selected g = 2 to use from here on , as a compromise between reducing the expressive power of collocations ( with g = 1 ) and incurring a high computational cost ( with g = 3 ) . Table 3 shows the results of varying f for the usual confusion sets. There is no clear winner ; each value of g did best for certain confusion sets. Table 5 gives examples of the collocations learned for { peace , piece } with g = 2. A good deal of redundancy can be seen among the collocations. There is also some redundancy between the collocations and the context words of the previous section ( e.g. , for corps ) . Many of the collocations a.t the end of the list appear to be overgeneral and irrelevant. Yarowsky \ [ 1994\ ] pointed out the complementarity between context words and collocations : context words pick up those generalities that are best expressed in an order-independent way , while collocations capture order-dependent generalities. Yarowsky proposed decision lists as a way to get the best of both methods. The idea is to make one big list of all features -in this case , context words and collocations. The features are sorted in order of decreasing strength , where the strength of a feature reflects its reliability for decision-making. An ambiguous target word is then classified by running down the list and matching each feature against the target context. The first feature that 46 Training phase ( 1 ) ( 2 ) ( 3 ) ( 3.5 ) ( 4 ) Propose all possible features as candidate features. Count occurrences of each candidate feature in the training corpus. Prune features that have insufficient data or are uninformative discriminators. Sort the remaining features in order of decreasing strength. Store the list of features ( and their associated statistics ) for use at run time. Run time ( 1 ) ( 2 ) ( 3 ) Initialize the probability for each word in the confusion set to its prior probability. Go through the sorted list of features that was saved during training. For each feature that matches the context of the ambiguous target word , and does not conflict with a feature accepted previously , update the probabilities. Choose the word in the confiision set with the highest probability. Figure 2 : Outline of the method of collocations. Differences from the method of context words are highlighted in boldface. The method is described in terms of `` features '' rather than `` collocations '' to reflect its full generality. matches is used to classify the target word. Yarowsky \ [ 1994\ ] describes further refinements , such as detecting and pruning features that make a zero or negative contribution to overall performance. The method of decision lists , as just described , is almost the same as the method for collocations in Figure 2 , where we take `` features '' in that figure to include both context words and collocations. The main difference is that during evidence gathering ( step ( 2 ) at run time ) , decision lists terminate after matching the first feature. This obviates the need for resolving conflicts between features. Given that decision lists base their answer for a problem on the single strongest feature , their performance rests heavily on how the strength of a feature is defined. Yarowsky \ [ 1994\ ] used the following metric to calculate the strength of a feature f : abs/log ( p ( wllf ) ) reliability ( f ) \ \p ( w21f ) \ ] \ ] This is for the case of a confusion set of two words , wl and w2. It can be shown that this metric produces the identical ranking of features as the following somewhat simpler metric , provided p ( wi\ ] f ) &gt; 0 for all i : s reliability ' ( f ) = m.ax p ( wilf ) As an example of using tile metric , suppose f is the context word arid , and suppose that arid cooccurs 10 times with desert and 1 time with dessert in the training corpus .</sentence>
+				<definiendum id="0">I</definiendum>
+				<definiens id="0">a context word c if : l &lt; i &lt; n l &lt; i &lt; n where mi</definiens>
+				<definiens id="1">ignored if it practically never occurs within the context of any wi , or if it practically always occurs within the context of every wi. In the former case</definiens>
+				<definiens id="2">a second reason to ignore a context word is if it does not help discriminate among the words in the confusion set. For instance , if we are trying to decide between I and me , then the presence of the in the context probably does not help. By ignoring such words</definiens>
+				<definiens id="3">a useful discriminator , we run a chi-squa.re test \ [ Fleiss , 1981\ ] to check for an association between the presence of c and the choice of word in the confusion set. If the observed association is not judged to be significant , a then c is discarded. The significance level is currently set to 0.05. Figure 1 pulls together the points of the preceding discussion into an outline of the method of context words. In the training phase , it identifies a list of context words that are useful for discriminating among the words in the confusion set. At run time , it estimates the probability of each word in the confusion set. It starts with the prior probabilities , and multiplies them by the likelihood of each context word fl'om its list that appears in the ±k-word window of the target word. Finally , it selects the word in the confusion set with the greatest probability. The main parameter to tune for the method of context words is k , the half-width of the context window. Previous work \ [ Yarowsky , 1994\ ] shows that smaller values of k ( 3 or 4 ) work well for resolving local syntactic ambiguities , while larger values ( 20 to 50 ) are suitable for resolving semantic ambiguities. We tried the values 3 , 6 , 12 , and 24 on some practice confusion sets ( not shown here ) , and found that k = 3 generally did best , indicating that most of the action , for our task and confusion sets , comes fl'om local syntax. In the rest of this paper , this value of k will be used. =We are interpreting the condition `` cj occurs within a =l=k-word window of wi '' as a binary feature -either it happens , or it does not. This allows us to handle context words in the same Bayesian framework as will be used later for other binary features ( see Section 3.3 ) . A more conventional interpretation is to take into account the number of occurrences of each cj within the : :l=k-word window , and to estimate p ( cjlwi ) accordingly. However , either interpretation is valid , as long as it is applied consistently -that is , both when estimating the likelihoods from training data , and when classifying test. cases. 3An association is significant if the probability that it occurred by chance is low. This is not a statement about the strength of the association. Even a weak association may be judged significant if there are enough data to support it. Measures of the strength of association will be discussed in Section 3.4. 43 Training phase ( 1 ) Propose all words as candidate context words. ( 2 ) Count occurrences of each candidate context word in the training corpus. ( 3 ) Prune context words that have insufficient data or are uninformative discriminators. ( 4 ) Store the remaining context words ( and their associated statistics ) for use at run time. Run time ( 1 ) Initialize the probability for each word in the confusion set to its prior probability. ( 2 ) Go through the list of context words that was saved during training. For each context word that appears in the context of the ambiguous target word , update the probabilities. ( 3 ) Choose the word in the confusion set with the highest probability. Figure 1</definiens>
+				<definiens id="4">the method starts picking up spurious correlations in the training corpus. Table 4 gives some examples of the context words learned for the confusion set { peace , piece } , with k = 24. The context words coTTs , united , nations , etc. , all imply peace , and appear to be plausible ( although united and nations are a counterexample to our earlier assumption of independence ) . On the other hand , consider the context word how , which allegedly also implies peace. If we look back at the training corpus for the supporting data for this word , we find excerpts such as : But oh , how I do sometimes need just a moment of rest , and peace ... No matter how earnest is our quest for guaranteed peace ... How best to destroy your peace ? There does not seem to be a necessary connection here between how and peace ; the correlation is probably spurious. Although we are using a chi-square test expressly to filter out such spurious correlations , we can only expect the test to catch 95 % of them ( given that the significance level was set to 0.05 ) . As mentioned above , most of the legitimate context words show up for small k ; thus as k gets large , the limited number of legitimate context words gets overwhelmed by the 5 % of the spurious correlations that make it through our filter. The method of context words is good at capturing generalities that depend on the presence of nearby words , but not their order. When order matters , other more syntax-based methods , such as collocations and trigrams</definiens>
+				<definiens id="5">the method of collocations was used to capture order dependencies. A collocation expresses a pattern of syntactic elements around the target word. We allow two types of syntactic elements : words , and part-of-speech tags. Going back to the { desert , dessert } example , a collocation that would imply desert might be : PREP the 44 Confusion set whether</definiens>
+				<definiens id="6">a function of k , the half-width of the context window. The bottom line of the table shows the number of context words learned , averaged over all confusion sets , also as a function of k. This collocation would match the sentences : Travelers entering from the desert were confounded ... ... along with some guerrilla fighting in the desert. ... two ladies who lay pinkly nude beside him in the desert ... Matching part-of-speech tags ( here , PREP ) against the sentence is done by first tagging each word in the sentence with its set of possible part-of-speech tags , obtained from a dictionary. For instance , walk has the tag set { NS , V } , corresponding to its use as a singular noun and as a verb. 4 For a tag to match a word , the tag must be a member of the word 's tag set. The reason we use tag sets , instead of running a tagger on the sentence to produce unique tags , is that taggers need to look at all words in the sentence , which is impossible when the target word is taken to be ambiguous ( but see the trigram method in Section 4 ) . The method of collocations was implemented in much the same way as the method of context words. The idea. is to discriminate among the words wi in the confusion set by identifying the collocations that tend to occur around each wi. An ambiguous target word is then classified by finding all collocations that match its context. Each collocation provides some degree of evidence 4Our tag inventory contains 40 tags , and includes the usual categories for determiners , nouns , verbs , modals , etc. , a few specialized tags ( for be , have , and do ) , and a dozen compound tags ( such as V+PRO for let 's ) . 45 for each word in the confusion set. This evidence is combined using Bayes ' rule. In the end , the wi with the highest probability , given the evidence , is selected. A new complication arises for collocations , however , in that collocations , unlike context words , can not be assumed independent. Consider , for example , the following collocations for desert : PREP the in the the __ These collocations are highly interdependent -we will say they conflict. To deal with this problem</definiens>
+				<definiens id="7">no need to use all the evidence. If two pieces of evidence conflict , we simply eliminate one of them , and base our decision on the rest of the evidence. We identify conflicts by the heuristic that two collocations conflict iff they overlap. The overlapping portion is the factor they have in common , and thus represents their lack of independence. This is only a heuristic because we could imagine collocations that do not overlap , but still conflict. Note , incidentally , that there can be at most two non-conflicting collocations for any decision -one matching on the left-hand side of the target word , and one on the right. Having said that we resolve conflicts between two collocations by eliminating one of them , we still need to specify which one. Our approach is to assign each one a strength , just as Yarowsky \ [ 1994\ ] does in his hybrid method , and to eliminate the one with the lower strength. This preserves the strongest non-conflicting evidence as the basis for our answer. The strength of a collocation reflects its reliability for decision-making ; a further discussion of strength is deferred to Section 3.4. Figure 2 ties together the preceding discussion into an outline of the method of collocations. The method is described in terms of `` features '' rather than `` collocations '' to reflect its full generality</definiens>
+				<definiens id="8">main parameter to tune : e , the maximum number of syntactic elements in a collocation. Since the number of collocations grows exponentially with e , it was only practical to vary g from 1 to 3. We tried this on some practice confusion sets , and found that all values of g gave roughly comparable performance. We selected g = 2 to use from here on , as a compromise between reducing the expressive power of collocations ( with g = 1 ) and incurring a high computational cost ( with g = 3 ) . Table 3 shows the results of varying f for the usual confusion sets. There is no clear winner ; each value of g did best for certain confusion sets. Table 5 gives examples of the collocations learned for { peace , piece } with g = 2. A good deal of redundancy can be seen among the collocations. There is also some redundancy between the collocations and the context words of the previous section ( e.g. , for corps ) . Many of the collocations a.t the end of the list appear to be overgeneral and irrelevant. Yarowsky \ [ 1994\ ] pointed out the complementarity between context words and collocations : context words pick up those generalities that are best expressed in an order-independent way , while collocations capture order-dependent generalities. Yarowsky proposed decision lists as a way to get the best of both methods. The idea is to make one big list of all features -in this case , context words and collocations. The features are sorted in order of decreasing strength , where the strength of a feature reflects its reliability for decision-making. An ambiguous target word is then classified by running down the list and matching each feature against the target context. The first feature that 46 Training phase ( 1 ) ( 2 ) ( 3 ) ( 3.5 ) ( 4 ) Propose all possible features as candidate features. Count occurrences of each candidate feature in the training corpus. Prune features that have insufficient data or are uninformative discriminators. Sort the remaining features in order of decreasing strength. Store the list of features ( and their associated statistics ) for use at run time. Run time ( 1 ) ( 2 ) ( 3 ) Initialize the probability for each word in the confusion set to its prior probability. Go through the sorted list of features that was saved during training. For each feature that matches the context of the ambiguous target word , and does not conflict with a feature accepted previously , update the probabilities. Choose the word in the confiision set with the highest probability. Figure 2 : Outline of the method of collocations. Differences from the method of context words are highlighted in boldface. The method is described in terms of `` features '' rather than `` collocations '' to reflect its full generality. matches is used to classify the target word. Yarowsky \ [ 1994\ ] describes further refinements , such as detecting and pruning features that make a zero or negative contribution to overall performance. The method of decision lists</definiens>
+				<definiens id="9">that during evidence gathering ( step ( 2 ) at run time ) , decision lists terminate after matching the first feature. This obviates the need for resolving conflicts between features. Given that decision lists base their answer for a problem on the single strongest feature , their performance rests heavily on how the strength of a feature is defined. Yarowsky \ [ 1994\ ] used the following metric to calculate the strength of a feature f : abs/log ( p ( wllf ) ) reliability ( f ) \ \p ( w21f ) \ ] \ ] This is for the case of a confusion set of two words , wl and w2. It can be shown that this metric produces the identical ranking of features as the following somewhat simpler metric , provided p ( wi\ ] f ) &gt; 0 for all i : s reliability ' ( f ) = m.ax p ( wilf ) As an example of using tile metric , suppose f is the context word arid , and suppose that arid cooccurs 10 times with desert and 1 time with dessert in the training corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>U ( xly ) measures how much additional information we get about the presence of the feature by knowing the choice of word in the confusion set .</sentence>
+				<definiendum id="0">U</definiendum>
+				<definiens id="0">measures how much additional information we get about the presence of the feature by knowing the choice of word in the confusion set</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>48 Context word peace piece corps peace united nations our heart justice state ameri can aid international women war world piece over must great under how two for about every little long one the so 49 1 41 1 20 0 15 0 27 1 12 0 12 0 12 0 11 0 11 0 11 0 10 0 20 1 40 3 1 15 1 14 11 1 11 1 10 1 10 1 5 12 83 38 4 9 4 9 5 10 6 11 14 23 179 113 9 14 16 22 Total occurrences 184 126 Collocation w corps DET w corps ADV __ corps the __ corps __ and __ of NS the __ NS a __ PREP PREP __ of a __ of for and NS DET __ NP NS __ of __ corps NS PREP __ CONJ the __ NP V CONJ -NS PUNC ofv C , ONJ ADJ the NS __ NS ADJ ADV NS __ PREP NS ADV __ PREP ADJ ADJ NS ADJ NS NS peace 47 32 28 27 22 2 37 1 1 1 16 16 32 2 14 14 27 13 13 1 piece 0 0 0 0 0 60 1 35 34 34 0 0 1 45 0 0 1 0 0 25 4 9 4 9 13 26 12 23 17 31 12 22 9 14 62 79 46 54 29 32 Total occurrences 184 126 Table 4 : Excerpts from the list of 43 context words learned for { peace , piece } with k = 24 .</sentence>
+				<definiendum id="0">ONJ ADJ</definiendum>
+				<definiens id="0">the NS __ NS ADJ ADV NS __ PREP NS ADV __ PREP ADJ ADJ</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Schabes 's method can be viewed as performing an abductive inference : given a sentence containing an ambiguous word , it asks which choice wi for that word would best explain the observed sequence of words in the sentence .</sentence>
+				<definiendum id="0">abductive inference</definiendum>
+				<definiens id="0">given a sentence containing an ambiguous word , it asks which choice wi for that word would best explain the observed sequence of words in the sentence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Decision lists pool the evidence fl'om the two methods , and solve a target problem by applying the single strongest piece of evidence , whichever type that happens to be .</sentence>
+				<definiendum id="0">Decision lists</definiendum>
+				<definiens id="0">pool the evidence fl'om the two methods</definiens>
+			</definition>
+</paper>
+
+	</volume>

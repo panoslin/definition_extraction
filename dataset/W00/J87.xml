@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J87">
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>motor-driven boat used for carrying people on rivers , lakes , harbours , etc. ) ( ( CLASS BOAT ) ( PROPERTIES ( LARGE ) ) ( PURPOSE ( PREDICATION ( CLASS CARRY ) ( OBJECT PEOPLE ) ) ) ) ( mug ) ( *46 BrE infml *44 a foolish person who is easily deceived *44 *63 see also *CA MUG 'S GAME ) ( ( CLASS PERSON ) ( PROPERTIES ( FOOLISH ) ) ( PREDICATION ( OBJECT-OF ( ( CLASS DECEIVE ) ) ) ) ) ( hornbeam ( a type of small tree with hard wood , sometimes used in *CA HEDGE *CB *46 s ) ( ( CLASS TREE ) ( COLLECTIVE TYPE ) ( PROPERTIES ( SMALL ) ) ( HAS-PART ( ( CLASS WOOD ) ( PROPERTIES ( HARD ) ) ) ) ) The semantic heads of these definitions are boat , person , and tree respectively , this being different in the last case from the syntactic head ( `` type '' ) of the definition .</sentence>
+				<definiendum id="0">etc. )</definiendum>
+				<definiendum id="1">FOOLISH ) ) ( PREDICATION ( OBJECT-OF ( ( CLASS DECEIVE ) ) ) ) ) ( hornbeam</definiendum>
+				<definiens id="0">a type of small tree with hard wood , sometimes used in *CA HEDGE *CB *46 s ) ( ( CLASS TREE ) ( COLLECTIVE TYPE ) ( PROPERTIES ( SMALL ) ) ( HAS-PART ( ( CLASS WOOD ) ( PROPERTIES ( HARD ) ) ) ) ) The semantic heads of these definitions are boat , person , and tree respectively</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( launch ) ( to send ( a modern weapon or instrument ) into the sky or space by means of scientific explosive apparatus ) ( ( CLASS SEND ) ( OBJECT ( ( CLASS INSTRUMENT ) ( OTHER-CLASSES ( WEAPON ) ) ( PROPERTIES ( MODERN ) ) ) ) ( ADVERBIAL ( ( CASE INTO ) ( FILLER ( CLASS SKY ) ) ) ) ( mug ) ( to rob with violence , as in a dark street ) ( ( CLASS ROB ) ( ADVERBIAL ( ( CASE WITH ) ( FILLER ( CLASS VIOLENCE ) ) ) ) ) ( club ) ( to beat or strike with a heavy stick ( *CA CLUB *CB ) ) ( ( CLASS STRIKE ) ( OTHER-CLASSES ( ( BEAT ) ) ) ( ADVERBIAL ( ( CASE WITH ) ( FILLER ( CLASS STICK ) ( PROPERTIES ( HEAVY ) ) ) ) ) ) Similarly , adjective sense definitions tend to have adjectival or verbal predicates as their heads , and they often include restrictions on the class of objects to which the property corresponding to the adjective can Computational Linguistics , Volume 13 , Numbers 3-4 , July-December 1987 197 Hiyan Alshawi Processing Dictionary Definitions with Phrasal Pattern Hierarchies apply .</sentence>
+				<definiendum id="0">OBJECT ( ( CLASS INSTRUMENT ) ( OTHER-CLASSES</definiendum>
+				<definiendum id="1">ADVERBIAL ( ( CASE INTO ) ( FILLER</definiendum>
+				<definiens id="0">a modern weapon or instrument ) into the sky or space by means of scientific explosive apparatus ) ( ( CLASS SEND )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Each analysis rule consists of a rule identifier , a phrasal pattern , and a list of rule identifiers for daughter patterns .</sentence>
+				<definiendum id="0">analysis rule</definiendum>
+				<definiens id="0">consists of a rule identifier , a phrasal pattern , and a list of rule identifiers for daughter patterns</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>ANALYSIS RULES A typical analysis rule , n-100 , for noun definitions , and two of its descendants , n-ll0 and n-135 , are shown below , n-ll0 is a daughter of n-100 , and n-135 is a daughter of n-130 ( not shown ) .</sentence>
+				<definiendum id="0">ANALYSIS RULES</definiendum>
+				<definiendum id="1">n-135</definiendum>
+				<definiens id="0">a daughter of n-100 , and</definiens>
+			</definition>
+</paper>
+
+		<paper id="3005">
+			<definition id="0">
+				<sentence>PEG provides the necessary parsing tool .</sentence>
+				<definiendum id="0">PEG</definiendum>
+				<definiens id="0">provides the necessary parsing tool</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Heuristic answers are expressed in terms of certainty factors which , as in the MYCIN system ( Shortliffe 1976 ) , take their values in the range ( -I , + 1 ) : -1 expresses absolute disbelief ; 0 expresses complete uncertainty ; 1 expresses absolute belief .</sentence>
+				<definiendum id="0">Heuristic answers</definiendum>
+				<definiens id="0">-1 expresses absolute disbelief ; 0 expresses complete uncertainty ; 1 expresses absolute belief</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Thus ( EAT ) denotes the node labeled `` ate '' in the parse tree shown in Figure 1 .</sentence>
+				<definiendum id="0">EAT )</definiendum>
+				<definiens id="0">the node labeled `` ate '' in the parse tree shown in Figure 1</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>CHOOSE works by applying to each member of its goal list the function SOLVE , which finds all heuristics applicable to a given goal and uses them to determine the plausibility of that goal .</sentence>
+				<definiendum id="0">SOLVE</definiendum>
+				<definiens id="0">finds all heuristics applicable to a given goal and uses them to determine the plausibility of that goal</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The body of a heuristic consists of a set of clauses , each of which includes one condition and one action .</sentence>
+				<definiendum id="0">body of a heuristic</definiendum>
+				<definiens id="0">consists of a set of clauses , each of which includes one condition and one action</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>256 Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 Karen Jensen and Jean-Louis Binot Disambiguating Prepositional Phrase Attachment A solution will then be defined as a list of subsolutions , each subsolution having its own certainty factor : ( solution ) : := ( ( subsolution ) * ) ( subsolution ) : := ( ( answer ) .</sentence>
+				<definiendum id="0">Jean-Louis Binot Disambiguating Prepositional Phrase Attachment A solution</definiendum>
+				<definiens id="0">a list of subsolutions , each subsolution having its own certainty factor : ( solution ) : := ( ( subsolution ) * ) ( subsolution ) : := ( ( answer )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>December 1987 259 Karen Jensen and Jean-Louis Binot Disambiguating Prepositional Phrase Attachment solution given by a heuristic is affected by solutions to subgoals used to execute this heuristic ) follows the following rules : • the certainty factor of a solution is defined as the highest certainty factor ( after normalization ) of the subsolutions of that solution .</sentence>
+				<definiendum id="0">Jean-Louis Binot Disambiguating Prepositional Phrase Attachment solution</definiendum>
+				<definiens id="0">a heuristic is affected by solutions to subgoals used to execute this heuristic ) follows the following rules : • the certainty factor of a solution is defined as the highest certainty factor ( after normalization ) of the subsolutions of that solution</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>Analysis of Published Derived % lists from LDOCE SEqui 31 OEqui 58 SRaising 7 ORaising 42 31 56 5 28 1oo % 97 % 71 % 67 % Figure 15 Figure 16 Computational Linguistics , Volume 13 , Numbers 3-4 , July-December 1987 213 Bran Boguraev and Ted Briscoe Large Lexicons for Natural Language Processing acknowledge ... I \ [ T1,4,5 ( to ) to agree to the truth of ; recognise the fact or existence ( of ) : I o , ¢~ie~e the h'~ of uoar theU wer~ de/rated I They ~zowlcdCcd ha~/~¢ been d~y~t0d 2 \ [ T1 ( o ) ; X ( to be ) 1,7\ ] to reco~ise , accept , or admit ( as ) : He w~ acknowlod~d to be th~ b~ Ida~r. J He was aeknowlod~d am their hinter .</sentence>
+				<definiendum id="0">admit</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3007">
+			<definition id="0">
+				<sentence>A natural language lexicon is a necessary part of any natural language processing ( NLP ) system .</sentence>
+				<definiendum id="0">natural language lexicon</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>An LMS is a collection of programs that help create , augment , modify , and test the various lexicons in an NLP application .</sentence>
+				<definiendum id="0">LMS</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The architecture of the TRANSLATOR Lexicon Module , including the Lexicon Management System ( LMS ) .</sentence>
+				<definiendum id="0">architecture of the TRANSLATOR Lexicon Module</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The LMS assists the enterer by providing graphic and other aids for human decision making .</sentence>
+				<definiendum id="0">LMS</definiendum>
+				<definiens id="0">assists the enterer by providing graphic and other aids for human decision making</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( part-of process* ) ( preconditions state* ) ( effects state* ) ( tempor process* ) ( agent creature ) ( object all ) ( instrument object ) ( source object ) ( destination object ) ) The action frame contains two groups of slots : a ) paradigmatic relation slots ( isa , consists-of , partof , preconditions , effects , tempor ) that connect it with other processes ; b ) syntagmatic relation slots ( the conceptual case slots agent , object , instrument , source and destination ; patient is inherited ) .</sentence>
+				<definiendum id="0">patient</definiendum>
+				<definiens id="0">the conceptual case slots agent , object , instrument , source and destination ;</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The manager can perform all the operations on this tree u insert new nodes anywhere in it ; delete nodes ( either with their subtrees or without , in which case the children of the deleted node become children of the latter 's parent ) ; and move subtrees to a different position .</sentence>
+				<definiendum id="0">delete nodes</definiendum>
+				<definiens id="0">either with their subtrees or without , in which case the children of the deleted node become children of the latter 's parent</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>HUHU : The Hebrew University Hebrew Understander .</sentence>
+				<definiendum id="0">HUHU</definiendum>
+				<definiens id="0">The Hebrew University Hebrew Understander</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>A well-formed formula ( wff ) in the input language is a predicate or other operator applied to one or more arguments .</sentence>
+				<definiendum id="0">well-formed formula</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Thus apply-terms acting upon the wff P ( &lt; ql x q ( x ) &gt; , &lt; qzY r2 ( Y ) &gt; ) will yield one of the five wffs P ( &lt; qlxrl ( x ) &gt; , &lt; q2Yr2 ( Y ) &gt; ) qlCX , rl ( x ) , p ( x , &lt; q2Yr2 ( Y ) &gt; ) ) q2 ( Y , r2 ( Y ) , P ( &lt; ql x rl ( x ) &gt; , y ) ) q2 ( y , r2 ( Y ) , ql ( x , rl ( x ) , p ( x , y ) ) ) ql ( x , rl ( x ) , q2 ( v , r2 ( Y ) , p ( x , y ) ) ) depending on how many quantifiers are applied and in what order .</sentence>
+				<definiendum id="0">P ( &lt; ql x rl</definiendum>
+				<definiendum id="1">rl ( x ) , p</definiendum>
+				<definiendum id="2">x , rl ( x ) , q2</definiendum>
+				<definiens id="0">p ( x , y ) ) ) depending on how many quantifiers are applied and in what order</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Applied to two arguments , wff is a binary function that takes a predicate name and a list of arguments , and returns the wff consisting of the application of the predicate to the arguments .</sentence>
+				<definiendum id="0">wff</definiendum>
+				<definiens id="0">takes a predicate name and a list of arguments , and returns the wff consisting of the application of the predicate to the arguments</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Applied to four arguments , wff is a quaternary function that takes a quantifier name , a variable name , a restriction , and a body , and returns the quantified wff consisting of the binding of the variable by the quantifier in the restriction and body .</sentence>
+				<definiendum id="0">wff</definiendum>
+				<definiens id="0">a body , and returns the quantified wff consisting of the binding of the variable by the quantifier in the restriction and body</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The function cross-product takes a list of sets as its argument and returns the set of lists corresponding to each way of taking an element from each of the sets in order .</sentence>
+				<definiendum id="0">function cross-product</definiendum>
+				<definiens id="0">takes a list of sets as its argument and returns the set of lists corresponding to each way of taking an element from each of the sets in order</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>pull opaque_args ( Pred , ArgIndex , \ [ FirstArglRestArgs\ ] , \ [ ScopedFirstArglScopedRestArgs\ ] ) -pull opaque args ( FirstArg , ScopedFirstArg ) , NextIndex is ArgIndex+1 , pull opaque_args ( Pred , NextIndex , RestArgs , ScopedRestArgs ) .</sentence>
+				<definiendum id="0">pull opaque_args</definiendum>
+				<definiendum id="1">NextIndex</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>APPENDIX B. COMMON LISP IMPLEMENTATION OF THE ALGORITHM The following is the core of a COMMON LISP implementation of the deterministic algorithm which includes all but the lowest level of routines .</sentence>
+				<definiendum id="0">APPENDIX B. COMMON LISP IMPLEMENTATION OF THE ALGORITHM The following</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>argn ' ) where argi ' is the encoding of the ; ; ; subexpression argi .</sentence>
+				<definiendum id="0">argi</definiendum>
+				<definiens id="0">the encoding of the</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>( first form ) ) ) ( union ( applicable-termsl ( third form ) ( cons ( second form ) blocking-vars ) ) ( applicable-termsl ( fourth form ) ( cons ( second form ) blocking-vars ) ) ) ) ( t ( mapcan ( function ( lambda ( arg ) ( applicable-termsl arg blocking-vats ) ) ) ( cdr form ) ) ) ) ) APPENDIX C. PROOFS OF ALGORITHM PROPERTIES This appendix includes informal proofs of some important properties of the nondeterminisitc version of the presented algorithm .</sentence>
+				<definiendum id="0">applicable-termsl ( fourth form ) ( cons</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>We inductively define a metric p on expressions in the logical form language as follows : t 2 + p ( r ) if a is a complex term &lt; q vr &gt; n n O ( a ) ~ 1 + i_ZtO ( ai ) if a is a wfff ( al , ... , a , ) and_EtO ( a i ) &gt; 0 0 otherwise Informally , p is a measure of the embedding depth of the complex terms in an expression .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiens id="0">a metric p on expressions in the logical form language as follows</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>In forming the quantified wff /3 = q ( x , r t , s ) , the unbound variables in /3 consist of those in r r and those in s except for x , that is u ( /3 ) = \ [ ( { x } u u~ ) u ( { x } u ur ) \ ] { x } = u~ u u~ = u. ( If x does not occur in r , similar arguments show that U ( r ' ) =u r , U ( s ) = { x } Uu s , and U ( /3 ) = \ [ ( { x } UU , ) o u~\ ] { x } = u , u Ur = U. ) Vacuous quantified variables can be divided similarly into v~ ( those bound vacuously in r ) and v~ ( those bound vacuously outside of t in a ) .</sentence>
+				<definiendum id="0">U</definiendum>
+				<definiens id="0">s ) , the unbound variables in /3 consist of those in r r and those in s except for x</definiens>
+				<definiens id="1">s ) = { x } Uu s , and</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>V ( /3 ) = V ( r ) U V ( s ) = v unless the quantification of x in 13 is vacuous .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">s ) = v unless the quantification of x in 13 is vacuous</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>By the induction hypothesis , V ( r t ) = V ( r ) = v~ and V ( s t ) = V ( s ) = v~ .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">s t ) = V ( s ) = v~</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>In the formalism there is a nominalization operator ... .. for reifying events and conditions , as expressed in the following axiom schema : ( Vx ) p ( x ) = ( 3e ) p ' ( e , x ) A Exist ( e ) That is , p is true of x if and only if there is a condition e ofp 's being true ofx and e exists in the real world .</sentence>
+				<definiendum id="0">Exist ( e</definiendum>
+				<definiens id="0">a condition e ofp 's being true ofx and e exists in the real world</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( Vs ) dense ( s ) = ( Vx , y ) x E s / % y E s / % x &lt; s y D ( 3z ) ( x &lt; s z/ % z &lt; s Y ) V ( 3z ) ( x ~s z/ % z ~s Y ) This expresses the commonsense notion of continuity. Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 243 Jerry R. Hobbs et al. Commonsense Metaphysics and Lexical Semantics A subscale of a scale has as its elements a subset of the elements of the scale and has as its partial ordering and its grain the partial ordering and the grain of the scale. ( V sx , s2 ) subscale ( s2 , s 0 = subset ( s2 , s 0 A ( Vx , y ) \ [ \ [ x &lt; sl Y =x &lt; s2 Y\ ] A \ [ x ~sl Y -~ x ~s2 Y\ ] \ ] An interval can be defined as a connected subscale : ( Vi ) interval ( i ) = ( 3s ) scale ( s ) A subscale ( i , s ) A sconnected ( i ) The relations between time intervals that Allen and Kautz ( 1985 ) have defined can be defined in a straightforward manner in the approach presented here , but for intervals in general. A concept closely related to scales is that of a `` cycle '' . This is a system that has a natural ordering locally but contains a loop globally. Examples are the color wheel , clock times , and geographical locations ordered by `` east of '' . We have axiomatized cycles in terms of a ternary between relation whose axioms parallel those for a partial ordering. The figure-ground relationship is of fundamental importance in language. We encode it with the primitive predicate at. It is possible that the minimal structure necessary for something to be a ground is that of a scale ; hence , this is a selectional constraint on the arguments of at. 1 at ( x , y ) : ( 3s ) y E s A scale ( s ) At this point , we are already in a position to define some fairly complex words. As an illustration , we give the example of `` range '' as in `` x ranges from y to z '' : ( Vx , y , z ) range ( x , y , z ) = ( 3s , st , ut , uz ) scale ( s ) A subscale ( sl , s ) A bottom ( y , s 0 A top ( z , sO Au I E x A at ( ut , y ) A u 2 E x A at ( u2 , z ) A ( Vu ) \ [ u ~ x ~ ( 3v ) v ~ s I A at ( u , v ) \ ] That is , x ranges from y to z if and only ify and z are the bottom and top ofa subscale s~ of some scale s and x is a set which has elements at y and z and all of whose elements are located at points on s~. A very important scale is the linearly ordered scale of numbers. We do not plan to reason axiomatically about numbers , but it is useful in natural language processing to have encoded a few facts about numbers. For example , a set has a cardinality which is an element of the number scale. Verticality is a concept that would most properly be analyzed in the section on space , but it is a property that many other scales have acquired metaphorically , for whatever reason. The number scale is one of these. Even in the absence of an analysis of verticality , it is a However , we are currently examining an approach in which a more abstract concept , `` system '' , discussed in Section 3.6.3 , is taken to be the minimal structure for expressing location. useful property to have as a primitive in lexical semantics. The word `` high '' is a vague term asserting that an entity is in the upper region of some scale. It requires that the scale be a vertical one , such as the number scale. The verticality requirement distinguishes `` high '' from the more general term `` very '' ; we can say `` very hard '' but not `` highly hard '' . The phrase `` highly planar '' sounds all right because the high register of `` planar '' suggests a quantifiable , scientific accuracy , whereas the low register of `` flat '' makes `` highly flat '' sound much worse. The test of any definition is whether it allows one to draw the appropriate inferences. In our target texts , the phrase `` high usage '' occurs. Usage is a set of using events , and the verticality requirement on `` high '' forces us to coerce the phrase into `` a high or large number of using events '' . Combining this with an axiom stating that the use of a mechanical device involves the likelihood of abrasive events , as defined below , and with the definition of `` wear '' in terms of abrasive events , we should be able to conclude the likelihood of wear. There are two possible ontologies for time. In the first , the one most acceptable to the mathematically minded , there is a time line , which is a scale having some topological structure. We can stipulate the time line to be linearly ordered ( although it is not in approaches that build ignorance of relative times into the representation of time ( e.g. , Hobbs , 1974 ) nor in approaches employing branching futures ( e.g. , McDermott , 1985 ) ) , and we can stipulate it to be dense ( although it is not in the situation calculus ) . We take before to be the ordering on the time line : ( V q , t2 ) bef ore ( q , t2 ) = ( 3T ) Time-line ( T ) A t I ~ T A t 2 E T A t I &lt; T t2 We allow both instants and intervals of time. Most events occur at some instant or during some interval. In this approach , nearly every predicate takes a time argument. In the second ontology , the one that seems to be more deeply rooted in language , the world consists of a large number of more or less independent processes , or histories , or sequences of events. There is a primitive relation change between conditions. Thus , change ( e 1 , e2 ) A p ' ( e Z , x ) A q ' ( ez , x ) says that there is a change from the condition el ofp 's being true of x to the condition e 2 of q 's being true of x. The time line in this ontology is then an artificial construct , a regular sequence of imagined abstract events ( think of them as ticks of a clock in the National Bureau of Standards ) to which other events can be related. The change ontology seems to correspond to the way we experience the world. We recognize relations of causality , change of state , and copresence 244 Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 Jerry R. Hobbs et al. Commonsense Metaphysics and Lexical Semantics among events and conditions. When events are not related in these ways , judgments of relative time must be mediated by copresence relations between the events and events on a clock and change of state relations on the clock. The predicate change possesses a limited transitivity. There has been a change from Reagan 's being an actor to Reagan 's being president , even though he was governor in between. But we probably do not want to say there has been a change from Reagan 's being an actor to Margaret Thatcher 's being prime minister , even though the second event comes after the first. In this ontology , we can say that any two times , viewed as events , always have a change relation between them. ( Vq , ta ) before ( tl , t 2 ) D change ( tl , t2 ) The predicate change is related to before by the axiom ( Vel , e2 ) change ( el , e2 ) D ( : ltl , t2 ) at ( el , t 0 A at ( e2 , t 2 ) A before ( tl , t2 ) That is , if there is a change from e 1 to e 2 , then there is a time t I at which e I occurred and a time t 2 at which e 2 occurred , and t~ is before t 2. This does not allow us to derive change of state from temporal succession. For this , we would need axioms of the form ( Vel , e2 , tl , t2 , x ) p ' ( el , x ) A at ( el , t 0 A q ' ( ez , x ) A at ( e2 , t2 ) A before ( t 1 , t 2 ) D change ( el , e 2 ) That is , if x is p at time t~ and q at a later time t 2 , then there has been a change of state from one to the other. This axiom would not necessarily be true for all p 's and q's. Time arguments in predications can be viewed as abbreviations : ( V x , t ) p ( x , t ) ( 3e ) p ' ( e , x ) A at ( e , t ) The word `` move '' , or the predicate move , ( as in `` x moves from y to z '' ) can then be defined equivalently in terms of change , ( V x , y , z ) move ( x , y , z ) = ( =lel , e2 ) change ( el , e2 ) A at ' ( el , x , y ) A at ' ( ez , X , Z ) or in terms of the time line , ( V x , y , z ) move ( x , y , z ) = ( 3q , t2 ) at ( x , y , t 0 A at ( x , z , tz ) A before ( tl , t2 ) ( The latter definition has to be complicated a bit to accommodate cyclic motion. The former axiom is all right as it stands , provided there is also an axiom saying that for there to be a change from a state to the same state , there must be an intermediate different state. ) In English and apparently all other natural languages , both ontologies are represented in the lexicon. The time line ontology is found in clock and calendar terms , tense systems of verbs , and in the deictic temporal locatives such as `` yesterday '' , `` today '' , `` tomorrow '' , `` last night '' , and so on. The change ontology is exhibited in most verbs , and in temporal clausal connectives. The universal presence in natural languages of both classes of lexical items and grammatical markers requires a theory that can accommodate both ontologies , illustrating the importance of methodological principle 4. Among temporal connectives , the word `` while '' presents interesting problems. In `` e I while e2 '' , e2 must be an event occurring over a time interval ; el must be an event and may occur either at a point or over an interval. One 's first guess is that the point or interval for el must be included in the interval for % However , there are cases , such as The electricity should be off while the switch is being repaired. which suggest the reading `` e 2 is included in el '' . We came to the conclusion that one can infer no more than that el and e 2 overlap , and any tighter constraints result from implicatures from background knowledge. The word `` immediately '' , as in `` immediately after the alarm '' , also presents a number of problems. It requires its argument e to be an ordering relation between two entities x and y on some scale s. immediate ( e ) : ( 3x , y , s ) less-than ' ( e , x , y , s ) It is not clear what the constraints on the scale are. Temporal and spatial scales are acceptable , as in `` immediately after the alarm '' and `` immediately to the left '' , but the size scale is not : * John is immediately larger than Bill. Etymologically , it means that there are no intermediate entities between x and y on s. Thus , ( Ve , x , y , s ) immediate ( e ) A less-than ' ( e , x , y , s ) D -- 1 ( 3z ) less-than ( x , z , s ) A less-than ( z , y , s ) However , this will only work if we restrict z to be a relevant entity. For example , in the sentence We disengaged the compressor immediately after the alarm. the implication is that no event that could damage the compressor occurred between the alarm and the disengagement , since the text is about equipment failure. The notion of dimension has been made precise in linear algebra. Since the concept of a region is used metaphorically as well as in the spatial sense , however , we were concerned to determine the minimal structure a system requires for it to make sense to call it a space of more than one dimension. For a two-dimensional space , there must be a scale , or partial ordering , for each dimension. Moreover , the two scales must be independent , in that the order of elements on one scale can not be determined from their order on the other. Formally , ( V sp ) space ( sp ) = ( : lSl , S2 ) scalel ( sl , sP ) A scale2 ( s2 , sp ) Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 245 Jerry R. Hobbs et al. Commonsense Metaphysics and Lexical Semantics J ff B C Figure 1.1 The Simplest Space. A ( 3x ) \ [ ( 3yt ) \ [ x &lt; s , Yi A x &lt; s2 Yl\ ] A ( : :ly2 ) \ [ x &lt; s , A Yz A Y2 &lt; s2 x\ ] \ ] Note that this does not allow &lt; ,2 to be simply the reverse of &lt; s. An unsurprising consequence of this definition is that the minimal example of a two-dimensional space consists of three points ( three points determine a plane ) , e.g. , the points A , B , and C , where A &lt; IB , A &lt; IC , C &lt; 2A , A &lt; 2 B. This is illustrated in Figure 1. The dimensional scales are apparently found in all natural languages in relevant domains. The familiar three-dimensional space of common sense can be defined by the three scale pairs `` up-down '' , `` frontback '' , and `` left-right '' ; the two-dimensional plane of the commonsense conception of the earth 's surface is represented by the two scale pairs `` north-south '' and `` east-west '' . The simplest , although not the only , way to define adjacency in the space is as adjacency on both scales : ( Vx , y , sp ) adj ( x , y , sp ) =- ( 3si , s2 ) scalel ( si , sp ) A scale2 ( s2 , sp ) A adj ( x , y , sl ) A adj ( x , y , sz ) A region is a subset of a space. The surface and interior of a region can be defined in terms of adjacency , in a manner paralleling the definition of a boundary in pointset topology. In the following , s is the boundary or surface of a twoor three-dimensional region r embedded in a space sp. ( V s , r , sp ) surface ( s , r , sp ) ( Vx ) x ~ r ~ \ [ x ~ s = ( Ey ) ( y ~ sp A -1 ( y E r ) A adj ( x , y , sp ) ) \ ] Finally , we can define the notion of `` contact '' in terms of points in different regions being adjacent : ( V rl , r2 , sp ) contact ( r 1 , r2 , sP ) disjoint ( r 1 , r2 ) A ( 3 x , y ) ( x ~ r I A y ~ r 2 A adj ( x , y , sp ) ) By picking the scales and defining adjacency right , we can talk about points of contact between communication networks , systems of knowledge , and other metaphorical domains. By picking the scales to be the real line and defining adjacency in terms of eneighborhoods , we get Euclidean space and can talk about contact between physical objects. Physical objects and materials must be distinguished , just as they are in apparently every natural language , by means of the count noun-mass noun distinction. A physical object is not a bit of material , but rather is composed of a bit of material at any given time. Thus , rivers and human bodies are physical objects , even though their material constitution changes over time. This distinction also allows us to talk about an object 's losing material through wear and still remaining the same object. We will say that an entity b is a bit of material by means of the expression material ( b ) . Bits of material are characterized by both extension and cohesion. The primitive predication occupies ( b , r , t ) encodes extension , saying that a bit of material b occupies a region r at time t. The topology of a bit of material is then parasitic on the topology of the region it occupies. A part b~ of a bit of material b is a bit of material whose occupied region is always a subregion of the region occupied by b. Point-like particles ( particle ) are defined in terms of points in the occupied region , disjoint bits ( disjointbit ) in terms of the disjointness of regions , and contact between bits in terms of contact between their regions. We can then state as follows the principle of non-jointoccupancy that two bits of material can not occupy the same place at the same time : ( V b 1 , bz ) ( disjointbit ( b I , b2 ) D ( V x , y , b3 , b4 ) interior ( b3 , b 0 A interior ( b4 , b2 ) A particle ( x , b3 ) A particle ( y , b4 ) D -- 1 ( 3z ) ( at ( x , z ) A at ( y , z ) ) That is , if bits b 1 and b 2 are disjoint , then there is no entity z that is at interior points in both bl and b2. At some future point in our work , this may emerge as a consequence of a richer theory of cohesion and force. The cohesion of materials is also a primitive property , for we must distinguish between a bump on the surface of an object and a chip merely lying on the surface. Cohesion depends on a primitive relation bond between particles of material , paralleling the role of adj in regions. The relation attached is defined as the transitive closure of bond. A topology of cohesion is built up in a manner analogous to the topology of regions. In addition , we have encoded the relation that bond bears to motion , i.e. , that bonded bits remain adjacent and that one moves when the other does , and the relation of bond to force , i.e , that there is a characteristic force that breaks a bond in a given material. 246 Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 Jerry R. Hobbs et HI. Commonsense Metaphysics and Lexical Semantics Different materials react in different ways to forces of various strengths. Materials subjected to force exhibit or fail to exhibit several invariance properties , proposed by Hager ( 1985 ) . If the material is shape-invariant with respect to a particular force , its shape remains the same. If it is topologically invariant , particles that are adjacent remain adjacent. Shape invariance implies topological invariance. If subjected to forces of a certain strength or degree dl , a material ceases being shape-invariant. At a force of strength d z &gt; -d~ , it ceases being topologically invariant , and at a force of strength d 3 ~ d 2 , it simply breaks .</sentence>
+				<definiendum id="0">Vs ) dense (</definiendum>
+				<definiendum id="1">sz ) A region</definiendum>
+				<definiens id="0">s ) = ( Vx , y ) x E s / % y E s / % x &lt; s y D ( 3z ) ( x &lt; s z/ % z &lt; s Y ) V ( 3z ) ( x ~s z/ % z ~s Y ) This expresses the commonsense notion of continuity. Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 243 Jerry R. Hobbs et al. Commonsense Metaphysics and Lexical Semantics A subscale of a scale has as its elements a subset of the elements of the scale and has as its partial ordering and its grain the partial ordering and the grain of the scale. ( V sx , s2 ) subscale ( s2 , s 0 = subset ( s2 , s 0 A ( Vx , y ) \ [ \ [ x &lt; sl Y =x &lt; s2 Y\ ] A \ [ x ~sl Y -~ x ~s2 Y\ ] \ ] An interval can be defined as a connected subscale : ( Vi ) interval ( i ) = ( 3s ) scale ( s ) A subscale ( i , s ) A sconnected ( i ) The relations between time intervals that Allen and Kautz ( 1985 ) have defined can be defined in a straightforward manner in the approach presented here , but for intervals in general. A concept closely related to scales is that of a `` cycle '' . This is a system that has a natural ordering locally but contains a loop globally. Examples are the color wheel , clock times , and geographical locations ordered by `` east of '' . We have axiomatized cycles in terms of a ternary between relation whose axioms parallel those for a partial ordering. The figure-ground relationship is of fundamental importance in language. We encode it with the primitive predicate at. It is possible that the minimal structure necessary for something to be a ground is that of a scale</definiens>
+				<definiens id="1">a selectional constraint on the arguments of at. 1 at ( x , y ) : ( 3s ) y E s A scale ( s ) At this point , we are already in a position to define some fairly complex words. As an illustration , we give the example of `` range '' as in `` x ranges from y to z '' : ( Vx , y , z ) range ( x , y , z ) = ( 3s , st , ut , uz ) scale ( s ) A subscale ( sl , s ) A bottom ( y , s 0 A top ( z , sO Au I E x A at ( ut , y ) A u 2 E x A at ( u2 , z ) A ( Vu ) \ [ u ~ x ~ ( 3v ) v ~ s I A at ( u , v ) \ ] That is , x ranges from y to z if and only ify and z are the bottom and top ofa subscale s~ of some scale s and x is a set which has elements at y and z and all of whose elements are located at points on s~. A very important scale is the linearly ordered scale of numbers. We do not plan to reason axiomatically about numbers , but it is useful in natural language processing to have encoded a few facts about numbers. For example , a set has a cardinality which is an element of the number scale. Verticality is a concept that would most properly be analyzed in the section on space , but it is a property that many other scales have acquired metaphorically , for whatever reason. The number scale is one of these. Even in the absence of an analysis of verticality , it is a However , we are currently examining an approach in which a more abstract concept , `` system '' , discussed in Section 3.6.3 , is taken to be the minimal structure for expressing location. useful property to have as a primitive in lexical semantics. The word `` high '' is a vague term asserting that an entity is in the upper region of some scale. It requires that the scale be a vertical one , such as the number scale. The verticality requirement distinguishes `` high '' from the more general term `` very '' ; we can say `` very hard '' but not `` highly hard '' . The phrase `` highly planar '' sounds all right because the high register of `` planar '' suggests a quantifiable , scientific accuracy , whereas the low register of `` flat '' makes `` highly flat '' sound much worse. The test of any definition is whether it allows one to draw the appropriate inferences. In our target texts , the phrase `` high usage '' occurs. Usage is a set of using events , and the verticality requirement on `` high '' forces us to coerce the phrase into `` a high or large number of using events '' . Combining this with an axiom stating that the use of a mechanical device involves the likelihood of abrasive events , as defined below , and with the definition of `` wear '' in terms of abrasive events , we should be able to conclude the likelihood of wear. There are two possible ontologies for time. In the first , the one most acceptable to the mathematically minded , there is a time line , which is a scale having some topological structure. We can stipulate the time line to be linearly ordered ( although it is not in approaches that build ignorance of relative times into the representation of time ( e.g. , Hobbs , 1974 ) nor in approaches employing branching futures ( e.g. , McDermott , 1985 ) ) , and we can stipulate it to be dense ( although it is not in the situation calculus ) . We take before to be the ordering on the time line : ( V q , t2 ) bef ore ( q , t2 ) = ( 3T ) Time-line ( T ) A t I ~ T A t 2 E T A t I &lt; T t2 We allow both instants and intervals of time. Most events occur at some instant or during some interval. In this approach , nearly every predicate takes a time argument. In the second ontology , the one that seems to be more deeply rooted in language , the world consists of a large number of more or less independent processes , or histories , or sequences of events. There is a primitive relation change between conditions. Thus , change ( e 1 , e2 ) A p ' ( e Z , x ) A q ' ( ez , x ) says that there is a change from the condition el ofp 's being true of x to the condition e 2 of q 's being true of x. The time line in this ontology is then an artificial construct , a regular sequence of imagined abstract events ( think of them as ticks of a clock in the National Bureau of Standards ) to which other events can be related. The change ontology seems to correspond to the way we experience the world. We recognize relations of causality , change of state , and copresence 244 Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 Jerry R. Hobbs et al. Commonsense Metaphysics and Lexical Semantics among events and conditions. When events are not related in these ways , judgments of relative time must be mediated by copresence relations between the events and events on a clock and change of state relations on the clock. The predicate change possesses a limited transitivity. There has been a change from Reagan 's being an actor to Reagan 's being president , even though he was governor in between. But we probably do not want to say there has been a change from Reagan 's being an actor to Margaret Thatcher 's being prime minister , even though the second event comes after the first. In this ontology , we can say that any two times , viewed as events , always have a change relation between them. ( Vq , ta ) before ( tl , t 2 ) D change ( tl , t2 ) The predicate change is related to before by the axiom ( Vel , e2 ) change ( el , e2 ) D ( : ltl , t2 ) at ( el , t 0 A at ( e2 , t 2 ) A before ( tl , t2 ) That is , if there is a change from e 1 to e 2 , then there is a time t I at which e I occurred and a time t 2 at which e 2 occurred , and t~ is before t 2. This does not allow us to derive change of state from temporal succession. For this , we would need axioms of the form ( Vel , e2 , tl , t2 , x ) p ' ( el , x ) A at ( el , t 0 A q ' ( ez , x ) A at ( e2 , t2 ) A before ( t 1 , t 2 ) D change ( el , e 2 ) That is , if x is p at time t~ and q at a later time t 2 , then there has been a change of state from one to the other. This axiom would not necessarily be true for all p 's and q's. Time arguments in predications can be viewed as abbreviations : ( V x , t ) p ( x , t ) ( 3e ) p ' ( e , x ) A at ( e , t ) The word `` move '' , or the predicate move , ( as in `` x moves from y to z '' ) can then be defined equivalently in terms of change , ( V x , y , z ) move ( x , y , z ) = ( =lel , e2 ) change ( el , e2 ) A at ' ( el , x , y ) A at ' ( ez , X , Z ) or in terms of the time line , ( V x , y , z ) move ( x , y , z ) = ( 3q , t2 ) at ( x , y , t 0 A at ( x , z , tz ) A before ( tl , t2 ) ( The latter definition has to be complicated a bit to accommodate cyclic motion. The former axiom is all right as it stands , provided there is also an axiom saying that for there to be a change from a state to the same state , there must be an intermediate different state. ) In English and apparently all other natural languages , both ontologies are represented in the lexicon. The time line ontology is found in clock and calendar terms , tense systems of verbs , and in the deictic temporal locatives such as `` yesterday '' , `` today '' , `` tomorrow '' , `` last night '' , and so on. The change ontology is exhibited in most verbs , and in temporal clausal connectives. The universal presence in natural languages of both classes of lexical items and grammatical markers requires a theory that can accommodate both ontologies , illustrating the importance of methodological principle 4. Among temporal connectives , the word `` while '' presents interesting problems. In `` e I while e2 '' , e2 must be an event occurring over a time interval ; el must be an event and may occur either at a point or over an interval. One 's first guess is that the point or interval for el must be included in the interval for % However , there are cases , such as The electricity should be off while the switch is being repaired. which suggest the reading `` e 2 is included in el '' . We came to the conclusion that one can infer no more than that el and e 2 overlap , and any tighter constraints result from implicatures from background knowledge. The word `` immediately '' , as in `` immediately after the alarm '' , also presents a number of problems. It requires its argument e to be an ordering relation between two entities x and y on some scale s. immediate ( e ) : ( 3x , y , s ) less-than ' ( e , x , y , s ) It is not clear what the constraints on the scale are. Temporal and spatial scales are acceptable , as in `` immediately after the alarm '' and `` immediately to the left '' , but the size scale is not : * John is immediately larger than Bill. Etymologically , it means that there are no intermediate entities between x and y on s. Thus , ( Ve , x , y , s ) immediate ( e ) A less-than ' ( e , x , y , s ) D -- 1 ( 3z ) less-than ( x , z , s ) A less-than ( z , y , s ) However , this will only work if we restrict z to be a relevant entity. For example , in the sentence We disengaged the compressor immediately after the alarm. the implication is that no event that could damage the compressor occurred between the alarm and the disengagement , since the text is about equipment failure. The notion of dimension has been made precise in linear algebra. Since the concept of a region is used metaphorically as well as in the spatial sense , however , we were concerned to determine the minimal structure a system requires for it to make sense to call it a space of more than one dimension. For a two-dimensional space , there must be a scale , or partial ordering , for each dimension. Moreover , the two scales must be independent , in that the order of elements on one scale can not be determined from their order on the other. Formally , ( V sp ) space ( sp ) = ( : lSl , S2 ) scalel ( sl , sP ) A scale2 ( s2 , sp ) Computational Linguistics Volume 13 , Numbers 3-4 , July-December 1987 245 Jerry R. Hobbs et al. Commonsense Metaphysics and Lexical Semantics J ff B C Figure 1.1 The Simplest Space. A ( 3x ) \ [ ( 3yt ) \ [ x &lt; s , Yi A x &lt; s2 Yl\ ] A ( : :ly2 ) \ [ x &lt; s , A Yz A Y2 &lt; s2 x\ ] \ ] Note that this does not allow &lt; ,2 to be simply the reverse of &lt; s. An unsurprising consequence of this definition is that the minimal example of a two-dimensional space consists of three points ( three points determine a plane ) , e.g. , the points A , B , and C , where A &lt; IB , A &lt; IC , C &lt; 2A , A &lt; 2 B. This is illustrated in Figure 1. The dimensional scales are apparently found in all natural languages in relevant domains. The familiar three-dimensional space of common sense can be defined by the three scale pairs `` up-down '' , `` frontback '' , and `` left-right '' ; the two-dimensional plane of the commonsense conception of the earth 's surface is represented by the two scale pairs `` north-south '' and `` east-west '' . The simplest , although not the only , way to define adjacency in the space is as adjacency on both scales : ( Vx , y , sp ) adj ( x , y , sp ) =- ( 3si , s2 ) scalel ( si , sp ) A scale2 ( s2 , sp ) A adj ( x , y , sl ) A adj ( x , y ,</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The predicate clog is a three-place relation : x clogs y against the flow of z. It is the obstruction by x of z 's motion through y , but with the selectional restriction that z must be something that can flow , such as a liquid , gas , or powder .</sentence>
+				<definiendum id="0">predicate clog</definiendum>
+				<definiens id="0">a three-place relation : x clogs y against the flow of z. It is the obstruction by x of z 's motion through y , but with the selectional restriction that z must be something that can flow , such as a liquid , gas , or powder</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The basic scenario for an abrasive event is that there is an impinging bit of material m that hits an object 0 and by doing so removes a pointlike bit of material bo from the surface of o : abr-event ' ( e , m , o , bo ) : material ( m ) A ( Vt ) at ( e , t ) D topologically-invariant ( o , t ) ( V e , m , o , bo ) abr-event ' ( e , m , o , bo ) = ( 3 t , b , s , ez , e2 , e3 ) at ( e , t ) A consists-of ( o , b , t ) A surface ( s , b ) A particle ( bo , s ) A change ' ( e , el , e 2 ) A attached ' ( el , bo , b ) A not ' ( ez , e 0 A cause ( es , e ) A hit ' ( e3 , m , bo ) That is , e is an abrasive event of a material m impinging on a topologically invariant object 0 and detaching bo if and only if b 0 is a particle of the surface s of the bit of material material b of which 0 consists at the time t at which e occurs , and e is a change from the condition el of bo 's being attached to b to the negation e 2 of that condition , where the change is caused by the hitting e 3 of m against b o. After the abrasive event , the pointlike bit bo is no longer a part of the object o : ( Ve , m , o , b 0 , e t , e2 , tz ) abre vent ' ( e , m , o , b o ) A change ' ( e , e Z , ez ) A at ( e2 , t2 ) A consists-ojffo , b2 , t2 ) D ~ part ( bo , b2 ) That is , if e is an abrasive event of m impinging against 0 and detaching bo , and e is a change from e~ to e2 , and e2 holds at time tz , then b 0 is not part of the bit of material b 2 of which 0 consists at t 2 .</sentence>
+				<definiendum id="0">basic scenario for an abrasive event</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>An abrasion is a large set of abrasive events widely distributed through some nonpointlike region on the surface of an object : ( V e , m , o ) abrade ' ( e , m , o ) =- ( 3 bs ) large ( bs ) A \ [ ( Vet ) \ [ e I E e D ( :1 bo ) b 0 E bs A abr-event ' ( et , m , o , bo ) \ ] A ( Vb , s , t ) \ [ at ( e , t ) A consists-of ( o , b , t ) A surface ( s , b ) D ( 3r ) subregion ( r , s ) A widely-distributed ( bs , r ) \ ] \ ] That is , e is an abrasion by m of o if and only if there is a large set bs of bits of material and e is a set of abrasive events in which m impinges on o and removes a bit bo , an element in bs , from o , and if e occurs at time t and o consists of material b at time t , then there is a subregion r of the surface s of b over which bs is widely distributed .</sentence>
+				<definiendum id="0">abrasion</definiendum>
+				<definiendum id="1">r , s ) A widely-distributed</definiendum>
+				<definiendum id="2">e</definiendum>
+				<definiendum id="3">e</definiendum>
+				<definiens id="0">a large set of abrasive events widely distributed through some nonpointlike region on the surface of an object : ( V e , m , o ) abrade ' ( e , m , o ) =- ( 3 bs ) large ( bs ) A \ [ ( Vet ) \ [ e I E e D ( :1 bo ) b 0 E bs A abr-event ' ( et , m , o , bo ) \ ] A ( Vb , s , t ) \ [ at ( e , t ) A consists-of ( o , b , t ) A surface ( s , b</definiens>
+				<definiens id="1">an abrasion by m of o if</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( V e , m , o ) wear ' ( e , m , o ) - ( 3bs ) large ( bs ) A \ [ ( Vet ) \ [ e t E e D ( 3 bo ) b o ~ bs A abr-event ' ( e l , m , o , bo ) \ ] A ( 3i ) \ [ interval ( i ) A widely-distributed ( e , i ) \ ] \ ] That is , e is a wearing by x of o if and only if there is a large set bs of bits of material and e is a set of abrasive events in which m impinges on o and removes a bit bo , an element in bs , from o , and e is widely distributed over some time interval i. We have not yet characterized the concept `` large '' , but we anticipate that it would be similar to `` high '' .</sentence>
+				<definiendum id="0">e</definiendum>
+				<definiendum id="1">e</definiendum>
+				<definiens id="0">a set of abrasive events in which m impinges on o and removes a bit bo , an element in bs</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>If x is distributed in y , then y is a system and x is a set of entities which are located at components of y. For the distribution to be wide , most of the elements of a partition of y , determined independently of the distribution , must contain components which have elements of x at them .</sentence>
+				<definiendum id="0">y</definiendum>
+				<definiens id="0">elements of x at them</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Commonsense Metaphysics and Lexical Semantics /~ surface ( s , b ) /~ part ( bo , s ) /~ change ' ( e , el , ez ) /~ attached ' ( el , bo , b ) /~ not ' ( e2 , e O That is , e is a chipping event by a material m of a bit of material bo from an object o if and only if bo is a part of the surface s of the bit of material material b of which o consists at the time t at which e occurs , and e is a change from the condition el of bo 's being attached to b to the negation e2 of that condition .</sentence>
+				<definiendum id="0">Commonsense Metaphysics</definiendum>
+				<definiendum id="1">bo</definiendum>
+				<definiens id="0">Lexical Semantics /~ surface ( s , b ) /~ part ( bo , s ) /~ change ' ( e , el , ez ) /~ attached ' ( el , bo , b ) /~ not ' ( e2 , e O That is , e is a chipping event by a material m of a bit of material bo from an object o if and only if</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>These augmented grammars , which Pereira calls extraposition grammars ( XGs ) allow everything found in DCGs and allow , in addition , rules that put an element into a HOLD list actually , Pereira calls the data structure analogous to the ATN HOLD list an extraposition list .</sentence>
+				<definiendum id="0">extraposition grammars ( XGs</definiendum>
+				<definiendum id="1">Pereira</definiendum>
+				<definiens id="0">calls the data structure analogous to the ATN HOLD list an extraposition list</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>So , for example , in addition to DCG rules , XGs accept rules like the following : nt ... trace ~ RHS where the RHS is any sequence of terminals , nonterminals , and tests , as in DCGs .</sentence>
+				<definiendum id="0">XGs accept rules</definiendum>
+				<definiendum id="1">RHS</definiendum>
+				<definiens id="0">any sequence of terminals , nonterminals , and tests</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( RLG rules ) relative &lt; &lt; &lt; np trace* rel pro , s. rel pro-\ [ who\ ] . The change from the XG functor `` ... '' to `` &lt; &lt; &lt; `` is made to distinguish this approach to parsing constituents that are moved to the left ( leaving a trace to the right ) from RLG rules for rightward movement. The XGs additional ( linguistically unmotivated ) category rel.__.marker is not needed in the RLG because the trace is introduced to the extraposition list after the first category has been parsed. 1° So the translation of these RLG rules is similar to the XG translation of XG rules , except that rel.__pros are not passed the extraposition list , the traces are indexed , and a test is added to make sure that the trace that is introduced to the extraposition list is gone when the last constituent of the relative has been parsed : relative ( L0 , L , X0 , X ) : rel pro ( L0 , L1 ) , s ( L1 , L , trace ( Index ) .X0 , X ) , tracegone ( trace ( Index ) , X ) . This enforces the c-command constraint , because everything that is c-commanded by the relative pronoun rel___pro is under the relative node. The RLG grammar compiler can enforce subjacency automatically by giving special treatment to grammar rules that expand bounding categories. All that is required is the addition of an indication of every bounding node that is crossed to the extraposition list , and then changing the XG definition of the predicate virtual to allow the appropriate relations across those nodes. The grammar compiler takes care of this by introducing an element np bound into the extraposition list before any daughter of an np is parsed , and removing it when the np is complete , and similarly for s nodes. So the following RLG rules would be translated as shown : ( RLG rules ) s ~ np , vp. np-det , n , relative. ( PROLOG translations ) s ( L0 , L , X0 , X ) : np ( L0 , Ll , \ [ s bound ( ) IX0\ ] , X1 ) , vp ( L1 , L , Xl , \ [ s bound ( ) IX\ ] ) . np ( L0 , L , X0 , X ) : det ( L0 , L1 ) , n ( L1 , L2 ) , relative ( L2 , L , \ [ np bound I X0\ ] , \ [ np bound I X\ ] ) . The prolog translation for s puts s___.bound ( __.. ) on top of the incoming extraposition list X0 , and removes it from the outgoing extraposition list , returning just X. The argument of ~.___bound ( ... ) in this bound indicator is an anonymous variable , , whose value indicates whether the comp node corresponding to the bound has or has had a wh-phrase in it. Since nps do not have comp positions for elements to move into or through , npbound has no argument. Now it is clear that we can not just use the extraposition list as a stack : we have introduced the indications of bounding nodes , and we have indexed the traces. The latter point means that the traces will have to be placed not just in any place where a trace is allowed ; each trace is uniquely associated with a moved phrase and must be placed in a position where the moved phrase could have come from. For example , it is easy to see that the following co-indexed relationships are not acceptable : * what i does the man whoj trace i reads like tracej ? Edward P. Stabler , Jr. Restricting Logic Grammars with Government-Binding Theory This sentence with the marked movements is ruled out by subjacency. The same sentence with properly nested co-indexing , on the other hand , is acceptable and is allowed by subjacency. In any case , it is clear that the extraposition list can not literally be treated as a stack. The presence of the bounding node markers allows us to implement subjacency with the rule that a trace can not be removed from a list if it is covered by more than one bounding marker , unless the trace is of a wh-phrase and there is no more than one covering bound that has no available comp argument. The following rules for virtual are a good first approximation : virtual ( NT , \ [ NT I X\ ] , X ) . virtual ( NT , \ [ np bound , NT I X\ ] , \ [ np bound I X\ ] ) . virtual ( NT , \ [ s bound ( NT ) , NT I X\ ] , \ [ s bound ( NT ) I X\ ] ) . virtual ( NT , \ [ s bound ( NT ) I X\ ] , \ [ s bound ( NT ) I Y\ ] ) : wh ( NT ) , virtual ( NT , X , Y ) . The first of these rules just takes a trace off the top of the list , returning the remainder of the list. The second and third rules allow a trace to be removed from under a single np bound or s.__bound. The fourth rule allows a trace to be removed from under any number of s.___bounds , filling the comp argument of each with the moved constituent fi to make it unavailable for other wh-phrases. These rules about access to the extraposition list do not allow the removal of one trace from under another : the traces themselves are available on a strictly last in , first out basis , as if they were in a stack. This has the consequence that moved constituent-trace relations can only be properly nested , as in : \ [ Which violins\ ] i are \ [ the sonatas\ ] j easy to play tracej on trace i * \ [ Which violins\ ] i are \ [ the sonatas\ ] j easy to play trace i on tracej An argument against this restriction on co-indexed relations comes from sentences like the following : 11 What i do you know howj to read trace i tracei ? Fodor ( 1983 ) has argued , though , that this sort of crossing relation can only occur with traces of different categories : in the last example , the crossing relations between an adverb and a noun phrase can occur , but crossing relations between two noun phrases and their traces can not occur ( unless that relation is dictated by subjacency or other constraints ) . So we must allow one trace to be removed from the list across another when the traces are of different linguistic categories. This modification is easily made : the required modification in the defi~aition of virtual is straightforward. Since the aim of this paper is to turn over to the grammar compiler the enforcement of universal constraints in order to simplify the task of grammar construction , it should be noted that the implementation of subjacency just described , while it may be appropriate for English , is not appropriate for any language in which the bounding nodes are not s and np. Rizzi ( 1982 ) has argued that there is variation among languages in the selection of bounding nodes : in particular , he argues that the bounding nodes in Italian are s bar and np. The RLG grammar compiler can easily accommodate this variable parameter : the appropriate bounding nodes just need to be marked so that they can be submitted to the special treatment described here. Similarly , the approach just described requires that the grammar compiler know which categories can dominate a trace. It is easy to accommodate variation here as well. Our current implementation requires that the grammar writer specify what these nodes are , but it would be possible to implement a two-pass grammar compiler that would compute these nodes after its first pass and then do the appropriate compilation in to prolog clauses. 12 In summary , to put the matter roughly , access to the RLG extraposition list is less restrictive than access to the XGs because the list of traces is not treated as a stack we allow a trace to be removed from the list across another of a different category ; but it is more restrictive in enforcing the c-command and subjacency constraints and because of the restrictions on the nodes at which the extraposition list is available. These restrictions allow a considerable simplification in the grammar rules while preserving enough flexibility to allow for relevant variations among different natural languages. 13 Although the preceding account does successfully enforce subjacency for leftward movement , no provisions have been made for any special treatment of rightward moved constituents , as in sentences like the following : \ [ The man \ [ t\ ] i\ ] arrived \ [ who I told you about\ ] i. \ [ What book \ [ t\ ] i\ ] arrived \ [ about the arms race\ ] i ? * The woman \ [ who likes \ [ the man \ [ t\ ] i\ ] \ ] arrived \ [ who I told you about\ ] i. * What woman \ [ who likes \ [ the book \ [ t\ ] i\ ] \ ] arrived \ [ about the arms race\ ] i ? It is worth pointing out just briefly how these can be accommodated with techniques similar to those already introduced. It should be noted that some phrase structure approaches do not relate ( what we are treating as ) rightward moved constituents to any other positions in the sentence structure ( leaving that to the semantics ) , but we will follow the Chomskian tradition in assuming that the syntactic parser should mark this relation. There are a number of ways to do this : • The standard top-down left-to-right strategy of `` guessing '' whether there is a rightward moved constituent would obviously be expensive. Backtracking all the way to wherever the incorrect guess was made is an expensive process , since a whole sentence with arbitrarily many words may intervene between the incorrect guess and the point where the error causes a failure. Computational Linguistics , Volume 13 , Numbers 1-2 , January-June 1987 7 Edward P. Stabler , Jr. Restricting Logic Grammars with Government-Binding Theory • One strategy for avoiding unnecessary backtracking is to use lookahead , but obviously , the lookahead can not be bounded by any particular number of words in this case. More sophisticated lookahead ( bounded to a certain number of linguistically motivated constituents ) can be used ( cf. , Berwick 1983 ) , but this approach requires a complicated buffering and parsebuilding strategy. • A third approach would involve special backward modification of the parse tree , but this is inelegant and computationally expensive. • A fourth approach in left-to-right parsing is to leave the parse tree to the left unspecified , passing a variable to the right. This last strategy can be implemented quite elegantly and feasibly , and it allows for easy enforcement of subjacency. To handle optional rightward `` extraposition from np '' using this last strategy , we use rules like the following : s ~ np , vp , optionaladjunct. optional adjunct ~ \ [ \ ] . optionaladjunct ~ adjunct. optional rein rel. optionalnrel &gt; &gt; &gt; ( ( adjunct ~ rel ) ; Tree ) .</sentence>
+				<definiendum id="0">RLG rules</definiendum>
+				<definiens id="0">an anonymous variable , , whose value indicates whether the comp node corresponding to the bound has or has had a wh-phrase in it. Since nps do not have comp positions for elements to move into or through</definiens>
+				<definiens id="1">bounded by any particular number of words in this case. More sophisticated lookahead ( bounded to a certain number of linguistically motivated constituents</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In these rules , Tree is the variable that gets passed to the right .</sentence>
+				<definiendum id="0">Tree</definiendum>
+				<definiens id="0">the variable that gets passed to the right</definiens>
+			</definition>
+</paper>
+
+		<paper id="3008">
+			<definition id="0">
+				<sentence>Lexical rules ( of which there are three types ) express relationships between entries , or between fields within entries , and have a procedural interpretation which maps a set of basic entries into a possibly larger set of entries with more specified categories .</sentence>
+				<definiendum id="0">Lexical rules</definiendum>
+				<definiens id="0">maps a set of basic entries into a possibly larger set of entries with more specified categories</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Note that the rule should refer to the context where the e can be deleted and not just allow arbitrary deletions of es in the lexical form as then the surface form reed would match red in the lexicon u The format for the Spelling Rules includes initial declarations and definitions of the associated entities ( character sets , etc. ) needed to support the actual rule-definitions , as follows .</sentence>
+				<definiendum id="0">Spelling Rules</definiendum>
+				<definiens id="0">includes initial declarations and definitions of the associated entities ( character sets , etc. ) needed to support the actual rule-definitions , as follows</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The surface alphabet is the 292 Computational Linguistics , Volume 13 , Numbers 3-4 , July-December 1987 Graeme D. Ritchie , Stephen G. Pulman , Alan W. Black , and Graham J. Russell A Framework for Lexicai Description set of acceptable symbols in a string being looked up , the lexieal alphabet is the set of acceptable symbols within citation forms in lexical entries , and named subsets of these alphabets can be declared .</sentence>
+				<definiendum id="0">surface alphabet</definiendum>
+				<definiendum id="1">lexieal alphabet</definiendum>
+				<definiens id="0">the set of acceptable symbols within citation forms in lexical entries</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A lexical symbol can be one of three types : a lexical character from the declared lexical alphabet ; a lexical set , declared over a range of lexical characters ; or the symbol 0 ( zero ) which represents the null symbol .</sentence>
+				<definiendum id="0">lexical symbol</definiendum>
+				<definiens id="0">a lexical character from the declared lexical alphabet</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The following example describes the phenomenon of adding an e when pluralising some nouns ( also making some verbs into their third person singular form ) , e.g boys as boy+s while boxes as box+s. This phenomena is known as `` epenthesis '' : Epenthesis + : e &lt; = &gt; { &lt; { s : sc : c } h : h &gt; s : sx : xz : z } -- -s : s The left and right contexts are basically regular expressions , with angle brackets indicating sequences of items , curly braces indicating disjunctive choices , and ordinary parentheses enclosing optional items .</sentence>
+				<definiendum id="0">sx</definiendum>
+				<definiens id="0">the phenomenon of adding an e when pluralising some nouns ( also making some verbs into their third person singular form ) , e.g boys as boy+s while boxes as box+s. This phenomena is known as `` epenthesis '' : Epenthesis + : e &lt; = &gt; { &lt; { s : sc : c } h : h &gt; s</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Extension ( a ) A feature-value ( either atomic or a category ) is an extension of any variable of an appropriate type .</sentence>
+				<definiendum id="0">Extension</definiendum>
+				<definiendum id="1">feature-value</definiendum>
+				<definiens id="0">an extension of any variable of an appropriate type</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Computational Linguistics , Volume 13 , Numbers 3-4 , July-December 1987 295 Graeme D. Ritchie , Stephen G. Pulman , Alan W. Black , and Graham J. Russell A Framework for Lexical Description ( b ) An atomic feature-value is an extension of itself .</sentence>
+				<definiendum id="0">atomic feature-value</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>This tree must match the following constraints a. there must be a rule in the word grammar of the form A - &gt; dl d2 . . . dn , where category N is an extension of A and ci is an extension ofdi for each i from 1 to n .</sentence>
+				<definiendum id="0">category N</definiendum>
+				<definiendum id="1">ci</definiendum>
+				<definiens id="0">an extension of A and</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Each rule is preceded by a mnemonic name , and VAL is a variable ranging over + and - .</sentence>
+				<definiendum id="0">VAL</definiendum>
+				<definiens id="0">a variable ranging over + and -</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>( PREFIXING ( ( BAR 0 ) ) - &gt; ( ( FIX PRE ) ) , ( ( BAR 0 ) ) ) ( SUFFIXING ( ( BAR 0 ) ( N + ) ) - &gt; ( ( BAR 0 ) ) , ( ( N + ) ( FIX SUF ) ) ) ( V-SUFFIXING ( ( N - ) ( V + ) ( AUX VAL ) ( BAR 0 ) ) - &gt; ( ( AUX VAL ) ( BAR 0 ) ) , ( ( FIX SUF ) ( N - ) ( V + ) ) ) ( NON-V-SUFFIXING ( ( N - ) ( V + ) ( AUX VAL ) ( BAR 0 ) ) - &gt; ( ( N + ) ( BAR 0 ) ) , ( ( N - ) ( V + ) ( FIX SUF ) ( AUX VAL ) ) ) The SUFFIXING rule can be phrased `` Any noun or adjective can be made up of a noun or adjective stem followed by a suffix '' .</sentence>
+				<definiendum id="0">FIX SUF ) ( AUX VAL ) ) ) The SUFFIXING rule</definiendum>
+				<definiens id="0">N - ) ( V + ) ( AUX VAL ) ( BAR 0 ) ) - &gt; ( ( AUX VAL ) ( BAR 0 ) ) , ( ( FIX SUF ) ( N - ) ( V + ) ) ) ( NON-V-SUFFIXING ( ( N - ) ( V + ) ( AUX VAL ) ( BAR 0 ) ) - &gt; ( ( N + ) ( BAR 0 ) ) , ( ( N - ) ( V + )</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The NON-V-SUFFIXING rule is to cover those cases of derivational morphology where a noun or adjective ( N + ) stem becomes a verb through suffixation - '' any noun or adjective which forms a whole word can form a whole word verb by the addition of a verbal suffix '' .</sentence>
+				<definiendum id="0">NON-V-SUFFIXING rule</definiendum>
+				<definiens id="0">forms a whole word can form a whole word verb by the addition of a verbal suffix ''</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The Surface Alphabet contains all normal alphabetic letters , space , hyphen and apostrophe ( for simplicity , we shall ignore the issue of upper and lower case here ) .</sentence>
+				<definiendum id="0">Surface Alphabet</definiendum>
+				<definiens id="0">contains all normal alphabetic letters , space , hyphen and apostrophe ( for simplicity</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The Spelling Rule interpreter will segment this ( using the C-Insertion rule , and the Default Pair definition that pairs morpheme boundaries with null ) into three morphemes -- -apply , +ation , and +s. In the original lexical entries , these morphemes are listed thus , with +s having two entries : ( apply apply ( ( V + ) ( N - ) ( SUBCAT NP PPTO ) ) APPLY NIL ) ( +ation +ation ( ( FIX SUF ) ( V - ) ( N + ) ( INFL + ) ( STEM ( ( V + ) ( INFL + ) ( N - ) ) ) ) ATION NIL ) ( +s +s ( ( FIX SUF ) ( V + ) ( N - ) ( FIN + ) ( PAST - ) ( AGR SING3 ) ( STEM ( ( V + ) ( N - ) ( INFL + ) ) ) ) S NIL ) ( +s +s ( ( FIX SUF ) ( V - ) ( N + ) ( PLU + ) ( STEM ( ( N + ) ( V - ) ( INFL + ) ) ) ) S NIL ) However , various Completion Rules will have acted upon these basic entries at the pre-compilation stage of the lexicon , resulting in the following more detailed entries for the three morphemes we are interested in here ( ignoring the other entry for +s ) : ( apply apply ( ( INFL + ) ( V + ) ( N - ) ( BAR 0 ) ( AT + ) ( LAT + ) ( SUBCAT NP PPTO ) ( AUX - ) ) APPLY NIL ) ( +ation +ation ( ( FIX SUF ) ( V - ) ( N + ) ( BAR -1 ) ( INFL + ) ( PLU - ) ( AT + ) ( LAT + ) ( STEM ( ( V + ) ( 1NFL + ) ( N - ) ) ) ) ATION NIL ) ( +s +s ( ( FIX SUF ) ( V - ) ( N + ) ( BAR - ! )</sentence>
+				<definiendum id="0">Spelling Rule interpreter</definiendum>
+				<definiendum id="1">Default Pair definition</definiendum>
+				<definiens id="0">+s having two entries : ( apply apply ( ( V + ) ( N - ) ( SUBCAT NP PPTO ) ) APPLY NIL ) ( +ation +ation ( ( FIX SUF ) ( V - ) ( N + ) ( INFL + ) ( STEM ( ( V + ) ( INFL + ) ( N - ) ) ) ) ATION NIL ) ( +s +s ( ( FIX SUF ) ( V + ) ( N - ) ( FIN + ) ( PAST - ) ( AGR SING3 ) ( STEM ( ( V + ) ( N - ) ( INFL + ) ) ) ) S NIL ) ( +s +s ( ( FIX SUF ) ( V - )</definiens>
+				<definiens id="1">interested in here ( ignoring the other entry for +s ) : ( apply apply ( ( INFL + ) ( V + ) ( N - )</definiens>
+				<definiens id="2">V - ) ( N + ) ( BAR -1 ) ( INFL + ) ( PLU - ) ( AT +</definiens>
+				<definiens id="3">N - ) ) ) ) ATION NIL ) ( +s +s ( ( FIX SUF ) ( V - ) ( N + )</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Certain suffixes ( e.g. +ly ) may attach either to the base form of regular , inflectable , adjectives ( as in easily ) , or to non-inflectable adjectives ( as in dangerously ) .</sentence>
+				<definiendum id="0">Certain suffixes</definiendum>
+				<definiens id="0">attach either to the base form of regular , inflectable , adjectives ( as in easily ) , or to non-inflectable adjectives ( as in dangerously )</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>PLU ( + ) PLU distinguishes plural nouns from others ; men and cats both bear the specification ( PLU + ) , and man and cat ( PLU - ) .</sentence>
+				<definiendum id="0">PLU</definiendum>
+				<definiens id="0">distinguishes plural nouns from others ; men and cats both bear the specification ( PLU + ) , and man and cat ( PLU - )</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>NFORM ( IT THERE NORM ) NFORM encodes the type of a noun phrase .</sentence>
+				<definiendum id="0">NFORM ( IT THERE NORM ) NFORM</definiendum>
+				<definiens id="0">encodes the type of a noun phrase</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>SUBCAT ( NP N 1 AP INF PRED PP PPFROM PPOF PPAT PPWITH PPTO PPON PPIN NP PPOF NP PPTO NP INF ING THAT S FOR SBARE S BASE S FIN S BASE VP IT PPTO THAT S NP Q NP LOC NP PPFOR PPABOUT NP PPFOR NP PPFROM NP PPWITH 304 Computational Linguistics , Volume 13 , Numbers 3-4 , July-December 1987 Graeme D. Ritchie , Stephen G. Puiman , Alan W. Black , and Graham J. Russell A Framework for Lexical Description PPOF PPWITH OBJ GAP NP PPIN A1PPFORNP NPNP THAT S LOC NP BASE VP NP PPBY PPAGAINST PPBY NP ING Q S NP AS PRED PPTO THAT S NP PPINTODEFNP INNP Q S N1PLUR S NPOF PLU -- R NPTO N1SING NP PPFROM PPOVER SING3 NP PREDNP OFF NP ON NP UP ANY OBJ SUBJ -- NULL ) SUBCAT encodes the subcategorization class of a word .</sentence>
+				<definiendum id="0">SUBCAT</definiendum>
+				<definiendum id="1">AP INF PRED PP PPFROM PPOF PPAT PPWITH PPTO PPON PPIN NP PPOF NP PPTO NP INF ING THAT S FOR SBARE S BASE S FIN</definiendum>
+				<definiens id="0">Lexical Description PPOF PPWITH OBJ GAP NP PPIN A1PPFORNP NPNP THAT S LOC NP BASE VP NP PPBY PPAGAINST PPBY NP ING Q S NP AS PRED PPTO THAT S NP PPINTODEFNP INNP Q S N1PLUR S NPOF PLU -- R NPTO N1SING NP PPFROM PPOVER SING3 NP PREDNP OFF NP ON NP UP ANY OBJ SUBJ -- NULL ) SUBCAT encodes the subcategorization class of a word</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>( ( ( V v ) '' ( LAT ) rest ) ) = &gt; ( &amp; &amp; ( ( V v ) ( LAT+ ) rest ) &amp; &amp; ) Add ( AT + ) as default to all entries with ( LAT + ) specifications .</sentence>
+				<definiendum id="0">( ( ( V v</definiendum>
+			</definition>
+			<definition id="18">
+				<sentence>( ( ( N n ) ( V v ) `` ( BAR ) rest ) ) = &gt; ( &amp; &amp; ( ( BAR 0 ) ( N n ) ( V v ) rest ) &amp; &amp; ) Add ( PLU - ) as default to all noun entries .</sentence>
+				<definiendum id="0">( ( ( N n )</definiendum>
+				<definiens id="0">BAR 0 ) ( N n ) ( V v</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>The detail class is one case where connectives with a range of meanings were merged into one category .</sentence>
+				<definiendum id="0">detail class</definiendum>
+				<definiens id="0">one case where connectives with a range of meanings were merged into one category</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Pollack discusses the problem of inferring a questioner Q 's plan from his discourse .</sentence>
+				<definiendum id="0">Pollack</definiendum>
+				<definiens id="0">discusses the problem of inferring a questioner Q 's plan from his discourse</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Proposition Analyzer may call on the Clue Interpreter in the presence of clues , to assist in the interpretation .</sentence>
+				<definiendum id="0">Proposition Analyzer</definiendum>
+				<definiens id="0">call on the Clue Interpreter in the presence of clues , to assist in the interpretation</definiens>
+			</definition>
+</paper>
+
+		<paper id="3006">
+			<definition id="0">
+				<sentence>The MTT is a theory of how to describe and formally present linguistic knowledge , a theory of linguistic description ; therefore , its contribution to computational linguistics is only a partial one : to take care exclusively of the linguistic part of the general endeavor .</sentence>
+				<definiendum id="0">MTT</definiendum>
+				<definiens id="0">a theory of how to describe and formally present linguistic knowledge , a theory of linguistic description</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In Meaning-Text Theory , an utterance~ is represented at seven levels : 1 ) The Sem ( antic ) R ( epresentation ) of utterance U is , roughly speaking , a network which depicts the linguistic meaning of U without taking into consideration the way this meaning is expressed in U ( distribution of meaning between words and constructions , and the like ) .</sentence>
+				<definiendum id="0">Sem</definiendum>
+				<definiens id="0">a network which depicts the linguistic meaning of U without taking into consideration the way this meaning is expressed in U ( distribution of meaning between words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>3 ) The S ( urface- ) Synt ( actic ) R ( epresentation ) of U is also a dependency tree of the same formal type but , its nodes are labeled with all actual lexemic occurrences of U ( including all structural words ) , and branches of it carry the names of a few dozen specific SSynt-relations , which correspond to the actual syntactic constructions of a particular language .</sentence>
+				<definiendum id="0">few dozen specific SSynt-relations</definiendum>
+				<definiens id="0">nodes are labeled with all actual lexemic occurrences of U ( including all structural words</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>oa iiii 'conseils avertis ' 'concerner ' \ [ judicious advice \ ] \ [ concern \ ] SemR of Sentence ( 1 ) Figure 1 In this figure , II is a dummy to indicate an unspecified meaning ( it is not specified what exactly the advice from Alcide is ) .</sentence>
+				<definiendum id="0">II</definiendum>
+				<definiens id="0">a dummy to indicate an unspecified meaning</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>An ECD definition is a decomposition of the meaning of the corresponding lexeme .</sentence>
+				<definiendum id="0">ECD definition</definiendum>
+				<definiens id="0">a decomposition of the meaning of the corresponding lexeme</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>4 , 5 , 7 ; paraphrasing rules -see ( 9 ) below ) ; ( b ) rules establishing correspondences between units of two adjacent linguistic levels , or manifestation rules ( e.g. , Fig .</sentence>
+				<definiendum id="0">manifestation rules</definiendum>
+				<definiens id="0">units of two adjacent linguistic levels , or</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Our exclusion of real world knowledge from the SemR and therefore from the MTM opposes our approach to others , such as , e.g. , Montague Grammar , which claims that the rules associating semantic representations with sentences and the rules interpreting the same representations in terms of extralinguistic reality ( set-theoretical interpretation ) are of the same nature and can be integrated within the same model .</sentence>
+				<definiendum id="0">Grammar</definiendum>
+				<definiens id="0">set-theoretical interpretation ) are of the same nature and can be integrated within the same model</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>_~N Government pattern of the French verb ALDER 2 X , Y , Z and ~/are the semantic actants of ALDER 2 : X is the person who helps , Y the person who receives help , Z the activity of Y in which he needs help , and ~ # the resources by which X helps Y. I , II , III and IV are the Deep-Syntactic aotants of AIDER 2 : I refers to the noun phrase that expresses X etc .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">Y</definiendum>
+				<definiens id="0">the person who receives help , Z the activity of Y in which he needs help , and ~ # the resources by which X helps Y. I</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>270 Computational Linguistics , 'Volume 13 , Numbers 3-4 , July-December 1987 Igor Mel'~uk and Alain Polgu~re A Formal Lexicon in Meaning-Text Theory III A ( 111 \ [ PREP\ ] ) 0 &lt; &gt; o B A o ( III \ [ PREP\ ] ) l indirect objective PREP prepositional o B DSgntR SSyntR A D $ ynt-rule for the realization of the DSynt-relation III Figure 9 contrast to that , a government pattern is a `` speaking '' expression which explicitly specifies the syntactic micro-structure typical of L -independently of any syntactic rules that might use it .</sentence>
+				<definiendum id="0">government pattern</definiendum>
+				<definiens id="0">A Formal Lexicon in Meaning-Text Theory III A ( 111 \ [ PREP\ ] ) 0 &lt; &gt; o B A o ( III \ [ PREP\ ] ) l indirect objective PREP prepositional o B DSgntR SSyntR A D $ ynt-rule for the realization of the DSynt-relation III Figure 9 contrast to that , a</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The main novelty of the ECD is a systematic description of the restricted lexical cooccurrence of every head lexeme .</sentence>
+				<definiendum id="0">ECD</definiendum>
+				<definiens id="0">a systematic description of the restricted lexical cooccurrence of every head lexeme</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>8 A lexical function f is a dependency that associates with a lexeme L , called the argument of f , another lexeme ( or a set of ( quasi- ) synonymous lexemes ) L ' which expresses , with respect to L , a very abstract meaning ( which can even be zero ) and plays a specific syntactic role .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiendum id="1">abstract meaning</definiendum>
+				<definiens id="0">a dependency that associates with a lexeme L , called the argument of</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>We adopt pseudo-parallelism ( breadth-first search ) , maintaining a list of stacks ( the Stack List ) .</sentence>
+				<definiendum id="0">pseudo-parallelism</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>To avoid this , we use a technique called local ambiguity packing , which works in the following way .</sentence>
+				<definiendum id="0">ambiguity packing</definiendum>
+				<definiens id="0">works in the following way</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>noun verb det noun ( prep det noun ) n-1 An example sentence with this structure is I saw a man in the park on the hill with a telescope ... . The result shows that all possible parses can be represented in almost O ( log n ) space , where n is the number of possible parses in a sentence .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of possible parses in a sentence</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( &lt; S &gt; &lt; == &gt; ( &lt; NP &gt; &lt; VP &gt; ) ( LAMBDA ( XI X2 ) ( LET ( ( X ( LIST ( LIST ( AND ( SETQ X ( SETQ X ( SETQ X ( SETQ X ( SETQ X ( SETQ X ( GETVALUE* X ( CONS ( , QUOTE X2 ) X2 ) ( CONS ( QUOTE XI ) XI ) ) ) ) ) ( UNIFYSETVALUE '' ( QUOTE ( XI CASE ) ) ( QUOTE ( NOM ) ) ) ) ( C-UNIFYSETVALUE '' ( QUOTE ( X2 FORM ) ) ( QUOTE ( FINITE ) ) ) ) ( APPEND ( LET ( ( X X ) ) ( SETQ X ( UNIFYSETVALUE '' ( QUOTE ( X2 : TIME ) ) ( QUOTE ( PRESENT ) ) ) ) ) ( SETQ X ( UNIFYVALUE* ( QUOTE ( X2 AGR ) ) ( QUOTE ( Xl AGR ) ) ) ) x ) ( LET ( ( X X ) ) ( SETQ X ( UNIFYSETVALUE '' ( QUOTE ( X2 : TIME ) ) ( QUOTE x ) ) ) ( UNIFYVALUE* ( QUOTE ( XO ) ) ( QUOTE ( X2 ) ) ) ) ( UNIFYSETVALUE* ( QUOTE ( XO : MOOD ) ) ( QUOTE ( DEC ) ) ) ) ( UNIFYVALUE '' ( QUOTE ( XO SUBJ ) ) ( QUOTE ( X1 ) ) ) ) ( QUOTE ( XO ) ) ) ) ) ) ) ( PAST ) ) ) ) Figure 6.2 .</sentence>
+				<definiendum id="0">LAMBDA</definiendum>
+				<definiendum id="1">QUOTE</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>Theorem 2 ( Interchange Lemma , Ogden et al. 1985 ) Let L be a CFL , and let L n be the set of length n strings in L. Then there is a constant C L such that for any n , any nonempty subset Qn of L n , and any integer m such that n &gt; m &gt; _ 2 , the following holds : Let k = rllQnll/ ( CLnZ ) l , where rxl denotes x rounded up to the nearest integer , and II Qn II is the cardinality of Qn '' Then there are k distinct strings z 1 , ... , z k in Qn such that z i can be written w i xy i forl &lt; i &lt; k , and : ( i ) \ [ wi\ [ = Iwj\ [ for alli , j &lt; _k ; ( ii ) lYil = lYjl foralli , j_ &lt; k ; ( iii ) m _ &gt; I xi\ [ &gt; m/2 ; ( iv ) \ [ xi\ [ = Ixjl for alli , j &lt; _k ; and ( v ) w i xj Yi e L for alli , j , &lt; _ k. Since this result is likely to be unfamiliar to some readers , we shall provide some commentary that should prove helpful in following the remainder of the presentation .</sentence>
+				<definiendum id="0">II Qn II</definiendum>
+				<definiens id="0">a CFL , and let L n be the set of length n strings in L. Then there is a constant C L such that for any n , any nonempty subset Qn of L n , and any integer m such that n &gt; m &gt; _ 2 , the following holds : Let k = rllQnll/ ( CLnZ ) l , where rxl denotes x rounded up to the nearest integer</definiens>
+				<definiens id="1">the cardinality of Qn '' Then there are k distinct strings z 1 , ... , z k in Qn such that z i can be written w i xy i forl &lt; i &lt; k , and : ( i ) \ [ wi\ [ = Iwj\ [ for alli , j &lt; _k ; ( ii ) lYil = lYjl foralli , j_ &lt; k ; ( iii ) m _ &gt; I xi\ [ &gt; m/2 ; ( iv ) \ [ xi\ [ = Ixjl for alli , j &lt; _k ; and ( v ) w i xj Yi e L for alli , j</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Hisa subset of N , K is disjoint from N , and the only other strings that might be in N are those in G. Therefore , N contains H and some subset ( possibly empty ) of G , and is trans-CF by Theorem 3 .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">contains H and some subset ( possibly empty ) of G</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Our empirical argument rests on the claim that number agreement between reflexive pronouns and their antecedents is a syntactic phenomenon in English .</sentence>
+				<definiendum id="0">antecedents</definiendum>
+				<definiens id="0">a syntactic phenomenon in English</definiens>
+			</definition>
+</paper>
+
+		<paper id="3011">
+</paper>
+
+		<paper id="3009">
+			<definition id="0">
+				<sentence>( 1 ) LEARNING NEW PHRASES In the following dialog , RINA encounters an unknown phrase , throw the book at somebody .</sentence>
+				<definiendum id="0">RINA</definiendum>
+				<definiens id="0">encounters an unknown phrase , throw the book at somebody</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( 2 ) PROCESSING AN UNKNOWN In the next dialog , RINA encounters a new word , goggled .</sentence>
+				<definiendum id="0">RINA</definiendum>
+				<definiens id="0">encounters a new word , goggled</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>RINA manages to extract useful information from the sentence in spite of the missing element .</sentence>
+				<definiendum id="0">RINA</definiendum>
+				<definiens id="0">manages to extract useful information from the sentence in spite of the missing element</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>DHPL is a continuation of efforts in three distinct areas .</sentence>
+				<definiendum id="0">DHPL</definiendum>
+				<definiens id="0">a continuation of efforts in three distinct areas</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The presupposition for the application of the phrase is the entire situation in which the phrase typically appears .</sentence>
+				<definiendum id="0">presupposition for the application of the phrase</definiendum>
+				<definiens id="0">the entire situation in which the phrase typically appears</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The underlying knowledge is the the trial script , which captures the basic events taking place in court .</sentence>
+				<definiendum id="0">trial script</definiendum>
+				<definiens id="0">captures the basic events taking place in court</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Personl is an authority for Person2 .</sentence>
+				<definiendum id="0">Personl</definiendum>
+				<definiens id="0">an authority for Person2</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>y ) Figure 6 : The Phrase Notation Notice that the phrase consists of three main parts : pattern , concept and presupposition ( the comment is for reference only ) .</sentence>
+				<definiendum id="0">presupposition</definiendum>
+				<definiens id="0">The Phrase Notation Notice that the phrase consists of three main parts : pattern , concept and</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>x ) verb ( verb root throw ) objectl ( case-frame determiner the root book ) object2 ( case-frame marker at class person instance ?</sentence>
+				<definiendum id="0">x ) verb</definiendum>
+				<definiens id="0">case-frame determiner the root book</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Identifying the implicit subject involves knowledge of phrase interaction .</sentence>
+				<definiendum id="0">Identifying the implicit subject</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>For example , P2 encompasses communication verbs such as ask , tell , instruct , etc. , share certain features .</sentence>
+				<definiendum id="0">P2</definiendum>
+				<definiens id="0">encompasses communication verbs such as ask , tell , instruct , etc. , share certain features</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>For example , P4 is the situation in which God commands Moses to approach the Mountain .</sentence>
+				<definiendum id="0">P4</definiendum>
+				<definiens id="0">the situation in which God commands Moses to approach the Mountain</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>x ) , RINA figures out the confusion in the role-binding and corrects appropriately the phrase for promise , as given below : comment X promise Y to Z pattern ( subject ( verb ( object ( comp presupposition ( goal concept ( mtrans instance ?</sentence>
+				<definiendum id="0">RINA</definiendum>
+				<definiendum id="1">comp presupposition</definiendum>
+				<definiens id="0">figures out the confusion in the role-binding and corrects appropriately the phrase for promise</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>v. Answers for these dilemmas are given by the hierarchy in Figure 12 below : ( a ) The most general phrase ( P1 ) denotes the general properties of English verb modifiers .</sentence>
+				<definiendum id="0">general phrase</definiendum>
+				<definiendum id="1">P1</definiendum>
+				<definiens id="0">the general properties of English verb modifiers</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>P2 : subject ( location bef ) ( marker none ) verb ( location ref ) ( voice active ) object1 ( location aft ) object2 ( location aft ) P3 : subject ( location any ) verb ( location ref ) ( voice passive ) object1 ( location bef ) ( marker none ) object2 ( location aft ) Figure 13 : Top-Down vs. Bottom-Up Propagation Figure 13 shows two learning processes : describe it away is deduced top-down from an existing general concept ( P3a ) .</sentence>
+				<definiendum id="0">P2</definiendum>
+				<definiens id="0">Top-Down vs. Bottom-Up Propagation Figure 13 shows two learning processes : describe it away is deduced top-down from an existing general concept</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>In the absence of the appropriate phrase in the lexicon , RINA utilizes other available knowledge sources , namely ( a ) the literal interpretation and ( b ) the context .</sentence>
+				<definiendum id="0">RINA</definiendum>
+				<definiens id="0">utilizes other available knowledge sources</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Knowledge Propagation through Generalization and Specialization : Hierarchy is a precondition for learning by generalization .</sentence>
+				<definiendum id="0">Hierarchy</definiendum>
+				<definiens id="0">a precondition for learning by generalization</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>However , as will be apparent later , our second-stage normalization is a more general approach that we envision using with a variety of machine-readable dictionary resources .</sentence>
+				<definiendum id="0">second-stage normalization</definiendum>
+				<definiens id="0">a more general approach that we envision using with a variety of machine-readable dictionary resources</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>These include an 'ignore ' operator , which causes tokens in the input to be ignored by the automatic structure builder , an 'insert ' operator which causes new elements to be inserted , and the efficient implementation of rules consisting entirely of optional elements .</sentence>
+				<definiendum id="0">operator</definiendum>
+				<definiens id="0">causes new elements to be inserted , and the efficient implementation of rules consisting entirely of optional elements</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A prototype LDB/LQL system has been built as a testing ground for various concepts and algorithms and is currently in use , as described in sections 4 and 5 .</sentence>
+				<definiendum id="0">prototype LDB/LQL system</definiendum>
+				<definiens id="0">a testing ground for various concepts and algorithms and is currently in use</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>LQL allows the user to specify conditions on the attributes of LDB entries .</sentence>
+				<definiendum id="0">LQL</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>LQL offers this flexibility by providing the operators `` i. '' ( for `` insert '' ) , `` d. '' ( for `` delete ) , and `` u. '' ( for `` update '' ) .</sentence>
+				<definiendum id="0">LQL</definiendum>
+				<definiens id="0">offers this flexibility by providing the operators `` i. '' ( for `` insert ''</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Dictionary Access Method ( Byrd , et al. ( 1986b ) ) provides random and sequential access to dictionary entries associated with words which serve as search keys .</sentence>
+				<definiendum id="0">Dictionary Access Method</definiendum>
+				<definiens id="0">provides random and sequential access to dictionary entries associated with words which serve as search keys</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>DICTUTIL is a menu-driven interface to the prototype implementation of the lexical data base system .</sentence>
+				<definiendum id="0">DICTUTIL</definiendum>
+				<definiens id="0">a menu-driven interface to the prototype implementation of the lexical data base system</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The Matrix Building program takes ordered pairs of words that bear a given relationship to one another ( e.g. , X is a synonym of Y ) and constructs a matrix in which each X word is represented by a row , each Y word is represented by a column , and the relationship between them is indicated in the cell that is formed by the XY intersection .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a synonym of Y ) and constructs a matrix in which each X</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>UDICT ( Byrd ( 1986a ) ) is a computerized lexicon system .</sentence>
+				<definiendum id="0">UDICT</definiendum>
+				<definiens id="0">a computerized lexicon system</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>UDICT is a component of TUPLES and WordSmith .</sentence>
+				<definiendum id="0">UDICT</definiendum>
+				<definiens id="0">a component of TUPLES and WordSmith</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>WordSmith is an on-line dictionary system , described in Neff and Byrd ( 1987 ) , which allows flexible access to dictionaries stored as DAM files and lexical data bases .</sentence>
+				<definiendum id="0">WordSmith</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>Among its capabilities , WordSmith provides access to : • definitions , synonyms , and etymologies from Webster 's Seventh ( Merriam ( 1963 ) ) , • pronunciations from Webster 's Seventh and rhymes based on them , • definitions and grammatical information from LDOCE ( Longman ( 1978 ) ) , • synonyms from the Collins Thesaurus ( Collins ( 1984 ) ) , • entries from the Collins bilingual dictionaries for English/Italian , English/French , English/Spanish , and English/German ( Collins ( 1971 , 1978 , 1980 , 1981 ) ) .</sentence>
+				<definiendum id="0">WordSmith</definiendum>
+				<definiendum id="1">English/German</definiendum>
+				<definiens id="0">provides access to : • definitions , synonyms , and etymologies from Webster 's Seventh ( Merriam ( 1963 ) ) , • pronunciations from Webster 's Seventh and rhymes based on them , • definitions and grammatical information from LDOCE ( Longman ( 1978</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Our procedures for sense disambiguation have been used to process The Collins Thesaurus ( CT ) , which is stored as a DAM file with 16,700 keyed records containing a total of 278,000 synonym tokens .</sentence>
+				<definiendum id="0">Collins Thesaurus ( CT )</definiendum>
+				<definiens id="0">is stored as a DAM file with 16,700 keyed records containing a total of 278,000 synonym tokens</definiens>
+			</definition>
+</paper>
+
+	</volume>

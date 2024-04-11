@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="P96">
+
+		<paper id="1055">
+			<definition id="0">
+				<sentence>RDG is designed to determine dependency relations among words and phrases in sentences .</sentence>
+				<definiendum id="0">RDG</definiendum>
+				<definiens id="0">designed to determine dependency relations among words and phrases in sentences</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Conceptual Dictionary is a set of graphs consisting of 400,000 concepts and a number of taxonomic as well as functional relations between them .</sentence>
+				<definiendum id="0">Conceptual Dictionary</definiendum>
+				<definiens id="0">a set of graphs consisting of 400,000 concepts and a number of taxonomic as well as functional relations between them</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Co-occurrence Dictionary consist of a list of 1,100,000 dependency relations ( modifier , particle and modificant ) taken from a corpus .</sentence>
+				<definiendum id="0">Co-occurrence Dictionary</definiendum>
+				<definiens id="0">consist of a list of 1,100,000 dependency relations ( modifier , particle and modificant ) taken from a corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Structure RDG identifies all possible dependency structures which consist of modifier-modificant relations between elements in a sentence .</sentence>
+				<definiendum id="0">Structure RDG</definiendum>
+				<definiens id="0">identifies all possible dependency structures which consist of modifier-modificant relations between elements in a sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="1057">
+			<definition id="0">
+				<sentence>Consider sentences ( 1 ) and ( 2 ) and the corresponding centering data in Table 1 ( Cb : backward-looking center ; the first dement of the pairs denotes the discourse entity , the second element the surface ) .</sentence>
+				<definiendum id="0">Cb</definiendum>
+				<definiens id="0">the discourse entity , the second element the surface )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Now , we are able to define the expression utterance in a satisfactory manner : An utterance U is a simple sentence , a complex sentence , or each full clause of a compound sentence 3 .</sentence>
+				<definiendum id="0">utterance U</definiendum>
+				<definiens id="0">a simple sentence , a complex sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>Head automata mono-lingual language models consist of a lexicon , in which each entry is a pair ( w , m ) of a word w from a vocabulary V and a head automaton m ( defined below ) , and a parameter table giving an assignment of costs to events in a generative process involving the automata .</sentence>
+				<definiendum id="0">Head automata mono-lingual language models</definiendum>
+				<definiens id="0">consist of a lexicon , in which each entry is a pair ( w , m ) of a word w from a vocabulary V and a head automaton m ( defined below ) , and a parameter table giving an assignment of costs to events in a generative process involving the automata</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>rnl Imo , qo ) YIl &lt; i &lt; n P ( l , wilwo , ri ) P ( Di Iwi , ri ) . In the translation application we search for the highest probability derivation ( or more generally , the Nhighest probability derivations ) . For other purposes , the probability of strings may be of more interest. The probability of a string according to the model is the sum of the probabilities of derivations of ordered dependency trees yielding the string. In practice , the number of parameters in a head automaton language model is dominated by the dependency parameters , that is , O ( \ ] V\ ] 2\ ] RI ) parameters. This puts the size of the model somewhere in between 2-gram and 3-gram model. The similarly motivated link grammar model ( Lafferty , Sleator and Temperley 1992 ) has O ( \ [ VI 3 ) parameters. Unlike simple N-gram models , head automata models yield an interesting distribution of sentence lengths. For example , the average sentence length for MonteCarlo generation with our probabilistic head automata model for ATIS was 10.6 words ( the average was 9.7 words for the corpus it was trained on ) . Head automaton models admit efficient lexically driven analysis ( parsing ) algorithms in which partial analyses are costed incrementally as they are constructed. Put in terms of the traditional parsing issues in natural language understanding , `` semantic '' associations coded as dependency parameters are applied at each parsing step allowing semantically suboptimal analyses to be eliminated , so the analysis with the best semantic score can be identified without scoring an exponential number of syntactic parses. Since the model is lexical , linguistic constructions headed by lexical items not present in the input are not involved in the search the way they are with typical top-down or predictive parsing strategies. We will sketch an algorithm for finding the lowest cost ordered dependency tree derivation for an input string in polynomial time in the length of the string. In our experimental system we use a more general version of the algorithm to allow input in the form of word lattices. The algorithm is a bottom-up tabular parser ( Younger 1967 , Early 1970 ) in which constituents are constructed `` head-outwards '' ( Kay 1989 , Sata and Stock 1989 ) . Since we are analyzing bottomup with generative model automata , the algorithm 'runs ' the automata backwards. Edges in the parsing lattice ( or `` chart '' ) are tuples representing partial or complete phrases headed by a word w from position i to position j in the string : ( w , t , i , j , m , q , c ) . Here m is the head automaton for w in this derivation ; the automaton is in state q ; t is the dependency tree constructed so far , and c is the cost of the partial derivation. We will use the notation C ( zly ) for the cost of a model event with probability P ( zIy ) ; the assignment of costs to events is discussed in Section 5. Initialization : For each word w in the input between positions i and j , the lattice is initialized with phrases { w , { } , i , j , m , q $ , c $ ) for any lexical entry ( w , m ) and any final state q ! of the automaton m in the entry. A final state is one for which the stop action cost c ! = C ( DJq ! , m ) is finite. Transitions : Phrases are combined bottom-up to form progressively larger phrases. There are two types of combination corresponding to left and right transitions of the automaton for the word acting as the head in the combination. We will specify left combination ; right combination is the mirror image of left combination. If the lattice contains two phrases abutting at position k in the string : 169 ( Wl , tl , i , k , ml , ql , Cl ) ( W2 , t2 , k , j , ra2 , q2 , c2 ) , and the parameter table contains the following finite costs parameters ( a left v-transition of m2 , a lexical parameter for wl , and an r-dependency parameter ) : c3 = C ( ~ -- - , q2 , rlq~ , m2 ) c4 = C ( ml , qiir , ~ , Wx ) c5 = C ( l , wllw2 , r ) , then build a new phrase headed by w2 with a tree t~ formed by adding tl to t~ as an r-dependent of w2 : ( w2 , t~ , i , j , m2 , q~ , cl + c2 + c3 + c4 -4cs ) . When no more combinations are possible , for each phrase spanning the entire input we add the appropriate start of derivation cost to these phrases and select the one with the lowest total cost. Pruning : The dynamic programming condition for pruning suboptimal partial analyses is as follows. Whenever there are two phrases p : ( w , t , i , j , m , q , c ) p ' = ( w , t ' , i , j , m , q , c ' ) , and c ~ is greater than c , then we can remove p~ because for any derivation involving p~ that spans the entire string , there will be a lower cost derivation involving p. This pruning condition is effective at curbing a combinatorial explosion arising from , for example , prepositional phrase attachment ambiguities ( coded in the alternative trees t and t ' ) . The worst case asymptotic time complexity of the analysis algorithm is O ( min ( n 2 , IY12 ) n3 ) , where n is the length of an input string and IVI is the size of the vocabulary. This limit can be derived in a similar way to cubic time tabular recognition algorithms for context free grammars ( Younger 1967 ) with the grammar related term being replaced by the term min ( n 2 , IVI 2 ) since the words of the input sentence also act as categories in the head automata model. In this context `` recognition '' refers to checking that the input string can be generated from the grammar. Note that our algorithm is for analysis ( in the sense of finding the best derivation ) which , in general , is a higher time complexity problem than recognition. By generation here we mean determining the lowest cost linear surface ordering for the dependents of each word in an unordered dependency structure resulting from the transfer mapping described in Section 4. In general , the output of transfer is a dependency graph and the task of the generator involves a search for a backbone dependency tree for the graph , if necessary by adding dependency edges to join up unconnected components of the graph. For each graph component , the main steps of the search process , described non-deterministically , are start of derivation cost C ( w , m , ql t &gt; ) .</sentence>
+				<definiendum id="0">Nhighest probability derivations</definiendum>
+				<definiendum id="1">t</definiendum>
+				<definiendum id="2">c</definiendum>
+				<definiendum id="3">right combination</definiendum>
+				<definiendum id="4">c ~</definiendum>
+				<definiendum id="5">n</definiendum>
+				<definiendum id="6">IVI</definiendum>
+				<definiens id="0">the sum of the probabilities of derivations of ordered dependency trees yielding the string. In practice , the number of parameters in a head automaton language model is dominated by the dependency parameters , that is , O ( \ ] V\ ] 2\ ] RI ) parameters. This puts the size of the model somewhere in between 2-gram and 3-gram model. The similarly motivated link grammar model ( Lafferty , Sleator and Temperley 1992 ) has O ( \ [ VI 3 ) parameters. Unlike simple N-gram models , head automata models yield an interesting distribution of sentence lengths. For example , the average sentence length for MonteCarlo generation with our probabilistic head automata model for ATIS was 10.6 words ( the average was 9.7 words for the corpus it was trained on ) . Head automaton models admit efficient lexically driven analysis ( parsing ) algorithms in which partial analyses are costed incrementally as they are constructed. Put in terms of the traditional parsing issues in natural language understanding , `` semantic '' associations coded as dependency parameters are applied at each parsing step allowing semantically suboptimal analyses to be eliminated , so the analysis with the best semantic score can be identified without scoring an exponential number of syntactic parses. Since the model is lexical , linguistic constructions headed by lexical items not present in the input are not involved in the search the way they are with typical top-down or predictive parsing</definiens>
+				<definiens id="1">the automata backwards. Edges in the parsing lattice ( or `` chart '' ) are tuples representing partial or complete phrases headed by a word w from position i to position j in the string : ( w</definiens>
+				<definiens id="2">finite. Transitions : Phrases are combined bottom-up to form progressively larger phrases. There are two types of combination corresponding to left and right transitions of the automaton for the word acting as the head in the combination. We will specify left combination ;</definiens>
+				<definiens id="3">the mirror image of left combination. If the lattice contains two phrases abutting at position k in the string : 169 ( Wl , tl , i , k , ml , ql , Cl ) ( W2 , t2 , k , j</definiens>
+				<definiens id="4">the length of an input string and</definiens>
+				<definiens id="5">the size of the vocabulary. This limit can be derived in a similar way to cubic time tabular recognition algorithms for context free grammars ( Younger 1967 ) with the grammar related term being replaced by the term min</definiens>
+				<definiens id="6">mean determining the lowest cost linear surface ordering for the dependents of each word in an unordered dependency structure resulting from the transfer mapping described in Section 4. In general , the output of transfer is a dependency graph</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A transfer model consists of a bilingual lexicon and a transfer parameter table .</sentence>
+				<definiendum id="0">transfer model</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>In the bilingual lexicon , an entry for a source word wi ( see top portion of Figure 2 ) has the form ( wi , Hi , hi , Gi , fi ) where Hi is a source language tree fragment , ni ( the primary node ) is a distinguished node of Hi with label wi , Gi is a target tree fragment , and fi is a 170 mapping function , i.e. a ( possibly partial ) function from the nodes of Hi to the nodes of Gi .</sentence>
+				<definiendum id="0">ni</definiendum>
+				<definiendum id="1">Gi</definiendum>
+				<definiendum id="2">fi</definiendum>
+				<definiens id="0">the form ( wi , Hi , hi , Gi , fi ) where Hi is a source language tree fragment</definiens>
+				<definiens id="1">a distinguished node of Hi with label wi</definiens>
+				<definiens id="2">a target tree fragment</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A tiling of a source graph with respect to a transfer model is a set of entry matches { ( El , gz , A1 , cl ) , • • `` , ( E~ , gk , At , ck ) } which is such that gi Figure 2 : Transfer matching and mapping functions • k is the number of nodes in the source tree S. • Each Ei , 1 &lt; i ~ k , is a bilingual entry ( wi , Hi , hi , Gi , fil matching S with function gi ( see Figure 2 ) and arcs Ai .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">a bilingual entry ( wi , Hi , hi , Gi , fil matching S with function gi</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The output of the lexicon matching phrase , and the partial derivations manipulated by the search phase are both in the form of transfer configurations ( S , R , T , P , f , c , I ) where S is the set of source nodes and arcs consumed so far in the derivation , R the remaining source nodes and arcs , f the mapping function built so far , T the set of nodes and complete arcs of the target graph , P the set of incomplete target arcs , c the partial derivation cost , and I a set of source nodes for which entries have yet to be applied .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">transfer configurations ( S , R , T , P , f , c</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A decomposition node n is a source tree node for which it is safe to prune suboptimal translations of the subtree dominated by n. Specifically , it is checked that n is the root node of all source fragments Hn of runtime entries in which both n and its node label are included , and that fn ( n ) is not dominated by ( i.e. not reachable via directed arcs from ) another node in the target graph Gn of such entries .</sentence>
+				<definiendum id="0">decomposition node n</definiendum>
+				<definiens id="0">a source tree node for which it is safe to prune suboptimal translations of the subtree dominated by n. Specifically , it is checked that n is the root node of all source fragments Hn of runtime entries in which both n</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Control follows a standard non-deterministic search paradigm : ( ¢ , R0 , ¢ , ¢ , ¢ , 0 , I0 ) with the input subtree R0 and the set of nodes I0 in R0 .</sentence>
+				<definiendum id="0">Control</definiendum>
+				<definiens id="0">follows a standard non-deterministic search paradigm : ( ¢ , R0 , ¢ , ¢ , ¢ , 0</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The second element , an event e , is an equivalence class of states after transitions .</sentence>
+				<definiendum id="0">event e</definiendum>
+				<definiens id="0">an equivalence class of states after transitions</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>For this training method to be effective , we need a reasonably good initial model , i.e. one for which the distance h ( s , # ) is inversely correlated with the probability that t~ is a good translation of s. We have built an experimental translation system using the monolingual and translation models described in this paper .</sentence>
+				<definiendum id="0">t~</definiendum>
+				<definiens id="0">a good translation of s. We have built an experimental translation system using the monolingual and translation models described in this paper</definiens>
+			</definition>
+</paper>
+
+		<paper id="1045">
+			<definition id="0">
+				<sentence>Lexicalized Tree Adjoining Grammar ( LTAG ) is a formalism integrating lexicon and grammar ( Joshi , 87 ; Schabes et al. , 88 ) , which has proved useful for NLP .</sentence>
+				<definiendum id="0">Lexicalized Tree Adjoining Grammar ( LTAG )</definiendum>
+				<definiens id="0">a formalism integrating lexicon</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>LTAGs consist of a morphological lexicon , a syntactic lexicon of lemmas and a set of tree schemata , i.e. trees in which the lexical anchor is missing .</sentence>
+				<definiendum id="0">LTAGs</definiendum>
+				<definiens id="0">consist of a morphological lexicon , a syntactic lexicon of lemmas and a set of tree schemata , i.e. trees in which the lexical anchor is missing</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A partial description is a set of constraints that characterizes a set of trees .</sentence>
+				<definiendum id="0">partial description</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A dominance link can be further specified as a path of length superior or equal to zero .</sentence>
+				<definiendum id="0">dominance link</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>Magic ( templates ) is a general compilation technique for efficient bottom-up evaluation of logic programs developed in the deductive database community ( Ramakrishnan et al. , 1992 ) .</sentence>
+				<definiendum id="0">Magic ( templates )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The 'magic-compiled grammar ' in figure 2 is the result of applying the algorithm in the previous section to the head-recursive example grammar and subsequently performing two optimizations ( Beeri and Ramakrishnan , 1991 ) : All ( calls to ) magic predicates corresponding to lexical entries are removed .</sentence>
+				<definiendum id="0">'magic-compiled grammar</definiendum>
+				<definiens id="0">All ( calls to ) magic predicates corresponding to lexical entries are removed</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>It is well known that Higher-Order Unification ( HOU ) can be used to construct the semantics of Natural Language : ( Dalrymple et al. , 1991 ) henceforth , DSP show that it allows a treatment of VPEllipsis which successfully captures the interaction of VPE with quantification and nominal anaphora ; ( Pulman , 1995 ; Gardent and Kohlhase , 1996 ) use HOU to model the interpretation of focus and its interaction with focus sensitive operators , adverbial quantifiers and second occurrence expressions ; ( Gardent et al. , 1996 ) shows that HOU yields a simple but precise treatment of corrections ; Finally , ( Pinkal , 1995 ) uses linear HOU to reconstruct underspecified semantic representations .</sentence>
+				<definiendum id="0">Higher-Order Unification</definiendum>
+				<definiens id="0">to construct the semantics of Natural Language : ( Dalrymple et al. , 1991 ) henceforth , DSP show that it allows a treatment of VPEllipsis which successfully captures the interaction of VPE with quantification and nominal anaphora ;</definiens>
+				<definiens id="1">adverbial quantifiers and second occurrence expressions ; ( Gardent et al. , 1996 ) shows that HOU yields a simple but precise treatment of corrections</definiens>
+				<definiens id="2">uses linear HOU to reconstruct underspecified semantic representations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In their treatment of VP-ellipsis , DSP introduce an informal restriction to avoid over-generation : the Primary Occurrence Restriction ( POR ) .</sentence>
+				<definiendum id="0">DSP introduce</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>In this paper , we argue that Higher-Order Coloured Unification ( HOCU , ( cf. sections 3,6 ) , a restricted form of HOU developed independently for theorem proving , provides the needed general framework .</sentence>
+				<definiendum id="0">Higher-Order Coloured Unification</definiendum>
+				<definiens id="0">a restricted form of HOU developed independently for theorem proving , provides the needed general framework</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Unification ( HOCU ) There is a restricted form of HOU which allows for a natural modeling of DSP 's Primary Occurrence Restriction : Higher-Order Coloured Unification developed independently for theorem proving ( Hutter and Kohlhase , 1995 ) .</sentence>
+				<definiendum id="0">Unification</definiendum>
+				<definiens id="0">a restricted form of HOU which allows for a natural modeling of DSP 's Primary Occurrence Restriction : Higher-Order Coloured Unification developed independently for theorem proving</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>tion , the FSV equation , be soIved : Sem = Gd ( F1 ) ... ( F ~ ) On the basis of the Gd value , we then define the FSV , written Gd , as follows : Definition 4.1 ( Focus Semantic Value ) Let Gd be of type ~ = ~k -- ~ t and n be the number of loci ( n &lt; k ) , then the Focus Semantic Value derivable from Gd , written G -- -d , is { Gd ( tl ... t n ) I ti e wife , } .</sentence>
+				<definiendum id="0">FSV equation</definiendum>
+				<definiens id="0">the number of loci ( n &lt; k ) , then the Focus Semantic Value derivable from Gd , written G -- -d , is { Gd ( tl ... t n ) I ti e wife , }</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Given definition ( 4.1 ) , ( 4a ) is then assigned two FSVs namely ( 5 ) a. Gd= { l ( j , x ) l x e Wife } b. G ' -- d = { l ( j , s ) l x ~ Wife } That is , the HOU treatment of focus overgenerates : ( 5a ) is an appropriate FSV , but not ( 5b ) .</sentence>
+				<definiendum id="0">5a )</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>l ( j , x ) 4 A second occurrence expression ( SOE ) is a partial or complete repetition of the preceding utterance and is characterised by a de-accenting of the repeating part ( Bartels , 1995 ) .</sentence>
+				<definiendum id="0">SOE</definiendum>
+				<definiens id="0">a partial or complete repetition of the preceding utterance</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Let SSem and TSem be the semantic representation of the source and target clause respectively , and TP 1 ... TP n , SP 1 ... SP n be the target and source parallel elements 3 , then the interpretation of an SOE must respect the following equations : An ( Sp1 , ... , SP n ) = SSem An ( Tp1 , ... , TP '~ ) = TSem Given this proposal and some further assumptions about the semantics of only , the analysis of ( Tb ) involves the following equations : ( 8 ) An ( j ) = VP\ [ P e { ) ~x.like ( x , y ) l y • wife } A P ( j ) ~ P = ~x.like ( x , m ) \ ] An ( p ) = VP\ [ P • FSV A P ( p ) -- + P = Ax .</sentence>
+				<definiendum id="0">SP n</definiendum>
+				<definiendum id="1">y ) l y</definiendum>
+				<definiens id="0">An ( Sp1 , ... , SP n ) = SSem An ( Tp1 , ...</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Consider the following discourse ( 9 ) a. Jon likes SARAH b. Peter does too Such a discourse presents us with a case of interaction between ellipsis and focus thereby raising the question of how DSP ' POR for ellipsis should interact with our POR for focus .</sentence>
+				<definiendum id="0">POR</definiendum>
+				<definiens id="0">SARAH b. Peter does too Such a discourse presents us with a case of interaction between ellipsis and focus thereby raising the question of how DSP '</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>hd ( H~l ( -5 ) , ... , Hem ( -5 ) ) where the H i are new variables of type f ) -~ ~ Vi and the ei are either distinct colour variables ( if c E CI ) ) or ei = d = c ( ifc E C ) .</sentence>
+				<definiendum id="0">hd</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>If his one of the bound variables z ~ ' , then ~h is called an imitation binding , and else , ( h is a constant or a free variable ) , a projection binding• The general rule for flex/rigid equations transforms { Xc ( Sl , ... , s n ) =t hd ( tl , ... , tm ) } into { Xc ( S 1 ... . , s n ) =t hal ( t1 , ... , tin ) , Xc =t ~h } , which in essence only fixes a particular binding for the head variable Xc .</sentence>
+				<definiendum id="0">h</definiendum>
+				<definiens id="0">a constant or a free variable ) , a projection binding• The general rule for flex/rigid equations transforms { Xc ( Sl , ... , s n ) =t hd ( tl , ... , tm ) } into { Xc ( S 1 ... . , s n ) =t hal ( t1 , ... , tin )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>The focusing mechanism fails in the expected focus algorithm when encountering anaphors occurring in the first sentence of a text , which we call initial anaphors , such as They in sentence ( 1 ) .</sentence>
+				<definiendum id="0">focusing mechanism</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>First hypothesis : EE is the unit of processing in the basic focusing cycle .</sentence>
+				<definiendum id="0">EE</definiendum>
+				<definiens id="0">the unit of processing in the basic focusing cycle</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The conceptual analyser 's strategy consists of a continuous step-by-step translation of the original natural language sentences into conceptual structures ( CS hereafter ) .</sentence>
+				<definiendum id="0">conceptual analyser 's strategy</definiendum>
+				<definiens id="0">consists of a continuous step-by-step translation of the original natural language sentences into conceptual structures ( CS hereafter )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A minimal CS is a template comprising a predicate that identifies the basic type of the represented event and a set of roles or predicate cases .</sentence>
+				<definiendum id="0">minimal CS</definiendum>
+				<definiens id="0">a template comprising a predicate that identifies the basic type of the represented event and a set of roles or predicate cases</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>The Lexical Rule Processor is an engine which produces a new entry from an existing one , such as the new entry compra ( Figure 3 ) produced from the verb entry comprar ( Figure 2 ) after applying the LR2event rule .</sentence>
+				<definiendum id="0">Lexical Rule Processor</definiendum>
+				<definiens id="0">an engine which produces a new entry from an existing one</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The morpho-semantic generator produces all predictable morphonological derivations with their morpho-lexico-semantic associations , using three major sources of clues : 1 ) word-forms with their corresponding morpho-semantic classification ; 2 ) stem alternations and 3 ) construction mechanisms .</sentence>
+				<definiendum id="0">morpho-semantic generator</definiendum>
+				<definiens id="0">produces all predictable morphonological derivations with their morpho-lexico-semantic associations , using three major sources of clues : 1 ) word-forms with their corresponding morpho-semantic classification ; 2 ) stem alternations and 3 ) construction mechanisms</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>A local constraint is one which can be evaluated strictly on the basis of the information contained within a local region .</sentence>
+				<definiendum id="0">local constraint</definiendum>
+				<definiens id="0">one which can be evaluated strictly on the basis of the information contained within a local region</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A local region of a description is either of the following : • a non4erminal and the child non-terminals that it immediately dominates ; • a non-terminal which dominates a terminal symbol ( position ) , along with the terminal and the input segment ( if present ) filling the terminal position .</sentence>
+				<definiendum id="0">local region of a description</definiendum>
+				<definiens id="0">dominates a terminal symbol ( position ) , along with the terminal and the input segment</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A layer is a set of all cells in the table indexed by a particular cell category .</sentence>
+				<definiendum id="0">layer</definiendum>
+				<definiens id="0">a set of all cells in the table indexed by a particular cell category</definiens>
+			</definition>
+</paper>
+
+		<paper id="1053">
+			<definition id="0">
+				<sentence>Terminological languages have been used in NLP applications for lexical representation ( Burkert , 1995 ) , and grammar representation ( Brachman and Schmolze , 1991 ) , and to assist in the acquisition and maintenance of domain specific lexical semantics knowledge ( Ayuso et al. , 1987 ) .</sentence>
+				<definiendum id="0">Terminological languages</definiendum>
+				<definiendum id="1">grammar representation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The test inputs are the sentence predicate and GF fillers arranged in the order of the event arguments against which they are to be tested .</sentence>
+				<definiendum id="0">test inputs</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>tl_rule ( R3 , \ [ \ [ \ ] , \ [ \ ] , \ [ \ ] 1 , \ [ \ [ v\ ] , \ [ 1 , IV\ ] l , \ [ \ [ \ ] , \ [ 1 , \ [ \ ] 1 , = &gt; , \ [ \ ] , IV\ ] , \ [ 1 , \ [ vowel ( V ) \ ] , \ [ \ [ \ ] , \ [ \ ] , \ [ 3\ ] ) .</sentence>
+				<definiendum id="0">V</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Alphabet declarations take the form tl_alphabet ( ( tape &gt; , &lt; symbol_list ) ) , and variable sets are described by the predicate tl_set ( { id ) , { symbol_list } ) . Word formation rules take the form of unification-based CFG rules , synrule ( &lt; identifier ) , ( mother ) , \ [ ( daughter1 } , ... , ( daughtern } l ) . The following example illustrates the derivation of Syriac /ktab/5 'he wrote ' ( in the simple p'al measure ) 6 from the pattern morpheme { cvcvc } 'verbal pattern ' , root { ktb } 'notion of writing ' , and vocalism { a } . The three morphemes produce the underlying form */katab/ , which surfaces as /ktab/ since short vowels in open unstressed syllables are deleted. The process is illustrated in ( 1 ) / a ~'~ */katab/~ /ktab/ ( 1 ) c v c v c = I I L k t b The pa `` el measure of the same verb , viz./katteb/ , is derived by the gemination of the middle consonant ( i.e. t ) and applying the appropriate vocalism { ae } . The two-level grammar ( Listing 1 ) assumes three lexical tapes. Uninstantiated contexts are denoted by an empty list. R1 is the morpheme boundary ( = ~ ) rule. R2 and R3 sanction stem consonants and vowels , respectively. R4 is the obligatory vowel deletion rule. R5 and R6 map the second radical , \ [ t\ ] , for p'al and pa '' el forms , respectively. In this example , the lexicon contains the entries in ( 2 ) . 8 ( 2 ) synword ( clvc2vca , pattern : 0 ) synword ( ktb , root : \ [ measure = M\ ] ) . synword ( aa , vocalism : \ [ measure = p'al\ ] ) . synword ( ae , vocalism : \ [ measure = pa '' el\ ] ) . Note that the value of 'measure ' in the root entry is SSpirantization is ignored here ; for a discussion on Syriac spirantization , see ( Kiraz , 1995 ) . 6Syriac verbs are classified under various measures ( forms ) . The basic ones are : p'al , pa `` el and 'a\ ] 'el. 7This analysis is along the lines of ( McCarthy , 1981 ) based on autosegmental phonology ( Goldsmith , 1976 ) . SSpreading is ignored here ; for a discussion , see ( Kiraz , 1994c ) . 160 uninstantiated ; it is determined from the feature values in R5 , R6 and/or the word grammar ( see infra , §4.3 ) . There are two current methods for implementing two-level rules ( both implemented in Semi { e ) : ( 1 ) compiling rules into finite-state automata ( multitape transducers in our case ) , and ( 2 ) interpreting rules directly. The former provides better performance , while the latter facilitates the debugging of grammars ( by tracing and by providing debugging utilities along the lines of ( Carter , 1995 ) ) . Additionally , the interpreter facilitates the incremental compilation of rules by simply allowing the user to toggle rules on and off. The compilation of the above formalism into automata is described by ( Grimley-Evans et al. , 1996 ) . The following is a description of the interpreter. The word grammar is compiled into a shift-reduce parser. In addition , a first-and-follow algorithm , based on ( Aho and Ullman , 1977 ) , is applied to compute the feasible follow categories for each category type. The set of feasible follow categories , NextCats , of a particular category Cat is returned by the predicate FOLLOW ( +Cat , -NextCats ) . Additionally , FOLLOW ( bos , NextCats ) returns the set of category symbols at the beginning of strings , and cos E NextCats indicates that Cat may occur at the end of strings. The lexical component is implemented as character tries ( Knuth , 1973 ) , one per tape. Given a list of lexical strings , Lex , and a list of lexical pointers , LexPtrs , the predicate LEXICAL-TRANSITIONS ( q-Lex , +LexPtrs , New Lex Ptrs , LexC ats ) succeeds iff there are transitions on Lex from LexPtrs ; it returns NewLexPtrs , and the categories , LexCats , at the end of morphemes , if any. Two-level predicates are converted into an internal representation : ( 1 ) every left-context expression is reversed and appended to an uninstantiated tail ; ( 2 ) every right-context expression is appended to an uninstantiated tail ; and ( 3 ) each rule is assigned a 6-bit 'precedence value ' where every bit represents one of the six lexical and surface expressions. If an expression is not an empty list ( i.e. context is specified ) , the relevant bit is set. In analysis , surface expressions are assigned the most significant bits , while lexical expressions are assigned the least significant ones. In generation , the opposite state of affairs holds. Rules are then reasserted in the order of their precedence value. This ensures that rules which contain the most specified expressions are tested first resulting in better performance. The algorithms presented below are given in terms of prolog-like non-deterministic operations. A clause is satisfied iff all the conditions under it are satisfied. The predicates are depicted top-down in ( 3 ) . ( SemHe makes use of an earlier implementation by ( Pulman and Hepple , 1993 ) . ) ( 3 ) Two-Level-Analysis l i I 1 l Invalid-partition ) In order to minimise accumulator-passing arguments , we assume the following initially-empty stacks : ParseStack accumulates the category structures of the morphemes identified , and FeatureStack maintains the rule features encountered so far. ( '+ ' indicates concatenation. ) PARTITION partitions a two-level analysis into sequences of lexical-surface pairs , each licenced by a rule. The base case of the predicate is given in Listing 2 , 9 and the recursive case in Listing 3. The recursive COERCE predicate ensures that no partition is violated by an obligatory rule. It takes three arguments : Result is the output of PARTITION ( usually reversed by the calling predicate , hence , COERCE deals with the last partition first ) , PrevCats is a register which keeps track of the last morpheme category encountered , and Partition returns selected elements from Result. The base case of the predicate is simply COERCE ( \ [ \ ] , _ , \ [ \ ] ) i.e. , no more partitions. The recursive case is shown in Listing 4. CurrentCats keeps track of the category of the morpheme which occures in the current partition. The invalidity of a partition is determined by INVALIDPARTITION ( Listing 5 ) . TwO-LEVEL-ANALYSIS ( Listing 6 ) is the main predicate. It takes a surface string or lexical string ( s ) and returns a list of partitions and a 9For efficiency , variables appearing in left-context and centre expressions are evaluated after LEXICALTRANSITIONS since they will be fully instantiated then ; only right-contexts are evaluated after the recursion. 161 PARTITION ( SurfDone , SurfToDo , LexDone , LexToDo , LexPtrs , NextCats , Result ) SurfToDo -- -\ [ J &amp; % surface string exhausted LexToDo = \ [ \ [ \ ] , \ [ \ ] , ..- , \ [ \ ] \ ] &amp; % all lexical strings exhausted LexPtrs = \ [ rz , rt , -.. , rt\ ] &amp; % all lexical pointers are at the root node eos E NextCats ~ % end-of-string Result = \ [ \ ] . % output : no more results Listing 2 PARTITION ( SurfDone , SurfToDo , LexDone , LexToDo , LexPtrs , NextCats , \ [ ResultHead I Resuit Tai~ ) there is tl_rule ( Id , LLC , Lex , RLC , Op , LSC , Surf , RSC , Variables , Features ) such that ( Op = ( = &gt; or &lt; = &gt; ) , LexDone = LLC , SurfDone -= LSC , SurfToDo = Surf + RSC and LexToDo = Lex + RLC ) &amp; LEXICAL-TRANSITIONS ( Lex , LexPtrs , NewLexPtrs , LexCats ) &amp; push Features onto FeatureStack ~z % keep track of rule features if LexCats ¢ nil then % found a morpheme boundary ?</sentence>
+				<definiendum id="0">Alphabet declarations</definiendum>
+				<definiendum id="1">FOLLOW (</definiendum>
+				<definiendum id="2">empty list</definiendum>
+				<definiendum id="3">ParseStack</definiendum>
+				<definiendum id="4">FeatureStack</definiendum>
+				<definiendum id="5">PrevCats</definiendum>
+				<definiens id="0">tape &gt; , &lt; symbol_list ) ) , and variable sets are described by the predicate tl_set ( { id ) , { symbol_list } ) . Word formation rules take the form of unification-based CFG rules</definiens>
+				<definiens id="1">in the simple p'al measure ) 6 from the pattern morpheme { cvcvc } 'verbal pattern ' , root { ktb } 'notion of writing '</definiens>
+				<definiens id="2">a ~'~ */katab/~ /ktab/ ( 1 ) c v c v c = I I L k t b The pa `` el measure of the same verb , viz./katteb/ , is derived by the gemination of the middle consonant ( i.e. t ) and applying the appropriate vocalism { ae } . The two-level grammar ( Listing 1 ) assumes three lexical tapes. Uninstantiated contexts are denoted by an empty list. R1 is the morpheme boundary ( = ~ ) rule. R2 and R3 sanction stem consonants and vowels , respectively. R4 is the obligatory vowel deletion rule. R5 and R6 map the second radical , \ [ t\ ] , for p'al and pa '' el forms</definiens>
+				<definiens id="3">bos , NextCats ) returns the set of category symbols at the beginning of strings , and cos E NextCats indicates that Cat may occur at the end of strings. The lexical component is implemented as character tries ( Knuth , 1973 ) , one per tape. Given a list of lexical strings , Lex , and a list of lexical pointers , LexPtrs , the predicate LEXICAL-TRANSITIONS ( q-Lex , +LexPtrs</definiens>
+				<definiens id="4">The recursive COERCE predicate ensures that no partition is violated by an obligatory rule. It takes three arguments : Result is the output of PARTITION ( usually reversed by the calling predicate , hence</definiens>
+				<definiens id="5">a register which keeps track of the last morpheme category encountered</definiens>
+				<definiens id="6">the main predicate. It takes a surface string or lexical string ( s ) and returns a list of partitions and a 9For efficiency , variables appearing in left-context and centre expressions</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>With respect to verbal inflexional markers ( VIMs ) , there are various types of Semitic verbs : those which do not require a VIM ( e.g. sing .</sentence>
+				<definiendum id="0">VIMs</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>By constructing a corpus which consists only of the most frequent words , one can estimate the performance of analysing the corpus as follows , n 4 p _5.324n + ~i=1 0.05 ( fi 1 ) sec/word ~i~=l fi where n is the number of distinct words in the corpus and fi is the frequency of occurrence of the ith word .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">fi</definiendum>
+				<definiens id="0">the number of distinct words in the corpus and</definiens>
+				<definiens id="1">the frequency of occurrence of the ith word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1058">
+			<definition id="0">
+				<sentence>Top-down propagation works as follows : given a dad D that represents a teachability relation and a rule dad R whose left-hand side category ( i.e. , root ) is the same as D 's left-corner category ( i.e. , under its ( lc 1 ) path ) , the resulting dag is D1 = p ( D ' ) U ( R \ lc ) , where D ' is a copy of D in which all the numbered arcs and lc arc are deleted and the subdag which used to be under the ( lc 1 ) path is promoted to lie under the lc arc .</sentence>
+				<definiendum id="0">D '</definiendum>
+				<definiens id="0">a copy of D in which all the numbered arcs and lc arc are deleted and the subdag which used to be under the ( lc 1 ) path is promoted to lie under the lc arc</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>We can represent this by setting p at this node to be E* , where E ( conventionally ) represents the entire alphabet : note that the alphabet is defined to be an alphabet of all ¢ : ¢ correspondence pairs that were determined empirically to be possible .</sentence>
+				<definiendum id="0">E ( conventionally )</definiendum>
+				<definiens id="0">represents the entire alphabet : note that the alphabet is defined to be an alphabet of all ¢ : ¢ correspondence pairs that were determined empirically to be possible</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>n ) / N ( Z* ( ( cmh ) U ( bl ) U ( bml ) U ( bh ) ) ) r : Each node thus represents a rule which states that a mapping occurs between the input symbol ¢ and the weighted expression ¢ in the condition described by A p. Now , in cases where ¢ finds itself in a context that is not subsumed by A p , the rule behaves exactly as a two-level surface coercion rule ( Koskenniemi , 1983 ) : it freely allows ¢ to correspond to any ¢ as specified by the alphabet of pairs .</sentence>
+				<definiendum id="0">n ) / N ( Z*</definiendum>
+				<definiens id="0">described by A p. Now , in cases where ¢ finds itself in a context that is not subsumed by A p , the rule behaves exactly as a two-level surface coercion rule ( Koskenniemi , 1983 ) : it freely allows ¢ to correspond to any ¢ as specified by the alphabet of pairs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The WFST for a single leaf L is thus defined as follows , where CT is the input symbol for the entire tree , eL is the output expression defined at L , t95 represents the path traversed from the root node to L , p is an individual branch on 4One can thus define intersection for transducers analogously with intersection for acceptors .</sentence>
+				<definiendum id="0">WFST</definiendum>
+				<definiendum id="1">CT</definiendum>
+				<definiendum id="2">eL</definiendum>
+				<definiens id="0">the input symbol for the entire tree</definiens>
+				<definiens id="1">the output expression defined at L , t95 represents the path traversed from the root node to L , p is an individual branch on 4One can thus define intersection for transducers analogously with intersection for acceptors</definiens>
+			</definition>
+</paper>
+
+		<paper id="1050">
+			<definition id="0">
+				<sentence>Whether a phrase ( or word ) is a proper name , and what type of proper name it is ( company name , location name , person name , date , other ) depends on ( 1 ) the internal structure of the phrase , and ( 2 ) the surrounding context .</sentence>
+				<definiendum id="0">a phrase</definiendum>
+				<definiens id="0">a proper name</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>A subcategorization n-requirement is satisfied by m arguments , m &lt; n , either by a sequence of m arguments ( m-tuple ) or by a coordination of mtuples .</sentence>
+				<definiendum id="0">subcategorization n-requirement</definiendum>
+				<definiens id="0">m-tuple ) or by a coordination of mtuples</definiens>
+			</definition>
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>\ ] We define the sorted list of branches for a goal G that an agent knows , \ [ b~ , ... , b~\ ] , where for each be~ , p ( b~ ) is the likelihood that branch b~ will result in success where p ( b~ ) &gt; = p ( b~ ) , Vi &lt; j. Initiative For efficient initiative-setting , it is also necessary to establish the likelihood of success for one 's collaborator 's lSt-ranked branch , 2nd-ranked branch , and so on .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiens id="0">the sorted list of branches for a goal G that an agent knows , \ [ b~ , ...</definiens>
+				<definiens id="1">the likelihood of success for one 's collaborator 's lSt-ranked branch , 2nd-ranked branch , and so on</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>An edge would take the form X~ , , where v is a vector with a bit for every word in the string and showing which of those words the edge covers .</sentence>
+				<definiendum id="0">v</definiendum>
+				<definiens id="0">a vector with a bit for every word in the string and showing which of those words the edge covers</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>`` John '' is the name of the entity that stands in the 'argl ' relation to the running which took place in the past and which was fast .</sentence>
+				<definiendum id="0">John</definiendum>
+				<definiens id="0">the name of the entity that stands in the 'argl ' relation to the running which took place in the past</definiens>
+			</definition>
+</paper>
+
+		<paper id="1043">
+			<definition id="0">
+				<sentence>There are two kinds of morphological rules to be learned : suffix rules ( A ' ) -rules which are applied to the tail of a word , and prefix rules ( A p ) -rules which are applied to the beginning of a word .</sentence>
+				<definiendum id="0">suffix rules</definiendum>
+				<definiendum id="1">prefix rules</definiendum>
+				<definiens id="0">A ' ) -rules which are applied to the tail of a word , and</definiens>
+				<definiens id="1">A p ) -rules which are applied to the beginning of a word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>The task of Word Sense Disambiguation ( WSD ) is to identify the correct sense of a word in context .</sentence>
+				<definiendum id="0">Word Sense Disambiguation</definiendum>
+				<definiendum id="1">WSD )</definiendum>
+				<definiens id="0">to identify the correct sense of a word in context</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>LEXAS achieves a mean accuracy of 87.4 % on this data set , which is higher than the accuracy of 78 % reported in ( Bruce and Wiebe , 1994 ) .</sentence>
+				<definiendum id="0">LEXAS</definiendum>
+				<definiens id="0">achieves a mean accuracy</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Moreover , to test the scalability of LEXAS , we have acquired a corpus in which 192,800 word occurrences have been manually tagged with senses from WORDNET , which is a public domain lexical database containing about 95,000 word forms and 70,000 lexical concepts ( Miller , 1990 ) .</sentence>
+				<definiendum id="0">WORDNET</definiendum>
+				<definiens id="0">a public domain lexical database containing about 95,000 word forms and 70,000 lexical concepts</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>These sense tagged word occurrences consist of 191 most frequently occurring and most ambiguous nouns and verbs .</sentence>
+				<definiendum id="0">word occurrences</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>LEXAS follows this convention by first converting each word in an input sentence into its morphological root using the morphological analyzer of WORD NET , before assigning the appropriate word sense to the root form .</sentence>
+				<definiendum id="0">LEXAS</definiendum>
+				<definiens id="0">follows this convention by first converting each word in an input sentence into its morphological root using the morphological analyzer of WORD NET , before assigning the appropriate word sense to the root form</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>LEXAS builds one exemplar-based classifier for each content word w. It operates in two phases : training phase and test phase .</sentence>
+				<definiendum id="0">LEXAS</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Specifically , LEXAS uses the following set of features to form a training example : L3 , L2 , LI , 1~i , R2 , R3 , M , KI , . . . , Kin , el , ... , 69 , V Form The value of feature Li is the part of speech ( POS ) of the word i-th position to the left of w. The value of Ri is the POS of the word i-th position to the right of w. Feature M denotes the morphological form of w in the sentence s. For a noun , the value for this feature is either singular or plural ; for a verb , the value is one of infinitive ( as in the uninflected form of a verb like `` fall '' ) , present-third-person-singular ( as in `` falls '' ) , past ( as in `` fell '' ) , present-participle ( as in `` falling '' ) or past-participle ( as in `` fallen '' ) .</sentence>
+				<definiendum id="0">LEXAS</definiendum>
+				<definiens id="0">uses the following set of features to form a training example : L3 , L2 , LI , 1~i , R2 , R3 , M , KI , . . . , Kin , el , ... , 69 , V Form The value of feature Li is the part of speech ( POS ) of the word</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Let cp ( ilk ) denotes the conditional probability of sense i of w given keyword k , where Ni , k cp ( ilk ) = N~ Nk is the number of sentences in which keyword k cooccurs with w , and Ni , k is the number of sentences in which keyword k co-occurs with w where w has sense i. For a keyword k to be selected as a feature , it must satisfy the following criteria : predefined minimum probability .</sentence>
+				<definiendum id="0">Let cp ( ilk )</definiendum>
+				<definiendum id="1">Ni , k</definiendum>
+				<definiens id="0">the conditional probability of sense i of w given keyword k , where Ni , k cp ( ilk ) = N~ Nk is the number of sentences in which keyword k cooccurs with w , and</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>We use the following definition of distance between two symbolic values vl and v2 of a feature f : e ( vl , v2 ) = I c1 ' cl c2 , c. I i=1 Cl , i is the number of training examples with value vl for feature f that is classified as sense i in the training corpus , and C1 is the number of training examples with value vl for feature f in any sense .</sentence>
+				<definiendum id="0">C1</definiendum>
+				<definiens id="0">the number of training examples with value vl for feature f that is classified as sense i in the training corpus , and</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Local collocation knowledge yields the highest accuracy , followed by POS and morphological form .</sentence>
+				<definiendum id="0">Local collocation knowledge</definiendum>
+				<definiens id="0">yields the highest accuracy , followed by POS and morphological form</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The first test set , named BC50 , consists of 7,119 occurrences of the 191 content words that occur in 50 text files of the Brown corpus .</sentence>
+				<definiendum id="0">BC50</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>The second test set , named WSJ6 , consists of 14,139 occurrences of the 191 content words that occur in 6 text files of the WSJ corpus .</sentence>
+				<definiendum id="0">WSJ6</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>Decision lists for lexical ambiguity resolution : Application to accent restoration in Spanish and French .</sentence>
+				<definiendum id="0">Decision lists</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>Instead of alignment probabilities , offset probabilities o ( k ) are employed , where k is essentially the positional distance between the English words aligned to two adjacent Chinese words : ( 3 ) k = i ( A ( jpreo ) + ( j jp~ev ) N ) where jpr~v is the position of the immediately preceding Chinese word and N is a constant that normalizes for average sentence lengths in different languages .</sentence>
+				<definiendum id="0">jpr~v</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">probabilities o ( k ) are employed , where k is essentially the positional distance between the English words aligned to two adjacent Chinese words : ( 3 ) k = i ( A ( jpreo ) + ( j jp~ev</definiens>
+				<definiens id="1">the position of the immediately preceding Chinese word</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Specifically , the model employs a bracketing transduction grammar or BTG ( Wu , 1995a ) , which is a special case of inversion transduction grammars or ITGs ( Wu , 1995c ; Wu , 1995c ; Wu , 1995b ; Wu , 1995d ) .</sentence>
+				<definiendum id="0">BTG</definiendum>
+				<definiens id="0">a special case of inversion transduction grammars or ITGs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>An ITG consists of context-free productions where terminal symbols come in couples , for example x/y , where z is a Chinese word and y is an English translation of x. 2 Any parse tree thus generates two strings , one on the Chinese stream and one on the English stream .</sentence>
+				<definiendum id="0">ITG</definiendum>
+				<definiendum id="1">z</definiendum>
+				<definiendum id="2">y</definiendum>
+				<definiens id="0">consists of context-free productions where terminal symbols come in couples</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The SBTG assigns a probability Pr ( c , e , q ) to all generable trees q and sentence-pairs .</sentence>
+				<definiendum id="0">SBTG</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>= max , ~sSyY 6StZz gYZ s &lt; S &lt; t YeE ( s , S ) ZEE ( S , t ) \ [ \ ] \ [ 1 ~bstyz \ [ 1 uJ styz 6O styz argmax s &lt; S &lt; t YfE ( s , S ) ZEE ( S , t ) max s &lt; S &lt; t YeE ( S , t ) ZEE ( s , S ) a\ [ \ ] 6 , syY 6stz~ gvz a 0 ~ , sz~ 6StyY gYZ styz 0 Cstvz = argmax a 0 ~sszz ( j ) 6styy ( k ) gYz 0 s &lt; s &lt; t Wstyz YEE ( S , t ) zeE ( , ,s ) of the parse tree to q0 = ( -1 , T1 , &lt; s &gt; , &lt; /s &gt; ) .</sentence>
+				<definiendum id="0">YeE</definiendum>
+				<definiens id="0">s &lt; S &lt; t YeE ( s , S ) ZEE ( S , t ) \ [ \ ] \ [ 1 ~bstyz \ [ 1 uJ styz 6O styz argmax s &lt; S &lt; t YfE ( s , S ) ZEE ( S , t ) max s &lt; S &lt; t</definiens>
+				<definiens id="1">k ) gYz 0 s &lt; s &lt; t Wstyz YEE ( S , t ) zeE ( , ,s ) of the parse tree to q0 = ( -1 , T1 , &lt; s &gt; , &lt; /s &gt; )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>The speech synthesizer is a commercial product : the TRUETALK system from Entropies .</sentence>
+				<definiendum id="0">speech synthesizer</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The discourse manager breaks into a range of subcomponents handling reference , speech act interpretation and planning ( the verbal reasoner ) , and the back-end of the system : the problem solver and domain reasoner .</sentence>
+				<definiendum id="0">planning</definiendum>
+				<definiens id="0">the verbal reasoner ) , and the back-end of the system : the problem solver and domain reasoner</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The generator is a simple template-based system .</sentence>
+				<definiendum id="0">generator</definiendum>
+				<definiens id="0">a simple template-based system</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>More precisely , given an observed word sequence o from the speech recognizer , SPEECHPP finds the most likely original word sequence by finding the sequence s that maximizes Prob ( ols ) * Prob ( s ) , where • Prob ( s ) is the probability that the user would utter sequence s , and • Prob ( ols ) is the probability that the SR produces the sequence o when s was actually spoken .</sentence>
+				<definiendum id="0">SPEECHPP</definiendum>
+				<definiendum id="1">Prob</definiendum>
+				<definiendum id="2">• Prob</definiendum>
+				<definiens id="0">finds the most likely original word sequence by finding the sequence s that maximizes Prob ( ols ) * Prob ( s ) , where •</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For P ( ols ) , we build a channel model that assumes independent word-for-word substitutions ; i.e. , Prob ( o I s ) = 1-I i Prob ( oi I si ) The channel model is trained by automatically aligning the hand transcriptions with the output of Sphinx-II on the utterances in the ( SPEECHPP ) training set and by tabulating the confusions that occurred .</sentence>
+				<definiendum id="0">channel model</definiendum>
+				<definiens id="0">assumes independent word-for-word substitutions</definiens>
+				<definiens id="1">trained by automatically aligning the hand transcriptions with the output of Sphinx-II on the utterances in the ( SPEECHPP ) training set and by tabulating the confusions that occurred</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The final interpretation of an utterance is the sequence of speech acts that provides the `` minimal covering '' of the input i.e. , the shortest sequence that accounts for the input .</sentence>
+				<definiendum id="0">final interpretation of an utterance</definiendum>
+				<definiens id="0">the sequence of speech acts that provides the `` minimal covering '' of the input i.e. , the shortest sequence that accounts for the input</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The Duke system ( Smith and Hipp , 1994 ) uses a more general model based on a reasoning system , but allows only a limited vocabulary and grammar and requires extensive training to use .</sentence>
+				<definiendum id="0">Duke system</definiendum>
+				<definiens id="0">uses a more general model based on a reasoning system , but allows only a limited vocabulary and grammar and requires extensive training to use</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>The SPATTER parser ( Magerman 95 ; 3elinek et ah 94 ) does use lexical information , and recovers labeled constituents in Wall Street Journal text with above 84 % accuracy as far as we know the best published results on this task .</sentence>
+				<definiendum id="0">SPATTER parser</definiendum>
+				<definiens id="0">use lexical information , and recovers labeled constituents in Wall</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Link grammars ( Lafferty et al. 92 ) , and dependency grammars in general .</sentence>
+				<definiendum id="0">Link grammars</definiendum>
+				<definiens id="0">Lafferty et al. 92 ) , and dependency grammars in general</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Thus the reduced sentence is an array of word/tag pairs , S= &lt; ( t~l , tl ) , ( @ 2 , f2 ) ... ( @ r~ , f , ~ ) &gt; , where m _~ n. For example for Figure l ( a ) Example 1 S = &lt; ( Smith , ggP ) , ( president , NN ) , ( of , IN ) , ( IBM , NNP ) , ( announced , VBD ) , ( resignation , N N ) , ( yesterday , N g ) &gt; Sections 2.1 to 2.4 describe the dependency model .</sentence>
+				<definiendum id="0">VBD</definiendum>
+				<definiens id="0">an array of word/tag pairs</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The triple of nonterminals at the start , middle and end of the arrow specify the nature of the dependency relationship &lt; liP , S , VP &gt; represents a subject-verb dependency , &lt; PP , liP , liP &gt; denotes prepositional phrase modification of an liP , and so on 4 .</sentence>
+				<definiendum id="0">VP &gt;</definiendum>
+				<definiens id="0">a subject-verb dependency , &lt; PP , liP , liP &gt; denotes prepositional phrase modification of an liP , and so on 4</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Let 1 ) be the vocabulary of all words seen in training data , T be the set of all part-of-speech tags , and TTCAZA f be the training set , a set of reduced sentences .</sentence>
+				<definiendum id="0">TTCAZA f</definiendum>
+				<definiens id="0">the vocabulary of all words seen in training data , T be the set of all part-of-speech tags , and</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>6 Formally , C ( ( a , b &gt; , &lt; c , d &gt; ) = Z h = &lt; a , b ) , : &lt; e , d ) ) • ~ ¢ T'R , ,AZ~/ '' k , Z=l..I ; I , z # k where h ( m ) is an indicator function which is 1 if m is true , 0 if x is false. • C ( R , ( a , b ) , ( c , d ) ) is the number of times ( a , b / and ( c , d ) are seen in the same reduced sentence in training data , and { a , b ) modifies ( c , d ) with relationship R. Formally , C ( R , &lt; a , b ) , &lt; e , d ) ) = Z h ( S\ [ k\ ] = ( a , b ) , SIll = ( c , d ) , AF ( k ) = ( l , R ) ) -¢ c T'R~gZ2q '' k3_-1..1~1 , l¢ : k ( 6 ) • F ( RI ( a , b ) , ( c , d ) ) is the probability that ( a , b ) modifies ( c , d ) with relationship R , given that ( a , b ) and ( e , d ) appear in the same reduced sentence. The maximum-likelihood estimate of F ( RI ( a , b ) , ( c , d ) ) is : C ( R , ( a , b ) , ( c , d ) ) ( 7 ) fi ' ( Rl &lt; a , b ) , &lt; c , d ) ) = C ( ( a , b ) , ( c , d ) ) We can now make the following approximation : P ( AF ( j ) = ( hi , Rj ) IS , B ) P ( R I ( S ) Ek=l P ( P I eNote that we count multiple co-occurrences in a single sentence , e.g. if 3= ( &lt; a , b &gt; , &lt; c , d &gt; , &lt; c , d &gt; ) then C ( &lt; a , b &gt; , &lt; c , d &gt; ) = C ( &lt; c , d &gt; , &lt; a , b &gt; ) = 2 .</sentence>
+				<definiendum id="0">AF</definiendum>
+				<definiens id="0">the number of times ( a , b / and ( c , d ) are seen in the same reduced sentence in training data</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The denominator is a normalising factor which ensures that E P ( AF ( j ) = ( k , p ) l S , B ) = 1 k=l..</sentence>
+				<definiendum id="0">denominator</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>We have developed a heuristic 'distance ' measure which takes several such features into account The current distance measure Aj , h~ is the combination of 6 features , or questions ( we motivate the choice of these questions qualitatively section 4 gives quantitative results showing their merit ) : Question 1 Does the hjth word precede or follow the jth word ?</sentence>
+				<definiendum id="0">h~</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>~ ) , Aj , , , j ) xCV c ( ( ~ ) , &lt; % ) , % , , , ~ ) = ~ ~ c ( &lt; ~ , ~ ) , ( y , ~ , ,j ) , A~ , , , , ) xelJ y~/~ where Y is the set of all words seen in training data : the other definitions of C follow similarly .</sentence>
+				<definiendum id="0">Y</definiendum>
+				<definiens id="0">the set of all words seen in training data : the other definitions of C follow similarly</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The probability of a parse tree T , given a sentence S , is : P ( T\ [ S ) = P ( B , DIS ) = P ( BIS ) x P ( D\ [ S , B ) The denominator in Equation ( 9 ) is not actually constant for different baseNP sequences , hut we make this approximation for the sake of efficiency and simplicity .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">The probability of a parse tree T , given a sentence S , is : P ( T\ [ S ) = P ( B , DIS ) = P ( BIS ) x P ( D\ [ S ,</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Hence C ( a , c ) is the number of times that the words a and c occur in the same sentence , ignoring their tags .</sentence>
+				<definiendum id="0">Hence C</definiendum>
+				<definiendum id="1">c )</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>CBs is the average number of crossing brackets per sentence .</sentence>
+				<definiendum id="0">CBs</definiendum>
+				<definiens id="0">the average number of crossing brackets per sentence</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Four configurations of the parser were tested : ( 1 ) The basic model ; ( 2 ) The basic model with the punctuation rule described in section 2.7 ; ( 3 ) Model ( 2 ) with tags ignored when lexical information is present , as described in 2.7 ; and ( 4 ) Model ( 3 ) also using the full probability distributions for POS tags .</sentence>
+				<definiendum id="0">full probability</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Language of Trees L2K , p is the monadic second-order language over the signature including a set of individual constants ( K ) , a set of monadic predicates ( P ) , and binary predicates for immediate domination ( , ~ ) , domination ( , ~* ) , linear precedence ( -~ ) and equality ( .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiens id="0">the monadic second-order language over the signature including a set of individual constants ( K ) , a set of monadic predicates</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>These relationships are easy to capture in L 2 For A-movement , for instance , K , P '' we have : A-Antecedent-Governs ( x , y ) -~A-pos ( x ) A C-Commands ( x , y ) A F.Eq ( x , y ) A -- x is a potential antecedent in an A-position -~ ( 3z ) \ [ Intervening-Barrier ( z , x , y ) \ ] A -- no barrier intervenes -~ ( Bz ) \ [ Spec ( z ) A-~A-pos ( z ) A C-Commands ( z , x ) A Intervenes ( z , x , y ) \ ] -- minimality is respected where F.Eq ( x , y ) is a conjunction of biconditionals that assures that x and y agree on the appropriate features and the other predicates are are standard GB notions that are definable in L 2 K , P '' Antecedent-government , in Rizzi 's and Manzini 's accounts , is the key relationship between adjacent members of chains which are identified by nonreferential indices , but plays no role in the definition of chains which are assigned a referential index3 ° Manzini argues , however , that referential chains can not overlap , and thus we will never need to distinguish multiple referential chains in any single context .</sentence>
+				<definiendum id="0">C-Commands</definiendum>
+				<definiendum id="1">y ) A F.Eq</definiendum>
+				<definiendum id="2">Intervenes</definiendum>
+				<definiens id="0">z , x , y ) \ ] -- minimality is respected where F.Eq ( x , y ) is a conjunction of biconditionals that assures that x and y agree on the appropriate features and the other predicates</definiens>
+				<definiens id="1">the key relationship between adjacent members of chains which are identified by nonreferential indices , but plays no role in the definition of chains which are assigned a referential index3 ° Manzini argues , however</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>There are several alternative approaches that might eventually liberate us from this limitation on the usability of MT systems : Unification-based grammar formalisms and lexical-semantics formalisms ( see LFG ( Kaplan and Bresnan , 1982 ) , HPSG ( Pollard and Sag , 1987 ) , and Generative Lexicon ( Pustejovsky , 1991 ) , for example ) have been proposed to facilitate computationally precise description of naturallanguage syntax and semantics .</sentence>
+				<definiendum id="0">Generative Lexicon</definiendum>
+				<definiens id="0">proposed to facilitate computationally precise description of naturallanguage syntax and semantics</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TAG-based MT ( Abeill~ , Schabes , and Joshi , 1990 ) 1 and pattern-based translation ( Maruyama , 1993 ) share many important properties for successful implementation in practical MT systems , namely : • The existence of a polynomial-time parsing algorithm • A capability for describing a larger domain of locality ( Schabes , Abeill~ , and Joshi , 1988 ) • Synchronization ( Shieber and Schabes , 1990 ) of the source and target language structures Readers should note , however , that the parsicalized TAG ) and STAG ( Shieber and Schabes , 1990 ) ( Synchronized TAG ) for each member of the TAG ( Tree Adjoining Grammar ) family .</sentence>
+				<definiendum id="0">TAG-based MT</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A pattern is a pair of CFG rules , and zero or more syntactic head and link constraints for nonterminal symbols .</sentence>
+				<definiendum id="0">pattern</definiendum>
+				<definiens id="0">a pair of CFG rules , and zero or more syntactic head and link constraints for nonterminal symbols</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>source and target CFG rules are linked if they 2Where \ ] G\ ] stands for the size of grammar G , and n is the length of an input string .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of an input string</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Similarly , we have Proposition 2 Let a CFG H be a subset of source CFG skeletons in T such that a source CFG skeleton k is in H iffk has no head constraints associated with it .</sentence>
+				<definiendum id="0">CFG H</definiendum>
+				<definiendum id="1">CFG skeleton k</definiendum>
+				<definiens id="0">a subset of source CFG skeletons in T such that a source</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>TDMT , however , is based on a combination of declarative/procedural knowledge sources for MT , and no clear computational properties have been investigated .</sentence>
+				<definiendum id="0">TDMT</definiendum>
+				<definiens id="0">is based on a combination of declarative/procedural knowledge sources for MT , and no clear computational properties have been investigated</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Here , K is the number of distinct nonterminal symbols in T , and n is the size of the input string .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">the number of distinct nonterminal symbols in T , and</definiens>
+				<definiens id="1">the size of the input string</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>VP ) \ [ 1 23 knows -- - &gt; ( h ) V , ( i ) V ( active arcs \ [ I 2\ ] ( d ) V.NP , \ [ 1 2\ ] ( e ) V.NP ) \ [ 2 3\ ] me -- - &gt; ( g ) NP ( inactive arcs \ [ I 3\ ] ( d ) V NP , \ [ i 3\ ] ( e ) V NP ) \ [ I 3\ ] knows me -- - &gt; ( d ) , ( e ) VP ( inactive arc \ [ 0 3\ ] ( a ) NP VP , active arcs \ [ I 3\ ] ( b ) VP .</sentence>
+				<definiendum id="0">e ) VP</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1046">
+			<definition id="0">
+				<sentence>KANKEI uses various n-gram patterns of the phrase heads around these ambiguities , and assigns parse trees ( with these ambiguities ) a score based on a linear combination of the frequencies with which these patterns appear with NP and VP attachments in the TRAINS corpora .</sentence>
+				<definiendum id="0">KANKEI</definiendum>
+				<definiens id="0">uses various n-gram patterns of the phrase heads around these ambiguities , and assigns parse trees ( with these ambiguities ) a score based on a linear combination of the frequencies with which these patterns appear with NP and VP attachments in the TRAINS corpora</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This information consists of phrase head patterns around the possible locations of PP/adverb attachments .</sentence>
+				<definiendum id="0">information</definiendum>
+				<definiens id="0">consists of phrase head patterns around the possible locations of PP/adverb attachments</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>While KANKEI combines the statistics of multiple patterns to make a disambiguation decision , Collins and Brooks ' model is a backed-off model that uses 4-gram statistics where possible , 3-gram statistics where possible if no 4-gram statistics are available , and bigram statistics otherwise .</sentence>
+				<definiendum id="0">KANKEI</definiendum>
+				<definiens id="0">combines the statistics of multiple patterns to make a disambiguation decision</definiens>
+				<definiens id="1">a backed-off model that uses 4-gram statistics where possible , 3-gram statistics where possible if no 4-gram statistics are available , and bigram statistics otherwise</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>Chinese is a morphosyllabic language ( DeFrancis , 1984 ) in that almost all Chinese characters represent a single syllable and most Chinese characters are also morphemes .</sentence>
+				<definiendum id="0">Chinese</definiendum>
+				<definiens id="0">a morphosyllabic language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( 3 ) = w : w2 ... w , , ( 4 ) where xk is the index of the last character in k ~h word wk , i , e wk = Cxk_l+ : ' '' Cxk ( k = 1,2 , - .</sentence>
+				<definiendum id="0">xk</definiendum>
+				<definiens id="0">the index of the last character in k ~h word wk</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Given { L ( i ) : 1 &lt; i &lt; k-l } , L ( k ) can be computed recursively as follows : L ( k ) -max \ [ L ( i ) -t-logP ( Ci+ : ... C~\ ] hi ) \ ] ( 10 ) : &lt; i_ &lt; k- : where hi is the history words ended with the i th character Ci. At the end of the recursion , we need to trace back to find the segmentation points. Therefore , it 's necessary to record the segmentation points in ( 10 ) . Let p ( k ) be the index of the last character in the preceding word. Then V ( k ) = arg : &lt; sm. &lt; ~x : \ [ L ( i ) + log P ( Ci+ : ... Ck \ ] hi ) \ ] ( 11 ) that is , Cp ( k ) + : `` '' • Ck comprises the last word of the optimal segmentation up to the k 'h character. A typical example of a six-character sentence is shown in table 1. Since p ( 6 ) = 4 , we know the last word in the optimal segmentation is C5C6. Since p ( 4 ) = 3 , the second last word is C4. So on and so forth. The optimal segmentation for this sentence is ( 61 ) ( C2C3 ) ( C4 ) ( 65C6 ) • Table 1 : A segmentation example chars I C : C2 C3 C4 C5 C6 k I 1 2 3 4 5 6 p ( k ) 0 1 1 3 3 4 The searches in ( 10 ) and ( 11 ) are in general timeconsuming. Since long words are very rare in Chinese ( 94 % words are with three or less characters ( Wu and Tseng , 1993 ) ) , it wo n't hurt at all to limit the search space in ( 10 ) and ( 11 ) by putting an upper bound ( say , 10 ) to the length of the exploring word , i.e , impose the constraint i &gt; _ ma¢l , k d in ( 10 ) and ( 11 ) , where d is the upper bound of Chinese word length .</sentence>
+				<definiendum id="0">L ( k</definiendum>
+				<definiendum id="1">hi</definiendum>
+				<definiendum id="2">d</definiendum>
+				<definiens id="0">the segmentation points in ( 10 ) . Let p ( k ) be the index of the last character in the preceding word. Then V ( k ) = arg : &lt;</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Construct an LM LMo with an initial vocabulary V0 .</sentence>
+				<definiendum id="0">Construct an LM LMo with</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The number reported here is the arithmetic average of recall and precision , as was used in n_~ ( Sproat et al. , 1994 ) , i.e. , 1/2 ( ~-~ + n2 ) , where nc is the number of common words in both segmentations , nl and n2 are the number of words in each of the segmentations .</sentence>
+				<definiendum id="0">nc</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>In ( Vijay-Shanker , Weir and Rainbow , 1995 ) the approach used for parsing a new formalism , the D-Tree Grammars ( DTG ) , is to translate a DTG into a Linear Prioritized Multiset Grammar which is similar to a LIG but uses multisets in place of stacks .</sentence>
+				<definiendum id="0">D-Tree Grammars</definiendum>
+				<definiendum id="1">DTG</definiendum>
+				<definiens id="0">to translate a DTG into a Linear Prioritized Multiset Grammar which is similar to a LIG but uses multisets in place of stacks</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A derivation is a sequence of strings in V* s.t. the relation derives holds between any two consecutive strings .</sentence>
+				<definiendum id="0">derivation</definiendum>
+				<definiens id="0">a sequence of strings in V* s.t. the relation derives holds between any two consecutive strings</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Following ( Lang , 1994 ) , CF parsing is the intersection of a CFG and a finite-state automaton ( FSA ) which models the input string x 2 .</sentence>
+				<definiendum id="0">CF parsing</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Though this is not always the case with non CF formalisms , we will see in the next sections that a similar approach , when applied to LIGs , leads to a shared parse forest which is a LIG while it is possible to define a derivation grammar which is CF. An indexed grammar is a CFG in which stack of symbols are associated with non-terminals .</sentence>
+				<definiendum id="0">CF. An indexed grammar</definiendum>
+				<definiens id="0">a CFG in which stack of symbols are associated with non-terminals</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Following ( Vijay-Shanker and Weir , 1994 ) Definition 2 L = ( VN , VT , VI , PL , S ) denotes a LIG where VN , VT , VI and PL are respectively finite sets of non-terminals , terminals , stack symbols and productions , and S is the start symbol .</sentence>
+				<definiendum id="0">Vijay-Shanker</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiens id="0">VN , VT , VI , PL , S ) denotes a LIG where VN , VT , VI and PL are respectively finite sets of non-terminals , terminals , stack symbols and productions</definiens>
+				<definiens id="1">the start symbol</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We define on ( Vo LJ VT ) * the binary relation derives denoted =~ ( the relation symbol is sometimes L overlined by a production ) : r A ( a '' a ) r L I i A ( ) =~w rlA ( ) r2 ' ' FlWF2 L In the first above element we say that the object B ( a '' a ~ ) is the distinguished child of A ( a '' a ) , and if F1F2 = C0 , C0 is the secondary object .</sentence>
+				<definiendum id="0">C0</definiendum>
+				<definiens id="0">the relation symbol is sometimes L overlined by a production ) : r A ( a '' a</definiens>
+				<definiens id="1">the distinguished child of A ( a '' a</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A derivation F~ , ... , Fi , Fi+x , ... , Ft is a sequence of strings where the relation derives holds between any two consecutive strings The language defined by a LIG L is the set : £ ( L ) = { x \ [ S 0 : =~ x A x • V~ } L As in the CF case we can talk of rightmost derivations when the rightmost object is derived at each step .</sentence>
+				<definiendum id="0">derivation F~ , ... , Fi , Fi+x , ... , Ft</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The purpose of this section is to define the set of such strings as the language defined by some CFG .</sentence>
+				<definiendum id="0">purpose of this section</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>1 1 1 Definition 3 For a LIG L = ( VN , VT , Vz , PL , S ) , we call linear derivation grammar ( LDG ) the CFG DL ( or D when L is understood ) D = ( VND , V D , pD , S D ) where • V D= { \ [ A\ ] IA•VN } U { \ [ ApB\ ] IA , B•VNA p • 7~ } , and ~ is the set of relations { ~ , -¢ , - , 'Y 1 1 • VTD = pL • S ° = \ [ S\ ] • Below , \ [ F1F2\ ] symbol \ [ X\ ] when FIF2 = string e when F1F2 • V~ .</sentence>
+				<definiendum id="0">LDG</definiendum>
+				<definiendum id="1">CFG DL</definiendum>
+				<definiendum id="2">~</definiendum>
+				<definiens id="0">the set of relations { ~ , -¢</definiens>
+				<definiens id="1">] when FIF2 = string e when F1F2 • V~</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>In section 2 we used a CFG ( the shared parse forest ) for representing all parses in a CFG .</sentence>
+				<definiendum id="0">CFG</definiendum>
+				<definiens id="0">the shared parse forest ) for representing all parses in a CFG</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>A context-free grammar ( CFG ) is a 4-tuple G = ( S , N , P , S ) , where S and N are two finite disjoint sets of terminal and nonterminal symbols , respectively , S E N is the start symbol , and P is a finite set of rules .</sentence>
+				<definiendum id="0">context-free grammar ( CFG )</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">a 4-tuple G = ( S , N , P , S ) , where S and N are two finite disjoint sets of terminal and nonterminal symbols , respectively , S E N is the start symbol</definiens>
+				<definiens id="1">a finite set of rules</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A pushdown automaton ( PDA ) is a 5-tuple .4 = ( Z , Q , T , qi , , q/in ) , where S , Q and T are finite sets of input symbols , stack symbols and transitions , respectively ; qin E Q is the initiM stack symbol and q/i , E Q is the finM stack symbol .</sentence>
+				<definiendum id="0">pushdown automaton</definiendum>
+				<definiendum id="1">PDA</definiendum>
+				<definiens id="0">a 5-tuple .4 = ( Z , Q , T , qi , , q/in ) , where S , Q and T are finite sets of input symbols , stack symbols and transitions , respectively ; qin E Q is the initiM stack symbol and q/i , E Q is the finM stack symbol</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>ALrt is an elementary operation that removes from the stack a number of elements bounded by the size of the underlying grammar .</sentence>
+				<definiendum id="0">ALrt</definiendum>
+				<definiens id="0">an elementary operation that removes from the stack a number of elements bounded by the size of the underlying grammar</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We define Ui to be Uk &lt; i Uk , i. Computation of the entries of U is moderated by a filtering process. This process makes use of a function pred from 2 N to 2 N , specific to a certain context-free grammar. We have a certain nonterminal Ainit which is initially inserted in U0,0 in order to start the recognition process. We are now ready to give a formal specification of the tabular algorithm. Algorithm 1 Let G = ( ~ , N , P , S ) be a CFG in binary form , let pred be a function from 2 N to 2 N , let Ai , ,t be the distinguished element from N , and let v = ala2. `` 'an 6 ~* be an input string. We compute the least ( n+ 1 ) x ( n+ 1 ) table U such that Ainit 6 U0,0 and ( i ) A 6 Uj_ 1 , j if ( A ~ aj ) 6 P , A 6 pred ( Uj_l ) ; ( ii ) A 6 Uj , j if ( A -- + e ) 6 P , A E pred ( Uj ) ; ( iii ) A 6 Ui , j if B 6 Ui , ~ , C 6 Uk , j , ( A -- -. BC ) 6 P , A 6 pred ( Ui ) ; ( iv ) A 6 Uij if B 6 Uij , ( A ~ B ) 6 P , A 6 pred ( UO. The string has been accepted when S 6 U0 , ,. We now specify a grammar transformation , based on the definition of .A2LR. Definition 4 Let A2LR = ( S , Q2LR , T2LR , ' qin , q~ , ) be the 2L1 % automaton associated with a CFG G. The 2LR cover associated with G is the CFG C2I r ( G ) = ( Q2Lr , P2I rt , where the rules in P2LR are given by : ( i ) ( a , q ' ) -- * a , for every ( X , q ) ~-~ ( X , q ) ( a , q ' ) E T2LR ; ( ii ) ( e ) ~ ¢ , for every ( X , q ) ~-* ( X , q ) ( e ) 6 T2LR ; ( iii ) ( X~ ) ~ ( X , q ) ( ~ ) , for every ( X , q ) ( ~ ) ~-* ( X~ ) 6 T2LR ; 242 ( iv ) ( A , q ' ) -- , ( a ) , for every ( X , q ) ( or ) ~-~ ( X , q ) ( A , q ' ) E T2La. Observe that there is a direct , one-to-one correspondence between transitions of.A2La and productions of C2LR ( G ) . The accompanying function pred is defined as follows ( q , q ' , q '' range over the stack elements ) : pred ( v ) = { q I q'q '' ~-~ q E T2La } U { q \ ] q ' E r , q ' ~*q'qET~La } U { q I q'Er , q'q '' ~-~q'qET2La } . The above definition implies that only the tabular equivalents of the shift , initiate and goto transitions are subject to actual filtering ; the simulation of the gathering transitions does not depend on elements in r. Finally , the distinguished nonterminal from the cover used to initialize the table is qin'l Thus we start with ( t &gt; , { S &lt; l ) ) E U0,0. The 2LR cover introduces spurious ambiguity : where some grammar G would allow a certain number of parses to be found for a certain input , the grammar C2Lrt ( G ) in general allows more parses. This problem is in part solved by the filtering function pred. The remaining spurious ambiguity is avoided by a particular way of constructing the parse trees , described in what follows. After Algorithm 1 has recognized a given input , the set of all parse trees can be computed as tree ( q~n , O , n ) where the function tree , which determines sets of either parse trees or lists of parse trees for entries in U , is recursively defined by : ( i ) tree ( ( a , q ' ) , i , j ) is the set { a } . This set contains a single parse tree Consisting of a single node labelled a. ( ii ) tree ( e , i , i ) is the set { c } . This set consists of an empty list of trees. ( iii ) tree ( Xl ? , i , j ) is the union of the sets T. k ( x~ ) , i , j , where i &lt; k &lt; j , ( 8 ) E Uk , j , and there is at least one ( X , q ) E Ui , k and ( X~ ) -- -* ( X , q ) ( 8 ) in C2La ( G ) , for some q. For each such k , select one such q. We define 7 : , ~ = { t.ts I t E ( X fl ) , i , j tree ( ( X , q ) , i , k ) A ts E tree ( fl , k , j ) } . Each t. ts is a list of trees , with head t and tail ts. ( iv ) tree ( ( A , q ' ) , i , j ) is the union of the sets T. a where ( ~ ) E Uij is such that ( A , ql ) , i , j ' ( A , q ' ) -- -* ( c~ ) in C2La ( G ) . We define T ~ ( a , q ' ) , i , j - { glue ( A , ts ) l ts E tree ( c~ , i , j ) } . The function glue constructs a tree from a fresh root node labelled A and the trees in list ts as immediate subtrees. We emphasize that in the third clause above , one should not consider more than one q for given k in order to prevent spurious ambiguity. ( In fact , for fixed X , i , k and for different q such that ( X , q ) E Ui , k , tvee ( ( X , q ) , i , k ) yields the exact same set of trees. ) With this proviso , the degree of ambiguity , i.e. the number of parses found by the algorithm for any input , is reduced to exactly that of the source grammar. A practical implementation would construct the parse trees on-the-fly , attaching them to the table entries , allowing packing and sharing of subtrees ( cf. the literature on parse forests ( Tomita , 1986 ; Elllot and Lang , 1989 ) ) . Our algorithm actually only needs one ( packed ) subtree for several ( X , q ) E Ui , k with fixed X , i , k but different q. The resulting parse forests would then be optimally compact , contrary to some other LR-based tabular algorithms , as pointed out by Rekers ( 1992 ) , Nederhof ( 1993 ) and Nederhof ( 1994b ) . In this section , we investigate how the steps performed by Algorithm 1 ( applied to the 2LR cover ) relate to those performed by .A2LR , for the same input. We define a subrelation ~+ of t -+ as : ( 6 , uw ) ~+ ( 66 ' , w ) if and only if ( 6 , uw ) = ( 6 , zlz2 '' .'zmw ) t ( 88l , z2..-zmw ) ~ ... ~ ( 68re , w ) = ( 86 ' , w ) , for some m &gt; 1 , where I~kl &gt; 0 for all k , 1 &lt; k &lt; m. Informally , we have ( 6 , uw ) ~+ ( 6~ ' , w ) if configuration ( ~8 ' , w ) can be reached from ( 6 , uw ) without the bottom-most part 8 of the intermediate stacks being affected by any of the transitions ; furthermore , at least one element is pushed on top of 6 .</sentence>
+				<definiendum id="0">Ui</definiendum>
+				<definiendum id="1">i )</definiendum>
+				<definiendum id="2">function glue</definiendum>
+				<definiens id="0">to be Uk &lt; i Uk , i. Computation of the entries of U is moderated by a filtering process. This process makes use of a function pred from 2 N to 2 N , specific to a certain context-free grammar. We have a certain nonterminal Ainit which is initially inserted in U0,0 in order to start the recognition process. We are now ready to give a formal specification of the tabular algorithm. Algorithm 1 Let G = ( ~ , N , P , S ) be a CFG in binary form , let pred be a function from 2 N to 2 N , let Ai , ,t be the distinguished element from N , and let v = ala2. `` 'an 6 ~* be an input string. We compute the least ( n+ 1 ) x ( n+ 1 ) table U such that Ainit 6 U0,0 and ( i ) A 6 Uj_ 1 , j if ( A ~ aj ) 6 P , A 6 pred ( Uj_l ) ; ( ii ) A 6 Uj , j if ( A -- + e ) 6 P , A E pred ( Uj ) ; ( iii ) A 6 Ui , j if B 6 Ui , ~ , C 6 Uk , j , ( A -- -. BC ) 6 P , A 6 pred ( Ui ) ; ( iv ) A 6 Uij if B 6 Uij , ( A ~ B ) 6 P , A 6 pred ( UO. The string has been accepted when S 6 U0 , ,. We now specify a grammar transformation , based on the definition of .A2LR. Definition 4 Let A2LR = ( S , Q2LR , T2LR , ' qin , q~ , ) be the 2L1 % automaton associated with a CFG G. The 2LR cover associated with G is the CFG C2I r ( G ) = ( Q2Lr , P2I rt , where the rules in P2LR are given by : ( i ) ( a , q ' ) -- * a , for every ( X , q ) ~-~ ( X , q ) ( a , q ' ) E T2LR ; ( ii ) ( e ) ~ ¢ , for every ( X , q ) ~-* ( X , q ) ( e ) 6 T2LR ; ( iii ) ( X~ ) ~ ( X , q ) ( ~ ) , for every ( X , q ) ( ~ ) ~-* ( X~ ) 6 T2LR ; 242 ( iv ) ( A , q ' ) -- , ( a ) , for every ( X , q ) ( or ) ~-~ ( X , q ) ( A , q ' ) E T2La. Observe that there is a direct , one-to-one correspondence between transitions of.A2La and productions of C2LR ( G ) . The accompanying function pred is defined as follows ( q , q ' , q '' range over the stack elements ) : pred ( v ) = { q I q'q '' ~-~ q E T2La } U { q \ ] q ' E r , q ' ~*q'qET~La } U { q I q'Er , q'q '' ~-~q'qET2La } . The above definition implies that only the tabular equivalents of the shift , initiate and goto transitions are subject to actual filtering ; the simulation of the gathering transitions does not depend on elements in r. Finally , the distinguished nonterminal from the cover used to initialize the table is qin'l Thus we start with ( t &gt; , { S &lt; l ) ) E U0,0. The 2LR cover introduces spurious ambiguity : where some grammar G would allow a certain number of parses to be found for a certain input , the grammar C2Lrt ( G ) in general allows more parses. This problem is in part solved by the filtering function pred. The remaining spurious ambiguity is avoided by a particular way of constructing the parse trees , described in what follows. After Algorithm 1 has recognized a given input , the set of all parse trees can be computed as tree ( q~n , O , n ) where the function tree , which determines sets of either parse trees or lists of parse trees for entries in U , is recursively defined by : ( i ) tree ( ( a , q '</definiens>
+				<definiens id="1">the set { a } . This set contains a single parse tree Consisting of a single node labelled a. ( ii</definiens>
+				<definiens id="2">the set { c } . This set consists of an empty list of trees. ( iii ) tree ( Xl ?</definiens>
+				<definiens id="3">the union of the sets T. k ( x~ ) , i , j , where i &lt; k &lt; j , ( 8 ) E Uk , j , and there is at least one ( X , q ) E Ui , k and ( X~ ) -- -* ( X , q ) ( 8 ) in C2La ( G ) , for some q. For each such k , select one such q. We define 7 : , ~ = { t.ts I t E ( X fl ) , i , j tree ( ( X , q ) , i , k ) A ts E tree ( fl , k , j ) } . Each t. ts is a list of trees , with head t and tail ts. ( iv ) tree ( ( A , q '</definiens>
+				<definiens id="4">the union of the sets T. a where ( ~ ) E Uij is such that ( A , ql ) , i , j ' ( A , q ' ) -- -* ( c~ ) in C2La ( G ) . We define T ~ ( a , q ' ) , i , j - { glue ( A , ts ) l ts E tree ( c~ , i</definiens>
+				<definiens id="5">constructs a tree from a fresh root node labelled A and the trees in list ts as immediate subtrees. We emphasize that in the third clause above , one should not consider more than one q for given k in order to prevent spurious ambiguity. ( In fact , for fixed X , i , k and for different q such that ( X , q ) E Ui , k , tvee ( ( X , q ) , i , k ) yields the exact same set of trees. ) With this proviso , the degree of ambiguity , i.e. the number of parses found by the algorithm for any input , is reduced to exactly that of the source grammar. A practical implementation would construct the parse trees on-the-fly , attaching them to the table entries , allowing packing and sharing of subtrees ( cf. the literature on parse forests ( Tomita , 1986 ; Elllot and Lang , 1989 ) ) . Our algorithm actually only needs one ( packed ) subtree for several ( X , q ) E Ui , k with fixed X , i , k but different q. The resulting parse forests would then be optimally compact , contrary to some other LR-based tabular algorithms , as pointed out by Rekers ( 1992 ) , Nederhof ( 1993 ) and Nederhof ( 1994b ) . In this section , we investigate how the steps performed by Algorithm 1 ( applied to the 2LR cover ) relate to those performed by .A2LR , for the same input. We define a subrelation ~+ of t -+ as : ( 6 , uw ) ~+ ( 66 ' , w ) if and only if ( 6 , uw ) = ( 6 , zlz2 '' .'zmw ) t ( 88l , z2..-zmw ) ~ ... ~ ( 68re , w ) = ( 86 ' , w ) , for some m &gt; 1 , where I~kl &gt; 0 for all k , 1 &lt; k &lt; m. Informally , we have ( 6 , uw ) ~+ ( 6~ ' , w ) if configuration ( ~8 ' , w ) can be reached from ( 6 , uw ) without the bottom-most part 8 of the intermediate stacks being affected by any of the transitions ; furthermore , at least one element is pushed on top of 6</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For determining the order of the time complexity of our algorithm , we look at the most expensive step , which is the computation of an element ( Xfl ) E Ui , j from two elements ( X , q ) e Ui , k and ( t3 ) E Uk , j , through ( X , q ) ( fl ) , -- % ( Xfl ) E T2LR .</sentence>
+				<definiendum id="0">most expensive step</definiendum>
+				<definiens id="0">the computation of an element ( Xfl ) E Ui , j from two elements ( X , q ) e Ui , k and ( t3 ) E Uk , j</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>in which occurrences of &lt; 1 are preceded by A and deletes &lt; l at such occurrences : in which occurrences of &lt; 2 are not preceded by A and deletes &lt; ~ at such occurrences : 2*X &lt; 2-~ ~*~. Clearly the composition of these transducers leads to the desired result. The construction of the transducer replace is straightforward. In the following , we show that the construction of the other four transducers is also very simple , and that it only requires the determinization of 3 automata and additional work linear ( time and space ) in the size of the determinized automata. Markers of TYPE 1 Let us start by considering the problem of constructing what we shall call a TYPE I transducer , 233 Figure 2 : Replacement transducer replace in the obligatory left-to-right case. which inserts a marker after all prefixes of a string that match a particular regular expression. Given a regular expression fl defined on the alphabet E , one can construct , using classical algorithms ( Aho et al. , 1986 ) , a deterministic automaton a representing E*fl. As with the KK algorithm , one can obtain from a a transducer X = Id ( a ) simply by assigning to each transition the same output label as the input label. We can easily transform X into a new transducer r such that it inserts an arbitrary marker ~ after each occurrence of a pattern described by ~. To do so , we make final the nonfinal states of X and for any final state q of X we create a new state q~ , a copy of q. Thus , q ' has the same transitions as q , and qP is a final state. We then make q non-final , remove the transitions leaving q and add a transition from q to q ' with input label the empty word c , and output ~. Figures 3 and 4 illustrate the transformation of X into T. a : a cic Figure 3 : Final state q of X with entering and leaving transitions. ata ctc Figure 4 : States and transitions of r obtained by modifications of those of X. Proposition 1 Let ~ be a deterministic automaton representing E*/3 , then the transducer r obtained as described above is a transducer postmarking occurrences of fl in a string ofF* by # . Proof. The proof is based on the observation that a deterministic automaton representing E*/~ is necessarily complete 5. Notice that nondeterministic automata representing ~*j3 are not necessarily complete. Let q be a state of a and let u E ~* be a string reaching q6. Let v be a string described by the regular expression ft. Then , for any a E ~ , uav is in ~*~. Hence , uav is accepted by the automaton a , and , since ~ is deterministic , there exists a transition labeled with a leaving q. Thus , one can read any string u E E* using the automaton a. Since by definition of a , the state reached when reading a prefix u ~ of u is final iff u ~ E ~*~ , by construction , the transducer r inserts the symbol # after the prefix u ~ iff u ~ ends with a pattern of ft. This ends the proof of the proposition , t3 Markers of TYPE 2 In some cases , one wishes to check that any occurrence of # in a string s is preceded ( or followed ) by an occurrence of a pattern of 8. We shall say that the corresponding transducers are of TYPE 2. They play the role of a filter. Here again , they can be defined from a deterministic automaton representing E*B. Figure 5 illustrates the modifications to make from the automaton of figure 3. The symbols # should only appear at final states and must be erased. The loop # : e added at final states of Id ( c~ ) is enough for that purpose. All states of the transducer are then made final since any string conforming to this restriction is acceptable : cf. the transducer ! 1 for A above. # : E Figure 5 : Filter transducer , TYPE 2. 5An automaton A is complete iff at any state q and for any element a of the alphabet ~ there exists at least one transition leaving q labeled with a. In the case of deterministic automata , the transition is unique. 6We assume all states of a accessible. This is true if a is obtained by determinization. 234 Markers of TYPE 3 In other cases , one wishes to check the reverse constraint , that is that occurrences of # in the string s are not preceded ( or followed ) by any occurrence of a pattern of ft. The transformation then simply consists of adding a loop at each nonfinal state of Id ( a ) , and of making all states final. Thus , a state such as that of figure 6 is transa : a c : c Figure 6 : Non-final state q of a. formed into that of figure 5. We shall say that the corresponding transducer is of TYPE 3 : cf. the transducer 12 for ~. The construction of these transducers ( TYPE 1-3 ) can be generalized in various ways. In particular : • One can add several alternative markers { # 1 , ' '' , # k } after each occurrence of a pattern of 8 in a string. The result is then an automaton with transitions labeled with , for instance , ~1 , ' '' `` , ~k after each pattern of fl : cf. transducer f for ¢ above. • Instead of inserting a symbol , one can delete a symbol which would be necessarily present after each occurrence of a pattern of 8. For any regular expression a , define M arker ( a , type , deletions , insertions ) as the transducer of type type constructed as previously described from a deterministic automaton representing a , insertions and deletions being , respectively , the set of insertions and deletions the transducer makes. Proposition 2 For any regular expression a , Marker ( a , type , deletions , insertions ) can be constructed from a deterministic automaton representing a in linear time and space with respect to the size of this automaton. Proof. We proved in the previous proposition that the modifications do indeed lead to the desired transducer for TYPE 1. The proof for other cases is similar. That the construction is linear in space is clear since at most one additional transition and state is created for final or non-final states 7. The overall time complexity of the construction is linear , since the construction of ld ( a ) is linear in the ~For TYPE 2 and TYPE 3 , no state is added but only a transition per final or non-final state. r = \ [ reverse ( Marker ( E*reverse ( p ) , 1 , { &gt; } ,0 ) ) \ ] f = \ [ reverse ( Marker ( ( ~ U { &gt; } ) *reverse ( C &gt; &gt; ) , 1 , { &lt; 1 , &lt; u } ,0 ) ) \ ] 11 = \ [ Marker ( N* ) L 2,0 , { &lt; 1 } ) \ ] &lt; ~ : &lt; 2 12 = \ [ Marker ( $ *A,3 , @ , { &lt; 2 } ) \ ] Figure 7 : Expressions of the r , f , ll , and 12 using Marker. ( 4 ) ( 5 ) ( 6 ) ( 7 ) number of transitions of a and that other modifications consisting of adding new states and transitions and making states final or not are also linear. D We just showed that Marker ( a , type , deletions , insertions ) can be constructed in a very efficient way. Figure 7 gives the expressions of the four transducers r , f , ll , and 12 using Marker. Thus , these transducers can be constructed very efficiently from deterministic automata representing s ~*reverse ( p ) , ( ~ O { &gt; } ) * reverse ( t &gt; &gt; ) , and E* , ~ .</sentence>
+				<definiendum id="0">qP</definiendum>
+				<definiendum id="1">Marker</definiendum>
+				<definiens id="0">Replacement transducer replace in the obligatory left-to-right case. which inserts a marker after all prefixes of a string that match a particular regular expression. Given a regular expression fl defined on the alphabet E</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The perfect linearity indicates an exponential time and space behavior , and this in turn explains the observed difference in performance .</sentence>
+				<definiendum id="0">perfect linearity</definiendum>
+				<definiens id="0">indicates an exponential time and space behavior</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Many algorithms used in the finite-state theory and in their applications to natural language processing can be extended in the same way .</sentence>
+				<definiendum id="0">Many algorithms</definiendum>
+				<definiens id="0">used in the finite-state theory and in their applications to natural language processing can be extended in the same way</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>Some of the most common involve inducing Probabilistic Context-Free Grammars ( PCFGs ) , and then parsing with an algorithm such as the Labelled Tree ( Viterbi ) Algorithm , which maximizes the probability that the output of the parser ( the `` guessed '' tree ) is the one that the PCFG produced .</sentence>
+				<definiendum id="0">Probabilistic Context-Free Grammars ( PCFGs</definiendum>
+				<definiendum id="1">Labelled Tree ( Viterbi ) Algorithm</definiendum>
+				<definiens id="0">maximizes the probability that the output of the parser ( the `` guessed '' tree</definiens>
+				<definiens id="1">the one that the PCFG produced</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In Section 4 , we discuss another new algorithm , the Bracketed Recall Algorithm , that maximizes performance on the Bracketed Recall Rate ( closely related to the Consistent Brackets Recall Rate ) .</sentence>
+				<definiendum id="0">Bracketed Recall Algorithm</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Let a parse tree T be defined as a set of triples ( s , t , X ) -- where s denotes the position of the first symbol in a constituent , t denotes the position of the last symbol , and X represents a terminal or nonterminal symbol -- meeting the following three requirements : 177 • The sentence was generated by the start symbol , S. Formally , ( 1 , n , S ) E T. • Every word in the sentence is in the parse tree .</sentence>
+				<definiendum id="0">parse tree T</definiendum>
+				<definiendum id="1">s</definiendum>
+				<definiendum id="2">X</definiendum>
+				<definiendum id="3">n , S )</definiendum>
+				<definiens id="0">a set of triples ( s , t</definiens>
+				<definiens id="1">the position of the first symbol in a constituent</definiens>
+				<definiens id="2">a terminal or nonterminal symbol -- meeting the following three requirements : 177 • The sentence was generated by the start symbol</definiens>
+				<definiens id="3">E T. • Every word in the sentence is in the parse tree</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Formally , we say that ( s , t ) crosses ( q , r ) if and only ifs &lt; q &lt; t &lt; rorq &lt; s &lt; r &lt; t. If Tc is binary branching , then Consistent Brackets and Bracketed Match are identical. The following symbols denote the number of constituents that match according to each of these criteria. L = ITc n Tal : the number of constituents in Ta that are correct according to Labelled Match. B = I { ( s , t , X ) : ( s , t , X ) ETa and for some Y ( s , t , Y ) E Tc } \ ] : the number of constituents in Ta that are correct according to Bracketed Match. C = I { ( s , t , X ) ETa : there is no ( v , w , Y ) E Tc crossing ( s , t ) } \ [ : the number of constituents in TG correct according to Consistent Brackets. Following are the definitions of the six metrics used in this paper for evaluating binary branching trees : The in the following table : ( 1 ) Labelled Recall Rate = L/Nc. ( 2 ) Labelled Tree Rate = 1 if L = ATe. It is also called the Viterbi Criterion. ( 3 ) Bracketed Recall Rate = B/Nc. ( 4 ) Bracketed Tree Rate = 1 if B = Nc. ( 5 ) Consistent Brackets Recall Rate = C/NG. It is often called the Crossing Brackets Rate. In the case where the parses are binary branching , this criterion is the same as the Bracketed Recall Rate. ( 6 ) Consistent Brackets Tree Rate = 1 if C = No. This metric is closely related to the Bracketed Tree Rate. In the case where the parses are binary branching , the two metrics are the same. This criterion is also called the Zero Crossing Brackets Rate. preceding six metrics each correspond to cells II Recall I Tree Consistent Brackets C/NG 1 if C = Nc Brackets B/Nc 1 if B = Nc Labels L/Nc 1 if L = Arc Despite this long list of possible metrics , there is only one metric most parsing algorithms attempt to maximize , namely the Labelled Tree Rate. That is , most parsing algorithms assume that the test corpus was generated by the model , and then attempt to evaluate the following expression , where E denotes the expected value operator : Ta = argmTaXE ( 1 ifL = gc ) ( 1 ) This is true of the Labelled Tree Algorithm and stochastic versions of Earley 's Algorithm ( Stolcke , 1993 ) , and variations such as those used in Picky parsing ( Magerman and Weir , 1992 ) . Even in probabilistic models not closely related to PCFGs , such as Spatter parsing ( Magerman , 1994 ) , expression ( 1 ) is still computed. One notable exception is Brill 's Transformation-Based Error Driven system ( Brill , 1993 ) , which induces a set of transformations designed to maximize the Consistent Brackets Recall Rate. However , Brill 's system is not probabilistic. Intuitively , if one were to match the parsing algorithm to the evaluation criterion , better performance should be achieved. Ideally , one might try to directly maximize the most commonly used evaluation criteria , such as Consistent Brackets Recall ( Crossing Brackets ) 178 Rate. Unfortunately , this criterion is relatively difficult to maximize , since it is time-consuming to compute the probability that a particular constituent crosses some constituent in the correct parse. On the other hand , the Bracketed Recall and Bracketed Tree Rates are easier to handle , since computing the probability that a bracket matches one in the correct parse is inexpensive. It is plausible that algorithms which optimize these closely related criteria will do well on the analogous Consistent Brackets criteria. When building an actual system , one should use the metric most appropriate for the problem. For instance , if one were creating a database query system , such as an ATIS system , then the Labelled Tree ( Viterbi ) metric would be most appropriate. A single error in the syntactic representation of a query will likely result in an error in the semantic representation , and therefore in an incorrect database query , leading to an incorrect result. For instance , if the user request `` Find me all flights on Tuesday '' is misparsed with the prepositional phrase attached to the verb , then the system might wait until Tuesday before responding : a single error leads to completely incorrect behavior. Thus , the Labelled Tree criterion is appropriate. On the other hand , consider a machine assisted translation system , in which the system provides translations , and then a fluent human manually edits them. Imagine that the system is given the foreign language equivalent of `` His credentials are nothing which should be laughed at , '' and makes the single mistake of attaching the relative clause at the sentential level , translating the sentence as `` His credentials are nothing , which should make you laugh. '' While the human translator must make some changes , he certainly needs to do less editing than he would if the sentence were completely misparsed. The more errors there are , the more editing the human translator needs to do. Thus , a criterion such as the Labelled Recall criterion is appropriate for this task , where the number of incorrect constituents correlates to application performance. Consider writing a parser for a domain such as machine assisted translation. One could use the Labelled Tree Algorithm , which would maximize the expected number of exactly correct parses. However , since the number of correct constituents is a better measure of application performance for this domain than the number of correct trees , perhaps one should use an algorithm which maximizes the Labelled Recall criterion , rather than the Labelled Tree criterion. The Labelled Recall Algorithm finds that tree TG which has the highest expected value for the Labelled Recall Rate , L/Nc ( where L is the number of correct labelled constituents , and Nc is the number of nodes in the correct parse ) . This can be written as follows : Ta = arg n~xE ( L/Nc ) ( 2 ) It is not immediately obvious that the maximization of expression ( 2 ) is in fact different from the maximization of expression ( 1 ) , but a simple example illustrates the difference. The following grammar generates four trees with equal probability : S ~ A C 0.25 S ~ A D 0.25 S -- * EB 0.25 S -- ~ FB 0.25 A , B , C , D , E , F ~ xx 1.0 The four trees are S S X XX X X XX X ( 3 ) S S E B F B X XX X X XX X For the first tree , the probabilities of being correct are S : 100 % ; A:50 % ; and C : 25 % . Similar counting holds for the other three. Thus , the expected value of L for any of these trees is 1.75. On the other hand , the optimal Labelled Recall parse is S X XX X This tree has 0 probability according to the grammar , and thus is non-optimal according to the Labelled Tree Rate criterion. However , for this tree the probabilities of each node being correct are S : 100 % ; A : 50 % ; and B : 50 % . The expected value of L is 2.0 , the highest of any tree. This tree therefore optimizes the Labelled Recall Rate. We now derive an algorithm for finding the parse that maximizes the expected Labelled Recall Rate. We do this by expanding expression ( 2 ) out into a probabilistic form , converting this into a recursive equation , and finally creating an equivalent dynamic programming algorithm. We begin by rewriting expression ( 2 ) , expanding out the expected value operator , and removing the 179 which is the same for all TG , and so plays no NC ' role in the maximization. Ta = argmTaX~ , P ( Tc l w~ ) ITnTcl Tc This can be further expanded to ( 4 ) Ta = arg mTax E P ( Tc I w~ ) E1 if ( s , t , X ) 6 Tc Tc ( , ,t , X ) eT ( 5 ) Now , given a PCFG with start symbol S , the following equality holds : P ( s . 1,4 ) = E P ( Tc I ~7 ) ( 1 if ( s , t , X ) 6 Tc ) ( 6 ) Tc By rearranging the summation in expression ( 5 ) and then substituting this equality , we get Ta =argm~x E P ( S =~ s-t ... ( , ,t , X ) eT ( 7 ) At this point , it is useful to introduce the Inside and Outside probabilities , due to Baker ( 1979 ) , and explained by Lari and Young ( 1990 ) . The Inside probability is defined as e ( s , t , X ) = P ( X =~ w~ ) and the Outside probability is f ( s , t , X ) = P ( S =~ 8-I n w 1 Xwt+l ) . Note that while Baker and others have used these probabilites for inducing grammars , here they are used only for parsing. Let us define a new function , g ( s , t , X ) . g ( s , t , X ) P ( S =~ , -1.. n = w 1 Awt+ 1 \ [ w'~ ) P ( S : ~ , -t n wl Xw , +I ) P ( X =~ w 's ) P ( S wE ) = f ( s , t , X ) x e ( s , t , X ) /e ( 1 , n , S ) Now , the definition of a Labelled Recall Parse can be rewritten as T =arg % ax g ( s , t , X ) ( 8 ) ( s , t , X ) eT Given the matrix g ( s , t , X ) it is a simple matter of dynamic programming to determine the parse that maximizes the Labelled Recall criterion. Define MAXC ( s , t ) = n~xg ( s , t , X ) + max ( MAXC ( s , r ) + MAXC ( r + 1 , t ) ) rls_ &lt; r &lt; t for length : = 2 to n for s : = 1 to n-length+l t : = s + length I ; loop over nonterminals X let max_g : =maximum of g ( s , t , X ) loop over r such that s &lt; = r &lt; t let best_split : = max of maxc\ [ s , r\ ] + maxc\ [ r+l , t\ ] maxc\ [ s , t\ ] : = max_g + best split ; Figure h Labelled Recall Algorithm It is clear that MAXC ( 1 , n ) contains the score of the best parse according to the Labelled Recall criterion. This equation can be converted into the dynamic programming algorithm shown in Figure 1. For a grammar with r rules and k nonterminals , the run time of this algorithm is O ( n 3 + kn 2 ) since there are two layers of outer loops , each with run time at most n , and an inner loop , over nonterminals and n. However , this is dominated by the computation of the Inside and Outside probabilities , which takes time O ( rna ) . By modifying the algorithm slightly to record the actual split used at each node , we can recover the best parse. The entry maxc\ [ 1 , n\ ] contains the expected number of correct constituents , given the model. The Labelled Recall Algorithm maximizes the expected number of correct labelled constituents. However , many commonly used evaluation metrics , such as the Consistent Brackets Recall Rate , ignore labels. Similarly , some grammar induction algorithms , such as those used by Pereira and Schabes ( 1992 ) do not produce meaningful labels. In particular , the Pereira and Schabes method induces a grammar from the brackets in the treebank , ignoring the labels. While the induced grammar has labels , they are not related to those in the treebank. Thus , although the Labelled Recall Algorithm could be used in these domains , perhaps maximizing a criterion that is more closely tied to the domain will produce better results. Ideally , we would maximize the Consistent Brackets Recall Rate directly. However , since it is time-consuming to deal with Consistent Brackets , we instead use the closely related Bracketed Recall Rate. For the Bracketed Recall Algorithm , we find the parse that maximizes the expected Bracketed Recall Rate , B/Nc. ( Remember that B is the number of brackets that are correct , and Nc is the number of constituents in the correct parse. ) 180 TG = arg rn~x E ( B/Nc ) ( 9 ) Following a derivation similar to that used for the Labelled Recall Algorithm , we can rewrite equation ( 9 ) as Ta=argm~x ~ ~_P ( S : ~ , -1.~ , ~ wl ( s , t ) ET X ( I0 ) The algorithm for Bracketed Recall parsing is extremely similar to that for Labelled Recall parsing. The only required change is that we sum over the symbols X to calculate max_g , rather than maximize over them. We describe two experiments for testing these algorithms. The first uses a grammar without meaningful nonterminal symbols , and compares the Bracketed Recall Algorithm to the traditional Labelled Tree ( Viterbi ) Algorithm. The second uses a grammar with meaningful nonterminal symbols and performs a three-way comparison between the Labelled Recall , Bracketed Recall , and Labelled Tree Algorithms. These experiments show that use of an algorithm matched appropriately to the evaluation criterion can lead to as much as a 10 % reduction in error rate. In both experiments the grammars could not parse some sentences , 0.5 % and 9 % , respectively. The unparsable data were assigned a right branching structure with their rightmost element attached high. Since all three algorithms fail on the same sentences , all algorithms were affected equally. Pereira and Schabes Method The experiment of Pereira and Schabes ( 1992 ) was duplicated. In that experiment , a grammar was trained from a bracketed form of the TI section of the ATIS corpus 1 using a modified form of the InsideOutside Algorithm. Pereira and Schabes then used the Labelled Tree Algorithm to select the best parse for sentences in held out test data. The experiment was repeated here , except that both the Labelled Tree and Labelled Recall Algorithm were run for each sentence. In contrast to previous research , we repeated the experiment ten times , with different training set , test set , and initial conditions each time. Table 1 shows the results of running this experiment , giving the minimum , maximum , mean , and standard deviation for three criteria , Consistent Brackets Recall , Consistent Brackets Tree , and 1For our experiments the corpus was slightly cleaned up. A diff file for `` ed '' between the original ATIS data and the cleaned-up version is available from ftp : //ftp.das.harvard.edu/pub/goodman/atised/ ti_tb.par-ed and ti_tb.pos-ed. The number of changes made was small , less than 0.2 % Criteria I\ [ Min I Max I Mean I SDev I Labelled Tree Algorithm Cons Brack Rec 86.06 93.27 90.13 2.57 Cons Brack Tree 51.14 77.27 63.98 7.96 Brack Rec 71.38 81.88 75.87 3.18 Bracketed Recall Algorithm Cons Brack Rec 88.02 94.34 91.14 2.22 Cons Brack Tree 53.41 76.14 63.64 7.82 Brack Rec 72.15 80.69 76.03 3.14 Differences Cons Brack Rec -1.55 2.45 1.01 1.07 \ ] Cons Brack Tree -3.41 3.41 -0.34 2.34 Brack Rec -1.34 2.02 0.17 1.20 Table 1 : Percentages Correct for Labelled Tree versus Bracketed Recall for Pereira and Schabes Bracketed Recall. We also display these statistics for the paired differences between the algorithms. The only statistically significant difference is that for Consistent Brackets Recall Rate , which was significant to the 2 % significance level ( paired t-test ) . Thus , use of the Bracketed Recall Algorithm leads to a 10 % reduction in error rate. In addition , the performance of the Bracketed Recall Algorithm was also qualitatively more appealing. Figure 2 shows typical results. Notice that the Bracketed Recall Algorithm 's Consistent Brackets Rate ( versus iteration ) is smoother and more nearly monotonic than the Labelled Tree Algorithm's. The Bracketed Recall Algorithm also gets off to a much faster start , and is generally ( although not always ) above the Labelled Tree level. For the Labelled Tree Rate , the two are usually very comparable. Counting The replication of the Pereira and Schabes experiment was useful for testing the Bracketed Recall Algorithm. However , since that experiment induces a grammar with nonterminals not comparable to those in the training , a different experiment is needed to evaluate the Labelled Recall Algorithm , one in which the nonterminals in the induced grammar are the same as the nonterminals in the test set. For this experiment , a very simple grammar was induced by counting , using a portion of the Penn Tree Bank , version 0.5. In particular , the trees were first made binary branching by removing epsilon productions , collapsing singleton productions , and converting n-ary productions ( n &gt; 2 ) as in figure 3 .</sentence>
+				<definiendum id="0">Nc</definiendum>
+				<definiendum id="1">X ) eT</definiendum>
+				<definiendum id="2">Inside probability</definiendum>
+				<definiendum id="3">Nc</definiendum>
+				<definiens id="0">s , t ) crosses ( q , r ) if and only ifs &lt; q &lt; t &lt; rorq &lt; s &lt; r &lt; t. If Tc is binary branching , then Consistent Brackets and Bracketed Match are identical. The following symbols denote the number of constituents that match according to each of these criteria. L = ITc n Tal : the number of constituents in Ta that are correct according to Labelled Match. B = I { ( s , t , X ) : ( s , t , X ) ETa and for some Y ( s , t , Y ) E Tc } \ ] : the number of constituents in Ta that are correct according to Bracketed Match. C = I { ( s , t , X ) ETa : there is no ( v , w , Y ) E Tc crossing ( s , t ) } \ [ : the number of constituents in TG correct according to Consistent Brackets. Following are the definitions of the six metrics used in this paper for evaluating binary branching trees : The in the following table : ( 1 ) Labelled Recall Rate = L/Nc. ( 2 ) Labelled Tree Rate = 1 if L = ATe. It is also called the Viterbi Criterion. ( 3 ) Bracketed Recall Rate = B/Nc. ( 4 ) Bracketed Tree Rate = 1 if B = Nc. ( 5 ) Consistent Brackets Recall Rate = C/NG. It is often called the Crossing Brackets Rate. In the case where the parses are binary branching , this criterion is the same as the Bracketed Recall Rate. ( 6 ) Consistent Brackets Tree Rate = 1 if C = No. This metric is closely related to the Bracketed Tree Rate. In the case where the parses are binary branching , the two metrics are the same. This criterion is also called the Zero Crossing Brackets Rate. preceding six metrics each correspond to cells II Recall I Tree Consistent Brackets C/NG 1 if C = Nc Brackets B/Nc 1 if B = Nc Labels L/Nc 1 if L = Arc Despite this long list of possible metrics , there is only one metric most parsing algorithms attempt to maximize , namely the Labelled Tree Rate. That is , most parsing algorithms assume that the test corpus was generated by the model , and then attempt to evaluate the following expression , where E denotes the expected value operator : Ta = argmTaXE ( 1 ifL = gc ) ( 1 ) This is true of the Labelled Tree Algorithm and stochastic versions of Earley 's Algorithm ( Stolcke , 1993 ) , and variations such as those used in Picky parsing ( Magerman and Weir , 1992 ) . Even in probabilistic models not closely related to PCFGs , such as Spatter parsing ( Magerman , 1994 ) , expression ( 1 ) is still computed. One notable exception is Brill 's Transformation-Based Error Driven system ( Brill , 1993 ) , which induces a set of transformations designed to maximize the Consistent Brackets Recall Rate. However , Brill 's system is not probabilistic. Intuitively , if one were to match the parsing algorithm to the evaluation criterion , better performance should be achieved. Ideally , one might try to directly maximize the most commonly used evaluation criteria , such as Consistent Brackets Recall ( Crossing Brackets ) 178 Rate. Unfortunately , this criterion is relatively difficult to maximize , since it is time-consuming to compute the probability that a particular constituent crosses some constituent in the correct parse. On the other hand , the Bracketed Recall and Bracketed Tree Rates are easier to handle , since computing the probability that a bracket matches one in the correct parse is inexpensive. It is plausible that algorithms which optimize these closely related criteria will do well on the analogous Consistent Brackets criteria. When building an actual system , one should use the metric most appropriate for the problem. For instance , if one were creating a database query system , such as an ATIS system , then the Labelled Tree ( Viterbi ) metric would be most appropriate. A single error in the syntactic representation of a query will likely result in an error in the semantic representation , and therefore in an incorrect database query , leading to an incorrect result. For instance , if the user request `` Find me all flights on Tuesday '' is misparsed with the prepositional phrase attached to the verb , then the system might wait until Tuesday before responding : a single error leads to completely incorrect behavior. Thus , the Labelled Tree criterion is appropriate. On the other hand , consider a machine assisted translation system , in which the system provides translations , and then a fluent human manually edits them. Imagine that the system is given the foreign language equivalent of `` His credentials are nothing which should be laughed at , '' and makes the single mistake of attaching the relative clause at the sentential level , translating the sentence as `` His credentials are nothing , which should make you laugh. '' While the human translator must make some changes , he certainly needs to do less editing than he would if the sentence were completely misparsed. The more errors there are , the more editing the human translator needs to do. Thus , a criterion such as the Labelled Recall criterion is appropriate for this task , where the number of incorrect constituents correlates to application performance. Consider writing a parser for a domain such as machine assisted translation. One could use the Labelled Tree Algorithm , which would maximize the expected number of exactly correct parses. However , since the number of correct constituents is a better measure of application performance for this domain than the number of correct trees , perhaps one should use an algorithm which maximizes the Labelled Recall criterion , rather than the Labelled Tree criterion. The Labelled Recall Algorithm finds that tree TG which has the highest expected value for the Labelled Recall Rate , L/Nc ( where L is the number of correct labelled constituents , and</definiens>
+				<definiens id="1">the number of nodes in the correct parse ) . This can be written as follows : Ta = arg n~xE ( L/Nc ) ( 2 ) It is not immediately obvious that the maximization of expression ( 2 ) is in fact different from the maximization of expression ( 1 ) , but a simple example illustrates the difference. The following grammar generates four trees with equal probability : S ~ A C 0.25 S ~ A D 0.25 S -- * EB 0.25 S -- ~ FB 0.25 A , B , C , D , E , F ~ xx 1.0 The four trees are S S X XX X X XX X ( 3 ) S S E B F B X XX X X XX X For the first tree</definiens>
+				<definiens id="2">25 % . Similar counting holds for the other three. Thus , the expected value of L for any of these trees is 1.75. On the other hand , the optimal Labelled Recall parse is S X XX X This tree has 0 probability according to the grammar , and thus is non-optimal according to the Labelled Tree Rate criterion. However , for this tree the probabilities of each node being correct are S : 100 % ; A : 50 % ; and B : 50 % . The expected value of L is 2.0 , the highest of any tree. This tree therefore optimizes the Labelled Recall Rate. We now derive an algorithm for finding the parse that maximizes the expected Labelled Recall Rate. We do this by expanding expression ( 2 ) out into a probabilistic form , converting this into a recursive equation , and finally creating an equivalent dynamic programming algorithm. We begin by rewriting expression ( 2 ) , expanding out the expected value operator , and removing the 179 which is the same for all TG , and so plays no NC ' role in the maximization. Ta = argmTaX~ , P ( Tc l w~ ) ITnTcl Tc This can be further expanded to ( 4 ) Ta = arg mTax E P ( Tc I w~ ) E1 if ( s , t , X ) 6 Tc Tc ( , ,t , X ) eT ( 5 ) Now , given a PCFG with start symbol S , the following equality holds : P ( s . 1,4 ) = E P ( Tc I ~7 ) ( 1 if ( s , t , X ) 6 Tc ) ( 6 ) Tc By rearranging the summation in expression ( 5 ) and then substituting this equality , we get Ta =argm~x E P ( S =~ s-t ... ( , ,t ,</definiens>
+				<definiens id="3">useful to introduce the Inside and Outside probabilities , due to Baker ( 1979 ) , and explained by Lari and Young ( 1990 )</definiens>
+				<definiens id="4">e ( s , t , X ) = P ( X =~ w~ ) and the Outside probability is f ( s , t , X ) = P ( S =~ 8-I n w 1 Xwt+l ) . Note that while Baker and others have used these probabilites for inducing grammars , here they are used only for parsing. Let us define a new function , g ( s , t , X ) . g ( s , t , X ) P ( S =~ , -1.. n = w 1 Awt+ 1 \ [ w'~ ) P ( S : ~ , -t n wl Xw , +I ) P ( X =~ w 's ) P ( S wE ) = f ( s , t , X ) x e ( s , t , X ) /e ( 1 , n , S ) Now , the definition of a Labelled Recall Parse can be rewritten as T =arg % ax g ( s , t , X ) ( 8 ) ( s , t , X ) eT Given the matrix g ( s , t</definiens>
+				<definiens id="5">a simple matter of dynamic programming to determine the parse that maximizes the Labelled Recall criterion. Define MAXC ( s , t ) = n~xg ( s , t , X ) + max ( MAXC ( s , r ) + MAXC ( r + 1 , t ) ) rls_ &lt; r &lt; t for length : = 2 to n for s : = 1 to n-length+l t : = s + length I ; loop over nonterminals X let max_g : =maximum of g ( s , t , X ) loop over r such that s &lt; = r &lt; t let best_split : = max of maxc\ [ s , r\ ] + maxc\ [ r+l , t\ ] maxc\ [ s , t\ ] : = max_g + best split ; Figure h Labelled Recall Algorithm It is clear that MAXC ( 1 , n ) contains the score of the best parse according to the Labelled Recall criterion. This equation can be converted into the dynamic programming algorithm shown in Figure 1. For a grammar with r rules and k nonterminals , the run time of this algorithm is O ( n 3 + kn 2 ) since there are two layers of outer loops , each with run time at most n , and an inner loop , over nonterminals and n. However , this is dominated by the computation of the Inside and Outside probabilities , which takes time O ( rna ) . By modifying the algorithm slightly to record the actual split used at each node</definiens>
+				<definiens id="6">contains the expected number of correct constituents , given the model. The Labelled Recall Algorithm maximizes the expected number of correct labelled constituents. However , many commonly used evaluation metrics , such as the Consistent Brackets Recall Rate , ignore labels. Similarly , some grammar induction algorithms , such as those used by Pereira and Schabes ( 1992 ) do not produce meaningful labels. In particular , the Pereira and Schabes method induces a grammar from the brackets in the treebank , ignoring the labels. While the induced grammar has labels , they are not related to those in the treebank. Thus , although the Labelled Recall Algorithm could be used in these domains , perhaps maximizing a criterion that is more closely tied to the domain will produce better results. Ideally , we would maximize the Consistent Brackets Recall Rate directly. However , since it is time-consuming to deal with Consistent Brackets , we instead use the closely related Bracketed Recall Rate. For the Bracketed Recall Algorithm , we find the parse that maximizes the expected Bracketed Recall Rate , B/Nc. ( Remember that B is the number of brackets that are correct , and</definiens>
+				<definiens id="7">the number of constituents in the correct parse. ) 180 TG = arg rn~x E ( B/Nc ) ( 9 ) Following a derivation similar to that used for the Labelled Recall Algorithm , we can rewrite equation ( 9 ) as Ta=argm~x ~ ~_P ( S : ~ , -1.~ , ~ wl ( s , t ) ET X ( I0 ) The algorithm for Bracketed Recall parsing is extremely similar to that for Labelled Recall parsing. The only required change is that we sum over the symbols X to calculate max_g , rather than maximize over them. We describe two experiments for testing these algorithms. The first uses a grammar without meaningful nonterminal symbols , and compares the Bracketed Recall Algorithm to the traditional Labelled Tree ( Viterbi ) Algorithm. The second uses a grammar with meaningful nonterminal symbols and performs a three-way comparison between the Labelled Recall , Bracketed Recall , and Labelled Tree Algorithms. These experiments show that use of an algorithm matched appropriately to the evaluation criterion</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>That is , the Labelled Tree Algorithm is the best for the Labelled Tree Rate , the Labelled Recall Algorithm is the best for the Labelled Recall Rate , and the Bracketed Recall Algorithm is the best for the Bracketed Recall Rate .</sentence>
+				<definiendum id="0">Labelled Tree Algorithm</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Similarly , the Bracketed Recall Algorithm improves performance ( versus Labelled Tree ) on Consistent Brackets and Bracketed Recall criteria .</sentence>
+				<definiendum id="0">Bracketed Recall Algorithm</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Furthermore , we will show that the two algorithms presented , the Labelled Recall Algorithm and the Bracketed Recall Algorithm , are both special cases of a more general algorithm , the General Recall Algorithm .</sentence>
+				<definiendum id="0">Labelled Recall Algorithm</definiendum>
+				<definiendum id="1">Bracketed Recall Algorithm</definiendum>
+				<definiens id="0">both special cases of a more general algorithm , the General Recall Algorithm</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>1 ( 3 ) the galoot in the corner NP\ ] N N ( N\N ) /NP NP\ ] N N that I said Mary ( N\N ) \ ] ( S/NP ) S/ ( S\NP ) ( S\NP ) \ ] $ S\ ] ( S\NP ) pretends to ( S\NP ) \ ] ( Sin f \NP ) ( Sin f \NP ) / ( Sstem \NP ) like ( Sstem\NP ) /NP This paper presents a simple and flexible CCG parsing technique that prevents any such explosion of redundant CCG derivations .</sentence>
+				<definiendum id="0">N N ( N\N</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Even as restricted by ( Joshi et al. , 1991 ) , CCGs have the `` mildly context-sensitive '' expressive power of Tree Adjoining Grammars ( TAGs ) .</sentence>
+				<definiendum id="0">CCGs</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>f ( g ( Cl ) ( C2 ) '' '' ( Cn ) ) ( 12 ) a. A/C/F AIClD D/F AIB BICID DIE ElF b. AIClF A/C/E E/F A/C/D D/E A/B B/C/D C. ~y.l ( g ( h ( k ( ~ ) ) ) ( y ) ) A/c/F A/B B/C/D f g h k It is interesting to note a rough resemblance between the tagged version of CCG in ( 10 ) and the tagged Lambek cMculus L* , which ( Hendriks , 1993 ) developed to eliminate spurious ambiguity from the Lambek calculus L. Although differences between CCG and L mean that the details are quite different , each system works by marking the output of certain rules , to prevent such output from serving as input to certain other rules .</sentence>
+				<definiendum id="0">f ( g ( Cl )</definiendum>
+				<definiens id="0">Hendriks , 1993 ) developed to eliminate spurious ambiguity from the Lambek calculus L. Although differences between CCG and L mean that the details are quite different , each system works by marking the output of certain rules , to prevent such output from serving as input to certain other rules</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the latter case , WLOG , R is a forward rule and NF ( fl ) = &lt; Q , ~l , flA &gt; for some forward composition rule Q. Pure CCG turns out to provide forward rules S and T such that a~ = &lt; S , ill , NF ( &lt; T , ~2 , 7 &gt; ) &gt; is a constituent and is semantically equivalent to c~ .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">a forward rule and NF ( fl ) = &lt; Q , ~l , flA &gt; for some forward composition rule Q. Pure CCG turns out to provide forward rules S and T such that a~ = &lt; S , ill</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>The system consists of three stages of processing : parsing , semantic interpretation , and discourse .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">consists of three stages of processing : parsing , semantic interpretation , and discourse</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The parsing model is a probabilistic recursive transition network similar to those described in ( Miller et ai .</sentence>
+				<definiendum id="0">parsing model</definiendum>
+				<definiens id="0">a probabilistic recursive transition network similar to those described in</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The conditional word probability P ( WIT ) has already been computed during the parsing phase and need not be recomputed .</sentence>
+				<definiendum id="0">conditional word probability P ( WIT</definiendum>
+				<definiens id="0">computed during the parsing phase and need not be recomputed</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>This local neighborhood consists of the parse node itself , its two left siblings , its two right siblings , and its four immediate ancestors .</sentence>
+				<definiendum id="0">local neighborhood</definiendum>
+				<definiens id="0">consists of the parse node itself</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The discourse module computes the most probable postdiscourse meaning of an utterance from its pre-discourse meaning and the discourse history , according to the measure : P ( M o I H , M S ) P ( M S , T ) P ( W I T ) .</sentence>
+				<definiendum id="0">discourse module</definiendum>
+				<definiens id="0">computes the most probable postdiscourse meaning of an utterance from its pre-discourse meaning and the discourse history</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The statistical discourse model maps a 23 element input vector X onto a 23 element output vector Y. These vectors have the following interpretations : • X represents the combination of previous meaning Me and the pre-discourse meaning Ms. • Y represents the post-discourse meaning Mo .</sentence>
+				<definiendum id="0">statistical discourse model</definiendum>
+				<definiendum id="1">X</definiendum>
+				<definiens id="0">the post-discourse meaning Mo</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Searching the discourse model begins by selecting a meaning frame Me from the history stack H , and combining it with each pre-discourse meaning Ms received from the semantic interpretation model .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiens id="0">begins by selecting a meaning frame Me from the history stack H , and combining it with each pre-discourse meaning Ms received from the semantic interpretation model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>FM is determined by a probabilistic model M. In many applications , FM is the conditional probability function , PM ( cle ) , specifying the probability of each class given the example , but other score functions that correlate with the likelihood of the class are often used .</sentence>
+				<definiendum id="0">FM</definiendum>
+				<definiens id="0">the conditional probability function</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The probabilistic model M , and thus the score function FM , are defined by a set of parameters , { hi } .</sentence>
+				<definiendum id="0">score function FM</definiendum>
+				<definiens id="0">a set of parameters , { hi }</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Let { ui } denote the set of possible values of a given multinomial variable , and let S = { hi } denote a set of statistics extracted from the training set for that variable , where ni is the number of times that the value ui appears in the training set for the variable , defining N = ~-~i hi .</sentence>
+				<definiendum id="0">ni</definiendum>
+				<definiens id="0">the set of possible values of a given multinomial variable , and let S = { hi } denote a set of statistics extracted from the training set for that variable</definiens>
+				<definiens id="1">the number of times that the value ui appears in the training set for the variable , defining N = ~-~i hi</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We define the selection probability as a linear function of vote entropy : p = gD , where g is an entropy gain parameter .</sentence>
+				<definiendum id="0">selection probability</definiendum>
+				<definiendum id="1">vote entropy</definiendum>
+				<definiendum id="2">g</definiendum>
+				<definiens id="0">an entropy gain parameter</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Figure l ( b ) plots classification accuracy versus number of words examined , instead of those selected .</sentence>
+				<definiendum id="0">classification accuracy</definiendum>
+				<definiens id="0">versus number of words examined</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The score is usually computed as a function of the estimates of several 'atomic ' parameters , often binomials or multinomials , such as : • In word sense disambiguation ( Hearst , 1991 ; Gale , Church , and Varowsky , 1993 ) : P ( slf ) , where s is a specific sense of the ambiguous word in question w , and f is a feature of occurrences of w. Common features are words in the context of w or morphological attributes of it .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">a function of the estimates of several 'atomic ' parameters , often binomials or multinomials , such as : • In word sense disambiguation ( Hearst , 1991 ; Gale , Church , and Varowsky , 1993 ) : P ( slf )</definiens>
+				<definiens id="1">a feature of occurrences of w. Common features are words in the context of w or morphological attributes of it</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>• In text categorization ( Lewis and GMe , 1994 ; Iwayama and Tokunaga , 1994 ) : P ( tlC ) , where t is a term in the document to be categorized , and C is a candidate category label .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">a term in the document to be categorized</definiens>
+				<definiens id="1">a candidate category label</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>P is a place holder for the semantic predicate corresponding to the word sense which has the feature .</sentence>
+				<definiendum id="0">P</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>If the LOWER language consists of a single string , then the relation encoded by the transducer is in Berstel 's terms a rational function , and the network is an unambigous transducer , even though it may contain states with outgoing transitions to two or more destinations for the same input symbol .</sentence>
+				<definiendum id="0">LOWER language</definiendum>
+				<definiens id="0">consists of a single string , then the relation encoded by the transducer is in Berstel 's terms a rational function , and the network is an unambigous transducer , even though it may contain states with outgoing transitions to two or more destinations for the same input symbol</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The corresponding transducer locates the instances of UPPER in the input string under the left-to-right , longest-match regimen just described .</sentence>
+				<definiendum id="0">corresponding transducer</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A tokenizer is a device that segments an input string into a sequence of tokens .</sentence>
+				<definiendum id="0">tokenizer</definiendum>
+				<definiens id="0">a device that segments an input string into a sequence of tokens</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , we may define NP as \ [ ( d ) a* n+J. With that abbreviatory convention , a composition of a simple NP and VP spotter can be defined as in Figure 20 .</sentence>
+				<definiendum id="0">VP spotter</definiendum>
+				<definiens id="0">\ [ ( d ) a* n+J. With that abbreviatory convention , a composition of a simple NP and</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>That is , an assumption of full statistical dependence ( Yarowsky , 1994 ) , rather than the more common full independence , is made3 When llf events El , E2 , ... , E , ~ are fully independent , then the joint probability P ( E1 A ... A En ) is the product of P ( EI ) ... P ( En ) , but if they are maximally dependent , it is the minimum of these values .</sentence>
+				<definiendum id="0">En )</definiendum>
+				<definiens id="0">made3 When llf events El , E2 , ... , E , ~ are fully independent , then the joint probability P ( E1 A ... A</definiens>
+				<definiens id="1">the product of P ( EI ) ... P ( En</definiens>
+			</definition>
+</paper>
+
+		<paper id="1041">
+			<definition id="0">
+				<sentence>A language model is a probability distribution over strings P ( s ) that attempts to reflect the frequency with which each string s occurs as a sentence in natural text .</sentence>
+				<definiendum id="0">language model</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>To estimate the probabilities P ( wilwi- , ) in equation ( 1 ) , one can acquire a large corpus of text , which we refer to as training data , and take P ( Wi-lWi ) PML ( Wil i-1 ) -P ( wi-1 ) c ( wi-lWi ) /Ns e ( wi-1 ) /Ns c ( wi_ w ) where c ( c 0 denotes the number of times the string c~ occurs in the text and Ns denotes the total number of words .</sentence>
+				<definiendum id="0">c ( c 0</definiendum>
+				<definiendum id="1">Ns</definiendum>
+				<definiens id="0">the number of times the string c~ occurs in the text and</definiens>
+				<definiens id="1">the total number of words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>As an example , one simple smoothing technique is to pretend each bigram occurs once more than it actually did ( Lidstone , 1920 ; Johnson , 1932 ; Jeffreys , 1948 ) , yielding C ( Wi-lWi ) `` \ [ 1 = + IVl where V is the vocabulary , the set of all words being considered .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">the vocabulary , the set of all words being considered</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Good-Turing estimate ( Good , 1953 ) is central to many smoothing techniques .</sentence>
+				<definiendum id="0">Good-Turing estimate</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Good-Turing states that an n-gram that occurs r times should be treated as if it had occurred r* times , where r* = ( r + 1 ) n~+l and where n~ is the number of n-grams that .</sentence>
+				<definiendum id="0">Good-Turing states</definiendum>
+				<definiendum id="1">n~</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The former vocabulary contains all 53,850 words occurring in Brown ; the latter vocabulary consists of the 65,173 words occurring at least 70 times in TIPSTER .</sentence>
+				<definiendum id="0">former vocabulary</definiendum>
+				<definiens id="0">contains all 53,850 words occurring in Brown ; the latter vocabulary consists of the 65,173 words occurring at least 70 times in TIPSTER</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>SFL stratifies meaning into context and language .</sentence>
+				<definiendum id="0">SFL</definiendum>
+				<definiens id="0">stratifies meaning into context and language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>We first performed a detailed coding of units of texts on approximately 25 % of the corpus , or about 400 units , 3 using the WAG coder ( O'Donnell , 1995 ) , a tool designed to facilitate a functional analysis .</sentence>
+				<definiendum id="0">WAG coder</definiendum>
+				<definiens id="0">a tool designed to facilitate a functional analysis</definiens>
+			</definition>
+</paper>
+
+		<paper id="1038">
+			<definition id="0">
+				<sentence>3 The consensus labels for segment-initial ( SBEG ) , segment-final ( SF ) , and segment-medial ( SCONT , defined as neither SBEG nor SF ) phrase labels are given in Table 1 .</sentence>
+				<definiendum id="0">SBEG</definiendum>
+				<definiendum id="1">SF</definiendum>
+				<definiendum id="2">segment-medial ( SCONT</definiendum>
+				<definiens id="0">neither SBEG nor SF ) phrase labels are given in Table 1</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>This inflexibility of Lambek Calculus is one of the reasons why many researchers study richer systems today .</sentence>
+				<definiendum id="0">Lambek Calculus</definiendum>
+				<definiens id="0">one of the reasons why many researchers study richer systems today</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The semidirectional Lambek calculus ( henceforth SDL ) is a variant of J. Lambek 's original ( Lambek 58 ) calculus of syntactic types .</sentence>
+				<definiendum id="0">semidirectional Lambek calculus</definiendum>
+				<definiendum id="1">SDL</definiendum>
+				<definiens id="0">a variant of J. Lambek 's original ( Lambek 58 ) calculus of syntactic types</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Formulae ( also called `` syntactic types '' ) are built from a set of propositional variables ( or `` primitive types '' ) B = { bl , b2 , ... } and the three binary connectives • , \ , / , called product , left implication , and right implication .</sentence>
+				<definiendum id="0">Formulae</definiendum>
+				<definiens id="0">a set of propositional variables ( or `` primitive types '' ) B = { bl , b2 , ... } and the three binary connectives • , \ , / , called product , left implication , and right implication</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Moreover , the fact that only a single formula may appear on the right of ~ , make the Lambek calculus an intuitionistic fragment of the multiplicative fragment of non-commutative propositional Linear Logic .</sentence>
+				<definiendum id="0">Lambek calculus</definiendum>
+				<definiens id="0">an intuitionistic fragment of the multiplicative fragment of non-commutative propositional Linear Logic</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>, Am : :~ A as follows : A has positive polarity , each of Ai have negative polarity and if B/C or C\B has polarity p , then B also has polarity p and C has the opposite polarity of p in the sequent .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the opposite polarity of p in the sequent</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Define # b ( A ) ( the b-count of A ) , a function counting positive and negative occurrences of primitive type b in an arbi97 trary type A , to be if A= b if A primitive and A ~ b # b ( A ) = # b ( B ) - # b ( C ) ifA=B/CorA=V\B or A=C-o B \ [ .</sentence>
+				<definiendum id="0">A )</definiendum>
+				<definiens id="0">if A= b if A primitive and A ~ b # b ( A ) = # b ( B ) - # b ( C ) ifA=B/CorA=V\B or A=C-o B \ [</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Definition 3 We define a Lambek grammar to be a quadruple ( E , ~r , bs , l ) consisting of the finite alphabet of terminals E , the set jr of all Lambek formulae generated from some set of propositional variables which includes the distinguished variable s , and the lezical map l : ~ , -- * 2 7 which maps each terminal to a finite subset off .</sentence>
+				<definiendum id="0">Lambek grammar</definiendum>
+				<definiens id="0">set of propositional variables which includes the distinguished variable s</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Moreover the notation A k stands for AoAo ... oA k t~mes We then define the SDL-grammar Gr = ( ~ , ~ , bs , l ) as follows : p , : = { v , wl , ... , warn } 5 t '' : = all formulae over primitive types m b B = { a , d } UUi= , { i , c , : } bs : -- = a • for l &lt; i &lt; 3rn-l : l ( wi ) : = UJ .</sentence>
+				<definiendum id="0">notation A k</definiendum>
+				<definiendum id="1">SDL-grammar Gr</definiendum>
+				<definiens id="0">bs , l ) as follows : p , : = { v , wl , ... , warn } 5 t '' : = all formulae over primitive types m b B = { a</definiens>
+			</definition>
+</paper>
+
+		<paper id="1047">
+			<definition id="0">
+				<sentence>A verb phrase ellipsis ( VPE ) exists when a sentence has an auxiliary verb but no verb phrase ( VP ) .</sentence>
+				<definiendum id="0">verb phrase ellipsis ( VPE</definiendum>
+				<definiendum id="1">VP</definiendum>
+				<definiens id="0">an auxiliary verb but no verb phrase</definiens>
+			</definition>
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>This paper presents an original algorithm for transformation-based parsing working in O ( ptlog ( t ) ) time , where t is the total number of rules applied for an input sentence .</sentence>
+				<definiendum id="0">t</definiendum>
+				<definiens id="0">the total number of rules applied for an input sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>We say that a tree T ' is a subtree of T at n if there exists a tree S that matches T at n , and T ~ consists of the nodes of T that are matched by some node of S and the arcs of T between two such nodes .</sentence>
+				<definiendum id="0">T ~</definiendum>
+				<definiens id="0">a subtree of T at n if there exists a tree S that matches T at n , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We also say that T ' is matched by S at n. In addition , T ' is a prefix of T if n is the root of T ; T ' is the suffix of T at n if T ' contains all nodes of T dominated by n. Example 1 Let T -B ( D , C ( B ( D , B ) , C ) ) and let n be the second child of T 's root .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">T -B</definiendum>
+				<definiendum id="2">C ( B</definiendum>
+				<definiens id="0">the root of T ; T ' is the suffix of T at n if T ' contains all nodes of T dominated by</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Definition 1 A deterministic tree automaton ( DTA ) is a 5-tuple M = ( Q , ~ , ~ , qo , F ) , where Q is a finite set of s~ates , ~ is a finite alphabet , qo E Q is the initial state , F C Q is the set of final states and 6 is a transition function mapping Q~ × E into O. Informally , a DTA M walks through a tree T by visiting its nodes in post-order , one node at a time .</sentence>
+				<definiendum id="0">deterministic tree automaton</definiendum>
+				<definiendum id="1">Q</definiendum>
+				<definiendum id="2">F C Q</definiendum>
+				<definiens id="0">a finite set of s~ates</definiens>
+				<definiens id="1">a finite alphabet , qo E Q is the initial state</definiens>
+				<definiens id="2">the set of final states and 6 is a transition function mapping Q~ × E into O. Informally , a DTA M walks through a tree T by visiting its nodes in post-order , one node at a time</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Let T E ~T and let n be one of its nodes , labeled by a. The state reached by M upon reading n is recursively specified as : 6 ( T , n ) = ~ ( X , X ' , a ) , ( 1 ) where X -q0 if n is a leftmost node , X -6 ( T , n ' ) if n ' is the immediate left sibling of n ; and X ' -q0 if n is a leaf node , X ' = 6 ( T , n '' ) if n '' is the rightmost child of n. The tree language recognized by M is the set L ( M ) = { T \ [ ~ ( T , n ) E F , T E E T , n the root of T } .</sentence>
+				<definiendum id="0">T E ~T</definiendum>
+				<definiendum id="1">T</definiendum>
+				<definiendum id="2">X</definiendum>
+				<definiens id="0">a leftmost node</definiens>
+				<definiens id="1">the immediate left sibling of n ; and</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( 2 ) Example 3 Consider the infinite set L = { B ( A , C ) , B ( A , B ( A , C ) ) , B ( A , B ( A , B ( A , C ) ) ) , ... } consisting of all right-branching trees with internal nodes labeled by B and with strings A'~C , n &gt; 1 as their yields .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiendum id="1">B</definiendum>
+				<definiendum id="2">B</definiendum>
+				<definiendum id="3">B ( A , B</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Let M = ( Q , { A , B , C } , 6 , qo , { qBc } ) be a DTA specified as follows : Q = { q0 , qA , qnc , q-i } ; 6 ( qo , qo , A ) = qA , 6 ( qA , qo , C ) = 5 ( qA , qBC , B ) = qBC and q-i is the value of all other entries of 5 .</sentence>
+				<definiendum id="0">qo</definiendum>
+				<definiens id="0">qo , { qBc } ) be a DTA specified as follows : Q = { q0 , qA , qnc</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Definition 2 A transformation-based tree rewriting system ( TTS ) is a pair G = ( E , R ) , where ~ is a finite alphabet and R = ( ri , r2 , ... , r~ ) , 7r &gt; _ 1 , is a finite sequence of tree rewriting rules having the form Q -- + Q ' , with Q , Q ' E ~T and such that Q and Q ' have the same number of leaves .</sentence>
+				<definiendum id="0">transformation-based tree rewriting system ( TTS )</definiendum>
+				<definiendum id="1">~</definiendum>
+				<definiens id="0">a finite alphabet</definiens>
+				<definiens id="1">a finite sequence of tree rewriting rules having the form Q -- + Q ' , with Q , Q ' E ~T and such that Q and Q ' have the same number of leaves</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Finally , we define the translation induced by G on Ea , as the map M ( G ) = { ( C , C ' ) I C E y\ ] T , Ci_I~ : ~C i for 1 &lt; i &lt; ~r , Co =C , C~ =C ' } . We develop here a representation of rule sequences that makes use of DTA and that is at the basis of the main result of this paper. Our technique improves the preprocessing phase of a bottom-up tree pattern matching algorithm presented in ( Hoffmann and O'Donnell , 1982 ) , as it will be discussed in the final section. Let G = ( ~ , R ) be a TTS , R = ( ri , r2 , ... , r~ ) . In what follows we construct a DTA that `` detects '' each subtree of an input tree that is equivalent to some tree in lhs ( _R ) . We need to introduce some additional notation. Let N be the set of all nodes from the trees in lhs ( R ) . Call Nr the set of all root nodes ( in N ) , N , ~ the set of all leftmost nodes , Nz the set of all leaf nodes , and Na the set of all nodes labeled by a E ~. For each q E 2 N , let right ( q ) = { n I n E N , n ' E q , n has immediate left sibling n ' } and let up ( q ) = { n \ [ n E N , n ' E q , nhasrightmostchildn ' } . Also , let q0 be a fresh symbol. Definition 3 G is associated with a DTA Aa = ( 2 N U { q0 } , E , 6a , qo , F ) , where F = { q \ [ q E ( i ) 5a ( qo , qo , a ) = No M Nm ANt ; ( it ) dia ( qo , q ' , a ) = NaANmA ( NtUup ( q ' ) ) , forq ' # qo ; ( iii ) diG ( q , qo , a ) = Na A Nz t\ ] ( Nr U right ( q ) ) , for q qo ; ( iv ) 6a ( q , q ' , a ) = No M up ( q ' ) A ( Nr U right ( q ) ) , for q qo # q'. 257 Observe that each state of Ac simultaneously carries over the recognition of several suffixes of trees in lhs ( /~ ) . These processes are started whenever Ac reads a leftmost node n with the same label as a leftmost leaf node in some tree in lhs ( R ) ( items ( i ) and ( ii ) in Definition 3 ) . Note also that we do not require any matching of the left siblings when we match the root of a tree in lhs ( R ) ( items ( iii ) and ( iv ) ) . B B A -- ~ a B A/ 'D B A c B -+ c c A A B B B C B A B A B Figure 2 : From top to bottom : rules rl , r2 and r3 of G. Example 4 Let G = ( E , R ) , where E = { A , B , C , D } and R = ( rl , r2 , r3 ) . Rules ri are depicted in Figure 2. We write nij to denote the j-th node • in a post-order enumeration of the nodes of lhs ( ri ) , 1 &lt; i &lt; 3 and 1 &lt; j &lt; __ 5. ( Therefore n35 denotes the root node of lhs ( r3 ) and n22 denotes the first child of the second child of the root node of lhs ( r~ ) . ) If we consider only the useful states , that is those states that can be reached on an actual input , the DTA Ac -- ( Q , E , 5 , qo , F ) , is specified as follows : Q = { qi I 0 &lt; i &lt; I1 } , where ql = { nll , n12 , n22 , n32 } , q2 = { n21 , n3x } , q3 = { n13 , n23 } , q4 = { n33 } , q5 = { n14 } , q6 = { n24 } , q7 = { n34 } , qs = { n15 } , q9 -= { n35 } , qlo = { n25 } , qll = ( b ; F = { qs , qg , qlo } . The transition function 5 , restricted to the useful states , is specified in Figure 3. Note that among the 215 + 1 possible states , only 12 are useful. \ [ \ ] 6 ( qo , qo , A ) = ql 6 ( qo , qo , C ) = q2 6 ( qa , qo , B ) = q3 6 ( ql , qo , C ) = q , 6 ( ql , qz , B ) = qs 6 ( q2 , q3 , B ) = qs ~ ( q~ , q , , B ) = q7 ~ ( qo , qs , B ) = q~ 6 ( qo , q6 , B ) = q9 6 ( qo , qT , B ) = qlo Figure 3 : Transition function of G. For all ( q , q~ , a ) E Q2× E not indicated above , 5 ( q , q ' , a ) = qllAlthough the number of states of Ac is exponential in IN I , in practical cases most of these states are never reached by the automaton on an actual input , and can therefore be ignored. This happens whenever there are few pairs of suffix trees of trees in lhs ( R ) that share a common prefix tree but no tree in the pair matches the other at the root node. This is discussed at length in ( Hoffmann and O'Donnell , 1982 ) , where an upper bound on the number of useful states is provided. The following lemma provides a characterization of Aa that will be used later. Lemma 1 Let n be a node ofT E ~T and let n ~ be the roof node of r E R. Tree lhs ( r ) matches Taf n if and only if n ' E iG ( T , n ) . Proof ( outline ) . The statement can be shown by proving the following claim. Let m be a node in T and m t be a node in lhs ( r ) . Call ml , ... , m~ = m , k &gt; 1 , the ordered sequence of the left siblings of m , with m included , and call m~ , ... , m ' k , - '' m ' , k ' &gt; 1 , the ordered sequence of the left siblings of m ~ , with m ' included .</sentence>
+				<definiendum id="0">Ci_I~</definiendum>
+				<definiendum id="1">n22</definiendum>
+				<definiens id="0">the map M ( G ) = { ( C , C ' ) I C E y\ ] T ,</definiens>
+				<definiens id="1">the preprocessing phase of a bottom-up tree pattern matching algorithm presented in ( Hoffmann and O'Donnell , 1982 ) , as it will be discussed in the final section. Let G = ( ~ , R ) be a TTS , R = ( ri , r2 , ... , r~ ) . In what follows we construct a DTA that `` detects '' each subtree of an input tree that is equivalent to some tree in lhs</definiens>
+				<definiens id="2">the set of all nodes from the trees in lhs ( R ) . Call Nr the set of all root nodes ( in N ) , N , ~ the set of all leftmost nodes , Nz the set of all leaf nodes , and Na the set of all nodes labeled by a E ~. For each q E 2 N , let right ( q ) = { n I n E N , n ' E q , n has immediate left sibling n ' } and let up ( q ) = { n \ [ n E N , n ' E q , nhasrightmostchildn ' } . Also , let q0 be a fresh symbol. Definition 3 G is associated with a DTA Aa = ( 2 N U { q0 } , E , 6a , qo , F ) , where F = { q \ [ q E ( i ) 5a ( qo , qo , a ) = No M Nm ANt ; ( it ) dia ( qo , q ' , a ) = NaANmA ( NtUup ( q ' ) ) , forq ' # qo ; ( iii ) diG ( q , qo , a ) = Na A Nz t\ ] ( Nr U right</definiens>
+				<definiens id="3">carries over the recognition of several suffixes of trees in lhs ( /~ ) . These processes are started whenever Ac reads a leftmost node n with the same label as a leftmost leaf node in some tree in lhs ( R ) ( items ( i ) and ( ii ) in Definition 3 ) . Note also that we do not require any matching of the left siblings when we match the root of a tree in lhs ( R ) ( items ( iii ) and ( iv ) ) . B B A -- ~ a B A/ 'D B A c B -+ c c A A B B B C B A B A B Figure 2 : From top to bottom : rules rl , r2 and r3 of G. Example 4 Let G = ( E , R ) , where E = { A , B , C , D } and R = ( rl</definiens>
+				<definiens id="4">the root node of lhs</definiens>
+				<definiens id="5">the first child of the second child of the root node of lhs ( r~ ) . ) If we consider only the useful states , that is those states that can be reached on an actual input , the DTA Ac -- ( Q , E , 5 , qo , F ) , is specified as follows : Q = { qi I 0 &lt; i &lt; I1 } , where ql = { nll</definiens>
+				<definiens id="6">qs = { n15 } , q9 -= { n35 } , qlo = { n25 } , qll = ( b ; F = { qs , qg</definiens>
+				<definiens id="7">qo , qo , A ) = ql 6 ( qo , qo , C ) = q2 6 ( qa , qo , B ) = q3 6 ( ql , qo</definiens>
+				<definiens id="8">ql , qz , B ) = qs 6 ( q2 , q3 , B ) = qs ~ ( q~ , q , , B ) = q7 ~ ( qo , qs , B ) = q~ 6 ( qo , q6 , B ) = q9 6 ( qo , qT , B ) = qlo Figure 3 : Transition function of G. For all ( q , q~ , a ) E Q2× E not indicated above</definiens>
+				<definiens id="9">exponential in IN I , in practical cases most of these states are never reached by the automaton on an actual input , and can therefore be ignored. This happens whenever there are few pairs of suffix trees of trees in lhs ( R ) that share a common prefix tree but no tree in the pair matches the other at the root node. This is discussed at length in ( Hoffmann and O'Donnell , 1982 ) , where an upper bound on the number of useful states</definiens>
+				<definiens id="10">a node ofT E ~T and let n ~ be the roof node of r E R. Tree lhs ( r ) matches Taf n if and only if n ' E iG ( T , n ) . Proof ( outline ) . The statement can be shown by proving the following claim. Let m be a node in T and m t be a node in lhs ( r ) . Call ml , ... , m~ = m , k &gt; 1 , the ordered sequence of the left siblings of m , with m included , and call m~ , ... , m ' k , - '' m ' , k ' &gt; 1 , the ordered sequence of the left siblings of m ~ , with m ' included</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Lemma 2 Assume that lhs ( r ) , r E R , matches a tree T at some node n. Let T ~'~ T ' and lel S be the copy of rhs ( r ) used in the rewriting .</sentence>
+				<definiendum id="0">lhs</definiendum>
+				<definiens id="0">matches a tree T at some node n. Let T ~'~ T ' and lel S be the copy of rhs ( r ) used in the rewriting</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>l_ then do if rule ( next ( state ( n ) , j ) ) = O then next ( state ( n ) , j ) -- ~ Y n ~ rule ( next ( state ( n ) , j ) ) od od main C+ -- T ; i , -1 update ( O , nodes of C , i ) while H not empty do i~-H for each node n E rule ( i ) s.t. the root of lhs ( ri ) is in state ( n ) do S ~ the subtree of C matched by lhs ( ri ) at n S I *-copy of rhs ( ri ) c , -c\ [ s/s'\ ] update ( node~ of S , lo~al ( C , S ' ) , i + 1 ) od od return C. Figure 4 : Translation algorithm computing M ( G ) for a TTS G. Let Ci E ~T , 1 &lt; i &lt; 3 , be as depicted in Figure 5 .</sentence>
+				<definiendum id="0">c , -c\ [ s/s'\ ] update</definiendum>
+				<definiens id="0">Translation algorithm computing M ( G ) for a TTS</definiens>
+			</definition>
+</paper>
+
+		<paper id="1054">
+			<definition id="0">
+				<sentence>The total transitivity weight for an entire document is the sum of clause weights normalised by document length .</sentence>
+				<definiendum id="0">total transitivity weight</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>Pushdown transducers are a standard model for parsing , and have also been used ( usually implicitly ) in speech understanding .</sentence>
+				<definiendum id="0">Pushdown transducers</definiendum>
+				<definiens id="0">a standard model for parsing , and have also been used ( usually implicitly ) in speech understanding</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The canonical example of local synchronization is SDTS ( Aho and Ullman , 1969 ) , in which two context-free grammars are synchronized .</sentence>
+				<definiendum id="0">SDTS</definiendum>
+				<definiens id="0">in which two context-free grammars are synchronized</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>Danny Ainge is a teammate of Barkley .</sentence>
+				<definiendum id="0">Danny Ainge</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Ainge is a reserve player .</sentence>
+				<definiendum id="0">Ainge</definiendum>
+				<definiens id="0">a reserve player</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This revision rule is a sibling of the rule Adjunctization of Created into Instrument used to revise sentence i into 2 in STREAK 'S run shown in Fig .</sentence>
+				<definiendum id="0">revision rule</definiendum>
+				<definiens id="0">a sibling of the rule Adjunctization of Created into Instrument used to revise sentence</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Beyond evaluation , CREP is a simple , but general and very handy tool that should prove useful to speed-up a wide range of corpora analyses .</sentence>
+				<definiendum id="0">CREP</definiendum>
+				<definiens id="0">a simple , but general and very handy tool</definiens>
+			</definition>
+</paper>
+
+		<paper id="1040">
+			<definition id="0">
+				<sentence>In general finding p for a large state space requires an eigenvector computation , but in the special case of an n-gram model it can be shown that the value in p corresponding to the state ( sl , s2 , ... , sk ) is simply the k-gram frequency C ( sl , s2 , ... , sk ) /N , where N is the number of symbols in the data .</sentence>
+				<definiendum id="0">N</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Coverage of the n-gram set is complete for our prose training texts for n as high as eight ; nor do singleton states ( counts that occur only once ) , which are the bases of Turing 's estimate of the frequency of untrained states in new data , occur until n = 7 .</sentence>
+				<definiendum id="0">singleton states</definiendum>
+				<definiens id="0">the bases of Turing 's estimate of the frequency of untrained states in new data</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Examining the 4-gram frequencies for the entire corpus ( Figure 3a ) sharpens this substantially , yielding an entropy rate estimate of 0.846 bits per syllable .</sentence>
+				<definiendum id="0">Examining the 4-gram frequencies for the entire corpus</definiendum>
+				<definiens id="0">yielding an entropy rate estimate of 0.846 bits per syllable</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Sentence perplexity PP ( S ) is the inverse of sentence 1 probability normalized for length , 1/P ( S ) r~7 , where P ( S ) is the probability of the sentence according to the language model and ISI is its word count .</sentence>
+				<definiendum id="0">Sentence perplexity PP ( S )</definiendum>
+				<definiendum id="1">P ( S )</definiendum>
+				<definiendum id="2">ISI</definiendum>
+				<definiens id="0">the probability of the sentence according to the language model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1051">
+			<definition id="0">
+				<sentence>This collection is divided into classes of prepositional relations , using the following definitions : Definition 1 : Two prepositional structures &lt; noun1 prep noun2 &gt; and &lt; noun3 prep noun4 &gt; belong to the same class if one of the following conditions holds : • noun1 , and noun2 are hypernym/hyponym of noun3 , and noun4 respectively , or • noun1 , and noun2 have a common hypernym/hyponym and with noun3 , and noun4 , respectively .</sentence>
+				<definiendum id="0">noun2</definiendum>
+				<definiens id="0">a common hypernym/hyponym and with noun3</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>These three heuristics operate throughout all the sequences of the class comprising &lt; acquisilion of company &gt; , &lt; addition of business &gt; , &lt; formalion of group &gt; or &lt; beginning of service &gt; We conclude that for this class of prepositional relations , noun2 is the object of the action described by noun1 .</sentence>
+				<definiendum id="0">noun2</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1048">
+			<definition id="0">
+				<sentence>1 Metaphor is a frequently used figure of speech , reflecting common cognitive processes .</sentence>
+				<definiendum id="0">Metaphor</definiendum>
+				<definiens id="0">a frequently used figure of speech , reflecting common cognitive processes</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Example of textual clue representations type metaphor-analogy name B.2.2.2 comment comparison involving the meaning of a marker , adjective , attribute of the object , object before the verb SSP GNo GN1 Vx Adjo \ [ prep\ ] GN2 LM Adjo : pareil ( meaning `` similar '' ) target GN1 source GN2 LM relevance ( 15/28 ) number of occurrences 28 conventional metaphors 3 new metaphors 2 metaphomc contexts 12 total 15 Notations : GN and GV stand for nominal or verbal groups , Adj and Adv for adjectives and adverbs , and prep for prepositions .</sentence>
+				<definiendum id="0">Adj</definiendum>
+				<definiens id="0">GV stand for nominal or verbal groups ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1052">
+</paper>
+
+		<paper id="1039">
+			<definition id="0">
+				<sentence>By mapping the rise-fall tune ( H* LL % ) onto rhemes and the rise-fall-rise tune ( L+H* LH % ) onto themes ( Steedman , 1991 ; Prevost and Steedman , 1994 ) , we can easily identify the string of words over which these two prominent tunes occur directly from the information structure .</sentence>
+				<definiendum id="0">rise-fall tune</definiendum>
+				<definiens id="0">the string of words over which these two prominent tunes occur directly from the information structure</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( 7 ) DElist : a collection of discourse entities that have been evoked in prior discourse , ordered by recency .</sentence>
+				<definiendum id="0">DElist</definiendum>
+				<definiens id="0">a collection of discourse entities that have been evoked in prior discourse , ordered by recency</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>ASet ( z ) : the set of alternatives for object x , i.e. those objects that belong to the same class as x , as defined in the knowledge base .</sentence>
+				<definiendum id="0">ASet ( z )</definiendum>
+				<definiens id="0">the set of alternatives for object x , i.e. those objects that belong to the same class as x , as defined in the knowledge base</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>RSet ( z , S ) : the set of alternatives for object z as restricted by the referring expressions in DElist and the set of properties S. CSet ( x , S ) : the subset of properties of S to be accented for contrastive purposes .</sentence>
+				<definiendum id="0">RSet ( z , S )</definiendum>
+				<definiendum id="1">S )</definiendum>
+				<definiens id="0">the set of alternatives for object z as restricted by the referring expressions in DElist and the set of properties S. CSet ( x ,</definiens>
+				<definiens id="1">the subset of properties of S to be accented for contrastive purposes</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Props ( z ) : a list of properties for object x , ordered by the grammar so that nominal properties take precedence over adjectival properties .</sentence>
+				<definiendum id="0">Props</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>296 The task of natural language generation ( NLG ) has often been divided into three stages : content planning , in which high-level goals are satisfied and discourse structure is determined , sentence planning , in which high-level abstract semantic representations are mapped onto representations that more fully constrain the possible sentential realizations ( Rambow and Korelsky , 1992 ; Reiter and Mellish , 1992 ; Meteer , 1991 ) , and surface generation , in which the high-level propositions are converted into sentences .</sentence>
+				<definiendum id="0">Meteer</definiendum>
+				<definiens id="0">content planning , in which high-level goals are satisfied and discourse structure is determined , sentence planning , in which high-level abstract semantic representations are mapped onto representations that more fully constrain the possible sentential realizations</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>While template-based systems ( McKeown , 1985 ) have been widely used , rhetorical structure theory ( RST ) approaches ( Mann and Thompson , 1986 ; Hovy , 1993 ) , which organize texts by identifying rhetorical relations between clause-level propositions from a knowledge base , have recently flourished .</sentence>
+				<definiendum id="0">template-based systems</definiendum>
+				<definiendum id="1">RST</definiendum>
+				<definiens id="0">organize texts by identifying rhetorical relations between clause-level propositions from a knowledge base</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Sibun ( Sibun , 1991 ) offers yet another alternative in which propositions are linked to one another not by rhetorical relations or pre-planned templates , but rather by physical and spatial properties represented in the knowledge-base .</sentence>
+				<definiendum id="0">Sibun</definiendum>
+				<definiens id="0">offers yet another alternative in which propositions are linked to one another not by rhetorical relations or pre-planned templates , but rather by physical and spatial properties represented in the knowledge-base</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>This assignment is made with respect to two data structures , the discourse entity list ( DEList ) , which tracks the succession of entities through the discourse , and a similar structure for evoked properties .</sentence>
+				<definiendum id="0">DEList</definiendum>
+				<definiens id="0">tracks the succession of entities through the discourse</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>b. The X4 L+H* L ( H % ) is a SOLID-state AMPLIFIER .</sentence>
+				<definiendum id="0">X4 L+H* L</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1056">
+			<definition id="0">
+				<sentence>Tree Adjoining Grammars ( TAGs ) are tree rewriting systems which combine trees with the single operation of adjoining .</sentence>
+				<definiendum id="0">Tree Adjoining Grammars ( TAGs</definiendum>
+				<definiens id="0">tree rewriting systems which combine trees with the single operation of adjoining</definiens>
+			</definition>
+</paper>
+
+		<paper id="1049">
+			<definition id="0">
+				<sentence>2 Each candidate consists of segments associated with a syllable structure position and a morpheme structure marker .</sentence>
+				<definiendum id="0">candidate</definiendum>
+				<definiens id="0">consists of segments associated with a syllable structure position and a morpheme structure marker</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>N generates all strings ; faithfulness constraints in EVAL minimize the inserted and deleted material between underlying and candidate surface forms .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">generates all strings ; faithfulness constraints in EVAL minimize the inserted and deleted material between underlying and candidate surface forms</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>MATCH constrains the surface string phoneme to match 6 those in the word and prefix , and vice versa ( Figure 11 ) .</sentence>
+				<definiendum id="0">MATCH</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>( Morpheme Structure ) ( WWP I , WWWWtc ~ ( Syllable S~rucRn~ ) 0 0 N 0 N C 0 N ( Surface Phoneme SU'nctu~ ) g r u m a d w e ( Word Phoneme @ ( gradwe t ) ( Pzef=Phoneme , ) ( u m ) Figure 10 : Adding Word and Prefix Tapes The additional computational complexity for implementing this type of system may be quite large ; the search space for determining unknown strings at parse time will make for a slow implementation unless suitable heuristics are found for searching over each type of string .</sentence>
+				<definiendum id="0">Morpheme Structure ) ( WWP I</definiendum>
+				<definiens id="0">a slow implementation unless suitable heuristics are found for searching over each type of string</definiens>
+			</definition>
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>The Cb ( U , ) , the most highly ranked element of C.t ( Un-i ) realized in \ [ In , corresponds to the element which represents the given information .</sentence>
+				<definiendum id="0">Cb</definiendum>
+				<definiens id="0">the element which represents the given information</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The final element of &gt; , Sbou~u is either the elliptical expression or the head of an anaphoric expression which is used as a possessive determiner , a Saxon genitive , a prepositional or a genitival attribute ( cf. the ellipsis in ( 2c ) : `` die Ladezeit '' ( the charge time ) vs. `` seine Ladezeit '' ( its charge time ) or `` die Ladezeit des Akkus '' ( the accumulator 's charge time ) ) .</sentence>
+				<definiendum id="0">Sbou~u</definiendum>
+				<definiendum id="1">Saxon genitive</definiendum>
+				<definiens id="0">either the elliptical expression or the head of an anaphoric expression which is used as a possessive determiner , a</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>272 ( la ) Cb : DELL-3 16LT : 316LT Cf. '' \ [ DELL-316LT : 316LT , RESERVE-BATTERY-PAcK : Reserve-Batteriepack , TIME-UNIT-PAIR : 2 Minuten , POWER : Strom\ ] ( lb ) Cb : DELL-316LT : Cf : \ [ DELL-316LT : -- , Accu : Akku , STATUS : Status , USER : Anwender\ ] ( lc ) Cb : DELL-3 16LT : Rechner Cf : \ [ DELL-316LT : Rechner , Accu : -- , DISCHARGE : Enfleerung , TIME-UNIT-PAIR : 30 Minuten , TIME-UNIT-PAIR : 5 Sekunden\ ] ( ld ) Cb : DELL-3 16LT : er Cf : \ [ DELL-316LT : er , LoW-BATTERY-LED : Low-Battery-LED Table 3 : Centering Data for Text Fragment ( 1 ) CONTINUE CONTINUE CONTINUE CONTINUE ( 2a ) Cb : DELL-3 16LT : 316LT Cf : \ [ DELL-316LT : 316LT , NIMH-Accu : NiMH-Akku\ ] ( 2b ) Ch : DELL-3 16LT : Reehner Cf : \ [ NIMH-Accu : Akku , DELL-316LT : Rechner , TIME-UNIT-PAIR : 4 Stunden , POWER : Sffom\ ] ( 2c ) .</sentence>
+				<definiendum id="0">USER</definiendum>
+				<definiendum id="1">DISCHARGE</definiendum>
+				<definiendum id="2">NIMH-Accu</definiendum>
+				<definiens id="0">Rechner Cf : \ [ DELL-316LT : Rechner , Accu : -- ,</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Transition pairs hold for two immediately successive utterances .</sentence>
+				<definiendum id="0">Transition pairs</definiendum>
+				<definiens id="0">hold for two immediately successive utterances</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>ASM represents possible sentence correspondences and consists of ones and zeros .</sentence>
+				<definiendum id="0">ASM</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>For example , P2 is the set comprising Jsentence2 , Esentence2 and Esentencej , which means Jsentence2 has the possibility of aligning with Esentence2 or Esentencej .</sentence>
+				<definiendum id="0">P2</definiendum>
+				<definiens id="0">the set comprising Jsentence2 , Esentence2 and Esentencej , which means Jsentence2 has the possibility of aligning with Esentence2 or Esentencej</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In order to avoid this , we employ t-score , defined below , where M is the number of Japanese sentences .</sentence>
+				<definiendum id="0">M</definiendum>
+				<definiens id="0">the number of Japanese sentences</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Each element of AM , which represents a sentence pair , is updated by adding the number of word correspondences in the sentence pair .</sentence>
+				<definiendum id="0">AM</definiendum>
+				<definiens id="0">represents a sentence pair , is updated by adding the number of word correspondences in the sentence pair</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>`` Train '' and `` Test '' give the number of occurrences of any word in the confusion set in the training and test corpora .</sentence>
+				<definiendum id="0">Train</definiendum>
+				<definiens id="0">'' and `` Test '' give the number of occurrences of any word in the confusion set in the training and test corpora</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>`` Base '' is the percentage of correct predictions of the baseline system on the test corpus .</sentence>
+				<definiendum id="0">Base</definiendum>
+				<definiens id="0">the percentage of correct predictions of the baseline system on the test corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Tribayes achieves the best accuracy of the methods under consideration in all situations .</sentence>
+				<definiendum id="0">Tribayes</definiendum>
+				<definiens id="0">achieves the best accuracy of the methods under consideration in all situations</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>1 We calculate P ( W ) using the tag sequence of W as an intermediate quantity , and summing , over all possible tag sequences , the probability of the sentence with that tagging ; that is : P ( W ) = ~ P ( W , T ) T where T is a tag sequence for sentence W. The above probabilities are estimated as is traditionally done in trigram-based part-of-speech tagging ( Church , 1988 ; DeRose , 1988 ) : P ( W , T ) = P ( WIT ) P ( T ) ( 1 ) = HP ( wi\ [ ti ) HP ( t , lt , _2t , _l ) ( 2 ) i i where T = tl ... tn , and P ( ti\ ] tl-2ti-1 ) is the prob ability of seeing a part-of-speech tag tl given the two preceding part-of-speech tags ti-2 and ti-1 .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">the prob ability of seeing a part-of-speech tag tl given the two preceding part-of-speech tags ti-2 and ti-1</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Each time a word in the confusion set occurs in the corpus , Bayes proposes every feature that matches the context -one context-word feature for every distinct word within +k words of the target word , and one collocation for every way of 4A tag is taken to match a word in the sentence iff the tag is a member of the word 's set of possible part-ofspeech tags .</sentence>
+				<definiendum id="0">Bayes</definiendum>
+				<definiens id="0">proposes every feature that matches the context -one context-word feature for every distinct word within +k words of the target word , and one collocation for every way of 4A tag is taken to match a word in the sentence iff the tag is a member of the word 's set of possible part-ofspeech tags</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In this section , we calibrate this overall performance by comparing Tribayes with Microsoft Word ( version 7.0 ) , a widely used word-processing system whose grammar checker represents the state of the art in commercial context-sensitive spelling correction .</sentence>
+				<definiendum id="0">checker</definiendum>
+				<definiens id="0">represents the state of the art in commercial context-sensitive spelling correction</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>This paper introduced Trigrams , a part-of-speech trigram-based method , that improved on previous trigram methods , which were word-based , by greatly reducing the number of parameters .</sentence>
+				<definiendum id="0">Trigrams</definiendum>
+				<definiens id="0">were word-based , by greatly reducing the number of parameters</definiens>
+			</definition>
+</paper>
+
+		<paper id="1044">
+			<definition id="0">
+				<sentence>Language is a robust and necessarily redundant communication mechanism .</sentence>
+				<definiendum id="0">Language</definiendum>
+				<definiens id="0">a robust and necessarily redundant communication mechanism</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , if water and melon are frequently composed , then a good candidate for a new word is water o melon = watermelon , where o is the concatenation 3For the composition operators and test sets we have looked at , using single ( Viterbi ) parses produces almost exactly the same results ( in terms of both compression and lexical structure ) as summing probabilities over multiple parses .</sentence>
+				<definiendum id="0">o</definiendum>
+				<definiens id="0">the concatenation 3For the composition operators and test sets we have looked at , using single ( Viterbi ) parses produces almost exactly the same results ( in terms of both compression and lexical structure ) as summing probabilities over multiple parses</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Since the codelength of a word w with probability p ( w ) is approximately -log p ( ~ ) , the total estimated change in description length of adding a new word W to a lexicon/ ; is zx -c ' ( W ) logp ' ( w ) + d.l. ( changes ) + Z + c ( 0 ) logp ( o ) ) where c ( w ) is the count of the word w , primes indicated counts and probabilities after the change and d.l. ( changes ) represents the cost of writing down the perturbations involved in the representation of W. If A &lt; 0 the word is predicted to reduce the total description length and is added to the lexicon .</sentence>
+				<definiendum id="0">c ( w )</definiendum>
+				<definiens id="0">the count of the word w</definiens>
+				<definiens id="1">the cost of writing down the perturbations involved in the representation of W. If A &lt; 0 the word is predicted to reduce the total description length and is added to the lexicon</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>Information retrieval is an important application area of natural-language processing where one encounters the genuine challenge of processing large quantities of unrestricted natural-language text .</sentence>
+				<definiendum id="0">Information retrieval</definiendum>
+				<definiens id="0">an important application area of natural-language processing where one encounters the genuine challenge of processing large quantities of unrestricted natural-language text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Information retrieval ( IR ) is an important application area of naturaManguage processing ( NLP ) .</sentence>
+				<definiendum id="0">Information retrieval</definiendum>
+				<definiendum id="1">IR</definiendum>
+				<definiens id="0">an important application area of naturaManguage processing ( NLP )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>1 The IR ( or perhaps more accurately `` text retrieval '' ) task may be characterized as the problem of selecting a subset of documents ( from a document collection ) whose content is relevant to the information need of a user as expressed by a query .</sentence>
+				<definiendum id="0">IR</definiendum>
+				<definiens id="0">the problem of selecting a subset of documents ( from a document collection ) whose content is relevant to the information need of a user</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A lexical atom is a semantically coherent phrase unit .</sentence>
+				<definiendum id="0">lexical atom</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>More precisely , we require the following : F ( W~ , W2 ) &gt; Maa : LDF ( W~ , W2 ) and F ( W~ , W2 ) &gt; Ma3 : RDF ( W1 , W2 ) Where , MaxLDF ( W1 , W2 ) = Maxw ( U in ( F ( W , W1 ) , DF ( W , W2 ) ) ) and MaxRDF ( W1 , W2 ) = Maxw ( U in ( DF ( W1 , W ) , F ( W2 , W ) ) ) W is any context word in a noun phrase and F ( X , Y ) and DF ( X , Y ) are the continuous and discontinuous frequencies of \ [ X , Y\ ] , respective135 within a simple noun phrase , i.e. , the frequency of patterns \ [ ... X , Y..</sentence>
+				<definiendum id="0">F ( X</definiendum>
+				<definiens id="0">a simple noun phrase , i.e. , the frequency of patterns</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Note the following effects of the formulas : When / ; ' ( W1 , W2 ) increases , S ( W1 , W2 ) decreases ; When DF ( W1 , W2 ) increases , S ( Wx , W2 ) decreases ; When AvgLDF ( W~ , W2 ) or AvgRDF ( W~ , W2 ) increases , S ( W1 , W2 ) increases ; and When F ( Wx ) F ( W1 , W2 ) or F ( W2 ) F ( W1 , W2 ) increases , S ( W1 , W2 ) decreases .</sentence>
+				<definiendum id="0">AvgLDF</definiendum>
+				<definiendum id="1">W2 )</definiendum>
+				<definiendum id="2">W2 ) increases , S</definiendum>
+				<definiens id="0">increases ; and When F ( Wx ) F ( W1 , W2 ) or F ( W2 ) F ( W1 ,</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>, WCRD IRDI A ( W1 , W2 ) = ~ F ( W1 ) +F ( W2 ) -- 2×F ( WI , W2 ) +X2 Where • F ( W ) is frequency of word W • F ( W1 , W2 ) is frequency of adjacent bigram \ [ W1 , W2\ ] ( i.e ... .. W1 W2 ... ) • DF ( W1 , W2 ) is frequency of discontinuous bigram \ [ W1 , W21 ( i.e ... .. W1 ... W2 ... ) • LD is all left dependents , i.e. , { W\ ] min ( F ( W , Wl ) , DF ( W , W2 ) ) ~ 0 } • RD is all right dependents , i.e. , { WJmin ( D F ( W1 , W ) , F ( W2 , W ) ) ¢ 0 } • ) ,1 is the parameter indicating the relative contribution of F ( W1 , W2 ) to the score ( e.g. , 5 in the actual experiment ) • A2 is the parameter to control the contribution of word frequency ( e.g. , 1000 in the actual experiment ) Figure 2 : Formulas for Scoring The association score ( based principally on frequency ) can sometimes be unreliable .</sentence>
+				<definiendum id="0">WCRD IRDI A ( W1</definiendum>
+				<definiendum id="1">min ( F ( W , Wl</definiendum>
+				<definiens id="0">frequency of discontinuous bigram \ [ W1 , W21 ( i.e ... .. W1 ... W2 ... ) • LD is all left dependents</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Recall measures how many of the relevant documents have been actually retrieved .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">measures how many of the relevant documents</definiens>
+			</definition>
+</paper>
+
+	</volume>

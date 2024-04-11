@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="X98">
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>The NLToolset The NLToolset is a framework of tools , techniques , and resources designed for building text processing applications .</sentence>
+				<definiendum id="0">NLToolset The NLToolset</definiendum>
+				<definiens id="0">a framework of tools , techniques , and resources designed for building text processing applications</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>It applies lexicosemantic pattern matching in the form of basic structural patterns ( possible-title firstname middleJ The NLToolset is a proprietary text processing product , owned by Lockheed Martin Corporation .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">a proprietary text processing product , owned by Lockheed Martin Corporation</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Feature Available Example Nmuber unit of time 1 , 6 , 7 , 10 interval endpoint 1 , 4 , 5 , 7 , 8 relative to dateline 1 , 2 , 4 , 6 , 8 , 9 , 10 , 13 , 14 month name 2 , 3 , 4 , 8 , 15 relative direction 2 , 9 , 10 , 15 day number 3 , 8 year 3 decade number 5 ordinal 7 relative to event date 7 season name 9 fiscal year 11 fiscal year unit 11 idiom 12 relative to context 5 , 12 day name 13 relative day term 4 Table 1 : Feature/Expression Relationships Each expression will require a unique computation function , based on the features present and their interaction .</sentence>
+				<definiendum id="0">Feature/Expression</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Computing the Interval The computation stage involves determining the reference point and using it , plus the feature information and the information from the expression 's context to compute the interval .</sentence>
+				<definiendum id="0">computation stage</definiendum>
+				<definiens id="0">feature information and the information from the expression 's context to compute the interval</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The decision tree is a classifier that divides the description space into regions , each one labelled with classification type .</sentence>
+				<definiendum id="0">decision tree</definiendum>
+				<definiens id="0">a classifier that divides the description space into regions</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The NLToolset gives a temporal expression an interval representation .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">gives a temporal expression an interval representation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>The basic model evaluates a retrieval status value ( RSV ) for each query document pair ( qa di ) as a combination of a document-focused QTD process that spreads activation from query to document through common terms k , and an analogous query-focused DTQ process operating vice versa , as follows : RSV = cx*Z k Wik *S ( qak/La ) .</sentence>
+				<definiendum id="0">RSV</definiendum>
+				<definiens id="0">a combination of a document-focused QTD process that spreads activation from query to document through common terms k , and an analogous query-focused DTQ process operating vice versa</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>- { ( 1- ( X ) *ZkWak * S ( dik/Li ) where 0_ &lt; ct_ &lt; l is a combination parameter for the two processes , qak and d~k are the frequency of term k in a query or document respectively , La , Li are the query or document lengths , and S ( . ) is a sigmoid-like function to suppress outlying values• A major difference of our model from other probabilistic approaches is to treat a document or query as non-monolithic , but constituted of conceptual components ( which we approximate as terms ) . This leads us to formulate in a collection of components rather than documents , and allows us to account for the non-binary occurrence of terms in items in a natural way. For example , in the usual discriminatory weighting formula for query term k : wak = log \ [ p* ( 1-q ) / ( 1-p ) /q\ ] , p = Pr ( term k present \ [ relevant ) is set to a query 'self-learn ' value of qak /La based on the assumption that a query is relevant to itself , and q = Pr ( term k present I -relevant ) is set to Fk/M , the collection term frequency of k , Fk , divided by the total number of terms M used in the collection• This we call the inverse collection term frequency ICTF. It differs from the usual inverse document frequency IDF in that the latter counts only the Fig.lb Query-Focused Learning &amp; Expansion presence and absence of terms in a document , ignoring the within-document term frequency. Moreover , as the system learns from relevant documents , p can be trained to a value intermediate between the basic selflearn value and that given by the known relevants according to a learning procedure \ [ 1\ ] . Our system also uses two-word adjacency phrases as terms to improve on the basic single word representation. Documents of many thousands or more words long can have adverse effect on retrieval. PIRCS deals with the problem by simply segmenting long documents into approximately equal sub-documents of 550-word size and ending on a paragraph boundary. For the final retrieval list , retrieval status values ( RSV ) of the top three sub-documents of the same document are combined with decreasing weights to return a final RSV. This in effect favors retrieval of longer documents that contain positive evidence in different sub-parts of it. PIRCS has participated in all previous TREC 1-6 blind retrieval experiments and consistently returned some of the best results , see for example \ [ 2\ ] . Automatic ad-hoc retrieval refers to the environment where a user attempts to retrieve relevant documents from an existing collection by issuing 'any ' query. We have experimented only with natural language queries that are derived from TREC topics. It is a difficult problem because the query wordings are unknown beforehand , and its topical content is unpredictable• Moreover , there will not be any example relevant documents that a system can rely on for training purposes like in a routing situation. To improve the accuracy of ad-hoc retrieval , it is now a common practice to adopt a 2-stage retrieval strategy. Under the right circumstances this can give substantial improvements over single stage. In a 1130 final retrieval define docu m ent dom ain docu m ent '3 ' collection collection _ enrichment r~ '5 ' \ [ 1st ~_~ 2nd local statistics collection ~retrieval retrieva statistics ~2~ , I , ~ ~ I feedback ocs '1 ' , ' '4~ raw expanded query query list I~ -- -~~ Fig.2 Two-Stage Retrieval and Methods of Improvements stage retrieval , the raw query which is a user-provided description of information needs is directly employed by the retrieval algorithm to assign a retrieval status value ( RSV ) to each document in a collection , and the ranked list of documents is interpreted as the f'mal retrieval result. In a 2-stage strategy , this initial ranked list is interpreted as but an intermediate step. The set of n top-ranked documents of the initial retrieval is assumed relevant , even though the user has not made any judgment. These 'pseudo-relevant ' documents are then used to modify the weight of the initial query according to some learning procedure , as well as to expand the query with terms from these documents based on some selection criteria like frequency of occurrence. The modified query is then used to do a second retrieval , and the resultant ranked list becomes the final result. This helps because if the raw query is reasonable and the retrieval engine is any good , the initial top n documents can be considered as defining the topical domain of the user need and should have a reasonable density of relevant or highly related documents , and the procedure simulates real relevance feedback. Traditionally , real relevance feedback can give very large improvements in average precision , like 50 to over 100 % . Experiments with our PIRCS system have shown that this 2-stage of ad-hoc method works more often than not , about 2 out 3 times ( 35 queries in TREC-5 and 32 in TREC-6 out of 50 queries each ) , and the average precision for a set of queries can improve a few to over 20 % . The process of a 2-stage retrieval is depicted in Fig.2. In all of our work , this 2-stage approach is used in our retrieval experiments. Some tables below show initial 1-stage results for comparison purposes. An important finding in the TREC experiments is that short queries have substantially different retrieval properties from long ones. We consider short queries as those with a few content terms and are popular in casual environments such as web searching. Serious users wanting more exhaustive and accurate searching should issue longer paragraph-size queries with some related conceptual terms. They usually return better effectiveness because longer exposition of needs can reduce the ambiguity problem due to homographs and the descriptive deficiency due to synonyms. The 2stage retrieval approach has been shown in several years of TREC experiments to improve over 1-stage for both query types. Our work has investigated additional methods to enhance retrieval accuracy for this strategy. We studied several methods for improving our approach of 2-stage pseudo-relevance feedback retrieval for short queries \ [ 3\ ] . These are related to using single term statistics and evidence , and include ( see Fig.2 ) : 1 ) avtf query term weighting , 2 ) variable 131 high frequency Zipfian threshold , 3 ) collection enrichment , 4 ) enhancing term variety in raw queries , and 5 ) using retrieved document local term statistics. Avtf employs collection statistics to weight terms in short queries \ [ 4\ ] where term importance indication is generally not available. Variable high frequency threshold defines statistical stopwords based on query length. Collection enrichment adds external collections to the target collection under investigation so as to improve the chance of ranking more relevant documents in the top n for the pseudo-feedback process. Adding term variety to raw queries means adding highly associated terms from the domainrelated top n documents based on mutual information values. Making the query longer may improve 1 st stage retrieval. And retrieved document local statistics reweight terms in the 2 nd stage using the set of domainrelated documents rather than the whole collection as used during the initial stage. Results using these methods are tabulated in Table 1 where we show some of the popular evaluation measures : RR the number of relevant documents returned after retrieving 1000 documents ; AvPrethe non-interpolated average precision ; P @ 10 the precision at 10 documents retrieved , and R.Pre the recall precision at the point where the number retrieved is exactly equal to the number of relevant documents It can be seen that standard 2-stage strategy performs about 9 % to 15 % better than initial retrieval using the AvPre measure as reference ( TREC5.161 vs. .140 , TREC6 .240 vs..220 ) . The other techniques successively bring further improvements , accumulating to about 20 to 40 % over the standard 2 nd stage retrieval results ( TREC5.239 vs.. 161 , TREC6.289 vs..240 ) . It is found that collection enrichment also works for long queries. It is an attractive technique since searchable texts are increasingly available nowadays. RR AvPre P @ IO R.Pre 1 st 2 nd Avtf Var. Coll. M.I. Retr Retr Thld Enrich Terms ~-TREC5 50 Short Queries .-9 1763 2279 2335 2635 2732 2787 .140 .161 .181 .214 .234 .239 .290 .284 .326 .372 .382 .404 .179 .191 .210 .249 .270 .271 RR AvPre P @ IO R.Pre ( -TREC6 50 Short Queries-9 2188 2272 2384 2517 2656 2738 .220 .240 .258 .258 .284 .289 .334 .372 .402 .388 .444 .442 .262 .264 .291 .287 .312 .311 Tablel : Term Level Retrieval Enhancement We envisage that so long as the external text falls within similar topical domain of the query , it could be helpful as an enrichment tool. It goes quite a way to improve the accuracy of retrieval , especially in the difficul t ad-hoc , short query situations. Investigators in IR are aware of the simplistic and inadequate representation of document content based on a bag of single word stems or some 2-word adjacency phrases. To a certain extent this is dictated by the requirements that text retrieval systems have to support 'large scale environments as well as unpredictable , diverse needs. Many previous attempts , including Tipster contractors ( e.g. \ [ 5\ ] ) , have been made to include more sophisticated phrasal representation in order to improve retrieval results. They have not worked as well as content terms or generally been inconclusive. We also investigated phrasal evidence for retrieval , but only to the extent that it is used to refine results that have been obtained via term level retrieval. Only long queries are considered since queries with too few phrases would not provide sufficient evidence to work with. Specifically , we use phrasal evidence to re-rank a retrieved document list so as to promote more relevant documents earlier in the list. This could lead to higher density of true relevant documents in the 1 st stage retrieval , thereby improving 'pseudo-feedback ' for the 2 nd stage downstream. The 2 `` d stage retrieval list could similarly be re-ranked to return better effectiveness as well. A query is processed into variable length noun phrases using a POS-tagger from Mitre and simple bracketing. ( We have also experimented with the BBN tagger before ) . Given a retrieved document , each noun phrase concept of the query is then matched within up to a 3-sentence context anywhere in the document. When there are matches of two or more terms , appropriate weights are noted for this phrase and the sentence counted. In addition , the amount of coverage of all the query phrases by the document is also a factor by which the original RSV of a document is boosted. However , not all documents have their RSV modified. They need to pass a threshold for coverage. After many experiments for the TREC 5 and 6 long query environments , the attempt was moderately successful as shown in Table 2. For TREC5 , an improvement in AvPre of 4 % ( .273 vs..262 ) was obtained , but in TREC6 only about 1 % ( .308 vs..305 ) . 132 RR AvPre P @ lO R.Pre RR AvPre P @ IO R.Pre ( Phrase -- &gt; 1 st 2 nd 2 nd ReRerank ReRetr Retr Retr rank A ; then rank Enrich C 2 nd C ' Retr ( A ) ( B ) ( C ) ( O ) ( C ' ) ( D ' ) ~TREC5 50 Long Queries -- &gt; 2463 3077 3034 3049 3052 3072 .220 .253 .262 .265 .270 .273 .404 .414 .438 .440 .446 .444 .258 .277 .292 .292 .295 .296 ~TREC6 50 Long Queries 2537 2947 3043 3064 3074 3088 .237 .264 .305 .310 .304 .308 .402 .452 .492 .498 .488 .490 .278 .296 .326 .332 .327 .331 Table2 : Phrase Level Re-ranking Results More studies need to be done to confirm its utility .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">RSV</definiendum>
+				<definiendum id="2">retrieval engine</definiendum>
+				<definiens id="0">a sigmoid-like function to suppress outlying values• A major difference of our model from other probabilistic approaches is to treat a document or query as non-monolithic , but constituted of conceptual components ( which we approximate as terms ) . This leads us to formulate in a collection of components rather than documents , and allows us to account for the non-binary occurrence of terms in items in a natural way. For example , in the usual discriminatory weighting formula for query term k</definiens>
+				<definiens id="1">then used to modify the weight of the initial query according to some learning procedure</definiens>
+				<definiens id="2">the number of relevant documents returned after retrieving 1000 documents ; AvPrethe non-interpolated average precision</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+</paper>
+
+		<paper id="1008">
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>Entities On the level of entity extraction , Named Entities ( NE ) were defined as proper names and quantities of interest .</sentence>
+				<definiendum id="0">Entities On the level of entity extraction</definiendum>
+				<definiendum id="1">Named Entities</definiendum>
+				<definiens id="0">( NE ) were defined as proper names and quantities of interest</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>`` Evaluating Message Understanding Systems : An Analysis of the Third Message Understanding Conference ( MUC-3 ) . ''</sentence>
+				<definiendum id="0">Evaluating Message Understanding Systems</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>The retrieval system consists of multiple text-processing steps which are linked together into a Stream Model architecture -- -in other words , information from multiple sources flows into the system and is the combined to get the most accurate results .</sentence>
+				<definiendum id="0">retrieval system</definiendum>
+				<definiens id="0">consists of multiple text-processing steps which are linked together into a Stream Model architecture -- -in other words , information from multiple sources flows into the system and is the combined to get the most accurate results</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>OPERATIONAL USES OF SUMMARIZATION Operationally , text summarization is an aid for people who deal with large amounts of text and want a tool that will allow them to determine what information exists in a text or a text collection and whether they have to read the entire document .</sentence>
+				<definiendum id="0">OPERATIONAL USES OF SUMMARIZATION Operationally</definiendum>
+				<definiens id="0">an aid for people who deal with large amounts of text and want a tool that will allow them to determine what information exists in a text or a text collection and whether they have to read the entire document</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>The Maximal Marginal Relevance ( MMR ) metric is defined as follows : Let C = document collection ( or document stream ) Let Q = ad-hoc query ( or analyst-profile or topic/category specification ) Let R = IR ( C , Q , q ) i.e. the ranked list of documents retrieved by an IR system , given C and Q and a relevance threshold theta , below which it will not retrieve documents .</sentence>
+				<definiendum id="0">Maximal Marginal Relevance ( MMR ) metric</definiendum>
+				<definiens id="0">follows : Let C = document collection ( or document stream ) Let Q = ad-hoc query ( or analyst-profile or topic/category specification ) Let R = IR ( C , Q , q ) i.e. the ranked list of documents retrieved by an IR system , given C and Q and a relevance threshold theta , below which it will not retrieve documents</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>def MMR ( C , Q , R , S ) =Argmax\ [ X*Sim 1 ( Di , Q ) - ( 1-X ) Max ( Sim2 ( Di , Dj ) ) \ ] Di ~R\S Dj eS Given the above definition , MMR computes incrementally the standard relevance-ranked list when the parameter ~=1 , and computes a maximal diversity ranking among the documents in R when X=0 .</sentence>
+				<definiendum id="0">def MMR</definiendum>
+				<definiens id="0">computes a maximal diversity ranking among the documents in R when X=0</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>182 query : Brazil external debt fiqure Adicle Title BRAZIL SEEN AS VANGUARD FOR CHANGING DEBT STRATEGY FUNARO REJECTS UK SUGGESTION OF IMF BRAZIL PLAN ECONOMIC SPOTLIGHT BRAZIL DEBT DEADLINES LOOM U.S. URGED TO STRENGTHEN DEBT STRATEGY U.S , URGES BANKS TO DEVELOP NEW 3RD WLD FINANCE FUNARO 'S DEPARTURE COULD LEAD TO BRAZIL DEBT DEAL U.S. OFFICIALS SAY BRAZIL SHOULD DEAL WITH BANKS BRAZIL SEEKS TO REASSURE BANKS ON DEBT SUSPENSION BRAZIL SEEKS TO REASSURE BANKS ON DEBT SUSPENSION BRAZIL CRITICISES ADVISORY COMMITTEE STRUCTURE LATIN DEBTORS MAKE NEW PUSH FOR DEBT RELIE BRAZIL DEBT SEEN PARTNER TO HARD SELL TACTICS BRAZIL DEBT POSES THORNY ISSUE FOR U.S. BANKS U.S. URGES BANKS TO WEIGH PHILIPPINE DEBT PLAN U.K. SAYS HAS NO ROLE IN BRAZIL MORATORIUM TALKS TALKING POINT/BANK STOCKS CANADA BANKS COULD SEE PRESSURE ON BRAZIL LOANS TREASURY 'S BAKER SAYS BRAZIL NOT tN CRISIS BRAZIL 'S DEBT CRISIS BECOMING POLITICAL CRISIS BAKER AND VOLCKER SAY DEBT STRATEGY WILL WORK I 0.7 76 76 1308 1308 1431 1431 104 2149 50 104 2149 1388 1713 1293 1388 1713 1403 50 1291 133 32 1291 99 99 54 14 44 54 1293 32 53 69 1762 1762 133 44 14 1403 69 53 76 1293 1308 133 14 1388 1762 2149 69 1713 104 1431 99 1291 ,54 44 32 5O 1403 53 Table 1 : Initial Relevance Ranking ( ~ , = 1 ) vs. MMR reranking ( ~L = .7 &amp; X = .3 ) We implemented MMR in two retrieval engines , PURSUIT ( an upgraded version of the original TM retrieval engine inside the Lycos search engine ) , \ [ 9\ ] and SMART ( the publicly available version of the Cornell IR engine ) \ [ 1\ ] .</sentence>
+				<definiendum id="0">ROLE IN BRAZIL MORATORIUM TALKS TALKING POINT/BANK STOCKS CANADA BANKS COULD</definiendum>
+				<definiendum id="1">PURSUIT (</definiendum>
+				<definiendum id="2">SMART</definiendum>
+				<definiens id="0">'S DEPARTURE COULD LEAD TO BRAZIL DEBT DEAL U.S. OFFICIALS SAY BRAZIL SHOULD DEAL WITH BANKS BRAZIL SEEKS TO REASSURE BANKS ON DEBT SUSPENSION BRAZIL SEEKS TO REASSURE BANKS ON DEBT SUSPENSION BRAZIL CRITICISES ADVISORY COMMITTEE STRUCTURE LATIN DEBTORS MAKE NEW PUSH FOR DEBT RELIE BRAZIL DEBT SEEN PARTNER TO HARD SELL TACTICS BRAZIL DEBT POSES THORNY ISSUE FOR U.S. BANKS U.S. URGES BANKS TO WEIGH PHILIPPINE DEBT PLAN U.K. SAYS HAS NO</definiens>
+				<definiens id="1">an upgraded version of the original TM retrieval engine inside the Lycos search engine )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Then rank the centroids of each cluster by MMR ( most important first ) and present the information , a 184 topic-coherent cluster at a time , starting with the cluster whose centroid ranks highest .</sentence>
+				<definiendum id="0">Then rank the centroids of each cluster by MMR</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>DOCUMENTS LONGER The MMR-passage selection ' : 'method for summarization works better for longer documents ( which typically contain more inherent passage redundancy across document sections such as abstract , introduction , conclusion , results , etc. ) .</sentence>
+				<definiendum id="0">MMR-passage selection</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>&lt; narr &gt; Narrative : A relevant document will discuss any effort by blacks to force political change in South Africa .</sentence>
+				<definiendum id="0">Narrative</definiendum>
+				<definiens id="0">A relevant document will discuss any effort by blacks to force political change in South Africa</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>&lt; con &gt; Concept ( s ) : Tambo emergency regulations Query : Black Resistance Against South Afdcan Government black majority South Africa overthrow domination white minority government blacks force political change South Africa black challenge apartheid military political economic activities armed personnel African National Congress ( ANC ) South Africa bordering states African National Congress ANC Nelson Mandela Oliver Tambo Chief Buthelezi Inkatha Zulu terrorist detainee subversive communist Limpopo River Angola Botswana Mozambique Zambia apartheid black township homelands group areas act emergency regulations Query ( short version no narrative or concepts ) : Black Resistance South Afncan Government black majority South Afnca overthrow domination white minority government Figure 3 : Topic and Query for Tipster Topic 110 186 \ [ 1\ ] \ [ 761\ ] AP880212-0060 \ [ 15\ ] ANGOP quoted the Angolan statement as saying the main causes of conflict in the region are South Africa 's `` 'illegal occupation '' of Namibia , South African attacks against its black-ruled neighbors and its alleged creation of armed groups to carry out `` 'terrorist activities '' in those countries , and the denial of political rights to the black majodty in South Africa .</sentence>
+				<definiendum id="0">Query</definiendum>
+				<definiens id="0">Black Resistance Against South Afdcan Government black majority South Africa overthrow domination white minority government blacks force political change South Africa black challenge apartheid military political economic activities armed personnel African National Congress ( ANC ) South Africa bordering states African National Congress ANC Nelson Mandela Oliver Tambo Chief Buthelezi Inkatha Zulu terrorist detainee subversive communist Limpopo River Angola Botswana Mozambique Zambia apartheid black township homelands group areas act emergency regulations Query ( short version no narrative or concepts ) : Black Resistance South Afncan Government black majority South Afnca overthrow domination white minority government Figure 3 : Topic and</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>\ [ 7\ ] \ [ 781\ ] AP880823-0069 \ [ 18\ ] The ANC is the main guerrilla group fighting to overthrow the South African government and end apartheid , the system of racial segregation in which South Africa 's black majority has no vote in national affairs .</sentence>
+				<definiendum id="0">ANC</definiendum>
+				<definiens id="0">the main guerrilla group fighting to overthrow the South African government</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>\ [ 9\ ] \ [ 762\ ] AP880212-0060 \ [ 14\ ] The African National Congress is the main rebel movement fighting South Africa 's white-led government and SWAPO is a black guerrilla group fighting for independence for Namibia , which is administered by South Africa .</sentence>
+				<definiendum id="0">SWAPO</definiendum>
+				<definiens id="0">the main rebel movement fighting South Africa 's white-led government</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The baseline ( baseln ) contains the first N sentences of the document , where N is the number of sentences in the summary .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of sentences in the summary</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>The MINDS system is a multilingual domain independent summarization system , which is able to summarize documents written in English , Japanese , Russian and Spanish .</sentence>
+				<definiendum id="0">MINDS system</definiendum>
+				<definiens id="0">a multilingual domain independent summarization system , which is able to summarize documents written in English</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Output Process stage takes these two versions of the summary and converts the one written in the original language to the original encoding of the document ( identified by the Language Recognition module ) , then it converts the version in English from UNICODE to `` 8859_1 '' ( ISO Latin-l ) .</sentence>
+				<definiendum id="0">Output Process stage</definiendum>
+				<definiens id="0">takes these two versions of the summary and converts the one written in the original language to the original encoding of the document ( identified by the Language Recognition module )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>For example , the Text Retrieval Conference ( TREC ) , TIPSTER 's metrics-based evaluation for document detection is now recognized as the premier source of ground-truth data upon which information retrieval developers can test their systems .</sentence>
+				<definiendum id="0">Text Retrieval Conference</definiendum>
+				<definiens id="0">the premier source of ground-truth data upon which information retrieval developers can test their systems</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The TREC collection is a sizable one and provides the foundation for developers to test scalability of retrieval systems .</sentence>
+				<definiendum id="0">TREC collection</definiendum>
+				<definiens id="0">a sizable one and provides the foundation for developers to test scalability of retrieval systems</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>Metrics included recall ( a measure of how much of the key 's fills were produced in the response ) , precision ( a measure of how much of the response fills are actually in the key ) , F-measure ( combining recall and precision into one measure , and ERR ( error per response fill ) .</sentence>
+				<definiendum id="0">precision</definiendum>
+				<definiendum id="1">ERR</definiendum>
+				<definiens id="0">a measure of how much of the key 's fills were produced in the response</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Linguistic Data Consortium provided all textual data for data selection and also provided the training and test data to participating sites at minimal cost .</sentence>
+				<definiendum id="0">Linguistic Data Consortium</definiendum>
+				<definiens id="0">provided all textual data for data selection and also provided the training and test data to participating sites at minimal cost</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>The system consists of a cascade of modules with their attendant knowledge bases , with the input text document passed through the pipeline of modules .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">consists of a cascade of modules with their attendant knowledge bases , with the input text document passed through the pipeline of modules</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Pattern matching is a form of deterministic , bottom-up partial parsing .</sentence>
+				<definiendum id="0">Pattern matching</definiendum>
+				<definiens id="0">a form of deterministic , bottom-up partial parsing</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>FASTUS processes natural language and produces representations of the information relevant to a particular application , typically in the form of database templates .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">processes natural language and produces representations of the information relevant to a particular application</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>FASTUS consists of three major components .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">consists of three major components</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Pattern recognition relies on a second component , the coreference module , which identifies the referents of a variety of types of referential expressions ( e.g. , pronouns , definite noun phrases ) .</sentence>
+				<definiendum id="0">coreference module</definiendum>
+				<definiens id="0">identifies the referents of a variety of types of referential expressions ( e.g. , pronouns , definite noun phrases</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In this case , FASTUS is likely to match the fragment `` was named president of IBM , '' outputting a transition with a position and organization .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">named president of IBM , '' outputting a transition with a position and organization</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Person analyzes { Industry I Commodity \ ] Financial-Instrument ) { Company I Person } controls Company { Company \ ] Country } exports Goods to Country Coperorg invests Money in { FinancialInstrument I Market\ ] Country I Company } The italicized elements indicate concepts in the developed ontologies ; for instance , Coperorg is a category subsuming several other concepts including Person , Company , and Organization .</sentence>
+				<definiendum id="0">Coperorg</definiendum>
+				<definiens id="0">to Country Coperorg invests Money in { FinancialInstrument I Market\ ] Country I Company } The italicized elements indicate concepts in the developed ontologies ; for instance</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Decision lists for lexical ambiguity resolution : Application to accent restoration in Spanish and French .</sentence>
+				<definiendum id="0">Decision lists</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>TRUESmart is a set of tools and data supporting researchers in the development of methods for improving user efficiency for state-of-the-art information retrieval systems .</sentence>
+				<definiendum id="0">TRUESmart</definiendum>
+				<definiens id="0">a set of tools and data supporting researchers in the development of methods for improving user efficiency for state-of-the-art information retrieval systems</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Coreference resolution is the identification of all strings in a document that refer to the same entity .</sentence>
+				<definiendum id="0">Coreference resolution</definiendum>
+				<definiens id="0">the identification of all strings in a document that refer to the same entity</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Accurate identification of base noun phrases is a critical component of any partial parser ; in addition , Smart relies on base NPs as its primary source of linguistic phrase information .</sentence>
+				<definiendum id="0">base noun phrases</definiendum>
+				<definiens id="0">a critical component of any partial parser ; in addition</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Next , the sentence analyzer processes the selected training sentences , creating one case for every instance of the linguistic relationship that occurs .</sentence>
+				<definiendum id="0">sentence analyzer</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>• baseNPs : identifies non-recursive noun phrases .</sentence>
+				<definiendum id="0">• baseNPs</definiendum>
+				<definiens id="0">identifies non-recursive noun phrases</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Dup_eval measures the overlap between the these sets of spans .</sentence>
+				<definiendum id="0">Dup_eval</definiendum>
+				<definiens id="0">measures the overlap between the these sets of spans</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Each annotator returns the text ( s ) and the set of annotations computed for the text ( s ) .</sentence>
+				<definiendum id="0">annotator</definiendum>
+				<definiens id="0">returns the text ( s ) and the set of annotations computed for the text ( s )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The GUI , in turn , displays the text with the spans of each annotation type highlighted in a different color .</sentence>
+				<definiendum id="0">GUI</definiendum>
+				<definiens id="0">in turn , displays the text with the spans of each annotation type highlighted in a different color</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>TRUESmart is a set of tools and data supporting researchers in the development of methods for improving user efficiency for state-of-the-art information retrieval systems .</sentence>
+				<definiendum id="0">TRUESmart</definiendum>
+				<definiens id="0">a set of tools and data supporting researchers in the development of methods for improving user efficiency for state-of-the-art information retrieval systems</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>In addition , TRUESmart includes a simple graphical user interface that aids system evaluation and analysis by highlighting important term relationships identified by the underlying statistical and linguistic language processing algorithms .</sentence>
+				<definiendum id="0">TRUESmart</definiendum>
+				<definiens id="0">includes a simple graphical user interface that aids system evaluation and analysis by highlighting important term relationships identified by the underlying statistical and linguistic language processing algorithms</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Transformation-Based Error-Driven Learning and Natural Language Processing : A Case Study in Part-of-Speech Tagging .</sentence>
+				<definiendum id="0">Transformation-Based Error-Driven Learning</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>FASTUS : A Cascaded Finite-State Transducer for Extracting Information from Natural-Language Text .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>Task Description and Related Work For most of us , a summary is a brief synopsis of the content of a larger document , an abstract recounting the main points while suppressing most details .</sentence>
+				<definiendum id="0">summary</definiendum>
+				<definiens id="0">a brief synopsis of the content of a larger document , an abstract</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The informative ( topical ) summaries were scored for their ability to provide answers to who , what , when , how , etc. questions about the topics .</sentence>
+				<definiendum id="0">informative ( topical</definiendum>
+				<definiens id="0">scored for their ability to provide answers to who , what , when , how</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The information stream consists of news , either from a tv broadcast or a radio broadcast .</sentence>
+				<definiendum id="0">information stream</definiendum>
+				<definiens id="0">consists of news , either from a tv broadcast or a radio broadcast</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>TTP ( Tagged Text Parser ) is based on the Linguistic String Grammar developed by Sager ( Sager 1981 ) .</sentence>
+				<definiendum id="0">TTP ( Tagged Text Parser</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>TTP has been shown to produce parse structures which are no worse than those generated by full-scale linguistic parsers when compared to hand-coded Treebank parse trees ( Strzalkowski and Scheyen 1996 ) .</sentence>
+				<definiendum id="0">TTP</definiendum>
+				<definiens id="0">shown to produce parse structures which are no worse than those generated by full-scale linguistic parsers when compared to hand-coded Treebank parse trees</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>The task of Information Extraction ( IE ) as understood in this paper is the selective extraction of meaning from free natural language text .</sentence>
+				<definiendum id="0">Information Extraction ( IE</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The MUCs have yielded some widely ( if not universally ) accepted wisdom regarding IE : • Customization and portability is an important problem : to be considered a useful tool , an IE system must be able to perform in a variety of domains .</sentence>
+				<definiendum id="0">portability</definiendum>
+				<definiens id="0">an important problem : to be considered a useful tool , an IE system must be able to perform in a variety of domains</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A LF is an object with named slots ( see example in figure 2 ) .</sentence>
+				<definiendum id="0">LF</definiendum>
+				<definiens id="0">an object with named slots</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The system proposes the precondition : np ( C-company ) vg ( C-appoint ) np ( C-person ) np ( president ) Applying semantic generalization to the last constituent yields : np ( C-company ) vg ( C-appoint ) np ( C-person ) np ( C-title ) where C-title is a semantic class that gathers all corporate titles .</sentence>
+				<definiendum id="0">C-title</definiendum>
+				<definiens id="0">the precondition : np ( C-company ) vg ( C-appoint ) np ( C-person ) np ( president ) Applying semantic generalization to the last constituent yields : np ( C-company ) vg ( C-appoint ) np</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>1°where rn is a pre-defined sub-pattern that matches various right noun-phrase modifiers , sa is a sentence adjunct , and passvg is a passive verb group .</sentence>
+				<definiendum id="0">sa</definiendum>
+				<definiendum id="1">passvg</definiendum>
+				<definiens id="0">a pre-defined sub-pattern that matches various right noun-phrase modifiers ,</definiens>
+				<definiens id="1">a sentence adjunct</definiens>
+				<definiens id="2">a passive verb group</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>A retrieral system is a machine that accepts a query and full texts of documents , and produces , for each document , a relevance score for the query-document pair .</sentence>
+				<definiendum id="0">retrieral system</definiendum>
+				<definiens id="0">a machine that accepts a query and full texts of documents , and produces , for each document , a relevance score for the query-document pair</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>WordNet is a semantic knowledge base that distinguishes words by their senses , and groups word : senses that are synonymous to each other into synsets .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">a semantic knowledge base that distinguishes words by their senses , and groups word : senses that are synonymous to each other into synsets</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Precision of Five Systems , Overall Static Fusion Functions , and Query-Specific Fusion Functions , When Training and Testing on Different Data for Each Query Single Retrieval Systems Static Fusion Functions Single Overall ( vs. FB ) .1187 .1313 Prec .</sentence>
+				<definiendum id="0">Precision of Five</definiendum>
+				<definiens id="0">Systems , Overall Static Fusion Functions , and Query-Specific Fusion Functions , When Training and Testing on Different Data for Each Query Single Retrieval Systems Static Fusion Functions Single Overall ( vs. FB</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>To address these 8 Merging &amp; Anaphoric Resolution Maximal Marginal Relevance Duplicate Document Detection , ; ummarization Advanced NLP for Accurate and Flexible ndexin Coreference , TimeTool , and Document ntent Multilingual IR En~ng User IE Customization Chinese IR &amp; Evidence Combination Multiple Information Seeking Strategies Extra -- on &amp; Customization by Machine Open Domains , Learning by Example , 2oreference Combination Retrieval Merging , Routing , Filtering , and Topic Coreference Engine Summarization Summarization Capabilities Platform tstem Engineering and Configuration Figure 1 .</sentence>
+				<definiendum id="0">Topic Coreference</definiendum>
+				<definiens id="0">Anaphoric Resolution Maximal Marginal Relevance Duplicate Document Detection , ; ummarization Advanced NLP for Accurate and Flexible ndexin Coreference , TimeTool , and Document ntent Multilingual IR En~ng User IE Customization Chinese IR &amp; Evidence Combination Multiple Information Seeking Strategies Extra -- on &amp; Customization by Machine Open Domains , Learning by Example , 2oreference Combination Retrieval Merging , Routing , Filtering , and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Annotation Standardization TWG aims to define standard annotations for document structure ( title , source , author , date , body , etc. ) , for tagging names in documents , and for encoding information extraction templates as annotations .</sentence>
+				<definiendum id="0">Annotation Standardization TWG</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>GATE represents a success story for TIPSTER and illustrates one of the many examples of the program 's impact on the commercial world .</sentence>
+				<definiendum id="0">GATE</definiendum>
+				<definiens id="0">a success story for TIPSTER and illustrates one of the many examples of the program 's impact on the commercial world</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>SUMMAC included several tasks intended to judge the utility and appropriateness of the generated summaries and to provide a way to measure improvement consistently .</sentence>
+				<definiendum id="0">SUMMAC</definiendum>
+				<definiens id="0">included several tasks intended to judge the utility and appropriateness of the generated summaries and to provide a way to measure improvement consistently</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>In our work , we use summary as the generic term and define it as follows : A summary is a text that is produced out of one or more ( possibly multimedia ) texts , that contains ( some of ) the same information of the original text ( s ) , and that is no longer than half of the original text ( s ) .</sentence>
+				<definiendum id="0">contains</definiendum>
+				<definiens id="0">the generic term and define it as follows : A summary is a text that is produced out of one or more</definiens>
+				<definiens id="1">the same information of the original text ( s ) , and that is no longer than half of the original text ( s )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A multi-document summary is one text that covers the content of more than one input text , and is usually used only when the input texts are thematically related .</sentence>
+				<definiendum id="0">multi-document summary</definiendum>
+				<definiens id="0">one text that covers the content of more than one input text</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Specificity : domain-specific vs. general : When the input texts all pertain to a single domain , it may be appropriate to apply domain-specific summarization techniques , focus on specific content , and output specific formats , compared to the general case .</sentence>
+				<definiendum id="0">Specificity</definiendum>
+				<definiens id="0">domain-specific vs. general : When the input texts all pertain to a single domain</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Expansiveness : Background vs. just-the-news : A background summary assumes the reader 's prior knowledge of the general setting of the input text ( s ) content is poor , and hence includes explanatory material , such as circumstances of place , time , and actors .</sentence>
+				<definiendum id="0">background summary</definiendum>
+				<definiens id="0">assumes the reader 's prior knowledge of the general setting of the input text ( s ) content is poor , and hence includes explanatory material , such as circumstances of place , time , and actors</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The features include paragraph and sentence number ( pno and sno ) , part of speech ( pos , empty for Indonesian ) , common word indicator ( cwd ) , presence of word in title ( ttl ) , morphology ( mph ) , WordNet count ( wnc ) , word frequency in text ( frq ) , and tfidfand OPP scores ( see Sections 3.3 and 3.1 resp . )</sentence>
+				<definiendum id="0">WordNet count</definiendum>
+				<definiens id="0">paragraph and sentence number ( pno and sno ) , part of speech ( pos , empty for Indonesian ) , common word indicator ( cwd ) , presence of word in title ( ttl ) , morphology ( mph )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>By summing over a large collection of text-abstract pairs from the same corpus and appropriately normalizing , we create the Optimal Position Policy ( OPP ) , a ranked list that indicates in what ordinal positions in the text the high-topic-bearing sentences tend to occur .</sentence>
+				<definiendum id="0">Optimal Position Policy</definiendum>
+				<definiens id="0">a ranked list that indicates in what ordinal positions in the text the high-topic-bearing sentences tend to occur</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In method 2 , $ 2 = w c~ * df/D , where D is the total number of training documents and df is the number of documents in which the word being counted appears .</sentence>
+				<definiendum id="0">D</definiendum>
+				<definiendum id="1">df</definiendum>
+				<definiens id="0">the number of documents in which the word being counted appears</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>To implement this idea , we define a Topic Signature as a topic word ( the head ) together with a list of associated ( keyword weight ) pairs .</sentence>
+				<definiendum id="0">Topic Signature</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>Marcu uses a constraint satisfaction algorithm to assemble all the trees that legally organize the input text , and then employs several heuristics to prefer one tree over the others .</sentence>
+				<definiendum id="0">Marcu</definiendum>
+				<definiens id="0">uses a constraint satisfaction algorithm to assemble all the trees that legally organize the input text , and then employs several heuristics to prefer one tree over the others</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>With the linear combination function , SUMMARIST used to score 33.02 % ( Recall and Precision ) on an unseen test set of 82 dry-run texts .</sentence>
+				<definiendum id="0">SUMMARIST</definiendum>
+				<definiens id="0">used to score 33.02 % ( Recall and Precision ) on an unseen test set of 82 dry-run texts</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The microplanner can be built to perform its work at two levels : the textual level , in which its input is a list of sentences or sentence fragments , and its output is a compacted list of sentences , and the representational level , in which its input is couched in an abstract notation ( whether more or less explicitly syntactic depends on the implementation ) , and its output is a fairly syntactic abstract specification of each sentence .</sentence>
+				<definiendum id="0">textual level</definiendum>
+				<definiendum id="1">representational level</definiendum>
+				<definiens id="0">a list of sentences or sentence fragments</definiens>
+				<definiens id="1">a compacted list of sentences</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Microplanning is an area still largely unexplored by computational linguists .</sentence>
+				<definiendum id="0">Microplanning</definiendum>
+				<definiens id="0">an area still largely unexplored by computational linguists</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The sentence generator : The task of a sentence generator ( often called realizer ) is to convert a fairly detailed specification of one or a few clause-sized units into a grammatical sentence .</sentence>
+				<definiendum id="0">sentence generator</definiendum>
+				<definiendum id="1">realizer )</definiendum>
+				<definiens id="0">The task of a sentence generator</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The Question Game : This measure approximates the information content of S by determining how many questions drawn up about T can be answered .</sentence>
+				<definiendum id="0">Question Game</definiendum>
+				<definiens id="0">the information content of S by determining how many questions drawn up about T can be answered</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>209 The Classification Game : This measure approximates information content by testing how well people can perform a classification task on a collection of summaries Si and on full texts Tj .</sentence>
+				<definiendum id="0">Classification Game</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>After classification , the correspondence between the classifications of full texts and their corresponding summaries is measured ; the greater the agreement , the better the summary is at capturing that which causes the full text to be classified as it is .</sentence>
+				<definiendum id="0">summaries</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>As expected , the Full Text provides the most information and No Text the least .</sentence>
+				<definiendum id="0">Full Text</definiendum>
+				<definiens id="0">provides the most information and No Text the least</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Entity-Based Cross-Document Cross-Referencing using the Vector Space Model .</sentence>
+				<definiendum id="0">Entity-Based Cross-Document Cross-Referencing</definiendum>
+				<definiens id="0">using the Vector Space Model</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Automatic Text Categorization : A Concept-Based Approach .</sentence>
+				<definiendum id="0">Automatic Text Categorization</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>( LIPS ) in Department of Library and Information Science , National Taiwan University also devotes itself in researches of language , information and library sciences .</sentence>
+				<definiendum id="0">LIPS</definiendum>
+				<definiens id="0">devotes itself in researches of language , information and library sciences</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Information Extraction ( IE ) \ [ 4\ ] systems manage to extract predefined information from data or documents .</sentence>
+				<definiendum id="0">Information Extraction</definiendum>
+				<definiens id="0">systems manage to extract predefined information from data or documents</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The resultant stop list consists of 744 words , such as abaft , aboard , about , above , across , afore , after , again , against , ai n't , aint , albeit , all , almost , alone , along , alongside , already , also , although , always , am , amid , and so on .</sentence>
+				<definiendum id="0">resultant stop list</definiendum>
+				<definiens id="0">consists of 744 words , such as abaft , aboard , about , above , across , afore , after , again , against , ai n't , aint , albeit , all , almost , alone , along , alongside , already , also , although , always , am , amid , and so on</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , this time the pool consists of words from document collections of other topics .</sentence>
+				<definiendum id="0">pool</definiendum>
+				<definiens id="0">consists of words from document collections of other topics</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The IDF is shown as follows : IDF ( w ) = log ( P-O ( w ) )  ( w ) , where P is the number of documents in a collection , O ( w ) is the number of documents with word w. Nouns and verbs in well-organized texts are coherent in general .</sentence>
+				<definiendum id="0">IDF</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">the number of documents in a collection</definiens>
+				<definiens id="1">the number of documents with word w. Nouns and verbs in well-organized texts are coherent in general</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Consider the four factors together , the proposed model for adhoc task is shown as follows : CS ( n ) = pnx SNN ( n ) + pvx SNV ( n ) CS is the connective strength for a noun n , where SNN denotes the strength of a noun with other nouns , SNV the strength of a noun with other verbs , and pn and pv are the weights for SNN and SNV , respectively .</sentence>
+				<definiendum id="0">SNN</definiendum>
+				<definiens id="0">follows : CS ( n ) = pnx SNN ( n ) + pvx SNV ( n ) CS is the connective strength for a noun n , where</definiens>
+				<definiens id="1">the strength of a noun with other nouns , SNV the strength of a noun with other verbs , and pn and pv are the weights for SNN and SNV , respectively</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>IDF ( m ) × IDF ( nj ) x f ( ni , nj ) • f ( nl ) ×f ( nj ) ×D ( ni , nj ) f ( wi , wj ) is the co-occurrence of words wi and wj , and f ( w ) is the frequency of word w. In fact , f ( wi , wj ) /f ( wi ) xf ( wj ) is a normalized co-occurrence measure with the same form as the mutual information .</sentence>
+				<definiendum id="0">IDF</definiendum>
+				<definiendum id="1">nj ) x f</definiendum>
+				<definiendum id="2">wj )</definiendum>
+				<definiendum id="3">f ( w )</definiendum>
+				<definiens id="0">a normalized co-occurrence measure with the same form as the mutual information</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>m ES ( S , ) = ~CS ( n , j ) /m , j=l where m is the number of nouns in sentence Si .</sentence>
+				<definiendum id="0">m</definiendum>
+				<definiens id="0">the number of nouns in sentence Si</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The score-sentence relation determines the boundaries of discourse segments .</sentence>
+				<definiendum id="0">score-sentence relation</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>At the sentence level , SIFT employs a unified statistical process to map from words to semantic structures .</sentence>
+				<definiendum id="0">SIFT</definiendum>
+				<definiens id="0">employs a unified statistical process to map from words to semantic structures</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Separate probabilities are maintained for left ( pre ) and right ( post ) modifiers : PL ( Cm I Cp , Chp , Cm_l , Wp ) , e.g. PL ( per /np I s , vp , null , said ) PR ( Cm I Cp , Chp , Cm_l , Wp ) , e.g. PR ( null I s , vp , null , said ) Part-of-speech tags , tin , for modifiers are predicted based on the modifier , Cm , the part-ofspeech tag of the head word , th , and the head word itself , wh : P ( t m I c m , t h , w h ) , e.g. P ( per / nnp I per /np , vbd , said ) Head words , win , for modifiers are predicted based on the modifier , Cm , the part-of-speech tag 79 of the modifier word , tin , the part-of-speech tag of the head word , th , and the head word itself , Wh : e ( w m \ ] Cm , tm , th , Wh ) , e.g. P ( nance I per I np , per I nnp , vbd , said ) Finally , word features , fro , for modifiers are predicted based on the modifier , Cm , the part-ofspeech tag of the modifier word , tm , the part-ofspeech tag of the head word , th , the head word itself , wh , and whether or not the modifier head word , Win , is known or unknown .</sentence>
+				<definiendum id="0">PL</definiendum>
+				<definiendum id="1">vp</definiendum>
+				<definiens id="0">for modifiers are predicted based on the modifier</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Feature counts from the training data are used to estimate the probability of a relationship between each possible pair of entities mentioned in separate sentences in the text .</sentence>
+				<definiendum id="0">Feature</definiendum>
+				<definiens id="0">counts from the training data are used to estimate the probability of a relationship between each possible pair of entities mentioned in separate sentences in the text</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Content Features While the structural features learn general facts about the patterns in which related references occur and the text that surrounds them , the content features learn about the actual names and descriptors of entities seen to be related in the training data .</sentence>
+				<definiendum id="0">Content Features While</definiendum>
+				<definiens id="0">the structural features learn general facts about the patterns in which related references occur and the text that surrounds them , the content features learn about the actual names and descriptors of entities seen to be related in the training data</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The government training and dry run data provided 200 messages ' worth of TE and TR answer keys , Those answer keys , however , contained strings without recording where in the text they were found .</sentence>
+				<definiendum id="0">TR answer keys</definiendum>
+				<definiens id="0">contained strings without recording where in the text they were found</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The cross sentence model is the system component that tries to find further relations beyond those identified by the sentence-level model .</sentence>
+				<definiendum id="0">cross sentence model</definiendum>
+				<definiens id="0">the system component that tries to find further relations beyond those identified by the sentence-level model</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A STATISTICAL NAME-FINDER Overview of the IdentiFinder HMM Model For identifying named entities in text , BBN has developed the IdentiFinder TM trained named entity extraction system ( Bikel , et .</sentence>
+				<definiendum id="0">STATISTICAL NAME-FINDER Overview</definiendum>
+				<definiens id="0">of the IdentiFinder HMM Model For identifying named entities in text , BBN has developed the IdentiFinder TM trained named entity extraction system</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The HMM labels each word either with one of the desired classes ( e.g. , person , organization , etc. ) or with the label NOT-A-NAME ( to represent `` none of the desired classes '' ) .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">labels each word either with one of the desired classes</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Features used in the MUC-7 version of the system include several features pertaining to numeric expressions , capitalization , and membership in lists of important words ( e.g. START-OF SENTENCE END .</sentence>
+				<definiendum id="0">Features</definiendum>
+				<definiens id="0">used in the MUC-7 version of the system include several features pertaining to numeric expressions , capitalization , and membership in lists of important words</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>IdentiFinder is BBN 's trained system for identifying named entities .</sentence>
+				<definiendum id="0">IdentiFinder</definiendum>
+				<definiens id="0">BBN 's trained system for identifying named entities</definiens>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>Given three verbal forms vl in the query , v2 in the document , and v3 in the set of all verbal forms , where a verbal form is the morphological root of a verb or the verb root corresponding to a nominalization , vl is associated with v2 if at least one of the following criteria are met : ( object ( v1 ) =object ( v2 ) ) ) 153 Here p ( vi ) is the probability that vi occurs in a document and p ( vi , vj ) is the probability that vi and vj occur in the same document .</sentence>
+				<definiendum id="0">vj )</definiendum>
+				<definiens id="0">verbal forms vl in the query , v2 in the document , and v3 in the set of all verbal forms , where a verbal form is the morphological root of a verb or the verb root corresponding to a nominalization</definiens>
+				<definiens id="1">the probability that vi occurs in a document and p</definiens>
+				<definiens id="2">the probability that vi and vj occur in the same document</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Cross-document Coreference Cross-document coreference occurs when the same person , place , event , or concept is discussed in more than one text source .</sentence>
+				<definiendum id="0">Cross-document Coreference Cross-document coreference</definiendum>
+				<definiens id="0">occurs when the same person , place , event , or concept is discussed in more than one text source</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Cross-Document Coreference : The Problem Cross-document coreference is a distinct technology from Named Entity recognizers like IsoQuest 's NetOwl and IBM 's Textract because it attempts to determine whether name matches are actually the same individual ( not all John Smiths are the same ) .</sentence>
+				<definiendum id="0">Cross-Document Coreference</definiendum>
+				<definiendum id="1">Problem Cross-document coreference</definiendum>
+				<definiens id="0">a distinct technology from Named Entity recognizers like IsoQuest 's NetOwl and IBM 's Textract because it attempts to determine whether name matches are actually the same individual ( not all John Smiths are the same )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>• Next , for the coreference chain of interest within each article ( for example , the coreference chain that contains `` John Perry '' ) , the Sentence Extractor module extracts all the sentences that contain the noun phrases which form the coreference chain .</sentence>
+				<definiendum id="0">Sentence Extractor module</definiendum>
+				<definiens id="0">extracts all the sentences that contain the noun phrases which form the coreference chain</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Therefore , for doc.36 ( Figure 2 ) , since at least one of the three noun phrases ( `` John Perry , '' `` he , '' and `` Perry '' ) in the coreference chain of interest appears in each of the three sentences in the extract , the summary produced by SentenceExtractor is the extract itself .</sentence>
+				<definiendum id="0">SentenceExtractor</definiendum>
+				<definiens id="0">the extract itself</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>If $ 1 and $ 2 are the vectors for the two summaries extracted from documents D1 and D2 , then their similarity is computed as : Sire ( S1 , S2 ) = ~ w~ x w~j common terms tj where tj is a term present in both $ 1 and $ 2 , Wlj is the weight of the term tj in S~ and w2j is the weight of tj in $ 2 .</sentence>
+				<definiendum id="0">tj</definiendum>
+				<definiendum id="1">Wlj</definiendum>
+				<definiendum id="2">w2j</definiendum>
+				<definiens id="0">the weight of the term tj in S~ and</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The weight of a term tj in the vector Si for a summary is given by : t f × log 2 q_ 2 wij = x/s~ l + si2 ... +sir where tff is the frequency of the term tj in the summary , N is the total number of documents in the collection being examined , and df is the number of documents in the collection that the term tj occurs 2 2 is the cosine normalizain .</sentence>
+				<definiendum id="0">tff</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiendum id="2">df</definiendum>
+				<definiens id="0">the frequency of the term tj in the summary</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>EAGLE : An extensible architecture for general linguistic engineering .</sentence>
+				<definiendum id="0">EAGLE</definiendum>
+				<definiens id="0">An extensible architecture for general linguistic engineering</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>Smart is an implementation of the vector-space model of information retrieval ( IR ) .</sentence>
+				<definiendum id="0">Smart</definiendum>
+				<definiendum id="1">IR</definiendum>
+				<definiens id="0">an implementation of the vector-space model of information retrieval</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Empire is a research-oriented system that uses machine learning methods to quickly perform partial parsing of sentences .</sentence>
+				<definiendum id="0">Empire</definiendum>
+				<definiens id="0">a research-oriented system that uses machine learning methods to quickly perform partial parsing of sentences</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>For each TREC , NIST provides a test set of documents and questions .</sentence>
+				<definiendum id="0">NIST</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>NIST pools the individual results , judges the retrieved documents for correctness , and evaluates the results .</sentence>
+				<definiendum id="0">NIST pools</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Toulouse ( France ) ISS ( Singapore ) APL , Johns Hopkins University Lexis-Nexis MDS at RMIT , Australia MIT/IBM Almaden Research Center NEC Corporation New Mexico State U. ( 2 groups ) NSA ( Speech Research Branch ) Open Text Corporation Oregon Health Sciences U. Queens College , CUNY Rutgers University ( 2 groups ) Siemens AG SRI International Swiss Federal Inst .</sentence>
+				<definiendum id="0">Toulouse</definiendum>
+				<definiens id="0">MIT/IBM Almaden Research Center NEC Corporation New Mexico State U. ( 2 groups ) NSA ( Speech Research Branch ) Open Text Corporation Oregon Health Sciences U. Queens College</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>GE/Rutgers/SICS/Helsinki Harris Information Systems Division IBM -Almaden Research Center IBM T.J. Watson Research Center ( 2 groups ) Illinois Institute of Technology Imperial College of Science , Technology and Medicine Institut de Recherche en Informatique de Toulouse The Johns Hopkins University -APL Kasetsart University KDD R &amp; D Laboratories Keio University Lexis-Nexis Los Alamos National Laboratory Management Information Technologies , Inc .</sentence>
+				<definiendum id="0">GE/Rutgers/SICS/Helsinki Harris Information</definiendum>
+				<definiens id="0">Systems Division IBM -Almaden Research Center IBM T.J. Watson Research Center ( 2 groups</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A special issue on TREC-6 will be published in Information Processing and Management ( Voorhees , in press ) , which includes an Overview of TREC-6 ( Voorhees &amp; Harman , in press ) as well as an analysis of the TREC effort by Sparck Jones ( in press ) .</sentence>
+				<definiendum id="0">Management ( Voorhees</definiendum>
+				<definiens id="0">includes an Overview of TREC-6 ( Voorhees &amp; Harman , in press ) as well as an analysis of the TREC effort by Sparck Jones ( in press )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Participants are given a set of topics and a document set that includes known relevant documents for those topics .</sentence>
+				<definiendum id="0">Participants</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>First , there was a desire to allow a wide range of query construction methods by keeping the topic ( the need statement ) distinct from the query ( the actual text submitted to the system ) .</sentence>
+				<definiendum id="0">topic</definiendum>
+				<definiens id="0">the need statement ) distinct from the query ( the actual text submitted to the system )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Words are strings of removed and no stemming was performed .</sentence>
+				<definiendum id="0">Words</definiendum>
+				<definiens id="0">strings of removed and no stemming was performed</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Each assessor comes to NIST with ideas for topics based on his or her own interests , and searches the ad hoc collection ( looking at approximately 100 documents per topic ) to estimate the likely number of relevant documents per candidate topic .</sentence>
+				<definiendum id="0">assessor</definiendum>
+				<definiens id="0">comes to NIST with ideas for topics based on his or her own interests , and searches the ad hoc collection ( looking at approximately 100 documents per topic ) to estimate the likely number of relevant documents per candidate topic</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Completeness measures the degree to which all the relevant documents for a topic have been found ; consistency measures the degree to which the assessor has marked all the `` truly '' relevant documents relevant and the `` truly '' irrelevant documents irrelevant .</sentence>
+				<definiendum id="0">Completeness</definiendum>
+				<definiens id="0">measures the degree to which all the relevant documents for a topic have been found</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>&lt; narr &gt; Narrative : A relevant document must provide information on the government 's responsibility to make AMTRAK an economically viable entity .</sentence>
+				<definiendum id="0">Narrative</definiendum>
+				<definiens id="0">A relevant document must provide information on the government 's responsibility to make AMTRAK an economically viable entity</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The x axis plots a fixed set of recall levels where number o/ relevant items retrieved Recall = total number o/ relevant items in the collection '' The y axis plots precision values at the given recall level , where precision is calculated by number o/ relevant items retrieved Precision -total number o\ ] items retrieved These curves represent averages over the 50 topics .</sentence>
+				<definiendum id="0">x axis</definiendum>
+				<definiens id="0">plots a fixed set of recall levels where number o/ relevant items retrieved Recall = total number o/ relevant items in the collection</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>ETH used the OKAPI RSV values to formally motivate a series of experi256 Organization Okapi group AT &amp; T Labs Research U. Mass RMIT/UM/CSIRO BBN TwentyOne CUNY Cornell/SabIR T , D , N T , D , N T , D , N T , D , N Topic Parts D + T T , D , N 0.281 T , D 0.296 T , D 0.281 T , D , N 0.254 T only I Full Topic Comments fused run-0.296 title filtered run-0.282 with phrases-0.272 *description only Table 9 : TREC-7 Performance using variations in topic length .</sentence>
+				<definiendum id="0">ETH</definiendum>
+				<definiens id="0">used the OKAPI RSV values to formally motivate a series of experi256 Organization Okapi group AT &amp; T Labs Research U. Mass RMIT/UM/CSIRO BBN TwentyOne CUNY Cornell/SabIR T , D</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>• AT &amp; T Labs Research ( Singhal , 1998 ) added the machine learning technique of boosting to the query refinement phase of the Cornell TREC-5 routing algorithm ( which includes the use of word pairs , DFO optimization , and query zones ) .</sentence>
+				<definiendum id="0">Cornell TREC-5 routing algorithm</definiendum>
+				<definiens id="0">includes the use of word pairs , DFO optimization , and query zones )</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Track Track reports ( Sch~uble ~ Sheridan , 1998 ; Braschler , Krause , Peters , &amp; Sch~uble , 1999 ) The CLIR task focuses on searching for documents in one language using topics in a different language .</sentence>
+				<definiendum id="0">CLIR task</definiendum>
+				<definiens id="0">focuses on searching for documents in one language using topics in a different language</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Participants searched for documents in one target language using topics written in a different language .</sentence>
+				<definiendum id="0">Participants</definiendum>
+				<definiens id="0">searched for documents in one target language using topics written in a different language</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>In TREC-6 two different utility functions were used : F1 = 3R + 2N + F2 = 3R +-N +-R261 where R + is the number of relevant documents that are retrieved , Ris the number of relevant documents that are not retrieved , and N + is the number of nonrelevant documents that are retrieved .</sentence>
+				<definiendum id="0">N +</definiendum>
+				<definiens id="0">+-N +-R261 where R + is the number of relevant documents that are retrieved , Ris the number of relevant documents that are not retrieved</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>A second measure , average set precision ( ASP ) defined as the product of recall and precision , was therefore introduced in TREC-6 .</sentence>
+				<definiendum id="0">average set precision</definiendum>
+				<definiendum id="1">ASP</definiendum>
+				<definiens id="0">the product of recall and precision , was therefore introduced in TREC-6</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Sentence : an English sentence based on the topic statement and the relevant documents .</sentence>
+				<definiendum id="0">Sentence</definiendum>
+				<definiens id="0">an English sentence based on the topic statement and the relevant documents</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The TREC-6 document set was a set of transcripts from 50 hours of broadcast news originally collected by the Linguistic Data Consortium for DARPA Hub4 speech recognition evaluations ( Garofolq , Fiscus , &amp; Fisher , 1997 ) .</sentence>
+				<definiendum id="0">speech recognition evaluations</definiendum>
+				<definiens id="0">a set of transcripts from 50 hours of broadcast news originally collected by the Linguistic Data Consortium for DARPA Hub4</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>The document collection consisted of transcripts of approximately 100 hours of broadcast news programs , representing about 3000 news stories .</sentence>
+				<definiendum id="0">document collection</definiendum>
+				<definiens id="0">consisted of transcripts of approximately 100 hours of broadcast news programs , representing about 3000 news stories</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Participants worked with four different versions of the transcripts : the reference transcripts , which were hand-produced and assumed to be perfect ; the first baseline transcripts , which were produced by a baseline speech recognition system running at about 35 % word error rate ; a second set of baseline transcripts , produced by the baseline recognizer running at about 50 % word error rate ; and the recognizer transcripts , which were produced by the participant 's own recognizer system .</sentence>
+				<definiendum id="0">recognizer transcripts</definiendum>
+				<definiens id="0">were produced by the participant 's own recognizer system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>The NLToolset is a proprietary text processing product , owned by Lockheed Martin Corporation .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">a proprietary text processing product , owned by Lockheed Martin Corporation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The NLToolset The NLToolset is a framework of tools , techniques , and resources designed for building text processing applications .</sentence>
+				<definiendum id="0">NLToolset The NLToolset</definiendum>
+				<definiens id="0">a framework of tools , techniques , and resources designed for building text processing applications</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The NLToolset applies lexico-semantic pattern matching in the form of basic structural patterns ( possible-title firstname middleinitial lastname ) , as well as contextual knowledge ( possible-person-name , who is X years old ) .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">applies lexico-semantic pattern matching in the form of basic structural patterns ( possible-title firstname middleinitial lastname</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The application fills a template which holds information about the type of document ( document identification , 45 classification , and source ) , the entities involved ( seizing and trafficking organizations , arrested persons ) , the drug information ( amount , type , and method of concealment ) , the platform information ( name and type of vehicle involved ) , the relevant locations ( origin and destination of drugs , and place of seizure ) , and the date of the event .</sentence>
+				<definiendum id="0">drug information</definiendum>
+				<definiens id="0">a template which holds information about the type of document ( document identification , 45 classification , and source</definiens>
+				<definiens id="1">the relevant locations ( origin and destination of drugs , and place of seizure )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The NLToolset stores each newly recognized named entity , along with its computed variations and acronyms .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>PRENOMINAL : the defense contractor , Lockheed Martin Corporation , NAME-MODIFIED HEAD NOUN : the Lockheed Martin conglomerate These descriptive phrases can make up a document-specific ontology , or semantic filter , for the named entity which can be used to link isolated noun phrase references .</sentence>
+				<definiendum id="0">PRENOMINAL</definiendum>
+				<definiens id="0">the defense contractor</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>BlockFinder , a prototype of a new NLToolset tool , uses two-dimensional patterns to find the edges in a grid of text .</sentence>
+				<definiendum id="0">BlockFinder</definiendum>
+				<definiens id="0">uses two-dimensional patterns to find the edges in a grid of text</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The BlockFinder is the component of NLToolset that looks at a text file from a two dimensional perspective .</sentence>
+				<definiendum id="0">BlockFinder</definiendum>
+				<definiens id="0">the component of NLToolset that looks at a text file from a two dimensional perspective</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Tab characters insert white space up to the next eight character tab stop .</sentence>
+				<definiendum id="0">Tab characters</definiendum>
+				<definiens id="0">insert white space up to the next eight character tab stop</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Event Merging Event merging is a challenging part of extracting complex scenario templates .</sentence>
+				<definiendum id="0">Event Merging Event merging</definiendum>
+				<definiens id="0">a challenging part of extracting complex scenario templates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>Test Collection SUMMAC administrators selected training and test queries for Tipster Phase III participants to use as a practice data set .</sentence>
+				<definiendum id="0">Test Collection SUMMAC</definiendum>
+				<definiens id="0">administrators selected training and test queries for Tipster Phase III participants to use as a practice data set</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Michael Gordon , a New York lawyer who represents Diamond Shamrock , which has since split into several entities , dismissed the importance of the suit and contended those veterans whose symptoms developed after the settlement can also make claims against the 1984 settlement fund , which has grown over the years to more than $ 200 million .</sentence>
+				<definiendum id="0">Diamond Shamrock</definiendum>
+				<definiens id="0">has grown over the years to more than $ 200 million</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>DR-LINK is a natural language information retrieval and analysis system which returns relevance ranked result sets in response to a query .</sentence>
+				<definiendum id="0">DR-LINK</definiendum>
+				<definiens id="0">a natural language information retrieval and analysis system which returns relevance ranked result sets in response to a query</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>These outputs include : complex nominals , which are selected noun/adjective phrases ( information system , running shoos ) ; proper nouns with associated categories ( Country : India ; Company : Analog Devices ) ; subject fields which are metadata subject codes describing documents ( Information Technology ; Electricity/Electronics ) ; and the selection of the most relevant section of a document in response to a query .</sentence>
+				<definiendum id="0">noun/adjective phrases</definiendum>
+				<definiens id="0">information system , running shoos ) ; proper nouns with associated categories ( Country : India ; Company : Analog Devices ) ; subject fields which are metadata subject codes describing documents ( Information Technology ; Electricity/Electronics ) ; and the selection of the most relevant section of a document in response to a query</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A second , more comprehensive summary , the Detailed Summary , uses SFCs with a frequency of 3 or greater , PNs and CNs with a frequency of 2 or greater , and the most relevant paragraphs that do not contain duplicate information .</sentence>
+				<definiendum id="0">Detailed Summary</definiendum>
+				<definiens id="0">uses SFCs with a frequency of 3 or greater , PNs and CNs with a frequency of 2 or greater , and the most relevant paragraphs that do not contain duplicate information</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>A CPSL grammar consists of three parts : a macro definition part , a declarations part , and a rule definition part .</sentence>
+				<definiendum id="0">CPSL grammar</definiendum>
+				<definiens id="0">consists of three parts : a macro definition part , a declarations part , and a rule definition part</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Finally , the interpreter moves the cursor past the text matched by the main body part of the rule pattern part .</sentence>
+				<definiendum id="0">interpreter</definiendum>
+				<definiens id="0">moves the cursor past the text matched by the main body part of the rule pattern part</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The pattern part of the rules consists of a prefix pattern , a body pattern , and a postfix pattern .</sentence>
+				<definiendum id="0">pattern part of the rules</definiendum>
+				<definiens id="0">consists of a prefix pattern , a body pattern , and a postfix pattern</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The &lt; rel &gt; element is one of the relations appropriate for the attribute type .</sentence>
+				<definiendum id="0">&lt; rel &gt; element</definiendum>
+				<definiens id="0">one of the relations appropriate for the attribute type</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A pattern element consists of constraints in the above form , enclosed in brace characters .</sentence>
+				<definiendum id="0">pattern element</definiendum>
+				<definiens id="0">consists of constraints in the above form , enclosed in brace characters</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An abbreviation allows an entire pattern element to be replaced by a quoted string .</sentence>
+				<definiendum id="0">abbreviation</definiendum>
+				<definiens id="0">allows an entire pattern element to be replaced by a quoted string</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>CPSL includes two assignment operators : `` = '' and `` += '' .</sentence>
+				<definiendum id="0">CPSL</definiendum>
+				<definiens id="0">includes two assignment operators : `` = '' and</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The former operator is the basic assignment operator .</sentence>
+				<definiendum id="0">former operator</definiendum>
+				<definiens id="0">the basic assignment operator</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>CPSL macros are pure text substitution macros with the following twist : each macro consists of a pattern part and an action part , just like a CPSL rule .</sentence>
+				<definiendum id="0">CPSL macros</definiendum>
+				<definiens id="0">pure text substitution macros with the following twist : each macro consists of a pattern part and an action part</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The ACP is a partial step toward the toolbox ; however , more tools are needed .</sentence>
+				<definiendum id="0">ACP</definiendum>
+				<definiens id="0">a partial step toward the toolbox</definiens>
+			</definition>
+</paper>
+
+	</volume>

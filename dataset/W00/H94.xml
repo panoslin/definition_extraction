@@ -1,0 +1,1775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="H94">
+
+		<paper id="1089">
+</paper>
+
+		<paper id="1085">
+			<definition id="0">
+				<sentence>Collocations are word patterns that occur frequently in language ; intuitively , if word A is present , there is a high probability that word B is also present .</sentence>
+				<definiendum id="0">Collocations</definiendum>
+				<definiens id="0">word patterns that occur frequently in language ; intuitively , if word A is present</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>~ I 17¢ ) P ( X ) is maximum , where P ( X \ ] W ) is the probability of observing X when W is the true word sequence , P ( VV ) is the a priori probability of W and P ( X ) is the probability of string X. The values for each of the P ( Xi \ [ Wi ) are known as the channel ( or confusion ) probabilities and can be estimated empirically .</sentence>
+				<definiendum id="0">P ( X</definiendum>
+				<definiendum id="1">P ( X \ ] W )</definiendum>
+				<definiendum id="2">P ( VV )</definiendum>
+				<definiens id="0">the probability of observing X when W is the true word sequence</definiens>
+				<definiens id="1">the a priori probability of W and P ( X ) is the probability of string X. The values for each of the P ( Xi \ [ Wi ) are known as the channel ( or confusion ) probabilities and can be estimated empirically</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In this situation , p ( wt I wt-1 ) becomes : p ( w , I w , _l ) = p ( ~ , , I C ( w , ) ) p ( C ( w , ) I C ( w , _ , ) ) where p ( C ( wt ) I C ( wt-1 ) ) is the probability to get to the class C ( wt ) following the class C ( wt-1 ) and p ( wt I C ( wt ) ) is the probability to get the word wt among the words of the class C ( wt ) .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiendum id="1">class C ( wt</definiendum>
+				<definiens id="0">the probability to get the word wt among the words of the</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Word probabilities are defined ( and calculated during training ) as : # ( Word : Tag ) P ( Word \ [ Tag ) = # ( AnyWord : Tag ) The above statistics have been computed for the e-mail corpus .</sentence>
+				<definiendum id="0">Word probabilities</definiendum>
+				<definiens id="0">calculated during training ) as : # ( Word : Tag ) P ( Word \ [ Tag ) = # ( AnyWord : Tag ) The above statistics have been computed for the e-mail corpus</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Viterbi algorithm allows the best path to be selected without explicitly enumerating all possible tag sequences .</sentence>
+				<definiendum id="0">Viterbi algorithm</definiendum>
+				<definiens id="0">allows the best path to be selected without explicitly enumerating all possible tag sequences</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>430 WORD LATTICE Actual sentence : he/PP ItWR word choices : ha he Word/Tag lattice : Selected sentence : he/PP wiWMD slgn/VB the/DT letter/NN sign tie letter wider , h _ r- : -- ZT : Li -- 'l I \ [ `` ~~_~'_~lm_ .</sentence>
+				<definiendum id="0">WORD LATTICE Actual sentence</definiendum>
+				<definiendum id="1">ZT</definiendum>
+				<definiens id="0">he/PP ItWR word choices : ha he Word/Tag lattice : Selected sentence : he/PP wiWMD slgn/VB the/DT letter/NN sign tie letter wider , h _ r- : --</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>This allows us to evaluate understanding in terms of getting the right answer for a specific task , as is done in the Air Travel In formation ( ATIS ) system , which evaluates language input/database answer output pairs .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">evaluates language input/database answer output pairs</definiens>
+			</definition>
+</paper>
+
+		<paper id="1074">
+			<definition id="0">
+				<sentence>We employ a Laplacian estimator if phone i occurs a total of Ni times and is recognized as phone j a total of Ni~ times , the estimated probability of such a substitution is psus ( jli ) _ N~j + 1 Ni+M where M is the size of the phonetic alphabet ( M -- -39 for our phone set . )</sentence>
+				<definiendum id="0">M</definiendum>
+				<definiens id="0">the size of the phonetic alphabet</definiens>
+			</definition>
+</paper>
+
+		<paper id="1100">
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>ABSTRACT Information about words -- their pronunciation , syntax and meaning -- is a crucial and costly part of human language technology .</sentence>
+				<definiendum id="0">ABSTRACT Information</definiendum>
+				<definiens id="0">a crucial and costly part of human language technology</definiens>
+			</definition>
+</paper>
+
+		<paper id="1052">
+			<definition id="0">
+				<sentence>Current treebanks are a collection of n-ary branching trees , with each node in a tree labeled by either a non-terminal label or a part-of-speech label ( called a tag ) .</sentence>
+				<definiendum id="0">Current treebanks</definiendum>
+				<definiens id="0">a collection of n-ary branching trees , with each node in a tree labeled by either a non-terminal label or a part-of-speech label ( called a tag )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A parse derivation is constructed ' by the following 2-step algorithm : • select which node to extend among active nodes using p ( active = di \ [ context ) , • then either assign a name to the selected node whether it is tagging or labelling a node ( constituent ) with a nonterminal label using p ( la , \ [ context ) , or extend the selected node ( which adds an edge to the parse graph ) using p ( ed , \ [ contezt ) .</sentence>
+				<definiendum id="0">parse derivation</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The probability of a derivation of a parse tree is the product of the probabilities of each of the feature value assignments in that derivation and the probability of each active node selection made in that derivation : p ( T , dlw ) = IX X &lt; j &lt; Idl wh~e = p ( active = dj I conte t ( di-1 ) ) p ( wj I ont t ( dl ) ) where xj is either the name lj of node dj or its extension ej and d~ is the derivation up to thej-th step. The probability of a parse tree given the sentence is the sum over all derivations of that parse tree : p ( T I w~ ) = ~p ( T , d l w~ ) d Due to computational complexity , we restrict the number of bottom-up derivations we consider by using a window of n active nodes. For a window of 2 , we can only choose either of the two leftmost nodes in the above process. So for the parse in Figure 1 , we only get 4 derivations with a derivation window of 2. Eesh charscter used by the computer Is listed Figure 3 : Treebank analysis encoded using feature values. Each internal node contains , from top to bottom , a label , word , tag , and extension value , and each leaf node contains a word , tag , and extension value. Node Representation We do not use all the subtree information rooted at a node N to condition our probabilistic models. But rather we have an equivalence class defined by the node name ( if it 's available ) , we also have for constituent nodes , a word , along with its corresponding part-of-speech tag , that is selected from each constituent to act as a lexical representative. The lexical representative from a constituent corresponds loosely to the linguistic notion of a head word. For example , the lexical representative of a noun phrase is the rightmost noun , and the lexical representative of a verb phrase is the leftmost non-auxiliary verb. However , the correlation to linguistic theory ends there. The deterministic rules ( one per label ) which select the representative word from each constituent were developed in the better part of an hour , in keeping with the philosophy of avoiding excessive dependence on carefully crafted rule-based methods. Figure 3 illustrates the word and tag features propagated along the parse tree for an example sentence. Each internal node is represented as a 4-feature vector : label , head word , head tag , and extension. Notation In the remainder of this section , the following notational scheme will be used. wi and ti refer to the word corresponding to the ith token in the sentence mad its part-of274 speech tag , respectively. N ~ refers to the 4-tuple of feature values at the kth node in the current parse state , where the nodes are numbered from left to right. N/~ , N~ , Nt k , and N~ refer , respectively , to the label , word , tag , and extension feature values at the node k. N ¢j refers to the jth child of the current node where the leftmost child is child 1. N e-~ refers to the jth child of the current node where the rightmost child is child 1. The symbol Q , te refers to miscellaneous questions about the current state of the parser , such as the number of nodes in the sentence and the number of children of a particular node. The Tagging Model The tag feature value prediction is conditioned on the two words to the left , the two words to the right , and all information at two nodes to the left and two nodes to the right. p ( ti \ [ contezt ) ~ p ( t~ \ [ w~wi-twi-2wi+twi+2t~-tti-2 t~+lti+2Nk-l N~-2N~+t N~+ 2 ) The Extension Model The extension feature value prediction is conditioned on the node information at the node being extended , all information from two nodes to the left and two nodes to the right , and the two leftmost children and the two rightmost children of the current node ( these will be redundant if there are less than 4 children at a node ) . v ( N I o=te t ) The Label Model The label feature value prediction is conditioned on questions about the presence of selected words in the constituent , all information from two nodes to the left and two nodes to the right , and the two leftmost children and the two rightmost children of the current node. p ( N~ I contezt ) ~ p ( N~ I Q ~Nk-INk-2Nk+INk+2N¢I NC~NC-~NC-~ ) questions about the history. We have described in earlier papers , \ [ 6 , 4\ ] , how we use mutual information clustering of words to define a set of classes on words that form the basis of the binary questions about words in the history. We also have defined by the same mutual information on the bigram tag distribution classes for binary questions on tags. We have identified by hand a set of classes for the binary questions on the labels. The decision trees are grown using the standard methods described in \ [ 5\ ] . In the case of hidden derivations , the forward-backward algorithms can be used to get partial counts for the different events used in building the decision trees. The proposed history-based model can not be estimated by direct frequency counts because the model contains a hidden component : the derivation model. The order in which the treebank parse trees were constructed is not encoded in the treebank , but the parser assigns probabilities to specific derivations of a parse tree. A forward-backward ( FB ) algorithm can be easily defined to compute a posteriori probabilities for. the states. These probabilities can then be used to define counts for the different events that are used to build the decision trees. To train the parser , all legal derivations of a parse tree ( according to the derivational window constraint ) are computed. ~p ( N~\ [ N~NtkNpN~N~-iN ~-2 Each derivation can be viewed as a path from a common iniNk+iNk+2NC~NC~NC-lNC-~ } ial state , the words in the sentence , to a common final state , the completed parse tree. These derivations form a lattice of states , since different derivations of the same parse tree inevitably merge. For instance , the state created by tagging the first word in the sentence and then the second is the same state created by tagging the second word and then the first. These two derivations of this state have different probability estimates , but the state can be viewed as one state for future actions , since it represents a single history. The Derivation Model In initial experiments , the active node selection process was modelled by a uniform ( p ( active ) = 1/n ) model with n = 2. Our intuition was that by parametrizing the choice of which active node to process , we could improve the parser by delaying labeling and extension steps when the partial parse indicates ambiguity. We used the current node information and the node information available within the five node window. Algorithm Each leaf of decision tree represents the distribution of a class of histories. The parameters of these distributions can be updated using the F-B algorithm. Initially , the models in the parser are assumed to be uniform. Accordingly , each event in each derivation contributes equally to tlm process which selects which questions to ask about the history in order to predict each feature value. However , k k ~ 1 k ~ ~+1 ~ 2theunif°rlnm°delis certainly not avery good model of p ( active I contezt ) , ~ p ( active \ [ Q `` N N `` N N N `` -~ ) feature value assignments. And , since some derivations of a parse tree are better than others , the events generated by Statistical Decision Trees The above probability distributhe better derivations should contribute more to the decision tion are each modeled as a statistical decision tree with binary tree-growing process. The decision trees grown using the 275 uniform as ! ; umption collectively form a parsing model , MI. The F-B count for each event in the training corpus using MI can be used to grow a new set of decision trees , M2. The decision trees in M2 are constructed in a way which gives more weight to the events which contributed most to the probability of the corpus. However , there is no guarantee that M2 is a betl.er model than MI. It is n't even guaranteed that the probability of the training corpus according to M2 is higher than the probability according to MI. However , based on experimental results , the use of F-B counts in the construction of new decision trees is effective in acquiring a better model of the data. Thereis no &gt; way of knowing , apriori , which combination of the previously mentioned applications of the forward-backward algorithm will produce the best model .</sentence>
+				<definiendum id="0">probability of a derivation of a parse tree</definiendum>
+				<definiendum id="1">xj</definiendum>
+				<definiendum id="2">d~</definiendum>
+				<definiendum id="3">noun phrase</definiendum>
+				<definiens id="0">the product of the probabilities of each of the feature value assignments in that derivation and the probability of each active node selection made in that derivation : p ( T , dlw ) = IX X &lt; j &lt; Idl wh~e = p ( active = dj I conte t ( di-1 ) ) p ( wj I ont t ( dl ) ) where</definiens>
+				<definiens id="1">the derivation up to thej-th step. The probability of a parse tree given the sentence is the sum over all derivations of that parse tree : p ( T I w~ ) = ~p ( T , d l w~ ) d Due to computational complexity , we restrict the number of bottom-up derivations we consider by using a window of n active nodes. For a window of 2 , we can only choose either of the two leftmost nodes in the above process. So for the parse in Figure 1 , we only get 4 derivations with a derivation window of 2. Eesh charscter used by the computer Is listed Figure 3 : Treebank analysis encoded using feature values. Each internal node contains , from top to bottom , a label , word , tag , and extension value , and each leaf node contains a word , tag , and extension value. Node Representation We do not use all the subtree information rooted at a node N to condition our probabilistic models. But rather we have an equivalence class defined by the node name ( if it 's available ) , we also have for constituent nodes , a word , along with its corresponding part-of-speech tag , that is selected from each constituent to act as a lexical representative. The lexical representative from a constituent corresponds loosely to the linguistic notion of a head word. For example , the lexical representative of a</definiens>
+				<definiens id="2">the rightmost noun , and the lexical representative of a verb phrase is the leftmost non-auxiliary verb. However , the correlation to linguistic theory ends there. The deterministic rules ( one per label ) which select the representative word from each constituent were developed in the better part of an hour , in keeping with the philosophy of avoiding excessive dependence on carefully crafted rule-based methods. Figure 3 illustrates the word and tag features propagated along the parse tree for an example sentence. Each internal node is represented as a 4-feature vector : label , head word , head tag , and extension. Notation In the remainder of this section , the following notational scheme will be used. wi and ti refer to the word corresponding to the ith token in the sentence mad its part-of274 speech tag</definiens>
+				<definiens id="3">the 4-tuple of feature values at the kth node in the current parse state , where the nodes are numbered from left to right. N/~ , N~ , Nt k , and N~ refer , respectively , to the label , word , tag , and extension feature values at the node k. N ¢j refers to the jth child of the current node where the leftmost child is child 1. N e-~ refers to the jth child of the current node where the rightmost child is child 1. The symbol Q , te refers to miscellaneous questions about the current state of the parser , such as the number of nodes in the sentence and the number of children of a particular node. The Tagging Model The tag feature value prediction is conditioned on the two words to the left , the two words to the right , and all information at two nodes to the left and two nodes to the right. p ( ti \ [ contezt ) ~ p ( t~ \ [ w~wi-twi-2wi+twi+2t~-tti-2 t~+lti+2Nk-l N~-2N~+t N~+ 2 ) The Extension Model The extension feature value prediction is conditioned on the node information at the node being extended , all information from two nodes to the left and two nodes to the right , and the two leftmost children and the two rightmost children of the current node ( these will be redundant if there are less than 4 children at a node ) . v ( N I o=te t ) The Label Model The label feature value prediction is conditioned on questions about the presence of selected words in the constituent , all information from two nodes to the left and two nodes to the right , and the two leftmost children and the two rightmost children of the current node. p ( N~ I contezt ) ~ p ( N~ I Q ~Nk-INk-2Nk+INk+2N¢I NC~NC-~NC-~ ) questions about the history. We have described in earlier papers , \ [ 6 , 4\ ] , how we use mutual information clustering of words to define a set of classes on words that form the basis of the binary questions about words in the history. We also have defined by the same mutual information on the bigram tag distribution classes for binary questions on tags. We have identified by hand a set of classes for the binary questions on the labels. The decision trees are grown using the standard methods described in \ [ 5\ ] . In the case of hidden derivations , the forward-backward algorithms can be used to get partial counts for the different events used in building the decision trees. The proposed history-based model can not be estimated by direct frequency counts because the model contains a hidden component : the derivation model. The order in which the treebank parse trees were constructed is not encoded in the treebank , but the parser assigns probabilities to specific derivations of a parse tree. A forward-backward ( FB ) algorithm can be easily defined to compute a posteriori probabilities for. the states. These probabilities can then be used to define counts for the different events that are used to build the decision trees. To train the parser , all legal derivations of a parse tree ( according to the derivational window constraint ) are computed. ~p ( N~\ [ N~NtkNpN~N~-iN ~-2 Each derivation can be viewed as a path from a common iniNk+iNk+2NC~NC~NC-lNC-~ } ial state , the words in the sentence , to a common final state , the completed parse tree. These derivations form a lattice of states , since different derivations of the same parse tree inevitably merge. For instance , the state created by tagging the first word in the sentence and then the second is the same state created by tagging the second word and then the first. These two derivations of this state have different probability estimates , but the state can be viewed as one state for future actions , since it represents a single history. The Derivation Model In initial experiments , the active node selection process was modelled by a uniform ( p ( active ) = 1/n ) model with n = 2. Our intuition was that by parametrizing the choice of which active node to process , we could improve the parser by delaying labeling and extension steps when the partial parse indicates ambiguity. We used the current node information and the node information available within the five node window. Algorithm Each leaf of decision tree represents the distribution of a class of histories. The parameters of these distributions can be updated using the F-B algorithm. Initially , the models in the parser are assumed to be uniform. Accordingly , each event in each derivation contributes equally to tlm process which selects which questions to ask about the history in order to predict each feature value. However , k k ~ 1 k ~ ~+1 ~ 2theunif°rlnm°delis certainly not avery good model of p ( active I contezt ) , ~ p ( active \ [ Q `` N N `` N N N `` -~ ) feature value assignments. And , since some derivations of a parse tree are better than others , the events generated by Statistical Decision Trees The above probability distributhe better derivations should contribute more to the decision tion are each modeled as a statistical decision tree with binary tree-growing process. The decision trees grown using the 275 uniform as ! ; umption collectively form a parsing model , MI. The F-B count for each event in the training corpus using MI can be used to grow a new set of decision trees , M2. The decision trees in M2 are constructed in a way which gives more weight to the events which contributed most to the probability of the corpus. However , there is no guarantee that M2 is a betl.er model than MI. It is n't even guaranteed that the probability of the training corpus according to M2 is higher than the probability according to MI. However , based on experimental results , the use of F-B counts in the construction of new decision trees is effective in acquiring a better model of the data. Thereis no &gt; way of knowing , apriori , which combination of the previously mentioned applications of the forward-backward algorithm will produce the best model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The major classes ( adjectives , nouns and verbs ) are marked for features and complements ( subcategorization frames ) , examples of which can be seen in Figure 1 .</sentence>
+				<definiendum id="0">subcategorization frames</definiendum>
+				<definiens id="0">adjectives , nouns and verbs</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>Theproposedlanguagemodel uses the dependencies within adjacent words as local constraints in the same way as conventional word N-gram models .</sentence>
+				<definiendum id="0">Theproposedlanguagemodel</definiendum>
+				<definiens id="0">uses the dependencies within adjacent words as local constraints in the same way as conventional word N-gram models</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Japanese A common Japanese sentence consists of phrases ( `` bunsetsu '' ) , each of which typically has one content word and optional function words .</sentence>
+				<definiendum id="0">Japanese sentence</definiendum>
+				<definiens id="0">consists of phrases ( `` bunsetsu '' ) , each of which typically has one content word and optional function words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>word are mutually independent when they are located noncontiguously in a sentence , i.e. , P ( wi If i-l ) = e ( wi ) ( 8 ) if wi-1 and wi are content words , and P ( wi \ [ Ci-l ) = P ( wi ) ( 9 ) if wi-~ and Wi are function words .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">if wi-1 and wi are content words</definiens>
+				<definiens id="1">( wi \ [ Ci-l ) = P ( wi ) ( 9 ) if wi-~ and Wi are function words</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>To be more exact , Pc ( f i ) is the probability that the i-th word isfl knowing that it is a function word , and PG ( fi \ [ f~-l ) is the probability that the i-th word isfi given that the most recent function word isfi-1 and also knowing that the i-th word is a function word .</sentence>
+				<definiendum id="0">Pc ( f i )</definiendum>
+				<definiens id="0">the probability that the i-th word isfl knowing that it is a function word</definiens>
+				<definiens id="1">the probability that the i-th word isfi given that the most recent function word isfi-1 and also knowing that the i-th word is a function word</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In other words , Pc ( ' ) denotes a probability in the function ( or content ) word sequences obtained by extracting only function ( or content ) words from sentences .</sentence>
+				<definiendum id="0">Pc ( ' )</definiendum>
+				<definiens id="0">a probability in the function ( or content ) word sequences obtained by extracting only function ( or content ) words from sentences</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The number of parameters in each model is summarized in Table 1 , where V , Vc , Vf is the vocabulary size , the number of content words , and the number of function words , respectively ( V = Vc + Vf ) .</sentence>
+				<definiendum id="0">Vf</definiendum>
+				<definiens id="0">the vocabulary size , the number of content words</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>V : vocabulary size ( = Vc + Vf ) Vc : number of content words Vf : number of function words Table 1 : Number of parameters of each model 90 Figure 4 : Network representation of the proposed language model Task Vocabulary Size Speaker Test Data International conference registration 1,500 words 1 male speaker 261 sentences ( 7.0 words/sentence , on average ) Table 2 : Experimental conditions for speech recognition The proposed model was compared with the word bigram and trigram models in their perplexities for test sentences and in sentence recognition rates .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">vocabulary size ( = Vc + Vf</definiens>
+				<definiens id="1">compared with the word bigram and trigram models in their perplexities for test sentences and in sentence recognition rates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>Candide uses methods of information theory and statistics to develop a probability model of the translation process .</sentence>
+				<definiendum id="0">Candide</definiendum>
+				<definiens id="0">uses methods of information theory and statistics to develop a probability model of the translation process</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Candide is an experimental computer program , now in its fifth year of development at IBM , for translation of French text to Enghsh text .</sentence>
+				<definiendum id="0">Candide</definiendum>
+				<definiens id="0">an experimental computer program</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A probability model is a mathematical formula that purports to express the chance of some observation .</sentence>
+				<definiendum id="0">probability model</definiendum>
+				<definiens id="0">a mathematical formula that purports to express the chance of some observation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A parametric model is a probability model with adjustable parameters , which can be changed to make the model better match some body of data .</sentence>
+				<definiendum id="0">parametric model</definiendum>
+				<definiens id="0">a probability model with adjustable parameters , which can be changed to make the model better match some body of data</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The quantity Prs ( c ) , computed according to some formula involving c and 0 , is called the hkelihood 157 of c. It is the model 's assignment of probability to the observation sequence c , according to the current parameter values attaints on the dements of 0 to ensure that Pr0 ( c ) reaUy is a probability distribution -- that is , it is always a real vahe in \ [ 0 , 1\ ] , and for fixed 0 the sum ~c Pr0 ( c ) over all possible c vectors is 1 .</sentence>
+				<definiendum id="0">reaUy</definiendum>
+				<definiens id="0">c ) , computed according to some formula involving c and 0 , is called the hkelihood 157 of c. It is the model 's assignment of probability to the observation sequence c , according to the current parameter values attaints on the dements of 0 to ensure that Pr0 ( c )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A language model Pr ( e ) gives the probability that e would appear in grammatical English text .</sentence>
+				<definiendum id="0">language model Pr ( e )</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>For this reason , we employ the technique of deleted interpolation \ [ 6\ ] : we express Pr ( ek\ [ ek-2e~-t ) as a linear combination of the trigram probability T ( ek l ek-2ek-t ) , the bigram probability B ( ekleh_t ) , the unigram probability U ( ek ) , and the uniform probability 1/IEI .</sentence>
+				<definiendum id="0">bigram probability B</definiendum>
+				<definiens id="0">the technique of deleted interpolation \ [ 6\ ] : we express Pr ( ek\ [ ek-2e~-t ) as a linear combination of the trigram probability T ( ek l ek-2ek-t</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>we introduce an alignment variable aj for each position j of f ; aj is the position in e to which the jth word of f is aligned .</sentence>
+				<definiendum id="0">aj</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>Transman presents the user with an automated dictionary , a text editor , and parallel views of the French source and the English fully-automatic translation .</sentence>
+				<definiendum id="0">Transman</definiendum>
+				<definiens id="0">presents the user with an automated dictionary , a text editor , and parallel views of the French source and the English fully-automatic translation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1093">
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>Consider , for example , the following respouses made by the combined BU-BBN recognition system on the 1993 Wall Street Journal ( WSJ ) benchmark H1-C1 ( 20K ) test : REF : the first recipient joseph webster junior ** ****** a PHI BETA KAPPA chemistry GRAD who plans to take courses this fall in ART RELIGION **** music and political science HYP : the first recipient joseph webster junior HE FRIDAY a CAP OF ***** chemislzy GRANT who plans to take comes this fall in ARE N'T REALLY CHIN music and pofitical science REF : *** COCAINE does n't require a SYRINGE THE symbol of drug abuse and CURRENT aids risk YET can be just as ADDICTIVE and deadly as HEROIN HYP : THE KING does n't require a STRANGE A symbel of drug abuse and TRADE aids risk IT can be just as ADDICTED and deadly as CHAIRMAN In the first example , `` art '' and `` refigion '' make more sense in the context of `` courses '' than `` are n't really chin '' , and similarly `` heroin '' should be more likely than `` chairman '' in the context of `` drug abuse '' .</sentence>
+				<definiendum id="0">TRADE aids risk IT</definiendum>
+				<definiens id="0">THE KING does n't require a STRANGE A symbel of drug abuse</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Using trigram components , this model is described by m T k=l i -- -1 + ( 1 Ok ) P1 ( w , lwi-1 , w , -2 ) \ ] , ( 3 ) where k is an index to the particular topic described by the component language model Pk ( '\ ] ' ) , PI ( -\ ] ' ) is a topic-independent model that is interpolated with the topicdependent model for purposes of robust estimation or dynamic language model adaptation , and At and 0k are the sentencelevel and n-gram level mixture weights , respectively .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">an index to the particular topic described by the component language model Pk ( '\ ] ' )</definiens>
+				<definiens id="1">a topic-independent model that is interpolated with the topicdependent model for purposes of robust estimation or dynamic language model adaptation</definiens>
+				<definiens id="2">the sentencelevel and n-gram level mixture weights , respectively</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Robust parameter estimation is another important issue in mixture language modeling , because the process of partitioning the d , tA into topic-dependent subsets reduces the amount of training available to estimate each component language model .</sentence>
+				<definiendum id="0">Robust parameter estimation</definiendum>
+				<definiens id="0">topic-dependent subsets reduces the amount of training available to estimate each component language model</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Each component model is a conventional n-gram model .</sentence>
+				<definiendum id="0">component model</definiendum>
+				<definiens id="0">a conventional n-gram model</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The parameters of the component models can be re-estimated using the Expectation-Maximization ( EM ) algorithm \ [ 13\ ] .</sentence>
+				<definiendum id="0">The parameters of the component models</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>-'7 : , w -- ~ , ) ( 7 ) where n~ is the number of words in sentence i and N is the total number of sentences in cluster k. After the component models have been estimated , the sentence-level mixture weights { Ak } are estimated using an analogous algorithm .</sentence>
+				<definiendum id="0">n~</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the number of words in sentence i and</definiens>
+				<definiens id="1">the total number of sentences in cluster k. After the component models have been estimated , the sentence-level mixture weights { Ak } are estimated using an analogous algorithm</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The vocabulary is the standard 5K non-verbalized pronunciation ( NVP ) data augmented with the verbalized punctuation words and a few additional words .</sentence>
+				<definiendum id="0">vocabulary</definiendum>
+				<definiens id="0">the standard 5K non-verbalized pronunciation ( NVP ) data augmented with the verbalized punctuation words and a few additional words</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Dynamic language model adaptation , which makes use of the previous document history to tune the language model to that particular topic , can easily fit into the mixture model framework in two ways .</sentence>
+				<definiendum id="0">Dynamic language model adaptation</definiendum>
+				<definiens id="0">makes use of the previous document history to tune the language model to that particular topic</definiens>
+			</definition>
+</paper>
+
+		<paper id="1050">
+			<definition id="0">
+				<sentence>As is well known , many problems in human language processing can be usefully analyzed in terms of the `` noisy channel '' metaphor : given an observation sequence o , find which intended message w is most likely to generate that observation sequence by maximizing P ( w , o ) = P ( olw ) P ( w ) , where P ( olw ) characterizes the transduction between intended messages and observations , and P ( w ) characterizes the message generator .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">P ( w</definiendum>
+				<definiens id="0">( olw ) characterizes the transduction between intended messages and observations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>i ) ( 2 ) Sk For computational reasons , sums and products in ( 1 ) are often replaced by minirnizations and sums of negative log probabilities , yielding the approximation P ( s0 , sk ) = P ( sklso ) + P ( s0 ) ( 3 ) P ( s ls0 ) rain , , ... .. , ~_ , El &lt; j_ &lt; kP ( s~lsj=l ) where X = log X. In this formulation , assuming the approximation is reasonable , the most likely message so is the one minimizing P ( s0 , sk ) . Finally , each transduction in such a cascade is often modeled by some finite-state device , for example a hidden Markov model. Although the above approach is widely used in speech and language processing , usually the elements of the transduction cascade are built by `` ad hoc '' means , and commonalities between them are not exploited. We will here outline how the theory of weighted rational languages and transductions can be used as a general framework for transduction cascades. This theoretical foundation provides a rich set of operators for combining cascade elements that generalizes the standard operations on regular languages , suggests novel ways of combining models of different parts of the decoding process , and supports uniform algorithms for transduction and search at all levels in the cascade. In particular , we developed a generic join algorithm for combining any two consecutive levels of a cascade , a generic best-path search algorithm , and a generic interleaving of join and search for building pruned joins. In addition , general finite-state minimization techniques are also applicable to all levels of a cascade. Weighted languages and transductions are generalizations of the standard notions of language and transduction in formal language theory \ [ 1 , 2\ ] . A weighted language is just a mapping from strings over an alphabet to weights. A weighted transduction is a mapping from pairs of strings over two alphabets to weights. For example , when weights represent probabilities and assuming appropriate normalization , a weighted language is just a probability distribution over strings , and a weighted trarisduction a joint probability distribution over string pairs. The weighted rationallanguages and transducers are those that can be represented by weighted finite-state acceptors ( WFSAs ) and weighted finite-state transducers ( WFSTs ) , as described in more detail in the next section. In this paper we will be concerned with the weighted rational case , although some of the theory can be profitably extended beyond the finite-state case \ [ 3 , 4\ ] . 262 The notion of weighted rational transduction arises from the combination of two ideas in automata theory : rational transductions , used in many aspects of formal language theory \ [ 2\ ] , and weighted languages and automata , developed in pattern recognition \ [ 5 , 6\ ] and algebraic automata theory \ [ 7 , 8 , 9\ ] . Ordinary ( unweighted ) rational transductions have been successfully applied by researchers at Xerox PARC \ [ 10\ ] and at the University of Paris 7 \ [ 11\ ] , among others , to several problems in language processing , includifig morphological analysis , dictionary compression and syntactic analysis. Hidden Markov Models and probabilistic finite-state language models can be shown to be equivalent to WFSAs. In algebraic automata theory , rational series and rational transductions \ [ 8\ ] are the algebraic counterparts of WFSAs and WFSTs and give the correct generalizations to the weighted case of the standard algebraic operations on formal languages and transductions , such as union , concatenation , intersection , restriction and composition. We believe the work presented here is among the first to apply these generalizations to humanlanguage processing. Our first application is to speech recognition decoding. We show that a conventional HMM decoder can be naturally viewed as equivalent to a cascade of weighted transductions , and that our approach requires no modification whatsoever when context dependencies cross higher-level unit boundaries ( for instance , cross-word context-dependent models ) . Our second application is to the segmentation of Chinese text into words , and the assignment of pronunciations to those words. In Chinese orthography , most characters represent ( monosyllabic ) 'morphemes ' , and as in English , 'words ' may consist of one or more morphemes. Given that Chinese does not use whitespace to delimit words , it is necessary to reconstruct the grouping of characters into words. This reconstruction can also be thought of as a transduction problem. In the transduction cascade ( 1 ) , each step corresponds to a mapping from input-output pairs ( r , s ) to probabilities P ( slr ) . More formally , steps in the cascade will be weighted transductions T : 27 x F* ~ K where 27 and F* the sets of strings over the alphabets Z and F , and K is an appropriate set of weights , for instance the real numbers between 0 and 1 in the case of probabilities. We will denote by T1 the inverse of T defined by T ( t , s ) = T ( s , t ) . The right-most step of ( 1 ) is not a transduction , but rather an information source , in that case the language model. We will represent such sources as weighted languages L : Z* ~ K. Given two transductions S : Z* x F* ~ K and T : F* x A* -- -~ K , we can define their composition S o T by ( S o T ) ( r , t ) = E S ( r , s ) T ( s , t ) ( 4 ) sEI '' * For example , ifS represents P ( sk Isj ) and T P ( sj Isi ) in ( 2 ) , Figure 1 : Recognition Cascade is is clear that S o T represents P ( sk Isi ) . A weighted transduction S : Z* × F* -- . K can be applied to a weighted language L : Z* ~ K to yield a weighted language over F. It is convenient to abuse notation somewhat and use M o S for the result of the application , defined as ( L o S ) ( t ) = E L ( s ) S ( s , t ) ( 5 ) sEF ° Furthermore , if M is a weighted language over F , we can reverse apply S to M , written S o M = M o ( S- : ) . For example , ifS represents P ( sk \ [ so ) and M represents P ( so ) in ( 1 ) , then S o M represents P ( po , pk ) . Finally , given two weighted languages M , N : Z* ~ K we define their intersection , also by convenient abuse of notation written M o N as : ( M o N ) ( t ) = 'M ( s ) N ( s ) ( 6 ) In any cascade R1 o ... o Rm , with the Ri for 1 &lt; i &lt; m appropriate transductions and R1 and Rm transductions or languages , it is easy to see that the order of association of the o operators does not matter. For example , if we have L o S o T o M , we could either apply S to L , apply T to the result and intersect the result with M , or compose S with T , reverse apply the result to M and intersect the result with L. We are thus justified in our use of the same symbol for composition , application and intersection , and we will in the rest of the paper use the term `` ( generalized ) composition '' for all of these operations. For a more concrete example , consider the transduction cascade for speech recognition depicted in Figure 1 , where A is the transduction from acoustic observation sequences to phone sequences , D the transduction from phone sequences to word sequences ( essentially a pronunciation dictionary ) and M a weighted language representing the language model. Given a particular sequence of observations o , we can represent it as the trivial weighted language O that assigns 1 to o and 0 to any other sequence. Then O o A represents the acoustic likelihoods of possible phone sequences that generate o , O o A o D the aeoustic-lexical likelihoods of possible word sequences yielding o , and O o A o D o M the combined acoustic-lexicallinguistic probabilities of word sequences generating o. The word string w with the highest weight ( 0 o A o D o M ) ( w ) is precisely the most likely sentence hypothesis generating o. Exactly the same construction could have been carried out with weights combined by rain and sum instead of sum and product in the definitions of application and intersection , and 263 Language Transduction singleton scaling sum concatenation power closure { u } ( v ) = I iffu = v ( kL ) ( u ) = kL ( u ) ( L + M ) ( u ) = L ( u ) + M ( u ) ( LM ) ( w ) = ~uv=~o L ( u ) M ( v ) L° ( e ) = I L° ( u ~ e ) = 0 L n+l = LL '' L* = ~k &gt; o Lk { ( u , v ) } ( w , z ) = 1 iffu = w and v = z ( kT ) ( u , = kT ( , v ) ( S + T ) ( u , v ) = S ( u , v ) + T ( u , v ) ( ST ) ( t , w ) : E , , : t , ~ .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiens id="0">2 ) Sk For computational reasons , sums and products in ( 1 ) are often replaced by minirnizations and sums of negative log probabilities , yielding the approximation P ( s0 , sk ) = P ( sklso ) + P ( s0 ) ( 3 ) P ( s ls0 ) rain , , ... .. , ~_ , El &lt; j_ &lt; kP ( s~lsj=l ) where X = log X. In this formulation , assuming the approximation is reasonable , the most likely message so is the one minimizing P ( s0 , sk</definiens>
+				<definiens id="1">some finite-state device , for example a hidden Markov model. Although the above approach is widely used in speech and language processing , usually the elements of the transduction cascade are built by `` ad hoc '' means , and commonalities between them are not exploited. We will here outline how the theory of weighted rational languages and transductions can be used as a general framework for transduction cascades. This theoretical foundation provides a rich set of operators for combining cascade elements that generalizes the standard operations on regular languages , suggests novel ways of combining models of different parts of the decoding process , and supports uniform algorithms for transduction and search at all levels in the cascade. In particular , we developed a generic join algorithm for combining any two consecutive levels of a cascade , a generic best-path search algorithm , and a generic interleaving of join and search for building pruned joins. In addition , general finite-state minimization techniques are also applicable to all levels of a cascade. Weighted languages and transductions are generalizations of the standard notions of language and transduction in formal language theory \ [ 1 , 2\ ] . A weighted language is just a mapping from strings over an alphabet to weights. A weighted transduction is a mapping from pairs of strings over two alphabets to weights. For example , when weights represent probabilities and assuming appropriate normalization , a weighted language is just a probability distribution over strings , and a weighted trarisduction a joint probability distribution over string pairs. The weighted rationallanguages and transducers are those that can be represented by weighted finite-state acceptors ( WFSAs ) and weighted finite-state transducers ( WFSTs ) , as described in more detail in the next section. In this paper we will be concerned with the weighted rational case , although some of the theory can be profitably extended beyond the finite-state case \ [ 3 , 4\ ] . 262 The notion of weighted rational transduction arises from the combination of two ideas in automata theory : rational transductions , used in many aspects of formal language theory \ [ 2\ ] , and weighted languages and automata , developed in pattern recognition \ [ 5 , 6\ ] and algebraic automata theory \ [ 7 , 8 , 9\ ] . Ordinary ( unweighted ) rational transductions have been successfully applied by researchers at Xerox PARC \ [ 10\ ] and at the University of Paris 7 \ [ 11\ ] , among others , to several problems in language processing , includifig morphological analysis , dictionary compression and syntactic analysis. Hidden Markov Models and probabilistic finite-state language models can be shown to be equivalent to WFSAs. In algebraic automata theory , rational series and rational transductions \ [ 8\ ] are the algebraic counterparts of WFSAs and WFSTs and give the correct generalizations to the weighted case of the standard algebraic operations on formal languages and transductions , such as union , concatenation , intersection , restriction and composition. We believe the work presented here is among the first to apply these generalizations to humanlanguage processing. Our first application is to speech recognition decoding. We show that a conventional HMM decoder can be naturally viewed as equivalent to a cascade of weighted transductions , and that our approach requires no modification whatsoever when context dependencies cross higher-level unit boundaries ( for instance , cross-word context-dependent models ) . Our second application is to the segmentation of Chinese text into words , and the assignment of pronunciations to those words. In Chinese orthography , most characters represent ( monosyllabic ) 'morphemes ' , and as in English , 'words ' may consist of one or more morphemes. Given that Chinese does not use whitespace to delimit words , it is necessary to reconstruct the grouping of characters into words. This reconstruction can also be thought of as a transduction problem. In the transduction cascade ( 1 ) , each step corresponds to a mapping from input-output pairs ( r , s ) to probabilities P ( slr ) . More formally , steps in the cascade will be weighted transductions T : 27 x F* ~ K where 27 and F* the sets of strings over the alphabets Z and F , and</definiens>
+				<definiens id="2">an appropriate set of weights , for instance the real numbers between 0 and 1 in the case of probabilities. We will denote by T1 the inverse of T defined by T ( t , s ) = T ( s , t ) . The right-most step of ( 1 ) is not a transduction , but rather an information source , in that case the language model. We will represent such sources as weighted languages L : Z* ~ K. Given two transductions S : Z* x F* ~ K and T : F* x A* -- -~ K , we can define their composition S o T by ( S o T ) ( r , t ) = E S ( r , s ) T ( s , t ) ( 4 ) sEI '' * For example , ifS represents P ( sk Isj ) and T P ( sj Isi ) in ( 2 ) , Figure 1 : Recognition Cascade is is clear that S o T represents P ( sk Isi ) . A weighted transduction S : Z* × F* -- . K can be applied to a weighted language L : Z* ~ K to yield a weighted language over F. It is convenient to abuse notation somewhat and use M o S for the result of the application , defined as ( L o S ) ( t ) = E L ( s ) S ( s , t ) ( 5 ) sEF ° Furthermore , if M is a weighted language over F , we can reverse apply S to M , written S o M = M o ( S- : ) . For example , ifS represents P ( sk \ [ so ) and M represents P ( so ) in ( 1 ) , then S o M represents P ( po , pk ) . Finally , given two weighted languages M , N : Z* ~ K we define their intersection , also by convenient abuse of notation written M o N as : ( M o N ) ( t ) = 'M ( s ) N ( s ) ( 6 ) In any cascade R1 o ... o Rm , with the Ri for 1 &lt; i &lt; m appropriate transductions and R1 and Rm transductions or languages , it is easy to see that the order of association of the o operators does not matter. For example , if we have L o S o T o M , we could either apply S to L , apply T to the result and intersect the result with M , or compose S with T , reverse apply the result to M and intersect the result with L. We are thus justified in our use of the same symbol for composition , application and intersection , and we will in the rest of the paper use the term `` ( generalized ) composition '' for all of these operations. For a more concrete example , consider the transduction cascade for speech recognition depicted in Figure 1 , where A is the transduction from acoustic observation sequences to phone sequences , D the transduction from phone sequences to word sequences ( essentially a pronunciation dictionary ) and M a weighted language representing the language model. Given a particular sequence of observations o , we can represent it as the trivial weighted language O that assigns 1 to o and 0 to any other sequence. Then O o A represents the acoustic likelihoods of possible phone sequences that generate o , O o A o D the aeoustic-lexical likelihoods of possible word sequences yielding o , and O o A o D o M the combined acoustic-lexicallinguistic probabilities of word sequences generating o. The word string w with the highest weight ( 0 o A o D o M ) ( w ) is precisely the most likely sentence hypothesis generating o. Exactly the same construction could have been carried out with weights combined by rain and sum instead of sum and product in the definitions of application and intersection , and 263 Language Transduction singleton scaling sum concatenation power closure { u } ( v ) = I iffu = v ( kL ) ( u ) = kL ( u ) ( L + M ) ( u ) = L ( u ) + M ( u ) ( LM ) ( w ) = ~uv=~o L ( u ) M ( v ) L° ( e ) = I L° ( u ~ e ) = 0 L n+l = LL '' L* = ~k &gt; o Lk { ( u , v ) } ( w , z ) = 1 iffu = w and v = z ( kT ) ( u , = kT ( , v ) ( S + T ) ( u , v ) = S ( u , v ) + T ( u , v ) ( ST ) ( t , w ) : E , , : t , ~</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In the present setting , a K-weighted finite automaton.,4 consists of a finite set of states Qa and a finite set Aa of transitions s//~ ql q -- , between states , where x is an element of the set of transition labels AA and k E K is the transition weight .</sentence>
+				<definiendum id="0">x</definiendum>
+				<definiens id="0">consists of a finite set of states Qa and a finite set Aa of transitions s//~ ql q -- , between states</definiens>
+				<definiens id="1">an element of the set of transition labels AA and k E K is the transition weight</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>,4 is defined as f~I~ ( ~ ) where I.a ( u ) is the set of paths in .</sentence>
+				<definiendum id="0">I.a ( u )</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>A\ ] is a weighted language , and ifA is a transducer \ [ ,4\ ] \ ] is a weighted transduction .</sentence>
+				<definiendum id="0">ifA</definiendum>
+				<definiens id="0">a weighted language , and</definiens>
+				<definiens id="1">a transducer \ [ ,4\ ] \ ] is a weighted transduction</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A phone model is defined as a transducer from a subsequence of acoustic observation labels to a specific phone , and assigns to each subsequence a likelihood that the specified phone produced it .</sentence>
+				<definiendum id="0">phone model</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>For non-occurring possible plural forms ( e.g. , ~//~f\ ] nan2gual-men 'pumpkins ' ) we use the Good-Turing estimate ( e.g. \ [ 17\ ] ) , whereby the aggregate probability of previously unseen members of a construction is estimated as N1/N , where N is the total number of observed tokens and N1 is the number of types observed only once ; again , we arrange the automaton so that noun entries may transition to f\ ] , and the cost of the whole ( previously unseen ) construction comes out with the value derived from the Good-Turing estimate .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">N1</definiendum>
+				<definiens id="0">the Good-Turing estimate ( e.g. \ [ 17\ ] ) , whereby the aggregate probability of previously unseen members of a construction is estimated as N1/N , where</definiens>
+				<definiens id="1">the total number of observed tokens</definiens>
+				<definiens id="2">the number of types observed only once</definiens>
+				<definiens id="3">previously unseen ) construction comes out with the value derived from the Good-Turing estimate</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>K. Koskenniemi , Two-LeveI Morphology : a General Computational Model for Word .</sentence>
+				<definiendum id="0">Two-LeveI Morphology</definiendum>
+				<definiens id="0">a General Computational Model for Word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>The Fluency , Adequacy , and Comprehension evaluations developed for the 1993 evaluation are described below ; system outputs from 1992 were subjected to 1993 methods , which determined their enhanced sensitivity ( White et al. , op .</sentence>
+				<definiendum id="0">Comprehension evaluations</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Lingstat is a hybrid MT system , combining statistical and linguistic techniques .</sentence>
+				<definiendum id="0">Lingstat</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>SYSTRAN , a commercial system , produced FE .</sentence>
+				<definiendum id="0">SYSTRAN</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>SYSTEM TESTS The first phase of the ARPA MT Evaluation was tile System Test .</sentence>
+				<definiendum id="0">SYSTEM TESTS</definiendum>
+				<definiens id="0">The first phase of the ARPA MT Evaluation was tile System Test</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The time ratio is the ratio of the time taken to produce a system translation compared to the time taken for the novice MA translation .</sentence>
+				<definiendum id="0">time ratio</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1019">
+</paper>
+
+		<paper id="1059">
+</paper>
+
+		<paper id="1086">
+			<definition id="0">
+				<sentence>On-line handwriting can be viewed as a signal ( x , y coordinates ) over time , just like in speech .</sentence>
+				<definiendum id="0">On-line handwriting</definiendum>
+				<definiens id="0">a signal ( x , y coordinates ) over time</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>SERVICE : AN INITIAL 3050 WORD , 52 SYMBOL TASK In the initial system , the BBN BYBLOS Continuous Speech Recognition system \ [ 4 , 5 , 6\ ] ( see Figure I ) was used without modification on an on-line cursive handwriting corpus created from prompts from the ARPA Airline Travel Information Service ( ATIS ) corpus \ [ 7\ ] .</sentence>
+				<definiendum id="0">SERVICE</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>For this task , BYBLOS quantizes the feature vectors for a sentence into 64 different clusters .</sentence>
+				<definiendum id="0">BYBLOS</definiendum>
+				<definiens id="0">quantizes the feature vectors for a sentence into 64 different clusters</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Word error rate is measured as the sum of the percentage of words deleted , the percentage of words inserted , and the percentage of words that are substituted for other words in the set of test sentences .</sentence>
+				<definiendum id="0">Word error rate</definiendum>
+				<definiens id="0">the sum of the percentage of words deleted , the percentage of words inserted</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Sgn ( x max ( x ) ) is 1 only when , at that time , the current sample is the right-most sample of the data to date .</sentence>
+				<definiendum id="0">Sgn ( x max</definiendum>
+				<definiens id="0">the right-most sample of the data to date</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>`` BYBLOS : The BBN Continuous Speech Recognition System , '' IEEE Int .</sentence>
+				<definiendum id="0">BYBLOS</definiendum>
+				<definiens id="0">The BBN Continuous Speech Recognition System</definiens>
+			</definition>
+</paper>
+
+		<paper id="1084">
+			<definition id="0">
+				<sentence>Head blocks are defined as those which serve in some way as labels or pointers , such as headlines and captions ; body blocks are those which are referenced by head blocks and which have substantive content .</sentence>
+				<definiendum id="0">body blocks</definiendum>
+				<definiens id="0">those which serve in some way as labels or pointers , such as headlines and captions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>PUNDIT is a large , domain-independent naturai language processing system which is modul~tr in design , and includes distinct syntactic\ [ 8\ ] , semantic\ [ 9\ ] and application\ [ 10\ ] components .</sentence>
+				<definiendum id="0">PUNDIT</definiendum>
+				<definiens id="0">a large , domain-independent naturai language processing system which is modul~tr in design</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Performance was measured using software originally designed to ewduate speech recognizers , distributed by the National Institute of Standards and Technology \ [ 14\ ] .</sentence>
+				<definiendum id="0">Performance</definiendum>
+				<definiens id="0">measured using software originally designed to ewduate speech recognizers , distributed by the National Institute of Standards</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The semantic component represents the meaning of the sentence in the form of a case frame , a data structure which includes a fl'ame , representing a situation and typically corresponding to a verb , as well as its case roles , which represent the participants in the situation and which typically correspond to the subjects and objects of verbs\ [ 17\ ] .</sentence>
+				<definiendum id="0">semantic component</definiendum>
+				<definiens id="0">represents the meaning of the sentence in the form of a case frame</definiens>
+			</definition>
+</paper>
+
+		<paper id="1099">
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>Collection for the OGI Multi-Language Corpus produced additional calls from English speakers not included in the MultiLanguage Corpus .</sentence>
+				<definiendum id="0">Collection</definiendum>
+				<definiens id="0">for the OGI Multi-Language Corpus produced additional calls from English speakers not included in the MultiLanguage Corpus</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Stories Corpus consists of up to 50 sec of spontaneous speech ( hereafter `` stories '' ) from 692 English calls .</sentence>
+				<definiendum id="0">Stories Corpus</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Type Number alphabet hometown callfrom say first name say last name spell last name with pause 100 1359 693 100 101 300 CSLU plans to collect and verify calls from at least 200 fluent native speakers in 21 languages -- Eastern Arabic , Cantonese , Czech , Farsi , French , German , Hindi , Hungarian , Japanese , Korean , Malay , Mandarin , ItaLian , Polish , Portuguese , Russian , Spanish , Swedish , Swahili , Tamil , and Vietnamese .</sentence>
+				<definiendum id="0">CSLU</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>pus The OGI Multi-Language Telephone-Speech Corpus \ [ 4\ ] consists of telephone~speech from 10 languages : English , Farsi , French , German , Japanese , Korean , Mandarin , Spanish , Tamil and Vietnamese .</sentence>
+				<definiendum id="0">OGI Multi-Language Telephone-Speech Corpus</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Adequate Answer 2 : Answer is usable but usable not concise Adequate Answer 3 : Answer is responsive responsive but not usable Qualified Answer An adequate answer in which respondent expresses uncertainty .</sentence>
+				<definiendum id="0">Answer</definiendum>
+				<definiens id="0">responsive responsive but not usable Qualified Answer An adequate answer in which respondent expresses uncertainty</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>With support from Apple Computer , CSLU is collecting both analog and digital speech data for utterances related to voice messaging and voice control of computer apphcations .</sentence>
+				<definiendum id="0">CSLU</definiendum>
+				<definiens id="0">collecting both analog and digital speech data for utterances related to voice messaging and voice control of computer apphcations</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The protocol consists of two questions to help determine the caller 's language background , followed by instructions to repeat 35 words or phrases given in the prompt .</sentence>
+				<definiendum id="0">protocol</definiendum>
+				<definiens id="0">consists of two questions to help determine the caller 's language background , followed by instructions to repeat 35 words or phrases given in the prompt</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>CSLU is collaborating with the International Computer Science Institute ( ICSI ) at Berkeley to develop speech corpora for Open Performance Evaluation of Recognition Algorithms ( OPERA ) .</sentence>
+				<definiendum id="0">CSLU</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1081">
+			<definition id="0">
+				<sentence>The N-Best Paradigm \ [ 1\ ] was introduced originally as a means for integrating the speech recognition and language understanding components of a spoken language system .</sentence>
+				<definiendum id="0">N-Best Paradigm</definiendum>
+				<definiens id="0">a means for integrating the speech recognition and language understanding components of a spoken language system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>/ ) ft. , &gt; A ¢~tu~j where Pr ( wilw~ ) is the probability of wj followed by wi , and A is the threshold ( which can be a function of either c~ or j~ ) .</sentence>
+				<definiendum id="0">Pr ( wilw~ )</definiendum>
+				<definiens id="0">the probability of wj followed by wi , and A is the threshold ( which can be a function of either c~ or j~ )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1083">
+			<definition id="0">
+				<sentence>Any space flight represents some degree of risk and working in space , as in aviation , comports some hazards .</sentence>
+				<definiendum id="0">space flight</definiendum>
+				<definiens id="0">some degree of risk and working in space</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>All the above considerations impose restrictions and introduce severe design requirements as follows : • Safety : security is a paramount consideration aboard any operated robot arm that is used in a semiautonomous mode during those space flights that require objects to be handled , captured , and released into space .</sentence>
+				<definiendum id="0">security</definiendum>
+				<definiens id="0">a paramount consideration aboard any operated robot arm that is used in a semiautonomous mode during those space flights that require objects to be handled , captured , and released into space</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The VCS intended to collect baseline data on the effect of microgravity on speech production and recognition .</sentence>
+				<definiendum id="0">VCS intended</definiendum>
+				<definiens id="0">to collect baseline data on the effect of microgravity on speech production and recognition</definiens>
+			</definition>
+</paper>
+
+		<paper id="1119">
+</paper>
+
+		<paper id="1057">
+</paper>
+
+		<paper id="1058">
+			<definition id="0">
+				<sentence>NRL is the Departmefit of the Navy 's corporate research laboratory .</sentence>
+				<definiendum id="0">NRL</definiendum>
+				<definiens id="0">the Departmefit of the Navy 's corporate research laboratory</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Consortium coordinates speech efforts across DoD and insures interoperability of systems as well as attempts to eliminate duplication of efforts .</sentence>
+				<definiendum id="0">Consortium</definiendum>
+				<definiens id="0">coordinates speech efforts across DoD and insures interoperability of systems as well as attempts to eliminate duplication of efforts</definiens>
+			</definition>
+</paper>
+
+		<paper id="1047">
+			<definition id="0">
+				<sentence>As such , decomposable models are models that can be expressed as a product of marginal distributions , where each marginal consists of certain inter-dependent variables .</sentence>
+				<definiendum id="0">decomposable models</definiendum>
+				<definiens id="0">a product of marginal distributions , where each marginal consists of certain inter-dependent variables</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>With the variables as described above , the form of this model is ( where rlpos is the POS tag one place to the right of the ambiguous word W ; r~pos is the POS tag two places to the right of W ; llpos is the POS tag one place to the left of W ; l~pos is the POS tag two places to the left of W ; endingis the suffix of the base lexeme ; word1 is the presence or absence of one of the word-specific collocations and words is the presence or absence of the other one ; and tag is the sense tag assigned to W ) : P ( rlpos , r2pos , llpos , 12pos , ending , word1 , word2 , tag ) = P ( rlpos , r2posltag ) x P ( llpos , 12posltag ) x P ( endingltag ) × P ( wordlltag ) x P ( word21tag ) × P ( tag ) ( 1 ) This product form indicates certain conditional independences given the sense tag of the ambiguous word .</sentence>
+				<definiendum id="0">word1</definiendum>
+				<definiendum id="1">tag</definiendum>
+				<definiens id="0">the sense tag assigned to W ) : P ( rlpos , r2pos , llpos , 12pos , ending , word1 , word2 , tag ) = P ( rlpos</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Recall is the percentage of test words that were assigned some tag ; it corresponds to the portion of the test set covered by the estimate3 of the parameters made from the training set .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">the percentage of test words that were assigned some tag ; it corresponds to the portion of the test set covered by the estimate3 of the parameters made from the training set</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Precision is the percentage of tagged words that were tagged correctly .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">the percentage of tagged words that were tagged correctly</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Cambridge : The MIT Press .</sentence>
+				<definiendum id="0">Cambridge</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Estimation of Probabilities in the Language Model of the IBM Speech Recognition System .</sentence>
+				<definiendum id="0">Estimation of Probabilities</definiendum>
+				<definiens id="0">in the Language Model of the IBM Speech Recognition System</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Experiment 3 : ( upper bound ) lower bound : bill P ( tag ) x P ( endingltag ) x P ( rlpos , r2posltag ) x P ( llpos , 12posltag ) x P ( houseltag ) x P ( treasuryltag ) P ( tag ) x P ( endingltag ) x P ( rlpos , r2pos , treasuryltag ) x P ( llpos , 12pos , house\ ] tag ) P ( tag , ending , ll pos , 12pos , r l pos , r2pos , house , treasury ) P ( tag ) 87.5 % 95.8 % 83.8 % 89.1 % 97.6 % 93.7 % 83.5 % 68.5 % noun senses of concern Experiment 1 : ( Model M ) Experiment 2 : ( best approx . )</sentence>
+				<definiendum id="0">P (</definiendum>
+				<definiens id="0">rlpos , r2posltag ) x P ( llpos , 12posltag ) x P ( houseltag ) x P ( treasuryltag ) P ( tag ) x P ( endingltag ) x P ( rlpos , r2pos , treasuryltag ) x P ( llpos , 12pos , house\ ] tag</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Experiment 3 : ( upper bound ) lower bound : P ( tag ) x P ( endingltag ) x P ( rlpos , r2posltag ) x P ( llpos , 12posltag ) x P ( companyltag ) x P ( possessiveltag ) P ( tag ) x P ( endingltag ) x P ( rlpos , r2posltag ) x P ( llpos , 12posltag ) x P ( companyltag ) x P ( possessiveltag ) P ( tag , ending , ll pos , 12pos , r l pos , r2pos , company , possessive ) P ( tag ) 88.4 % 88.4 % 97.2 % 95.1 % 84.1 % 95.1 % 84.1 % 63.8 % verb senses of close Experiment 1 : ( Model M ) Experiment 2 : ( best approx . )</sentence>
+				<definiendum id="0">x P ( companyltag</definiendum>
+				<definiens id="0">P ( tag ) x P ( endingltag ) x P ( rlpos , r2posltag ) x P ( llpos , 12posltag ) x P ( companyltag ) x P ( possessiveltag ) P ( tag ) x P ( endingltag ) x P ( rlpos , r2posltag ) x P ( llpos , 12posltag )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1046">
+			<definition id="0">
+				<sentence>What is the percentage correct that you could expect to obtain by guessing7 A guessing strategy presumes the existence of a standard list of words and their senses , but it does not assume any knowledge of the relative frequencies of different senses of polysemous words .</sentence>
+				<definiendum id="0">guessing strategy</definiendum>
+				<definiens id="0">presumes the existence of a standard list of words and their senses , but it does not assume any knowledge of the relative frequencies of different senses of polysemous words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>If the word is polysemous ( has more than one sense in WordNet ) , choose a sense at random with a probability of l/n , where n is the number of different senses of that word .</sentence>
+				<definiendum id="0">polysemous</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">the number of different senses of that word</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>If the syntactically tagged word ( word/pos ) has more than one sense in WordNet , consult the semantic concordance to determine which sense occurred most often in that corpus and assign that sense to it ; if there is a fie , select one of the equally frequent senses at random .</sentence>
+				<definiendum id="0">syntactically tagged word ( word/pos )</definiendum>
+				<definiens id="0">has more than one sense in WordNet , consult the semantic concordance to determine which sense occurred most often in that corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If the word is polysemous but does not occur in the semantic concordance , choose a sense at random with a probability of 1/rh where n is the number of different senses of that word in WordNet .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">polysemous but does not occur in the semantic concordance</definiens>
+				<definiens id="1">the number of different senses of that word in WordNet</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>Note that in some eases , where time is a critical parameter and the template tracks a dynamic situation , time may be associated with a particular entity , event , or relation ; objects with different time indicators effectively identify different referents and thus map to different objects ( the ACTIVITY object in the TIPSTER Joint Venture template illustrates this ) .</sentence>
+				<definiendum id="0">time</definiendum>
+				<definiendum id="1">Joint Venture template</definiendum>
+				<definiens id="0">the ACTIVITY object in the TIPSTER</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>one or more of the previous structure ; newline character separates multiple structures zero or more of the previous structure ; newline character separates multiple structures ; if zero , leave blank zero or one of the previous structure , but if zero , use the symbol ~- '' instead of leaving position blank exactly one of the previous structure OR ( refers to specification , not answers or instantiations ) delimiters , no meaning ( do n't appear in instantiations ) NB : DOES NOT MEAN `` OPTIONAL ' delimiters , does n't appear in instantiation , but contents are OPTIONAL but either all the contents appear , or none of them , in the case where there are no connectors ( e.g. , I ) or operators ( e.g. , + or ^ ) within these delimiters : for example , with A ( ( B C ) ) D , only A D and A B C D are legal .</sentence>
+				<definiendum id="0">NB</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>System answers are not allowed to offer optional or alternate fills ( answers ) .</sentence>
+				<definiendum id="0">System answers</definiendum>
+				<definiens id="0">not allowed to offer optional or alternate fills ( answers )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>The Spoke tests , on the other hand , are abstractions of problems of somewhat less central importance in CSR and evaluation on them is optional .</sentence>
+				<definiendum id="0">Spoke tests</definiendum>
+				<definiens id="0">abstractions of problems of somewhat less central importance in CSR and evaluation on them is optional</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The primary HI ( H1-P0 ) test allowed any language model ( LM ) or acoustic training data to be used .</sentence>
+				<definiendum id="0">primary HI ( H1-P0</definiendum>
+				<definiens id="0">) test allowed any language model ( LM ) or acoustic training data to be used</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>To permit direct comparisons of acoustic modeling technology between different systems , the HI test contained a required contrastive test ( H1-C1 ) that controlled the amount of training data and specified the LM statistics .</sentence>
+				<definiendum id="0">HI test</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The $ 5-C2 test required the S5-P0 system ( compensation enabled ) to be run on the matching stereo channel from the Sennheiser microphone to observe the effect of the compensation on data that was matched to the training .</sentence>
+				<definiendum id="0">S5-P0 system</definiendum>
+				<definiens id="0">the effect of the compensation on data that was matched to the training</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>GIS starts with arbitrary p~ values .</sentence>
+				<definiendum id="0">GIS</definiendum>
+				<definiens id="0">starts with arbitrary p~ values</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Generalized Iterative Scaling can be used to find the ME estimate of a simple ( non-conditional ) probability distribution over some event space .</sentence>
+				<definiendum id="0">Generalized Iterative Scaling</definiendum>
+				<definiens id="0">the ME estimate of a simple ( non-conditional ) probability distribution over some event space</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>count-based cache : the number of times wi already occurred in the history .</sentence>
+				<definiendum id="0">count-based cache</definiendum>
+				<definiens id="0">the number of times wi already occurred in the history</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>distance-based cache : the last time wi occurred in the history .</sentence>
+				<definiendum id="0">distance-based cache</definiendum>
+				<definiens id="0">the last time wi occurred in the history</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>`` Compact '' here means that singleton trigrams ( word triplets that occurred only once in the training d~ta ) were excluded from the model .</sentence>
+				<definiendum id="0">Compact</definiendum>
+				<definiens id="0">singleton trigrams ( word triplets that occurred only once in the training d~ta ) were excluded from the model</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The main disadvantage of the Maximum Entropy framework is the computational requirements of training the ME model .</sentence>
+				<definiendum id="0">Maximum Entropy framework</definiendum>
+				<definiens id="0">the computational requirements of training the ME model</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>training data 38MW ( WSJ ) test data 206 sentences ( AP ) language model word error rate 1 % change Irigram ( baseline ) 22.1 % supervised adaptation 19.8 % -10 % Table 4 : Word error rate reduction of the adaptive language model over a conventional trigram model , under the crossdomain adaptation paradigm .</sentence>
+				<definiendum id="0">WSJ</definiendum>
+				<definiens id="0">) test data 206 sentences ( AP ) language model word error</definiens>
+				<definiens id="1">Word error rate reduction of the adaptive language model over a conventional trigram model , under the crossdomain adaptation paradigm</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Huang , X.D. , Alleva , E , Hop. , H.W. , Hwang , M.Y. , Lee , ICE , and Rosenfeld , R. , `` The SPHINX-II Speech Recognition System : An Overview '' , Computer , Speech and Language , 1993 .</sentence>
+				<definiendum id="0">SPHINX-II Speech Recognition System</definiendum>
+				<definiens id="0">An Overview '' , Computer , Speech and Language , 1993</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+</paper>
+
+		<paper id="1109">
+</paper>
+
+		<paper id="1115">
+</paper>
+
+		<paper id="1095">
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>The expanded database , which includes information on 46 US and Canadian cities and 23,457 flights , was released in the fall of 1992 , and data collection for the ATIS-3 corpus began shortly thereafter .</sentence>
+				<definiendum id="0">expanded database</definiendum>
+				<definiens id="0">includes information on 46 US and Canadian cities and 23,457 flights , was released in the fall of 1992 , and data collection for the ATIS-3 corpus began shortly thereafter</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In the 1991 evaluation , context-independent ( Class A ) queries as well as dialog pairs ( D1 ) were evaluated .</sentence>
+				<definiendum id="0">Class A )</definiendum>
+				<definiens id="0">queries as well as dialog pairs ( D1 ) were evaluated</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Semantic Evaluation : The goal of semantic evaluation is to define a level of representation which focuses specifically on language understanding , as opposed to task performance , in a maximally task-independent way .</sentence>
+				<definiendum id="0">Semantic Evaluation</definiendum>
+				<definiens id="0">focuses specifically on language understanding</definiens>
+			</definition>
+</paper>
+
+		<paper id="1113">
+</paper>
+
+		<paper id="1030">
+</paper>
+
+		<paper id="1067">
+			<definition id="0">
+				<sentence>The error between the clean vector and the I~ , o l A~ x c n F e t r Figure 1 : Multi-dimensional transversal filter for cluster i. estimated vectors produced by the i-th filter is given by e ni = Xn Xni = Xn ~i Yn ( 1 ) where e_ : is the error associated with region i , W. is the filter coeffficidh~t matrix , and Yn is the tapped-delay lind of the noisy vectors .</sentence>
+				<definiendum id="0">e_</definiendum>
+				<definiendum id="1">W.</definiendum>
+				<definiendum id="2">Yn</definiendum>
+				<definiens id="0">o l A~ x c n F e t r Figure 1 : Multi-dimensional transversal filter for cluster i. estimated vectors produced by the i-th filter is given by e ni = Xn Xni = Xn ~i Yn ( 1 ) where</definiens>
+				<definiens id="1">the filter coeffficidh~t matrix</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Expanding these matrices we get ~ = \ [ Ai , _p ... Ai , _l Ai , oAi , 1 ... Ai , pb~ ( 2 ) n-p `` ' '' Yn1 Yn Yn + 1 `` ' '' Yn + p The conditional error in each region is defined as N-1 -p Ei= E I\ [ % i112p % 'zn ) ( 4 ) n=p where p ( gilzn ) is the probability that the clean vector x i belongs to region gi given an arbitrary conditional noisy feature vector z n .</sentence>
+				<definiendum id="0">p ( gilzn )</definiendum>
+				<definiens id="0">the probability that the clean vector x i belongs to region gi given an arbitrary conditional noisy feature vector z n</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The conditional probability density function p ( Znlg i ) is modeled as a mixture of I Gaussian distributions .</sentence>
+				<definiendum id="0">conditional probability density function p</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1065">
+			<definition id="0">
+				<sentence>The vector quantization ( VQ ) codebook which consists of these mean vectors and covariance matrices , has been derived from a subset of the training data , therefore it is mostly chaaacteristic of the location and distribution of the training data and the training microphone in the acoustic space .</sentence>
+				<definiendum id="0">vector quantization</definiendum>
+				<definiens id="0">consists of these mean vectors and covariance matrices , has been derived from a subset of the training data , therefore it is mostly chaaacteristic of the location and distribution of the training data and the training microphone in the acoustic space</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Cepstrum mean subtraction is a standard feature of the system used to compensate for the unknown channel transfer function .</sentence>
+				<definiendum id="0">subtraction</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The TMN adaptation reduces the additional degradation due to the channel mismatch by about a factor of 2 in both test sets .</sentence>
+				<definiendum id="0">TMN adaptation</definiendum>
+				<definiens id="0">reduces the additional degradation due to the channel mismatch by about a factor of 2 in both test sets</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Configuration test test Sennheiser 8.9 % 8.7 % TH with no adaptation 29.5 % TH with Bandlimiting and TMN 12.7 % 12.8 % Table 2 : Comparison of word error rate ( % ) for microphone adaptation using the Sennheiser or the Telephone handset microphone lected with the primary microphone and comprise the WSJ0 and WSJ1 corpora with 12 and 50 hours of recorded speech respectively .</sentence>
+				<definiendum id="0">Configuration test test Sennheiser</definiendum>
+				<definiens id="0">the primary microphone and comprise the WSJ0 and WSJ1 corpora with 12 and 50 hours of recorded speech respectively</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>The Lexical Pattern Matcher operates before parsing but after tagging by part-of-speech to recognize constructions which can be detected based on component words , their parts-of-speech , and simple properties of their lexical semantics .</sentence>
+				<definiendum id="0">Lexical Pattern Matcher</definiendum>
+				<definiens id="0">operates before parsing but after tagging by part-of-speech to recognize constructions which can be detected based on component words , their parts-of-speech , and simple properties of their lexical semantics</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>SPURT rules are finite-state patterns which can be used to search for complex patterns of information in a sentence and build semantic structures from that information .</sentence>
+				<definiendum id="0">SPURT rules</definiendum>
+				<definiens id="0">finite-state patterns which can be used to search for complex patterns of information in a sentence and build semantic structures from that information</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Top-level rules indicate multiple entry points into the grammar defined by the patterns , and may invoke sub-level rules , as in a context-free grammar where the fight hand side of a non-terminal may be in terms of other non-terminals .</sentence>
+				<definiendum id="0">Top-level rules</definiendum>
+				<definiens id="0">indicate multiple entry points into the grammar defined by the patterns , and may invoke sub-level rules , as in a context-free grammar where the fight hand side of a non-terminal may be in terms of other non-terminals</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Lexical Pattern Matcher applies SPURT patterns after morphological analysis but prior to parsing .</sentence>
+				<definiendum id="0">Lexical Pattern Matcher</definiendum>
+				<definiens id="0">applies SPURT patterns after morphological analysis but prior to parsing</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( def-sub-patt ( CO-INSTANCE ( : args tag-string ) ) ( : pattern ( : tag tag-string ( : OR ... ( : RULE XXX-CO ) ... ) ) ) ( : understanding ( ( : type CORPORATION tag-string name ) ( : string STR tag-string ) ( : pred NAME-OF tag-string STR ) ) ) ) ( def-top-patt CO ( : pattern ( : seq ( : plus ( : seq ( : star : anyword ) ( : rule CO-INSTANCE corp-string ) ) ) ( : star : anyword ) ) ) ) Figure 2 : Lexical Pattern Example 184 The input to Sentence-Level SPURT is a sentence object which has already been processed through the fragment semantic interpreter .</sentence>
+				<definiendum id="0">) ) ( def-top-patt CO</definiendum>
+				<definiens id="0">args tag-string ) ) ( : pattern ( : tag tag-string ( : OR ... ( : RULE XXX-CO ) ... ) ) ) ( : understanding ( ( : type CORPORATION tag-string name ) ( : string STR tag-string ) ( : pred NAME-OF tag-string STR ) )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The operator : AND-ENV introduces tests on phrases in a parse tree : : CAT indicates the phrase category ; because some phrasetypes are recursive , : LOW ( or other values ) is used to indicate which level of the recursive structure is the one to be looked at ; and : CONCEPT indicates the semantic type that is desired of that phrase .</sentence>
+				<definiendum id="0">LOW</definiendum>
+				<definiendum id="1">CONCEPT</definiendum>
+				<definiens id="0">AND-ENV introduces tests on phrases in a parse tree : : CAT indicates the phrase category</definiens>
+				<definiens id="1">the semantic type that is desired of that phrase</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A lexical-semantic definition contains the word 's semantic type and ( optionally ) case-frames identifying semantic tests on possible arguments to the word .</sentence>
+				<definiendum id="0">lexical-semantic definition</definiendum>
+				<definiens id="0">contains the word 's semantic type and ( optionally ) case-frames identifying semantic tests on possible arguments to the word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1108">
+</paper>
+
+		<paper id="1101">
+</paper>
+
+		<paper id="1062">
+			<definition id="0">
+				<sentence>Then , assuming that tying states does not change the frame/state alignment , a reasonable approximation for L ( S ) is given by L ( S ) = Z Z l°g ( Pr ( °l ; # ( S ) , ~ ( S ) ) % ( of ) ( 1 ) fEF sES where % ( of ) is the a postcriori probability of the observed frame o I being generated by state s. If the output PDFs are Gaussian , then sES fEFF where n is the dimensionality of the data .</sentence>
+				<definiendum id="0">n</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The RM systems used the standard SI-109 training data and used the pronunciations and phone set ( 46 phones plus silence ) produced by CMU and listed in \ [ 5\ ] together with the standard word-pair grammar .</sentence>
+				<definiendum id="0">RM systems</definiendum>
+				<definiens id="0">used the standard SI-109 training data and used the pronunciations and phone set ( 46 phones plus silence ) produced by CMU and listed in \</definiens>
+			</definition>
+</paper>
+
+		<paper id="1114">
+</paper>
+
+		<paper id="1106">
+</paper>
+
+		<paper id="1121">
+</paper>
+
+		<paper id="1002">
+</paper>
+
+		<paper id="1039">
+			<definition id="0">
+				<sentence>The patterns for a semantic token consist of mandatory words or tokens which arc necessary to the meaning of the token and optional elements .</sentence>
+				<definiendum id="0">The patterns for</definiendum>
+				<definiens id="0">a semantic token consist of mandatory words or tokens which arc necessary to the meaning of the token and optional elements</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>Figure 3 ( b ) indicates the measured SNR 's for the data of Spoke 6 , which includes 2 `` known '' alternate microphones in addition to the reference Sennheiser dose-talking microphone , collected in the normal data collection environment .</sentence>
+				<definiendum id="0">b )</definiendum>
+				<definiens id="0">indicates the measured SNR 's for the data of Spoke 6 , which includes 2 `` known '' alternate microphones in addition to the reference Sennheiser dose-talking microphone , collected in the normal data collection environment</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>ATIS Test Participants United States participants in the ATIS tests included : AT &amp; T Bell Laboratories ( AT &amp; T ) \ [ 23\ ] , BBN Systems and Technologies ( BBN ) \ [ 24\ ] , Carnegie Mellon University ( CMU ) \ [ 11\ ] , Massachusetts Institute of Technology 's Laboratory for Computer Science ( MIT/LCS ) \ [ 26\ ] , and SRI International ( SRI ) \ [ 27\ ] , and Unisys ( UNISYS ) \ [ 28\ ] .</sentence>
+				<definiendum id="0">SRI International</definiendum>
+				<definiendum id="1">Unisys</definiendum>
+				<definiens id="0">ATIS Test Participants United States participants in the ATIS tests included : AT &amp; T Bell Laboratories ( AT &amp; T ) \ [ 23\ ] , BBN Systems and Technologies ( BBN ) \ [ 24\ ] , Carnegie Mellon University ( CMU ) \ [ 11\ ] , Massachusetts Institute of Technology 's Laboratory for Computer Science ( MIT/LCS</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>`` Overall Totals '' ( colttmn ) present results for the entire Class A+D Subset for the system corresponding to that matrix row .</sentence>
+				<definiendum id="0">Overall Totals</definiendum>
+				<definiens id="0">the entire Class A+D Subset for the system corresponding to that matrix row</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>`` Overall Totals '' ( row ) present res~ Its accumulated over all systems corresponding to the Test Data ( sub ) set corresponding to that i~atrix column .</sentence>
+				<definiendum id="0">Overall Totals</definiendum>
+				<definiens id="0">Its accumulated over all systems corresponding to the Test Data ( sub ) set corresponding to that i~atrix column</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>`` Overall Totals '' ( column ) present results for the entire Class ( A÷D ) Subset for the system corresponding to that matrix row .</sentence>
+				<definiendum id="0">Overall Totals</definiendum>
+				<definiens id="0">'' ( column ) present results for the entire Class ( A÷D ) Subset for the system corresponding to that matrix row</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>`` Overall Totals '' ( row ) present results accumulated over all systems corresponding to the Test Data ( sub ) set corresponding to that raatrlx column .</sentence>
+				<definiendum id="0">Overall Totals</definiendum>
+				<definiens id="0">'' ( row ) present results accumulated over all systems corresponding to the Test Data ( sub ) set corresponding to that raatrlx column</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>`` Overall Totals '' ( column ) present results for the entire Class ( A÷D ) Subset for the system corresponding to that matrix row .</sentence>
+				<definiendum id="0">Overall Totals</definiendum>
+				<definiens id="0">'' ( column ) present results for the entire Class ( A÷D ) Subset for the system corresponding to that matrix row</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>`` Overall Totals '' ( row ) present results accuxnulated over all systems corresponding to the Test Data ( sub ) set corresponding to that matrix column .</sentence>
+				<definiendum id="0">Overall Totals</definiendum>
+				<definiens id="0">'' ( row ) present results accuxnulated over all systems corresponding to the Test Data ( sub ) set corresponding to that matrix column</definiens>
+			</definition>
+</paper>
+
+		<paper id="1116">
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>Parseval is a measure of the ability of a system to bracket the syntactic constituents in a sentence .</sentence>
+				<definiendum id="0">Parseval</definiendum>
+				<definiens id="0">a measure of the ability of a system to bracket the syntactic constituents in a sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="1069">
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>The Taiwanese consortium SIGSLP , which includes the national telephone laboratories as a member , is committed to carrying out a POLYPI-IONE collection in Mandarin , though funding was not received on the first try .</sentence>
+				<definiendum id="0">Taiwanese consortium SIGSLP</definiendum>
+				<definiens id="0">includes the national telephone laboratories as a member</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The LDC version of the OGI Multilingual corpus on two CD-ROMs will have a suggested division by callers into training ( 50 callers ) , development test ( 20 ) , and evaluation test ( 20 ) subsets for each language .</sentence>
+				<definiendum id="0">LDC version of the OGI Multilingual</definiendum>
+				<definiens id="0">have a suggested division by callers into training ( 50 callers ) , development test ( 20 ) , and evaluation test ( 20 ) subsets for each language</definiens>
+			</definition>
+</paper>
+
+		<paper id="1103">
+			<definition id="0">
+				<sentence>The MIT spoken language system combines ; SUMMIT , a segment-based speech recognition system , and TINA , a probabilistic natural language system , to achieve speech understanding .</sentence>
+				<definiendum id="0">TINA</definiendum>
+				<definiens id="0">a segment-based speech recognition system</definiens>
+				<definiens id="1">a probabilistic natural language system , to achieve speech understanding</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>• Multi-lingual SLS : Extended the bilingual VOYAGER system to other languages including Italian , French , and German .</sentence>
+				<definiendum id="0">Multi-lingual SLS</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1104">
+			<definition id="0">
+				<sentence>ROM media in collaboration with the Linguistic Data Consortium .</sentence>
+				<definiendum id="0">ROM</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>Correction recall is the number of repairs that were properly corrected compared to the number of repairs .</sentence>
+				<definiendum id="0">Correction recall</definiendum>
+				<definiens id="0">the number of repairs that were properly corrected compared to the number of repairs</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Correction precision is the number of repairs that were properly corrected compared to the total number of corrections .</sentence>
+				<definiendum id="0">Correction precision</definiendum>
+				<definiens id="0">the number of repairs that were properly corrected compared to the total number of corrections</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The SRI g~up ( Bear , Dowding and Shn % erg , 1992 ) removed the assumptiml of an explicit edit signal , and employed simple pattern matching techniques for detecting and correcting modification repairs ( they removed all utterances with abridged repairs from their corpus ) .</sentence>
+				<definiendum id="0">SRI g~up</definiendum>
+				<definiens id="0">removed the assumptiml of an explicit edit signal , and employed simple pattern matching techniques for detecting and correcting modification repairs ( they removed all utterances with abridged repairs from their corpus )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The entire corpus consists of 112 dialogs totaling almost eight hours in length and containing about 62,000 words and 6300 speaker turns .</sentence>
+				<definiendum id="0">entire corpus</definiendum>
+				<definiens id="0">consists of 112 dialogs totaling almost eight hours in length and containing about 62,000 words and 6300 speaker turns</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Part-of-speech tagging is the process of assigning to a word the category that is most probable given the sentential context ( Church , 1988 ) .</sentence>
+				<definiendum id="0">Part-of-speech tagging</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>In this case , the number of states of the Markov model will be N , where N is the number of tags .</sentence>
+				<definiendum id="0">N</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Figure 1 gives a simplied view of a Markov model for part-of-speech tagging , where Ci is a possible category for the ith word , wi , and Ci+~ is a possible category for word wi÷t. The category transition probability is simply the probability of category Ci+ , following category Ci , which is written as P ( Ci+tICi ) , and the probability of word wi+ , given category C~+ , is P ( wi+xlCi+~ ) .</sentence>
+				<definiendum id="0">Ci</definiendum>
+				<definiendum id="1">Ci+~</definiendum>
+				<definiendum id="2">P</definiendum>
+				<definiens id="0">a possible category for the ith word , wi</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>So , we incorporate them into the statistical model by viewing them as part of the `` word '' that gets tagged with Ri , thus changing the probability on the repair state from P ( Fi \ [ Ri ) to P ( F~ E~ IRk ) , where E~ indicates the presence of editing terms .</sentence>
+				<definiendum id="0">E~</definiendum>
+				<definiens id="0">indicates the presence of editing terms</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Bear , Dowding , and Shn'berg ( 1992 ) use the ATIS corpus , which is a collection of queries made to an automated airline reservation system .</sentence>
+				<definiendum id="0">ATIS corpus</definiendum>
+				<definiens id="0">a collection of queries made to an automated airline reservation system</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Lastly , Nakatani and Hirschberg ( 1993 ) also used the ATIS corpus , but in this case , focused only on detection , but detection of all three types of repairs .</sentence>
+				<definiendum id="0">ATIS</definiendum>
+				<definiens id="0">corpus , but in this case , focused only on detection , but detection of all three types of repairs</definiens>
+			</definition>
+</paper>
+
+		<paper id="1045">
+</paper>
+
+		<paper id="1064">
+			<definition id="0">
+				<sentence>INTRODUCTION Speech recognition research at LIMSI aims to develop recognizers that are task- , speaker- , and vocabulary-independent so as to be easily adapted to a variety of applications .</sentence>
+				<definiendum id="0">LIMSI</definiendum>
+				<definiens id="0">aims to develop recognizers that are task- , speaker- , and vocabulary-independent so as to be easily adapted to a variety of applications</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>BREF : BREF\ [ 14\ ] is a large read-speech corpus , containing over 100 hours of speech material , from 120 speakers ( 55m/65f ) .</sentence>
+				<definiendum id="0">BREF</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1018">
+</paper>
+
+		<paper id="1118">
+</paper>
+
+		<paper id="1075">
+			<definition id="0">
+				<sentence>The NLP component consists of a tagger , a semi-purser , a prepositional phrase attachment specialist , a conjunct identifier for coordinate conjunctions , and a restructuzer .</sentence>
+				<definiendum id="0">NLP component</definiendum>
+				<definiens id="0">consists of a tagger , a semi-purser , a prepositional phrase attachment specialist , a conjunct identifier for coordinate conjunctions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The KA component receives appropriate parses from the NLP component and uses them to populate an object-oriented knowledge base \ [ 4\ ] .</sentence>
+				<definiendum id="0">KA component</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>phrase ( ( w skeletal adjllbody-lmrt ) ( w dysplasia nounlldisoxder ) ) ( p~_~ , hrffi~ ( w of v , ~ ) ( norm_phrase ( ( w the det ) ( w foxelegs nounlpluralllbody-part ) ) ) ) ) ) ) ) Relationships : Relalicmhip : Symptom Role SYMPTOM : cataracts Role DISORDER : opacificafion ( comesl ) Relationship : Predisposition Role DISEASE : dysplasia ( skeletal ) Role PREDISPOSED : cataracts Role SPECIES : Labrador Retriever Role LOCATION : forelegs Figure 2 : Sample Sentences Processed by KUDZU ful in the attachment of prepositions/ phrases .</sentence>
+				<definiendum id="0">phrase</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1056">
+			<definition id="0">
+				<sentence>The speaker was Dr. Helen Gigley , Head of the Human Computer Interaction ( HCI ) Laboratory at NRL , who covered not only the human language technology ( HLT ) research and development in their HCI laboratory but also work at the Navy Center for Applied Research in Artificial Intelligence ( NCARAI ) , both groups housed within the Information Technology Division of NRL .</sentence>
+				<definiendum id="0">HLT</definiendum>
+				<definiendum id="1">NCARAI</definiendum>
+				<definiens id="0">the Human Computer Interaction ( HCI ) Laboratory at NRL , who covered not only the human language technology</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>The Rosetta Stone is a tablet of black basalt containing parallel inscriptions in three different writings ; one in greek , and the two others in two different forms of ancient Egyptian writings • ( demotic and hieroglyphics ) .</sentence>
+				<definiendum id="0">Rosetta Stone</definiendum>
+				<definiens id="0">a tablet of black basalt containing parallel inscriptions in three different writings</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In our tests with a small sample of collocations , the Dice Coefficient corrected errors introduced by mutual information and never contradicted mutual information when it was correct \ [ 20\ ] .</sentence>
+				<definiendum id="0">Dice Coefficient</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>For a given source collocation , ChampoUion produces the target collocation by first computing the set of single words that are highly correlated with the source collocation and then searching for any combination of words in that set with a high correlation with the source .</sentence>
+				<definiendum id="0">ChampoUion</definiendum>
+				<definiens id="0">produces the target collocation by first computing the set of single words that are highly correlated with the source collocation and then searching for any combination of words</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>At this point , the search space is P ( WS ) ; i.e. , T is an element of P ( WS ) .</sentence>
+				<definiendum id="0">T</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The first set of source collocations ( C1 ) are 300 collocations identified by Xtract on all data from 1986 , the second set ( C2 ) is a set of 300 collocations identified by Xtract on all data from 1987 , and the third set of collocations ( C3 ) consists of 300 collocations identified by Xtract on all data from 1988 .</sentence>
+				<definiendum id="0">C2</definiendum>
+				<definiens id="0">a set of 300 collocations identified by Xtract on all data from 1987</definiens>
+				<definiens id="1">consists of 300 collocations identified by Xtract on all data from 1988</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Smadja , E and McKeown , K. , `` Champollion : An Automatic Tool for Developing Bilingual Lexicons , '' in preparation .</sentence>
+				<definiendum id="0">Champollion</definiendum>
+				<definiens id="0">An Automatic Tool for Developing Bilingual Lexicons , '' in preparation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1049">
+			<definition id="0">
+				<sentence>In the Markov model , state transition probabilities ( P ( Tagi\ ] Tagi-z ... Tagi_ , ~ ) ) express the likelihood of a tag immediately following n other tags , and emit probabilities ( P ( WordjlTagi ) ) express the likelihood of a word given a tag .</sentence>
+				<definiendum id="0">state transition probabilities</definiendum>
+				<definiens id="0">express the likelihood of a tag immediately following n other tags , and emit probabilities ( P ( WordjlTagi ) ) express the likelihood of a word given a tag</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>257 word is tagged z. where w and x are variables over all words in the training corpus , and z is a variable over all parts of speech .</sentence>
+				<definiendum id="0">z</definiendum>
+				<definiens id="0">variables over all words in the training corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The allowable transformation templates are the same as the contextual transformation templates listed above , but with the action change tag X to tag Y modified to add tag X to tag Y or add tag X to word W. Instead of changing the tagging of a word , transformations now add alternative taggings to a word .</sentence>
+				<definiendum id="0">allowable transformation templates</definiendum>
+				<definiens id="0">the contextual transformation templates listed above , but with the action change tag X to tag Y modified to add tag X to tag Y or add tag X to word W. Instead of changing the tagging of a word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1098">
+</paper>
+
+		<paper id="1076">
+</paper>
+
+		<paper id="1110">
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>The Human Language Evaluation Session , which included many diverse views on the evaluation of language understanding and a spirited discussion of the Semantic Evaluation ( SemEval ) approaches currently being explored in the ARPA HLT community .</sentence>
+				<definiendum id="0">Human Language Evaluation Session</definiendum>
+				<definiens id="0">included many diverse views on the evaluation of language understanding and a spirited discussion of the Semantic Evaluation ( SemEval ) approaches currently being explored in the ARPA HLT community</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A Demonstration Session , organized and chaired by Victor Abrash , which included demonstrations of HLT for command and control data access , spoken language translation , access to data sources on the information highway , text retrieval and understanding , and reading education .</sentence>
+				<definiendum id="0">Demonstration Session</definiendum>
+				<definiendum id="1">Victor Abrash</definiendum>
+				<definiens id="0">command and control data access , spoken language translation , access to data sources on the information highway</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Victoria Palay ( MIT-LCS ) , a past Workshop Administrator , provided very valuable help and guidance in many of the administrative aspects of the Workshop , and particularly in setting up the various databases .</sentence>
+				<definiendum id="0">Victoria Palay</definiendum>
+				<definiens id="0">a past Workshop Administrator , provided very valuable help and guidance in many of the administrative aspects of the Workshop</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Victor Abrash ( SRI ) deserves particular thanks for taking complete charge of the demonstration session and handling the many difficult details involved in arranging and coordinating a large number of live demos .</sentence>
+				<definiendum id="0">SRI )</definiendum>
+				<definiens id="0">deserves particular thanks for taking complete charge of the demonstration session</definiens>
+			</definition>
+</paper>
+
+		<paper id="1097">
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>The largest component of the corpus consists of materials from the Dow-Jones News Service ; over 1.6 million words of this material has been hand parsed , with an additional 1 million words tagged for part of speech .</sentence>
+				<definiendum id="0">largest component of the corpus</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Predicate Argument Structure : believe ( *someone* , shoot ( *someone* , Who ) ) A null element is also used to indicate which lexical NP is to be interpreted as the null null subject of an infinitive complement clause ; it is co-indexed with the controlling NP , based upon the lexical properties of the verb .</sentence>
+				<definiendum id="0">Predicate Argument Structure</definiendum>
+				<definiens id="0">based upon the lexical properties of the verb</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( SINV ( VP-TPC-I Marching ( PP-CLR past ( NP the reviewing stand ) ) ) ( VP were ( VP *T*-I ) ) ( NP-SBJ 500 musicians ) ) TAG Mnemnonic *ICH* Interpret Constituent Here *PPA* Permanent Predictable Ambiguity *RNR* Right Node Raising *EXP* EXPletive Figure 2 : The four forms of pseudo-attachment Here , the SINVnode marks an inverted S structure , and the -TPC tag ( ToPiC ) marks a fronted ( topicalized ) constituent ; the -GLR tag is discussed below .</sentence>
+				<definiendum id="0">SINV</definiendum>
+				<definiendum id="1">VP-TPC-I Marching ( PP-CLR past</definiendum>
+				<definiendum id="2">SINVnode</definiendum>
+				<definiendum id="3">-TPC tag</definiendum>
+				<definiens id="0">NP-SBJ 500 musicians ) ) TAG Mnemnonic *ICH* Interpret Constituent Here *PPA* Permanent Predictable Ambiguity *RNR* Right Node Raising</definiens>
+			</definition>
+</paper>
+
+		<paper id="1040">
+			<definition id="0">
+				<sentence>The language processor brings more sophisticated linguistic knowledge sources to bear , typically some form of syntactic and/or semantic analysis , and uses them to choose the most plausible member of the N-best list .</sentence>
+				<definiendum id="0">language processor</definiendum>
+				<definiens id="0">brings more sophisticated linguistic knowledge sources to bear , typically some form of syntactic and/or semantic analysis , and uses them to choose the most plausible member of the N-best list</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The totM score for each hypothesis is a weighted sum of the scores contributed by the various KSs .</sentence>
+				<definiendum id="0">totM score</definiendum>
+				<definiens id="0">a weighted sum of the scores contributed by the various KSs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We then find all possible 4-tuples ( U , H1 , H2 , L ) where • U is an utterance .</sentence>
+				<definiendum id="0">U</definiendum>
+				<definiens id="0">an utterance</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>• L is a linguistic item of type T that is associated with exactly one of H1 and H2 .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">a linguistic item of type T that is associated with exactly one of H1 and H2</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Class N-gram discriminants ( four distinct knowledge sources ) : Discrimination scores for 1- , 2- , 3and 4-grams of classes of surface linguistic items .</sentence>
+				<definiendum id="0">Class N-gram discriminants</definiendum>
+				<definiens id="0">four distinct knowledge sources ) : Discrimination scores for 1-</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A semantic triple is of the form ( Head1 , Rel , Head2 ) , where Head1 and Head2 are head-words of phrases , and Rel is a grammatical relation obtaining between them .</sentence>
+				<definiendum id="0">semantic triple</definiendum>
+				<definiendum id="1">Head1</definiendum>
+				<definiendum id="2">Rel</definiendum>
+				<definiens id="0">a grammatical relation obtaining between them</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Typical values for Rel are `` subject '' or `` object '' , when Head1 is a verb and Head2 the head-word of one of its arguments ; alternatively , Rel can be a preposition , if the relation is a PP modification of an NP or VP .</sentence>
+				<definiendum id="0">Head1</definiendum>
+				<definiendum id="1">relation</definiendum>
+				<definiens id="0">a verb</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>We chose to use the following rules : Preprocessed Text HUNDRED \ [ number\ ] ONE HUNDRED ONE DOLLAR ZERO POINT \ [ number\ ] AND ONE HALF AND ONE QUARTER Simulated Text HUNDRED AND \ [ number\ ] A HUNDRED A DOLLAR POINT \ [ number\ ] AND A HALF AND A QUARTER Thus , for example , ff the sentence consists of the pattern `` hundred twenty '' , we repeated the same sentence with `` hundred AND twenty '' .</sentence>
+				<definiendum id="0">HUNDRED A DOLLAR POINT</definiendum>
+				<definiendum id="1">HALF AND A QUARTER Thus</definiendum>
+				<definiens id="0">Preprocessed Text HUNDRED \ [ number\ ] ONE HUNDRED ONE DOLLAR ZERO POINT \ [ number\ ] AND ONE HALF AND ONE QUARTER Simulated Text HUNDRED AND \ [ number\ ] A</definiens>
+			</definition>
+</paper>
+
+		<paper id="1044">
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>in the sense that the former can not exist without the latter existing , then Relation2 is a good candidate for being represented via option ( b ) .</sentence>
+				<definiendum id="0">Relation2</definiendum>
+				<definiens id="0">a good candidate for being represented via option ( b )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An Entity Snapshot is an Entity at a particular point or interval in time .</sentence>
+				<definiendum id="0">Entity Snapshot</definiendum>
+				<definiens id="0">an Entity at a particular point or interval in time</definiens>
+			</definition>
+</paper>
+
+		<paper id="1096">
+</paper>
+
+		<paper id="1068">
+			<definition id="0">
+				<sentence>Hidden Markov Models ( HMM 's ) have to date been accepted as an effective classification method for large vocabulary continuous speech recognition .</sentence>
+				<definiendum id="0">Hidden Markov Models</definiendum>
+				<definiens id="0">an effective classification method for large vocabulary continuous speech recognition</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The database consists of 50 male and 30 female speakers .</sentence>
+				<definiendum id="0">database</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The array consists of 33 omni-direetlonal sensors , which are nonuniformly positioned ( nested over three octaves ) .</sentence>
+				<definiendum id="0">array</definiendum>
+				<definiens id="0">consists of 33 omni-direetlonal sensors , which are nonuniformly positioned ( nested over three octaves )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Final sqe ( squared error ) is the mean sqe per time step on the test database .</sentence>
+				<definiendum id="0">Final sqe</definiendum>
+				<definiens id="0">the mean sqe per time step on the test database</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>~ parameters denotes the number of adaptive parameters in the network .</sentence>
+				<definiendum id="0">parameters</definiendum>
+				<definiens id="0">the number of adaptive parameters in the network</definiens>
+			</definition>
+</paper>
+
+		<paper id="1112">
+</paper>
+
+		<paper id="1072">
+			<definition id="0">
+				<sentence>Without actually doing semantic analysis , this kind of normalization can be achieved through the following processes : 2 ( 1 ) morphological stemming : e.g. , retrieving is reduced to retriev ; ( 2 ) lexicon-based word normalization : e.g. , retrieval is reduced to retrieve ; ( 3 ) operator-argument representation of phrases : e.g. , information retrieval , retrieving of information , and retrieve relevant information are all assigned the same representation , retrieve+information ; ( 4 ) context-based term clustering into synonymy classes and subsumption hierarchies : e.g. , takeover is a kind of acquisition ( in business ) , and Fortran is a programming language .</sentence>
+				<definiendum id="0">takeover</definiendum>
+				<definiendum id="1">Fortran</definiendum>
+				<definiens id="0">operator-argument representation of phrases : e.g. , information retrieval , retrieving of information , and retrieve relevant information are all assigned the same representation</definiens>
+				<definiens id="1">a kind of acquisition ( in business ) , and</definiens>
+				<definiens id="2">a programming language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , BE is the main predicate ( modified by HAVE ) with 2 arguments ( subject , object ) and 2 adjuncts ( adv , sub ord ) .</sentence>
+				<definiendum id="0">BE</definiendum>
+				<definiens id="0">the main predicate ( modified by HAVE ) with 2 arguments ( subject , object ) and 2 adjuncts ( adv , sub ord )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>INVADE is the predicate in the subordinate clause with 2 arguments ( subject , object ) .</sentence>
+				<definiendum id="0">INVADE</definiendum>
+				<definiens id="0">the predicate in the subordinate clause with 2 arguments ( subject , object )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>idf weighting scheme may be inappropriate for mixed term sets , consisting of ordinary concepts , proper names , and phrases , because : ( 1 ) It favors terms that occur fairly frequently in a document , which supports only general-type queries ( e.g. , `` all you know about 'star wars ' '' ) .</sentence>
+				<definiendum id="0">idf weighting scheme</definiendum>
+				<definiens id="0">consisting of ordinary concepts , proper names , and phrases</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>idf run precision ( which is often the stronger of the two ) .</sentence>
+				<definiendum id="0">idf run precision</definiendum>
+				<definiens id="0">the stronger of the two )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1090">
+			<definition id="0">
+				<sentence>This system , termed HARC ( Hear and Respond to Continuous speech ) , is composed of the BYBLOS speech recognition system and the DELPHI natural language understanding system .</sentence>
+				<definiendum id="0">HARC</definiendum>
+				<definiens id="0">Continuous speech ) , is composed of the BYBLOS speech recognition system and the DELPHI natural language understanding system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>HUM is a new statistical model of semantics which will enable us to carry out studies in the alignment of corpora to semantic interpretations .</sentence>
+				<definiendum id="0">HUM</definiendum>
+				<definiens id="0">a new statistical model of semantics which will enable us to carry out studies in the alignment of corpora to semantic interpretations</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>ABSTRACT The Linguistic Data Consortium ( LDC ) is currently involved in a major effort to expand its multilingual text resources , in particular for machine translation , message understanding and information retrieval research .</sentence>
+				<definiendum id="0">Linguistic Data Consortium ( LDC</definiendum>
+				<definiens id="0">currently involved in a major effort to expand its multilingual text resources , in particular for machine translation , message understanding and information retrieval research</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Bellcore Hansard consists of roughly 60 million words ; 19 since the file naming conventions used do not permit distinguishing of the French from the English in a large portion of the corpus , exact counts of French and English words have not yet been done .</sentence>
+				<definiendum id="0">Bellcore Hansard</definiendum>
+				<definiens id="0">consists of roughly 60 million words ; 19 since the file naming conventions used do not permit distinguishing of the French from the English in a large portion of the corpus , exact counts of French and English words have not yet been done</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>VOA is an information organization with international headquarters in Washington , D.C .</sentence>
+				<definiendum id="0">VOA</definiendum>
+				<definiens id="0">an information organization with international headquarters in Washington</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The VOA has a computer readable English language archive of scripts that is about two gigabytes ; it dates back to October 1990 .</sentence>
+				<definiendum id="0">VOA</definiendum>
+				<definiens id="0">a computer readable English language archive of scripts that is about two gigabytes</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Radio/TV Marti is a separate organization that broadcasts to Cuba 24 hours per day in Spanish only .</sentence>
+				<definiendum id="0">Radio/TV Marti</definiendum>
+				<definiens id="0">a separate organization that broadcasts to Cuba 24 hours per day in Spanish only</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Military Review is a publication of the U.S. Department of of the Army produced in Fort Leavenworth , Kansas .</sentence>
+				<definiendum id="0">Military Review</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The LDC receives the data via a satellite dish installed at the University of Pennsylvania .</sentence>
+				<definiendum id="0">LDC</definiendum>
+				<definiens id="0">receives the data via a satellite dish installed at the University of Pennsylvania</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The Portuguese service uses a variation of the IBM code page 850 character set .</sentence>
+				<definiendum id="0">Portuguese service</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>The Arabic service uses a proprietary character set developed by AFP for DOS .</sentence>
+				<definiendum id="0">Arabic service</definiendum>
+				<definiens id="0">uses a proprietary character set developed by AFP for DOS</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>YONHAP ( Korean Press Agency ) is a Korean language service that provides about 130 articles per day in Korean and 10-30 articles in English .</sentence>
+				<definiendum id="0">YONHAP ( Korean Press Agency )</definiendum>
+				<definiens id="0">a Korean language service that provides about 130 articles per day in Korean and 10-30 articles in English</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The Dow Jones Information News Service ( a financial news service ) , the Wall Street Journal , and the New York Times News Service ( which is composed of 300,000 words per day of the NY Times newspaper and text from several North American news services ) are all in the process of contract negotiations with the LDC .</sentence>
+				<definiendum id="0">Dow Jones Information News Service</definiendum>
+				<definiens id="0">a financial news service ) , the Wall Street Journal , and the New York Times News Service ( which is composed of 300,000 words per day of the NY Times newspaper and text from several North American news services ) are all in the process of contract negotiations with the LDC</definiens>
+			</definition>
+</paper>
+
+		<paper id="1094">
+</paper>
+
+		<paper id="1036">
+</paper>
+
+		<paper id="1054">
+			<definition id="0">
+				<sentence>MAJESTY is a recently developed morphological preprocessor for Japanese text \ [ Kitani , et .</sentence>
+				<definiendum id="0">MAJESTY</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1043">
+</paper>
+
+		<paper id="1038">
+			<definition id="0">
+				<sentence>The demonstrator application , which we call WAXHOLM , gives information on boat traffic in the Stockholm archipelago ( see Figure 1 ) .</sentence>
+				<definiendum id="0">demonstrator application</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The speech recognition component , which so far has not been integrated in the system during data collection , will handle continuous speech with a vocabulary of about 1000 words .</sentence>
+				<definiendum id="0">speech recognition component</definiendum>
+				<definiens id="0">integrated in the system during data collection , will handle continuous speech with a vocabulary of about 1000 words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Our parser , STINA , i.e. , Swedish TINA , is knowledge-based and is designed as a probabilistic language model \ [ 9\ ] .</sentence>
+				<definiendum id="0">Swedish TINA</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The probability for each topic is expressed as : p ( topiclF ) , where F is a feature vector including all semantic features used in the utterance .</sentence>
+				<definiendum id="0">topiclF</definiendum>
+				<definiendum id="1">F</definiendum>
+				<definiens id="0">a feature vector including all semantic features used in the utterance</definiens>
+			</definition>
+</paper>
+
+		<paper id="1107">
+</paper>
+
+		<paper id="1066">
+			<definition id="0">
+				<sentence>PDCN , like SDCN and FCDCN \ [ 3,6\ ] , assumes the existence of a database of utterances recorded in stereo ) in the training and testing environments .</sentence>
+				<definiendum id="0">PDCN</definiendum>
+				<definiens id="0">assumes the existence of a database of utterances recorded in stereo ) in the training and testing environments</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In situations where no data from any particular testing environment is available for estimation , IPDCN is desirable .</sentence>
+				<definiendum id="0">IPDCN</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Codebook Adaptation ( DCCA and BWCA ) A vector quantization ( VQ ) codebook , which is a set of mean vectors and/or co-variance matrices of cepstral representations , also exhibits some fundamental differences when mismatches are encountered between training and testing environments \ [ 7\ ] .</sentence>
+				<definiendum id="0">vector quantization</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Dual-Channel Codebook Adaptation ( DCCA ) exploits the existence of speech that is simultaneously recorded using the CLSTLK microphone and a number of secondary microphones .</sentence>
+				<definiendum id="0">Dual-Channel Codebook Adaptation ( DCCA )</definiendum>
+				<definiens id="0">exploits the existence of speech that is simultaneously recorded using the CLSTLK microphone and a number of secondary microphones</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>From the viewpoint of front-end compensation , the senone probability density function can be expressed as the Gaussian mixture B B Pst = k ~= lWkN ( it ; ~k'°k ) = k ~= 1WkN ( Zt+Szt ; ~tk'°k ) where k , z t , 8z t , Jt t , ~t k , o k are the mixture index among top B mixtures , noisy observation vector , compensation vector , compensated vector , mean vector for the k th mixture , and variance , respectively .</sentence>
+				<definiendum id="0">senone probability density function</definiendum>
+				<definiens id="0">the mixture index among top B mixtures , noisy observation vector , compensation vector , compensated vector , mean vector for the k th mixture , and variance , respectively</definiens>
+			</definition>
+</paper>
+
+		<paper id="1035">
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>INTRODUCTION Over the past few years , our group has participated , as a member of the ARPA Human Language Technology ( HLT ) research community , in the development of spoken language technology in the common domain called Air Travel Information Service , or ATIS \ [ i\ ] .</sentence>
+				<definiendum id="0">INTRODUCTION</definiendum>
+				<definiendum id="1">ATIS</definiendum>
+				<definiens id="0">a member of the ARPA Human Language Technology ( HLT ) research community , in the development of spoken language technology in the common domain called Air Travel Information Service , or</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Our system , called PEGASUS , acts as a mediator between 201 Speech Tables &amp; Speech SPEECH J UNDERSTAND , NG I : SYSTEM I Speech I I Semantic Frame -I SYSTEM l ; ueriel ANAGER mI : : I Tables Figure 1 : Schematic of the PEGASUS on-line travel planning system .</sentence>
+				<definiendum id="0">PEGASUS</definiendum>
+				<definiens id="0">Schematic of the PEGASUS on-line travel planning system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>INPUT : IS THERE A UNITED FLIGHT CONNECTING IN DENVER FRAME : Clause : EXISTENTIAL Topic : FLIGHT Quant : INDEF Predicate : AIRLINE_NAME Name : `` United '' Predicate : CONNECT Predicate : IN Topic : CITY_NAME Name : `` Denver '' Figure 2 : An example of a semantic flame .</sentence>
+				<definiendum id="0">INPUT</definiendum>
+				<definiens id="0">IS THERE A UNITED FLIGHT CONNECTING IN DENVER FRAME : Clause : EXISTENTIAL Topic : FLIGHT Quant : INDEF Predicate : AIRLINE_NAME Name : `` United '' Predicate</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The segment-based SUMMIT speech recognition component \ [ 7\ ] produces a list of the top ten sentence hypotheses , which are then filtered by the probabilistic TINA natural language component \ [ 8\ ] .</sentence>
+				<definiendum id="0">segment-based SUMMIT speech recognition component</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>PEGASUS is the outcome of a new research strategy that we have adopted , one that strives to develop language-based technologies within the context of real application back-ends , rather than relying on mock-ups , however realistic they might be .</sentence>
+				<definiendum id="0">PEGASUS</definiendum>
+				<definiens id="0">strives to develop language-based technologies within the context of real application back-ends</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>Another motivation for the development of automated dictionary/ontology alignment algorithms is the increased availability of online lexical and semantic resources , such as lexicons , taxonomies , dictionaries and thesaiuri\ [ Matsumoto et al. , 1993b ; Miller , 1990 ; Lenat and Guha , 1990 ; Carlson and Nirenburg , 1990 ; Collins , 1971 ; IPAL , 1987\ ] .</sentence>
+				<definiendum id="0">IPAL</definiendum>
+				<definiens id="0">the increased availability of online lexical and semantic resources , such as lexicons , taxonomies , dictionaries and thesaiuri\ [ Matsumoto et al. , 1993b</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The ontology consists of three regions : the upper region ( more abstract ) , the middle region , and the lower ( domain specific ) region .</sentence>
+				<definiendum id="0">ontology</definiendum>
+				<definiens id="0">consists of three regions : the upper region ( more abstract ) , the middle region</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>k ewkl EWkl _0_1 Bilingual Concept English Word Ontology concept eWkl J Wi -k ~ '' `` E Wk t -O-1 eWkr \ ] Figure 3 : Case-I : single to single association Figure 5 : Case-III : multiple to single association 143 English word Ontology Concept Definition ball_O_1 cotillion_O_1 clod_O_2 ball ball_0_2 ball_O_3 ball_O_4 ball_O_1 globe \ [ earth_O_4 globe_O_l round shape ( a shape that is curved and without sharp angles ) cotillion ( a lavish formal dance ) clod , glob , lump , chunk ( a compact mass ) ( a more or less rounded anatomical body or mass ) musket ball ( a ball shot by a musket ) plaything , toy ( an artifact designed to be played with ) round shape ( a shape that is curved and without sharp angles ) earth , world ( the planet on which we live ) ( a sphere on which a map , esp .</sentence>
+				<definiendum id="0">chunk</definiendum>
+				<definiendum id="1">toy (</definiendum>
+				<definiens id="0">a shape that is curved and without sharp angles</definiens>
+				<definiens id="1">a lavish formal dance ) clod , glob</definiens>
+				<definiens id="2">an artifact designed to be played with ) round shape ( a shape that is curved and without sharp angles</definiens>
+			</definition>
+</paper>
+
+		<paper id="1120">
+</paper>
+
+		<paper id="1087">
+			<definition id="0">
+				<sentence>Using the simple ( unnormalized ) one-recognizer strategy described above , we obtained an 83 % probability of detection at the equal error point ( i.e. the point where the probability of detection equals the probability of false alarm ) .</sentence>
+				<definiendum id="0">detection</definiendum>
+				<definiens id="0">equals the probability of false alarm )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>`` SWITCHBOARD : Telephone Speech Corpus for Research and Development , '' Proc .</sentence>
+				<definiendum id="0">SWITCHBOARD</definiendum>
+				<definiens id="0">Telephone Speech Corpus for Research and Development , '' Proc</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>SemEval is an attempt to define a task-independent technology-based evaluation for languageunderstanding systems consisting of three parts : word-sense identification , predicate-argument structure determination , and identification of coreference relations .</sentence>
+				<definiendum id="0">SemEval</definiendum>
+				<definiens id="0">an attempt to define a task-independent technology-based evaluation for languageunderstanding systems consisting of three parts : word-sense identification , predicate-argument structure determination , and identification of coreference relations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Well , first , ARPA 's goal in the HLT Program is to make strategic advances in core human language technology .</sentence>
+				<definiendum id="0">HLT Program</definiendum>
+				<definiens id="0">to make strategic advances in core human language technology</definiens>
+			</definition>
+</paper>
+
+		<paper id="1080">
+			<definition id="0">
+				<sentence>Hidden Markov Models ( HMMs ) have been used successfully in a wide variety of recognition tasks ranging from small isolated word systems assisted by heavily constrained grammars to very large vocabulary unconstrained continuous speech systems .</sentence>
+				<definiendum id="0">Hidden Markov Models</definiendum>
+				<definiendum id="1">HMMs</definiendum>
+				<definiens id="0">isolated word systems assisted by heavily constrained grammars to very large vocabulary unconstrained continuous speech systems</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Consequently the recognition network consists of two types of nodes .</sentence>
+				<definiendum id="0">recognition network</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>These represent an actual phone from the dictionary and are linked to a physical HMM ( the identity of which may depend on the context ) .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">the identity of which may depend on the context )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The WSJ systems used training data from the SI-84 and SI-284 test sets , and the pronunciations from the Dragon Wall Street Journal Pronunciation Lexicon Version 2.0 together with the standard bigram and trigram language models supplied by MIT Lincoln Labs .</sentence>
+				<definiendum id="0">WSJ systems</definiendum>
+				<definiens id="0">used training data from the SI-84 and SI-284 test sets</definiens>
+			</definition>
+</paper>
+
+		<paper id="1091">
+</paper>
+
+		<paper id="1070">
+			<definition id="0">
+				<sentence>The `` siems2 '' results from Siemens Corporate Research , Inc. ( see Voorhees paper ) are based on the use of the Comell SMART system , but with the topics manually modified ( the `` not '' phases removed ) .</sentence>
+				<definiendum id="0">siems2</definiendum>
+				<definiens id="0">see Voorhees paper ) are based on the use of the Comell SMART system , but with the topics manually modified ( the `` not '' phases removed )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1117">
+</paper>
+
+		<paper id="1092">
+</paper>
+
+		<paper id="1105">
+</paper>
+
+		<paper id="1061">
+</paper>
+
+		<paper id="1051">
+			<definition id="0">
+				<sentence>The shift-reduce parser consists of two primary data structures : a five position input buffer , and an unlimited depth push down stack .</sentence>
+				<definiendum id="0">shift-reduce parser</definiendum>
+				<definiens id="0">consists of two primary data structures : a five position input buffer</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Recall measures the percentage of the constituents in the standard parse which are present in the candidate parse .</sentence>
+				<definiendum id="0">Recall</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Precision measures the percentage of the constituents in the candidate parse which are correct ( i.e. , present in the standard parse ) .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">measures the percentage of the constituents in the candidate parse which are correct ( i.e. , present in the standard parse )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>LINGSTAT is an interactive machine-aided translation system designed to increase the productivity of a translator .</sentence>
+				<definiendum id="0">LINGSTAT</definiendum>
+				<definiens id="0">an interactive machine-aided translation system designed to increase the productivity of a translator</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>To segment Japanese , the LINGSTAT tokenizer uses a probabilistic dynamic programming algorithm to break up the character stream into the sequence of words that maximizes the product of word unigram probabilities , as supplied from a list of 300,000 words .</sentence>
+				<definiendum id="0">LINGSTAT tokenizer</definiendum>
+				<definiens id="0">uses a probabilistic dynamic programming algorithm to break up the character stream into the sequence of words that maximizes the product of word unigram probabilities</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Because of this coarseness , some parsing ambiguities remain to be resolved by the second-stage parser , which implements a simple , lexicalized , probabilistic context-free grammar trained on word co-occurrences in unlabeled Japanese sentences without human input .</sentence>
+				<definiendum id="0">second-stage parser</definiendum>
+				<definiens id="0">implements a simple , lexicalized , probabilistic context-free grammar</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The grammar consists of the following two kinds of rules : Awe -- ~ A~= to2 A~=A~ , ( la ) A= , -- ~ ¢ , ( lb ) where ~ represents the null production .</sentence>
+				<definiendum id="0">grammar</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>v ) No ( s~t ) NO ( 4.9~ ) NO ( sell ) KOTO WO ( decided ) LINGSTAT produced waazuhaimu dtumodaa oJ the America ineeJtment bank decided to adl oM 4.9~ o !</sentence>
+				<definiendum id="0">NO</definiendum>
+				<definiendum id="1">KOTO WO</definiendum>
+				<definiens id="0">( decided ) LINGSTAT produced waazuhaimu</definiens>
+			</definition>
+</paper>
+
+		<paper id="1041">
+			<definition id="0">
+				<sentence>HUMAN-HUMAN SPEECH This section reports on data that were analyzed to explore the degree of variability in disfluency rates among different types of human-human and human-computer spoken interaction , and to determine whether these two classes differ systematically .</sentence>
+				<definiendum id="0">HUMAN-HUMAN SPEECH This section</definiendum>
+				<definiens id="0">reports on data that were analyzed to explore the degree of variability in disfluency rates among different types of human-human and human-computer spoken interaction</definiens>
+			</definition>
+</paper>
+
+		<paper id="1079">
+			<definition id="0">
+				<sentence>The detailed match ( DM ) is currently implemented as a beampruned depth-fast searched triphone tree .</sentence>
+				<definiendum id="0">DM</definiendum>
+				<definiens id="0">a beampruned depth-fast searched triphone tree</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A standard Bayesian method for comblnln~ , new and old estinmtes of the same parameter is N. No z = N. + No x. + N~Xo where x is the parameter in question and N is the number of counts that went into each estimate and the subscripts n and o denote new and old .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">No z = N. + No x. + N~Xo where x is the parameter in question</definiens>
+				<definiens id="1">the number of counts that went into each estimate and the subscripts n and o denote new and old</definiens>
+			</definition>
+</paper>
+
+		<paper id="1063">
+			<definition id="0">
+				<sentence>Tied mixtures ( TM ) achieve robust estimation and efficient computation of the density likelihoods .</sentence>
+				<definiendum id="0">Tied mixtures</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A typical mixture observation distribution in an HMM-based speech recognizer has the form P ( XtlS ) = E P ( qJs ) f ( xtlq ) q E -- ~ ( s ) ( i ) where s represents the HMM state , x t the observed feature at flame t , and Q ( s ) the set of mixture-component densities used in state s. We will use the term codebook to denote the set Q ( s ) .</sentence>
+				<definiendum id="0">typical mixture observation distribution</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Mutual informati0n ( in bits ) between HMM state s at time t and eepstral coefficient h at time t-t o for various lags ; included is the conditional mutual information when the corresponding cepstral coefficient and its derivative at rime t are given P ( xtls , xt-to ) = EsP ( q\ ] s ) f ( xt\ [ q , xto ) q£'-~- ( ) ( 4 ) We either replaced the original unconditional distributions of the cepstral coefficients and their derivatives with the conditional Gaussian distributions , or we used them in parallel as additional observation streams .</sentence>
+				<definiendum id="0">Mutual informati0n</definiendum>
+				<definiens id="0">the conditional mutual information when the corresponding cepstral coefficient</definiens>
+			</definition>
+</paper>
+
+		<paper id="1060">
+</paper>
+
+		<paper id="1053">
+			<definition id="0">
+				<sentence>Hidden understanding models are an innovative application of statistical mechanisms that , given a string of words , determines the most likely meaning for the string .</sentence>
+				<definiendum id="0">Hidden understanding models</definiendum>
+				<definiens id="0">an innovative application of statistical mechanisms that , given a string of words , determines the most likely meaning for the string</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In the current example , aflight node represents the abstract concept of a flight , which is a structured entity that may contain an origin , a destination , and other component concepts .</sentence>
+				<definiendum id="0">aflight node</definiendum>
+				<definiens id="0">a structured entity that may contain an origin , a destination , and other component concepts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Thus , we have probabilities such as P ( please\ [ *begin* , show-indicator ) , which is the probability that please is the first word of a show indicator phrase , and P ( *end*lme , show-indicator ) , which is the probability of exiting a show indicator phrase given that the previous word was me .</sentence>
+				<definiendum id="0">show-indicator )</definiendum>
+				<definiens id="0">the probability that please is the first word of a show indicator phrase</definiens>
+				<definiens id="1">the probability of exiting a show indicator phrase given that the previous word was me</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Since , the semantic language model and the lexical realization model are both probabilistic networks , P ( WJM ) P ( M ) is the probability of a particular path through the combined network .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">the probability of a particular path through the combined network</definiens>
+			</definition>
+</paper>
+
+		<paper id="1111">
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>ABSTRACT Macrophone is a corpus of approximately 200,000 utterances , recorded over the telephone from a broad sample of about 5,000 American speakers .</sentence>
+				<definiendum id="0">ABSTRACT Macrophone</definiendum>
+				<definiens id="0">a corpus of approximately 200,000 utterances , recorded over the telephone from a broad sample of about 5,000 American speakers</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In particular , Maerophone contains training material for applications in transportation , scheduling , ticketing , database access , shopping , and other automated telephone interactions .</sentence>
+				<definiendum id="0">Maerophone</definiendum>
+				<definiens id="0">contains training material for applications in transportation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1078">
+			<definition id="0">
+				<sentence>Genonic mixtures sample the continuum between fully continuous and fled-mixture HMMs at an arbitrary point and therefore can achieve an optimum recognition performance given the available training data and computational resources .</sentence>
+				<definiendum id="0">Genonic mixtures</definiendum>
+				<definiens id="0">sample the continuum between fully continuous and fled-mixture HMMs at an arbitrary point and therefore can achieve an optimum recognition performance given the available training data and computational resources</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>We have experimented with four techniques for choosing bigrarn subsets to see which make the best speed/accuracy trade-offs : Count x means only use bigrarns where P ( wl ) * P ( w2/wl ) &gt; 10 x. Prob x means only use bigrarns where P ( w2/wl ) &gt; 10 x. Improve X means only use bigrams where P ( w2/wl ) &gt; Backoff ( wl ) * P ( w2 ) 110 x. Top x means only use bigrarns P ( w2/wl ) where w2 is one of the most frequent x words .</sentence>
+				<definiendum id="0">P ( w2/wl ) &gt; Backoff</definiendum>
+				<definiendum id="1">w2</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1048">
+			<definition id="0">
+				<sentence>Earlier work \ [ 11 \ ] on PP-attachment for verb phrases ( whether the PP attaches to the preceding noun phrase or to the verb phrase ) used statistics on co-occurences of two bigrams : the main verb ( V ) and preposition ( P ) bigram and the main noun in the object noun phrase ( N1 ) and preposition bigram .</sentence>
+				<definiendum id="0">object noun phrase</definiendum>
+				<definiendum id="1">N1</definiendum>
+				<definiens id="0">whether the PP attaches to the preceding noun phrase or to the verb phrase ) used statistics on co-occurences of two bigrams : the main verb</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Maximum Entropy model \ [ 1\ ] produces a probability distribution for the PP-attachment decision using only information from the verb phrase in which the attachment occurs .</sentence>
+				<definiendum id="0">Maximum Entropy model</definiendum>
+				<definiens id="0">produces a probability distribution for the PP-attachment decision using only information from the verb phrase in which the attachment occurs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Feature functions allow us to use informative characteristics of the training set in estimating p ( dlh ) .</sentence>
+				<definiendum id="0">Feature functions</definiendum>
+				<definiens id="0">allow us to use informative characteristics of the training set in estimating p</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The WSJ treebank indicates the accuracy rate of our training data , the human performance indicates how much information is in the headwords , and the ME model is still a good 12 4 the key is N , V , N , N , V , N , N , N , N , V , V , N , V , N , N , N , V , N , V percentage points behind .</sentence>
+				<definiendum id="0">WSJ treebank</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>16 21 en promedio 13 afios de vuelo `` thirteen in '' Figure 2 : Knowledge-Based MT ( KBMT ) candidates Position Input Output Left Right ( Spanish ) ( English ) 0 0 A1 AI 0 1 AI momento `` In a minute '' `` At once '' 3 3 su his her its one 's your their 4 4 venta inn sale selling marketing 6 6 Iberia Iberia 7 7 NIL 9 9 contaba `` was count '' count 9 10 contaba con `` was rely on '' `` rely on '' `` was count on '' `` count on '' `` was depending on '' `` depended on '' 13 13 NIL 15 15 tenfan `` were have '' have `` were hold '' hold `` were thinking '' thought `` were considering '' considered `` were deeming '' deemed `` were coming '' came 17 17 promedio average mean middle midpoint 19 19 afios year 21 21 vuelo flight Position Input Output Left Right ( Spanish ) ( English ) 19 21 afios de vuelo `` flight activities '' `` of years '' 19 21 afios de vuelo `` years of experience with space flight '' Figure 3 : Example-Based MT ( EBMT ) candidates Position Input Output Left Right ( Spanish ) ( English ) 1 1 momento time moment hour momentum 3 3 su his her your their its 4 4 venta sale 6 6 Iberia Iberia 9 10 contaba con `` count on '' have 12 12 aviones airplane 18 18 13 13 Figure 4 : Transfer-Based MT ( lexicon candidates ) The scores in the chart are normalized to reflect the empirically derived expectation of the relative quality of output produced by a particular engine .</sentence>
+				<definiendum id="0">Knowledge-Based MT</definiendum>
+				<definiendum id="1">Example-Based MT ( EBMT</definiendum>
+				<definiendum id="2">Spanish )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Element ( id ) of the array is the best score for any set of edges covering the input from word i to word j. ( The associated list of edges is not shown , for readability . )</sentence>
+				<definiendum id="0">Element</definiendum>
+				<definiens id="0">the best score for any set of edges covering the input from word i to word j. ( The associated list of edges is not shown</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>~ , ~Ledb Figure 9 : The TWS CMAT editor ( main menu ) mouse action ) ; three keystrokes plus the number of characters in the word being inserted for inserting a word .</sentence>
+				<definiendum id="0">TWS CMAT editor</definiendum>
+				<definiens id="0">keystrokes plus the number of characters in the word being inserted for inserting a word</definiens>
+			</definition>
+</paper>
+
+		<paper id="1071">
+			<definition id="0">
+				<sentence>From Table 1 and using the average precision ( av-p ) measure for comparison , it appears that the simple strategy ( b ) of just using short , 'nonbreak ' max=l relevant documents gives one of the best results , achieving av-p at K=40 expansion level of 0.4050 , about 6.7 % better than the 0.3795 of our baseline strategy ( a ) which uses all the relevant units .</sentence>
+				<definiendum id="0">average precision</definiendum>
+				<definiens id="0">uses all the relevant units</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>40 80 No. of Training r-r/av-p % inc r-r/av-p Subdocs % 7611/.3795 baseline 7563/.3746 57751 baseline 7646/.4050 0.5/6.7 7695/.4084 5235 9 7783/.3970 2.3/4.6 15103 26 7762/.3891 2.0/2.5 32312 56 7805/.4001 2.5/5.4 7854/.3976 16114 28 78271.4047 2.8 6.6 7861L4040 10169 18 7295/.3790 -4.2/-0.1 1500 3 7605/.3993 -0.1/5.2 4945 9 7703/.3999 1.2/5.4 13809 24 7739/.3877 1.7/2.2 31792 55 7821/.4067 2.8/7.2 15384 27 7833/.4082 2.9 7.6 7887 .4062 15702 27 7743/.4053 1.7/6.8 8930 15 7798/.4069 2.5/7.2 16362 28 Table 1 : Relevants Retrieved ( r-r ) , Average Precision Values ( av-p ) and Number of Training Subdocuments for Various Subdocument Selection Strategies Strategy : all max=l Interpolated Recall Precision Averages : first fmax=2 bestnx=300 topnx=l Average precision ( non-interpolated ) over all rel docs .3795 .4050 .4001 .4047 .3999 .4082 Precision : At 5 docs .6480 .7160 .6920 .7120 .6920 .6920 10 `` .6460 .6860 .6940 .6968 .6820 .6960 20 `` .6100 .6540 .6540 .6670 .6520 .6520 100 `` .4706 .4930 .4854 .4890 .4970 .4926 500 `` .2439 .2490 .2532 .2524 .2493 .2544 1000 `` .1522 .1529 .1561 .1565 .1541 .1567 R-Precision ( precision after R ( =num rel for a query ) docs retrieved ) : Exact .4036 .4283 .4218 .4228 .4201 .4274 Table 2 : Average Precision Values at Interpolated Recall Points and at Number of Documents Retrieved for Six Subdocument Selection Strategies ( Expansion Level-40 ) 363</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">Relevants Retrieved ( r-r ) , Average Precision Values ( av-p ) and Number of Training Subdocuments for Various Subdocument Selection Strategies Strategy : all max=l Interpolated Recall Precision Averages : first fmax=2 bestnx=300 topnx=l Average precision ( non-interpolated ) over all</definiens>
+			</definition>
+</paper>
+
+		<paper id="1082">
+</paper>
+
+		<paper id="1055">
+			<definition id="0">
+				<sentence>a THE PARSING ALGORITHM We are adopting a technique that represents a cross between explicit rule-driven strategies and strictly datadriven approaches .</sentence>
+				<definiendum id="0">PARSING ALGORITHM We</definiendum>
+				<definiens id="0">adopting a technique that represents a cross between explicit rule-driven strategies and strictly datadriven approaches</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Our experimental corpus consists of the 10,000 most frequent words appearing in the Brown Corpus \ [ 11\ ] , where each word entry contains a spelling and a single unaligned phoneme string .</sentence>
+				<definiendum id="0">experimental corpus</definiendum>
+				<definiens id="0">consists of the 10,000 most frequent words appearing in the Brown Corpus \ [ 11\ ] , where each word entry contains a spelling and a single unaligned phoneme string</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Word accuracy is the percentage of parsable words for which the top-ranking theory generates a spelling/pronunciation that matches the lexical entry exactly .</sentence>
+				<definiendum id="0">Word accuracy</definiendum>
+				<definiens id="0">the percentage of parsable words for which the top-ranking theory generates a spelling/pronunciation that matches the lexical entry exactly</definiens>
+			</definition>
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>As Schabes ( 1992 ) points out in reference to lexicalized stochastic tree adjoining grammars ( SLTAG ) , an effective linguistic model must capture both lexical and hierarchical information .</sentence>
+				<definiendum id="0">SLTAG</definiendum>
+				<definiens id="0">points out in reference to lexicalized stochastic tree adjoining grammars</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Sparser is a bottom-up chart parser which uses a semantic phrase structure grammar ( i.e. the nonterminals are semantic categories , such as HEADING or FLIGHT-ID , rather than traditional syntactic categories , such as CLAUSE or NOUN-PHRASE ) .</sentence>
+				<definiendum id="0">Sparser</definiendum>
+				<definiens id="0">a bottom-up chart parser which uses a semantic phrase structure grammar ( i.e. the nonterminals are semantic categories , such as HEADING or FLIGHT-ID , rather than traditional syntactic categories , such as CLAUSE or NOUN-PHRASE )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>R1 ( def-rule land-action &gt; ( `` land '' ) ) R2 ( def-rule takeoff-action &gt; ( `` takeoff '' ) ) R3 ( def-rule takeoff-action &gt; ( `` go '' ) ) R4 ( def-rule clrd/land &gt; ( `` cleared '' `` to '' land-action ) R5 ( def-rule clrd/takeoff &gt; ( `` cleared '' `` to '' takeoff-action ) ) R6 ( def-rule clrd/takeoff &gt; ( `` cleared '' `` for '' takeoff-action ) ) ) R7 ( def-rule tower-clearance &gt; ( runway clrd/land ) R8 ( def-rule tower-clearance &gt; ( runway clrd/takeoff ) ) Figure 2 : Phrase structure rules for tower clearance &gt; Nera twenty one zero nine runway two two fight cleared for takeoff &gt; COMMERCIAL-AIRPLANE TOWER-CLEARANCE &gt; Nera thirty seven twelve Boston tower runway two two fight cleared for takeoff &gt; COMMERCIAL-AIRPLANE Boston tower TOWER-CLEARANCE &gt; Jet Link thirty eight sixteen Boston tower runway two two fight cleared for takeoff traffic on a five mile final landing two two fight &gt; COMMERCIAL-AIRPLANE Boston tower TOWER-CLEARANCE traffic on a five mile final landing RUNWAY &gt; Jet Link thirty eight zero five runway two two fight cleared for takeoff sorry for the delay &gt; COMMERCIAL-AIRPLANE TOWER-CLEARANCE sorry for the delay Figure 3 : Training text modified by parser Using the modified training text we construct a probabilistic model for sequences of words and nonterminals .</sentence>
+				<definiendum id="0">R1</definiendum>
+				<definiens id="0">Phrase structure rules for tower clearance &gt; Nera twenty one zero nine runway two two fight cleared for takeoff &gt; COMMERCIAL-AIRPLANE TOWER-CLEARANCE &gt; Nera thirty seven twelve Boston tower runway two two fight cleared for takeoff &gt; COMMERCIAL-AIRPLANE Boston tower TOWER-CLEARANCE &gt; Jet Link thirty eight</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The value of 0 depends on the context Xl ... .. Xn and is motivated by approximation of the probability of 0= r/ ( n+r ) where r is the number of different next symbols/rules seen in the context and n is the number of times the context was observed .</sentence>
+				<definiendum id="0">r</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">the number of different next symbols/rules seen in the context and</definiens>
+				<definiens id="1">the number of times the context was observed</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Command referents are templates which are created when some core part is recognized and then added to compositional as other ( generally optional ) information is recognized .</sentence>
+				<definiendum id="0">Command referents</definiendum>
+				<definiens id="0">templates which are created when some core part is recognized and then added to compositional as other ( generally optional ) information is recognized</definiens>
+			</definition>
+</paper>
+
+		<paper id="1073">
+			<definition id="0">
+				<sentence>A speech retrieval system facilitates content-based retrieval of speech documents , i.e. audio recordings containing spoken text .</sentence>
+				<definiendum id="0">speech retrieval system</definiendum>
+				<definiens id="0">facilitates content-based retrieval of speech documents</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The speech recognition component is an important part of a speech retrieval system , since it detects the occurrences of indexing features in the documents .</sentence>
+				<definiendum id="0">speech recognition component</definiendum>
+				<definiens id="0">an important part of a speech retrieval system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A speech retrieval system facilitates content-based retrieval of speech documents , i.e. audio recordings containing spoken text \ [ 5\ ] .</sentence>
+				<definiendum id="0">speech retrieval system</definiendum>
+				<definiens id="0">facilitates content-based retrieval of speech documents</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The indexing vocabulary consists of the VCV- , CV- , and VC-features ~i whose inverse document frequency n+l 1 ) idf ( ~ , ) : = log k df ( ~i ) S r is between the lower bound idfmin : = 1.6 and an upper bound idfma~ which is chosen such that the indexing vocabulary consists of exactly 1000 features .</sentence>
+				<definiendum id="0">indexing vocabulary</definiendum>
+				<definiens id="0">consists of the VCV- , CV- , and VC-features ~i whose inverse document frequency n+l 1 ) idf ( ~ , ) : = log k df ( ~i ) S r is between the lower bound idfmin : = 1.6 and an upper bound idfma~ which is chosen such that the indexing vocabulary consists of exactly 1000 features</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The term weights consist of simple tf * idf weights and the retrieval status values are obtained by the cosine measure .</sentence>
+				<definiendum id="0">term weights</definiendum>
+				<definiens id="0">consist of simple tf * idf weights and the retrieval status values are obtained by the cosine measure</definiens>
+			</definition>
+</paper>
+
+		<paper id="1077">
+			<definition id="0">
+				<sentence>The HMM-LR algorithm uses a generalized LR parser as a language model and hidden Markov models ( HMMs ) as phoneme models .</sentence>
+				<definiendum id="0">HMM-LR algorithm</definiendum>
+				<definiendum id="1">Markov models</definiendum>
+				<definiendum id="2">HMMs</definiendum>
+				<definiens id="0">uses a generalized LR parser as a language model and hidden</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Our speech recognition system is based on the HMM-LR algorithm \ [ 1\ ] which utilizes a generalized LR parser \ [ 2\ ] as a language model and hidden Markov models ( HMMs ) as phoneme models .</sentence>
+				<definiendum id="0">HMMs</definiendum>
+				<definiens id="0">utilizes a generalized LR parser \ [ 2\ ] as a language model and hidden Markov models (</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In this procedure , the likelihood in the backward trellis is multiplied by ( 1-~ ) , where ~ is a small positive value .</sentence>
+				<definiendum id="0">~</definiendum>
+				<definiens id="0">a small positive value</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>An example of the HMM composition process to create a NOVO HMM as the product of two source HMMs is shown in Fig .</sentence>
+				<definiendum id="0">NOVO HMM</definiendum>
+				<definiens id="0">the product of two source HMMs is shown in Fig</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Xcp , Xig , and Xi , are the variables corresponding to signal X in the cepstrum , the logarithm and the linear spectrum ; # and ~ are the mean vector and the covariance matrix of the Gaussian variable , respectively ; F is the cosine transform matrix ; and c is the vector of LPC cepstrum coThe output probabilities of the NOVO HMM are inferred as shown in Fig .</sentence>
+				<definiendum id="0">c</definiendum>
+				<definiens id="0">the mean vector and the covariance matrix of the Gaussian variable , respectively ; F is the cosine transform matrix</definiens>
+			</definition>
+</paper>
+
+		<paper id="1102">
+</paper>
+
+		<paper id="1088">
+</paper>
+
+	</volume>

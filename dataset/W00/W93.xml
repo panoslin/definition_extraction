@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="W93">
+
+		<paper id="0109">
+			<definition id="0">
+				<sentence>Assuming that the training corpus and the new corpus are homogeneous ( e.g. , reflecting similar sub-domains or samples of a common domain ) , we estimate the Y margins using Bayes theorem on the fitted values of the training corpus as follows : E ( Y = k IX1 X2 ... .. XS~ marginal table of the new corpus ) = ~ ... ZJ~ , i~ ... iN+P ( Y=klX1 =il , X~=i2 , ' '' , XN=iN ) il i2 iN = ~ ' '' ~JV~ , i , ... i , ~+ P ( XI=il'X2=i~ '' ' '' XN=iNIY=k ) P ( Y=k ) il i2 iN = EZ , N÷ Ek , J~ili~ ... iNk ' il 12 iN where ~iili~ ... i. + is the cell count of the X1 X2 ... .. XN marginal table of the new corpus obtained as the system output , and .</sentence>
+				<definiendum id="0">N÷ Ek</definiendum>
+				<definiens id="0">using Bayes theorem on the fitted values of the training corpus as follows : E ( Y = k IX1 X2 ... .. XS~ marginal table of the new corpus</definiens>
+				<definiens id="1">the cell count of the X1 X2 ... .. XN marginal table of the new corpus obtained as the system output</definiens>
+			</definition>
+</paper>
+
+		<paper id="0228">
+</paper>
+
+		<paper id="0219">
+			<definition id="0">
+				<sentence>graph ) focus , which represents the overall topic of the text unit .</sentence>
+				<definiendum id="0">graph ) focus</definiendum>
+				<definiens id="0">represents the overall topic of the text unit</definiens>
+			</definition>
+</paper>
+
+		<paper id="0303">
+			<definition id="0">
+				<sentence>The DR-LINK Project is research being conducted under the auspices of DARPA 's TIPSTER Project whose goal is the development of algorithms both for the detection of documents of interest and the extraction of selected information from these documents for a large group of users .</sentence>
+				<definiendum id="0">DR-LINK Project</definiendum>
+				<definiendum id="1">goal</definiendum>
+				<definiens id="0">research being conducted under the auspices of DARPA 's TIPSTER Project whose</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This subset of documents is then passed to the : 2 ) The Proper Noun Interpreter , which uses a variety of knowledge bases and context-based heuristics to recognize , categorize , and standardize every proper noun in the text .</sentence>
+				<definiendum id="0">Proper Noun Interpreter</definiendum>
+				<definiens id="0">uses a variety of knowledge bases and context-based heuristics to recognize , categorize</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Those documents which exceed an empirically determined cut-off criterion based on this combined similarity value , ere then passed to : 3 ) The Text Structurer , which sub-divides a text into its discourse-level segments in order to focus matching on the appropriate discourse component in the documents in response to the particular requirements of an information need .</sentence>
+				<definiendum id="0">Text Structurer</definiendum>
+				<definiens id="0">sub-divides a text into its discourse-level segments in order to focus matching on the appropriate discourse component in the documents in response to the particular requirements of an information need</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>5 ) Conceptual Graph Generator which converts the triples into the Conceptual Graph ( CG ) formalism , a representation similar to semantic networks , but with labelled arcs ( Sowa , 1984 ) .</sentence>
+				<definiendum id="0">Conceptual Graph Generator</definiendum>
+				<definiens id="0">converts the triples into the Conceptual Graph ( CG ) formalism , a representation similar to semantic networks , but with labelled arcs</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The resultant CGs are passed to the : 6 ) Conceptual Graph Matcher , which measures the degree to which a particular query CG and candidate document CGs share a common structure , and then produces a final ranking of the documents .</sentence>
+				<definiendum id="0">Conceptual Graph Matcher</definiendum>
+				<definiens id="0">measures the degree to which a particular query</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>in Figure 2 , NUMBERS is a unique SFC , being the only SFC assigned to the word IDillion ' and POLITICAL SCIENCE is the highly frequent SFC for this sentence , being assigned to 6 senses in total .</sentence>
+				<definiendum id="0">NUMBERS</definiendum>
+				<definiens id="0">a unique SFC , being the only SFC assigned to the word IDillion '</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The system evaluates the correlation coefficients between the unique/highly frequent SFCs of the sentence and the multiple SFCs assigned to the word being disambiguated to determine which of the multiple SFCs has the highest correlation with the unique and/or highly frequent SFCs .</sentence>
+				<definiendum id="0">SFCs</definiendum>
+				<definiens id="0">the sentence and the multiple SFCs assigned to the word being disambiguated to determine which of the multiple</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The cut-off criterion uses a multiple regression formula which was developed on training data consisting of the odd-numbered Topic Statements ( queries ) from 1 to 50 , used in both TIPSTERPhase I and TREC-I .</sentence>
+				<definiendum id="0">cut-off criterion</definiendum>
+				<definiens id="0">uses a multiple regression formula which was developed on training data consisting of the odd-numbered Topic Statements ( queries ) from 1 to 50 , used in both TIPSTERPhase I and TREC-I</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>5 where : SPSVi RL STDSVi is the Standardized Predicted Similarity Value is the designated Recall Level is the Standardized Top-Ranked Document Similarity Value , logarithmically transformed is the Topic Statement whose cut-off criterion is being predicted RL and STDSV i significantly predicted SPSV i on the training queries ( R = .826 , F = 265.42 , df= 2,247 , p &lt; .0005 ) .</sentence>
+				<definiendum id="0">SPSVi RL STDSVi</definiendum>
+				<definiens id="0">the Standardized Predicted Similarity Value is the designated Recall Level is the Standardized Top-Ranked Document Similarity Value , logarithmically transformed is the Topic Statement whose cut-off criterion is being predicted RL and STDSV i significantly predicted SPSV i on the training queries</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Using this standardized value ( SPSVi ) , a linear transformation is used to produce the value which will be used as the cut-off criterion : PSVi = ( SPSVi * s.d.i ) + meani where : PSV i is the Predicted Similarity Value s.d.i standard deviation meani mean The PSV i is used by the system to establish the cut-off criterion for each recall level for each query .</sentence>
+				<definiendum id="0">SPSVi</definiendum>
+				<definiens id="0">the cut-off criterion : PSVi = ( SPSVi * s.d.i</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Browsers find that documents seem to fit naturally int the cluster to which they are assigned by the system .</sentence>
+				<definiendum id="0">Browsers</definiendum>
+				<definiens id="0">find that documents seem to fit naturally int the cluster to which they are assigned by the system</definiens>
+			</definition>
+</paper>
+
+		<paper id="0204">
+</paper>
+
+		<paper id="0231">
+</paper>
+
+		<paper id="0110">
+			<definition id="0">
+				<sentence>A TYPE facet value of a given slot provides a constraint on the type of objects which can be the value of the slot .</sentence>
+				<definiendum id="0">TYPE</definiendum>
+				<definiens id="0">a constraint on the type of objects which can be the value of the slot</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( # COMMUNICATION-EVENT # ( AKO # DYNAMIC-SITUATION # ) ( AGENT ( TYPE # PERSON # # ORGANIZATION # ) ) ( THEME ( TYPE # SITUATION # # ENTITY # ) ( MAPPING ( SENT-COMP T ) ) ) ( GOAL ( TYPE # PERSON # # ORGANIZATION # ) ( MAPPING ( P-ARG GOAL ) ) ) ) For each verb , the information stored in the three levels discussed above is merged to form a complete set of mapping rules .</sentence>
+				<definiendum id="0">THEME</definiendum>
+				<definiendum id="1">MAPPING</definiendum>
+				<definiendum id="2">MAPPING</definiendum>
+				<definiens id="0">the information stored in the three levels discussed above is merged to form a complete set of mapping rules</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The transitivity rating of a verb is defined to be the number of transitive occurrences in the corpus divided by the total occurrences of the verb .</sentence>
+				<definiendum id="0">transitivity rating</definiendum>
+				<definiens id="0">the number of transitive occurrences in the corpus divided by the total occurrences of the verb</definiens>
+			</definition>
+</paper>
+
+		<paper id="0209">
+			<definition id="0">
+				<sentence>Rhetoric manifests itself in the differences between ( rei ) resentations of ) mental states and the variety of surface forms used to satisfy the underlying goals by adequate l ) resentations .</sentence>
+				<definiendum id="0">Rhetoric</definiendum>
+				<definiens id="0">manifests itself in the differences between ( rei ) resentations of ) mental states</definiens>
+			</definition>
+</paper>
+
+		<paper id="0238">
+			<definition id="0">
+				<sentence>The IRU 's ANTECEDENT , the utterance which originally added the IRU 's propositional content to the discourse , is shown in italics .</sentence>
+				<definiendum id="0">IRU 's ANTECEDENT</definiendum>
+				<definiens id="0">the utterance which originally added the IRU 's propositional content to the discourse , is shown in italics</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>DELIBERATION is the process by which an agent explicitly or implicitly evaluates a set of alternates ill order to decide what s/he wants to believe and what course of action s/he wants to pursue .</sentence>
+				<definiendum id="0">DELIBERATION</definiendum>
+				<definiens id="0">the process by which an agent explicitly or implicitly evaluates a set of alternates ill order to decide what s/he wants to believe and what course of action s/he wants to pursue</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>AFFIRMATION : Repeating a proposition is a weak type of SUPPORT that provides evidence of the speaker 's commitment to the truth of the proposition .</sentence>
+				<definiendum id="0">AFFIRMATION</definiendum>
+				<definiens id="0">a weak type of SUPPORT that provides evidence of the speaker 's commitment to the truth of the proposition</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Ilere , Viv seems to be caught in a rlmtorical schema as she enumerates two sets in set-based contrast .</sentence>
+				<definiendum id="0">Viv</definiendum>
+				<definiens id="0">seems to be caught in a rlmtorical schema as she enumerates two sets in set-based contrast</definiens>
+			</definition>
+</paper>
+
+		<paper id="0236">
+			<definition id="0">
+				<sentence>Topic TI defined by question Q1 is the ( still ) undetermined set of persons that have been arrested at the given time/place .</sentence>
+				<definiendum id="0">Topic TI</definiendum>
+				<definiens id="0">the ( still ) undetermined set of persons that have been arrested at the given time/place</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A feeder FI is a linguistic or non-linguistic event whose function is to initiate the process of questioning in discourse or to re-initiate this process if no more questions are induced as the result of the preceding context and the discourse participants want to continue the conversation .</sentence>
+				<definiendum id="0">feeder FI</definiendum>
+				<definiens id="0">a linguistic or non-linguistic event whose function is to initiate the process of questioning in discourse</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>By definition , a discourse topic DTt is the set of all topics Tp ( usually hierarchically comprising lower-order subtopics ) that are constituted as the result of one and the same feeder Fi ( DTi = { Tpl Tp arisen from Fi } ) .</sentence>
+				<definiendum id="0">discourse topic DTt</definiendum>
+				<definiens id="0">the set of all topics Tp ( usually hierarchically comprising lower-order subtopics</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Actually , the intention is the result of a program if carried out adequately , namely the desired effects which a satisfactory answer to the question brings about on the hearer 's knowledge state implying a change in the mutual belief of speaker and hearer .</sentence>
+				<definiendum id="0">intention</definiendum>
+				<definiens id="0">a satisfactory answer to the question brings about on the hearer 's knowledge state implying a change in the mutual belief of speaker and hearer</definiens>
+			</definition>
+</paper>
+
+		<paper id="0301">
+			<definition id="0">
+				<sentence>II eat egalement possible d ' a text box , an iiisertion point ( flastung ve texte zone insertion ( texte vide , un point d ' insertion ( barre vertic Figure 1 : A small sample of a bilingual concordance , based on the output of word_align .</sentence>
+				<definiendum id="0">iiisertion point</definiendum>
+				<definiens id="0">A small sample of a bilingual concordance , based on the output of word_align</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The alignment algorithm consists of two steps : ( 1 ) estimate translation probabilities , and ( 2 ) use these probabilities to search for most probable alignment path .</sentence>
+				<definiendum id="0">alignment algorithm</definiendum>
+				<definiens id="0">consists of two steps : ( 1 ) estimate translation probabilities</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>e is an irrelevant constant .</sentence>
+				<definiendum id="0">e</definiendum>
+				<definiens id="0">an irrelevant constant</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The corresponding equation for the max3 imum likelihood estimates of a ( iIj , m , l ) is : Eco , f , eecoA , ,- , , Pr ( con f , 'i e ) a ( ilj , m , l ) = ' '' ' '' 2¢° '' f ; eec°Xr : ' Pr ( conf , ~ ) ( 6 ) where CO.N'~S denotes the set of connections in the training data between positions j and i in French and English sentences of lengths m and 1 , respectively .</sentence>
+				<definiendum id="0">corresponding equation</definiendum>
+				<definiendum id="1">CO.N'~S</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>We assume that eonj , i is a possible connection only if i falls within a limited window which is centered around I ( j ) , such that : I ( j ) w &lt; i &lt; I ( j ) + w ( 8 ) where w is a predetermined parameter specifying the size of the window ( we typically set w to 20 words ) .</sentence>
+				<definiendum id="0">w</definiendum>
+				<definiens id="0">a predetermined parameter specifying the size of the window</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>CO.W Pr ( e°ni , i ) where COAl is the set of all connections and CO.hfk is the set of all connections with offset k. Instead of equation 7 , we have Pr ( conj .</sentence>
+				<definiendum id="0">CO.W Pr</definiendum>
+				<definiendum id="1">COAl</definiendum>
+				<definiens id="0">the set of all connections</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>alignment To model the dependency between connections in an alignment , we assume that the offset of a connection is determined relative to the preceding connection in A , instead of relative to the initial alignment , I. For this purpose , we define A ' ( j ) as a linear extrapolation from the preceding connection in A : NE ( 13 ) A ' ( j ) = A ( jpre~ ) + ( j jp , e~ ) IV F where Jv , ¢~ is the last French position before j which is aligned by A and NE and NF are the lengths of the English and French corpora .</sentence>
+				<definiendum id="0">alignment To model the dependency between connections</definiendum>
+				<definiendum id="1">Jv , ¢~</definiendum>
+				<definiendum id="2">NF</definiendum>
+				<definiens id="0">a linear extrapolation from the preceding connection in A : NE ( 13 ) A ' ( j ) = A ( jpre~ ) + ( j jp</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>T can therefore be interpreted as a global setting of the probability that a random position will be connected to the null 3In fact , the threshold on t ( f , le , ) , which is used to determine the relevant connections ( described in the previous subsection ) , is used just as an efficient early application of the threshold T. This early application is possible when t ( f~le~ ) '' o ( k , ,~== ) &lt; T , where k , ~== is the value of k with maximal o ( k ) .</sentence>
+				<definiendum id="0">~==</definiendum>
+				<definiens id="0">used to determine the relevant connections ( described in the previous subsection ) , is used just as an efficient early application of the threshold T. This early application is possible when t ( f~le~ ) '' o ( k , ,~== ) &lt; T , where k ,</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>These figures demonstrate the usefulness of word_align for constructing bilingual lexicons , and its impact on 5As explained eaxlier , word_align produces a partial Mignment .</sentence>
+				<definiendum id="0">word_align</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>-20 -10 0 10 char_align errors ( in wor ( ~s ) 20 o -20 ... .. nR Hno ... . -I0 0 10 20 ~t~cl_align errors ( in wor~s ) Figure 3 : Word_align reduces the variance ( average square error ) by a factor of 5 over char_align alone ( notice the vertical scales ) .</sentence>
+				<definiendum id="0">Word_align</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0230">
+			<definition id="0">
+				<sentence>A coherence relation is an aspect of tile meaning of two or more discourse segments that can not be described in terms of tile meaning of tile segments ill isolation .</sentence>
+				<definiendum id="0">coherence relation</definiendum>
+				<definiens id="0">an aspect of tile meaning of two or more discourse segments that can not be described in terms of tile meaning of tile segments ill isolation</definiens>
+			</definition>
+</paper>
+
+		<paper id="0235">
+			<definition id="0">
+				<sentence>Plan recognitiou is the process of reasoning ahout an agent 's menta,1 state ( including intentions , beliet~ , an ( 1 goals ) based on observed actions in context .</sentence>
+				<definiendum id="0">Plan recognitiou</definiendum>
+				<definiens id="0">the process of reasoning ahout an agent 's menta,1 state ( including intentions , beliet~ , an ( 1 goals ) based on observed actions in context</definiens>
+			</definition>
+</paper>
+
+		<paper id="0309">
+			<definition id="0">
+				<sentence>For collocations that are based on a verb and a noun ( preferably an object argument , sometimes however the subject of an intransitive verb ) , three types of V-N combinations are distinguished for German in the literature : verbal phrasemes ( idioms ) ( e.g. Brundage et al. 1992 ) , support verb constructions ( SVCs ) ( v.Polenz 1989 or Danlos 1992 ) and collocations in the narrower sense ( Hausmann 1989 ) .</sentence>
+				<definiendum id="0">SVCs )</definiendum>
+				<definiens id="0">the subject of an intransitive verb ) , three types of V-N combinations are distinguished for German in the literature : verbal phrasemes ( idioms )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>where the frequency of occurrence in the corpus is divided by the size N of the corpus , p ( z ) = f ( x ) /N. Distance will be defined as a window-size in which bigrams are calculated .</sentence>
+				<definiendum id="0">the frequency of occurrence</definiendum>
+				<definiendum id="1">p</definiendum>
+				<definiendum id="2">/N. Distance</definiendum>
+				<definiens id="0">a window-size in which bigrams are calculated</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A minor difference concerns the strong inflection of German verbs .</sentence>
+				<definiendum id="0">minor difference</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>N + kommen Translation ( zur ) Geltung k. ( in ) Betracht k. ( in ) Beriihrung k. ( zur ) Anwen &lt; hmg k. ( zu ) Trgnen k. ( zur ) Ruhe k. ( auf den ) Gedanken k. ( in den ) Himrnel k. ( zu ) Hilfe k. ( zu ) Wort k. Vernunft ( in ) Frage k. ~z.ur ) Welt k. : fie show to advantage to be considered come into contact to be used come to tears get some peace get the idea go to heaven come to aid get a chance to speak reason to be possible to be born You f ( x , y ) f ( y ) MI t-score V-N-Coll. 27 96 9.86 5.19 + 9 42 9.47 2.99 + 4 41 8.33 1.99 + 4 126 6.71 1.97 + 3 107 6.53 1.70 + 4 216 5.93 1.95 + 7 403 5.84 2.58 + 3 270 5.20 1.66 + 4 477 4.79 1.89 ÷ 3 647 3.94 1.57 + 3 736 3.75 1.55 4 1054 3.65 1.77 + 4 1900 2.80 1.60 + 3 2414 2.04 1.17 The question how much is extractable fully automatically can be answered by an evaluation of precision and `` recall ' of the described method as it is done for memory tests. Following Smadja ( 1991a ) we define precision as the number of correctly found collocations divided by the number of V-N combinations found at all. Recall reflects the ratio of the number of correctly found collocations and the maximal number of collocations that could possibly have been found. The latter is slightly difficult to determine , because in principle this means to know the total number of collocations occurring in the whole corpus. Another possibility , to take all collocations that are mentioned in a dictionary as the maximal number of valid collocations , had to be discarded : a comparison with Agricola ( 1970 ) or Drosdowski ( 1970 ) is not really possible because the 78 collocations found in the corpus are not a subset of those mentioned in the dictionaries. Only 22 of the .-1:3 collocations found with the lemma bringin the MKI ( BI6 ) belong to the 135 combinations mentioned in the lexical entry for bringen in Agricola ( 1970 ) . Of the remaining 21 in the MKI , 9 can be found in the corresponding noun entries , and 12 do not appear at all though they are 'significant ' collocations , e.g. Klarheit bringen ( clarify ) . zur Entfaltung hr. ( develop ) , zur Wirkung hr. ( bring the effect ) , in Schwierigkeiten br. ( create difh'culties ) , ins Gespr~ : ch br. ( bring into discussion ) . Thus , we decided to use instead the number of collocations with the infinitive as determined by the standard method ( BI6 ) as the basis for recall comparisons , i.e. 100 % recall is set to this number. Frequencies for the infinitives of the 16 verbs range from 832 ( kommen ) to 117 ( gelangen ) . The number of V-N combinations varies from 46 ( bringen ) to 6 ( erfahren , gelangen , geraten , treten ) , precision fiom 100 % ( geraten , ziehen ) to 33 % ( eHa hren ) . Average figures are presented in table 1 below , labeled BI6 Inf. If non-significant combinations are omitted with a t-test ( BI6/t Inf ) , the average of collocations among the extracted V-N combinations is only 95.8 % of those found without a significance boundar.v , but precision rises slightly. With a threshold of MI &gt; 6 , precision would go up to 82.1 % with a still acceptable loss in recall of approximately 10 % .</sentence>
+				<definiendum id="0">N + kommen Translation ( zur ) Geltung k.</definiendum>
+				<definiendum id="1">f</definiendum>
+				<definiendum id="2">BI6</definiendum>
+				<definiens id="0">some peace get the idea go to heaven come to aid get a chance to speak reason to be possible to be born You</definiens>
+				<definiens id="1">the number of correctly found collocations divided by the number of V-N combinations found at all. Recall reflects the ratio of the number of correctly found collocations and the maximal number of collocations that could possibly</definiens>
+			</definition>
+</paper>
+
+		<paper id="0115">
+			<definition id="0">
+				<sentence>If the input values do not correspond to the information from the core , the system answer is either wrong combination of formatives ( so it has to be corrected ) , or necessity of introducing a new classificational type .</sentence>
+				<definiendum id="0">system answer</definiendum>
+				<definiens id="0">either wrong combination of formatives ( so it has to be corrected ) , or necessity of introducing a new classificational type</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>ASSISTANT ) in LDB makes possible not only the expansion of the searching procedures but the accomplishment of the following transitions as well : a ) from a text corpus to LDB ( using the analysis of MORPHO-ASSISTANT ) ; b ) from any LDB entry to arbitrary parts of its paradigm ( using the synthesis of MORPHOASSISTANT ) ; software tools for editing the family words of first approximation in dialog mode .</sentence>
+				<definiendum id="0">ASSISTANT</definiendum>
+				<definiens id="0">possible not only the expansion of the searching procedures but the accomplishment of the following transitions as well : a ) from a text corpus to LDB ( using the analysis of MORPHO-ASSISTANT )</definiens>
+			</definition>
+</paper>
+
+		<paper id="0213">
+</paper>
+
+		<paper id="0302">
+			<definition id="0">
+				<sentence>OVERALL DESIGN Our information retrieval system consists of a traditional statistical backbone ( NIST 's PRISE system ; Harman and Candela , 1989 ) augmented with various natural language processing components that assist the system in database processing ( stemming , indexing , word and phrase clustering , selectional restrictions ) , and translate a user 's information request into an effective query .</sentence>
+				<definiendum id="0">retrieval system</definiendum>
+				<definiens id="0">consists of a traditional statistical backbone ( NIST 's PRISE system ; Harman and Candela , 1989 ) augmented with various natural language processing components that assist the system in database processing ( stemming , indexing , word and phrase clustering , selectional restrictions ) , and translate a user 's information request into an effective query</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>FAST PARSING WITH TTP PARSER `` I'I'P ( Tagged Text Parser ) is based on the Linguistic String Grammar developed by Sager ( 1981 ) .</sentence>
+				<definiendum id="0">FAST PARSING WITH TTP PARSER `` I'I'P</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>'I'I'P is a full grammar parser , and initially , it attempts to generate a complete analysis for each sentence .</sentence>
+				<definiendum id="0">'I'I'P</definiendum>
+				<definiens id="0">a full grammar parser</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In Figure 1 , BE is the main predicate ( modified by HAVE ) with 2 arguments ( subject , object ) and 2 adjuncts ( adv , sub_oral ) .</sentence>
+				<definiendum id="0">BE</definiendum>
+				<definiens id="0">the main predicate ( modified by HAVE ) with 2 arguments ( subject , object</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>TERM CORRELATIONS FROM TEXT Head-modifier pairs form compound terms used in database indexing .</sentence>
+				<definiendum id="0">TERM CORRELATIONS</definiendum>
+				<definiens id="0">FROM TEXT Head-modifier pairs form compound terms used in database indexing</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>y\ ] ) , lC ( y , \ [ x2 , y\ ] ) ) and IC is the Information Contribution measure indicating the strength of word pairings , and defined as IC ( x , \ [ x , y \ ] ) = -A , y n~+d~-I where f~ , y is the absolute frequency of pair Ix , y\ ] in the corpus , nx is the frequency of term x at the head position , and dx is a dispersion parameter understood as the number of distinct syntactic contexts in which term x is found .</sentence>
+				<definiendum id="0">y\ ] ) , lC</definiendum>
+				<definiendum id="1">IC</definiendum>
+				<definiendum id="2">nx</definiendum>
+				<definiendum id="3">dx</definiendum>
+				<definiens id="0">the Information Contribution measure indicating the strength of word pairings , and defined as IC ( x , \ [ x , y \ ] ) = -A , y n~+d~-I where f~ , y is the absolute frequency of pair Ix , y\ ] in the corpus</definiens>
+				<definiens id="1">the frequency of term x at the head position , and</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>W ( D ' , att \ ] ) an W ( \ [ x , y \ ] ) = GW ( x ) * log ( A. , ) GW ( x ) = 1 n~ log ( N ) s It would not be appropriate to predict similarity between language mad logar/thm on the basis of their co -- occur~nee wlth natural .</sentence>
+				<definiendum id="0">W</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>which is helpful with short , succinct documents ( such as CACM absuacts ) , but less so with longer texts ; see also ( Gnsimaan et al , , 1986 ) .</sentence>
+				<definiendum id="0">succinct documents</definiendum>
+				<definiens id="0">such as CACM absuacts ) , but less so with longer texts</definiens>
+			</definition>
+</paper>
+
+		<paper id="0224">
+			<definition id="0">
+				<sentence>Typically , the relationships identified above arise because of various filctors , including : • There is a semantic relation that llolds between tile various semantic units ( or sets of semantic units taken as a whole ) for example , given the Ihcts : &lt; John has a black car &gt; &lt; John 's car is a Honda &gt; , since 'being a Honda ' is an attribute of John 's car , an item introduced in the first fact , we could say : `` John has a black car .</sentence>
+				<definiendum id="0">car</definiendum>
+				<definiens id="0">a whole ) for example , given the Ihcts : &lt; John has a black car &gt; &lt; John 's</definiens>
+			</definition>
+</paper>
+
+		<paper id="0107">
+			<definition id="0">
+				<sentence>First , there is a knowledge representation problem , that is common to most Machine Learning algorithms : Input instances must be pre-coded ( manually ) using a featureI Ciaula stands for Concept formation Algorithm Used for Language Acquisition , and has been inspired by the tale `` Ciaula scopre la luna '' by Luigi Pirandello ( 1922 ) .</sentence>
+				<definiendum id="0">featureI Ciaula</definiendum>
+				<definiens id="0">common to most Machine Learning algorithms : Input instances</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The detected thematic roles of a verb v in a sentence are represented by the featurevector : ( 1 ) v / ( Rit : Catjt ) it~ I , jt~ J t=l,2 ... .. n where Rit are the thematic roles ( AGENT , INSTRUMENT etc. ) 3 and Catjt are the conceptual types of the words to which v is related semantically .</sentence>
+				<definiendum id="0">Catjt</definiendum>
+				<definiens id="0">detected thematic roles of a verb v in a sentence are represented by the featurevector : ( 1 ) v / ( Rit : Catjt ) it~ I , jt~ J t=l,2 ... .. n where Rit are the thematic roles</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The additional parameters V~ , and cog , are introduced to account for multiple instances of the same verb in a class , c~ is the cardinality ( i.e. the number of different instance members of cE ) , and V~ is the set of pairs &lt; v , v # &gt; such that it exists at least one instance v / ( Ri : Caztj ) classified in ~ , and v # is the number of such instances .</sentence>
+				<definiendum id="0">c~</definiendum>
+				<definiendum id="1">V~</definiendum>
+				<definiens id="0">the set of pairs</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The definitions of the empty class ( 3.1 ) and of the top node of the taxonomy ( 3.2 ) follows from ( 2 ) ( 3.1 ) &lt; 0 , \ [ xlij , { O } , lO } &gt; with xij=0 for each i , j ( 3.2 ) &lt; Ntot , \ [ x\ ] ij , V , S &gt; where Ntot is the number of available instances in the corpus , V is the set of verbs with their absolute occurrences .</sentence>
+				<definiendum id="0">Ntot</definiendum>
+				<definiendum id="1">V</definiendum>
+				<definiens id="0">the number of available instances in the corpus</definiens>
+				<definiens id="1">the set of verbs with their absolute occurrences</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A singleton class is a class cE= &lt; c , \ [ x\ ] ij , V , S &gt; for which card ( V ) = 1 .</sentence>
+				<definiendum id="0">singleton class</definiendum>
+				<definiens id="0">a class cE= &lt; c , \ [ x\ ] ij , V , S &gt; for which card ( V ) = 1</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>prob ( attr pval~C~ -~ , prob ( attr pvalj ) ( 5 ) k-I j $ , I K The clusters that maximize the above quantity provide the system with the capability of deriving the best predictive taxonomy with respect to the set of i attributes and j values .</sentence>
+				<definiendum id="0">prob ( attr pval~C~ -~ , prob</definiendum>
+				<definiens id="0">clusters that maximize the above quantity provide the system with the capability of deriving the best predictive taxonomy with respect to the set of i attributes and j values</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Given the incoming instance v / ( Ri : Ca , tj ) and a current classification in the set of classes ~ , for each k the mnemonic inertia is modelled by : ( 6 ) gk ( v ) = # v/Ck where # v is the number of instances of the verb v already classified in 5~ : and Ck is the cardinality of c~ : .</sentence>
+				<definiendum id="0">v</definiendum>
+				<definiendum id="1">Ck</definiendum>
+				<definiens id="0">the cardinality of c~</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Given two thresholds T , 8 e \ [ 0,1 \ ] , c~°= &lt; e , \ [ x\ ] ij , V , S &gt; is a basic-level category for the related taxonomy iff : ( 10.1 ) co &lt; T ( generalization power ) ( 10.2 ) 'cog &gt; 8 ( typicality ) Like all the classes derived by the algorithm of section 2.3 , each basic-level category ~= &lt; c , \ [ x\ ] ij , V , S &gt; determines two fuzzy membership values of the verb v included in V. The local membership of v to ~ , I.t l~ ( v ) , is defined by : ( 11 ) gtlW ( V ) = # v/max { # I &lt; w , # w &gt; ~ V } The global membership of v to ~ , \ ] .</sentence>
+				<definiendum id="0">V , S &gt;</definiendum>
+				<definiendum id="1">V</definiendum>
+				<definiendum id="2">I.t l~</definiendum>
+				<definiens id="0">a basic-level category for the related taxonomy iff : ( 10.1 ) co &lt; T ( generalization power ) ( 10.2 ) 'cog &gt; 8 ( typicality ) Like all the classes derived by the algorithm of section 2.3 , each basic-level category ~= &lt; c , \ [ x\ ] ij ,</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>t2~ ( v ) , is : ( 12 ) l.t2~ ( v ) = # v / nv , where nv is the number of different instances of v in the learning set .</sentence>
+				<definiendum id="0">t2~ ( v )</definiendum>
+				<definiendum id="1">nv</definiendum>
+				<definiens id="0">the number of different instances of v in the learning set</definiens>
+			</definition>
+</paper>
+
+		<paper id="0211">
+</paper>
+
+		<paper id="0233">
+</paper>
+
+		<paper id="0202">
+</paper>
+
+		<paper id="0311">
+			<definition id="0">
+				<sentence>The major reason is : Chinese is a monosyllabic language ; characters/syllables are the most natural units , while `` words '' are not well-defined in Chinese .</sentence>
+				<definiendum id="0">characters/syllables</definiendum>
+				<definiens id="0">a monosyllabic language ;</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The baseline syllable-to-character converter consists of three components : ( 1 ) a word hypothesizer0 ( 2 ) a word-lattice search algorithm , and ( 3 ) a score function .</sentence>
+				<definiendum id="0">baseline syllable-to-character converter</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The score function is defined as follows : If a path P is composed of n words uq ... .. w , , and two assumed clause delimiters w0 and wn+l , the path score for P is the sum of word scores for the n words and inter-word link scores for the n+l word links ( n-1 between-word links and 2 boundary links ) .</sentence>
+				<definiendum id="0">score function</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A-count is defined a.s 97 the number of times thai the character is misrecognized .</sentence>
+				<definiendum id="0">A-count</definiendum>
+				<definiens id="0">the number of times thai the character is misrecognized</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Adjustment Functions In step 4 , the adjustment function pf is a function of A ( c ) , B ( c ) , C ( c ) .</sentence>
+				<definiendum id="0">adjustment function pf</definiendum>
+				<definiendum id="1">C ( c</definiendum>
+				<definiens id="0">a function of A ( c ) , B ( c )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An error N-gram is defined as a sequence of N characters in which at least ( N 1 ) characters are wrongly converted ( from syllables ) by the system .</sentence>
+				<definiendum id="0">error N-gram</definiendum>
+				<definiens id="0">a sequence of N characters in which at least ( N 1 ) characters are wrongly converted ( from syllables ) by the system</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The PW lexicon stores the M ( lexicon size ) pseudo words that are produced or referenced in the most recent period .</sentence>
+				<definiendum id="0">PW lexicon</definiendum>
+				<definiens id="0">stores the M ( lexicon size ) pseudo words that are produced or referenced in the most recent period</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Chen \ [ 4\ ] also proposed a learning function that uses a learning file to store user-selected characters and words and the character before them .</sentence>
+				<definiendum id="0">learning function</definiendum>
+				<definiens id="0">uses a learning file to store user-selected characters and words and the character before them</definiens>
+			</definition>
+</paper>
+
+		<paper id="0313">
+			<definition id="0">
+				<sentence>Avenue consists of several different kinds of dictionaries .</sentence>
+				<definiendum id="0">Avenue</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>`` ABCL/I '' is the name of a programming language and is an entry in the information science dictionary .</sentence>
+				<definiendum id="0">ABCL/I ''</definiendum>
+				<definiens id="0">the name of a programming language and is an entry in the information science dictionary</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The recording mechanism is a key to making cooperation possible .</sentence>
+				<definiendum id="0">recording mechanism</definiendum>
+				<definiens id="0">a key to making cooperation possible</definiens>
+			</definition>
+</paper>
+
+		<paper id="0108">
+			<definition id="0">
+				<sentence>1 For example , the arguments of a verb expressing directed caused motion ( e.g. bring , put , give ) are normally a causative subject ( agent ) , a theme direct object ( moving entity ) and a directional argument expressing path and reference location ( goal ) , e.g. ( 1 ) Jackie will bring a bottle of retsina to the party CAUSER THEME PATH GOAL However , a motion verb which is not amenable to direct external causation \ [ 13\ ] , will typically take a theme subject , with the possible addition of a directional argument , e.g. ( 2 ) The baby crawled ( across the room ) Co-occurrence restrictions between meaning components may also preempt subcategorization options ; for example , manner of motion verbs in Italian can not integrate a completed path component and therefore never subcategorize for a directional argument , e.g. ( 3 ) *Carlo ha camminato a casa Carlo walked home 1Following Levin \ [ 12\ ] and Sanfilippo \ [ 18\ ] , we maintain that valency reduction processes ( e.g. the causative-inchoative alternation ) are semantically governed and thus do not weaken the correlation between verb semantics and subcategorization properties .</sentence>
+				<definiendum id="0">CAUSER THEME PATH GOAL However</definiendum>
+				<definiens id="0">a verb expressing directed caused motion ( e.g. bring , put , give ) are normally a causative subject ( agent ) , a theme direct object ( moving entity ) and a directional argument expressing path</definiens>
+				<definiens id="1">a completed path component and therefore never subcategorize for a directional argument</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Each SF type consists of a verb stem associated with one or more semantic tags , and a list of its ( non-subject ) complements , if any .</sentence>
+				<definiendum id="0">SF type</definiendum>
+				<definiens id="0">consists of a verb stem associated with one or more semantic tags</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In the case of verbs , such fragments correspond to verb phrases where the following simplificatory changes have been applied : • NP complements have been reduced to the head noun ( or head nouns in the case of coordinated NP 's or nominal compounds ) , e.g. ( ( FACES VBZ ) ( NP ( CHARGES NNS ) ) ) 85 • PP complements have been reduced to the head preposition plus the head of the complement noun phrase , e.g. ( ( RIDES VBZ ) ( PP IN ( ( VAIl Nil ) ) ) ) * VP complements are reduced to a mention of the VFORM of the head verb , e.g. ( ( TRY VB ) ( VP TO ) ) • clausal complements are reduced to a mention of the complementizer which introduces them , e.g. ( ( ARGUED VBD ) ( SBAR THAT ) ) An important step in the extraction of SF tokens is to distinguish passive and active verb phrases .</sentence>
+				<definiendum id="0">, e.g. ( ( ARGUED VBD )</definiendum>
+				<definiens id="0">the case of coordinated NP 's or nominal compounds</definiens>
+				<definiens id="1">• clausal complements are reduced to a mention of the complementizer which introduces them</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The resulting SF structures are finally converted into SF types according to the representation system whose syntax is sketched in ( 7 ) where : stem is the verb stem , parts a possil ) ly empty sequence of particles associated with the verb stem , { A ... N } is the set of LLOCE semantic codes , pforrn thehead of a prepositional phrase , compform the possibly empty complementizer of a clausal complement , and cat any category not covered by np- , pp- , sbarand vpframes .</sentence>
+				<definiendum id="0">stem</definiendum>
+				<definiens id="0">the verb stem , parts a possil ) ly empty sequence of particles associated with the verb stem</definiens>
+				<definiens id="1">the set of LLOCE semantic codes , pforrn thehead of a prepositional phrase , compform the possibly empty complementizer of a clausal complement</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>This is shown in ( 8 ) where `` I28+N123 '' is defined as the intersection of `` 128 '' and `` N123 '' in the LLOCE hierarchy of semantics codes as indicated in ( 9 ) .</sentence>
+				<definiendum id="0">`` I28+N123</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0114">
+			<definition id="0">
+				<sentence>Port Nationality Company Type Title Hardware Drugs Time Airport Government Machines Chemicals Island U.S. Gov. County Organization Province Country Continent Region Water Geo .</sentence>
+				<definiendum id="0">Port Nationality</definiendum>
+				<definiens id="0">Company Type Title Hardware Drugs Time Airport Government Machines Chemicals Island U.S. Gov. County Organization Province Country Continent Region Water Geo</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Text Structure is a recognition of a discernible , predictable schema of texts of a particular type .</sentence>
+				<definiendum id="0">Text Structure</definiendum>
+				<definiens id="0">a recognition of a discernible , predictable schema of texts of a particular type</definiens>
+			</definition>
+</paper>
+
+		<paper id="0101">
+			<definition id="0">
+				<sentence>Like its prototype , the present questionnaire consists of 100 test texts , each with an ambiguous test word or short phrase ( e.g. , ring up , go over ) .</sentence>
+				<definiendum id="0">present questionnaire</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0215">
+			<definition id="0">
+				<sentence>Intentions are goals of the text planner that can be realized by planning a text in terms of the rhetorical relations .</sentence>
+				<definiendum id="0">Intentions</definiendum>
+				<definiens id="0">goals of the text planner that can be realized by planning a text in terms of the rhetorical relations</definiens>
+			</definition>
+</paper>
+
+		<paper id="0206">
+</paper>
+
+		<paper id="0102">
+			<definition id="0">
+				<sentence>A contextual representation , as defined by Miller and Charles \ [ 7\ ] , is a characterization of the linguistic contexts in which a word can be used .</sentence>
+				<definiendum id="0">contextual representation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The Bayesian classifier uses all of the information in the sentence except word order .</sentence>
+				<definiendum id="0">Bayesian classifier</definiendum>
+				<definiens id="0">uses all of the information in the sentence except word order</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This test measures how consistently the methods treat individual test contexts by determining whether the classifiers are making the same classification errors in each of the senses .</sentence>
+				<definiendum id="0">test</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0208">
+			<definition id="0">
+				<sentence>T acts and comments ; S acknowledges T makes a command ; S executes it T says something ; S enacts it T acts ; S tells about it T asks a question ; S answers it S acts ; T describes it S asks a question ; T answers it S makes a command ; T executes it S says something ; T enacts it More complex types are needed for language errors and communication repair .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">acknowledges T makes a command ; S executes it T says something ; S enacts it T acts ; S tells about it T asks a question ; S answers it S acts ; T describes it S asks a question ; T answers it S makes a command ; T executes it S says something ; T enacts it More complex types are needed for language errors and communication repair</definiens>
+			</definition>
+</paper>
+
+		<paper id="0106">
+			<definition id="0">
+				<sentence>There is some limit as to how small this variance can be because there are several synsets 3Actually , the hyponomy relation is a directed acycllc graph , in that a minority of the nodes are children of more than one parent .</sentence>
+				<definiendum id="0">hyponomy relation</definiendum>
+				<definiens id="0">a directed acycllc graph , in that a minority of the nodes are children of more than one parent</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>More formally , if C ( w ) is the set of positions in the corpus at which w occurs and if 90 ( f ) is the vector representation for fourgram f , then the vector representation 7 '' ( w ) of w is defined as : ( the dot stands for normalization ) 50 word burglar disable disenchantment domestically Dour grunts kid S.O.B : .</sentence>
+				<definiendum id="0">C ( w )</definiendum>
+				<definiendum id="1">f )</definiendum>
+				<definiens id="0">the set of positions in the corpus at which w occurs and if 90 (</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>WordNet and Distributional Analysis : A Class-based Approach to Lexical Discovery .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiendum id="1">Distributional Analysis</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0232">
+</paper>
+
+		<paper id="0306">
+			<definition id="0">
+				<sentence>• Our grammars consist of constraints partim distributional definitions of morphosyntactic categories , such as parts of speech or syntactic functions .</sentence>
+				<definiendum id="0">• Our grammars</definiendum>
+				<definiens id="0">consist of constraints partim distributional definitions of morphosyntactic categories , such as parts of speech or syntactic functions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Research Unit for Computational Linguistics at the University of Helsinki participated in this project , and ENGTWOL , a Twolstyled morphological analyser as well as ENGCG , a Constraint Grammar of English , were written 1989-1992 by Voutilainen , Heikkil~i and Anttila \ [ forthcoming\ ] .</sentence>
+				<definiendum id="0">ENGTWOL</definiendum>
+				<definiens id="0">a Twolstyled morphological analyser as well as ENGCG , a Constraint Grammar of English</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>ENGTWOL , a morphological analyser of English , is a Koskenniemi-style morphological description that recognises all inflections and central derivative forms of English .</sentence>
+				<definiendum id="0">ENGTWOL</definiendum>
+				<definiens id="0">a Koskenniemi-style morphological description that recognises all inflections and central derivative forms of English</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( `` &lt; *the &gt; '' ( `` the '' O~ ( © &gt; N ) ) ) ( `` &lt; inlet &gt; '' ( `` inlet '' i ( @ &gt; I ~NH ) ) ) ( `` &lt; and &gt; '' ( `` and '' CC ( eCC ) ) ) ( `` &lt; exhaus 1 ; &gt; '' ( `` exhaust '' I ( @ &gt; N ) ) ) ( `` &lt; manifolds &gt; '' ( `` manifold '' I ( aIll ) ) ) ( `` &lt; are &gt; * ' l°save for no , which can be followed by an -ing-form ; d. no in There is no going home ( `` be '' V ( av ) ) ) ( `` &lt; mounted &gt; '' ( `` mount '' PCP2 ( av ) ) ) ( `` &lt; on &gt; '' ( `` on '' PREP ( aAH ) ) ) ( `` &lt; opposite &gt; '' ( `` opposite '' A ( a &gt; S ) ) ) ( `` &lt; sides &gt; '' ( `` side '' S CASH ) ) ) ( * ' &lt; of &gt; '' ( `` of '' PREP ( ©S &lt; ) ) ) ( `` &lt; the &gt; '' ( `` the '' DET ( a &gt; N ) ) ) ( `` &lt; cylinder &gt; '' ( `` cylinder '' I ( a &gt; s asH ) ) ) ( `` &lt; head &gt; '' ( `` head '' V ( av ) ) ( `` head '' S ( aSH ) ) ) ( , , &lt; $ , &gt; , ' ) ( `` &lt; the &gt; '' ( `` the '' DET Ca &gt; S ) ) ) ( `` &lt; exhaust &gt; '' ( `` exhaust '' N ( © &gt; S ) ) ) ( `` &lt; manifold &gt; '' ( `` manifold '' N ( aSH ) ) ) ( `` &lt; channelling &gt; '' ( `` char-el '' PCP1 ( av ) ) ) ( `` &lt; the &gt; '° ( `` the '' DET ( a &gt; I ) ) ) ( `` &lt; gases &gt; '' ( `` gas '' I ( aNH ) ) ) ( `` &lt; ¢o &gt; '' ( `` to '' PREP ( aAH ) ) ) ( `` &lt; a &gt; '' ( `` a '' DET ( a &gt; I ) ) ) ( `` &lt; single &gt; '' ( `` single '' A Ca &gt; I ) ) ) ( `` &lt; oxhaust &gt; '' ( `` exhaust '' I Ca &gt; I ) ) ) ( `` &lt; pips &gt; '' ( `` pipe '' X ( aN'H ) ) ) ( `` &lt; and &gt; '' ( `` and '' cc ( acc ) ) ) ( `` &lt; silencer &gt; '' ( `` silencer '' I Ca &gt; N ) ) ) ( `` &lt; system &gt; '' ( `` system '' N ( @ NH ) ) ) ( , , &lt; $ . &gt;</sentence>
+				<definiendum id="0">PREP ( aAH ) ) )</definiendum>
+				<definiens id="0">a &gt; S ) ) ) ( `` &lt; sides &gt; '' ( `` side '' S CASH ) ) ) ( * ' &lt; of &gt; ''</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>An unambiguous sentence reading is a linear sequence of symbols , and extracting noun phrases from this kind of data is a simple pattern matching task .</sentence>
+				<definiendum id="0">unambiguous sentence reading</definiendum>
+				<definiens id="0">a simple pattern matching task</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Thus a constraint in the grammar would discard the @ &gt; N tag of Harry in the following sample sentence , where Harry is directly followed by an unambiguous adjective : ( `` &lt; *iU &gt; '' ( `` be '' &lt; SVC/N &gt; &lt; SVC/A &gt; V PKES $ G3 ( @ V ) ) ) ( `` &lt; *harry &gt; '' ( `` harry '' &lt; Proper &gt; N N0M SG ( eNH @ &gt; N ) ) ) ( `` &lt; foolish &gt; '' ( `` foolish '' £ £BS ( @ AH ) ) ) ( , , &lt; ¢ ? &gt;</sentence>
+				<definiendum id="0">N0M SG</definiendum>
+				<definiens id="0">discard the @ &gt; N tag of Harry in the following sample sentence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>R indicates the number of analyses per sentence , and F indicates the frequency of these sentences .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiendum id="1">F</definiendum>
+				<definiens id="0">indicates the number of analyses per sentence , and</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Various kinds of metrics can be proposed for the evaluation of a noun phrase extractor ; our main metrics are recall and precision , defined as followslU : • Recall : the ratio 'retrieved intended NPs '17 / 'all intended NPs ' • Precision : the ratio 'all retrieved NPs ' / 'retrieved intended NPs ' 14This figure also covers errors due to previous stages of analysis .</sentence>
+				<definiendum id="0">Various kinds of metrics</definiendum>
+				<definiendum id="1">main metrics</definiendum>
+				<definiendum id="2">Recall</definiendum>
+				<definiens id="0">the ratio 'retrieved intended NPs '17 / 'all intended NPs ' • Precision : the ratio 'all retrieved NPs ' / 'retrieved intended NPs ' 14This figure also covers errors due to previous stages of analysis</definiens>
+			</definition>
+</paper>
+
+		<paper id="0217">
+</paper>
+
+		<paper id="0237">
+</paper>
+
+		<paper id="0223">
+			<definition id="0">
+				<sentence>Research institutes include the following : the Research Institute of Balneothempeutics , the Research Institute of Applied Mechanics , the Research Institute of Industry and labor , and the Research Institute of Industrial Science .</sentence>
+				<definiendum id="0">Research institutes</definiendum>
+				<definiens id="0">the Research Institute of Balneothempeutics , the Research Institute of Applied Mechanics , the Research Institute of Industry and labor , and the Research Institute of Industrial Science</definiens>
+			</definition>
+</paper>
+
+		<paper id="0203">
+			<definition id="0">
+				<sentence>We focus here on three of the M ) ove levels : deep intentions , shallow intentions and rhetorical structure , and we will 1 ) resent evidence fl'om multilingual instructions that SUl ) lml'ts this differentiation of levels of description hy highlighting the variability that exists between them .</sentence>
+				<definiendum id="0">M ) ove levels</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0308">
+			<definition id="0">
+				<sentence>Introduction Such is the visual ambiguity of handwriting that a number of possible interpretations may be made for any written word .</sentence>
+				<definiendum id="0">Introduction Such</definiendum>
+				<definiens id="0">the visual ambiguity of handwriting that a number of possible interpretations may be made for any written word</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>However , to create a database of such information `` from scratch '' for a realistically sized vocabulary is an enormous task which is a major reason why so many theories of language ~The research reported in this paper was supported by the European Commission under the ESPRIT initiative .</sentence>
+				<definiendum id="0">realistically sized vocabulary</definiendum>
+				<definiens id="0">a major reason why so many theories of language ~The research reported in this paper was supported by the European Commission under the ESPRIT initiative</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The collocation analysis technique proceeds by comparing the `` neighbourhoods '' of each word candidate ( up to a distance of four words ) with their likely collocates ( as defined by the results of corpus analysis ) .</sentence>
+				<definiendum id="0">collocation analysis technique</definiendum>
+				<definiens id="0">proceeds by comparing the `` neighbourhoods '' of each word candidate ( up to a distance of four words ) with their likely collocates ( as defined by the results of corpus analysis )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The first of these was the General Collocation Dictionary ( GCD ) , which was derived from 5 million words of text , taken from all subject areas within the Longman Corpus .</sentence>
+				<definiendum id="0">General Collocation Dictionary</definiendum>
+				<definiens id="0">was derived from 5 million words of text , taken from all subject areas within the Longman Corpus</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Evidently , any given document will consist of a variety of language structures , some of which will be general ( i.e. not exclusively associated with any particular domain ) and some domainspecific ( i.e. with restrictions on word senses , etc. ) .</sentence>
+				<definiendum id="0">domainspecific</definiendum>
+				<definiens id="0">restrictions on word senses</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>This method proceeds on a domain-by-domain ( i.e. corpusby-corpus ) basis according to the following algorithm : 69 6 ( 1 ) Start with the raw domain corpus and reduce it to its uninflected root forms ; ( 2 ) Produce a type-frequency distribution for this corpus ; ( 3 ) Obtain a corresponding distribution from an undifferentiated ( general ) corpus ; ( 4 ) Normalise these frequency distributions so that each type 's frequency is expressed as a proportion of the total number of tokens within that corpus ; ( 5 ) Calculate the comparative frequency of each type ( i.e. its `` distinctiveness '' ) ; ( 6 ) Select those words which have a distinctiveness of 3.0 or above , i.e. their frequency is at least three times greater in the domain corpus than in the general corpus ( this threshold has been selected arbitrarily and needs to be investigated empirically ) ; ( 7 ) Normalise these comparative frequencies by expressing them as natural logarithms .</sentence>
+				<definiendum id="0">undifferentiated</definiendum>
+				<definiens id="0">at least three times greater in the domain corpus than in the general corpus ( this threshold has been selected arbitrarily and needs to be investigated empirically</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Firsdy , since processing takes place within an integrated recognition architecture ( i.e. working in real time , with a pattern recogniser , lexical analyser and syntax analyser ) , computational overheads and memory requirements must be minimised wherever possible .</sentence>
+				<definiendum id="0">Firsdy</definiendum>
+				<definiens id="0">takes place within an integrated recognition architecture ( i.e. working in real time , with a pattern recogniser , lexical analyser and syntax analyser ) , computational overheads</definiens>
+			</definition>
+</paper>
+
+		<paper id="0221">
+</paper>
+
+		<paper id="0220">
+			<definition id="0">
+				<sentence>All example action in our system might be II~FORX ( # &lt; systora &gt; , # &lt; usor-023 &gt; , logical-do : finition ( # &lt; ForrarJ.-Testarossa &gt; ) ) which says `` have tile system inform user-023 of the logical definition of tile object , # &lt; Ferrar : i.-Testarossa &gt; , '' which might eventuaily result in the utterance `` A Ferrari Testarossa is a fast , sleek Italian sports car '' .</sentence>
+				<definiendum id="0">Ferrari Testarossa</definiendum>
+				<definiens id="0">finition ( # &lt; ForrarJ.-Testarossa &gt; ) ) which says `` have tile system inform user-023 of the logical definition of tile object</definiens>
+				<definiens id="1">a fast , sleek Italian sports car ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="0310">
+			<definition id="0">
+				<sentence>The exponential function can be interpreted as the tendency that subjective estimations are often found to be exponential functions of the quantities to be estimated .</sentence>
+				<definiendum id="0">exponential function</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Proceedings of the Canadian Parliament ( selection of 5 million words from the ACL/DCI-corpus ) • Grolier 's Electronic Encyclopedia ( 8 million words ) • Psychological Abstracts from PsycLIT ( selection of 3.5 million words ) • Agricultural abstracts from the Agricola database ( 3.5 million words ) • DOE scientific abstracts from the ACL/DCI ( selection of 3 million words ) To compute associations for German the following corpora comprising about 21 million words were used : • LIMAS corpus of present-day written German ( 1.1 million words ) • Freiburger Korpus from the Institute for German Language ( IDS ) , Mannheim ( 0.5 million words of spoken German ) • Ma~nheimer Korpus 1 from the IDS ( 2.2 million words of present-day written German from books and periodicals ) • Handbuchkorpora 85 , 86 and 87 from the IDS ( 9.3 million words of newspaper texts ) • German abstracts from the psychological database PSYNDEX ( 8 million words ) For technical reasons , not all words occuring in the corpora have been used in the simulation .</sentence>
+				<definiendum id="0">Parliament</definiendum>
+				<definiens id="0">selection of 3.5 million words ) • Agricultural abstracts from the Agricola database ( 3.5 million words ) • DOE scientific abstracts from the ACL/DCI ( selection of 3 million words</definiens>
+			</definition>
+</paper>
+
+		<paper id="0205">
+			<definition id="0">
+				<sentence>Style is the medimrn that enables him to do this .</sentence>
+				<definiendum id="0">Style</definiendum>
+				<definiens id="0">the medimrn that enables him to do this</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In DiMarco and Hirst ( 1993 ) , DiMarco et al ( 1992 ) , Green ( 1992 ) , and tloyt ( forthcoming ) , we describe the construction of a syntactic stylistic grammar that relates stylistic goals to abstract stylistic properties , and then relates these abstract properties to low-level syntax .</sentence>
+				<definiendum id="0">tloyt ( forthcoming</definiendum>
+				<definiens id="0">the construction of a syntactic stylistic grammar that relates stylistic goals to abstract stylistic properties , and then relates these abstract properties to low-level syntax</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>C ( , ,ntroschematic : A sentence with a central , dominant clause with one or more of the following optional features : coml ) lex phrasal subordination , initial dependent clauses , terminal ( lel ) etl ( lent clauses .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">A sentence with a central , dominant clause with one or more of the following optional features</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>s.hation : A shift in stylistic effect that occurs at the end of a sentence and is a move front a relative discord ( an incongruity ) to stylistic concord ( normal usage ) .</sentence>
+				<definiendum id="0">s.hation</definiendum>
+				<definiens id="0">A shift in stylistic effect that occurs at the end of a sentence and is a move front a relative discord ( an incongruity ) to stylistic concord ( normal usage )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Each abstract stylistic element is defined as a composition of primitive stylistic elements .</sentence>
+				<definiendum id="0">abstract stylistic element</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0239">
+			<definition id="0">
+				<sentence>t is , \ [ 'or tim I~Urp ( ~s ( ' of understanding the relation indicated by 'But ' , ( 4.1 ) a.nd ( 4.3 ) ~l.re groul ) ed together , which axe iu turn grouped with ( 4.4 ) .</sentence>
+				<definiendum id="0">I~Urp</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0207">
+</paper>
+
+		<paper id="0304">
+			<definition id="0">
+				<sentence>The Text Encoding Inititiative ( TEI ) has undertaken to develop a standard for the marking up of texts that is based on the Standard Generalized Markup Language ( SGML ) .</sentence>
+				<definiendum id="0">Text Encoding Inititiative ( TEI</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The tags consist of character sequences which encode the wordclass category of a word and occasionally extended information such as form , aspect or case .</sentence>
+				<definiendum id="0">tags</definiendum>
+				<definiens id="0">consist of character sequences which encode the wordclass category of a word and occasionally extended information such as form , aspect or case</definiens>
+			</definition>
+</paper>
+
+		<paper id="0234">
+</paper>
+
+		<paper id="0113">
+			<definition id="0">
+				<sentence>The y-axis gives the percentage of hits for each group of frequency-ranked terms .</sentence>
+				<definiendum id="0">y-axis</definiendum>
+				<definiens id="0">gives the percentage of hits for each group of frequency-ranked terms</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The y-axis gives the percentage of hits for each group of frequency-ranked terms .</sentence>
+				<definiendum id="0">y-axis</definiendum>
+				<definiens id="0">gives the percentage of hits for each group of frequency-ranked terms</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The y-axis gives the percentage of hits for each group of frequency-ranked terms .</sentence>
+				<definiendum id="0">y-axis</definiendum>
+				<definiens id="0">gives the percentage of hits for each group of frequency-ranked terms</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Aspects of Text Structure : An investigation of the lexical organization of text .</sentence>
+				<definiendum id="0">Text Structure</definiendum>
+				<definiens id="0">An investigation of the lexical organization of text</definiens>
+			</definition>
+</paper>
+
+		<paper id="0212">
+</paper>
+
+		<paper id="0227">
+			<definition id="0">
+				<sentence>Communicative intentions relate to that domain that the use of language can affect , namely the mental state of the hearer ( H ) , i.e. , H 's beliefs , desires , and intentions .</sentence>
+				<definiendum id="0">Communicative intentions</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Thus , the contribution of rhetoric lies in detailing what sort of effects ( on It 's beliefs , desire , and intentions ) mere juxtaposition can achieve .</sentence>
+				<definiendum id="0">rhetoric</definiendum>
+				<definiens id="0">lies in detailing what sort of effects ( on It 's beliefs , desire , and intentions ) mere juxtaposition can achieve</definiens>
+			</definition>
+</paper>
+
+		<paper id="0226">
+</paper>
+
+		<paper id="0103">
+			<definition id="0">
+				<sentence>The Belief Net captures the conditional independences of words , which is obtained from the cooccurrence relations .</sentence>
+				<definiendum id="0">Belief Net</definiendum>
+				<definiens id="0">captures the conditional independences of words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Subsumption relation between words may be computed by carefully expanding the meaning of the words .</sentence>
+				<definiendum id="0">Subsumption relation</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Being DAG is a big advantage of the formalism in computing probabilistic decisions , so we can not help but stick to it .</sentence>
+				<definiendum id="0">DAG</definiendum>
+				<definiens id="0">a big advantage of the formalism in computing probabilistic decisions</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( 5 ) Pl denotes the probability that word b occurs provided word a occurred .</sentence>
+				<definiendum id="0">Pl</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The representation named Collocation Map is a variation of Belief Net that uses sigmoid function in summing the conditioning evidences .</sentence>
+				<definiendum id="0">Collocation Map</definiendum>
+				<definiens id="0">a variation of Belief Net that uses sigmoid function in summing the conditioning evidences</definiens>
+			</definition>
+</paper>
+
+		<paper id="0104">
+			<definition id="0">
+				<sentence>That is , PNF is operating as a component in a larger natural language comprehension system , and not as a standalone facility intended for name spotting , indexing , or other tasks based on skimming .</sentence>
+				<definiendum id="0">PNF</definiendum>
+				<definiens id="0">operating as a component in a larger natural language comprehension system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Additionally , SPARSER is designed to handle a constant , unrestricted stream of text , day after day , and this has led to a way to treat unknown words that allows it to look at their properties , and from that possibly form them into proper names , without being required to give them a long-term representation which would eventually cause the program to run out of memory .</sentence>
+				<definiendum id="0">SPARSER</definiendum>
+				<definiendum id="1">long-term representation</definiendum>
+				<definiens id="0">designed to handle a constant , unrestricted stream of text , day after day</definiens>
+				<definiens id="1">to treat unknown words that allows it to look at their properties , and from that possibly form them into proper names , without being required to give them a</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Polywords are immutable sequences of words that are not subject to syntactically imposed morphological changes ( plurals , tense ) and that can only be defined as a group .</sentence>
+				<definiendum id="0">Polywords</definiendum>
+				<definiens id="0">immutable sequences of words that are not subject to syntactically imposed morphological changes ( plurals , tense ) and that can only be defined as a group</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>When PNF is finished , its results are given in an edge it constructs over the sequence of capitalized words and selected punctuation , with the label on the edge dictating how it will fit into SPARSER 's later processing layers and the referent field of the edge pointing to the name object that records it in the discourse history .</sentence>
+				<definiendum id="0">PNF</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0307">
+			<definition id="0">
+				<sentence>1991\ ] takes into account only the attachment site ( a verb or its direct object ) and the preposition , ignoring the object of the preposition .</sentence>
+				<definiendum id="0">attachment site</definiendum>
+				<definiens id="0">a verb or its direct object</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Prepositional phrase attachment is a paradigmatic case of the structural ambiguity problems faced by natural language parsing systems .</sentence>
+				<definiendum id="0">Prepositional phrase attachment</definiendum>
+				<definiens id="0">a paradigmatic case of the structural ambiguity problems faced by natural language parsing systems</definiens>
+			</definition>
+</paper>
+
+		<paper id="0214">
+			<definition id="0">
+				<sentence>Moore and Pollack argue for co-existence of intentional ( presentational ) and infornlatiolLa\ ] ( subject matter ) allalys ( , s , but they do not attempt to describe the relationship between them .</sentence>
+				<definiendum id="0">intentional</definiendum>
+				<definiens id="0">subject matter ) allalys ( , s , but they do not attempt to describe the relationship between them</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>I ) ping rule : If the intentional relation Evidence holds between two propositions PI and P2 , where P1 is a nucleus and P2 is a satellite , then , if P1 is a general proposition ( i.e. the equivalent of a corrlrnoi , set , se `` law '' is given as Evidence ) , then if there is a conscious agent such that I ) oth P1 and P2 ret~r to her acticJns , then the Volitional Cause informational r~la.tiozJ can 1 ) ~ chos~ll ; else ( if there is no agent in PI and P2 as ( lescril ) e ( l above ) , then the Noll-Volitiolml Cause iJktbrmational relation can be chosen ; if P2 is a general proposition , then the Elaboration information relation can 1 ) e chosen .</sentence>
+				<definiendum id="0">P1</definiendum>
+				<definiendum id="1">P2</definiendum>
+				<definiendum id="2">P1</definiendum>
+				<definiendum id="3">Noll-Volitiolml Cause iJktbrmational relation</definiendum>
+				<definiens id="0">a nucleus</definiens>
+				<definiens id="1">a general proposition ( i.e. the equivalent of a corrlrnoi</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>First reading ( Condition/Enablement ) : the speaker is ilLter ( , sted ill increasing tile hearer 's ability to perform the action described in ( 5h ) .</sentence>
+				<definiendum id="0">First reading</definiendum>
+				<definiendum id="1">Condition/Enablement )</definiendum>
+				<definiendum id="2">ilLter</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Viewing this examl ) le fi'om our 1 ) erspective , both intentional relatioHs , Enablement a , n ( l Motivation , can 1 ) e realized on the informational level I ) y Condition .</sentence>
+				<definiendum id="0">l Motivation</definiendum>
+			</definition>
+</paper>
+
+		<paper id="0105">
+			<definition id="0">
+				<sentence>A distinctive feature of Discourse Pegs ( hereafter referred to as Pegs ) as opposed to similar constructs in the literature , like File Cards ( \ [ Heim , 81\ ] ) , Database Objects ( \ [ Sidner , 79\ ] ) , Discourse Referents ( \ [ Karttunen , 68\ ] ) , and Discourse Entities ( \ [ Webber , 78\ ] , \ [ Dahl and Ball , 90\ ] ) , is that they describe unique objects with respect to the current discourse , rather than with respect to the underlying belief system or world model .</sentence>
+				<definiendum id="0">Discourse Entities</definiendum>
+				<definiens id="0">that they describe unique objects with respect to the current discourse</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In applying this framework to the unknown name problem , we first distinguish three types of entities : ( i ) Mentions these are text segments which are tokens of proper names in text ; ( ii ) Contexts these are text segments which provide information about syntactic and semantic properties associated with a name ; and ( iii ) Hypotheses these are hypotheses about individuals and their semantic attributes , associated with a Mention .</sentence>
+				<definiendum id="0">semantic attributes</definiendum>
+				<definiens id="0">text segments which provide information about syntactic and semantic properties associated with a name</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Names which are identified beyond a certain confidence level ( a variable recall/precision threshold ) are added to a hypothetical lexicon after asking the user about them .</sentence>
+				<definiendum id="0">confidence level</definiendum>
+				<definiens id="0">a variable recall/precision threshold ) are added to a hypothetical lexicon after asking the user about them</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Person-Name is a weak KS which segments potential person-names without being able to determine personhood with any confidence .</sentence>
+				<definiendum id="0">Person-Name</definiendum>
+				<definiens id="0">a weak KS which segments potential person-names without being able to determine personhood with any confidence</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Location KS uses patterns involving locational category nouns from the semantic lexicon like `` town '' , `` sea '' , `` gulf '' , `` north '' to flag location mentions like `` town of Beit Sahoud '' .</sentence>
+				<definiendum id="0">Location KS</definiendum>
+				<definiens id="0">uses patterns involving locational category nouns from the semantic</definiens>
+			</definition>
+</paper>
+
+		<paper id="0218">
+</paper>
+
+		<paper id="0112">
+			<definition id="0">
+				<sentence>Hobbs ( \ [ 8\ ] ) has argued effectively that the problem is not one of full text understanding , but specifically one of information extraction -- - : many types of information , such as speaker attitude , intensional constructs , facts not relevant to the chosen domain , etc. , are not required ; only a representation-specific set of domain information is the target for extraction .</sentence>
+				<definiendum id="0">Hobbs</definiendum>
+				<definiens id="0">information , such as speaker attitude , intensional constructs</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>These three together embody what Pustejovsky calls a lexieal-eouceptuai paradigm ( LCP ) , a representation of the expression of a particular concept , and the paradigmatic usage in context of the lexical entry to express that concept ( \ [ 19\ ] ) .</sentence>
+				<definiendum id="0">LCP</definiendum>
+				<definiens id="0">a representation of the expression of a particular concept</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Patterns consist of lexically specified syntactic templates that are matched to text , in much the same way as regular expressions , that are applied along with type constraints on substrings of the match .</sentence>
+				<definiendum id="0">Patterns</definiendum>
+				<definiens id="0">consist of lexically specified syntactic templates that are matched to text , in much the same way as regular expressions , that are applied along with type constraints on substrings of the match</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>One of the major assumptions made here , as well as in all algorithmic computational linguistic systems , is one of consislency of use and meaning -that a term or phrase ( or any linguistic structure ) used in a particular fashion will give rise to a particular denotation .</sentence>
+				<definiendum id="0">phrase</definiendum>
+				<definiens id="0">one of consislency of use and meaning -that a term or</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A B I II-I the path \ ] that is the \ [ path 0 1 2 3 4 5 6 the 1 0 1 2 3 4 5 way 2 1 2 3 4 5 6 that 3 2 3 2 3 4 5 is 4 3 4 3 2 3 4 not 5 4 5 4 3 4 4 the 6 5 6 5 4 3 4 way 7 6 7 6 5 4 5 Figure 3 : Dynamic programming for edit distance ( '- ' is the null token ) Each subsequent step in the computation proceeds with the simple rule : D ( Ai , Bj_i ) + Din .</sentence>
+				<definiendum id="0">B I II-I</definiendum>
+				<definiens id="0">the null token ) Each subsequent step in the computation proceeds with the simple rule</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The table-filling rule becomes : D ( Ai , Bj ) = D ( Ai , Bj-1 ) + L i+j x Dinsert ( bj ) min D ( Ai.1 , Bj ) + L i+j x Dinsert ( ai ) D ( Ai-1 , Bj-1 ) + L i+j X Dsubstitute ( ai , bj ) where L is the locality factor , which is defined in terms of the half power distance , Ph : 1 l/Ph Lp , , _ 1 L= ~ , sothat -3 '' While it would be ideal to perform the analysis using only perfect equality of lexical items as a criterion , both the number of contexts required for useful generalization , and the immense computational cost of performing such experiments are prohibitive .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">the locality factor</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The simplest clusters for joint are of the form 'joint x ' , where x is a group behavior or a group ( figure 10 ) .</sentence>
+				<definiendum id="0">x</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The clustering method is O ( n~ ) , where n is the number of contexts , while the edit-distance computations are O ( k2 ) , where k is the average context length , making the entire method O ( k2n2 ) .</sentence>
+				<definiendum id="0">O</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiendum id="2">k</definiendum>
+				<definiens id="0">the number of contexts</definiens>
+			</definition>
+</paper>
+
+		<paper id="0229">
+</paper>
+
+		<paper id="0216">
+			<definition id="0">
+				<sentence>Each utterance of a discourse either bears a semantic relation to a preceding utterance , or constitutes the onset of a new semantic unit .</sentence>
+				<definiendum id="0">utterance of a discourse either</definiendum>
+				<definiens id="0">bears a semantic relation to a preceding utterance , or constitutes the onset of a new semantic unit</definiens>
+			</definition>
+</paper>
+
+		<paper id="0225">
+</paper>
+
+		<paper id="0210">
+			<definition id="0">
+				<sentence>RST provides one attempt at providing rhetorical structure .</sentence>
+				<definiendum id="0">RST</definiendum>
+				<definiens id="0">provides one attempt at providing rhetorical structure</definiens>
+			</definition>
+</paper>
+
+		<paper id="0222">
+</paper>
+
+		<paper id="0240">
+			<definition id="0">
+				<sentence>ASSERT ( Spkr , S1 ) and Evidence ( S2 , S1 ) The Evidence rhetorical relation is achieved through associating the following knowledge concerning persuasiveness and the Exemplification coherence relation ( an instance of which is recognized in F1 ) : ( KN-RR-1 ) IF the speaker provides more detailed information about a fact P ( such as stating an example of P ) THEN the hearer is more obliged to believe P ( because the speaker really wants him to believe P ) Once the Evidence rhetorical relation is recognized , the hearer recognizes that the speaker really wants him to believe P from the THEN-part of KN-RR-i : WANT ( Spkr , Hr , BEL ( Hr , LOVE ( Spkr , ( a\ [ OLD ( a ) &amp; AUTOMOBILE ( a ) } ) ) ) ( F4 ) Based on F2 , F3 and F4 , the hearer has recognized , according to Searle , the sincerity , the prep¢tratory , and the essential conditions of the Assertion speech act , respectively .</sentence>
+				<definiendum id="0">ASSERT</definiendum>
+				<definiendum id="1">Exemplification coherence relation</definiendum>
+				<definiens id="0">the speaker really wants him to believe P ) Once the Evidence rhetorical relation is recognized</definiens>
+			</definition>
+</paper>
+
+		<paper id="0312">
+			<definition id="0">
+				<sentence>B is a first level category , p is a second level subcategory , 13 is the numbering of the subcategory under Bp .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiens id="0">the numbering of the subcategory under Bp</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Formally , when S~ Sz '' '' S , represent input segments from 1 to n , W represents an untagged segment , and the immediate context of I , ,V is represented by L ... .'-L2 Lt W R~ Rz '' '' R.o..</sentence>
+				<definiendum id="0">W</definiendum>
+				<definiens id="0">an untagged segment</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>, where L stands for 'Left ' , R stands for 'Right ' , and range equals 5 , we have the following : St $ 2 `` ' '' S. ( a ) where S , ( k= 1 , `` '' , n ) is a word , compound word or phrase L , .</sentence>
+				<definiendum id="0">L</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>, , ( b ) where L , , R~ ( i= 1 , `` ' '' , rmzge ) is a word , compound word or phrase In the forward reasoning process , assuming that ( W R~ ) is a possible compound word or phrase , for all entries in MTD beginning with W which is in the form ( W_tag Item ) , the system computes the relatedness of the two words or phrases ( W R , ) and ( W_tag Item ) , where 'Item ' may be an annotated word , compound word , phrase , or just a meaningless Chinese character string .</sentence>
+				<definiendum id="0">L , , R~</definiendum>
+				<definiens id="0">a word , compound word or phrase In the forward reasoning process</definiens>
+				<definiens id="1">a possible compound word or phrase , for all entries in MTD beginning with W which is in the form ( W_tag Item ) , the system computes the relatedness of the two words or phrases</definiens>
+			</definition>
+</paper>
+
+		<paper id="0111">
+</paper>
+
+		<paper id="0305">
+			<definition id="0">
+				<sentence>For tagging , N is the number of parts-ofspeech in the language , M can be the number of words or the number of equivalence classes ( as Kupiec defined ) , in Chinese , tile number of words is more than 100,090 while the number of equivalence classes is less than 1,000 .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of parts-ofspeech in the language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The corpus preparation process consists of the following steps : Preprocessing Clean up inappropriate parts , such as titles , parenthesized texts , reporter information , figures , etc. , in the input article .</sentence>
+				<definiendum id="0">corpus preparation process</definiendum>
+				<definiens id="0">consists of the following steps : Preprocessing Clean up inappropriate parts , such as titles , parenthesized texts , reporter information , figures , etc. , in the input article</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Thus , we also tag part of the corpus by the steps below : ( I ) Train the IIMM using the articles to be tagged ; ( 2 ) Tag the articles using the trained HMM ; ( 3 ) Correct the erroneous tags by hand .</sentence>
+				<definiendum id="0">Correct</definiendum>
+				<definiens id="0">the erroneous tags by hand</definiens>
+			</definition>
+</paper>
+
+		<paper id="0201">
+</paper>
+
+	</volume>

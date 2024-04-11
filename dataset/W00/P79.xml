@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="P79">
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>FRAGMENT transforms the selected portion of the semantic net into an unordered set of propositions which correspond , roughly , to minimal sentences .</sentence>
+				<definiendum id="0">FRAGMENT</definiendum>
+				<definiens id="0">transforms the selected portion of the semantic net into an unordered set of propositions which correspond , roughly , to minimal sentences</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>PLAN uses goal-sensitive rules to impose an ordering on this set of fragments .</sentence>
+				<definiendum id="0">PLAN</definiendum>
+				<definiens id="0">uses goal-sensitive rules to impose an ordering on this set of fragments</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>The Turtle world ( PAPERT 1979 ) and the simulation world of Smslltslk ( KAY 1977 ) provide good models of what can be done .</sentence>
+				<definiendum id="0">Turtle world</definiendum>
+				<definiens id="0">provide good models of what can be done</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>With our Language Laboratory we wanted to create an environment in which the student 's task is not to learn a set of formal rules ( eg about the syntax of a programming language ) , but to give them s world in which they could develop sufficient inside into the way they used language to allow the transposition of this self-knowledge into programs .</sentence>
+				<definiendum id="0">formal rules</definiendum>
+				<definiens id="0">a programming language ) , but to give them s world in which they could develop sufficient inside into the way they used language</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>5 ) recursive control structure , a pattern marcher is a good example for the power of recursive definitions and control structures which can be used in many other situations A pattern marcher can be used in all projects where symbolic structures have to be dissected and identified , eg for the translation from infix to prefix , for parsing and translating processes , for morphological analysis , for simple I/0 routines ( eg the identification of keywords ) , for ELIZA like programs and for symbolic manipulation of algebraic expressions .</sentence>
+				<definiendum id="0">pattern marcher</definiendum>
+				<definiens id="0">a good example for the power of recursive definitions and control structures which can be used in many other situations A pattern marcher can be used in all projects where symbolic structures have to be dissected and identified</definiens>
+				<definiens id="1">simple I/0 routines ( eg the identification of keywords</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>FRÙMP , in contrast to SAM and rAM , is a robust system whlcn attempts to extract the amount of information from a newspaper story which a person gets when ne skims rapidly .</sentence>
+				<definiendum id="0">FRÙMP</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>There are the event structures themselves , generally scripts such as $ KIDNAP and SAMBUSH , which form the backbone of the story representations , and tokens which fill the roles in the event structures .</sentence>
+				<definiendum id="0">SAMBUSH</definiendum>
+				<definiens id="0">form the backbone of the story representations , and tokens which fill the roles in the event structures</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>\ [ PHOTO : Initiated Sun 24-Jun-79 3:36PM\ ] @ RUN IPP * ( PARSE $ 1 ) Input : $ 1 ( 3 I~ 79 ) IRELAND ( GUNMEN FIRING FROM AMBUSH SERIOUSLY WOUNDED AN 8-YEAR-OLD GIRL AS SHE WAS BEING TAKEN TO SCHOOL YESTERDAY AT STEWARrSTOWN COUNTY r~RONNE ) Processing : GUNMEN : InterestinE token GUNMEN Predictions SHOOTING-WILL-OCCUR ROBBERY-SCRIPT TERRORISM-SCRIPT HIJACKING-SCRIPT lll**lem*llllll*l*mli , lll , l , lll , l , mllll , mlm , lllilmm , illl GUNMEN is marked In the dlotionary as inherently interesting .</sentence>
+				<definiendum id="0">IRELAND</definiendum>
+				<definiens id="0">GIRL AS SHE WAS BEING TAKEN TO SCHOOL YESTERDAY AT STEWARrSTOWN COUNTY r~RONNE ) Processing : GUNMEN : InterestinE token GUNMEN Predictions SHOOTING-WILL-OCCUR ROBBERY-SCRIPT TERRORISM-SCRIPT HIJACKING-SCRIPT lll**lem*llllll*l*mli , lll , l , lll , l , mllll , mlm , lllilmm</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The SATTACK-PERSON representation allows IPP to make inferences which are relevant to any case of a person being attacked , not just snootin~s. IPP is still not able to Instantiate any of the high level scripts predicted by GUNMEN , since the SATTACK-PERSON script is associated with several of the~ .</sentence>
+				<definiendum id="0">SATTACK-PERSON representation</definiendum>
+				<definiens id="0">allows IPP to make inferences which are relevant to any case of a person being attacked</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>eleileleleeeelllllll|lllalllolsllieilllOlllelllel|oileil AN : SKip and save ~-YEAR-OLD : Skip and save GiRL : Normal token GIRL Prediction confirmed SWOUND-ROLE-FINDER-VICTIM eeee~eeeeeeme~eee~see~e~eee~m~ee~o~eeeeeeeeeee~aeeoee ~IRL Ouilds a toXen wnlch fllls t~e VICTIM role of the SWOUND script .</sentence>
+				<definiendum id="0">SWOUND-ROLE-FINDER-VICTIM eeee~eeeeeeme~eee~see~e~eee~m~ee~o~eeeeeeeeeee~aeeoee ~IRL</definiendum>
+				<definiens id="0">Normal token GIRL Prediction confirmed</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>IPP handles sucn sentences , Out also accurately processes stories taken directly from newspapers , which often involve extremely convoluted syntax , and in many cases are not grammatical at all .</sentence>
+				<definiendum id="0">IPP</definiendum>
+				<definiens id="0">handles sucn sentences , Out also accurately processes stories taken directly from newspapers</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Its integrated approacn allows IPP to make use of all the various kinds of knowledge which people use when understandtn~ a story .</sentence>
+				<definiendum id="0">IPP</definiendum>
+				<definiens id="0">to make use of all the various kinds of knowledge which people use when understandtn~ a story</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>The input to the transformation process is a definition expressed in two parts : CCHPONENTI ) a set of propositions eonslsting of relations between typed variables organized in frame form , and CCI4POMENT2 ) a set of ' pattern-directed inference rules expressing constraints on how the propositions in CCHPONEMTI .</sentence>
+				<definiendum id="0">pattern-directed inference rules</definiendum>
+				<definiens id="0">a definition expressed in two parts : CCHPONENTI ) a set of propositions eonslsting of relations between typed variables organized in frame form</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( ACTOR A ) ( X ( TRANSI AOENT ) A ) ( X ( TRANSI OLDOWNER ) A ) ( X ( TRANS2 NENOWNER ) A ) \ ] TRANSFEROR= ( ACTOR A ) ( X ( TRANS2 AOENr ) A ) ( X ( TRAN~2 OLDO~ , qER ) A ) ( X ( THANS| NEiJO~NER ) A ) \ ] Ffi_ u_re ~ : A portion of COMPONENT2 or a sample definition .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">ACTOR A ) ( X</definiendum>
+				<definiens id="0">A portion of COMPONENT2 or a sample definition</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>In ( t2 ) Medicacion consists of diamox and pllocarpine drops in both eyes .</sentence>
+				<definiendum id="0">t2 ) Medicacion</definiendum>
+				<definiens id="0">consists of diamox and pllocarpine drops in both eyes</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>inclusion of , the patient is a 60 year old white male *diamc~ 250 ms bid Meaning : ( I 626 PATIENT MEDICATION DIAMOX DOSE MSMT ) NVAL 250 UNIT ( K MG ) TIME PRESENT INST PRESENT ( T 630 PATIENT MEDICATION DIAMOX PREQUENCY MSMT ) VAL ( K BID ) TIME PRESENT INST PRESENT ~eplnephrlne 2 percent bid od and pilocsrpine 2 percent bid os tthe pressures are 34 od and 40 os tche cupping ratio is .5 in both eyes ~in the right eye there is 20 / 50 vision and a central island tin the left eye the visual acuity is finger count ***GLAUCOMA CONSULTATION PROGRAM*** CAUSAL-ASSOC IATIONAL NETWORK *RESEARCH USE ONLY* ******************** * GLAUCOMA StHMARY * ******************** . )</sentence>
+				<definiendum id="0">K MG ) TIME PRESENT INST PRESENT</definiendum>
+				<definiens id="0">a central island tin the left eye the visual acuity is finger count ***GLAUCOMA CONSULTATION PROGRAM*** CAUSAL-ASSOC IATIONAL NETWORK *RESEARCH USE ONLY* ******************** * GLAUCOMA StHMARY * ********************</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>Object Prlmitlves ( or ) were designed to act in conjunction with Scnank 's conceptual dependency representational system \ [ 11\ ] .</sentence>
+				<definiendum id="0">Object Prlmitlves</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The Object Primitive CONNECTOR Is used to indicate classes of actions ( described in terms of Sohank*s primitives acts ) which are normally enabled by the object being described .</sentence>
+				<definiendum id="0">Object Primitive CONNECTOR Is</definiendum>
+				<definiens id="0">normally enabled by the object being described</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A SEPARATOR disenables a transfer between two spatial regions .</sentence>
+				<definiendum id="0">SEPARATOR</definiendum>
+				<definiens id="0">disenables a transfer between two spatial regions</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A SOURCE description indicates that a aajor function of the object described is to provide the user of that object with some other object .</sentence>
+				<definiendum id="0">SOURCE</definiendum>
+				<definiens id="0">a aajor function of the object described is to provide the user of that object with some other object</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The computer program ( OPUS ) which performs the Following analyses was developed usin~ a con : eptual analyzer written by Larry Eirnbaum \ [ 1\ ] .</sentence>
+				<definiendum id="0">OPUS</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The first , the DEFAULT-CONTAINMENT test , looks for objects described by the RELATIONAL primitive , indicating that they are containers ( link = INSIDE ) with default object contained being wine .</sentence>
+				<definiendum id="0">DEFAULT-CONTAINMENT test</definiendum>
+				<definiens id="0">looks for objects described by the RELATIONAL primitive , indicating that they are containers ( link = INSIDE ) with default object contained being wine</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>( 1 ) On one the level of computer implementation there is a reorganization of process control in OPUS , and ( 2 ) on a theoretical level OPUS exploits an additional representatLonal system which allo~m inference generation to be more stronBly directed and controlled .</sentence>
+				<definiendum id="0">OPUS</definiendum>
+				<definiens id="0">an additional representatLonal system which allo~m inference generation to be more stronBly directed and controlled</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In terms of implementation , OPUS integrates the processes of conceptual analysis and memoryohased inference prooeantnB .</sentence>
+				<definiendum id="0">OPUS</definiendum>
+				<definiens id="0">integrates the processes of conceptual analysis</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>OPUS makes use of a well structured set of memory associations for objects , the Object Primitives , to encode Information which can be used in a variety of Rleger 's qeneral inference classes .</sentence>
+				<definiendum id="0">OPUS</definiendum>
+				<definiens id="0">makes use of a well structured set of memory associations for objects , the Object Primitives , to encode Information which can be used in a variety of Rleger 's qeneral inference classes</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>33 the utterance , the discourse component decides how the system should respond .</sentence>
+				<definiendum id="0">discourse component</definiendum>
+				<definiens id="0">decides how the system should respond</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>CLONE is a unifom language for the explicit representation of natural language conceptual information based on the idea of structured inheritance networks \ [ 3\ ] .</sentence>
+				<definiendum id="0">CLONE</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>e , This inheritance implies inter alia that , if STATE is a subConcept of ATN-CONSTITUENT , then any particular state is by definition also an ATN constituent .</sentence>
+				<definiendum id="0">STATE</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A separate construct called a Nexus is a LJsed as a locus of coreference for Individual Concepts .</sentence>
+				<definiendum id="0">Nexus</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Its Role structure , however , implies that it in fact belongs in a more restricted subclass of NP 's , that is , TYPED-ARC-NP ( an NP whose head is an ARC-NOUN and whose modifier is an ARC-TYPE-WORD ) .</sentence>
+				<definiendum id="0">TYPED-ARC-NP</definiendum>
+				<definiens id="0">an ARC-NOUN and whose modifier is an ARC-TYPE-WORD )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>TherefOre , the interpretation uses Generic Concepts to describe the kind of events appearing in the surface form of the sentence and makes no ccmmitment to the number of them requested .</sentence>
+				<definiendum id="0">TherefOre</definiendum>
+				<definiens id="0">the interpretation uses Generic Concepts to describe the kind of events appearing in the surface form of the sentence and makes no ccmmitment to the number of them requested</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>ABSTRACT : The design and implementation of a paraphrase component for a natural language questlon-answer system ( CO-OP ) is presented .</sentence>
+				<definiendum id="0">ABSTRACT</definiendum>
+				<definiens id="0">The design and implementation of a paraphrase component for a natural language questlon-answer system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Moreover , the CO-OP paraphraser generates a question that differs in a meaningful way from the original question .</sentence>
+				<definiendum id="0">CO-OP paraphraser</definiendum>
+				<definiens id="0">generates a question that differs in a meaningful way from the original question</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A node consists of : ( 1 ) arc-lal~l ( 2 ) ast-lahel ( 3 ) subject/object where arc-label is the label of the verb or preposition used in the parse tree and set-label the label of a noun phrase .</sentence>
+				<definiendum id="0">arc-label</definiendum>
+				<definiens id="0">the label of the verb or preposition used in the parse tree</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The rule for wh-fronting is specified as follows , where SD abbreviates structural description and SC , structural change : SD : X NP Y i 2 3 SC : 2+i 0 3 condition : 2 dominates wh The first step in the implementation of wh-fronting is a search of the tree for the wh-item .</sentence>
+				<definiendum id="0">SD</definiendum>
+				<definiendum id="1">SC</definiendum>
+				<definiendum id="2">wh-fronting</definiendum>
+				<definiens id="0">abbreviates structural description</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Therefore , when the object is marked as negative , the Paraphraser moves the negation to heroine Part of the verbal element .</sentence>
+				<definiendum id="0">Paraphraser</definiendum>
+				<definiens id="0">moves the negation to heroine Part of the verbal element</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>SD : X tense-V-no Y 1 2 3 SC : 1 do+2 3 Affix-hopping , as described above , hops the tense , number , and negation from the verb to the auxiliary verb .</sentence>
+				<definiendum id="0">SD</definiendum>
+				<definiens id="0">described above , hops the tense , number , and negation from the verb to the auxiliary verb</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The substitution of synonyms , phrases , or idioms for portions or all of the question requires an examination of the effect of context on word meaning and of the intentions of the speaker on word or phrase choice .</sentence>
+				<definiendum id="0">substitution of synonyms</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>The DCS B8 has 6 levels , named Text .</sentence>
+				<definiendum id="0">DCS B8</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The Word Expert Parser is a cognitive model of conceptual language analysis in which the unit of ltngu~stic knowledge is the word and the fqcu~ o~ research ts the set or processes unoerlyinR comprehension .</sentence>
+				<definiendum id="0">Word Expert Parser</definiendum>
+				<definiens id="0">a cognitive model of conceptual language analysis in which the unit of ltngu~stic knowledge is the word and the fqcu~ o~ research ts the set or processes unoerlyinR comprehension</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A word expert represents the the linguistic knowledge required to dlsamblguate the meaning of a single word in any context .</sentence>
+				<definiendum id="0">word expert</definiendum>
+				<definiens id="0">the the linguistic knowledge required to dlsamblguate the meaning of a single word in any context</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A sense nec consists of an ordered se~ of • /~tr~Ti~g ( the nodes of the network ) , and for each one , the set of possible answers to that question ( the branches emanating from each node ) .</sentence>
+				<definiendum id="0">sense nec</definiendum>
+				<definiens id="0">consists of an ordered se~ of • /~tr~Ti~g ( the nodes of the network ) , and for each one , the set of possible answers to that question ( the branches emanating from each node )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Is the current conceptual object I better described/ as arc , e phyeob $ , ~ SERIOUS-ORINTENSEEMOTIONAL 0UANTITY MASS THUG LARGE-PHYS ICAL ( a ) Network representation of `` heavy '' expert \ [ word-expert heavy &lt; header category ( PA • nl ) \ ] ~sense &lt; descriptors ( LARGE-PHYSICAL-MASS . nil ) ( INTENSE-~UANTITY . nO3 ) ( SERIOUS-OR-EMOTIONAL . uS2 ) &gt; \ ] &gt; &lt; start nO &gt; &lt; exnert \ [ n~ : A ( ~E~USE ) ( NEXT nl ) \ ] \ [ nl : ~ C parser-state t ( open-picture . n2 ) \ [ rS : A ( CONCEPT new PICTURE ) ~rr .4 \ ] ( NEXT nlO ) \ ] \ [ nlO : A ( EX~C~ ( EX~R~ ( r , , ) Cr '' ) vio , /pp~ie~P~ p~cART ) I~ZnTZON ) ~EX~C '' I ' ( rw ) view/PP I~¥SOBJ ) ( N~XT nil ) \ ] \ [ nll : S wait-for-r~lght-word ~RES_U_ME.~trlgger 'expert-state ( ha ) 'terminated ) ) ~u~u~ t~rst ) ( NEXT nl2 ) J tel2:0 HC vlew/PP ( rw ) tart . ritz ) ~. ~praclpitation~ nc~ ) ~pnysobJ . ntl ) I \ [ ntl : T P~ LARGE-PRYSICAL-MASS\ ] \ [ nt2 : T PA SERIOUS-OR-EMOTIONAL\ ] \ [ nCS : T PA INTENSE-AMOUNT\ ] &gt; \ ] ( b ) Process representation of `` heavy '' expert : Figure 2 : Word expert representation The explicit representation of control state and structural Informeclon racilltates i~s use in pars in~ .</sentence>
+				<definiendum id="0">vio , /pp~ie~P~ p~cART ) I~ZnTZON</definiendum>
+				<definiens id="0">T P~ LARGE-PRYSICAL-MASS\ ] \ [ nt2 : T PA SERIOUS-OR-EMOTIONAL\ ] \ [ nCS : T PA INTENSE-AMOUNT\ ] &gt; \ ] ( b</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>Connectors are preposlClons which are dropped after the sentence is parsed .</sentence>
+				<definiendum id="0">Connectors</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>RETRIEVE E-JOB WHERE JNANE `` SECRETARY '' AND CLASS `` EXECUTIVE '' WHEN R2 PRINT ql PRINT Q2 END EUFID protects the data base by removin B the user from direct access to the data management system and data base .</sentence>
+				<definiendum id="0">RETRIEVE E-JOB WHERE JNANE `` SECRETARY '' AND CLASS</definiendum>
+				<definiens id="0">PRINT ql PRINT Q2 END EUFID protects the data base by removin B the user from direct access to the data management system and data base</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>EUFID is a system that makes data base access easy and direct for an end user so that he does not need to go through a specialist or learn a language to query his own data base , It is modular and table driven so that it can be interfaced with different data management systems and different applications .</sentence>
+				<definiendum id="0">EUFID</definiendum>
+				<definiens id="0">a system that makes data base access easy and direct for an end user so that he does not need to go through a specialist or learn a language to query his own data base , It is modular and table driven so that it can be interfaced with different data management systems and different applications</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>A standard model is the limit of a surface model that has been extended infinitely deep , but such infinite processes are not a normal part of understanding .</sentence>
+				<definiendum id="0">standard model</definiendum>
+				<definiens id="0">the limit of a surface model that has been extended infinitely deep , but such infinite processes are not a normal part of understanding</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Heidorn 's ( 1972 , 1975 ) Natural Language Processor ( NLP ) is being used to implement the theory of conceptual graphs .</sentence>
+				<definiendum id="0">Natural Language Processor</definiendum>
+				<definiens id="0">being used to implement the theory of conceptual graphs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Canonical formation rules enforce the selection constraints in linguistics : they do not guarantee that all derived graphs are true , but they rule out semantic anomalies .</sentence>
+				<definiendum id="0">Canonical formation rules</definiendum>
+				<definiens id="0">the selection constraints in linguistics : they do not guarantee that all derived graphs are true , but they rule out semantic anomalies</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Definition : A seq~nt is a collection of conceptual graphs divided into two sets , called the conditions ut ... .. Un and the anergons vt , ... , v , , , It is written Ul , ... , Un `` * vl , ... , Vm .</sentence>
+				<definiendum id="0">Definition</definiendum>
+				<definiendum id="1">seq~nt</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Horn clauses are special cases for which deductions are simplified : they have no disjunctions that cause models of the world to split into multiple alternatives .</sentence>
+				<definiendum id="0">Horn clauses</definiendum>
+				<definiens id="0">special cases for which deductions are simplified : they have no disjunctions that cause models of the world to split into multiple alternatives</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Definition : A game over a world basis W is defined by the following rules : • There are two participants named Player and Oppom~nt .</sentence>
+				<definiendum id="0">Definition</definiendum>
+				<definiens id="0">A game over a world basis W is defined by the following rules : • There are two participants named Player and Oppom~nt</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>unpublished Ph.D. dissertation , Department of Foreign Literature and LinBuistics , M.I.T. Rieger , Charles J. \ [ 1974\ ] Conceptual Memory : A Theory and Compufer Program for Processing Ihe Meaning Content of Natural Language Utterances .</sentence>
+				<definiendum id="0">Conceptual Memory</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1022">
+</paper>
+
+		<paper id="1027">
+</paper>
+
+		<paper id="1024">
+</paper>
+
+		<paper id="1004">
+</paper>
+
+		<paper id="1008">
+</paper>
+
+		<paper id="1001">
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>Each such list , whether stored in the lexicon or constructed by the morphological analyzer , must include a syntactic category and a stem , which serves as a link to the semantic network , as well as other features such as transitivity for a verb .</sentence>
+				<definiendum id="0">stem</definiendum>
+				<definiens id="0">serves as a link to the semantic network</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( JUMP ore ) ) ) ( 081 ( CaLL NP SUBJ T ( S~Im DONE ) ( SENDR NUMBR ) Rm ( ADDR STRING REO ) ( JUMP SgB ) ) ) ( SVB ( CALL PRED * T ( S~DR NUMBR ) ( S~ # ER VC ) ( SENIR VB ( OR ( OKRA LEX ( GETA VERB ) ) 'BE ) ) REG ( AIER STRING PEG ) ( Ju~ smo~a ) ) ) ( SUROBJ ( CALL NP ( OKRA AGENT ) ( AND GETA AGO'r ) ( OVERLAP VC 'PASS ) ) ( SENDR DONE ) * ( ADDR STRING 'BY * ) ( TO ~D ) ) ( CALL NP ( OKRA OBJECT ) ( AnD ( OKRA OBJECT ) ( OVmLAP VO 'ACT ) ) ( S~Xm DONE ) * ( ADIR Sm~O * ) ( TO ram ) ) ( CaLL NP ( GETA ADJ ) ( OEPA ADJ ) * ( ADDR STRING * ) ( TO ~D ) ) ( TO ( roD ) T ) ) ( z~ ( POP smiNo T ) ) ( NUMBR ( TO ( NUMBRI ) ( OR ( OETA SUB- ) ( OKRA SUP- ) ( OKRA CLASS- ) ) ( SKTR NUM~ 'FL ) ) ( TO ( NLR~RI ) ( NOT ( OR ( GE~A SUB- ) ( OKRA SUP- ) ( OKRA CLASS- ) ) ) ( SETR NUMBR 'SING } ) ) ) ( NU~RI ( POP NUMSR T ) ) ( PRED ( CALL PAST ( OKRA E'f~ ) T T~SE ( TO O~VB ) ) ( CALL ~ ( OKRA 5 '' r~ ) T TENSE ( TO GE~qVB ) ) ( TO ( G~-NVB ) T ( SKRR TENSE 'PRES ) ) ) ( G } ~ ( IOP ( V~ { BIZE ( G } EI~ NUMBR ) ( G } E~I~ TENSE ) ( GEI~ VC ) ( G } m VB ) ) T ) ) ( PAST ( TO ( PASTEND ) ( OVmLAP * *NOW ) ) ( TO ( PAST ( G } ETA BEFORE ) ) T ) ) ( PASTmD ( POP 'PAST T ) ) ( FUTR ( TO ( ZUTRZ~ ) ( ovmLAp .</sentence>
+				<definiendum id="0">CaLL NP SUBJ T</definiendum>
+				<definiendum id="1">TO ( NLR~RI ) ( NOT</definiendum>
+				<definiendum id="2">SKRR TENSE 'PRES ) ) ) ( G } ~ ( IOP ( V~ { BIZE ( G } EI~ NUMBR ) ( G } E~I~ TENSE ) ( GEI~ VC ) ( G } m VB ) ) T ) ) ( PAST</definiendum>
+				<definiendum id="3">TO ( PAST ( G } ETA BEFORE ) ) T ) ) ( PASTmD ( POP 'PAST T ) ) ( FUTR</definiendum>
+				<definiens id="0">CALL PRED * T ( S~DR NUMBR ) ( S~ # ER VC ) ( SENIR VB ( OR ( OKRA LEX ( GETA VERB ) ) 'BE ) ) REG ( AIER STRING PEG ) ( Ju~ smo~a ) ) ) ( SUROBJ ( CALL NP ( OKRA AGENT ) ( AND GETA AGO'r ) ( OVERLAP VC 'PASS ) ) ( SENDR DONE ) * ( ADDR STRING 'BY * ) ( TO ~D ) ) ( CALL NP ( OKRA OBJECT ) ( AnD ( OKRA OBJECT ) ( OVmLAP VO 'ACT ) ) ( S~Xm DONE ) * ( ADIR Sm~O * ) ( TO ram ) ) ( CaLL NP ( GETA ADJ ) ( OEPA ADJ ) * ( ADDR STRING * ) ( TO ~D ) ) ( TO ( roD ) T ) ) ( z~ ( POP smiNo T ) ) ( NUMBR ( TO ( NUMBRI ) ( OR ( OETA SUB- ) ( OKRA SUP- ) ( OKRA CLASS- ) ) ( SKTR NUM~ 'FL</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>- ) ( S~DS m~Z ) Rm ( aam s'miNo 'A zm ) ( JUMP ~ ) ) ( ~ ~ T ( ADDR STRING } 'A ) ) ) ( NPM ( CALL NP ( GETA CLASS ( OKRA M~SER- ) ) T ( S~T~R DONE ) REG ( AD~R STRING } REG ) ( TO roD ) ) ) ( ADJS ( CALL NP ( GETA ADJ ) ( DISJOINT * DONE ) ( S~DR DONE ) * ( ADDR STRING * ) ( TO ADJS ) ) ( TO ( A~JS ) T ) ( raP STRING T ) ) ( sP ( w~ WHO T ( SKrR TYPE 'Q ) ( LIFTS TYPE ) ( szm sVSa ~X ( To v ) ) ( maSH NPP T ( sz~mR net , D ) ( SETR n'PZ 'D ) ( Un~ n~Z ) ( sz 'm susa . )</sentence>
+				<definiendum id="0">ADJS</definiendum>
+				<definiendum id="1">CALL NP ( GETA ADJ )</definiendum>
+				<definiendum id="2">maSH NPP T</definiendum>
+				<definiens id="0">S~DR DONE ) * ( ADDR STRING * ) ( TO ADJS ) ) ( TO ( A~JS ) T ) ( raP STRING T ) ) ( sP ( w~ WHO T</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Briefly , a PTRANS IS s physical transfer of location , and an ATRANS Is an abstract transfer of ownership , possession or control . )</sentence>
+				<definiendum id="0">PTRANS IS</definiendum>
+				<definiens id="0">s physical transfer of location , and an ATRANS Is an abstract transfer of ownership , possession or control</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The MPLA is the present ruling body of Angola . )</sentence>
+				<definiendum id="0">MPLA</definiendum>
+				<definiens id="0">the present ruling body of Angola</definiens>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>\ [ Know-Positive Znferenoe\ ] `` Zf S believes A wants to know whether a proposition P is true .</sentence>
+				<definiendum id="0">Zf S</definiendum>
+				<definiens id="0">believes A wants to know whether a proposition P is true</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>With interpretation ( a ) , S can simply answer the question , whereas with interpretation ( b ) , S is obliged to glve a reason for not answering with the departure time .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">obliged to glve a reason for not answering with the departure time</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>Test relaxation occurs when the test portion of an arc contains a relaxable predicate and the test fails .</sentence>
+				<definiendum id="0">Test relaxation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>PUSH arcs will relax to PUSH arcs , CAT arcs to CAT or PUSH arcs , and WRD or HEM arcs to CAT arcs .</sentence>
+				<definiendum id="0">CAT</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>In our current formulation , which we have implemented and are now testing , a pattern is a linear sequence of ATN arcs which is matched against the input string .</sentence>
+				<definiendum id="0">current formulation</definiendum>
+				<definiens id="0">a linear sequence of ATN arcs which is matched against the input string</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A pattern arc ( PAT ) has been added to the ATN formalism whose form is similar to that of other arcs : ( PAT &lt; pat apec &gt; &lt; test &gt; &lt; act &gt; a &lt; term &gt; ) The pattern specification ( &lt; pat spec &gt; ) is defined as : &lt; pat spec &gt; : : : ( &lt; patt &gt; &lt; mode &gt; a ) 21 &lt; part &gt; : := ( &lt; p arc &gt; * ) &lt; pat name &gt; &lt; mode &gt; : := UNANCHOR OPTIONAL SKIP &lt; p arc &gt; : := &lt; arc &gt; &gt; &lt; arc &gt; &lt; pat name &gt; : := user-assiGned pattern name &gt; The pattern ( &lt; part &gt; ) is either the name of a pattern , a `` &gt; '' , or a list of ATN arcs , each of which may be preceded by the symbol `` &gt; '' , while the pattern mode ( &lt; mode &gt; ) can be any of the keywords , UNANCHOR , OPTIONAL , or SKIP .</sentence>
+				<definiendum id="0">pattern arc ( PAT )</definiendum>
+				<definiens id="0">either the name of a pattern , a `` &gt; '' , or a list of ATN arcs , each of which may be preceded by the symbol `` &gt; '' , while the pattern mode ( &lt; mode &gt; ) can be any of the keywords , UNANCHOR , OPTIONAL , or SKIP</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+</paper>
+
+	</volume>

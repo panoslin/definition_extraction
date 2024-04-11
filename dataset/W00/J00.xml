@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J00">
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>A context-free grammar G is a 4-tuple ( G , N , P , S ) , where G and N are two finite disjoint sets of terminals and nonterminals , respectively , S E N is the start symbol , and P is a finite set of rules .</sentence>
+				<definiendum id="0">context-free grammar G</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">a 4-tuple ( G , N , P , S ) , where G and N are two finite disjoint sets of terminals and nonterminals , respectively , S E N is the start symbol</definiens>
+				<definiens id="1">a finite set of rules</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>T is a 5-tuple ( K , G , A , s , F ) , where K is a finite set of states , of which s is the initial state and those in F c K are the final states , is the input alphabet , and the transition relation A is a finite subset of K x Z* x K. We define a configuration to be an element of K x G* .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiendum id="1">K</definiendum>
+				<definiendum id="2">K</definiendum>
+				<definiendum id="3">transition relation A</definiendum>
+				<definiens id="0">a finite set of states</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We assume A is the start symbol and therefore qA becomes the initial state and q~ becomes the final state in the approximating automaton .</sentence>
+				<definiendum id="0">qA</definiendum>
+				<definiens id="0">becomes the initial state and q~ becomes the final state in the approximating automaton</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If the start symbol is S , the initial state is qs and the final state is q~ ( after the symbol S in the subscripts we find empty lists of items ) .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">after the symbol S in the subscripts we find empty lists of items )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The effect of this transformation is that a nonterminal A is tagged with a set of pairs ( B , Q ) , where B is a nonterminal occurring higher in the spine ; for any given B , at most one such pair ( B , Q ) can be contained in the set .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">a nonterminal occurring higher in the spine</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>• Atr , f __+ A± , d. • Arl , f ___+ A± , f. members of Ni , eachf such that 0 &lt; f G d , and each Q E { r , lr } , add the following rule to P. • AQd ~ BQ/a. members of Ni , eachf such that 0 Gf &lt; d , and each Q c { l , rl } , add the following rule to P. • Aqd ~ c~BQ , f. and no symbols from s0 ... .. C~m are members of Ni , and each f such that 0 &lt; f G d , add the following rule to P , provided m = 0 vf &lt; d. • A±/ c~0Alq-d+lc~l AT , f+1 -- -4 . . .~l m ' OLm . Figure 9 A simpler subset approximation by transforming the grammar. Now the counter f has been increased from 0 at the start of the subderivation to 1 at the end. Depending on the value d that we choose , we can not build derivations by repeating subderivation S -- +* b c S d a an unlimited number of times : at some point the counter will exceed d. If we choose d = 0 , then already the derivation at 29 Computational Linguistics Volume 26 , Number 1 S S ! T , O ( a ) /~ ( b ) ! r , O So\ A a ' a rl , O b B b B rl'O : o t t t t t t t t Figure 10 A parse tree in a self-embedding grammar ( a ) , and the corresponding parse tree in the transformed grammar ( b ) , for the simple subset approximation from Figure 9. Figure 10 ( b ) is no longer possible , since no nonterminal in the transformed grammar would contain 1 in its superscript. Because of the demonstrated increase of the counter f , this transformation is guaranteed to remove self-embedding from the grammar. However , it is not as selective as the transformation we saw before , in the sense that it may also block subderivations that are not of the form A -- ** ~Afl. Consider for example the subderivation from Figure 10 , but replacing the lower occurrence of S by any other nonterminal C that is mutually recursive with S , A , and B. Such a subderivation S -- -** b c C d a would also be blocked by choosing d = 0. In general , increasing d allows more of such derivations that are not of the form A ~ '' o~Afl but also allows more derivations that are of that form. The reason for considering this transformation rather than any other that eliminates self-embedding is purely pragmatic : of the many variants we have tried that yield nontrivial subset approximations , this transformation has the lowest complexity in terms of the sizes of intermediate structures and of the resulting finite automata. In the actual implementation , we have integrated the grammar transformation and the construction of the finite automaton , which avoids reanalysis of the grammar to determine the partition of mutually recursive nonterminals after transformation. This integration makes use , for example , of the fact that for fixed Ni and fixed f , the set of nonterminals of the form A , f , with A c Ni , is ( potentially ) mutually right-recursive. A set of such nonterminals can therefore be treated as the corresponding case from Figure 2 , assuming the value right. The full formulation of the integrated grammar transformation and construction of the finite automaton is rather long and is therefore not given here. A very similar formulation , for another grammar transformation , is given in Nederhof ( 1998 ) . 30 Nederhof Experiments with Regular Approximation The distinction between context-free languages and regular languages can be seen in terms of the distinction between pushdown automata and finite automata. Pushdown automata maintain a stack that is potentially unbounded in height , which allows more complex languages to be recognized than in the case of finite automata. Regular approximation can be achieved by restricting the height of the stack , as we will see in Section 4.5 , or by ignoring the distinction between several stacks when they become too high. More specifically , the method proposed by Pereira and Wright ( 1997 ) first constructs an LR automaton , which is a special case of a pushdown automaton. Then , stacks that may be constructed in the course of recognition of a string are computed one by one. However , stacks that contain two occurrences of a stack symbol are identified with the shorter stack that results by removing the part of the stack between the two occurrences , including one of the two occurrences. This process defines a congruence relation on stacks , with a finite number of congruence classes. This congruence relation directly defines a finite automaton : each class is translated to a unique state of the nondeterministic finite automaton , shift actions are translated to transitions labeled with terminals , and reduce actions are translated to epsilon transitions. The method has a high complexity. First , construction of an LR automaton , of which the size is exponential in the size of the grammar , may be a prohibitively expensive task ( Nederhof and Satta 1996 ) . This is , however , only a fraction of the effort needed to compute the congruence classes , of which the number is in turn exponential in the size of the LR automaton. If the resulting nondeterministic automaton is determinized , we obtain a third source of exponential behavior. The time and space complexity of the method are thereby bounded by a triple exponential function in the size of the grammar. This theoretical analysis seems to be in keeping with the high costs of applying this method in practice , as will be shown later in this article. As proposed by Pereira and Wright ( 1997 ) , our implementation applies the approximation separately for each nonterminal occurring in a set Ni that reveals selfembedding. A different superset approximation based on LR automata was proposed by Baker ( 1981 ) and rediscovered by Heckert ( 1994 ) . Each individual stack symbol is now translated to one state of the nondeterministic finite automaton. It can be argued theoretically that this approximation differs from the unparameterized RTN approximation from Section 4.1 only under certain conditions that are not likely to occur very often in practice. This consideration is confirmed by our experiments to be discussed later. Our implementation differs from the original algorithm in that the approximation is applied separately for each nonterminal in a set Ni that reveals self-embedding. A generalization of this method was suggested by Bermudez and Schimpf ( 1990 ) . For a fixed number d &gt; 0 we investigate sequences of d top-most elements of stacks that may arise in the LR automaton , and we translate these to states of the finite automaton .</sentence>
+				<definiendum id="0">LR automaton</definiendum>
+				<definiens id="0">avoids reanalysis of the grammar to determine the partition of mutually recursive nonterminals after transformation. This integration makes use</definiens>
+				<definiens id="1">a special case of a pushdown automaton. Then , stacks that may be constructed in the course of recognition of a string are computed one by one. However , stacks that contain two occurrences of a stack symbol are identified with the shorter stack that results by removing the part of the stack between the two occurrences</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Our implementation is made slightly more sophisticated by taking ~A to be { X \ ] 3B , c~ , fl\ [ B E Ni A B ~ oLXfl A X ~ Ni\ ] } , for each A such that A E Ni and recursive ( Ni ) = self , for some i. That is , each X E ~A is a terminal , or a nonterminal not in the same set Ni as A , but immediately reachable from set Ni , through B E Ni .</sentence>
+				<definiendum id="0">X E ~A</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The curve labeled G represents the percentage of sentences generated by the grammar .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiens id="0">represents the percentage of sentences generated by the grammar</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Regular approximations of CFLs : A grammatical view .</sentence>
+				<definiendum id="0">CFLs</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3005">
+			<definition id="0">
+				<sentence>Text fragments surrounded by curly brackets denote parenthetical units : their deletion does not affect the understanding of the textual unit to which they belong .</sentence>
+				<definiendum id="0">Text</definiendum>
+				<definiens id="0">fragments surrounded by curly brackets denote parenthetical units : their deletion does not affect the understanding of the textual unit to which they belong</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The hypothesis that underlies this work is that connectives , cohesion , shallow processing , and a well-constrained mathematical model of valid rhetorical structure trees ( RS-trees ) can be used to implement algorithms that determine • the elementary units of a text , i.e. , the units that constitute the leaves of the RS-tree of that text ; • the rhetorical relations that hold between elementary units and between spans of text ; • the relative importance ( nucleus or satellite ) and the size of the spans subsumed by these rhetorical relations .</sentence>
+				<definiendum id="0">RS-trees</definiendum>
+				<definiens id="0">determine • the elementary units of a text , i.e. , the units that constitute the leaves of the RS-tree of that text ; • the rhetorical relations that hold between elementary units and between spans of text ; • the relative importance ( nucleus or satellite ) and the size of the spans subsumed by these rhetorical relations</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Hypotactic relations are those that hold between a unit ( span ) that is essential for the writer 's purpose , i.e. , a nucleus , and a unit ( span ) that increases the understanding of the nucleus but is not essential for the writer 's purpose , i.e. , a satellite .</sentence>
+				<definiendum id="0">Hypotactic relations</definiendum>
+				<definiens id="0">those that hold between a unit ( span ) that is essential for the writer 's purpose</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>• Each node of a rhetorical structure tree has associated a status ( NUCLEUS or SATELLITE ) , a type ( the rhetorical relation that holds between the text spans that the node spans over ) , and a set of promotion units .</sentence>
+				<definiendum id="0">SATELLITE</definiendum>
+				<definiens id="0">the rhetorical relation that holds between the text spans that the node spans over )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>It concerned only one field , Break action , which specified the action that a left-to-right surface-based elementary unit identifier will need to take to determine the boundaries of elementary textual units found in the vicinity of the cue phrase .</sentence>
+				<definiendum id="0">Break action</definiendum>
+				<definiens id="0">specified the action that a left-to-right surface-based elementary unit identifier will need to take to determine the boundaries of elementary textual units found in the vicinity of the cue phrase</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In the third step , the rhetorical parser builds the valid text structures for each of the three highest levels of granularity , which are the sentence , paragraph , and section levels ( see lines 5-15 in Figure 5 ) .</sentence>
+				<definiendum id="0">granularity</definiendum>
+				<definiens id="0">the sentence , paragraph , and section levels</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The names and the intended semantics of the actions used by the shallow analyzer are : • Action NOTHING instructs the shallow analyzer to treat the cue phrase under consideration as a simple word .</sentence>
+				<definiendum id="0">Action NOTHING</definiendum>
+				<definiens id="0">instructs the shallow analyzer to treat the cue phrase under consideration as a simple word</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>• Action END instructs the analyzer to insert a textual boundary immediately after the cue phrase .</sentence>
+				<definiendum id="0">Action END</definiendum>
+				<definiens id="0">instructs the analyzer to insert a textual boundary immediately after the cue phrase</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Marker Position Action Although B COMMA because B DUAL but B NORMAL for example M NOTHING where B COMMA-PAREN With B COMMA Yet B NOTHING COMMA E NOTHING OPEN_PAREN B MATCH-PAREN CLOSEA~AREN E NOTHING DASH n MATCH-DASH END_SENTENCE E NOTHING BEGIN_PARAGRAPH B NOTHING sentence and paragraph boundaries at places that are inappropriate .</sentence>
+				<definiendum id="0">Marker Position</definiendum>
+				<definiens id="0">Action Although B COMMA because B DUAL but B NORMAL for example M NOTHING where B COMMA-PAREN With B COMMA Yet B NOTHING COMMA E NOTHING OPEN_PAREN B MATCH-PAREN CLOSEA~AREN E NOTHING DASH n MATCH-DASH END_SENTENCE E NOTHING BEGIN_PARAGRAPH B NOTHING sentence</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The most important criterion for using a cue phrase in the clause-like unit and discourse marker identification algorithm is that the cue phrase ( together with its orthographic neighborhood ) functions as a discourse marker in the majority of the examples in the corpus .</sentence>
+				<definiendum id="0">phrase</definiendum>
+				<definiens id="0">The most important criterion for using a cue phrase in the clause-like unit and discourse marker identification algorithm is that the cue</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Such an exclusively disjunctive hypothesis enumerates all possible relations that could hold over members of the Cartesian product { i , i+1 ... .. i+Dist_sal ( m ) +1 } x { /-Max ( m ) , /-Max ( m ) +1 , ... , i1 } , where Max ( m ) is the maximum number of units that separated the satellite and the nucleus of such a relation in all the examples found in the corpus , and Dist_sal ( m ) is the maximum distance to the salient unit found in the rightmost position .</sentence>
+				<definiendum id="0">disjunctive hypothesis</definiendum>
+				<definiendum id="1">Max ( m )</definiendum>
+				<definiens id="0">enumerates all possible relations that could hold over members of the Cartesian product</definiens>
+				<definiens id="1">the maximum number of units that separated the satellite and the nucleus of such a relation in all the examples found in the corpus</definiens>
+				<definiens id="2">the maximum distance to the salient unit found in the rightmost position</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The theory consists of a set of axioms and rewriting rules that encode all possible ways in which one can derive the valid RStrees of a text .</sentence>
+				<definiendum id="0">theory</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>( 33 ) ( 34 ) \ [ S ( I , b , treel ( NUCLEUS , type1 , pl , left1 , right1 ) , rr l ) A S ( b q1 , h , tree2 ( SATELLITE , type2 , p2 , left2 , right2 ) , rr2 ) A rhet_rel ( name , s , n ) Ee rrl A rhet_rel ( name , s , n ) E~ rr2 A s ff P2 A n E pl A hypotactic ( name ) \ ] -- , S ( 1 , h , tree ( NUCLEUS , name , Pl , tree1 ( ... ) , tree2 ( . . . ) ) , rrl N rr2 \~ { rhet_rel ( name , s , n ) } ) \ [ S ( I , b , treel ( NUCLEUS , typo , pl , left1 , righh ) , rrl ) A S ( b - } 1 , h , tree2 ( SATELLITE , type2 , p2 , left2 , right2 ) , rr2 ) A rhet_rel ( name , s , n ) E~ rrl A rhet_rel ( name , s , n ) Ca rr2 A s C P2 A n E pl A hypotactic ( name ) \ ] -- + S ( I , h , tree ( SATELLITE , name , p1 , tree1 ( ... ) , tree2 ( ... ) ) , rrl A rr2 \e { rhet_rel ( name , s , n ) } ) 428 Marcu Rhetorical Parsing of Unrestricted Texts Assume that there exist two spans : one from unit 1 to unit b that is characterized by valid rhetorical structure tree1 ( ... ) and rhetorical relations rrl , and the other from unit b + 1 to unit h that is characterized by valid rhetorical structure tree2 ( ... ) and rhetorical relations rr2 .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">hypotactic</definiendum>
+				<definiendum id="2">S</definiendum>
+				<definiendum id="3">hypotactic</definiendum>
+				<definiens id="0">s , n ) E~ rrl A rhet_rel ( name , s , n ) Ca rr2 A s C P2 A n E pl A</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The weight function w , which is shown in ( 38 ) , is computed recursively by summing up the weights of the left and right branches of a rhetorical structure and the difference between the depth of the right and left branches of the structure .</sentence>
+				<definiendum id="0">weight function w</definiendum>
+				<definiens id="0">is computed recursively by summing up the weights of the left and right branches of a rhetorical structure and the difference between the depth of the right and left branches of the structure</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>depth ( rightOf ( tree ) ) depth ( leftOf ( tree ) ) For example , when applied to the valid rhetorical structures of sentence ( 22 ) , the weight function will assign the value -1 to the trees shown in Figures 9 ( a ) and 9 ( b ) , and the value +1 to the trees shown in Figures 9 ( c ) and 9 ( d ) .</sentence>
+				<definiendum id="0">depth ( rightOf</definiendum>
+				<definiens id="0">( tree ) ) depth ( leftOf ( tree ) ) For example , when applied to the valid rhetorical structures of sentence ( 22 )</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Occurrences of parenthetical information are enclosed in the text by curly brackets ; the leaves of the discourse structure are numbered from 1 to N , where N represents the number of elementary units in the whole text .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of elementary units in the whole text</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>In the last step ( lines 16-17 in Figure 5 ) , after the trees of maximal weight have been obtained at the sentence , paragraph , and section levels , the rhetorical parser merges the valid structures into a structure that spans the whole text of a section .</sentence>
+				<definiendum id="0">rhetorical parser</definiendum>
+				<definiens id="0">merges the valid structures into a structure that spans the whole text of a section</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The merging process is a trivial procedure that assembles the trees obtained at each level of granularity .</sentence>
+				<definiendum id="0">merging process</definiendum>
+				<definiens id="0">a trivial procedure that assembles the trees obtained at each level of granularity</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>( Label SPAN denotes the nucleus of any mononuclear relation . )</sentence>
+				<definiendum id="0">Label SPAN</definiendum>
+				<definiens id="0">the nucleus of any mononuclear relation</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The F-value is a combined Recall-Precision value , given by the formula 2 x Recall x Precision/ ( Recall + Precision ) .</sentence>
+				<definiendum id="0">F-value</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>The rhetorical summarizer is a niche application that shows how an understanding of the hierarchical organization of text can make solving difficult natural language problems easier .</sentence>
+				<definiendum id="0">rhetorical summarizer</definiendum>
+				<definiens id="0">a niche application that shows how an understanding of the hierarchical organization of text can make solving difficult natural language problems easier</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Interclausal connectives as indicators of structuring in narrative .</sentence>
+				<definiendum id="0">Interclausal</definiendum>
+				<definiens id="0">connectives as indicators of structuring in narrative</definiens>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>Contextual These indicate dependencies and effects on the presence and status of elements in the discourse context , including not only availability for anaphoric reference but also effects on how various elements in the discourse context will be perceived .</sentence>
+				<definiendum id="0">Contextual</definiendum>
+				<definiens id="0">These indicate dependencies and effects on the presence and status of elements in the discourse context , including not only availability for anaphoric reference but also effects on how various elements in the discourse context will be perceived</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This model of text plans meshes well with the model of discourse structure developed by Grosz and Sidner ( Grosz and Sidner 1985 , 1986 ) , in which the purpose of each discourse segment is an important part of the structure .</sentence>
+				<definiendum id="0">discourse segment</definiendum>
+				<definiens id="0">an important part of the structure</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>• Else if its argument is a sequence , Request is a member of another sequence that is a critical item in the plan , and the two sequences are along the same scale but are disjoint or only overlap slightly , subtract 1 from Adjustment .</sentence>
+				<definiendum id="0">Request</definiendum>
+				<definiens id="0">a critical item in the plan , and the two sequences are along the same scale but are disjoint or only overlap slightly , subtract 1 from Adjustment</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The linguistic component is the part of IGEN that produces the actual bits of language that make up the utterance .</sentence>
+				<definiendum id="0">linguistic component</definiendum>
+				<definiens id="0">the part of IGEN that produces the actual bits of language that make up the utterance</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>118 Rubinoff The IGEN Generator as follows : First the linguistic component adds an annotation that indicates the kind of connection ( if any ) between the option 's meaning and the request ; this produces either a MAKES-EXPLICIT , MAKES-IMPLICIT , INDIRECTLY-SUGGESTS , or MISSING-INFO annotation .</sentence>
+				<definiendum id="0">IGEN Generator</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Else if an element in Option 's meaning is a `` sibling '' of Request ( i.e. , they are instances or subconcepts of the same element ) or an `` uncle '' of Request ( i.e. , the sibling of an element of which Request is an instance or subconcept ) , add a MAKES-IMPLICIT annotation for Request and MISSING-INFO and EXTRA-INFO annotations as described in step ( 4 ) to Annotations .</sentence>
+				<definiendum id="0">Request</definiendum>
+				<definiens id="0">they are instances or subconcepts of the same element</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Goal : # &lt; TAKE ( HEARER , UMBRELLA ) &gt; Achieve ( I ) by achieving subgoal : # &lt; WANT ( HEARER , # &lt; TAKE ( HEARER , UMBRELLA ) &gt; ) &gt; Achieve ( 2 ) by achieving subgoal : # &lt; KNOW ( HEARER , # &lt; CONSIST-0F ( PRECIPITATION , RAIN ) &gt; ) &gt; depending on the preconditions : # &lt; DANGEROUS ( # &lt; C0NSIST-0F ( PRECIPITATION , RAIN ) &gt; ) &gt; and # &lt; PROTECTI ON ( # &lt; TAKE ( HEARER , UMBRELLA ) &gt; , # &lt; CONSIST-0F ( PRECIPITATION , RAIN ) &gt; ) &gt; Achieve ( 3 ) by expressing : # &lt; CONSIST-0F ( PRECIPITATION , RAIN ) &gt; Note that the information to be expressed here in step ( 4 ) is also expressed in step ( 3 ) of the previous example .</sentence>
+				<definiendum id="0">Goal</definiendum>
+				<definiens id="0">the information to be expressed here in step</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>In the context of computational linguistics , translational equivalence is a relation that holds between two expressions with the same meaning , where the two expressions are in different languages .</sentence>
+				<definiendum id="0">translational equivalence</definiendum>
+				<definiens id="0">a relation that holds between two expressions with the same meaning , where the two expressions are in different languages</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>There are many plausible representations , such as pairs of trees from synchronous tree adjoining grammars ( Abeill6 et al. 1990 ; Shieber 1994 ; Candito 1998 ) , lexical conceptual structures ( Dorr 1992 ) and WordNet synsets ( Fellbaum 1998 ; Vossen 1998 ) .</sentence>
+				<definiendum id="0">WordNet synsets</definiendum>
+				<definiens id="0">such as pairs of trees from synchronous tree adjoining grammars</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Let the cells of the contingency table be named as follows : Now , Ilul ul v a b ~v c d B ( a\ [ a + b , pl ) B ( c\ [ c + d , p2 ) ( 27 ) G2 ( u , v ) = -2log B ( al a + b , p ) B ( c\ [ c + d , p ) where B ( kln , p ) = ( nk ) pk ( 1 -- p ) n -- k are binomial probabilities .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">al a + b , p ) B ( c\ [ c + d , p ) where B ( kln , p ) = ( nk ) pk ( 1 -- p ) n --</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , the English word sentence may be considered to have two senses , corresponding to its French translations peine ( judicial sentence ) and phrase ( grammatical sentence ) .</sentence>
+				<definiendum id="0">phrase</definiendum>
+				<definiens id="0">grammatical sentence )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Method B exploits this property under the hypothesis that `` one sense per collocation '' holds for translational collocations .</sentence>
+				<definiendum id="0">Method B</definiendum>
+				<definiens id="0">exploits this property under the hypothesis that `` one sense per collocation '' holds for translational collocations</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Let B ( kln , p ) denote the probability that k links are observed out of n co-occurrences , where k has a binomial distribution with parameters n and p. Then the probability that word types u and v will be linked links ( u , v ) times out of cooc ( u , v ) co-occurrences is a mixture of two binomials : Pr ( links ( u , v ) Icooc ( u , v ) , , k + , ) ~- ) = TB ( links ( u , v ) Icooc ( u , v ) , ) ~+ ) + ( 1 ~- ) B ( links ( u , v ) lcooc ( u , v ) , A- ) .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiendum id="1">k</definiendum>
+				<definiendum id="2">co-occurrences</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Class Code Description EOS EOP SCM SYM NU C F End-Of-Sentence punctuation End-Of-Phrase punctuation , such as commas and colons Subordinate Clause Markers , such as `` and ( Symbols , such as ~ and * the NULL word , in a class by itself Content words : nouns , adjectives , adverbs , non-auxiliary verbs all other words , i.e. , function words method is the list of function words in class F. Certainly , more sophisticated word classification methods could produce better models , but even the simple classification in Table 4 should suffice to demonstrate the method 's potential .</sentence>
+				<definiendum id="0">Class Code Description EOS EOP SCM SYM NU C F End-Of-Sentence punctuation End-Of-Phrase punctuation</definiendum>
+				<definiens id="0">a class by itself Content words : nouns , adjectives , adverbs , non-auxiliary verbs all other words</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>humans have a finite ( small , limited , fixed ) amount of memory available for language processing humans have problems with certain grammatical constructions , such as center-embedding , which are impossible to describe by finite-state means ( Miller and Chomsky 1963 ) humans process natural language very efficiently ( in linear time ) * Alfa-informatica &amp; BCN .</sentence>
+				<definiendum id="0">finite</definiendum>
+				<definiendum id="1">center-embedding</definiendum>
+				<definiens id="0">impossible to describe by finite-state means ( Miller and Chomsky 1963 ) humans process natural language very efficiently</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Let a finite-state machine M be specified by a tuple ( Q , G , 6 , S , F ) where Q is a finite set of states , G is a finite alphabet , and ~ is a function from Q x ( G u { ¢ } ) -- * 2 Q. Furthermore , S c_ Q is a set of start states and F _C Q is a set of final states .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiendum id="1">G</definiendum>
+				<definiendum id="2">_C Q</definiendum>
+				<definiens id="0">a finite set of states ,</definiens>
+				<definiens id="1">a finite alphabet</definiens>
+				<definiens id="2">a function from Q x ( G u { ¢ }</definiens>
+				<definiens id="3">a set of start states</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The definition simply is : funct epsilon_closure ( U ) return memo ( closure ( U ) ) end variant 3 : per subset The motivation for the per state variant is the insight that in this case the closure algorithm is called at most IQ\ ] times .</sentence>
+				<definiendum id="0">state variant</definiendum>
+				<definiens id="0">per subset The motivation for the per</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Deterministic transition density is the number of transitions divided by the number of states multiplied by the number of symbols ( i.e. , the ratio of the number of transitions and the maximum number of `` possible '' transitions in a deterministic machine ) .</sentence>
+				<definiendum id="0">Deterministic transition density</definiendum>
+				<definiens id="0">the number of transitions divided by the number of states multiplied by the number of symbols</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>fsa represents the CPU-time required by our FSA6 implementation ; fsm represents the CPU-time required by AT &amp; T 's FSM library ; states represents the sum of the number of states of the input and output automata .</sentence>
+				<definiendum id="0">fsa</definiendum>
+				<definiendum id="1">fsm</definiendum>
+				<definiens id="0">the sum of the number of states of the input and output automata</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>FSM is designed to treat weighted automata for very general weight sets .</sentence>
+				<definiendum id="0">FSM</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Regular approximations of CFLs : A grammatical view .</sentence>
+				<definiendum id="0">CFLs</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>FSA Utilities : A toolbox to manipulate finite-state automata .</sentence>
+				<definiendum id="0">FSA Utilities</definiendum>
+				<definiens id="0">A toolbox to manipulate finite-state automata</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>A DA represents the meaning of an utterance at the level of illocutionary force ( Austin 1962 ) .</sentence>
+				<definiendum id="0">DA</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>DAMSL aims to provide a domain-independent framework for dialogue annotation , as reflected by the fact that our tag set can be mapped back to DAMSL categories ( Jurafsky , Shriberg , and Biasca 1997 ) .</sentence>
+				<definiendum id="0">DAMSL</definiendum>
+				<definiens id="0">aims to provide a domain-independent framework for dialogue annotation</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A backchannel is a short utterance that plays discourse-structuring roles , e.g. , indicating that the speaker should go on talking .</sentence>
+				<definiendum id="0">backchannel</definiendum>
+				<definiens id="0">a short utterance that plays discourse-structuring roles , e.g. , indicating that the speaker should go on talking</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Applying Bayes ' rule we get U* = argmaxP ( UIE ) U P ( U ) P ( ElU ) = argmax u P ( E ) = argmaxP ( U ) P ( ElU ) ( 1 ) U Here P ( U ) represents the prior probability of a DA sequence , and P ( EIU ) is the like346 Stolcke et al .</sentence>
+				<definiendum id="0">P ( EIU )</definiendum>
+				<definiens id="0">the prior probability of a DA sequence</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For example , Wi is the word transcription of the ith utterance within a conversation ( not the ith word ) .</sentence>
+				<definiendum id="0">Wi</definiendum>
+				<definiens id="0">the word transcription of the ith utterance within a conversation ( not the ith word )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We use Ui for the ith DA label in the sequence U , i.e. , U = ( U1 ... .. Ui , ... , Un ) , where n is the number of utterances in a conversation .</sentence>
+				<definiendum id="0">Un</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">the ith DA label in the sequence U , i.e. , U = ( U1 ... .. Ui , ... ,</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Decomposability of the likelihood means that P ( EIU ) = P ( E11 U1 ) ... .. P ( En \ [ Un ) ( 2 ) Applied separately to the three types of evidence Ai , Wi , and Fi mentioned above , it is clear that this assumption is not strictly true .</sentence>
+				<definiendum id="0">Fi</definiendum>
+				<definiens id="0">P ( EIU ) = P ( E11 U1 ) ... .. P ( En \ [ Un ) ( 2 ) Applied separately to the three types of evidence Ai , Wi , and</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In particular , we assume that the prior distribution of U is Markovian , i.e. , that each Ui depends only on a fixed number k of preceding DA labels : P ( UilUl , . . . , Ui-1 ) ~P ( UilUi-k ... .. Ui-1 ) ( 3 ) ( k is the order of the Markov process describing U ) .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">the order of the Markov process describing U )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The statistical discourse grammar models the prior probabilities P ( U ) of DA sequences .</sentence>
+				<definiendum id="0">statistical discourse grammar</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>The word insertion penalty/~ represents a correction to the language model that allows balancing insertion and deletion errors .</sentence>
+				<definiendum id="0">word insertion penalty/~</definiendum>
+				<definiens id="0">a correction to the language model that allows balancing insertion and deletion errors</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Utterance length is captured directly by the tree using various duration measures , while the DA-specific LMs encode the average number of words per utterance indirectly through n-gram parameters , but still accurately enough to violate independence in a significant way ( Finke et al. 1998 ) .</sentence>
+				<definiendum id="0">Utterance length</definiendum>
+				<definiens id="0">the average number of words per utterance indirectly through n-gram parameters , but still accurately enough to violate independence in a significant way</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Each DAspecific LM used its own interpolation weight , obtained by minimizing the perplexity of the interpolated model on held-out DA-specific training data .</sentence>
+				<definiendum id="0">DAspecific LM</definiendum>
+				<definiens id="0">used its own interpolation weight , obtained by minimizing the perplexity of the interpolated model on held-out DA-specific training data</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The VERBMOBIL corpus consists of two-party scheduling dialogues .</sentence>
+				<definiendum id="0">VERBMOBIL corpus</definiendum>
+				<definiens id="0">consists of two-party scheduling dialogues</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The ATR Conference corpus is a subset of a larger ATR Dialogue database consisting of simulated dialogues between a secretary and a questioner at international conferences .</sentence>
+				<definiendum id="0">ATR Conference corpus</definiendum>
+				<definiens id="0">a subset of a larger ATR Dialogue database consisting of simulated dialogues between a secretary and a questioner at international conferences</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>N-gram models are likelihood models for DAs , i.e. , they compute the conditional probabilities of the word sequence given the DA type .</sentence>
+				<definiendum id="0">N-gram models</definiendum>
+				<definiens id="0">the conditional probabilities of the word sequence given the DA type</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>We investigated several modeling alternatives for the components of the model ( backoff n-grams and maximum entropy models for discourse grammars , decision trees and neural networks for prosodic classification ) and found performance largely independent of these choices .</sentence>
+				<definiendum id="0">maximum entropy models</definiendum>
+				<definiens id="0">for discourse grammars , decision trees and neural networks for prosodic classification</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>Pronunciation by analogy ( PbA ) is a data-driven technique for the automatic phonemization of text , originally proposed as a model of reading , e.g. , by Glushko ( 1979 ) and Kay and Marcel ( 1981 ) .</sentence>
+				<definiendum id="0">Pronunciation by analogy</definiendum>
+				<definiens id="0">a data-driven technique for the automatic phonemization of text , originally proposed as a model of reading</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The basic PRONOUNCE system consists of four components : the lexical database ; the matcher , which compares the target input to all the words in the database ; the pronunciation lattice ( a data structure representing possible pronunciations ) ; and the decision function , which selects the `` best '' pronunciation among the set of possible ones .</sentence>
+				<definiendum id="0">matcher</definiendum>
+				<definiens id="0">compares the target input to all the words in the database ; the pronunciation lattice ( a data structure representing possible pronunciations</definiens>
+				<definiens id="1">selects the `` best '' pronunciation among the set of possible ones</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The phoneme inventory is of size 52 , and has the advantage ( for computer implementation ) that all symbols are single characters from the ASCII set .</sentence>
+				<definiendum id="0">phoneme inventory</definiendum>
+				<definiens id="0">of size 52 , and has the advantage ( for computer implementation ) that all symbols are single characters from the ASCII set</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Cj is a 3-tuple ( Fj , Dj , Pj ) where : Fj - { fl ... . , fn } represents the set of arc frequencies along the jth candidate path ( length n ) .</sentence>
+				<definiendum id="0">Cj</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Pj = { pl ... .. Pm , ... , Pl } is the set of pronunciation candidates with pm 'S from the set of phonemes ( 52 in our case ) and l is the length of the pronunciation .</sentence>
+				<definiendum id="0">l</definiendum>
+				<definiens id="0">the length of the pronunciation</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Thus , the total number of points ( T ) awarded for each strategy is : N T ( N ) = ~ , r-N ( N + I ) 2 ( 2 ) r=l where N is the number of candidate pronunciations ( N = 6 in our longevity example , so that T ( 6 ) = 21 ) .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of candidate pronunciations</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Rank ( C ) is the rank of the result according to the number of strategies ( in the range 1 to 5 ) included in the final score .</sentence>
+				<definiendum id="0">Rank</definiendum>
+				<definiens id="0">the rank of the result according to the number of strategies</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Rank ( W ) is the rank of the result according to word accuracy .</sentence>
+				<definiendum id="0">Rank</definiendum>
+				<definiens id="0">the rank of the result according to word accuracy</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Rank ( C ) is the rank of the result according to the number of strategies ( in the range 1 to 5 ) included in the final score .</sentence>
+				<definiendum id="0">Rank</definiendum>
+				<definiens id="0">the rank of the result according to the number of strategies</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Rank ( W ) is the rank of the result according to word accuracy .</sentence>
+				<definiendum id="0">Rank</definiendum>
+				<definiens id="0">the rank of the result according to word accuracy</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Rank ( C ) is the rank of the result according to the number of strategies ( in the range 1 to 5 ) included in the final score .</sentence>
+				<definiendum id="0">Rank</definiendum>
+				<definiens id="0">the rank of the result according to the number of strategies</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Rank ( W ) is the rank of the result according to word accuracy .</sentence>
+				<definiendum id="0">Rank</definiendum>
+				<definiens id="0">the rank of the result according to word accuracy</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Novel-word pronunciation : A cross-language study .</sentence>
+				<definiendum id="0">Novel-word pronunciation</definiendum>
+				<definiens id="0">A cross-language study</definiens>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>Word segmentation is an important prerequisite for such applications .</sentence>
+				<definiendum id="0">Word segmentation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>PPM is an n-gram approach that uses finite-context models of characters , where the previous few ( say three ) characters predict the upcoming one .</sentence>
+				<definiendum id="0">PPM</definiendum>
+				<definiens id="0">an n-gram approach that uses finite-context models of characters</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>PPM incorporates a simple and highly effective method to combine the predictions of the models of different order -- often called the problem of `` backoff . ''</sentence>
+				<definiendum id="0">PPM</definiendum>
+				<definiens id="0">incorporates a simple and highly effective method to combine the predictions of the models of different order</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Our experiments calculate the escape probability in a particular context as la n where n is the number of times that context has appeared and d is the number of different symbols that have directly followed it ( Howard 1993 ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">d</definiendum>
+				<definiens id="0">the number of times that context has appeared and</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>IAI is the size of the alphabet , and it is this that determines the probability for each unseen character .</sentence>
+				<definiendum id="0">IAI</definiendum>
+				<definiens id="0">the size of the alphabet</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Balancing Act : Combining Symbolic and Statistical Approaches to Language .</sentence>
+				<definiendum id="0">Balancing Act</definiendum>
+				<definiens id="0">Combining Symbolic and Statistical Approaches to Language</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>USeg : A retargetable word segmentation procedure for information retrieval .</sentence>
+				<definiendum id="0">USeg</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>81 Computational Linguistics Volume 26 , Number 1 Here , the lexicon consists of multiple sublexica , each sublexicon containing entries for one particular lexical representation ( or tier in the autosegmental analysis ) .</sentence>
+				<definiendum id="0">lexicon</definiendum>
+				<definiens id="0">consists of multiple sublexica , each sublexicon containing entries for one particular lexical representation ( or tier in the autosegmental analysis )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Below , the top line represents the lexical tiers and the bottom line represents the corresponding surface form : LLC LEX -RLC { o , - } LSC SURF -RSC LLC denotes the left lexical context , LEX denotes the lexical form , and RLC denotes the right lexical context .</sentence>
+				<definiendum id="0">SURF -RSC LLC</definiendum>
+				<definiendum id="1">LEX</definiendum>
+				<definiendum id="2">RLC</definiendum>
+				<definiens id="0">the left lexical context</definiens>
+				<definiens id="1">the lexical form , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>When a lexical expression makes use of 82 Kiraz Multitiered Nonlinear Morphology ( c , X , s ) RI : X where X is a consonant .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a consonant</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Empty slots represent the empty string ¢ .</sentence>
+				<definiendum id="0">Empty slots</definiendum>
+				<definiens id="0">the empty string ¢</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The following morphotactic rule formalism is used to describe such operations : A ~ PBS ( P , s ) ( pl , sl ) ( P , S ) -- -+ ( p2 , $ 2 ) ( P , S ) ( pn , sn ) A circumfix here is a pair ( P , S ) where P represents the prefix portion of the circumfix and S represents the suffix portion .</sentence>
+				<definiendum id="0">~ PBS</definiendum>
+				<definiendum id="1">sn</definiendum>
+				<definiendum id="2">circumfix</definiendum>
+				<definiendum id="3">S</definiendum>
+				<definiens id="0">a pair ( P , S ) where P represents the prefix portion of the circumfix</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An n-tape finite-state automaton ( FSA ) is a 5-tuple ( Q , G , 6 , q0 , F ) , where Q is a finite set of states , G is a finite input alphabet , 6 : Q x ( p , ~ ) '' -- , 2 Q is a transition function ( where G* = G u { ~ } and c is the empty string ) , q0 E Q is an initial state , and F C_ Q is a set of final states .</sentence>
+				<definiendum id="0">n-tape finite-state automaton</definiendum>
+				<definiendum id="1">FSA</definiendum>
+				<definiendum id="2">G</definiendum>
+				<definiendum id="3">Q</definiendum>
+				<definiendum id="4">c</definiendum>
+				<definiendum id="5">q0 E Q</definiendum>
+				<definiens id="0">a 5-tuple ( Q , G , 6 , q0 , F ) , where Q is a finite set of states</definiens>
+				<definiens id="1">a finite input alphabet , 6 : Q x ( p , ~</definiens>
+				<definiens id="2">a transition function</definiens>
+				<definiens id="3">the empty string )</definiens>
+				<definiens id="4">an initial state , and F C_ Q is a set of final states</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>To make the final lexicon accept same-length tuples , we insert 0s throughout , Lexicon= ( HInsert { o } ( Li ) ) Nrr* \ i=1 ( 2 ) All invalid tuples resulting from the cross product operation ( e.g. , ( 0,0 ... .. 0 ) ) are removed by the intersection with 7r* , where 7r is the set of all feasible tuples computed from rules ( see Section 4.2 ) .</sentence>
+				<definiendum id="0">7r</definiendum>
+				<definiens id="0">the set of all feasible tuples computed from rules</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Gemination is handled in one of two ways : The first marks pattern consonantal segments ( C or as ) with a subscript ( e.g. , CIVCaVC3 ) and provides rules to geminate the appropriate consonant , e.g. , Gemination in/kattab/ : { c2 , X , e ) 4 : ~ XX The second approach leaves pattern segments unmarked , but provides the proper left and right contexts in rules .</sentence>
+				<definiendum id="0">Gemination</definiendum>
+				<definiens id="0">segments unmarked , but provides the proper left and right contexts in rules</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>* ( cV , * , * ) R4 * e * where V is a vowel .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">a vowel</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The c in the right lexical context is a concrete symbol from a pattern morpheme , while V represents the class of all vowels .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">a concrete symbol from a pattern morpheme</definiens>
+				<definiens id="1">the class of all vowels</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>For example , the lexical entry for the Arabic root morpheme { ktb } takes the form E~ kEp tEpbEp ( 11 ) where Ep is the alphabet of nonroot segments ; likewise , the entry for the perfect passive vocalism { ui } takes the form : E r u E r i E r ( 12 ) where Gr is the alphabet of root segments .</sentence>
+				<definiendum id="0">Ep</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>Expression ( 12 ) then becomes : B* u B* i B* ( 14 ) where B = E V , and V is the disjunction of all vowels .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">B* u B* i B* ( 14 ) where B = E V , and</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Further , our lexicon compiler needs to perform only n 1 cross product operations ( where n is the number of lexical tapes , usually 3 ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of lexical tapes</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The lexical description gives the root and pattern superficially concatenated in the form ( Beesley 1996 , p. c. ) : \ [ ktb &amp; CaCaC\ ] ( 17 ) The square brackets are special symbols that delimit the stem , and `` &amp; '' is another special symbol that separates the root from the pattern ; it is not the intersection operator .</sentence>
+				<definiendum id="0">lexical description</definiendum>
+				<definiens id="0">gives the root and pattern superficially concatenated in the form ( Beesley 1996 , p. c. ) : \ [ ktb &amp; CaCaC\ ] ( 17 ) The square brackets are special symbols that delimit the stem , and `` &amp; '' is another special symbol that separates the root from the pattern ; it is not the intersection operator</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>In contrast , the proposed multitier model requires only three rules throughout the entire language to model Beesley 's roots and patterns ( i.e. , with X to denote gemination and hard-coding vocalic spreading ) : R1 ( for stem consonants ) and R2 ( for stem vowels ) from Figure 3 , in addition to the following gemination rule ( see Section 5.1 for our handling of gemination and spreading ) : Gemination : ( x , C , ~ ) ( x , , , c ) * where C is a consonant .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the entire language to model Beesley 's roots and patterns ( i.e. , with X to denote gemination and hard-coding vocalic spreading ) : R1 ( for stem consonants</definiens>
+				<definiens id="1">a consonant</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>~=~ The result of the three rules is a mere ( \ ] R I + 1 ) -state machine , where R is the set of all root segments ( = 28 for Arabic , 22 for Syriac ) , which is then applied to the multitiered lexicon .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">the set of all root segments ( = 28 for Arabic , 22 for Syriac</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The corresponding encoding of the diagram is : Tier 1 a:2:0:0 Tier 2 C:0:1:0 V : I:0:0 C:0:1:0 C:0:1:0 V : I:0:0 C:0:1:0 Tier 3 k:0 : l:0 t:0:2:0 b:0 : l:0 Each expression is an ( n + 1 ) -tuple , where n is the number of charts .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of charts</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Automaton ) constructs the machine Automaton for the extended regular expression KegExp , e.g. , expression 3 ( Section 4.2.1 ) is turned into a four-tape machine with the expression regexp_to_fsa ( t ( c , c , c , c ) ^ ( \ [ t ( k , c , k , O ) ... . ) \ ] ^t ( c , c , c , c ) ) * , Centers ) The predicate t ( +terminal ) denotes a terminal tuple , infix ^ denotes concatenation , postfix * denotes Kleene star , and a list denotes union over its elements .</sentence>
+				<definiendum id="0">Automaton )</definiendum>
+			</definition>
+			<definition id="18">
+				<sentence>FSA Utilities : A toolbox to manipulate finite-state automata .</sentence>
+				<definiendum id="0">FSA Utilities</definiendum>
+				<definiens id="0">A toolbox to manipulate finite-state automata</definiens>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>Panels ( e ) and ( f ) show the results for a randomized corpus for G 2 and Fisher 's exact test .</sentence>
+				<definiendum id="0">Panels</definiendum>
+				<definiens id="0">a randomized corpus for G 2 and Fisher 's exact test</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For the assessment of overall extraction results , we turn to the F-measure ( Rijsbergen 1979 ) , a measure that assigns equal weights to precision ( P ) and recall ( R ) : 2PR F= P+R '' ( 3 ) Figure 4 plots precision , recall , and F as a function of the W/C-ratio .</sentence>
+				<definiendum id="0">recall</definiendum>
+				<definiens id="0">a measure that assigns equal weights to precision</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Recall ( R , dashed line ) , F ( solid line ) , and precision ( P , dotted line ) using G 2 ( left panel ) and Fisher 's exact test ( right panel ) for our second corpus plotted as a function of the W/C-ratio .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiendum id="1">precision</definiendum>
+				<definiens id="0">dashed line ) , F ( solid line ) , and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The size of the complement was always determined with respect to these new conditional corpora , and not with respect to all MEDLINE technique , the a-level is a parameter that we vary to optimize extraction results for a training data set .</sentence>
+				<definiendum id="0">a-level</definiendum>
+				<definiens id="0">a parameter that we vary to optimize extraction results for a training data set</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Appendix Log-Likelihood Ratio For the general contingency table , table ( a ) in Table 4 , the log-likelihood ratio is defined by ( Agresti 1990 ) : G 2 = 2 ~_ , ~ nijin ( nij/mq ) , i j where rhq = ni+n+j/n++ .</sentence>
+				<definiendum id="0">Appendix Log-Likelihood Ratio For</definiendum>
+				<definiens id="0">the general contingency table , table ( a</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>P ( x ) is the relative frequency of the target word , P ( y ) is the relative frequency of the seed term , and P ( x , y ) is the frequency of the target word in the window .</sentence>
+				<definiendum id="0">P ( x )</definiendum>
+				<definiendum id="1">P ( y )</definiendum>
+				<definiens id="0">the relative frequency of the target word ,</definiens>
+				<definiens id="1">the relative frequency of the seed term</definiens>
+				<definiens id="2">the frequency of the target word in the window</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In terms of the contingency table , we have : /'/11 I ( x , y ) = log 2 n++ //1+ S ' f/++ 7 '' /++ where S is the frequency of the seed .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">the frequency of the seed</definiens>
+			</definition>
+</paper>
+
+		<paper id="4004">
+			<definition id="0">
+				<sentence>Aspectual classification maps clauses ( e.g. , simple sentences ) to a small set of categories in order to reason about time .</sentence>
+				<definiendum id="0">Aspectual classification</definiendum>
+				<definiens id="0">maps clauses ( e.g. , simple sentences</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Events are further distinguished according to completedness ( sometimes called telicity ) , which determines whether an event reaches a culmination or completion point at which a new state is introduced .</sentence>
+				<definiendum id="0">Events</definiendum>
+				<definiens id="0">determines whether an event reaches a culmination or completion point at which a new state is introduced</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>600 Siegel and McKeown Improving Aspectual Classification Aspectual classification is a required component of applications that perform natural language interpretation , natural language generation , summarization , information retrieval , and machine translation tasks ( Moens and Steedman 1988 ; Klavans and Chodorow 1992 ; Klavans 1994 ; Dorr 1992 ; Wiebe et al. 1997 ) .</sentence>
+				<definiendum id="0">McKeown Improving Aspectual Classification Aspectual classification</definiendum>
+				<definiens id="0">a required component of applications that perform natural language interpretation , natural language generation , summarization , information retrieval , and machine translation tasks</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The first indicator , frequency , is simply the frequency with which each verb occurs over the entire corpus .</sentence>
+				<definiendum id="0">frequency</definiendum>
+				<definiens id="0">the frequency with which each verb occurs over the entire corpus</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Decision trees can be analyzed by examining the subset of verbs that are sorted to a particular node and the constraints on indicator values that put them there .</sentence>
+				<definiendum id="0">Decision trees</definiendum>
+				<definiens id="0">the subset of verbs that are sorted to a particular node and the constraints on indicator values that put them there</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Each summary consists of unstructured text , divided into several sections with titles such as : `` History of Present Illness , '' and `` Medical Summary . ''</sentence>
+				<definiendum id="0">summary</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>The Myhill-Nerode theorem ( see Hopcroft and Ullman \ [ 1979\ ] ) states that among the many deterministic automata that accept a given language , there is a unique automaton ( excluding isomorphisms ) that has a minimal number of states .</sentence>
+				<definiendum id="0">Myhill-Nerode theorem</definiendum>
+				<definiens id="0">] ) states that among the many deterministic automata that accept a given language , there is a unique automaton ( excluding isomorphisms ) that has a minimal number of states</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An earlier version of this paper , authored by Daciuk , Watson , and Watson , appeared at the International Workshop on Finite-state Methods in Natural Language Processing in 1998 -- see Daciuk , Watson , and Watson ( 1998 ) .</sentence>
+				<definiendum id="0">Watson</definiendum>
+				<definiens id="0">authored by Daciuk , Watson , and Watson , appeared at the International Workshop on Finite-state Methods in Natural Language Processing in 1998 -- see Daciuk , Watson , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We define a deterministic finite-state automaton to be a 5-tuple M = ( Q , ~ , 6 , q0 , F ) , where Q is a finite set of states , q0 E Q is the start state , F C Q is a set of final states , is a finite set of symbols called the alphabet , and 6 is a partial mapping 6 : Q x G ~ Q denoting transitions .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiens id="0">a finite set of states</definiens>
+				<definiens id="1">the start state</definiens>
+				<definiens id="2">a set of final states</definiens>
+				<definiens id="3">a partial mapping 6 : Q x G ~ Q denoting transitions</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We also define a property of an automaton specifying that all states can be reached from the start state : Reachable ( M ) = Vq~Q 3xc ~ , ( 6* ( qo , x ) = q ) The property of being a minimal automaton is traditionally defined as follows ( see Watson \ [ 1993b , 1995\ ] ) : Min ( M ) = VM , EDAFSA ( ~ ( M ) = £ ( M ' ) ~ IMI ~ IM'I ) We will , however , use an alternative definition of minimality , which is shown to be equivalent : Minimal ( M ) = ( Vq , q , cQ ( q ~ q ' ~£ ( q ) # £ ( q ' ) ) ) A Reachable ( M ) A general treatment of automata minimization can be found in Watson ( 1995 ) .</sentence>
+				<definiendum id="0">EDAFSA</definiendum>
+				<definiendum id="1">minimality</definiendum>
+				<definiendum id="2">general treatment of automata minimization</definiendum>
+				<definiens id="0">is shown to be equivalent : Minimal ( M ) = ( Vq , q</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A trie is a dictionary with a tree-structured transition graph in which the start state is the root and all leaves are final states .</sentence>
+				<definiendum id="0">trie</definiendum>
+				<definiens id="0">the root and all leaves are final states</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>First , which states ( or equivalence classes ) are subject to change when new words are added ?</sentence>
+				<definiendum id="0">First</definiendum>
+				<definiens id="0">states ( or equivalence classes</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>length ( Word ) l ; if has_children ( LastState ) -- , replace ~r_register ( Last S tate ) fi ; add_suffix ( LastState , CurrentSuffix ) od ; replace_or_register ( qo ) 8 Daciuk , Mihov , Watson , and Watson Incremental Construction of FSAs func common_prefix ( Word ) return the longest prefix w of Word such that ~* ( q0 , w ) ~ 3_ cnuf func replace_or_register ( State ) -- ~ Child : = last_child ( State ) ; if has_children ( Child ) replace_or_register ( Child ) fi ; if 3qEQ ( q E Register A q = Child ) -- , last_child ( State ) : -q : ( q E Register A q = Child ) ; delete ( Child ) else Register : = Register U { Child } fi cnuf The main loop of the algorithm reads subsequent words and establishes which part of the word is already in the automaton ( the CommonPrefix ) , and which is not ( the CurrentSuffix ) .</sentence>
+				<definiendum id="0">add_suffix</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>By choosing an appropriate implementation method , one can achieve a memory complexity O ( n ) for a given alphabet , where n is the number of states of the minimized automaton .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of states of the minimized automaton</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Register : = 0 ; do there is another word -- * Word : = next word ; CommonPrefix : = common_prefix ( Word ) ; CurrentSuffix : = Word\ [ length ( CommonPrefix ) + 1 ... length ( Word ) I ; if CurrentSuffix = c A 6 '' ( qo , CommonPrefix ) E F -- * continue fi ; FirstState : = first_state ( CommonPrefix ) ; if FirstState = 0 -- * LastState : = 6* ( q0 , CommonPrefix ) else LastState : = clone ( 6* ( qo , CommonPrefix ) ) fi ; add_suffix ( LastState , CurrentSuffix ) ; if FirstState ~ ~ -- , FirstState : = first~state ( CommonPrefix ) ; Currentlndex : = ( length ( x ) : 6* ( q0 , x ) = FirstState ) ; for i from length ( CommonPrefix ) 1 downto Currentlndex -- + CurrentState : = clone ( 6* ( qo , CommonPrefix\ [ 1. . . i\ ] ) ) ; 6 ( CurrentState , CommonPrefixli\ ] ) : = LastState ; replace_or_register ( CurrentState ) ; LastState : = CurrentState rof else Currentlndex : = length ( CommonPrefix ) fi ; Changed : = true ; do Changed Currentlndex : = Currentlndex 1 ; CurrentState : = 6* ( q0 , Word\ [ 1 ... Currentlndex\ ] ) ; OldState : = LastState ; if Currentlndex &gt; 0 -- * Register : = Register { LastState } fi ; replace_or_register ( CurrentState ) ; Changed : = OldState ~ LastState od if ~Changed A Currentlndex &gt; 0 -- ~ Register : = Register U { CurrentState } fi od func replace Jar_register ( State , Symbol ) Child : = 6 ( State , Symbol ) ; if 3q E Q ( q c Register A q = Child ) 13 Computational Linguistics Volume 26 , Number 1 cnuf delete ( Child ) ; last_child ( State ) : = q : ( q E Register A q -Child ) else Register : = Register u { Child } fi The main loop reads the words , finds the common prefix , and tries to find the first confluence state in the common prefix path .</sentence>
+				<definiendum id="0">add_suffix</definiendum>
+				<definiens id="0">word -- * Word : = next word ; CommonPrefix : = common_prefix ( Word ) ; CurrentSuffix : = Word\ [ length ( CommonPrefix ) + 1 ... length ( Word ) I ; if CurrentSuffix = c A 6 '' ( qo , CommonPrefix ) E F -- * continue fi ; FirstState : = first_state ( CommonPrefix</definiens>
+				<definiens id="1">q0 , x ) = FirstState ) ; for i from length ( CommonPrefix ) 1 downto Currentlndex -- + CurrentState : = clone ( 6* ( qo</definiens>
+				<definiens id="2">CurrentState , CommonPrefixli\ ] ) : = LastState ; replace_or_register ( CurrentState ) ; LastState : = CurrentState rof else Currentlndex : = length ( CommonPrefix ) fi ; Changed : = true ; do Changed Currentlndex : = Currentlndex 1</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>With respect to a semigroup algebra ( L , + ) ( i.e. , a set L closed under an associative binary operation + of adjunction ) , each formula A is interpreted as a subset \ [ A\ ] of L by residuation as follows : ( 11 ) ~\ [ a.B\ ] \ ] ~ ( $ 1q-82\ ] $ 1 E ~a\ ] &amp; s 2 E ~B~ } ~AkB\ ] \ ] = { sirs ' C \ [ \ [ AB , s'+s E HB\ ] \ ] } ~B/A\ ] - ( sirs ' E \ [ \ [ A~ , s+s ' E ~B\ ] I } A sequent , F ~ A , comprises a succedent formula A and an antecedent configuration F , which is a a finite sequence of formulas .</sentence>
+				<definiendum id="0">semigroup algebra ( L , + )</definiendum>
+				<definiendum id="1">F ~ A , comprises a succedent</definiendum>
+				<definiens id="0">a set L closed under an associative binary operation + of adjunction ) , each formula A is interpreted as a subset</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The following Gentzen-style sequent presentation is sound and complete for this interpretation ( Buszkowski 1986 , Dogen 1992 ) , and indeed for free semigroups ( Pentus 1994 ) : hence the Lambek calculus can make an impressive claim to be the logic of concatenation ; a parenthetical notation A ( F ) represents a configuration containing a distinguished subconfiguration F. F~A A ( A ) ~B Cut ( 12 ) a. A ~ A id `` A ( F ) .</sentence>
+				<definiendum id="0">F. F~A A ( A ) ~B Cut</definiendum>
+				<definiens id="0">hence the Lambek calculus can make an impressive claim to be the logic of concatenation ; a parenthetical notation A ( F ) represents a configuration containing a distinguished subconfiguration</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A polar category formula tree is a binary ordered tree in which the leaves are labeled with polar atoms ( literals ) and each local tree is one of the following ( logical ) links : A ° B '' .</sentence>
+				<definiendum id="0">polar category formula tree</definiendum>
+				<definiens id="0">a binary ordered tree in which the leaves are labeled with polar atoms ( literals ) and each local tree is one of the following ( logical ) links : A ° B ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A proof frame is a finite sequence of polar category formula trees , exactly one of which has a root of output polarity ( corresponding to the unique succedent of sequents ) .</sentence>
+				<definiendum id="0">proof frame</definiendum>
+				<definiens id="0">a root of output polarity ( corresponding to the unique succedent of sequents )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The semantics extracted is ( 28a ) , equivalent to ( 28b ) ( 28 ) a. ( fall ( the ( Tra ( &amp; xAy &amp; z\ [ ( y z ) A 3w ( x z w ) \ ] , race2 ) ) ~29~30 ( ) ~uAv ) ~w ( past u ( v w ) ) ( the barn ) MI ( ( ( Tr2 ( /~p/~s &amp; t\ [ ( s t ) A 3q ( p t q ) \ ] , race2 ) 29 41 ) 30 ) horse ) ) ) b. ( fall ( the ) ~8\ [ ( horse 8 ) A 37 ( past ( the barn ) ( race2 8 7 ) ) \ ] ) ) Let us assign to each proof net analysis a complexity profile that indicates , before and after each word , the number of unmatched literals , i.e. , unresolved valencies or dependencies , under process at that point .</sentence>
+				<definiendum id="0">fall</definiendum>
+				<definiendum id="1">Tra</definiendum>
+				<definiendum id="2">y z</definiendum>
+				<definiendum id="3">3w</definiendum>
+				<definiens id="0">indicates , before and after each word , the number of unmatched literals</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( ON \ ON ) / ( N \ S ) , ( N \ s ) / N. N , N \ ( t , '' / CN ) , CN the book that shocked Mary 's title Figure 6 Proof net analysis for the sensical ( top ) and nonsensical ( bottom ) interpretations of ( 36 ) the book that shocked Mary 's title .</sentence>
+				<definiendum id="0">CN</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>Multimodal reasoning is a process involving information expressed in the languages associated with different modalities , and is achieved with the help of a translation relation similar to the relation of translation between natural languages .</sentence>
+				<definiendum id="0">Multimodal reasoning</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Structural ambiguity in G can be appreciated , for instance , in relation to the granularity of graphical objects , as the same drawing will have different syntactic analysis depending on whether it is interpreted as a whole or as an aggregation of parts .</sentence>
+				<definiendum id="0">Structural ambiguity</definiendum>
+				<definiens id="0">a whole or as an aggregation of parts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Language L is a segment of English designed to produce expressions useful for referring to objects , properties , and relations commonly found in discourse about maps .</sentence>
+				<definiendum id="0">Language L</definiendum>
+				<definiens id="0">a segment of English designed to produce expressions useful for referring to objects , properties , and relations commonly found in discourse about maps</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Language G is a logical language in which interpretation and reasoning about geometrical configurations can be carried out .</sentence>
+				<definiendum id="0">Language G</definiendum>
+				<definiens id="0">a logical language in which interpretation and reasoning about geometrical configurations can be carried out</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Constants like France and Germany , and all subexpressions of the former sentence , like the border between France and Germany or a line from Paris to Frankfurt are also in L. In addition , L contains expressions like France is a country , Frankfurt is a city of Germany or Germany is to the east of France , which express general knowledge required in the interpretation of maps .</sentence>
+				<definiendum id="0">Frankfurt</definiendum>
+				<definiens id="0">a country</definiens>
+				<definiens id="1">a city of Germany or Germany is to the east of France , which express general knowledge required in the interpretation of maps</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The basic syntactic categories of L are t , IV , ADJ , CN , and CN I where t is the category of sentences , IV is the category of intransitive verbs , ADJ is the category of adjectives , and CN and CN ' are two categories of common nouns .</sentence>
+				<definiendum id="0">t</definiendum>
+				<definiendum id="1">IV</definiendum>
+				<definiendum id="2">ADJ</definiendum>
+				<definiendum id="3">CN</definiendum>
+				<definiens id="0">the category of sentences</definiens>
+				<definiens id="1">the category of intransitive verbs</definiens>
+				<definiens id="2">the category of adjectives , and</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>4 Traditional syntactic categories of natural language like transitive verbs ( TV ) , terms ( T ) , prepositional phrases ( PP ) , and determiners ( T/CN ) can be derived from the basic categories .</sentence>
+				<definiendum id="0">T/CN</definiendum>
+				<definiens id="0">syntactic categories of natural language like transitive verbs ( TV ) , terms ( T ) , prepositional phrases ( PP ) , and determiners</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>While a syntactic rule comprises both parts and defines the syntactic structure of an expression , the syntactic operation is a rule that depends on -- or at least takes into account -- the shape of the symbols and the medium in which the symbols are substantially realized .</sentence>
+				<definiendum id="0">syntactic operation</definiendum>
+				<definiens id="0">a rule that depends on -- or at least takes into account -- the shape of the symbols and the medium in which the symbols are substantially realized</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>If o~ E Eregion then \ [ \ [ Fps ( a ) \ ] \ ] M is a city of \ [ \ [ O~\ ] \ ] M. 158 In this section the syntax and semantics of the graphical language G are formally stated .</sentence>
+				<definiendum id="0">M</definiendum>
+				<definiens id="0">a city of \ [ \ [ O~\ ] \ ] M. 158 In this section the syntax and semantics of the graphical language G are formally stated</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The unsubscripted version of these constants denotes a relation between sets of properties of graphical individuals and the subscripted version denotes the corresponding geometrical relation between individuals ; the type-raised version is used for preserving quantification properties in the translation process from L into G , while the subscripted version is used for computing the geometry associated with the corresponding relation , as will be shown below in Section 2.3.2 .</sentence>
+				<definiendum id="0">subscripted version</definiendum>
+				<definiens id="0">a relation between sets of properties of graphical individuals and the</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>G is a formal language with constants and variables for all types , functional abstraction and application , and existential and universal quantification .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiens id="0">a formal language with constants and variables for all types , functional abstraction and application , and existential and universal quantification</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>G is a very expressive language and not every well-formed expression has a translation into L as will be further discussed in Section 2.5 .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiens id="0">a very expressive language</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Similarly , the expression inside ( , ~P3y\ [ region ( y ) /~ P ( y ) \ ] ) ( z ) denotes that the dot z is inside a region y , but the first argument denotes the set of properties P that the region has , rather 163 Computational Linguistics Volume 26 , Number 2 than denoting y directly .</sentence>
+				<definiendum id="0">expression inside</definiendum>
+				<definiens id="0">the set of properties P that the region has</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The expression can be reduced as follows : 1° APAQ3x\ [ P ( x ) A Q ( x ) \ ] ( region ) ( APAzP ( z ) ) ( big ) APAQ3x\ [ P ( x ) A Q ( x ) \ ] ( region ) ( Az big ( z ) ) AQ3x\ [ region ( x ) A Q ( x ) \ ] ( Az big ( z ) ) 3x\ [ region ( x ) A Az big ( z ) ( x ) \ ] 3x\ [ region ( x ) A big ( x ) \ ] Expression ( 5 ) is interpreted through the standard quantification rules of the geometrical interpreter without the help of meaning postulates .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiendum id="1">Q ( x</definiendum>
+				<definiendum id="2">Q</definiendum>
+				<definiendum id="3">Az big</definiendum>
+				<definiens id="0">interpreted through the standard quantification rules of the geometrical interpreter without the help of meaning postulates</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The interpretation of big is an algorithm that computes the average area of all regions in the map and returns the set of all regions whose area is larger than the average .</sentence>
+				<definiendum id="0">interpretation of big</definiendum>
+				<definiens id="0">an algorithm that computes the average area of all regions in the map and returns the set of all regions whose area is larger than the average</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The 164 ( , ~X ( ( e , t ) , t ) AY ( ( e , t ) , t ) `` ~Z ( e , t~ `` ~Ue \ [ Z ( U ) A curvedJetween ( x ) ( y ) ( u ) \ ] ( AP\ [ P ( rl ) \ ] ) ( AP\ [ P ( r2 ) \ ] ) ( curve ) ) which can be reduced as follows : . . . . . .</sentence>
+				<definiendum id="0">curvedJetween</definiendum>
+				<definiens id="0">~X ( ( e , t ) , t ) AY ( ( e , t )</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>TWEENa ( R1 ) ( A ( region ) ) ( curve ) ) , which is the translation of the border between France and a country .</sentence>
+				<definiendum id="0">TWEENa</definiendum>
+				<definiens id="0">the translation of the border between France and a country</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>, ~P ) ~Q3y\ [ Vx\ [ P ( x ) ~ x = y\ ] A Q ( y ) \ ] ( '~X ( ( e , t ) , o ) ~Y ( &lt; e , t ) , t } '~Z ( e , t ) ) ~Ue\ [ Z ( U ) A curve_between ( x ) ( y ) ( u ) \ ] ( , ~P\ [ P ( rl ) \ ] ) ( , ~P3z\ [ region ( z ) A P ( z ) \ ] ) ( curve ) ) ) the reduction is as follows : . . . . . . . . , ~P , ~Q3y\ [ Vx\ [ P ( x ) *-* x = y\ ] A Q ( y ) \ ] ( , ~u \ [ curve ( u ) A curve_between ( ) ~P\ [ P ( rl ) \ ] ) ( ) ~P3z\ [ region ( z ) A P ( z ) \ ] ) ( u ) \ ] ) ~Q3y\ [ Vx\ [ ~u \ [ curve ( u ) A curve_between ( , ~P\ [ P ( rl ) \ ] ) ( , ~P3z \ [ region ( z ) A P ( z ) \ ] ) ( u ) \ ] ( x ) *-* x = y\ ] A Q ( y ) \ ] ) ~Q3y\ [ Vx\ [ ( curve ( x ) A curve_between ( &amp; P\ [ P ( rl ) \ ] ) ( &amp; P3z\ [ region ( z ) A P ( z ) \ ] ) ( x ) ) x = y\ ] A Q ( y ) \ ] , ~Q3y\ [ Vx\ [ ( curve ( x ) A &amp; P3z\ [ region ( z ) A P ( z ) \ ] ( ) ~u\ [ &amp; P\ [ P ( rl ) \ ] ( ) ~v\ [ curve_between .</sentence>
+				<definiendum id="0">curve_between ( ) ~P\</definiendum>
+				<definiendum id="1">curve_between</definiendum>
+				<definiendum id="2">P</definiendum>
+				<definiendum id="3">curve_between</definiendum>
+				<definiendum id="4">P</definiendum>
+				<definiendum id="5">P</definiendum>
+				<definiens id="0">( z ) \ ] ) ( u ) \ ] ( x ) *-* x = y\ ] A Q ( y ) \ ] ) ~Q3y\ [</definiens>
+				<definiens id="1">( z ) \ ] ) ( x ) ) x = y\ ] A Q ( y ) \ ]</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Expression ( 9 ) is a denoting concept similar to the final expression in Example 2 , but one which has an embedded quantified expression .</sentence>
+				<definiendum id="0">Expression ( 9 )</definiendum>
+				<definiens id="0">a denoting concept similar to the final expression in Example 2 , but one which has an embedded quantified expression</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Expression ( 7 ) is a first-order formula that can be directly evaluated by the interpreter of G. The operator right , is interpreted as a geometrical algorithm that computes the centroid ( xc , yc ) of a region r and returns the semiplane to the right of the centroid of r ( i.e. , the set of all ordered pairs of reals ( xi , yi ) such that xi ) xc ) .</sentence>
+				<definiendum id="0">Expression ( 7 )</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>167 Computational Linguistics Volume 26 , Number 2 constant of L : o¢ Paris Frankfurt Category name Germany Category definition t/IV t/iV Saarbriicken T t/IV France T t/IV T CN CN city country t/IV CN CN Translation into G : PL -- G ( O z ) APIP ( dl ) \ ] AP\ [ P ( d3 ) \ ] AP\ [ P ( d2 ) \ ] AP\ [ P ( rl ) \ ] AP\ [ P ( r2 ) \ ] dot region border CN CN curve line CN CN line intersection intersection east CN CN ' ADJ TV big be be IV/ADJ lie at TV be to CN CN ' ADJ W/ ( t/IV ) IV/ADJ IV/ ( t/IV ) IV/ ( t/IV ) ( t/IV ) /CN ( t/IV ) /CN TV a T/CN the T/CN right big APAxP ( Ay\ [ x = y\ ] ) APAxP ( x ) lie_at be_in_zone APAQ3x\ [ P ( x ) A Q ( x ) \ ] APAQ3y\ [ Vx\ [ P ( x ) ~ x = y\ ] A Q ( y ) \ ] Corresponding type in G ( ( e , t ) , t ) ( ( e , t ) , t ) ( ( e , t ) , t ) ( ( e , t ) , t ) ( ( GO , t ) ( e , t ) ( e , t ) ( e , t ) ( e , t ) ( e , t ) ( ( ( e , t ) , t ) , e ) ( e , t ) ( ( ( e , t ) , t ) , ( e , t ) ) ( ( e , t ) , ( e , t ) ) ( ( ( e , t ) , t ) , ( e , t ) ) ( ( ( e , t ) , t ) , ( e , t ) ) ( ( e , t ) , ( ( e , t ) , t ) ) ( ( e , t ) , ( ( e , t ) , t ) ) Figure 12 Translation of constants of L into G. be convenient to limit the expressive power of G and to define it as a first-order language .</sentence>
+				<definiendum id="0">T/CN right big APAxP</definiendum>
+				<definiendum id="1">lie_at be_in_zone APAQ3x\ [ P ( x</definiendum>
+				<definiendum id="2">Q</definiendum>
+				<definiens id="0">( x ) \ ] APAQ3y\ [ Vx\ [ P ( x ) ~ x = y\ ] A Q ( y ) \ ] Corresponding type in G ( ( e , t ) , t ) ( ( e , t ) , t ) ( ( e , t ) , t ) ( ( e , t ) , t</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Adjectives occurring in attributive sentences are translated as sets of individuals .</sentence>
+				<definiendum id="0">Adjectives</definiendum>
+				<definiens id="0">occurring in attributive sentences are translated as sets of individuals</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Examples : PC-L ( D1 ( BEa ( A ( OFa ( R1 ) ( dot ) ) ) ) ) = Paris is a city of France PG -- L ( R3 ( be_in_zone ( THE ( OFB ( R1 ) ( right ) ) ) ) ) = Germany is to the east of France PC-L ( A ( region ) ( BEB ( bix ) ) ) = a country is big PG -- L ( D3 ( lie3t ( THE ( BETWEEN b ( THE ( BETWEEN a ( R1 ) ( R3 ) ( curve ) ) ) ( A ( FROM_TO ( D1 ) ( D3 ) ( line ) ) ) ( intersection ) ) ) ) ) = Saarbrficken lies at the intersection between the border between France and Germany and a line from Paris to Frankfurt Expression of G : 6 ~P \ [ P ( dl ) \ ] , ~P\ [ P ( d2 ) \ ] , ~P\ [ P ( d3 ) \ ] AP\ [ P ( rl ) \ ] , , kP\ [ P ( r2 ) \ ] , XP\ [ P ( o ) \ ] , ~P ) ~xP ( ) w\ [ x = y\ ] ) APAxP ( x ) ) ~PAQ3x\ [ P ( x ) A Q ( x ) \ ] APAQ3y\ [ Vx\ [ P ( x ) ~ x = y\ ] A Q ( y ) \ ] Translation into L '' pG-L ( 6 ) Paris , Frankfurt , Saarbrfdcken , respectively France , Germany , respectively the border between France and Germany be be a the Figure 14 Translation of some composite expressions of G into constants of L. 171 Computational Linguistics Volume 26 , Number 2 TRANSITIVE VERB PHRASES T2G-L .</sentence>
+				<definiendum id="0">PC-L ( D1</definiendum>
+				<definiens id="0">( o ) \ ] , ~P ) ~xP ( ) w\ [ x = y\ ] ) APAxP ( x ) ) ~PAQ3x\ [ P ( x ) A Q ( x ) \ ] APAQ3y\ [ Vx\ [ P ( x ) ~ x = y\ ] A Q ( y ) \ ] Translation into L '' pG-L ( 6 ) Paris , Frankfurt , Saarbrfdcken , respectively France , Germany , respectively the border between France and Germany be be a the Figure 14 Translation of some composite expressions of G into constants</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>If a C E ( ( e , t ) , ( e , t ) } and fl C E ( e , t ) , or a C E ( ( ( ( e , t ) , t ) , e ) , ( e , t } ) and fl E E ( ( ( e , t ) , t ) , e ) , and PG-L ( a ) = a ' , fiG-L ( fl ) = fl ' then fiG-L ( FGI ( , 9 ) ) = Examples : PG-L ( O~a ( R1 ) ( dot ) ) = city of France fiG-L ( OFb ( R1 ) ( right ) ) = east of France fiG-L ( BETWEENa ( R1 ) ( R2 ) ( curve ) ) = border between France and Germany f/G-L ( BETWEENb ( THE ( BETWEENa ( R1 ) ( R2 ) ( curve ) ) ) ( A ( FROM_TO ( D1 ) ( D3 ) ( line ) ) ) ( intersection ) ) = intersection between the border between France and Germany and a line from Paris to Frankfurt of PREPOSITIONAL PHRASES T6G-L .</sentence>
+				<definiendum id="0">C E ( ( (</definiendum>
+				<definiendum id="1">PG-L</definiendum>
+				<definiendum id="2">PG-L ( O~a</definiendum>
+				<definiendum id="3">Germany f/G-L ( BETWEENb ( THE ( BETWEENa ( R1 ) ( R2 )</definiendum>
+				<definiendum id="4">FROM_TO</definiendum>
+				<definiens id="0">( e , t ) , t ) , e )</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>If a , fl E Edot , and pp-G ( a ) = a ' and PP-G ( fl ) = fl ' then PP-G ( Fp1 ( a , fl ) ) = Q ( FROM_TO ( a ' ) ( fl ' ) ( line ) ) .</sentence>
+				<definiendum id="0">pp-G</definiendum>
+				<definiendum id="1">FROM_TO</definiendum>
+				<definiens id="0">a ' ) ( fl '</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>The MDRS is a structure with four partitions ; it extends traditional DRS with one partition for graphical conditions and another to store the translation models that hold in a particular interpretation state .</sentence>
+				<definiendum id="0">MDRS</definiendum>
+				<definiens id="0">a structure with four partitions ; it extends traditional DRS with one partition for graphical conditions and another to store the translation models that hold in a particular interpretation state</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Multimodal interpretation is a matter of working out coreference relations between terms of different modalities .</sentence>
+				<definiendum id="0">Multimodal interpretation</definiendum>
+				<definiens id="0">a matter of working out coreference relations between terms of different modalities</definiens>
+			</definition>
+</paper>
+
+		<paper id="2005">
+			<definition id="0">
+				<sentence>The STOP system ( Reiter , Robertson , and Osman 1999 ) generates personalized smokingcessation leaflets , based on responses to a questionnaire about smoking likes and dislikes , previous attempts to quit , and so forth .</sentence>
+				<definiendum id="0">STOP system</definiendum>
+				<definiens id="0">personalized smokingcessation leaflets , based on responses to a questionnaire about smoking likes and dislikes , previous attempts to quit</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>A transition from state q to state q ' has the form ( q , q ' , w , v , o~ , fl , cl where w is a member of W or is the empty string c ; v is a member of V or ¢ ; the integer o~ is the input position ; the integer fl is the output position ; and the real number c is the weight or cost of the transition .</sentence>
+				<definiendum id="0">w</definiendum>
+				<definiendum id="1">v</definiendum>
+				<definiendum id="2">integer o~</definiendum>
+				<definiendum id="3">integer fl</definiendum>
+				<definiens id="0">a member of W or is the empty string c ;</definiens>
+				<definiens id="1">a member of V or ¢ ; the</definiens>
+				<definiens id="2">the output position ; and the real number c is the weight or cost of the transition</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>It starts by taking a head transition { q , q ' , w0 , v0 , 0 , 0 , c } where w0 is one of the symbols ( not necessarily the leftmost ) in the input string .</sentence>
+				<definiendum id="0">w0</definiendum>
+				<definiens id="0">one of the symbols ( not necessarily the leftmost ) in the input string</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The states of the example transducer are Q = { ql , q2 } and F = { q2 } , and it has the following transitions ( costs are ignored here ) : { ql , q2 , a , a , O , O } &lt; ql , q2 , b , b , 0 , 0 &gt; &lt; q2 , q2 , a , a , -1,1 } ( q2 , q2 , b , b , -1,1 } The only possible complete derivations of the transducer read the input string right to left , but write it left to right , thus reversing the string. Another similar example is using a finite-state head transducer to convert a palindrome of arbitrary length into one of its component halves. This clearly requires the use of an empty string on some of the output transitions. In this section we describe dependency transduction models , which can be used for machine translation and other transduction tasks. These models consist of a collection of head transducers that are applied hierarchically. Applying the machines hierarchically means that a nonhead transition is interpreted not simply as reading an inputoutput pair ( w , v ) , but instead as reading and writing a pair of strings headed by ( w , v ) according to the derivation of a subnetwork. For example , the head transducer shown in Figure 3 can be applied recursively in order to convert an arithmetic expression from infix to prefix ( Polish ) notation ( as noted by Lewis and Stearns \ [ 1968\ ] , this transduction can not be performed by a pushdown transducer ) . In the case of machine translation , the transducers derive pairs of dependency trees , a source language dependency tree and a target dependency tree. A dependency tree for a sentence , in the sense of dependency grammar ( for example Hays \ [ 1964\ ] and Hudson \ [ 1984\ ] ) , is a tree in which the words of the sentence appear as nodes ( we do not have terminal symbols of the kind used in phrase structure grammar ) . In such a tree , the parent of a node is its head and the child of a node is the node 's dependent. The source and target dependency trees derived by a dependency transduction model are ordered , i.e. , there is an ordering on the nodes of each local tree. This 48 Alshawi , Bangalore , and Douglas Learning Dependency Translation Models b b ~C~ b : b b : b Figure 3 Dependency transduction network mapping bracketed arithmetic expressions from infix to prefix notation. I I want to make a collect call I • , \ [ quiero hac~ una llamada de cobr~ I Figure 4 Synchronized dependency trees derived for transducing I want to make a collect call into quiero hacer una llamada de cobrar. means , in particular , that the target sentence can be constructed directly by a simple recursive traversal of the target dependency tree. Each pair of source and target trees generated is synchronized in the sense to be formalized in Section 4.2. An example is given in Figure 4. Head transducers and dependency transduction models are thus related as follows : Each pair of local trees produced by a dependency transduction derivation is the result of a head transducer derivation. Specifically , the input to such a head transducer is the string corresponding to the flattened local source dependency tree. Similarly , the output of the head transducer derivation is the string corresponding to the flattened local target dependency tree. In other words , the head transducer is used to convert a sequence consisting of a headword w and its left and right dependent words to a sequence consisting of a target word v and its left and right dependent words ( Figure 5 ) . Since the empty string may appear in a transition in place of a source or target symbol , the number of source and target dependents can be different. The cost of a derivation produced by a dependency transduction model is the sum of all the weights of the head transducer derivations involved. When applying a dependency transduction model to language translation , we choose the target string obtained by flattening the target tree of the lowest-cost dependency derivation that also generates the source string. We have not yet indicated what weights to use for head transducer transitions. The definition of head transducers as such does not constrain these. However , for a dependency transduction model to be a statistical model for generating pairs of strings , we assign transition weights that are derived from conditional probabilities. Several 49 Computational Linguistics Volume 26 , Number 1 Iw1 ..wk.ll ~÷1 ..-'~nl Iv , Figure 5 Head transducer converts the sequences of left and right dependents ( wl ... wk-l/ and ( wk+i • • • w , ) of w into left and right dependents ( vl ... vj-1 ) and { Vj+I ... Vp ) of v. probabilistic parameterizations can be used for this purpose including the following for a transition with headwords w and v and dependent words w ' and v ' : P ( q ' , w ' , v ' , fllw , v , q ) . Here q and q ' are the from-state and to-state for the transition and a and fl are the source and target positions , as before. We also need parameters P ( q0 , ql\ ] w , v ) for the probability of choosing a head transition ( qo , ql , w , v , O , O ) given this pair of headwords. To start the derivation , we need parameters P ( roots ( wo , vo ) ) for the probability of choosing w0 , v0 as the root nodes of the two trees. These model parameters can be used to generate pairs of synchronized dependency trees starting with the topmost nodes of the two trees and proceeding recursively to the leaves. The probability of such a derivation can be expressed as : P ( oots ( wo , vo ) ) P ( Dwo , vo ) where P ( Dw , v ) is the probability of a subderivation headed by w and v , that is P ( Dw , v ) = P ( qo , qllw , v ) H P ( qi+l , Wi , Vi , ~i , fli\ ] w , v , qi ) P ( Dwi , vl ) 1Kiln for a derivation in which the dependents of w and v are generated by n transitions. To carry out translation with a dependency transduction model , we apply a dynamic programming search to find the optimal derivation. This algorithm can take as input either word strings , or word lattices produced by a speech recognizer. The algorithm is similar to those for context-free parsing such as chart parsing ( Earley 1970 ) and the CKY algorithm ( Younger 1967 ) . Since word string input is a special case of word lattice input , we need only describe the case of lattices. We now present a sketch of the transduction algorithm. The algorithm works bottom-up , maintaining a set of configurations. A configuration has the form In1 , n2 , w , v , q , c , t\ ] corresponding to a bottom-up partial derivation currently in state q covering an input sequence between nodes nl and n2 of the input lattice , w and v are the topmost 50 Alshawi , Bangalore , and Douglas Learning Dependency Translation Models nodes in the source and target derivation trees. Only the target tree t is stored in the configuration. The algorithm first initializes configurations for the input words , and then performs transitions and optimizations to develop the set of configurations bottom-up : Initialization : For each word edge between nodes n and n ~ in the lattice with source word w0 , an initial configuration is constructed for any head transition of the form ( q , q ' , w0 , v0 , 0 , 0 , c } Such an initial configuration has the form : \ [ n , n t , w0 , v0 , q~ , c , v0\ ] Transition : We show the case of a transition in which a new configuration results from consuming a source dependent wl to the left of a headword w and adding the corresponding target dependent Vl to the right of the target head v. Other cases are similar. The transition applied is : ( q , q~ , Wl , Vl , -1,1 , c ' } It is applicable when there are the following head and dependent configurations : \ [ n2 , n3 , w , v , q , c , t\ ] \ [ nl , n2 , Wl , Vl , qf , Cl , tl\ ] where the dependent configuration is in a final state qf. The result of applying the transition is to add the following to the set of configurations : In1 , n3 , w , v , q ' , c + Cl qC ' , t'\ ] where Y is the target dependency tree formed by adding tl as the rightmost dependent of t. Optimization : We also require a dynamic programming condition to remove suboptimal ( sub ) derivations. Whenever there are two configurations \ [ n , n ' , w , v , q , Cl , tl\ ] \ [ n , n ' , w , v , q , C2 , t2\ ] and c2 &gt; Cl , the second configuration is removed from the set of configurations .</sentence>
+				<definiendum id="0">transduction derivation</definiendum>
+				<definiendum id="1">Y</definiendum>
+				<definiens id="0">{ ql , q2 } and F = { q2 } , and it has the following transitions ( costs are ignored here ) : { ql , q2 , a , a , O , O } &lt; ql , q2 , b , b , 0 , 0 &gt; &lt; q2 , q2 , a , a , -1,1 } ( q2 , q2 , b , b , -1,1 } The only possible complete derivations of the transducer read the input string right to left , but write it left to right , thus reversing the string. Another similar example is using a finite-state head transducer to convert a palindrome of arbitrary length into one of its component halves. This clearly requires the use of an empty string on some of the output transitions. In this section we describe dependency transduction models , which can be used for machine translation and other transduction tasks. These models consist of a collection of head transducers that are applied hierarchically. Applying the machines hierarchically means that a nonhead transition is interpreted not simply as reading an inputoutput pair ( w , v ) , but instead as reading and writing a pair of strings headed by ( w , v ) according to the derivation of a subnetwork. For example , the head transducer shown in Figure 3 can be applied recursively in order to convert an arithmetic expression from infix to prefix ( Polish ) notation ( as noted by Lewis and Stearns \ [ 1968\ ] , this transduction can not be performed by a pushdown transducer ) . In the case of machine translation , the transducers derive pairs of dependency trees , a source language dependency tree and a target dependency tree. A dependency tree for a sentence , in the sense of dependency grammar ( for example Hays \ [ 1964\ ] and Hudson \ [ 1984\ ] ) , is a tree in which the words of the sentence appear as nodes ( we do not have terminal symbols of the kind used in phrase structure grammar ) . In such a tree , the parent of a node is its head and the child of a node is the node 's dependent. The source and target dependency trees derived by a dependency transduction model are ordered , i.e. , there is an ordering on the nodes of each local tree. This 48 Alshawi , Bangalore , and Douglas Learning Dependency Translation Models b b ~C~ b : b b : b Figure 3 Dependency transduction network mapping bracketed arithmetic expressions from infix to prefix notation. I I want to make a collect call I • , \ [ quiero hac~ una llamada de cobr~ I Figure 4 Synchronized dependency trees derived for transducing I want to make a collect call into quiero hacer una llamada de cobrar. means , in particular , that the target sentence can be constructed directly by a simple recursive traversal of the target dependency tree. Each pair of source and target trees generated is synchronized in the sense to be formalized in Section 4.2. An example is given in Figure 4. Head transducers and dependency transduction models are thus related as follows : Each pair of local trees produced by a dependency</definiens>
+				<definiens id="1">the string corresponding to the flattened local source dependency tree. Similarly , the output of the head transducer derivation is the string corresponding to the flattened local target dependency tree. In other words , the head transducer is used to convert a sequence consisting of a headword w and its left and right dependent words to a sequence consisting of a target word v and its left and right dependent words ( Figure 5 ) . Since the empty string may appear in a transition in place of a source or target symbol , the number of source and target dependents can be different. The cost of a derivation produced by a dependency transduction model is the sum of all the weights of the head transducer derivations involved. When applying a dependency transduction model to language translation , we choose the target string obtained by flattening the target tree of the lowest-cost dependency derivation that also generates the source string. We have not yet indicated what weights to use for head transducer transitions. The definition of head transducers as such does not constrain these. However , for a dependency transduction model to be a statistical model for generating pairs of strings , we assign transition weights that are derived from conditional probabilities. Several 49 Computational Linguistics Volume 26 , Number 1 Iw1 ..wk.ll ~÷1 ..-'~nl Iv , Figure 5 Head transducer converts the sequences of left and right dependents ( wl ... wk-l/ and ( wk+i • • • w , ) of w into left and right dependents ( vl ... vj-1 ) and { Vj+I ... Vp ) of v. probabilistic parameterizations can be used for this purpose including the following for a transition with headwords w and v and dependent words w ' and v ' : P ( q ' , w ' , v ' , fllw , v , q ) . Here q and q ' are the from-state and to-state for the transition and a and fl are the source and target positions , as before. We also need parameters P ( q0 , ql\ ] w , v ) for the probability of choosing a head transition ( qo , ql , w , v</definiens>
+				<definiens id="2">P ( roots ( wo , vo ) ) for the probability of choosing w0 , v0 as the root nodes of the two trees. These model parameters can be used to generate pairs of synchronized dependency trees starting with the topmost nodes of the two trees and proceeding recursively to the leaves. The probability of such a derivation can be expressed as : P ( oots ( wo , vo ) ) P ( Dwo , vo ) where P ( Dw , v ) is the probability of a subderivation headed by w and v , that is P ( Dw , v ) = P ( qo , qllw , v ) H P ( qi+l , Wi , Vi , ~i , fli\ ] w , v , qi ) P ( Dwi , vl ) 1Kiln for a derivation in which the dependents of w and v are generated by n transitions. To carry out translation with a dependency transduction model , we apply a dynamic programming search to find the optimal derivation. This algorithm can take as input either word strings , or word lattices produced by a speech recognizer. The algorithm is similar to those for context-free parsing such as chart parsing ( Earley 1970 ) and the CKY algorithm ( Younger 1967 ) . Since word string input is a special case of word lattice input</definiens>
+				<definiens id="3">the case of lattices. We now present a sketch of the transduction algorithm. The algorithm works bottom-up , maintaining a set of configurations. A configuration has the form In1 , n2 , w , v , q , c , t\ ] corresponding to a bottom-up partial derivation currently in state q covering an input sequence between nodes nl and n2 of the input lattice , w and v are the topmost 50 Alshawi , Bangalore , and Douglas Learning Dependency Translation Models nodes in the source and target derivation trees. Only the target tree t is stored in the configuration. The algorithm first initializes configurations for the input words , and then performs transitions and optimizations to develop the set of configurations bottom-up : Initialization : For each word edge between nodes n and n ~ in the lattice with source word w0 , an initial configuration is constructed for any head transition of the form ( q , q ' , w0 , v0 , 0 , 0 , c } Such an initial configuration has the form : \ [ n , n t , w0 , v0 , q~ , c , v0\ ] Transition : We show the case of a transition in which a new configuration results from consuming a source dependent wl to the left of a headword w and adding the corresponding target dependent Vl to the right of the target head v. Other cases are similar. The transition applied is : ( q , q~ , Wl , Vl , -1,1 , c ' } It is applicable when there are the following head and dependent configurations : \ [ n2 , n3 , w , v , q , c , t\ ] \ [ nl , n2 , Wl , Vl , qf , Cl , tl\ ] where the dependent configuration is in a final state qf. The result of applying the transition is to add the following to the set of configurations : In1 , n3 , w , v , q ' , c + Cl qC '</definiens>
+				<definiens id="4">the target dependency tree formed by adding tl as the rightmost dependent of t. Optimization : We also require a dynamic programming condition to remove suboptimal ( sub ) derivations. Whenever there are two configurations \ [ n , n ' , w , v , q , Cl , tl\ ] \ [ n , n ' , w , v , q , C2 , t2\ ] and c2 &gt; Cl , the second configuration is removed from the set of configurations</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A hierarchical alignment consists of four functions .</sentence>
+				<definiendum id="0">hierarchical alignment</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Translation accuracy includes transpositions ( i.e. , movement ) of words as well as insertions , deletions , and substitutions .</sentence>
+				<definiendum id="0">Translation accuracy</definiendum>
+				<definiens id="0">includes transpositions ( i.e. , movement ) of words as well as insertions , deletions , and substitutions</definiens>
+			</definition>
+</paper>
+
+		<paper id="4005">
+			<definition id="0">
+				<sentence>Coreference , for example , is an equivalence relation ; anaphora , by contrast , is irreflexive , nonsymmetrical , and nontransitive .</sentence>
+				<definiendum id="0">Coreference</definiendum>
+				<definiens id="0">an equivalence relation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The TD , however , asks annotators to let Every TV network corefer with its in ( lc ) .</sentence>
+				<definiendum id="0">TD</definiendum>
+				<definiens id="0">asks annotators to let Every TV network corefer with its in ( lc )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Consider , for example , the relation , say R , which holds between NP1 and NP2 if and only if either NP1 and NP2 corefer ( in the sense of the definition in Section 1 ) or NP1 is an anaphoric antecedent of NP2 or NP2 is an anaphoric antecedent of NP1 Note that R is not an equivalence relation .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiendum id="1">NP1</definiendum>
+				<definiens id="0">an anaphoric antecedent of NP2 or NP2 is an anaphoric antecedent of NP1 Note that R is not an equivalence relation</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>pos ( past ( own ( e , smith , nlpcom ) ) ) ) We actually interpret sentences as predicates on eventualities ( type ev ) , and interpret tense and aspect markers as QLF operators , subject to contextual interpretation of a complex kind ( see Pulman \ [ 1997a\ ] and Thomas and Pulman \ [ 1999\ ] for an account of reversible tense and aspect interpretation within this framework ) .</sentence>
+				<definiendum id="0">pos</definiendum>
+				<definiens id="0">type ev ) , and interpret tense and aspect markers as QLF operators , subject to contextual interpretation of a complex kind</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Restriction ( y ) &amp; Body ( y ) ) ) The operator iota ( ~ ) ~ means here 'the ( unique ) thing satisfying ( the intersection of ) restriction and body ' .</sentence>
+				<definiendum id="0">Restriction ( y</definiendum>
+				<definiens id="0">the intersection of ) restriction and body '</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>pos ( past ( like ( e , x , srnith ) ) ) ) ) where sigmace~t~ o is an operator meaning 'the maximal set of things satisfying both restriction and body ' .</sentence>
+				<definiendum id="0">pos</definiendum>
+				<definiendum id="1">sigmace~t~ o</definiendum>
+				<definiens id="0">an operator meaning 'the maximal set of things satisfying both restriction and body '</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>u n iq ue ( Ref , Restr ) where unique ( Ref , Restr ) is defined so as to be true if Ref is the only thing in the local context that satisfies Restr .</sentence>
+				<definiendum id="0">unique</definiendum>
+				<definiens id="0">the only thing in the local context that satisfies Restr</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>pos ( past ( disa ppear ( e , il ) ) ) In trying to generate a paraphrase of this resolved logical form several equivalences can apply .</sentence>
+				<definiendum id="0">pos</definiendum>
+				<definiens id="0">il ) ) ) In trying to generate a paraphrase of this resolved logical form several equivalences can apply</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Consider the following sequence in a context where the hearer happens not to know that an iMac is a computer : ( 18 ) a. Jones bought an iMac .</sentence>
+				<definiendum id="0">iMac</definiendum>
+				<definiens id="0">a computer : ( 18 ) a. Jones bought an iMac</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>512 Pulman Bidirectional Contextual Resolution The equivalence for every is : Every Restt~ ( Predo~t ( every ( Nom~ ) ) ) ~ 4=~ Rest~ ( forall ( Nome~ , Pred~ ) ) ~ if salientContext ( quant , Context ) , scopelsLicensed ... The final condition is a placeholder to allow for the encoding of whatever structural constraints and preferences on quantifier scopes are thought to be necessary .</sentence>
+				<definiendum id="0">Predo~t</definiendum>
+				<definiens id="0">a placeholder to allow for the encoding of whatever structural constraints and preferences on quantifier scopes</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>We have to assume that the HOU algorithm has to be told what status particular occurrences of the variable actually have , because their analysis involves applications of HOU under both guises .</sentence>
+				<definiendum id="0">algorithm</definiendum>
+				<definiens id="0">has to be told what status particular occurrences of the variable actually have , because their analysis involves applications of HOU under both guises</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>ana ( \ [ every , manager , in , some , company , owns , a , car\ ] , RLF , null : t ) , display_in_readable_f orm ( RLF , LF ) • every , some , a LF = forall ( A^'exists ( company , B '' and ( manager ( A ) , in ( A , B ) ) ) , CA^exists ( car , D'^exists1 ( E^Apos ( pres ( own ( E , C , D ) ) ) ) ) ) some , every , a LF = exists ( company , A-^forall ( B^Aand ( manager ( B ) , in ( B , A ) ) , CA^exists ( car , D^-existsl ( E'^pos ( pres ( own ( E , C , D ) ) ) ) ) ) ) a , every , some LF = exists ( car , A^^forall ( BAAexists ( company , C^Aand ( manager ( B ) , in ( B , C ) ) ) , DA-existsl ( E^^pos ( pres ( own ( E , D , A ) ) ) ) ) ) some , a , every LF = exists ( company , AA^exists ( car , BAAforall ( C^~and ( manager ( C ) , in ( C , A ) ) , D^Aexistsl ( EA'pos ( pres ( own ( E , D , B ) ) ) ) ) ) ) a , some , every LF = exists ( car , A^'exists ( company , BA'forall ( C'^and ( manager ( C ) , in ( C , B ) ) , D~^exists1 ( E^Apos ( pres ( own ( E , D , A ) ) ) ) ) ) ) , no The missing combination which is correctly excluded is every a some .</sentence>
+				<definiendum id="0">LF</definiendum>
+				<definiendum id="1">D^-existsl ( E'^pos ( pres</definiendum>
+				<definiendum id="2">LF</definiendum>
+				<definiendum id="3">LF</definiendum>
+				<definiendum id="4">D^Aexistsl ( EA'pos ( pres</definiendum>
+				<definiendum id="5">LF</definiendum>
+				<definiens id="0">own ( E , D , A ) ) ) )</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Alshawi and Crouch 0992 ) present an illustrative first-order fragment along these lines and are able to supply a coherent formal semantics for the CLE-QLFs themselves , using a technique essentially equivalent to supervaluations : a QLF is true iff all its possible RQLFs are , false iff they are all false , and undefined otherwise .</sentence>
+				<definiendum id="0">QLF</definiendum>
+				<definiens id="0">true iff all its possible RQLFs are , false iff they are all false , and undefined otherwise</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>But the QLF corresponding to John sneezed is : sneeze ( term ( name , + 32 , A Y.name ( Y , john ) , Referent ) ) Some inference has to take place to relate the RQLF for the interpreted sentence to a QLF that unambiguously expresses its contextualized meaning .</sentence>
+				<definiendum id="0">Y.name</definiendum>
+				<definiens id="0">john ) , Referent ) ) Some inference has to take place to relate the RQLF for the interpreted sentence to a QLF that unambiguously expresses its contextualized meaning</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>P &amp; Q is true iff P is true and Q is true .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiens id="0">true iff P is true and</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>In the following , R1 and R2 are ( all ) the resolutions of Q , and ~a is an ambiguous consequence relation .</sentence>
+				<definiendum id="0">~a</definiendum>
+				<definiens id="0">an ambiguous consequence relation</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>However , if only one of R1 and R2 is true , then there is a model where Q is false , namely where R1 is true and C1 is false , and C2 is true but R2 is false , or vice versa .</sentence>
+				<definiendum id="0">R1</definiendum>
+				<definiendum id="1">C2</definiendum>
+				<definiens id="0">true but R2 is false , or vice versa</definiens>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>In addition to the style markers relevant to the actual output of the NLP tool ( i.e. , the analyzed text ) , we introduce analysis-level style markers , which represent the way in which the text has been analyzed by that tool .</sentence>
+				<definiendum id="0">NLP tool</definiendum>
+				<definiens id="0">represent the way in which the text has been analyzed by that tool</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>To illustrate , we apply the proposed technique to text categorization tasks for Modern Greek corpora using an already existing sentence and chunk boundaries detector ( SCBD ) in unrestricted Modern Greek text ( Stamatatos , Fakotakis , and Kokkinakis 2000 ) .</sentence>
+				<definiendum id="0">SCBD</definiendum>
+				<definiens id="0">proposed technique to text categorization tasks for Modern Greek corpora using an already existing sentence and chunk boundaries detector (</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The most typical measure of this category is the type-token ratio V/N , where V is the size of the vocabulary of the sample text , and N is the number of tokens of the sample text .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the size of the vocabulary of the sample text , and</definiens>
+				<definiens id="1">the number of tokens of the sample text</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , the SCBD is a general-purpose tool and was not designed for providing stylistic information exclusively .</sentence>
+				<definiendum id="0">SCBD</definiendum>
+				<definiens id="0">a general-purpose tool and was not designed for providing stylistic information exclusively</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The SCBD is a text-processing tool able to deal with unrestricted Modern Greek text .</sentence>
+				<definiendum id="0">SCBD</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>M16 is a useful indicator of the morphological ambiguity of the words and M17 indicates the degree to which this ambiguity has been resolved .</sentence>
+				<definiendum id="0">M16</definiendum>
+				<definiens id="0">a useful indicator of the morphological ambiguity of the words</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Multiple regression predicts values of a group of response ( dependent ) variables from a collection of predictor ( independent ) variable values ( Edwards 1979 ) .</sentence>
+				<definiendum id="0">Multiple regression</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The response is expressed as a linear combination of the predictor variables , namely : yi = bo + z~bli + z2b2i + • `` qzrbri qei where yi is the response for the ith category ( i.e. , text genre ) , Zl , z2 , ... , Zr are the predictor variables ( i.e. , in our case r = 22 ) , b0 , bli , b2i ... .. bri , are the unknown coefficients calculated during the training procedure , and ei is the random error .</sentence>
+				<definiendum id="0">yi</definiendum>
+				<definiendum id="1">, Zr</definiendum>
+				<definiendum id="2">ei</definiendum>
+				<definiens id="0">the response for the ith category ( i.e. , text genre ) , Zl , z2 , ...</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>An indication of the goodness of fit of the model is provided by the coefficient of determination , R 2 , defined as follows : n R2 _ j=l y/ E ( yj 9 ) j=l where n is the total amount of the training data ( texts ) , 9 is the mean response , and finally , ~j and yj are the estimated response and the training response value , respectively .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">An indication of the goodness of fit of the model is provided by the coefficient of determination , R 2 , defined as follows : n R2 _ j=l y/ E ( yj 9</definiens>
+				<definiens id="1">the total amount of the training data ( texts ) , 9 is the mean response , and finally , ~j and yj are the estimated response and the training response value , respectively</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Discriminant analysis can be used for predicting the group membership of previously unseen cases ( i.e. , test data ) based on Mahalonobis distance ( i.e. , a measure of distance between two points in the space defined by multiple correlated variables ) .</sentence>
+				<definiendum id="0">Discriminant analysis</definiendum>
+				<definiens id="0">predicting the group membership of previously unseen cases ( i.e. , test data ) based on Mahalonobis distance ( i.e. , a measure of distance between two points in the space defined by multiple correlated variables )</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The Mahalanobis distance d of a vector x from a mean vector mx is given by the formula : d 2 = ( x mx ) 'C~-l ( x mx ) where Cx is the covariance matrix of x. Using this classification method we can also derive the probability that a case belongs to a particular group ( i.e. , posterior probabilities ) , which is roughly proportional to the Mahalanobis distance from that group centroid .</sentence>
+				<definiendum id="0">Cx</definiendum>
+				<definiens id="0">the probability that a case belongs to a particular group ( i.e. , posterior probabilities ) , which is roughly proportional to the Mahalanobis distance from that group centroid</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>To measure the richness of the vocabulary , we used a set of five functions , namely , K proposed by Yule ( 1944 ) , R proposed by Honor6 ( 1979 ) , W proposed by Brunet ( 1978 ) , S proposed by Sichel ( 1975 ) , and D proposed by Simpson ( 1949 ) , which are 481 Computational Linguistics Volume 26 , Number 4 defined as follows : 10 4 ( Ei~__i i2WiN ) K = N 2 ( 1001ogN ) R ( 1 ( ~- ) ) W = N v-~ V2 S V V i ( i1 ) D = Z.- , 'NTlqL-i'~ i=1 `` `` where Vi is the number of words used exactly i times ( see Section 2.3 for the definition of V and N ) and o~ is a parameter usually fixed at 0.17 .</sentence>
+				<definiendum id="0">Vi</definiendum>
+				<definiens id="0">the number of words used exactly i times ( see Section 2.3 for the definition of V and N ) and o~ is a parameter usually fixed at 0.17</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Hereafter , this approach will be called VR ( which stands for vocabulary richness ) .</sentence>
+				<definiendum id="0">VR (</definiendum>
+				<definiens id="0">which stands for vocabulary richness )</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Actual Classification G01 G02 G03 G04 G05 G06 G07 G08 G09 G10 Total Texts G01 6 3 0 0 0 0 0 0 1 G02 0 9 0 0 0 0 0 0 0 G03 0 0 10 0 0 0 0 0 0 G04 0 1 0 8 0 0 0 0 0 G05 0 0 0 0 6 0 0 2 2 G06 0 0 0 0 0 10 0 0 0 G07 0 0 0 3 0 0 6 0 0 G08 0 0 0 0 0 0 0 10 0 G09 1 0 0 0 0 0 0 1 8 G10 0 0 0 1 0 0 0 0 0 0 10 1 10 0 10 1 10 0 10 0 10 1 10 0 10 0 10 9 10 40 35 30 25 20 15 10 5 0 t.¢3 I \ [ \ ] Correct • Error I I A Text length ( in words ) Figure 4 Text length related to accuracy for the text genre detection experiment .</sentence>
+				<definiendum id="0">Text length (</definiendum>
+				<definiens id="0">in words</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Section Title ( Translation ) Description Code A TO BHMA ( the tribune ) B C D E I S Z T NEEX ' EIIOXEE ( new ages ) TOAAAOBHMA ( the other tribune ) ANA FiTY~H ( development ) H &amp; PAXMH ZAZ ( your money ) EI &amp; IKH EKZ~O ZH ( special issue ) BIBAIA ( books ) TEXNE22KAIKAAAITEXNEZ~ ( arts and artists ) TA~I , ~IA ( travels ) Editorials , diaries , reportage , politics , international affairs , sport reviews Cultural supplement Review magazine Business , finance Personal finance Issue of the week Book review supplement Art review supplement Travels supplement In authorship attribution experiments we chose to deal with texts taken from newspapers , since a wide variety of authors frequently publish their writings in the press , making the collection of a considerable number of texts for several authors easier .</sentence>
+				<definiendum id="0">Translation ) Description Code A TO BHMA</definiendum>
+				<definiendum id="1">IKH EKZ~O ZH</definiendum>
+				<definiens id="0">the tribune ) B C D E I S Z T NEEX ' EIIOXEE ( new ages</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>llJll~ $ I i I I i i 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 Identification error Figure 5 Comparative results for authorship identification in group A. Our approach VR CWF-50 CWF-30 [ ] Discriminant analysis • Multiple regression 10.35 i i i J 0 0.1 0.2 0.3 0.4 0.5 Identification error Figure 6 Comparative results for authorship identification in group B. Table 6 The author identification results for both group A and group B. Identification Error Code Multiple Discriminant Code Regression Analysis Identification Error Multiple Discriminant Regression Analysis A01 0.5 0.4 B01 A02 0.3 0.2 B02 A03 0.6 0.5 B03 A04 0.2 0.1 B04 A05 0.3 0.3 B05 A06 0.7 0.5 B06 A07 0.3 0.3 B07 A08 0.1 0.1 B08 A09 0.2 0.3 B09 A10 0.2 0.1 B10 Average 0.34 0.28 Average 487 Computational Linguistics Volume 26 , Number 4 \ [ \ ] Correct • Error 120 100 80 60 ~D 40 20 Figure 7 o I ~ A t¢3 O hr~ Text length ( in words ) Text length related to accuracy for the author identification experiments .</sentence>
+				<definiendum id="0">t¢3 O hr~ Text length</definiendum>
+				<definiens id="0">both group A and group B. Identification Error Code Multiple Discriminant Code Regression Analysis Identification Error Multiple Discriminant Regression Analysis</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>The K coefficient of agreement is defined as : K -P ( a ) P ( E ) 1 where P ( A ) is the proportion of times the annotators agree , and P ( E ) the proportion of times that we would expect them to agree by chance .</sentence>
+				<definiendum id="0">K coefficient of agreement</definiendum>
+				<definiendum id="1">K -P</definiendum>
+				<definiendum id="2">P ( A )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>( Class IV includes cases of idiomatic expressions or doubts expressed by the annotators ) .</sentence>
+				<definiendum id="0">Class IV</definiendum>
+				<definiens id="0">includes cases of idiomatic expressions or doubts expressed by the annotators )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Recall is the percentage of correct answers reported by the system in relation to the number of cases indicated by the annotated corpus : R = number of correct responses number of cases whereas precision is the percentage of correctly reported results in relation to the total reported : p = number of correct responses number of responses These two measures may be combined to form one measure of performance , the F measure , which is computed as follows : F ( W + 1 ) RP ( WR ) + P W represents the relative weight of recall to precision and typically has the value 1 .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">the percentage of correct answers reported by the system in relation to the number of cases indicated by the annotated corpus : R = number of correct responses number of cases whereas precision is the percentage of correctly reported results in relation to the total reported : p = number of correct responses number of responses These two measures may be combined to form one measure of performance , the F measure , which is computed as follows : F ( W + 1 ) RP ( WR ) + P W represents the relative weight of recall to precision</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Aetna , which has nearly 3,000 adjusters , had deployed about 750 of them 53 .</sentence>
+				<definiendum id="0">Aetna</definiendum>
+				<definiens id="0">has nearly 3,000 adjusters , had deployed about 750 of them 53</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The following features were used : . . . Special predicates ( Spec-Pred ) : this feature has the value yes if a special predicate occurs in the definite description ( as specified in Section 4.2 ) , and if a complement is there when needed .</sentence>
+				<definiendum id="0">Spec-Pred )</definiendum>
+				<definiens id="0">yes if a special predicate occurs in the definite description</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The difference is that when it becomes necessary , SPAR does use two commonsense knowledge sources : a semantic network based on Alshawi 's theory of memory for text interpretation ( Alshawi 1987 ) and a causal reasoner based on Wilks ' work ( Wilks 1975 ) .</sentence>
+				<definiendum id="0">commonsense knowledge sources</definiendum>
+				<definiens id="0">a semantic network based on Alshawi 's theory of memory for text interpretation</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The Core Language Engine ( CLE ) ( Alshawi 1992 ) is a domainindependent system developed at SRI Cambridge , which translates English sentences into formal representations .</sentence>
+				<definiendum id="0">Core Language Engine ( CLE ) ( Alshawi 1992 )</definiendum>
+				<definiens id="0">a domainindependent system developed at SRI Cambridge , which translates English sentences into formal representations</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>For definite descriptions , Kameyama reports the results of a test on five articles , containing 61 definite descriptions in total ; recall was 46 % ( 28/61 ) , and for proper names , 69 % ( 22/32 ) .</sentence>
+				<definiendum id="0">Kameyama</definiendum>
+				<definiens id="0">reports the results of a test on five articles</definiens>
+			</definition>
+</paper>
+
+	</volume>

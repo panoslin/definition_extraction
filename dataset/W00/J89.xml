@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J89">
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>The generalized phrase structure grammar ( GPSG ) ( Gazdar et al. 1985 ) is one of the most recent , and currently one of the most popular , formalisms used by linguists to describe the syntax of natural ( human ) languages .</sentence>
+				<definiendum id="0">generalized phrase structure grammar</definiendum>
+				<definiendum id="1">GPSG )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A GPSG is basically a context-free grammar ( CFG ) , whose non-terminals are complex symbols called categories .</sentence>
+				<definiendum id="0">GPSG</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A category is a set of features .</sentence>
+				<definiendum id="0">category</definiendum>
+				<definiens id="0">a set of features</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The main thesis of this paper is that , given these restrictions , the simple requirement that the FCRs be expressible as a set of Horn clauses is sufficient to ensure parsability in time order pg2G2n 3 , where p is a measure of the degree of ambiguity of the grammar , K is the size of the alphabet of features , G is a measure of the size of the grammar , and n is the length of the sentence .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiendum id="1">K</definiendum>
+				<definiendum id="2">G</definiendum>
+				<definiendum id="3">n</definiendum>
+				<definiens id="0">the size of the alphabet of features</definiens>
+				<definiens id="1">the length of the sentence</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A word over an alphabet V is a finite string consisting of zero or more letters of V , whereby the same letter may occur 140 Computational Linguistics , Volume 15 , Number 3 , September 1989 Anthony J. Fisher Practical Parsing of Generalized Phrase Structure Grammars several times .</sentence>
+				<definiendum id="0">word over an alphabet V</definiendum>
+				<definiens id="0">a finite string consisting of zero or more letters of V</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We denote by H ( S ) the powerset of S , which is the set of all subsets of a set S. Definitions .</sentence>
+				<definiendum id="0">H ( S ) the powerset of S</definiendum>
+				<definiens id="0">the set of all subsets of a set S. Definitions</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A generalised phrase structure grammar ( GPSG ) is an ordered 7-tuple G = ( VF , VT , Xo , R , F , Fe , Fr ) , where : VF is a finite set of features ; V T is a finite set of terminals , VF N VT~ = ~ ) ; Xo is the starting category , a finite subset of VF ; R is the set of rules , a finite set of ordered pairs P Q , such that P is a subset of V F ( i.e. P ~ H ( VF ) ) , and Q is a word over the alphabet V = II ( V F ) U VT ; F is the FCR set , a function from II ( VF ) to { true , false } ; F e is the set of percolating features , a subset of VF'~ and Far is the set of trickling features , a subset of V e. For P , Q ~ W ( V ) , we say that P derives Q , written P ff Q , iff 3 an integer n and a , /3 ~ W ( V ) , P ' , Q'i ( i = 1 ... .. n ) , P '' , Q '' i ( i = 1 ... .. n ) E V such that the following all hold : ( i ) P '' C P ' ( ii ) if Q'i ~ vr : Q '' i = Q'i ( i = I , 2 ... .. n ) ifQ'iCH ( VF ) : Q '' i C Q'i ( i = 1,2 ... .. n ) F ( P ' ) ( i ) Q'i ~ VT v ( Q'i ( '1 Fe ) C_ P ' ( i = 1 , 2 ... .. n ) ( ii ) Q'~ E VT v ( P ' fq FT ) C_ Q'i ( i = 1 , 2 ... .. n ) .</sentence>
+				<definiendum id="0">generalised phrase structure grammar</definiendum>
+				<definiendum id="1">GPSG</definiendum>
+				<definiendum id="2">VF</definiendum>
+				<definiendum id="3">V T</definiendum>
+				<definiendum id="4">Xo</definiendum>
+				<definiendum id="5">R</definiendum>
+				<definiendum id="6">Q</definiendum>
+				<definiendum id="7">F e</definiendum>
+				<definiendum id="8">Far</definiendum>
+				<definiens id="0">an ordered 7-tuple G = ( VF , VT , Xo , R , F , Fe</definiens>
+				<definiens id="1">a finite set of features</definiens>
+				<definiens id="2">a finite set of terminals</definiens>
+				<definiens id="3">a word over the alphabet V = II ( V F ) U VT ; F is the FCR set , a function from II ( VF ) to { true , false } ;</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>At the end of the checking process , either the sentence is rejected as not conforming to G , or the sentence is accepted , in which case the annotated parse tree is the parse tree of the sentence according to G. Wegner 's ( 1980 ) algorithm for VWGs belongs to this class .</sentence>
+				<definiendum id="0">parse tree</definiendum>
+				<definiens id="0">not conforming to G , or the sentence is accepted , in which case the annotated</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>In the present algorithm , the skeleton grammar G ' is a GPSG that is obtained from a given GPSG G by neglecting some of the FCRs and the percolating feature propagation constraints .</sentence>
+				<definiendum id="0">skeleton grammar G</definiendum>
+				<definiens id="0">a GPSG that is obtained from a given GPSG G by neglecting some of the FCRs and the percolating feature propagation constraints</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Now define the skeleton grammar G ' of G by G ' = ( Vp , VT. , Xo , R , F ' , O , FT ) .</sentence>
+				<definiendum id="0">skeleton grammar G</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Since we are ignoring the non-side-effect-free FCRs and the propagation constraints , any superset of c ILI c 2 which satisfies F ' ( c ) will suffice ; consequently , we take the smallest superset , namely c~ U c2 , which is the least upper bound of c~ and c2 under the ordering relation of extension ( see Gazdar et al. 1985:39 ) .</sentence>
+				<definiendum id="0">propagation constraints</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>The category that is instantiated on the node of the parse tree is the smallest superset of c~ U c2 which contains all of its mother 's trickling features , which is cn U c z tA ( c o fq Fr ) , where c o is the category of the mother node .</sentence>
+				<definiendum id="0">c o</definiendum>
+				<definiens id="0">the smallest superset of c~ U c2 which contains all of its mother 's trickling features</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>We assume that the degree of ambiguity is finite , in which case the graph is a directed acyclic graph ( DAG ) .</sentence>
+				<definiendum id="0">DAG</definiendum>
+				<definiens id="0">a directed acyclic graph</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>We denote by C ( N ) the category on the node N. Let the distinct parse trees produced by phase 2 be T I ... .. Tp .</sentence>
+				<definiendum id="0">C ( N )</definiendum>
+			</definition>
+			<definition id="14">
+				<sentence>Although the number of `` primitive steps '' ( Earley 's terminology ) that are executed by the modified algorithm is independent of K , the time taken to complete certain primitive steps , in particularly the addition of a state to a state set and the feature matching operation in the predictor , is proportional to K. The overall time bound is therefore KG2n 3 , , The expansion of the DAG to yield p distinct parse trees can be done by conventional tree processing techniques in time proportional to p , the number of nodes in each tree , and the size of a node ( which affects the time taken to copy a node ) .</sentence>
+				<definiendum id="0">size of a node</definiendum>
+				<definiens id="0">affects the time taken to copy a node</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>Speakers vary pitch , duration , and intensity ( the aspects of prosody ) primarily to highlight certain words for the listener and to partition the utterance into short segments for easier perceptual processing ( O'Shaughnessy 1983b ) .</sentence>
+				<definiendum id="0">intensity</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Speakers tend to pause at major syntactic boundaries , but the frequency and duration of the pauses also reflect the length of the phrases ( measured by the number of words or syllables ) between pauses ( Gee 1983 ) .</sentence>
+				<definiendum id="0">length of the phrases (</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>verb group ( VG ) , which consists of a verbal word optionally preceded by modal and auxiliary verbs ; 3 .</sentence>
+				<definiendum id="0">VG</definiendum>
+				<definiens id="0">consists of a verbal word optionally preceded by modal and auxiliary verbs</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For the purposes of local parsing , NGs and VGs are more useful units than noun phrases ( NPs ) , which consist of an NG followed by PPs or AdjPs , and verb phrases ( VPs ) , which consist of a VG followed by its complement ( s ) .</sentence>
+				<definiendum id="0">NPs</definiendum>
+				<definiens id="0">consist of an NG followed by PPs or AdjPs , and verb phrases</definiens>
+				<definiens id="1">consist of a VG followed by its complement ( s )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>One preposition is special : `` to '' can be followed by either an NG or an infinitive ( an infinitive is assumed if a content word follows `` to '' ) .</sentence>
+				<definiendum id="0">infinitive</definiendum>
+				<definiens id="0">an infinitive is assumed if a content word follows `` to '' )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Reflexive pronouns ( words ending in -self ) behave prosodically like adverbs and are stressed ; it is unnecessary to see if a reflexive pronoun matches the preceding word , since reflexives tend to act prosodically as sentential adverbs , getting their own stress contour ( e.g. , in `` Sue hit John himself/herself '' , whether the pronoun links to `` Sue '' or `` John '' makes little prosodic difference ) .</sentence>
+				<definiendum id="0">Reflexive pronouns</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Modal verbs are very useful in parsing because they initiate a VG ( and thus terminate a preceding phrase ) and often indicate the number of the subject ; e.g. , in `` The fear animals show is temporary '' , `` animals show '' can be identified as a subordinate clause because `` is '' must have a singular subject and the plural `` animals '' must be the subject of a relative clause .</sentence>
+				<definiendum id="0">VG</definiendum>
+				<definiens id="0">the subject of a relative clause</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Specifying the part of speech for an unidentified word X is based primarily on the role of its immediately preceding word W. If X starts a sentence , it is called a noun unless the immediately following word is an introductory word ; this latter case is that of an imperative , where X is a tenseless verb .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a tenseless verb</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>W is an article , quantifier , demonstrative , numeral , adjective , preposition , gerund , subordinate conjunction , or `` whose '' ; 2 .</sentence>
+				<definiendum id="0">W</definiendum>
+				<definiens id="0">an article , quantifier , demonstrative , numeral , adjective , preposition , gerund , subordinate conjunction , or `` whose '' ; 2</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>A common independent phrase is a temporal adverbial -- -a NG introduced by a function word , where the final noun deals with time ( e.g. , last week , three times a month , next Tuesday ) .</sentence>
+				<definiendum id="0">common independent phrase</definiendum>
+				<definiens id="0">a temporal adverbial -- -a NG introduced by a function word</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The parser marks any deviation from normal order as a potential syntactic boundary ; e.g. , the initiation of a second NG during the course of an apparent NG is a cue to a possible clause boundary .</sentence>
+				<definiendum id="0">apparent NG</definiendum>
+				<definiens id="0">a cue to a possible clause boundary</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>If an object NG is a simple pronoun , it attaches prosodically to an adjacent phrase ; if two object NGs ( other than pronouns ) follow a verb , each will be assigned its own prosodic group .</sentence>
+				<definiendum id="0">NG</definiendum>
+				<definiens id="0">a simple pronoun , it attaches prosodically to an adjacent phrase ; if two object NGs</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>If the conjunction links two prepositions ( i.e. , H is a preposition ) ( e.g. , `` He went into and through the house '' ) , the prepositions are stressed , as part of the general process of stressing the parallel constituents in coordinated phrases .</sentence>
+				<definiendum id="0">H</definiendum>
+				<definiens id="0">part of the general process of stressing the parallel constituents in coordinated phrases</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Such a final clause usually starts with a modal or auxiliary verb , which is immediately followed by the subject NG , and then the rest of the VG ( if the VG contains more than one verbal ) .</sentence>
+				<definiendum id="0">VG (</definiendum>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>For example , for the Swiss-German subordinate clauses described by Shieber , w is a string of nouns , marked for either dative or accusative case , and x is a string of verbs that each select one and only one of the : cases for their corresponding , cross-serially located object noun .</sentence>
+				<definiendum id="0">w</definiendum>
+				<definiendum id="1">x</definiendum>
+				<definiens id="0">a string of nouns , marked for either dative or accusative case , and</definiens>
+				<definiens id="1">a string of verbs that each select one and only one of the : cases for their corresponding , cross-serially located object noun</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>triple ( q , w , 3 '' ) , where q is a state , w is the portion of input left to be processed , and 3 ' is the string of symbols on the pushdown store .</sentence>
+				<definiendum id="0">q</definiendum>
+				<definiens id="0">the string of symbols on the pushdown store</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>state is defined and denoted as follows : L ( M ) = { w I ( qo , w , Z ) F* ( /9 , A , 3 '' ) for some p E F , 3 '' E F* } , where q0 is the start state and F is the set of accepting states .</sentence>
+				<definiendum id="0">q0</definiendum>
+				<definiendum id="1">F</definiendum>
+				<definiens id="0">L ( M ) = { w I ( qo , w</definiens>
+				<definiens id="1">the start state</definiens>
+				<definiens id="2">the set of accepting states</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( A Full AFL is any class of languages that contains at least one nonempty language and that is closed under union , A-free concatenation of two languages , homomorphism , inverse homomorphism , and intersection with any finite-state language .</sentence>
+				<definiendum id="0">Full AFL</definiendum>
+				<definiens id="0">any class of languages that contains at least one nonempty language and that is closed under union , A-free concatenation of two languages , homomorphism , inverse homomorphism , and intersection with any finite-state language</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Now , M ' accepts some context-free language L ' with the following property : ( A ) Suppose x o &lt; ql , Pl &gt; Xl &lt; q2 , P2 &gt; X2 `` ' '' &lt; q. , q. &gt; X. is such that each x ; contains no new symbols and suppose that the strings u i and v ; ( i &lt; -n ) are such that each vi is a finite-state transduction of ui by T ( qi , Pi ) .</sentence>
+				<definiendum id="0">M</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Joshi , Aravind K. 1989 Processing Crossed and Nested Dependencies : An Automaton Perspective on the Psycholinguistic Results .</sentence>
+				<definiendum id="0">Nested Dependencies</definiendum>
+				<definiens id="0">An Automaton Perspective on the Psycholinguistic Results</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>We claim that there is such a level , called naive semantics ( NS ) , which is commonsense knowledge associated with words .</sentence>
+				<definiendum id="0">naive semantics ( NS )</definiendum>
+				<definiens id="0">commonsense knowledge associated with words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Nominal concepts are categorizations of objects based upon naive theories concerning the nature and typical description of conceptualized objects .</sentence>
+				<definiendum id="0">Nominal concepts</definiendum>
+				<definiens id="0">categorizations of objects based upon naive theories concerning the nature and typical description of conceptualized objects</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Verbal concepts are naive theories of the implications of conceptualized events and states .</sentence>
+				<definiendum id="0">Verbal concepts</definiendum>
+				<definiens id="0">naive theories of the implications of conceptualized events and states</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Another autonomous component interprets the compositional semantics and builds discourse representation structures ( DRSs ) as in Kamp ( 1981 ) and Asher ( 1987 ) .</sentence>
+				<definiendum id="0">autonomous component</definiendum>
+				<definiendum id="1">DRSs</definiendum>
+				<definiens id="0">interprets the compositional semantics and builds discourse representation structures</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Another component models naive semantics and completes the discourse representation that includes the implications of the text .</sentence>
+				<definiendum id="0">component models</definiendum>
+				<definiens id="0">naive semantics and completes the discourse representation that includes the implications of the text</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Naive semantics is the theoretical motivation for the KT system under development at the IBM Los Angeles Scientiific Center by Dahlgren , McDowell , and others .</sentence>
+				<definiendum id="0">Naive semantics</definiendum>
+				<definiens id="0">the theoretical motivation for the KT system under development at the IBM Los Angeles Scientiific Center by Dahlgren , McDowell , and others</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The parse is submitted to a module ( DISAMBIG ) that outputs a logical structure which reflects the scope properties of operators and quantifiers , correct attachment of post-verbal adjuncts , and selects , word senses .</sentence>
+				<definiendum id="0">DISAMBIG</definiendum>
+				<definiens id="0">reflects the scope properties of operators and quantifiers , correct attachment of post-verbal adjuncts , and selects , word senses</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Entities ( including events ) that are products of society , and thereby have a social function , are viewed as fundamentally different from natural entities in the commonsense conceptual scheme .</sentence>
+				<definiendum id="0">Entities</definiendum>
+				<definiens id="0">including events ) that are products of society</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>This is supported by virtually every experimental study on the way people view situations , i.e. , GOAL orientation is the most salient property of events and actions .</sentence>
+				<definiendum id="0">GOAL orientation</definiendum>
+				<definiens id="0">supported by virtually every experimental study on the way people view situations</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>SOCIAL , NONGOAL , ACTIVITY is a sparse category .</sentence>
+				<definiendum id="0">ACTIVITY</definiendum>
+				<definiens id="0">a sparse category</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The content of the entries is a pair of lists of features drawn from the psycholinguistic data ( as described above ) or constructed using these data as a model .</sentence>
+				<definiendum id="0">content of the entries</definiendum>
+				<definiens id="0">a pair of lists of features drawn from the psycholinguistic data</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>~v ( { wha~enabled ( can ( a~ox~l ( mabj , obJ ) ) ) , how ( with ( X ) &amp; money ( X ) ) , where ( in ( Y ) &amp; store ( Y ) ) , cause ( need~bJ , obj ) ) , what_happened-next ( use ( subJ , obJ ) ) } , { goal ( own ( subJ , obJ ) ) , consectuence_oLevent ( own ( ( subJ , obJ ) ) , selectionsLrestrtction ( sentient ( subJ ) ) , implies ( merchandise ( obJ ) ) } ) .</sentence>
+				<definiendum id="0">consectuence_oLevent</definiendum>
+				<definiendum id="1">selectionsLrestrtction ( sentient</definiendum>
+				<definiens id="0">implies ( merchandise ( obJ ) ) } )</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>As a result , the architecture of the system involves separate modules for syntax , semantics , discourse and naive semantics , but each of the modules has access to the output of all others , as shown in Figure I. The parser chosen is the Modular Logic Grammar ( McCord 1987 ) , ( MODL ) .</sentence>
+				<definiendum id="0">parser chosen</definiendum>
+				<definiendum id="1">Modular Logic Grammar</definiendum>
+				<definiens id="0">the architecture of the system involves separate modules for syntax , semantics , discourse and naive semantics</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Input to DISAMBIG : s ( np ( n ( n ( john ( Vl ) ) ) ) &amp; vp ( v ( fin ( pers3 , sg , past , ind ) , put ( V I , V2 ) ) np ( detp ( the ( V3 , V4 ) ) &amp; n ( n ( money ( V2 ) ) ) pp ( p ( in ( V2 , VS ) ) &amp; np ( detp ( the ( V6 , VT ) ) n ( n ( bank ( VS ) ) ) ) ) ) ) ) Output of DISAMBIG : s ( np ( n ( n ( John ( Vl ) ) ) ) vp ( v ( fln ( pers3 , sg , past~d ) , put i ( V I , V2 ) ) np ( detp ( the ( V3 , V4 ) ) &amp; n ( n ( money ( V2 ) ) ) ) &amp; pp ( p ( in ( V2 , VS ) ) &amp; np ( detp ( the ( V6 , VT ) ) &amp; n ( n ( bank2 ( VS ) ) ) ) ) ) ) The differences are that the PP `` in the bank '' is VP-attached in the output of DISAMBIG rather than NP-attached as in the output of MODL , and that the words `` put '' and `` bank '' are assigned index numbers and changed to putl and bank2 , selecting the senses indicated by the word sense disambiguation algorithm .</sentence>
+				<definiendum id="0">vp</definiendum>
+				<definiendum id="1">n ( n</definiendum>
+				<definiendum id="2">VS ) ) &amp; np</definiendum>
+				<definiens id="0">s ( np ( n ( n ( John ( Vl ) ) ) ) vp</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The discourse work is being carried out mainly by Dahlgren and is in various stages of completion .</sentence>
+				<definiendum id="0">discourse work</definiendum>
+				<definiens id="0">being carried out mainly by Dahlgren and is in various stages of completion</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Definite clauses are represented in a standard Prolog format , while negative clauses are transformed into definite clauses by the addition of a special positive literal `` false ( n ) , '' where n is an integer that occurs in no other literal with this predicate .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">an integer that occurs in no other literal with this predicate</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The RELEVANCE module will have the responsibility of determining the relevance of a particular text to a particular user .</sentence>
+				<definiendum id="0">RELEVANCE module</definiendum>
+				<definiens id="0">the responsibility of determining the relevance of a particular text to a particular user</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The task for the processing system is to determine whether the PP modifies the object ( i.e. , the PP is a constituent of the NP , as in ( 12 ) ) , the verb ( i.e. , the PP is a constituent of the VP , as in ( 13 ) ) , or the sentence ( i.e. , the PP is an adjunct to S , as in ( 14 ) ) .</sentence>
+				<definiendum id="0">PP</definiendum>
+				<definiendum id="1">PP</definiendum>
+				<definiendum id="2">PP</definiendum>
+				<definiens id="0">to determine whether the PP modifies the object</definiens>
+				<definiens id="1">a constituent of the NP</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>MODL ( McCord 1987 ) employs a combination of syntactic and semantic information for PP attachment .</sentence>
+				<definiendum id="0">MODL</definiendum>
+				<definiens id="0">employs a combination of syntactic and semantic information for PP attachment</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>time ( POBJ ) - , s_attach ( PP ) If the object of the preposition is an expression of time , then S-attach the PP .</sentence>
+				<definiendum id="0">POBJ</definiendum>
+				<definiens id="0">an expression of time , then S-attach the PP</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>f. epistemic ( POBJ ) -- * s_attach ( PP ) If the prepositional phrase expresses a propositional attitude , then attach the PP to the S. Levine was guilty in my opinion .</sentence>
+				<definiendum id="0">f. epistemic</definiendum>
+				<definiens id="0">a propositional attitude , then attach the PP to the S. Levine was guilty in my opinion</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>~_dj-PP ... ) -- ~ xp_attach ( PP ) If PP follows an adjective , then attach the PP to the phrase which dominates and contains the adjective phrase .</sentence>
+				<definiendum id="0">PP ) If PP</definiendum>
+				<definiens id="0">follows an adjective , then attach the PP to the phrase which dominates and contains the adjective phrase</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Naive semantic inference involves either ontological similarity or generic relationships .</sentence>
+				<definiendum id="0">Naive semantic inference</definiendum>
+				<definiens id="0">involves either ontological similarity or generic relationships</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>SI is the list of senses of the ambiguous noun still relevant when the rule is invoked .</sentence>
+				<definiendum id="0">SI</definiendum>
+				<definiens id="0">the list of senses of the ambiguous noun still relevant when the rule is invoked</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>The same is true if the system reads `` The Justice Department knows that Levine engaged in insider trading . ''</sentence>
+				<definiendum id="0">Justice Department</definiendum>
+			</definition>
+			<definition id="25">
+				<sentence>Full Assertion : engage ( el , levine ) , tense ( el , past , 1 ) Strong Quasi-Assertion : engage ( el , levine ) , tense ( el , past,0.9 ) Weak Quasi-Assertion : engage ( el , levine ) , tense ( el , past,0.5 ) This hierarchy reflects the `` epistemic paradox '' of Karttunen ( 1971 ) , in which he points out that in standard modal logic must ( P ) or necessarily , P is stronger than plain assertion whereas epistemically-must ( P ) is weaker than plain assertion .</sentence>
+				<definiendum id="0">Strong Quasi-Assertion</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">weaker than plain assertion</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>The FOL form of the query is then passed to REASONER , which decides which database is the most likely source of the answer .</sentence>
+				<definiendum id="0">FOL form of the query</definiendum>
+				<definiens id="0">passed to REASONER , which decides which database is the most likely source of the answer</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>Ontological Questions : Is a man human ?</sentence>
+				<definiendum id="0">Ontological Questions</definiendum>
+			</definition>
+			<definition id="28">
+				<sentence>would trigger a response that includes a list of all the nodes in the ontology which dominate the position where `` John '' is attached plus the information that John is a man , is tall , and bought a book .</sentence>
+				<definiendum id="0">John</definiendum>
+				<definiens id="0">includes a list of all the nodes in the ontology which dominate the position where ``</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>REASONER , therefore , is sensitive to a number of factors which make the system seem to understand the queries in a natural way .</sentence>
+				<definiendum id="0">REASONER</definiendum>
+				<definiens id="0">sensitive to a number of factors which make the system seem to understand the queries in a natural way</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>NS is a powerful source of information in discourse reasoning .</sentence>
+				<definiendum id="0">NS</definiendum>
+			</definition>
+			<definition id="31">
+				<sentence>Naive semantics is a level of cognitive representation of concepts that can be discovered empirically and represented in a principled way with FOL without resort to a special knowledge representation language .</sentence>
+				<definiendum id="0">Naive semantics</definiendum>
+				<definiens id="0">a level of cognitive representation of concepts that can be discovered empirically and represented in a principled way with FOL without resort to a special knowledge representation language</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>A discourse normally consists of more than a single utterance , and although every utterance may be assumed to contribul : e something to the discourse meaning as a whole , this latter can only rarely be regarded as a simple sum of meanings of component utterances .</sentence>
+				<definiendum id="0">discourse</definiendum>
+				<definiendum id="1">discourse meaning</definiendum>
+				<definiens id="0">consists of more than a single utterance</definiens>
+				<definiens id="1">a simple sum of meanings of component utterances</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Expression S 1 is a A-representation of the linguistic context in which the sentence with translation S 2 is to be evaluated .</sentence>
+				<definiendum id="0">Expression S 1</definiendum>
+				<definiens id="0">a A-representation of the linguistic context in which the sentence with translation S 2 is to be evaluated</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Rule 3 ( Imperfect-Context Translation Rule ) : If the context-setting sentence S I has a non-referential interpretation in the form imp ( 3u \ [ P ( u ) &amp; F ( u ) \ ] ) , where imp is an imperfect operator , and the current sentence S 2 , also in a non-referential interpretation , contains a definite anaphor which occurs in scope of an imperfect operator imp1 i.e. , $ 2 = imp1 ( 3u \ [ C ( u ) &amp; Pl ( u ) &amp; Fl ( u ) &amp; Vx \ [ { PI ( x ) &amp; C ( x ) } 3 ( x=u ) \ ] \ ] , then this anaphor can be resolved against St , with the resulting translation of S e derived as AC\ [ S2\ ] ( Au\ [ P ( u ) &amp; F ( u ) \ ] ) .</sentence>
+				<definiendum id="0">Imperfect-Context Translation Rule )</definiendum>
+				<definiendum id="1">imp</definiendum>
+				<definiens id="0">If the context-setting sentence</definiens>
+				<definiens id="1">an imperfect operator</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Rule 9 ( Names as Ultimate Referents ) : If the context-setting sentence S 1 has the form of FI ( N ) where N is an individual constant denoting a name , and the current sentence S 2 contains a definite anaphor , so that its literal translation has the form S 2 = 3x \ [ P ( x ) &amp; C ( x ) &amp; F 2 ( x ) &amp; Vy \ [ { P ( y ) &amp; C ( y ) ) ~ ( x=y ) \ ] \ ] , then the anaphor can be resolved against N as its ultimate referent with the following derivation : xplp ( N ) \ ] ( Xx\ [ : tC\ [ S2\ ] ( Xs\ [ R ( s ) \ ] ) \ ] ) where \ ] V is the predicative use of name N. In the following fragment , Sylvester tries to catch a bird .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">V</definiendum>
+				<definiens id="0">an individual constant denoting a name</definiens>
+				<definiens id="1">Xs\ [ R ( s ) \ ] ) \ ] ) where \ ]</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In the above fragment , Rule 9 would produce the following translation for `` the cat is clumsy '' ( S is an individual constant denoting the individual named Sylvester , and Syl ( x ) means that x 's name is Sylvester ) : cat ( S ) &amp; Syl ( S ) &amp; clumsy ( S ) &amp; Vx \ [ { cat ( x ) &amp; Syl ( x ) } 3 ( x=S ) \ ] There are more aspects of ISD transformation that merit attention .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">an individual constant denoting the individual named Sylvester , and Syl ( x ) means that x 's name is Sylvester ) : cat ( S ) &amp; Syl ( S ) &amp; clumsy ( S ) &amp; Vx \ [ { cat ( x ) &amp; Syl ( x ) } 3 ( x=S ) \ ] There are more aspects of ISD transformation that merit attention</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Gold is a yellow metal .</sentence>
+				<definiendum id="0">Gold</definiendum>
+				<definiens id="0">a yellow metal</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Indeed , Carlson introduces a special R relation into Montague 's IL which allows him to create individual objects out of generic objects , as well as stages out of ordinary singular objects .</sentence>
+				<definiendum id="0">Carlson</definiendum>
+				<definiens id="0">introduces a special R relation into Montague 's IL which allows him to create individual objects out of generic objects</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>\ ] Reagan is the president .</sentence>
+				<definiendum id="0">Reagan</definiendum>
+				<definiens id="0">the president</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>For any level L , there are at least two distinct levels L_ I and L+t such that L+t contains these objects which are non-singular from the perspective of L , and L-I contains the objects for which the objects at L are non-singular .</sentence>
+				<definiendum id="0">L-I</definiendum>
+				<definiens id="0">contains the objects for which the objects at L are non-singular</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Nonetheless , two distinct concepts emerge , that of flying birds and that of non-flying birds , both of which become subordinates of the ( now ) more general concept B. These new concepts are placed at a new level La_'~ x , where K= { kl , k2 } is a class coordinate such that Bkl is the concept of flying bird , FB , and Ba~ is the concept of non-flying bird , NFB .</sentence>
+				<definiendum id="0">Ba~</definiendum>
+				<definiens id="0">the concept of flying bird , FB , and</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>7 The only thing we could say about each 178 Computational Linguistics , Volume 15 , Number 3 , September 1989 Tomek Strzalkowskiand Nick Cercone Non-Singular Concepts in Natural Language Discourse instance of B is , perhaps , that it is a bird and that every /'B , S bird is an instance of B. In other words , if x is a , _ , _ l variable then Vx \ [ bird ( x ) -= 3sES\ [ x= ( B s ) \ ] \ ] is true .</sentence>
+				<definiendum id="0">S bird</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>In other words , the fact that a superobject N has no instance at certain location x ET at level L~'~ T does not preclude the use of Computational Linguistics , Volume 15 , Number 3 , September 1989 179 Tomek Strzalkowski and Nick Cercone Non-Singular Concepts in Natural Language Discourse the description ( N x ) in the language .</sentence>
+				<definiendum id="0">N x )</definiendum>
+				<definiens id="0">Non-Singular Concepts in Natural Language Discourse the description</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Upon discovery that they all represent occurrences of the same planet , we create a new object V ' , named Venus , at the level LI = LV'l T , and such that for some x , y , z E T , where Tis a time coordinate , ( V'x ) = V , ( V'y ) = MS , ( V'z ) = ES , where V ' , V , MS and ES are individual constants denoting V ' , V , MS and ES , respectively .</sentence>
+				<definiendum id="0">MS</definiendum>
+				<definiens id="0">V ' , V , MS and ES are individual constants denoting V ' , V , MS and ES , respectively</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>In the same way , we create instances of MS and ES over the coordinate S at levels tMS , S and fES , S respectively .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">instances of MS and ES over the coordinate</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Let us assume next that L 2 TP , T DL_ 1 &lt; L 1 = L o , where TP is the object at LI referred to by the presidenh , and T is a time-based coordinate .</sentence>
+				<definiendum id="0">TP</definiendum>
+				<definiendum id="1">T</definiendum>
+				<definiens id="0">the object at LI referred to by the presidenh</definiens>
+				<definiens id="1">a time-based coordinate</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>If the presiden h is used as a name , we can expect to obtain the following translations : 7a -- - &gt; eefy ( TP ) 7b -- - &gt; 3t \ [ SL ( t ) &amp; ( ( TP t ) =R ) \ ] with `` elected every four years '' -- - &gt; eefy , `` the president '' ~ AP\ [ P ( TP ) \ ] where t E T and SL is a selector over T provided by the discourse situation ( for example now , here , etc. ) .</sentence>
+				<definiendum id="0">SL</definiendum>
+				<definiens id="0">a selector over T provided by the discourse situation ( for example now</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The other formula says , in turn , that there is a value t of the time coordinate T at which the instance of the general object referred to in ( 7a ) ( the President of the U.S. ) is identical with the object R ( which stands for Reagan ) .</sentence>
+				<definiendum id="0">U.S. )</definiendum>
+				<definiens id="0">identical with the object R ( which stands for Reagan</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>In some part of a discourse , a certain ( general ) object X is addressed ; that is , there is some part , $ 1 , of the discourse ( presented as a single sentence in our examples , Computational Linguistics , Volume 15 , Number 3 , September 1989 181 Tomek Strzalkowski and Nick Cercone Non-Singular Concepts in Natural Language Discourse for simplicity ) , such that S 1 predicates something of X -- that is SI ( X ) , where X is a description that refers to X. In a subsequent part of the discourse , however , the discourse changes the level of reference and only some instance ( s ) of X with respect to some coordinate T is addressed ; that is , there is some t E T such that S2 ( ( X t ) ) , where S 2 is this new part of the discourse .</sentence>
+				<definiendum id="0">certain</definiendum>
+				<definiendum id="1">X</definiendum>
+				<definiens id="0">Nick Cercone Non-Singular Concepts in Natural Language Discourse for simplicity ) , such that S 1 predicates something of X</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Rule 12 ( Subcontext Translation Rule ) : If the context-setting sentence S t with the translation ~ , T 3x \ [ Pn ( x ) &amp; Fl ( x ) \ ] is interpreted at some level L_ 1 , where ~ is an object satisfying the current sentence S 2 when interpreted at L o , and S 2 contains an unresolved remote reference P2 , that is , S 2 = =Ix \ [ P2 ( x ) &amp; C ( x ) &amp; Vy \ [ ( P2 ( Y ) &amp; C ( y ) ) D ( x=y ) \ ] &amp; F2 ( x ) \ ] then the full translation of $ 2 is obtained as S2 ( P 2 ) -- ~ AC\ [ LE\ ] ( Au\ [ : :II \ [ CI ( ( U t ) ) \ ] \ ] ) where the subcontext Cn = Ax \ [ Pn ( x ) &amp; Fn ( x ) \ ] is derived from $ 1 .</sentence>
+				<definiendum id="0">~</definiendum>
+				<definiendum id="1">Pn ( x ) &amp; Fn ( x</definiendum>
+				<definiens id="0">If the context-setting sentence S t with the translation ~</definiens>
+				<definiens id="1">an object satisfying the current sentence</definiens>
+				<definiens id="2">:II \ [ CI ( ( U t ) ) \ ] \ ] ) where the subcontext Cn = Ax \ [</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>1 la -- - &gt; Vx \ [ day ( x ) D 3t \ [ brings ( x , M , ( W t ) ) \ ] \ ] where W is as before , M is an individual constant denoting a space-time stage of Mary,12 and brings ( x , y , z ) should be read at x y brings z. Now ( W t ) denotes some instance of the superobject W at level L 0 ' of which we Computational Linguistics , Volume 15 , Number 3 , September 1989 m _ 183 Tomek Strzalkowski and Nick Cercone Non-Singular Concepts in Natural Language Discourse can say that it is water as well ; that is , water ( ( W t ) ) .</sentence>
+				<definiendum id="0">W</definiendum>
+				<definiendum id="1">M</definiendum>
+				<definiendum id="2">Nick Cercone Non-Singular</definiendum>
+				<definiens id="0">an individual constant denoting a space-time stage of Mary,12 and brings</definiens>
+				<definiens id="1">Concepts in Natural Language Discourse can say that it is water as well ; that is , water ( ( W t ) )</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>The discourse stack contains expectations about IS 's discourse behavior , along with the semantic representation of the utterance that prompted the expectation .</sentence>
+				<definiendum id="0">discourse stack</definiendum>
+				<definiens id="0">contains expectations about IS 's discourse behavior , along with the semantic representation of the utterance that prompted the expectation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>IflP asks or answers a question , SP1 or SP2 respectively apply .</sentence>
+				<definiendum id="0">IflP</definiendum>
+				<definiens id="0">asks or answers a question</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Associated with each discourse expectation is a rule that suggests a set of one or more discourse goals that IS might pursue and the order in which they should be considered .</sentence>
+				<definiendum id="0">discourse expectation</definiendum>
+				<definiens id="0">a rule that suggests a set of one or more discourse goals that IS might pursue and the order in which they should be considered</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Figure 2 Seek-IdentifyI ( IS , entityl ) Applicability 7 Know ( IS , Referent ( entityl ) ) Conditions : Want ( IS , Know ( IS , Referent ( entityl ) ) ) Body : Request ( IS , IP , Inform ( IP , IS , Referent ( entityl ) ) ) Effect : Seek-Identify ( IS , entity 1 ) Seek-Identify-2 ( IS , entityl , entity2 ) Applicability 7 Know ( IS , Referent ( entityl ) ) Conditions : Want ( IS , Know ( IS , Referent ( entityl ) ) ) Know ( IS , Referent ( entity2 ) ) ( entityl , entity2 ) ) Body : Request ( IS , IP , Inform ( IP , IS , Same-Referents ( entity l , entity2 ) ) ) Effect : Seek-Identify ( IS , entityl ) Figure 2 Two Plans for Seeking Identification of an Entity .</sentence>
+				<definiendum id="0">Know</definiendum>
+				<definiendum id="1">Referent</definiendum>
+				<definiendum id="2">Inform ( IP</definiendum>
+				<definiendum id="3">Seek-Identify ( IS , entityl</definiendum>
+				<definiens id="0">IS , Referent ( entityl ) ) ) Effect : Seek-Identify ( IS , entity 1 ) Seek-Identify-2 ( IS , entityl</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Since our belief model indicates that IS already knows the truth value of the proposition ( P/~ CONTEXT-PROPS ) -namely , that Dr. Smith is teaching a section of CS310 next semester , Rule DG-Express-Surprise-Obtain-Cor* ( A ) Earn-Credit ( IS , CS310 , NEXT-SEMESTER , _cr : &amp; CREDITS ) where Course-Offered ( CS310 , NEXT-SEMESTER ) Credits-Of ( CS310 , _cr : &amp; CREDITS ) * ( A ) Earn-Credit-Section ( IS , _ss : &amp; SECTIONS ) where Is-Section-Of ( _ss : &amp; SECTIONS , CS310 ) Section-Offered ( _ss : &amp; SECTION S , NEXT-SEMESTER ) I * ( A ) Learn-Material ( IS , _ss : &amp; SECTIONS , _syl : &amp; SYLBI ) where Is-Syllabus-Of ( _ss : &amp; SECTIONS , _syl : &amp; SYLBI ) I * ( A ) Learn-From-Person ( IS , _ss : &amp; SECTIONS , _fac : &amp; FACULTY ) where Teaches ( -fac : &amp; FACULTY , _ss : &amp; SECTIONS ) * ( A ) Attend-Class ( IS , _plc : &amp; MTG-PLCS , _day : &amp; MTG-DAYS , _tme : &amp; MTG-TIMES ) where Is-Mtg-PIc ( .</sentence>
+				<definiendum id="0">Rule DG-Express-Surprise-Obtain-Cor*</definiendum>
+				<definiendum id="1">) Earn-Credit (</definiendum>
+				<definiendum id="2">NEXT-SEMESTER ) Credits-Of</definiendum>
+				<definiendum id="3">Is-Section-Of</definiendum>
+				<definiendum id="4">SECTION S</definiendum>
+				<definiendum id="5">Learn-Material ( IS</definiendum>
+				<definiendum id="6">Is-Syllabus-Of</definiendum>
+				<definiendum id="7">) Learn-From-Person</definiendum>
+				<definiendum id="8">) Attend-Class</definiendum>
+				<definiendum id="9">Is-Mtg-PIc</definiendum>
+				<definiens id="0">teaching a section of CS310 next semester ,</definiens>
+				<definiens id="1">IS , CS310 , NEXT-SEMESTER</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A related problem , that of understanding pragmatically ill-formed utterances ( utterances that violate the system 's model of the world ) , is addressed in Carberry ( 1988 ) .</sentence>
+				<definiendum id="0">ill-formed utterances</definiendum>
+				<definiens id="0">utterances that violate the system 's model of the world</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>In our own work we have followed a set of ideas in the belief that , at this stage , it was better to see them realized in a `` closed '' world ( one in which we do not adopt an external formalism , but rather one in which things are conceived and realized autonomously ) that still could lead to a convergence with other more widely accepted currents of lexicon privileging parsing , such as lexical-functional grammar ( LFG ) .</sentence>
+				<definiendum id="0">lexical-functional grammar</definiendum>
+				<definiens id="0">adopt an external formalism , but rather one in which things are conceived and realized autonomously</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An alternative includes : a contextual condition of applicability , a category , features , case marking , side effects ( through which , for example , coreference between sub ( sem-units ( nl ( p-prescribe n2 n3 n4 ) ) ) ( likeliradix 0.6 ) ( cat v ) ( verbtense ( ind past ) ) ( main nl ) ( lingfunctions ( subj n2 ) ( obj n3 ) ( a-obj n4 ) ) ( uni ( subj ) ( must 0.5 ) ( ( t np 0.9 ( nu sing ) nom ) ) ) ( uni ( obj ) ( must ) ( ( t np 0.3 nil acc ) ( t s/sub 0.3 nil ) ( t s/prepinf 0.1 nil di ( sideuni a-obj subj ) ) ( uni ( a-obj ) ( must 0.8 ) ( ( t np 0.2 nil a ) ) ) Figure 1 .</sentence>
+				<definiendum id="0">uni</definiendum>
+				<definiens id="0">a contextual condition of applicability , a category , features , case marking , side effects</definiens>
+				<definiens id="1">t np 0.3 nil acc ) ( t s/sub 0.3 nil ) ( t s/prepinf 0.1 nil di</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Sem-units specify the semantics ; here they consist of a single proposition .</sentence>
+				<definiendum id="0">Sem-units</definiendum>
+				<definiens id="0">specify the semantics ; here they consist of a single proposition</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A morphological analyzer ( Stock , Castelfranchi , and Cecconi 1986 ) is actually attached to it and unifies data included in stems and affixes .</sentence>
+				<definiendum id="0">morphological analyzer</definiendum>
+				<definiens id="0">actually attached to it and unifies data included in stems and affixes</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A lexical task specifies a possible reading of a word to be introduced in the chart as an inactive edge .</sentence>
+				<definiendum id="0">lexical task</definiendum>
+				<definiens id="0">specifies a possible reading of a word to be introduced in the chart as an inactive edge</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>PHRAN ( Wilensky and Arens 1980 ) is a system in which maximum emphasis is placed on the role of idioms .</sentence>
+				<definiendum id="0">PHRAN</definiendum>
+				<definiens id="0">a system in which maximum emphasis is placed on the role of idioms</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Computational Linguistics , Volume 15 , Number 1 , March 1989 11 Oliviero Stock Parsing , with Flexibility , Dynamic Strategies , and Idioms in Mind ( sem-units ( nl ( p-take n2 n3 ) ) ) ( likeliradix 0.8 ) ( main nl ) ( lingfunctions ( subj n2 ) ( obj n3 ) ) ( cat v ) ( uni ( subj ) ( must 0.7 ) ( ( t np 0.9 nil nom ) ) ) ( uni ( obj ) ( must ) ( ( t np 0.3 nil acc ) ) ) ( idioms ( ( t ( morespecific ( obj ) 1 ( fixwords il toro ) 8 ) ( idmodifier ( fixwords per le corna ) I0 ) substitutions ( sem-units ( ml ( p-confront m2 m3 ) ) ( m4 ( p-situation m3 ) ) ( m5 ( p-difficult m3 ) ) ) ( main ml ) ( bindings ( subj m2 ) ) \ ] Figure 6 .</sentence>
+				<definiendum id="0">I0 ) substitutions</definiendum>
+				<definiens id="0">morespecific ( obj ) 1 ( fixwords il toro ) 8 ) ( idmodifier ( fixwords per le corna )</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>2 As well as this hierarchical structure ( and the ordering information not shown in this diagram ) , NONLIN returns information about preconditions in the plan-where they are needed and where they are established .</sentence>
+				<definiendum id="0">NONLIN</definiendum>
+				<definiens id="0">returns information about preconditions in the plan-where they are needed and where they are established</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>One of the domain-dependent rules rewrites mech ( the mechanic ) as user , to indicate that the mechanic is the same as the person to whom the instructions are being given .</sentence>
+				<definiendum id="0">mech</definiendum>
+				<definiens id="0">the mechanic ) as user , to indicate that the mechanic is the same as the person to whom the instructions are being given</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The rightlaand side is a functional description , describing the English phrase that is to render that part .</sentence>
+				<definiendum id="0">rightlaand side</definiendum>
+				<definiens id="0">a functional description , describing the English phrase that is to render that part</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Our message language is a language specifically devised for expressing the objects that arise in plans and the kinds of things one might wish to say about them .</sentence>
+				<definiendum id="0">message language</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>A message consists of a number of `` utterances '' linked together by various 240 UTTERANCE : := : neccbefore ( OB JECT , ACTION , ACTION ) -- one action must take place before another do ( ACTION ) ... .. instruction to perform an action : result ( ACTION , STATE ) ... . as 'do ' , but also mentioning an effect of the action : hypo_result ( OB JECT , ACTION , STATE ) -- if the agent carried out the action , the state would hold expansion ( ACTION , ACTION ) -- describing the expansion of an action into subactions prer eqs ( OB JECT , ACTION , STATE ) -- describing the prerequisites of an action , with the -- assumption that a given agent will perform it needed ( OBJECT , ACTION , STATE ) -- describing the reason why a STATE is needed , so that -- OBJECT can perform ACTION causes ( STATE , STATE ) -- once the first state holds , so does the second now ( STATE ) -- indicating that some state now holds Figure 3 Types of Basic Utterance .</sentence>
+				<definiendum id="0">message</definiendum>
+				<definiendum id="1">ACTION</definiendum>
+				<definiens id="0">consists of a number of `` utterances '' linked together by various 240 UTTERANCE : := : neccbefore ( OB JECT , ACTION , ACTION ) -- one action must take place before another do ( ACTION ) ... .. instruction to perform an action</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Thus , for instance , the expansion of a complex action gives rise to a section of text represented by a message of the form : title ( Action , embed ( Intro , Body , now ( state ( user , done ( complete ( Action ) ) ) ) ) ) ) where Action is the action described , Intro is an introductory message , which describes the prerequisites of the main action and the set of actions in its expansion ( unless there are too many of them ) and Body describes the action graph expanding the main action .</sentence>
+				<definiendum id="0">Action</definiendum>
+				<definiendum id="1">Intro</definiendum>
+				<definiendum id="2">Body</definiendum>
+				<definiens id="0">an introductory message</definiens>
+				<definiens id="1">describes the prerequisites of the main action</definiens>
+				<definiens id="2">describes the action graph expanding the main action</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>For instance , it unclear how the action of `` installing the rough wiring '' can be expressed in English in such a way that the action can only be interpreted as an instantaneous action , which is the way the planner sees it .</sentence>
+				<definiendum id="0">instantaneous action</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>Second , as we defined a translation of L c into modal logic , we will now define a translation of L c into elementary propositional dynamic logic ( EPDL ) so that every type 1 feature has a program associated with it Computational Linguistics , Volume 15 , Number 2 , June 1989 0362-613X/89/010111-113- $ 03.00 111 Technical Correspondence On the Logic of Category Definitions whose interpretation is an accessibility relation between categories .</sentence>
+				<definiendum id="0">EPDL</definiendum>
+				<definiens id="0">a translation of L c into elementary propositional dynamic logic</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Note that the length of the tableaus for K.AIh is bounded by the size of ~b so that the actual size of the tableau is at most 2 ~°~ ' ) , where n is the length of ~b and o ( th ) the number of subformulas of ~b. This bound could be sharpened somewhat but we ignore this point .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of ~b and o ( th ) the number of subformulas</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We make this distinction here by calling the logic as well as the set of theorems it defines A c. is the set of premises of that rule and ~b its consequence .</sentence>
+				<definiendum id="0">c.</definiendum>
+				<definiens id="0">the set of premises of that rule</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The purpose of this paper is to describe an experimental English-to-German machine translation system , LMT ( logic-based machine translation ) , 2 which has evolved out of previous work by the author on logic grammars .</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiens id="0">to describe an experimental English-to-German machine translation system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>0362-613X/89/010033-52503.00 Computational Linguistics , Volume 15 , Number 1 , March 1989 33 Michael C. McCord \ ] Design of LMT : A Prolog-Based Machine Translation System sions in a logical form language ( LFL ) ( McCord 1985a , 1987 ) .</sentence>
+				<definiendum id="0">LMT</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The transfer algorithm works in a simple way , in one top-down , left-to-right pass , yet manages to get a lot done , making German word choices and essentially producing all required German feature structures ( like case markers ) .</sentence>
+				<definiendum id="0">transfer algorithm</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A modular logic grammar ( MLG ) ( McCord 1985a , 1987 ) has a syntactic component ( with rules written in a certain formalism ) , and a separate semantic interpretation component ( using a certain methodology ) .</sentence>
+				<definiendum id="0">modular logic grammar</definiendum>
+				<definiendum id="1">MLG</definiendum>
+				<definiens id="0">a syntactic component ( with rules written in a certain formalism )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Metamorphosis grammars ( MGs ) ( Colmerauer 1975 , 1978 ) are like type-0 phrase structure grammars , but with logic terms for grammar symbols , and with unification of grammar symbols used in rewriting instead of equality checks .</sentence>
+				<definiendum id="0">Metamorphosis grammars ( MGs )</definiendum>
+				<definiens id="0">like type-0 phrase structure grammars , but with logic terms for grammar symbols</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Definite clause grammars ( DCGs ) ( Pereira and Warren 1980 ) , are the special case of normal form MGs corresponding to context-free phrase structure grammars ; i.e. , the left-hand side of each rule consists of a nonterminal only .</sentence>
+				<definiendum id="0">Definite clause grammars ( DCGs )</definiendum>
+				<definiens id="0">the special case of normal form MGs corresponding to context-free phrase structure grammars ; i.e. , the left-hand side of each rule consists of a nonterminal only</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>( The significance of feature arguments for MLG metarules is indicated Computational Linguistics , Volume 15 , Number 1 , March 1989 35 Michael C. McCord Design of LMT : A Proiog-Based Machine Translation System below . )</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiens id="0">A Proiog-Based Machine Translation</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Here , LF is a logical form ( an LFL expression ) , usually a word sense predication , like see ( X , Y ) .</sentence>
+				<definiendum id="0">LF</definiendum>
+				<definiens id="0">a logical form ( an LFL expression ) , usually a word sense predication</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>In general , the right-hand side of an MLG syntax rule can contain a shifted nonterminal , which is of the form LaboI % NT , where Label is a term ( to be used as a node label ) , and ~ is a weak nonterminal .</sentence>
+				<definiendum id="0">Label</definiendum>
+				<definiendum id="1">~</definiendum>
+				<definiens id="0">a term ( to be used as a node label</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Goal , which gets executed immediately at compile time .</sentence>
+				<definiendum id="0">Goal</definiendum>
+				<definiens id="0">gets executed immediately at compile time</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>A symbol 1~ &gt; Syn , where NT is a strong nonterminal , binds Syn to the syntactic structure of the phrase analyzed by ~ ( and is otherwise treated like an occurrence of NT ) 5 .</sentence>
+				<definiendum id="0">NT</definiendum>
+				<definiens id="0">a strong nonterminal , binds Syn to the syntactic structure of the phrase analyzed by</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Computational Linguistics , Volume 15 , Number 1 , March 1989 Michael C. McCord Design of LMT : A Prolog-Based Machine Translation System There are two grammatical constructions that are so pervasive and cut across ordinary grammatical categories to such an extent , that they invite treatment by metagrammatical rules : coordination and bracketing .</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiens id="0">A Prolog-Based Machine Translation System There are two grammatical constructions that are so pervasive and cut across ordinary grammatical categories to such an extent</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The first rule for ntconj is : 37 Michael C. McCord l ) esign of LMT : A Prolog-Based Machine Translation System ntconJ ( F0 , G0 , F , G , H , I , J , PC , syn ( nt ( F0 , G0 ) xdl , Mods0 ) , Syn , U~X ) *optionalcommma ( U , T.V ) &amp; coord ( T , PC , a , nt,0p , LF ) &amp; copylabel ( nt ( F , G ) , nt ( F1 , G1 ) ) &amp; ntbase ( F1 , G1 , H , I~ , nil , syn ( nt ( F1 , G1 ) ~il , Modsl ) , V , W ) &amp; combinelabels ( T , nt ( F0 , G0 ) .</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiendum id="1">G1 , H , I~ , nil , syn</definiendum>
+				<definiens id="0">A Prolog-Based Machine Translation System ntconJ ( F0 , G0 , F , G , H , I</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Slot fillers ( complements ) correspond to arguments of the word sense predication for the open-class word , and adjuncts correspond to outer modifiers of it in logical form .</sentence>
+				<definiendum id="0">Slot fillers</definiendum>
+				<definiens id="0">complements ) correspond to arguments of the word sense predication for the open-class word , and adjuncts correspond to outer modifiers of it in logical form</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Here Infl is the inflectional feature structure of Computational Linguistics , Volume 15 , Number 1 , March 1989 Michael C. McCord the verb , VS is the verb sense , X is the marker 7 for the grammatical subject of the verb , and C is the modifier context for predicate ( to be explained below ) .</sentence>
+				<definiendum id="0">Infl</definiendum>
+				<definiendum id="1">VS</definiendum>
+				<definiendum id="2">X</definiendum>
+				<definiendum id="3">C</definiendum>
+				<definiens id="0">the verb sense</definiens>
+				<definiens id="1">the modifier context for predicate ( to be explained below )</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The procedure voice handles the passive transformation ( when the verb analyzed by vc is a passive past participle ) as a slot list transformation , and theme computes the marker Z for implicit subjects in complements like `` John wants to leave '' , and `` John wants Bill to leave '' .</sentence>
+				<definiendum id="0">passive transformation</definiendum>
+				<definiens id="0">a passive past participle</definiens>
+				<definiens id="1">to leave '' , and `` John wants Bill to leave ''</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>S is the slot name ( like obj or Computational Linguistics , Volume 15 , Number 1 , March 1989 Design of LMT : A Prolog-Based Machine Translation System lobj ) , 2 .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">LMT</definiendum>
+				<definiens id="0">A Prolog-Based Machine Translation System lobj</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The modifier context contains a pair of topic terms ( T , T1 ) used as in McCord ( 1982 ) to represent a left-extraposed item T , with T1 equal to nil or T according as T is or is not used as a virtual filler ( or adjunct ) by postmods .</sentence>
+				<definiendum id="0">modifier context</definiendum>
+				<definiens id="0">contains a pair of topic terms ( T , T1 ) used as in McCord ( 1982 ) to represent a left-extraposed item T , with T1 equal to nil</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>A modifier context is a term of the form o ( T , T1 , Pend ) , where ( T , T1 ) is a topic pair and Pond is a pending stack .</sentence>
+				<definiendum id="0">modifier context</definiendum>
+				<definiendum id="1">Pond</definiendum>
+				<definiens id="0">a term of the form o ( T , T1</definiens>
+				<definiens id="1">a topic pair</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>The shift operator allows one to produce all patterns of attachment -- left branching , right branching , and all combinations in between -- while using right recursive rules .</sentence>
+				<definiendum id="0">shift operator</definiendum>
+				<definiens id="0">allows one to produce all patterns of attachment -- left branching</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>isa ( S , animate ) &lt; isa ( S~human ) . are in the Prolog workspace , then the test in the marker will succeed. The lexical preprocessing scheme of LMT allows convenient specification of type requirements on slot fillers ( and on other kinds of modifiers ) and type statements for word senses. Such type conditions can be given in lexical entries in a compact format that does not explicitly involve isa clauses. This will be described in the next section. Design of LMT : A Proiog-Based Machine Translation System Some MT systems have three separate lexicons , for source , transfer , and target ; but LMT has only one , unified lexicon , indexed by source language ( English ) words. The entry for a word contains monolingual English information about the word , as well as all of its transfers. A transfer element can contain monolingual German information about the target word. For example , a simple entry for the word `` view '' might be view &lt; v ( obJ ) &lt; n ( nobj ) &lt; gv ( acc , be +tracht ) &lt; gn ( gen , ansichtzf.n ) . Here , &lt; is just an operator that connects the components of the entry. The monolingual English information is on the first line , showing that view is a verb taking an object and is also a noun with a ( possible ) noun object ( appearing in postmodifier form as an of-pp complement ) . The transfer information is on the second and third lines. This shows that the translation of the verb form is the inseparable-prefix verb betrachten , where the German complement corresponding to the English object takes the accusative case. And the translation of the noun form is Ansicht , where the noun complement takes the genitive case , and Ansicht is a feminine noun ( f ) of declension class n. There are two advantages of the unified lexicon design : 1. Lexical look-up is more efficient since only one index system is involved , and 2. it is easier for the person creating the lexicon ( s ) to look at only one lexicon , seeing all pertinent information about a source language word and its transfers. It might be argued that it is inefficient to store monolingual target language information in transfer elements , because there is redundancy , e.g. , when two noun transfers are German compound nouns with the same head. However , the format for specifying German noun classes and other German morphological information in the LMT lexicon is very compact , so the redundancy does not involve much space or trouble. More will be said below about the specification of German morphological information. The principle that source language analysis in LMT is independent of the task of translation is not really violated by the unified lexicon , because purely English elements in lexical entries can easily be distinguished ( as will be seen from the description below ) , and the remaining elements can be discarded , if desired , to obtain a monolingual English lexicon for other applications. Another feature of the LMT lexicon is that the storage format is not the same as the format seen by the syntactic components. Both formats are Prolog clauses , but the lexical preprocessing step of LMT does lexical compiling of lexical entries , converting the external storage format into the internal format used by the syntactic components. Lexical compiling is applied not only to entries obtained by direct look-up ( for words that are found directly in the lexicon ) , but also to `` derived '' entries , obtained by morphological analysis in conjunction with look-up. There are two reasons for doing lexical compiling. One is that it allows for compact , abbreviated forms in the external lexicon based on a system of defaults , whereas the compiled internal form is convenient for efficient syntactic processing. Another reason is that the lexical compiler can produce different internal forms for different applications. In fact , the internal form produced for applications of ModL involving logical forms is different from the form produced for LMT. Lexical preprocessing is done on a sentence-bysentence basis. Only the words actually occurring in an input sentence are processed. The internal form clauses produced for these words are deleted from the workspace , once the sentence is translated. Thus the parser sees only lexical clauses relevant to the words of the sentence , and in general the Prolog workspace is not overloaded by the more space-consuming internalformat clauses. Currently , the external lexicon is stored in the Prolog workspace ( there being about 1,600 entries ) , but Prolog procedures for look-up in a large lexicon of the same form stored on disk have been written -- along the lines described in McCord ( 1987 ) . Now let us look briefly at the external format. 9 A lexical entry consists of an English Word and its Analysis , represented as a Prolog unit clause Word &lt; AnalYSlS. ( Here , the predicate for the unit clause is the operator &lt; . ) A word analysis consists of subterms called analysis elements connected by operators , most commonly the operator &lt; . In the example for view above , there are four analysis elements. In general , analysis elements Computational Linguistics , Volume 15 , Number 1 , March 1989 41 Michael C. McCord Design of LMT : A Prolog-Based Machine Translation System can be English elements , transfer elements , or ( German ) word list transformations. English elements will be discussed ( briefly ) in the current section ; transfer elements will be described in the next section , and word list transformations in Section 6. English analysis elements are of three types : The above example for view has two English base analysis elements , the v ( verb ) and n ( : noun ) elements. Currently , there are 11 parts of speech allowed in base analysis elements -- v ( verb ) , modal , n ( noun ) , propn ( proper noun ) , pron ( pronoun ) , adj ( adjective ) , det ( determiner ) , prop ( preposition ) , subconj ( subordinating conjunction ) , adv ( adverb ) , and qua , l ( qualifier ) . Let us look in particular at the form of ' verb elements. The general , complete format ( without use of defaults ) for a verb element is v ( VSense , VType , SubjType , Slots ) Here , VSense is a name for a sense of the index word as a verb , VType is the semantic type of the verb ( an inherent feature ) , SubJType is the semantic type requirement on the ( logical ) subject , and Slots is the slot list. An example to look at , before seeing more details , is the following simplified v element for the verb `` give '' : v ( give 1 , action , human , obj : concrete.iobJ : animate ) . The semantic type VType of the verb can in general be any conjunction of simple types ( represented normally by atoms ) . The type requirement SubjType on the subject can be an arbitrary Boolean combination of simple types. The slot list Slots is a list ( using the dot operator ) of slot names ( the final nfl in the list is not necessary ) , where each slot name may have an associated type requirement on its filler. Like the SubjTy-pe , a type requirement for a slot can be an arbitrary Boolean combination of simple types. An abbreviation convention allows one to omit any initial sequence of the arguments of a v element. If the sense name is omitted , it will be taken to be the same as • the citation form. Omitting types is equivalent to having no typing conditions. For an intransitive verb with no typing and only one sense , the element could be simply v , with no arguments. Given a ( possibly inflected ) verb V and a v element for the base form of V , the lexical compiler translates the v element into a one or more unit clauses for the predicate verb , with argument structure verb ( V , Pred , lnfl , VSense ~r~qubJ , SlotFrame ) . Before saying what the arguments of verb are in general , we give an example for the inflected verb `` gives '' produced from the sample v element above : 42 verb ( gives , give 1 ( X : XS : XF , Y : YS : YF , Z : ZS : ZF ) , fin ( pers3 , sg , pres , * ) , give 1 , X : XS : XF &amp; isa ( XS , human ) , slot ( 0bj , op , * , Y : YS : YF &amp; isa ( YS , concrete ) ) . slot ( iobj , op , * , Z : ZS : ZF &amp; isa ( ZS , animate ) ) . nil ) . In general the arguments of verb are as follows : V is the actual verb ( possibly a derived or inflected form ) , and In£1 is an allowable inflectional feature structure. ( There are as many verb clauses as there are allowable inflectional forms forV. For example , ifV is made , then the inflection could be finite past or past participle. ) The verb sense VSense becomes the predicate of the verb sense predication Pred , described in the next paragraph. The argument XSubj is the marker for the subject. The slot list in the v element is converted into SlotFrame , consisting of slots in the fuller form slot ( S , Ob , Re , Y ) described in the preceding section. ( There can be optional and obligatory forms of the same slot. ) The verb sense predication Pred has argumentg corresponding to the markers for the verb 's complements -- its subject and its slots -- in the order given , but there is an option in the compiler : When ModL is being used to create LFL forms , these arguments will just be the logical variable components of the markers for the complements. But when ModL is used in LMT , the arguments will be the complete markers except for their semantic type tests. ( Thus the arguments are of the form Y : Sense : Syr~eas , as described in Section 2.3 ) This ready access to features of complements , by direct representation in the word sense predication , is very useful for transfer in LMT and will be illustrated in the next section. The lexical compiler handles semantic type conditions by converting them into Prolog goals involving isa. For example , for each component type T of the semantic type VType of a verb ( given in a v element ) , the unit clause isa ( VSense , T ) is added to the workspace. Thus , in the case of `` gives '' above , isa ( givel , action ) is added. Type conditions as isa clauses relating to specific word senses are handled dynamically , but relations between types such as tsa ( S , animate ) &lt; isa ( S~human ) are stored permanently. A type requirement for a verb complement ( subject or slot list member ) , being a Boolean combination of simple types T , is converted into a similar Boolean combination , Test , of goals isa ( S , T ) , where S is the sense component of the complement 's marker ; and Test is made the test component of this marker. The second kind of English analysis element ( mentioned above ) is an inflectional element. Eleven kinds of these are allowed ( McCord and Wolff 1988 ) . An example of an inflectional element is yen ( V ) , which indicates that the index word is the past participle of the verb V. This appears in become &lt; v ( predcmp ) &lt; ven ( become ) . Computational Linguistics , Volume 15 , Number 1 , March 1989 Michael C. McCord Design of LMT : A Prolog-Based Machine Translation System where become is shown as the past participle of itself. The third kind of English analysis element is the multiword element. Multiword elements ( existing in transfer also ) are used for handling idiomatic phrases in LMT. Multiword forms are allowed for all but three ( modal propn , and qual ) of the 11 parts of speech. Their names are like the base analysis element names , but with a initial m. An example of an entry with a multiverb element is the following ( simplified ) entry for `` take '' : take &lt; v ( obJ ) &lt; mv ( =.care.of , obj ) . The mv element allows a treatment of the phrase `` take care of X '' . Forms based on inflections of the index word , such as `` took care of '' , are handled automatically by the morphological system. Multiword elements have much the same format as single word elements except that sense names can not be specified , and the first argument is always a multiword pattern ( like = .care.of ) . Lexical preprocessing verifies that the pattern actually matches a sublist of the sentence before compiling the multiword element. Some kinds of idiomatic phrases are treated through the use of slots in base analysis elements. For example , there is a verb slot ptcl ( P ) that allows particles , specified by P , for the verb. The particle P might be an ordinary particle like `` up '' or `` back '' as in `` take up '' , `` take back '' , or it could be a phrasal particle , like into.consideration , for handling `` take into consideration '' . Note that `` into consideration '' does behave much like an ordinary particle , since we can say `` take X into consideration '' , as well as `` take into consideration X '' , if X is not too light a noun phrase. A base analysis element for `` take '' that allows both ordinary particles and the multiparticle `` into consideration '' is v ( obj.ptcl ( all I into.consideration ) ) . This shows that `` take '' is a verb with an object slot and a particle slot. The particle allowed could be any ordinary single-word particle ( indicated by all ) or ( indicated by I ) the multiword particle `` into consideration '' . Idiomatic phrases can also be treated by German word list transformations. These are described in Section 6. In addition to the unified LMT lexicon we have been describing , there is an auxiliary interface of ModL to the UDICT monolingual English lexicon Byrd ( 1983 , 1984 ) . This contains around 65,000 citation forms , with a morphological rule system to get derived forms of these words. The ModL lexical compiler also can convert UDICT analyses to the internal form required by the ModL grammar. The transfer component takes an English syntactic analysis tree syn ( Lab , B , Mods ) and converts it to a German tree syn ( GLab , B , GMods ) which normally has the same shape. Before discussing the transfer method in general , let us look at an example. The English sentence is `` The woman gives a book to the man '' . The syntactic analysis tree produced by ModL is : s ( fin ( pers3 , sg , pres , ind ) , glve , * , top ) np ( X : woman : * &amp; * ) detp ( X : woman : * &amp; * ) the ( P , Q ) woman ( X : woman : * ) vp ( fin ( pers3 , sg , pres , ind ) , give ) give ( X : woman : * , Y : book : * , Z : man : * ) np ( Y : book : * &amp; * ) detp ( Y : book : * * ) a ( P1 , Q1 ) book ( Y : book : * ) ppnp ( to , Z : man : * &amp; * ) np ( Z : man : * &amp; * ) detp ( Z : man : * &amp; * ) the ( P2 , Q2 ) man ( Z : man : * ) Each n0nterminal node label in the tree consists of the strong nonterminal responsible for the node together with its feature arguments ( as indicated in Section 2. I ) . The feature arguments for the np nodes are just the markers for these noun phrases. For the sake of simplicity in the display of this tree , the syntactic feature structures and semantic tests of np markers are just shown as stars. The terminals in the syntactic analysis tree are actually logical terminals , but we do not display the operator components , since these are not relevant for LMT. Also , we do not display the node labels for noun compounds ( nc ) and verb compounds ( vc ) unless these compounds have more than one element. To get a good idea of the working of the transfer algorithm , let us look at the transfer of the verb `` give '' in this example , and the effect it has on the rest of the transfer. The terminal in the above tree involving give is a verb sense predication of the form described in the preceding section as the second argument of verb. The most relevant thing to notice in the syntax tree is that the variables X , Y , and Z in the give predication are unified with the logical variables in markers of the corresponding complements of gi~re. Transfer of the give form simultaneously chooses the German target verb and marks features on its ( German ) complements by binding X , Y , and Z to the proper German cases. The internal form of the transfer element in the lexical entry for `` give '' might look like the following unit clause.10 gverb ( give ( nom : * , acc : * , dat : * ) , geb ) . In transfer , the first argument of gvorb is matched against the give form in the tree , and we get bindings X = nora , Y = ace , and Z = dat , which determine the cases of the complements. In general , logical variables associated with complements are used to control features on the transfers of those complements. The transfer tree is as follows : Computational Linguistics , Volume 15 , Number 1 , March 1989 43 Michael C. McCord Design of LMT : A Prolog-Based Machine Translation System vp ( ind : slin ( pers3 , sg , pres , ind ) : Xl , nil ) np ( n ( on ) , nom , sg : pers3-sg-f~2 ) det ( nom , pers3-sg-f~2 ) d + det ( nom , pers3-sg-f~X2 ) frau/1 + nc ( n ( cn ) , nom , pers3-sg-f~X2 ) vp ( ind : vp ; fin ( pers3 , sg , pres , ind ) : Xl , nil ) get ) + vc ( ind : vp ; fln ( pers3-sg-f~pres , ind ) : Xljail ) np ( n ( on ) , aco , sg : pers3-sg-nt~X3 ) det ( acc , pers3-sg-nt~X3 ) ein + det ( acc , pers3-sg-nt~X3 ) buch/h + nc ( n ( cn ) , acc , per~33-sg-nt~X3 ) ppnp ( vp ( inchvp ; fln ( pers3 , sg , pres , ind ) : Xl jall ) , dat ) np ( n ( cn ) , dat , sg : pers3-sg-m $ C4 ) det ( dat , pers3-sg-m~4 ) d + det ( dat , pers3-sg-rn~X4 ) mann/h + nc ( n ( cn ) , dat , pers3-sg-m , X4 ) The three noun phrases in this tree have , the correct case markings as a result of the above verb transfer , so that we will eventually get die Frau , ein Buch , and dem Mann. ~ A transformation ( to be discussed below ) moves the dative noun phrase , and the eventual translation ( after inflection ) is Die Frau gibt dem Mann ein Buch. The top-level procedure , transfer , of the transfer component works in a simple , recursive way , and is called in the form transfer ( Syn , MLab , GSyn ) where MLab is the German node label on the mother of the node 8yn being transferred. ( In the top-level call , MLab is equal to the symbol top. ) The definition of transfer , somewhat simplified , is : transfer ( syn ( ELab , B , EMods ) , MLab , syn ( GLab , B , GMods ) ) ~-tranlabel ( ELab , MLab , GLab ) &amp; tranlist ( EMods , GLab , GMods ) . transfer ( 0p-EPred , MLab , GWord + GLab ) ~tranword ( EPred , MLab , GWord , GLab ) . tranlist ( EMod.EMods , MLab , GMod.GMods ) ~-transfer ( EMod , MLab , GMod ) &amp; tranlist ( EMods , MLab , GMods ) . tranlist ( nil , * , nil ) . Thus , transfer translates a syn structure ( a nonterminal node of a tree ) by translating the node label ( by a call to tranlabel ) and then recursively translating the daughter nodes. Terminal nodes ( words ) are translated by a call to tranword. Note that transfer does the transfer in a simple top-down , left-to-right way. The German feature structures ( showing case markings , for instance ) that get assigned to nodes in the left-to-right processing are often partially instantiated , and do not get fully instantiated until controlling words are encountered further to the right. For example , the German feature structure assigned to the subject noun phrase in the above example does not get the case field assigned until the verb is processed. The use of logical variables and unification makes this easier. The clauses for tranlabel ( which transfers node labels ) are mainly unit clauses. The basic problem is to 44 transfer an English feature structure to a German fealure structure , allowing for differences in a suitable way. For example , the number of an English noun phrase is often the same as the number of the corresponding German noun phrase , but not always. The main tranlabel clause that transfers a noun phrase label is : tran\ ] abel ( np ( Case : Sense : nf ( NType , Num , * , * ) &amp; * ) , MLab , np ( NType , Case , Num~dj Decl ) ) . The first component , NType , of the German np feature structure ( and the first component of the nf ( `` np features '' ) syntactic feature structure for the English noun phrase ) is the nominal type , which encodes categorization of the head nominal. Nominal subcategories include common nouns , pronouns , proper nouns , and adjectives. Adjectives are further subcategorized as verbal ( verb participles ) and nonverbal , and the comparison feature ( positive , comparative , superlative ) for adjectives is also shown in NType. The second component , Case , of the German np structure is unified with the first component of the English marker. As indicated above , this gets unified with an actual German case by application of a verb transfer rule. The third component , Num , of the German np structure encodes number , person , and gender of the German noun phrase. The tranlabel rule above unifies Num with a component of the English nf structure ; but , as we will see below , Num is of such a form that 1. its occurrence in the English analysis is independent of German , and 2. the actual number of the German noun phrase can come out different from that of the English. The last component has to do with adjective declensions ( strong vs. weak ) . This is discussed in McCord and Wolff ( 1988 ) . The German feature structure for a noun compound ( nc ) ( including a simple head noun ) has a similar form to an np structure. How is the Num field used to treat differences in number between English and German ? This is actually a compound term of the form ANum : CStruet , where ANum is the actual number ( sg or 91 ) of the English noun phrase ( which may be a coordinated noun phrase ) , and CStruet is a term that reflects the coordination structure. For example , for the noun phrase `` the man and the woman '' , the number structure is ph ( Nl &amp; N2 ) , where the subphrase `` the man '' has number structure sg : N1 and `` the woman '' has number structure sg : N2. Before transfer , the second components of the number structures of simple noun phrases are just variables , but during transfer these get bound by tranword to structures of the form Pers-Num-Gen showing person , number and gender Of the German translations. The person and gender of the simple German noun phrase come directly from the lexical transfer entry for the head noun. The question is how the number of the Computational Linguistics , Volume 15 , Number 1 , March 1989 Michael C. McCord Design of LMT : A Prolog-Based Machine Translation System German noun phrase ( possibly coordinated ) is determined. For a simple noun phrase , the default is to unify the German number with the English number , but transfer entries can override this , as in the case of scissors/Schere. Given this determination of the German numbers of the simple np components of a coordinated rip , the German number of the whole can be determined from the second component of the number field. In the case of coordination with and/und , the result will simply be plural in German ( as in English ) . For coordination with or/oder , though , German is different from English. In English , the number of the disjunction is the same as that of its last component , whereas in German the disjunction is plural if and only if at least one of its components is plural. Thus , for the noun phrase `` the men or the woman '' , the English number structure is sg : ( NllN2 ) , where the number of `` the men '' is phN1 , and the number of `` the woman '' is sg : N2. After transfer , this structure for the translation die Maenner oder die Frau becomes sg : ( pers3-pl-mlpers3-sg-f ) . The second component of this determines a final number of pl for the translation. On the other hand , the English noun phrase `` the knife or the scissors '' is plural , but the translation , das Messer oder die Schere , has number structure ph ( *-sg-*l*-sg-* ) and so is singular. In the sample transfer tree above , one can see other examples of the transfer of feature structures , for which tranlabel is responsible. In the vp feature structures , the second component is of the form Infl : Inf11 , where Infl is the English inflection and Infll is to be the final German inflection. The default is for Inf11 to become equal to In.f1 , but this does not always happen. The English inflection might be overridden by a transformation. For example , LMT translates `` The man wants the woman to buy a car '' into Der Mann will , da\ [ 3 die Frau einen Wagen kauft. The infinitive v'p complement of `` wants '' is transferred to an infinitive German vp , but this and its sister np subject are transformed into a finite clause complement of `` will '' . The transformation mentioned in the previous paragraph ( needed for transforming an np + infinitive-v-p structure to a finite clause ) is triggered by the lexical transfer element for the controlling verb `` want '' . Specifically , the trigger ( or rule switch ) is the German `` case '' corresponding to the last ( vp ) complement of `` want '' . Any case assigned to a v-p complement is unified by tranlabel with the last field of the German vp feature structure ( see the sample transfer tree above for examples of such vp structures ) . Transformations can recognize such cases and be triggered by them. The procedure tranword ( EWord , MLab , GWord , GLab ) is the interface to the transfer portion of the lexicon. It takes a terminal EWord representing an English word sense predication dominated by a node with associated German label MLab , and assigns to these the German translation GWord and its associated feature structure GLab. ( Often GLab will be taken to be the same as MLab. ) The procedure tr~ia-~word , in looking at the label MLab , can call various more specific transfer procedures , like gverb and gnoun , associated with various parts of speech. Clauses for these are produced by the lexical compiler from transfer elements in the external lexicon. We have already seen a sample clause for gverb. Lexical transfer elements can be either of single word or muitiword form. Each type of English analysis element ( associated with a particular part of speech ) has a corresponding type of transfer element , whose name is obtained by prefixing the letter g , except that 1. proper nouns just translate to themselves , 2. modals are subsumed under gv , and 3. qualifiers are subsumed under gary. Multiword transfer forms exist for all the multiword source forms , and have names of the form ragpart-of-speech ( like ragadv ) . As in the case of English analysis elements , there is a system of abbreviations and defaults for the external forms of lexical transfer elements. Let us illustrate the situation for verbs ( in single word form ) . The full form of a gv element ( external form for gverb clauses ) is gv ( VSense , SubJ Case , CompCases , Target ) . The first argument is the verb sense. Its default is the index word. The second argument is the German case for the German complement corresponding to the English logical subject ( which is usually , but not always , the German logical subject ) . Its default is nora ( nomi- '' native ) . The third argument is the list of cases for the other complements ( given in order corresponding to the slots of the v element for the same sense of the index word and having the same number of complements ) . If this argument is omitted , the verb should be intransitive. The last argument is the German target verb. The cases appearing in the second and third arguments of gv can have associated semantic type requirements ( arbitrary Boolean combinations ) on the corresponding complements. An example illustrating this is the following external form entry for `` eat '' , used to translate `` eat '' into essen or fressen , according as the subject is human or nonhuman. eat &lt; v ( obJ ) &lt; gv ( nom : human , acc , ess ) &lt; gv ( nom : ( anlmate &amp; -human ) , acc J~ess ) . Normally , a gv element is compiled into a ( possibly conditional ) clause for gverb , where the clause head has the form ~e~ ( ~ed , T~g~ ) . Here , Prod is an English verb sense predication of the same form described for the second argument ofvorb in the preceding section. The logical variable components of the arguments of Prod are bound ( in the gvorb clause ) to the German cases appearing in the gv element Computational Linguistics , Volume 15 , Number 1 , March 1989 45 Michael C. McCord Design of LMT : A Prolog-Based Machine Translation System ( in the order given ) . Any semantic type requirements attached to these cases are converted into Prolog goals that are combinations of isa tests on the sense variable of the associated marker , and these goals are put on the condition side of the gvorb clause. For example , the gv elements for `` eat '' above are compiled into the following gverb clauses : gverb ( eat ( nom : S : * , acc : * ) , ess ) *-isa ( S , human ) . gverb ( eat ( nom : S : * , acc : * ) ; fress ) *-isa ( S , animate ) &amp; -\ ] isa ( S~uman ) . The German case symbols that can appear in transfer entries include not only the standard fbur cases ( nora , ace , dat , and gen ) , but also prepositional case symbols ( for pp complements of German verbs ) , , which are of the form pc ( Prep , Case ) . This form signifies that the specific preposition Prop appears , followed by a noun phrase with case Case. The Case component of pc can be omitted when a default case is to be used. For example , an entry for `` search ( something ) for ( something ) '' could be sesa'ch &lt; v ( obj.pobJ ( for ) ) &lt; gv ( acc.pc ( nach ) , durch + such ) . The gvorb clause compiled for this gv element is the unit clause : gverb ( search ( nom : * , acc : * , pc ( nach ) : * ) , durch+ such ) . There are also special genitive cases that allow for the variation in ein Stack des wei\ [ 3en Papiers/ein Stack wei\ [ 3es Papier ( ' 'a piece of the white paper '' / ' 'a piece of white paper '' ) . In the first phrase the complement of Stack is a real genitive , but in the second phrase the complement takes the same case as StaXek itself. One allowance that has to be made is that the subject of the English verb may not correspond to the subject of the German verb. This occurs with the translation of `` like '' into gefallen , where we can translate `` I like the car '' into Mir gefaellt der Wagen. An internal-form transfer entry for the verb `` like '' is gverb ( like ( dat : * , nom : X ) , ge + fall , * : X ) . The extra argument of gvorb is the marker ( minus test ) of the German subject. In such instances , tra~word must make sure that the German verb ( if finite ) agrees with the actual German subject. Care is taken in the trazaword rules involving gvorb to handle auxiliary verbs correctly. One problem is to get the correct case marking on the German subject and the correct inflection on the highest auxiliary , even though the English subject may not correspond to the German subject of the main verb. In particular , care with case marking must be taken in the translation of passives. In a German passive , the grammatical subject may correspond to a direct object in the active form , but it may not correspond to an indirect object ( as it may '' in English ) . Thus , LMT translates `` The car was given to the man '' into Der Wagen wurde dem Mann gegeben , but translates `` The man was given a car '' into Dem Mann wurde ein Wagen gegeben ( where ein Wagen is the grammatical subject ) . Currently , LMT translates the English passive only by the use of werden. The use of sein and active forms will be tackled eventually. In the translation of the perfect `` have '' , the haben/ sein distinction is made by feature markings on the English verb complement of '' have '' . It could be argued that this is an exception to the principle that the English grammar is written independently of the task of translation , but the distinction made by the required features is largely semantic. How does LMT treat situations in which there is not a word-for-word correspondence in translations ? Of course transformations can add , delete , or rearrange words , and examples of these will be discussed in the next section. But , in keeping with the principle of getting as much right as possible during transfer , various methods are used in transfer , too. One method is that the result arguments of lexical transfer elements can contain compound terms that represent word sequences. The most general form is Wl # W2 , which represents Wl followed by W2 ( with a separating blank ) . This form is used , for example , in cases where the verb translation is a reflexive verb. The verb `` refer to '' translates to sich beziehen auf , and the external form of its transfer element is : gv ( pc ( auf , acc ) , sich # be + zieh ) . The lexical compiler converts this to the internal form : gverb ( refer ( nom : F , pc ( auf , acc ) : * ) , refl ( * : F ) # be+zieh ) . The term refl ( X ) representing the reflexive contains the feature structure of the German subject , so that it may be realized as the correct form of the reflexive pronoun by the German morphological component. A special compound form shows up in the representation of separable prefix verbs , which are of the form Prefix : Verb. ( As exhibited above for beziehen , inseparable prefix verbs are given in the form Prefix+Verb. ) A separable prefix can become a separate word through a transformation that recognizes the special form and moves the prefix appropriately. The separable prefix verb device P : V can often be used also to specify transfers where the target is an adverb-verb combination , when the adverb behaves transformationally like a separable prefix. One could say that the translation of noun compounds involves a many-to-one correspondence , since noun compounds are given as a group of words in English , but often as a single word in German. The procedure tranlabel is responsible for marking the nc feature structure of each noun premodifier of a noun. The case feature of such a noun premodifier is marked by a special case symbol comb ( combining form ) , which signals that the noun is part of a noun compound and 46 Computational Linguistics , Volume 15 , Number 1 , March 1989 Michael C. McCord will be given a special form by the German morphological component. The most important means for handling noncompositional translation in LMT is through the use of multiword elements in the lexicon. As indicated in the preceding section , all but three of the eleven parts of speech allow multiword forms , in transfer as well as in source analysis elements. As an example , to translate `` take care of '' into sich kiimmern um , the relevant portion of the external form entry for `` take '' could be take &lt; mv ( =.care.of , obJ ) &gt; mgv ( pc ( um ) , sich # kfimmer ) .</sentence>
+				<definiendum id="0">Ansicht</definiendum>
+				<definiendum id="1">VSense</definiendum>
+				<definiendum id="2">VType</definiendum>
+				<definiendum id="3">SubJType</definiendum>
+				<definiendum id="4">Slots</definiendum>
+				<definiendum id="5">MLab</definiendum>
+				<definiendum id="6">ANum</definiendum>
+				<definiendum id="7">CStruet</definiendum>
+				<definiendum id="8">Infl</definiendum>
+				<definiendum id="9">Prod</definiendum>
+				<definiendum id="10">ein Wagen</definiendum>
+				<definiendum id="11">LMT</definiendum>
+				<definiens id="0">the test in the marker will succeed. The lexical preprocessing scheme of LMT allows convenient specification of type requirements on slot fillers ( and on other kinds of modifiers ) and type statements for word senses. Such type conditions can be given in lexical entries in a compact format that does not explicitly involve isa clauses. This will be described in the next section. Design of LMT : A Proiog-Based Machine Translation System Some MT systems have three separate lexicons , for source , transfer , and target ; but LMT has only one , unified lexicon , indexed by source language ( English ) words. The entry for a word contains monolingual English information about the word , as well as all of its transfers. A transfer element can contain monolingual German information about the target word. For example , a simple entry for the word `` view '' might be view &lt; v ( obJ ) &lt; n ( nobj ) &lt; gv ( acc , be +tracht ) &lt; gn ( gen , ansichtzf.n ) . Here , &lt; is just an operator that connects the components of the entry. The monolingual English information is on the first line , showing that view is a verb taking an object and is also a noun with a ( possible ) noun object ( appearing in postmodifier form as an of-pp complement ) . The transfer information is on the second and third lines. This shows that the translation of the verb form is the inseparable-prefix verb betrachten , where the German complement corresponding to the English object takes the accusative case. And the translation of the noun form is Ansicht , where the noun complement takes the genitive case , and</definiens>
+				<definiens id="1">a feminine noun ( f ) of declension class n. There are two advantages of the unified lexicon design : 1. Lexical look-up is more efficient since only one index system is involved , and 2. it is easier for the person creating the lexicon ( s ) to look at only one lexicon , seeing all pertinent information about a source language word and its transfers. It might be argued that it is inefficient to store monolingual target language information in transfer elements , because there is redundancy , e.g. , when two noun transfers are German compound nouns with the same head. However , the format for specifying German noun classes and other German morphological information in the LMT lexicon is very compact , so the redundancy does not involve much space or trouble. More will be said below about the specification of German morphological information. The principle that source language analysis in LMT is independent of the task of translation is not really violated by the unified lexicon , because purely English elements in lexical entries can easily be distinguished ( as will be seen from the description below )</definiens>
+				<definiens id="2">the same as the format seen by the syntactic components. Both formats are Prolog clauses , but the lexical preprocessing step of LMT does lexical compiling of lexical entries , converting the external storage format into the internal format used by the syntactic components. Lexical compiling is applied not only to entries obtained by direct look-up ( for words that are found directly in the lexicon ) , but also to `` derived '' entries , obtained by morphological analysis in conjunction with look-up. There are two reasons for doing lexical compiling. One is that it allows for compact , abbreviated forms in the external lexicon based on a system of defaults , whereas the compiled internal form is convenient for efficient syntactic processing. Another reason is that the lexical compiler can produce different internal forms for different applications. In fact , the internal form produced for applications of ModL involving logical forms is different from the form produced for LMT. Lexical preprocessing is done on a sentence-bysentence basis. Only the words actually occurring in an input sentence are processed. The internal form clauses produced for these words are deleted from the workspace , once the sentence is translated. Thus the parser sees only lexical clauses relevant to the words of the sentence , and in general the Prolog workspace is not overloaded by the more space-consuming internalformat clauses. Currently , the external lexicon is stored in the Prolog workspace ( there being about 1,600 entries ) , but Prolog procedures for look-up in a large lexicon of the same form stored on disk have been written -- along the lines described in McCord ( 1987 ) . Now let us look briefly at the external format. 9 A lexical entry consists of an English Word and its Analysis , represented as a Prolog unit clause Word &lt; AnalYSlS. ( Here , the predicate for the unit clause is the operator &lt; . ) A word analysis consists of subterms called analysis elements connected by operators , most commonly the operator &lt;</definiens>
+				<definiens id="3">A Prolog-Based Machine Translation System can be English elements , transfer elements , or ( German ) word list transformations. English elements will be discussed ( briefly ) in the current section ; transfer elements will be described in the next section , and word list transformations in Section 6. English analysis elements are of three types : The above example for view has two English base analysis elements , the v ( verb ) and n ( : noun ) elements. Currently , there are 11 parts of speech allowed in base analysis elements -- v ( verb ) , modal , n ( noun ) , propn ( proper noun ) , pron ( pronoun ) , adj ( adjective ) , det ( determiner ) , prop ( preposition ) , subconj ( subordinating conjunction ) , adv ( adverb ) , and qua , l ( qualifier ) . Let us look in particular at the form of ' verb elements. The general , complete format ( without use of defaults ) for a verb element is v ( VSense , VType , SubjType , Slots</definiens>
+				<definiens id="4">a name for a sense of the index word as a verb</definiens>
+				<definiens id="5">the semantic type of the verb ( an inherent feature ) ,</definiens>
+				<definiens id="6">the semantic type requirement on the ( logical ) subject</definiens>
+				<definiens id="7">the slot list. An example to look at , before seeing more details , is the following simplified v element for the verb `` give '' : v ( give 1 , action , human , obj : concrete.iobJ : animate ) . The semantic type VType of the verb can in general be any conjunction of simple types ( represented normally by atoms ) . The type requirement SubjType on the subject can be an arbitrary Boolean combination of simple types. The slot list Slots is a list ( using the dot operator ) of slot names ( the final nfl in the list is not necessary ) , where each slot name may have an associated type requirement on its filler. Like the SubjTy-pe , a type requirement for a slot can be an arbitrary Boolean combination of simple types. An abbreviation convention allows one to omit any initial sequence of the arguments of a v element. If the sense name is omitted , it will be taken to be the same as • the citation form. Omitting types is equivalent to having no typing conditions. For an intransitive verb with no typing and only one sense , the element could be simply v , with no arguments. Given a ( possibly inflected ) verb V and a v element for the base form of V , the lexical compiler translates the v element into a one or more unit clauses for the predicate verb , with argument structure verb ( V , Pred , lnfl , VSense ~r~qubJ , SlotFrame ) . Before saying what the arguments of verb are in general , we give an example for the inflected verb `` gives '' produced from the sample v element above : 42 verb ( gives , give 1 ( X : XS : XF , Y : YS : YF , Z : ZS : ZF ) , fin ( pers3 , sg , pres , * ) , give 1 , X : XS : XF &amp; isa ( XS , human ) , slot ( 0bj , op , * , Y : YS : YF &amp; isa ( YS , concrete ) ) . slot ( iobj , op , * , Z : ZS : ZF &amp; isa ( ZS , animate ) ) . nil ) . In general the arguments of verb are as follows : V is the actual verb ( possibly a derived or inflected form ) , and In£1 is an allowable inflectional feature structure. ( There are as many verb clauses as there are allowable inflectional forms forV. For example , ifV is made , then the inflection could be finite past or past participle. ) The verb sense VSense becomes the predicate of the verb sense predication Pred , described in the next paragraph. The argument XSubj is the marker for the subject. The slot list in the v element is converted into SlotFrame , consisting of slots in the fuller form slot ( S , Ob , Re , Y ) described in the preceding section. ( There can be optional and obligatory forms of the same slot. ) The verb sense predication Pred has argumentg corresponding to the markers for the verb 's complements -- its subject and its slots -- in the order given , but there is an option in the compiler : When ModL is being used to create LFL forms , these arguments will just be the logical variable components of the markers for the complements. But when ModL is used in LMT , the arguments will be the complete markers except for their semantic type tests. ( Thus the arguments are of the form Y : Sense : Syr~eas , as described in Section 2.3 ) This ready access to features of complements , by direct representation in the word sense predication , is very useful for transfer in LMT and will be illustrated in the next section. The lexical compiler handles semantic type conditions by converting them into Prolog goals involving isa. For example , for each component type T of the semantic type VType of a verb ( given in a v element ) , the unit clause isa ( VSense , T ) is added to the workspace. Thus , in the case of `` gives '' above , isa ( givel , action ) is added. Type conditions as isa clauses relating to specific word senses are handled dynamically , but relations between types such as tsa ( S , animate ) &lt; isa ( S~human ) are stored permanently. A type requirement for a verb complement ( subject or slot list member ) , being a Boolean combination of simple types T , is converted into a similar Boolean combination , Test , of goals isa ( S , T ) , where S is the sense component of the complement 's marker ; and Test is made the test component of this marker. The second kind of English analysis element ( mentioned above ) is an inflectional element. Eleven kinds of these are allowed ( McCord and Wolff 1988 ) . An example of an inflectional element is yen ( V ) , which indicates that the index word is the past participle of the verb V. This appears in become &lt; v ( predcmp ) &lt; ven ( become ) . Computational Linguistics</definiens>
+				<definiens id="8">A Prolog-Based Machine Translation System where become is shown as the past participle of itself. The third kind of English analysis element is the multiword element. Multiword elements ( existing in transfer also ) are used for handling idiomatic phrases in LMT. Multiword forms are allowed for all but three ( modal propn , and qual ) of the 11 parts of speech. Their names are like the base analysis element names , but with a initial m. An example of an entry with a multiverb element is the following ( simplified ) entry for `` take '' : take &lt; v ( obJ ) &lt; mv ( =.care.of , obj ) . The mv element allows a treatment of the phrase `` take care of X '' . Forms based on inflections of the index word , such as `` took care of '' , are handled automatically by the morphological system. Multiword elements have much the same format as single word elements except that sense names can not be specified</definiens>
+				<definiens id="9">a multiword pattern ( like = .care.of ) . Lexical preprocessing verifies that the pattern actually matches a sublist of the sentence before compiling the multiword element. Some kinds of idiomatic phrases are treated through the use of slots in base analysis elements. For example , there is a verb slot ptcl ( P ) that allows particles , specified by P , for the verb. The particle P might be an ordinary particle like `` up '' or `` back '' as in `` take up '' , `` take back '' , or it could be a phrasal particle</definiens>
+				<definiens id="10">a verb with an object slot and a particle slot. The particle allowed could be any ordinary single-word particle ( indicated by all ) or ( indicated by I ) the multiword particle `` into consideration ''</definiens>
+				<definiens id="11">an auxiliary interface of ModL to the UDICT monolingual English lexicon Byrd ( 1983 , 1984 ) . This contains around 65,000 citation forms , with a morphological rule system to get derived forms of these words. The ModL lexical compiler also can convert UDICT analyses to the internal form required by the ModL grammar. The transfer component takes an English syntactic analysis tree syn ( Lab , B , Mods ) and converts it to a German tree syn ( GLab , B , GMods ) which normally has the same shape. Before discussing the transfer method in general , let us look at an example. The English sentence is `` The woman gives a book to the man '' . The syntactic analysis tree produced by ModL is : s ( fin ( pers3 , sg , pres , ind ) , glve , * , top ) np ( X : woman : * &amp; * ) detp ( X : woman : * &amp; * ) the ( P , Q ) woman ( X : woman : * ) vp ( fin ( pers3 , sg , pres , ind ) , give ) give ( X : woman : * , Y : book : * , Z : man : * ) np ( Y : book : * &amp; * ) detp ( Y : book : * * ) a ( P1 , Q1 ) book ( Y : book : * ) ppnp ( to , Z : man : * &amp; * ) np ( Z : man : * &amp; * ) detp ( Z : man : * &amp; * ) the ( P2 , Q2 ) man ( Z : man : * ) Each n0nterminal node label in the tree consists of the strong nonterminal responsible for the node together with its feature arguments ( as indicated in Section 2. I ) . The feature arguments for the np nodes are just the markers for these noun phrases. For the sake of simplicity in the display of this tree , the syntactic feature structures and semantic tests of np markers are just shown as stars. The terminals in the syntactic analysis tree are actually logical terminals , but we do not display the operator components</definiens>
+				<definiens id="12">nc ) and verb compounds ( vc ) unless these compounds have more than one element. To get a good idea of the working of the transfer algorithm , let us look at the transfer of the verb `` give '' in this example , and the effect it has on the rest of the transfer. The terminal in the above tree involving give is a verb sense predication of the form described in the preceding section as the second argument of verb. The most relevant thing to notice in the syntax tree is that the variables X , Y , and Z in the give predication are unified with the logical variables in markers of the corresponding complements of gi~re. Transfer of the give form simultaneously chooses the German target verb and marks features on its ( German ) complements by binding X , Y , and Z to the proper German cases. The internal form of the transfer element in the lexical entry for `` give '' might look like the following unit clause.10 gverb ( give ( nom : * , acc : * , dat : * ) , geb ) . In transfer , the first argument of gvorb is matched against the give form in the tree</definiens>
+				<definiens id="13">determine the cases of the complements. In general , logical variables associated with complements are used to control features on the transfers of those complements. The transfer tree is as follows : Computational Linguistics</definiens>
+				<definiens id="14">A Prolog-Based Machine Translation System vp ( ind : slin ( pers3 , sg , pres , ind ) : Xl , nil ) np ( n ( on ) , nom , sg : pers3-sg-f~2 ) det ( nom , pers3-sg-f~2 ) d + det ( nom , pers3-sg-f~X2 ) frau/1 + nc ( n ( cn ) , nom , pers3-sg-f~X2 ) vp ( ind : vp ; fin ( pers3 , sg , pres , ind ) : Xl , nil ) get ) + vc ( ind : vp ; fln ( pers3-sg-f~pres , ind ) : Xljail ) np ( n ( on ) , aco , sg : pers3-sg-nt~X3 ) det ( acc , pers3-sg-nt~X3 ) ein + det ( acc , pers3-sg-nt~X3 ) buch/h + nc ( n ( cn ) , acc , per~33-sg-nt~X3 ) ppnp ( vp ( inchvp ; fln ( pers3 , sg , pres , ind ) : Xl jall ) , dat ) np ( n ( cn ) , dat , sg : pers3-sg-m $ C4 ) det ( dat , pers3-sg-m~4 ) d + det ( dat , pers3-sg-rn~X4 ) mann/h + nc ( n ( cn ) , dat , pers3-sg-m</definiens>
+				<definiens id="15">a result of the above verb transfer , so that we will eventually get die Frau , ein Buch , and dem Mann. ~ A transformation ( to be discussed below ) moves the dative noun phrase , and the eventual translation ( after inflection ) is Die Frau gibt dem Mann ein Buch. The top-level procedure , transfer , of the transfer component works in a simple , recursive way , and is called in the form transfer ( Syn , MLab , GSyn ) where MLab is the German node label on the mother of the node 8yn being transferred.</definiens>
+				<definiens id="16">equal to the symbol top. ) The definition of transfer , somewhat simplified , is : transfer ( syn ( ELab , B , EMods ) , MLab , syn ( GLab , B , GMods ) ) ~-tranlabel ( ELab , MLab , GLab ) &amp; tranlist ( EMods , GLab , GMods ) . transfer ( 0p-EPred , MLab , GWord + GLab ) ~tranword ( EPred , MLab , GWord , GLab ) . tranlist ( EMod.EMods , MLab , GMod.GMods ) ~-transfer ( EMod , MLab , GMod ) &amp; tranlist ( EMods , MLab , GMods ) . tranlist ( nil , * , nil ) . Thus , transfer translates a syn structure ( a nonterminal node of a tree ) by translating the node label ( by a call to tranlabel ) and then recursively translating the daughter nodes. Terminal nodes ( words ) are translated by a call to tranword. Note that transfer does the transfer in a simple top-down , left-to-right way. The German feature structures ( showing case markings , for instance ) that get assigned to nodes in the left-to-right processing are often partially instantiated , and do not get fully instantiated until controlling words are encountered further to the right. For example , the German feature structure assigned to the subject noun phrase in the above example does not get the case field assigned until the verb</definiens>
+				<definiens id="17">clauses for tranlabel ( which transfers node labels ) are mainly unit clauses. The basic problem is to 44 transfer an English feature structure to a German fealure structure , allowing for differences in a suitable way. For example , the number of an English noun phrase is often the same as the number of the corresponding German noun phrase , but not always. The main tranlabel clause that transfers a noun phrase label is : tran\ ] abel ( np ( Case : Sense : nf ( NType , Num , * , * ) &amp; * ) , MLab , np ( NType , Case , Num~dj Decl ) ) . The first component , NType , of the German np feature structure ( and the first component of the nf ( `` np features '' ) syntactic feature structure for the English noun phrase ) is the nominal type , which encodes categorization of the head nominal. Nominal subcategories include common nouns , pronouns , proper nouns , and adjectives. Adjectives are further subcategorized as verbal ( verb participles ) and nonverbal , and the comparison feature ( positive , comparative , superlative ) for adjectives is also shown in NType. The second component , Case , of the German np structure is unified with the first component of the English marker. As indicated above , this gets unified with an actual German case by application of a verb transfer rule. The third component , Num , of the German np structure encodes number , person</definiens>
+				<definiens id="18">of such a form that 1. its occurrence in the English analysis is independent of German , and 2. the actual number of the German noun phrase can come out different from that of the English. The last component has to do with adjective declensions ( strong vs. weak</definiens>
+				<definiens id="19">a similar form to an np structure. How is the Num field used to treat differences in number between English and German ? This is actually a compound term of the form ANum : CStruet , where</definiens>
+				<definiens id="20">the actual number ( sg or 91 ) of the English noun phrase ( which may be a coordinated noun phrase ) , and</definiens>
+				<definiens id="21">a term that reflects the coordination structure. For example , for the noun phrase `` the man and the woman '' , the number structure is ph ( Nl &amp; N2 ) , where the subphrase `` the man '' has number structure sg : N1 and `` the woman '' has number structure sg : N2. Before transfer , the second components of the number structures of simple noun phrases are just variables , but during transfer these get bound by tranword to structures of the form Pers-Num-Gen showing person , number and gender Of the German translations. The person and gender of the simple German noun phrase come directly from the lexical transfer entry for the head noun. The question is how the number of the Computational Linguistics</definiens>
+				<definiens id="22">A Prolog-Based Machine Translation System German noun phrase ( possibly coordinated ) is determined. For a simple noun phrase , the default is to unify the German number with the English number , but transfer entries can override this , as in the case of scissors/Schere. Given this determination of the German numbers of the simple np components of a coordinated rip , the German number of the whole can be determined from the second component of the number field. In the case of coordination with and/und</definiens>
+				<definiens id="23">the knife or the scissors '' is plural , but the translation , das Messer oder die Schere , has number structure ph ( *-sg-*l*-sg-* ) and so is singular. In the sample transfer tree above , one can see other examples of the transfer of feature structures</definiens>
+				<definiens id="24">the English inflection and Infll is to be the final German inflection. The default is for Inf11 to become equal to In.f1 , but this does not always happen. The English inflection might be overridden by a transformation. For example , LMT translates `` The man wants the woman to buy a car '' into Der Mann will , da\ [ 3 die Frau einen Wagen kauft. The infinitive v'p complement of `` wants '' is transferred to an infinitive German vp</definiens>
+				<definiens id="25">transformation mentioned in the previous paragraph ( needed for transforming an np + infinitive-v-p structure to a finite clause ) is triggered by the lexical transfer element for the controlling verb `` want '' . Specifically , the trigger ( or rule switch ) is the German `` case '' corresponding to the last ( vp ) complement of `` want '' . Any case assigned to a v-p complement is unified by tranlabel with the last field of the German vp feature structure ( see the sample transfer tree above for examples of such vp structures ) . Transformations can recognize such cases and be triggered by them. The procedure tranword ( EWord , MLab , GWord , GLab ) is the interface to the transfer portion of the lexicon. It takes a terminal EWord representing an English word sense predication dominated by a node with associated German label MLab , and assigns to these the German translation GWord and its associated feature structure GLab. ( Often GLab will be taken to be the same as MLab. ) The procedure tr~ia-~word , in looking at the label MLab , can call various more specific transfer procedures , like gverb and gnoun , associated with various parts of speech. Clauses for these are produced by the lexical compiler from transfer elements in the external lexicon. We have already seen a sample clause for gverb. Lexical transfer elements can be either of single word or muitiword form. Each type of English analysis element ( associated with a particular part of speech ) has a corresponding type of transfer element , whose name is obtained by prefixing the letter g , except that 1. proper nouns just translate to themselves , 2. modals are subsumed under gv , and 3. qualifiers are subsumed under gary. Multiword transfer forms exist for all the multiword source forms , and have names of the form ragpart-of-speech ( like ragadv ) . As in the case of English analysis elements , there is a system of abbreviations and defaults for the external forms of lexical transfer elements. Let us illustrate the situation for verbs ( in single word form ) . The full form of a gv element ( external form for gverb clauses</definiens>
+				<definiens id="26">the German case for the German complement corresponding to the English logical subject ( which is usually , but not always , the German logical subject ) . Its default is nora ( nomi- '' native )</definiens>
+				<definiens id="27">the list of cases for the other complements ( given in order corresponding to the slots of the v element for the same sense of the index word and having the same number of complements</definiens>
+				<definiens id="28">arbitrary Boolean combinations ) on the corresponding complements. An example illustrating this is the following external form entry for `` eat '' , used to translate `` eat '' into essen or fressen , according as the subject is human or nonhuman. eat &lt; v ( obJ ) &lt; gv ( nom : human , acc , ess ) &lt; gv ( nom : ( anlmate &amp; -human ) , acc J~ess ) . Normally , a gv element is compiled into a ( possibly conditional ) clause for gverb , where the clause head has the form ~e~ ( ~ed , T~g~ ) . Here</definiens>
+				<definiens id="29">an English verb sense predication of the same form described for the second argument ofvorb in the preceding section. The logical variable components of the arguments of Prod are bound ( in the gvorb clause ) to the German cases appearing in the gv element Computational Linguistics</definiens>
+				<definiens id="30">A Prolog-Based Machine Translation System ( in the order given ) . Any semantic type requirements attached to these cases are converted into Prolog goals that are combinations of isa tests on the sense variable of the associated marker , and these goals are put on the condition side of the gvorb clause. For example , the gv elements for `` eat '' above are compiled into the following gverb clauses : gverb ( eat ( nom : S : * , acc : * ) , ess ) *-isa ( S , human ) . gverb ( eat ( nom : S : * , acc : * ) ; fress ) *-isa ( S , animate ) &amp; -\ ] isa ( S~uman ) . The German case symbols that can appear in transfer entries include not only the standard fbur cases ( nora , ace , dat , and gen ) , but also prepositional case symbols ( for pp complements of German verbs ) , , which are of the form pc ( Prep , Case ) . This form signifies that the specific preposition Prop appears , followed by a noun phrase with case Case. The Case component of pc can be omitted when a default case is to be used. For example , an entry for `` search ( something ) for ( something ) '' could be sesa'ch &lt; v ( obj.pobJ ( for ) ) &lt; gv ( acc.pc ( nach ) , durch + such ) . The gvorb clause compiled for this gv element is the unit clause : gverb ( search ( nom : * , acc : * , pc ( nach ) : * ) , durch+ such ) . There are also special genitive cases that allow for the variation in ein Stack des wei\ [ 3en Papiers/ein Stack wei\ [ 3es Papier ( ' 'a piece of the white paper '' / ' 'a piece of white paper '' ) . In the first phrase the complement of Stack is a real genitive , but in the second phrase the complement takes the same case as StaXek itself. One allowance that has to be made is that the subject of the English verb may not correspond to the subject of the German verb. This occurs with the translation of `` like '' into gefallen , where we can translate `` I like the car '' into Mir gefaellt der Wagen. An internal-form transfer entry for the verb `` like '' is gverb ( like ( dat : * , nom : X ) , ge + fall , * : X</definiens>
+				<definiens id="31">the marker ( minus test ) of the German subject. In such instances , tra~word must make sure that the German verb ( if finite ) agrees with the actual German subject. Care is taken in the trazaword rules involving gvorb to handle auxiliary verbs correctly. One problem is to get the correct case marking on the German subject and the correct inflection on the highest auxiliary , even though the English subject may not correspond to the German subject of the main verb. In particular , care with case marking must be taken in the translation of passives. In a German passive , the grammatical subject may correspond to a direct object in the active form , but it may not correspond to an indirect object ( as it may '' in English</definiens>
+				<definiens id="32">the grammatical subject ) . Currently</definiens>
+				<definiens id="33">an exception to the principle that the English grammar is written independently of the task of translation , but the distinction made by the required features is largely semantic. How does LMT treat situations in which there is not a word-for-word correspondence in translations ? Of course transformations can add , delete , or rearrange words , and examples of these will be discussed in the next section. But , in keeping with the principle of getting as much right as possible during transfer , various methods are used in transfer , too. One method is that the result arguments of lexical transfer elements can contain compound terms that represent word sequences. The most general form is Wl # W2 , which represents Wl followed by W2 ( with a separating blank ) . This form is used , for example , in cases where the verb translation is a reflexive verb. The verb `` refer to '' translates to sich beziehen auf , and the external form of its transfer element is : gv ( pc ( auf , acc ) , sich # be + zieh ) . The lexical compiler converts this to the internal form : gverb ( refer ( nom : F , pc ( auf , acc ) : * ) , refl ( * : F ) # be+zieh ) . The term refl ( X ) representing the reflexive contains the feature structure of the German subject , so that it may be realized as the correct form of the reflexive pronoun by the German morphological component. A special compound form shows up in the representation of separable prefix verbs , which are of the form Prefix : Verb. ( As exhibited above for beziehen , inseparable prefix verbs are given in the form Prefix+Verb. ) A separable prefix can become a separate word through a transformation that recognizes the special form and moves the prefix appropriately. The separable prefix verb device P : V can often be used also to specify transfers where the target is an adverb-verb combination</definiens>
+				<definiens id="34">a group of words in English , but often as a single word in German. The procedure tranlabel is responsible for marking the nc feature structure of each noun premodifier of a noun. The case feature of such a noun premodifier is marked by a special case symbol comb ( combining form ) , which signals that the noun is part of a noun compound</definiens>
+				<definiens id="35">a special form by the German morphological component. The most important means for handling noncompositional translation in LMT is through the use of multiword elements in the lexicon. As indicated in the preceding section , all but three of the eleven parts of speech allow multiword forms , in transfer as well as in source analysis elements. As an example , to translate `` take care of '' into sich kiimmern um , the relevant portion of the external form entry for `` take '' could be take &lt; mv ( =.care.of , obJ ) &gt; mgv ( pc ( um ) , sich # kfimmer )</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>A goal for a transfer element , like gnum ( N , M ) ( which associates the English number N to the German number M ) , is added by the lexical compiler to the right-hand side of the clause compiled for the multiword transfer element , and thus it is not executed until transfer time .</sentence>
+				<definiendum id="0">M )</definiendum>
+				<definiens id="0">added by the lexical compiler to the right-hand side of the clause compiled for the multiword transfer element , and thus it is not executed until transfer time</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Similarly , B is re-expressed as B1 and BSplit .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">re-expressed as B1 and BSplit</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>\ ] Design of LMT : A Prolog-Based Machine Translation System Here , PNG is the person-number-gender structure for the noun phrase modified by the relative clause .</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiendum id="1">PNG</definiendum>
+				<definiens id="0">A Prolog-Based Machine Translation System</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>To handle this , Computational Linguistics , Volume 15 , Number 1 , March 1989 48 Michael C. McCord Design of LMT : A Proiog-Based Machine Translation System there is a transformation clauseraise , ordered before verbflmal , which raises such final clauses .</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiens id="0">A Proiog-Based Machine Translation System there is a transformation clauseraise , ordered before verbflmal , which raises such final clauses</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>It accomplishes this mainly by dispatching the problem to various procedures like gverbf ( German verb form ) 49 Michael C. McCord \ ] Design of LMT : A Proiog-Based Machine Translation System associated with different parts of speech , as determined appropriately from Feat-u .</sentence>
+				<definiendum id="0">LMT</definiendum>
+				<definiens id="0">A Proiog-Based Machine Translation System</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>But then an attempt is made to apply a word list transformation to Words , by calling a procedure gphrase ( Label , Words , Words 1 ) where Label is the ( principal functor of the ) label on the current node .</sentence>
+				<definiendum id="0">Label</definiendum>
+				<definiens id="0">the ( principal functor of the ) label on the current node</definiens>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>An S-ranked alphabet is a pair ( E , r ) consisting of a set E together with a function r : E ~ S* x S assigning a rank ( u , s ) to each symbol fin ~'~ .</sentence>
+				<definiendum id="0">S-ranked alphabet</definiendum>
+				<definiens id="0">a pair ( E , r ) consisting of a set E together with a function r : E ~ S* x S assigning a rank ( u , s ) to each symbol fin ~'~</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The rank of each variable in V S is ( e , s ) , where e is the empty string .</sentence>
+				<definiendum id="0">e</definiendum>
+				<definiens id="0">the empty string</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A unification grammar is a five-tuple G = ( S , ( ~ , r ) T , P , Z ) where S is a set of sorts , ( ~ , r ) an S-ranked alphabet , T a finite set of terminal symbols , and Z a function letter of arity e in ( ~ , r ) .</sentence>
+				<definiendum id="0">unification grammar</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiendum id="2">r</definiendum>
+				<definiens id="0">a set of sorts</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>P is a finite set of rules ; each rule has the form ( A ~ a ) , where A is a term of the ranked alphabet and a is a sequence of terms of the ranked alphabet and symbols from T. We define substitution and substitution instances of terms in the standard way ( Gallier 1986 ) .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">a finite set of rules</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>We also define instances of rules : if s is a substitution and ( A -- - &gt; B l ... B n ) is a rule , then ( s ( A ) -- - &gt; s ( B I ) ... s ( B , ) ) is an instance of the rule ( A -- ~ B1 ... B , ) .</sentence>
+				<definiendum id="0">s</definiendum>
+				<definiens id="0">a substitution and ( A -- - &gt; B l ... B n ) is a rule</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The ground grammar for G is the four-tuple ( N , T , P ' , Z ) , where N is the set of all ground terms of ( E , r ) , T is the set of terminals of G , P ' is the set of all ground instances of rules in P , and Z is the start symbol of G. If N and P ' are finite , the ground grammar is a context-free grammar .</sentence>
+				<definiendum id="0">ground grammar for G</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiendum id="2">T</definiendum>
+				<definiendum id="3">Z</definiendum>
+				<definiendum id="4">ground grammar</definiendum>
+				<definiens id="0">the four-tuple ( N , T , P '</definiens>
+				<definiens id="1">the set of all ground terms of ( E , r )</definiens>
+				<definiens id="2">the set of terminals of G , P ' is the set of all ground instances of rules in P , and</definiens>
+				<definiens id="3">a context-free grammar</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>We write x tO y or U ( x , y ) for the union of sets x and y , and also ( U i &lt; j &lt; kflj ) ) for the union of the sets flj ) for all j such that i &lt; j &lt; k. If a is the yield of a tree t , then to every occurrence of a symbol A in ~ there corresponds a leaf of t labeled with A. To every node in t there corresponds an occurrence of a substring in ~ -- -- the substring dominated by that node. Here is a lemma about trees and their yields that will be useful when we consider top-down filtering. Lemma 2.1. Suppose t is a tree with yield ~fla ' and n is the node of t corresponding to the occurrence of/3 after a in ot/3a'. Let A be the label of n. If t ' is the tree formed by deleting all descendants of n from t , the yield of t ' is aAa'. Proof : This is intuitively clear , but the careful reader may prove it by induction on the depth of t. The parser must find the set of ground terms that derive the input string and check whether the start symbol is one of them. We have taken the rules of a unification grammar as an abbreviation for the set of all their ground instances. In the same way , the parser will use sets of terms and rules containing variables as a representation for sets of ground terms and ground rules. In this section we show how various functions needed for parsing can be computed using this representation. A grammatical expression , or g-expression , is either a term of L , the special symbol nil , or a pair of g-expressions. The letters u , v , w , x , y , and z denote g-expressions , and X , Y , and Z denote sets of gexpressions. We use the usual LISP functions and predicates to describe g-expressions. \ [ x y\ ] is another notation for cons ( x , y ) . For any substitution s , s ( cons ( x , y ) ) = cons ( s ( x ) , s ( y ) ) and s ( Nil ) = Nil. A selector is a fianction from g-expressions to g-expressions formed by composition from the functions car , cdr , and identity. Thus a selector picks out a subexpression from a g-expression. A constructor is a function that maps two g-expressions to a g-expression , formed by composition firom the functions cons , car , cdr , nil , ( A x y. x ) , and ( A x y. y ) . A constructor builds a new g-expression from parts of two given g-expressions. A g-predicate is a function from g-expressions to Booleans formed by composition from the basic functions car , cdr , ( A x. x ) , consP , and null. Let ground ( X ) be the set of ground instances of gexpressions in X. Iff is a selector function , let fiX ) be the set of all fix ) such that x E X. If p is a g-predicate , let separate ( p , x ) be the set of all x E X such that p ( x ) . The following lemmas are easily established from the definition of s ( x ) for a g-expression x. Lemma 2.2. Iffis a selector function , f ( ground ( X ) ) = ground ( f ( x ) ) . Lemma 2.3. If p is a g-predicate , separate ( p , ground ( X ) ) = ground ( separate ( p , x ) ) . Lemma 2.4. Ground ( X U I '' ) = ground ( X ) U ground ( I1 ) . Lemma 2.5. Ifx is a ground term , x E ground ( X ) iffx is an instance of some y E X. Lemma 2.6. Ground ( X ) is empty iff X is empty. Proof. A nonempty set of terms must have a nonempty set of ground instances , because every variable belongs to a sort and every sort includes at least one grotmd term. These lemmas tell us that if we use sets X and Y of terms to represent the sets ground ( X ) and ground ( Y ) of grotmd terms , we can easily construct representations for ./ ( ground ( x ) ) , separate ( p , ground ( X ) ) , and ground ( X ) U ground ( Y ) . Also we can decide whether a given ground term is contained in ground ( X ) and whether ground ( X ) is empty. All these operations will be needed in the parser. The parser requires one more type of operation , defined as follows. Definition. Letf l andf 2 be selectors and g a constructor , and suppose g ( x , y ) is well defined whenever fl ( x ) andJ2 ( y ) are well defined. The symbolic product defined by j~ , f2 , and g is the function ( AX Y. { g ( x , y ) I x E X A y E Y A f , ( x ) = f2 ( Y ) } ) where X and Y range over sets of ground g-expressions. Note thatfl ( x ) = f2 ( Y ) is considered false if either side of the equation is undefined. The symbolic product matches every x in X against every y in Y. If fl ( x ) equals f2 ( Y ) , it builds a new structure from x and y using the function g. As an example , suppose X and Y are sets of pairs of ground terms , and we need to find all pairs \ [ A C\ ] such that for some B , \ [ A B\ ] is in X and \ [ B C\ ] is in Y. We can do this by finding the symbolic product withfl = cdr , f2 = car , and g = ( A x y. cons ( car ( x ) , cdr ( y ) ) ) . To see that this is correct , notice that if \ [ A B\ ] is in X and \ [ B C\ ] is in Y , then 222 Computational Linguistics , Volume 15 , Number 4 , December 1989 Andrew Haas A Parsing Algorithm for Unification Grammar f~ ( \ [ A B\ ] ) =f2 ( \ [ B C\ ] ) , so the pairg ( \ [ A B\ ] , \ [ B C\ ] ) = \ [ A C\ ] must be in the answer set. A second example : we can find the intersection of two sets of terms by using a symbolic product withfl = ( A X . X ) , f2 = ( ) t X . X ) , and g = ( A x y. x ) . If X is a set of g-expressions and n an integer , rename ( X , n ) is an alphabetic variant of X. For all X , Y , m , and n , if m # n then rename ( X , n ) and rename ( Y , m ) have no variables in common. The following theorem tells us that if we use sets of terms X and Y to represent the sets ground ( X ) and ground ( Y ) of ground terms , we can use unification to compute any symbolic product of ground ( X ) and ground ( Y ) . We assume the basic facts about unification as in Robinson ( 1965 ) . Theorem 2.1. If h is the symbolic product defined by f~ , f2 and g , and X and Y are sets of g-expressions , then h ( ground ( X ) , ground ( Y ) ) = ground ( { s ( g ( u , v ) ) lu E rename ( X,1 ) /~ v E rename ( Y,2 ) /~ s is the m.g.u , of fl ( u ) and fz ( v ) } ) Proof. The first step is to show that if Z and W share no variables ( 1 ) { g ( z , w ) I z E ground ( Z ) /k w E ground ( W ) /~ fl ( z ) = t '' 2 ( w ) } = ground ( { s ( g ( u , v ) ) I u E Z/~ v ~ W/~ s is the m.g.u , of fl ( u ) and f2 ( v ) } ) Consider any element of the right side of equation ( 1 ) . It must be a ground instance of s ( g ( u , v ) ) , where u E Z , v E W , and s is the m.g.u , offl ( u ) andfz ( v ) . Any ground instance of s ( g ( u , v ) ) can be written as s ' ( s ( g ( u , v ) ) ) , where s ' is chosen so that s ' ( s ( u ) ) and s ' ( s ( v ) ) are ground terms. Then s ' ( s ( g ( u , v ) ) ) = g ( s ' ( s ( u ) ) , s ' ( s ( v ) ) ) and fl ( s ' ( s ( u ) ) ) = s ' ( sOCl ( U ) ) ) = s ' ( s ( f2 ( v ) ) ) = f2 ( s ' ( s ( v ) ) ) . Therefore s ' ( s ( g ( u , v ) ) ) belongs to the set on the left side of equation ( 1 ) . Next consider any element of the left side of ( I ) . It must have the form g ( z , w ) , where z E ground ( Z ) , w E ground ( W ) , and fl ( z ) = fz ( w ) . Then for some u E Z and v E W , z is a ground instance of u and w is a ground instance of v. Since u and v share no variables , there is a substitution s ' such that s ' ( u ) = z and s ' ( v ) = w. Then s ' ( f l ( u ) ) = fl ( s ' ( u ) ) = f2 ( s ' ( v ) ) = s'0C2 ( V ) ) , SO there exists a most general unifier s forfl ( u ) andfz ( v ) , and s ' is the composition of s and some substitution s '' . Then g ( z , w ) = g ( s ( s ( u ) ) s ( s ( v ) ) ) = s ( s ( g ( u , v ) ) ) , g ( z , w ) is a ground term because z and w are ground terms , so g ( z , w ) is a ground instance of s ( g ( u , v ) ) and therefore belongs to the set on the right side of equation ( 1 ) . We have proved that if Z and W share no variables , ( 2 ) h ( ground ( Z ) , ground ( W ) ) = ground ( { s ( g ( u , v ) ) I u E Z/~ v E W/~ s is the m.g.u , of fl ( u ) and f2 ( v ) } ) For any X and Y , rename ( X , I ) and rename ( Y,2 ) share no variables. Then we can let Z = rename ( X,1 ) and W = rename ( Y,2 ) in formula ( 2 ) . Since h ( ground ( X ) , ground ( Y ) ) = h ( ground ( rename ( X , 1 ) ) , ground ( rename ( Y,2 ) ) ) , the theorem follows by transitivity of equality. This completes the proof.Fq As an example , suppose X = { \ [ a ( F ) b ( F ) \ ] } and Y = { \ [ b ( G ) c ( G ) \ ] } . Suppose the variables F and G belong to a sort s that includes just two ground terms , m and n. We wish to compute the symbolic product of ground ( X ) and ground ( Y ) , usingfl = cdr , f2 = car , and g = ( A x y. cons ( car ( x ) , cdr ( y ) ) ) ( as in our previous example ) . ground ( X ) equals { \ [ a ( m ) b ( m ) \ ] , \ [ a ( n ) b ( n ) \ ] } and ground ( Y ) equals { \ [ b ( m ) c ( m ) \ ] , \ [ b ( n ) c ( n ) \ ] } , so the symbolic product is { \ [ a ( m ) c ( m ) \ ] , \ [ a ( n ) c ( n ) \ ] } . We will verify that the unification method gets the same result. Since X and Y share no variables , we can skip the renaming step. Let x = \ [ a ( F ) b ( F ) \ ] and y = \ [ b ( G ) c ( G ) \ ] . Thenf 1 ( x ) = b ( PO , f2 ( Y ) = b ( G ) , and the most general unifier is the substitution s that replaces F with G. Then g ( x , y ) = \ [ a ( F ) c ( G ) \ ] and s ( g ( x , y ) ) = \ [ A ( G ) C ( G ) \ ] . The set of ground instances of this g-expression is { \ [ A ( m ) C ( m ) \ ] , \ [ A ( n ) C ( n ) \ ] } , as desired. Definition. Let f be a function from sets of gexpressions to sets of g-expressions , and suppose that when X C_ X ' and Y C_ Y ' , f ( X , Y ) C_ f ( X ' , Y ' ) . Thenfis monotonic. All symbolic products are monotonic functions , as the reader can easily show from the definition of symbolic products. Indeed , every function in the parser that returns a set of g-expressions is monotonic. Our first parser does not allow rules with empty right sides , since these create complications that obscure the main ideas. Therefore , throughout this section let G be a ground grammar in which no rule has an empty side. When we say that a derives/3 we mean that ~ derives/3 in G. Thus a ~ e iff a = e. A dotted rule in G is a rule of G with the right side divided into two parts by a dot. The symbols to the left of the dot are said to be before the dot , those to the right are after the dot. DR is the set of all dotted rules in G. A dotted rule ( A -- &gt; a./3 ) derives a string if a derives that string .</sentence>
+				<definiendum id="0">g</definiendum>
+				<definiendum id="1">w )</definiendum>
+				<definiendum id="2">w )</definiendum>
+				<definiens id="0">write x tO y or U ( x , y ) for the union of sets x and y , and also ( U i &lt; j &lt; kflj ) ) for the union of the sets flj ) for all j such that i &lt; j &lt; k. If a is the yield of a tree t , then to every occurrence of a symbol A in ~ there corresponds a leaf of t labeled with A. To every node in t there corresponds an occurrence of a substring in ~ -- -- the substring dominated by that node. Here is a lemma about trees and their yields that will be useful when we consider top-down filtering. Lemma 2.1. Suppose t is a tree with yield ~fla ' and n is the node of t corresponding to the occurrence of/3 after a in ot/3a'. Let A be the label of n. If t ' is the tree formed by deleting all descendants of n from t , the yield of t ' is aAa'. Proof : This is intuitively clear , but the careful reader may prove it by induction on the depth of t. The parser must find the set of ground terms that derive the input string and check whether the start symbol is one of them. We have taken the rules of a unification grammar as an abbreviation for the set of all their ground instances. In the same way , the parser will use sets of terms and rules containing variables as a representation for sets of ground terms and ground rules. In this section we show how various functions needed for parsing can be computed using this representation. A grammatical expression , or g-expression , is either a term of L , the special symbol nil , or a pair of g-expressions. The letters u , v , w , x , y , and z denote g-expressions , and X , Y , and Z denote sets of gexpressions. We use the usual LISP functions and predicates to describe g-expressions. \ [ x y\ ] is another notation for cons ( x , y ) . For any substitution s , s ( cons ( x , y ) ) = cons ( s ( x ) , s ( y ) ) and s ( Nil ) = Nil. A selector is a fianction from g-expressions to g-expressions formed by composition from the functions car , cdr , and identity. Thus a selector picks out a subexpression from a g-expression. A constructor is a function that maps two g-expressions to a g-expression , formed by composition firom the functions cons , car , cdr , nil , ( A x y. x ) , and ( A x y. y ) . A constructor builds a new g-expression from parts of two given g-expressions. A g-predicate is a function from g-expressions to Booleans formed by composition from the basic functions car , cdr , ( A x. x ) , consP , and null. Let ground ( X ) be the set of ground instances of gexpressions in X. Iff is a selector function , let fiX ) be the set of all fix ) such that x E X. If p is a g-predicate , let separate ( p , x ) be the set of all x E X such that p ( x ) . The following lemmas are easily established from the definition of s ( x ) for a g-expression x. Lemma 2.2. Iffis a selector function , f ( ground ( X ) ) = ground ( f ( x ) ) . Lemma 2.3. If p is a g-predicate , separate ( p , ground ( X ) ) = ground ( separate ( p , x ) ) . Lemma 2.4. Ground ( X U I '' ) = ground ( X ) U ground ( I1 ) . Lemma 2.5. Ifx is a ground term , x E ground ( X ) iffx is an instance of some y E X. Lemma 2.6. Ground ( X ) is empty iff X is empty. Proof. A nonempty set of terms must have a nonempty set of ground instances , because every variable belongs to a sort and every sort includes at least one grotmd term. These lemmas tell us that if we use sets X and Y of terms to represent the sets ground ( X ) and ground ( Y ) of grotmd terms , we can easily construct representations for ./ ( ground ( x ) ) , separate ( p , ground ( X ) ) , and ground ( X ) U ground ( Y ) . Also we can decide whether a given ground term is contained in ground ( X ) and whether ground ( X ) is empty. All these operations will be needed in the parser. The parser requires one more type of operation , defined as follows. Definition. Letf l andf 2 be selectors and g a constructor , and suppose g ( x , y ) is well defined whenever fl ( x ) andJ2 ( y ) are well defined. The symbolic product defined by j~ , f2 , and</definiens>
+				<definiens id="1">the function ( AX Y. { g ( x , y ) I x E X A y E Y A f , ( x ) = f2 ( Y ) } ) where X and Y range over sets of ground g-expressions. Note thatfl ( x ) = f2 ( Y ) is considered false if either side of the equation is undefined. The symbolic product matches every x in X against every y in Y. If fl ( x ) equals f2 ( Y ) , it builds a new structure from x and y using the function g. As an example , suppose X and Y are sets of pairs of ground terms , and we need to find all pairs \ [ A C\ ] such that for some B , \ [ A B\ ] is in X and \ [ B C\ ] is in Y. We can do this by finding the symbolic product withfl = cdr , f2 = car , and g = ( A x y. cons ( car ( x ) , cdr ( y ) ) ) . To see that this is correct , notice that if \ [ A B\ ] is in X and \ [ B C\ ] is in Y , then 222 Computational Linguistics , Volume 15 , Number 4 , December 1989 Andrew Haas A Parsing Algorithm for Unification Grammar f~ ( \ [ A B\ ] ) =f2 ( \ [ B C\ ] ) , so the pairg ( \ [ A B\ ] , \ [ B C\ ] ) = \ [ A C\ ] must be in the answer set. A second example : we can find the intersection of two sets of terms by using a symbolic product withfl = ( A X . X ) , f2 = ( ) t X . X ) , and g = ( A x y. x ) . If X is a set of g-expressions and n an integer , rename ( X , n ) is an alphabetic variant of X. For all X , Y , m , and n , if m # n then rename ( X , n ) and rename ( Y , m ) have no variables in common. The following theorem tells us that if we use sets of terms X and Y to represent the sets ground ( X ) and ground ( Y ) of ground terms , we can use unification to compute any symbolic product of ground ( X ) and ground ( Y ) . We assume the basic facts about unification as in Robinson ( 1965 ) . Theorem 2.1. If h is the symbolic product defined by f~ , f2 and g , and X and Y are sets of g-expressions , then h ( ground ( X ) , ground ( Y ) ) = ground ( { s ( g ( u , v ) ) lu E rename ( X,1 ) /~ v E rename ( Y,2 ) /~ s is the m.g.u , of fl ( u ) and fz ( v ) } ) Proof. The first step is to show that if Z and W share no variables ( 1 ) { g ( z , w ) I z E ground ( Z ) /k w E ground ( W ) /~ fl ( z ) = t '' 2 ( w ) } = ground ( { s ( g ( u , v ) ) I u E Z/~ v ~ W/~ s is the m.g.u , of fl ( u ) and f2 ( v ) } ) Consider any element of the right side of equation ( 1 ) . It must be a ground instance of s ( g ( u , v ) ) , where u E Z , v E W , and s is the m.g.u , offl ( u ) andfz ( v ) . Any ground instance of s ( g ( u , v ) ) can be written as s ' ( s ( g ( u , v ) ) ) , where s ' is chosen so that s ' ( s ( u ) ) and s ' ( s ( v ) ) are ground terms. Then s ' ( s ( g ( u , v ) ) ) = g ( s ' ( s ( u ) ) , s ' ( s ( v ) ) ) and fl ( s ' ( s ( u ) ) ) = s ' ( sOCl ( U ) ) ) = s ' ( s ( f2 ( v ) ) ) = f2 ( s ' ( s ( v ) ) ) . Therefore s ' ( s ( g ( u , v ) ) ) belongs to the set on the left side of equation ( 1 ) . Next consider any element of the left side of ( I ) . It must have the form g ( z , w ) , where z E ground ( Z ) , w E ground ( W ) , and fl ( z ) = fz ( w ) . Then for some u E Z and v E W , z is a ground instance of u and w is a ground instance of v. Since u and v share no variables , there is a substitution s ' such that s ' ( u ) = z and s ' ( v ) = w. Then s ' ( f l ( u ) ) = fl ( s ' ( u ) ) = f2 ( s ' ( v ) ) = s'0C2 ( V ) ) , SO there exists a most general unifier s forfl ( u ) andfz ( v ) , and s ' is the composition of s and some substitution s '' . Then g ( z , w ) = g ( s ( s ( u ) ) s ( s ( v ) ) ) = s ( s ( g ( u , v ) ) ) , g ( z ,</definiens>
+				<definiens id="2">a ground term because z and w are ground terms</definiens>
+				<definiens id="3">a ground instance of s ( g ( u , v ) ) and therefore belongs to the set on the right side of equation ( 1 ) . We have proved that if Z and W share no variables , ( 2 ) h ( ground ( Z ) , ground ( W ) ) = ground ( { s ( g ( u , v ) ) I u E Z/~ v E W/~ s is the m.g.u , of fl ( u ) and f2 ( v ) } ) For any X and Y , rename ( X , I ) and rename ( Y,2 ) share no variables. Then we can let Z = rename ( X,1 ) and W = rename ( Y,2 ) in formula ( 2 ) . Since h ( ground ( X ) , ground ( Y ) ) = h ( ground ( rename ( X , 1 ) ) , ground ( rename ( Y,2 ) ) ) , the theorem follows by transitivity of equality. This completes the proof.Fq As an example , suppose X = { \ [ a ( F ) b ( F ) \ ] } and Y = { \ [ b ( G ) c ( G ) \ ] } . Suppose the variables F and G belong to a sort s that includes just two ground terms , m and n. We wish to compute the symbolic product of ground ( X ) and ground ( Y ) , usingfl = cdr , f2 = car , and g = ( A x y. cons ( car ( x ) , cdr ( y ) ) ) ( as in our previous example ) . ground ( X ) equals { \ [ a ( m ) b ( m ) \ ] , \ [ a ( n ) b ( n ) \ ] } and ground ( Y ) equals { \ [ b ( m ) c ( m ) \ ] , \ [ b ( n ) c ( n ) \ ] } , so the symbolic product is { \ [ a ( m ) c ( m ) \ ] , \ [ a ( n ) c ( n ) \ ] } . We will verify that the unification method gets the same result. Since X and Y share no variables , we can skip the renaming step. Let x = \ [ a ( F ) b ( F ) \ ] and y = \ [ b ( G ) c ( G ) \ ] . Thenf 1 ( x ) = b ( PO , f2 ( Y ) = b ( G ) , and the most general unifier is the substitution s that replaces F with G. Then g ( x , y ) = \ [ a ( F ) c ( G ) \ ] and s ( g ( x , y ) ) = \ [ A ( G ) C ( G ) \ ] . The set of ground instances of this g-expression is { \ [ A ( m ) C ( m ) \ ] , \ [ A ( n ) C ( n ) \ ] } , as desired. Definition. Let f be a function from sets of gexpressions to sets of g-expressions , and suppose that when X C_ X ' and Y C_ Y ' , f ( X , Y ) C_ f ( X ' , Y ' ) . Thenfis monotonic. All symbolic products are monotonic functions , as the reader can easily show from the definition of symbolic products. Indeed , every function in the parser that returns a set of g-expressions is monotonic. Our first parser does not allow rules with empty right sides , since these create complications that obscure the main ideas. Therefore , throughout this section let G be a ground grammar in which no rule has an empty side. When we say that a derives/3 we mean that ~ derives/3 in G. Thus a ~ e iff a = e. A dotted rule in G is a rule of G with the right side divided into two parts by a dot. The symbols to the left of the dot are said to be before the dot , those to the right are after the dot. DR is the set of all dotted rules in G. A dotted rule ( A -- &gt; a./3 ) derives a string if a derives that string</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>We represent the rule ( A -- ~ B C ) as the list ( A B C ) , and the dotted rule ( A -- &gt; B.C ) as the pair \ [ ( A B C ) ( C ) \ ] .</sentence>
+				<definiendum id="0">B C</definiendum>
+				<definiendum id="1">dotted rule</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>We write A ~ B if A derives B by a tree with more than one node .</sentence>
+				<definiendum id="0">~ B</definiendum>
+				<definiens id="0">if A derives B by a tree with more than one node</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The parser relies on a chain table -- a table of all pairs \ [ A B\ ] such that A : ~ , B. Let C O be the set of all \ [ A B\ ] such that A ~ B by a derivation tree of depth d. Clearly C1 is the set of all \ [ A B\ ] such that ( A B ) is a rule of G. If S l and $ 2 are sets of pairs of terms , define link ( S~ , S 2 ) = { \ [ A C\ ] \ [ ( 3 B. \ [ A B\ ] E $ 1/~ \ [ B C\ ] E $ 2 ) } The function link is equal to the symbolic product defined by fl = cdr , f2 = car , and g = ( h x y .</sentence>
+				<definiendum id="0">parser</definiendum>
+				<definiens id="0">relies on a chain table -- a table of all pairs \ [ A B\ ] such that A : ~ , B. Let C O be the set of all \ [ A B\ ] such that A ~ B by a derivation tree of depth d. Clearly C1 is the set of all \ [ A B\ ] such that ( A B ) is a rule of G. If S l and $ 2 are sets of pairs of terms , define link ( S~ , S 2 ) = { \ [ A C\ ] \ [ ( 3 B. \ [ A B\ ] E $ 1/~ \ [ B C\ ] E $ 2</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>ChainTable is the set of all \ [ A B\ ] such that A ~ B. If S is a set of dotted pairs of symbols and S ' a set of symbols , ChainUp ( S , S ' ) is the set of symbols A such that \ [ A B\ ] ~ S for some B ~ S ' .</sentence>
+				<definiendum id="0">ChainTable</definiendum>
+				<definiens id="0">a set of dotted pairs of symbols and S ' a set of symbols</definiens>
+				<definiens id="1">the set of symbols A such that \ [ A B\ ] ~ S for some B ~ S '</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>By the definition of ChainTable , close ( S ) is the set of symbols that derive a symbol of S. In the example grammar , ChainTable is the union of Cl , C2 , and C3 -- that is , the set { \ [ a b\ ] , \ [ b c\ ] , \ [ c d\ ] , \ [ a c\ ] , \ [ b d\ ] , \ [ a d\ ] } .</sentence>
+				<definiendum id="0">ChainTable</definiendum>
+				<definiens id="0">the union of Cl</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>If S is a set of dotted rules and S ' a set of symbols , AdvanceDot ( S , S ' ) is the set of rules ( A aB .</sentence>
+				<definiendum id="0">AdvanceDot</definiendum>
+				<definiendum id="1">S ' )</definiendum>
+				<definiendum id="2">rules</definiendum>
+				<definiens id="0">the set of</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Clearly AdvanceDot is a symbolic product .</sentence>
+				<definiendum id="0">AdvanceDot</definiendum>
+				<definiens id="0">a symbolic product</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>a ) such that ( A ~ a ) is a rule of G. If S is a set of symbols , NewRules ( S ) is AdvanceDot ( RuleTable , S ) .</sentence>
+				<definiendum id="0">NewRules ( S )</definiendum>
+				<definiens id="0">a set of symbols</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>For 0 &lt; i &lt; k - &lt; L , define dr ( i , k ) = if i+ 1 =k then NewRules ( close ( { a\ [ i i + 1\ ] } ) ) U AdvanceDot ( dr ( ij ) , else ( let rules 1 = i &lt; j &lt; k \ [ finished ( dr ( j , k ) ) U terminals ( j , k ) \ ] ) ( let rules 2 = NewRules ( close ( finished ( rules0 ) ) ruleSl U rules2 ) ) Theorem 3.1. For 0 &lt; i &lt; k &lt; L , dr ( i , k ) is the set of dotted rules that derive a\ [ i k\ ] . Proof. By induction on the length of a\ [ i k\ ] . If the length is 1 , then i + 1 = k. The algorithm returns NewRules ( close ( { a\ [ i i + 1\ ] } ) ) . close ( { a\ [ i i + 1\ ] } ) is the set of symbols that derive a\ [ i i + 1\ ] ( by the definition of ChainTable ) , and NewRules ( close ( { a\ [ i i + 1\ ] } ) ) is the set of dotted rules that derive a\ [ i i + 1\ ] with one symbol before the dot ( by lemma 3.3 ) . No rule can derive a\ [ i i + 1\ ] with many symbols before the dot , because a\ [ i i + 1\ ] has only one symbol. Then NewRules ( close ( { a\ [ i k\ ] } ) ) is the set of all dotted rules that derive a\ [ i k\ ] . Suppose a\ [ i k\ ] has a length greater than 1. If i &lt; j &lt; k , dr ( Q ) contains the dotted rules that derive a\ [ i j\ ] and dr ( j , k ) contains the dotted rules that derive o~\ [ j k\ ] , by induction hypothesis. Then finished ( drfj , k ) ) is the set of nonterminals that derive a\ [ j k\ ] , and terminals ( j , k ) is the set of terminals that derive a\ [ j k\ ] , so the union of these two sets is the set of all symbols that derive a\ [ j k\ ] . By lemma 3.1 , rules~ is the set of dotted rules that derive a\ [ i k\ ] with many symbols before the dot. By lemma 3.2 , close ( finished ( rules1 ) ) is the set of symbols that derive a\ [ i k\ ] , so by lemma 3.3 rules2 is the set of dotted rules that derive a\ [ i k\ ] with one symbol before the dot. The union of rulesl and rules2 is the set of dotted rules that derive a\ [ i k\ ] , and this completes the proof.\ [ \ ] Suppose we are parsing the string gh with our example grammar. We have dr ( O , 1 ) = { ( k -- - &gt; g . )</sentence>
+				<definiendum id="0">U AdvanceDot</definiendum>
+				<definiendum id="1">L , dr</definiendum>
+				<definiendum id="2">rules2</definiendum>
+				<definiens id="0">the set of symbols that derive a\ [ i k\ ] , so by lemma 3.3 rules2 is the set of dotted rules that derive a\ [ i k\ ] with one symbol before the dot. The union of rulesl and</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>, ( c -- - &gt; d. ) , ( b ~ c. ) , ( a -- -- &gt; b. ) } Throughout this section , G is an arbitrary depthbounded unification grammar , which may contain rules whose right side is empty .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiens id="0">an arbitrary depthbounded unification grammar</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Clearly AdvanceDot* ( DR , S ) is the set of rules ( A -- &gt; a/3 .</sentence>
+				<definiendum id="0">S )</definiendum>
+				<definiendum id="1">rules</definiendum>
+				<definiens id="0">the set of</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>y ) such that ( A -- &gt; a. /33 ' ) E DR and every symbol of/3 is in S. Let S 1 = $ 2 = $ 3= AdvanceDot* ( RuleTable , E 'd ) AdvanceDot ( S l , E 'd ) AdvanceDot* ( S2 , E'o ) S 4 = finished ( S3 ) S~ is the set of dotted rules ( A -- - &gt; a./30 ) such that every symbol of a is in E 'd .</sentence>
+				<definiendum id="0">S3 ) S~</definiendum>
+			</definition>
+			<definition id="19">
+				<sentence>If S is a set of dotted rules , let SkipEmpty ( S ) be AdvanceDot* ( S , EmptyTable ) .</sentence>
+				<definiendum id="0">SkipEmpty</definiendum>
+				<definiens id="0">a set of dotted rules</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Computational Linguistics , Volume 15 , Number 4 , December 1989 225 Andrew Haas A Parsing Algorithm for Unification Grammar Note that SkipEmpty ( S ) is the set of dotted rules ( A -- - &gt; a/3 !</sentence>
+				<definiendum id="0">S )</definiendum>
+				<definiens id="0">the set of dotted rules ( A --</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>C~ is the set of pairs \ [ A B\ ] such that ( A -- - &gt; aB/3 ) is a rule and every symbol of a and/3 derives the empty string .</sentence>
+				<definiendum id="0">C~</definiendum>
+				<definiens id="0">a rule and every symbol of a and/3 derives the empty string</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>I\ ] Our problem is to construct a finite representation for the prediction table• To see why this is difficult , consider a grammar containing the rule ( f ( a , s ( X ) ) -- ~ f ( a , X ) g ) Computing the P.s gives us the following pairs of terms : \ [ f ( a , s ( X ) ) f ( a , X ) \ ] \ [ f ( a , s ( s ( Y ) ) ) f ( a , Y ) \ ] \ [ f ( a , s ( s ( s ( Z ) ) ) ) f ( a , Z ) \ ] Thus if we try to build the prediction table in the obvious way , we get an infinite set of pairs of terms .</sentence>
+				<definiendum id="0">Y ) ) ) f</definiendum>
+				<definiens id="0">s ( s ( Z ) ) ) ) f ( a</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>Then by lemma 2.3 and induction , i~lPi c_ ground ( i &gt; _to l ai ) That is , the union of the Qi s represents a weak prediction table• Thus we have shown that if a weak prediction table is adequate , we are free to choose any Q1 such that Pt c ground ( Q 0 .</sentence>
+				<definiendum id="0">Qi s</definiendum>
+				<definiens id="0">represents a weak prediction table•</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>Since ground ( Q i ÷ 1 ) is a function of ground ( Qi ) for all i , it follows that ground ( Qi ) = ground ( Qo ) for all i - &gt; D , so ground ( QD ) = ( tO i &gt; -1 ground ( Qi ) ) • That is , QD is a finite representation of a weak prediction table .</sentence>
+				<definiendum id="0">QD</definiendum>
+				<definiens id="0">a function of ground ( Qi ) for all i , it follows that ground ( Qi ) = ground ( Qo ) for all i - &gt; D , so ground ( QD ) = ( tO i &gt; -1 ground ( Qi ) ) • That is ,</definiens>
+				<definiens id="1">a finite representation of a weak prediction table</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>transform ( tn ) ) whei-e new-variable is a function that returns a new variable each time it is called .</sentence>
+				<definiendum id="0">transform ( tn ) ) whei-e new-variable</definiendum>
+				<definiens id="0">a function that returns a new variable each time it is called</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Then P1 C_ ground ( Ql ) , and Q1 contains no function letters of cyclic sorts .</sentence>
+				<definiendum id="0">Ql</definiendum>
+				<definiendum id="1">Q1</definiendum>
+				<definiens id="0">contains no function letters of cyclic sorts</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>For example , if the function letter s belongs to a cyclic sort , we will turn \ [ f ( a , s ( s ( X ) ) ) f ( a , X ) \ ] into \ [ f ( a , Z ) f ( a , Y ) \ ] If Ql = { \ [ f ( a , Z ) f ( a , Y ) \ ] } , then Q2 = { \ [ f ( a , V ) J ( a , W ) \ ] , so Qi subsumes Q2 , and Q1 is already a finite representation of a weak prediction table .</sentence>
+				<definiendum id="0">Z ) f</definiendum>
+				<definiendum id="1">Q1</definiendum>
+				<definiens id="0">a , W ) \ ] , so Qi subsumes Q2 , and</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>If PredTable is indeed a complete prediction table , first ( S ) is the set of symbols B such that some symbol in S can begin with B. IfR is a set of dotted rules let next ( R ) = { B \ ] ( 3 A , /3 , /3 ' .</sentence>
+				<definiendum id="0">S )</definiendum>
+				<definiendum id="1">IfR</definiendum>
+				<definiens id="0">the set of symbols B such that some symbol in S can begin with B.</definiens>
+				<definiens id="1">a set of dotted rules let next ( R ) = { B \ ] ( 3 A , /3 , /3 '</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>C is the label of the father of n , and /3 consists of the labels of the younger brothers of n in order .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the label of the father of n , and /3 consists of the labels of the younger brothers of n in order</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>Therefore C follows a\ [ 0 i\ ] .</sentence>
+				<definiendum id="0">Therefore C</definiendum>
+			</definition>
+			<definition id="31">
+				<sentence>/32 ) E DR I B follows a\ [ 0 i\ ] /k ( a j. i &lt; j &lt; k/k/3 ~ a\ [ i j\ ] /k A ~ a\ [ i k\ ] ) } ) This in turn is equal to { ( B ~ flA/3'.fl3 ) E DR \ ] B follows a\ [ O i\ ] A ( 3 j. i &lt; j &lt; k A/3 ~ a\ [ ij\ ] A A ~ a\ [ j k\ ] ) A/3 ' ~e } This is the set of dotted rules that follow a\ [ 0 i\ ] and derive a\ [ i k\ ] using many symbols.D Lemma 5.5. Suppose length ( a\ [ ij\ ] ) &gt; 1 , S is the set of symbols that follow a\ [ 0 i\ ] , and S ' is the set of dotted rules that follow a\ [ 0 i\ ] and derive a\ [ i j\ ] using many symbols .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiens id="0">using many symbols.D Lemma 5.5. Suppose length ( a\ [ ij\ ] ) &gt; 1 ,</definiens>
+				<definiens id="1">the set of symbols that follow a\ [ 0 i\ ] , and</definiens>
+			</definition>
+			<definition id="32">
+				<sentence>Recall the context-free backbone of a grammar , described in the Introduction .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">the context-free backbone of a grammar , described in the Introduction</definiens>
+			</definition>
+			<definition id="33">
+				<sentence>First , the time to retrieve a substitution is O ( log n ) , where n is the length of the derivation , compared to O ( n ) for Boyer-Moore .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of the derivation</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Syntactic processing , which analyzes the syntactic relations among constituents , is widely used to determine the surface structure of a sentence , because it is effective to show the functional relations between constituents and is based on well-developed linguistic theory .</sentence>
+				<definiendum id="0">Syntactic processing</definiendum>
+				<definiens id="0">analyzes the syntactic relations among constituents , is widely used to determine the surface structure of a sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Triples , each of which consists of two nodes and an arc name , are generated while parsing a sentence .</sentence>
+				<definiendum id="0">Triples</definiendum>
+				<definiens id="0">consists of two nodes and an arc name</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In this notation , the head of any phrase is termed X , the phrasal category containing X is termed_X , and the phrasal category containing X is termed X. For example , the head of a noun__phrase is N ( noun ) , N is an intermediate category , and N corresponds to noun phrase ( NP ) .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">an intermediate category , and N corresponds to noun phrase</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Yis the phrase that specifies X , and Z is the phrase that modifies X. 7 The properties of the head word of a phrase are projected onto the properties of the phrase .</sentence>
+				<definiendum id="0">Z</definiendum>
+				<definiens id="0">the phrase that modifies X. 7 The properties of the head word of a phrase are projected onto the properties of the phrase</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Since , in X theory , a syntactic phrase consists of the head of the phrase and the specifiers and modifiers of the head , if there are more than two constituents in the right-hand side of a grammar rule , then there are dominator-modifier ( DM ) relationships between the head word and the specifier or modifier words in the Computational Linguistics , Volume 15 , Number 1 , March 1989 phrase .</sentence>
+				<definiendum id="0">syntactic phrase</definiendum>
+				<definiens id="0">consists of the head of the phrase and the specifiers and modifiers of the head , if there are more than two constituents in the right-hand side of a grammar rule</definiens>
+				<definiens id="1">the head word and the specifier or modifier words in the Computational Linguistics</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The triples corresponding to some common grammar rules are as follows : Each ni represents the position , each Ri represents the root form , and each Li represents a list of the lexical information including the syntactic category of each word in a sentence .</sentence>
+				<definiendum id="0">Ri</definiendum>
+				<definiens id="0">the root form</definiens>
+				<definiens id="1">a list of the lexical information including the syntactic category of each word in a sentence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Definition 4 : The position of a node is the position of the word which is represented by the node , in a sentence .</sentence>
+				<definiendum id="0">position of a node</definiendum>
+				<definiens id="0">the position of the word which is represented by the node , in a sentence</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>More formally , if an arc has n t -th and n'-th words as a head and a modifier , and another arc has m I -th and m e -th words as a head and a modifier node , then , if nl &lt; mz &lt; n2 &lt; m 2 or ml &lt; nt &lt; m2 &lt; n 2 , the two arcs can not co-occur. I N I N Conj ... ... ... ... ... ... ... ... ... ... ... `` 1 \ [ 3 , W3 , prep\ ] \ [ 5 , Wl , nl 19 , W2 , conjl Figure 7 II\ ] ega| Parse Tree from Exclusive Arcs. In the syntactic graph in Figure 1 , the arcs vpp from \ [ 1 , see , v\ ] to \ [ 4 , on , p\ ] and npp from \ [ 3 , ma , n , n\ ] to \ [ 7 , wita'x , p\ ] can not co-occur in any legal parse trees because they violate the rule that branches in a parse tree can not cross each other. The following property shows another case of exclusive arcs which cross each other. Property 6 : In a syntactic graph , any modifier word which is on the right side of its head word can not be modified by any word which is on the left side of the head word in a sentence. More formally , let an arc have a head word W t and a modifier word W 2 whose positions are n t and n 2 respectively , and nz &lt; n 2. Then if another arc has W 2 as a head word and a modifier word with position n~ where n3 &lt; -nl , then those two arcs can not co-occur. Assume that there are two arcs -- -one is \ [ npp , \ [ 5 , Wl , noun\ ] , \ [ 9 , W2 , eonj \ ] \ ] , and the other is \ [ eonjpp , \ [ 9 , W2 , eor~\ ] , \ [ 3 , W3 , prep\ ] \ ] . The first arc said that the phrase with head word W2 is attached to the noun in position 5. The other triple said that the phrase with head word W3 is attached to the conjunction. This attachment causes crossing branches. The corresponding parse tree for these two triples is in Figure 7. As we can see , since there is a crossing branch , these two arcs can not co-occur in any parse tree. The following property shows the symmetric case of Property 6. Property 7 : In a syntactic graph , any modifier word which is on the left side of its head word can not be modified by any word which is on the right side of the head word in a sentence. Other exclusive arcs are due to lexical ambiguity. Definition 5 : If two nodes , W i and Wj , in a syntactic graph have the same word and the same position but with different categories , W i is in conflict with Wj. , and we say the two nodes are conflicting nodes. Property 8 : Since words can not have more than one syntactic ' category in one reading , any two arcs which have conflicting nodes as either a head or a modifier can not co-occur. 26 Computational Linguistics , Volume 15 , Number 1 , March 1989 Jungyun Seo and Robert F. Simmons Syntactic Graphs : A Representation for the Union of All Ambiguous Parse Trees The example of exclusive arcs involves the vpp arc from \ [ 1 , flTC , v\ ] to \ [ 2~lce , la \ ] and the vnp arc from \ [ 0 , time , v\ ] to \ [ 1 , fly , n\ ] in the graph in Figure 6. Since the two arcs have the same word with the same position , but with different categories , they can not co-occur in any syntactic reading. By examination of Figure 6 , we can determine that there are 25 pairwise combinations of exclusive arcs in the syntactic graph of that five word sentence. The above properties show cases of exclusive arcs but are not exhaustive. Since the number of pairs of exclusive arcs is often very large in real text ( syntactically ambiguous sentences ) , if we ignore the co-occurrence information among triples , the overhead cost to the semantic processor may outweigh the advantage gained from syntactic graph representation. Therefore we have to constrain the syntactic graph representation to include co-occurrence information. We introduce the exclusion matrix for triples ( arcs ) to record constraints so that any two triples which can not co-occur in any syntactic tree , can not co-occur in any reading of a syntactic graph. The exclusion matrix provides an efficient tool to decide which triples should be discarded when higher level processes choose one among ambiguous triples. For an exclusion matrix ( Ematrix ) , we make an N x N matrix , where N is the number of indices of triples. If Ematrix ( ij ) = 1 then the triples with the indices i and j can not co-occur in any syntactic reading. If Ematrix ( ij ) = 0 then the triples with the indices i and j can co-occur in some syntactic reading. MATRIX Since the several cases of exclusive arcs shown in the previous section are not exhaustive , they are not sufficient to construct a complete exclusion matrix from a syntactic graph. A complete exclusion matrix can be guaranteed by navigating the parse forest when the syntactic processor collects the triples in the forest to construct a syntactic graph. As we have briefly described in Section 3 , when the parser constructs a shared , packed forest , triples are also produced , and their indices are kept in the corresponding nonterminal nodes in the forest. 12 The parser navigates the parse forest to collect the triples -- in fact , pointers pointing to the triples -- and to build an exclusion matrix. As we can see in the parse forest in Figure 5 , there may be several nonterminal nodes in one packed node. For each packed node , the parser collects all indices of triples in the subforests whose root nodes are the nonterminal nodes in the packed node , and then records those indices to the packed node. After the parser finishes collecting the indices of the triples in the parse forest , each packed node in the forest has a pointer to the list of collected indices from its subforest. Therefore , the root node of a parse forest has a pointer to the i e '' 'l subforest `` -El -- El i , ° , vo , vo , D rnj , , ' . ; ; ~ ' . ! ~ .~. .t i , . ' , • ' , .i • t ~ 'l s • • • t ... .. J / ... ... .. d e. ... .. `` subforest subforest subforest D : packed node ==\ ] ~ : list of all triples below this node i • triples of this node % .1~ '' =~ : pointer to the list of pointers pointing to triples Figure 8 Parse Forest Augmented with Triples. list of all indices of all possible triples in the whole forest , and those triples represent the syntactic graph of the forest. Figure 8 shows the upper part of the parse forest in Figure 5 after collecting triples. A hooked arrow of each nonterminal node points to the list of the indices of the triples that were added to the node in parsing. For example , pointer 2 contains the indices of the triples added to the node snt by the grammar rule : snt ~ np + vp A simple arrow for each packed node points to the list of all indices of the triples in the forest of which it is the root. This list is generated and recorded after the processor collects all indices of triples in its subnodes. Therefore the arrow of the root node of the whole forest , Pointer 1 , contains the list of all indices of the triples in the whole forest. Since several indices may represent the same triple , after collecting all the indices of the triples in the parse forest , the parser removes duplicating triples in the final representation of the syntactic graph of a sentence. Collecting pointers to triples in the subforest of a packed node and constructing the Ematrix is done recursively as follows : First , Ematrix ( i j ) is initialized to 1 , which means all arcs are marked exclusive of each other. Later , if any two arcs indexed with i and j Computational Linguistics , Volume 15 , Number 1 , March 1989 27 Jungyun See and Robert F. Simmons Syntactic Graphs : A Representation for the Union of All Ambiguous Parse Trees function collect_triple ( Packed_node ) if Packed node. Collected if the indices of triples are already collected then return ( Packednode. Triplelndex ) ~ collected then. return the collected indices else Packed node. TripleIndex : = eollectl ( Packed_node ) else collected them Packed node. Collected : = true ~ set flag Collected. return ? Packed_node. TriplsIndex ) ~ return collected indices. function collectl ( Packed_node ) Triple_Indices : = { } for each Node in Packed node do TRiple Indices : = me~ge ( Node.TripleIndex. Triple_Indices ) case Node.Child node num 0 ( do nothing ) Triple_Indices : = msrge ( Temp , Triple_Indices ) co-occuri ( Node.TripleIndex , Temp ) Temp2 : = collect_triple ( Node.Right_child ) Triple_Indices : = merge ( Tempi. Temp2. Triple_Indices ) co-occur2 ( Node.TripleIndex , Templ , Temp2 ) end-do return ( Triples ) function cooccurl ( Tripl. Trip2 ) fully cooccur ( Tripl ) cc-occur3 ( Tripl , Trip2 ) function cooccur2 ( Tripl , Trip2 , Trip3 ) fully_cooccur ( Tripl ) cooccur3 ( Tripl , Trip2 ) cooccur3 ( Tripl , Trip3 ) cooccur3 ( Trip2 , Trip3 ) functioncooccur3 ( Tripl , Trip2 ) for each index i in Tripl do foreach index j in Trip2 do Ematrix ( i , j ) : = 0 Ematrix ( j. i ) : = 0 /*Ematrixissymmetric*/ function fully_cooccur ( Triples ) for each pair of indices i and j in Triples do Ematrix ( i , j ) : = 0 Figure 10 An Algorithm to Construct the Exclusion Matrix. Figure 9 An Algorithm to Collect Triples. co-occur in some parse tree , then the value of Ematrix , E ( ij ) , is set to 0. For each nonterminal node in a packed node , the parser collects every index appearing below the nonterminal node -- i.e. , the index of the triples of its subnodes. If a subnode of the nonterminal node was previously visited , and its indices were already collected , then the subnode already has the pointer to the list of collected indices. Therefore the parser does not need to navigate the same subforests again , but it takes the indices using the pointer. The algorithm in pseudoPASCAL code is in Figure 9. After the parser collects the indices of the triples from the subnodes of the nonterminal node , it adjusts the values in the exclusion matrix according to the following cases : I. If the nonterminal node has one child node , its own triples can co-occur with each other , and with every collected triple from its subforest. own triples can co-occur with each other and with the triples collected from both left and right child nodes , and the triples from the left child node can co-occur with the triples from the right one. This algorithm is described in Figure I0. For example , the process starts to collect the indices of the triples from SNT node in Figure 8. Then , it collects the indices in the left subforest whose root is np. After all indices of triples in the subforest of np are collected , those indices and the indices of the triples of the node in 6 are recorded in 5. Similarly all indices in 7 and 4 are recorded in 3 as the indices of the triples in the right subforest of the snt node. The indices in 5 and 3 and the indices in 2 are recorded in I as the indices of the triples of the whole parse forest. In packed nodes with more than one nonterminal node , like vpl , all indices of the triples in the three subforests of vpl and 28 the indices in 8 , 9 , and 10 are collected and recorded in By the first case in the above rule , every triple represented by the indices in 4 can co-occur with each other , and every triple represented by the indices in 4 can co-occur with every triple represented by the indices in 7. One example of the second case is that every triple represented by the indices in 2 can co-occur with each other , and every triple represented by the indices in 2 can co-occur with every triple represented by the indices in 5 and 3. Every triple represented by the indices in 5 can co-occur with the triples represented by the indices in 3. Whenever the process finds a pair of co-occurring triples it adjusts the value of Ematrix appropriately. GRAPH In this section , we will discuss completeness and soundness of a syntactic graph with an exclusion matrix as an alternative for tree representation of syntactic information of a sentence. Definition 6 : A syntactic graph of a sentence is complete and sound compared to the parse forest of the sentence iff there is an algorithm that enumerates syntactic readings from the syntactic graph of the sentence and satisfies the following conditions : syntactic reading from the syntactic graph that is structurally equivalent to that parse tree. ( completeness ) graph , there is a parse tree in the forest that is structurally equivalent to that syntactic reading. ( soundness ) To show the completeness and soundness of the syntactic graph representation , we present the algorithm that enumerates all possible syntactic readings from a syntactic graph using an exclusion matrix. This algoComputational Linguistics , Volume 15 , Number 1 , March 1989 Jungyun Seo and Robert F. Simmons Syntactic Graphs : A Representation for the Union of All Ambiguous Parse Trees The following data are initial input. Partition I = alist of triples which have the I-thwordas amodifier. Sen_length = the position of the last word inasentence. RootList = a list of root triples. gen_subgraph ( RootList , Sen_length , Graphs , All_readings ) : ( RootList = \ [ \ ] ~ if all root triple in RootList had been tried -*All_readings = Graphs ~ then return Graphs as all readings , otherwise , find all readings with a RootTriple ; RootList = \ [ RootTripleIRootListl\ ] , gen_subgraphl ( RootTriple , Sen_length , Sub_graphs ) , append ( Graphs , Sub graphs , Graphsl ) , gen_subgraph ( RootListl , Graphsl , All_readings ) ) . gen_subgraphl ( RootTriple , Sen length , Sub_graphs ) : Rh = Position of the head node inRootTriple % i.e. , position of the root node Rm = Position of the modifier node in RootTriple , Wlist = \ [ RootTriple\ ] , setof ( Graph , gen_subl ( Rh , Rm , Sen length , Wlist , Graph , 0 ) , Sub_graphs ) . gen_subl ( Rh , Rm , Sen_length , Wlist , Graph , N ) : ( N &gt; Sen length ~ifit takeatriple from all partitions -*Graph = Wlist ~ then return Wlist as one reading of a syntactic graph , otherwise , pick one triple from partition N. ; ( ( Rh = N ~Do n't pick up any triple from root node position .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">modified by any word which is on the right side of the head word in a sentence. Other exclusive arcs are due to lexical ambiguity. Definition 5 : If two nodes</definiens>
+				<definiens id="1">introduce the exclusion matrix for triples ( arcs ) to record constraints so that any two triples which can not co-occur in any syntactic tree</definiens>
+				<definiens id="2">the number of indices of triples. If Ematrix ( ij ) = 1 then the triples with the indices i and j can not co-occur in any syntactic reading. If Ematrix ( ij ) = 0 then the triples with the indices i and j can co-occur in some syntactic reading. MATRIX Since the several cases of exclusive arcs shown in the previous section are not exhaustive , they are not sufficient to construct a complete exclusion matrix from a syntactic graph. A complete exclusion matrix can be guaranteed by navigating the parse forest when the syntactic processor collects the triples in the forest to construct a syntactic graph. As we have briefly described in Section 3 , when the parser constructs a shared , packed forest , triples are also produced , and their indices are kept in the corresponding nonterminal nodes in the forest. 12 The parser navigates the parse forest to collect the triples -- in fact , pointers pointing to the triples</definiens>
+				<definiens id="3">nonterminal nodes in one packed node. For each packed node , the parser collects all indices of triples in the subforests whose root nodes are the nonterminal nodes in the packed node , and then records those indices to the packed node. After the parser finishes collecting the indices of the triples in the parse forest</definiens>
+				<definiens id="4">contains the list of all indices of the triples in the whole forest. Since several indices may represent the same triple , after collecting all the indices of the triples in the parse forest , the parser removes duplicating triples in the final representation of the syntactic graph of a sentence. Collecting pointers to triples in the subforest of a packed node and constructing the Ematrix is done recursively as follows : First</definiens>
+				<definiens id="5">A Representation for the Union of All Ambiguous Parse Trees function collect_triple ( Packed_node ) if Packed node. Collected if the indices of triples are already collected then return ( Packednode. Triplelndex ) ~ collected then. return the collected indices else Packed node. TripleIndex : = eollectl ( Packed_node ) else collected them Packed node. Collected : = true ~ set</definiens>
+				<definiens id="6">ij ) , is set to 0. For each nonterminal node in a packed node , the parser collects every index appearing below the nonterminal node</definiens>
+				<definiens id="7">I. If the nonterminal node has one child node , its own triples can co-occur with each other , and with every collected triple from its subforest. own triples can co-occur with each other and with the triples collected from both left and right child nodes , and the triples from the left child node can co-occur with the triples from the right one. This algorithm is described in Figure I0. For example , the process starts to collect the indices of the triples from SNT node in Figure 8. Then , it collects the indices in the left subforest whose root is np. After all indices of triples in the subforest of np are collected , those indices and the indices of the triples of the node in 6 are recorded in 5. Similarly all indices in 7 and 4 are recorded in 3 as the indices of the triples in the right subforest of the snt node. The indices in 5 and 3 and the indices in 2 are recorded in I as the indices of the triples of the whole parse forest. In packed nodes with more than one nonterminal node , like vpl , all indices of the triples in the three subforests of vpl and 28 the indices in 8</definiens>
+				<definiens id="8">A Representation for the Union of All Ambiguous Parse Trees The following data are initial input. Partition I = alist of triples which have the I-thwordas amodifier. Sen_length = the position of the last word inasentence. RootList = a list of root triples. gen_subgraph ( RootList , Sen_length , Graphs , All_readings ) : ( RootList = \ [ \ ] ~ if all root triple in RootList had been tried -*All_readings</definiens>
+				<definiens id="9">position of the root node Rm = Position of the modifier node in RootTriple</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>A root triple is a triple that represents the highest level constituent in a parse -- i.e. , ant ( sentence ) in the grammar in Figure 2 .</sentence>
+				<definiendum id="0">root triple</definiendum>
+				<definiens id="0">a triple that represents the highest level constituent in a parse -- i.e. , ant ( sentence</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Marcus 's representation consists of dominator-modifier relationships between two nodes .</sentence>
+				<definiendum id="0">Marcus 's representation</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>The disambiguation process navigates a parse forest , and asks a user whenever it meets an ambiguous packed node .</sentence>
+				<definiendum id="0">disambiguation process</definiendum>
+				<definiens id="0">navigates a parse forest , and asks a user whenever it meets an ambiguous packed node</definiens>
+			</definition>
+</paper>
+
+	</volume>

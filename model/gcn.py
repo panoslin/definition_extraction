@@ -8,7 +8,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 
-from utils import constant, torch_utils
+from utils import (
+    constant,
+    torch_utils,
+)
 
 
 class GCNClassifier(nn.Module):
@@ -42,22 +45,34 @@ class GCNClassifier(nn.Module):
         logits = self.classifier(torch.cat([outputs, gcn_outputs], dim=2))
 
         pool_type = self.opt['pooling']
-        out = pool(outputs, masks.unsqueeze(2), type=pool_type)
+        out = self.pool(outputs, masks.unsqueeze(2), type=pool_type)
         out = self.out_mlp(out)
         sent_logits = self.sent_classifier(out)
 
-        terms_out = pool(F.softmax(outputs), terms.unsqueeze(2).byte(), type=pool_type)
-        defs_out = pool(F.softmax(outputs), defs.unsqueeze(2).byte(), type=pool_type)
+        terms_out = self.pool(F.softmax(outputs), terms.unsqueeze(2).byte(), type=pool_type)
+        defs_out = self.pool(F.softmax(outputs), defs.unsqueeze(2).byte(), type=pool_type)
         term_def = (terms_out * defs_out).sum(1).mean()
         not_term_def = (terms_out * defs_out[torch.randperm(terms_out.shape[0])]).sum(1).mean()
 
         selections = self.selector(gcn_outputs)
 
-        defs_out = pool(outputs, defs.unsqueeze(2).byte(), type=pool_type).repeat(1, outputs.shape[1]).view(
+        defs_out = self.pool(outputs, defs.unsqueeze(2).byte(), type=pool_type).repeat(1, outputs.shape[1]).view(
             *outputs.shape)
         term_selections = self.term_classifier(torch.cat([defs_out, outputs], dim=2))
 
         return logits, sent_logits.squeeze(), selections.squeeze(), term_def, not_term_def, term_selections
+
+    @staticmethod
+    def pool(h, mask, type='max'):
+        if type == 'max':
+            h = h.masked_fill(mask.bool(), -constant.INFINITY_NUMBER)
+            return torch.max(h, 1)[0]
+        elif type == 'avg':
+            h = h.masked_fill(mask.bool(), 0)
+            return h.sum(1) / (mask.size(1) - mask.float().sum(1))
+        else:
+            h = h.masked_fill(mask.bool(), 0)
+            return h.sum(1)
 
 
 class GCNRelationModel(nn.Module):
@@ -101,8 +116,7 @@ class GCNRelationModel(nn.Module):
             self.emb.weight.requires_grad = False
         elif self.opt['topn'] < self.opt['vocab_size']:
             print("Finetune top {} word embeddings.".format(self.opt['topn']))
-            self.emb.weight.register_hook(lambda x: \
-                                              torch_utils.keep_partial_grad(x, self.opt['topn']))
+            self.emb.weight.register_hook(lambda x: torch_utils.keep_partial_grad(x, self.opt['topn']))
         else:
             print("Finetune all embeddings.")
 
@@ -161,7 +175,7 @@ class GCN(nn.Module):
 
     def encode_with_rnn(self, rnn_inputs, masks, batch_size):
         seq_lens = list(masks.data.eq(constant.PAD_ID).long().sum(1).squeeze())
-        h0, c0 = rnn_zero_state(batch_size, self.opt['rnn_hidden'], self.opt['rnn_layers'])
+        h0, c0 = self.rnn_zero_state(batch_size, self.opt['rnn_hidden'], self.opt['rnn_layers'])
         rnn_inputs = nn.utils.rnn.pack_padded_sequence(rnn_inputs, seq_lens, batch_first=True)
         rnn_outputs, (ht, ct) = self.rnn(rnn_inputs, (h0, c0))
         rnn_outputs, _ = nn.utils.rnn.pad_packed_sequence(rnn_outputs, batch_first=True)
@@ -199,24 +213,12 @@ class GCN(nn.Module):
 
         return lstm_outs, masks.unsqueeze(2), gcn_inputs
 
-
-def pool(h, mask, type='max'):
-    if type == 'max':
-        h = h.masked_fill(mask.bool(), -constant.INFINITY_NUMBER)
-        return torch.max(h, 1)[0]
-    elif type == 'avg':
-        h = h.masked_fill(mask.bool(), 0)
-        return h.sum(1) / (mask.size(1) - mask.float().sum(1))
-    else:
-        h = h.masked_fill(mask.bool(), 0)
-        return h.sum(1)
-
-
-def rnn_zero_state(batch_size, hidden_dim, num_layers, bidirectional=True, use_cuda=True):
-    total_layers = num_layers * 2 if bidirectional else num_layers
-    state_shape = (total_layers, batch_size, hidden_dim)
-    h0 = c0 = Variable(torch.zeros(*state_shape), requires_grad=False)
-    if torch.cuda.is_available():
-        return h0.cuda(), c0.cuda()
-    else:
-        return h0, c0
+    @staticmethod
+    def rnn_zero_state(batch_size, hidden_dim, num_layers, bidirectional=True, use_cuda=True):
+        total_layers = num_layers * 2 if bidirectional else num_layers
+        state_shape = (total_layers, batch_size, hidden_dim)
+        h0 = c0 = Variable(torch.zeros(*state_shape), requires_grad=False)
+        if torch.cuda.is_available():
+            return h0.cuda(), c0.cuda()
+        else:
+            return h0, c0

@@ -15,7 +15,6 @@ import torch
 from data.loader import DataLoader
 from model.trainer import GCNTrainer
 from utils import (
-    torch_utils,
     scorer,
     constant,
     helper,
@@ -129,16 +128,7 @@ file_logger = helper.FileLogger(
 helper.print_config(opt)
 
 # model
-if not opt['load']:
-    trainer = GCNTrainer(opt, emb_matrix=emb_matrix)
-else:
-    # load pretrained model
-    model_file = opt['model_file']
-    print(f"Loading model from {model_file}")
-    model_opt = torch_utils.load_config(model_file)
-    model_opt['optim'] = opt['optim']
-    trainer = GCNTrainer(model_opt)
-    trainer.load(model_file)
+trainer = GCNTrainer(opt, emb_matrix=emb_matrix)
 
 id2label = dict([(v, k) for k, v in constant.LABEL_TO_ID.items()])
 dev_score_history = []

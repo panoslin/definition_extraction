@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="M92">
+
+		<paper id="1045">
+			<definition id="0">
+				<sentence>THIS IS A POOR D-2 COUNTRY THAT DEPENDS A GREAT DEAL ON U .</sentence>
+				<definiendum id="0">POOR D-2 COUNTRY THAT</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>RESOURCES , SPIN-OFFS , AND FUTURE RESEARC H Our primary system development and testing took place on three Texas Instruments Explorer II workstation s each configured with 8 megabytes of RAM .</sentence>
+				<definiendum id="0">workstation</definiendum>
+				<definiens id="0">s each configured with 8 megabytes of RAM</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+</paper>
+
+		<paper id="1044">
+			<definition id="0">
+				<sentence>EXAMPLE ( slot 19 ) : RESPONSE KEY `` THE 3 PEASANTS , WHICH THE GOVERNMENT ADMITTED WAS A MISTAKE '' `` PEASANTS '' Scoring a filler partially correct is also appropriate in cases where the key contains a proper name ( in the most complete form found in the text ) and the response contains only part of the name ( i.e. , uses an incomplete form found in the text ) .</sentence>
+				<definiendum id="0">EXAMPLE</definiendum>
+				<definiendum id="1">RESPONSE KEY</definiendum>
+				<definiens id="0">the key contains a proper name ( in the most complete form found in the text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>EXAMPLE : TEXT RESPONSE ( for Y ) KEY ( for Y ) `` X OCCURRED ON AUGUST 30 , 1989 , AND Y OCCURRED A WEEK LATER '' 06 SEP 89 30 AUG 8915 SEP 89 ( where the latter date is the date of the article ) PARTIALLY CORRECT : occurred between two dates or if the filler in the key is a default value , i.e. , consists of a range with the date from the message dateline as the upper anchor ) .</sentence>
+				<definiendum id="0">EXAMPLE</definiendum>
+				<definiendum id="1">TEXT RESPONSE</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>PARTIALLY CORRECT : The number of cases where it is justifiable to score this slot partially correct should be extremely limited , especially in cases other than the following : response has a single number , and key has a range which includes that number as an anchor ; response has a single number , and key has a tilde in front of that same number .</sentence>
+				<definiendum id="0">response</definiendum>
+				<definiens id="0">a range which includes that number as an anchor</definiens>
+				<definiens id="1">a tilde in front of that same number</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>PARTIALLY CORRECT : The number of cases where it is justifiable to score this slot partially correct should be extremely limited , especially in cases other than the following : response has a single number , and key has a range which includes that number as an anchor ; response has a single number , and key has a tilde in front of that same number .</sentence>
+				<definiendum id="0">response</definiendum>
+				<definiens id="0">a range which includes that number as an anchor</definiens>
+				<definiens id="1">a tilde in front of that same number</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>PARTIALLY CORRECT : The number of cases where it is justifiable to score this slot partially correct should be extremely limited , especially in cases other than the following : response has a single number , and key has a range which includes that number as an anchor ; response has a single number , and key has a tilde in front of that same number .</sentence>
+				<definiendum id="0">response</definiendum>
+				<definiens id="0">a range which includes that number as an anchor</definiens>
+				<definiens id="1">a tilde in front of that same number</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>PARTIALLY CORRECT : The number of cases where it is justifiable to score this slot partially correct should be extremely limited , especially in cases other than the following : response has a single number , and key has a range which includes that number as an anchor ; response has a single number , and key has a tilde in front of that same number .</sentence>
+				<definiendum id="0">response</definiendum>
+				<definiens id="0">a range which includes that number as an anchor</definiens>
+				<definiens id="1">a tilde in front of that same number</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>The GE NLTooLsET is a set of text interpretation tools designed to be easily adapted to ne w domains .</sentence>
+				<definiendum id="0">GE NLTooLsET</definiendum>
+				<definiens id="0">a set of text interpretation tools designed to be easily adapted to ne w domains</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Interpretation : Calling Trumpet with FINAL Interpretation : ( COORDCOIJ_AND1 ( R-PART ( VERB ACCUSE1 ( R-REL-TIME +PAST+ ) ( R-PATIENT ( TERRORIST-NAME_FML11 ( R-NAME FMLN ) ( R-PART ( C-ENTITY ) ) ) ) ( R- ( UMBER +SIIGULARs ) ( R-NAME ALFREDO-CRISTIAIIa ) ( R-NATIONALITY ( C-NATI01-NAME_EL-SALVADOR ( -QUAL ) ) ) ) ( R-ACCUSATIOI ( IOUN_CRIME1 ( R-NUMBER +SINGULAR+ ) ( R-DEFINITE ( DET_THE1 ) ) ) ) ) ) ( R-COMMUNICATOR ( FULLIAME_ALFREDO-CRISTIANI+1 ( R-PART ( VERB_COIDEMI1 ( R-REL-TIME +PAST+ ) ( R-PATIENT ( C-ACT-OF-VERB_KILL1 ( R-NUMBER *SINGULAR+ ) ( R-EFFECT ( C-DEAD-QUAL ) ) ( R-DEFINITE ( DET_THE1 ) ) ( R-CAUSE ( C-VERB_TERRORIZE1-ER ( R-NUMBER +SINGULAR+ ) ( R-IIHEREIT-ACTIVITY ( VERB_TERRORIZE1 ) ) ) ) ( R-EFFECTED ( FULLIAME_ROBERTO-GARCIA-ALVARAD01 ( R-NUMBER +SINGULAR+ ) ( R-NAME ROBERTO-GARCIA-ALVARADO ) ) ) ) ) ( R-COMMUNICATOR ( FULLBAME_ALFREDO-CRISTIANI+1 ( R-NUMBER +SINGULAR* ) 180 ( R-LAME ALFREDO-CRISTIAII* ) ( R-IATIOIALITY ( C-NATION-BANE EL-SALVADORI-QUAL ) ) ) ) ) ) ) TRUMPET WARS : Splitting connective COORDCONJ AND1 into part s Activating new sense ( C-BLAME-TEMPLATE ( R-REL-TIME *PAST* ) ( R-MODALITY ( C-QUALIFIER ) ) ( R-POLARITY ( C-QUALIFIER ) ) ( R-PERPETRATOR ( TERRORIST-IAME_FMLN1 ( R-NAME FMLN ) ( R-PART ( C-ENTITY ) ) ) ) ( R-ACCUSATION ( NOUN CRIMES ( R-NUMBER *SINGULAR* ) ( R-DEFINITE ( DET_THE1 ) ) ) ) ( R-ACCUSER ( FULLNAME_ALFREDO-CRISTIANI*1 ( A-NUMBER *SINGULAR+ ) ( R-NAME ALFREDO-CRISTIAII* ) ( A-NATIONALITY ( C-NATION-BAME_EL-SALVADOR1-QUAL ) ) ) ) ) ( R-NUMBER *SINGULAR* ) ( R-MODALITY ( C-QUALIFIER ) ) ( R-POLARITY ( C-QUALIFIER ) ) ( R-DEFINITE ( DET_THE1 ) ) ( R-TARGET CFULLIAME_ROBERTO-GARCIA-ALVARADO1 ( A-NUMBER +SINGULAR* ) ( R-NAME ROBERTO-GARCIA-ALVARADO ) ) ) ( A-PERPETRATOR ( C-VERB_TERRORIZEI-ER ( R-NUMBER *SINGULAR+ ) ( R-INHERENT-ACTIVITY ( VERB TERRORIZE1 ) ) ) ) ) ) ( R-REPORTER ( FULLIAME_ALFREDO-CRISTIANI*1 ( R-NUMBER +SINGULAR~ ) ( R-NAME ALFREDO-CRISTIAII* ) ( R-NATIONALITY ( C-NATION-SAME EL-SILVADOR1-QUAL ) ) ) ) ) TRUMPET YARN : Breaking out core templates ( C-DEATH-TEMPLATE ) TRUMPET WAR ' : Linking ( special ) C-REPORT-TEMPLATE as filler for R-SUPPORT of C-DEATH-TEMPLATE TRUMPET WARN : Linking ( special ) C-BLAME-TEMPLATE as filler for R-SUPPORT of C-DEATH-TEMPLAT E Adding TERRORIST-1AME_FMLN1 from C-BLAME-TEMPLATE to R-PERPETRATOR of C-DEATH-TEMPLATE The next set of examples sentences ( S11-13 ) are more difficult .</sentence>
+				<definiendum id="0">Interpretation</definiendum>
+				<definiendum id="1">R-PART ( VERB ACCUSE1 ( R-REL-TIME +PAST+ ) ( R-PATIENT ( TERRORIST-NAME_FML11 ( R-NAME FMLN ) ( R-PART ( C-ENTITY ) ) ) ) ( R- ( UMBER +SIIGULARs ) ( R-NAME ALFREDO-CRISTIAIIa ) ( R-NATIONALITY ( C-NATI01-NAME_EL-SALVADOR ( -QUAL</definiendum>
+				<definiendum id="2">R-NUMBER +SINGULAR+ ) ( R-DEFINITE</definiendum>
+				<definiendum id="3">C-BLAME-TEMPLATE ( R-REL-TIME *PAST* ) ( R-MODALITY</definiendum>
+				<definiendum id="4">C-QUALIFIER ) ) ( R-POLARITY</definiendum>
+				<definiendum id="5">C-QUALIFIER ) ) ( R-PERPETRATOR</definiendum>
+				<definiendum id="6">C-DEATH-TEMPLATE</definiendum>
+				<definiendum id="7">special ) C-BLAME-TEMPLATE</definiendum>
+				<definiens id="0">C-NATION-BAME_EL-SALVADOR1-QUAL ) ) ) ) ) ( R-NUMBER *SINGULAR* ) ( R-MODALITY ( C-QUALIFIER ) ) ( R-POLARITY ( C-QUALIFIER ) ) ( R-DEFINITE ( DET_THE1 ) ) ( R-TARGET CFULLIAME_ROBERTO-GARCIA-ALVARADO1 ( A-NUMBER +SINGULAR* ) ( R-NAME ROBERTO-GARCIA-ALVARADO ) ) ) ( A-PERPETRATOR ( C-VERB_TERRORIZEI-ER ( R-NUMBER *SINGULAR+ ) ( R-INHERENT-ACTIVITY ( VERB TERRORIZE1 ) ) ) ) ) ) ( R-REPORTER ( FULLIAME_ALFREDO-CRISTIANI*1 ( R-NUMBER +SINGULAR~ ) ( R-NAME ALFREDO-CRISTIAII* ) ( R-NATIONALITY ( C-NATION-SAME EL-SILVADOR1-QUAL ) ) ) )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Interpretation : Calling Trumpet with FINAL Interpretation : ( VERB_ATTACKI ( R-REL-TIME *PAST* ) ( A-INSTRUMENT ( IOUN_EXPLODE-IVE-X ( R-NUMBER *PLURAL* ) ) ) ( R-PATIENT ( NOUI_HOME1 ( R-NUMBER *SINGULAR* ) ( R-OBJECTHOLDER Activating new sense ( C-REPORT-TEMPLATE ( R-REL-TIME *PAST* ) ( R-MODALITY ( C-QUALIFIER ) ) ( R-POLARITY ( C-QUALIFIER ) ) ( R-OBJECT ( C-DEATH-TEMPLATE 181 ( FULLNAME_FRANCISCO-MERINO*1 ( R-NUMBER *SINGULAR* ) ( R-NAME FRANCISCO-MERI10* ) ) ) ) ) CR-DATE ( C-DATE-OF-OCCURRENCE ( R-RELATIVE NO ) ( R-YEAR 1891 ) ( R-DAY 1141 ) ( R-MONTH 141 ) ) ) ( R-AGENT ( NOUB_GUERRILLA1 ( R-NUMBER *PLURAL* ) ) ) ( R-LOCATION ( CITY-IAME_SAN-SALVADOR1 ( R-NAME SAN-SALVADOR ) ) ) ) Activating new sense ( C-ATTACK-TEMPLATE ( R-REL-TIME *PAST* ) ( R-MODALITY ( C-QUALIFIER ) ) ( R-POLARITY ( C-QUALIFIER ) ) ( R-LOCATION ( CITY-IAME_SAN-SALVADOR1 ( R-NAME SAD-SALVADOR ) ) ) CR-DATE ( C-DATE-OF-OCCURRENCE ( R-RELATIVE 10 ) ( R-YEAR 1891 ) ( R-DAY 1141 ) ( R-MONTH 141 ) ) ) ( R-INSTRUMENT ( NOUI_EXPLODE-IVE-I ( R- ( UMBER *PLURAL* ) ) ) ( A-TARGET ( NOUN_HOME1 ( R-LUMBER *SINGULAR* ) CR-LOCATION ( CITY-IAME_SAI-SALVADOR1 ( R-LAME SAN-SALVADOR ) ) ) ( R-OBJECTHOLDEA CFULLNAME_FRANCISCO-MERINO*1 ( R-NUMBER *SINGULAR* ) ( R-NAME FRANCISCO-MERINO* ) ) ) ) ) ( A-PERPETRATOR ( NOUN GUERAILLA1 ( R-NUMBER *PLURAL* ) ) ) ) Calling Trumpet with FRAGMENT Interpretation : ( VERB_INJURE1 ( R-REL-TIME *PAST+ ) ( R-EFFECT ( C-INJURY ) ) ( R-EFFECTED ( NOUI_IIECE1 ( R-/UMBER +SINGULAR* ) ( R-DEFINITE ( DET_A1 ) ) ( R-POSSESSES ( FULLIAME_FRAICISCO-MERI10+1 ( R-LUMBER +SINGULAR* ) ( A-LAME FRANCISCO-MERINO~ ) ) ) ) ) ) Activating new sense ( C-INJURY-TEMPLATE ( R-REL-TIME *PAST* ) ( R-MODALITY ( C-QUALIFIER ) ) ( R-POLARITY ( C-QUALIFIER ) ) ( A-TARGET ( NOUN_IIECE1 ( R-NUMBER *SINGULAR* ) ( R-DEFINITE ( DET_A1 ) ) ( R-POSSESSES ( FULLIAME_FRANCISCO-MERINO+1 ( R-NUMBER *SINGULAR* ) ( R-NAME FRANCISCO-MERI10* ) ) ) ) ) ) TRUMPET YARN : Linking ( special ) C-INJURY-TEMPLATE as filler for R-TARGET-EFFECT of C-BOMBING-TEMPLAT E The system filters S21 ( this is an omission , because `` ESCAPED UNSCATHED '' should be recognize d as an effect ) , but successfully interprets S22 and resolves `` ONE OF THEM '' to `` BODYGUARDS '' .</sentence>
+				<definiendum id="0">Interpretation</definiendum>
+				<definiendum id="1">A-INSTRUMENT ( IOUN_EXPLODE-IVE-X</definiendum>
+				<definiendum id="2">C-REPORT-TEMPLATE</definiendum>
+				<definiendum id="3">R-OBJECT</definiendum>
+				<definiendum id="4">CR-DATE ( C-DATE-OF-OCCURRENCE</definiendum>
+				<definiendum id="5">C-ATTACK-TEMPLATE</definiendum>
+				<definiendum id="6">R-NAME SAD-SALVADOR ) ) ) CR-DATE ( C-DATE-OF-OCCURRENCE</definiendum>
+				<definiendum id="7">R-INSTRUMENT ( NOUI_EXPLODE-IVE-I</definiendum>
+				<definiendum id="8">R-EFFECT</definiendum>
+				<definiendum id="9">C-INJURY-TEMPLATE</definiendum>
+				<definiens id="0">an effect ) , but successfully interprets S22 and resolves `` ONE OF THEM '' to `` BODYGUARDS ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>HUM TGT : EFFECT OF INCIDENT TST2-MUC4-0048 3 19 APR 89 EL SALVADOR BOMBING ACCOMPLISHED `` BOMB '' BOMB : `` BOMB '' TERRORIST ACT `` FARABUNDO MARTI NATIONAL LIBERATION FRONT '' POSSIBLE : `` FARABUNDO MARTI NATIONAL LIBERATION FRONT '' DESTROYED : `` - '' `` BODYGUARDS '' SECURITY GUARD : `` BODYGUARDS '' PLURAL : `` BODYGUARDS '' INJURY : `` BODYGUARDS '' Some of the missing information in the response template comes from failing to tie information in t o the main event or failing to recover implicit information .</sentence>
+				<definiendum id="0">HUM TGT</definiendum>
+				<definiens id="0">failing to tie information in t o the main event or failing to recover implicit information</definiens>
+			</definition>
+</paper>
+
+		<paper id="1038">
+</paper>
+
+		<paper id="1013">
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>Automata-based Text Understanding System ) which we feel represents a significant advance in the state of the art of text processing .</sentence>
+				<definiendum id="0">Automata-based Text Understanding System</definiendum>
+				<definiens id="0">a significant advance in the state of the art of text processing</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The method and the statistical significance of the results for the two MUC-4 test sets , TST3 and TST4 , will be discussed in this paper .</sentence>
+				<definiendum id="0">TST3</definiendum>
+				<definiens id="0">the two MUC-4 test sets ,</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A test statistic is a function which can be applied to a set of sample data to produce a single numerical value .</sentence>
+				<definiendum id="0">test statistic</definiendum>
+				<definiens id="0">a function which can be applied to a set of sample data to produce a single numerical value</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Examples ( informal ) : 1 ) system X and system Y do not differ in recall 2 ) system X and system Y do not differ in precision 3 ) system X and system Y do not differ in F-measure for equal weighting of recall and precision a single numerical value .</sentence>
+				<definiendum id="0">Examples</definiendum>
+				<definiens id="0">informal ) : 1 ) system X and system Y do not differ in recall 2 ) system X and system Y do not differ in precision 3 ) system X and system Y do not differ in F-measure for equal weighting of recall and precision a single numerical value</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The significance level is the probability that a test statistic that is as extreme or more extreme than the actual value could have arisen by chance , given the null hypothesis .</sentence>
+				<definiendum id="0">significance level</definiendum>
+				<definiens id="0">the probability that a test statistic that is as extreme or more</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>TST3 is the official test set for MUC-4 .</sentence>
+				<definiendum id="0">TST3</definiendum>
+				<definiens id="0">the official test set for MUC-4</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Please note that the F-measures are calculated using floating point arithmetic throughout and differ slightly from the F-measures in the official score reports , which were calculated based on the integer values of recall and precision .</sentence>
+				<definiendum id="0">Please note that the F-measures</definiendum>
+				<definiens id="0">were calculated based on the integer values of recall and precision</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>One , the Text Tagger , marks a variety of strings with semantic information .</sentence>
+				<definiendum id="0">Text Tagger</definiendum>
+				<definiens id="0">marks a variety of strings with semantic information</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>These predictions are used by the central process in th e system , the Template Constructor , which uses a variety of heuristics to extract template information fro m the tagged text .</sentence>
+				<definiendum id="0">Template Constructor</definiendum>
+				<definiens id="0">uses a variety of heuristics to extract template information fro m the tagged text</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A skeleton template structure is then passed to the final process , the Template Formatter , which performs some consistency checking , creates cross references and attempts to expand any names foun d in the template to the longest form in which they occur in the text .</sentence>
+				<definiendum id="0">Template Formatter</definiendum>
+				<definiens id="0">performs some consistency checking , creates cross references and attempts to expand any names foun d in the template to the longest form in which they occur in the text</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The relevant template marker consists of two processes , the first trained on a set of texts consistin g of paragraphs from the MUC corpus which produced two or more string fills against text consisting o f paragraphs which generated no string fills .</sentence>
+				<definiendum id="0">relevant template marker</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Template Construction The template constructor uses the tagged text and the list of relevant paragraphs for each template typ e to generate skeleton templates which are produced as a list of triples , SLOT NUMBER , SET FILL , STRING FILL .</sentence>
+				<definiendum id="0">template constructor</definiendum>
+				<definiens id="0">uses the tagged text and the list of relevant paragraphs for each template typ e to generate skeleton templates which are produced as a list of triples</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Cospecifacaiion is a semantic tagging of what collocational patterns th e lexical item may enter into .</sentence>
+				<definiendum id="0">Cospecifacaiion</definiendum>
+				<definiens id="0">a semantic tagging of what collocational patterns th e lexical item may enter into</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A parser-generator uses the cospec fields of the GLS 's to construct the parsing rules , wit h type constraints obtained from the corresponding qualia fields .</sentence>
+				<definiendum id="0">parser-generator</definiendum>
+				<definiens id="0">uses the cospec fields of the GLS 's to construct the parsing rules</definiens>
+			</definition>
+</paper>
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>The representation at this level is 261 Verb : `` accuse ' ' Situation Type : CAUSED-PROCESS NLRB object for mapping : ACCUSE Idiosyncracies : ( ( GOAL ( MAPPING ( LITERAL OF ) ) ) ) Napping : ( GOAL ( MAPPING ( LITERAL OF ) ) ( TYPE SITUATION ) ) ( AGENT ( MAPPING ( SURFACE SUBJECT ) ) ( TYPE PERSON ORGANIZATION ) ) ( THEME ( MAPPING ( SURFACE OBJECT ) ( TYPE PERSON ORGANIZATION ) ) ) Figure 3 : Mapping Information for `` accuse '' language-independent because the representation language is based on the concepts in the knowledge bases which are shared among languages .</sentence>
+				<definiendum id="0">AGENT ( MAPPING ( SURFACE SUBJECT ) ) ( TYPE PERSON ORGANIZATION ) ) ( THEME ( MAPPING ( SURFACE OBJECT )</definiendum>
+				<definiens id="0">CAUSED-PROCESS NLRB object for mapping : ACCUSE Idiosyncracies : ( ( GOAL ( MAPPING ( LITERAL OF ) ) ) ) Napping : ( GOAL</definiens>
+			</definition>
+</paper>
+
+		<paper id="1036">
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>THE DBG SYSTEM MODULE S The DBG system consists of a series of modules that process message text in stages , and each major level of analysis is contained in a separate module .</sentence>
+				<definiendum id="0">DBG SYSTEM MODULE S The DBG system</definiendum>
+				<definiens id="0">consists of a series of modules that process message text in stages</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The UX subsystem consists of modules that are integrate d into the Expected Inputs Subsystem .</sentence>
+				<definiendum id="0">UX subsystem</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The parser places theta-role information ( similar to case frames ) in properly attached verb-argument nodes .</sentence>
+				<definiendum id="0">theta-role information</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Deictic center is the focus of attention in the reader/listener 's mental model of the ongoing discourse , which consists of at least the WHO , WHERE , and WHEN information about the event being depicted in the discourse .</sentence>
+				<definiendum id="0">Deictic center</definiendum>
+				<definiens id="0">the focus of attention in the reader/listener 's mental model of the ongoing discourse , which consists of at least the WHO , WHERE , and WHEN information about the event being depicted in the discourse</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The new words can also be stored for later incorporation into the system by means of a second , more extensive mode of the Word Acquisition Module ( WAM2 ) , which operates off-line to allow periodic lexicon update by the System Administrator .</sentence>
+				<definiendum id="0">Word Acquisition Module</definiendum>
+				<definiens id="0">operates off-line to allow periodic lexicon update by the System Administrator</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( * ) It is important to note that the term `` template '' in the DBG system is a label for the generic message level semantic and pragmati c representational units , not an application-oriented structure like the MUC templates .</sentence>
+				<definiendum id="0">template</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The subject of the sentence is identified as the object of the verb , which is evidenced in the '+3 ' index on the Dmax node dominating the subject of the sentence as well as the trace ( i.e. , *empty* ) constituent under the Dmax node that serves as th e object of the verb 'injured . '</sentence>
+				<definiendum id="0">Dmax node</definiendum>
+				<definiens id="0">is evidenced in the '+3 ' index on the Dmax node dominating the subject of the sentence as well as the trace</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>in completion : PAST definiteness : indefinite event_parent : [ 1 .8 ] event child : [ 1.9 ] Event attack [ 1.9 ] e_quant : 1 agent : [ 1.9.1 ] patient : [ 1.9.2 ] location : [ 1 .9.3 ] loc_qualifier : in completion : PAST definiteness : indefinite eventgarent : [ 1 .8 ] 'INDEX ' ( '9 .1 ' ) 'INDEX ' ( '9 .2 ' ) a '15-year-old ' niece 'INDEX ' ( '9 .3 ' ) 'INDEX ' ( '9 .4 ' ) merino , , , s , 'PAST ' 'PASSIVE ' injure 203 Entity class : type : position : position_text : quantifier : definiteness : Entity type : subtype : description : description text : quantifier definiteness : Entity city : country : type : description : description_text Result e_quant patient : completion : definiteness : Entity type : subtype : description : description_text qualifier : quantifier .</sentence>
+				<definiendum id="0">PAST definiteness</definiendum>
+				<definiens id="0">quantifier : definiteness : Entity type : subtype : description : description text : quantifier definiteness : Entity city : country : type : description : description_text Result e_quant patient : completion : definiteness : Entity type : subtype : description : description_text qualifier : quantifier</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Unfortunately , the TUX Module was not yet integrated into the version of the DBG system that processed the MUC-4 test messages .</sentence>
+				<definiendum id="0">TUX Module</definiendum>
+				<definiens id="0">the version of the DBG system that processed the MUC-4 test messages</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>Explanation ( without system-specific jargon ) of processing stages : Identification of relevant texts and paragraph s Lexical look-up ( example of output and lexicon ) Syntactic analysis ( example of output and grammar ) Semantic analysis ( example of output and semantic rules ) Template fil l * Sample filled-in template , with an explanation of interestin g things : things system got righ t things system got wrong</sentence>
+				<definiendum id="0">Explanation (</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>Text string : A string extracted from the text and placed inside double quotes in the slot .</sentence>
+				<definiendum id="0">Text string</definiendum>
+				<definiens id="0">A string extracted from the text and placed inside double quotes in the slot</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Applicability : Applicable to all incident types except ARSON and KIDNAPPIN G Number of fillers : Null , or one or more fillers Notes : 1 ) Fill this slot only if the text provides a noun phrase that refers to th e instrument ; do not fill it with expressions that refer only to the act of using an A-7 instrument ( such as `` shooting '' or `` machingegunned '' ) or the effect of using a n instrument ( such as `` explosion '' ) .</sentence>
+				<definiendum id="0">Applicability</definiendum>
+				<definiens id="0">Applicable to all incident types except ARSON and KIDNAPPIN G Number of fillers</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Applicability : Applicable to all incident types except ARSON and KIDNAPPIN G Number of fillers : Number of fillers : Null , or one or more fillers Cross-referencing : Include cross-reference to INCIDENT : INSTRUMENT I D Set list ( choices are hierarchical ) : GUN MACHINE GU N MORTAR HANDGUN RIFLE EXPLOSIVE BOMB VEHICLE BOMB DYNAMITE MINE AERIAL BOM B GRENADE MOLOTOV COCKTAIL PROJECTILE MISSIL E ROCKET CUTTING DEVICE FIRE STONE TORTURE Notes : 1 ) The FIRE option is included because it appeared as the cause of death in a n attack .</sentence>
+				<definiendum id="0">Applicability</definiendum>
+				<definiens id="0">Applicable to all incident types except ARSON and KIDNAPPIN G Number of fillers : Number of fillers : Null , or one or more fillers Cross-referencing : Include cross-reference to INCIDENT</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>e. , do not use information from the system 's general lexicon to fill this in ( such as information linking known terrorist s to organizations ) .</sentence>
+				<definiendum id="0">e.</definiendum>
+				<definiens id="0">use information from the system 's general lexicon to fill this in ( such as information linking known terrorist s to organizations )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+</paper>
+
+		<paper id="1014">
+</paper>
+
+		<paper id="1015">
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>Discourse Analysis and Extraction Details The discourse module operates on the semantic structures ( case frames ) produced by the semantic analysis module .</sentence>
+				<definiendum id="0">discourse module</definiendum>
+				<definiens id="0">operates on the semantic structures ( case frames ) produced by the semantic analysis module</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Topic objects are defined as fillers of certain case roles , specifically , 16 of the total 40 case roles used in PAKTUS , as illustrated in Figure 3 .</sentence>
+				<definiendum id="0">Topic objects</definiendum>
+				<definiens id="0">fillers of certain case roles , specifically , 16 of the total 40 case roles used in PAKTUS</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Each word has one or more senses , represented as a root symbol , which is generally the concatenation of the English token , the `` ^ '' character , and the PAKTUS lexical category ( e.g. , `` Condemn^Monotrans '' ) , or as a simple structure involving a root , lexical category , inflectional mark , and sometimes a conceptual derivation ( e .</sentence>
+				<definiendum id="0">conceptual derivation</definiendum>
+				<definiens id="0">one or more senses , represented as a root symbol , which is generally the concatenation of the English token , the `` ^ '' character , and the PAKTUS lexical category ( e.g. , `` Condemn^Monotrans '' ) , or as a simple structure involving a root</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>R -ATTRIBUTE R '' OPPONENT E &lt; R '' OPPOSITIO N PROP-ROLE ER R '' ORIGINR '' SOURCE &lt; R '' DONO R R '' DES T R '' RECIPIENT R-WIZE N R '' TIME R FINISH R'DURATION R '' WHEN-ADV R '' MANNER R '' BENEFICIARY R '' METHOD R'CAUS E R '' ACCOMPLIC E R '' POSSESSED R -PRECONDITIO N R TOO L R '' PLA C PUR OSE R '' CO-EVEN T R '' LOC . . , R '' GOAL R '' AFFECTED R '' EXPERIENC ER '12 COMPANION R '' RESUL T Rf EVEN TR'OBJEC T REFFECT R '' PROPOSI T R EXTEN T Ft-PLACE R '' PATH &lt; R '' MEDWMR '' CO-CON MODAL-ROL E 255 *** raw sentence : SALVADORAN PRESIDENT-ELECT ALFREDO CRISTIANI CONDEMNED THE TERRORIST KILLING OF ATTORNEY GENERAL ROBERTO GARCIA ALVARADO AN D ACCUSED THE FARABUNDO MARTI NATIONAL LIBERATION FRONT ( FMLN ) OF TH E CRIME. *** lexical analysis : ( ( ( EL\ SALVADOR^NATION L^INHABITANT BASE C^BE-FROM ) ( EL\ SALVADOR^NATION LAADJ BASE C^IT-BE-FROM ) ) ( ( PRESIDENT^SPECIALIST L^SPECIALIST BASE C^BE-LIKE ) ) ( ALFREDOAMALE ) ( CRISTIANI^PERSON ) ( ( CONDEMNAMONOTRANS L^EFFECT-MARK BASE C^IT-GOT ) ( CONDEMN^MONOTRANS LAMONOTRANS SAED ) ) ( THEADET ) ( TERRORIST^PERSON ) ( ( KILL^MONOTRANS LAMONOTRANS S^ING ) ( KILLAMONOTRANS LAABSTRACT BASE C^ACT-OF ) ( KILLAMONOTRANS LAADJ BASE CADOES ) ) ( OF^PARTICLE OF^PREP ) ( ATTORNEY\ GENERAL^SPECIALIST ) ( ROBERTOAMALE ) ( GARCIAAPERSON ) ( ALVARADOAPERSON ) ( AND^CONJ ) ( ( ACCUSEAMONOTRANS L^EFFECT-MARK BASE C^IT-GOT ) ( ACCUSEAMONOTRANS LAMONOTRANS S^ED ) ) ( THE^DET ) ( FARABUNDO\ MARTI\ NATIONAL\ LIBERATION\ FRONTATERRORISTGROUP ) ( OF^PARTICLE OFAPREP ) ( THEADET ) ( CRIME^ACTIVITY ) ) Figure 4. Lexical Analysis of the First Sentence of Test2 Document Number 48 The syntactic and conceptual analyses of this sentence are shown in Figure S . Note that conceptual structures are produced for some nouns ( notably here , `` killing '' ) , not just for verbs. These conceptual structures are essential to the overall task of information extraction ; if no case frames are produced for a sentence ( i .e. , the syntactico-semantic analysis failed ) , it is completely ignored by the discourse analysis and extraction processes . The syntactic analysis produced for Si is a configuration of syntactic registers ( the main one s are shown in the figure ) and register fillers . In this case , the main clause has a Main-Ver b ( condemned ) , Subject ( the NP whose Head is Cristiani ) , and Direct Object ( the terrorist killin g NP ) . The conjoined clause ( `` and accused the FMLN . . . '' ) was correctly parsed , and its gap ( no explicit Subject ) has been filled in with the Subject of the main clause . PAKTUS produced four case frames for S1 , one for each of the two clauses , one for the `` killing '' NP and one for the `` crime '' NP . This conceptual analysis will enable the discourse analysis module to determine that `` the crime `` refers to `` the killing '' because 1 ) both are topic objects ( as fillers of Focus roles ) , 2 ) `` crime 's '' concept CAAGGR is a generalization of `` the killing 's '' concept of CAKILL in the PAKTUS conceptual network , and 3 ) `` crime '' appears in a subordinate clause ( all three conditions are required for this reference resolution ) . Determining that the crime refers to the killing here is important ; it enables PAKTUS to identify the FMLN as the accused perpetrator of Alvarado 's killing . It can also determine that the accusation is made by an authority ( president-elect Cristiani ) , thanks to the gap filling by th e syntactic analysis. 256 The second sentence ( S2 ) contains the phrase `` Merino also declared that the death of the Attorney General . . . '' whic h PAKTUS recognizes as referring to the killing in Si , so this phrase is consolidated into the same topi c structure . Merino is not , however , a topic object , since he is in th e Agent role , which is not a topi c role . This is important , becaus e later in the text there is a report of a guerrilla attack on Merino 's home. Merino is a topic object there . That he is not a topic object in S2 enable s PAKTUS to recognize this later passage as a different topic . The complete filled templates for this article are shown in Figure 6 ( the ordering of the templates i s immaterial ) . They contain almost all of the information that should have been extracted . The only missin g information is `` no injury '' to a bodyguard in template 2 . Also , the city in which one incident ( fill 2 ) occurred is incorrectly reported , an d a `` terrorist '' perpetrator is reported redundantly in fill 2 . n 70 Ta ox 0 El o r w n Z N y o ( n C I W 0420 n to0 T I tl~~ by t /AN ''A 71 wyjt ' w T T g 06 Z'sf M w `. ' `` r r ry ~ rw^ww w C M rn a .o l1 b 0 ~ oI i n I r ,0 o 7rJ xi Ma b o rG M y N4 ls ) r 0 '40 co rn PA N N I rpiI D.i ~`~ zg `` w NT .4 nn { ~~1K : L4y xcoMlico :4tK -f rnrnr '' D J oco~ 3co l I I aan Z Z~o o , ss i x I A Ms ~~orwq , Eo ooy M { , ~ oao ~ p 9 WC Z M vo yA rH Z~I o Z 9 d to e tD+l ~t~yr Z ._ , I .psi ! I vid n ; „04 'I t m l lI yip E t z &gt; r ' ~ .81f.m i ~t n v ~I % A xi NJ rA .</sentence>
+				<definiendum id="0">THE^DET ) ( FARABUNDO\ MARTI\ NATIONAL\ LIBERATION\ FRONTATERRORISTGROUP ) ( OF^PARTICLE OFAPREP ) ( THEADET )</definiendum>
+				<definiens id="0">R -ATTRIBUTE R '' OPPONENT E &lt; R '' OPPOSITIO N PROP-ROLE ER R '' ORIGINR '' SOURCE &lt; R '' DONO R R '' DES T R '' RECIPIENT R-WIZE N R '' TIME R FINISH R'DURATION R '' WHEN-ADV R '' MANNER R '' BENEFICIARY R '' METHOD R'CAUS E R '' ACCOMPLIC E R '' POSSESSED R -PRECONDITIO N R TOO L R '' PLA C PUR OSE R '' CO-EVEN T R '' LOC . . , R '' GOAL R '' AFFECTED R '' EXPERIENC ER '12 COMPANION R '' RESUL T Rf EVEN TR'OBJEC T REFFECT R '' PROPOSI T R EXTEN T Ft-PLACE R '' PATH &lt; R '' MEDWMR '' CO-CON MODAL-ROL E 255 *** raw sentence : SALVADORAN PRESIDENT-ELECT ALFREDO CRISTIANI CONDEMNED THE TERRORIST KILLING OF ATTORNEY GENERAL ROBERTO GARCIA ALVARADO AN D ACCUSED THE FARABUNDO MARTI NATIONAL LIBERATION FRONT ( FMLN ) OF TH E CRIME. *** lexical analysis</definiens>
+				<definiens id="1">conceptual structures are produced for some nouns ( notably here , `` killing ''</definiens>
+				<definiens id="2">a configuration of syntactic registers</definiens>
+				<definiens id="3">a generalization of `` the killing 's '' concept of CAKILL in the PAKTUS conceptual network</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>HUM TGT : NUMBER MESSAGE : ID TST2-MUC4-0048 MESSAGE : TEMPLATEINCIDENT : DATE INCIDENT : LOCATIONINCIDENT : TYPE INCIDENT : STAGE OF EXECUTIONINCIDENT : INSTRUMENT ID INCIDENT : INSTRUMENT TYPE PERP : INCIDENT CATEGORYPERP : INDIVIDUAL ID .2 .</sentence>
+				<definiendum id="0">HUM TGT</definiendum>
+				<definiens id="0">NUMBER MESSAGE : ID TST2-MUC4-0048 MESSAGE : TEMPLATEINCIDENT : DATE INCIDENT : LOCATIONINCIDENT : TYPE INCIDENT : STAGE OF EXECUTIONINCIDENT : INSTRUMENT ID INCIDENT : INSTRUMENT TYPE PERP : INCIDENT CATEGORYPERP : INDIVIDUAL ID .2</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>PHYS TGT : ID PHYS TGT : TYPE PHYS TGT : NUMBER PHYS TGT : FOREIGN NATION PHYS TGT : EFFECT OF INCIDENTPHYS TGT : TOTAL NUMBER HUM TGT : NAMEHUM TGT : DESCRIPTION 20 .</sentence>
+				<definiendum id="0">PHYS TGT</definiendum>
+				<definiens id="0">ID PHYS TGT : TYPE PHYS TGT : NUMBER PHYS TGT : FOREIGN NATION PHYS TGT : EFFECT OF INCIDENTPHYS TGT : TOTAL NUMBER HUM TGT : NAMEHUM TGT : DESCRIPTION 20</definiens>
+			</definition>
+</paper>
+
+		<paper id="1039">
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>PLUM System Architecture Parsing The FPP is a deterministic stochastic parser which does not attempt to generate a single syntactic interpretation of the whole sentence , rather , it generates one or more non-overlapping parse fragments spanning the inpu t sentence , deferring difficult decisions on attachment ambiguities .</sentence>
+				<definiendum id="0">FPP</definiendum>
+				<definiens id="0">a deterministic stochastic parser which does not attempt to generate a single syntactic interpretation of the whole sentence , rather , it generates one or more non-overlapping parse fragments spanning the inpu t sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>FPP produces an average of seven fragments for sentences of the complexity seen in the MUC-4 corpus ' .</sentence>
+				<definiendum id="0">FPP</definiendum>
+				<definiens id="0">produces an average of seven fragments for sentences of the complexity seen in the MUC-4 corpus '</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Probabilistic Spanish ame Mo Grammar Rules n '' 1 1 Discourse Module event ' event mI 1Template Fille r 1 I template 1 • • • template m ' Qpplicatio onstraints 170 ( s ( NP ( NP ( ADJP ( ADJ `` SALVADORAN '' ) ) ( N `` PRESIDENT-ELECT '' ) ) ( NP ( N `` ALFREDO '' `` CRISTIANI '' ) ) ) ( VP ( AUX ) ( VP ( V `` CONDEMNED '' ) ( NP ( DETERMINER 'THE '' ) ( N 'TERRORIST '' ) ( N `` KILLING '' ) ) ( PP ( PREP `` OF '' ) ( NP ( NP ( N `` ATTORNEY GENERAL '' ) ) ( N ( NAME `` ROBERTO '' ) ( NAME `` GARCIA '' ) ( NAME `` ALVARADO '' ) ) ) ) ) ) ) ) ) ( `` AND '' ( CONJ `` AND '' ) ) ( `` ACCUSEDTHE FARABUNDO MARTI NATIONAL LIBERATION FRONT '' ( VP ( AUX ) ( VP ( V `` ACCUSED '' ) ( NP ( DETERMINER 'THE '' ) ( N `` FARABUNDO '' '' MARTI '' 'NATIONAL '' '' LIBERATION '' '' FRONT '' ) ) ) ) ) ( PUNCT `` ( `` ) ) ( `` FMLN '' ( NP ( N `` FMLN '' ) ) ) ( `` ) '' ( PUNCT `` ) '' ) ) ( `` OF THE CRIME '' ( PP ( PREP `` OF '' ) ( NP ( DETERMINER 'THE '' ) ( N `` CRIME '' ) ) ) ) C. '' ( PUNCT `` . '' ) )</sentence>
+				<definiendum id="0">DETERMINER 'THE '' )</definiendum>
+				<definiendum id="1">) ( NAME `` GARCIA '' )</definiendum>
+				<definiens id="0">N ( NAME `` ROBERTO ''</definiens>
+				<definiens id="1">PREP `` OF '' ) ( NP ( DETERMINER 'THE '' ) ( N `` CRIME '' ) ) ) ) C. ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Lexical semantic entries indicate the word 's semantic type ( a domain model concept ) , as well as predicate s pertaining to it .</sentence>
+				<definiendum id="0">Lexical semantic entries</definiendum>
+				<definiens id="0">indicate the word 's semantic type ( a domain model concept ) , as well as predicate s pertaining to it</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The semantic representation of an event in the text onl y includes information contained locally in a fragment ( after fragment combination ) ; in creating corresponding even t objects , the discourse module must infer other long-distance or indirect relations not explicitly found by th e interpreter , and resolve any references in the text .</sentence>
+				<definiendum id="0">semantic representation of an event</definiendum>
+				<definiens id="0">includes information contained locally in a fragment ( after fragment combination ) ; in creating corresponding even t objects , the discourse module must infer other long-distance or indirect relations not explicitly found by th e interpreter , and resolve any references in the text</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Template Generation The template generator takes the event structure produced by discourse processing and fills out the application specific templates .</sentence>
+				<definiendum id="0">template generator</definiendum>
+				<definiens id="0">takes the event structure produced by discourse processing and fills out the application specific templates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1046">
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>The goal of the TTS project is to develop a text skimmer that can be used in a variety of applications .</sentence>
+				<definiendum id="0">TTS project</definiendum>
+				<definiens id="0">to develop a text skimmer that can be used in a variety of applications</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The text skimming involves the Text Database , databases containing derived phrases and training features , a Phrasa l Parser , the Classifier , and a Feature-to-Template Process Model .</sentence>
+				<definiendum id="0">Text Database</definiendum>
+				<definiens id="0">databases containing derived phrases and training features</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A topic is a set of contiguous sentences with the sam e computed value for INCIDENT : TYPE .</sentence>
+				<definiendum id="0">topic</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Slot Filling Slot filling consists of five parts : ( 1 ) pure set fills , ( 2 ) string fills , ( 3 ) cross-referenced slots , ( 4 ) dat e extraction , and ( 5 ) location extraction .</sentence>
+				<definiendum id="0">Slot Filling Slot filling</definiendum>
+				<definiens id="0">consists of five parts : ( 1 ) pure set fills</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A relevant sentenc e shares the same topic with the previous sentence or contains no competing topic .</sentence>
+				<definiendum id="0">relevant sentenc e</definiendum>
+				<definiens id="0">shares the same topic with the previous sentence or contains no competing topic</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>STAGES OF PROCESSING The text goes through the five major stages of processing : lexical analysis , syntactic analysis , semantic analysis , reference resolution , and template generation ( see Figure 1 ) .</sentence>
+				<definiendum id="0">template generation</definiendum>
+				<definiens id="0">goes through the five major stages of processing : lexical analysis , syntactic analysis , semantic analysis</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The matching process proceeds in four steps : dictionary lookup , lexical pattern matching , spelling correction , and prefix stripping .</sentence>
+				<definiendum id="0">matching process</definiendum>
+				<definiens id="0">proceeds in four steps : dictionary lookup , lexical pattern matching , spelling correction , and prefix stripping</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>, i s ( SENTENC E ( CENTERS ( CENTE R ( ASSERTIO N ( ASSERTIO N ( SUBJEC T ( NSTG ( LNR ( LN ( NPOS ( NPOSVAR ( LCDN ( ADJ `` SALVADORAN '' ) ) ( N `` PRESIDENT '' `` - '' `` ELECT '' ) ) ) ) ( NVAR ( NAMESTG ( LNAMER ( N `` ALFREDO '' ) ( MORENAME ( N `` CRISTIANI '' ) ) ) ) ) ) ) ) ( VERB ( LTVR ( TV `` CONDEMNED '' ) ) ) ( OBJECT ( NSTGO ( NSTG ( LNR ( LN ( TPOS ( LTR ( T `` THE '' ) ) ) ( NPOS ( NPOSVAR ( N `` TERRORIST '' ) ) ) ) ( NVAR ( N `` KILLING '' ) ) ( RN ( RN-VA L ( PN ( P `` OF '' ) ( NSTGO ( NST G ( LNR ( LN ( NPOS ( NPOSVAR ( N `` ATTORNEY '' `` GENERAL '' ) ) ) ) ( NVA R ( NAMEST G ( LNAMER ( N `` ROBERTO '' ) ( MORENAME ( N `` GARCIA '' ) ( MORENAME ( N `` ALVARADO '' ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ( CONJ-WORD ( `` AND '' `` AND '' ) ) ( ASSERTION ( SUBJEC T ( NSTG ( LN R ( LN ( NPOS ( NPOSVAR ( LCDN ( ADJ `` SALVADORAN '' ) ) ( N `` PRESIDENT '' `` - '' `` ELECT '' ) ) ) ) ( NVAR ( NAMESTG ( LNAMER ( N `` ALFRED O `` ) ( MORENAME ( N `` CRISTIANI '' ) ) ) ) ) ) ) ) ( VERB ( LTVR ( TV `` ACCUSED '' ) ) ) ( OBJEC T ( NPN ( NSTG O ( NST G ( LNR ( LN ( TPOS ( LTR ( T `` THE '' ) ) ) ) ( NVAR ( NAMESTG ( LNAMER ( N `` FARABUNDO '' `` MARTI '' `` NATIONAL '' `` LIBERATION '' `` FRONT '' ) ) fi ( NAME-APPOS ( `` ( `` `` ( `` ) ( NSTG ( LNR ( NVAR ( NAMESTG ( LNAMER ( N `` FMLN '' ) ) ) ) ) ) ( ' . ' ) '' `` ) '' ) ) ) ) ) ) )</sentence>
+				<definiendum id="0">SENTENC E ( CENTERS ( CENTE R ( ASSERTIO N ( ASSERTIO N ( SUBJEC T ( NSTG</definiendum>
+				<definiendum id="1">LN</definiendum>
+				<definiendum id="2">NPOS ( NPOSVAR</definiendum>
+				<definiendum id="3">LCDN ( ADJ `` SALVADORAN</definiendum>
+				<definiendum id="4">ASSERTION</definiendum>
+				<definiendum id="5">SUBJEC T ( NSTG ( LN R ( LN ( NPOS</definiendum>
+				<definiendum id="6">LCDN ( ADJ `` SALVADORAN '' ) ) ( N `` PRESIDENT '' `` - '' `` ELECT</definiendum>
+				<definiendum id="7">NAME-APPOS</definiendum>
+				<definiens id="0">T `` THE '' ) ) ) ( NPOS ( NPOSVAR ( N `` TERRORIST '' ) ) ) ) ( NVAR ( N `` KILLING '' ) ) ( RN ( RN-VA L ( PN ( P `` OF '' ) ( NSTGO ( NST G ( LNR ( LN ( NPOS ( NPOSVAR ( N `` ATTORNEY '' `` GENERAL '' ) ) ) ) ( NVA R ( NAMEST G ( LNAMER ( N `` ROBERTO '' )</definiens>
+				<definiens id="1">ALFRED O `` ) ( MORENAME ( N `` CRISTIANI '' ) ) ) ) ) ) ) ) ( VERB ( LTVR ( TV `` ACCUSED '' ) ) ) ( OBJEC T ( NPN ( NSTG O ( NST G ( LNR ( LN ( TPOS ( LTR ( T `` THE '' )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>The GE-CMU team is developing the TIPSTER/SHOGUN system under the governmentsponsored TIPSTER program , which aims to advance coverage , accuracy , and portability in tex t interpretation .</sentence>
+				<definiendum id="0">GE-CMU team</definiendum>
+				<definiens id="0">aims to advance coverage , accuracy , and portability in tex t interpretation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TRUMP recovered the whole sentence by attaching the phrase without the apostrophe-s to the verb phrase after ; the LR parser failed to execute the same strategy because it could not , for some reason , complete the noun phrase without the apostrophe-s .</sentence>
+				<definiendum id="0">TRUMP</definiendum>
+				<definiens id="0">recovered the whole sentence by attaching the phrase without the apostrophe-s to the verb phrase after</definiens>
+			</definition>
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>KNOWLEDGE REPRESENTATIO N Semantic Nets ICTOAN uses a semantic net representation language ( a variant of the KODIAK knowledge representatio n language [ 2 ] ) for meaning representation .</sentence>
+				<definiendum id="0">KNOWLEDGE REPRESENTATIO N Semantic Nets ICTOAN</definiendum>
+				<definiens id="0">uses a semantic net representation language ( a variant of the KODIAK knowledge representatio n language [ 2 ] ) for meaning representation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Note that some ambiguity remains at this point : [ NP : [ XNOUNS : GUERRILLAS ( UNKNOWN ) ] ] [ VP : [ VERB_GROUP : ATTACKED ( VERB ) ] ] [ NP : [ XNOUNS : MERINO 'S ( NOUN ) HOME ( NOUN ) ] ] [ NP : [ XNOUNS : MERINO 'S ( NOUN ) ] ] [ VP : [ VERB_GROUP : HOME ( VERB ) ] ] [ XPPS : [ PP : IN ( PREPOSITION ) [ NP : [ XPROPERS : SAN SALVADOR ( PROPER ) ] ] ] ] [ NP : [ SPECIFIER : [ POST_DETERMINER : 5 ( NUMBER ) ] ] [ XNOUNS : DAYS ( NOUN ) ] ] [ XADJS : AGO ( ADJECTIVE ) ] [ XADVS : AGO ( ADVERB ) ] [ XPPS : [ PP : WITH ( PREPOSITION ) [ NP : [ XNOUNS : EXPLOSIVES ( NOUN ) ] ] ] ] .</sentence>
+				<definiendum id="0">XNOUNS : DAYS</definiendum>
+				<definiens id="0">IN ( PREPOSITION ) [ NP : [ XPROPERS : SAN SALVADOR ( PROPER ) ] ] ] ] [ NP : [ SPECIFIER : [</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>Our EXTRACT module recognizes MUC-relevant events in the output of SOLOMON and translates them into MUC-4 filled templates .</sentence>
+				<definiendum id="0">EXTRACT module</definiendum>
+				<definiens id="0">recognizes MUC-relevant events in the output of SOLOMON and translates them into MUC-4 filled templates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1040">
+			<definition id="0">
+				<sentence>The lexical layer consists of the input words produced by the preprocessor .</sentence>
+				<definiendum id="0">lexical layer</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The accuse-event is a CSR , and the agent , beniiiciery , object , and predicate are CSEs for the 298 BCS : [ agent , ACCUSE , beneficiary , OF object j CverrmerRc roriem-organ : -tic 1 \ 1 i 1t 2 tmh t t t { ; \I i E Figure 3 : Example of the concept sequence .</sentence>
+				<definiendum id="0">accuse-event</definiendum>
+				<definiens id="0">a CSR , and the agent , beniiiciery , object , and predicate are CSEs for the 298 BCS : [ agent</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>An activation marker ( A-marker ) identifies the node that actually occurred .</sentence>
+				<definiendum id="0">activation marker</definiendum>
+				<definiens id="0">identifies the node that actually occurred</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>F measures are determined using the following formula : F — ( p ' ; 1 .0 ) xPxR where P is precision , R is recall , and Q is the relative importance given to recallp xP } R over precision.4 No analyses of statistical significance were performed among MUC-3 TST2 and MUC-4 TST3 performances .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">R</definiendum>
+				<definiendum id="2">Q</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>o , I 1MT I Greedy Merge : &lt; x missing templs &lt; &lt; Incorrecl fills 2MT Figure 4 : Hypothesized Results 4This could cause loss of recall , because of the increase in partially filled templates and loss of precision ( in the MATCHED-SPURIOUS or ALL-TEMPLATES measure ) , due to spurious templates. SBut they have no affect on the MATCHED-ONLY measures. 71 Measure : ALL TEMPLATES 1ST 1MT 2MT Overgeneration All Systems 77 48 56 Overgeneration Top 8 Systems 57 33 35 Table 1 : Overgeneration of Templates As discussed in the preceding section , we expected the single-sentence messages to show less template overgeneration than the multi-sentence messages ( 1ST vs. 1MT and NST vs. 2MT ) . However , exactly the opposite occurred : the median overgeneration score ( ALL-TEMPLATES , all systems ) for 1ST was 77 % , compared to 48 % for 1MT ( and , though not directly comparable , 56 % for 2MT ) 6. These relative results held for the top 8 systems as well. These results axe shown in Figure 5 ; the stripe indicates the median , the dark region is encompasses the middle two quaxtiles , and the brackets indicate the range of the data. Outliers axe plotted as additional lines. The overall results are summarized in Table 1. We conclude that problems in relevance filtering for the 1ST messages vastly overshadowed any affect of lazy merger problems. B i Figure 5 : Lazy Merger : Overgeneration Results on Top 8 Systems The other hypothesis associated with lazy merger was missing slots fills , measured on the eNote that we could not include the overgeneration result for the NST set , because these values were measured on partial messages , invalidating all scores other than MATCHED-ONLY. 72 Measure : MATCHED ONLY 1ST 1MT NST 2MT Undergeneration 14 24 11 33 Ave. No. Possible Fills/Template 5.5 9.51 3.7 9.9 Table 2 : Undergeneration of Slot Fills Measure : ALL TEMPLATES 1ST 1MT 2MT Undergeneration All Systems 54 51 59 Undergeneration Top 8 Systems 40 38 49 Possible No. Slot Fills/Template 10.4 14.4 16.2 Table 3 : Undergeneration of Templates MATCHED-ONLY data ( which allows us to use all four test subsets ) . Table 2 shows `` undergeneration '' for these four test sets , where undergeneration is defined as Missing/Possible. In this case , the results are consistent with our hypothesis of lazy merger. However , it turns out that they are equally consistent with another hypothesis , namely that the number of missing slots fills will be correlated with the number of possible slots per template. Since templates generated from a single clause are typically much more sparse than templates generated from multiple clauses , this appears to be at least as good an explanation of the observed results. The second row of Table 2 shows the average number of slot fills for each class. Note that NST has the lowest undergeneration score , and the fewest slot fills , followed by 1ST , followed by 1MT and finally 2MT. For greedy merger , we hypothesized that multi-template messages would show more missing templates , as well as more spurious and incorrect slot fills ( comparing 1ST to NST and 1MT to 2MT ) . Again , the NST test subset could not be used in looking at spurious templates. Comparing 1MT to 2MT , the results were as expected : 1MT had 51 % undergeneration ( Missing/Possible using the ALL-TEMPLATES figures ) , and 2MT had 59~0 , averaged over all of the systems ; the difference was more pronounced for the top 8 systems ( 1MT undergeneration was 38 % , 2MT was 49 % ) . The 1ST results were 54 % ( 40 % for the top 8 systems ) , higher than 1MT , perhaps due to losing some templates because of faulty relevance filtering. These figures are shown in Table 3. The second prediction about greedy merger concerned incorrect slot fills , resulting from combining fills from two different clauses. This was calculated by dividing the number of incorrect fills over the number of actual fills , for the MATCHED-ONLY measure. Here the results were negative. The average over all systems showed 1ST equal to NST and 1MT greater than 2MT. For the top 8 systems , the difference between 1MT and 2MT disappeared as well. The dom73 Measure : MATCHED ONLY I1ST NST 1MTi 2MT Incorrect/Actual All Systems 6 6 17 12 Incorrect/Actual Top 8 Systems 5 ; 5 12 11 Ave. Actual Slots/Template 5i 4 10 10 Table 4 : Incorrect Slot Fills in. MATCHED ONLY Measure inant affect was that the multi-sentence per template sets ( 1MT , 2MT ) had more than twice the number incorrect compared to the single-sentence per template sets ( 1ST , NST ) ; the figures are given in Table 4. It is unclear how to interpret these results , except to note that there were twice as many fills generated for the 1MT and 2MT sets ( 10 per template , on average ) , as for the 1ST and NST sets ( around 5 fills/template ) . Finally , we predicted that the 1ST subset would be the easiest , and the 2MT set the hardest overall , measured in terms of the F-score. Here , the affects of the poor performance on the 1ST set were quite striking. For example , Figure 6 slhows a plot the F-score for 1ST vs. F-score for the whole of TST3. Only 3 systems ( Hughes , BBN , NYU ) did better on 1ST than on TST3 as SYN o a whole. uL GE. SR| GE-CMU • UMICH~ `` NYU PRC • __ j7 BBN • . PARAMAXJ SRA NMSU . `` M~ , /'/ . HUGHES 0 20 40 60 F-value for 1ST Figure 6 : F-Scores for the 1ST Set vs. Overall F-Scores for TST3 On the other hand , if we plot F-scores for 1MT against F-scores for TST3 , the distribution is much more even ( see Figure 7 ) . In general , most systems scored substantially better on the 1MT set ( 39 % F-score on ALL-TEMPLATES ) than on the 1ST set ( 28 % ) , contrary to the predictions. However , the score on 1MT was higher than the score on 2MT , as predicted ( 39 % 74 • UMASS , ~-CMU ° UMICH • MDC / NMSU HUGHES ~E USG7 SYIo H~ 0 20 40 60 F-value for 1 MT Figure 7 : F-Scores for the 1MT Set vs. Overall F-Scores for TST3 Measure IST 1MT 2MT F-scores All Systems 28 39 29 F-scores Top 8 Systems 44 50 48 Table 5 : ALL TEMPLATE F-Scores vs. 29 % ) . There was a somewhat smaller effect for the top 8 systems , shown in Table 5 below. Figure 8 shows graphically the relationship of the ALL-TEMPLATES F-score for the top 8 systems. Five of the eight systems do much better on 1MT , while the other three systems do slightly worse. The overall results of these tests are summarized in Figure 9. We can draw several conclusions from this experiment. First , the 1ST message subset turned out to be quite anomalous. It was harder than the 1MT set , as seen in the F-scores , as well as in the overgeneration results. This is most likely attributable to a relevance filtering problem. The 1ST messages were peculiar in that the the single relevant sentence was embedded in a message that was generally focused on something else ; the relevant event was only mentioned as background , or in passing. Understandably , the systems had trouble picking out the one relevant sentence amidst a text of otherwise irrelevant information. The second finding is that the 2MT subset was indeed harder than the 1MT set ; six out 75 o\ ] I /.7 .7 \. \ ~ , . . , .. '' ... . U.M hfi , ~/ /. • l~.-~ / ... ... ... ... .. ~ &lt; `` ..~ '' ... . \. ~'GFE. / '' , ~. /I ... ... ... ... ... ... ... . .\ . ... ... . `` `` : ... ~ '' / '' ... ' : -Q ... .. B~N / `` `` &gt; ... ~ '' / 7GE-CMU .</sentence>
+				<definiendum id="0">undergeneration</definiendum>
+				<definiens id="0">Hypothesized Results 4This could cause loss of recall , because of the increase in partially filled templates and loss of precision ( in the MATCHED-SPURIOUS or ALL-TEMPLATES measure ) , due to spurious templates. SBut they have no affect on the MATCHED-ONLY measures. 71 Measure : ALL TEMPLATES 1ST 1MT 2MT Overgeneration All Systems 77 48 56 Overgeneration Top 8 Systems 57 33 35 Table 1 : Overgeneration of Templates As discussed in the preceding section , we expected the single-sentence messages to show less template overgeneration than the multi-sentence messages ( 1ST vs. 1MT and NST vs. 2MT ) . However , exactly the opposite occurred : the median overgeneration score ( ALL-TEMPLATES , all systems ) for 1ST was 77 % , compared to 48 % for 1MT ( and , though not directly comparable , 56 % for 2MT ) 6. These relative results held for the top 8 systems as well. These results axe shown in Figure 5 ; the stripe indicates the median , the dark region is encompasses the middle two quaxtiles , and the brackets indicate the range of the data. Outliers axe plotted as additional lines. The overall results are summarized in Table 1. We conclude that problems in relevance filtering for the 1ST messages vastly overshadowed any affect of lazy merger problems. B i Figure 5 : Lazy Merger : Overgeneration Results on Top 8 Systems The other hypothesis associated with lazy merger was missing slots fills , measured on the eNote that we could not include the overgeneration result for the NST set , because these values were measured on partial messages</definiens>
+				<definiens id="1">Undergeneration of Slot Fills Measure : ALL TEMPLATES 1ST 1MT 2MT Undergeneration All Systems 54 51 59 Undergeneration Top 8 Systems 40 38 49 Possible No. Slot Fills/Template 10.4 14.4 16.2 Table 3 : Undergeneration of Templates MATCHED-ONLY data ( which allows us to use all four test subsets</definiens>
+				<definiens id="2">consistent with our hypothesis of lazy merger. However , it turns out that they are equally consistent with another hypothesis , namely that the number of missing slots fills will be correlated with the number of possible slots per template. Since templates generated from a single clause are typically much more sparse than templates generated from multiple clauses , this appears to be at least as good an explanation of the observed results. The second row of Table 2 shows the average number of slot fills for each class. Note that NST has the lowest undergeneration score , and the fewest slot fills , followed by 1ST , followed by 1MT and finally 2MT. For greedy merger , we hypothesized that multi-template messages would show more missing templates , as well as more spurious and incorrect slot fills ( comparing 1ST to NST and 1MT to 2MT ) . Again , the NST test subset could not be used in looking at spurious templates. Comparing 1MT to 2MT , the results were as expected : 1MT had 51 % undergeneration ( Missing/Possible using the ALL-TEMPLATES figures ) , and 2MT had 59~0 , averaged over all of the systems</definiens>
+				<definiens id="3">the top 8 systems ) , higher than 1MT , perhaps due to losing some templates because of faulty relevance filtering. These figures are shown in Table 3. The second prediction about greedy merger concerned incorrect slot fills , resulting from combining fills from two different clauses. This was calculated by dividing the number of incorrect fills over the number of actual fills , for the MATCHED-ONLY measure. Here the results were negative. The average over all systems showed 1ST equal to NST and 1MT greater than 2MT. For the top 8 systems</definiens>
+				<definiens id="4">Incorrect Slot Fills in. MATCHED ONLY Measure inant affect was that the multi-sentence per template sets ( 1MT , 2MT ) had more than twice the number incorrect compared to the single-sentence per template sets ( 1ST , NST ) ; the figures are given in Table 4. It is unclear how to interpret these results , except to note that there were twice as many fills generated for the 1MT and 2MT sets ( 10 per template , on average ) , as for the 1ST and NST sets ( around 5 fills/template ) . Finally , we predicted that the 1ST subset would be the easiest , and the 2MT set the hardest overall , measured in terms of the F-score. Here , the affects of the poor performance on the 1ST set were quite striking. For example , Figure 6 slhows a plot the F-score for 1ST vs. F-score for the whole of TST3. Only 3 systems ( Hughes , BBN , NYU ) did better on 1ST than on TST3 as SYN o a whole. uL GE. SR| GE-CMU • UMICH~ `` NYU PRC • __ j7 BBN • . PARAMAXJ SRA NMSU</definiens>
+				<definiens id="5">F-Scores for the 1MT Set vs. Overall F-Scores for TST3 Measure IST 1MT 2MT F-scores All Systems 28 39 29 F-scores Top 8 Systems 44 50 48 Table 5 : ALL TEMPLATE F-Scores vs. 29 % )</definiens>
+				<definiens id="6">the 1ST message subset turned out to be quite anomalous. It was harder than the 1MT set , as seen in the F-scores , as well as in the overgeneration results. This is most likely attributable to a relevance filtering problem. The 1ST messages were peculiar in that the the single relevant sentence was embedded in a message that was generally focused on something else ; the relevant event was only mentioned as background , or in passing. Understandably , the systems had trouble picking out the one relevant sentence amidst a text of otherwise irrelevant information. The second finding is that the 2MT subset was indeed harder than the 1MT set ; six out 75 o\ ] I /.7 .7 \. \ ~ , . . , .. '' ...</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>243 A CLIPS-Based Analysis System ( CBAS ) After the text preprocessor has tokenized a text and has predicted which types of events are likely to b e described , the task of extracting information about instances of the predicted event types falls to a CLIPS based analysis system called CBAS .</sentence>
+				<definiendum id="0">CLIPS-Based Analysis System</definiendum>
+				<definiens id="0">a CLIPS based analysis system called CBAS</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Rule-based systems similar to CLIPS have been used before to implement data extraction systems ; two well-known implementations of this sort are the Carnegie Group 's Text Categorization Shell [ 3 ] and the ADS Rubric system , which is a subcomponent of the Codex system evaluated at MUC-3 [ 1 ] .</sentence>
+				<definiendum id="0">ADS Rubric system</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The CBAS rules which propose slot fillers attach a score ( an integer between 0 and 100 ) to eac h candidate which represents the system 's confidence in that value .</sentence>
+				<definiendum id="0">CBAS rules</definiendum>
+				<definiens id="0">an integer between 0 and 100 ) to eac h candidate which represents the system 's confidence in that value</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>date ( day `` 19 '' ) ( month `` APR '' ) ( year `` 89 '' ) ) ( msgsrc ( lex `` ACAN-EFE '' ) ) ( word ( pp 1 ) ( ss 1 ) ( left 0 ) ( right 1 ) ( lex `` SALVADORAN '' ) ) ( word ( pp 1 ) ( ss 1 ) ( left 1 ) ( right 2 ) ( lex `` PRESIDENT-ELECT '' ) ) ( word ( pp 1 ) ( ss 1 ) ( left 2 ) ( right 3 ) ( lex `` ALFREDO '' ) ) ( word ( pp 1 ) ( ss 1 ) ( left 3 ) ( right 4 ) ( lex `` CRISTIANI '' ) ) ( word ( pp 2 ) ( ss 2 ) ( left 26 ) ( right 27 ) ( lex `` LEGISLATIVE '' ) ) ( word ( pp 2 ) ( ss 2 ) ( left 27 ) ( right 28 ) ( lex `` ASSEMBLY '' ) ) ( word ( pp 2 ) ( ss 2 ) ( left 28 ) ( right 29 ) ( lex `` PRESIDENT '' ) ) ( word ( pp 2 ) ( ss 2 ) ( left 29 ) ( right 30 ) ( lex `` RICARDO '' ) ) ( ss ( num 1 ) ( pp 1 ) ( left 0 ) ( right 26 ) ) ( ss ( num 2 ) ( pp 1 ) ( left 26 ) ( right 84 ) ) ( pp ( num 1 ) ( left 0 ) ( right 26 ) ) ( pp ( num 2 ) ( left 26 ) ( right 55 ) ) ( predicted±vent_type ( type `` ATTACK '' ) ) ( predictedeventlype ( type `` BOMBING '' ) ) ( predictedeventtype ( type `` MURDER '' ) ) Figure 2 : Some of the preprocessing output for Message TST2-MUC4-0048 .</sentence>
+				<definiendum id="0">lex</definiendum>
+				<definiendum id="1">lex</definiendum>
+				<definiens id="0">pp 1 ) ( left 0 ) ( right 26 ) ) ( ss ( num 2 ) ( pp 1</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The string `` SALVADORAN PRESIDENT-ELECT '' should have been recognized as a title of Alfred o Cristiani in the phrase • '' SALVADORAN PRESIDENT-ELECT ALFREDO CRISTIANI '' .</sentence>
+				<definiendum id="0">SALVADORAN PRESIDENT-ELECT</definiendum>
+				<definiens id="0">a title of Alfred o Cristiani in the phrase • '' SALVADORAN PRESIDENT-ELECT ALFREDO CRISTIANI ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>Thus , a MUC-3 slot ( TYPE OF INCIDENT ) filled with the value ATTEMPTED BOMBING became two MUC-4 slots ( INCIDENT : TYPE and INCIDENT : STAGE OF EXECUTION ) filled with BOMBING and ATTEMPTED , respectively ; similarly , a MUC-3 slot ( HUMAN TARGET : ID ) filled with the value `` MARI O 6 FLORES '' ( `` STUDENT '' ) became two MUC-4 slots ( HUM TGT : NAME and HUM TGT : DESCRIPTION ) filled with `` MARIO FLORES '' and `` STUDENT '' : `` MARIO FLORES '' , respectively .</sentence>
+				<definiendum id="0">MUC-3 slot ( TYPE OF INCIDENT )</definiendum>
+				<definiendum id="1">HUM TGT</definiendum>
+				<definiens id="0">filled with the value ATTEMPTED BOMBING became two MUC-4 slots ( INCIDENT : TYPE and INCIDENT : STAGE OF EXECUTION ) filled with BOMBING and ATTEMPTED , respectively</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Improvements on all three measures were achieved b y three systems on Matched/Missing ( GE , LSI , NYU ) , including two of the leadin g MUC-3 performers ( GE , NYU ) , and by seven systems on All Templates ( GE , LSI , NYU , PRC , SRI , UMBC-ConQuest , UMass ) , including several of the leading performers ( GE , NYU , SRI , UMass ) .</sentence>
+				<definiendum id="0">UMass</definiendum>
+				<definiens id="0">and by seven systems on All Templates ( GE , LSI , NYU , PRC , SRI , UMBC-ConQuest ,</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>As described earlier in this paper , TST3 consists of a sample of 100 previousl y unseen texts from the corpus of FBIS texts that had been obtained prior to MUC-3 .</sentence>
+				<definiendum id="0">TST3</definiendum>
+				<definiens id="0">consists of a sample of 100 previousl y unseen texts from the corpus of FBIS texts that had been obtained prior to MUC-3</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>Required Run on TST3 ( settings favor precision ) Optional Run on TST3 ( settings favor recall ) SLOT REC PRE OVG SLOT REC PRE OVG MATCHED/MISSING 30 69 10 MATCHED/MISSING 49 72 9 MATCHED/SPURIOUS 51 44 43 MATCHED/SPURIOUS 55 28 64 MATCHED ONLY 51 69 10 MATCHED ONLY 55 72 9 ALL TEMPLATES 30 44 43 ALL TEMPLATES 49 28 64 SET FILLS ONLY 33 71 14 SET FILLS ONLY 52 75 9 STRING FILLS ONLY 23 64 12 STRING FILLS ONLY 43 70 15 TEXT FILTERING 83 87 13 TEXT FILTERING 90 67 51 P &amp; R 2P &amp; R P &amp; 2R P &amp; R 2P &amp; R P &amp; 2R F-MEASURES 35.68 40.24 32.04 F-MEASURES 35.64 30.62 42.61 Optional Run on TST3 ( settings maximize FTST3 and TST4 Combined ( settings favor measure ) SLOT REC PRE OVG precision ) SLOT REC PRE OVG MATCHED/MISSING 38 69 10 MATCHED/MISSING 35 % 71 % 9 % MATCHED/SPURIOUS 52 38 50 MATCHED/SPURIOUS 52 % 44 % 44 % MATCHED ONLY 52 69 10 MATCHED ONLY 52 % 71 % 9 % ALL TEMPLATES 38 38 50 ALL TEMPLATES 35 % 44 % 44 % SET FILLS ONLY 40 70 12 SET FILLS ONLY 37 % 73 % 11 % STRING FILLS ONLY 30 64 15 STRING FILLS ONLY 29 % 68 % 12 % TEXT FILTERING 98 80 20 TEXT FILTERING 83 % 81 % 19 % P &amp; R 2 P &amp; R P &amp; 2R P &amp; R 2 P &amp; R P &amp; 2R F-MEASURES 38.00 38.00 38.00 F-MEASURES 38.74 41.76 36.13 Required Run on TST4 ( settings favor precision ) SLOT REC PRE OVG MATCHED/MISSING 40 72 8 MATCHED/SPURIOUS 53 42 47 MATCHED ONLY 53 72 8 ALL TEMPLATES 40 42 47 SET FILLS ONLY 42 75 9 STRING FILLS ONLY 36 72 12 TEXT FILTERING 82 P &amp; R 71 29 P &amp; 2R F-MEASURES 40.98 41.58 4038 Table 2 summarizes PLUM 's performance on TST3 where precision is maximized ( the required run ) , where recall is maximized , and where F is maximized .</sentence>
+				<definiendum id="0">TST4 ( settings favor precision ) SLOT REC PRE OVG MATCHED/MISSING</definiendum>
+				<definiendum id="1">recall</definiendum>
+				<definiens id="0">settings favor measure ) SLOT REC PRE OVG precision</definiens>
+			</definition>
+</paper>
+
+		<paper id="1048">
+</paper>
+
+		<paper id="1010">
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>SO 70 8 1 100 88 2P &amp; R 69.2 1 1 12 20 P &amp; 2R 69.8 Figure 1 : Sample Score Report 2 3 q Correct q Partial q Incorrec t q Non-committal q Spurious q Missing response = key response = key response = key key and response are both blan k key is blank and response is not response is blank and key is not Table 1 : Scoring Categories In Figure 1 , the two columns titled ICR ( interactive correct ) and IPA ( interactive partial ) indicate the result s of interactive scoring .</sentence>
+				<definiendum id="0">IPA</definiendum>
+				<definiens id="0">key response = key response = key key and response</definiens>
+				<definiens id="1">interactive partial ) indicate the result s of interactive scoring</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The fifth metric , the F-measure , is a combined score for the entire system and is listed at the bottom of the score report .</sentence>
+				<definiendum id="0">fifth metric</definiendum>
+				<definiens id="0">a combined score for the entire system and is listed at the bottom of the score report</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Table 2 : Evaluation Metric s Recall ( REC ) is the percentage of possible answers which were correct .</sentence>
+				<definiendum id="0">Recall ( REC )</definiendum>
+				<definiens id="0">the percentage of possible answers which were correct</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Precision ( PRE ) is the percentage of actual answers given which were correct A system has a high recall score if it does well relative to the number of slo t fills in the key .</sentence>
+				<definiendum id="0">Precision ( PRE )</definiendum>
+				<definiens id="0">the percentage of actual answers given which were correct A system has a high recall score if it does well relative to the number of slo t fills in the key</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Overgeneration ( OVG ) measures the percentage of the actual attempted fills that were spurious .</sentence>
+				<definiendum id="0">Overgeneration ( OVG )</definiendum>
+				<definiens id="0">measures the percentage of the actual attempted fills that were spurious</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Overgeneration is a measure which should be kept under a certain value .</sentence>
+				<definiendum id="0">Overgeneration</definiendum>
+				<definiens id="0">a measure which should be kept under a certain value</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The formula for calculating the F-measure is ( 132 +1 .0 ) XPX R 132 xP+ R where P is precision , R is recall , and 13 is the relative importance given to recall over precision .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">the relative importance given to recall over precision</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>ALL TEMPLATES is the strictest manner of scoring because it penalizes for both the slot fills missing in the missing template s and the slots filled in the spurious templates .</sentence>
+				<definiendum id="0">TEMPLATES</definiendum>
+				<definiens id="0">the strictest manner of scoring because it penalizes for both the slot fills missing in the missing template s and the slots filled in the spurious templates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>Prior to MUC-4 , LINK had been used in several smaller-scale applications , including th e extraction of information from free-form textual descriptions of automobile malfunctions an d the repairs that were made to fix them ; as well as an application involving free-form textual instructions for assembly line workers .</sentence>
+				<definiendum id="0">LINK</definiendum>
+				<definiens id="0">an application involving free-form textual instructions for assembly line workers</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+</paper>
+
+		<paper id="1049">
+</paper>
+
+		<paper id="1043">
+			<definition id="0">
+				<sentence>The final test has three required components : a. a template-by-template and message-by-message performance test on TST3 , which is a test set of 100 articles taken from the same source and covering the sam e time period as those that comprise DEV , TST1 , and TST2 ; b. a template-by-template and message-by-message performance test on TST4 , which is a test set of 100 articles taken from the same source as the other sets but representing incidents from a somewhat different time period ; c. an `` adjunct '' performance test on TST3 in which selected messages in the test set have been sorted into different categories and are to be scored separatel y template by template .</sentence>
+				<definiendum id="0">c. an `` adjunct</definiendum>
+				<definiens id="0">a. a template-by-template and message-by-message performance test on TST3 , which is a test set of 100 articles taken from the same source and covering the sam e time period as those that comprise DEV , TST1 , and TST2</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>el , which have been updated to recognize the message IDs that are used in the test sets .</sentence>
+				<definiendum id="0">el</definiendum>
+				<definiens id="0">updated to recognize the message IDs that are used in the test sets</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>GTE : GTE 's TIA system performed post-parse filtering on the semantic output of their semantic analyzer .</sentence>
+				<definiendum id="0">GTE</definiendum>
+				<definiens id="0">GTE 's TIA system performed post-parse filtering on the semantic output of their semantic analyzer</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>ITP : ITP 's system used a simple form of pre-parse filtering by ignoring sentences which did not contain a terrorism word .</sentence>
+				<definiendum id="0">ITP</definiendum>
+				<definiens id="0">ITP 's system used a simple form of pre-parse filtering by ignoring sentences which did not contain a terrorism word</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Univ. of Maryland/ConQuest ( MUC-3 : Synchronetics ) : The system fielded for MUC-3 had a rudimentary post-parse filter that examined the semantic network output of the linguistic analysis component and determined whether any of the actions detected were within the parameters of a `` reportable action '' as defined by the MUC task .</sentence>
+				<definiendum id="0">Maryland/ConQuest ( MUC-3 : Synchronetics )</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Filtering is a simple classification process , which means that statistical and machine learning techniques can be used to induce filters from training data with relatively little human effort .</sentence>
+				<definiendum id="0">Filtering</definiendum>
+				<definiens id="0">a simple classification process , which means that statistical and machine learning techniques can be used to induce filters from training data with relatively little human effort</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The total in the yes/yes cell is the number of relevant documents that were judged relevant by the system Ca ) , plus the number of optional documents that were judged relevant by the system ( z ) .</sentence>
+				<definiendum id="0">total in the yes/yes cell</definiendum>
+				<definiens id="0">the number of relevant documents that were judged relevant by the system Ca ) , plus the number of optional documents that were judged relevant by the system ( z )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In the traditional IR case , when there are no optional documents , generality is defined as : ( 4 ) generality -- - ( a -Ic ) l ( o -Ib -Ic -Id ) In the presence of optional documents , we would again like a definition of generality which is a measurement of the properties of the test set , not of any particular system .</sentence>
+				<definiendum id="0">generality</definiendum>
+				<definiens id="0">a measurement of the properties of the test set , not of any particular system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>This resulted in missing and spurious points for all th e 78 Story slot : incident Incident slot : date slot : location slot : type slot : stage slot : inst id slot : inst type slot : perp id slot : perp org slot : INSTRUMENT slot : perp conf slot : category slot : phys tgt id slot : PERPETRATOR slot : TARGET slot : hum tot num slot : phys tot num slot : phys tgt type slot : phys tgt number slot : phys tgt for nat slot : phys tgt effect slot : hum tgt name slot : hum tgt desc slot : hum tgt type slot : hum number slot : hum for nat slot : hum tgt effect Figure 1 : Object-oriented MUC-4 Template Desig n fields in the object , although it could be argued that all that was incorrect was the association of the object with an incorrect incident .</sentence>
+				<definiendum id="0">TARGET slot</definiendum>
+				<definiens id="0">Object-oriented MUC-4 Template Desig n fields in the object</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The META SLOT table contains a measurement of how well our system aligned objects .</sentence>
+				<definiendum id="0">META SLOT table</definiendum>
+				<definiens id="0">contains a measurement of how well our system aligned objects</definiens>
+			</definition>
+</paper>
+
+		<paper id="1047">
+			<definition id="0">
+				<sentence>TST2-MUC4-0048 Walkthrough Issues ( `` S '' = '' Sentence '' ) S l : SALVADORAN PRESIDENT-ELECT ALFREDO CRISTIANI CONDEMNED THE TERRORIS T KILLING OF ATTORNEY GENERAL ROBERTO GARCIA ALVARADO AND ACCUSED THE FARABUNDO MARTI NATIONAL LIBERATION FRONT ( FMLN ) OF THE CRIME .</sentence>
+				<definiendum id="0">FARABUNDO MARTI NATIONAL LIBERATION FRONT</definiendum>
+				<definiens id="0">SALVADORAN PRESIDENT-ELECT ALFREDO CRISTIANI CONDEMNED THE TERRORIS T KILLING OF ATTORNEY GENERAL ROBERTO GARCIA ALVARADO AND ACCUSED THE</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>HUM TGT : TOTAL NUMBE R 20 .</sentence>
+				<definiendum id="0">HUM TGT</definiendum>
+				<definiens id="0">TOTAL NUMBE R 20</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>HUM TGT : NUMBE R YEAR-OLD NIECE '' 22 .</sentence>
+				<definiendum id="0">HUM TGT</definiendum>
+				<definiens id="0">NUMBE R YEAR-OLD NIECE '' 22</definiens>
+			</definition>
+</paper>
+
+		<paper id="1041">
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>INTRODUCTION AND APPROACH Unlike most natural language processing ( NLP ) systems , TexUS ( Text Understanding System ) is being developed as a domain-independent shell , to facilitate the application oflanguage analysis to a variety of tasks and domains of discourse .</sentence>
+				<definiendum id="0">INTRODUCTION</definiendum>
+				<definiendum id="1">NLP</definiendum>
+				<definiendum id="2">TexUS ( Text Understanding System</definiendum>
+				<definiens id="0">a domain-independent shell , to facilitate the application oflanguage analysis to a variety of tasks and domains of discourse</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TexUS builds on INLET ( Interactive Natural Language Engineering Tool ) [ 1 ] [ 2 ] , which was used for MUC3 .</sentence>
+				<definiendum id="0">TexUS</definiendum>
+				<definiens id="0">builds on INLET ( Interactive Natural Language Engineering Tool</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>TexUS provides a host of interactive graphic tools for NLP development TexUS : Text Understanding System 6/11/37 10 :17 ( Small Screen ) I n r 0 ) Next Unknown ) TST2C4-0048 • SAN SALVADOR , 19 APR 89 ( ACAII-EFE ) - ( TENT ] SALVADORA N PRESIDENT-ELECT ALFREDO CRISTIaNI =HOMED THE TERRORIST KILLING OF ATTORNEY GENERAL ROBERTO GARCIA ALVARADO AND ACCUSED THE FARABUNDO MARTI NATIONAL LIBERATION FRONT ( FNLN ) OF THE CRIME .</sentence>
+				<definiendum id="0">TexUS</definiendum>
+				<definiens id="0">provides a host of interactive graphic tools for NLP development TexUS : Text Understanding</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>20 8 SYSTEM COMPONENTS TexUS comprises the following major components : knowledge acquisition system , analysis system , knowledge base , knowledge management system , and primitive support system ( see Figure 2 ) .</sentence>
+				<definiendum id="0">SYSTEM COMPONENTS TexUS</definiendum>
+				<definiens id="0">knowledge acquisition system , analysis system , knowledge base , knowledge management system</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The semantic analyzer constructs an internal representation of the objects and relationships between them .</sentence>
+				<definiendum id="0">semantic analyzer</definiendum>
+				<definiens id="0">constructs an internal representation of the objects and relationships between them</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The discourse analyzer traverses the internal semantic representation to establish links between events , actors , objects , locations , dates , instruments , and other information extracted from text .</sentence>
+				<definiendum id="0">discourse analyzer</definiendum>
+				<definiens id="0">traverses the internal semantic representation to establish links between events , actors , objects , locations , dates , instruments , and other information extracted from text</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Grammar rules represent any kind of sequential information ; we use them for syntax rules , idiomatic phrases , attributes of concepts , patterns with wildcards , logical expressions , and so on .</sentence>
+				<definiendum id="0">Grammar rules</definiendum>
+				<definiens id="0">any kind of sequential information ; we use them for syntax rules , idiomatic phrases , attributes of concepts , patterns with wildcards , logical expressions</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The raw database consists of knowledge in a form d irectly accessed and updated by TexUS .</sentence>
+				<definiendum id="0">raw database</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>SYSTEM INFORMATIO N TexUS has 89,000 lines of code and runs on Sun SPARCstations in C and Sunview .</sentence>
+				<definiendum id="0">SYSTEM INFORMATIO N TexUS</definiendum>
+				<definiens id="0">has 89,000 lines of code and runs on Sun SPARCstations in C and Sunview</definiens>
+			</definition>
+</paper>
+
+	</volume>

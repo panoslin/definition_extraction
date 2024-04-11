@@ -43,13 +43,16 @@ class FileLogger:
             # remove the old file
             os.remove(filename)
 
+        self.f = open(filename, 'w')
         if header is not None:
-            with open(filename, 'w') as out:
-                print(header, file=out)
+            print(header, file=self.f)
 
     def log(
             self,
             message
     ):
-        with open(self.filename, 'a') as out:
-            print(message, file=out)
+        print(message, file=self.f)
+
+    # destroy the logger
+    def __del__(self):
+        self.f.close()

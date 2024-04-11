@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="T75">
+
+		<paper id="2022">
+			<definition id="0">
+				<sentence>Wilks , Y. `` An Artificial Intelligence Approach to Machine Translation . ''</sentence>
+				<definiendum id="0">Y.</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2026">
+</paper>
+
+		<paper id="2024">
+</paper>
+
+		<paper id="2018">
+</paper>
+
+		<paper id="2021">
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>or lacking in the most elemental self-knowledge~ '' If we accept this example as indicative of a general phenomenon , it may seem to imply that people do not use statistical information properly~ However , that 's not quite it , because if the protagonist of the story had not gone to the cocktail party , he would have used the Consumer Report~ information ( properly ) to buy a Volvo~ Rather , like the experiment with the biographies , it appears that there is an inability to translate information from one mode to the other~ If you have an abstraction ( a good statistical repair record ) without direct episodes to instantiate it , and then in another context you are given an episode implying but not by itself proving the contrary abstraction , it is not so easy to put these pieces of information together .</sentence>
+				<definiendum id="0">Consumer Report~ information</definiendum>
+				<definiens id="0">an inability to translate information from one mode to the other~ If you have an abstraction ( a good statistical repair record ) without direct episodes to instantiate it , and then in another context you are given an episode implying but not by itself proving the contrary abstraction , it is not so easy to put these pieces of information together</definiens>
+			</definition>
+</paper>
+
+		<paper id="2027">
+</paper>
+
+		<paper id="2031">
+</paper>
+
+		<paper id="1003">
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>A scene is a set of objects related in terms of contact points .</sentence>
+				<definiendum id="0">scene</definiendum>
+				<definiens id="0">a set of objects related in terms of contact points</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , `` A CLOWN ON A PEDESTAL '' results in the following structure : ( CI , TOK CLOWN , SUPPORTBY C2 , ATTACH ( CI FEETXY C2 TOPXY ) ) ( C2 , TOK PEDESTAL , SUPPORT CI , ATTACH ( C2 TOPXY CI FEETXY ) ) ( CLOWN , EXPR ( LAMBDA ( ) ... ) FEET XY , SIZE 3 , STARTPT XY , HEADING A ) ( PEDESTAL , EXPR ( LAMBDA ( ) ... ) TOP XY , SIZE 3 , STARTPT XY , HEADING A ) A larger scene has more objects , more attach relations , and may include additional relations such as INSIDE , LEFTOF , RIGHTOF , etc .</sentence>
+				<definiendum id="0">CLOWN ON A PEDESTAL</definiendum>
+				<definiendum id="1">LAMBDA</definiendum>
+				<definiens id="0">LAMBDA ( ) ... ) TOP XY</definiens>
+			</definition>
+</paper>
+
+		<paper id="2017">
+</paper>
+
+		<paper id="2033">
+</paper>
+
+		<paper id="2006">
+			<definition id="0">
+				<sentence>Gruber proposes a modifier Identificational , which indicates that the Location or Source and Goal of the function to which it is affixed make claims about what the Theme is , rather than where or whose it is .</sentence>
+				<definiendum id="0">Gruber</definiendum>
+				<definiens id="0">proposes a modifier Identificational , which indicates that the Location or Source and Goal of the function to which it is affixed make claims about what the Theme is , rather than where or whose it is</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>I ( 28 ) BE ( X , Z ) &lt; - &gt; NOT BE ( X , NOT Z ) These rules play a role in inferences such as if John was not inside the house , he was I outside of it ( Positional ) ; if either John • or Bill had the book and John did n't , then Bill did ( Possessional ) ; and if Sue was sick , she was n't healthy ( Identificational ) .</sentence>
+				<definiendum id="0">John</definiendum>
+				<definiens id="0">the book and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( 30 ) CAUSE ( LAURA , STAY~ , ~ ( DAVID , DAVID WORK ) ) This claims that Laura caused David to continue to be involved in the situation of working , precisely the desired interpretation , and furthermore of precisely parallel form to its Positional analogue ( 29a ) .</sentence>
+				<definiendum id="0">CAUSE</definiendum>
+				<definiens id="0">Laura caused David to continue to be involved in the situation of working , precisely the desired interpretation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>CAUSE ( DOLLIE , GO~ ( MARTIN , y , BE~ ( MARTIN , HAPPY ) ) ) ( 37 ) a. John allowed Fred in the room .</sentence>
+				<definiendum id="0">CAUSE</definiendum>
+				<definiens id="0">37 ) a. John allowed Fred in the room</definiens>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>ABSTRACT Augmented phrase structure grammars consist of phrase structure rules ~with embedded conditions and structure-building actions written in a specially developed language .</sentence>
+				<definiendum id="0">ABSTRACT Augmented phrase structure grammars</definiendum>
+				<definiens id="0">consist of phrase structure rules ~with embedded conditions and structure-building actions written in a specially developed language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>DATA STRUCTURE The data structure used by APSG is a form of semantic network , consisting of `` records '' which are collections of attribute-value pairs .</sentence>
+				<definiendum id="0">APSG</definiendum>
+				<definiens id="0">a form of semantic network , consisting of `` records '' which are collections of attribute-value pairs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The named record `` SERVIC '' defined above could be drawn as : I NAME `` SERVIC '' SUP `` ACTIVITY '' PS `` VERB '' XYZ 3 |E , ES , ING , ED , TRANS Double quotes enclose a character string , single quotes enclose the name of a named record .</sentence>
+				<definiendum id="0">SERVIC</definiendum>
+				<definiendum id="1">TRANS Double</definiendum>
+				<definiens id="0">quotes enclose a character string , single quotes enclose the name of a named record</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The values of the SUPerset and PS ( part-of-speech ) attributes are really pointers to the records `` ACTIVITY '' and `` VERB '' and could be drawn as directed lines to those other records if they were included in the diagram .</sentence>
+				<definiendum id="0">PS</definiendum>
+				<definiens id="0">those other records if they were included in the diagram</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>ANALYSIS OF TEXT ( DECODING ) Decoding is the process by which record structures of the sort just shown are constructed from strings of text .</sentence>
+				<definiendum id="0">ANALYSIS OF TEXT ( DECODING ) Decoding</definiendum>
+				<definiens id="0">the process by which record structures of the</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A decoding rule consists of a list of one or more `` segment types '' ( meta-symbols ) on the left of an arrow to indicate which types of contiguous segments must be present in order for a segment of the type on the right of the arrow to be formed .</sentence>
+				<definiendum id="0">decoding rule</definiendum>
+				<definiens id="0">consists of a list of one or more `` segment types '' ( meta-symbols ) on the left of an arrow to indicate which types of contiguous segments must be present in order for a segment of the type on the right of the arrow to be formed</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Complete B. , Deverill , R.S. , `` REL : a rapidly extensible language system , '' In PROC .</sentence>
+				<definiendum id="0">REL</definiendum>
+				<definiens id="0">a rapidly extensible language system</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>This theory of syntactic analysis formalizes a notion very much like the psychologist 's notion of `` perceptual strategies '' \ [ Bever `` 70\ ] and makes this formalized notion which will be called the notion of wait-and-see diagnostics a central and integral part of a theory of what one knows about the structure of language .</sentence>
+				<definiendum id="0">wait-and-see</definiendum>
+				<definiens id="0">diagnostics a central and integral part of a theory of what one knows about the structure of language</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Modules at group level are intended to work on a buffer of words and word level structures and to eventually build group level structures , such as Noun Grouos ( i.e. Noun Phrases up to the head noun ) and Verb GrouPs ( i.e. the verb cluster up to the main verb ) , which are then put onto the end of a buffer of group level structures not yet absorbed by higher level processes .</sentence>
+				<definiendum id="0">Verb GrouPs</definiendum>
+				<definiens id="0">the verb cluster up to the main verb</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Each pattern consists of an ordered list of sets of features .</sentence>
+				<definiendum id="0">pattern</definiendum>
+				<definiens id="0">consists of an ordered list of sets of features</definiens>
+			</definition>
+</paper>
+
+		<paper id="2037">
+			<definition id="0">
+				<sentence>C2~ A EXPECTS that R will CHOOSE to UNDERSTAND A 's message C3 : A BELIEVES that R BELIEVES certain propositions ; AND A EXPECTS that \ [ R 's KNOWING A 's message AND R BELIEVING certain propositions\ ] will result in R BELIEVING : ( I ) A WANTS X ( 2 ) A WANTS R to CAUSE X ( 3 ) A BELIEVES that R CAN CAUSE X ( 4 ) A EXPECTS that A 's REQUESTING may MOTIVATE R to CAUSE X ( 5 ) A BELIEVES tha , t R was NOT MOTIVATED to CAUSE X prior to A 's REQUEST .</sentence>
+				<definiendum id="0">C2~ A EXPECTS</definiendum>
+				<definiendum id="1">WANTS X</definiendum>
+				<definiens id="0">A BELIEVES that R BELIEVES certain propositions ; AND A EXPECTS that \ [ R 's KNOWING A 's message AND R BELIEVING certain propositions\ ] will result in R BELIEVING : ( I ) A</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Goal Hypotheses : GI : R BELIEVES that A WANTS R to CAUSE X G2 : A 's REQUEST may MOTIVATE R to CAUSE X Outcome Possibilities : O1 : R will UNDERSTAND A 's COMMUNICATIONACT 02 : If Someone PERCEIVES A 's message , then that Someone CAN UNDERSTAND A 's COMMUNICATIONACT Motivational Hypotheses : MI : A WANTS R WANTS R to CAUSE X M2 : A WANTS X M3 : A WANTS R to CAUSE X to BELIEVE that A Normative Obligations : NI : If someone BELIEVES that A is COMMUNICATING then that someone BELIEVES that A OUGHT to UNDERSTAND A 's message N2 : If R BELIEVES that A is COMMUNICATING to R then R BELIEVES that R OUGHT to UNDERSTAND A 's message N3 : If R BELIEVES that A is REQUESTING that R CAUSE X AND R EXPECTS to NOT CAUSE X then R BELIEVES that R OUGHT to EXPLAIN to A why R EXPECTS to NOT CAUSE X TABLE I. Representation of the Action REQUEST 198 I I I I I I I I I I I I I I I I I I I general level by statingthat any causing which the agent performs which brings about the recipient 's knowledge of the agent 's message can count as an action done in order to partially make possible the performance of the request .</sentence>
+				<definiendum id="0">M2</definiendum>
+				<definiens id="0">A WANTS R WANTS R to CAUSE X</definiens>
+				<definiens id="1">If R BELIEVES that A is COMMUNICATING to R then R BELIEVES that R OUGHT to UNDERSTAND A 's message N3 : If R BELIEVES that A is REQUESTING that R CAUSE X AND R EXPECTS to NOT CAUSE X then R BELIEVES that R</definiens>
+			</definition>
+</paper>
+
+		<paper id="2019">
+</paper>
+
+		<paper id="2013">
+			<definition id="0">
+				<sentence>I 'm sure I learned all of these phrases , but three in particular stand out in my memory : Vyera Aleksyeevna otkrivayet dyyer '' ( Vera Aleksyeevna opens the door ) , vsya chisto literaturnaya dyeyatel'nost '' prekonchalas '' ( all purely literary activity came to an end ) , and raion dobichl !</sentence>
+				<definiendum id="0">Vera Aleksyeevna</definiendum>
+				<definiens id="0">opens the door ) , vsya chisto literaturnaya dyeyatel'nost '' prekonchalas '' ( all purely literary activity came to an end</definiens>
+			</definition>
+</paper>
+
+		<paper id="2020">
+</paper>
+
+		<paper id="2015">
+			<definition id="0">
+				<sentence>THE ERMA MODEL OF DISCOURSE BEHAVIOR The ERMA ( err-umm-ah ) ( Clippinger , 1974 ; Brown , 1974 ) , program Was written to simulate a speaker of a therapeutic discourse from beginning to end : the motivation of the discourse , its censoring , reformulation , expression , and introspection .</sentence>
+				<definiendum id="0">ERMA MODEL OF DISCOURSE BEHAVIOR The ERMA</definiendum>
+				<definiens id="0">the motivation of the discourse , its censoring , reformulation , expression , and introspection</definiens>
+			</definition>
+</paper>
+
+		<paper id="2030">
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>The verb phrase in one analysis consists of the verb `` are '' followed by the noun phrase `` flying planes '' , which are therefore adjacent on the same path , but there is no path from either of them to the verb phrase they make up because this is an alternative analysis of the same set of words .</sentence>
+				<definiendum id="0">verb phrase</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>An incomplete edge represents part of a phrase together with an indication of what would have to be added to complete it .</sentence>
+				<definiendum id="0">incomplete edge</definiendum>
+				<definiens id="0">represents part of a phrase together with an indication of what would have to be added to complete it</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>`` Jump '' arcs produce an incomplete edge in exchange for an incomplete edge , the differences being in the arcs that specify how to proceed towards completion , and possibly in the label .</sentence>
+				<definiendum id="0">Jump</definiendum>
+				<definiens id="0">an incomplete edge in exchange for an incomplete edge , the differences being in the arcs that specify how to proceed towards completion</definiens>
+			</definition>
+</paper>
+
+		<paper id="2014">
+			<definition id="0">
+				<sentence>A description of eating is a special case of INFORMING .</sentence>
+				<definiendum id="0">description of eating</definiendum>
+				<definiens id="0">a special case of INFORMING</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , HELPING is a social action in which the actor does something which furthers a plan inferred for someone else .</sentence>
+				<definiendum id="0">HELPING</definiendum>
+				<definiens id="0">a social action in which the actor does something which furthers a plan inferred for someone else</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A SAP is a pattern of behavior ( its body ) with constraints ( its header ) on the applicability of the body .</sentence>
+				<definiendum id="0">SAP</definiendum>
+				<definiens id="0">a pattern of behavior ( its body ) with constraints ( its header ) on the applicability of the body</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the figure , REQUEST , SUGGEST , PROMISE , etc. are social actions ; A and R are persons ; and X is an action .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">an action</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>F~ ( X ) is an alternative to X ; F~ ( X ) is information which relates to the doing of X ; and ~ ( X ) is a reason for not doing X. The SAP body says that A can REQUEST that R do X. Following the REQUEST , R may SUGGEST an alternative to X , may PROMISE to do X , may do X , may REFUSE to do X , or may REQUEST additional information .</sentence>
+				<definiendum id="0">F~ ( X )</definiendum>
+				<definiens id="0">information which relates to the doing of X</definiens>
+				<definiens id="1">a reason for not doing X. The SAP body says that A can REQUEST that R do X. Following the REQUEST , R may SUGGEST an alternative to X</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+</paper>
+
+		<paper id="2007">
+</paper>
+
+		<paper id="2011">
+</paper>
+
+		<paper id="2025">
+			<definition id="0">
+				<sentence>Inessential details ( such as programming language and machine ) may be changed , if desired , but the properties of the algorithms which form the basis for the theoretical claims of the work must be held constant .</sentence>
+				<definiendum id="0">Inessential details</definiendum>
+				<definiens id="0">such as programming language and machine</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+</paper>
+
+		<paper id="2036">
+			<definition id="0">
+				<sentence>The commonsense algorithm is a type of framework ( as Minsky has defined the term ) for representing algorithmic processes , hopefully the way humans do .</sentence>
+				<definiendum id="0">commonsense algorithm</definiendum>
+				<definiens id="0">a type of framework ( as Minsky has defined the term ) for representing algorithmic processes , hopefully the way humans do</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The static knowledge tells the person where to expect the steering wheel to be when he gets in ; the dynamic knowledge tells him how to get in in the first place , and what to do with the wheel ( and why ) once he is in .</sentence>
+				<definiendum id="0">static knowledge</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>EVOLUTION OF THE CSA IDEA The next section will define a CSA as a network-like structure consisting of events tied together by primitive links .</sentence>
+				<definiendum id="0">CSA</definiendum>
+				<definiens id="0">a network-like structure consisting of events tied together by primitive links</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Taken as a whole , the CSA specifies a process : how to get something done , how something works , etc .</sentence>
+				<definiendum id="0">CSA</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>DEFINITION OF THE COMMONSENSE ALGORITHM In the new formalism , a CSA consists of nodes of five types : I. WANTS The first four types are not new ( see \ [ $ 3\ ] for example ) , and will not be covered here beyond the following brief mention .</sentence>
+				<definiendum id="0">DEFINITION OF THE COMMONSENSE ALGORITHM</definiendum>
+				<definiendum id="1">CSA</definiendum>
+				<definiens id="0">consists of nodes of five types</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Its use is illustrated in one of the examples~ TYPE 18 : COMPOUND GOAL STATE DEFINITION State S is a shorthand for expresing the set of goal states SI , ... , Sn .</sentence>
+				<definiendum id="0">COMPOUND GOAL STATE DEFINITION State S</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Vicious cycles &lt; Figure 6 ) Consider tendencies such as fire and forgetfulness. Both roughly follow the paradigm : a tendency has state S as a continuous enablement , and produces the same state as continuous causality. Once started , such a system is self-sustaining. In the case of fire , a one-shot causing action causes a statechange in temperature which thresholds at the point of the material 's combustion temperature ; this enables the tendency to burn , which in turn produces as a continual byproduct heat , causing a vicious cycle. In forgetting , the tendency to forget X is enabled by not referencing X for periods of time ; but as X grows more forgotten , it becomes less referenceable. Here , dynamic antagonism lies at the root of the vicious cycle. EXAMPLE 4. Description ( synthesis ) of computer algorithm ( Figure 7 ) Suppose the goal is to compute the average of a table of numbers , TABLE ( 1 ) , ... , TABLE ( n ) . Figure 7 shows both how to conceive of the algorithm and how the algorithm will actually run. As a computer algorithm , this is not as fully explicit as might be desired : it lacks explicit iteration and explicit termination criterion testing. These will have to be worked out before the theory adequately handles repetition. i Causal gating seems to play a central role in this sort of computer algorithm. Intuitively , this is the case because , though a computer instruction typically has no physical enabling conditions ( it could be issued at any time ) , desired effects can be achieved only by tying the syntax of instruction causality to the semantics of logical causality. For example , the flow of causality from the action `` fetch location SUM to ACI '' to the logical semantic state `` partial sum in ACI '' can take place only if location SUM logically contains the actual partial sum at that point ! Otherwise , garbage is fetched. The relationships of certain types of causal gating and state coupling ( e.g. the valve closing because the float has risen in the toilet tank ) are not completely apparent yet. Perhaps state coupling is a shorthand for an implicit sequence of gated causalities between two statechanges. On the other hand , state coupling between two states , as opposed to statechanges , seems to be a concept which is independent of gated causality. To illustrate ; `` a nail through two pieces of wood '' ( state I ) has to be regarded as state-coupled to `` the pieces of wood are joined '' ( state 2 , a description of the same situation , but at a different level ) : 187 ~WOODI , WOOD2~ _L_ T ooo , JOINED ~/ In this type of situation , the state coupling concept is required at this level to stop the representation of some sort of inexplicable `` micro-causality '' when it transcends the model 's knowledge of the world. VI. ALTERNATIVE ACTION SELECTION In looking at devices and simple processes such as sawing a board in half , there have been few choices ; the causality and enablement are in a sense already built in or strongly prescribed. In a real planning environment on the other hand , there will ordinarily be numerous alternative actions which could causally produce some desired goal state , providing all gating conditions could be met. For example , if the goal of a planner is to produce a statechange in his location to some specified point , the various subplans of walking , driving a car , hitching a ride , bicycling , taking a plane , etc. all suggest themselves as potentially relevant , some more than others. The one the planner actually selects will be a function of more than Just the relative costs of each alternative ; the selection will also relate to the inherent applicability , or reasonableness of the plan , based on the sDecif % cs of where his destination is relative to his current location , weather conditions , etc. Of course , all the relevant factors could eventually be discovered by simulating each alternative plan before choosing , watching out for undesirable or suboptimal events. For example , in simulating the walking , hitchhiking or bicycling plans , the planner finds himself outside for potentially long durations. Hence , if it is raining , the cost is judged high. If the distance is less than a mile , or is indoors , simulation of the airplane plan leads to some absurdly high costs and perhaps some unsolvable antagonisms. Certainly , a degree of such forward simulation must occur in planning ; however , it seems that the process of selecting among alternative actions is , intuitively , more unified than just a collection of forward simulations. For this reason , the model of CSA 's incorporates the notion of a selector , denoted by the construction : SEL is a place where heuristics , as well as forward simulation control can reside , The heuristics test relevant dimensions ( e.g. distance , weather conditions , etc. ) of the context in which the state or statechange is being sought ( either for execution of some larger plan , or for interpreting what another might do in some context ) . Based on the outcomes of such tests , the SELector chooses one alternative action as most reasonable. Currently , the selector function is imagined to exist `` outside '' the CAS formalism as 'an unrestricted program which runs and decides. Eventually , since it is one goal of the CSA formalism to be able to represent arbitrary decision processes ( these are , after all , just other algorithms ) , the SELector function should simply reference other CSA 's which carry out the heuristic testing. In other words , defer the `` intelligence '' in selecting an alternative at this level to unintelligent CSA 's at the next level , and SO on. VII. LEVELS OF RESOLUTIONS IN CSA 'S The algorithmic content of a CSA can be described at many different levels of resolution. For example , the `` action '' `` take a plane to San Francisco '' is quite a bit higher in level and more abstract than the action `` grasp a saw '' . In the former , the act of taking a plane somewhere is not really an action at all , but rather a description of an entire set of actions , themselves related in a CSA ; `` take a plane to San Francisco '' is a high level surrogate for a low level collection of true actions in the sense of actually performing physical movements , etc. in the real world ( things like grasping a saw , reaching into pants pocket for some money , and so on ) . Another example of resolution level differences relates to how enabling states for actions are characterized. For example , in ( A2 ) Abelson employs the primitive ( OKFOR object application ) , as in ( OKFOR AUTO TRAVEL ) . The question here is , what is the relationship between this high level description of OKness and the specifics of what OKFOR means for any given object ? That is , for a car , OKFOR means `` gas in tank '' , `` tires inflated '' , `` battery charged '' , ... , whereas ( OKFOR TOILET FLUSHING ) means quite a different set of things. The basic issue is : should the memory plan and interpret in the abstract realm of OKFORedness , then instantiate with details later , or must the details serve as the primary planning basis , with the abstract ideas being reserved for other higher level processes such as reasoning by analogy , generalization and so forth ? There is probably no cut-and-dried answer ; however , the tendency in a CSA system would be to favor the details over the abstract. But the CSA representation is intended to be flexible enough to accomodate both the abstract and the concrete. The idea of state coupling is an illustration of this. 188 VIII. THE THEORY HAS ONLY JUST BEGUN A later version of this paper will contain more examples of the CSA , including its use in language context problems. The theory is by no means complete ; to illustrate : ( I ) Is there such a thing as gated enablement ? The answer seems to be `` yes '' , since it seems reasonable to regard enablement as a flow which can be cut off in much the same way as causality. Perhaps an example of gated enablement is when the horses begin their race at the racetrack : the start gate 's being open is a one-shot enablement for the horse to run , but only if the horse is in the box to start with ! If he 's not in the box , the gate 's position is n't relevant as an enablement to run ; its flow is severed. ( 2 ) What kinds of time and sequencing information need to be incorporated in the formalism ? For example , causality can be either abrupt or gradual : taking medicine for an ulcer provides a conceptually gradual statechange in the stomach 's condition , whereas surgery provides a conceptually abrupt cure ! This suggests the need for classifying statechanges on some discrete conceptual scale. Another inadequacy of the present model is its inability to specify time sequencing ; adoption of some traditional flowchart concepts will probably prove adequate for this. ( 3 ) There is no convenient way to model decision-making processes on the part of the planner of a CSA. This will have to be developed. IX. APPLICATIONS OF THE CSA On the brighter side , the CSA provides a unified basis for problem-solving-related cognitive models. Specifically , I believe it shores up , under one basic data structure , the ideas presented in my own past research in conceptual memory and inference ( RI , R2 ) and in conceptual overlays ( R3 ) which suggests a meaning context mechanism for language comprehension based around CSA's. I want to conclude by listing anticipated applicaions of CSA's. The applications have been divided into two categories : general ( those which are central to some major theoretical issues in language understanding and problem-solving ) , and specific ( those which provide some local insights into memory organization ) . General ApPlications I. As the basis for active Rroblem-solv~ng The CSA supplies an algorithmic format wherein plans can be conceived , synthesized and executed. One immediate goal of I I I I I I I ! I i I i I research should be to construct a commonsense algorithm1 interpreter which could `` execute '' the contents of portions of its own CSA memory in order to effect actions of moving about , communicating , and so forth. In ( RI ) , which describes a theory of conceptual memory and inference , sixteen classes of conceptual inference were identified as the logical foundation of'a language-based meaning comprehension system. Interestingly enough ( but not surprising ) , nine of those inference classes correspond directly to traversals of CAS primitive links. In the theory of ( RI ) , every language stimulus , represented in conceptual form via Schank 's conceptual dependency notation ( S2 ) , was subjected to a spontaneous expansion in `` inference space '' along the sixteen dimensions corresponding to the sixteen inference classes. Making an inference in that model corresponds to identifying each perception as a step in one or more CSA 's , then expanding outward from those points along the CSA links breadth-first. Although there is certainly a class of more goal-directed conceptual inference , this kind of spontaneous expansion seems necessary to general comprehension , and the CSA is a natural formalism to use. The nine classes of inference which relate directly to CSA links are : I. causative representation o_~f language. A very large percentage of what people communicate deals with algorithms , the how and why of their activities in the world. Schank 's conceptual dependency framework does a good job at representing rather complex utterances which reference underlying actions , states and statechanges. This theory of CSA 's extends this framework to accomodate larger chunks of experience and language to begin dealing with paragraphs and stories instead of isolated sentences. Every man-made mechanism , as well as every naturally-occurring biological system , is rich in algorithmic content. As illustrated in a previous example , CSA 's can do a respectable job at characterizing complex servoand feedback mechanisms. It is not hard to envision the CSA as a basis for physiological models in such an application as medical diagnosis. Since all biological systems are purposively constructed mechanisms in the evolutionary 189 sense , representing such mechanisms in terms of causality , enablement , byproducts , thresholds , etc. is quite meaningful. meaning context i__nn language comprehension and general perception ( R3 ) describes an expectancy-based system called `` conceptual overlays '' which can impose high-level , contextual interpretations on sentences by consulting its algorithmic base. In that paradigm , some stimuli ( i.e. meaning graphs resulting from a conceptual parser `` which receives language utterances as input ) activate action overlays , while other stimuli fit into previously activated action overlays. Since an overlay is a collection of pointers to CSA 's in the algorithmic base which have been predicted as likely to occur next , to `` fit into '' is to identify subsequent input as steps in the various algorithms actors have been predicted to engage. For example , knowing what the sentence `` John asked Mary for the keys '' means contextually is quite a bit more simply understanding the `` picture '' this utterance elicits ( its conceptual dependency representation ) . If we know that John was hungry : John had n't eaten in days. John asked Mary for the car keys. we activate an overlay which expects that John will engage CSA 's which will alleviate his inferred hunger ; needing car keys fits nicely as a continuous enablement in several of these algorithms. Of course , the virtue of such a system is that it allows the high-level interpretation of a sentence to change as a function of its contextual environment : John had some hamburger stuck in his teeth. John asked Mary for the car keys. Change the expectancies , and the interpretation changes ! computer al~orlthm synthesis ~nd Since a computer algorithm is a relatively direct reflection of a programmer 's internal model of an algorithmic process , it seems reasonable that both the processes of synthesis and final implementation be represented in the same terms as his internal model. The present theory only suggests an approach ; it is not yet adequate for general computer algorithms. But it seems that the idea of a CSA might be very relevant to recent research in the area of automatic programming , at least as a basis of representation. If a CSA interpreter can indeed be defined , and if indeed the CSA can eventually capture any computer algorithm , then creating a self-model amounts to specifying the CSA interpreter in terms of CSA's. For example , an act of communication amounts to the communication of enough referential information ( features of objects , times , etc. ) to enable the comprehender to identify , in his own model , the concepts being communicated. The how-to-communicate algorithm which the CSA interpreter employs could itself be a CSA. of algorithm learning If we posit the existence of a small set of primitive CSA links and make the assumption that these are either part of the brain 's hardware , or learned implicitly as soon as the intellect begins perceiving , we have a basis from which to study how a child learns world dynamics. For example , how , and at what point , does the toddler know that he must grasp the cup in an act of continuous enablement before he can lift it to his mouth , and how does he know it must be at his mouth before he can successfully drink ? Perhaps algorithmic knowledge develops from random experimentation within the syntactic constraints imposed by the set of CSA primitive links. Specific CSA Applications I. For representing the functions of objects As with mechanisms , any man-made object is made for a purpose. Translated to CSA 's , this means that part of every purposively-constructed object 's definition is a set of pointers into the algorithm base to CSA 's in which the object occurs. This is true for all objects from pencils , to furnaces , to window shades , to a bauble which provided its constructor amusement , to newspapers. An object in memory can be completely characterized ( in the abstract ) by a set of intrinsic features ( shape , size , color , etc ) and this set of pointers to CSA's. To say ( ISA JOHNI PLUMBER ) skirts what it means to be a plumber. Rather , to be a plumber means to engage plumbing algorithms as a principal source of income. Thus , a profession can be defined by a set of pointers to the CSA 's which are characteristic of that profession. This makes it possible to observe someone at work and identify his profession , to compare professions , etc. ; these would not be possible if CSA 's were not the basis of representation. anomalous situations and potentially antagonistic states A person notices a license plate yearly sticker on upside down ; a person notices two fire engines approaching an intersection , rushing to a fire ; at the intersection , one turns left , the other turns right ; a person notices that the rain that morning will 190 interfere with the picnic plans that afternoon. How do such situations get judged `` anomalous '' , and how does the perceiver try to explain or cope with them ? The answer undoubtedly relates to expectancies and a knowledge of algorithms for putting things on one-another , getting somewhere in a hurry and antagonistic states when eating outdoors. By playing experience against CSA 's we discover things which would not otherwise be discovered. If a person is perceiving in a noisy or incomplete environment , having CSA 's available to guide his interpretations of perceptions provides enough momentum to fill in missing details , scarcely noticing their absence. If John is hammering a nail into the wall with his hand on the backswing , but the object in his hand is occluded , it requires very little effort to surmise that it is a hammer. If we believe that Mary is going to McDonald 's to buy a hamburger , but she comes back into the house saying `` It wo n't start '' , we have a pretty good idea `` it '' refers to the car. This application of CSA 's corresponds to the notion of a specification inference in ( RI ) . X. CONCLUSIONS Instead of a conclusion , I will simply state the order in which research along CSA lines should , and hopefully will at the University of Maryland , progress : I. Reimplementation of the conceptual overlays prototype system described in ( R3 ) to reflect the new CSA ideas and replace the ad-hoc ANDR graph approach described in that report. which could accept , in CSA terms , the definition of a complex mechanism ( electronic circuit or toilet ) , simulate it , respond to artificially-induced malfunctions , and answer questions about the mechanism 's cause and effect structure. memory , along the lines of the original one of ( RI ) , but incorporatng CSA 's and the new idea of a tendency. This would involve reimplementing the inference mechanism and various searchers. could not only use CSA 's as data structures in the various cognitive processes , but also could execute them to drive itself. automatic programming. comprehension via conceptual overlays and CSA's. Perhaps also investigating generation of stories ( e.g. the story of the trip to McDonald 's ) or the generation of a description of a complex electronic circuit , encoded as a CSA , in layman 's terms. XI. ACKNOWLEDGEMENTS My thanks to the members of the Commonsense Algorithm Study Group at the University of Maryland : Bob Eberlein , Milt Grinberg , Bob Kirby , Phil London and Tom Skillman. They have provided considerable intellectual stimulation. We hope to continue as a group and eventually issue a working paper and computer system. of Abstraction Spaces , '' in Proceedings 3IJCAI 1973. ( $ 2 ) Schank , R. , `` Identifications of Conceptualizations Underlying Natural Language '' , in Schank and Colby , Computer Models of Thought and Language , W.H. Freeman , 1973. ( $ 3 ) Schank , R. , Goldman , N. , Rieger , C. , and Riesbeck , C. , `` Primitive Concepts Underlying Verbs of Thought , '' Stanford Univ. AI Memo 162 , 1972. ( $ 4 ) Schmidt , C. , and D'Addamio , J. , `` A Model of the Common-Sense Theory of Intention and Personal Causation , '' Proceedings 3IJCAI , 1973. 191 Figure ! Unrestricted ANDR graph for getting a McDonald 's hamburger into stomach. e. , ~\e. Figure 2 Hamburger algorithm , with actions , states , causality and enablement explicit. 6~6~r o~ ? uo # T~ L~t. ~A~If , Q. : IvPPI.Y LtN~ '' r~ TA~V~ tank from ~// trip _ # float ~j~ /~J ~anolellf~ ~ arm supply II1 dis_~~_~ , channel valve Ill harge III~ pe supply |~ flush stewOer plpe~_ ValeV ~ itrip~ f'~ , refi I l % \ ] o at~i/i c TAN K FIGURE 3 A reverse-trap toilet. , i m , , ll ! ft I `` ~ Over.fl ow ' ~'- ' ) p , pe • ~flush ball K ~Bk~6 c~c~ sutp6y Fuu~ ~F t~b V~ # ~. v~Lv~ Bo~L. 1 '' o w~rs~n~ G , 'Z~W , T7 ~. w ~ , ~J~ wWr~ F~ 15owu 6J~TF.~ H¢16.~ o~rr~ L~P ~F wksl~ FIGURE 4 O~eration of the reverse-trap toilet. 192 I I I I I I __ I I I I I I I I OF I , ~o0 I ( oe , ,. , ,~. ( Co~t~UouS Jr~ , WooO 'Figure 5 _ _ . + Sawing a board in half to decrease its length. 193 I T~ , ~ , ~'~.~ ~ I T ; ~~ , . ' k/~ • o -I -- -- - '' I , T~ ~. | I I I COMBUSTION , I I | ~~ ' '' ~ ! ! I FORGETFULNESS ! FIGURE 6 Vicious Cycles. ! I 194 ! ts ~j /tc 2 , £ I~ ~F-.O Nf.x.T P~ t~E~T TA~LF_ DJVII &gt; ( ,4c~ .</sentence>
+				<definiendum id="0">CSA</definiendum>
+				<definiens id="0">Consider tendencies such as fire and forgetfulness. Both roughly follow the paradigm : a tendency has state S as a continuous enablement , and produces the same state as continuous causality. Once started , such a system is self-sustaining. In the case of fire , a one-shot causing action causes a statechange in temperature which thresholds at the point of the material 's combustion temperature ; this enables the tendency to burn , which in turn produces as a continual byproduct heat , causing a vicious cycle. In forgetting , the tendency to forget X is enabled by not referencing X for periods of time ; but as X grows more forgotten , it becomes less referenceable. Here , dynamic antagonism lies at the root of the vicious cycle. EXAMPLE 4. Description ( synthesis ) of computer algorithm ( Figure 7 ) Suppose the goal is to compute the average of a table of numbers , TABLE ( 1 ) , ... , TABLE ( n ) . Figure 7 shows both how to conceive of the algorithm and how the algorithm will actually run. As a computer algorithm , this is not as fully explicit as might be desired : it lacks explicit iteration and explicit termination criterion testing. These will have to be worked out before the theory adequately handles repetition. i Causal gating seems to play a central role in this sort of computer algorithm. Intuitively , this is the case because , though a computer instruction typically has no physical enabling conditions ( it could be issued at any time ) , desired effects can be achieved only by tying the syntax of instruction causality to the semantics of logical causality. For example , the flow of causality from the action `` fetch location SUM to ACI '' to the logical semantic state `` partial sum in ACI</definiens>
+				<definiens id="1">the valve closing because the float has risen in the toilet tank ) are not completely apparent yet. Perhaps state coupling is a shorthand for an implicit sequence of gated causalities between two statechanges. On the other hand , state coupling between two states , as opposed to statechanges , seems to be a concept which is independent of gated causality. To illustrate</definiens>
+				<definiens id="2">this level to stop the representation of some sort of inexplicable `` micro-causality '' when it transcends the model 's knowledge of the world. VI. ALTERNATIVE ACTION SELECTION In looking at devices and simple processes such as sawing a board in half , there have been few choices ; the causality and enablement are in a sense already built in or strongly prescribed. In a real planning environment on the other hand</definiens>
+				<definiens id="3">taking a plane , etc. all suggest themselves as potentially relevant , some more than others. The one the planner actually selects will be a function of more than Just the relative costs of each alternative ; the selection will also relate to the inherent applicability , or reasonableness of the plan , based on the sDecif % cs of where his destination is relative to his current location , weather conditions , etc. Of course , all the relevant factors could eventually be discovered by simulating each alternative plan before choosing , watching out for undesirable or suboptimal events. For example</definiens>
+				<definiens id="4">the cost is judged high. If the distance is less than a mile , or is indoors , simulation of the airplane plan leads to some absurdly high costs and perhaps some unsolvable antagonisms. Certainly , a degree of such forward simulation must occur in planning ; however , it seems that the process of selecting among alternative actions is , intuitively , more unified than just a collection of forward simulations. For this reason , the model of CSA 's incorporates the notion of a selector , denoted by the construction : SEL is a place where heuristics , as well as forward simulation control can reside , The heuristics test relevant dimensions ( e.g. distance , weather conditions , etc. ) of the context in which the state or statechange is being sought ( either for execution of some larger plan , or for interpreting what another might do in some context ) . Based on the outcomes of such tests , the SELector chooses one alternative action as most reasonable. Currently , the selector function is imagined to exist `` outside '' the CAS formalism as 'an unrestricted program which runs and decides. Eventually , since it is one goal of the CSA formalism to be able to represent arbitrary decision processes ( these are , after all , just other algorithms ) , the SELector function should simply reference other CSA 's which carry out the heuristic testing. In other words , defer the `` intelligence '' in selecting an alternative at this level to unintelligent CSA 's at the next level , and SO on. VII. LEVELS OF RESOLUTIONS IN CSA 'S The algorithmic content of a CSA can be described at many different levels of resolution. For example , the `` action '' `` take a plane to San Francisco '' is quite a bit higher in level and more abstract than the action `` grasp a saw '' . In the former , the act of taking a plane somewhere is not really an action at all , but rather a description of an entire set of actions</definiens>
+				<definiens id="5">a high level surrogate for a low level collection of true actions in the sense of actually performing physical movements , etc. in the real world ( things like grasping a saw , reaching into pants pocket for some money , and so on ) . Another example of resolution level differences relates to how enabling states for actions are characterized. For example , in ( A2 ) Abelson employs the primitive ( OKFOR object application ) , as in ( OKFOR AUTO TRAVEL ) . The question here is , what is the relationship between this high level description of OKness and the specifics of what OKFOR means for any given object ? That is , for a car , OKFOR means `` gas in tank '' , `` tires inflated '' , `` battery charged '' , ... , whereas ( OKFOR TOILET FLUSHING ) means quite a different set of things. The basic issue is : should the memory plan and interpret in the abstract realm of OKFORedness , then instantiate with details later , or must the details serve as the primary planning basis , with the abstract ideas being reserved for other higher level processes such as reasoning by analogy , generalization and so forth ? There is probably no cut-and-dried answer ; however , the tendency in a CSA system would be to favor the details over the abstract. But the CSA representation is intended to be flexible enough to accomodate both the abstract and the concrete. The idea of state coupling is an illustration of this. 188 VIII. THE THEORY HAS ONLY JUST BEGUN A later version of this paper will contain more examples of the CSA , including its use in language context problems. The theory is by no means complete ; to illustrate : ( I ) Is there such a thing as gated enablement ? The answer seems to be `` yes '' , since it seems reasonable to regard enablement as a flow which can be cut off in much the same way as causality. Perhaps an example of gated enablement is when the horses begin their race at the racetrack : the start gate 's being open is a one-shot enablement for the horse to run , but only if the horse is in the box to start with ! If he 's not in the box , the gate 's position is n't relevant as an enablement to run ; its flow is severed. ( 2 ) What kinds of time and sequencing information need to be incorporated in the formalism ? For example , causality can be either abrupt or gradual : taking medicine for an ulcer provides a conceptually gradual statechange in the stomach 's condition , whereas surgery provides a conceptually abrupt cure ! This suggests the need for classifying statechanges on some discrete conceptual scale. Another inadequacy of the present model is its inability to specify time sequencing ; adoption of some traditional flowchart concepts will probably prove adequate for this. ( 3 ) There is no convenient way to model decision-making processes on the part of the planner of a CSA. This will have to be developed. IX. APPLICATIONS OF THE CSA On the brighter side , the CSA provides a unified basis for problem-solving-related cognitive models. Specifically , I believe it shores up , under one basic data structure , the ideas presented in my own past research in conceptual memory and inference ( RI , R2 ) and in conceptual overlays ( R3 ) which suggests a meaning context mechanism for language comprehension based around CSA's. I want to conclude by listing anticipated applicaions of CSA's. The applications have been divided into two categories : general ( those which are central to some major theoretical issues in language understanding and problem-solving ) , and specific ( those which provide some local insights into memory organization ) . General ApPlications I. As the basis for active Rroblem-solv~ng The CSA supplies an algorithmic format wherein plans can be conceived</definiens>
+				<definiens id="6">a commonsense algorithm1 interpreter which could `` execute '' the contents of portions of its own CSA memory in order to effect actions of moving about , communicating , and so forth. In ( RI ) , which describes a theory of conceptual memory and inference , sixteen classes of conceptual inference were identified as the logical foundation of'a language-based meaning comprehension system. Interestingly enough ( but not surprising ) , nine of those inference classes correspond directly to traversals of CAS primitive links. In the theory of ( RI ) , every language stimulus , represented in conceptual form via Schank 's conceptual dependency notation ( S2 ) , was subjected to a spontaneous expansion in `` inference space '' along the sixteen dimensions corresponding to the sixteen inference classes. Making an inference in that model corresponds to identifying each perception as a step in one or more CSA 's , then expanding outward from those points along the CSA links breadth-first. Although there is certainly a class of more goal-directed conceptual inference , this kind of spontaneous expansion seems necessary to general comprehension , and the</definiens>
+				<definiens id="7">a natural formalism to use. The nine classes of inference which relate directly to CSA links are : I. causative representation o_~f language. A very large percentage of what people communicate deals with algorithms , the how and why of their activities in the world. Schank 's conceptual dependency framework does a good job at representing rather complex utterances which reference underlying actions , states and statechanges. This theory of CSA 's extends this framework to accomodate larger chunks of experience and language to begin dealing with paragraphs and stories instead of isolated sentences. Every man-made mechanism , as well as every naturally-occurring biological system , is rich in algorithmic content. As illustrated in a previous example , CSA 's can do a respectable job at characterizing complex servoand feedback mechanisms. It is not hard to envision the CSA as a basis for physiological models in such an application as medical diagnosis. Since all biological systems are purposively constructed mechanisms in the evolutionary 189 sense , representing such mechanisms in terms of causality , enablement , byproducts , thresholds , etc. is quite meaningful. meaning context i__nn language comprehension and general perception ( R3 ) describes an expectancy-based system called `` conceptual overlays '' which can impose high-level , contextual interpretations on sentences by consulting its algorithmic base. In that paradigm , some stimuli ( i.e. meaning graphs resulting from a conceptual parser `` which receives language utterances as input ) activate action overlays</definiens>
+				<definiens id="8">a collection of pointers to CSA 's in the algorithmic base which have been predicted as likely to occur next , to `` fit into '' is to identify subsequent input as steps in the various algorithms actors have been predicted to engage. For example , knowing what the sentence `` John asked Mary for the keys '' means contextually is quite a bit more simply understanding the `` picture '' this utterance elicits ( its conceptual dependency representation ) . If we know that John was hungry : John had n't eaten in days. John asked Mary for the car keys. we activate an overlay which expects that John will engage CSA 's which will alleviate his inferred hunger ; needing car keys fits nicely as a continuous enablement in several of these algorithms. Of course , the virtue of such a system is that it allows the high-level interpretation of a sentence to change as a function of its contextual environment : John had some hamburger stuck in his teeth. John asked Mary for the car keys. Change the expectancies , and the interpretation changes ! computer al~orlthm synthesis ~nd Since a computer algorithm is a relatively direct reflection of a programmer 's internal model of an algorithmic process , it seems reasonable that both the processes of synthesis and final implementation be represented in the same terms as his internal model. The present theory only suggests an approach ; it is not yet adequate for general computer algorithms. But it seems that the idea of a CSA might be very relevant to recent research in the area of automatic programming , at least as a basis of representation. If a CSA interpreter can indeed be defined , and if indeed the CSA can eventually capture any computer algorithm , then creating a self-model amounts to specifying the CSA interpreter in terms of CSA's. For example , an act of communication amounts to the communication of enough referential information ( features of objects , times , etc. ) to enable the comprehender to identify , in his own model , the concepts being communicated. The how-to-communicate algorithm which the CSA interpreter employs could itself be a CSA. of algorithm learning If we posit the existence of a small set of primitive CSA links and make the assumption that these are either part of the brain 's hardware , or learned implicitly as soon as the intellect begins perceiving , we have a basis from which to study how a child learns world dynamics. For example , how , and at what point , does the toddler know that he must grasp the cup in an act of continuous enablement before he can lift it to his mouth , and how does he know it must be at his mouth before he can successfully drink ? Perhaps algorithmic knowledge develops from random experimentation within the syntactic constraints imposed by the set of CSA primitive links. Specific CSA Applications I. For representing the functions of objects As with mechanisms , any man-made object is made for a purpose. Translated to CSA 's , this means that part of every purposively-constructed object 's definition is a set of pointers into the algorithm base to CSA 's in which the object occurs. This is true for all objects from pencils , to furnaces , to window shades , to a bauble which provided its constructor amusement , to newspapers. An object in memory can be completely characterized ( in the abstract ) by a set of intrinsic features ( shape , size , color , etc ) and this set of pointers to CSA's. To say ( ISA JOHNI PLUMBER ) skirts what it means to be a plumber. Rather , to be a plumber means to engage plumbing algorithms as a principal source of income. Thus , a profession can be defined by a set of pointers to the CSA 's which are characteristic of that profession. This makes it possible to observe someone at work and identify his profession , to compare professions , etc. ; these would not be possible if CSA 's were not the basis of representation. anomalous situations and potentially antagonistic states A person notices a license plate yearly sticker on upside down ; a person notices two fire engines approaching an intersection , rushing to a fire ; at the intersection , one turns left , the other turns right ; a person notices that the rain that morning will 190 interfere with the picnic plans that afternoon. How do such situations get judged `` anomalous '' , and how does the perceiver try to explain or cope with them ? The answer undoubtedly relates to expectancies and a knowledge of algorithms for putting things on one-another , getting somewhere in a hurry and antagonistic states when eating outdoors. By playing experience against CSA 's we discover things which would not otherwise be discovered. If a person is perceiving in a noisy or incomplete environment , having CSA 's available to guide his interpretations of perceptions provides enough momentum to fill in missing details , scarcely noticing their absence. If John is hammering a nail into the wall with his hand on the backswing , but the object in his hand is occluded</definiens>
+				<definiens id="9">going to McDonald 's to buy a hamburger , but she comes back into the house saying `` It wo n't start ''</definiens>
+				<definiens id="10">the car. This application of CSA 's corresponds to the notion of a specification inference in ( RI ) . X. CONCLUSIONS Instead of a conclusion , I will simply state the order in which research along CSA lines should , and hopefully will at the University of Maryland , progress : I. Reimplementation of the conceptual overlays prototype system described in ( R3 ) to reflect the new CSA ideas and replace the ad-hoc AND/OR graph approach described in that report. which could accept , in CSA terms , the definition of a complex mechanism ( electronic circuit or toilet ) , simulate it , respond to artificially-induced malfunctions , and answer questions about the mechanism 's cause and effect structure. memory , along the lines of the original one of ( RI ) , but incorporatng CSA 's and the new idea of a tendency. This would involve reimplementing the inference mechanism and various searchers. could not only use CSA 's as data structures in the various cognitive processes , but also could execute them to drive itself. automatic programming. comprehension via conceptual overlays and CSA's. Perhaps also investigating generation of stories ( e.g. the story of the trip to McDonald 's ) or the generation of a description of a complex electronic circuit , encoded as a CSA , in layman 's terms. XI. ACKNOWLEDGEMENTS My thanks to the members of the Commonsense Algorithm Study Group at the University of Maryland : Bob Eberlein , Milt Grinberg , Bob Kirby , Phil London and Tom Skillman. They have provided considerable intellectual stimulation. We hope to continue as a group and eventually issue a working paper and computer system. of Abstraction Spaces , '' in Proceedings 3IJCAI 1973. ( $ 2 ) Schank , R. , `` Identifications of Conceptualizations Underlying Natural Language '' , in Schank and Colby , Computer Models of Thought and Language , W.H. Freeman , 1973. ( $ 3 ) Schank , R. , Goldman , N. , Rieger , C. , and Riesbeck , C. , `` Primitive Concepts Underlying Verbs of Thought , '' Stanford Univ. AI Memo 162 , 1972. ( $ 4 ) Schmidt , C. , and D'Addamio , J. , `` A Model of the Common-Sense Theory of Intention and Personal Causation , '' Proceedings 3IJCAI , 1973. 191 Figure ! Unrestricted AND/OR graph for getting a McDonald 's hamburger into stomach. e. , ~\e. Figure 2 Hamburger algorithm , with actions , states , causality and enablement explicit. 6~6~r o~ ? uo # T~ L~t. ~A~If , Q. : IvPPI.Y LtN~ '' r~ TA~V~ tank from ~// trip _ # float ~j~ /~J ~anolellf~ ~ arm supply II1 dis_~~_~ , channel valve Ill harge III~ pe supply |~ flush stewOer plpe~_ ValeV ~ itrip~ f'~ , refi I l % \ ] o at~i/i c TAN K FIGURE 3 A reverse-trap toilet. , i m , , ll ! ft I `` ~ Over.fl ow ' ~'- ' ) p , pe • ~flush ball K ~Bk~6 c~c~ sutp6y Fuu~ ~F t~b V~ # ~. v~Lv~ Bo~L. 1 '' o w~rs~n~ G , 'Z~W , T7 ~. w ~ , ~J~ wWr~ F~ 15owu 6J~TF.~ H¢16.~ o~rr~ L~P ~F wksl~ FIGURE 4 O~eration of the reverse-trap toilet. 192 I I I I I I __ I I I I I I I I OF I , ~o0 I ( oe , ,. , ,~. ( Co~t~UouS Jr~ , WooO 'Figure 5 _ _ . + Sawing a board in half to decrease its length. 193 I T~ , ~ , ~'~.~ ~ I T ; ~~ , . ' k/~ • o -I -- -- - '' I , T~ ~. | I I I COMBUSTION</definiens>
+			</definition>
+</paper>
+
+		<paper id="2032">
+</paper>
+
+		<paper id="2023">
+			<definition id="0">
+				<sentence>The plan to do this is called GET ( X ) , where X is the object being sought .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">X</definiendum>
+				<definiens id="0">the object being sought</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>FIND ( X ) is the name of a set of possible sequences of actions that will result in the state that will enable PROX ( X ) to be executed .</sentence>
+				<definiendum id="0">FIND</definiendum>
+				<definiens id="0">the name of a set of possible sequences of actions that will result</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This I knowledge enables PROX ( X ) which tells how to get there .</sentence>
+				<definiendum id="0">PROX ( X</definiendum>
+				<definiens id="0">tells how to get there</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A Plan is the name of a desired action whose realization may be a simple action ( A conceptualization involving a primitive ACT ) .</sentence>
+				<definiendum id="0">Plan</definiendum>
+				<definiens id="0">the name of a desired action whose realization may be a simple action ( A conceptualization involving a primitive ACT )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A Planbox is a list of primitive ACTs that when performed will achieve a goal .</sentence>
+				<definiendum id="0">Planbox</definiendum>
+				<definiens id="0">a list of primitive ACTs that when performed will achieve a goal</definiens>
+			</definition>
+</paper>
+
+		<paper id="2012">
+</paper>
+
+		<paper id="2035">
+			<definition id="0">
+				<sentence>For example , if we know tha cats are animals , or in clausal form ~'~ ( y ) V ANIMAL ( y ) then by unifying ANIMAL ( y ) on its complementary literal ANIMAL ( x ) in ( 3 ) , we can infer ~T ( F ) V HAS-AS-PART ( y , nose ( F ) ) CAT ( y ) NOSE ( nose ( y ) ) ( 4 ) i.e. cats have noses .</sentence>
+				<definiendum id="0">ANIMAL</definiendum>
+				<definiens id="0">animals , or in clausal form ~'~ ( y ) V ANIMAL ( y ) then by unifying ANIMAL ( y ) on its complementary literal</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>If in addition it is known that CAT ( fritz ) , then by unifying this on CAT ( y ) in ( 4 ) , we can deduce the two clauses HAS-AS-PART ( fritz , nose ( fritz ) ) ( 5.1 ) NOSE ( nose ( fritz ) ) ( 5.2 ) ( v ) Completeness Resolution is a refutation loJ~ic i.e. if T is some statement to be proved , the clausal form of its negation is added to the clauses representing the knowledge base , and an attempt is made to derive a contradiction by means of the single resolution inference rule .</sentence>
+				<definiendum id="0">Resolution</definiendum>
+				<definiens id="0">a refutation loJ~ic i.e. if T is some statement to be proved , the clausal form of its negation is added to the clauses representing the knowledge base</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This means that if T is indeed logically valid ( T is true under all possible interpretations in which the knowledge base is true ) then there is a refutation proof of T with resolution as the sole rule of inference .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">true under all possible interpretations in which the knowledge base</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If AAB~C~D is a known fact , and if A , B and C are all known facts , then D may be deduced as a new known fact .</sentence>
+				<definiendum id="0">AAB~C~D</definiendum>
+				<definiens id="0">a known fact , and if A , B and C are all known facts</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For example , ( 2 ) would be represented as HAS-AS-PART ( x { ANIMAL } , nose { NOSE } ( x { ANIMAL } ) ) ( 6 ) The general fact that cats are animals has no representation in the logical component , but is represented in the net by appropriately linked CAT and ANIMAL nodes .</sentence>
+				<definiendum id="0">HAS-AS-PART</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Consider representing `` x wants P '' in some logical formalism , where P is an arbitrary proposition .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">an arbitrary proposition</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>In specifying the properties of `` WANT '' we shall need ( among other things ) some kind of schema of the form WANTS ( x , P ) A Q WANTS ( x , anything derivable from P and Q ) ( 7 ) where Q is an arbitrary proposition .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiens id="0">an arbitrary proposition</definiens>
+			</definition>
+</paper>
+
+		<paper id="2029">
+</paper>
+
+		<paper id="2008">
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>I. INTRODUCTION The A~I. group at Yale has developed a program SAM ( ScriptApplier Mechanism ) which models processes in story understanding~ The basic theoretical construct underlying SAM is the notion of a script ( Schank &amp; Abelson 75 ) ~ Script based knowledge is mundane information which tends to lie in the periphery of consciousness~ Going to a restaurant , watching a football game , taking a bus , and paying bills are examples of script activities .</sentence>
+				<definiendum id="0">ScriptApplier Mechanism )</definiendum>
+				<definiendum id="1">SAM</definiendum>
+				<definiens id="0">models processes in story understanding~ The basic theoretical construct underlying</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The appropriateness of a response is a function of focus~ Questions usually have a focus ( or emphasis ) which renders one response more appropriate than another~ Consider the sample input story above and the question `` Did the waiter give John a menu ? ''</sentence>
+				<definiendum id="0">appropriateness of a response</definiendum>
+				<definiens id="0">a function of focus~ Questions usually have a focus ( or emphasis ) which renders one response more appropriate than another~ Consider the sample input story above and the question</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>When SAM receives a what-happened-when question , it matches the act in question against its corresponding script counterpart and simply returns that portion of the causal chain representation of the story which begins with the act in question and ends at the next conceptualization mentioned in the input story~ IV .</sentence>
+				<definiendum id="0">SAM</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>ANSWERING WHY-QUESTIONS Once we have interpreted a question by establishing its focus , we still have to answer the questions The most interesting class of questions in this respect seem to be why-questions~ There appear to be roughly four types of answers to why-questions~ Two are script based and two require data outside of scripts~ The script based answers have implementable heuristics ( currently incorporated in SAM ) ~ ( I ) WIERD-ORIENTED ANSWERS ( non-script based ) In any script context we may get an unexpected occurrence which is relevant to the scripts Answers dependent on the wierd occurrence may relate back to it in a number of ways .</sentence>
+				<definiendum id="0">ANSWERING WHY-QUESTIONS</definiendum>
+				<definiens id="0">script based and two require data outside of scripts~ The script based answers have implementable heuristics ( currently incorporated in SAM</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>GOAL-ORIENTED ANSWERS ( script based ) These occur in one of two ways : I ) The focus Of the question ( as determined by V/E ) is a variable whose default binding is a character in the script .</sentence>
+				<definiendum id="0">GOAL-ORIENTED ANSWERS</definiendum>
+				<definiens id="0">a character in the script</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The restaurant script contains alternative paths which contain occurrences of goal interference .</sentence>
+				<definiendum id="0">restaurant script</definiendum>
+				<definiens id="0">contains alternative paths which contain occurrences of goal interference</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A goal interference predicts an action which will be either a resolution or consequence of the interference .</sentence>
+				<definiendum id="0">goal interference</definiendum>
+				<definiens id="0">predicts an action which will be either a resolution or consequence of the interference</definiens>
+			</definition>
+</paper>
+
+		<paper id="2028">
+</paper>
+
+		<paper id="2009">
+</paper>
+
+		<paper id="2016">
+</paper>
+
+		<paper id="2005">
+</paper>
+
+		<paper id="2034">
+			<definition id="0">
+				<sentence>As for the pronominallzation in 4 , the principle is the same , but the pronoun ( he ) uses only a subset of the properties that characterize the previously mentioned man .</sentence>
+				<definiendum id="0">principle</definiendum>
+				<definiens id="0">the same , but the pronoun ( he ) uses only a subset of the properties that characterize the previously mentioned man</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The murderer could have been the person whQ murdered John ; the knife , which is implicitly defined as a tool , could have been t~e knife with which it was do~e ; and so on .</sentence>
+				<definiendum id="0">knife</definiendum>
+				<definiens id="0">a tool</definiens>
+			</definition>
+</paper>
+
+		<paper id="2010">
+			<definition id="0">
+				<sentence>Secondly , given that one or more frames have been selected as relevant to the story , how does the program 43 find the particular FS which is instantiated by a particular SS ?</sentence>
+				<definiendum id="0">FS</definiendum>
+				<definiens id="0">given that one or more frames have been selected as relevant to the story , how does the program 43 find the particular</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>We will indicate the first of these by : ( 13 ) SHOPPER at ITEM side condition DONE at ITEM also ~ method suggested cart-carry ( SHOPPER , BASKET , DONE , ITEM ) Here DONE is a list of those items already collected .</sentence>
+				<definiendum id="0">Here DONE</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>( 35 ) Jack got a cart ( 36 ) Jack picked up a carton of milk ( 37 ) Jack walked further down the aisle ( 38 ) Jack walked to the front of the store .</sentence>
+				<definiendum id="0">Jack</definiendum>
+				<definiens id="0">got a cart ( 36 ) Jack picked up a carton of milk ( 37 ) Jack walked further down the aisle ( 38 ) Jack walked to the front of the store</definiens>
+			</definition>
+</paper>
+
+	</volume>

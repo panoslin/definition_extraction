@@ -1,0 +1,1745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="H89">
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>Database query tasks , for example , where there is a reasonable balance between inverted yes-no questions 2 , which are commonly uttered with final rising intonation , and wh-questions 3 , or imperatives 4 , which are both commonly uttered with final fall -and in which there is relatively little likelihood of speech act ambiguity , seem well-suited to such an experiment .</sentence>
+				<definiendum id="0">Database query tasks</definiendum>
+				<definiens id="0">both commonly uttered with final fall -and in which there is relatively little likelihood of speech act ambiguity</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>: ( 2 ) a. REF : IS kennedy+s arrival hour in pearl harbor AFTER ** fifteen hundred hours HYP : GIVE kennedy+s arrival hour in pearl harbor HAVE TO fifteen hundred hours b. REF : WHAT IS the total fuel aboard THE mars HYP : WAS ** the total fuel aboard *** mars c. REF : IS shasta within six kilometers of thirteen north forty east HYP : THE shasta within six kilometers of thirteen north forty east d. REF : WHEN+LL enterprise next be in home PORT HYP : WILL enterprise next be in home PORTS e. REF : *** FIND speeds available for england and fox HYP : ARE THE speeds available for england and fox That is , the test sentence represents a sentence type likely to be uttered with an intonational contour which would distinguish it from the sentence incorrectly 2Sentences in which auxor copula-inversion has occurred , such as 'IS MARS+S LAST LA T IN NORTH ATLANTIC OCEAN ' where the copula is has been inverted ( cf. 'Mars 's last lat is in North Atlantic Ocean . '</sentence>
+				<definiendum id="0">REF</definiendum>
+				<definiendum id="1">test sentence</definiendum>
+				<definiens id="0">IS kennedy+s arrival hour in pearl harbor AFTER ** fifteen hundred hours HYP : GIVE kennedy+s arrival hour in pearl harbor HAVE TO fifteen hundred hours b. REF : WHAT IS the total fuel aboard THE mars HYP : WAS ** the total fuel aboard *** mars c.</definiens>
+			</definition>
+</paper>
+
+		<paper id="2074">
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>TANGORA is a 20,000 word , speaker dependent , isolated-word system which transcribes speech input into text in real-time .</sentence>
+				<definiendum id="0">TANGORA</definiendum>
+				<definiens id="0">a 20,000 word , speaker dependent , isolated-word system which transcribes speech input into text in real-time</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TANGORA is an isolated word system ; this requires that users pause briefly between words .</sentence>
+				<definiendum id="0">TANGORA</definiendum>
+				<definiens id="0">an isolated word system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>The key step in the method is the estimation of a probabilistic spectral mapping between a prototype speaker , for whom there exists a well-trained speaker-dependent hidden Markov model ( HMM ) , and a target speaker for whom there is only a small amount of training speech available .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">the estimation of a probabilistic spectral mapping between a prototype speaker</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Non-parametricity makes few constraining assumptions about the data under transformation .</sentence>
+				<definiendum id="0">Non-parametricity</definiendum>
+				<definiens id="0">makes few constraining assumptions about the data under transformation</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For each state of the prototype HMM , we have a discrete probability density function ( pdf ) represented here as a row vector : p ( s ) = \ [ p ( kt\ ] s ) , p ( k2Is ) , ... , p ( kNls ) \ ] ( 1 ) where p ( kils ) is the probability of the VQ label ki at state s of the prototype HMM model , and N is the size of the VQ codebook .</sentence>
+				<definiendum id="0">, p</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">kt\ ] s ) , p ( k2Is ) , ...</definiens>
+				<definiens id="1">the probability of the VQ label ki at state s of the prototype HMM model , and</definiens>
+				<definiens id="2">the size of the VQ codebook</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The elements of the desired transformed pdf , p ' ( s ) , can be computed from : N p ( k~ls ) = ~p ( Ikils ) p ( k~lki , s ) ( 2 ) i=1 Since we have insufficient data to estimate a separate transformation for each state we approximate p ' ( s ) by : N ( k ls ) : p ( k , I , ) p ( k lk , , ( 3 ) i=1 where ¢ ( s ) specifies an equivalence class defined on the states s. For each of the classes , ¢ ( s ) , the set of conditional probabihties , { p ( k~ , ki , ¢ ( s ) ) } , for an i and j form an N × N matrix , T¢ ( , ) , which cart be interpreted as a probabilistic transformation matrix from one speaker 's spectral space to another 's .</sentence>
+				<definiendum id="0">¢ ( s )</definiendum>
+				<definiendum id="1">{ p</definiendum>
+				<definiens id="0">a probabilistic transformation matrix from one speaker 's spectral space to another 's</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Two development test sets have been defined by the National Institute of Standards and Technology ( NIST ) .</sentence>
+				<definiendum id="0">development test sets</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Speaker DAS ( F ) DMS ( F ) DTD ( F ) TAB PGI-I CMR ( F ) ttXS ( F ) DTB ERS RKM JWS BEF ~vLe Word Substitutions Deletions Insertions Correct 96.6 95.0 95.3 94.4 94.1 95.7 96.4 89.9 90.1 90.9 86.5 85.8 92.6 Word Sentence Error Error 10.1 48.0 11.8 52.0 12.0 48.0 13.5 52.0 15.1 56.0 Table 2 : Recognition performance by speaker for the Word-Pair grammar and the May '88 test set .</sentence>
+				<definiendum id="0">Speaker DAS</definiendum>
+				<definiens id="0">Recognition performance by speaker for the Word-Pair grammar and the May '88 test set</definiens>
+			</definition>
+</paper>
+
+		<paper id="2069">
+</paper>
+
+		<paper id="2058">
+</paper>
+
+		<paper id="2056">
+</paper>
+
+		<paper id="2048">
+			<definition id="0">
+				<sentence>T where R ( T ) is the classification or prediction error for that subtree and I TI is the number of terminal nodes in the subtree .</sentence>
+				<definiendum id="0">R ( T )</definiendum>
+				<definiendum id="1">TI</definiendum>
+				<definiens id="0">the classification or prediction error for that subtree and I</definiens>
+				<definiens id="1">the number of terminal nodes in the subtree</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>If we take the right branch , the next split ( to Terminal Node 7 ) indicates that a nasal , R , or L is almost always unreleased ( 2090 out 2250 cases ) Terminal Node 11 indicates that if the segment preceding the T is a stop or `` blank '' ( beginning of utterance ) the T closure is unlabelled , which is the convention adopted by the transcribers .</sentence>
+				<definiendum id="0">T closure</definiendum>
+				<definiens id="0">almost always unreleased ( 2090 out 2250 cases ) Terminal Node 11 indicates that if the segment preceding the T is a stop or `` blank '' ( beginning of utterance ) the</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+</paper>
+
+		<paper id="1049">
+			<definition id="0">
+				<sentence>The previously missing discourse entity for the referent of NONE is evoked by the label Remarks ( i.e. , No remarks ) , what was replaced is the failed part ( identified by the part number ) , it is the speaker ( JONES ) who replaced it , and finally , the implicit argument of AGE AND USE is that same failed part .</sentence>
+				<definiendum id="0">AGE AND USE</definiendum>
+				<definiens id="0">the failed part ( identified by the part number</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Cause of failure : broken wire Initialize Discourse Context At the start of each segment , we empty the list of salient entities from the previous segment ( the FOCUS LIST ) and load in the global foci .</sentence>
+				<definiendum id="0">segment</definiendum>
+				<definiens id="0">the FOCUS LIST ) and load in the global foci</definiens>
+			</definition>
+</paper>
+
+		<paper id="2035">
+			<definition id="0">
+				<sentence>Open classes are the classes that accept new words ( e.g. ship names , port names ) as opposed to closed classes that do not accept new words ( e.g. months , week-days , digits ) .</sentence>
+				<definiendum id="0">Open classes</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1038">
+			<definition id="0">
+				<sentence>Combinatory Categorial Grammar ( CCG , \ [ 14\ ] ) is an extension of Categorial Grammar ( CG ) .</sentence>
+				<definiendum id="0">Combinatory Categorial Grammar</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2073">
+</paper>
+
+		<paper id="1054">
+			<definition id="0">
+				<sentence>The probability P ( Ci = S , I Ci-1 = Sy ) labels the transition from state Sy to state S , , and P ( wi = vj I Ci = S , ) represents the flh element of the output matrix for state S~ .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">)</definiendum>
+				<definiens id="0">( wi = vj I Ci = S ,</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Barnett ( Barnett , 1973 ) describes a system which allocates higher scores to `` content '' words if they have already been mentioned .</sentence>
+				<definiendum id="0">Barnett</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A token cache contains the previous n words ( i.e. word tokens ) seen in a text , and acts as a window containing the most recent words encountered .</sentence>
+				<definiendum id="0">token cache</definiendum>
+				<definiens id="0">contains the previous n words ( i.e. word tokens ) seen in a text , and acts as a window containing the most recent words encountered</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A type cache contains the previous n different words ( i.e. word types ) found , and can be implemented as a linked list of words .</sentence>
+				<definiendum id="0">type cache</definiendum>
+				<definiens id="0">contains the previous n different words ( i.e. word types ) found</definiens>
+				<definiens id="1">a linked list of words</definiens>
+			</definition>
+</paper>
+
+		<paper id="2008">
+			<definition id="0">
+				<sentence>The back-end is an enhanced version of a direction assistance program developed by Jim Davis of MIT 's Media Laboratory \ [ 3\ ] .</sentence>
+				<definiendum id="0">back-end</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The new version , named MARBLE , offers several new properties .</sentence>
+				<definiendum id="0">MARBLE</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>APPLICATION BACK-END After an utterance has been processed by TINA , it is passed to an interface component which constructs a command function from the natural language parse .</sentence>
+				<definiendum id="0">APPLICATION BACK-END After an utterance</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Function : ( LOCATE ( NEAREST ( BANK nil ) ( SCHOOL `` HIT '' ) ) ) LOCATE is an example of a major function that determines the primary action to be performed by the command .</sentence>
+				<definiendum id="0">LOCATE</definiendum>
+				<definiens id="0">an example of a major function that determines the primary action to be performed by the command</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The function ( NEAREST X y ) , for example , returns the object in the set X that is closest to the object y. Table 4 contains several examples of filter functions .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">X y ) , for example , returns the object in the set</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For example , `` the Chinese restaurant on Main Street nearest to the hotel in Harvard Square that is closest to City Hall '' would be represented by , 55 ( NEAREST ( ON-STREET ( SERVE ( RESTAURANT nil ) `` Chinese '' ) ( STREET `` Main ... . Street '' ) ) ( NEAREST ( IN-REGION ( HOTEL nil ) ( SQUARE `` Harvard '' ) ) ( PUBLIC-BUILDING `` City Hall '' ) ) ) LOCATE DESCRIPTION PROPERTY DISTANCE DIRECTIONS locate a set of objects describe a set of objects identify a property of a set of objects compute distance between two objects compute directions between two objects Table 2 : Examples of some major functions in the VOYAGER back-end .</sentence>
+				<definiendum id="0">NEAREST</definiendum>
+				<definiendum id="1">NEAREST ( IN-REGION</definiendum>
+				<definiens id="0">PUBLIC-BUILDING `` City Hall '' ) ) ) LOCATE DESCRIPTION PROPERTY DISTANCE DIRECTIONS locate a set of objects describe a set of objects identify a property of a set of objects compute distance between two objects compute directions between two</definiens>
+			</definition>
+</paper>
+
+		<paper id="2049">
+			<definition id="0">
+				<sentence>COMBINING INDEPENDENT RECOGNIZERS We are attacking the problems of low recognition accuracy and overwhelming computational demands by combining multiple independently-executing recognizers into one through trained , weighted voting schemes .</sentence>
+				<definiendum id="0">COMBINING INDEPENDENT RECOGNIZERS</definiendum>
+				<definiens id="0">attacking the problems of low recognition accuracy and overwhelming computational demands by combining multiple independently-executing recognizers into one through trained , weighted voting schemes</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A static searching problem is defined as follows : • Preprocess a set F of N objects into an internal data structure D. • Answer queries about the set F by analyzing the strncture D. Following Bentley \ [ Bentley 78\ ] , we note that in many cases , such problems are solvable by serial solutions with linear storage and logarithmic search time complexity .</sentence>
+				<definiendum id="0">static searching problem</definiendum>
+				<definiens id="0">follows : • Preprocess a set F of N objects into an internal data structure D. • Answer queries about the set</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A decomposable searching problem is a searching problem in which a query asking the relationship of a new object x to a set of objects F can be written as : Query ( x , F ) = B q ( x , f ) fin F 359 where B is the repeated application of a commutative , associative binary operator b that has an identity and q is a `` primitive query '' applied between the new object x and each element f of F. Hence , membership is a decomposable searching problem when cast as Member ( x , F ) = OR equal ( x , If ) .</sentence>
+				<definiendum id="0">decomposable searching problem</definiendum>
+				<definiendum id="1">q</definiendum>
+				<definiendum id="2">membership</definiendum>
+				<definiendum id="3">F ) = OR equal</definiendum>
+				<definiens id="0">a searching problem in which a query asking the relationship of a new object x to a set of objects F can be written as : Query ( x , F ) = B q ( x , f ) fin F 359 where B is the repeated application of a commutative , associative binary operator b that has an identity and</definiens>
+				<definiens id="1">a `` primitive query '' applied between the new object x</definiens>
+			</definition>
+</paper>
+
+		<paper id="1048">
+</paper>
+
+		<paper id="2036">
+</paper>
+
+		<paper id="2015">
+			<definition id="0">
+				<sentence>Generator : The ( modified ) internal representation of the input is generated as sentence ( s ) of the target language by the generator .</sentence>
+				<definiendum id="0">Generator</definiendum>
+				<definiens id="0">sentence ( s ) of the target language by the generator</definiens>
+			</definition>
+</paper>
+
+		<paper id="2007">
+			<definition id="0">
+				<sentence>The data used in the present experiment consists of 15 sessions each from 7 speakers ( they subsequently recorded more ) .</sentence>
+				<definiendum id="0">data</definiendum>
+				<definiens id="0">used in the present experiment consists of 15 sessions each from 7 speakers ( they subsequently recorded more )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The NOISE results are for those utterances whose transcripts consist solely of noise words .</sentence>
+				<definiendum id="0">NOISE results</definiendum>
+				<definiens id="0">are for those utterances whose transcripts consist solely of noise words</definiens>
+			</definition>
+</paper>
+
+		<paper id="2030">
+			<definition id="0">
+				<sentence>ViewGen represents the beliefs of agents as explicit , partitioned proposition-sets known as environments .</sentence>
+				<definiendum id="0">ViewGen</definiendum>
+				<definiens id="0">represents the beliefs of agents as explicit , partitioned proposition-sets known as environments</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>PREMO : A ROBUST PARSER OF MESSAGES PREMO : the PREference Machine Organization is a knowledge-based Preference Semantics parser ( Wilks 1972 , 1975 , 1978 ; Boguraev 1979 ; Carter 1984 , 1987 ; Fass 1986 , 1987 , 1988 ; Huang 1984 , 1988 ; Slator 1988a , 1988c ) due to Brian Slator , with access to the large , text-specific , lexical semantic knowledge base created by the lexicon-provider of the CRL project on large scale lexical extraction from machine readable dictionaries ( Wilks et al. in press ) .</sentence>
+				<definiendum id="0">PREMO</definiendum>
+				<definiens id="0">A ROBUST PARSER OF MESSAGES PREMO : the PREference Machine Organization is a knowledge-based Preference Semantics parser</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Preference Semantics is a theory of language in which the meaning for a text is represented by a complex semantic structure that is built up out of smaller semantic components ; this composifionality is a fairly typical feature of semantic theories .</sentence>
+				<definiendum id="0">Preference Semantics</definiendum>
+				<definiendum id="1">composifionality</definiendum>
+				<definiens id="0">a theory of language in which the</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>PREMO is a robust system for parsing natural language organized along the lines of an operating system .</sentence>
+				<definiendum id="0">PREMO</definiendum>
+				<definiens id="0">a robust system for parsing natural language organized along the lines of an operating system</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>MGR : MODEL GENERATIVE REASONING The global objective of this project is to investigate general mechanisms for symbolic problem solving in task environments where data are noisy and where the problems addressed require objects to be related in ways unanticipated by the designer .</sentence>
+				<definiendum id="0">MGR</definiendum>
+				<definiens id="0">to investigate general mechanisms for symbolic problem solving in task environments where data are noisy and where the problems addressed require objects to be related in ways unanticipated by the designer</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The Abductive Mechanism in MGR Mechanizing any inference procedure runs the risk of being tied down to syntactic issues , whereas the real problems lie with the semantics of the techniques .</sentence>
+				<definiendum id="0">Abductive Mechanism</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The operators are defined as mappings over the sets F ~acts ) , D , ( definitions ) and M ( models ) as follows : Gn : PS ( M ) -- -¢ M Mr : PS ( M ) -- -- &gt; M Sp : M x PS ( D ) ~ PS ( M ) Fr : M × PS ( F ) ~ PS ( M ) The notation PS ( X ) denotes the power set of the set X. The MGR operators are implemented as follows .</sentence>
+				<definiendum id="0">notation PS ( X )</definiendum>
+				<definiens id="0">mappings over the sets F ~acts ) , D , ( definitions ) and M ( models ) as follows : Gn : PS ( M ) -- -¢ M Mr : PS ( M ) -- -- &gt; M Sp</definiens>
+				<definiens id="1">the power set of the set X. The MGR operators are implemented as follows</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Ifm has a set of disconnected subgraphs gi `` '' gk such that project ( gi ... g/c ) =f , then Fr returns { gi ... .. gk } '' Informally , Sp takes a model as input , and generates a set of larger , more specialized models by adding definitions .</sentence>
+				<definiendum id="0">Sp</definiendum>
+				<definiens id="0">takes a model as input</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Stored knowledge consists of schematic definitions of types of maneuver ( both static and dynamic components ) typically carried out by the enemy army .</sentence>
+				<definiendum id="0">Stored knowledge</definiendum>
+				<definiens id="0">consists of schematic definitions of types of maneuver ( both static and dynamic components ) typically carried out by the enemy army</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>ViewGen : A POINT OF VIEW SHELL FOR REASONING ABOUT BELIEFS Introduction An AI system that takes part in discourse with other agents must be able to reason about the beliefs , intentions , desires , and other propositional attitudes of those agents , and of agents referred to in the discourse .</sentence>
+				<definiendum id="0">ViewGen</definiendum>
+				<definiens id="0">A POINT OF VIEW SHELL FOR REASONING ABOUT BELIEFS Introduction An AI system that takes part in discourse with other agents</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Thus , speech act ascription is an important special case of ascriptional reasoning .</sentence>
+				<definiendum id="0">speech act ascription</definiendum>
+				<definiens id="0">an important special case of ascriptional reasoning</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>In effect , a PT is a set of unsorted , unrefined items of knowledge .</sentence>
+				<definiendum id="0">PT</definiendum>
+				<definiens id="0">a set of unsorted , unrefined items of knowledge</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Viewgen is a program that generates a type of environment known as a viewpoint .</sentence>
+				<definiendum id="0">Viewgen</definiendum>
+				<definiens id="0">a program that generates a type of environment known as a viewpoint</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The creation occurs in three substages : ( la ) Initially , a copy of the system 's Frank object ( topic environment ) is placed inside the Jim's-father object ( topic environment ) , as shown in the next figure .</sentence>
+				<definiendum id="0">creation</definiendum>
+				<definiendum id="1">Jim's-father object</definiendum>
+				<definiens id="0">occurs in three substages : ( la ) Initially , a copy of the system 's Frank object ( topic environment ) is placed inside the</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>-- Frank-as-Jim `` s-father Male ( Frank-as -Jim 's -father ) Tall ( Frank -as -Jim 's -father ) Eye_colour ( Frank-as -Jim 's -father ) = Green Mary system If we had had prior information from discourse input that Mary believes the person 's eyes to be brown , then there would already have been a Frank-as-Jim's-father object ( topic environment ) O inside Mary 's viewpoint , and the beliefs in O ' would all have got pushed into that object except for the green-eye belief .</sentence>
+				<definiendum id="0">Frank-as-Jim's-father object</definiendum>
+				<definiens id="0">Frank-as -Jim 's -father ) = Green Mary system If we had had prior information from discourse input that Mary believes the person 's eyes to be brown</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>UNIFYING VIEWGEN AND MGR Both ViewGen and MGR are systems producing multiple models or views of a situation , but only in the ViewGen system does that multiplicity depend on separate environments representing the views of others explicitly : i.e. the multiplicity of ViewGen 's models are to be mapped to different agents , while in MGR the multiplicity of models are the alternatives present in a single agent .</sentence>
+				<definiendum id="0">MGR</definiendum>
+				<definiens id="0">the alternatives present in a single agent</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The Red Doctrine is a synthesis of all experiences or facts regarding the operations of the Red Army .</sentence>
+				<definiendum id="0">Red Doctrine</definiendum>
+				<definiens id="0">a synthesis of all experiences or facts regarding the operations of the Red Army</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>MGR looks for coherent subsets of data to produce interpretations .</sentence>
+				<definiendum id="0">MGR</definiendum>
+				<definiens id="0">looks for coherent subsets of data to produce interpretations</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The use of models for both explanations and prediction is an essential element in MGR 's use .</sentence>
+				<definiendum id="0">prediction</definiendum>
+				<definiens id="0">an essential element in MGR 's use</definiens>
+			</definition>
+</paper>
+
+		<paper id="2005">
+</paper>
+
+		<paper id="2072">
+</paper>
+
+		<paper id="2034">
+</paper>
+
+		<paper id="1053">
+			<definition id="0">
+				<sentence>Introduction-Context Sensitivity in Realizations Phonologists claim that the context in which a phoneme occurs leads to consistent differences in how it is pronounced .</sentence>
+				<definiendum id="0">Introduction-Context Sensitivity</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The probability of a realization varies with the context in which the phoneme occurs .</sentence>
+				<definiendum id="0">probability of a realization</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>To normalize for the variable number of attribute values , the gain for attribute a is normalized by the entropy of the number of values associated with a. Quinlan calls this the gain ratio : R ( a ) = G ( a ) /H ( V ) .</sentence>
+				<definiendum id="0">R</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>values ( all phonemes ) ( all phonemes ) onset , nucleus , coda primary , secondary , unstressed initial , final , not-initial-and-not-final , initial-and-final initial , final , not-initial-and-not-final , initial-and-final initial , final , not initial-and-not-final , initial-and-final onset , coda , nil true , false true , false true , false Table h Contexts used in pronunciation experiments aligned to the dictionary baseforms from the Merriam-Webster ~0,000 Word Pocket Dictionary to produce mappings between dictionary phonemes and transcribed segments .</sentence>
+				<definiendum id="0">values</definiendum>
+				<definiendum id="1">all phonemes )</definiendum>
+				<definiens id="0">all phonemes ) onset , nucleus , coda primary , secondary , unstressed initial , final , not-initial-and-not-final , initial-and-final initial , final , not-initial-and-not-final , initial-and-final initial , final , not initial-and-not-final , initial-and-final onset , coda , nil true , false true , false true , false Table h Contexts used in pronunciation experiments aligned to the dictionary baseforms from the Merriam-Webster ~0,000 Word Pocket Dictionary to produce mappings between dictionary phonemes and transcribed segments</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>From the user 's answers , KNACQ creates simple structures which together with powerful general rules allow understanding of a wide range of expressions .</sentence>
+				<definiendum id="0">KNACQ</definiendum>
+				<definiens id="0">creates simple structures which together with powerful general rules allow understanding of a wide range of expressions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An attribute treatment is the most appropriate , for the speed of a vessel makes perfect sense .</sentence>
+				<definiendum id="0">attribute treatment</definiendum>
+				<definiens id="0">the most appropriate , for the speed of a vessel makes perfect sense</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>KNACQ asks the user for one or more English phrases associated with this functional role ; the user response in this case is speed .</sentence>
+				<definiendum id="0">KNACQ</definiendum>
+				<definiens id="0">asks the user for one or more English phrases</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>KNACQ asks the user which subset of the following six patterns in Figure 5 are appropriate plus the prepositions appropriate .</sentence>
+				<definiendum id="0">KNACQ</definiendum>
+				<definiens id="0">asks the user which subset of the following six patterns in Figure 5 are appropriate plus the prepositions appropriate</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>TELI and LIFER , on the other hand , are meant to let the end user define additional vocabulary in terms of previously defined vocabulary , e.g. , A ship is a vessel ; therefore , those systems assume an extensive vocabulary provided by the system builder .</sentence>
+				<definiendum id="0">ship</definiendum>
+				<definiens id="0">a vessel ; therefore , those systems assume an extensive vocabulary provided by the system builder</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Given that , KNACQ infers the necessary lexical syntactic and lexical semantic knowledge .</sentence>
+				<definiendum id="0">KNACQ</definiendum>
+				<definiens id="0">infers the necessary lexical syntactic and lexical semantic knowledge</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>( However , KNACQ has not yet been provided to a knowledge engineer with no knowledge of computational linguistics . )</sentence>
+				<definiendum id="0">KNACQ</definiendum>
+				<definiens id="0">has not yet been provided to a knowledge engineer with no knowledge of computational linguistics</definiens>
+			</definition>
+</paper>
+
+		<paper id="2011">
+			<definition id="0">
+				<sentence>We then provide for each noun , verb , and predicate adjective ( either individually or as part of a semantic class ) a semantic model which describes the meaningful operands ( subjects , complements , and modifiers ) of that word .</sentence>
+				<definiendum id="0">predicate adjective</definiendum>
+				<definiens id="0">( either individually or as part of a semantic class ) a semantic model which describes the meaningful operands ( subjects , complements , and modifiers ) of that word</definiens>
+			</definition>
+</paper>
+
+		<paper id="2013">
+			<definition id="0">
+				<sentence>In addition , the MLE fails to distinguish among bigrams with the same count .</sentence>
+				<definiendum id="0">MLE</definiendum>
+				<definiens id="0">fails to distinguish among bigrams with the same count</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>It is natural to evaluate methods with a t-score tjr = ( r'j , r~r ) /C~y~ , where r'jr is an estimate produced by one of the proposed methods for bin j and frequency r , r~ is the standard for the same jr cell , and c~j , is the standard deviation for the same jr cell .</sentence>
+				<definiendum id="0">r'jr</definiendum>
+				<definiendum id="1">r~</definiendum>
+				<definiens id="0">an estimate produced by one of the proposed methods for bin j and frequency r</definiens>
+				<definiens id="1">the standard deviation for the same jr cell</definiens>
+			</definition>
+</paper>
+
+		<paper id="2066">
+</paper>
+
+		<paper id="2003">
+</paper>
+
+		<paper id="1028">
+</paper>
+
+		<paper id="1014">
+</paper>
+
+		<paper id="2018">
+			<definition id="0">
+				<sentence>VOYAGER is a system that knows about the physical environment of a specific geographical area as well as certain objects inside this area , and can provide assistance on how to get from one location to another within this area .</sentence>
+				<definiendum id="0">VOYAGER</definiendum>
+				<definiens id="0">a system that knows about the physical environment of a specific geographical area as well as certain objects inside this area , and can provide assistance on how to get from one location to another within this area</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The back end is an enhanced version of a direction assistance program developed by Jim Davis of MIT 's Media Laboratory \ [ 4\ ] .</sentence>
+				<definiendum id="0">back end</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2070">
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>We report here on our initial experiments involving a ) the perception of various types of syntactic structures marked by prosody , b ) the coding of prosodic information for parsing , and c ) the automatic labeling of prosodic structures .</sentence>
+				<definiendum id="0">c )</definiendum>
+				<definiens id="0">the automatic labeling of prosodic structures</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Breath Detection For speech that involves more than one sentence or long sentences , speakers typically take breaths .</sentence>
+				<definiendum id="0">Breath Detection For speech</definiendum>
+				<definiens id="0">involves more than one sentence or long sentences</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>Prepositional attachment is another type of ambiguity that could sometimes be resolved because the program could readily distinguish categories like places , times , objects , and actions .</sentence>
+				<definiendum id="0">Prepositional attachment</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2027">
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="2057">
+			<definition id="0">
+				<sentence>To this end , BBN delivered IRUS , its knowledge acquisition tools ( IRACQ and KREME ) , and knowledge bases for lexical semantics , lexical syntax , a domain model , and transformation rules to data base structure , to Texas Instruments for integration in DARPA 's Fleet Command Center Battle Management Program ( FCCBMP ) .</sentence>
+				<definiendum id="0">IRACQ</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2075">
+</paper>
+
+		<paper id="1023">
+</paper>
+
+		<paper id="1041">
+</paper>
+
+		<paper id="2076">
+</paper>
+
+		<paper id="2052">
+			<definition id="0">
+				<sentence>AND THE LITERAL MEANING HYPOTHESIS Speech act theory concerns how sentences are used in language .</sentence>
+				<definiendum id="0">THE LITERAL MEANING HYPOTHESIS Speech act theory</definiendum>
+				<definiens id="0">concerns how sentences are used in language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Intonation , for instance , is an important factor that can override almost anything else .</sentence>
+				<definiendum id="0">Intonation</definiendum>
+				<definiens id="0">an important factor that can override almost anything else</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>sentences would capture the following : 392 If MOOD is interrogative , SUBJECT is you , VOICE is Active , and the AUX is can , then possible interpretations : any SPEECHACT suggested interpretations : REQUEST to do the act corresponding to the verb phrase .</sentence>
+				<definiendum id="0">VOICE</definiendum>
+				<definiendum id="1">AUX</definiendum>
+				<definiens id="0">any SPEECHACT suggested interpretations : REQUEST to do the act corresponding to the verb phrase</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>self\ ] I ) ) Paraphrasing , a directive is a subclass of speech acts with an additional role , namely the requested act .</sentence>
+				<definiendum id="0">directive</definiendum>
+				<definiens id="0">a subclass of speech acts with an additional role , namely the requested act</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Here is a slightly simplified can you rule presented informally earlier in the paper : ( ( s AUXS can MOOD YES-NO-Q VOICE Active SUBJ ( NP PRO you ) MAINV +action ) - &gt; \ [ REQUEST ( R-ACTION ( V R-ACTION REF ) ) \ ] , \ [ SPEECHACT\ ] } This rule would match the above sentence representation and produce the interpretation space consisting of a request to lift the rock and the general class of all speech acts : { \ [ REQUEST ( R-ACT \ [ LIFT ( R-AGENT Hearer ) ( R-THEME Rock1235 ) \ ] ) \ ] , \ [ SPEECHACT\ ] } These two RHET objects are the input to the plan reasoning system , which filters them by checking the 399 constraints , preconditions and effects to produce a new interpretation space that is superficially integrated into context .</sentence>
+				<definiendum id="0">MOOD YES-NO-Q VOICE Active SUBJ</definiendum>
+				<definiens id="0">filters them by checking the 399 constraints , preconditions and effects to produce a new interpretation space that is superficially integrated into context</definiens>
+			</definition>
+</paper>
+
+		<paper id="2001">
+</paper>
+
+		<paper id="2026">
+			<definition id="0">
+				<sentence>The CTS for the stack decoder at present consists of a single component , the acoustic likelihood module ( ALM ) ( future versions will include a linguistic likelihood module and perhaps more ) .</sentence>
+				<definiendum id="0">CTS for</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The ALM is a dynamic program to compute th'e likelihood that this process produces the input utterance .</sentence>
+				<definiendum id="0">ALM</definiendum>
+				<definiens id="0">a dynamic program to compute th'e likelihood that this process produces the input utterance</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>THE PARTIAL TRANSCRIPTION EVALUATOR The general description given in the section entitled `` THE STACK DECODER '' defined a partial transcription evaluator , or PTE , as a module which takes as input an utterance and a hypothesized partial transcription and returns a priority for evaluating extensions of the partial transcription .</sentence>
+				<definiendum id="0">STACK DECODER</definiendum>
+				<definiendum id="1">PTE</definiendum>
+				<definiens id="0">a module which takes as input an utterance and a hypothesized partial transcription and returns a priority for evaluating extensions of the partial transcription</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Using either one of these types of utterances as input , together with acoustic models and a transcription of the utterance , the spectrogram will display ( using CGA , EGA , or VGA ) a view of the utterance , segmented according to the model ( i.e. , the module finds the best path through the stochastic network defined by the the model corresponding to the given transcription ) .</sentence>
+				<definiendum id="0">VGA</definiendum>
+				<definiens id="0">a view of the utterance , segmented according to the model ( i.e. , the module finds the best path through the stochastic network defined by the the model corresponding to the given transcription )</definiens>
+			</definition>
+</paper>
+
+		<paper id="2041">
+			<definition id="0">
+				<sentence>Tied mixtures offer a more compact way of representing the observation pdf 's .</sentence>
+				<definiendum id="0">Tied mixtures</definiendum>
+				<definiens id="0">offer a more compact way of representing the observation pdf 's</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The net effect is an approximate doubling of the training time over the Feb89 systems and a halving of the recognition times .</sentence>
+				<definiendum id="0">net effect</definiendum>
+				<definiens id="0">an approximate doubling of the training time over the Feb89 systems and a halving of the recognition times</definiens>
+			</definition>
+</paper>
+
+		<paper id="2019">
+			<definition id="0">
+				<sentence>ABSTRACT This paper proposes an automatic , essentially domainindependent means of evaluating Spoken Language Systems ( SLS ) which combines software we have developed for that purpose ( the `` Comparator '' ) and a set of specifications for answer expressions ( the `` Common Answer Specification '' , or CAS ) .</sentence>
+				<definiendum id="0">SLS</definiendum>
+				<definiendum id="1">CAS</definiendum>
+				<definiens id="0">the `` Comparator '' ) and a set of specifications for answer expressions ( the `` Common Answer Specification '' , or</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Common Answer Specification determines the syntax of answer expressions , the minimal content that must be included in them , the data to be included in and excluded from test corpora , and the procedures used by the Comparator .</sentence>
+				<definiendum id="0">Common Answer Specification</definiendum>
+				<definiens id="0">determines the syntax of answer expressions , the minimal content that must be included in them , the data to be included in and excluded from test corpora , and the procedures used by the Comparator</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>1BBN has offered their ERL interpreter ( Ramshaw , 1989 ) as a backend database interface for those who desire one : use of the ERL interpreter is explicitly not required for common evaluation , however , and developers are free to use whatever database interface they find suitable .</sentence>
+				<definiendum id="0">ERL interpreter</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A BNF specification for the syntax of the Common Answer Specification is found in Appendix A. Here are some examples of answers in the CAS format : ( ( false ) ) FALSE ( ( 3 ) ) `` 04-JUL-89 '' ( ( 2341 `` SMITH '' ) ( 5573 `` JONES '' ) ) ( ) Certain queries only require scalar answers , among them yes/no questions , imperatives like `` Count '' and `` Sum '' , questions like `` How much/many __ ? ''</sentence>
+				<definiendum id="0">BNF specification for the syntax of the Common Answer Specification</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>To make that judgement , the Comparator needs to perform type-appropriate comparisons on the individual data items , and to handle correctly system answers that contain extra values .</sentence>
+				<definiendum id="0">Comparator</definiendum>
+				<definiens id="0">needs to perform type-appropriate comparisons on the individual data items , and to handle correctly system answers that contain extra values</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Applying each mapping in turn to the provided answer , the Comparator builds a reduced answer containing only 141 those columns indicated by the mapping , with any duplicate tuples in the reduced answer eliminated .</sentence>
+				<definiendum id="0">Comparator</definiendum>
+				<definiens id="0">builds a reduced answer containing only 141 those columns indicated by the mapping , with any duplicate tuples in the reduced answer eliminated</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Finally , it should be stressed that the Comparator works within the context of relational database principles .</sentence>
+				<definiendum id="0">Comparator</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>We propose two initial uses of this categorization for SLS evaluation : creating basic test corpora of Category 0 queries , and designing simple discourse corpora that include Category 1 queries ( see S-7 ) .</sentence>
+				<definiendum id="0">SLS</definiendum>
+				<definiens id="0">evaluation : creating basic test corpora of Category 0 queries , and designing simple discourse corpora that include Category 1 queries</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Our approach to corpus collection is to simulate the behavior of a spoken language system ( SLS ) for database access which is beyond the state of the art , but within about 5 years of effort .</sentence>
+				<definiendum id="0">SLS</definiendum>
+				<definiens id="0">to simulate the behavior of a spoken language system</definiens>
+			</definition>
+</paper>
+
+		<paper id="2054">
+			<definition id="0">
+				<sentence>One of the strong arguments in favor of using Natural Language ( NL ) processing systems as front-ends to sophisticated application systems is that if human-computer communication is conducted in an NL that most users know , then the cost of training a user to use the system 1This research was supported , in part , by the Defense Advanced Research Projects Agency and monitored by the Rome Air Development Center under Contract No .</sentence>
+				<definiendum id="0">Language</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>CUBRICON produces output for three output devices : high-resolution color-graphics display , high-resolution monochrome display , and speech production device .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">produces output for three output devices : high-resolution color-graphics display , high-resolution monochrome display , and speech production device</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Multi-Media Parser/Interpreter is a generalized augmented transition network ( GATN ) that has been extended to accept the compound stream produced by the Input Coordinator and produce an interpretation of this compound stream .</sentence>
+				<definiendum id="0">Multi-Media Parser/Interpreter</definiendum>
+				<definiens id="0">a generalized augmented transition network ( GATN ) that has been extended to accept the compound stream produced by the Input Coordinator and produce an interpretation of this compound stream</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Output Planner uses a GATN that produces a multi-media output stream representation with components targeted for the different output devices .</sentence>
+				<definiendum id="0">Output Planner</definiendum>
+				<definiens id="0">uses a GATN that produces a multi-media output stream representation with components targeted for the different output devices</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The knowledge base consists of information about the task domain of tactical Air Force mission planning .</sentence>
+				<definiendum id="0">knowledge base</definiendum>
+				<definiens id="0">consists of information about the task domain of tactical Air Force mission planning</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The discourse model is a representation of the attentional focus space \ [ Grosz86\ ] of the dialogue carried out in multi-modal language .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiens id="0">a representation of the attentional focus space</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Furthermore , CUBRICON addresses the problem of coordinating NL ( speech ) and graphic gestures during both input and output .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">addresses the problem of coordinating NL ( speech ) and graphic gestures during both input and output</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>As stated previously , CUBRICON is a multi-modal system that integrates the following modalities : geographic maps , tables , forms , printed text , and NL with graphic and deictic gestures .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">a multi-modal system that integrates the following modalities : geographic maps , tables , forms , printed text , and NL with graphic and deictic gestures</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>CUBRICON accepts such NL accompanied by simultaneous coordinated pointing gestures .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">accepts such NL accompanied by simultaneous coordinated pointing gestures</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>CUBRICON uses the information from the sentence , parsed and interpreted thus far , as filtering criteria for candidate objects .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">uses the information from the sentence</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>if the object ( call it X ) is not represented by an icon on the display , but is a component of such a visible object ( call it Y ) , then CUBRICON generates a phrase that expresses object X as a component of object Y and uses a combined deictic-verbal expression for object Y as described in the above case .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">generates a phrase that expresses object X as a component of object Y and uses a combined deictic-verbal expression for object Y as described in the above case</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>if there are no exposed windows displaying the object 's visible representation , then CUBRICON determines the most important active de-exposed window \ [ Neal89b\ ] displaying the object .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">determines the most important active de-exposed window \ [ Neal89b\ ] displaying the object</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>CUBRICON exposes this window and uses the representation of the object in this window in a strong deictic gesture .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">exposes this window and uses the representation of the object in this window in a strong deictic gesture</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>CUBRICON combines graphic expressions with NL output when the information to be expressed is , at least partially , amenable to graphic presentation .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">combines graphic expressions with NL output when the information to be expressed is , at least partially , amenable to graphic presentation</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>When generating locative information about some object ( call it the figure object \ [ Herskovits85\ ] ) , CUBRICON selects an appropriate landmark as the ground object \ [ Herskovits85\ ] , determines a spatial relationship between the figure and ground object , and generates a multi-modal expression for the locative information including the spatial relationship .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">selects an appropriate landmark as the ground object \ [ Herskovits85\ ] , determines a spatial relationship between the figure and ground object , and generates a multi-modal expression for the locative information including the spatial relationship</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>When selecting the ground object , CUBRICON selects a landmark such as a city , border , or region , that is within the current map display ( i.e. , does not require a map transformation ) .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">selects a landmark such as a city , border , or region</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>If a new landmark must be used as a ground object , then CUBRICON selects the landmark that is nearest the figure object .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">a ground object</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>CUBRICON derives a spatial relation between the ground object and figure object that it represents in its knowledge base .</sentence>
+				<definiendum id="0">CUBRICON</definiendum>
+				<definiens id="0">derives a spatial relation between the ground object and figure object that it represents in its knowledge base</definiens>
+			</definition>
+</paper>
+
+		<paper id="1035">
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>Global constraints come from the semantics of the system which govern the combining of a sequence of meanings into a defined action .</sentence>
+				<definiendum id="0">Global constraints</definiendum>
+				<definiens id="0">come from the semantics of the system which govern the combining of a sequence of meanings into a defined action</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Quality is a relative term here .</sentence>
+				<definiendum id="0">Quality</definiendum>
+				<definiens id="0">a relative term here</definiens>
+			</definition>
+</paper>
+
+		<paper id="2033">
+</paper>
+
+		<paper id="2024">
+			<definition id="0">
+				<sentence>SGML stands for Standard Generalized Markup Language .</sentence>
+				<definiendum id="0">SGML</definiendum>
+				<definiens id="0">stands for Standard Generalized Markup Language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>175 Appendix A : ACL/DCI Materials , as of 10/89 Department of Energy abstracts 200,00 scientific abstracts , diverse topics ( 25 million words ) Archives of the Challenger Commission Transcripts of depositions and hearings about the space shuttle disaster ( 2.5 million words ) Library of America American literary classics : 44 volumes ( -130 books ) promised- ( 20 million words ) 11 volumes in hand , successfully decrypted : Twain , Melville , Franklin , Cather , O'Neill , Emerson , Adams , DuBois , etc .</sentence>
+				<definiendum id="0">ACL/DCI Materials</definiendum>
+				<definiens id="0">scientific abstracts , diverse topics ( 25 million words ) Archives of the Challenger Commission Transcripts of depositions and hearings about the space shuttle disaster ( 2.5 million words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>ACL and ACM materials ( journals , proceedings etc. ) CSLI ( Center for the Study of Language and Information ) publications 50-100 reports ( 8K words each ) , 5-10 books ( 80K words each ) Canadian archival materials ( Hansard , Supreme Court ) Cleaned-up English Hansard donated by IBM ( 100 million words ) Original Bilingual Hansard ( different time period ) obtained directly ( 200 million words ) U.S. Congressional Record ( quantity under negotiation ) Material compiled by Ed Fox at VPISU U.S. Department of Agriculture Extension Service fact sheets ( &gt; 1 million words ) Electronic mall digests : AILIST , IRLIST , etc. ( 5 million words ) Articles on networking ( 2 million words ) `` Pullum Archive '' About 12K words of administrative policy manuals and 14K words of administrative memos , contributed by Geoff Pullum of U.C.S.C. Collins English Dictionary ( 1979 edition ) full text ( -3 million words ) and various `` database '' versions Transcripts of radiologists ' reports Donated by Francis Ganong at Kurzweil AI ( about 5 million words ) U.S. Department of Justice JURIS materials Wall Street Journal between 25 and 50 million words Child Language Archive a diverse collection of transcripts Negotiations in progress for : Various on-line technical manuals ( e.g. Symbolics ) Other journalistic materials Boeing repair reports Other U.S. Government stuff : ( technical manuals , regulations , State Dept. reports ... ) 176 Appendix B : Empirical structure of Penta tape format First level of record structure : The last 4 of every 514 bytes are two copies of the number of the tape file , in binary : 0 0 0 0 for the first file , 0 1 0 1 for the second file , etc .</sentence>
+				<definiendum id="0">ACM materials</definiendum>
+				<definiens id="0">100 million words ) Original Bilingual Hansard ( different time period ) obtained directly ( 200 million words ) U.S. Congressional Record ( quantity under negotiation ) Material compiled by Ed Fox at VPISU U.S. Department of Agriculture Extension Service fact sheets ( &gt; 1 million words ) Electronic mall digests : AILIST , IRLIST , etc. ( 5 million words</definiens>
+				<definiens id="1">administrative policy manuals and 14K words of administrative memos , contributed by Geoff Pullum of U.C.S.C. Collins English Dictionary ( 1979 edition ) full text ( -3 million words ) and various `` database '' versions Transcripts of radiologists ' reports Donated by Francis Ganong at Kurzweil AI ( about 5 million words ) U.S. Department of Justice JURIS materials Wall Street Journal between 25 and 50 million words Child Language Archive a diverse collection of transcripts Negotiations in progress for : Various on-line technical manuals ( e.g. Symbolics ) Other journalistic materials Boeing repair reports Other U.S. Government stuff : ( technical manuals , regulations , State Dept. reports ...</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The silverfish is an insect which grows continually throughout its life and feeds primarily on the glue used in book bindings , cardboard boxes and the like .</sentence>
+				<definiendum id="0">silverfish</definiendum>
+				<definiens id="0">an insect which grows continually throughout its life and feeds primarily on the glue used in book bindings , cardboard boxes and the like</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>ataxia tslangiectasia Anti-proton Accumulator Arachidonic acid Automobile Association additional absorption ally1 alcohol amino acid andesine anorthosite arachidonic acid aristolochic acid ascorbic acid atomic absorption atomic adsorption azelaic acid \ [ HOOC ( CH/sub 2/ ) /sub 7/COOH\ ] alxlominal aortic aneurysm amino acid analogs all-aluminium alloy conductor Additional absorption bands Antarctic Bottom Water Automation and Control Experiment Airix~rne Activity Confinement System Automated Access Control System all-alurninium conductor steel reinforced atlanto-axial dislocation Australian Atomic Energy Commission Army-Air Force Exchange Service accumulations of autoradiographic grains Accident Analysis Handbook aristolochic acid I aristolochic acid I ( AAI ) and II American Association for Laboratory Accreditation atmosphere angular momentum function Airborne Antarctic Ozone Experiment American Academy of Ophthalmology and Otolaryngology alumina-aluminum phosphate American Association of Pathologists and Bacteriologists American Association of Physicists in Medicine ambient air quality standards Association of American Railroads alkali aggregate reaction Andersen air sampler atomic absorption spectrometry atomic absorption spectrophotometry atomic absorption spectroscopy aerodynamically air staged burner asymptomatic autoimmune thyroiditis Automatic Alarm Testing Robot adeno-associated virus assault amphibious vehicle Agua Boa Aharonov-Bohm asbestos bodies atomic bremsstralalung abscisic acid Adult bovine aortic endothelial Allender , Bray and Bardeen Asea Brown Bovefi Analysis of Benefits and Costs Ames-Bologna-CERN-Dortmund-Heidelberg-Wars aw acetone-butanol-ethanol asymptotic branch of giants atmospheric boundary layer alpine breaker liner support 187 Sample 10 : Challenger Commission Interviews , Formatted Version .</sentence>
+				<definiendum id="0">Costs Ames-Bologna-CERN-Dortmund-Heidelberg-Wars</definiendum>
+				<definiens id="0">accumulations of autoradiographic grains Accident Analysis Handbook aristolochic acid I aristolochic acid I ( AAI ) and II American Association for Laboratory Accreditation atmosphere angular momentum function Airborne Antarctic Ozone Experiment American Academy of Ophthalmology and Otolaryngology alumina-aluminum phosphate American Association of Pathologists</definiens>
+			</definition>
+</paper>
+
+		<paper id="2062">
+</paper>
+
+		<paper id="2063">
+</paper>
+
+		<paper id="2040">
+</paper>
+
+		<paper id="1047">
+</paper>
+
+		<paper id="2025">
+</paper>
+
+		<paper id="2017">
+			<definition id="0">
+				<sentence>Human-human data collection We collected more than 12 hours ( over 100 conversations ) of on-site tape recordings of 6 travel agents at a travel agency interacting with clients and with airline agents via telephone .</sentence>
+				<definiendum id="0">Human-human</definiendum>
+				<definiens id="0">data collection We collected more than 12 hours ( over 100 conversations ) of on-site tape recordings of 6 travel agents at a travel agency interacting with clients and with airline agents via telephone</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>However , our intuitions , based on looking at these data , is that the vocabulary is substantially more restricted for the agent-agent dialogues for two reasons : the travel agent does not try to gain the sympathy of the airline agent ( which travelers often do and which opens up the vocabulary tremendously ) , and both agents know very well what the other can do ( which reduces the vocabulary significantly ) .</sentence>
+				<definiendum id="0">airline agent</definiendum>
+				<definiens id="0">reduces the vocabulary significantly )</definiens>
+			</definition>
+</paper>
+
+		<paper id="2051">
+</paper>
+
+		<paper id="2060">
+</paper>
+
+		<paper id="2046">
+			<definition id="0">
+				<sentence>Ninety sentences spoken by ten male speakers are taken from the phonetically labeled Icecream database and transformed into each of the four representations after upsampling from 16KHz to 20Kiiz ( the cochlear model requires a 20KItz sampling rate ) .</sentence>
+				<definiendum id="0">Ninety sentences</definiendum>
+				<definiens id="0">spoken by ten male speakers are taken from the phonetically labeled Icecream database</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>tion = 1/NE~r=i IIK ( F ( *D ) II2 where F ( sj ) is the representation of frame j of the clean speech , N is the number of frames , and sj + nj refers to a frame of speech with additive noise .</sentence>
+				<definiendum id="0">F ( sj )</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the representation of frame j of the clean speech ,</definiens>
+				<definiens id="1">the number of frames , and sj + nj refers to a frame of speech with additive noise</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>s/N cdB ) 24 21 IO 15 12 9 3 0 Figure 1 : Distortion Due to Noise : ( a ) Percent Distortion ( b ) Change in VQ Class Distribution of/ey/ ( c ) Normalized VQ Distortion ( d ) Intra-Class vs Inter-Class Scatter distributions show that the LPC and cepstrum , as noise increases , model all the speech sounds as noise , which the VQ labels as one of three or four classes .</sentence>
+				<definiendum id="0">noise</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>An alternative way of measuring VQ performance is through the codebook distortion , defined as N DvQ Distortion = 1/N ~ IIF ( sj ) VQ ( F ( sj + n~ ) ) l12 j=l This is also computed for each phoneme , but only the composite results are presented here , normalized by the 0db distortion ( Figure l ( c ) ) .</sentence>
+				<definiendum id="0">IIF</definiendum>
+				<definiens id="0">( sj ) VQ ( F ( sj + n~ ) ) l12 j=l This is also computed for each phoneme , but only the composite results are presented here , normalized by the 0db distortion ( Figure l ( c ) )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The evaluation is given by Dcon\ ] usion Score = 1/n log det Sw det SB where Swand SB are the intra-class and inter-class scatter matrices , respectively Sw = ~ ~ ( x mi ) ( x rni ) t i=l xExi c SB = n , ( m , -m ) ( m , -m ) ' i=1 and c is the number of phonemes , Xi is the collection of all representations , x , labeled as the i ~h phoneme , ni is the cardinality of Xi , and m and mi are found by averaging all features and averaging all the features in Xi , respectively .</sentence>
+				<definiendum id="0">Swand SB</definiendum>
+				<definiendum id="1">c</definiendum>
+				<definiendum id="2">Xi</definiendum>
+				<definiendum id="3">ni</definiendum>
+				<definiens id="0">the number of phonemes ,</definiens>
+				<definiens id="1">the cardinality of Xi</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The LIN utilizes this phase locking to extract a robust spectral estimate that can tolerate extreme compression .</sentence>
+				<definiendum id="0">LIN</definiendum>
+				<definiens id="0">utilizes this phase locking to extract a robust spectral estimate that can tolerate extreme compression</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The network consists of a single layer of reciprocally and strongly inhibited neurons .</sentence>
+				<definiendum id="0">network</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2038">
+			<definition id="0">
+				<sentence>the continuous mixture HMM models the acoustic observation directly us , ng estimated continuous probability density functions without VQ .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">models the acoustic observation directly us , ng estimated continuous probability density functions without VQ</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>~I denotes a multi-dimensional Gauss~an density funct=on of mean vector p and covariance matrix ~ .</sentence>
+				<definiendum id="0">~I</definiendum>
+				<definiens id="0">a multi-dimensional Gauss~an density funct=on of mean vector p and covariance matrix ~</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The complete database consists of 4358 training sentences from 105 speakers Qune-train~ and 300 test sentences from 12 speakers .</sentence>
+				<definiendum id="0">complete database</definiendum>
+				<definiens id="0">consists of 4358 training sentences from 105 speakers Qune-train~ and 300 test sentences from 12 speakers</definiens>
+			</definition>
+</paper>
+
+		<paper id="2020">
+			<definition id="0">
+				<sentence>The grammar that we developed is a statistical first-order class grammar m which the probability of a word ( W1 ) being followed by another word ( W2 ) is given by : P ( W21~V1 ) = E P ( CIlWI ) P ( C21C1 ) P ( W2 ' , C2 ) pathJ Where C1 is each of the classes to which WI belongs , and C2 is each of the classes to which W2 be147 longs .</sentence>
+				<definiendum id="0">C2</definiendum>
+				<definiens id="0">a statistical first-order class grammar m which the probability of a word ( W1 ) being followed by another word ( W2 ) is given by : P ( W21~V1 ) = E P ( CIlWI ) P ( C21C1 ) P ( W2 ' , C2 ) pathJ Where C1 is each of the classes to which WI belongs , and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The conditional probability P ( CIiWI ) is approximated by : Nwlgcl -~ for Wl in CI P ( CI i~VI ) = 0 otherwise Where Nw~c~ is the number of classes of which word W1 is a member .</sentence>
+				<definiendum id="0">conditional probability P ( CIiWI</definiendum>
+				<definiendum id="1">Nw~c~</definiendum>
+				<definiens id="0">the number of classes of which word W1 is a member</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A similar approximation is made for P ( W2 -- C2 ) , where : Nw2Ec2 -1 for W2 in C2 P ( W2 \ [ C2 ) = 0 otherwise Where NwzEc2 is the number of words in class C2 .</sentence>
+				<definiendum id="0">NwzEc2</definiendum>
+				<definiens id="0">the number of words in class C2</definiens>
+			</definition>
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>2 A basic component of a TAG is a finite set of elementary trees , each of which defines domain of locality , and can be viewed as a minimal linguistic structure .</sentence>
+				<definiendum id="0">TAG</definiendum>
+				<definiens id="0">a finite set of elementary trees , each of which defines domain of locality , and can be viewed as a minimal linguistic structure</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A tree family consists on average of 12 trees , which makes approximately 700 trees total .</sentence>
+				<definiendum id="0">tree family</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The grammar covers subcategorization ( strictly lexicalized ) , wh-movement and unbounded dependencies , light verb construction , some idioms , transitivity alternations ( such as dative shift or the so-called ergative alternation ) , subjacency and some island violations .</sentence>
+				<definiendum id="0">transitivity alternations</definiendum>
+				<definiens id="0">such as dative shift or the so-called ergative alternation ) , subjacency and some island violations</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+</paper>
+
+		<paper id="2032">
+</paper>
+
+		<paper id="1031">
+</paper>
+
+		<paper id="1044">
+</paper>
+
+		<paper id="1029">
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>ABSTRACT A new natural language system , TINA , has been developed for applications involving speech understanding tasks , which integrates key ideas from context free grammars , Augmented Transition Networks ( ATN 's ) \ [ 1\ ] , and Lexical Functional Grammars ( LFG 's ) \ [ 2\ ] .</sentence>
+				<definiendum id="0">Augmented Transition Networks</definiendum>
+				<definiens id="0">developed for applications involving speech understanding tasks , which integrates key ideas from context free grammars ,</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Control includes both top-down and bottom-up cycles , and key parameters are passed among nodes to deal with long-distance movement and agreement constraints .</sentence>
+				<definiendum id="0">Control</definiendum>
+				<definiens id="0">includes both top-down and bottom-up cycles , and key parameters are passed among nodes to deal with long-distance movement and agreement constraints</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Included is a new strategy for dealing with movement , which can handle efficiently nested and chained gaps , and rejects crossed gaps .</sentence>
+				<definiendum id="0">Included</definiendum>
+				<definiens id="0">a new strategy for dealing with movement , which can handle efficiently nested and chained gaps , and rejects crossed gaps</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>.2 TINA is particulary effective in handling gaps .</sentence>
+				<definiendum id="0">TINA</definiendum>
+				<definiens id="0">particulary effective in handling gaps</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The OBJECT node blocks the transfer of any predecessor person/number information to its children , reflecting the fact that verbs agree in person/number with their subject but not their object .</sentence>
+				<definiendum id="0">OBJECT node</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Perplexity , roughly defined as the geometric mean of the number of alternative word hypotheses that may follow each word in the sentence , is of particular concern in spoken language tasks .</sentence>
+				<definiendum id="0">Perplexity</definiendum>
+				<definiens id="0">the geometric mean of the number of alternative word hypotheses that may follow each word in the sentence , is of particular concern in spoken language tasks</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A formula for the test set perplexity is \ [ 9\ ] : ~ ~ log2P ( wilwi-x , ... wO Perplexity = 2 i=1 where the wi are the sequence of all words in all sentences , N is the total number of words , including an `` end '' word after each sentence , and P ( wilwl-1 , ... wl ) is the probability of the ith word given all preceding words .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the total number of words</definiens>
+			</definition>
+</paper>
+
+		<paper id="2055">
+			<definition id="0">
+				<sentence>In this paper , we present an architecture that we have developed for COMET ( COordinated Multimedia Explanation Testbed ) , a system that generates directions for equipment maintenance and repair , and we show how it addresses the coordination problem .</sentence>
+				<definiendum id="0">COMET</definiendum>
+				<definiens id="0">a system that generates directions for equipment maintenance and repair</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In this paper , we describe an architecture for generating multimedia explanations that we have developed for COMET ( COordinated Multimedia Explanation Testbed ) , a system that generates directions for equipment maintenance and repair .</sentence>
+				<definiendum id="0">COMET</definiendum>
+				<definiens id="0">a system that generates directions for equipment maintenance and repair</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The media coordinator annotates the content description , noting which pieces should be conveyed through which media .</sentence>
+				<definiendum id="0">media coordinator</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The content planner produces the full content for the explanation , represented as a hierarchy of logical forms ( LFs ) \ [ Allen 87\ ] , which are passed to the media coordinator .</sentence>
+				<definiendum id="0">content planner</definiendum>
+				<definiens id="0">produces the full content for the explanation , represented as a hierarchy of logical forms ( LFs ) \</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>COMET currently includes text and graphics generators .</sentence>
+				<definiendum id="0">COMET</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The content planner outputs a hierarchy of logical forms ( LFs ) that represent the content for the entire explanation .</sentence>
+				<definiendum id="0">content planner</definiendum>
+				<definiens id="0">outputs a hierarchy of logical forms ( LFs ) that represent the content for the entire explanation</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The complex LF consists of one goal ( enter the frequency ) and three complex substeps ( parts ( e ) -fj ) ) .</sentence>
+				<definiendum id="0">complex LF</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>Although the goal is not actually realized in graphics , IBIS uses 427 ( ( ( cat If ) ( directive-act substeps ) ( substeps ( ( distinct ( ( car ( ( process-type action ) ( process-concept c-turn ) ( mood non-finite ) ( tense present ) ( aspect ( ( perfective no ) ( progressive no ) ) ) ( speech-act directive ) ( roles ( ( to-loc ( ( object-concept c-position-l ) ( roles ( ( location ( ( object-concept c-location ) ) ) ( size ( ( object-concept c-size ) ) ) ) ) ( ref-mode name ) ) ) ( medium ( ( object-concept c-channel-knob ) ( roles ( ( location ( ( object-concept c-location ) ) ) ( size ( ( object-concept c-size ) ) ) ) ) ( quantification ( ( definite yes ) ( countable yes ) ( ref-obj i ) ( ref-set i ) ) ) ( ref-mode description ) ) ) ) ) ) ) Figure 3 : Content planner output ( LF 1 ) : Set the channel knob to position 1 .</sentence>
+				<definiendum id="0">mood non-finite )</definiendum>
+				<definiendum id="1">directive ) ( roles</definiendum>
+				<definiens id="0">not actually realized in graphics , IBIS uses 427 ( ( ( cat If ) ( directive-act substeps</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>IBIS uses a variety of constraints to determine picture size and composition , including how much information can easily fit into a single picture , the size of the objects being represented , and the position of the objects and their relationship to each other .</sentence>
+				<definiendum id="0">IBIS</definiendum>
+				<definiens id="0">uses a variety of constraints to determine picture size and composition</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The development of COMET is an ongoing group effort and has benefited from the contributions of Michelle Baker ( plan execution component ) , Andrea Danyluk ( learned rule base ) , Michael Elhadad ( FUF ) , Laura Gabbe ( static knowledge base and content planner ) , David Fox ( text formatting component for media layout ) , Jong Lim ( static knowledge base and content planner ) , Jacques Robin ( lexical chooser ) , Doree Seligmann ( IBIS ) , Tony Weida ( static knowledge base ) , Matt Kamerman ( user model ) , and Christine Lombardi and Yumiko Fukumoto ( media coordinator ) .</sentence>
+				<definiendum id="0">Doree Seligmann</definiendum>
+				<definiens id="0">an ongoing group effort and has benefited from the contributions of Michelle Baker ( plan execution component ) , Andrea Danyluk ( learned rule base</definiens>
+				<definiens id="1">static knowledge base and content planner</definiens>
+				<definiens id="2">text formatting component for media layout ) , Jong Lim ( static knowledge base and content planner ) , Jacques Robin ( lexical chooser ) ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>SPHINX is a large-vocabulary , speaker-independent , continuous speech recognition system based on discrete hidden Markov models ( HMMs ) with LPC-derived parameters .</sentence>
+				<definiendum id="0">SPHINX</definiendum>
+				<definiendum id="1">HMMs</definiendum>
+				<definiens id="0">a large-vocabulary , speaker-independent , continuous speech recognition</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The training corpus consists of 4200 task-domain sentences spoken by 105 speakers .</sentence>
+				<definiendum id="0">training corpus</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Figure 2 illuslxates the word boundary network of two words , where word w 1 consists of phones A , B , and C , and word w 2 consists of D , E , and F. CCB , D ) D ( C , E ) C ( B , SIL ) SIL D ( SIL , E ) Figure 2 : Sentence network connection during training .</sentence>
+				<definiendum id="0">F. CCB</definiendum>
+				<definiendum id="1">E ) C ( B</definiendum>
+				<definiens id="0">word boundary network of two words , where word w 1 consists of phones A , B , and C , and word w 2 consists of D , E , and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If w 2 is pronounced ( D E ) , then both D ( C , E ) and D ( SIL , E ) must be further forked into E ( D , X ) and E ( D , SIL ) , where X is the first phone of the next word .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">the first phone of the next word</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>At the highest level , this HMM is a network of word HMMs , arranged according to the grammar .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">a network of word HMMs</definiens>
+			</definition>
+</paper>
+
+		<paper id="2053">
+			<definition id="0">
+				<sentence>This tree rewriting grammar consists of a set of trees that are not restricted to be of depth one ( as in CFGs ) .</sentence>
+				<definiendum id="0">tree rewriting grammar</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>If adjunction is used as an additional operation to combine these structures , CFGs can be lexicalized .</sentence>
+				<definiendum id="0">CFGs</definiendum>
+				<definiens id="0">an additional operation to combine these structures</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>4 A Lexicalized Tree Adjoining Grammar is a tree-based system that consists of two finite sets of trees : a set of initial trees , I and a set of auxiliary trees A ( see Figure 2 ) .</sentence>
+				<definiendum id="0">Lexicalized Tree Adjoining Grammar</definiendum>
+				<definiens id="0">a tree-based system that consists of two finite sets of trees : a set of initial trees , I and a set of auxiliary trees A ( see Figure 2 )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>404 NP A D $ N s S S ~ S A A NP4 ( +wh ) S /~ NPo $ VP NPo $ VP A NPo $ VP NPo $ VP \ ] ( -2 ) A ( -3 ) A ( `` 4 ) V NPi $ PP2 ( `` 1 ) V V NPi~ V NP1NA boy left saw saw e put P25 NP2 $ ( -5 ) Examples of auxiliary trees ( they correspond to predicates taking sentential complements or modifiers ) : S S S NPo $ VP NPo $ VP NPo $ VP VP N A /1 '' , , , .</sentence>
+				<definiendum id="0">S S ~ S A A NP4</definiendum>
+				<definiens id="0">auxiliary trees ( they correspond to predicates taking sentential complements or modifiers ) : S S</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>6 A Lexicalized TAG is organized into two major parts : a lexicon and tree families , which are sets of trees .</sentence>
+				<definiendum id="0">Lexicalized TAG</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>405 The following trees , among others , compose the tree family of verbs taking one object ( the family is named npOVnpl ) : s S NP NP NPi*NA SNA SNA NPi , I- ( +wh ) S S ~ NPi $ ( +wh ) S /~ NPi , I , ( +wh ) S //k~ NPi $ ( +wh ) S NP0,1 , VP / \ NPo $ VP NPoNA VP A NPoNA VP V¢ NP1NA VO NPiNA Ilk , I V0 NPI $ ei V0 NPI $ et E i V¢ NPI $ Ei ( o npOVnpl ) ( ROnpOVnpl ) ( ZalnpOVnpl ) WOnpOVnpl ) ( o~ WlnpO Vnp l ) ompOVnpl is an initial tree corresponding to the declarative sentence , flROnpOVnpl is an auxiliary tree corresponding to a relative clause where the subject has been relativized , flRlnpOVnpl corresponds to the relative clause where the object has been relativized , o~ WOnpOVnpl is an initial tree corresponding to a wh-question on the subject , ot WlnpOVnpl corresponds to a wh-question on the object .</sentence>
+				<definiendum id="0">ompOVnpl</definiendum>
+				<definiendum id="1">flROnpOVnpl</definiendum>
+				<definiendum id="2">flRlnpOVnpl</definiendum>
+				<definiendum id="3">o~ WOnpOVnpl</definiendum>
+				<definiens id="0">an initial tree corresponding to the declarative sentence</definiens>
+				<definiens id="1">an auxiliary tree corresponding to a relative clause where the subject has been relativized</definiens>
+				<definiens id="2">an initial tree corresponding to a wh-question on the subject , ot WlnpOVnpl corresponds to a wh-question on the object</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>It should be emphasized that in our approach the category of a word is not a non-terminal symbol but a multi-level structure corresponding to minimal linguistic structures : sentences ( for predicative verbs , nouns and adjectives ) or phrases ( NP for nouns , AP for adjectives , PP for prepositions yielding adverbial phrases ) .</sentence>
+				<definiendum id="0">AP</definiendum>
+				<definiens id="0">a non-terminal symbol but a multi-level structure corresponding to minimal linguistic structures : sentences ( for predicative verbs , nouns and adjectives ) or phrases</definiens>
+				<definiens id="1">adjectives , PP for prepositions yielding adverbial phrases )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+</paper>
+
+		<paper id="2061">
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>The SD portion of this database has 12 speakers with 600 training sentences and 100 development test sentences per speaker .</sentence>
+				<definiendum id="0">SD portion</definiendum>
+				<definiens id="0">speakers with 600 training sentences and 100 development test sentences per speaker</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Gaussians .22 .18 .34 .36 .39 .33 .33 .31 .32 29161 1471 2941 5881 THE `` JUNE 88 '' CSR SYSTEM The `` June 88 '' CSR system ( which was used for the June 88 DARPA tests ) uses a continuous observation HMM with triphone ( left and right context-sensitive phone ) models \ [ 13\ ] .</sentence>
+				<definiendum id="0">CSR system</definiendum>
+				<definiens id="0">uses a continuous observation HMM with triphone ( left and right context-sensitive phone</definiens>
+			</definition>
+</paper>
+
+		<paper id="2047">
+			<definition id="0">
+				<sentence>JX : Y= TaX Assuming the observed length is less than or equal to the length of X , k _ &lt; m , T~ is a time-warping transformation which obtains Y by selecting a subset of elements of X and the density p ( Yla , k ) is a qk-dimensional marginal distribution of p ( Xlc0 .</sentence>
+				<definiendum id="0">JX</definiendum>
+				<definiendum id="1">T~</definiendum>
+				<definiens id="0">Y= TaX Assuming the observed length is less than or equal to the length of X</definiens>
+				<definiens id="1">a time-warping transformation which obtains Y by selecting a subset of elements of X and the density p ( Yla , k ) is a qk-dimensional marginal distribution of p ( Xlc0</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The maximum a posteriori probability rule is used for classification of segments when the phoneme segmentation is known : max p ( Y lct , k ) p ( k la ) p ( ~ ) , Q where p ( kla ) is the probability that phoneme a has length k. A Viterbi search over all possible segmentations is used for recognition with unknown segmentations .</sentence>
+				<definiendum id="0">p</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The portion of the database that we have available consists of 420 speakers and 10 sentences per speaker , two of these , the `` sa '' sentences , are the same across all speakers and were not used in either recognition or training because they would lead to optimistic results .</sentence>
+				<definiendum id="0">portion of the database</definiendum>
+				<definiens id="0">consists of 420 speakers and 10 sentences per speaker , two of these , the `` sa '' sentences</definiens>
+				<definiens id="1">the same across all speakers and were not used in either recognition or training because they would lead to optimistic results</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+</paper>
+
+		<paper id="1039">
+</paper>
+
+		<paper id="2077">
+			<definition id="0">
+				<sentence>The importance of spoken language systems is in providing a simple , costeffective interface to machines .</sentence>
+				<definiendum id="0">spoken language systems</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2021">
+			<definition id="0">
+				<sentence>Delays affect the perceived relative cost of the two movement actions , making absolute and symbolic movements more attractive .</sentence>
+				<definiendum id="0">Delays</definiendum>
+				<definiens id="0">affect the perceived relative cost of the two movement actions , making absolute and symbolic movements more attractive</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>BEAM : An accelerator for speech recognition .</sentence>
+				<definiendum id="0">BEAM</definiendum>
+				<definiens id="0">An accelerator for speech recognition</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>The BYBLOS system uses context-dependent hidden Markov models ( HMM ) of phonemes to provide a robust model of coarticulation \ [ 1 , 2\ ] .</sentence>
+				<definiendum id="0">BYBLOS system</definiendum>
+				<definiens id="0">uses context-dependent hidden Markov models ( HMM ) of phonemes to provide a robust</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The training set for each speaker consists of 600 sentences averaging eight words or three seconds in length , for a total of about 30 minutes of speech .</sentence>
+				<definiendum id="0">training set for each speaker</definiendum>
+				<definiens id="0">consists of 600 sentences averaging eight words or three seconds in length , for a total of about 30 minutes of speech</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( 4 ) The weight w is made proportional to the log of the number of training tokens , N T. w ( s ) = rain\ [ 0.99 , 0.5 lOgl0NT ( S ) \ ] ( 5 ) This equation is illustrated in Figure 1 .</sentence>
+				<definiendum id="0">N T. w</definiendum>
+				<definiens id="0">the log of the number of training tokens</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>1 o.s o.o 10 100 Number of Occurrences ( N ) Figure I : Weight w for original model as a function of the number of training tokens , N T Estimating the Matrix We have tried three techniques for estimating the smoothing matrix : Parzen smoothing , self adaptation cooccurrence smoothing , and triphone cooccurrence smoothing .</sentence>
+				<definiendum id="0">N T Estimating the Matrix</definiendum>
+				<definiens id="0">a function of the number of training tokens</definiens>
+			</definition>
+</paper>
+
+		<paper id="2064">
+</paper>
+
+		<paper id="2012">
+			<definition id="0">
+				<sentence>The term collocation will be used quite broadly to include constraints on SVO ( subject verb object ) triples , phrasal verbs , compound noun phrases , and psycholinguistic notions of word association ( e.g. , doctor~nurse ) .</sentence>
+				<definiendum id="0">term collocation</definiendum>
+				<definiens id="0">subject verb object ) triples , phrasal verbs , compound noun phrases , and psycholinguistic notions of word association ( e.g. , doctor~nurse )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>200 SLOT # SLOT NAME DATA FILL REQUIREMENTS 6 7 8 9 10 MESSAGE ID EVENT : HIGHEST LEVEL OF ACTION FORCE INITIATING EVENT CATEGORY ( S ) OF EVENT AGENT ( S ) CATEGORY ( S ) OF EVENT OBJECT ( S ) ID ( S ) OF 0-TH LEVEL AGENT ( S ) ID ( S ) OF 0-TH LEVEL OBJECT ( S ) INSTRUMENT ( S ) OF 0-TH AGENT ( S ) LOC OF OBJECT ( S ) AT EVENT TIME TIME ( S ) OF EVENT RESULT ( S ) OF EVENT From input header ( DEV-GROUP1-N09722-001 ) DETECT , TRACK , TARGET , HARASS , ATTACK , OTHER FRIENDLY , HOSTILE , NO DATA AIR , SURF , SUB , NO DATA AIR , SURF , SUB , LAND , NO DATA Canonical form of name ( s ) , else taxonomic category name ( s ) or organizational entity I.D. , else NO DATA Same as slot 5 Same as slot 5 , where item ( s ) is/are : Canonical form of location name ( s ) , or text string with absolute or relative location ( s ) , else NO DATA String with absolute time ( s ) of for HARASS , ATTACK ; else NO DATA STOPPED TRACKING ( NO ) DAMAGE OR LOSS TO OBJECT Table 1 .</sentence>
+				<definiendum id="0">TRACK , TARGET , HARASS , ATTACK , OTHER FRIENDLY , HOSTILE</definiendum>
+				<definiendum id="1">SURF , SUB</definiendum>
+				<definiendum id="2">SUB</definiendum>
+				<definiens id="0">HIGHEST LEVEL OF ACTION FORCE INITIATING EVENT CATEGORY ( S ) OF EVENT AGENT ( S ) CATEGORY ( S ) OF EVENT OBJECT ( S ) ID ( S ) OF 0-TH LEVEL AGENT ( S ) ID ( S ) OF 0-TH LEVEL OBJECT ( S ) INSTRUMENT ( S ) OF 0-TH AGENT ( S ) LOC OF OBJECT ( S ) AT EVENT TIME TIME ( S ) OF EVENT RESULT ( S ) OF EVENT From input header</definiens>
+				<definiens id="1">Canonical form of location name ( s ) , or text string with absolute or relative location ( s ) , else NO DATA String with absolute time ( s ) of for HARASS</definiens>
+			</definition>
+</paper>
+
+		<paper id="2039">
+			<definition id="0">
+				<sentence>The sentence-level match module uses a language model to determine the word sequence in a sentence .</sentence>
+				<definiendum id="0">sentence-level match module</definiendum>
+				<definiens id="0">uses a language model to determine the word sequence in a sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>However , the use of CI PLU 's also leads to two serious problems , namely : ( 1 ) the CI PLU 's do not represent the unit well in all contexts , and ( 2 ) the CI PLU 's do not provide high recognition performance for large vocabulary recognition tasks , i.e. no one has achieved over 90 % word recognition accuracy for vocabularies of 1000 or more words based solely on using context independent PLU 's .</sentence>
+				<definiendum id="0">i.e.</definiendum>
+				<definiens id="0">no one has achieved over 90 % word recognition accuracy for vocabularies of 1000 or more words based solely on using context independent PLU 's</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The more general case of both left and fight context dependent PLU 's represents each phone p -- - &gt; pg-p-pg where PL is the preceding phone ( possibly silence ) and pg is the following phone ( possibly silence ) .</sentence>
+				<definiendum id="0">PL</definiendum>
+				<definiendum id="1">pg</definiendum>
+				<definiens id="0">the preceding phone ( possibly silence</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The vocabulary consists of 991 words which have been sorted into 4 non-overlapping groups , namely { BE } = set of words which can begin a sentence or end a sentence , I BE I = 117 { B/~ } = set of words which can begin a sentence but which can not end a sentence , \ [ BE I = 64 { BE } = set of words which can not begin a sentence but can end a sentence , I BE I = 448 { B E } = set of words which can not begin or end a sentence , I B E \ [ = 322 .</sentence>
+				<definiendum id="0">vocabulary</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2044">
+			<definition id="0">
+				<sentence>CONTENTS OF THE DATABASE The Alphanumeric database consists of 1000 training utterances and 140 different testing utterances , that were each recorded simultaneously in stereo using both the Sennheiser HMD224 close-talking microphone that has been a standard in previous DARPA evaluations , and a desk-top Crown PZM6fs microphone .</sentence>
+				<definiendum id="0">Alphanumeric database</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Since it appears that about 20 percent of the `` new '' errors introduced when one replaces the Sennheiser microphone by the Crown PZM are the result of crosstalk , we are optimistic that implementation of Ward 's non-phonetic models should provide further improvement in recognition accuracy .</sentence>
+				<definiendum id="0">Sennheiser microphone</definiendum>
+				<definiens id="0">optimistic that implementation of Ward 's non-phonetic models should provide further improvement in recognition accuracy</definiens>
+			</definition>
+</paper>
+
+		<paper id="1045">
+			<definition id="0">
+				<sentence>For example , the following unification grammar rule represents a simple modifying phrase for a relation ( R ) and attribute ( A ) in a database : rood ( R ) ~ whose , attr ( R , A ) , is , value ( R , A ) .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">a simple modifying phrase for a relation ( R ) and attribute ( A ) in a database : rood ( R ) ~ whose , attr</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Grammars associate symbols with both observations ( terminal symbols ) and alternate explanations ( nonterminal symbols ) , allowing the elimination of duplicate work in re-hypotheslzing the same observations and partial sentence hypotheses .</sentence>
+				<definiendum id="0">Grammars associate symbols with both observations</definiendum>
+				<definiens id="0">nonterminal symbols ) , allowing the elimination of duplicate work in re-hypotheslzing the same observations and partial sentence hypotheses</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The ULCD experiment consists of two levels of grammars .</sentence>
+				<definiendum id="0">ULCD experiment</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Additionally , the FSA system evaluates hypotheses once per source node , making the one node sentence automata especially favorable for this system .</sentence>
+				<definiendum id="0">FSA system</definiendum>
+				<definiens id="0">evaluates hypotheses once per source node , making the one node sentence automata especially favorable for this system</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The RM experiment consists of three levels of grammars .</sentence>
+				<definiendum id="0">RM experiment</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The CKCD experiment consists of two levels of grammars .</sentence>
+				<definiendum id="0">CKCD experiment</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2071">
+</paper>
+
+		<paper id="2031">
+			<definition id="0">
+				<sentence>In this paper , we discuss an experiment using the Leamer -- a software tool for acquiring information about a new task domain for Parlance , l an ATN-based natural language system -- -to configure a quite different natural language system , the BBN ACFG , a unification-based system .</sentence>
+				<definiendum id="0">BBN ACFG</definiendum>
+				<definiens id="0">a software tool for acquiring information about a new task domain for Parlance , l an ATN-based natural language system -- -to configure a quite different natural language system , the</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Learner creates a number of files that are used to configure the Parlance natural language processing system for a new application domain in a short time .</sentence>
+				<definiendum id="0">Learner</definiendum>
+				<definiens id="0">creates a number of files that are used to configure the Parlance natural language processing system for a new application domain in a short time</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>DATABASE INFORMATION As part of its output , the Learner produces a file of pattern transformation rules , which map from concepts in the semantic domain model -- -and , so , ultimately , from words associated with those concepts -- to fields in the data base .</sentence>
+				<definiendum id="0">Learner</definiendum>
+				<definiens id="0">produces a file of pattern transformation rules , which map from concepts in the semantic domain model -- -and , so , ultimately , from words associated with those concepts -- to fields in the data base</definiens>
+			</definition>
+</paper>
+
+		<paper id="1050">
+</paper>
+
+		<paper id="2029">
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>The hidden Markov model ( HMM ) formulation is a powerful statistical framework that is well-suited to the speech recognition problem .</sentence>
+				<definiendum id="0">HMM ) formulation</definiendum>
+				<definiens id="0">a powerful statistical framework that is well-suited to the speech recognition problem</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The testing materials used for most of the results reported here are the 150 sentences ( 1287 words ) from the 1987 designated test sets designated by the National Institute of Standards and Technology ( NIST , formerly NBS ) .</sentence>
+				<definiendum id="0">NIST</definiendum>
+				<definiens id="0">the 150 sentences ( 1287 words ) from the 1987 designated test sets designated by the National Institute of Standards</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>We refer to this series as Rule-Single ( each word has only one pronunciation ) , Rule-Sparse ( the mean number of pronunciations per word is 1.3 ) , and RuleFull ( the mean number of pronunciations per word is con from the BBN BYBLOS system ( BBN ) , from the CMU SPHINX system ( CMU ) , and the lexicon developed for an early version of the DECIPHER system , prior to the incorporation of multiple pronunciations .</sentence>
+				<definiendum id="0">Rule-Single</definiendum>
+				<definiendum id="1">Rule-Sparse</definiendum>
+				<definiendum id="2">RuleFull</definiendum>
+				<definiens id="0">the mean number of pronunciations per word is con from the BBN BYBLOS system ( BBN ) , from the CMU SPHINX system ( CMU ) , and the lexicon developed for an early version of the DECIPHER system</definiens>
+			</definition>
+</paper>
+
+		<paper id="2067">
+</paper>
+
+		<paper id="2042">
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>The best match for the utterance is the best match that ends at terminal nodes of the lexical network and phonetic network .</sentence>
+				<definiendum id="0">best match for the utterance</definiendum>
+				<definiens id="0">the best match that ends at terminal nodes of the lexical network and phonetic network</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>PA Resource Management tasks with and without a language model .</sentence>
+				<definiendum id="0">PA Resource Management</definiendum>
+				<definiens id="0">tasks with and without a language model</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+</paper>
+
+		<paper id="2065">
+</paper>
+
+		<paper id="2016">
+			<definition id="0">
+				<sentence>SESSION OVERVIEW Material presented by Patti Price et al. of SRI International described collection of more than 12 hours of human-human interactive problem solving in the air travel planning domain .</sentence>
+				<definiendum id="0">SESSION OVERVIEW Material</definiendum>
+				<definiens id="0">presented by Patti Price et al. of SRI International described collection of more than 12 hours of human-human interactive problem solving in the air travel planning domain</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The voice spreadsheet consists of the UNIX-based spreadsheet program `` SC '' interfaced to a recognizer embodying the Sphinx speech recognition technology .</sentence>
+				<definiendum id="0">voice spreadsheet</definiendum>
+				<definiens id="0">consists of the UNIX-based spreadsheet program `` SC '' interfaced to a recognizer embodying the Sphinx speech recognition technology</definiens>
+			</definition>
+</paper>
+
+		<paper id="1034">
+</paper>
+
+		<paper id="1001">
+</paper>
+
+		<paper id="2022">
+			<definition id="0">
+				<sentence>ABSTRACT VOYAGER is a speech understanding system currently under development at MIT .</sentence>
+				<definiendum id="0">ABSTRACT VOYAGER</definiendum>
+				<definiens id="0">a speech understanding system currently under development at MIT</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>VOYAGER is a speech understanding system that can provide information and navigational assistance for a geographical area within the city of Cambridge , Massachusetts .</sentence>
+				<definiendum id="0">VOYAGER</definiendum>
+				<definiens id="0">a speech understanding system that can provide information and navigational assistance for a geographical area within the city of Cambridge , Massachusetts</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>INTRODUCTION HARC , the BBN Spoken Language System ( Boisen , et al. ( 1989 ) ) is a system for speech understanding that integrates speech recognition techniques with natural language processing .</sentence>
+				<definiendum id="0">BBN Spoken Language System</definiendum>
+				<definiens id="0">a system for speech understanding that integrates speech recognition techniques with natural language processing</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>THE ARCHITECTURE OF HARC In this section , we present a more detailed outline of the general architecture of HARC : dependent Hidden Markov Models ( HMMs ) for acoustic modelling , produces a lattice of possible words in the input speech .</sentence>
+				<definiendum id="0">ARCHITECTURE OF HARC In</definiendum>
+				<definiens id="0">the general architecture of HARC : dependent Hidden Markov Models ( HMMs ) for acoustic modelling , produces a lattice of possible words in the input speech</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Rather then determining the optimal pruning technique and using it alone , the system uses these techniques in tandem to try to produce the optimal word lattice in terms of size and information content , THE SYNTACTIC COMPONENT THE GRAMMAR FORMALISM HARC uses a grammar formalism based on annotated phrase structure rules ; this formalism is called the BBN ACFG ( for Annotated Context Free Grammar ) .</sentence>
+				<definiendum id="0">BBN ACFG</definiendum>
+				<definiens id="0">tandem to try to produce the optimal word lattice in terms of size and information content</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( W : AGR : NPTYPE : MOOD ... ) ( OPTSADJUNCT : AGR ... ) where the variable : AGR enforces agreement between the VP ( ultimately , its head V ) and the subject NP ; : NPT'Z'PE , agreement between the syntactic type of the subject NP and that selected by the head V of the VP ; and : MOOD , agreement between the mood of the S and that of the VP .</sentence>
+				<definiendum id="0">MOOD</definiendum>
+				<definiens id="0">AGR ... ) where the variable : AGR enforces agreement between the VP ( ultimately , its head V ) and the subject NP ; : NPT'Z'PE , agreement between the syntactic type of the subject NP and that selected by the head V of the VP</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The essential difference between our formalism and DCGs is a syntactic typing system , whereby each argument position is limited to a fixed number of values .</sentence>
+				<definiendum id="0">DCGs</definiendum>
+				<definiens id="0">a syntactic typing system</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>By eschewing more sophisticated mechanisms such as feature disjunction , feature negation , metarules , optional arguments , and the use of attribute-value pairsmas are found in other complex feature based grammars , such as GPSG ( Gazdar , et al ( 1985 ) ) , LFG ( Bresnan ( 1982 ) ) , and PATR-II ( Shieber , at al. ( 1983 ) ) -- it is relatively straightforward to have a simple syntactic checker that ensures that all grammar rules are wellformed .</sentence>
+				<definiendum id="0">PATR-II</definiendum>
+				<definiens id="0">feature disjunction , feature negation , metarules , optional arguments</definiens>
+			</definition>
+</paper>
+
+		<paper id="1052">
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>Core language is a component that is not expected to change from one circumstance to another and encompasses certain common modes of expression .</sentence>
+				<definiendum id="0">Core language</definiendum>
+				<definiens id="0">a component that is not expected to change from one circumstance to another and encompasses certain common modes of expression</definiens>
+			</definition>
+</paper>
+
+		<paper id="2059">
+</paper>
+
+		<paper id="2068">
+</paper>
+
+		<paper id="1051">
+			<definition id="0">
+				<sentence>In the PUNDIT system , the syntactic stage consists of the generation of a detailed surface parse tree and the construction of a regularized Intermediate Syntactic Representation or ISR .</sentence>
+				<definiendum id="0">PUNDIT system</definiendum>
+				<definiens id="0">consists of the generation of a detailed surface parse tree and the construction of a regularized Intermediate Syntactic Representation or ISR</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This total number represents a mix of general English entries ( some 150 words ) , ship names ( 200 ) , numbers ( about 50 , handled by the shapes component for productive expressions ) , place names ( 150 ) , and some domain-specific entries ( approximately 100 ) , which were kept separate from the general English lexicon ( e.g. , hfdj~ .</sentence>
+				<definiendum id="0">ship names</definiendum>
+				<definiens id="0">a mix of general English entries ( some 150 words ) ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1040">
+</paper>
+
+		<paper id="2014">
+			<definition id="0">
+				<sentence>States in a model represent categories { cl ... c= } ( n is the number of different categories used ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the number of different categories used )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A word at position i is represented by the random variable Wi , which ranges over the vocabulary { w~ ... wv } ( v is the number of words in the vocabulary ) .</sentence>
+				<definiendum id="0">v</definiendum>
+				<definiens id="0">the number of words in the vocabulary )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>94 ADJECTIVE DETERMINER NOUN To all states in Basic Network `` Transitions to all states in Basic Network except NOUN and ADJECTIVE • To all states in Basic Network AUGMENTED NETWORK BASIC NETWORK FULLY-CONNECTED NETWORK CONTAINING ALL STATES EXCEPT DETERMINER Figure 1 : Extending the Basic Model Augmenting the Model by Use of Networks The basic model consists of a first-order fully connected network .</sentence>
+				<definiendum id="0">ADJECTIVE DETERMINER NOUN To</definiendum>
+				<definiens id="0">all states in Basic Network `` Transitions to all states in Basic Network except NOUN and ADJECTIVE • To all states in Basic Network AUGMENTED NETWORK BASIC NETWORK FULLY-CONNECTED NETWORK CONTAINING ALL STATES EXCEPT DETERMINER Figure 1 : Extending the Basic Model Augmenting the Model by Use of Networks The basic model consists of a first-order fully connected network</definiens>
+			</definition>
+</paper>
+
+		<paper id="2078">
+			<definition id="0">
+				<sentence>I.n semantics , this means at a minimum that we must have a semantics of words ( a lexical semantics ) that is independent of the domain and of the application , and that the meaning of a word is easily ( semi-automatically ) related to the concepts of particular domains and applications .</sentence>
+				<definiendum id="0">I.n semantics</definiendum>
+				<definiens id="0">a lexical semantics ) that is independent of the domain and of the application , and that the meaning of a word is easily ( semi-automatically ) related to the concepts of particular domains and applications</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Unification grammars are currently being used to apply syntactic ( and some semantic ) constraints in speech recognition .</sentence>
+				<definiendum id="0">Unification grammars</definiendum>
+				<definiens id="0">some semantic ) constraints in speech recognition</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>These tTim Johnson , Natural language computing : the commercial applications , Ovum LTD , London , 1985 , pp .</sentence>
+				<definiendum id="0">Natural language computing</definiendum>
+				<definiens id="0">the commercial applications</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In terms of R &amp; D funding , MT is the application of NLP that is attracting the most funding from government and industry in Japan and Europe .</sentence>
+				<definiendum id="0">MT</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2050">
+			<definition id="0">
+				<sentence>A context tree is an n-ary decision tree which models the relationship between contextual factors and the allophones which occur in different contexts .</sentence>
+				<definiendum id="0">context tree</definiendum>
+				<definiens id="0">an n-ary decision tree which models the relationship between contextual factors and the allophones which occur in different contexts</definiens>
+			</definition>
+</paper>
+
+		<paper id="2006">
+			<definition id="0">
+				<sentence>Rules consist of a single left-hand term and zero or more right hand terms .</sentence>
+				<definiendum id="0">Rules</definiendum>
+				<definiens id="0">consist of a single left-hand term and zero or more right hand terms</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Here is an example of a simple grammar rule written in this formalism : ( VP ( AGR : P : N ) : MOOD ( WH- ) : TRX : TRY ) ( V : CONTRACT ( TRANSITIVE ) : P : N : MOOD ) ( NP : NSUBCATFRAME ( WH- ) : TRX : TRY ) 39 This rule says that a VP can derive a transitive verb followed by an object NP .</sentence>
+				<definiendum id="0">WH- )</definiendum>
+				<definiens id="0">P : N ) : MOOD ( WH- ) : TRX : TRY ) ( V : CONTRACT ( TRANSITIVE ) : P : N : MOOD )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For example , in the rule turning a PP into a ( post-copular ) VP , we require that the PP semantics be construable as a specifying a predication on the subject of the VP : ( VP ( AOR : P : N ) : MOOD ( FRED ) : SUBJ : WFF ) -- -- I , ( FP ( FREDICATE-P ) ( WH- ) : PP ) ( FREDICATIVE-PP : PP : SUBJ : WFF ) ) PREDICATIVE-PP is a constraint clause , taldng the semantics of an NP and a PP and returning a wff that is a predication that the PP may be construed as making of the NP .</sentence>
+				<definiendum id="0">PP</definiendum>
+				<definiens id="0">a specifying a predication on the subject of the VP : ( VP ( AOR : P : N ) : MOOD ( FRED ) : SUBJ : WFF ) -- -- I , ( FP ( FREDICATE-P ) ( WH- ) : PP ) ( FREDICATIVE-PP :</definiens>
+				<definiens id="1">a constraint clause , taldng the semantics of an NP and a PP and returning a wff that is a predication that the PP may be construed as making of the NP</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>These structures have the following form : ( Q-TERM QUANTIFIER VAR NOM-SEM ) The QUANTIFIER is one of the many quanfifiers that correspond to determiners in English : ALl , SOME , THE and various WH determiners .</sentence>
+				<definiendum id="0">QUANTIFIER</definiendum>
+				<definiens id="0">one of the many quanfifiers that correspond to determiners in English : ALl , SOME</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The VAR denotes a variable of the object language , and is left uninstantiated ( being filled in by a unique object-language variable by the quantifier module ) .</sentence>
+				<definiendum id="0">VAR</definiendum>
+				<definiens id="0">a variable of the object language , and is left uninstantiated ( being filled in by a unique object-language variable by the quantifier module )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The NOM-SEM represents the set that the quantification ranges over , it effectively represents the semantics of the head of the NP after modification by the NP 's other constituents .</sentence>
+				<definiendum id="0">NOM-SEM</definiendum>
+				<definiens id="0">the set that the quantification ranges over , it effectively represents the semantics of the head of the NP after modification by the NP 's other constituents</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The pnncipal functor of this type is NOM , which has the argument structure : ( NOM PARAM-LIST SET-EXP SORT ) The PARAM-LIST is a ( possibly empty ) list of parameters , used to indicate the free argument places in a relational noun .</sentence>
+				<definiendum id="0">NOM</definiendum>
+				<definiendum id="1">NOM PARAM-LIST SET-EXP SORT</definiendum>
+				<definiendum id="2">PARAM-LIST</definiendum>
+				<definiens id="0">a ( possibly empty ) list of parameters , used to indicate the free argument places in a relational noun</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>SET-EXP is a logical expression which denotes a set of individuals .</sentence>
+				<definiendum id="0">SET-EXP</definiendum>
+				<definiens id="0">a logical expression which denotes a set of individuals</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>SORT is a term structure which represents the semantic class of the elements of SET-EXP .</sentence>
+				<definiendum id="0">SORT</definiendum>
+				<definiens id="0">a term structure which represents the semantic class of the elements of SET-EXP</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>MAN is the class which is the intersection of ADULT and MALE .</sentence>
+				<definiendum id="0">MAN</definiendum>
+				<definiens id="0">the class which is the intersection of ADULT and MALE</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Following are the translations the algorithm in Figure 1 gives to several of these classes : PERSON ~ ( PERSON : ANY : ANY ) ADULT ~ ( PERSON ( ADULT : ANY ) : ANY ) MALE ~ ( PERSON : ANY ( MALE : ANY ) ) MAN ~ ( PERSON ( ADULT : ANY ) ( MALE : ANY ) ) PRIEST ~ ( PERSON ( ADULT ( PRIEST ) ) ( MALE ( PRIEST ) ) ) Essentially , the algorithm works by mapping each set of mutnzlly disjoint children of the class to an argument place of the term to be associated with that class .</sentence>
+				<definiendum id="0">MALE</definiendum>
+				<definiendum id="1">MALE</definiendum>
+				<definiens id="0">ANY )</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>NOUN MODIFIERS The following is a simplified version of the rule for regular count noun phrases : ( NP : NSUBCATFRAME ( AGR : P : N ) : WI-I ( Q-TERM : Q : VAR : NOM5 ) ) `` -- 4 ( DETERMINER : N : WH : NOM1 : NOM2 : Q ) ( OPTNONPOSADJP ( AGR : P : N ) : NOM4 : NOM5 ) ( OPTADJP ( AGR : P : N ) ( PRENOMADJ ) : NOM3 : NOM4 ) ( N-BAR : NSUBCATFRAME ( AGR : P : N ) : NOM1 ) ( OPTNPADJUNCT ( AGR : P : N ) : NOM2 : NOM3 ) This rule generates NPs that have at least a determiner and a head noun , and which have zero or more prenominal superlative or comparative adjectives ( `` fastest '' , `` bigger '' etc. ) , prenominal positive adjectives ( `` red '' , '' aUeged '' ) and adjuncts ( `` in the house '' , `` that came from Florida '' ) .</sentence>
+				<definiendum id="0">DETERMINER</definiendum>
+				<definiens id="0">prenominal positive adjectives ( `` red '' , '' aUeged ''</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>This can not be analyzed as ( SET X ( BEST ' BOOK ' ) ( EQUAL ( AUTHOR-OF X ) JOHN ' ) ) that is , as the subset of the best books in the world that also happen to be written by John .</sentence>
+				<definiendum id="0">SET X</definiendum>
+				<definiendum id="1">EQUAL</definiendum>
+				<definiens id="0">AUTHOR-OF X ) JOHN ' ) ) that is , as the subset of the best books in the world that also happen to be written by John</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>To handle this we have the following solution to to the constraint node PREDICATWE-PP : ( PREDICATIVE-PP ( PP-SEM ( INPREP ) # 1= ( Q-TERM : Q1 : VAR1 ( NOM : PARS1 : SET1 ( INANIMATE ( DEPTS ) ) ) ) ) # 2= ( Q-TERM : Q2 : VAR2 ( NOM : PARS2 : SET2 ( PERSON ) ) ) ( EQUAL ( DEPT-OF # 2 # ) # 1 # ) ) Note that this constraint solution will only unify if the class of the NP object of the PP unifies with DEPTS , and the class of the NP being predicated of unifies with PERSON .</sentence>
+				<definiendum id="0">PREDICATIVE-PP ( PP-SEM</definiendum>
+				<definiendum id="1">EQUAL</definiendum>
+				<definiens id="0">if the class of the NP object of the PP unifies with DEPTS , and the class of the NP being predicated of unifies with PERSON</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>The Learner reduced the time required to create Parlance configurations from months to weeks , and demonstrated that the Learner works effectively on databases with many hundreds of fields .</sentence>
+				<definiendum id="0">Learner</definiendum>
+				<definiens id="0">reduced the time required to create Parlance configurations from months to weeks , and demonstrated that the Learner works effectively on databases with many hundreds of fields</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>83 THE PARLANCE INTERFACE The Parlance interface from BBN Systems and Technologies Corporation is an English language database front end .</sentence>
+				<definiendum id="0">Technologies Corporation</definiendum>
+				<definiens id="0">an English language database front end</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Parlance system uses several domain-dependent knowledge bases : the concepts and relationships that the Parlance user might employ in queries .</sentence>
+				<definiendum id="0">Parlance system</definiendum>
+				<definiens id="0">uses several domain-dependent knowledge bases : the concepts and relationships that the Parlance user might employ in queries</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Parlance system recognizes the ambiguity and asks the user for clarification .</sentence>
+				<definiendum id="0">Parlance system</definiendum>
+				<definiens id="0">recognizes the ambiguity and asks the user for clarification</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>84 THE LEARNER The Learner is a software tool that creates the domain-dependent knowledge bases that the Parlance system needs .</sentence>
+				<definiendum id="0">Learner</definiendum>
+				<definiens id="0">a software tool that creates the domain-dependent knowledge bases that the Parlance system needs</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The human teacher uses the Learner by stepping through a series of menus and structured forms .</sentence>
+				<definiendum id="0">human teacher</definiendum>
+				<definiens id="0">uses the Learner by stepping through a series of menus and structured forms</definiens>
+			</definition>
+</paper>
+
+		<paper id="2028">
+			<definition id="0">
+				<sentence>The stack likelihood function should also include some extra control parameters : stack_likelihood = CSR_likelihood + a'length + fl*NLP_likelihood + gamma*nr_words where a is an acoustic length penalty length is the amount of acoustic data covered by the theory is a grammar weight 7 is a word insertion penalty and nr_words is the number of words in the theory .</sentence>
+				<definiendum id="0">theory</definiendum>
+				<definiens id="0">the amount of acoustic data covered by the</definiens>
+				<definiens id="1">the number of words in the theory</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>fl controls the relative weights of the acoustic and grammatical evidence .</sentence>
+				<definiendum id="0">fl</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>209 Logically , the architecture consists of the three parts listed above : the stack controller ( SC ) , a CSR , and an NLP .</sentence>
+				<definiendum id="0">architecture</definiendum>
+				<definiens id="0">consists of the three parts listed above : the stack controller ( SC ) , a CSR , and an NLP</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>reset ok Reset NLP to start state old-id &lt; new-id word list &gt; &lt; likelihood \ [ \end or \optend\ ] list &gt; append word to old-id , assign to new-id respond with incremental log-likelihood the old id appears only on the 1st item if ( \end ) must be end of sentence if ( \optend ) optional end of sentence meaning id text-meaning give the meaning of the sentence ( language of text-meaning undefined ) fast id &lt; wd likelihood-list &gt; fast match purge id ok purge \ [ partial\ ] theory norm id likelihood get A* normalization prob for id ( any ) \abort abort search , restart with same input ( any ) \error react # \ [ explanation\ ] error return from any command react # =0 ignore following lines are a normal response react # =l delete theory react # =2 give up on sentence react # =3 abort program if present , the explanation is reported \ # SC-CSR comment \ # NLP comment A comment from either source has a ' # ' at the start of the line .</sentence>
+				<definiendum id="0">reset ok Reset NLP</definiendum>
+				<definiens id="0">give the meaning of the sentence ( language of text-meaning undefined</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>212 A typical session for the sentence `` who is he '' might be ( the acoustic probabilities do not show at the interface ) : Stack-Controller NL Reply Comments ready 1.1 ok features stress ( null-list ) list of features no features have been agreed upon reset ok fast 0 when -1.1 who -3.4 show -2.2 a -2.1 possible first words of sentence 01 when 2 who -2.4 -1.3 theory `` when '' , ( batched command ) theory `` who '' fast 2 is -2.2 was -3.4 possible extensions of theory `` who '' 23 is 4 was -1.2 -1.5 theory `` who is '' , ( batched ) theory `` who was '' fast 3 he -2.0 she -2.0 possible extensions of theory `` who is '' 35he 6 she -1.0 \end theory `` who is he \end '' , ( batched ) -1.1 \end theory `` who is she \end '' ( stack now picks 5 and outputs `` who is he '' ) reset ok ready for next sentence 213 To allow each group to work on its part of the task ( CSR or NLP ) independently of the other part , a set of simulators will be used .</sentence>
+				<definiendum id="0">, ( batched command</definiendum>
+				<definiens id="0">Stack-Controller NL Reply Comments ready 1.1 ok features stress ( null-list ) list of features no features have been agreed upon reset ok fast 0 when -1.1 who -3.4 show -2.2 a -2.1 possible first words of sentence 01 when 2 who -2.4 -1.3 theory `` when ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="2043">
+</paper>
+
+		<paper id="2045">
+			<definition id="0">
+				<sentence>S=JSP ( S IS ' ) dS ( 1 ) where S is the clean speech feature vector and P ( S I S t ) is the aposteriori probability of the clean speech given the noisy observation .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">the clean speech feature vector and P ( S I S t ) is the aposteriori probability of the clean speech given the noisy observation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The conditioned probability P ( S'klSk ) was modeled as follows .</sentence>
+				<definiendum id="0">conditioned probability P ( S'klSk</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The filter output energy ( Ek ) is computed by a weighted sum of squared DFT coefficients .</sentence>
+				<definiendum id="0">Ek</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Since the noise spectral power is assumed to be uniform within the range of summation , both Re { DFTn } and Im { DFTn } are gaussian random variables with sigma given by 02 = Nk 2M ( 5 ) where Nk is the expected value of the noise filter energy .</sentence>
+				<definiendum id="0">Nk</definiendum>
+				<definiens id="0">the expected value of the noise filter energy</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The estimator can be then approximated by 321 Sk= Skin • P ( S~nlS ' ) n ( 10 ) where Sk is the MMSE estimator obtained for the n-th distribution component .</sentence>
+				<definiendum id="0">Sk</definiendum>
+				<definiens id="0">the MMSE estimator obtained for the n-th distribution component</definiens>
+			</definition>
+</paper>
+
+		<paper id="2037">
+			<definition id="0">
+				<sentence>Consistency means the variabilities within a model should be minimized ; trainability means there should be sufficient training data for each model ; and generalizability means reasonable models for the testing vocabulary can be used in spite of the lack of precise coverage in the training .</sentence>
+				<definiendum id="0">Consistency</definiendum>
+				<definiendum id="1">generalizability</definiendum>
+				<definiens id="0">means reasonable models for the testing vocabulary can be used in spite of the lack of precise coverage in the training</definiens>
+			</definition>
+</paper>
+
+		<paper id="2010">
+</paper>
+
+		<paper id="1021">
+</paper>
+
+		<paper id="2009">
+			<definition id="0">
+				<sentence>VFE : I 'll ask Voyager ... Vgr : Z ca n't determine if objects SLre near something .</sentence>
+				<definiendum id="0">VFE</definiendum>
+				<definiens id="0">Z ca n't determine if objects SLre near something</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Because PUNDIT is a modular system , typical potting tasks include the creation of a domainspecific lexicon , knowledge base , and semantics rules .</sentence>
+				<definiendum id="0">PUNDIT</definiendum>
+				<definiens id="0">a modular system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>As a consequence , we find frequent agentless passives , noun-noun compounds , nominalizations , run-on sentences , and zeroing of determiners , subjects , copula , and prepositions .</sentence>
+				<definiendum id="0">noun-noun</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>VFE administers the turn-taking structure , and maintains a higher-level model of the discourse than that available to PUNDIT .</sentence>
+				<definiendum id="0">VFE</definiendum>
+				<definiens id="0">administers the turn-taking structure , and maintains a higher-level model of the discourse than that available to PUNDIT</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>As a result , the Border Cafe enters the list of entities in focus , and is thus available for anaphoric reference in ( 4 ) below .</sentence>
+				<definiendum id="0">Border Cafe</definiendum>
+				<definiens id="0">enters the list of entities in focus</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>, VFE anticipates a short response s and calls the parser and semantics in a special mode .</sentence>
+				<definiendum id="0">VFE</definiendum>
+				<definiens id="0">anticipates a short response s and calls the parser and semantics in a special mode</definiens>
+			</definition>
+</paper>
+
+		<paper id="2023">
+</paper>
+
+		<paper id="1043">
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>speech recognition system ( includes 1 peripheral board and software ) running in a 386-based MS.DOS personal computer .</sentence>
+				<definiendum id="0">speech recognition system</definiendum>
+				<definiens id="0">includes 1 peripheral board and software ) running in a 386-based MS.DOS personal computer</definiens>
+			</definition>
+</paper>
+
+		<paper id="1046">
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>This paper concerns the design of cooperative response generation ( CRG ) systems , NLQA systems that are able to produce integrated cooperative responses .</sentence>
+				<definiendum id="0">CRG</definiendum>
+				<definiendum id="1">NLQA</definiendum>
+				<definiens id="0">systems that are able to produce integrated cooperative responses</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Reflection is an important part of the cooperative response generation process .</sentence>
+				<definiendum id="0">Reflection</definiendum>
+				<definiens id="0">an important part of the cooperative response generation process</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>UC : A Progress Report .</sentence>
+				<definiendum id="0">UC</definiendum>
+				<definiens id="0">A Progress Report</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>SPL is a notation that can be used by text planning programs to specify plans for sentences at multiple levels of abstraction and varied amounts of detail .</sentence>
+				<definiendum id="0">SPL</definiendum>
+				<definiens id="0">a notation that can be used by text planning programs to specify plans for sentences at multiple levels of abstraction and varied amounts of detail</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Nigel is a network of interdependent points of minimal grammatical contrast , called systems .</sentence>
+				<definiendum id="0">Nigel</definiendum>
+				<definiens id="0">a network of interdependent points of minimal grammatical contrast , called systems</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The semantics of the Nigel grammar is defined by a set of inquiries that control choices of grammatical features by acquiring information from the knowledge sources in Penman 's operating environment .</sentence>
+				<definiendum id="0">The semantics of the Nigel grammar</definiendum>
+				<definiens id="0">a set of inquiries that control choices of grammatical features by acquiring information from the knowledge sources in Penman 's operating environment</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Penman 154 provides a programmed tool ( Cumming &amp; Albano 86 ) to help application developers define words with appropriate grammatical features so that they are under the full control of Penman 's grammar .</sentence>
+				<definiendum id="0">Penman 154</definiendum>
+				<definiens id="0">provides a programmed tool ( Cumming &amp; Albano 86 ) to help application developers define words with appropriate grammatical features so that they are under the full control of Penman 's grammar</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>: theme is a special keyword that may optionally be used to control thematization .</sentence>
+				<definiendum id="0">theme</definiendum>
+				<definiens id="0">a special keyword that may optionally be used to control thematization</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The keyword : tense is the name of a macro which expands the value past into a collection of attributes that specify responses to some of Penman 's inquiries , as described below .</sentence>
+				<definiendum id="0">tense</definiendum>
+				<definiens id="0">the name of a macro which expands the value past into a collection of attributes that specify responses to some of Penman 's inquiries</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>knowledge sources : Each inquiry may have an executable ( i.e. , lisp ) function associated with it , called an inquiry implementation , which searches knowledge sources for appropriate information .</sentence>
+				<definiendum id="0">knowledge sources</definiendum>
+				<definiens id="0">searches knowledge sources for appropriate information</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>These knowledge sources include a model of the application domain , and default attributes that may be modified dynamically by the application .</sentence>
+				<definiendum id="0">knowledge sources</definiendum>
+				<definiens id="0">include a model of the application domain , and default attributes that may be modified dynamically by the application</definiens>
+			</definition>
+</paper>
+
+	</volume>

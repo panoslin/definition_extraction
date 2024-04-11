@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J02">
+
+		<paper id="4003">
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>C is the set of “confusables” at any given stage of the algorithm .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the set of “confusables” at any given stage of the algorithm</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>2 Objects that are ruled out are removed from C. The process of expanding L and contracting C continues until C = frg ; if and when this condition is met , L is a distinguishing set of properties .</sentence>
+				<definiendum id="0">L</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A is the list of Attributes ; L is the set of Attribute/Value combinations returned by the algorithm .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">the set of Attribute/Value combinations returned by the algorithm</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>3 If the running time of a call of FindBestValue ( r , A i ) is a constant times the number of Values of the Attribute A i , then the worst-case running time of D &amp; R Att is O ( n v n a ) , where n a equals the number of Attributes in the language and n v the average number of Values of all Attributes .</sentence>
+				<definiendum id="0">i )</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The Incremental Algorithm generates descriptions that contain set intersection as their only Boolean operation .</sentence>
+				<definiendum id="0">Incremental Algorithm</definiendum>
+				<definiens id="0">generates descriptions that contain set intersection as their only Boolean operation</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>To see the problems arising from overlapping Values , consider a KB that models which customer bought which types of desks , and where C =fa , b , c , d , e , fg : BOUGHT-BY : PHILIPS ( fa , b , eg ) , SONY ( fa , c , d , fg ) COLOR : BROWN ( fa , bg ) , YELLOW ( fc , dg ) ( Desks of types a , b , and e were bought by Philips , and so on .</sentence>
+				<definiendum id="0">SONY</definiendum>
+				<definiens id="0">models which customer bought which types of desks , and where C =fa , b , c</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>4 In our example , this algorithm would produce a set consisting of the properties BOUGHT BY SONY and BOUGHT BY PHILIPS , which can be realized as the desk bought by Sony and by Philips ; if we change the example by letting Philips buy c as well as a , the inspect all the other Values of the same Attribute to find Values overlapping with V. Shortcuts are possible if Values are stored using a structure that reflects their semantic relationships .</sentence>
+				<definiendum id="0">BOUGHT BY PHILIPS</definiendum>
+				<definiens id="0">produce a set consisting of the properties BOUGHT BY SONY</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In this collective version of D &amp; R Plural , the target S is a set of sets ; P is a list of properties of sets , so if P i 2P , then [ [ P i ] ] is also a set of sets .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">a set of sets</definiens>
+				<definiens id="1">a list of properties of sets</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Yet , they cause the complexity of the algorithm to become exponential , since testing whether C = S involves inspecting all elements of C , of which there can be up to 2 n d ( where n d is the cardinality of the domain D ) .</sentence>
+				<definiendum id="0">n d</definiendum>
+				<definiens id="0">involves inspecting all elements of C , of which there</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>The BFP algorithm consists of three basic steps : rules and constraints ) .</sentence>
+				<definiendum id="0">BFP algorithm</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The Cb ( U i ) , the most highly ranked element of Cf ( U i−1 ) realized in U i , corresponds to the element that represents given information .</sentence>
+				<definiendum id="0">Cb</definiendum>
+				<definiens id="0">the most highly ranked element of Cf ( U i−1 ) realized in U i , corresponds to the element that represents given information</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>8 In Greek ( and also in Turkish ) , a strong pronominal or a full noun phrase ( NP ) must be used to promote the object of U i−1 to the subject position of U i .</sentence>
+				<definiendum id="0">NP</definiendum>
+				<definiens id="0">a strong pronominal or a full noun phrase</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>According to the centering model each segment consists of a sequence of utterances .</sentence>
+				<definiendum id="0">segment</definiendum>
+				<definiens id="0">consists of a sequence of utterances</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>13 The Anaphoric Treebank is a corpus of a collection of news reports , annotated with , among other things , type of anaphoric relations .</sentence>
+				<definiendum id="0">Anaphoric Treebank</definiendum>
+				<definiens id="0">a corpus of a collection of news reports , annotated with</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In discourse grammars , this insight is captured in the discourse Lexicalized Tree Adjoining Grammar ( LTAG ) treatment of subordinate conjunctions .</sentence>
+				<definiendum id="0">discourse grammars</definiendum>
+				<definiens id="0">captured in the discourse Lexicalized Tree Adjoining Grammar ( LTAG ) treatment of subordinate conjunctions</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>151 Bozsahin The Combinatory Morphemic Lexicon CG is a theory of grammar in which the form-meaning relation is conceived as a transparent correspondence between the surface-syntactic and semantic combinatorics ( Jacobson 1996 ) .</sentence>
+				<definiendum id="0">Combinatory Morphemic Lexicon CG</definiendum>
+				<definiens id="0">a theory of grammar in which the form-meaning relation is conceived as a transparent correspondence between the surface-syntactic and semantic combinatorics ( Jacobson 1996 )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A CCG sign can be represented as a triplet π − σ : µ , where π is the prosodic element , σ is its syntactic type , and µ its semantic type .</sentence>
+				<definiendum id="0">CCG sign</definiendum>
+				<definiendum id="1">π</definiendum>
+				<definiens id="0">the prosodic element , σ is its syntactic type , and µ its semantic type</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>readxy Definition ( Syntactic Types ) • The set of basic syntactic categories : A s = { N , NP , S , S −t , S +t } • The set of complex syntactic categories : B s — A s ⊆B s — If X ∈B s and Y ∈B s , then X\Y and X/Y ∈B s The classical Ajdukiewicz/Bar-Hillel ( AB ) CG is weakly equivalent to ContextFree Grammars ( Bar-Hillel , Gaifman , and Shamir 1960 ) .</sentence>
+				<definiendum id="0">classical Ajdukiewicz/Bar-Hillel</definiendum>
+				<definiens id="0">B s — A s ⊆B s — If X</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The directional variants and their associated semantics are as follows : ( 9 ) Forward Application ( &gt; ) : 4 X/Y : fY : a ⇒ X : fa Backward Application ( &lt; ) : Y : aX\Y : f ⇒ X : fa CCG ( Steedman 1985 , 1987 , 1988 ; Szabolcsi 1983 , 1987 ) is an extended version of AB that includes function composition ( 10 ) , substitution , and type raising ( 11 ) .</sentence>
+				<definiendum id="0">CCG</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>f [ a ] Backward Type Raising ( &lt; T ) : X : a ⇒ T\ ( T/X ) : λf.f [ a ] Type raising is an order-preserving operation. For instance , Lambek’s ( 1958 ) category S/ ( S\NP ) is a positional encoding of the grammatical subject as a function instance , transitive verbs of English are written as ( S\NP ) /NP , which translates to ( NP\S ) /NP in the “result-on-top” convention. application is s 1 − X/Y : fs 2 − Y : a ⇒ s 1 • s 2 − X : fa , where • is prosodic combination and fa is the application of f to a. The • will play a crucial role in the lexicalization of attachment later on. effect by partial execution ( Pereira and Shieber 1987 ) . λf.f [ a ] is encoded as ( a^F ) ^F in Prolog , where ˆ is lambda abstraction. We opted for the explicit f [ a ] notation mainly for ease of exposition ( cf. the semantics of raising verbs , relative participles , etc. in Section 6 ) . Moreover , as Pereira and Shieber noted , ( a^F ) ^F is not a lambda term in the strict sense because a is not a variable. 152 Computational Linguistics Volume 28 , Number 2 looking for a VP ( = S\NP ) to the right to become S. The reversal of directionality such as topicalization ( e.g. , This book , I recommend ) requires another schema. The reversal is with respect to the position of the verb , which we shall call contraposition and formulate as in ( 12 ) . 6 ( &lt; XP ) is leftward extraction of a right constituent , and ( &gt; XP ) is rightward extraction of a left constituent , both of which are marked constructions .</sentence>
+				<definiendum id="0">T/X )</definiendum>
+				<definiendum id="1">S\NP ) /NP</definiendum>
+				<definiendum id="2">fa</definiendum>
+				<definiens id="0">a positional encoding of the grammatical subject as a function instance</definiens>
+				<definiens id="1">on. effect by partial execution ( Pereira and Shieber 1987 ) . λf.f [ a ] is encoded as ( a^F ) ^F in Prolog , where ˆ is lambda abstraction. We opted for the explicit f [ a ] notation mainly for ease of exposition ( cf. the semantics of raising verbs , relative participles</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A finer distinction can be made as singular nouns , plural nouns , case-marked nouns , etc .</sentence>
+				<definiendum id="0">finer distinction</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>instance , the set of number-marked nouns can be represented as n ✶N , where ✶ is a morphosyntactic modality ( “equals” ) and n is a diacritic ( for number ) .</sentence>
+				<definiendum id="0">✶</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">a morphosyntactic modality ( “equals” )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>uzun ( long ) : = s ◦ uzun − b &lt; N/ b &lt; N uzun yol long road ’long road’ oku ( read ) : = s ◦ oku − v &lt; S\ f &lt; NP nom \ f &lt; NP acc adam kitab-ı oku-du man book-ACC read-TENSE ’the man read the book.’</sentence>
+				<definiendum id="0">uzun</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>f [ a ] b. Revised Backward Type Raising ( &lt; T ) : NP : a ⇒ T\ ( T/NP ) : λf.f [ a ] T ∈ { S , S\NP , S\NP\NP , S\NP\NP\NP } . The finite schematization of type raising suggests that it can be delegated to the lexicon , for example , by a lexical rule that value-raises all functions onto NP to their type-raised variety , such as NP/N to ( S/ ( S\NP ) ) /N. But this move presupposes the presence of such functions in the lexicon , that is , a language with determiners. To be transparent with respect to the lexicon , we make type raising and other unary schema ( contraposition ) available in the grammar. Since both are finite schemas in the revised formulation , the complexity result of Vijay-Shanker and Weir still holds. Checking the lattice condition as in ( 15 ) incurs a constant factor with a finite lattice. Type raising and composition cause the so-called spurious-ambiguity problem ( Wittenburg 1987 ) : Multiple analyses of semantically equivalent derivations are possible in parsing. This is shown to be desirable from the perspective of prosody ; for example , different bracketings are needed to match intonational phrasing with syntactic structure ( Steedman 1991 ) . From the parsing perspective , the redundancy of analyses can be controlled by ( 1 ) grammar rewriting ( Wittenburg 1987 ) , ( 2 ) checking the chart for PAS equivalence ( Karttunen 1989 ; Komagata 1997 ) , ( 3 ) making the processor parsimonious on using long-distance compositions ( Pareschi and Steedman 1987 ) , or ( 4 ) parsing into normal forms ( Eisner 1996 ; Hepple 1990b ; Hepple and Morrill 1989 ; K¨onig 1989 ; Morrill 1999 ) . We adopt Eisner’s method , which eliminates chains of compositions in O ( 1 ) time via tags in the grammar , before derivations are licensed. There is a switch that can be turned off during parsing to obtain all surface bracketings. 14 Mediating agreement via unification , type subsumption , or set-valued indeterminacy has important consequences on underspecification , the domain of agreement , and the notion of “like categories” in coordination ( see Johnson and Bayer 1995 ; Dalrymple and Kaplan 2000 ; Wechsler and Zlati´c 2000 ) . Rather than providing an elaborate agreement system , we note that Pulman’s techniques provide the mechanism for implementing agreement as atomic unification , subsumption hierarchies represented as lattices , or set-valued features. The categorial ingredient of phrase-internal agreement can be provided by endotypic functors when necessary ( see Sections 5 and 6 ) . 158 Computational Linguistics Volume 28 , Number 2 There is also a switch for checking the PAS equivalence , with the warning that the equivalence of two lambda expressions is undecidable. The parser is an adaptation of the Cocke-Kasami-Younger ( CKY ) algorithm ( Aho and Ullman 1972 , page 315 ) , modified to handle unary rules as well : In the kth iteration of the CKY algorithm to build constituents of length k , the unary rules apply to the CKY table entries T [ α i , α i+k ] , i = 0 , 1 , ... , n − k ; that is , k-length results of binary rules are input to potential unary constituents of length k. In practice , this allows , for instance , a nominalized clause to be type-raised after it is derived as a category of type N. The remaining combinatory schema is already in Chomsky Normal Form , as required by CKY. The finite schematization of CCG rules and constant costs incurred by the normal form and lattice checking provide a straightforward extension of CKY-style context-free parsing for CCG. Komagata ( 1997 ) claims that the average complexity of CCG parsing is O ( n 3 ) even without the finite schematization of type raising ( based on the parsing of 22 sentences consisting of around 20 words , with a lexicon of 200 entries and no derivation of semantics in the grammar ; a morphological analyzer provided five analyses per second to the parser ) . Statistical techniques developed for lexicalized grammars ( e.g. , Collins 1997 ) , readily apply to CCG to improve the average parsing performance in large-scale practical applications ( Hockenmaier , Bierner , and Baldridge 2000 ) . Both Collins and Hockenmeier , Bierner , and Baldridge used section 02-21 of the Wall Street Journal Corpus of Penn Treebank for training , which contains 40,886 words ( 70,151 lexical entries ) . A recent initiative ( Oflazer , et al. 2001 ) aims to provide such a resource of around one million words for Turkish. It encodes in the Treebank surfacesyntactic relations and the morphological breakdown of words. The latter is invaluable for training morphemic grammars and lexicons. In morpheme-based parsing , lattice conditions help eliminate the permutation problem in endotypic categories. Such categories are typical of inflectional morphemes. For instance , assume that three morphemes m 1 , m 2 , and m 3 have endotypic categories ( say N\N ) , that they can appear only in this order , and that they are all optional. The categorization of m i as κ prime i &lt; N\ κ i &lt; N such that κ prime i negationslash≤ κ i for all i , and κ prime j−1 ≤ κ j for j = 1 , 2 , 3 allows omissions ( 18a–b ) but rules out the permutations ( 18c–d ) . 15 ( 18 ) a. stem m 1 m 2 m 3 κ 0 &lt; N κ prime 1 &lt; N\ κ 1 &lt; N κ prime 2 &lt; N\ κ 2 &lt; N κ prime 3 &lt; N\ κ 3 &lt; N &lt; κ prime 1 &lt; N because κ 0 ≤ κ 1 &lt; κ prime 2 &lt; N because κ prime 1 ≤ κ 2 &lt; κ prime 3 &lt; N because κ prime 2 ≤ κ 3 b. stem m 3 &lt; κ prime 3 &lt; N because κ 0 ≤ κ 3 15 Three asterisks in the line indicate that the derivation is not licensed. 159 Bozsahin The Combinatory Morphemic Lexicon c. *stem m 2 m 1 m 3 &lt; κ prime 2 &lt; N because κ 0 ≤ κ 2 *** &lt; κ prime 2 negationslash≤ κ 1 because κ 1 &lt; κ prime 1 ≤ κ 2 &lt; κ prime 2 d. *stem m 1 m 3 m 2 &lt; κ prime 1 &lt; N because κ 0 ≤ κ 1 &lt; κ prime 3 &lt; N because κ prime 1 ≤ κ 3 *** &lt; κ prime 3 negationslash≤ κ 2 because κ 2 &lt; κ prime 2 ≤ κ 3 &lt; κ prime 3 The lattice and its consistency condition on derivability offer varying degrees of flexibility. A lattice with only latticetop and the relation ≤ would undo all the effects of parameterization ; it would be equivalent to a syntactic grammar in which every basic category X stands for latticetop &lt; X. To enforce a completely lexemic syntax , a lattice with latticetop and free would define all functional categories as functions over free forms. Morphological processing seems inevitable for languages like Turkish , and morphological and lexical ambiguity such as that shown in ( 19 ) must be passed on to syntax irrespective of how inflectional morphology is processed ( isolated from or integrated with syntax ) . For the verbal paradigm , Jurafsky and Martin ( 2000 ) reports Oflazer’s estimation that inflectional suffixes alone create around 40,000 word forms per root. In the nominal paradigm , iterative processes such as ki-relativization ( Section 6.5 ) can create millions of word forms per nominal root ( Hankamer 1989 ) . ( 19 ) a. kazma-ları pickaxe-POSS3p ’their pickaxe’ b. kazma-lar-ı pickaxe-PLU-POSS3p ’their pickaxes’ c. kazma-lar-ı pickaxe-PLU-POSS3s ’his/her pickaxes’ d. kaz-ma-ları dig-SUB-AGR ’their digging’ The questions that need to be answered related to processing are ( 1 ) What should a ( super ) linear fragment of processing for morphology deliver to ( morpho ) syntax ? and ( 2 ) Is the syntax lexemic or morphemic ? The problems with lexemic syntax , which stem from mismatches with semantics , were highlighted in the introduction. In other 160 Computational Linguistics Volume 28 , Number 2 interpretation syntax and kazma kaz kazma−POSS3p kazma−PLU−POSS3p kazma−PLU−POSS3s kaz−SUB−AGR kazma kaz kazma−POSS3p kazma−PLU−POSS3p kazma−PLU−POSS3s kaz−SUB−AGR pairs root lexicon affix lexicon −ma −lar −i −lari kaz kazma −lar −i −lari root lexicon morpheme− semantics matching morphological parsing lexicon root and affix morphological parsing interpretation syntax and ( a ) Lexemic syntax and lexicon ( b ) Morphemic syntax and split lexicon ( c ) Morphemic syntax and lexicon pairs interpretation syntax and −ma PF−LF PF−LF pairs PF−LF Phonological Form ( PF ) Logical Form ( LF ) Figure 3 The processing of kazmaları in three different architectures ( see Example ( 19 ) for glosses ) . words , a lexemic grammar ( e.g. , Figure 3a ) is computationally nontransparent when interpretation is a component of an NLP system. Regarding the first question , let us consider two architectures from the perspective of the lexicon for the purpose of morphology , morphemic syntax , and semantics interface. The architecture in Figure 3b incorporates the current proposal as an interpretive front end to a morphological analyzer such as Oflazer’s ( 1994 ) , which delivers the analyses of words as a stream of morphemes out of which the bound morphemes have to be matched with their semantics from the affix lexicon to be interpretable in grammar. The advantage of this model is its efficiency ; morphological parsing of words is—in principle—linear context free ; hence , finite-state techniques and their computational advantages readily apply. But the uninterpretable surface forms of bound morphemes must match with those of the affix lexicon , and this is not necessarily a one-to-one mapping because of multiple lexical assignments for capturing syntactic–semantic distinctions ( e.g. , dative case as a direct object , indirect object , or adjunct marker or -i as a possessive and/or compound marker ) . Surface form–semantics pairing is not a trivial task , particularly in the case of lexically composite affixes , which require semantic composition as well as tokenization. The matching process needs to be aware of all the syntactic contexts in which certain affix sequences act as a unit , for example , relative participles and agreement markers ( -di˘g-i relative participle as -OP-POSS or -OP-AGR ) , possessive and compound markers , etc. , for Turkish. The factorization of syntactic issues into a morphological analyzer would also make the separate morphological component nonmodular or expand its number of states to factor in these concerns ( e.g. , treating the -OP-POSS sequence as a state different from -OP followed 161 Bozsahin The Combinatory Morphemic Lexicon Table 2 Parsing performance. Average number Sample text Number of items of parses/grammatical Average CPU time type in text input per test ( milliseconds ) Normal Normal PAS form PAS form tests words morphs check parse Unrestr. check parse Word order and 58 216 384 1.26 3.68 39 39 30 case Subordination 14 70 137 3.00 5.09 267 270 180 Relativization 23 130 232 2.04 2.32 796 783 266 Control verbs 33 147 291 1.42 3.34 166 163 137 Possessives and 26 109 200 1.23 2.47 137 135 98 compounds Adjuncts 14 57 100 1.12 4.87 89 88 72 -ki relatives 24 66 179 1.07 1.54 36 36 35 Note : CPU times are for a Sun UltraSparc-4 running SICStus Prolog ; lexical items include stems and inflectional affixes. by -POSS , in which -POSS is not interpreted with the semantics of possession but that of agreement marking ) . Not knowing how many of the syntactic distinctions are handled by the morphological analyzer , a subsequent interpreter may need to reconsult the grammar if scoping problems arise. The architecture in Figure 3c describes the current implementation of the proposal. Bound morphemes are fed to the parser along with their interpretation. This model is preferred over that presented in Figure 3b for its simplicity in design and extendibility. 16 The price is lesser efficiency due to context-free processing of inflectional morphology. By one estimate ( Oflazer , Gocmen , and Bozsahin 1994 ) , Turkish has 59 inflectional morphemes out of a total of 166 bound morphemes , and Oflazer ( personal communication ) notes that the average number of bound morphemes per word in unrestricted corpora is around 2.8 , including derivational affixes. In a news corpus of 850,000 words , the average number of inflections per word is less than two ( Oflazer et al. 2001 ) . This is tolerable for sentences of moderate length in terms of the extra burden it puts on the context-free parser. Table 2 shows the results of our tests with a Prolog implementation of the system on different kinds of constructions. The test cases included 10 lexical items on average , with an average parsing time of 0.32 seconds per sentence. A relatively long sentence ( 12 words , 21 morphemes ) took 2.9 seconds to parse. The longest sentence ( 20 words , 37 morphemes ) took 40 seconds. The lexicon for the experiment included 700 entries ; 139 were free morphemes and 561 were bound morphemes compiled out of 105 allomorphic representations ( including all the ambiguous interpretations of bound morphemes and the results of lexical rules ) . For a rough comparison with an existing NLP system with no disambiguation 16 The morphological analyzer would be in no better position to handle morpheme–semantics pairing if the architecture in Figure 3b were implemented with an integrated lexicon of roots and affixes. For instance , -POSS would still require distinct states because of the difference in the semantics of possession and agreement marking coming from the lexicon. 162 Computational Linguistics Volume 28 , Number 2 aids , G ¨ung¨ord ¨u and Oflazer ( 1995 ) reported average parsing times of around 10 seconds per sentence for a lexicon of 24,000 free morphemes , and their morphological analyzer delivered around two analyses per second to a lexemic grammar. Oflazer’s later ( 1996 ) morphological analyzer contained an abstract morphotactic component of around 50 states for inflections , which resulted in compilation to 30,000 states and 100,000 transitions when the morphophonemic rules were added to the system. In conclusion , we note that the current proposal for a morphemic lexicon and grammar is compatible with both a separate morphological component ( Figure 3b ) and syntax-integrated inflectional morphology ( Figure 3c ) . The architecture in Figure 3b may in fact be more suitable for inflecting languages ( e.g. , Russian ) in which the surface forms of bound morphemes are difficult to isolate ( e.g. , m´este , locative singular of m´esto ) but can be delivered as a sequence of morpheme labels by a morphological analyzer ( e.g. m´esto-SING-LOC ) to be matched with the lexical type assignments to -SING and -LOC for grammatical interpretation. It might be argued that in computational models of the type in Figure 3b , the lattice is not necessary , because the morphological analyzer embodies the tactical component. But not only tactical problems ( cf. Example ( 18 ) and its discussion ) but also transparent scoping in syntax and semantics is regulated by the use of lattice in type assignments , and that is our main concern. We show examples of such cases in the remainder of the article. Thus the nonredundant role of the lattice decouples the morphemic grammar– lexicon from the kind of morphological analysis performed in the back end. In this section , we present a morphosyntactic treatment of the English plural morpheme. The lattice for English is shown in Figure 2b. We follow Carpenter ( 1997 ) in categorizing numerical modifiers and intersective adjectives as plural noun modifiers : four boys is interpreted as four ( pluboy ) and green boxes as green ( plubox ) . This bracketing reflects the “set of sets” interpretation of the plural noun ; four ( pluboy ) denotes the set of nonempty nonsingleton sets of boys with four members. The type assignments in ( 20 ) correctly interpret the interaction of the plural and these modifiers ( cf. 21a–b ) . The endotypic category of the plural also allows phrase-internal number agreement for languages that require it ; the agreement can be regulated over the category N before the specifier is applied to the noun group to obtain NP. ( 20 ) -PLU : = a ◦s − n &lt; N\ b &lt; N : λx.plux four : = s ◦four − n &lt; N/ n ✶N : λx.fourx green : = s ◦green − n &lt; N/ n &lt; N : λx.greenx ( 21 ) a. four boy -s n &lt; N/ n ✶N b &lt; N n &lt; N\ b &lt; N &lt; n &lt; N : pluboy &gt; n &lt; N : four ( pluboy ) 163 Bozsahin The Combinatory Morphemic Lexicon b. four boy -s *** &gt; n &lt; N : fourboy n &lt; N\ b &lt; N because n-base negationslash= n-num *** n &lt; N : *plu ( fourboy ) Carpenter ( 1997 ) points out that nonintersective adjectives ( e.g , toy , fake , alleged ) are unlike numerical modifiers and intersective adjectives in that their semantics requires phrasal ( wide ) scope for -PLU , corresponding to the “set of things” interpretation of the plural noun .</sentence>
+				<definiendum id="0">lexemic grammar</definiendum>
+				<definiendum id="1">interpretation</definiendum>
+				<definiens id="0">a ] b. Revised Backward Type Raising ( &lt; T ) : NP : a ⇒ T\ ( T/NP ) : λf.f [ a ] T ∈ { S , S\NP , S\NP\NP , S\NP\NP\NP }</definiens>
+				<definiens id="1">for example , by a lexical rule that value-raises all functions onto NP to their type-raised variety , such as NP/N to ( S/ ( S\NP ) ) /N. But this move presupposes the presence of such functions in the lexicon</definiens>
+				<definiens id="2">other unary schema ( contraposition ) available in the grammar. Since both are finite schemas in the revised formulation , the complexity result of Vijay-Shanker and Weir still holds. Checking the lattice condition as in ( 15 ) incurs a constant factor with a finite lattice. Type raising and composition cause the so-called spurious-ambiguity problem ( Wittenburg 1987 ) : Multiple analyses of semantically equivalent derivations are possible in parsing. This is shown to be desirable from the perspective of prosody ; for example , different bracketings are needed to match intonational phrasing with syntactic structure ( Steedman 1991 ) . From the parsing perspective , the redundancy of analyses can be controlled by ( 1 ) grammar rewriting ( Wittenburg 1987 ) , ( 2 ) checking the chart for PAS equivalence</definiens>
+				<definiens id="3">eliminates chains of compositions in O ( 1 ) time via tags in the grammar , before derivations are licensed. There is a switch that can be turned off during parsing to obtain all surface bracketings. 14 Mediating agreement via unification , type subsumption , or set-valued indeterminacy has important consequences on underspecification , the domain of agreement , and the notion of “like categories” in coordination ( see Johnson and Bayer 1995 ; Dalrymple and Kaplan 2000 ; Wechsler and Zlati´c 2000 ) . Rather than providing an elaborate agreement system , we note that Pulman’s techniques provide the mechanism for implementing agreement as atomic unification , subsumption hierarchies represented as lattices , or set-valued features. The categorial ingredient of phrase-internal agreement can be provided by endotypic functors when necessary</definiens>
+				<definiens id="4">an adaptation of the Cocke-Kasami-Younger ( CKY ) algorithm ( Aho and Ullman 1972 , page 315 ) , modified to handle unary rules as well : In the kth iteration of the CKY algorithm to build constituents of length k , the unary rules apply to the CKY table entries T [ α i , α i+k ] , i = 0 , 1 , ... , n − k ; that is , k-length results of binary rules</definiens>
+				<definiens id="5">finite schematization of CCG rules and constant costs incurred by the normal form and lattice checking provide a straightforward extension of CKY-style context-free parsing for CCG. Komagata ( 1997 ) claims that the average complexity of CCG parsing is O ( n 3 ) even without the finite schematization of type raising ( based on the parsing of 22 sentences consisting of around 20 words , with a lexicon of 200 entries and no derivation of semantics in the grammar ; a morphological analyzer provided five analyses per second to the parser ) . Statistical techniques developed for lexicalized grammars ( e.g. , Collins 1997 ) , readily apply to CCG to improve the average parsing performance in large-scale practical applications ( Hockenmaier , Bierner , and Baldridge 2000 ) . Both Collins and Hockenmeier , Bierner , and Baldridge used section 02-21 of the Wall Street Journal Corpus of Penn Treebank for training , which contains 40,886 words ( 70,151 lexical entries ) . A recent initiative ( Oflazer , et al. 2001 ) aims to provide such a resource of around one million words for Turkish. It encodes in the Treebank surfacesyntactic relations and the morphological breakdown of words. The latter is invaluable for training morphemic grammars and lexicons. In morpheme-based parsing , lattice conditions help eliminate the permutation problem in endotypic categories. Such categories are typical of inflectional morphemes. For instance</definiens>
+				<definiens id="6">The lattice and its consistency condition on derivability offer varying degrees of flexibility. A lattice with only latticetop and the relation ≤ would undo all the effects of parameterization ; it would be equivalent to a syntactic grammar in which every basic category X stands for latticetop &lt; X. To enforce a completely lexemic syntax , a lattice with latticetop and free would define all functional categories as functions over free forms. Morphological processing seems inevitable for languages like Turkish , and morphological and lexical ambiguity such as that shown in ( 19 ) must be passed on to syntax irrespective of how inflectional morphology is processed ( isolated from or integrated with syntax ) . For the verbal paradigm , Jurafsky and Martin ( 2000 ) reports Oflazer’s estimation that inflectional suffixes alone create around 40,000 word forms per root. In the nominal paradigm , iterative processes such as ki-relativization ( Section 6.5 ) can create millions of word forms per nominal root ( Hankamer 1989 ) . ( 19 ) a. kazma-ları pickaxe-POSS3p ’their pickaxe’ b. kazma-lar-ı pickaxe-PLU-POSS3p ’their pickaxes’ c. kazma-lar-ı pickaxe-PLU-POSS3s ’his/her pickaxes’ d. kaz-ma-ları dig-SUB-AGR ’their digging’ The questions that need to be answered related to processing are ( 1 ) What should a ( super ) linear fragment of processing for morphology deliver to ( morpho</definiens>
+				<definiens id="7">stem from mismatches with semantics , were highlighted in the introduction. In other 160 Computational Linguistics Volume 28 , Number 2 interpretation syntax and kazma kaz kazma−POSS3p kazma−PLU−POSS3p kazma−PLU−POSS3s kaz−SUB−AGR kazma kaz kazma−POSS3p kazma−PLU−POSS3p kazma−PLU−POSS3s kaz−SUB−AGR pairs root lexicon affix lexicon −ma −lar −i −lari kaz kazma −lar −i −lari root lexicon morpheme− semantics matching morphological parsing lexicon root and affix morphological parsing interpretation syntax and ( a ) Lexemic syntax and lexicon ( b ) Morphemic syntax and split lexicon ( c ) Morphemic syntax and lexicon pairs interpretation syntax and −ma PF−LF PF−LF pairs PF−LF Phonological Form ( PF ) Logical Form ( LF ) Figure 3 The processing of kazmaları in three different architectures</definiens>
+				<definiens id="8">a component of an NLP system. Regarding the first question , let us consider two architectures from the perspective of the lexicon for the purpose of morphology , morphemic syntax , and semantics interface. The architecture in Figure 3b incorporates the current proposal as an interpretive front end to a morphological analyzer such as Oflazer’s ( 1994 ) , which delivers the analyses of words as a stream of morphemes out of which the bound morphemes have to be matched with their semantics from the affix lexicon to be interpretable in grammar. The advantage of this model is its efficiency ; morphological parsing of words is—in principle—linear context free ; hence , finite-state techniques and their computational advantages readily apply. But the uninterpretable surface forms of bound morphemes must match with those of the affix lexicon</definiens>
+				<definiens id="9">assignments for capturing syntactic–semantic distinctions ( e.g. , dative case as a direct object , indirect object , or adjunct marker or -i as a possessive and/or compound marker ) . Surface form–semantics pairing is not a trivial task , particularly in the case of lexically composite affixes , which require semantic composition as well as tokenization. The matching process needs to be aware of all the syntactic contexts in which certain affix sequences act as a unit , for example , relative participles and agreement markers ( -di˘g-i relative participle as -OP-POSS or -OP-AGR ) , possessive and compound markers , etc. , for Turkish. The factorization of syntactic issues into a morphological analyzer would also make the separate morphological component nonmodular or expand its number of states to factor in these concerns ( e.g. , treating the -OP-POSS sequence as a state different from -OP followed 161 Bozsahin The Combinatory Morphemic Lexicon Table 2 Parsing performance. Average number Sample text Number of items of parses/grammatical Average CPU time type in text input per test ( milliseconds ) Normal Normal PAS form PAS form tests words morphs check parse Unrestr. check parse Word order and 58 216 384 1.26 3.68 39 39 30 case Subordination 14 70 137 3.00 5.09 267 270 180 Relativization 23 130 232 2.04 2.32 796 783 266 Control verbs 33 147 291 1.42 3.34 166 163 137 Possessives and 26 109 200 1.23 2.47 137 135 98 compounds Adjuncts 14 57 100 1.12 4.87 89 88 72 -ki relatives 24 66 179 1.07 1.54 36 36 35 Note : CPU times are for a Sun UltraSparc-4 running SICStus Prolog ; lexical items include stems and inflectional affixes. by -POSS , in which -POSS is not interpreted with the semantics of possession but that of agreement marking ) . Not knowing how many of the syntactic distinctions are handled by the morphological analyzer , a subsequent interpreter may need to reconsult the grammar if scoping problems arise. The architecture in Figure 3c describes the current implementation of the proposal. Bound morphemes are fed to the parser along with their interpretation. This model is preferred over that presented in Figure 3b for its simplicity in design and extendibility. 16 The price is lesser efficiency due to context-free processing of inflectional morphology. By one estimate ( Oflazer , Gocmen , and Bozsahin 1994 ) , Turkish has 59 inflectional morphemes out of a total of 166 bound morphemes , and Oflazer ( personal communication ) notes that the average number of bound morphemes per word in unrestricted corpora is around 2.8 , including derivational affixes. In a news corpus of 850,000 words , the average number of inflections per word is less than two ( Oflazer et al. 2001 ) . This is tolerable for sentences of moderate length in terms of the extra burden it puts on the context-free parser. Table 2 shows the results of our tests with a Prolog implementation of the system on different kinds of constructions. The test cases included 10 lexical items on average , with an average parsing time of 0.32 seconds per sentence. A relatively long sentence ( 12 words , 21 morphemes ) took 2.9 seconds to parse. The longest sentence ( 20 words , 37 morphemes ) took 40 seconds. The lexicon for the experiment included 700 entries ; 139 were free morphemes and 561 were bound morphemes compiled out of 105 allomorphic representations ( including all the ambiguous interpretations of bound morphemes and the results of lexical rules ) . For a rough comparison with an existing NLP system with no disambiguation 16 The morphological analyzer would be in no better position to handle morpheme–semantics pairing if the architecture in Figure 3b were implemented with an integrated lexicon of roots and affixes. For instance , -POSS would still require distinct states because of the difference in the semantics of possession and agreement marking coming from the lexicon. 162 Computational Linguistics Volume 28 , Number 2 aids , G ¨ung¨ord ¨u and Oflazer ( 1995 ) reported average parsing times of around 10 seconds per sentence for a lexicon of 24,000 free morphemes , and their morphological analyzer delivered around two analyses per second to a lexemic grammar. Oflazer’s later ( 1996 ) morphological analyzer contained an abstract morphotactic component of around 50 states for inflections , which resulted in compilation to 30,000 states and 100,000 transitions when the morphophonemic rules were added to the system. In conclusion</definiens>
+				<definiens id="10">compatible with both a separate morphological component ( Figure 3b ) and syntax-integrated inflectional morphology ( Figure 3c ) . The architecture in Figure 3b may in fact be more suitable for inflecting languages ( e.g. , Russian ) in which the surface forms of bound morphemes are difficult to isolate ( e.g. , m´este , locative singular of m´esto ) but can be delivered as a sequence of morpheme labels by a morphological analyzer ( e.g. m´esto-SING-LOC ) to be matched with the lexical type assignments to -SING and -LOC for grammatical interpretation. It might be argued that in computational models of the type in Figure 3b , the lattice is not necessary , because the morphological analyzer embodies the tactical component. But not only tactical problems ( cf. Example ( 18 ) and its discussion ) but also transparent scoping in syntax and semantics is regulated by the use of lattice in type assignments</definiens>
+				<definiens id="11">the set of nonempty nonsingleton sets of boys with four members. The type assignments in ( 20 ) correctly interpret the interaction of the plural and these modifiers ( cf. 21a–b ) . The endotypic category of the plural also allows phrase-internal number agreement for languages that require it</definiens>
+				<definiens id="12">a ◦s − n &lt; N\ b &lt; N : λx.plux four : = s ◦four − n &lt; N/ n ✶N : λx.fourx green : = s ◦green − n &lt; N/ n &lt; N : λx.greenx ( 21 ) a. four boy -s n &lt; N/ n ✶N b &lt; N n &lt; N\ b &lt; N &lt; n &lt; N : pluboy &gt; n &lt; N : four ( pluboy ) 163 Bozsahin The Combinatory Morphemic Lexicon b. four boy -s *** &gt; n &lt; N : fourboy n &lt; N\ b &lt; N because n-base negationslash= n-num *** n &lt; N : *plu ( fourboy ) Carpenter ( 1997 ) points out that nonintersective adjectives ( e.g , toy , fake , alleged ) are unlike numerical modifiers and intersective adjectives in that their semantics requires phrasal ( wide ) scope for -PLU , corresponding to the “set of things” interpretation of the plural noun</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Because of space considerations , we sometimes use abbreviated forms in derivations such as the genitive affix’s ( N/ ( N\N ) ) \N category for ( o &lt; N/ ( o ✶N pn \ o ✶N pn ) ) \ o &lt; N pn , but the parser operates on full morphosyntactic representations .</sentence>
+				<definiendum id="0">N/ ( N\N )</definiendum>
+				<definiens id="0">o ✶N pn \ o ✶N pn ) ) \ o &lt; N pn , but the parser operates on full morphosyntactic representations</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>f &lt; N : plucar &lt; N acc : plucar &gt; N : ∗toy ( plucar ) b. [ ye¸sil [ araba ] -lar ] -ı green car -PLU -ACC n &lt; N/ n &lt; N b &lt; N n &lt; N\ b &lt; N c &lt; N acc \ o &lt; N : λx .</sentence>
+				<definiendum id="0">N acc</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">∗toy ( plucar ) b. [ ye¸sil [ araba ] -lar ] -ı green car -PLU -ACC n &lt; N/ n &lt; N b &lt; N n &lt; N\ b &lt; N c &lt; N acc \ o &lt;</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>( 31 ) a. S O V &gt; T &gt; T S/ ( S\ f &lt; NP nom ) ( S\NP ) / ( S\NP\ f &lt; NP acc ) S\NP nom \NP acc &gt; S\NP nom &gt; S b. O S V &gt; T &gt; T S/ ( S\ f &lt; NP acc ) ( S\NP ) / ( S\NP\ f &lt; NP nom ) S\NP acc \NP nom &gt; S\NP acc &gt; S 169 Bozsahin The Combinatory Morphemic Lexicon c. O V S &gt; T &gt; XP ( S\NP ) / ( S\NP\ f &lt; NP acc ) S\NP nom \NP acc S −t \ ( S\NP nom ) &gt; S\NP nom &lt; S −t d. S V O &gt; T &gt; XP ( S\NP ) / ( S\NP\ f &lt; NP nom ) S\NP acc \NP nom S −t \ ( S\NP acc ) &gt; S\NP acc &lt; S −t e. V S O &gt; XP &gt; XP S\NP nom \NP acc S −t \ ( S\NP nom ) S −t \ ( S −t \NP acc ) &lt; B S −t \NP acc &lt; S −t f. V O S &gt; XP &gt; XP S\NP acc \NP nom S −t \ ( S\NP acc ) S −t \ ( S −t \NP nom ) &lt; B S −t \NP nom &lt; S −t Subordinate clauses can be classified as unmarked clauses ( 32a ) , infinitival clauses ( 32b ) , verbal nouns ( 32c ) , and nominalizations ( 32d ) . The latter two types require a genitive embedded subject , which agrees with the subordinate verb. ( 32 ) a. Mehmet [ ¸cocuk ev-e git-ti ] san-dı M.NOM child.NOM house-DAT go-TENSE assume-TENSE ’Mehmet assumed that the child went home.’ b. ¸Cocuk [ kız-a kalem-i ver-me ] -yi unut-tu child.NOM girl-DAT pen-ACC give-SUB1i -ACC forget-TENSE ’The child forgot to give the pen to the girl.’ c. [ ¸Cocu˘g-un araba-da uyu-ma-sı ] Mehmet’i kız-dır-dı child-GEN car-LOC sleep-SUB1g-POSS M-ACC anger-CAUS-TENSE ’Child’s sleeping in the car made Mehmet angry.’ 170 Computational Linguistics Volume 28 , Number 2 d. Deniz [ ¸cocu˘g-un uyu-du˘g-u ] -na inan-m-ıyor D.NOM child-GEN sleep-SUB2g-POSS -DAT believe-NEG-TENSE ’Deniz does not believe the child’s sleeping.’ ( 33 ) a. Deniz i [ kendisi-nin i uyu-ma-dı˘g-ı ] -nı s¨oyle-di D.NOM self-GEN sleep-NEG-SUB2g-POSS-ACC2 say-TENSE ’Deniz i said that he i did not sleep.’ b. *kendisi i [ Deniz’in i uyu-ma-dı˘g-ı ] -nı s¨oyle-di c. Deniz i adam-ı j [ kendi i/j arkada¸s-ı-nın g¨or-d¨u˘g-¨u ] -ne inan-ıyor D.NOM man-ACC self friend-POSS see-SUB2g-POSS-DAT2 believe-TENSE ’Deniz i believes that his i/j friend saw the man j .’ d. Deniz i adam-a j [ kendi i/∗j kitab-ı-nı oku-du˘g-u ] -nu s¨oyle-di D.NOM man-DAT self book-POSS-ACC2 read-SUB2g-POSS-ACC2 say-TENSE ’Deniz i told the man j that he read his i/∗j book.’ ing relations is preserved in subordination. This suggests the following bracketing , in which the embedded clause’s position in the PAS of the matrix predicate is determined by its grammatical function. Matrix-Pred ... Matrix-Argument ... Embedded-Clause ... Matrix-Argument ( 34 ) -SUB1i ( -ma ) : = a ◦ ma − b &lt; N\ ( a &lt; S\ f &lt; NP nom ) : λf.f ( infinitive ) -SUB1g ( -ması ) : = a ◦ ması − o &lt; N\ f &lt; NP agr \ ( a &lt; S\ f &lt; NP nom ) : λf.f ( verbal noun ) -SUB2g ( -dı˘gı ) : = a ◦ dı˘gı − o &lt; N case=obl \ f &lt; NP agr \ ( a &lt; S\ f &lt; NP nom ) : λf.f ( nominalization ) The wide scope of case markers on subordinate clauses implies that the subordinate markers themselves must have phrasal scope as well. Since case is a nominal inflection , the category of a subordinate marker must be a function onto N. Its argument is IV for infinitives and NP agr \IV for others , which require genitive subjects ( 34 ) . This yields two families of functors for subordination. The verb-final characteristics of the embedded clauses is ensured by the backward-looking main functor of the subordinate marker. For morphosyntactic modality , the resulting nominalized predicate can receive only case , hence it has o &lt; N control. Verbal nouns refer to actions , and nominalizations refer to facts. Subordinate markers for the former are tenseless. A subordinate marker replaces the tense of the subordinate verb in nominalizations , yielding a &lt; S 171 Bozsahin The Combinatory Morphemic Lexicon control on the verb. For subject raising , the result may undergo any nominal inflection ( b &lt; N ) . Word order variation within the subordinate clause is constrained by the subject on the left and the verb on the right. This constraint is achieved by categorizing the embedded subjects as NP agr and having a result category of N for all subordinate markers. If there were any contraposed element NP in the embedded clause , the category of the clause would be S\NP , and the clause could not combine with the contraposed category such as S −t \ ( S\NP ) on the right because the extraction category combines with a subordinate marker first , which is onto N , not S\NP , hence composition ( &lt; B ) could not take place. ↑ as an abbreviation for a type-raised N when space is limited ) . We use Steedman’s ( 1996 ) ana function to denote the binding of the embedded subject. Infinitive -SUB1i has phrasal scope in this example ; the DV must be reduced to an IV before the infinitive can apply. Hence the subordination of intransitive clauses is only a special case in which the morphological scope of the infinitive works without rebracketing. Subject raising and coindexation with the matrix subject are made explicit in the raising category of unut. The systematic relationship between the raised and nonraised category of such verbs can be captured by a lexical rule , for example , TV : λx.λy.forgetxy ⇒ TV : λf.λy.forget ( f [ anay ] ) y. ( 35b–c ) contrast subject and nonsubject nominalizations. The difference is captured with the case distinction of the result type ( o &lt; N ) for -SUB1g and -SUB2g. These examples also show the possibility of affix composition in the lexicon. For instance , we write -ması in ( 35b ) , which marks subordination and agreement together , instead of -ma-sı. Otherwise , -ma ( SUB1g ) would have to look to the right as a functor to enforce agreement , and the verb-final property of subordination could not be assured. ( 35 ) a. ¸Cocuk kız-a kalem-i ver -me -yi unut-tu child.NOM girl-DAT pen-ACC give -SUB1i -ACC forgot &gt; T &gt; T &gt; T &lt; B N ↑ nom N ↑ dat N ↑ acc DV b &lt; N\ ( a &lt; S\ f &lt; NP nom ) c &lt; N acc \ o &lt; NTV : λf.f [ child ] : λg.g [ girl ] : λh.h [ pen ] : λx.λy.λz. : λf.f : λf.f : λf.λx. giveyxz forget ( f [ anax ] ) x &gt; v &lt; S\ f &lt; NP nom \ f &lt; NP dat &gt; v &lt; S\ f &lt; NP nom &lt; b &lt; N &lt; c &lt; N acc &gt; T ( S\NP ) / ( S\NP\ f &lt; NP acc ) &gt; t &lt; S\ f &lt; NP nom &gt; t &lt; S : forget ( givegirlpen ( anachild ) ) child ’The child forgot to give the pen to the girl.’</sentence>
+				<definiendum id="0">subordinate marker</definiendum>
+				<definiens id="0">a. S O V &gt; T &gt; T S/ ( S\ f &lt; NP nom ) ( S\NP ) / ( S\NP\ f &lt; NP acc ) S\NP nom \NP acc &gt; S\NP nom &gt; S b. O S V &gt; T &gt; T S/ ( S\ f &lt; NP acc ) ( S\NP ) / ( S\NP\ f &lt; NP nom ) S\NP acc \NP nom &gt; S\NP acc &gt; S 169 Bozsahin The Combinatory Morphemic Lexicon c. O V S &gt; T &gt; XP ( S\NP ) / ( S\NP\ f &lt; NP acc ) S\NP nom \NP acc S −t \ ( S\NP nom ) &gt; S\NP nom &lt; S −t d. S V O &gt; T &gt; XP ( S\NP ) / ( S\NP\ f &lt; NP nom ) S\NP acc \NP nom S −t \ ( S\NP acc ) &gt; S\NP acc &lt; S −t e. V S O &gt; XP &gt; XP S\NP nom \NP acc S −t \ ( S\NP nom ) S −t \</definiens>
+				<definiens id="1">S\NP acc ) S −t \ ( S −t \NP nom ) &lt; B S −t \NP nom &lt; S −t Subordinate clauses can be classified as unmarked clauses ( 32a ) , infinitival clauses ( 32b ) , verbal nouns ( 32c ) , and nominalizations ( 32d ) . The latter two types require a genitive embedded subject , which agrees with the subordinate verb. ( 32 ) a. Mehmet [ ¸cocuk ev-e git-ti ] san-dı M.NOM child.NOM house-DAT go-TENSE assume-TENSE ’Mehmet assumed that the child went home.’ b. ¸Cocuk [ kız-a kalem-i ver-me ] -yi unut-tu child.NOM girl-DAT pen-ACC give-SUB1i -ACC forget-TENSE ’The child forgot</definiens>
+				<definiens id="2">in which the embedded clause’s position in the PAS of the matrix predicate is determined by its grammatical function. Matrix-Pred ... Matrix-Argument ... Embedded-Clause ... Matrix-Argument ( 34 ) -SUB1i ( -ma ) : = a ◦ ma − b &lt; N\ ( a &lt; S\ f &lt; NP nom ) : λf.f ( infinitive ) -SUB1g ( -ması ) : = a ◦ ması − o &lt; N\ f &lt; NP agr \ ( a &lt; S\ f &lt; NP nom ) : λf.f ( verbal noun</definiens>
+				<definiens id="3">a nominal inflection , the category of a subordinate marker must be a function onto N. Its argument is IV for infinitives</definiens>
+				<definiens id="4">characteristics of the embedded clauses is ensured by the backward-looking main functor of the subordinate marker. For morphosyntactic modality</definiens>
+				<definiens id="5">replaces the tense of the subordinate verb in nominalizations , yielding a &lt; S 171 Bozsahin The Combinatory Morphemic Lexicon control on the verb. For subject raising , the result may undergo any nominal inflection ( b &lt; N ) . Word order variation within the subordinate clause is constrained by the subject on the left and the verb on the right. This constraint is achieved by categorizing the embedded subjects as NP agr and having a result category of N for all subordinate markers. If there were any contraposed element NP in the embedded clause</definiens>
+				<definiens id="6">function to denote the binding of the embedded subject. Infinitive -SUB1i has phrasal scope in this example ; the DV must be reduced to an IV before the infinitive can apply. Hence the subordination of intransitive clauses is only a special case in which the morphological scope of the infinitive works without rebracketing. Subject raising and coindexation with the matrix subject</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>OP triggers agreement similar to that of possessive constructions between the subject and the predicate of the relative clause ( 39b ) .</sentence>
+				<definiendum id="0">OP</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>and ( Q [ x ] ) ( P [ x ] ) , where P is the semantics of the relative clause and Q is the semantics of the predicate taking the relativized noun ( x ) as the argument .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">Q</definiendum>
+				<definiendum id="2">relativized noun</definiendum>
+				<definiens id="0">the semantics of the relative clause</definiens>
+				<definiens id="1">the semantics of the predicate taking the</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Montagovian analysis assumes a generalized quantifier ( GQ ) category for the determiner ; that is , NP is the functor and VP is the argument .</sentence>
+				<definiendum id="0">NP</definiendum>
+				<definiendum id="1">VP</definiendum>
+				<definiens id="0">the functor</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>177 Bozsahin The Combinatory Morphemic Lexicon Ki-relativization is a morphosyntactic process that can generate indefinitely long words of relative pronouns and relative adjectives .</sentence>
+				<definiendum id="0">Combinatory Morphemic Lexicon Ki-relativization</definiendum>
+				<definiens id="0">a morphosyntactic process that can generate indefinitely long words of relative pronouns and relative adjectives</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>and ( Q [ x ] ) ( P [ x ] ) N ↑ gen is a shorthand for the N/ ( N\N ) category of a type-raised genitive .</sentence>
+				<definiendum id="0">gen</definiendum>
+				<definiens id="0">a shorthand for the N/ ( N\N ) category of a type-raised genitive</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>For morphosyntactic modality , ki-marked nouns behave like possessive-marked nouns in case marking , which requires strict control over the possessive ( o ✶N ) .</sentence>
+				<definiendum id="0">morphosyntactic modality</definiendum>
+				<definiens id="0">ki-marked nouns behave like possessive-marked nouns in case marking , which requires strict control over the possessive ( o ✶N )</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>( 51 ) a. ya¸slı adam -ın k¨u¸c¨uk kız -ı old man -GEN little daughter -POSS b &lt; N/ b &lt; N b &lt; N o &lt; N/ ( o ✶N\ o ✶N ) \ o &lt; N b &lt; N/ b &lt; N b &lt; N o ✶N\ o ✶N\ n &lt; N &gt; &gt; b &lt; N b &lt; N &lt; &lt; o &lt; N/ ( o ✶N\ o ✶N ) o ✶N\ o ✶N &gt; o &lt; N : poss ( littledaughter ) ( oldman ) ’old man’s little daughter’ b. ben -im arkada¸s -ım -ın ev -i I -GEN friend -POSS -GEN house -POSS NN/ ( N\N ) \NNN\N\NN/ ( N\N ) \NNN\N\N &lt; &lt; &lt; N/ ( N\N ) N\ \N &gt; N &lt; N/ ( N\N ) &gt; N : posshouse ( possfriendi ) ’my friend’s house’ 181 Bozsahin The Combinatory Morphemic Lexicon similar to possessive constructions , but they signify semantic relations of a different kind .</sentence>
+				<definiendum id="0">-GEN friend -POSS -GEN house -POSS NN/</definiendum>
+				<definiendum id="1">N\N ) \NNN\N\N &lt; &lt; &lt; N/ ( N\N ) N\ \N &gt; N &lt; N/</definiendum>
+				<definiens id="0">Combinatory Morphemic Lexicon similar to possessive constructions , but they signify semantic relations of a different kind</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Categorial Investigations : Logical and Linguistic Aspects of the Lambek Calculus .</sentence>
+				<definiendum id="0">Categorial Investigations</definiendum>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>A summary can be loosely defined as a text that is produced from one or more texts , that conveys important information in the original text ( s ) , and that is no longer than half of the original text ( s ) and usually significantly less than that .</sentence>
+				<definiendum id="0">summary</definiendum>
+				<definiens id="0">a text that is produced from one or more texts , that conveys important information in the original text ( s ) , and that is no longer than half of the original text ( s ) and usually significantly less than that</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Extraction is the process of identifying important material in the text , abstraction the process of reformulating it in novel terms , fusion the process of combining extracted portions , and compression the process of squeezing out unimportant material .</sentence>
+				<definiendum id="0">Extraction</definiendum>
+				<definiens id="0">the process of identifying important material in the text , abstraction the process of reformulating it in novel terms , fusion the process of combining extracted portions , and compression the process of squeezing out unimportant material</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Machine learning has also been applied to learning individual features ; for example , Lin and Hovy ( 1997 ) applied machine learning to the problem of determining how sentence position affects the selection of sentences , and Witbrock and Mittal ( 1999 ) used statistical approaches to choose important words and phrases and their syntactic context .</sentence>
+				<definiendum id="0">Witbrock</definiendum>
+				<definiens id="0">the problem of determining how sentence position affects the selection of sentences , and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Other commonly used measures include kappa ( Carletta 1996 ) and relative utility ( Radev , Jing , and Budzikowska 2000 ) , both of which take into account the performance of a summarizer that randomly picks passages from the original document to produce an extract .</sentence>
+				<definiendum id="0">relative utility</definiendum>
+				<definiens id="0">of a summarizer that randomly picks passages from the original document to produce an extract</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The decomposition program is a tool that can produce training and testing corpora for summarization , and its results have been used for her own summarization program .</sentence>
+				<definiendum id="0">decomposition program</definiendum>
+				<definiens id="0">a tool that can produce training and testing corpora for summarization</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Based on their observations , the authors have developed an approach to summarization , called selective analysis , which mimics the human abstractors’ routine .</sentence>
+				<definiendum id="0">selective analysis</definiendum>
+				<definiens id="0">mimics the human abstractors’ routine</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Ultra-summarization : A statistical approach to generating highly condensed non-extractive summaries .</sentence>
+				<definiendum id="0">Ultra-summarization</definiendum>
+				<definiens id="0">A statistical approach to generating highly condensed non-extractive summaries</definiens>
+			</definition>
+</paper>
+
+		<paper id="4005">
+			<definition id="0">
+				<sentence>Rowley ( 1982 ) proposes the following typology of different types of document condensations : • the extract , which is a set of passages selected from a source document to represent the whole document • the summary , which occurs at the end of the document and is a restatement of the salient findings of a work • the abridgment , which is a reduction of the original document that necessarily omits secondary points • the precis , which stands for the main points of an argument • the digest , which is a condensation of a book or news article • the highlight , which is a comment included in specific parts of a document to alert a reader • the synopsis , which in cinematography represents a script of a film .</sentence>
+				<definiendum id="0">extract</definiendum>
+				<definiens id="0">occurs at the end of the document and is a restatement of the salient findings of a work • the abridgment , which is a reduction of the original document that necessarily omits secondary points • the precis</definiens>
+				<definiens id="1">a condensation of a book or news article • the highlight , which is a comment included in specific parts of a document to alert a reader • the synopsis , which in cinematography represents a script of a film</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>IMA is a two-level software architecture for rapidly integrating these elements , for an intelligent machine such as a service robot .</sentence>
+				<definiendum id="0">IMA</definiendum>
+				<definiens id="0">a two-level software architecture for rapidly integrating these elements , for an intelligent machine such as a service robot</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The differences between the sentences of the professional abstract and those of the source document are the persons of the verbs ( “Presents” vs. “We present” in alignment ( 1 ) ) , the verbs ( “were discovered” vs. “We found” in alignment ( 3 ) ) , the impersonal versus personal styles ( “Uses” vs. “Our experiment used” in alignment ( 2 ) ) , and the use of markers in the source document ( “In this paper” in alignment ( 1 ) ) .</sentence>
+				<definiendum id="0">impersonal versus personal styles</definiendum>
+				<definiens id="0">the persons of the verbs ( “Presents” vs. “We present” in alignment ( 1 ) ) , the verbs ( “were discovered” vs. “We found” in alignment ( 3 )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Domain concepts author , institutions , affiliation , author related , research group , project , research paper , others’ paper , study , research , problem , solution , method , result , experiment , need , goal , focus , conclusion , recommendation , summary , researcher , work , hypothesis , research question , future plan , reference , acronym , expansion , structural , title , caption , quantity , mathematical , paper component , date , conceptual goal , conceptual focus , topic , introduction , overview , survey , development , analysis , comparison , discussion , presentation , definition , explanation , suggestion , discovery , situation , advantage , example Domain relations make known , show graphical material , study , investigate , summarize , situation , need , experiment , discover , infer , problem , solution , objective , focus , conclude , recommend , create , open , close , interest , explain , opinion , argue , comment , suggest , evidence , relevance , define , describe , elaborate , essential , advantage , use , identify entity , exemplify , effective , positive , novel , practical Indicative types topic of document , possible topic , topic of section , conceptual goal , conceptual focus , author development , development , inference , author interest , interest , author study , study , opening , closing , problem , solution , topic , entity introduction , acronym identification , signaling structure , signaling concept , experiments , methodology , explaining , commenting , giving evidence , need for research , situation , opinion , discovery , demonstration , investigation , suggestion , conclusion , summarization Informative types relevance , goal , focus , essential , positiveness , usefulness , effectiveness , description , definition , advantage , practicality , novelty , elaboration , exemplification , introduction , identification , development article : background information ( situation , need , problem , etc. ) , reporting of information ( presenting entities , topic , subtopics , objectives , etc. ) , referring to the work of the author ( study , investigate , method , hypothesis , etc. ) , cognitive activities ( argue , infer , conclude , etc. ) , and elaboration of the contents ( definitions , advantages , etc. ) .</sentence>
+				<definiendum id="0">researcher</definiendum>
+				<definiens id="0">structural , title , caption , quantity , mathematical , paper component , date , conceptual goal , conceptual focus , topic , introduction , overview , survey , development , analysis , comparison , discussion , presentation , definition , explanation , suggestion , discovery , situation , advantage , example Domain relations make known , show graphical material , study , investigate , summarize , situation , need , experiment , discover , infer , problem , solution , objective , focus , conclude , recommend , create , open , close , interest , explain , opinion , argue , comment , suggest , evidence , relevance , define , describe , elaborate , essential , advantage , use , identify entity , exemplify , effective , positive , novel , practical Indicative types topic of document , possible topic , topic of section , conceptual goal , conceptual focus , author development , development , inference</definiens>
+				<definiens id="1">research , situation , opinion , discovery , demonstration , investigation , suggestion , conclusion , summarization Informative types relevance , goal , focus , essential , positiveness , usefulness , effectiveness , description , definition , advantage , practicality , novelty , elaboration , exemplification , introduction , identification</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Selective analysis is a method for text summarization of technical articles whose design is based on the study of the corpus described in section 2 .</sentence>
+				<definiendum id="0">Selective analysis</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The interpretation process produces a partial representation that consists of the sentence position ( section and sentence numbers ) and a list of syntactic constituents annotated with conceptual information .</sentence>
+				<definiendum id="0">interpretation process</definiendum>
+				<definiens id="0">produces a partial representation that consists of the sentence position ( section and sentence numbers ) and a list of syntactic constituents annotated with conceptual information</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Concept/Relation Lexical Item make known cover , describe , examine , explore , present , report , overview , outline , ... create create , construct , ideate , develop , design , implement , produce , project , ... study investigate , compare , analyze , measure , study , estimate , contrast , ... interest address , interest , concern , matter , worry , ... infer demonstrate , infer , deduce , show , conclude , draw , indicate , ... identify entity include , classify , call , contain , categorize , divide , ... paper paper , article , report , ... paper component section , subsection , appendix , ... structural figure , table , picture , graphic , ... problem complexity , intricacy , problem , difficulty , lack , ... goal goal , objective , ... result finding , result , ... important important , relevant , outstanding , ... necessary needed , necessary , indispensable , mandatory , vital , ... novelty innovative , new , novel , original , ... ( i.e. , the head of the group in citation form ) , adjectives , and information referring to the conceptual model that is optional .</sentence>
+				<definiendum id="0">article</definiendum>
+				<definiens id="0">present , report , overview , outline , ... create create , construct , ideate , develop , design , implement , produce , project , ... study investigate , compare , analyze , measure , study , estimate , contrast , ... interest address , interest , concern , matter , worry , ... infer demonstrate , infer , deduce , show , conclude , draw</definiens>
+				<definiens id="1">important important , relevant , outstanding , ... necessary needed , necessary , indispensable , mandatory , vital , ... novelty innovative , new , novel , original , ... ( i.e. , the head of the group in citation form ) , adjectives , and information referring to the conceptual model that is optional</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The parse of a verb group contains information about the original string , the semantics ( i.e. , the head of the group in citation form ) , the syntactic features , information about adverbs , and the conceptual information that is optional .</sentence>
+				<definiendum id="0">conceptual information</definiendum>
+				<definiens id="0">the head of the group in citation form ) , the syntactic features , information about adverbs</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Recall measures the ratio of the number of correct syntactic constructions identified by the algorithm to the number of correct syntactic constructions .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">measures the ratio of the number of correct syntactic constructions identified by the algorithm to the number of correct syntactic constructions</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Precision is the ratio of the number of correct syntactic constructions identified by the algorithm to the total number of constructions identified by the algorithm .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">the ratio of the number of correct syntactic constructions identified by the algorithm to the total number of constructions identified by the algorithm</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Type : topic Id : integer identifier Predicate : instance of make known Where : instance of { research paper , study , work , research } Who : instance of { research paper , author , study , work , research } What : parsed sentence fragment Position : section and sentence id Topic candidates : list of terms from the What filler Weight : number Type : sec desc Id : integer identifier Predicate : instance of make known Section : instance of section ( Id ) Argument : parsed sentence fragment Position : section and sentence id Topic candidates : list of terms from the Argument filler Weight : number words are extracted from titles ( identified as those sentences with numeral 0 in the representation ) and stored in a list , the topical structure , and acronyms and their expansions are identified and recorded .</sentence>
+				<definiendum id="0">Type</definiendum>
+				<definiens id="0">parsed sentence fragment Position : section and sentence id Topic candidates : list of terms from the What filler Weight : number Type : sec desc Id : integer identifier Predicate : instance of make known Section : instance of section ( Id ) Argument : parsed sentence fragment</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Term relevance is the total frequency of all nominal components of the term divided by the total number of nominal components .</sentence>
+				<definiendum id="0">Term relevance</definiendum>
+				<definiens id="0">the total frequency of all nominal components of the term divided by the total number of nominal components</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>It is computed using the following formula : relevance ( Term ) = summationtext { N∈Term∧ noun ( N ) } noun frequency ( N ) |N : N ∈ Term ∧ noun ( N ) | where noun ( N ) is true if N is a noun , noun frequency ( N ) is a function computed during preprocessing and interpretation that gives the word count for noun N , and the notation |S| stands for the number of elements in the set S. As complex terms have lower distribution than single terms , this formula gives us an estimate of the distribution of the term and its components in the document .</sentence>
+				<definiendum id="0">noun</definiendum>
+				<definiendum id="1">N )</definiendum>
+				<definiendum id="2">notation |S|</definiendum>
+				<definiens id="0">a function computed during preprocessing and interpretation that gives the word count for noun N</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>SumUM matches each element of the topical structure with the terms of the Topic candidate slots of templates in the IDB .</sentence>
+				<definiendum id="0">SumUM</definiendum>
+				<definiens id="0">matches each element of the topical structure with the terms of the Topic candidate slots of templates in the IDB</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Then , SumUM selects the template with the greatest Weight .</sentence>
+				<definiendum id="0">SumUM</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>SumUM prioritizes topical information by selecting the topical template with greatest weight .</sentence>
+				<definiendum id="0">SumUM</definiendum>
+				<definiens id="0">topical information by selecting the topical template with greatest weight</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>appears , SumUM checks whether the sentence contains an informative marker and matches a dynamic informative pattern .</sentence>
+				<definiendum id="0">SumUM</definiendum>
+				<definiens id="0">checks whether the sentence contains an informative marker and matches a dynamic informative pattern</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Definition SKIP + TOPIC + define + GN ( The RIMHO walking robot is a prototype developed with the aim of ... ) Description SKIP + TOPIC + describe ( The hardware of the MMI consists of a main pendant ( MP ) , an operator pendant ... ) Use SKIP + use + TOPIC ( To realize the control using an industrial robot , such as ... ) Advantage SKIP + advantage + Prep + TOPIC ( The biggest advantage of SWERS is the easier and faster ... ) Effectiveness SKIP + TOPIC + define + effective ( The system is effective in the task of ... ) some of which are presented in Table 9 .</sentence>
+				<definiendum id="0">+ GN</definiendum>
+				<definiendum id="1">RIMHO walking robot</definiendum>
+				<definiendum id="2">SWERS</definiendum>
+				<definiens id="0">a prototype developed with the aim of ... ) Description SKIP + TOPIC + describe ( The hardware of the MMI consists of a main pendant ( MP ) , an operator pendant ... ) Use SKIP + use + TOPIC ( To realize the control using an industrial robot , such as ... ) Advantage SKIP + advantage + Prep + TOPIC ( The biggest advantage of</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The templates obtained by this process constitute the Informative Data Base ( InfoDB ) , and the topics are the terms appearing in the slot Topic of the templates in the InfoDB .</sentence>
+				<definiendum id="0">Informative Data Base</definiendum>
+				<definiens id="0">the terms appearing in the slot Topic of the templates in the InfoDB</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Type : definition Id : 41 Topic : REVERSA Predicate : be , ... Content : REVERSA is a dual viewpoint noncontact laser scanner which ... Position : Sentence 1 from Section 2 The predicate is generated in the present tense of the third-person singular ( Syntactic Verb Transformation ) .</sentence>
+				<definiendum id="0">REVERSA Predicate</definiendum>
+				<definiendum id="1">REVERSA</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>Arg , where Predicate is the predicate common to the merged templates .</sentence>
+				<definiendum id="0">Predicate</definiendum>
+				<definiens id="0">the predicate common to the merged templates</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Concerning the problem of text coherence , we have not properly addressed the problem of identification of anaphoric expressions in technical documents : SumUM excludes from the content of the indicative abstract sentences containing expressions considered problematic .</sentence>
+				<definiendum id="0">SumUM</definiendum>
+				<definiens id="0">excludes from the content of the indicative abstract sentences containing expressions considered problematic</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Abstracts are texts used in tasks such as assessing the content of a source document and deciding if it is worth reading .</sentence>
+				<definiendum id="0">Abstracts</definiendum>
+				<definiens id="0">assessing the content of a source document and deciding if it is worth reading</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>An intrinsic evaluation measures the quality of the summary itself by comparing the summary with the source document , by measuring how many “main” ideas of the source document are covered by the abstract , or by comparing the content of the automatic summary with an ideal abstract ( gold standard ) produced by a human ( Mariani 1995 ) .</sentence>
+				<definiendum id="0">intrinsic evaluation</definiendum>
+				<definiens id="0">measures the quality of the summary itself by comparing the summary with the source document , by measuring how many “main” ideas of the source document are covered by the abstract , or by comparing the content of the automatic summary with an ideal abstract</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>Extractor ( Turney 1999 ) is a system that takes a text file as input ( plain ASCII text , HTML , or e-mail ) and generates a list of keywords and keyphrases as output .</sentence>
+				<definiendum id="0">Extractor</definiendum>
+				<definiens id="0">a system that takes a text file as input ( plain ASCII text , HTML , or e-mail ) and generates a list of keywords and keyphrases as output</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>nSTEIN is a commercial system that was available for demonstration purposes at the time we were conducting our research ( n-STEIN 2000 ) ( January 2000 ) .</sentence>
+				<definiendum id="0">nSTEIN</definiendum>
+				<definiens id="0">a commercial system</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Since then several methods and theories have been applied , including the use of term frequency ∗ inverse document frequency ( TF ∗ IDF ) measures , sentence position , and cue and title words ( Luhn 1958 ; Edmundson 1969 ; Kupiec , Pedersen , and Chen 1995 ; Brandow , Mitze , and Rau 1995 ) ; partial understanding using conceptual structures ( DeJong 1982 ; Tait 1982 ) ; bottom-up understanding , top-down parsing , and automatic linguistic acquisition ( Rau , Jacobs , and Zernik 1989 ) ; recognition of thematic text structures ( Hahn 1990 ) ; cohesive properties of texts ( Benbrahim and Ahmad 1995 ; Barzilay and Elhadad 1997 ) ; and rhetorical structure theory ( Ono , Sumita , and Miike 1994 ; Marcu 1997 ) .</sentence>
+				<definiendum id="0">inverse document frequency</definiendum>
+				<definiens id="0">TF ∗ IDF ) measures , sentence position , and cue and title words</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>CBA uses a fixed canned template for summary generation , whereas our method allows greater stylistic variability because the main “content” of the summary generated is expressed in the words of the authors of the paper .</sentence>
+				<definiendum id="0">CBA</definiendum>
+				<definiens id="0">uses a fixed canned template for summary generation</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>Statistics Today : A Comprehensive Introduction .</sentence>
+				<definiendum id="0">Statistics Today</definiendum>
+				<definiens id="0">A Comprehensive Introduction</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>WordNet : An Electronic Lexical Database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3005">
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>None captures the fine-grained meanings of , and differences between , near-synonyms , nor the myriad of criteria involved in lexical choice .</sentence>
+				<definiendum id="0">None</definiendum>
+				<definiens id="0">captures the fine-grained meanings of , and differences between , near-synonyms</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A lie is a deliberate attempt to deceive that is a flat contradiction of the truth , whereas a misrepresentation may be more indirect , as by misplacement of emphasis , an untruth might be told merely out of ignorance , and a fib is deliberate but relatively trivial , possibly told to save one’s own or another’s face ( Gove 1984 ) .</sentence>
+				<definiendum id="0">lie</definiendum>
+				<definiens id="0">deliberate but relatively trivial , possibly told to save one’s own or another’s face ( Gove 1984 )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Each of a set of synonyms like redouter ( ‘to dread’ ) , craindre ( ‘to fear’ ) , avoir peur ( ‘to be afraid’ ) has its particular value only because they stand in contrast with one another ... . No word has a value that can be identified independently of what else is in its vicinity .</sentence>
+				<definiendum id="0">avoir peur</definiendum>
+				<definiens id="0">‘to dread’ ) , craindre ( ‘to fear’ )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Similarly , the German Geh¨olz takes in the English copse and the “smaller” part of woods .</sentence>
+				<definiendum id="0">German Geh¨olz</definiendum>
+				<definiens id="0">takes in the English copse and the “smaller” part of woods</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Fehler is a definite imperfection in a thing which ought not to be there .</sentence>
+				<definiendum id="0">Fehler</definiendum>
+				<definiens id="0">a definite imperfection in a thing which ought not to be there</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Webster’s Collegiate Thesaurus uses a similar definition that involves the sharing of elementary meanings , which are “discrete objective denotations uncolored by ... peripheral aspects such as connotations , implications , or quirks of idiomatic usage” ( Kay 1988 , page 9a ) .</sentence>
+				<definiendum id="0">Webster’s Collegiate Thesaurus</definiendum>
+				<definiens id="0">uses a similar definition that involves the sharing of elementary meanings</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The figure shows the difference between order ( the region bounded by the solid line ) and enjoin ( the region bounded by the dashed line ) .</sentence>
+				<definiendum id="0">enjoin</definiendum>
+				<definiens id="0">the region bounded by the dashed line )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>126 Computational Linguistics Volume 28 , Number 2 Diff ( `` bavure '' / `` mistake '' ) = ( ( [ usually / unknown ] [ medium / unknown ] [ implication / unknown ] ( Stupidity ( ATTRIBUTE-OF V1 ) ) ) ( [ always / sometimes ] medium implication ( Blameworthiness ( ATTRIBUTE-OF V1 ) ( DEGREE [ more / ] ) ) ) ( always medium implication\\ ( Criticism ( ACTEE V1 ) ( ATTRIBUTE ( Severity ( DEGREE [ more / ] ) ) ) ) ) ( [ unknown / always ] [ unknown / medium ] [ unknown / implication ] ( Misconception ( CAUSE-OF V2 ) ( ACTOR V1 ) ) ) ( [ unknown / always ] [ unknown / weak ] [ unknown / implication ] ( Accident ( CAUSE-OF V2 ) ( ACTOR V1 ) ) ) ( [ always / unknown ] [ medium / unknown ] [ implication / unknown ] ( Unfortunate ( ATTRIBUTE-OF ROOT ) ) ) ( [ usually / always ] medium [ pejorative / neutral ] V1 ) ( [ more / ] concreteness ) ) Figure 9 A structure that explicitly represents the difference between bavure and mistake .</sentence>
+				<definiendum id="0">Blameworthiness</definiendum>
+				<definiendum id="1">ATTRIBUTE ( Severity</definiendum>
+				<definiendum id="2">V1 )</definiendum>
+				<definiens id="0">CAUSE-OF V2 ) ( ACTOR V1 ) ) )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>MOOSE outputs a complete well-formed “SemSpec , ” or semantic specification on the syntactic–semantic level , from which the Penman sentence realization system can generate language .</sentence>
+				<definiendum id="0">MOOSE</definiendum>
+				<definiens id="0">outputs a complete well-formed “SemSpec , ” or semantic specification on the syntactic–semantic level , from which the Penman sentence realization system can generate language</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>SPL is defined in terms of the Penman Upper Model , a model of meaning at the syntactic–semantic level , which ensures that the SemSpec is well-formed linguistically .</sentence>
+				<definiendum id="0">SPL</definiendum>
+				<definiendum id="1">syntactic–semantic level</definiendum>
+				<definiens id="0">ensures that the SemSpec is well-formed linguistically</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>20 Dissonance is one form of semantic anomaly that Cruse ( 1986 ) defines by example : “Arthur is a married bachelor.”</sentence>
+				<definiendum id="0">Dissonance</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>ISaurus can be so prolific because of the many possible combinations of the nearsynonyms of the six clusters involved : John C ( one near-synonym ) , alcoholic C ( ten near-synonyms ) , order C ( six near-synonyms ) , say C ( two near-synonyms ) , untruth C ( six near-synonyms ) , and tell-a-lie C ( four near-synonyms ) .</sentence>
+				<definiendum id="0">alcoholic C</definiendum>
+				<definiens id="0">( ten near-synonyms ) , order C ( six near-synonyms ) , say C ( two near-synonyms ) , untruth C ( six near-synonyms ) , and tell-a-lie C ( four near-synonyms )</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>SitSpec : ( order1 ( SAYER john1 ) ( SAYEE alcoholic1 ) ( SAYING ( perform1 ( ACTOR alcoholic1 ) ( ACTEE ( tell1 ( SAYER alcoholic1 ) ( SAYING ( lie1 ( ATTRIBUTE nonconform1 ) ) ) ) ) ) ) ) Preferences : 1 ( low formality ) 2 ( medium formality ) 3 ( high formality ) 4 ( high concreteness ) 5 ( favor alcoholic1 ) 6 ( disfavor alcoholic1 ) 7 ( imply ( authority1 ( ATTRIBUTE-OF john1 ) ( ATTRIBUTE official1 ) ) ) 8 ( imply ( authority1 ( ATTRIBUTE-OF john1 ) ( ATTRIBUTE peremptory1 ) ) ) 9 ( imply ( significance1 ( ATTRIBUTE-OF lie1 ) ( DEGREE low ) ) ) 10 ( imply ( misconceive1 ( ACTOR alcoholic1 ) ( CAUSE-OF lie1 ) ) ) 11 ( imply ( contradict2 ( ACTOR lie1 ) ( ATTRIBUTE categorical2 ) ) ) Case Input preferences Output None John commands an alcoholic to lie .</sentence>
+				<definiendum id="0">SitSpec</definiendum>
+				<definiendum id="1">ACTEE</definiendum>
+				<definiens id="0">ATTRIBUTE-OF lie1 ) ( DEGREE low ) ) ) 10 ( imply ( misconceive1 ( ACTOR alcoholic1 ) ( CAUSE-OF lie1 ) ) ) 11 ( imply ( contradict2 ( ACTOR lie1 ) ( ATTRIBUTE categorical2 ) ) ) Case Input preferences Output None John commands an alcoholic to lie</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Transfer-based MT systems use a bilingual lexicon to map words and expressions from one language to another .</sentence>
+				<definiendum id="0">Transfer-based MT systems</definiendum>
+				<definiens id="0">a bilingual lexicon to map words and expressions from one language to another</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Its Inter-Lingual-Index provides a language-independent link between synsets in different languages and has an explicit relation , EQ NEAR SYNONYM , for relating synsets that are not directly equivalent across languages .</sentence>
+				<definiendum id="0">EQ NEAR SYNONYM</definiendum>
+				<definiens id="0">a language-independent link between synsets in different languages and has an explicit relation</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Appendix : An Example Representation : The Error Cluster The following is the representation of the cluster of error nouns in our formalism .</sentence>
+				<definiendum id="0">Appendix</definiendum>
+				<definiendum id="1">Representation</definiendum>
+				<definiens id="0">An Example</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>( blunder l always medium pejorative V1 ) ; ; Blunder is a concrete word , error and mistake are abstract .</sentence>
+				<definiendum id="0">Blunder</definiendum>
+				<definiens id="0">a concrete word , error and mistake are abstract</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>( blunder l high concreteness ) ( error l low concreteness ) ( mistake l low concreteness ) ; ; Howler is an informal term ( howler l low formality ) ) ) Acknowledgments Our work is financially supported by the Natural Sciences and Engineering Research Council of Canada , the Ontario Graduate Scholarship program , and the University of Toronto .</sentence>
+				<definiendum id="0">Howler</definiendum>
+				<definiens id="0">an informal term ( howler l low formality ) ) ) Acknowledgments Our work is financially supported by the Natural Sciences and Engineering Research Council of Canada</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Machine Translation : A View from the Lexicon .</sentence>
+				<definiendum id="0">Machine Translation</definiendum>
+				<definiens id="0">A View from the Lexicon</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Choose the Right Word : A Contemporary Guide to Selecting the Precise Word for Every Situation .</sentence>
+				<definiendum id="0">Choose the Right Word</definiendum>
+				<definiens id="0">A Contemporary Guide to Selecting the Precise Word for Every Situation</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Machine Translation : A Knowledge-Based Approach .</sentence>
+				<definiendum id="0">Machine Translation</definiendum>
+			</definition>
+			<definition id="21">
+				<sentence>EuroWordNet : A Multilingual Database with Lexical Semantic Networks .</sentence>
+				<definiendum id="0">EuroWordNet</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>The Kleene operator “*” allows abbreviation of the set of paths consisting of zero or more occurrences of COMP—corresponding to possible successive clausal embeddings—followed by one occurrence of OBJ .</sentence>
+				<definiendum id="0">Kleene operator “*”</definiendum>
+				<definiens id="0">allows abbreviation of the set of paths consisting of zero or more occurrences of COMP—corresponding to possible successive clausal embeddings—followed by one occurrence of OBJ</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>It is coded under the form of three lists of reference markers , A , Z , and U. In list A , the reference markers of the local o-commanders of n are ordered according to their relative grammatical obliqueness ; Z includes the o-commanders of n , possibly observing a multiclausal obliqueness hierarchy ; and U is the list of all reference markers in the discourse context , including those not linguistically introduced .</sentence>
+				<definiendum id="0">U</definiendum>
+				<definiens id="0">relative grammatical obliqueness ; Z includes the o-commanders of n , possibly observing a multiclausal obliqueness hierarchy</definiens>
+				<definiens id="1">the list of all reference markers in the discourse context , including those not linguistically introduced</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>If n is a short-distance reflexive , its internal state is set up as A 0 , where A 0 contains the reference markers of the o-commanders of n in A. If n is a long-distance reflexive , its semantic representation includes Z 0 , such that Z 0 contains the o-commanders of n in Z.Ifn is a pronoun , B = Un ( A 0 [ [ r-mark n ] ) is encoded into its representation , where r-mark n is the reference marker of n. Finally , if n is a nonpronoun , its updated semantics keeps a copy of C = Un ( Z 0 [ [ r-mark n ] ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">Z.Ifn</definiendum>
+				<definiendum id="2">r-mark n</definiendum>
+				<definiens id="0">a long-distance reflexive , its semantic representation includes Z 0 , such that Z 0 contains the o-commanders of n in</definiens>
+				<definiens id="1">a pronoun , B = Un ( A 0 [ [ r-mark n ] )</definiens>
+				<definiens id="2">a nonpronoun , its updated semantics keeps a copy of C = Un ( Z 0 [ [ r-mark n ] )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>15 Subclause ( d ) is meant to avoid what is known in the literature as the i-within-i effect .</sentence>
+				<definiendum id="0">Subclause</definiendum>
+				<definiens id="0">meant to avoid what is known in the literature as the i-within-i effect</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Feature ANTEC is the interface point between them .</sentence>
+				<definiendum id="0">Feature ANTEC</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>At the lexical entry of a predicator , LIST-A is defined as the concatenation of the R-MARK values of its subcategorized arguments specified in the ARG-S value .</sentence>
+				<definiendum id="0">LIST-A</definiendum>
+				<definiens id="0">the concatenation of the R-MARK values of its subcategorized arguments specified in the ARG-S value</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Text segmentation is the task of determining the positions at which topics change in a stream of text .</sentence>
+				<definiendum id="0">Text segmentation</definiendum>
+				<definiens id="0">the task of determining the positions at which topics change in a stream of text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Precision is the percentage of boundaries identified by an algorithm that are indeed true boundaries ; recall is the percentage of true boundaries that are identified by the algorithm .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiendum id="1">recall</definiendum>
+				<definiens id="0">the percentage of boundaries identified by an algorithm that are indeed true boundaries</definiens>
+				<definiens id="1">the percentage of true boundaries that are identified by the algorithm</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>More formally , WindowDi ( ref , hyp ) = 1 N−k N−k X i=1 ( jb ( ref i , ref i+k ) −b ( hyp i , hyp i+k ) j &gt; 0 ) , where b ( i , j ) represents the number of boundaries between positions i and j in the text and N represents the number of sentences in the text .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of sentences in the text</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Both P 0 k and WD appear to solve the problem of underpenalizing false positives , but WD has the added benefit of being more stable across variations in segment size distribution .</sentence>
+				<definiendum id="0">WD</definiendum>
+				<definiendum id="1">WD</definiendum>
+				<definiens id="0">has the added benefit of being more stable across variations in segment size distribution</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>WD penalizes all pure false positives the same amount regardless of how close they are to an actual boundary .</sentence>
+				<definiendum id="0">WD</definiendum>
+				<definiens id="0">penalizes all pure false positives the same amount regardless of how close they are to an actual boundary</definiens>
+			</definition>
+</paper>
+
+		<paper id="4006">
+			<definition id="0">
+				<sentence>clauses are replaced with more general ( specific ) descriptions , as in the 530 Computational Linguistics Volume 28 , Number 4 following examples : Generalization : a proposed new law that would require Web publishers to obtain parental consent before collecting personal information from children → legislation to protect children’s privacy on-line Specification : the White House’s top drug official → Gen. Barry R. McCaffrey , the White House’s top drug official with respect to the original .</sentence>
+				<definiendum id="0">Generalization</definiendum>
+				<definiens id="0">a proposed new law that would require Web publishers to obtain parental consent before collecting personal information from children → legislation to protect children’s privacy on-line Specification : the White House’s top drug official → Gen. Barry</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Evaluations show that this unconventional HMM is effective for decomposition .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">effective for decomposition</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>An input summary sentence can be represented as a word sequence : ( I 1 , ... , I N ) , where I 1 is the first word of the sentence and I N is the last word .</sentence>
+				<definiendum id="0">input summary sentence</definiendum>
+				<definiendum id="1">I 1</definiendum>
+				<definiendum id="2">N</definiendum>
+				<definiens id="0">the first word of the sentence and I</definiens>
+				<definiens id="1">the last word</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The values of PROB ( I i+1 | I i ) are assigned as follows : • If ( ( S 1 = S 2 ) and ( W 1 = W 2 − 1 ) ) ( i.e. , words in two adjacent positions in the document ) , then PROB ( I i+1 | I i ) is assigned the maximal value P1 .</sentence>
+				<definiendum id="0">PROB</definiendum>
+				<definiens id="0">i.e. , words in two adjacent positions in the document )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The phrases in the summary are tagged ( FNUM : SNUM actual-text ) , where FNUM is the sequential number of the phrase and SNUM is the number of the document sentence in which the phrase originates .</sentence>
+				<definiendum id="0">FNUM</definiendum>
+				<definiendum id="1">SNUM</definiendum>
+				<definiens id="0">the sequential number of the phrase</definiens>
+				<definiens id="1">the number of the document sentence in which the phrase originates</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The observation symbol set includes all the words in the document , and the observation symbol probabilities are defined as P ( W i | P i ) =1 , if word W i is in position P i , and P ( W i | P i ) =0 , if word W i is not in position P i .</sentence>
+				<definiendum id="0">observation symbol set</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">includes all the words in the document</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The corpus used in the first experiment consisted of 10 documents from the ZiffDavis corpus , which contains articles related to computer products and is available on TIPSTER discs from Linguistic Data Consortium ( LDC ) ( Harman and Liberman 1993 ) .</sentence>
+				<definiendum id="0">ZiffDavis corpus</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>Similar to the notation used in Figure 3 , the phrases in the headnote are tagged ( FNUM : SNUM actual-text ) , where FNUM is the sequential number of the phrase and SNUM is the number of the document sentence where the phrase comes from .</sentence>
+				<definiendum id="0">FNUM</definiendum>
+				<definiendum id="1">FNUM</definiendum>
+				<definiendum id="2">SNUM</definiendum>
+				<definiens id="0">the sequential number of the phrase</definiens>
+				<definiens id="1">the number of the document sentence where the phrase comes from</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>While Marcu’s algorithm operates at the sentence or clause level , our decomposition program deals with phrases at various granularities ( anything from a word to a complicated phrase to a complete sentence ) .</sentence>
+				<definiendum id="0">anything</definiendum>
+				<definiens id="0">from a word to a complicated phrase to a complete sentence )</definiens>
+			</definition>
+</paper>
+
+		<paper id="4004">
+			<definition id="0">
+				<sentence>c© 2002 Association for Computational Linguistics Efficiently Computed Lexical Chains as an Intermediate Representation for Automatic Text Summarization H. Gregory Silber ∗ Kathleen F. McCoy † University of Delaware University of Delaware While automatic text summarization is an area that has received a great deal of attention in recent research , the problem of efficiency in this task has not been frequently addressed .</sentence>
+				<definiendum id="0">summarization</definiendum>
+				<definiens id="0">an Intermediate Representation for Automatic Text Summarization H. Gregory Silber ∗ Kathleen F. McCoy † University of Delaware University of Delaware While automatic text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Barzilay and Elhadad ( 1997 ) proposed lexical chains as an intermediate step in the text summarization process .</sentence>
+				<definiendum id="0">lexical chains</definiendum>
+				<definiens id="0">an intermediate step in the text summarization process</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Basically , lexical chains exploit the cohesion among an arbitrary number of related words ( Morris and Hirst 1991 ) .</sentence>
+				<definiendum id="0">lexical chains</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A metachain represents all possible chains that can contain the sense whose number is the index of the array .</sentence>
+				<definiendum id="0">metachain</definiendum>
+				<definiens id="0">represents all possible chains that can contain the sense whose number is the index of the array</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Index Meaning Chain 0 person John Machine 1 unit Computer IBM 2 device Computer Machine IBM 3 organization Machine IBM 4 unknown IBM . . . N Note : Assume the sentences “John has a computer .</sentence>
+				<definiendum id="0">Index Meaning Chain</definiendum>
+				<definiens id="0">0 person John Machine 1 unit Computer IBM 2 device Computer Machine IBM 3 organization Machine IBM 4 unknown IBM</definiens>
+			</definition>
+</paper>
+
+		<paper id="4007">
+			<definition id="0">
+				<sentence>The differences between forecasters in their usage of by evening are significant at p &lt; .001 under both a chi-squared test ( which treats time as a categorical variable ) and a one-way analysis of variance ( which compares the mean time for each forecaster ; for this test we recoded the hour 0 as 24 ) .</sentence>
+				<definiendum id="0">chi-squared test</definiendum>
+				<definiens id="0">a categorical variable ) and a one-way analysis of variance ( which compares the mean time for each forecaster</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>1 Given a combinatory operation and a fixed set of fragments , a DOP model is a parametric model where the fragment weights are the parameters .</sentence>
+				<definiendum id="0">DOP model</definiendum>
+				<definiendum id="1">fragment weights</definiendum>
+				<definiens id="0">a parametric model where the</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For each tree fragment f , let n ( f ) be the number of times it appears in the training corpus , and let F be the set of all tree fragments with the same root as f .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">the set of all tree fragments with the same root as f</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A loss function L is a function from pairs of parameter vectors to the nonnegative reals .</sentence>
+				<definiendum id="0">loss function L</definiendum>
+				<definiens id="0">a function from pairs of parameter vectors to the nonnegative reals</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Similarly , the loss function is the mean squared difference between the “true” and estimated distributions ; that is , if Ω is the event space ( in DOP1 , the space of all phrase structure trees ) , then L ( ?</sentence>
+				<definiendum id="0">loss function</definiendum>
+				<definiens id="0">the mean squared difference between the “true” and estimated distributions</definiens>
+			</definition>
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>As in Daciuk et al. ( 2000 ) , we will define a deterministic finite-state automaton as M = ( Q , Σ , δ , q 0 , F ) , where Q is a finite set of states , q 0 ∈ Q is the start state , F ⊆ Q is a set of accepting states , Σ is a finite set of symbols called the alphabet , and δ : Q × Σ → Q is the next-state mapping .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiens id="0">the start state</definiens>
+				<definiens id="1">a set of accepting states</definiens>
+				<definiens id="2">the next-state mapping</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This automaton has Q w = Pr ( w ) ∪ { ⊥ w } , where Pr ( w ) is the set of all prefixes of w and ⊥ w is the absorption state , F w = { w } , and q 0w = epsilon1 ( note that nonabsorption states in Q w will be named after the corresponding prefix of w ) .</sentence>
+				<definiendum id="0">Pr ( w )</definiendum>
+				<definiens id="0">the set of all prefixes of w</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Minimization ( including the elimination of unreachable states in M prime ) appears in Section 4 as part of the string addition and removal algorithms .</sentence>
+				<definiendum id="0">Minimization</definiendum>
+				<definiens id="0">including the elimination of unreachable states in M prime ) appears in Section 4 as part of the string addition and removal algorithms</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>Li and Abe use the minimum description length principle to obtain a level of generalization , and Resnik uses a simple technique based on a statistical measure of selectional preference .</sentence>
+				<definiendum id="0">Resnik</definiendum>
+				<definiens id="0">uses a simple technique based on a statistical measure of selectional preference</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The noun hierarchy of WordNet consists of senses , or what Miller ( 1998 ) calls lexicalized concepts , organized according to the “is-a-kind-of” relation .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">consists of senses , or what Miller ( 1998 ) calls lexicalized concepts , organized according to the “is-a-kind-of” relation</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Let syn ( c ) be the synset for concept c , and let cn ( n ) = { c |n ∈ syn ( c ) } be the set of concepts that can be denoted by noun n. The hierarchy has the structure of a directed acyclic graph ( although only around 1 % of the nodes have more than one parent ) , where the edges of the graph constitute what we call the “direct–isa” relation .</sentence>
+				<definiendum id="0">let cn</definiendum>
+				<definiens id="0">the structure of a directed acyclic graph ( although only around 1 % of the nodes have more than one parent ) , where the edges of the graph constitute</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , 〈animal〉 is the set consisting of those concepts corresponding to kinds of animals ( including 〈animal〉 itself ) .</sentence>
+				<definiendum id="0">〈animal〉</definiendum>
+				<definiens id="0">the set consisting of those concepts corresponding to kinds of animals</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The probability p ( c | v , r ) is to be interpreted as follows : This is the probability that some noun n in syn ( c ) , when denoting concept c , appears in position r of verb v ( given v and r ) .</sentence>
+				<definiendum id="0">probability p</definiendum>
+				<definiendum id="1">r )</definiendum>
+				<definiens id="0">to be interpreted as follows : This is the probability that some noun n in syn ( c ) , when denoting concept c , appears in position r of verb v</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The example used throughout the article is p ( 〈dog〉|run , subj ) , which is the conditional probability that some noun in the synset of 〈dog〉 , when denoting the concept 〈dog〉 , appears in the subject position of the verb run .</sentence>
+				<definiendum id="0">subj )</definiendum>
+				<definiens id="0">the conditional probability that some noun in the synset of 〈dog〉 , when denoting the concept 〈dog〉 , appears in the subject position of the verb run</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>( Recall that c prime denotes the set of concepts dominated by c prime , including c prime itself . )</sentence>
+				<definiendum id="0">c prime</definiendum>
+				<definiens id="0">the set of concepts dominated by c prime , including c prime itself</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>190 Computational Linguistics Volume 28 , Number 2 some noun denoting a concept in c prime appears in position r of verb v. For example , p ( 〈animal〉|run , subj ) is the probability that some noun denoting a kind of animal appears in the subject position of the verb run .</sentence>
+				<definiendum id="0">subj )</definiendum>
+				<definiens id="0">the probability that some noun denoting a kind of animal appears in the subject position of the verb run</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Thus , assuming this choice of class , p ( 〈dog〉|run , subj ) would be approximated as follows : p ( 〈dog〉|run , subj ) ≈ p ( run | 〈animal〉 , subj ) p ( 〈dog〉|subj ) p ( run | subj ) ( 3 ) The following derivation shows that if p ( v | c prime i , r ) =k for each child c prime i of c prime , and p ( v | c prime , r ) =k , then p ( v | c prime , r ) is also equal to k : p ( v | c prime , r ) =p ( c prime | v , r ) p ( v | r ) p ( c prime | r ) ( 4 ) = p ( v | r ) p ( c prime | r ) parenleftBigg summationdisplay i p ( c prime i | v , r ) +p ( c prime | v , r ) parenrightBigg ( 5 ) = p ( v | r ) p ( c prime | r ) parenleftBigg summationdisplay i p ( v | c prime i , r ) p ( c prime i | r ) p ( v | r ) + p ( v | c prime , r ) p ( c prime | r ) p ( v | r ) parenrightBigg ( 6 ) = 1 p ( c prime | r ) parenleftBigg summationdisplay i kp ( c prime i | r ) +kp ( c prime | r ) parenrightBigg ( 7 ) = k p ( c prime | r ) parenleftBigg summationdisplay i p ( c prime i | r ) +p ( c prime | r ) parenrightBigg ( 8 ) = k ( 9 ) 191 Clark and Weir Class-Based Probability Estimation Note that the proof applies only to a tree , since the proof assumes that c prime is partitioned by c prime and the sets of concepts dominated by each of the daughters of c prime , which is not necessarily true for a directed acyclic graph ( DAG ) .</sentence>
+				<definiendum id="0">p ( v | r ) p ( c prime | r ) parenleftBigg summationdisplay</definiendum>
+				<definiens id="0">k ( 9 ) 191 Clark and Weir Class-Based Probability Estimation Note that the</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>WordNet is a DAG but is a close approximation to a tree , and so we assume this will not be a problem in practice .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">a DAG but is a close approximation to a tree</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>A feature of the proposed generalization procedure is that comparing probabilities of the form p ( v | C , r ) , where C is a class , is closely related to comparing ratios of probabilities of the form p ( C | v , r ) /p ( C | r ) ( for a given verb and argument position ) : p ( v | C , r ) = p ( C | v , r ) p ( C | r ) p ( v | r ) ( 10 ) Note that , for a given verb and argument position , p ( v | r ) is constant across classes .</sentence>
+				<definiendum id="0">feature of the proposed generalization procedure</definiendum>
+				<definiendum id="1">C</definiendum>
+				<definiendum id="2">p</definiendum>
+				<definiens id="0">a class , is closely related to comparing ratios of probabilities of the form p ( C | v , r ) /p ( C | r ) ( for a given verb and argument position ) : p ( v | C , r ) = p ( C | v , r ) p ( C | r</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Finally , we note that the proposed estimation method does not guarantee that the estimates form a probability distribution over the concepts in the hierarchy , and so a normalization factor is required : p sc ( c | v , r ) = ˆp ( v | [ c , v , r ] , r ) ˆp ( c|r ) ˆp ( v|r ) summationtext c prime ∈C ˆp ( v | [ c prime , v , r ] , r ) ˆp ( c prime |r ) ˆp ( v|r ) ( 11 ) We use p sc to denote an estimate obtained using our method ( since the technique finds sets of semantically similar senses , or “similarity classes” ) and [ c , v , r ] to denote the class chosen for concept c in position r of verb v ; ˆp denotes a relative frequency estimate , and C denotes the set of concepts in the hierarchy .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the proposed estimation method does not guarantee that the estimates form a probability distribution over the concepts in the hierarchy , and so a normalization factor is required : p sc ( c | v , r ) = ˆp ( v | [ c , v , r ] , r ) ˆp ( c|r ) ˆp ( v|r ) summationtext c prime ∈C ˆp ( v | [ c prime , v , r ] , r ) ˆp ( c prime |r ) ˆp ( v|r ) ( 11 ) We use p sc to denote an estimate obtained using our method ( since the technique finds sets of semantically similar senses , or “similarity classes” ) and [ c , v , r ] to denote the class chosen for concept c in position r of verb v ; ˆp denotes a relative frequency estimate , and</definiens>
+				<definiens id="1">the set of concepts in the hierarchy</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The relative-frequency estimates are as follows : ˆp ( c | r ) = f ( c , r ) f ( r ) = summationtext v prime ∈V f ( c , v prime , r ) summationtext v prime ∈V summationtext c prime ∈C f ( c prime , v prime , r ) ( 12 ) ˆp ( v | r ) = f ( v , r ) f ( r ) = summationtext c prime ∈C f ( c prime , v , r ) summationtext v prime ∈V summationtext c prime ∈C f ( c prime , v prime , r ) ( 13 ) ˆp ( v | c prime , r ) = f ( c prime , v , r ) f ( c prime , r ) = summationtext c primeprime ∈c prime f ( c primeprime , v , r ) summationtext v prime ∈V summationtext c primeprime ∈c prime f ( c primeprime , v prime , r ) ( 14 ) where f ( c , v , r ) is the number of ( n , v , r ) triples in the data in which n is being used to denote c , and V is the set of verbs in the data .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiendum id="1">V</definiendum>
+				<definiens id="0">ˆp ( c | r ) = f ( c , r ) f ( r ) = summationtext v prime ∈V f ( c , v prime , r ) summationtext v prime ∈V summationtext c prime ∈C f ( c prime , v prime , r ) ( 12 ) ˆp ( v | r ) = f ( v , r ) f ( r ) = summationtext c prime ∈C f ( c prime , v , r ) summationtext v prime ∈V summationtext c prime ∈C f ( c prime , v prime , r ) ( 13 ) ˆp ( v | c prime , r ) = f ( c prime , v , r ) f ( c prime , r ) = summationtext c primeprime ∈c prime f ( c primeprime , v , r ) summationtext v prime ∈V summationtext c primeprime ∈c prime f ( c primeprime , v prime</definiens>
+				<definiens id="1">the number of ( n , v , r ) triples in the data in which n is being used to denote c , and</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>We take a simple approach to the problem of estimating the frequencies of senses , by distributing the count for each noun in the data evenly among all senses of the noun : ˆ f ( c , v , r ) = summationdisplay n∈syn ( c ) f ( n , v , r ) |cn ( n ) | ( 15 ) where ˆ f ( c , v , r ) is an estimate of the number of times that concept c appears in position r of verb v , and |cn ( n ) | is the cardinality of cn ( n ) .</sentence>
+				<definiendum id="0">|cn ( n ) |</definiendum>
+				<definiens id="0">an estimate of the number of times that concept c appears in position r of verb v</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>199 Clark and Weir Class-Based Probability Estimation The first alternative uses the “association score , ” which is a measure of how well a set of concepts , C , satisfies the selectional preferences of a verb , v , for an argument position , r : 9 A ( C , v , r ) =p ( C | v , r ) log 2 p ( C | v , r ) p ( C | r ) ( 18 ) An estimate of the association score , ˆ A ( C , v , r ) , can be obtained using relative frequency estimates of the probabilities .</sentence>
+				<definiendum id="0">r )</definiendum>
+				<definiens id="0">a measure of how well a set of concepts , C , satisfies the selectional preferences of a verb</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>This is a problem , because the association score of 〈entity〉 with respect to eat may be too high to reflect the fact that 〈location〉 is a very unlikely object of the verb .</sentence>
+				<definiendum id="0">〈location〉</definiendum>
+				<definiens id="0">a very unlikely object of the verb</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The class-based models consist of a partition of the set of nouns ( leaf nodes ) and a probability associated with each class in the partition .</sentence>
+				<definiendum id="0">class-based models</definiendum>
+				<definiens id="0">consist of a partition of the set of nouns ( leaf nodes ) and a probability associated with each class in the partition</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The simplicity of a model is measured using the model description length , which is an information-theoretic 201 Clark and Weir Class-Based Probability Estimation term and denotes the number of bits required to encode the model .</sentence>
+				<definiendum id="0">simplicity of a model</definiendum>
+				<definiendum id="1">model description length</definiendum>
+				<definiens id="0">an information-theoretic 201 Clark and Weir Class-Based Probability Estimation term and denotes the number of bits required to encode the model</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>gen. is the average number of generalized levels ; sd .</sentence>
+				<definiendum id="0">gen.</definiendum>
+				<definiens id="0">the average number of generalized levels</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>gen. is the standard deviation .</sentence>
+				<definiendum id="0">gen.</definiendum>
+				<definiens id="0">the standard deviation</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>gen. is the average number of generalized levels ; sd .</sentence>
+				<definiendum id="0">gen.</definiendum>
+				<definiens id="0">the average number of generalized levels</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>gen. is the standard deviation .</sentence>
+				<definiendum id="0">gen.</definiendum>
+				<definiens id="0">the standard deviation</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>One of the features of the generalization procedure is the way that α , the level of significance in the chi-square test , is treated as a parameter .</sentence>
+				<definiendum id="0">generalization procedure</definiendum>
+				<definiens id="0">the way that α , the level of significance in the chi-square test</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>WordNet : An Electronic Lexical Database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="24">
+				<sentence>In Christiane Fellbaum , editor , WordNet : An Electronic Lexical Database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="25">
+				<sentence>Selection and Information : A Class-Based Approach to Lexical Relationships .</sentence>
+				<definiendum id="0">Selection</definiendum>
+				<definiendum id="1">Information</definiendum>
+			</definition>
+			<definition id="26">
+				<sentence>In Christiane Fellbaum , editor , WordNet : An Electronic Lexical Database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>Summarization systems are often two-phased , consisting of a content selection step followed by a regeneration step .</sentence>
+				<definiendum id="0">Summarization systems</definiendum>
+				<definiens id="0">consisting of a content selection step followed by a regeneration step</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>To make such indexing and previewing possible , our scheme contains the additional category TEXTUAL , which captures previews of section structure ( section 2 describes our data ... ) .</sentence>
+				<definiendum id="0">TEXTUAL</definiendum>
+				<definiens id="0">captures previews of section structure</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>As our immediate goal is to select important content from a text , we also need a second set of gold standards that are defined by relevance ( as opposed to rhetorical status ) .</sentence>
+				<definiendum id="0">immediate goal</definiendum>
+				<definiens id="0">relevance ( as opposed to rhetorical status )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Relevance is a difficult issue because it is situational to a unique occasion ( Saracevic 1975 ; Sparck Jones 1990 ; Mizzaro 1997 ) : Humans perceive relevance differently from each other and differently in different situations .</sentence>
+				<definiendum id="0">Relevance</definiendum>
+				<definiens id="0">situational to a unique occasion ( Saracevic 1975 ; Sparck Jones 1990 ; Mizzaro 1997 ) : Humans perceive relevance differently from each other and differently in different situations</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The annotated development corpus consists of 80 conference articles in computational linguistics ( 12,188 sentences ; 285,934 words ) .</sentence>
+				<definiendum id="0">annotated development corpus</definiendum>
+				<definiens id="0">consists of 80 conference articles in computational linguistics ( 12,188 sentences ; 285,934 words )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>It is part of a larger corpus of 260 articles ( 1.1 million words ) that we collected from the CMP LG archive ( CMP LG 1994 ) .</sentence>
+				<definiendum id="0">CMP LG archive</definiendum>
+				<definiens id="0">part of a larger corpus of 260 articles ( 1.1 million words ) that we collected from the</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>We added Extensible Markup Language ( XML ) markup to the corpus : Titles , authors , conference , date , abstract , sections , headlines , paragraphs , and sentences were marked up .</sentence>
+				<definiendum id="0">Extensible Markup Language</definiendum>
+				<definiens id="0">Titles , authors , conference , date , abstract , sections , headlines , paragraphs , and sentences were marked up</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The kappa coefficient is defined as follows : K = P ( A ) − P ( E ) 1 − P ( E ) where P ( A ) is pairwise agreement and P ( E ) random agreement .</sentence>
+				<definiendum id="0">kappa coefficient</definiendum>
+				<definiens id="0">follows : K = P ( A ) − P ( E ) 1 − P ( E ) where P ( A ) is pairwise agreement and P ( E ) random agreement</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>rhetorical categories with a stability of K = .82 , .81 , .76 ( N = 1,220 ; k = 2 , where K stands for the kappa coefficient , N for the number of items ( sentences ) annotated , and k for the number of annotators ) .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiendum id="1">N for</definiendum>
+				<definiens id="0">the number of items ( sentences ) annotated</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Rhetorical zones appear in typical positions in the article , as scientific argumentation 426 Computational Linguistics Volume 28 , Number 4 P ( C | F 0 , ... , F n−1 ) ≈ P ( C ) producttext n−1 j=0 P ( F j | C ) producttext n−1 j=0 P ( F j ) P ( C | F 0 , ... , F n−1 ) : Probability that a sentence has target category C , given its feature values F 0 , ... , F n−1 ; P ( C ) : ( Overall ) probability of category C ; P ( F j | C ) : Probability of feature-value pair F j , given that the sentence is of target category C ; P ( F j ) : Probability of feature value F j ; Figure 9 Na¨ıve Bayesian classifier .</sentence>
+				<definiendum id="0">Rhetorical zones</definiendum>
+				<definiens id="0">P ( C | F 0 , ... , F n−1 ) ≈ P ( C ) producttext n−1 j=0 P ( F j | C ) producttext n−1 j=0 P ( F j ) P ( C | F 0 , ... , F n−1 ) : Probability that a sentence has target category C , given its feature values F 0 , ...</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Action Type of action , with or without negation 27 Action Types or None 427 Teufel and Moens Summarizing Scientific Articles follows certain patterns ( Swales 1990 ) .</sentence>
+				<definiendum id="0">Action Type</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>Prototypical headlines can be an important predictor of the rhetorical status of sentences occurring in the given section ; however , not all texts in our collection use such headlines .</sentence>
+				<definiendum id="0">Prototypical headlines</definiendum>
+				<definiens id="0">an important predictor of the rhetorical status of sentences occurring in the given section</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>SegAgent is a variant of the Agent feature that keeps track of previously recognized agents ; unmarked sentences receive these previous agents as a value ( in the Agent feature , they would have received the value None ) .</sentence>
+				<definiendum id="0">SegAgent</definiendum>
+				<definiens id="0">a variant of the Agent feature that keeps track of previously recognized agents ; unmarked sentences receive these previous agents as a value</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>As we do not have much annotated material , cross-validation is a practical way to test as it can make use of the full development corpus for training , without ever using the same data for training and testing .</sentence>
+				<definiendum id="0">cross-validation</definiendum>
+				<definiens id="0">a practical way to test as it can make use of the full development corpus for training , without ever using the same data for training and testing</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Macro-F is the mean of the F-measures of all seven categories .</sentence>
+				<definiendum id="0">Macro-F</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>The following features on their own classify each sentence as OWN ( and therefore achieve K = −.12 ) : Relative Location , Paragraphs , TF*IDF , Title , Sentence Length , Modality , Tense , and Voice .</sentence>
+				<definiendum id="0">OWN</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>( S-5 , 9408006 ) where LHIP is the name of the authors’ approach and should thus be tagged as US AGENT ; to do so , however , one would need to recognize it as a named approach , which is associated with the authors .</sentence>
+				<definiendum id="0">LHIP</definiendum>
+				<definiens id="0">the name of the authors’ approach</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Many errors come from instances in which one half of a sentence serves one rhetorical purpose , the other another , as in the following example : The current paper shows how to implement this general notion , without following Krifka’s analysis in detail .</sentence>
+				<definiendum id="0">Many errors</definiendum>
+				<definiens id="0">come from instances in which one half of a sentence serves one rhetorical purpose</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>Part-of-speech ( POS ) tagging involves many difficult problems , such as insufficient amounts of training data , inherent POS ambiguities , and ( most seriously ) many types of unknown words .</sentence>
+				<definiendum id="0">Part-of-speech</definiendum>
+				<definiens id="0">involves many difficult problems , such as insufficient amounts of training data , inherent POS ambiguities , and ( most seriously ) many types of unknown words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In Korean , an eojeol consists of several morphemes that have clear-cut morpheme boundaries .</sentence>
+				<definiendum id="0">eojeol</definiendum>
+				<definiens id="0">consists of several morphemes that have clear-cut morpheme boundaries</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Korean is a postpositional language with many kinds of noun endings ( particles ) , verb endings , and prefinal verb endings .</sentence>
+				<definiendum id="0">Korean</definiendum>
+				<definiens id="0">a postpositional language with many kinds of noun endings ( particles ) , verb endings</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Morphological analysis , which segments input texts into morphotactically connectable morphemes and assigns all possible POS tags to each morpheme by looking them up in a morpheme dictionary , is a basic step in natural language processing .</sentence>
+				<definiendum id="0">Morphological analysis</definiendum>
+				<definiens id="0">a basic step in natural language processing</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>MCC is a full POS tag that identifies a common noun consisting of Chinese characters .</sentence>
+				<definiendum id="0">MCC</definiendum>
+				<definiens id="0">a full POS tag that identifies a common noun consisting of Chinese characters</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In verb or adjective , gyu represents a regular form of an irregular conjugation , bul represents an irregular form of an irregular conjugation .</sentence>
+				<definiendum id="0">gyu</definiendum>
+				<definiens id="0">a regular form of an irregular conjugation , bul represents an irregular form of an irregular conjugation</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Eo is a morphotactic adjacency symbol for vowel harmony when connecting with endings .</sentence>
+				<definiendum id="0">Eo</definiendum>
+				<definiens id="0">a morphotactic adjacency symbol for vowel harmony when connecting with endings</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>“ &gt; ” is a special symbol for adjacent direction ( “ &gt; ”= right connection ; “ &lt; ”= left connection ) .</sentence>
+				<definiendum id="0">“ &gt; ”</definiendum>
+				<definiens id="0">a special symbol for adjacent direction</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The error corrector is a rule-based transformer 60 Lee , Cha , and Lee Syllable-Pattern-Based Unknown-Morpheme Estimation ( Brill 1995 ) , and it corrects mistagged morphemes by consulting lexical patterns and necessary contextual information .</sentence>
+				<definiendum id="0">error corrector</definiendum>
+				<definiendum id="1">Lee Syllable-Pattern-Based Unknown-Morpheme Estimation</definiendum>
+				<definiens id="0">a rule-based transformer 60 Lee , Cha , and</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The morpheme graph is a compact way of representing multiple morpheme sequences for a sentence .</sentence>
+				<definiendum id="0">morpheme graph</definiendum>
+				<definiens id="0">a compact way of representing multiple morpheme sequences for a sentence</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The equation used for the statistical tagging model is a modified bigram model with left-to-right search , T = argmax T n Y i=1 Pr ( t i jt i−1 ) Pr ( t i jm i ) Pr ( t i ) ( 1 ) where T is an optimal tag sequence that maximizes the forward Viterbi scores .</sentence>
+				<definiendum id="0">T</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>The lexical probability Pr ( t i jm i ) Pr ( t i ) for unknown morphemes can be estimated using the frequency of syllable trigram products according to the formula in ( 11 ) – ( 13 ) ( Nagata 1994 ) , m = e 1 e 2 : : : e n ( 11 ) Pr ( tjm ) Pr ( t ) Pr t ( e 1 j # , # ) Pr t ( e 2 j # , e 1 ) n Y i=3 Pr t ( e i je i−2 , e i−1 ) 62 Lee , Cha , and Lee Syllable-Pattern-Based Unknown-Morpheme Estimation Pr ( # je n−1 , e n ) ( 12 ) Pr t ( e i je i−2 , e i−1 ) f t ( e i je i−2 , e i−1 ) + f t ( e i je i−1 ) + f t ( e i ) ( 13 ) where m is a morpheme , e is a syllable , t is a POS tag , “ # ” is a morpheme boundary symbol , and f t ( e i je i−2 , e i−1 ) is a frequency datum for tag t with co-occurrence syllables e i−2 , e i−1 , and e i .</sentence>
+				<definiendum id="0">m</definiendum>
+				<definiendum id="1">e</definiendum>
+				<definiens id="0">a morpheme boundary symbol , and f t</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>If the first position of this morpheme is a family name , the probability that MPN is the correct tag becomes higher than the probability that the other tags are correct .</sentence>
+				<definiendum id="0">MPN</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>The form of the rules that can be automatically learned using the schemata in Table 7 is shown in Figure 2 , where [ current eojeol or morpheme ] consists of the morpheme ( with current tag ) sequence in an eojeol , and [ corrected eojeol or morpheme ] consists of the morpheme ( with corrected tag ) sequence in the same eojeol .</sentence>
+				<definiendum id="0">form of the rules</definiendum>
+				<definiens id="0">consists of the morpheme ( with current tag ) sequence in an eojeol , and [ corrected eojeol or morpheme ] consists of the morpheme ( with corrected tag ) sequence in the same eojeol</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Table 10 shows the results , which were evaluated by the metrics defined as follows : Recall = # unknown morphemes detected # unknown morphemes ( segmentation performance ) Precision = # unknown morphemes correctly estimated # unknown morphemes detected ( guessing performance ) When the morphological analyzer meets an unknown morpheme , it is important to detect first whether it is unknown or not , because sometimes , due to incorrect segmentation , an unknown morpheme can be incorrectly processed as a known one .</sentence>
+				<definiendum id="0">unknown morpheme</definiendum>
+				<definiens id="0">evaluated by the metrics defined as follows : Recall = # unknown morphemes detected # unknown morphemes ( segmentation performance ) Precision = # unknown morphemes correctly estimated # unknown morphemes detected ( guessing performance ) When the morphological analyzer meets an unknown morpheme , it is important to detect first whether it is unknown or not , because sometimes , due to incorrect segmentation , an</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Once the unknown morphemes are detected , the correct POS needs to be estimated .</sentence>
+				<definiendum id="0">POS</definiendum>
+				<definiens id="0">needs to be estimated</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Unlike previous systems , POSTAG is a hybrid tagging system ; such a system has never been tried before , but it turns out to be most suitable for agglutinative languages such as Korean .</sentence>
+				<definiendum id="0">POSTAG</definiendum>
+				<definiens id="0">a hybrid tagging system</definiens>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>The relationship cause is one of the possible interpretations the compound may receive .</sentence>
+				<definiendum id="0">relationship cause</definiendum>
+				<definiens id="0">one of the possible interpretations the compound may receive</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A finite-state cascade is a sequence of nonrecursive levels : phrases at one level are built on phrases at the previous level without containing same-level or higher-level phrases .</sentence>
+				<definiendum id="0">finite-state cascade</definiendum>
+				<definiens id="0">a sequence of nonrecursive levels : phrases at one level are built on phrases at the previous level without containing same-level or higher-level phrases</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Morphologically speaking , nominalization is a word formation process by which a noun is derived from a verb , usually by means of suffixation ( Quirk et al. 1985 ) .</sentence>
+				<definiendum id="0">nominalization</definiendum>
+				<definiens id="0">a word formation process by which a noun is derived from a verb</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A list of deverbal suffixes ( i.e. , suffixes that form nouns when attached to verb bases ) is given in Table 2 .</sentence>
+				<definiendum id="0">list of deverbal suffixes</definiendum>
+				<definiens id="0">suffixes that form nouns when attached to verb bases</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Assuming that the numerator f ( v n 2 , rel , n 1 ) in ( 8 ) is zero we can approximate P ( rel | n 1 , n 2 ) by backing off to P ( rel | n 1 ) : P ( rel | n 1 , n 2 ) =α f ( rel , n 1 ) f ( n 1 ) ( 12 ) where α is a normalization constant that ensures that the probabilities sum to one .</sentence>
+				<definiendum id="0">numerator f</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Lacking such a corpus we need to take into consideration the fact that words in a taxonomy may belong to more than one conceptual class : counts of verb-argument configurations are reconstructed for each conceptual class by dividing the contribution from the argument by the number of classes to which it belongs ( Resnik 1993 ; Lauer 1995 ) : f ( v n 2 , rel , c ) ≈ summationdisplay n prime 1 ∈c f ( v n 2 , rel , n prime 1 ) |classes ( n prime 1 ) | ( 13 ) where f ( v n 2 , rel , n prime 1 ) is the number of times the verb v n 2 was observed with concept c ∈ classes ( n prime 1 ) bearing the argument relation rel ( i.e. , subject or object ) and |classes ( n prime 1 ) | is the number of conceptual classes to which n prime 1 belongs .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">f ( v n 2 , rel , c ) ≈ summationdisplay n prime 1 ∈c f ( v n 2 , rel , n prime 1 ) |classes ( n prime 1</definiens>
+				<definiens id="1">the number of times the verb v n 2 was observed with concept c ∈ classes ( n prime 1 ) bearing the argument relation rel ( i.e. , subject or object ) and |classes ( n prime 1 ) | is the number of conceptual classes to which n prime 1 belongs</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>C is an estimate of the probability that a word w 1 can be substituted for a word w prime 1 , in the sense of being found in the same contexts .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">an estimate of the probability that a word w 1 can be substituted for a word w prime 1 , in the sense of being found in the same contexts</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>P C is estimated as follows : P C ( w 1 | w prime 1 ) = summationdisplay s P ( w 1 | s ) P ( s | w prime 1 ) ( 15 ) where P C ( w 1 | w prime 1 ) is the probability that word w prime 1 occurs in the same contexts s as word w 1 , averaged over these contexts .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">estimated as follows : P C ( w 1 | w prime 1 ) = summationdisplay s P ( w 1 | s ) P ( s | w prime 1 ) ( 15 ) where P</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>J is defined as : J ( w 1 , w prime 1 ) = 1 2 bracketleftbigg D parenleftbigg w 1 vextenddouble vextenddouble vextenddouble vextenddouble w 1 + w prime 1 2 parenrightbigg + D parenleftbigg w prime 1 vextenddouble vextenddouble vextenddouble vextenddouble w 1 + w prime 1 2 parenrightbiggbracketrightbigg ( 17 ) D ( w 1 bardblw prime 1 ) = summationdisplay rel , w 2 P ( rel , w 2 | w 1 ) log P ( rel , w 2 | w 1 ) P ( rel , w 2 | w prime 1 ) ( 18 ) where w 1 is a shorthand for P ( rel , w 2 | w 1 ) and w prime 1 for P ( rel , w 2 | w prime 1 ) ; D in ( 17 ) is the Kullback-Leibler divergence , a measure of the dissimilarity between two probability distributions ( see equation ( 18 ) ) and ( w 1 + w prime 1 ) /2 is a shorthand for the average distribution : 1 2 ( P ( rel , w 2 | w 1 ) +P ( rel , w 2 | w prime 1 ) ) ( 19 ) 368 Computational Linguistics Volume 28 , Number 3 Given a set of nominalizations n 1 n 2 : 2 to the verb v n 2 from which it is derived ; n 2 , obj , n 1 ) and f ( v n 2 , subj , n 1 ) from the BNC ; n 2 , obj , n 1 ) &lt; k then re-create f s ( v n 2 , obj , n 1 ) ; n 2 , subj , n 1 ) &lt; k then re-create f s ( v n 2 , subj , n 1 ) ; 1 , n 2 ) and P ( subj | n 1 , n 2 ) ; 1 , n 2 ) ; 1 is the object of n 2 ; 1 is the subject of n 2 .</sentence>
+				<definiendum id="0">w 1</definiendum>
+				<definiens id="0">the Kullback-Leibler divergence , a measure of the dissimilarity between two probability distributions ( see equation ( 18 ) ) and ( w 1 + w prime 1 ) /2 is a shorthand for the average distribution</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>We measured the judges’ agreement using the kappa coefficient ( Siegel and Castellan 1988 ) , which is the ratio of the proportion of times P ( A ) that k raters agree ( corrected by chance agreement P ( E ) ) to the maximum proportion of times the raters would agree ( corrected for chance agreement ) : K = P ( A ) − P ( E ) 1 − P ( E ) ( 22 ) If there is a complete agreement among the raters , then K = 1 , whereas if there is no agreement among the raters ( other than the agreement that would be expected to occur by chance ) , then K = 0 .</sentence>
+				<definiendum id="0">kappa coefficient</definiendum>
+				<definiens id="0">the ratio of the proportion of times P ( A ) that k raters agree ( corrected by chance agreement P ( E ) ) to the maximum proportion of times the raters would agree ( corrected for chance agreement ) : K = P ( A ) − P</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>To translate satellite observation into Spanish , we have to work out whether satellite is the subject or object of the verb observe .</sentence>
+				<definiendum id="0">satellite</definiendum>
+				<definiens id="0">the subject or object of the verb observe</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>So knowledge about the fact that cancer is the object of treatment could help rank relevant documents ( i.e. , documents in which cancer is the object of the verb treat ) before nonrelevant ones or restrict the number of retrieved documents .</sentence>
+				<definiendum id="0">cancer</definiendum>
+				<definiens id="0">the object of treatment could help rank relevant documents ( i.e. , documents in which cancer is the object of the verb treat</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>A scoring system evaluates each possible interpretation and selects the highest-scoring analysis .</sentence>
+				<definiendum id="0">scoring system</definiendum>
+				<definiens id="0">evaluates each possible interpretation and selects the highest-scoring analysis</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="14">
+				<sentence>Inference and Disputed Authorship : The Federalist .</sentence>
+				<definiendum id="0">Inference</definiendum>
+				<definiendum id="1">Disputed Authorship</definiendum>
+				<definiens id="0">The Federalist</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Selection and Information : A Class-Based Approach to Lexical Relationships .</sentence>
+				<definiendum id="0">Selection</definiendum>
+				<definiendum id="1">Information</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>The opposite end of the spectrum consists of theories with only two “proto-roles” or “macroroles” : Proto-AgentandProto-Patient ( Van Valin 1993 ; Dowty 1991 ) .</sentence>
+				<definiendum id="0">opposite end of the spectrum</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A frame is a schematic representation of situations involving various participants , props , and other conceptual roles ( Fillmore 1976 ) .</sentence>
+				<definiendum id="0">frame</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>One way of thinking about traditional abstract thematic roles , such as Agent and Patient , in the context of FrameNet is to conceive them as frame elements defined by abstract frames , such as action and motion , at the top of an inheritance hierarchy of semantic frames ( Fillmore and Baker 2000 ) .</sentence>
+				<definiendum id="0">semantic frames</definiendum>
+				<definiens id="0">to conceive them as frame elements defined by abstract frames</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , in communication frames , the Speaker is likely to appear as a noun phrase , Topic as a prepositional phrase or noun phrase , and Medium as a prepositional phrase , as in : “ [ Speaker We ] talked [ Topic about the proposal ] [ Medium over the phone ] .”</sentence>
+				<definiendum id="0">Topic</definiendum>
+				<definiens id="0">a prepositional phrase or noun phrase</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In cases in which the path feature includes an S or VP ancestor of an NP node as part of the path to the target word , the gov feature is a function of the path feature .</sentence>
+				<definiendum id="0">gov feature</definiendum>
+				<definiens id="0">a function of the path feature</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Distribution Coverage Accuracy Performance P ( r | t ) 100.0 % 40.9 % 40.9 % P ( r | pt , t ) 92.5 60.1 55.6 P ( r | pt , gov , t ) 92.0 66.6 61.3 P ( r | pt , position , voice ) 98.8 57.1 56.4 P ( r | pt , position , voice , t ) 90.8 70.1 63.7 P ( r | h ) 80.3 73.6 59.1 P ( r | h , t ) 56.0 86.6 48.5 P ( r | h , pt , t ) 50.1 87.4 43.8 role , given the features described above and the predicate , or target word , t : P ( r | h , pt , gov , position , voice , t ) where r indicates semantic role , h head word , and pt phrase type .</sentence>
+				<definiendum id="0">gov</definiendum>
+				<definiens id="0">semantic role , h head word , and pt phrase type</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Coverage indicates the percentage of the test data for which the conditioning event had been seen in training data .</sentence>
+				<definiendum id="0">Coverage</definiendum>
+				<definiens id="0">indicates the percentage of the test data for which the conditioning event had been seen in training data</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Accuracy is the proportion of covered test data for which the correct role is given the highest probability , and Performance , which is the product of coverage and accuracy , is the overall percentage of test data for which the correct role is predicted .</sentence>
+				<definiendum id="0">Accuracy</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>The geometric mean , when expressed in the log domain , is similar : P ( r | constituent ) = 1 Z exp { λ 1 log P ( r | t ) +λ 2 log P ( r | pt , t ) +λ 3 log P ( r | pt , gov , t ) +λ 4 log P ( r | pt , position , voice ) +λ 5 log P ( r | pt , position , voice , t ) +λ 6 log P ( r | h ) +λ 7 log P ( r | h , t ) +λ 8 log P ( r | h , pt , t ) } where Z is a normalizing constant ensuring that summationtext r P ( r | constituent ) =1 .</sentence>
+				<definiendum id="0">Z</definiendum>
+				<definiens id="0">position , voice , t ) +λ 6 log P ( r | h ) +λ 7 log P ( r | h , t ) +λ 8 log P ( r | h , pt , t ) } where</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>( “GF” ( grammatical function ) in the figure represents one of the features position , gov , and path . )</sentence>
+				<definiendum id="0">“GF”</definiendum>
+				<definiens id="0">one of the features position , gov , and path</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The probability distributions calculated from the training data were P ( fe | path ) , P ( fe | path , t ) , and P ( fe | h , t ) , where fe indicates an event where the parse constituent in question is a frame element , path the path through the parse tree from the target word to the parse constituent , t the identity of the target word , and h the head word of the parse constituent .</sentence>
+				<definiendum id="0">fe</definiendum>
+				<definiens id="0">a frame element , path the path through the parse tree from the target word to the parse constituent , t the identity of the target word , and h the head word of the parse constituent</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The FrameNet corpus recognizes three types of “null-instantiated” frame elements ( Fillmore 1986 ) , which are implied but do not appear in the sentence .</sentence>
+				<definiendum id="0">FrameNet corpus</definiendum>
+				<definiens id="0">recognizes three types of “null-instantiated” frame elements</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>We use equation ( 16 ) , repeated below , to estimate the probability that a constituent is a frame element : P ( fe | p , h , t ) =λ 1 P ( fe | p ) +λ 2 P ( fe | p , t ) +λ 3 P ( fe | h , t ) where p is the path through the parse tree from the target word to the constituent , t is the target word , and h is the constituent’s head word .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiendum id="1">h</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>Experiencer and Agent , two similar roles generally found as the subject for complementary sets of verbs , are the roles that are correctly identified the most often .</sentence>
+				<definiendum id="0">Experiencer</definiendum>
+				<definiens id="0">the subject for complementary sets of verbs</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Unlabeled recall includes cases that were identified as a frame element but given the wrong role .</sentence>
+				<definiendum id="0">Unlabeled recall</definiendum>
+				<definiens id="0">includes cases that were identified as a frame element but given the wrong role</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>f represents the FrameNet semantic frame .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">represents the FrameNet semantic frame</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>d represents the FrameNet semantic domain .</sentence>
+				<definiendum id="0">d</definiendum>
+				<definiens id="0">represents the FrameNet semantic domain</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Label Description ADJP Adjective Phrase ADVP Adverb Phrase CONJP Conjunction Phrase FRAG Fragment INTJ Interjection NAC Not a constituent NP Noun Phrase NX Head subphrase of complex noun phrase PP Prepositional Phrase QP Quantifier Phrase RRC Reduced Relative Clause S Simple declarative clause ( sentence ) SBAR Clause introduced by complementizer SBARQ Question introduced by wh-word SINV Inverted declarative sentence SQ Inverted yes/no question UCP Unlike Co-ordinated Phrase VP Verb Phrase WHADJP Wh-adjective Phrase WHADVP Wh-adverb Phrase WHNP Wh-noun Phrase WHPP Wh-prepositional Phrase 286 Computational Linguistics Volume 28 , Number 3 Acknowledgments We are grateful to Chuck Fillmore , Andreas Stolcke , Jerry Feldman , and three anonymous reviewers for their comments and suggestions , to Collin Baker for his assistance with the FrameNet data , and to Mats Rooth and Sabine Schulte im Walde for making available their parsed corpus .</sentence>
+				<definiendum id="0">Label Description ADJP Adjective Phrase ADVP Adverb Phrase CONJP Conjunction Phrase FRAG Fragment INTJ Interjection NAC Not</definiendum>
+				<definiens id="0">a constituent NP Noun Phrase NX Head subphrase of complex noun phrase PP Prepositional Phrase QP Quantifier Phrase RRC Reduced Relative Clause S Simple declarative clause ( sentence ) SBAR Clause introduced by complementizer SBARQ Question introduced by wh-word SINV Inverted declarative sentence SQ Inverted yes/no question UCP Unlike Co-ordinated Phrase VP Verb Phrase WHADJP Wh-adjective Phrase WHADVP Wh-adverb Phrase WHNP Wh-noun Phrase WHPP Wh-prepositional Phrase 286 Computational Linguistics Volume 28</definiens>
+				<definiens id="1">reviewers for their comments and suggestions , to Collin Baker for his assistance with the FrameNet data , and to Mats Rooth</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>“Talk’n’travel : A conversational system for air travel planning.”</sentence>
+				<definiendum id="0">“Talk’n’travel</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>The WSJ corpus represents journalistic news wire style .</sentence>
+				<definiendum id="0">WSJ corpus</definiendum>
+				<definiens id="0">represents journalistic news wire style</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>However , if we detect a context such as Kong. , said , this indicates that in this document , Kong is normally written with a trailing period and hence is an abbreviation .</sentence>
+				<definiendum id="0">hence</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>If the word In was detected to act as a regular word ( preposition ) five times in the current document and two times as abbreviation ( for the state Indiana ) , in a context in which neither of the bigrams collected from the document can be applied , In is assigned as a regular word ( nonabbreviation ) .</sentence>
+				<definiendum id="0">Indiana</definiendum>
+				<definiens id="0">a regular word ( preposition ) five times in the current document and two times as abbreviation ( for the state</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The frequent-list lookup strategy applies lookup of ambiguously capitalized words in two word lists .</sentence>
+				<definiendum id="0">frequent-list lookup strategy</definiendum>
+				<definiens id="0">applies lookup of ambiguously capitalized words in two word lists</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In row D of Table 4 , we summarized our main results : the results obtained by the application of our SBD rule set , which uses the information provided by the DCA to capitalized word disambiguation applied together with lexical lookup ( as described in Section 7.5 ) , and the abbreviation-handling strategy , which included the guessing heuristics , the DCA , and the list of 270 abbreviations ( as described in Section 6 ) .</sentence>
+				<definiendum id="0">abbreviation-handling strategy</definiendum>
+				<definiens id="0">uses the information provided by the DCA to capitalized word disambiguation</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We modified the tagger model by incorporating the DCA predictions using linear interpolation : P ( combined ) =λ ∗ P ( tagger ) + ( 1 − λ ) ∗ P ( DCA Strategy ) where P ( DCA Strategy ) is the accuracy of a specific DCA strategy and P ( tagger ) is the probability assigned by the tagger’s model .</sentence>
+				<definiendum id="0">P ( DCA Strategy )</definiendum>
+				<definiendum id="1">P ( tagger )</definiendum>
+				<definiens id="0">the accuracy of a specific DCA strategy</definiens>
+				<definiens id="1">the probability assigned by the tagger’s model</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>For instance , the Alembic workbench ( Aberdeen et al. 1995 ) contains a sentence-splitting module that employs over 100 regular-expression rules written in Flex .</sentence>
+				<definiendum id="0">Alembic workbench</definiendum>
+				<definiendum id="1">sentence-splitting module</definiendum>
+				<definiens id="0">employs over 100 regular-expression rules written in Flex</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Machine learning systems treat the SBD task as a classification problem , using features such as word spelling , capitalization , suffix , and word class found in the local context of a potential sentence-terminating punctuation sign .</sentence>
+				<definiendum id="0">Machine learning systems</definiendum>
+				<definiens id="0">word spelling , capitalization , suffix , and word class found in the local context of a potential sentence-terminating punctuation sign</definiens>
+			</definition>
+</paper>
+
+	</volume>

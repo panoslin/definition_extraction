@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J88">
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>In particular , HRDM views database attributes as functions from moments in time to values ( in the appropriate domain ) , and the intensional logic IL s provides a mechanism for direct reference to these higher-order objects , and for incorporating them into a general temporal semantics for the database .</sentence>
+				<definiendum id="0">HRDM views</definiendum>
+				<definiens id="0">provides a mechanism for direct reference to these higher-order objects</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Section 3 argues that a successful formal treatment can be given to a natural language querying facility for a historical relational data base ( HRDB ) , through the medium of the intensional logic IL s. We view this work as important for two reasons .</sentence>
+				<definiendum id="0">HRDB</definiendum>
+				<definiens id="0">a successful formal treatment can be given to a natural language querying facility for a historical relational data base (</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>QE-III is defined as a formal language , with syntax paired with semantics , and with a pragmatics defined on the two of these ; the language as a whole is designed with the database application in mind .</sentence>
+				<definiendum id="0">QE-III</definiendum>
+				<definiens id="0">a formal language , with syntax paired with semantics , and with a pragmatics defined on the two of these ; the language as a whole is designed with the database application in mind</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Within the tradition of Montague Semantics , QE-III is a formalized fragment of English allowing questions , tenses , and temporal operators .</sentence>
+				<definiendum id="0">QE-III</definiendum>
+				<definiens id="0">a formalized fragment of English allowing questions , tenses , and temporal operators</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>With the first-order representation for John 's salary given above , as a first guess we might imagine that RISE ( { z I 3x3y emp ( John , x , y , z ) } ) would represent this new query , where RISE is a predicate symbol .</sentence>
+				<definiendum id="0">RISE</definiendum>
+				<definiens id="0">a predicate symbol</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For example , in relation emp on scheme EMP ( EMP-NAME MGR DEPT SALARY ) , the attribute EMP-NAME is the key attribute , and DEPT , MGR , and SALARY define properties of employees .</sentence>
+				<definiendum id="0">attribute EMP-NAME</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Time is represented in the HRDM as a set T = { ... . to , ti ... . } , at most countably infinite , over which is defined the linear ( total ) order &lt; T , where ti &lt; w tj means ti occurs before ( is earlier than ) tj. ( For the sake of clarity we will assume that t i &lt; T tj if and only if i &lt; j. ) The set T is used as the basis for incorporating the temporal dimension into the model. We assume that T is isomorphic to the natural numbers , and therefore the issue of whether to represent time as intervals or as points is simply a matter of convenience. Using the natural numbers allows us to restrict our attention to closed intervals ( a closed interval of T , written \ [ t l , t 2\ ] is simply the set { t i I t i &lt; = t i &lt; = t2 } ) . D = { D 1 , D 2 ... .. Dno } is the set of value domains , where for each i , D i ~ q~. Each value domain Di is analogous to the traditional database notion of a domain in that it is a set of atomic ( non-decomposable ) values. In HRDM , however , attributes take their values not from these simple domains , but rather from more complex fimctions. U = { A I , A 2 ... .. Ana } is a ( universal ) set of attributes. Simplifying somewhat , we define over the sets T and D a set of temporal mappings from the set T into the set D. This set , TD = { TD~ , TD2 ... .. TDnd } where for each i , TD i = { fi I fi : T -- &gt; Di } , is the set of all partial functions from T into the value domain D i. The domain of each attributes in HRDM is some set of partial temporal functions .</sentence>
+				<definiendum id="0">I</definiendum>
+				<definiens id="0">a set T = { ... . to , ti ... . } , at most countably infinite , over which is defined the linear ( total ) order &lt; T , where ti &lt; w tj means ti occurs before ( is earlier than ) tj. ( For the sake of clarity we will assume that t i &lt; T tj if and only if i &lt; j. ) The set T is used as the basis for incorporating the temporal dimension into the model. We assume that T is isomorphic to the natural numbers , and therefore the issue of whether to represent time as intervals or as points is simply a matter of convenience. Using the natural numbers allows us to restrict our attention to closed intervals ( a closed interval of T , written \ [ t l , t 2\ ] is simply the set { t i I t i &lt; = t i &lt; = t2 } )</definiens>
+				<definiens id="1">the set of value domains</definiens>
+				<definiens id="2">analogous to the traditional database notion of a domain in that it is a set of atomic ( non-decomposable ) values. In HRDM , however , attributes take their values not from these simple domains , but rather from more complex fimctions. U = { A</definiens>
+				<definiens id="3">a ( universal ) set of attributes. Simplifying somewhat , we define over the sets T and D a set of temporal mappings from the set T into the set D. This set , TD = { TD~ , TD2 ... .. TDnd } where for each i , TD i = { fi I fi : T -- &gt; Di } , is the set of all partial functions from T into the value domain D i. The domain of each attributes in HRDM is some set of partial temporal functions</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>HRDM serves to formally incorporate a temporal semantics into an extended relational database model .</sentence>
+				<definiendum id="0">HRDM</definiendum>
+				<definiens id="0">serves to formally incorporate a temporal semantics into an extended relational database model</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Most recent research in the field of Montague Semantics has incorporated the suggestion , first made in Bennett ( 1974 ) , that Montague 's treatment of common nouns ( CNs ) and intransitive verbs ( IVs ) as denoting sets of individual concepts ( ICs ) is unduly complicated .</sentence>
+				<definiendum id="0">IVs</definiendum>
+				<definiens id="0">that Montague 's treatment of common nouns ( CNs ) and intransitive verbs (</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>In order to provide a semantics for this expansion of the PTQ fragment Dowty argues for the necessity of several significant extensions to the logic IL : a radically different treatment of the phenomenon of tense is one of his contributions .</sentence>
+				<definiendum id="0">IL</definiendum>
+				<definiens id="0">a radically different treatment of the phenomenon of tense is one of his contributions</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>, where FwH_ ~ ( a,05 ) would be defined as some sort of substitution of a for the first occurrence of xn , and the appropriate pronoun for each subsequent occurrence , as in the PTQ substitution rules .</sentence>
+				<definiendum id="0">FwH_ ~ ( a,05 )</definiendum>
+				<definiens id="0">some sort of substitution of a for the first occurrence of xn , and the appropriate pronoun for each subsequent occurrence , as in the PTQ substitution rules</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Arz employee manages and he works S104 I I At~ employee # manage and he # work S14,0 / \ / \ an employee \ [ it-NOM-0\ ] # manage and \ [ it-NOM-0\ ] # work Sll /\ / \ / \ / \ a employee \ [ it-NOM-0\ ] \ [ it-NOM-0\ ] # manage # work In this derivation , the Substitution Rule S14,0 provides for the reading in which the same individual is the referent of the terms `` an employee '' and `` he '' .</sentence>
+				<definiendum id="0">Substitution Rule S14,0</definiendum>
+				<definiens id="0">provides for the reading in which the same individual is the referent of the terms</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Pragmatics is the least understood branch of the tripartite division of the study of language that Morris ( 1938 ) proposed in his theory of semiotics .</sentence>
+				<definiendum id="0">Pragmatics</definiendum>
+				<definiens id="0">the least understood branch of the tripartite division of the study of language that Morris ( 1938 ) proposed in his theory of semiotics</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Hamblin ( 1973 ) felt that Montague 's incorporation of a pragmatic component directly in the syntax and semantics was unconventional , and felt the need `` to defend pragmatics from this weakened interpretation ... . Pragmatics is the study of the use ( not just reference ) of language of all kinds ; or , if it is not , we need a new name for the study that complements syntax and semantics .</sentence>
+				<definiendum id="0">Pragmatics</definiendum>
+				<definiens id="0">felt that Montague 's incorporation of a pragmatic component directly in the syntax and semantics was unconventional</definiens>
+				<definiens id="1">the study of the use ( not just reference ) of language of all kinds</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>( i ) ( u0 A MGR ' ( i ) ( x ) A AS-l ( Ul , X ) \ ] The pragmatic interpretation of the question is the set of n-tuples that answer it , while of the declarative sentence is the same as its denotation .</sentence>
+				<definiendum id="0">AS-l</definiendum>
+				<definiens id="0">the set of n-tuples that answer it</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>We further assume that nodes of derivation trees are labeled with ordered triples &lt; A , B , C &gt; , such that A is the meaningful expression derived at that node , B is its syntactic category , and C is the rule of syntax applied at that step in the derivation .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">nodes of derivation trees are labeled with ordered triples &lt; A , B , C &gt; , such that A is the meaningful expression derived at that node</definiens>
+				<definiens id="1">the rule of syntax applied at that step in the derivation</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>set of all possible variable assignments over M , and if further V= { v I ... .. Vk } is a set of variables of IL s , then by IIv ( \ [ /a\\ ] M ) is understood the restriction of \ [ /a\\ ] M to the domain V. Note that if V = 0 , then IIv ( \ [ /a\\ ] M is defined to be just \ [ /a\\ ] M. now ( f ) is the restriction of f to the domain AS , ,ow ( M ) , where ASnow ( M ) = { g I g E As ( M ) and g ( i ) -F ( now ) } , that is , that subset of the possible variable assignments for M for which the distinguished time variable i is interpreted as denoting that state denoted by the constant now .</sentence>
+				<definiendum id="0">ASnow</definiendum>
+				<definiens id="0">a set of variables of IL s , then by IIv ( \ [ /a\\ ] M</definiens>
+				<definiens id="1">that subset of the possible variable assignments for M for which the distinguished time variable i is interpreted as denoting that state denoted by the constant now</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>It is clear that the set of sequences given by IIFv ° ( now ( \ [ /a\\ ] M ) ) is equivalently represented by the denotation of the expression LCFv c ( hiT ( /a\ ) ( now ) ) of ILs with respect to M and g. P2 is therefore alternatively defined as : P ( /a\ ) = \ [ LCFv ~ ( ZiT ( /a\ ) ( now ) ) \ ] M , g. What this alternative definition allows us to do is to utilize the semantic notion of denotation to define the pragmatic interpretation of sentences in QE-III .</sentence>
+				<definiendum id="0">ZiT</definiendum>
+				<definiendum id="1">/a\ )</definiendum>
+				<definiens id="0">allows us to do is to utilize the semantic notion of denotation to define the pragmatic interpretation of sentences in QE-III</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Minimal answers are then translated into expressions that denote formulas when interpreted within the context of a preceding question .</sentence>
+				<definiendum id="0">Minimal answers</definiendum>
+				<definiens id="0">translated into expressions that denote formulas when interpreted within the context of a preceding question</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Question class Our typing yes-rio t 1 ind~viduM &lt; e , t &gt; 2 indNidual &lt; e , &lt; e , t &gt; &gt; H-Z typing &lt; &lt; s , &lt; &lt; s , t &gt; , t &gt; &gt; , t &gt; &lt; &lt; s , f ( T ) &gt; , t &gt; &lt; &lt; s , f ( T ) &gt; , &lt; &lt; s , f ( T ) &gt; , t &gt; &gt; The work of Scha ( 1983 ) on the PHLIQA1 project and Gunji ( 1981 ) , both being developed concurrently with the development of QE-III ( Clifford 1982b ) , are remarkably similar in spirit , though not in detail , to the present work .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">f ( T ) &gt; , &lt; &lt; s , f ( T ) &gt;</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Peter earned 25K in 1978 S108 / \ / \ in 1978 Sl13 Peter # earn 25K $ 4 / \ ( derived as in Example 4-1 ) / \ in 1978 This example illustrates Rule S108 , which simultaneously adds a tense ( past ) and a time adverbial , and S113 , which forms a temporal prepositional phrase .</sentence>
+				<definiendum id="0">S113</definiendum>
+				<definiens id="0">forms a temporal prepositional phrase</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>The pragmatic interpretation correctly indicates that there is some state in the past that is also in the set of states 1978 at which the present-tense sentence `` Peter earns 25K is true '' : 3i13y\ [ 1978 ' ( ii ) A \ [ il &lt; now\ ] A EMP , ' ( il ) ( Peter ) A SAL ' ( il ) ( y ) A y ( i 1 ) = 25K A AS-l ( Peter , y ) \ ] .</sentence>
+				<definiendum id="0">SAL</definiendum>
+				<definiendum id="1">AS-l</definiendum>
+				<definiens id="0">' ( il ) ( y ) A y ( i 1</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>QE-III incorporates a formal syntax , semantics , and pragmatics to account for an interpretation of questions that accord with the interpretation of HRDM , including an account of multiple-wh questions , a semantics and pragmatics of time , and a grammar that is conducive to a computer implementation .</sentence>
+				<definiendum id="0">QE-III</definiendum>
+				<definiens id="0">incorporates a formal syntax , semantics , and pragmatics to account for an interpretation of questions that accord with the interpretation of HRDM</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>System networks , as used in Halliday 's Systemic Grammar ( Hudson ( 1971 ) , Kress ( 1976 ) , Winograd ( 1983 ) ) are a way of encoding the choices that must be made in the generation of a complex linguistic object and the interdependencies between them .</sentence>
+				<definiendum id="0">System networks</definiendum>
+				<definiens id="0">a way of encoding the choices that must be made in the generation of a complex linguistic object and the interdependencies between them</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>masculine ( x ) v feminine ( x ) A fundamental relationship between descriptions is subsumption : d I subsumes d 2 iff ~ ~ V x : d2 ( x ) D dl ( x ) where E is the set of axioms derived from the network .</sentence>
+				<definiendum id="0">masculine ( x ) v feminine</definiendum>
+				<definiendum id="1">E</definiendum>
+				<definiens id="0">the set of axioms derived from the network</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Subsumption is a partial ordering on descriptions , and the set of possible descriptions ( properties and all possible finite conjunc42 tions and disjunctions of descriptions made from them j , ordered by subsumption , forms a lattice .</sentence>
+				<definiendum id="0">Subsumption</definiendum>
+				<definiens id="0">a partial ordering on descriptions , and the set of possible descriptions ( properties and all possible finite conjunc42 tions and disjunctions of descriptions made from them j , ordered by subsumption , forms a lattice</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>We might come up with a mapping z from properties mentioned in the network to logical terms which includes the following assignments ( variables whose names are of no importance in the logical terms are denoted here by the symbol `` _ '' ) : ~ ( animate ) = pr ( q ( an ) , c ( _ ) , no ) • ( case ) = pr ( _ , c ( _ ) , _ ) • ( far ) = pr ( d ( far ) , no , n ( _ , _ ) ) `` r ( gender ) = pr ( p ( 3 ) , c ( _ ) , n ( s , _ ) ) r ( neuter ) = pr ( p ( 3 ) , c ( _ ) , n ( s , n ) ) ~ ( numb ) = pr ( ... . n ( _ , _ ) ) r ( personal ) = pr ( p ( _ ) , c ( _ ) , n ( _ , _ ) ) `` r ( reflexive ) = pr ( _ , c ( refl ) , _ ) r ( singular ) = pr ( _ , _ ) ) • ( third ) = pr ( p ( 3 ) , c ( _ ) , n ( _ , _ ) ) This mapping is not purely random , but has been chosen so that the logical relationship of subsumption is `` echoed '' in the `` degree of instantiation '' of the terms .</sentence>
+				<definiendum id="0">n ( s , _ ) ) r</definiendum>
+				<definiens id="0">includes the following assignments ( variables whose names are of no importance in the logical terms</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>~ ( p~ ) } is not unifiable where ~ is the set of logical axioms derived from the network and II is unification ( greatest lower bound in the GAF lattice ) .</sentence>
+				<definiendum id="0">~</definiendum>
+				<definiendum id="1">II</definiendum>
+				<definiens id="0">the set of logical axioms derived from the network</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( 1 ) Record ( { ( f ) } , ( f ) ) as the value for the leftmost node , where f is the value of A for that node ( 2 ) Until there is no connective all of whose left nodes have translations but none of whose right nodes do , do the following : ( 2.1 ) Select one such connective ( 2.2 ) If the connective is `` l '' and the left hand node has translation ( C , P ) , assign to the ith node ni on the right hand side the translation : ( C U to , } , p , ~ where , for each i , Pi is an extension of P to A ( ni ) , and where Pi is inconsistent with pj if i ~k j. If the connective is `` { `` and the left hand node L has translation ( C , P ) , assign to the ith node on the right hand side the translation : ( c , pi ) where , for each i , Pi is an extension of P beyond A ( L ) and where Pi and pj are independent if i ~ j. If the connective is `` } '' and the two left hand nodes have translations ( C 1 , P1 ) and ( C 2 , P2 ) , assign to the node on the right hand side the translation : ( C 1 U Cz , Pt ) with either i = 1 or i =.2 .</sentence>
+				<definiendum id="0">Record</definiendum>
+				<definiendum id="1">f</definiendum>
+				<definiendum id="2">Pi</definiendum>
+				<definiendum id="3">Pi</definiendum>
+				<definiendum id="4">Pi</definiendum>
+				<definiens id="0">no connective all of whose left nodes have translations but none of whose right nodes do , do the following : ( 2.1 ) Select one such connective ( 2.2 ) If the connective is `` l '' and the left hand node has translation ( C , P ) , assign to the ith node ni on the right hand side the translation : ( C U to , } , p</definiens>
+				<definiens id="1">an extension of P to A ( ni ) , and where</definiens>
+				<definiens id="2">assign to the ith node on the right hand side the translation : ( c , pi ) where</definiens>
+				<definiens id="3">an extension of P beyond A ( L ) and where Pi and pj are independent if i ~ j. If the connective is `` } '' and the two left hand nodes have translations</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Kasper describes a way of mapping a system network and feature choices into a functional description of FUG ( Kay ( 1984 ) ) .</sentence>
+				<definiendum id="0">Kasper</definiendum>
+				<definiendum id="1">FUG</definiendum>
+				<definiens id="0">describes a way of mapping a system network and feature choices into a functional description of</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>An example of such a belief is the following situation : S believes that U believes p. S believes that U believes that S believes that U believes p. .</sentence>
+				<definiendum id="0">S</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>VIE-DPM uses a KL-ONE-like semantic network to represent both generic and individual concepts .</sentence>
+				<definiendum id="0">VIE-DPM</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A stereotype is a cluster of characteristics that tend to be related to each other .</sentence>
+				<definiendum id="0">stereotype</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Recall Sparck Jones 's ( 1984 ) distinction between the agent and patient in an expert system : the agent is the actual individual communicating with the system , while the patient is the object of the expert system 's diagnosis or analysis .</sentence>
+				<definiendum id="0">agent</definiendum>
+				<definiens id="0">the object of the expert system 's diagnosis or analysis</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>GRUNDY uses a numeric weighting method to indicate the degree of belief the system has in each item in the user model .</sentence>
+				<definiendum id="0">GRUNDY</definiendum>
+				<definiens id="0">uses a numeric weighting method to indicate the degree of belief the system has in each item in the user model</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Available to the MACSYMA Advisor is a record of the past interaction of the user with the symbolic mathematics system MACSYMA .</sentence>
+				<definiendum id="0">MACSYMA Advisor</definiendum>
+				<definiens id="0">a record of the past interaction of the user with the symbolic mathematics system MACSYMA</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A general user modeling module is an independent component of a larger system that provides information about the user to other modules , much like a data base or knowledge base .</sentence>
+				<definiendum id="0">general user modeling module</definiendum>
+				<definiens id="0">an independent component of a larger system that provides information about the user to other modules , much like a data base or knowledge base</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Hence in our terminology the system may have agent models for both Sparck-Jones 's `` agent '' and `` patient , '' with the model for the individual SparckJones calls the `` agent '' actually being a user model .</sentence>
+				<definiendum id="0">SparckJones</definiendum>
+				<definiens id="0">calls the `` agent '' actually being a user model</definiens>
+			</definition>
+</paper>
+
+		<paper id="3011">
+			<definition id="0">
+				<sentence>b. an attentional structure , which is a subset of the representations mentioned in ( 1 ) containing the currently focused objects which are ordered in a focus stack ( Cohen , this issue ; Chin , this issue , who requires only that the user must be familiar with these objects ) .</sentence>
+				<definiendum id="0">Chin</definiendum>
+				<definiens id="0">a subset of the representations mentioned in ( 1 ) containing the currently focused objects which are ordered in a focus stack</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>1 MB ( UW ) contains those goals and plans of the user , MB ( SB ) those beliefs of the system , and MB ( SW ) those goals of the system for which the same holds true .</sentence>
+				<definiendum id="0">MB ( UW )</definiendum>
+				<definiendum id="1">MB ( SB</definiendum>
+				<definiendum id="2">MB</definiendum>
+				<definiens id="0">contains those goals and plans of the user</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>MB contains the mutual beliefs ( knowledge ) with respect to the domain , and MW the mutual goals and plans of S and U. The arrows between the partitions denote inheritance relationships .</sentence>
+				<definiendum id="0">MB</definiendum>
+				<definiendum id="1">MW</definiendum>
+				<definiens id="0">contains the mutual beliefs</definiens>
+				<definiens id="1">the mutual goals and plans of S and U. The arrows between the partitions denote inheritance relationships</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The UM part of BGP-MS consists of all partitions except SB and SW , plus all representations in SB ( and probably SW ) in which an individual constant occurs denoting the user ( the rest of SB corresponds to Sparck Jones 's world model ) .</sentence>
+				<definiendum id="0">UM part of BGP-MS</definiendum>
+				<definiens id="0">consists of all partitions except SB and SW , plus all representations in SB ( and probably SW ) in which an individual constant occurs denoting the user ( the rest of SB corresponds to Sparck Jones 's world model</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>This is necessarily so , since , by definition , MB contains all knowledge that is shared by system and user .</sentence>
+				<definiendum id="0">MB</definiendum>
+				<definiens id="0">contains all knowledge that is shared by system and user</definiens>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>In the atomic formula P ( x~ ... .. x , ) , P is a free predicate variable .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">a free predicate variable</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>where , for each k , opk is a recursion scheme with the same domain fit as OP , and is defined as follows by induction on k. First , we stipulate that for each P e fit , the set BOPr ( P ) = BOP ( P ) .</sentence>
+				<definiendum id="0">opk</definiendum>
+				<definiens id="0">a recursion scheme with the same domain fit as OP , and is defined as follows by induction on k. First</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Next , let ~/~/zROP\ ] \ ] p = k- &gt; \ [ `` Jl I~OP\ ] \ ] ( k ) ( P\ [ R ~'O : R ~ fit\ ] ) Computational Linguistics , Volume 14 , Number 4 , December 1988 3 William C. Rounds LFP : A Logic for Linguistic Descriptions and an Analysis of its Complexity where unions are coordinatewise , F ~k ) is the k-th iterate of F , and p\ [ R &lt; -- ~ : R ~ ~\ ] is p with the empty relation assigned to each predicate variable in fit .</sentence>
+				<definiendum id="0">Logic</definiendum>
+				<definiendum id="1">~</definiendum>
+				<definiens id="0">the k-th iterate of F , and p\ [ R &lt; --</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A k-ary relation P on E* is said to be definable in CLFP iff there is a CLFP formula th with no free predicate variables such that ( Ul ... .. /'/k ) E P &lt; : ~ 3a E kt\ [ \ [ th\ ] \ ] : ( a ( x0 ... .. a ( xk ) ) = ( ul ... .. Uk ) , where xl ... .. xk is the list of free variables in ~b arranged in increasing order of subscript .</sentence>
+				<definiendum id="0">xl ... .. xk</definiendum>
+				<definiens id="0">the list of free variables in ~b arranged in increasing order of subscript</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In our application , it will always suffice to cut off the tree at level 2 on , where n is the length of the input string , and c is a positive constant depending only on the description of the machine .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiendum id="1">c</definiendum>
+				<definiens id="0">the length of the input string</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We say that an alternating TM is S ( n ) space bounded iffin the above tree , for any initial configuration labeling the root , no auxiliary tape length ever exceeds S ( n ) where n is the length of the input .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of the input</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>J DTIME ( 2 cs¢m ) c &gt; 0 where DTIME ( T ( n ) ) is the class of languages accepted deterministically by ordinary Turing machines within T ( n ) steps .</sentence>
+				<definiendum id="0">DTIME ( T</definiendum>
+				<definiens id="0">the class of languages accepted deterministically by ordinary Turing machines within T ( n ) steps</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>If ~b is 3x~b , and T is a tape assignment for the free variables of ~b , then we construct M ( ~ , ) using the extended tape assignment which assigns a new tape k + 1 to the variable x , and otherwise is the same as T. Now M is constructed to go through an initial loop of existential states , which fills tape k + l with a string no longer than the maximum length of any string on tapes 1 through k. It then transfers control to the initial state of M ( ~ , ) .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiendum id="1">otherwise</definiendum>
+				<definiens id="0">a tape assignment for the free variables of ~b</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>S ( x ) ~ ' , , 3y ( ( x = ay A ( S ( y ) ) V ( x = by A T ( y ) ) ) V x = a T ( v ) ¢~ 3w ( v = cw A S ( w ) ) .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiens id="0">( y ) ) V ( x = by A T ( y ) ) ) V x = a T ( v ) ¢~ 3w ( v = cw A</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Then dp ( q ) ( x , y ) is the following formula : /~ Vwt\ [ ( x = wtr A y = at ~ r ( xb , t ) A s ( w , o~at ) ) o~ { a , b } A ( x = wtr /~ y = bt ~ p ( w , trbt ) /~ q ( xa , t ) ) \ ] The distinguished element of 2~ is qo , the start state of M. Notice that all predicate variables in R occur positively in ~ , and that the search for w and t is limited to strings no longer than the length of the original input to M. If q is an accepting state of M , then we have a clause in ~ of the form q ( x , y ) &lt; == &gt; TRUE , where TRUE is some tautology .</sentence>
+				<definiendum id="0">TRUE</definiendum>
+				<definiens id="0">the following formula : /~ Vwt\ [ ( x = wtr A y = at ~ r ( xb , t ) A s ( w , o~at ) ) o~ { a</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Consider the CFG S -- - &gt; aSb \ [ bSa\ [ SS \ [ ab \ [ ba Computational Linguistics , Volume 14 , Number 4 , December 1988 7 William C. Rounds LFP : A Logic for Linguistic Descriptions and an Analysis of its Complexity This is represented in ILFP as follows : S ( id ) ¢~ a ( i ) A S ( i + 1 , j 1 ) A bq ) V b ( i ) A S ( i + Ij 1 ) A a ( \ ] ) V 3k &lt; j : S ( i , k ) /~ S ( k + ld ) V J = i + 1 A ( ( a ( i ) A bq ) ) V ( b ( i ) A aq ) ) ( Again , the explicit substitution of terms for variables is not officially allowed but can be introduced by definition. ) The meaning of the above scheme should be clear. The predicate S ( id ) is intended to mean that node S dominates positions i through j in the input. Thus the assertion S ( 0,1ast ) , with no free variables , will be satisfied by a string x iff x is generated by the given CFG. The relation of this descriptive formalism to the CKY algorithm for context-free recognition should also suggest itself. Our definition of the meaning function At\ [ \ [ 4'\ ] \ ] is like that in Section 2 , except that the parameter n is replaced by a string x E X*. Thus The schemes qb k are defined for recursion schemes as above. If 4 ' is a formula of ILFP with no free individual or predicate variables then S\ [ 4'\ ] \ ] px is either A , the set of all individual assignments , or 0 , independent of p , but depending onx. We say thatx ~ 4'iffS~4'~px is all of A. A language L _C X* is ILFP-definable iff for some 4 ' in ILFP , L = { x I x D 4 ' } . Our objective is now Theorem 2. A language is ILFP-definable iff it is in PTIME. The proof appears in the next subsection. The idea of our proof is the same as that for Theorem 1 , and only a sketch of the proof is necessary. We first restate Lemma 2 for ILFP , using the same definition for /3 and % Lemma 4. Let 4 ' be an ILFP formula , with IFIvar ( 4 ' ) \ ] = k , and T : Flvar ( 4 ' ) -- - &gt; { 1 ... .. k } .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">A Logic for Linguistic Descriptions and an Analysis of its Complexity</definiens>
+				<definiens id="1">the explicit substitution of terms for variables is not officially allowed but can be introduced by definition. ) The meaning of the above scheme should be clear. The predicate S ( id ) is intended to mean that node S dominates positions i through j in the input. Thus the assertion S</definiens>
+				<definiens id="2">a formula of ILFP with no free individual or predicate variables then S\ [ 4'\ ] \ ] px is either A , the set of all individual assignments , or 0 , independent of p</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Each work tape , or portion thereof , is thus guaranteed to represent a binary number strictly less than n in value , where n is the length of the input string .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of the input string</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>We define a head grammar as a tuple G = ( N , ~ , ,P , S ) , where N and E are finite nonterminal and terminal alphabets , P is a finite set of productions , and S is the start nonterminal .</sentence>
+				<definiendum id="0">head grammar</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiendum id="2">S</definiendum>
+				<definiens id="0">a finite set of productions</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Thus , if C ~ LL2 ( A , B ) is a production , our scheme would include a clause C ( ij , k , l ) ¢ : ~ ( 3pq ) ( A ( i , p , q + 1 , l ) A B ( p + ld ' , k , q ) ) Similarly , if C -- ~ LCI ( A , B ) were a production , we would have C ( ij , k , l ) ¢~ ( 3pq ) ( A ( ij , k , p ) /~ B ( p + 1 , q , q + 1 , / ) ) Finally , if C -- * ( a , bb ) were a terminating production , we would have C ( ij , k , l ) ¢ : ~ a ( i ) /~ i = j/~ k = i + 1/~ b ( k ) Ab ( k+ l ) Al= k+ 1 The grammar would be defined by the recursion scheme and the assertion 3jS ( 0jj + 1 , last ) , where S is the start symbol of G. It can be seen from this formulation that every head grammar can be written as an ILFP scheme with at most six total variables .</sentence>
+				<definiendum id="0">C ~ LL2 ( A , B )</definiendum>
+				<definiendum id="1">B )</definiendum>
+				<definiendum id="2">k</definiendum>
+				<definiendum id="3">S</definiendum>
+				<definiens id="0">A ( i , p , q + 1 , l ) A B ( p + ld ' , k , q ) ) Similarly , if C -- ~ LCI ( A ,</definiens>
+				<definiens id="1">A ( ij , k , p ) /~ B ( p + 1</definiens>
+				<definiens id="2">a ( i ) /~ i = j/~ k = i + 1/~ b ( k ) Ab ( k+ l</definiens>
+			</definition>
+</paper>
+
+		<paper id="3010">
+			<definition id="0">
+				<sentence>Plan of Speaker : The top level goal is get pole off , which succeeds if the following hierarchy of subgoals succeeds : get po~ off ~_ loosen screw with wrench -~ '' slip in pliers identi~/scr/ew ~ identify wrench know chars , of screw know c'~hars , of wrench Intentional structure of discourse ( as in Grosz and Sidner 1986 ) : Primary Intentions : I1 : intend H ( get pole off ) ; I2 : intend H ( loosen screw with wrench ) I3 : intend H ( identify screw ) Computational Linguistics , Volume 14 , Number 3 , September 1988 89 Robin Cohen On the Relationship Between User Models and Discourse Models Segmentation Structure : ( ( ( 1 2 ( ds3 ) ) 3 4 ( ds2 ) ) 5 6 ( dsl ) ) There are three segments : ds3 with 13 , ds2 with 12 , and dsl with I1 , where 12 DOM 13 and I1 DOM 12 ( i.e. 13 contributes to the satisfaction of 12 , etc. ) There are two main sources of difference between the plan of the speaker and the intentional structure of discourse , illustrated by the above example : ( i ) there may be no direct match from the utterances to the units ( subgoals ) of the plan ; here , there is no utterance corresponding to `` identify wrench '' , on top of utterance 4 , which serves to let the hearer `` know characteristics of the wrench '' ; ( ii ) the intentions recorded for the intentional structure may be at a higher level of detail .</sentence>
+				<definiendum id="0">top level goal</definiendum>
+				<definiens id="0">the Relationship Between User Models and Discourse Models Segmentation Structure : ( ( ( 1 2 ( ds3 )</definiens>
+				<definiens id="1">the satisfaction of 12 , etc. ) There are two main sources of difference between the plan of the speaker and the intentional structure of discourse , illustrated by the above example : ( i ) there may be no direct match from the utterances to the units ( subgoals ) of the plan</definiens>
+			</definition>
+</paper>
+
+		<paper id="3009">
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>Here A denotes an action , which is either a primitive operator whose execution results in a set of state changes , or a plan , which is a sequence of these operators .</sentence>
+				<definiendum id="0">action</definiendum>
+				<definiendum id="1">plan</definiendum>
+				<definiens id="0">either a primitive operator whose execution results in a set of state changes</definiens>
+				<definiens id="1">a sequence of these operators</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Traditional planning systems ( Fikes and Nilsson 1974 , Sacerdoti 1974 ) represent an agent 's planning knowledge as a data base of operators associated with applicability conditions , preconditions , and effects .</sentence>
+				<definiendum id="0">Traditional planning systems</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A belief relation represents an advisor 's belief that an actor maintains that a particular plan applicability condition , precondition , or effect holds .</sentence>
+				<definiendum id="0">belief relation</definiendum>
+				<definiens id="0">an advisor 's belief that an actor maintains that a particular plan applicability condition , precondition , or effect holds</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The second type of advisor knowledge is a set of rules that help infer negated domain-specific beliefs , such as a belief that a particular action does not result in a particular state , or that a given plan is not useful for a particular goal .</sentence>
+				<definiendum id="0">advisor knowledge</definiendum>
+				<definiens id="0">a set of rules that help infer negated domain-specific beliefs</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A potential explanation is an abstract pattern of planning relationships .</sentence>
+				<definiendum id="0">potential explanation</definiendum>
+				<definiens id="0">an abstract pattern of planning relationships</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>ROMPER ( McCoy 1985 , and this issue ) corrects user misconceptions dealing with whether an object is an instance of a particular class of objects or possesses a particular property .</sentence>
+				<definiendum id="0">ROMPER</definiendum>
+				<definiens id="0">an instance of a particular class of objects or possesses a particular property</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>ROMPER classifies a user 's misconception as either a misclassification or misattribution and then selects one of several strategies associated with each class of misconception to generate a response .</sentence>
+				<definiendum id="0">ROMPER</definiendum>
+				<definiens id="0">classifies a user 's misconception as either a misclassification or misattribution and then selects one of several strategies associated with each class of misconception to generate a response</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Finally , AQUA assumes the existence of a taxonomy of planning failures .</sentence>
+				<definiendum id="0">AQUA</definiendum>
+				<definiens id="0">assumes the existence of a taxonomy of planning failures</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>An example of a complex feature specification , with a category as the value , would be ( AGREEMENT , { ( SINGULAR , + ) , ( GENDER , FEM ) , ( PERSON , 3 ) } ) ; intuitively , it might be used to convey that the value of the AGREEMENT feature is a category representing the combination of singular number , feminine gender , and third person .</sentence>
+				<definiendum id="0">GENDER</definiendum>
+				<definiens id="0">a category representing the combination of singular number , feminine gender</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Hence a category can be modeled as a partial function C : F -- &gt; V , where F is a set of features and V is the set of values .</sentence>
+				<definiendum id="0">F</definiendum>
+				<definiendum id="1">V</definiendum>
+				<definiens id="0">a partial function C : F -- &gt; V , where</definiens>
+				<definiens id="1">a set of features</definiens>
+				<definiens id="2">the set of values</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Instead , given our comparative and metatheoretical goals , it turns out to be more convenient to define a category system as a pair ( ~ , C &gt; where ~ is a category structure , which defines a set of potential categories ( see section 8 ) , and C is a set of constraints expressed in L c , a language for which the category structure defines the models ( see section 9 ) .</sentence>
+				<definiendum id="0">C</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>We will write A B for the set of total functions from B into A , A ( m for the set of partial functions from B into A , @ ( A ) for the power set of A , IAI for the cardinality of A , and Aft ) for the domain of a ( partial ) function f ( iff is a partial function than A ( f ) is the set of items to which f assigns a value ) .</sentence>
+				<definiendum id="0">IAI</definiendum>
+				<definiendum id="1">iff</definiendum>
+				<definiens id="0">write A B for the set of total functions from B into A , A ( m for the set of partial functions from B into A</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A category structure E is a quadruple ( F , A , r , p ) where F is a finite set of features , A is a finite set of atoms , r is a function in 2 F , and p is a function from { flW .</sentence>
+				<definiendum id="0">r</definiendum>
+				<definiendum id="1">p</definiendum>
+				<definiens id="0">a quadruple ( F , A , r , p ) where F is a finite set of features</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>c. K is the set of all categories at all levels n - &gt; 0 .</sentence>
+				<definiendum id="0">c. K</definiendum>
+				<definiens id="0">the set of all categories at all levels n - &gt; 0</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>It should be noted that our goals in formulating L c are slightly different from those of Rounds and his associates : Lc is a language for formulating constraints on well-formed categories , not a language whose expressions are intended for use in place of categories .</sentence>
+				<definiendum id="0">Lc</definiendum>
+				<definiens id="0">a language for formulating constraints on well-formed categories , not a language whose expressions are intended for use in place of categories</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Assume thatfis an element of F 1 , and 05 and are themselves well-formed basic or complex constraints , and that we are considering the interpretation of the constraints with respect to some fixed category structure Y and some category a. ( 5 ) c. 32 05 'f is defined in a and its value satisfies 05 ' d. -7 05 'a does not satisfy 05 ' e. 05 V ~O 'a satisfies either 05 or ~O ' f. 05 A @ 'a satisfies both 05 and ~0 ' g. 05 -- &gt; ~0 'either a does not satisfy 05 or a does satisfy ~0 ' h. 05 ~ ~0 'a satisfies either both or neither of 05 and i. D05 'a satisfies 05 , and all values of type 1 features in a satisfy 1~05 ' j. © 05 'either a satisfies 05 or some value of a type 1 feature in a satisfies O 05 ' Constraints of the forms ( 5a ) through ( 5h ) are fairly straightforward , but constraints like those shown in ( 5i ) and ( 5j ) need a little more discussion .</sentence>
+				<definiendum id="0">~O</definiendum>
+				<definiens id="0">does not satisfy 05 ' e. 05 V ~O 'a satisfies either 05 or</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>To recapitulate , a theory of categories ® in our sense is a pair ( E , C ) , where I£ is a category structure and C is a set of sentences of Lo The set of categories determined by ® is the maximal subset Kc of K determined by E such that each member of K c satisfies every member of C. We will now illustrate the application of the apparatus developed thus far by reconstructing the category systems used in a number of well-known grammatical frameworks that linguists have developed , most of them frameworks that have been used in natural language processing systems at one time or another .</sentence>
+				<definiendum id="0">I£</definiendum>
+				<definiendum id="1">C</definiendum>
+				<definiens id="0">a set of sentences of Lo The set of categories determined by ® is the maximal subset Kc of K determined by E such that each member of K c satisfies every member of C. We will now illustrate the application of the apparatus developed thus far by reconstructing the category systems used in a number of well-known grammatical frameworks that linguists have developed , most of them frameworks that have been used in natural language processing systems at one time or another</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>So we fix values for F , A , z , and p as in ( 7 ) : ( 7 ) a. F = { LABEL } b. A = { a 1 ... .. a , } c. ~'o d. p = { &lt; LABEL , A ) } Thus , for example , we might have A = { S , NP , VP , Det , N , V } , and thus have /~LABEL ) as the same set. In addition , we need the following constraint , to make sure that every category does indeed have a specification for the solitary type 0 feature LABEL , i.e. , to exclude the empty set from counting as a category : ( 8 ) LABEL Obviously , we can now show that the category inventory for any simple phrase structure grammar is representable. We let 0 be the bijection defined by 0 ( a/ ) = { ( LABEL , ai ) } , and the result is immediate. Thus there is a bijection from the set of simple phrase structure grammar categories to the categories admitted by the category structure ( 7 ) under the constraint ( 8 ) . As is evident , the set of categories induced is finite , and of cardinality n = IAI. It may be that there are more published syntactic analyses of languages in the framework of tagmemics than in any other theoretical framework ever developed. Since the early 1960s , those who have followed the work of Kenneth Pike , including a very large number of field linguists working for the Summer Institute of Linguistics , have produced analyses of hundreds of languages , mostly non-Indo-European. Moreover , Postal ( 1964 , p. 33 ) remarks that `` these languages are , for the most part , exotic enough so that the tagmemic descriptions of them may very well be the only ones done. '' Tagmemics describes syntactic structure in terms of TAGMEMES , which are notated in the form A : b , where A is said to represent a SLOT and b a FILLER. For example , Elson and Pickett ( 1962 ) represent ( part of ) the structure of English prepositional phrases and intransitive clauses with tagmemic formulm ( i.e. , rules ) similar to the following ( we simplify very slightly ) : ( 9 ) a. LraPhr-+R : prep +A : mNc b. mNc -+Lim : ar -- M : aj +H : nc c. iCl = +S : mNc +iP : v 3 The informal explication of these is : ( 9a ) one type of location relater-axis phrase consists of an obligatory relater slot filled by a preposition followed by an obligatory axis slot filled by a modified count noun phrase ; ( 9b ) one type of modified count noun phrase consists of an obligatory limiter slot filled by an article followed by an optional modifier slot filled by an adjective followed by an obligatory head slot filled by a count noun ; ( 9c ) one type of intransitive clause consists of an obligatory subject slot filled by a modified common noun phrase followed by an obligatory intransitive predicate slot filled by a verb of class 3. Thus the left hand side of a formula ( before the equality sign ) consists of an atomic label , and the right hand side is a string of tagmemes , which are ordered triples ( a , b , c ) where a is an indication of optional ( -+ ) or obligatory ( + ) status , b is a slot or function name , and c is a filler or category label. Computational Linguistics , Volume 14 , Number 1 , Winter 1988 5 Gerald Gazdar et al. Category Structures One way of representing tagmemes in our terms is to employ a type 0 feature bearing the slot name , taking as value an atomic label identifying the filler. Thus we set up correspondences like the following : ( 10 ) a. R : prep { ( R , prep ) } b. A : mNc { ( A , mNc ) } c. Lim : ar { ( him , ar ) } d. M : aj { ( M , aj ) } e. H : nc { ( H , nc ) } f. S : mNc { ( s , mNc ) } g. P : v 3 { ( P , v3 ) } Left hand sides of formulae can be seen as implicit schematizations over slot names. For example , ( 9b ) says that for any slot name o- , a constituent labelled { ( o- , mNc ) } may have the immediate constituent analysis seen on the right hand side of the equation. A category structure representing a set of categories including all those seen in the above illustrative examples is given in ( 11 ) . ( II ) a. F = { R , A , LIM , M , H , S , P } b. A = { LraPhr , prep , mNc , ar , aj , nc , vl , v2 , v3 } c . `` r 0 d. p = { ( R , { prep } ) , ( A , { mNc } ) , ( LIM , { ar } ) , ( m , { aj } ) , ( H , { nc } ) , ( s , { mNc } ) , ( p , { Vl , V2 , V3 } ) } This artificially tiny fragment does not show much of the structure that would be revealed in a larger fragment , with more word classes and phrases types , but it will suffice to show how we could set up a category structure that provided isomorphic correspondents to the categories employed in a tagmemic description. Moreover , there is an unclarity about whether there is more to a tagmemic formula than has been illustrated here ; as discussed by Postal ( 1964 ) , there are some remarks about the treatment of agreement in Elson and Pickett ( 1962 ) that imply either finite schematization or additional representational devices of an unclarified sort. We will not explore this topic here. Postal ( 1964 ) is probably right in saying that tagmemics appears to be only notationally distinct from context-free phrase structure grammar. Longacre ( 1965 ) claims that `` \ [ b\ ] y bringing together function and set in the tagmeme '' tagmemics ensures that `` function is at once kept in focus and made amenable to formal analysis. '' Under our reconstruction , `` functions '' like `` subject '' or '' modifier '' are `` made amenable to formal analysis '' simply by incorporating them into the feature structure of categories , making it clear that little was at stake in the debate between Postal and Longacre over the content of tagmemics. It is clear that the number of categories defined by a category structure for tagmemics will be bounded from above by IFI • IAI , and thus finite. The question of whether tagmemics reduces to context-free grammar therefore turns on whether tagmemic formulae can in all cases be reduced to contextfree rules. This seems likely , but such issues are not the focus of our attention in this paper. GRAMMAR Harman ( 1963 ) presents a proposal that involves augmenting the ordinary category inventory ( S , NP , VP , etc. ) of simple phrase structure grammar by attaching `` an unordered sequence of zero or more ( up to N for some finite N ) subscripts '' to a category. Abbreviatory conventions are then used to manage large sets of rules over the resultant vocabulary. Note that the indices stand for the members of a set rather than a sequence , and that there is only a finite number of them. To formalize Harman 's proposal in the present framework , we again use LABEL as the feature that identifies major syntactic categories in the traditional sense , and we set up a finite number of type 0 features ~'1 ... .. ~ ' , to correspond to the presence ( value 1 ) or absence ( value 0 ) of each of the n different subscripts. The set of feature specifications for these features reconstructs the characteristic function of the set of indices. The category structure is as follows : ( 12 ) a. F = { LABEL , F 1 ... .. Fn } b. A = { al ... .. a , , } tA 2 c. `` r 0 d. p = { ( LABEL , { a 1 ... .. am } ) , ( FI , 2 ) ... .. ( Fn , 2 ) } We now have to guarantee that every category has a value for LABEL and a value for each , . in F. We therefore impose the following constraint : ( 13 ) LABEL /~ F I /~ . . . /~ F n The resultant specification induces a finite set of categories , of cardinality m • 2 n. Harman 's system is more than just a historical curiosity. More recent works are found that use almost exactly the same sort of syntactic categories. For example , the use made of syntactic features in one influential variety of augmented phrase structure grammar , the Prolog-based definite clause grammar ( DCG ) formalism of Pereira and Warren ( 1980 ) closely resembles that of Harman. However , it is clear that the full power of the DCG formalism can , in principle , be used to exploit features with structured values and valuesharing ( see section 6 on the latter ) . Relational grammar ( RG ) Perlmutter and Postal ( 1977 ) and arc pair grammar ( APG ) Johnson and Postal ( 1980 ) , ( henceforth J &amp; P ) appear to make relatively little use of grammatical category information , expressing most grammatical rules as conditions on arcs representing grammatical relations between nodes ( in RG ) or as conditions on relations between such arcs ( in APG ) rather than on the labeling of nodes. Nonetheless , J &amp; P make clear that nodes are assigned grammatical category labels in APG , and since APG is essentially a formalized elaboration of RG ideas , we will assume that much the same is true in RG , though the RG literature so far has not made such aspects of the approach Gerald Gazdar et ai. Category Structures explicit. Syntactic category labels are not entirely without utility in RG and APG , since , for example , agreement rules crucially make reference to categorial properties like number , gender , and person , and the proper formulation of agreement rules has been a topic of some interest in RG and APG research. As defined in J &amp; P , an arc is an ordered pair ( R ( ( a , b ) ) , c I ... CA ) where R ( ( a , b ) ) indicates that b ( the second or head node ) bears the grammatical relation named by the `` relational sign '' R to a ( the first or tail node ) , and cl through ck are the representational strata Ladusaw ( 1985 ) at which this holds. In APG , categories are assigned to nodes by means of arcs in which the relational sign is L ; such arcs are referred to as L arcs. The head of an L arc is simply an atomic label from a set of `` grammatical category nodes '' ( called GNo by J &amp; P ) that is given by listing. Two types of grammatical category are recognized in APG : Major categories such as CI ( clause ) , Nom ( nominal ) , and V ( verb ) , and minor categories such as Feminine , Singular , Third-Person , etc. A general constraint ( Pair Network Law 31 , the Major Category Exclusiveness Law ) prevents a node from being the tail of two distinct arcs with heads in the set Major ( J &amp; P , 202 ) , i.e. , the set of grammatical category nodes that represent major categories. We can obtain the effect of this law simply by assuming a type 0 feature LABEL which takes values in the set of Major categories. In the case of minor categories , APG permits multiple atomic elements from GNo to be attached by L arcs to a single tail node ( J &amp; P ) . Thus a node might be the tail of L arcs whose head nodes are the atoms Nom , Feminine , Singular , and Third-Person , representing a third person singular feminine noun or noun phrase. It is easy to represent such sets of labels attached to a single node using type 0 features. We can represent the set of elements of GNo assigned to a given tail node by including a category corresponding to the characteristic function of that set , as with the indices in Harman 's system. So we fix values for F , A , T , and p as shown in ( 14 ) : ( 14 ) a. F = { LABEL , F I ... .. Fn } b. A = { al ... .. am } U 2 c. ~'o d. p = { ( LABEL , { a I ... .. am } ) , ( F1 , 2 ) ... .. ( Fn , 2 ) } Here Major = { ? l ... .. ? n } , and GNo = { ? 1 ... .. ~ , } U { a I ... .. am } . The constraint needed is the following : ( 15 ) ~'IA ... AF. This has the effect of requiring every category to include the characteristic function of a set ( of minor categories , in the APG sense ) . However , we do not need to guarantee that every category has a specification for LABEL , as J &amp; P specifically leaves it open whether there are nonterminal nodes with no associated grammatical categories ; the absence of any grammatical category node will be reconstructed in our terms as that function ~ '' that is undefined for LABEL and which assigns 0 to each ~'i E F. It can be shown that the category system just defined adequately represents category labelling in APG , in the sense that there exists a bijection 0 between ( a ) nonterminal nodes together with their grammatical category L arcs in an admissible APG syntactic representation and ( b ) admissible categories induced by the category structure in ( 14 ) and the constraint in ( 15 ) . From an arbitrary well-formed APG pair network we can extract the set X of arcs it contains ( J &amp; P ) , and the set N of nodes associated with X. Since we are not concerned with coordinates , we can discard the coordinate sequences and consider just the incomplete arcs to which the arcs in X correspond. By Theorem I ( J &amp; P ) , all and only the terminal nodes in N are heads of L arcs. Extracting just the arcs with terminal nodes as heads gives us the set of L arcs from X ; and discarding those with heads not in GNo gives us just the L arcs with grammatical category labels as their heads. The members of this set can be partitioned into equivalence classes having the same tail node ( since by definition no arc has more than one tail ) . For convenience of reference we can call these equivalence classes categorylabelled nodes. Theorem. There is a bijection from APG categorylabelled nodes to categories admitted by ( 14 ) and ( 15 ) . Proof. Consider an arbitrary category-labelled node K with tail n. By PN Law 31 , the Major Category Exclusiveness Law , exactly one arc in K has a head which is in Major. Let 01 be the bijection established by 01 ( L ( n , a ) ) = t~ , and let 02 be the bijection established by 0 ( a ) = ( LABEL , O~ ) iff a E Major and ( a , 1 ) otherwise. The category corresponding to K will be the smallest set that contains 0102 ( A ) for all arcs A in K and contains ( Fi , 0 ) for all vi in F that are not in the range of 01. Since 01 and 02 are bijections , their product 0102 is a bijection. The correspondence in the opposite direction is obvious. A node that is the tail of no L arcs will be mapped by 0102 to ~ , and other nodes will be mapped onto categories in which the values of the features record the details of the category-labelling L arcs in r together with ( redundantly ) information about which one is the major category , the mapping yielding a unique result in each case.ll The set of APG ( and , we assume , RG ) categories induced is finite , and ceteris paribus is of cardinality m • 2 '' ; it will be much smaller once further conditions on coocurrence of minor categories are imposed ( Masculine and Feminine presumably can not both be mapped to 1 in a category , for example ) . It is of interest that despite the utterly different grammatical formalism and theoretical background associated with it , the APG notion of syntactic category can be seen to be almost identical to that of Harman 's augmented phrase strucComputational Linguistics , Volume 14 , Number I , Winter 1988 7 Gerald Gazdar et al. Category Structures ture grammar , nodes without LABEL values contributing the only relevant difference. GOVERNMENT-BINDING In the great majority of contemporary works in transformational grammar ( TG ) , including those representing what is known as `` government-binding '' ( GB ) Chomsky ( 1981 ) , the conception of grammatical categories follows what is called `` the X-bar convention '' Jackendoff ( 1974 ) Hornstein ( 1977 ) or `` X-bar syntax '' . `` X-bar '' is often notated X or X ' , or as X 1 , X 2 , etc. , the superscript numeral denoting the number of bars or bar level. ) The central idea of X-bar syntax is that phrasal categories are `` projected '' from lexical categories. Given a lexical category X , the related phrasal nodes are assumed to be X ( = X ' = X1 ) , X ( = X '' = X2 ) , and so on. Representing phrasal categories as founded on lexical categories in this way amounts to treating categories as non-atomic , the distinction between lexical categories and the various levels of phrasal category being tantamount to a feature specification distinction. Bar level is not treated in terms of features in most works using X-bar notation , probably because of the tradition in TG ( and related work in segmental phonology ) restricting features to the values { - , + } . Thus Bresnan ( 1975 ) treats categories as ordered pairs ( i , M ) where i is a natural number representing the bar level and M is a matrix of feature specifications , and the same formalization is used by Lasnik and Kupin ( 1977 ) . Here we simply integrate bar level information with the rest of the feature system. Although the origins of the X-bar proposal ( Harris 1951 ) do not take such a feature analysis of categories any further , but treat lexical categories as atomic , it is always assumed in current instantiations of X-bar syntax that lexical categories themselves have a feature analysis. In much TG , it is presupposed that the lexical categories N , A , V , and P are to be analyzed in terms of two binary features N and v. 1 Lasnik and Kupin ( 1977 ) is a fairly explicit formulation of this type of category system. They assume a maximum bar level of three. To characterize their system of categories , we fix our values for F , A , ~- , and p as in ( 16 ) , and impose the constraint in ( 17 ) . ( 16 ) a. F = { N , V , BAR } b. a = { 0 , 1,2,3 } C. ~o d. p = { iN , 2 ) , ( V , 2 &gt; , ( BAR , a ) } ( 17 ) N/ % v/ % BAR This yields a system of 16 categories , four at each bar level .</sentence>
+				<definiendum id="0">c</definiendum>
+				<definiendum id="1">Singular , Third-Person , etc. A general constraint ( Pair Network Law 31 , the Major Category Exclusiveness Law )</definiendum>
+				<definiendum id="2">constraint needed</definiendum>
+				<definiendum id="3">M</definiendum>
+				<definiens id="0">values for F , A , z , and p as in ( 7 ) : ( 7 ) a. F = { LABEL } b. A = { a 1 ... .. a , } c. ~'o d. p = { &lt; LABEL , A ) } Thus , for example , we might have A = { S , NP , VP , Det , N , V } , and thus have /~LABEL ) as the same set. In addition , we need the following constraint , to make sure that every category does indeed have a specification for the solitary type 0 feature LABEL , i.e. , to exclude the empty set from counting as a category : ( 8 ) LABEL Obviously , we can now show that the category inventory for any simple phrase structure grammar is representable. We let 0 be the bijection defined by 0 ( a/ ) = { ( LABEL , ai ) } , and the result is immediate. Thus there is a bijection from the set of simple phrase structure grammar categories to the categories admitted by the category structure ( 7 ) under the constraint ( 8 ) . As is evident , the set of categories induced is finite , and of cardinality n = IAI. It may be that there are more published syntactic analyses of languages in the framework of tagmemics than in any other theoretical framework ever developed. Since the early 1960s , those who have followed the work of Kenneth Pike , including a very large number of field linguists working for the Summer Institute of Linguistics , have produced analyses of hundreds of languages , mostly non-Indo-European. Moreover , Postal ( 1964 , p. 33 ) remarks that `` these languages are , for the most part , exotic enough so that the tagmemic descriptions of them may very well be the only ones done. '' Tagmemics describes syntactic structure in terms of TAGMEMES , which are notated in the form A : b , where A is said to represent a SLOT and b a FILLER. For example , Elson and Pickett ( 1962 ) represent ( part of ) the structure of English prepositional phrases and intransitive clauses with tagmemic formulm ( i.e. , rules ) similar to the following ( we simplify very slightly ) : ( 9 ) a. LraPhr-+R : prep +A : mNc b. mNc -+Lim : ar -- M : aj +H : nc c. iCl = +S : mNc +iP : v 3 The informal explication of these is : ( 9a ) one type of location relater-axis phrase consists of an obligatory relater slot filled by a preposition followed by an obligatory axis slot filled by a modified count noun phrase ; ( 9b ) one type of modified count noun phrase consists of an obligatory limiter slot filled by an article followed by an optional modifier slot filled by an adjective followed by an obligatory head slot filled by a count noun ; ( 9c ) one type of intransitive clause consists of an obligatory subject slot filled by a modified common noun phrase followed by an obligatory intransitive predicate slot filled by a verb of class 3. Thus the left hand side of a formula ( before the equality sign ) consists of an atomic label , and the right hand side is a string of tagmemes , which are ordered triples ( a , b , c ) where a is an indication of optional ( -+ ) or obligatory ( + ) status , b is a slot or function name , and</definiens>
+				<definiens id="1">a filler or category label. Computational Linguistics , Volume 14 , Number 1 , Winter 1988 5 Gerald Gazdar et al. Category Structures One way of representing tagmemes in our terms is to employ a type 0 feature bearing the slot name , taking as value an atomic label identifying the filler. Thus we set up correspondences like the following : ( 10 ) a. R : prep { ( R , prep ) } b. A : mNc { ( A , mNc ) } c. Lim : ar { ( him , ar ) } d. M : aj { ( M , aj ) } e. H : nc { ( H , nc ) } f. S : mNc { ( s , mNc ) } g. P : v 3 { ( P , v3 ) } Left hand sides of formulae can be seen as implicit schematizations over slot names. For example , ( 9b ) says that for any slot name o- , a constituent labelled { ( o- , mNc ) } may have the immediate constituent analysis seen on the right hand side of the equation. A category structure representing a set of categories including all those seen in the above illustrative examples is given in ( 11 ) . ( II ) a. F = { R , A , LIM , M , H , S , P } b. A = { LraPhr , prep , mNc , ar , aj , nc , vl , v2 , v3 } c . `` r 0 d. p = { ( R , { prep } ) , ( A , { mNc } ) , ( LIM , { ar } ) , ( m , { aj } ) , ( H , { nc } ) , ( s , { mNc } ) , ( p , { Vl , V2 , V3 } ) } This artificially tiny fragment does not show much of the structure that would be revealed in a larger fragment , with more word classes and phrases types , but it will suffice to show how we could set up a category structure that provided isomorphic correspondents to the categories employed in a tagmemic description. Moreover , there is an unclarity about whether there is more to a tagmemic formula than has been illustrated here ; as discussed by Postal ( 1964 ) , there are some remarks about the treatment of agreement in Elson and Pickett ( 1962 ) that imply either finite schematization or additional representational devices of an unclarified sort. We will not explore this topic here. Postal ( 1964 ) is probably right in saying that tagmemics appears to be only notationally distinct from context-free phrase structure grammar. Longacre ( 1965 ) claims that `` \ [ b\ ] y bringing together function and set in the tagmeme '' tagmemics ensures that `` function is at once kept in focus and made amenable to formal analysis. '' Under our reconstruction , `` functions '' like `` subject '' or '' modifier '' are `` made amenable to formal analysis '' simply by incorporating them into the feature structure of categories , making it clear that little was at stake in the debate between Postal and Longacre over the content of tagmemics. It is clear that the number of categories defined by a category structure for tagmemics will be bounded from above by IFI • IAI , and thus finite. The question of whether tagmemics reduces to context-free grammar therefore turns on whether tagmemic formulae can in all cases be reduced to contextfree rules. This seems likely , but such issues are not the focus of our attention in this paper. GRAMMAR Harman ( 1963 ) presents a proposal that involves augmenting the ordinary category inventory ( S , NP , VP , etc. ) of simple phrase structure grammar by attaching `` an unordered sequence of zero or more ( up to N for some finite N ) subscripts '' to a category. Abbreviatory conventions are then used to manage large sets of rules over the resultant vocabulary. Note that the indices stand for the members of a set rather than a sequence , and that there is only a finite number of them. To formalize Harman 's proposal in the present framework , we again use LABEL as the feature that identifies major syntactic categories in the traditional sense , and we set up a finite number of type 0 features ~'1 ... .. ~ ' , to correspond to the presence ( value 1 ) or absence ( value 0 ) of each of the n different subscripts. The set of feature specifications for these features reconstructs the characteristic function of the set of indices. The category structure is as follows : ( 12 ) a. F = { LABEL , F 1 ... .. Fn } b. A = { al ... .. a , , } tA 2 c. `` r 0 d. p = { ( LABEL , { a 1 ... .. am } ) , ( FI , 2 ) ... .. ( Fn , 2 ) } We now have to guarantee that every category has a value for LABEL and a value for each , . in F. We therefore impose the following constraint : ( 13 ) LABEL /~ F I /~ . . . /~ F n The resultant specification induces a finite set of categories , of cardinality m • 2 n. Harman 's system is more than just a historical curiosity. More recent works are found that use almost exactly the same sort of syntactic categories. For example , the use made of syntactic features in one influential variety of augmented phrase structure grammar , the Prolog-based definite clause grammar ( DCG ) formalism of Pereira and Warren ( 1980 ) closely resembles that of Harman. However , it is clear that the full power of the DCG formalism can , in principle , be used to exploit features with structured values and valuesharing ( see section 6 on the latter ) . Relational grammar ( RG ) Perlmutter and Postal ( 1977 ) and arc pair grammar ( APG ) Johnson and Postal ( 1980 ) , ( henceforth J &amp; P ) appear to make relatively little use of grammatical category information , expressing most grammatical rules as conditions on arcs representing grammatical relations between nodes ( in RG ) or as conditions on relations between such arcs ( in APG ) rather than on the labeling of nodes. Nonetheless , J &amp; P make clear that nodes are assigned grammatical category labels in APG , and since APG is essentially a formalized elaboration of RG ideas , we will assume that much the same is true in RG , though the RG literature so far has not made such aspects of the approach Gerald Gazdar et ai. Category Structures explicit. Syntactic category labels are not entirely without utility in RG and APG , since , for example , agreement rules crucially make reference to categorial properties like number , gender , and person , and the proper formulation of agreement rules has been a topic of some interest in RG and APG research. As defined in J &amp; P , an arc is an ordered pair ( R ( ( a , b ) ) , c I ... CA ) where R ( ( a , b ) ) indicates that b ( the second or head node ) bears the grammatical relation named by the `` relational sign '' R to a ( the first or tail node ) , and cl through ck are the representational strata Ladusaw ( 1985 ) at which this holds. In APG , categories are assigned to nodes by means of arcs in which the relational sign is L ; such arcs are referred to as L arcs. The head of an L arc is simply an atomic label from a set of `` grammatical category nodes '' ( called GNo by J &amp; P ) that is given by listing. Two types of grammatical category are recognized in APG : Major categories such as CI ( clause ) , Nom ( nominal ) , and V ( verb ) , and minor categories such as Feminine ,</definiens>
+				<definiens id="2">prevents a node from being the tail of two distinct arcs with heads in the set Major ( J &amp; P , 202 ) , i.e. , the set of grammatical category nodes that represent major categories. We can obtain the effect of this law simply by assuming a type 0 feature LABEL which takes values in the set of Major categories. In the case of minor categories , APG permits multiple atomic elements from GNo to be attached by L arcs to a single tail node ( J &amp; P ) . Thus a node might be the tail of L arcs whose head nodes are the atoms Nom , Feminine , Singular , and Third-Person , representing a third person singular feminine noun or noun phrase. It is easy to represent such sets of labels attached to a single node using type 0 features. We can represent the set of elements of GNo assigned to a given tail node by including a category corresponding to the characteristic function of that set , as with the indices in Harman 's system. So we fix values for F , A , T , and p as shown in ( 14 ) : ( 14 ) a. F = { LABEL , F I ... .. Fn } b. A = { al ... .. am } U 2 c. ~'o d. p = { ( LABEL , { a I ... .. am } ) , ( F1 , 2 ) ... .. ( Fn , 2 ) } Here Major = { ? l ... .. ? n } , and GNo = { ? 1 ... .. ~ , } U { a I ... .. am }</definiens>
+				<definiens id="3">the following : ( 15 ) ~'IA ... AF. This has the effect of requiring every category to include the characteristic function of a set ( of minor categories , in the APG sense ) . However , we do not need to guarantee that every category has a specification for LABEL , as J &amp; P specifically leaves it open whether there are nonterminal nodes with no associated grammatical categories ; the absence of any grammatical category node will be reconstructed in our terms as that function ~ '' that is undefined for LABEL and which assigns 0 to each ~'i E F. It can be shown that the category system just defined adequately represents category labelling in APG , in the sense that there exists a bijection 0 between ( a ) nonterminal nodes together with their grammatical category L arcs in an admissible APG syntactic representation and ( b ) admissible categories induced by the category structure in ( 14 ) and the constraint in ( 15 ) . From an arbitrary well-formed APG pair network we can extract the set X of arcs it contains ( J &amp; P ) , and the set N of nodes associated with X. Since we are not concerned with coordinates , we can discard the coordinate sequences and consider just the incomplete arcs to which the arcs in X correspond. By Theorem I ( J &amp; P ) , all and only the terminal nodes in N are heads of L arcs. Extracting just the arcs with terminal nodes as heads gives us the set of L arcs from X ; and discarding those with heads not in GNo gives us just the L arcs with grammatical category labels as their heads. The members of this set can be partitioned into equivalence classes having the same tail node ( since by definition no arc has more than one tail ) . For convenience of reference we can call these equivalence classes categorylabelled nodes. Theorem. There is a bijection from APG categorylabelled nodes to categories admitted by ( 14 ) and ( 15 ) . Proof. Consider an arbitrary category-labelled node K with tail n. By PN Law 31 , the Major Category Exclusiveness Law , exactly one arc in K has a head which is in Major. Let 01 be the bijection established by 01 ( L ( n , a ) ) = t~ , and let 02 be the bijection established by 0 ( a ) = ( LABEL , O~ ) iff a E Major and ( a , 1 ) otherwise. The category corresponding to K will be the smallest set that contains 0102 ( A ) for all arcs A in K and contains ( Fi , 0 ) for all vi in F that are not in the range of 01. Since 01 and 02 are bijections , their product 0102 is a bijection. The correspondence in the opposite direction is obvious. A node that is the tail of no L arcs will be mapped by 0102 to ~ , and other nodes will be mapped onto categories in which the values of the features record the details of the category-labelling L arcs in r together with ( redundantly ) information about which one is the major category , the mapping yielding a unique result in each case.ll The set of APG ( and , we assume , RG ) categories induced is finite , and ceteris paribus is of cardinality m • 2 '' ; it will be much smaller once further conditions on coocurrence of minor categories are imposed ( Masculine and Feminine presumably can not both be mapped to 1 in a category , for example ) . It is of interest that despite the utterly different grammatical formalism and theoretical background associated with it , the APG notion of syntactic category can be seen to be almost identical to that of Harman 's augmented phrase strucComputational Linguistics , Volume 14 , Number I , Winter 1988 7 Gerald Gazdar et al. Category Structures ture grammar , nodes without LABEL values contributing the only relevant difference. GOVERNMENT-BINDING In the great majority of contemporary works in transformational grammar ( TG ) , including those representing what is known as `` government-binding '' ( GB ) Chomsky ( 1981 ) , the conception of grammatical categories follows what is called `` the X-bar convention '' Jackendoff ( 1974 ) Hornstein ( 1977 ) or `` X-bar syntax '' . `` X-bar '' is often notated X or X ' , or as X 1 , X 2 , etc. , the superscript numeral denoting the number of bars or bar level. ) The central idea of X-bar syntax is that phrasal categories are `` projected '' from lexical categories. Given a lexical category X , the related phrasal nodes are assumed to be X ( = X ' = X1 ) , X ( = X '' = X2 ) , and so on. Representing phrasal categories as founded on lexical categories in this way amounts to treating categories as non-atomic , the distinction between lexical categories and the various levels of phrasal category being tantamount to a feature specification distinction. Bar level is not treated in terms of features in most works using X-bar notation , probably because of the tradition in TG ( and related work in segmental phonology ) restricting features to the values { - , + } . Thus Bresnan ( 1975 ) treats categories as ordered pairs ( i , M ) where i is a natural number representing the bar level and</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>To define Jackendoff 's system of categories , we fix our values for F , A , ~ ' , and p in the manner shown below : ( 18 ) a. F = { SUBJ , C0MP , DET , 0BJ , BAR } b. a = { 0 , 1,2,3 } C. 7 0 d. p = { ( SUBJ , 2 ) , ( C0MP , 2 ) , ( DET , 2 ) , ( 0BJ , 2 ) , &lt; BAR , A ) } To get the exact set of permissible categories , we need to make sure that SUBJ , 0BJ , COMP , and BAR are defined in all categories , and that DET is only specified in \ [ -C0MP\ ] , \ [ -0BJ\ ] categories. The following set of L c constraints will achieve this. ( 19 ) a. SUBJ A OSJ A COMP / % , BAR b. DET -- ) ( ( COMP:0 ) /~ ( 0BJ:0 ) ) We can now obtain a bijection between Jackendoff 's X-bar categories and the admissible categories induced by F , A , and the constraints listed in ( 19 ) . We define a mapping 0 between the Jackendoff 's own category abbreviations and the admissible categories with respect to ( 19a ) and ( 19b ) , as follows ( we schematize by writing X with n bars as X n , 0 &lt; -n &lt; 3 ) : ( 20 ) a. 0 ( V '' ) = { ( SUBJ , 1 ) , ( 0BJ , 1 &gt; , ( C0MP , 1 ) , ( BAR , n ) } b. 0 ( M '' ) = ( SUBJ , 1 ) , ( 0BO , I ) , ( C0MP , 0 &gt; , ( bar , n ) } c. 0 ( P '' ) = { ( SUBJ , 0 ) , ( 0BJ , I ) , ( C0MP , 1 ) , ( BAR , n ) } d. 0 ( Prt n ) = { ( SUBJ , 0 ) , ( OBJ , 1 ) , &lt; C0MP , 0 ) , ( BAR , n ) } e. 0 ( N n ) = { ( SUBJ , 1 ) , ( 0BJ , 0 &gt; , ( C0MP , 1 ) , ( BAR , n ) } f. 0 ( Art '' ) = { ( SUBJ , 1 ) , ( 0BJ , 0 &gt; , &lt; C0MP , 0 ) , ( DET , 1 ) , ( BAR , n ) } g. 0 ( Q '' ) = { ( SUBJ , 1 ) , ( 0BJ , 0 ) , ( COMe , 0 ) , ( DET , 0 &gt; , ( BAR , n ) } h. 0 ( A n ) = { ( SUBJ , 0 ) , ( OBJ , 0 ) , ( C0MP , 1 ) , ( BAR , n ) } i. 0 ( Deg '' ) = { ( SUBJ , 0 ) , ( 0BJ , 0 ) , ( COMP , 0 ) , ( DET , 1 ) , ( BAR , n &gt; } j. O ( Adv '' ) = { ( SUBJ , 0 ) , &lt; OBJ , 0 ) , ( COMP , 0 ) , ( DET , 0 ) , ( BAR , ~ } An example of a category admitted in Jackendoff 's system would be { ( BAR , 3 ) , ( SUBJ , 1 ) , ( 0BJ , 0 ) , ( C0MP , 1 ) } , which can be more perspicuously presented in the graphic form given in ( 21 ) . BAR 3 SUBJ 1 OBJ 0 COMP 1 As is evident , the set of categories induced by Jackendoffs system has a cardinality of 40 , ten at each bar level. Gerald Gazdar et al. Category Structures Sets of categories as small as this are clearly insufficient for the description of natural languages. All transformational grammarians seem to agree that references to distinctions of tense , mood , voice , person , number , gender , case , pronominality , definiteness , wh-ness , and many other morphological and syntactic distinctions are in fact needed in a grammar. As pointed out by PuUum ( 1985 ) , some statements in the TG literature suggest that further features are provided for the expression of such distinctions but are restricted to lexical ( &lt; BAR , 0 ) ) categories. However , it is easy to find examples in the literature of additional features like definiteness , case , wh-ness , and many others , being assigned to phrasal nodes as well. In marked contrast to a work such as Stockwell , Schachter and Partee ( 1973 ) , recent TG has not been explicit about such matters. Allowing for twenty binary morphosyntactic features ( a modest estimate if any serious effort at coverage is to be made ) and allowing them only on lexical categories would increase the cardinality of the set of categories to about 4 • 106 in the case of Lasnik and Kupin 's system and to over 107 in the case of Jackendoff's. In one respect , what we have said so far may not adequately capture the conception of categories found in recent TG and GB works. These works generally make considerable and crucial use of co-indexing of nodes , using indices taken from an infinite set such as the integers. If the index on a node is taken to be part of the structure of the category labelling that node Chomsky ( 1970 ) , which is not the only view one could take , then the number of distinct categories becomes infinite. This does not mean it becomes difficult to represent. Indexing of this sort can be represented directly in the present framework without adding an infinite set of additional atoms such as the natural numbers. We add a type 0 feature 0e ( with p ( 0e ) = { 0 } ) and a type 1 feature SUCCESSOR to the feature system and use this to build the set of indices. Thus the index `` 3 '' would be represented as shown in ( 22 ) , where categoryvalued feature specifications are shown with pointers to categories in their value positions. In some recent TG , more than one indexing system is employed. Thus Rouveret and Vergnaud ( 1980 , p. 160 ) `` postulate that each verbal complex in a structure is identified by some integer p and each \ [ -N\ ] element in the verbal complex p bears the superscript p. '' This superscripting system is distinct from the subscripting system maintained to indicate anaphoric linkage or binding , and neither places an upper bound on the number of indices. Hence it would not be sufficient to have a single type 1 feature. Two further type 1 features SUBSCRIPT and SUPERSCRIPT could be used , each taking category values representing indices with SUCCESSOR and OF. It may seem implausible to suppose that anyone would choose in practice to handle indexing via a feature system such as that just suggested• Nonetheless , it would clearly be possible , which shows that one can incorporate integer indices into the structure of categories in terms of a finite number of features and a finite number of atoms , which might not initially have been evident• The generalized phrase structure grammar framework ( GPSG ) , as set out in Gazdar , Klein , Pullum , and Sag ( 1985 ) , ( henceforth GKPS ) , differs from the examples considered so far in that it makes extensive use of features that are permitted to have categories as their values. 2 For concreteness , we suggest how the set of categories for the GKPS version of GPSG would be reconstructed in the framework presented here ( see GKPS pp. 245-6 , for the complete lists where we abbreviate with `` ... '' ) . ( 24 ) a. F = { SUBJ , N , C0MP , BAR ... .. AGR , SLASH } b. A = { 0 , 1 , 2 , ... . for , that ... . } C. ~ '' = { ( SUBJ , 0 ) , &lt; N , 0 ) , &lt; V , 0 ) , &lt; COMP , 0 ) , ( BAR , 0 ) , ... &lt; AGR , 1 ) , &lt; SLASH , 1 ) } d. p = { ( SUBJ , 2 ) , &lt; N , 2 ) , &lt; V , 2 ) , &lt; C0MP , { for , that , • . . } ) , ... , &lt; BAR , { 0 , 1 , 2 } ) } We add to this , for each feature f E F ~ , the following ( 22 ) Constraints are necessary to ensure that the value of SUCCESSOR does not contain anything but SUCCESS0ROr 0e specifications. To this end , we constrain each feature f E F ° ( except 0e ) as shown in ( 23a ) , and in addition we impose ( 23b ) and ( 23c ) : ( 23 ) a. \ [ \ ] -- 1 ( SUCCESSOR : 39 b. \ [ \ ] -- 1 ( SUCCESSOR A OF ) C. \ [ \ ] -- 1 ( SUCCESSOR : -- 1 OF -- I SUCCESSOR ) constraint : ( 25 ) \ [ \ ] -~ ( f : of ) This prevents a category-valued feature f from being specified anywhere within the value of an occurrence of f. An example of a moderately complex category with more than one category-valued feature that nonetheless obeys ( 25 ) is shown in ( 26 ) . Computational Linguistics , Volume 14 , Number 1 , Winter 1988 9 Gerald Gazdar et al. Category Structures ( , ,t~ The constraint ( 25 ) restricts us to exactly the set of legal GKPS categories. 3 The total GKPS category set is finite , but naturally , it is extremely large ( Ristad ( 1986 ) calculates that it is in excess of 10774 ) . It is clear that the set of GKPS categories is vastly too large to be precompiled and stored-and indeed , no implementation that we know of has attempted this. Systemic grammar , originally known as `` scale and category '' grammar , has its origins in the work of Halliday ( 1961 ) and is widely known among computational linguists through Winograd ( 1972 ) and other works , and it has recently received rigorous formalization in the hands of Patten and Ritchie ( 1987 ) . Tree structures in systemic grammar tend to be fiat , more structural information being expressed through categories than in most other approaches Hudson ( 1971 ) . Categories in systemic grammar are simply bundles of feature specifications : there is `` nothing in systemic theory corresponding to the distinction between `` features '' -- such as \ [ +past\ ] -- and `` categories '' -- such as NP and S -- -in TG theory '' Hudson ( 1971 , p. 48 ) . A set of well-formed categories in a systemic grammar is defined by a system network , which `` is in effect a body of rules , in symbolic form , which specify precisely how features can combine with each other : in other words , which features can appear together in the paradigmatic description of a single item , and which can not '' Hudson ( 1971 ) . We will not discuss rules for forming systemic networks ( and hence categories ) here , but will instead refer the reader to the presentation in Winograd ( 1983 ) , where a system network expressing category information for the English pronominal form is provided as an example of the notational techniques used in systemic grammar for specifying a set of categories. We reproduce this in Figure 1. The content of Figure 1 can be reconstructed straightforwardly as a category structure subject to a set of L c constraints ( for a closely related analysis of this 10 { ~ Animate Question __ -Subjective Case Objective Reflex ve Possessive Possessive-Determ ner _ I First Personal ~_.P__~ Second _ _ I Feminine Ingular-J Neuter f \ [ | Plural Demonstrative -- l~ Near / Far Figure 1 : Systemic Network for English Pronouns example , developed independently , see Mellish ( 1986 ) . The following is the category structure that we need : ( 27 ) a. F = { PRONOUN , CASE , PERSON , GENDER , NUMBER , ANIMACY , PROXIMITY } b. A = { question , personal , demonstrative , subjective , objective , reflexive , possessive , possessive-determiner , first , second , third , feminine masculine , neuter , singular , plural } C. T O d. p = { &lt; PRONOUN , { question , personal , demonstrative } ) , &lt; CASE , { subjective , objective , reflexive , possessive , possessive-determiner } ) , &lt; PERSON , { first , second third } ) , &lt; GENDER , { feminine , masculine , neuter } ) , &lt; NUMBER , { singular , plural } ) , &lt; ANIMACY , 2 &gt; , &lt; PROXIMITY , 2 &gt; } The constraints that must be imposed are the following : ( 28 ) a. PRONOUN b. ( PRONOUN : question ) ~ ( CASE /~ -'-I PERSON /'k -- -I NUMBER /~ ANIMACY /~ 7 PROXIMITY ) C. ( PRONOUN : personaD &lt; -- &gt; ( CASE /~ PERSON /~ NUMBER /k -q ANIMACY /~ `` 7 PROXIMITY ) d. ( PRONOUN : demonstrative ) &lt; -- ) ( 7 CASE /~ 7 PERSON /~ NUMBER /~ -3 ANIMACY /~ PROXIMITY ) e. GENDER ~ ( PRONOUN A ( PERSON : thirD A ( NUMBER : singular ) ) Note that this description of the pronominal system of English is artificially complicated by its isolation from the rest of the grammar .</sentence>
+				<definiendum id="0">BAR , A ) } To get</definiendum>
+				<definiendum id="1">BAR</definiendum>
+				<definiendum id="2">PROXIMITY ) e. GENDER ~ ( PRONOUN A ( PERSON : thirD A ( NUMBER</definiendum>
+				<definiens id="0">Jackendoff 's system of categories , we fix our values for F , A , ~ ' , and p in the manner shown below : ( 18 ) a. F = { SUBJ , C0MP , DET , 0BJ , BAR } b. a = { 0 , 1,2,3 } C. 7 0 d. p = { ( SUBJ , 2</definiens>
+				<definiens id="1">the exact set of permissible categories , we need to make sure that SUBJ , 0BJ , COMP , and BAR are defined in all categories , and that DET is only specified in \ [ -C0MP\ ] , \ [ -0BJ\ ] categories. The following set of L c constraints will achieve this. ( 19 ) a. SUBJ A OSJ A COMP / % , BAR b. DET -- ) ( ( COMP:0 ) /~ ( 0BJ:0 ) ) We can now obtain a bijection between Jackendoff 's X-bar categories and the admissible categories induced by F , A , and the constraints listed in ( 19 ) . We define a mapping 0 between the Jackendoff 's own category abbreviations and the admissible categories with respect to ( 19a ) and ( 19b ) , as follows ( we schematize by writing X with n bars as X n , 0 &lt; -n &lt; 3 ) : ( 20 ) a. 0 ( V '' ) = { ( SUBJ , 1 ) , ( 0BJ , 1 &gt; , ( C0MP , 1 ) , ( BAR , n ) } b. 0 ( M '' ) = ( SUBJ , 1 ) , ( 0BO , I ) , ( C0MP , 0 &gt; , ( bar , n ) } c. 0 ( P '' ) = { ( SUBJ , 0 )</definiens>
+				<definiens id="2">n ) } d. 0 ( Prt n ) = { ( SUBJ , 0 ) , ( OBJ , 1 ) , &lt; C0MP , 0 ) , ( BAR , n ) } e. 0 ( N n ) = { ( SUBJ , 1 ) , ( 0BJ , 0 &gt; , ( C0MP , 1 ) , ( BAR , n ) } f. 0 ( Art '' ) = { ( SUBJ , 1 ) , ( 0BJ , 0 &gt; , &lt; C0MP , 0 ) , ( DET , 1 ) , ( BAR , n ) } g. 0 ( Q '' ) = { ( SUBJ , 1 ) , ( 0BJ , 0 ) , ( COMe , 0 ) , ( DET , 0 &gt; , ( BAR , n ) } h. 0 ( A n ) = { ( SUBJ , 0 ) , ( OBJ , 0 ) , ( C0MP , 1 ) , ( BAR , n ) } i. 0 ( Deg '' ) = { ( SUBJ , 0 ) , ( 0BJ , 0 ) , ( COMP , 0 ) , ( DET , 1 ) , ( BAR , n &gt; } j. O ( Adv '' ) = { ( SUBJ , 0 ) , &lt; OBJ , 0 ) , ( COMP , 0 ) , ( DET , 0 ) , ( BAR , ~ } An example of a category admitted in Jackendoff 's system would be { ( BAR , 3 ) , ( SUBJ , 1 ) , ( 0BJ , 0 ) , ( C0MP , 1 ) } , which can be more perspicuously presented in the graphic form given in ( 21 ) . BAR 3 SUBJ 1 OBJ 0 COMP 1 As is evident , the set of categories induced by Jackendoffs system has a cardinality of 40 , ten at each bar level. Gerald Gazdar et al. Category Structures Sets of categories as small as this are clearly insufficient for the description of natural languages. All transformational grammarians seem to agree that references to distinctions of tense , mood , voice , person , number , gender , case , pronominality , definiteness , wh-ness , and many other morphological and syntactic distinctions are in fact needed in a grammar. As pointed out by PuUum ( 1985 ) , some statements in the TG literature suggest that further features are provided for the expression of such distinctions but are restricted to lexical ( &lt; BAR , 0 ) ) categories. However , it is easy to find examples in the literature of additional features like definiteness , case , wh-ness , and many others , being assigned to phrasal nodes as well. In marked contrast to a work such as Stockwell , Schachter and Partee ( 1973 ) , recent TG has not been explicit about such matters. Allowing for twenty binary morphosyntactic features ( a modest estimate if any serious effort at coverage is to be made ) and allowing them only on lexical categories would increase the cardinality of the set of categories to about 4 • 106 in the case of Lasnik and Kupin 's system and to over 107 in the case of Jackendoff's. In one respect , what we have said so far may not adequately capture the conception of categories found in recent TG and GB works. These works generally make considerable and crucial use of co-indexing of nodes , using indices taken from an infinite set such as the integers. If the index on a node is taken to be part of the structure of the category labelling that node Chomsky ( 1970 ) , which is not the only view one could take , then the number of distinct categories becomes infinite. This does not mean it becomes difficult to represent. Indexing of this sort can be represented directly in the present framework without adding an infinite set of additional atoms such as the natural numbers. We add a type 0 feature 0e ( with p ( 0e ) = { 0 } ) and a type 1 feature SUCCESSOR to the feature system and use this to build the set of indices. Thus the index `` 3 '' would be represented as shown in ( 22 ) , where categoryvalued feature specifications are shown with pointers to categories in their value positions. In some recent TG , more than one indexing system is employed. Thus Rouveret and Vergnaud ( 1980 , p. 160 ) `` postulate that each verbal complex in a structure is identified by some integer p and each \ [ -N\ ] element in the verbal complex p bears the superscript p. '' This superscripting system is distinct from the subscripting system maintained to indicate anaphoric linkage or binding , and neither places an upper bound on the number of indices. Hence it would not be sufficient to have a single type 1 feature. Two further type 1 features SUBSCRIPT and SUPERSCRIPT could be used , each taking category values representing indices with SUCCESSOR and OF. It may seem implausible to suppose that anyone would choose in practice to handle indexing via a feature system such as that just suggested• Nonetheless , it would clearly be possible , which shows that one can incorporate integer indices into the structure of categories in terms of a finite number of features and a finite number of atoms , which might not initially have been evident• The generalized phrase structure grammar framework ( GPSG ) , as set out in Gazdar , Klein , Pullum , and Sag ( 1985 ) , ( henceforth GKPS ) , differs from the examples considered so far in that it makes extensive use of features that are permitted to have categories as their values. 2 For concreteness , we suggest how the set of categories for the GKPS version of GPSG would be reconstructed in the framework presented here ( see GKPS pp. 245-6 , for the complete lists where we abbreviate with `` ... '' ) . ( 24 ) a. F = { SUBJ , N , C0MP , BAR ... .. AGR , SLASH } b. A = { 0 , 1 , 2 , ... . for , that ... . } C. ~ '' = { ( SUBJ , 0 ) , &lt; N , 0 ) , &lt; V , 0 ) , &lt; COMP , 0 ) , ( BAR , 0 ) , ... &lt; AGR , 1 ) , &lt; SLASH , 1 ) } d. p = { ( SUBJ , 2 ) , &lt; N , 2 ) , &lt; V , 2 ) , &lt; C0MP , { for , that , • . . } ) , ... , &lt; BAR , { 0 , 1 , 2 } ) } We add to this , for each feature f E F ~ , the following ( 22 ) Constraints are necessary to ensure that the value of SUCCESSOR does not contain anything but SUCCESS0ROr 0e specifications. To this end , we constrain each feature f E F ° ( except 0e ) as shown in ( 23a ) , and in addition we impose ( 23b ) and ( 23c ) : ( 23 ) a. \ [ \ ] -- 1 ( SUCCESSOR : 39 b. \ [ \ ] -- 1 ( SUCCESSOR A OF ) C. \ [ \ ] -- 1 ( SUCCESSOR : -- 1 OF -- I SUCCESSOR ) constraint : ( 25 ) \ [ \ ] -~ ( f : of ) This prevents a category-valued feature f from being specified anywhere within the value of an occurrence of f. An example of a moderately complex category with more than one category-valued feature that nonetheless obeys ( 25 ) is shown in ( 26 ) . Computational Linguistics , Volume 14 , Number 1 , Winter 1988 9 Gerald Gazdar et al. Category Structures ( , ,t~ The constraint ( 25 ) restricts us to exactly the set of legal GKPS categories. 3 The total GKPS category set is finite , but naturally , it is extremely large ( Ristad ( 1986 ) calculates that it is in excess of 10774 ) . It is clear that the set of GKPS categories is vastly too large to be precompiled and stored-and indeed , no implementation that we know of has attempted this. Systemic grammar , originally known as `` scale and category '' grammar , has its origins in the work of Halliday ( 1961 ) and is widely known among computational linguists through Winograd ( 1972 ) and other works , and it has recently received rigorous formalization in the hands of Patten and Ritchie ( 1987 ) . Tree structures in systemic grammar tend to be fiat , more structural information being expressed through categories than in most other approaches Hudson ( 1971 ) . Categories in systemic grammar are simply bundles of feature specifications : there is `` nothing in systemic theory corresponding to the distinction between `` features '' -- such as \ [ +past\ ] -- and `` categories '' -- such as NP and S -- -in TG theory '' Hudson ( 1971 , p. 48 ) . A set of well-formed categories in a systemic grammar is defined by a system network , which `` is in effect a body of rules , in symbolic form , which specify precisely how features can combine with each other : in other words , which features can appear together in the paradigmatic description of a single item , and which can not '' Hudson ( 1971 ) . We will not discuss rules for forming systemic networks ( and hence categories ) here , but will instead refer the reader to the presentation in Winograd ( 1983 ) , where a system network expressing category information for the English pronominal form is provided as an example of the notational techniques used in systemic grammar for specifying a set of categories. We reproduce this in Figure 1. The content of Figure 1 can be reconstructed straightforwardly as a category structure subject to a set of L c constraints ( for a closely related analysis of this 10 { ~ Animate Question __ -Subjective Case Objective Reflex ve Possessive Possessive-Determ ner _ I First Personal ~_.P__~ Second _ _ I Feminine Ingular-J Neuter f \ [ | Plural Demonstrative -- l~ Near / Far Figure 1 : Systemic Network for English Pronouns example , developed independently , see Mellish ( 1986 ) . The following is the category structure that we need : ( 27 ) a. F = { PRONOUN , CASE , PERSON , GENDER , NUMBER , ANIMACY , PROXIMITY } b. A = { question , personal , demonstrative , subjective , objective , reflexive , possessive , possessive-determiner , first , second , third , feminine masculine , neuter , singular , plural } C. T O d. p = { &lt; PRONOUN , { question , personal , demonstrative } ) , &lt; CASE , { subjective , objective , reflexive , possessive , possessive-determiner } ) , &lt; PERSON , { first , second third } ) , &lt; GENDER , { feminine , masculine , neuter } ) , &lt; NUMBER , { singular , plural } ) , &lt; ANIMACY , 2 &gt; , &lt; PROXIMITY , 2 &gt; } The constraints that must be imposed are the following : ( 28 ) a. PRONOUN b. ( PRONOUN : question ) ~ ( CASE /~ -'-I PERSON /'k -- -I NUMBER /~ ANIMACY /~ 7 PROXIMITY ) C. ( PRONOUN : personaD &lt; -- &gt; ( CASE /~ PERSON /~ NUMBER /k -q ANIMACY /~ `` 7 PROXIMITY ) d. ( PRONOUN : demonstrative ) &lt; -- ) ( 7 CASE /~ 7 PERSON /~ NUMBER /~ -3 ANIMACY /~</definiens>
+				<definiens id="3">singular ) ) Note that this description of the pronominal system of English is artificially complicated by its isolation from the rest of the grammar</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>( 29 ) PRONOUN CASE PERSON NUMBER GENDER personal reflexive third singular feminine Interestingly , however , systemic grammar as formalized by Hudson ( 1971 ) , at least is not limited to type 0 features .</sentence>
+				<definiendum id="0">PRONOUN CASE PERSON NUMBER GENDER</definiendum>
+				<definiens id="0">personal reflexive third singular feminine Interestingly</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>I In fact , our logic does not merely contain K1 , it also contains KI.1 , whose characteristic axiom is : ( A2 ) j. ~Fq ( D ( 05 -- &gt; D05 ) -- - &gt; 05 ) -o 05 ) Hughes and Cresswell note that KI.1 'is characterized by the class of all finite partial orderings , i.e. , finite frames in which R \ [ the accessibility relation\ ] is reflexive , transitive , and antisymmetrical ' Hughes and Cresswell ( ( 1984 ) , p. 162 ) .</sentence>
+				<definiendum id="0">Cresswell</definiendum>
+				<definiens id="0">'is characterized by the class of all finite partial orderings , i.e. , finite frames in which R \ [ the accessibility relation\ ] is reflexive , transitive</definiens>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>Hinrichs describes a meaning-representation language ( MRL ) for temporal expressions based on higherorder Intensional Logic , that is being used in the JANUS system , a natural-language understanding and generation system under joint development at BBN Laboratories and ISI .</sentence>
+				<definiendum id="0">Hinrichs</definiendum>
+				<definiens id="0">describes a meaning-representation language ( MRL ) for temporal expressions based on higherorder Intensional Logic , that is being used in the JANUS system , a natural-language understanding and generation system under joint development at BBN Laboratories and ISI</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Nakhimovsky describes how our common-sense knowledge of events manifests itself in language and how this knowledge is used in understanding narratives .</sentence>
+				<definiendum id="0">Nakhimovsky</definiendum>
+				<definiens id="0">describes how our common-sense knowledge of events manifests itself in language and how this knowledge is used in understanding narratives</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Pa , ; sonneau describes temporal processing in PUNDIT , a natural-language text ur~derstanding system developed by researchers at UNISYS .</sentence>
+				<definiendum id="0">Pa</definiendum>
+				<definiens id="0">a natural-language text ur~derstanding system developed by researchers at UNISYS</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>a• Last week ( ambiguous ) • b. Next week .</sentence>
+				<definiendum id="0">a• Last week</definiendum>
+				<definiens id="0">ambiguous ) • b. Next week</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The process of temporal reference involves reference to the appropriate part of a nucleus , where appropriateness is a function of the inherent meaning of the core expression , of the coercive nature of co-occurring linguistic expressions , and of particular and general knowledge about the area of discourse .</sentence>
+				<definiendum id="0">appropriateness</definiendum>
+				<definiens id="0">a function of the inherent meaning of the core expression , of the coercive nature of co-occurring linguistic expressions , and of particular and general knowledge about the area of discourse</definiens>
+			</definition>
+</paper>
+
+		<paper id="3012">
+			<definition id="0">
+				<sentence>It is not our goal to show how discourse modeling and user modeling should actually interact in a cooperative system , but to show how the notions of discourse model , dialog memory , and user model can be defined and related in order to prevent misunderstandings and confusion .</sentence>
+				<definiendum id="0">user model</definiendum>
+				<definiens id="0">discourse modeling and user modeling should actually interact in a cooperative system , but to show how the notions of discourse model , dialog memory , and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A dialog memory can be viewed as part of a user model , namely the part that represents the dialog-dependent knowledge of the user ( Morik 1984 ) .</sentence>
+				<definiendum id="0">dialog memory</definiendum>
+				<definiens id="0">part of a user model , namely the part that represents the dialog-dependent knowledge of the user</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A dialog memory contains all beliefs that can be inferred with certainty from utterances , so that they belong to the mutual belief space .</sentence>
+				<definiendum id="0">dialog memory</definiendum>
+				<definiens id="0">contains all beliefs that can be inferred with certainty from utterances</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>General rules establish mutual beliefs on the basis of utterances .</sentence>
+				<definiendum id="0">General rules</definiendum>
+				<definiens id="0">establish mutual beliefs on the basis of utterances</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>As opposed to Schuster , who defines a discourse model as `` containing representations of entities , along with their properties and relations they participate in '' , which corresponds exactly to our dialog memory , I use discourse model according to the framework of Grosz and Sidner ( 1986 ) , where a discourse model is the syntactic structure of a dialog .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiendum id="1">discourse model</definiendum>
+				<definiens id="0">containing representations of entities , along with their properties and relations they participate in ''</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Knowledge is to a great extent transferred via dialogs .</sentence>
+				<definiendum id="0">Knowledge</definiendum>
+				<definiens id="0">to a great extent transferred via dialogs</definiens>
+			</definition>
+</paper>
+
+		<paper id="3008">
+			<definition id="0">
+				<sentence>A discourse model ( DM ) is viewed as containing representations of entities , along with their properties and relations they participate in .</sentence>
+				<definiendum id="0">discourse model ( DM</definiendum>
+				<definiens id="0">containing representations of entities , along with their properties and relations they participate in</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Since a discourse has relatively short duration , the discourse model that supports the interaction contains short term or temporary information .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiens id="0">supports the interaction contains short term or temporary information</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For example , this definition of UMs includes McCoy 's ( 1985 ) concept of a UM : the system 's beliefs about how the user views objects in the domain .</sentence>
+				<definiendum id="0">UM</definiendum>
+				<definiens id="0">the system 's beliefs about how the user views objects in the domain</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The user model is the model of the specific agent that interacts with the system .</sentence>
+				<definiendum id="0">user model</definiendum>
+				<definiens id="0">the model of the specific agent that interacts with the system</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The beginner stereotype contains information about simple and well-known varieties of chili peppers .</sentence>
+				<definiendum id="0">beginner stereotype</definiendum>
+				<definiens id="0">contains information about simple and well-known varieties of chili peppers</definiens>
+			</definition>
+</paper>
+
+		<paper id="2005">
+			<definition id="0">
+				<sentence>8 A predication denotes an actual situation when two criteria are satisfied .</sentence>
+				<definiendum id="0">predication</definiendum>
+				<definiens id="0">an actual situation when two criteria are satisfied</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Lexical aspect is the inherent semantic content of a lexical item pertaining to the temporal structure of the situation it refers to , and thus plays a major role in computing temporal information .</sentence>
+				<definiendum id="0">Lexical aspect</definiendum>
+				<definiens id="0">the inherent semantic content of a lexical item pertaining to the temporal structure of the</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>However , interval semantics captures the distinct temporal properties of situations by specifying a truth-conditional relation between a full sentence and a unique interval .</sentence>
+				<definiendum id="0">interval semantics</definiendum>
+				<definiens id="0">captures the distinct temporal properties of situations by specifying a truth-conditional relation between a full sentence and a unique interval</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A process is a situation which holds over an active interval of time .</sentence>
+				<definiendum id="0">process</definiendum>
+				<definiens id="0">a situation which holds over an active interval of time</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A transition event is a complex situation consisting of a process which culminates in a new state or process .</sentence>
+				<definiendum id="0">transition event</definiendum>
+				<definiens id="0">a complex situation consisting of a process which culminates in a new state or process</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An important role played by the transition bound is that it is the temporal component of transition events that locates them with respect to other times .</sentence>
+				<definiendum id="0">transition bound</definiendum>
+				<definiens id="0">the temporal component of transition events that locates them with respect to other times</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>As will be shown in Section 4 , PUNDIT represents actual situations as predicates identifying the situation type as a state , process , or event .</sentence>
+				<definiendum id="0">PUNDIT</definiendum>
+				<definiens id="0">actual situations as predicates identifying the situation type as a state , process , or event</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>A firstorder verb is one whose arguments are concrete entities , e.g. , humans , machines , and other physical objects .</sentence>
+				<definiendum id="0">firstorder verb</definiendum>
+				<definiens id="0">one whose arguments are concrete entities , e.g. , humans , machines , and other physical objects</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Second-order verbs can be identified by the impossibility of temporal modification of a situation referred to by the verb , independent of the situation ( s ) referred to by the verb 's argument ( s ) ( Newmeyer 1975 ) , as can Computational Linguistics , Volume 14 , Number 2 , June 1988 49 Rebecca J. Passonneau A Computational Model of the Semantics of Tense and Aspect Order Examples Definition First `` fail '' , `` operate '' verbs that denote situations and whose arguments are not propositional ' Second `` occur '' , `` follow '' verbs that provide temporal information about their propositional arguments Third `` result '' , `` cause '' verbs that denote situations but which also provide temporal information about their propositional arguments Table 1 .</sentence>
+				<definiendum id="0">Second-order verbs</definiendum>
+				<definiens id="0">Computational Model of the Semantics of Tense and Aspect Order Examples Definition First `` fail ''</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>After the semantic analysis of a clause , the constituent list contains all those syntactic constituents that do not serve as arguments of the verb , e.g. , adverbial modifiers of the verb phrase and sentence adjuncts .</sentence>
+				<definiendum id="0">constituent list</definiendum>
+				<definiens id="0">contains all those syntactic constituents that do not serve as arguments of the verb , e.g. , adverbial modifiers of the verb phrase and sentence adjuncts</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>While Module 1 currently serves only as a filter , it could be made to generate informative output Computational Linguistics , Volume 14 , Number 2 , June 1988 51 Rebecca J. Passonneau A Computational Model of the Semantics of Tense and Aspect ASPECT PROGRESSIVE PERFECT 4 , L ACTUAL TIME I I ASPECT z PROGRESSIVE TEMPORAL STRUCTURE TENSE ET i PERFECT TENSE TEMPORAL LOCATION STATE ( unbounded ) ET is RT = ST PROCESS ( unbounded ) ET &lt; RT = ST or ( unspecified ) ET is RT &lt; ST TRANSITION EVENT ( bounded ) ET &lt; RT &lt; ST Figure 1 .</sentence>
+				<definiendum id="0">TEMPORAL LOCATION STATE</definiendum>
+				<definiens id="0">RT = ST PROCESS ( unbounded ) ET &lt; RT = ST or ( unspecified ) ET is RT &lt; ST TRANSITION EVENT ( bounded ) ET &lt; RT &lt; ST Figure 1</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>LEXICAL PROGRESSIVE LABEL TIME EVENT ASPECT ARGUMENT TIME ( ET ) stative Yes/No State unbounded stative interval includes ET process or transition event Yes Process unbounded active interval includes ET process No Process unspecified active interval has ET transition event No Event transition bound unifies with ET 52 Table 3 .</sentence>
+				<definiendum id="0">LEXICAL PROGRESSIVE LABEL TIME EVENT ASPECT ARGUMENT TIME ( ET</definiendum>
+				<definiens id="0">) stative Yes/No State unbounded stative interval includes ET process or transition event Yes Process unbounded active interval includes ET process No Process unspecified active interval has ET transition</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Durational adverbials like for X , where X is a temporal measure phrase , modify any interval , but not their endpoints .</sentence>
+				<definiendum id="0">X</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>In X , where X is a temporal measure phrase , not only specifies a duration , but also relates the endpoint of this duration to some other time , e.g. , the time at which the utterance is produced , as in ( 52 ) .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a temporal measure phrase</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Predications denoting states and processes have duration , as shown by the interpretation of durational adverbial phrases of the formforX , where X is a time measure , as in ( 54 ) and ( 55 ) : 54 .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a time measure</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Then the time component finds the adverbial phrase before the pump seized in the constituent list , which it recognizes as consisting of a temporal connective ( before ) and a complement .</sentence>
+				<definiendum id="0">time component</definiendum>
+				<definiens id="0">finds the adverbial phrase before the pump seized in the constituent list , which it recognizes as consisting of a temporal connective ( before ) and a complement</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>Robinson ( Robinson et al. 1980 , Robinson 1981 ) extended Grosz 's work and developed a process model for determining the referents of verb phrases , such as variants of do in the utterance `` I 've done it . ''</sentence>
+				<definiendum id="0">Robinson</definiendum>
+				<definiens id="0">extended Grosz 's work and developed a process model for determining the referents of verb phrases</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Allen ( Allen et al. 1980 , Perrault et al. 1980 ) inferred the goal underlying a speaker 's utterance in the context of an information agent in a train setting .</sentence>
+				<definiendum id="0">Allen</definiendum>
+				<definiens id="0">'s utterance in the context of an information agent in a train setting</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For example , if Figure 3b is an expansion of the context model shown in Figure 3a , then nodes C3 and C4 would both be part of the expansion of a plan for a goal along the active path ; but if nodes C3 and C4 both represent candidate focused plans , then node C3 would be preferred , since it appears in an expansion of the plan associated with node B , which is closer to the current focused goal ( represented by node C ) than is node A. pansion contains the goal associated with the root of the context model ; Figure 3c illustrates such a relationship , where node C5 represents a candidate focused plan .</sentence>
+				<definiendum id="0">node C5</definiendum>
+				<definiens id="0">appears in an expansion of the plan associated with node B , which is closer to the current focused goal ( represented by node C</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>sion of a higher-level plan , and this expansion also contains the goal associated with the root of the context model ; Figure 3d illustrates such a relationship , where node C6 represents a candidate focused plan .</sentence>
+				<definiendum id="0">node C6</definiendum>
+				<definiens id="0">a candidate focused plan</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Therefore this goal becomes the root of a new context model , as shown in Figure 6 ; Satisfy-Language-Req ( IS ) is marked as the new current focus of attention , as indicated by the asterisk preceding it .</sentence>
+				<definiendum id="0">Satisfy-Language-Req ( IS</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>As described earlier , since IS is asking about the teacher of a particular section of a course , he may be considering the subgoal of learning from that teacher ; this subgoal appears in aplan for learning the material of a course , and therefore TRACK hypothesizes the plan associated with the goal Learn-Material ( IS , FRENCH112-10-SPRING88 , _syl : &amp; SYLLABI ) as one of the candidate focused plans .</sentence>
+				<definiendum id="0">SYLLABI )</definiendum>
+				<definiens id="0">one of the candidate focused plans</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The context model is one component of a comprehensive user model , representing the system 's acquired beliefs about the plan an information-seeker is trying to construct .</sentence>
+				<definiendum id="0">context model</definiendum>
+				<definiens id="0">one component of a comprehensive user model</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>cr2 : &amp; CREDITS ) Sat~'fy-ne~-~jor ( XS , nx ) Satidy-Majlr ( IS , CS , BA ) Earn-Credit ( IS , CS 180 , -m : &amp; SEMESTERSrerl : &amp; CREDITS ) Eam-Credit-Sectlon ( IS , FiENOHI l~ .</sentence>
+				<definiendum id="0">Satidy-Majlr (</definiendum>
+				<definiendum id="1">BA ) Earn-Credit</definiendum>
+				<definiens id="0">IS , CS ,</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Intended recognition is the inference of those goals and plans that an agent intends to convey .</sentence>
+				<definiendum id="0">Intended recognition</definiendum>
+				<definiens id="0">the inference of those goals and plans that an agent intends to convey</definiens>
+			</definition>
+</paper>
+
+		<paper id="3013">
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>Third is the CLAWS system developed to tag the Lancaster -Oslo/Bergen ( or LOB ) Corpus .</sentence>
+				<definiendum id="0">Third</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Third , VOLSUNGA implements Relative Tag Probabilities ( RTPs ) in a more quantitative manner , based upon counts from the Brown Corpus .</sentence>
+				<definiendum id="0">VOLSUNGA</definiendum>
+				<definiens id="0">implements Relative Tag Probabilities ( RTPs ) in a more quantitative manner , based upon counts from the Brown Corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Fourth , VOLSUNGA uses no tag triples and no idioms .</sentence>
+				<definiendum id="0">VOLSUNGA</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The notation is fairly mnemonic , but it is worth clarifying that PPO indicates a n objective personal pronoun , and PP $ the possessive thereof , while VBD is a past-tense verb .</sentence>
+				<definiendum id="0">VBD</definiendum>
+				<definiens id="0">a past-tense verb</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Greene and Rubin ( 1971 ) note that their suffix list `` consists mainly of Romance endings which are the source of continuing additions to the language '' ( p. 41 ) .</sentence>
+				<definiendum id="0">suffix list</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3005">
+			<definition id="0">
+				<sentence>Suppose we have two objects a and b where A is the set of properties associated with object a and B is the set of properties associated with object b. Tversky 's measure can be expressed as : s ( a , b ) = Of ( A fq B ) ~ af ( A -B ) ~ /3f ( B ~ A ) for some 0 , a , and/3 - &gt; 0 .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">the set of properties associated with object a and</definiens>
+				<definiens id="1">the set of properties associated with object b. Tversky 's measure can be expressed as : s ( a , b ) = Of ( A fq B ) ~ af ( A -B ) ~ /3f ( B ~ A ) for some 0</definiens>
+			</definition>
+</paper>
+
+		<paper id="3014">
+			<definition id="0">
+				<sentence>the DM is a part of the UM ( e.g. , Schuster ) P2 .</sentence>
+				<definiendum id="0">DM</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>I propose the following joint definitions of user model and user modeling component ( see Wahlster and Kobsa 1988 ) as well as discourse model and discourse modeling component in the context of NL dialog systems : A user model is a knowledge source that contains explicit assumptions on all aspects of the user that may be relevant for the dialog behavior of the system .</sentence>
+				<definiendum id="0">user model</definiendum>
+				<definiens id="0">user model and user modeling component ( see Wahlster and Kobsa 1988 ) as well as discourse model and discourse modeling component in the context of NL dialog systems : A</definiens>
+				<definiens id="1">a knowledge source that contains explicit assumptions on all aspects of the user that may be relevant for the dialog behavior of the system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A discourse model is a knowledge source that contains the system 's description of the syntax , semantics , and pragmatics of a dialog as it proceeds .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>2 ( 7 ) If the CWS is an NP and the TOS is an S , then construct the following noun phrase and push it to the STACK : ( NP ( HEAD CWS ) ( MOD ( rep_emn TOS CWS ) ) ) CWS is the word or phrase on which the PROCESSOR is currently working .</sentence>
+				<definiendum id="0">CWS</definiendum>
+				<definiendum id="1">TOS</definiendum>
+				<definiendum id="2">MOD</definiendum>
+				<definiens id="0">the word or phrase on which the PROCESSOR is currently working</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The INPUT BUFFER stores the input sentence .</sentence>
+				<definiendum id="0">INPUT BUFFER</definiendum>
+				<definiens id="0">stores the input sentence</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>where CWS = the word or the phrase which the PROCESSOR is currently working on SNA = address of a sentence pattern stored in the SNP The PROCESSOR is activated when its top-level function , PARSE-SENTENCE , is called with the input sentence as its parameter .</sentence>
+				<definiendum id="0">CWS</definiendum>
+				<definiens id="0">the word or the phrase which the PROCESSOR is currently working on SNA = address of a sentence pattern stored in the SNP The PROCESSOR is activated when its top-level function , PARSE-SENTENCE , is called with the input sentence as its parameter</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the course of assembling sub-trees , ASSEMBLE-NP uses the PHP , and ASSEMBLE-SENTENCE uses the SNP and the PHP as their data bases .</sentence>
+				<definiendum id="0">ASSEMBLE-NP</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The next word that PARSEWORD finds in the INPUT BUFFER is John .</sentence>
+				<definiendum id="0">PARSEWORD</definiendum>
+				<definiens id="0">finds in the INPUT BUFFER is John</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Therefore , PARSE-WORD searches the LEXICON and gets a copy of the entry that matches this word , ( `` John '' ) , which is a noun .</sentence>
+				<definiendum id="0">PARSE-WORD</definiendum>
+				<definiens id="0">searches the LEXICON and gets a copy of the entry that matches this word</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>( 11 ) ( S ( V &lt; `` buy '' &gt; ) ( AGNT ( * NP &lt; +HUMAN &gt; ) ( PTNT ( * NP &lt; -HUMAN &gt; ) ) ) After ( I1 ) is assembled , ASSEMBLE-SENTENCE pops the TOS , attaches it to the first empty node matching its specifications and removes the asterisk at the beginning of that node .</sentence>
+				<definiendum id="0">ASSEMBLE-SENTENCE</definiendum>
+				<definiens id="0">pops the TOS , attaches it to the first empty node matching its specifications and removes the asterisk at the beginning of that node</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>PARSE-WORD then calls ASSEMBLE-SENTENCE substituting ( 18 ) for the parameter CWS and `` TOS '' for the parameter SNA .</sentence>
+				<definiendum id="0">PARSE-WORD</definiendum>
+				<definiens id="0">calls ASSEMBLE-SENTENCE substituting ( 18 ) for the parameter CWS and `` TOS '' for the parameter SNA</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Therefore , PARSE-WORD retrieves a copy of its SNP using the SNA included in the lexical entry , and attaches the lexical entry of nagusame-ta to its empty V node .</sentence>
+				<definiendum id="0">PARSE-WORD</definiendum>
+				<definiens id="0">retrieves a copy of its SNP using the SNA included in the lexical entry , and attaches the lexical entry of nagusame-ta to its empty V node</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The PTNT node of the embedded sentence is the only empty node that matches it , so the popped NP is attached there .</sentence>
+				<definiendum id="0">PTNT node of the embedded sentence</definiendum>
+				<definiens id="0">the only empty node that matches it , so the popped NP is attached there</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Therefore , ASSEMBLE-NP assembles ( ga ( NP2 `` high school '' ) ) and calls CHECK-PHP , which finds ( 37 ) because the CWS is the noun phrase just assembled and the TOS is ( 40 ) .</sentence>
+				<definiendum id="0">CHECK-PHP</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>However , POP processes the sentence using auxiliary did as a clue , just as humans do .</sentence>
+				<definiendum id="0">POP</definiendum>
+				<definiens id="0">processes the sentence using auxiliary did as a clue</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>And in the same way as it handled did in ( 9 ) , POP assembles ( V &lt; +PAST &gt; ) and pushes it on top of NPI , after which it processes John and pushes ( NP2 `` John '' ) to the STACK .</sentence>
+				<definiendum id="0">POP assembles</definiendum>
+				<definiens id="0">after which it processes John and pushes</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The result is ( 51 ) , and NP4 is the content of the LNP REGISTER : ( 50 ) ( NP4 ( HEAD ( NP3 ( HEAD ( NP2 `` linguist '' ) ) ( MOD ( ADJ `` brilliant '' ) ) ( DET &lt; DEF &gt; ) ) ) ) ( 51 ) ( S ( V &lt; `` love '' , -PAST &gt; ) ( AGNT ( NP1 `` Joan '' ) ) ( PTNT ( NP4 ( HEAD ( NP3 ( HEAD ( NP2 `` linguist '' ) ) ( MOD ( ADJ `` brilliant '' ) ) ( DET &lt; DEF &gt; ) ) ) ) ) The next word ( who ) is read in .</sentence>
+				<definiendum id="0">NP4</definiendum>
+				<definiens id="0">the content of the LNP REGISTER : ( 50 ) ( NP4 ( HEAD ( NP3 ( HEAD ( NP2 `` linguist '' ) ) ( MOD ( ADJ `` brilliant '' ) ) ( DET &lt; DEF &gt; ) ) ) ) ( 51 ) ( S ( V &lt; `` love '' , -PAST &gt; ) ( AGNT ( NP1 `` Joan '' ) ) ( PTNT ( NP4 ( HEAD ( NP3 ( HEAD ( NP2 `` linguist '' ) ) ( MOD ( ADJ `` brilliant '' ) ) ( DET &lt; DEF &gt; )</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>( 52 ) If the CWS has a feature &lt; WH &gt; and if the TOS is an S , then ( mark TOS ) and ( setq CWS ( list ( copyi MARKED ) ' &lt; REL &gt; ) ) where ( mark TOS ) marks the constituent of the TOS that is equal to the content of the LNP REGISTER MARKED represents the constituent of the TOS thus marked ( copyi X ) returns the category index of X. When ( 52 ) is applied , the CWS becomes ( 53 ) , which is pushed to the STACK .</sentence>
+				<definiendum id="0">TOS</definiendum>
+				<definiendum id="1">REGISTER MARKED</definiendum>
+				<definiens id="0">an S , then ( mark TOS ) and ( setq CWS ( list ( copyi MARKED ) ' &lt; REL &gt; ) ) where ( mark TOS ) marks the constituent of the TOS that is equal to the content of the LNP</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>( 56 ) ( S ( V &lt; `` respect '' , -PAST &gt; ) ( AGNT ( NP6 ( HEAD ( NP5 `` students '' ) ) ( DET &lt; +DEF &gt; ) ) ) ( PTNT ( * NP ) ) ) The next TOS = ( 53 ) is popped and attached to the empty node of ( 56 ) , hence ( 57 ) .</sentence>
+				<definiendum id="0">AGNT</definiendum>
+				<definiens id="0">NP5 `` students '' ) ) ( DET &lt; +DEF &gt; ) ) )</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>( 60 ) ( S ( V &lt; `` love '' , -PAST &gt; ) ( AGNT ( NPI `` Joan '' ) ) ( PTNT ( NP7 ( HEAD ( NP4 ( HEAD ( NP3 ( HEAD ( NP2 `` linguist '' ) ) ( MOD ( ADJ `` brilliant '' ) ) ( DET &lt; DEF &gt; ) ) ) ( MOD ( S ( V &lt; `` respect '' , -PAST &gt; ) ( AGNT ( NP6 ( HEAD ( NP5 `` students '' ) ) ( DET &lt; +DEF &gt; ) ) ) ( PTNT ( NP4 ) ) ) ) ) ) ) The next element found in the INPUT BUFFER is EOS ( end-of-sentence ) .</sentence>
+				<definiendum id="0">AGNT</definiendum>
+			</definition>
+			<definition id="17">
+				<sentence>ASSIGNMENT As illustrated in ( 2 ) , the same postnominal suffixes mark different relations in Japanese , depending on the verbal derivational suffixes used in the verb complex .</sentence>
+				<definiendum id="0">ASSIGNMENT As</definiendum>
+				<definiens id="0">the same postnominal suffixes mark different relations in Japanese , depending on the verbal derivational suffixes used in the verb complex</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>As illustrated in subsection 3.2.2 , POP first constructs an expanded sentence tree frame using the SNP patterns that match the SNA 's of the derivational suffixes .</sentence>
+				<definiendum id="0">SNP</definiendum>
+				<definiens id="0">patterns that match the SNA 's of the derivational suffixes</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>POP lacks one of PARSIFAL 's most significant characteristics : the distinction between the ACTIVE NODE STACK and the BUFFER .</sentence>
+				<definiendum id="0">POP</definiendum>
+				<definiens id="0">lacks one of PARSIFAL 's most significant characteristics : the distinction between the ACTIVE NODE STACK and the BUFFER</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>JANUS is a natural language understanding and generation system that allows the user to interface with several knowledge bases maintained by the U.S. Navy .</sentence>
+				<definiendum id="0">JANUS</definiendum>
+				<definiens id="0">a natural language understanding and generation system that allows the user to interface with several knowledge bases maintained by the U.S. Navy</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This indirect method of semantic interpretation obeys Frege 's Principle of Compositionality , which says that the meaning of a complex phrase is a function of two things : ( 1 ) the meanings of its constituent parts , and ( 2 ) the way in which these parts are syntactically combined .</sentence>
+				<definiendum id="0">complex phrase</definiendum>
+				<definiens id="0">Frege 's Principle of Compositionality , which says that the meaning of a</definiens>
+				<definiens id="1">a function of two things : ( 1 ) the meanings of its constituent parts , and ( 2 ) the way in which these parts are syntactically combined</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The translation component generates some logical expression that represents the meaning of the English input .</sentence>
+				<definiendum id="0">translation component</definiendum>
+				<definiens id="0">generates some logical expression that represents the meaning of the English input</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The discourse model contains parameters such as the time at which the question-answer session is taking place .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiens id="0">contains parameters such as the time at which the question-answer session is taking place</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Input from the domain model and the discourse model leads to translation to a world-model language ( WML ) , which in turn is translated into expressions of the query language of the appropriate knowledge base : a database IDB , an expert system FRESH , or a display knowledge base OSGP .</sentence>
+				<definiendum id="0">discourse model</definiendum>
+				<definiens id="0">leads to translation to a world-model language ( WML ) , which in turn is translated into expressions of the query language of the appropriate knowledge base : a database IDB , an expert system FRESH , or a display knowledge base OSGP</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Propositions are defined as functions from a set of times ( TI ) to the set of truth values ( T -- '' true '' ) and ( F -- - '' false '' ) .</sentence>
+				<definiendum id="0">Propositions</definiendum>
+				<definiens id="0">functions from a set of times ( TI ) to the set of truth values ( T -- '' true '' ) and ( F -- - '' false '' )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>V x \ [ 3t \ [ admiral ' ( x ) ( t ) &amp; R ( x ) ( t ) \ ] 3t'\ [ t ' &lt; ts &amp; t'C_tr &amp; graduate-from ' ( Annapolis ' ) ( x ) ( t ' ) \ ] \ ] In accordance with the Reichenbachean analysis of tense outlined in the previous section , the past tense of sentence ( 30 ) contributes to ( 33 ) the existential quantification over times t ' that precede the speech point ts and are contained in some contextually specified reference time tr. Following Enc , tense is thus given scope only over the predicate that corresponds to the main verb. However , I do not follow Enc in her second assumption , namely , her treatment of nouns and verbs as indexicals. It is characteristic of true indexicals such as I , there , or you that their denotation is completely determined by a certain aspect of the context of the utterance. I refers to the speaker , you to the addressee ( s ) , there to some contextually salient location , etc. In contrast to such indexical expressions , the ( temporal ) evaluation of nouns and verbs does not always depend on a single contextual parameter. In the case of complex nouns such as former admiral , last readiness rating , or previous nautical position , temporal evaluation has to be shifted twice : first from the speech point to some contextually salient reference point and then in turn to some second time relative to which the nouns admiral , readiness rating , and nautical positions themselves are evaluated. In order to accommodate complex temporal evaluations of nouns and verbs , their corresponding predicates in logical form , such as admiral ' and graduate-from ' in ( 36 ) , carry a time-denoting argument position as part of their function-argument structure. Since the temporal evaluation of such predicates can be shifted freely , their interpretation differs crucially from that of true indexicals whose interpretation can be completely determined with respect to a single contextual parameter. Even though I do not follow Enc in treating nouns and verbs as indexical expressions , I do recognize that the interpretation of noun phrases such as every admiral in ( 30 ) is in part dependent on the context in which the sentence is used. Speakers asserting ( 30 ) are not likely to make the claim that every admiral who ever served in the navy of any country that has naval forces graduated from the Naval Academy in Annapolis. Typically , ( 30 ) will be used to make a claim about a much restricted set of admirals , say all the admirals in the U.S. Navy or all admirals in the Pacific Fleet. Exactly which set of admirals a speaker focuses on will depend on the discourse context in which the sentence is used. This phenomenon of restricted quantification of noun phrases is certainly not restricted to the interpretation of every admiral in ( 30 ) , but applies to quantified noun phrases in general , as Stalnaker ( 1973 ) , who cites examples such as ( 34 ) , was among the first to point out. 34. Everyone is having a good time. In ( 34 ) the interpretation of everyone typically does not involve the set of all individuals currently alive , but rather the set of all individuals in a given context ; for example , everyone at a certain party , at a certain location , and at a given time. In order to accommodate this contextual aspect of the interpretation of noun phrases in my analysis , I introduce into the translation of quantified NPs a predicate ( R ) , which is meant to range over properties that are salient in a given context and which serve to narrow down the reference of the noun phrase in question. Let me illustrate the context-dependent evaluation of quantified NPs by once again focusing on Sentence 30 and its translation in ( 33 ) . 30. Every admiral graduated from Annapolis. 33. V x \ [ 3t \ [ admiral ' ( x ) ( t ) &amp; R ( x ) ( t ) \ ] 3t ' \ [ t ' &lt; ts &amp; t ' C_tr &amp; graduate-from ' ( Annapolis ' ) ( x ) ( t ' ) \ ] \ ] Imagine that ( 30 ) is uttered in a context in which all current admirals in the Pacific Fleet are under discussion. In that context , R could be instantiated as in ( 35 ) , i.e. , as the intension of the set of individuals ( x ) who are in the Pacific Fleet at a time which equals the speech time ts. 35. A t A y \ [ be-in ' ( Pac-Fleet ' ) ( y ) ( t ) &amp; t = ts\ ] Substituting ( 35 ) for R in ( 33 ) , we arrive at the formula in ( 36 ) . 36. ~ ' x \ [ 3t \ [ admiral ' ( x ) ( t ) &amp; be-in ' ( Pac-Fleet ' ) ( x ) ( t ) &amp; t = ts \ ] -- -~ \ [ 3 t ' \ [ t ' &lt; ts &amp; t ' C_ tr &amp; graduate-from ' ( Annapolis ' ) ( x ) ( t ' ) \ ] \ ] In a context in which all present or past admirals in the Pacific Fleet are under discussion , a reading that , as we pointed out in Section 4.3 , one can not capture using Priorean tense operators , we can capture by instantiating R as in ( 37 ) , where - &lt; stands for the relation temporally preceding or equal to. 37. A t A y \ [ be-in ' ( Pac-Fleet ' ) ( y ) ( t ) &amp; t - &lt; ts \ ] Notice that the contextual variable R serves double duty in my analysis. This double role derives from the fact that R is a two-place predicate with individuals and time intervals as its two arguments. The argument ranging over individuals serves to restrict the denotation of the noun that R is associated with ; for example , it restricts the denotation of admiral in ( 33 ) . The argument of R that ranges over time intervals , on the other hand , serves to restrict the time interval at which the associated noun denotation is evaluated ; for example , if R is instantiated by ( 35 ) or ( 37 ) , temporal evaluation of the associated predicate admiral in ( 33 ) is restricted to the speech point or to time intervals prior to or including the speech point. Temporal evaluation of the verbal predicates is , thus , Computational Linguistics , Volume 14 , Number 2 , June 1988 9 Erhard W. Hinrichs Tense , Quantifiers , and Contexts kept separate from the temporal evaluation of predicates corresponding to other constituents in the sentence. As first pointed out by Enc , this strategy makes it possible to account for sentences such as 1138 ) and ( 39 ) , whose translations require that the predicates secretary and fugitive be evaluated relative to a time that is distinct from the evaluation time of the predicate corresponding to the verb. s 38. Oliver North 's secretary testified before the committee. 39. Every fugitive is now in jail. In contrast to an analysis that interprets the past tense in terms of a Priorean P operator , the narrow-scope analysis of tense also avoids the dilemma of inducing a simultaneity reading for Sentence 30 , if P has scope over the entire formula , as in the Translation 40 of ( 30 ) . 30. Every admiral graduated from Annapolis. 40. P \ [ V x \ [ admiral ' ( x ) graduate-from ' ( Annapolis ' ) ( x ) \ ] \ ] The reading in ( 40 ) is factually implausible for two reasons : I. It imposes simultaneity as part of the truth conditions and requires that all admirals graduated at the same time , and 2. since the P operator forces temporal evaluation of all predicates in its scope at the same index , in the case of ( 40 ) it requires that every admiral graduated from Annapolis as an admiral , and not , as is actually the case , subsequent to graduation from the Naval Academy. Notice that the formula in ( 33 ) , which represents the translation of ( 30 ) in my analysis , avoids both problems associated with ( 40 ) . 33. V x \ [ 3 t \ [ admiral ' ( x ) ( t ) &amp; R ( x ) ( t ) \ ] -- ~ 3t ' \ [ t ' &lt; ts &amp; t ' C_tr &amp; graduate-from ' ( Annapolis ' ) ( x ) ( t ' ) \ ] \ ] Since temporal evaluation of the predicates admiral ' and graduate-from ' are kept separate , the first problem does not arise. Since the predicates are existentially quantified over independently , ( 33 ) , in contrast to ( 40 ) , also avoids having to assign a simultaneity reading to ( 30 ) . As I have outlined in this section , my treatment of tense and quantification is based on two basic assumptions : 1. Verbal predicates and nominal predicates both have an argument position that ranges over time intervals ; however , evaluations of verbal and nominal predicates are independent of one another. The evaluation of verbal predicates is governed by quantification over time intervals that involve Reichenbach 's parameters of speech time , event time , and reference time. 2. The denotation of quantified NPs is restricted by the predicate R , which ranges over properties that are salient in the context of utterance. In conjunction with the narrow-scope analysis of tense , it is this context dependent feature of my analysis that makes it more flexible than a wide-scope analysis of tense. One of the counterarguments that one may raise against this context-dependent aspect of my analysis of temporal semantics concerns the fact that tracking the salience of objects and their properties in naturallanguage discourse is a notoriously difficult problem. However , I will argue in the next section that whatever mechanisms are needed to track saliency , such mechanisms are independently motivated by semantic and pragmatic phenomena that go beyond the phenomenon of temporal interpretation. CONTEXT Objects and certain of their properties can receive or maintain salience in a discourse in any number of ways. The notions of focus ( Sidner 1983 ) , of common ground ( Stalnaker 1973 ) , and of mutual knowledge ( Clark and Marshall 1981 ) are certainly cases in point. In this section I will concentrate on two such mechanisms that play a role in the context-dependent interpretation of time-dependent predicates. In each case I will argue that the mechanism is needed for purposes other than temporal interpretation and , therefore , does not add complexity to my analysis of temporal semantics. The first such mechanism concerns the way in which objects and their properties can become salient in the discourse context by virtue of the goals that the discourse participants are trying to accomplish over the course of a given interaction. Consider a user of the JANUS system whose goal it is to deploy a set of ships. As part of achieving this goal , the user interacts with JANUS by asserting ( 41a ) and then by querying ( 41b ) , whose translation is given by the formula in ( 42 ) . 41. a. I need to deploy a ship immediately for a searchand-rescue mission. b. Which ships are in the Indian Ocean ? 42. QUERY \ [ ^Ax \ [ x ~ POW \ [ A y 3 t ' \ [ ship ' ( y ) ( t ' ) &amp; R ( y ) ( t ' ) \ ] \ ] &amp; 3t\ [ t = ts &amp; tCtr &amp; in ' ( Indian-Ocean ' ) ( x ) ( t ) \ ] \ ] \ ] Following Scha 1983 , I base the semantics of questions on speech-act operators , such as QUERY , which take the intensional meaning of the question as an argument. The `` symbol in ( 42 ) stands for the intension operator as defined in Montague 1973. POW stands for the powerset operation , which I use for the interpretation of plural nouns. 6 POW in ( 42 ) is used to form the set of those objects that at some time t have the property of being a ship. 7 For the technical details concerning the semantics of the QUERY operator I refer the reader to Scha 1983. For the purposes of this paper , it should suffice that QUERY has the effect of consulting the underlying knowledge bases of the system as to which members of the power set of ships , if any , have the property of being in the Indian Ocean at the time of the query. 10 Computational Linguistics , Volume 14 , Number 2 , June 1988 Erhard W. Hinrichs Tense , Quantifiers , and Contexts The point that I want to concentrate on with respect to the formula in ( 42 ) concerns the instantiation of the context-dependent predicate ( R ) that is associated with the translation of the noun phrase which ships. Given that the system recognizes the user 's goal to be that of immediate ship deployment for a search-and-rescue mission , ships with a current readiness rating of C3 or better are salient in the context , since only such ships are deployable. By instantiating R appropriately , the formula in ( 42 ) turns into ( 43 ) . 43. QUERY \ [ ^ A x \ [ x ~ POW \ [ h y 3 t ' \ [ ship ' ( y ) ( t ' ) &amp; readiness-rating ' ( y ) ( t ' ) &gt; C3 &amp; t ' = ts\ ] \ ] &amp; 3 t \ [ t = ts &amp; t C_ tr &amp; in ' ( Indian-Ocean ' ) ( x ) ( t ) \ ] \ ] \ ] The instantiation of R in ( 42 ) follows from recognizing the user 's plan as that of immediate ship deployment .</sentence>
+				<definiendum id="0">QUERY</definiendum>
+				<definiens id="0">a two-place predicate with individuals</definiens>
+				<definiens id="1">ranges over time intervals ; however , evaluations of verbal and nominal predicates are independent of one another. The evaluation of verbal predicates is governed by quantification over time intervals that involve Reichenbach 's parameters of speech time</definiens>
+				<definiens id="2">restricted by the predicate R , which ranges over properties that are salient in the context</definiens>
+				<definiens id="3">concerns the way in which objects and their properties can become salient in the discourse context by virtue of the goals that the discourse participants are trying to accomplish over the course of a given interaction. Consider a user of the JANUS system whose goal it</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>S , Ax\ [ 3t'\ [ t ' &lt; ts &amp; t ' C_ tr &amp; a ' ( SO • • ( Sn ) ( X ) ( t ' ) \ ] \ ] . 12 Computational Linguistics , Volume 14 , Number 2 , June 1988 Erhard W. Hinrichs Tense , Quantifiers , and Contexts Rule Schema 56 ranges over untensed intrasensitive verbs ( IV ) , transitive verbs ( IV/NP ) , ditransitive verbs ( IV/NP/NP ) , etc. The notation IV/nNp thus stands for an IV followed by n slashed NPs. The corresponding translation schema in ( 57 ) denotes a function from the type of meanings associated with object NPs , if any , to functions from individuals to truth values. Although these rule schemata are rather technical , their meaning should become clear when one considers a concrete example. Consider once again Example 54 , whose syntax has been given in ( 53 ) . 54. Every ship arrived. • The translation of the entire sentence can be built up in a compositional fashion as in ( 57 ) , which mirrors the syntactic composition of ( 53 ) . 58. arrived translates as : Ax\ [ 3t'\ [ t ' &lt; ts &amp; t'C_tr &amp; arrive ' ( x ) ( t ' ) \ ] \ ] every translates as : A P A Q V x \ [ 3 t \ [ P ( x ) ( t ) &amp; R ( x ) ( t ) \ ] ~ Q ( x ) \ ] every ship translates as : h Q V x \ [ 3 t \ [ ship ' ( x ) ( t ) &amp; R ( x ) ( t ) \ ] -- - &gt; Q ( x ) \ ] Every ship arrived translates as : ( h y \ [ 3 t ' \ [ t ' &lt; ts &amp; t ' c_ tr &amp; arrive ' ( y ) ( t ' ) \ ] \ ] ) h y \ [ 3 t ' \ [ t ' &lt; ts &amp; t ' C_ tr &amp; arrive ' ( y ) ( t ' ) \ ] \ ] ( x ) \ ] &amp; t ' C_ tr &amp; arrive ' ( x ) ( t ' ) \ ] \ ] The phrase every ship is formed by supplying the predicate ship ' as an argument to the translation of every .</sentence>
+				<definiendum id="0">transitive verbs</definiendum>
+				<definiendum id="1">ditransitive verbs</definiendum>
+				<definiens id="0">mirrors the syntactic composition of ( 53 )</definiens>
+				<definiens id="1">A P A Q V x \ [ 3 t \ [ P ( x ) ( t ) &amp; R ( x ) ( t ) \ ] ~ Q ( x ) \ ] every ship translates as : h Q V x \ [ 3 t \ [ ship '</definiens>
+			</definition>
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>In what follows it is essential to keep the following three concepts apart : aspect as a grammatical category of the verb , implemented by affixes , auxiliaries , and such ; aspectual class , which is a characteristic of an h-type or lexical meaning ; and the aspectual perspective of the sentence determined by the position of the RT with respect to the h-token described by a finite clause .</sentence>
+				<definiendum id="0">aspectual class</definiendum>
+				<definiens id="0">a characteristic of an h-type or lexical meaning ; and the aspectual perspective of the sentence determined by the position of the RT with respect to the h-token described by a finite clause</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>More precisely , the inference works as follows : Telic-lmperfective inference rule : If one sentence in a narrative tells us that a telic history hi has begun or is in progress , and a later sentence moves the RT into or beyond a later history h2 , and the time distance between hl and h2 is of the same or a greater scale than the time scale ofhl , then assume , unless or until told otherwise , that the end-point of hl is reached .</sentence>
+				<definiendum id="0">h2</definiendum>
+				<definiens id="0">Telic-lmperfective inference rule : If one sentence in a narrative tells us that a telic history hi has begun or is in progress , and a later sentence moves the RT into or beyond a later history h2 , and the time distance between hl and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Briefly and , I repeat , speculatively , exposition contributes to semantic memory while narrative builds an episodic representation ; conversation is a breed apart because the time of a conversation coincides with the time of its content , with simultaneity in time typically accompanied by a tight integration between the linguistic and nonlinguistic behavior : the verbalization of how-to-get-there directions is the action of giving directions ; task-oriented conversations between an expert and apprentice are an integral part of performing the task at hand , and the unfolding text of an argumentative dialogue is precisely the activity of arguing .</sentence>
+				<definiendum id="0">conversation</definiendum>
+				<definiens id="0">the action of giving directions ; task-oriented conversations between an expert</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In place of the situation of discourse , a narrative is processed with respect to a constantly maintained deictic center , which is `` the locus in conceptual space-time of the objects and events depicted or described by the sentences currently being perceived .</sentence>
+				<definiendum id="0">narrative</definiendum>
+				<definiendum id="1">deictic center</definiendum>
+				<definiens id="0">the locus in conceptual space-time of the objects and events depicted or described by the sentences currently being perceived</definiens>
+			</definition>
+</paper>
+
+		<paper id="2006">
+			<definition id="0">
+				<sentence>73 Tile Past Perfect Tense has the meaning of pastin-the-past , or more accurately , 'a time further in the past , seen from the viewpoint of a definite point of time already in the past ' .</sentence>
+				<definiendum id="0">Tile Past Perfect Tense</definiendum>
+				<definiens id="0">has the meaning of pastin-the-past , or more accurately</definiens>
+			</definition>
+</paper>
+
+		<paper id="3006">
+			<definition id="0">
+				<sentence>TAILOR uses one of the two discourse strategies identified in texts to construct a description for either a novice or an expert .</sentence>
+				<definiendum id="0">TAILOR</definiendum>
+				<definiens id="0">uses one of the two discourse strategies identified in texts to construct a description for either a novice or an expert</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>UC , however , uses stereotypes for both the user and the knowledge base ( set of UNIX commands ) .</sentence>
+				<definiendum id="0">UC</definiendum>
+				<definiens id="0">uses stereotypes for both the user and the knowledge base</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Process Trace ( with decision points ) Next causal link Properties of a part mentioned during the process trace If a fuller description of the part is desired , do Constituency Schema ( for the part ) Substeps Back to next causal link Repeat for each of the subparts : If there is local expertise on this part ( or its superordinate ) , do Constituency Schema Else do a Process Trace Figure 7 .</sentence>
+				<definiendum id="0">Process Trace</definiendum>
+				<definiendum id="1">Constituency Schema Else</definiendum>
+				<definiens id="0">Next causal link Properties of a part mentioned during the process trace If a fuller description of the part is desired , do Constituency Schema ( for the part</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>TAILOR generates descriptions aimed at users anywhere along the knowledge spectrum .</sentence>
+				<definiendum id="0">TAILOR</definiendum>
+				<definiens id="0">generates descriptions aimed at users anywhere along the knowledge spectrum</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Applying the predicates to MICROPHONE : Identification predicate : Constituency predicate : DEVICE ; ( used-for : change soundwaves into current ) DIAPHRAGM ( shape disc , material aluminium ) , DOUBLY-RESONANT-SYSTEM ( used-for : broaden response ) Depth-constituency for DOUBLY-RESONANT-SYSTEM : CARBON-CHAMBER , AIR-CHAMBER Depth-attributive for DIAPHRAGM : ( edges clamped ) TAILOR output : The microphone is a device that changes soundwaves into current .</sentence>
+				<definiendum id="0">microphone</definiendum>
+				<definiens id="0">Identification predicate : Constituency predicate : DEVICE ; ( used-for : change soundwaves into current ) DIAPHRAGM ( shape disc , material aluminium ) , DOUBLY-RESONANT-SYSTEM ( used-for : broaden response ) Depth-constituency for DOUBLY-RESONANT-SYSTEM : CARBON-CHAMBER , AIR-CHAMBER Depth-attributive for DIAPHRAGM</definiens>
+				<definiens id="1">a device that changes soundwaves into current</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>: A side-link is a link that is not part of the main path , but that comes off an event on the main path .</sentence>
+				<definiendum id="0">side-link</definiendum>
+				<definiens id="0">a link that is not part of the main path , but that comes off an event on the main path</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>PEARL is an AI language and database management package that supports framelike structures similar to those employed by other representation languages , with perhaps some more attention given to efficient retrieval .</sentence>
+				<definiendum id="0">PEARL</definiendum>
+				<definiens id="0">an AI language and database management package that supports framelike structures similar to those employed by other representation languages , with perhaps some more attention given to efficient retrieval</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Unlike an interface , which is a conduit through which information flows , an agent is a participant in a situation .</sentence>
+				<definiendum id="0">agent</definiendum>
+				<definiens id="0">a conduit through which information flows , an</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>ALANA , written by Charles Cox , produces a KODIAK representation of the content of an utterance .</sentence>
+				<definiendum id="0">ALANA</definiendum>
+				<definiens id="0">produces a KODIAK representation of the content of an utterance</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Concretion is the process of inferring a more specific interpretation of an utterance than is justified by language alone .</sentence>
+				<definiendum id="0">Concretion</definiendum>
+				<definiens id="0">the process of inferring a more specific interpretation of an utterance than is justified by language alone</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In UC , concretion is the function of a special mechanism designed specifically for that purpose by Dekai Wu .</sentence>
+				<definiendum id="0">concretion</definiendum>
+				<definiens id="0">the function of a special mechanism designed specifically for that purpose by Dekai Wu</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>PAGAN performs a sort of speech act analysis of the utterance .</sentence>
+				<definiendum id="0">PAGAN</definiendum>
+				<definiens id="0">performs a sort of speech act analysis of the utterance</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>While interfaces are generally thought of as passive conduits through which information flows , UC is an agent that listens to the user and is generally helpful .</sentence>
+				<definiendum id="0">UC</definiendum>
+				<definiens id="0">generally thought of as passive conduits through which information flows ,</definiens>
+				<definiens id="1">an agent that listens to the user and is generally helpful</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>UCGen is a simple generator , programmed by Anthony Albert and Marc Luria .</sentence>
+				<definiendum id="0">UCGen</definiendum>
+				<definiens id="0">a simple generator , programmed by Anthony Albert and Marc Luria</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Thus PAGAN is a goal analyzer , i.e. , a program that attempts to determine someone else 's goals , while UCEgo and KIP are planners , i.e. , programs that determine and produce plans for their own goals .</sentence>
+				<definiendum id="0">PAGAN</definiendum>
+				<definiens id="0">a goal analyzer</definiens>
+				<definiens id="1">a program that attempts to determine someone else 's goals , while UCEgo and KIP are planners , i.e. , programs that determine and produce plans for their own goals</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>A directory is a file that is used to contain files .</sentence>
+				<definiendum id="0">directory</definiendum>
+				<definiens id="0">a file that is used to contain files</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>A directory is a container that is used to contain text , code or files .</sentence>
+				<definiendum id="0">directory</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>Rm is a command that is used to delete files .</sentence>
+				<definiendum id="0">Rm</definiendum>
+				<definiens id="0">a command that is used to delete files</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Since the answer to the direct question is negative , UCEgo realizes that the underlying goals are not addressed by this answer , and , therefore , attempts to answer them .</sentence>
+				<definiendum id="0">UCEgo</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>UCEgo reasons that , since ( 1 ) it does n't know about such an option , and ( 2 ) it knows all the options to all simple commands , and ( 3 ) Is is a simple command , the user must have a misconception .</sentence>
+				<definiendum id="0">Is</definiendum>
+				<definiens id="0">a simple command</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>KODIAK ( Keystone to Overall Design for Integration and Application of Knowledge ) is an implementation of CRT ( Cognitive Representation Theory ) , an approach to knowledge representation that bears similarities to numerous other systems , but especially those of Schank ( 1975 ) , Schubert ( 1976 ) , Shapiro ( 1979 ) , and Brachman and Schmolze ( 1985 ) .</sentence>
+				<definiendum id="0">KODIAK</definiendum>
+				<definiens id="0">an implementation of CRT ( Cognitive Representation Theory ) , an approach to knowledge representation that bears similarities to numerous other systems</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>KODIAK is a relation-oriented rather than objectoriented system .</sentence>
+				<definiendum id="0">KODIAK</definiendum>
+			</definition>
+			<definition id="16">
+				<sentence>Note that role-play is a relation between a relation and its use , not a relation between a role and its filler .</sentence>
+				<definiendum id="0">role-play</definiendum>
+				<definiens id="0">a relation between a relation and its use , not a relation between a role and its filler</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The KODIAK interpreter understands the occurrence of an inherited relation as being the most specific inheritable specialization of that relation , so using the more abstract name has the same semantics of using the more specialized one .</sentence>
+				<definiendum id="0">KODIAK interpreter</definiendum>
+				<definiens id="0">understands the occurrence of an inherited relation as being the most specific inheritable specialization of that relation</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The Equate links belong to a particular absolute .</sentence>
+				<definiendum id="0">Equate links</definiendum>
+				<definiens id="0">belong to a particular absolute</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Because effect and cause are written on the links to these relations , we know that kill-effect is just a specialized version of the effect relation , and that kill-cause is a specialized version of cause .</sentence>
+				<definiendum id="0">kill-cause</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>DELETE-EFFECT specifies the minimal deletion event .</sentence>
+				<definiendum id="0">DELETE-EFFECT</definiendum>
+				<definiens id="0">specifies the minimal deletion event</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>O is an aspectual of CATEGORY , and O specializes rel , an aspectual of some concept dominating CATEGORY .</sentence>
+				<definiendum id="0">O</definiendum>
+				<definiens id="0">an aspectual of CATEGORY</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>DELETE-FILE-EFFECT is a specialized version of DELETE-EFFECT in which the object deleted is constrained to be a file .</sentence>
+				<definiendum id="0">DELETE-FILE-EFFECT</definiendum>
+				<definiens id="0">a specialized version of DELETE-EFFECT in which the object deleted is constrained to be a file</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>ALANA ( Augmentable LANguage Analyzer ) , the conceptual analyzer for UC , takes as input a sentence typed by a user , and builds a conceptual representation using the KODIAK knowledge representation language .</sentence>
+				<definiendum id="0">ALANA</definiendum>
+				<definiens id="0">the conceptual analyzer for UC , takes as input a sentence typed by a user , and builds a conceptual representation using the KODIAK knowledge representation language</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>ALANA constructs the primal content of the input utterance .</sentence>
+				<definiendum id="0">ALANA</definiendum>
+				<definiens id="0">constructs the primal content of the input utterance</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>The primal content is the interpretation that can be computed from grammatical and lexical knowledge ; it is generally rather abstract .</sentence>
+				<definiendum id="0">primal content</definiendum>
+				<definiens id="0">the interpretation that can be computed from grammatical and lexical knowledge ; it is generally rather abstract</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Also like PHRAN , the ALANA uses as its primitive knowledge unit the pattern-concept pair , which relates a natural language structure to a conceptual structure .</sentence>
+				<definiendum id="0">ALANA</definiendum>
+				<definiens id="0">uses as its primitive knowledge unit the pattern-concept pair , which relates a natural language structure to a conceptual structure</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>UC has a total of 476 patterns and knows 284 words .</sentence>
+				<definiendum id="0">UC</definiendum>
+				<definiens id="0">a total of 476 patterns and knows 284 words</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>A concretion mechanism attempts to find clues in a set of general concepts to generate concepts that are more specific .</sentence>
+				<definiendum id="0">concretion mechanism</definiendum>
+				<definiens id="0">attempts to find clues in a set of general concepts to generate concepts that are more specific</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>Failing this , PAGAN attempts to match the representation of the utterance to the first steps of planfors stored in memory .</sentence>
+				<definiendum id="0">PAGAN</definiendum>
+				<definiens id="0">attempts to match the representation of the utterance to the first steps of planfors stored in memory</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>Alternatively , it could be a plan introduced by UC that the user has adopted , that UC believes the user to be pursuing only after witnessing the current utterance .</sentence>
+				<definiendum id="0">UC</definiendum>
+				<definiens id="0">believes the user to be pursuing only after witnessing the current utterance</definiens>
+			</definition>
+			<definition id="31">
+				<sentence>UCEgo is the component of UC that determines UC 's own goals and attempts to achieve those goals .</sentence>
+				<definiendum id="0">UCEgo</definiendum>
+				<definiens id="0">the component of UC that determines UC 's own goals and attempts to achieve those goals</definiens>
+			</definition>
+			<definition id="32">
+				<sentence>In goal detection ( Wilensky 1983 ) , UCEgo considers the current situation and detects appropriate goals for UC .</sentence>
+				<definiendum id="0">UCEgo</definiendum>
+				<definiens id="0">considers the current situation and detects appropriate goals for UC</definiens>
+			</definition>
+			<definition id="33">
+				<sentence>In the figure , the detection net consists of UC-HAS-GOAL3 , HAS-GOAL0 , and their child nodes .</sentence>
+				<definiendum id="0">detection net</definiendum>
+			</definition>
+			<definition id="34">
+				<sentence>The addition net consists of PLANFOR3 plus all its child nodes .</sentence>
+				<definiendum id="0">addition net</definiendum>
+			</definition>
+			<definition id="35">
+				<sentence>( UC-HAS-GOAL is a subtype of HAS-GOAL in which the planner is constrained to be UC , thus obviating the need to specify UC as the planner in each demon . )</sentence>
+				<definiendum id="0">UC-HAS-GOAL</definiendum>
+				<definiens id="0">a subtype of HAS-GOAL in which the planner is constrained to be UC</definiens>
+			</definition>
+			<definition id="36">
+				<sentence>Thus , when PAGAN has inferred that the user wants to know something , and UC has the goal of helping the user ( a recurrent goal that arises from UCEgo 's computer-consultant-role theme ) , UCEgo will detect the goal of satisfying the user 's goal of knowing .</sentence>
+				<definiendum id="0">UC</definiendum>
+				<definiens id="0">the goal of helping the user ( a recurrent goal that arises from UCEgo 's computer-consultant-role theme )</definiens>
+			</definition>
+			<definition id="37">
+				<sentence>As a result , UCEgo adopts the subgoal of preventing the user from crashing the system .</sentence>
+				<definiendum id="0">UCEgo</definiendum>
+				<definiens id="0">adopts the subgoal of preventing the user from crashing the system</definiens>
+			</definition>
+			<definition id="38">
+				<sentence>This demon detects situations where UCEgo has a goal of preventing something from happening and where the person who desires this does not know how to do it and wants to know how .</sentence>
+				<definiendum id="0">UCEgo</definiendum>
+				<definiens id="0">does not know how to do it and wants to know how</definiens>
+			</definition>
+			<definition id="39">
+				<sentence>During a session , KNOME builds a profile of the user and infers the user 's level of expertise .</sentence>
+				<definiendum id="0">KNOME</definiendum>
+				<definiens id="0">builds a profile of the user and infers the user 's level of expertise</definiens>
+			</definition>
+			<definition id="40">
+				<sentence>For example , KNOME contains the information that UC knows all the command options of all simple commands .</sentence>
+				<definiendum id="0">KNOME</definiendum>
+				<definiens id="0">contains the information that UC knows all the command options of all simple commands</definiens>
+			</definition>
+			<definition id="41">
+				<sentence>PLANFOR29 represents the fact that a plan for helping the user ( HELP2 ) is for UC to satisfy KNOW-gaO , which is the user knowing how to print a file on the Imagen .</sentence>
+				<definiendum id="0">PLANFOR29</definiendum>
+				<definiens id="0">the fact that a plan for helping the user</definiens>
+				<definiens id="1">the user knowing how to print a file on the Imagen</definiens>
+			</definition>
+			<definition id="42">
+				<sentence>UCEgo detects the following concepts : ( UC HAS GOAL19 ( goal= ( HELP2 ( helpee=*USER* ) ( helper=UC ) ) ) ) ( PLANFOR29 ( goals = ( HELP2 ( helpee = *USER* ) ( helper= UC ) ) ) ( plan = ( SATISFY2 ( need = ( KNOW-ga0 &amp; ) ) ( actor= UC ) ) ) ) and asserts the following concept into the data base : ( UC HAS INTENTION6 ( intention= ( SATISFY2 ( need= ( KNOW-ga0 &amp; ) ) ( actor= UC ) ) ) ) UC HAS INTENTION6 represents UC 's intention to satisfy KNOW-gaO .</sentence>
+				<definiendum id="0">PLANFOR29</definiendum>
+				<definiendum id="1">SATISFY2</definiendum>
+				<definiendum id="2">INTENTION6</definiendum>
+				<definiens id="0">represents UC 's intention to satisfy KNOW-gaO</definiens>
+			</definition>
+			<definition id="43">
+				<sentence>UCEgo detects the following concepts : ( UC HAS INTENTION6 ( intention= ( SATISFY2 ) ( need= ( KNOW-ga0 &amp; ) ) ( actor= UC ) ) ) ) and asserts the following concept into the data base : ( UC HAS GOAL20 ( goal= ( KNOW-ga0 ( knower=*USER* ) ( fact = ( ACTION7 ( actor= *USER* ) ) ) ) ) ) UC HAS GOAL20 represents UC 's goal of the user knowing how to print a file on the Imagen .</sentence>
+				<definiendum id="0">HAS GOAL20</definiendum>
+				<definiens id="0">represents UC 's goal of the user knowing how to print a file on the Imagen</definiens>
+			</definition>
+			<definition id="44">
+				<sentence>UCEgo detects the following concepts : ( UC HAS GOAL20 ( goaI= ( KNOW-ga0 &amp; ) ) ) ( PLANFOR30 ( goals = ( KNOW-ga0 &amp; ) ) ( plan= ( TELL4 &amp; ) ) ) and asserts the following concept into the data base : ( UC HAS INTENTION7 ( intention= ( TELL4 &amp; ) ) ) UC HAS INTENTION7 represents UC ' s intention of telling the user ( TELL4 ) .</sentence>
+				<definiendum id="0">UCEgo</definiendum>
+				<definiens id="0">detects the following concepts : ( UC HAS GOAL20 ( goaI= ( KNOW-ga0 &amp; ) ) ) ( PLANFOR30 ( goals = ( KNOW-ga0 &amp; ) ) ( plan= ( TELL4 &amp; ) ) ) and asserts the following concept into the data base : ( UC HAS INTENTION7 ( intention= ( TELL4 &amp; ) ) ) UC HAS INTENTION7 represents UC ' s intention of telling the user</definiens>
+			</definition>
+			<definition id="45">
+				<sentence>( UCexpressl ( gen-prop = ( TELL4 ( Iistener=*USER* ) ( speaker=UC ) ( proposition = ( PLANFOR70 ( goals = PRINT-EFFECT0 ) ( plan = ( EXECUTE UNIX IPR COMMANDO ( ipr-file=FILE6 ) ( ipr-execute-command = `` lpr -Pip '' ) ( ipr-format = ( IPR-FORMAT0 ( ipr-format-arg = NAME6 ) ) ) ) ) ) ) ) ) ) UCexpressl represents a call to UCExpress to execute TELL4 .</sentence>
+				<definiendum id="0">UCexpressl</definiendum>
+				<definiendum id="1">speaker=UC )</definiendum>
+				<definiens id="0">a call to UCExpress to execute TELL4</definiens>
+			</definition>
+			<definition id="46">
+				<sentence>KIP uses the same knowledge base as the rest of UC .</sentence>
+				<definiendum id="0">KIP</definiendum>
+				<definiens id="0">uses the same knowledge base as the rest of UC</definiens>
+			</definition>
+			<definition id="47">
+				<sentence>Once a plan has been selected , KIP makes a copy of the plan with specific values filled in .</sentence>
+				<definiendum id="0">KIP</definiendum>
+				<definiens id="0">makes a copy of the plan with specific values filled in</definiens>
+			</definition>
+			<definition id="48">
+				<sentence>KIP makes considerable use of default knowledge in processing concerns .</sentence>
+				<definiendum id="0">KIP</definiendum>
+				<definiens id="0">makes considerable use of default knowledge in processing concerns</definiens>
+			</definition>
+			<definition id="49">
+				<sentence>A2 : A directory is a file that is used to contain files .</sentence>
+				<definiendum id="0">A2</definiendum>
+				<definiendum id="1">directory</definiendum>
+				<definiens id="0">a file that is used to contain files</definiens>
+			</definition>
+			<definition id="50">
+				<sentence>However , UCExpress prunes the concepts corresponding to compacting a file , since they are already in the conversational context .</sentence>
+				<definiendum id="0">UCExpress</definiendum>
+				<definiens id="0">prunes the concepts corresponding to compacting a file</definiens>
+			</definition>
+			<definition id="51">
+				<sentence>A directory is a file that is used to contain files .</sentence>
+				<definiendum id="0">directory</definiendum>
+				<definiens id="0">a file that is used to contain files</definiens>
+			</definition>
+			<definition id="52">
+				<sentence>A directory is a container that is used to contain text , code or files .</sentence>
+				<definiendum id="0">directory</definiendum>
+			</definition>
+			<definition id="53">
+				<sentence>Rm is a command that is used to delete files .</sentence>
+				<definiendum id="0">Rm</definiendum>
+				<definiens id="0">a command that is used to delete files</definiens>
+			</definition>
+			<definition id="54">
+				<sentence>This format is invoked when UCExpress attempts to explain a command that has a sibling or a parent that the user is believed to know , and which is thought to be similar enough to the command to be expressed .</sentence>
+				<definiendum id="0">UCExpress</definiendum>
+				<definiens id="0">attempts to explain a command that has a sibling or a parent that the user is believed to know</definiens>
+			</definition>
+			<definition id="55">
+				<sentence>Once again , a PLANFOR is to be generated .</sentence>
+				<definiendum id="0">PLANFOR</definiendum>
+				<definiens id="0">to be generated</definiens>
+			</definition>
+			<definition id="56">
+				<sentence>In particular , UCTeacher has a mechanism that allows it to guess the metaphoric use of a term in UNIX , based on its knowledge of the metaphoric use of this term outside of UNIX .</sentence>
+				<definiendum id="0">UCTeacher</definiendum>
+				<definiens id="0">a mechanism that allows it to guess the metaphoric use of a term in UNIX , based on its knowledge of the metaphoric use of this term outside of UNIX</definiens>
+			</definition>
+			<definition id="57">
+				<sentence>Here , ALANA represents the content of the initial utterance as an instance of the quite general concept EXECUTE-UNIX-COMMAND .</sentence>
+				<definiendum id="0">ALANA</definiendum>
+				<definiens id="0">the content of the initial utterance as an instance of the quite general concept EXECUTE-UNIX-COMMAND</definiens>
+			</definition>
+</paper>
+
+	</volume>

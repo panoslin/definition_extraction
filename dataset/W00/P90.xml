@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="P90">
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>The set of Tree Adjoining Languages is a strict superset of the set of Context Free Languages ( CFLs ) .</sentence>
+				<definiendum id="0">Tree Adjoining Languages</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>2 Since the set of Tree Adjoining Languages ( TALs ) is a strict superset of the set of Context Free Languages , in order to define LR-type parsers for TAGs , we need to use a more powerful configuration then a finite state automaton driving a push down stack .</sentence>
+				<definiendum id="0">Tree Adjoining Languages</definiendum>
+				<definiendum id="1">Free Languages</definiendum>
+				<definiens id="0">a strict superset of the set of Context</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>An EPDA is similar to a pushdown automaton ( PDA ) except that the storage of an EPDA is a sequence of pushdown stores .</sentence>
+				<definiendum id="0">PDA</definiendum>
+				<definiendum id="1">EPDA</definiendum>
+				<definiens id="0">a sequence of pushdown stores</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>An LR parser consists of an input , an output , a sequence of stacks , a driver program , and a parsing table that has three parts ( ACTION , GOTOright and GOTO .</sentence>
+				<definiendum id="0">LR parser</definiendum>
+				<definiens id="0">consists of an input , an output , a sequence of stacks , a driver program , and a parsing table that has three parts ( ACTION , GOTOright and GOTO</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The parsing table consists of three parts , a parsing action function ACTION and two goto functions GOTOright and GOTOloot .</sentence>
+				<definiendum id="0">parsing table</definiendum>
+				<definiens id="0">consists of three parts , a parsing action function ACTION and two goto functions GOTOright and GOTOloot</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The entry in the action table can have one of the following five values : • Shift j ( s j ) , where j is a state ; • Resume Right of 6 at address dot ( rs6 @ dot ) ) , where 6 is an elementary tree and dot is the address of a node in 6 ; • Reduce Root of the auxiliary tree/5 in which the last adjunction on the spine was performed at address star ( rd/3 @ star ) ; • Accept ( acc ) ; • Error , no action applies , the parsers rejects the input string ( errors are associated with empty table entries ) .</sentence>
+				<definiendum id="0">j</definiendum>
+				<definiendum id="1">dot</definiendum>
+				<definiens id="0">a state ; • Resume Right of 6 at address dot</definiens>
+				<definiens id="1">an elementary tree and</definiens>
+				<definiens id="2">the address of a node in 6 ; • Reduce Root of the auxiliary tree/5 in</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A dotted symbol is defined as a symbol associated with a dot above or below and either to the left or to 279 the right of it .</sentence>
+				<definiendum id="0">dotted symbol</definiendum>
+				<definiens id="0">a symbol associated with a dot above or below and either to the left or to 279 the right of it</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>A dotted tree is referred as \ [ c~ , dot , pos , stars\ ] , where o~ is a tree , dot is the address of the dot , pos is the position of the dot ( la , lb , ra or rb ) and stars is a list of nodes in a annotated by a star .</sentence>
+				<definiendum id="0">o~</definiendum>
+				<definiendum id="1">dot</definiendum>
+				<definiens id="0">a list of nodes in a annotated by a star</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>4 Adjunction Prediction predicts all possible auxiliary trees that can be adjoining at a given node .</sentence>
+				<definiendum id="0">Adjunction Prediction</definiendum>
+				<definiens id="0">predicts all possible auxiliary trees that can be adjoining at a given node</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Move Dot Down moves the dot down the links .</sentence>
+				<definiendum id="0">Dot Down</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Skip Node moves the dot up on the right hand side of a node on which no adjunction has been performed .</sentence>
+				<definiendum id="0">Skip Node</definiendum>
+				<definiens id="0">moves the dot up on the right hand side of a node on which no adjunction has been performed</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>• A transition on a ( where a is a terminal symbol ) from Si to Sj occurs if and only if in Si there is a dotted tree \ [ 6 , dot , la , stars\ ] in which the dot is to the left and above a terminal symbol a ; Sj consists of the closure of the set of dotted trees of the form \ [ 6 , dot , ra , stars\ ] .</sentence>
+				<definiendum id="0">; Sj</definiendum>
+				<definiens id="0">a terminal symbol ) from Si to Sj occurs if and only if in Si there is a dotted tree \ [ 6 , dot , la , stars\ ] in which the dot is to the left and above a terminal symbol a</definiens>
+				<definiens id="1">consists of the closure of the set of dotted trees of the form \ [ 6 , dot , ra</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>• A Skip foot of \ [ /3 , dot , lb , stars\ ] transition from Si to Sj occurs iff in S~ there is a dotted tree \ [ /3 , dot , lb , stars\ ] such that the dot is to the left and below the foot node of the auxiliary tree/3 ; Sj consists of the closure of the set of dotted trees of the form \ [ /3 , dot , rb , stars\ ] .</sentence>
+				<definiendum id="0">Sj</definiendum>
+				<definiens id="0">] transition from Si to Sj occurs iff in S~ there is a dotted tree \ [ /3 , dot , lb , stars\ ] such that the dot is to the left and below the foot node of the auxiliary tree/3 ;</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>3 In LUCY , CPD has a list of translations in the semantic lexicon , each of which is a slot relation ( a two-place predicate as its syntactic type ) in the knowledge base .</sentence>
+				<definiendum id="0">CPD</definiendum>
+				<definiens id="0">a slot relation ( a two-place predicate as its syntactic type ) in the knowledge base</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Having a zero morpheme for the unrealized '~'ou '' makes parsing and the interpretation of imperative sentences straightforward , s ( 3 ) IMP IMP-YOU finish dinner S\ [ mood : imp\ ] /S NP ( S\NP ) /NP NP \ [ case : nom\ ] apply &gt; S\NP apply &lt; S apply &gt; S \ [ mood : imp\ ] Analogous to the treatment of optional words , VP-ellipsis as in `` Mary likes a dog , and Bill does too '' is handled syntactically by defining a syntax-level zero morpheme for an elided verb phrase ( called VP-ELLIPSIS ) .</sentence>
+				<definiendum id="0">VP-ellipsis</definiendum>
+				<definiens id="0">a syntax-level zero morpheme for an elided verb phrase ( called VP-ELLIPSIS )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>Each STS consists of a relation between S mad R and one between R and E ; S and E are not directly related .</sentence>
+				<definiendum id="0">STS</definiendum>
+				<definiens id="0">consists of a relation between S mad R and one between R and E ; S and E are not directly related</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Sentence ( 8a ) does indeed imply that the matrix event ( Jon 's winning ) occurred before the adjunct event ( Rachel 's arriving ) .</sentence>
+				<definiendum id="0">Sentence ( 8a )</definiendum>
+				<definiens id="0">does indeed imply that the matrix event ( Jon 's winning ) occurred before the adjunct event</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Combinatory Categorial Grammar ( CCG , \ [ 16\ ] ) is an extension of Categorial Grammar ( CG ) .</sentence>
+				<definiendum id="0">Combinatory Categorial Grammar</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>1°An alternative ( which would actually be closer to Pierrchumbert and Hirschberg 's own proposal to compositionally assemble discourse meanings from more primitive elements of meaning carfled by each individual tone ) would be to make the boundary tone the function and the pitch accent an argument .</sentence>
+				<definiendum id="0">1°An alternative</definiendum>
+				<definiens id="0">which would actually be closer to Pierrchumbert and Hirschberg 's own proposal to compositionally assemble discourse meanings from more primitive elements of meaning carfled by each individual tone</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>NP ( S\NP ) /VP VP/VPen VPen/NP Theme/Bh X/X X/X Bh ... ... .. &gt; T Theme/Bh ... ... ... ... ... ... &gt; B Theme/Bh ... ... ... ... ... ... ... &gt;</sentence>
+				<definiendum id="0">NP ( S\NP ) /VP VP/VPen VPen/NP Theme/Bh</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Such questions could in suitably contrastive contexts give rise to themes marked by the L+H* LH % tune , bracketing the sentence as follows : ( 28 ) a. ( 1 read a book about ) ( CORduroy ) b. ( I read ) ( a book about CORduroy ) c. ( I ) ( read a book about CORduroy ) It seems that we shall miss a generalisation concerning the relation of intonation to discourse information unless we extend Pierrehumberts theory very slightly , to allow null intermediate phrases , without pitch accents , expressing unmarked themes .</sentence>
+				<definiendum id="0">CORduroy</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>• R is a finite set of role-ids .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">a finite set of role-ids</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A constraint C is a logical formula in a form Vxlx2 ... xp : role ; PI &amp; P2 &amp; ... &amp; P , ~ where the wHables Xl , x2 , ... , xp range over the set of roles in an assignment A and each subformula P~ consists only of the following vocabulary : • Variables : xl , x2 , ... , xp • Constants : elements and subsets of E U L U RU { nil , l,2 , ... } • Function symbols : word ( ) , posO , rid ( ) , lab ( ) , and modO lIn this paper , when referring to a word , we purposely use the position ( 1,2 , ... , n ) of the word rather than the word itself ( Wl , W2 , , -- , Wn ) , because the same word can occur in many different positions in a sentence .</sentence>
+				<definiendum id="0">constraint C</definiendum>
+				<definiendum id="1">x2 , ... , xp • Constants</definiendum>
+				<definiens id="0">a logical formula in a form Vxlx2 ... xp : role ; PI &amp; P2 &amp; ... &amp; P , ~ where the wHables Xl , x2 , ... , xp range over the set of roles in an assignment A and each subformula P~ consists only of the following vocabulary : • Variables : xl ,</definiens>
+				<definiens id="1">elements and subsets of E U L U RU { nil , l,2 , ... } • Function symbols : word ( )</definiens>
+				<definiens id="2">the position ( 1,2 , ... , n ) of the word rather than the word itself ( Wl , W2 , , -- , Wn ) , because the same word can occur in many different positions in a sentence</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The formula P1 of the constraint C1 is the conjunction of the following four subformulas ( an informal description is attached to each constraint ) : GI-1 ) word ( pos ( x ) ) =D ~ ( lab ( x ) =DgT , word ( mod ( x ) ) =N , pos ( x ) &lt; rood ( x ) ) `` A determiner ( D ) modifies a noun ( N ) on the right with the label DET. '' 32 Role Value governor ( `` al '' ) governor ( `` dog2 '' ) governor ( `` runs3 '' ) &lt; DET,2 &gt; &lt; SUBJ,3 &gt; &lt; R00T , nil &gt; Figure 2 : Assignment Satisfying ( GI-1 ) to ( G1-4 ) ~SUB3 ( G1-2 ) word ( pos ( x ) ) =N ~ ( lab ( x ) =SUBJ , word ( mod ( x ) ) =V , pos ( x ) &lt; mod ( x ) ) `` A noun modifies a verb ( V ) on the right with the label SUBJ . ''</sentence>
+				<definiendum id="0">pos ( x ) ) =D ~ ( lab</definiendum>
+				<definiendum id="1">Assignment Satisfying</definiendum>
+				<definiendum id="2">V</definiendum>
+				<definiens id="0">the conjunction of the following four subformulas ( an informal description is attached to each constraint</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , sentence ( 1 ) is analyzed as shown in Figure 2 provided that the words `` a , '' `` dog , '' and `` runs '' are given parts-ofspeech D , N , and V , respectively ( the subscript attached to the words indicates the position of the word in the sentence ) .</sentence>
+				<definiendum id="0">V</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>( G2a-4 ) word ( pos ( x ) ) =NP =~ ( word ( mod ( x ) ) =V , lab ( x ) =OBJ , mod ( x ) &lt; pos ( x ) ) `` An NP modifies a V on the left with the label OBJ . ''</sentence>
+				<definiendum id="0">pos ( x ) ) =NP =~</definiendum>
+				<definiendum id="1">mod</definiendum>
+				<definiendum id="2">NP</definiendum>
+				<definiens id="0">modifies a V on the left with the label OBJ</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Although there 37 = ( a , b } L = ( l } R = ( partner } C = conjunction of the following subformulas : • ( word ( pos ( x ) ) =a ~ word ( mod ( x ) ) =a ) &amp; ( word ( pos ( x ) ) =b ~ word ( mod ( x ) ) =b ) • mod ( x ) = pos ( y ) ~ rood ( y ) = pos ( x ) • rood ( x ) ¢ pos ( x ) &amp; rood ( x ) nil • pos ( x ) &lt; pos ( y ) &lt; mod ( y ) pos ( x ) &lt; mod ( x ) &lt; mod ( y ) • rood ( y ) &lt; pos ( y ) &lt; pos ( x ) mod ( y ) &lt; mod ( x ) &lt; pos ( x ) Figure 9 : Definition of Gww ~aa a b Figure 10 : Assignment for a sentence of Lww is no context-free grammar that generates Lww , the grammar Gww = &lt; E , L , R , C &gt; shown in Figure 9 generates it ( Maruyama 1990 ) .</sentence>
+				<definiendum id="0">pos</definiendum>
+				<definiendum id="1">pos</definiendum>
+				<definiendum id="2">rood ( x ) ¢ pos</definiendum>
+				<definiendum id="3">rood ( x ) nil • pos</definiendum>
+				<definiens id="0">a sentence of Lww is no context-free grammar that generates Lww , the grammar Gww = &lt; E , L , R</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A role can have n x l possible values , where l is the size of L , so the maximum domain size is n x l. Binary constraints may be imposed on arbitrary pairs of roles , and therefore the number of constraint matrices is at most proportional to ( nk ) 2 .</sentence>
+				<definiendum id="0">l</definiendum>
+				<definiens id="0">the size of L , so the maximum domain size is n x l. Binary constraints may be imposed on arbitrary pairs of roles</definiens>
+			</definition>
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>The mutual information of two events l ( x y ) is defined as follows : P ( x y ) l ( xy ) = log2 P ( x ) P ( y ) where P ( x y ) is the joint probability of events x and y , and P ( x ) and P ( y ) axe the respective independent probabilities .</sentence>
+				<definiendum id="0">mutual information of two events l ( x y )</definiendum>
+				<definiendum id="1">P ( x y )</definiendum>
+				<definiendum id="2">P ( x</definiendum>
+				<definiens id="0">follows : P ( x y ) l ( xy ) = log2 P ( x ) P ( y ) where</definiens>
+				<definiens id="1">the joint probability of events x and y</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>We use the observed frequencies to derive a cooccurrence score Cobj ( an estimate of mutual information ) defined as follows .</sentence>
+				<definiendum id="0">cooccurrence score Cobj</definiendum>
+				<definiens id="0">an estimate of mutual information ) defined as follows</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>v ) N C~ , j ( n v ) = log2 / ( n ) / ( v ) N N where fin v ) is the frequency of noun n occurring as object of verb v , f ( n ) is the frequency of the noun n occurring as argument of any verb , f ( v ) is the frequency of the verb v , and N is the count of clauses in the sample .</sentence>
+				<definiendum id="0">fin v )</definiendum>
+				<definiendum id="1">f ( v )</definiendum>
+				<definiendum id="2">N</definiendum>
+				<definiens id="0">the frequency of noun n occurring as object of verb v</definiens>
+				<definiens id="1">the frequency of the verb v</definiens>
+				<definiens id="2">the count of clauses in the sample</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In Table 4 , we see that boat is a subject of cruise , and object of sink .</sentence>
+				<definiendum id="0">boat</definiendum>
+				<definiens id="0">a subject of cruise , and object of sink</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Noun f ( n ) verbs SIM table 66 30 181.43 floor 94 6 30.01 farm 80 8 22.94 scene 135 10 20.85 America 156 7 19.68 experience 129 5 19.04 river 95 4 18.73 town 195 6 18.68 side 327 8 18.57 hospital 190 7 18.10 House 453 6 17.84 Verbs cajole , thump , _grasp , convince_ , inform_ , address , vote , _predict , _address , _withdraw , _adopt , _approve , criticize_ , _criticize , represent , _reach , write , reject , _accuse , support_ , go to_ , _consider , _win , pay_ , allow_ , tell , hold , call__ , _kill , _call , give_ , _get , say , take , `` __be _vote , address_ , _approve , inform_ , _reject , go to_ , _consider , adopt , tell , be , give_ _vote , _approve , go to_ , inform_ , _reject , tell , `` be , convince_ , _hold , address_ , _consider , _address , _adopt , call_ , criticize , allow_ , support_ , _accuse , give_ , _call adopt , inform_ , address , go to_ , _predict , support_ , _reject , represent_ , _call , _approve , -_be , allow , take , say_ , _hold , tell_ _reject , _vote , criticize_ , convince- , inform_ , allow , accuse , _address , _adopt , `` _be , _hold , _approve , give_ , go to_ , tell_ , _consider , pay_ convince_ , approve , criticize_ , _vote , _address , _hold , _consider , `` _ .</sentence>
+				<definiendum id="0">Noun f</definiendum>
+				<definiens id="0">thump , _grasp , convince_ , inform_ , address , vote , _predict , _address , _withdraw , _adopt , _approve , criticize_ , _criticize , represent , _reach , write , reject , _accuse , support_ , go to_ , _consider , _win , pay_</definiens>
+				<definiens id="1">go to_ , inform_ , _reject , tell , `` be , convince_ , _hold , address_ , _consider , _address , _adopt , call_ , criticize , allow_ , support_ , _accuse , give_ , _call adopt , inform_ , address , go to_ , _predict , support_ , _reject , represent_ , _call , _approve , -_be</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>Author Kaplan and Bresnan \ [ 10\ ] Model of Feature Structures Partial functions Constraint Lanl~ua~e Features Disjunction , negation , setvalues Pereira and Shieber \ [ 17\ ] Information Domain F=\ [ A -- - ) F\ ] +C Kasper and Rounds \ [ 11\ ] Acyclic finite automata Disjunction Moshier and Rounds \ [ 14\ ] Forcing sets of acyclic finite lntuitionistic negation automata Dawar and Vijayashankar \ [ 3\ ] Acyclic finite automata Three truth values , negation Gazdar , Pullum , Carpenter , Category structures Based on propositional modal Klein , Hukari and Levine \ [ 7\ ] logic Johnson \ [ 9\ ] `` Attribute-value structures '' Classical negation , disjunction ... 174 ( A1 ) For all Constants c and attributes a , a ( c ) = 3- .</sentence>
+				<definiendum id="0">Attribute-value structures</definiendum>
+				<definiendum id="1">A1 ) For all Constants</definiendum>
+				<definiens id="0">Model of Feature Structures Partial functions Constraint Lanl~ua~e Features Disjunction , negation , setvalues Pereira and Shieber \ [ 17\ ] Information Domain F=\ [ A -- -</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Axiom schema ( A2 ) requires that distinct constant symbols denote distinct elements in any satisfying model .</sentence>
+				<definiendum id="0">Axiom schema</definiendum>
+				<definiens id="0">distinct constant symbols denote distinct elements in any satisfying model</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>axioms is an attribute-value structure ; i.e. ( A1 ) ( A4 ) constitute a definition of attribute-value structures .</sentence>
+				<definiendum id="0">axioms</definiendum>
+				<definiens id="0">an attribute-value structure ; i.e. ( A1 ) ( A4 ) constitute a definition of attribute-value structures</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In fact , any model for these axioms can be regarded as a ( possibly infinite and disconnected ) attribute-value feature structure , where the model 's individuals are the elements or nodes , the unary functions define how attributes take their values , the constant symbols denote constant elements , and _L is a sink state .</sentence>
+				<definiendum id="0">_L</definiendum>
+				<definiens id="0">a sink state</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( 1 ' ) subj ( xl ) = x2 ^ agr ( x2 ) = x4 ^ number ( x4 ) = singular A pred ( xl ) = x3 A verb ( x3 ) = x5 A agr ( x 5 ) ~X6 ^ person ( x6 ) = third ( 2 ' ) subj ( x7 ) = x8 ^ agr ( x8 ) = Xll ^ pred ( x7 ) = x9 a verb ( x9 ) = Xl0 A agr ( xlO ) = Xll Because the principal filter generated by the unification of el and e7 is the intersection of the principal filters generated by ( 1 ) and ( 2 ) , it is also the set of satisfying models for the conjunction of ( 1 ' ) and ( 2 ' ) with the formula Xl = x7 ( 3 ' ) .</sentence>
+				<definiendum id="0">e7</definiendum>
+				<definiens id="0">x2 ^ agr ( x2 ) = x4 ^ number ( x4 ) = singular A pred ( xl ) = x3 A verb ( x3 ) = x5 A agr ( x 5 ) ~X6 ^ person ( x6 ) = third ( 2 ' ) subj ( x7 ) = x8 ^ agr ( x8 ) = Xll ^ pred ( x7 ) = x9 a verb ( x9 ) = Xl0 A agr ( xlO ) = Xll Because the principal filter generated by the unification of el and</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>A segmental string is a string of segments with some representation of constituent structur .</sentence>
+				<definiendum id="0">segmental string</definiendum>
+				<definiens id="0">a string of segments with some representation of constituent structur</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Each segment is a set of phonological features , which are abstract as compared with phonetic representations , although both are given in terms of phonetic features .</sentence>
+				<definiendum id="0">segment</definiendum>
+				<definiens id="0">a set of phonological features , which are abstract as compared with phonetic representations , although both are given in terms of phonetic features</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The derivation consists of a series of cycles .</sentence>
+				<definiendum id="0">derivation</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The surface string is either the empty string or a unit that represents the halted accepting ATM configuration .</sentence>
+				<definiendum id="0">surface string</definiendum>
+				<definiens id="0">the empty string or a unit that represents the halted accepting ATM configuration</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( X is the immediate context of A , to the right or left . )</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">the immediate context of A , to the right or left</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In particular , every satisfiable Boolean formula in 3-CNF is a string of clauses C1 , C2 , ... , Cp in the variables zl , z= , ... , z , that satisfies the following three constraints : ( i ) negation : a variable =j and its negation ~ have opposite truth values ; ( ii ) clausal satisfaction : every clause C~ = ( a~VbiVc/ ) contains a true literal ( a literal is a variable or its negation ) ; ( iii ) consistency of truth assignments : every unnegated literal of a given variable is assigned the same truth value , either 1 or 0 .</sentence>
+				<definiendum id="0">clausal satisfaction</definiendum>
+				<definiens id="0">a string of clauses C1 , C2 , ... , Cp in the variables zl , z= , ... , z</definiens>
+				<definiens id="1">a variable =j and its negation ~ have opposite truth values</definiens>
+				<definiens id="2">a variable or its negation ) ; ( iii ) consistency of truth assignments : every unnegated literal of a given variable is assigned the same truth value , either 1 or 0</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Assimilation is the common phonological process whereby some segment comes to share properties of an adjacent segment .</sentence>
+				<definiendum id="0">Assimilation</definiendum>
+				<definiens id="0">the common phonological process whereby some segment comes to share properties of an adjacent segment</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>tab consists of two syIlabhs , the twosegment syllable CV and the three-segment dosed syllable CVC .</sentence>
+				<definiendum id="0">tab</definiendum>
+				<definiens id="0">consists of two syIlabhs , the twosegment syllable CV and the three-segment dosed syllable CVC</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Syllables obey a language-universal sonority sequencing constraint ( SSC ) , which states that the nucleus is the sonority peak of a syllable , and that the sonority of adjacent segments swiftly and monotonically decreases .</sentence>
+				<definiendum id="0">Syllables</definiendum>
+				<definiens id="0">obey a language-universal sonority sequencing constraint ( SSC ) , which states that the nucleus is the sonority peak of a syllable , and that the sonority of adjacent segments swiftly and monotonically decreases</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Each clause C~ ( a~ V b~ V c~ ) is encoded as a segmental string C z , zb zc , where C is a consonant of sonority 1 .</sentence>
+				<definiendum id="0">clause C~</definiendum>
+				<definiendum id="1">C</definiendum>
+				<definiens id="0">a~ V b~ V c~ ) is encoded as a segmental string C z</definiens>
+				<definiens id="1">a consonant of sonority 1</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>A sentence becomes unacceptable for processing reasons if the combination of these properties produces too great a load for the working memory capacity ( cf. Frazier 1985 ) : ( 1 ) n E Aixi &gt; K i=1 where : K is the maximum allowable processing load ( in processing load units or PLUs ) , xl is the number of PLUs associated with property i , n is the number of properties , Ai is the number of times property i appears in the structure in question .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiendum id="1">xl</definiendum>
+				<definiendum id="2">n</definiendum>
+				<definiendum id="3">Ai</definiendum>
+				<definiens id="0">the working memory capacity ( cf. Frazier 1985 ) : ( 1 ) n E Aixi &gt; K i=1 where :</definiens>
+				<definiens id="1">the number of properties ,</definiens>
+				<definiens id="2">the number of times property i appears in the structure in question</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Thus if we know where one reading of a ( temporarily ) ambiguous sentence becomes the strongly preferred reading , we can write an inequality associated with this preference : ( 2 ) n B ZA , x , Z , x , i=1 i=1 where : P is the preference factor ( in PLUs ) , xi is the number of PLUs associated with property i , n is the number of properties , Ai is the number of times property i appears in the unpreferred structure , Bz is the number of times property i appears in the preferred structure .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">Ai</definiendum>
+				<definiendum id="2">Bz</definiendum>
+				<definiens id="0">( 2 ) n B ZA , x , Z , x , i=1 i=1 where :</definiens>
+				<definiens id="1">the number of properties ,</definiens>
+				<definiens id="2">the number of times property i appears in the unpreferred structure</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( 3 ) A buffer cell is a set of structures { SI , ... , S , } , where each Si represents the same segment of the input string .</sentence>
+				<definiendum id="0">buffer cell</definiendum>
+				<definiens id="0">a set of structures { SI , ... , S , } , where each Si represents the same segment of the input string</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>{ s.,2,1 , s.,2,2 , ... , s.,2 , ... . } ... . ( ... . } ) } where : p is the number of stacks ; ml is the number of buffer cells in stack i ; and nij is the number of tree structures in the jth buffer cell of stack i. The motivation for these data structures is given by the desire for a completely unconstrained parsing algorithm upon which constraints may be placed : this algorithm should allow all possible parser operations to occur at each parse state .</sentence>
+				<definiendum id="0">p</definiendum>
+				<definiendum id="1">ml</definiendum>
+				<definiendum id="2">nij</definiendum>
+				<definiens id="0">the number of stacks ;</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Thematic categories include nouns , verbs , adjectives and prepositions ; functional categories include determiners , complementizers , and inflection markers .</sentence>
+				<definiendum id="0">Thematic categories</definiendum>
+				<definiens id="0">include nouns , verbs , adjectives and prepositions ; functional categories include determiners , complementizers , and inflection markers</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>As a result of this difficulty Pritchett ( 1988 ) proposes the Theta Reanalysis Constraint : l° ( 30 ) Theta Reanalysis Constraint ( TRC ) : Syntactic reanalysis which interprets a 0-marked constituent as outside its current 0-Domain and as within an existing 0-Domain of which it is not a member is costly .</sentence>
+				<definiendum id="0">Theta Reanalysis Constraint</definiendum>
+				<definiens id="0">Syntactic reanalysis which interprets a 0-marked constituent as outside its current 0-Domain and</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Up until the last word , this sentence is ambiguous between two readings : one where loved is the matrix verb ; and the other where loved heads a relative clause modifier of the noun Russian .</sentence>
+				<definiendum id="0">loved</definiendum>
+				<definiens id="0">the matrix verb</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>An exclusion matrix , ( Ematrix ) , is an N • N matrix where N is the number of triples .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of triples</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>COMPUTING SEMANTIC GRAPHS FROM SYNTACTIC GRAPHS 49 An important test of the utility of syntactic graphs is to demonstrate that they can be used directly to compute corresponding semantic graphs that represent the union of acceptable case analyses .</sentence>
+				<definiendum id="0">COMPUTING SEMANTIC GRAPHS FROM SYNTACTIC GRAPHS</definiendum>
+				<definiens id="0">49 An important test of the utility of syntactic graphs is to demonstrate that they can be used directly to compute corresponding semantic graphs that represent the union of acceptable case analyses</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>remove-all-dependent-arcs ( Arcs-to-be-removed ) for all Arc in Arcs-to-be-removed do begin i\ ] Arc is not removed yet then find all arcs pointing to the same node as Arc : call them Alt-arcs find arcs which are exclusive with every arc in Alt-arcs , call them Dependent-arcs remove Arc remove entry of Arc from the exclusion matrix remove-all-Dependent-arcs ( Dependent-arcs ) end Figure 4 : Algorithm for Finding Dependent Relations matrix so that F1 can be exclusive with all functional triples which are produced from the syntactic triples which are exclusive with any of T/~s. The syntactic graph in Figure 2 has five possible syntactic interpretations and all and only the five syntactic-functional interpretations must be contained in the transformed functional graph with the new exclusion matrix in Figure 3 .</sentence>
+				<definiendum id="0">remove-all-dependent-arcs</definiendum>
+				<definiens id="0">not removed yet then find all arcs pointing to the same node as Arc : call them Alt-arcs find arcs which are exclusive with every arc in Alt-arcs</definiens>
+				<definiens id="1">with all functional triples which are produced from the syntactic triples</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The co-occurrence constraints test is a matter of deciding whether a given functional triple is semantically plausible or not .</sentence>
+				<definiendum id="0">co-occurrence constraints test</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>Copying is the most expensive operation in such parsers , and several methods to reduce copying have been devised with varying degrees of success .</sentence>
+				<definiendum id="0">Copying</definiendum>
+				<definiens id="0">the most expensive operation in such parsers , and several methods to reduce copying have been devised with varying degrees of success</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>LINK is a descendent of the MOPTRANS system developed by Lytinen ( 1986 ) .</sentence>
+				<definiendum id="0">LINK</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Lazy evaluation is an optimization technique developed for the interpretation of functional programming languages ( Field and 181 Harrison , 1988 ) , and has been extended to theorem proving and logic programming in attempts to integrate that paradigm with functional programming ( Reddy , 1986 ) .</sentence>
+				<definiendum id="0">Lazy evaluation</definiendum>
+				<definiens id="0">an optimization technique developed for the interpretation of functional programming languages</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The delay function returns an active node when given a simple node as its argument .</sentence>
+				<definiendum id="0">delay function</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1039">
+			<definition id="0">
+				<sentence>The dictionary block consists of character memories ( i.e. 1st character memory , 2nd character memory , ... , N-th character memory ) .</sentence>
+				<definiendum id="0">dictionary block</definiendum>
+				<definiens id="0">consists of character memories ( i.e. 1st character memory , 2nd character memory , ... , N-th character memory )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The shift register block consists of character registers ( i.e. 1st character register , 2nd character register , ... , N-th character register ) .</sentence>
+				<definiendum id="0">shift register block</definiendum>
+				<definiens id="0">consists of character registers ( i.e. 1st character register , 2nd character register , ... , N-th character register )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The index memory receives a character from the 1st character register .</sentence>
+				<definiendum id="0">index memory</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The address generator sets the same address to all the character memories , and changes their addresses simultaneously within the address range which the index memory expresses .</sentence>
+				<definiendum id="0">address generator</definiendum>
+				<definiens id="0">sets the same address to all the character memories</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The n-th comparator compares the character in the n-th character register with the one from the -th character memory .</sentence>
+				<definiendum id="0">n-th comparator</definiendum>
+				<definiens id="0">compares the character in the n-th character register with the one from the -th character memory</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Here , M is the number of text streams .</sentence>
+				<definiendum id="0">M</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Here , D is the number of all morphemes in the dictionary , L is the length of input text , M is the number of text streams , and A is the indexing coef~dent .</sentence>
+				<definiendum id="0">D</definiendum>
+				<definiendum id="1">L</definiendum>
+				<definiendum id="2">A</definiendum>
+				<definiens id="0">the number of all morphemes in the dictionary ,</definiens>
+				<definiens id="1">the length of input text</definiens>
+				<definiens id="2">the number of text streams</definiens>
+			</definition>
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>Cette affaire regarde Jean * Jean est regard6 par cette affaire Cette affaire concerne Jean Jean est conceru~ par cette affaire ( M. Gross 1975 ) It also seems a lexical phenomenon that `` change '' but not `` transform '' allows for ergative alternation in English ' The witch changed/transformed John into a wolf John changed into a wolf * John transformed into a wolf ( G. Lakoff 1970 ) To take another example , dative shift ( or thereinsertion ) is often thought of as applying to a semantically restricted set of verbs ( eg verbs of communication or of change of possession , for dative ) , but this does not predict the difference between 'tell ' that allows for it , and 'announce ' or 'explain ' which do not3 : John told his ideas to Mary John told Mary his ideas John explained his ideas to Mary * John explained Mary his ideas Lexicalist frameworks such as GPSG , which handles such phenomena by metarules ( defined on 'lexical ' PS rules ) , or LFG , which defmes them at the f-structure level ( ie between 'lexical forms ' ) could capture such restrictions .</sentence>
+				<definiendum id="0">dative shift</definiendum>
+				<definiendum id="1">f-structure level</definiendum>
+				<definiens id="0">often thought of as applying to a semantically restricted set of verbs ( eg verbs of communication or of change of possession</definiens>
+				<definiens id="1">Mary John told Mary his ideas John explained his ideas to Mary * John explained Mary his ideas Lexicalist frameworks such as GPSG , which handles such phenomena by metarules ( defined on 'lexical ' PS rules ) , or LFG , which defmes them at the</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This is the level at which syntactic generMiTJtions can be stated , since each elementary tree may bear specific constraints independantly of any iexical items B. A Tree Family consists in fact of all the constituent structures trees which are possibly allowed for a given predicate 9 .</sentence>
+				<definiendum id="0">A Tree Family</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>Up to now , a parser with O ( n 6 ) steps in the worst case was known where n is the length of the input string .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of the input string</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>All known parsing algorithms for TAGs use the close structural similarity between TAGs and CFGs , which can be expressed by writing all inner nodes and all their sons in a TAG as the rule set of a context-free grammar ( the context-free kernelof a TAG ) .</sentence>
+				<definiendum id="0">TAGs</definiendum>
+				<definiendum id="1">CFGs</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>It is intuitively motivated that this approach needs fewer steps than the strategy of Vijay-Shanker and Joshi , which stores all intermediate states of TAG derivations , because the locally represented elementary trees can be interpreted as TAG derivations where equal parts are computed exactly once instead of individual representations in each derivation .</sentence>
+				<definiendum id="0">Joshi</definiendum>
+				<definiens id="0">stores all intermediate states of TAG derivations</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A TAG is a tree generation system .</sentence>
+				<definiendum id="0">TAG</definiendum>
+				<definiens id="0">a tree generation system</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A special leaf ( the foot node ) must exist , labelled with the same nonterminal as the root node .</sentence>
+				<definiendum id="0">special leaf</definiendum>
+				<definiens id="0">the foot node ) must exist , labelled with the same nonterminal as the root node</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>L ( G ) , the language of a TAG , is defined as the set containing all leaf strings of trees in T ( G ) , respectively all trees which can be constructec\ [ by adjoining as described in the corresponding derivation .</sentence>
+				<definiendum id="0">L</definiendum>
+				<definiens id="0">the set containing all leaf strings of trees in T ( G ) , respectively all trees which can be constructec\ [ by adjoining as described in the corresponding derivation</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>free kernel 285 a : AS°° /3F ~SI0 /32 : /~ Marie e Plet e 7 : s~ l'2 men '' N~P2 ' ~aten Jan N.P 111 V~ zag Marie c Figure l : A small sample TAG demonstrating the process of ADJOINING K of a TAG G. K is a CFG and consists of the same sets N , T and S of G , but P ( K ) is the set of all inner nodes of all elementary trees in G interpreted as the lefthand side of a rule , where all sons in their order from left to right build the righthand side of that rule .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">s~ l'2 men '' N~P2 ' ~aten Jan N.P 111 V~ zag Marie c Figure l : A small sample TAG demonstrating the process of ADJOINING K of a TAG G. K is a CFG and consists of the same sets N , T and S of G , but</definiens>
+				<definiens id="1">the set of all inner nodes of all elementary trees in G interpreted as the lefthand side of a rule , where all sons in their order from left to right build the righthand side of that rule</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>It is clear that in interpreting these chains of pointers the stack at each node X in the triangle matrix represents all intermediate states of TAG derivations with X as root node in an individual cell of the triangle matrix .</sentence>
+				<definiendum id="0">matrix</definiendum>
+				<definiens id="0">represents all intermediate states of TAG derivations with X as root node in an individual cell of the triangle matrix</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The algorithm starts initializing cells for all terminal leaves ( X E \ [ i-l , i , i , i\ ] for ti with father X , 1 &lt; i &lt; n ) and all foot nodes which can be seen as nonterminal leaves ( X E \ [ i , j , i , j\ ] where X is a foot node in an auxiliary tree , 0 &lt; i &lt; j &lt; n-l ) .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a foot node in an auxiliary tree</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Just as the CKY algorithm tests all combinations of neighboring strings , here new elements of cells are computed together with the context-free invariant computation , e.g. , iff ( Z , X Y ) is a rule in the context-free kernel of the input TAG and X E \ [ i , j , k , I\ ] , Y E \ [ j 1 , m , p , p\ ] and X and Y are root nodes of neighboring parts in the same elementary tree , then Z is added to \ [ i , m , k , l\ ] ) .</sentence>
+				<definiendum id="0">X Y )</definiendum>
+				<definiens id="0">a rule in the context-free kernel of the input TAG and X E \ [ i , j , k</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>287 FORMATION As precondition of the new parsing algorithm , the TAG has to be transformed into a normal form which contains only trees with nodes and their sons , following the Chomsky normal form definition .</sentence>
+				<definiendum id="0">TAG</definiendum>
+				<definiens id="0">contains only trees with nodes and their sons , following the Chomsky normal form definition</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>K satisfies the requirement that the TAG G is in normal form .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiens id="0">satisfies the requirement that the TAG G is in normal form</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>It is obvious that this invariant consisting of the nonterminal in a cell of the triangle matrix to represent the context-free invariant , the pointers to elementary trees , and the foot node pointers to represent which part of an elementary tree is analyzed computes less information than an array cell in the approach of Vijay-Shanker and Joshi does , where whole subtrees of the derivation tree are stored not stopping at a foot node as we do .</sentence>
+				<definiendum id="0">Joshi</definiendum>
+				<definiens id="0">part of an elementary tree is analyzed computes less information than an array cell in the approach of Vijay-Shanker and</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>The process of assigning indices to noun phrases is known as `` free indexation , '' which has the following general form : ( 4 ) Assign indices freely to all noun phrases ?</sentence>
+				<definiendum id="0">process of assigning indices to noun phrases</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>FML* does not contain disjunction , however , and furthermore , equations of the form / : f ( where ¢~ is an arbitrary formula ) are replaced by equations Feature Specification Defaults , it is simply allowed that a category description has more than one 'stable expansion ' .</sentence>
+				<definiendum id="0">furthermore</definiendum>
+				<definiendum id="1">¢~</definiendum>
+				<definiens id="0">an arbitrary formula ) are replaced by equations Feature Specification Defaults</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Default unification is an operation which takes two formulas as arguments , representing default and non-default informat/on respectively .</sentence>
+				<definiendum id="0">Default unification</definiendum>
+				<definiens id="0">an operation which takes two formulas as arguments , representing default and non-default informat/on respectively</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The monotonlclty properties of default unification are listed below { where &lt; is subsumption } : ( 14 } a , ~X^ , ( but not X~X^* ) b. X- &lt; X ' ~ ( X ^ @ ~ 0C'^~ ) ( butnot ¢ s¢ ' ~ ( g ^¢ ) &lt; _ ( X^¢ ' ) ) ( 14a ) says that default unification is montonlc addition of information to the non-default information. ( 14b ) says that the function as a whole is monotonic only w.r.t , the default argument : adding more default information leads to extensions of the result. Adding nondefault information is non-monotonic. however , as this might cause more of the default information to get removed or overwritten. The laws in ( 9 ) prove that formulae containing the ( 9-operator can always be reduced to standard formulae of FML*. This implies that formulae using the ( 9-operator can still be interpreted as denoting dags. Furthermore , it follows that addition of default unification to a unification-based formalism should be seen only as a way to increase the expressive power of tools used in defining the grammar ( and thus. according to D6rre et al. ( 1990 ) default unification would be an 'off line ' extension of the formalism , that is , its effects can be computed at compile time ) . A NOTE ON IMPLEMENTATION. We have implemented default unification in Prolog. Feature structures are represented by open ended lists ( containing elements of the form label=Value ) , atoms and variables to represent complex feature structures , atomic values and reentrancies respectively ( see Gazdar &amp; Mellish , 1989 ) . This implementation has the advantage that it is corresponds to FML* NF. ( invalid ) statement that ¥ ( 9 ( X ( 9 ~ } = X ( 9 ( V ( 9¢ ) . 168 ( 15 ) a. If=X , gfXl Y\ ] b. \ [ f=a , g=a I _Y\ ] c. \ [ f=\ [ h=a I Xl \ ] , g=\ [ hfa I XI \ ] I_Y\ ] d \ [ f=\ [ h=a I Xl , g=\ [ h=._Z IX1\ ] I Y\ ] If we unify ( 15a ) with \ [ \ [ =al_Yl\ ] . we get ( 15b ) , in which the value of g has been updated as well Thus , the requirements of ( 4a , b ) are always met , and furthermore , the reentrancy as such between fand g is no longer visible ( condition 4c ) . If we unify ( I 5a ) with U'=\ [ h=a IX2 ) I Y3\ ] , we get ( 15c ) , in which the variable Xhas been replaced by X1 , which can be interpreted as ranging over all paths that are realized but not defined underf ( condltlon ( 4d ) ) . Note also that this representation has the advantage that we can define a reentrancy for all realized features , without having to specify the set of possible features or expanding the value off into a list containing all these features. If we default unify ( 15a ) with \ [ f=\ [ hffial_X2II_X,3\ ] as non-default information , for instance , the result is representable as ( 15d ) . The reentrancy for all undefined features under f is represented by X1. The constant NIL of FML* is represented as a Prolog variable ( _Z in this case ) . Thus , the seemingly space consuming procedure of bringing a formula into FML* NF and transforming the output of ( 9d ) into FML* is avoided completely. The actual default unification procedure is a modified version of the merge operation defined in D6rre &amp; Elsele ( 1986 ) . Default unification can be used to extend the standard PATR-II ( Shieber et al.. 1983 ) methods for defining feature structures. In the examples , we freely combine default and nondefault information ( prefixed by I ' ) in template definitions. ( 16 ) a. DET : ( l &lt; cat arg &gt; ffi N t &lt; cat val &gt; ffi NP &lt; cat dir &gt; = right &lt; cat arg &gt; = &lt; cat val &gt; &lt; cat val num &gt; = sg &lt; cat val case &gt; = nom ) .</sentence>
+				<definiendum id="0">NOTE ON IMPLEMENTATION.</definiendum>
+				<definiendum id="1">furthermore</definiendum>
+				<definiendum id="2">Prolog variable</definiendum>
+				<definiens id="0">a way to increase the expressive power of tools used in defining the grammar</definiens>
+				<definiens id="1">prefixed by I ' ) in template definitions. ( 16 ) a. DET : ( l &lt; cat arg &gt; ffi N t &lt; cat val &gt; ffi NP &lt; cat dir &gt; = right &lt; cat arg &gt; = &lt; cat val &gt; &lt; cat val num &gt; = sg &lt; cat val case &gt; = nom )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>( ASSERT C control ) E : `` Right '' ( PROMPT C control ) C : `` And there 's another one which is % RESA '' ( ASSERT C control ) E : `` OK urn '' ( PROMPT C control ) C : `` VS '' ( ASSERTC control ) E : `` Right '' ( PROMPT C control ) C : `` Mm '' ( PROMPT C abdicates control ) CONTROL SHIFT TO E -- -E : `` Right and you have n't got I assume you have n't got local labelled common with those labels '' ( QUESTION E control ) Whittaker and Stenton also performed a post-hoe analysis of the segment boundaries that are defined by the control rules .</sentence>
+				<definiendum id="0">ASSERT C control ) E : `` Right '' ( PROMPT C control</definiendum>
+				<definiens id="0">% RESA '' ( ASSERT C control ) E : `` OK urn '' ( PROMPT C control ) C : `` VS '' ( ASSERTC control ) E : `` Right '' ( PROMPT C control ) C : `` Mm '' ( PROMPT C abdicates control ) CONTROL SHIFT TO E -- -E : `` Right and you have n't got I assume you have n't got local labelled common with those labels '' ( QUESTION E control ) Whittaker and Stenton also performed a post-hoe analysis of the segment boundaries that are defined by the control rules</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TASK INTERRUPT 1 , A is the Instructor A : It 's hard to get on ( ASSERTION ) -- -- -INTERRUPT SHIFT TO B B : Not there yet ouch yep it 's there .</sentence>
+				<definiendum id="0">TASK INTERRUPT 1</definiendum>
+				<definiens id="0">'s hard to get on ( ASSERTION ) -- -- -INTERRUPT SHIFT TO B B : Not there yet ouch yep it 's there</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>Fourth , focusing subjuncts do n't fit into the slotfiller semantics that seem adequate for handling many other sentence elements ( see Section 1.3 ) ~ At best , their semantic effect is to transform the semantic representation of the constituent they modify in some predictable compositional way ( Hirst , 1987 , p. 72 ) .</sentence>
+				<definiendum id="0">semantic effect</definiendum>
+				<definiens id="0">transform the semantic representation of the constituent they modify in some predictable compositional way ( Hirst , 1987 , p. 72 )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>of the people under consideration , Bill is the least likely to like Mary .</sentence>
+				<definiendum id="0">Bill</definiendum>
+				<definiens id="0">the least likely to like Mary</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A frame is a collection of stereotypical knowledge about some topic or concept ( Hirst , 1987 , p. 12 ) .</sentence>
+				<definiendum id="0">frame</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Absity uses the following types of semantic object : • a frame name • a slot name • a frame determiner • a slot-filler pair • a frame description ( i.e. a frame with zero or more slot-filler pairs ) • eiLher an instance or frame statement ( atom or frame determiner with frame description ) A frame determiner is a function that retrieves frames or adds them to the knowledge base .</sentence>
+				<definiendum id="0">frame determiner</definiendum>
+				<definiens id="0">a frame with zero or more slot-filler pairs ) • eiLher an instance or frame statement ( atom or frame determiner with frame description</definiens>
+				<definiens id="1">a function that retrieves frames or adds them to the knowledge base</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A feature is a piece of linguistic information , such as tense , number , and bar level ; it may be atom-valued or categoryvalued .</sentence>
+				<definiendum id="0">feature</definiendum>
+				<definiens id="0">a piece of linguistic information , such as tense , number , and bar level</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The meaning of the predicate is then to presuppose that the proposition P is true of z , and to assert that x is the unique term of which P is true : - , ( ~y ) ( y # z &amp; Py ) .</sentence>
+				<definiendum id="0">~y )</definiendum>
+				<definiens id="0">true of z , and to assert that x is the unique term of which P is true : -</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>For the translation of ( 11.1 ) , C is the set of propositions of the form `` introduce Bill to y '' , that is , those satisfying ( 12.2 ) .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the set of propositions of the form `` introduce Bill to y ''</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Presupp : The constituent 's contribution to the sentence 's non-asserted meaning .</sentence>
+				<definiendum id="0">Presupp</definiendum>
+				<definiens id="0">The constituent 's contribution to the sentence 's non-asserted meaning</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>P-set : A prototype of the semantic objects in the node 's p-set .</sentence>
+				<definiendum id="0">P-set</definiendum>
+				<definiens id="0">A prototype of the semantic objects in the node 's p-set</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>z ( frame-descrP ) ) The form if P then A is a directive to the underlying knowledge base to insert the rule that any frame matching P is just the frame A , that is , A is the unique frame matching P. This directive is a frame implication .</sentence>
+				<definiendum id="0">z ( frame-descrP )</definiendum>
+				<definiendum id="1">directive</definiendum>
+				<definiens id="0">a frame implication</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>x ( agent=Ross ) ( patient=dog ) ) ) ( patient=dog ) ) ) The frame instance ( 22.3 ) captures the semantic content of the sentence `` Ross washed the dog '' .</sentence>
+				<definiendum id="0">x ( agent=Ross )</definiendum>
+				<definiens id="0">the semantic content of the sentence `` Ross washed the dog ''</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>IDEO ( Interpreter Designed for Even and Only ) is a limited semantic interpreter that incorporates the 59 semantics for even and only described in Section 3 .</sentence>
+				<definiendum id="0">IDEO</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>Combinatory Categorial Grammar ( CCG ) \ [ 7 , 5\ ] is an extension of Classical Categorial Grammar in which both function composition and function application are allowed .</sentence>
+				<definiendum id="0">Combinatory Categorial Grammar ( CCG</definiendum>
+				<definiens id="0">an extension of Classical Categorial Grammar in which both function composition and function application are allowed</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A CCG , G , is denoted by ( VT , VN , S , f , R ) where VT is a finite set of terminals ( lexical items ) , VN is a finite set of nonterminals ( atomic categories ) , S is a distinguished member of VN , f is a function that maps elements of VT to finite sets of categories , R is a finite set of combinatory rules .</sentence>
+				<definiendum id="0">CCG , G</definiendum>
+				<definiendum id="1">VT</definiendum>
+				<definiendum id="2">VN</definiendum>
+				<definiendum id="3">S</definiendum>
+				<definiendum id="4">f</definiendum>
+				<definiendum id="5">R</definiendum>
+				<definiens id="0">a finite set of terminals ( lexical items ) ,</definiens>
+				<definiens id="1">a finite set of nonterminals ( atomic categories ) ,</definiens>
+				<definiens id="2">a distinguished member of VN</definiens>
+				<definiens id="3">a function that maps elements of VT to finite sets of categories ,</definiens>
+				<definiens id="4">a finite set of combinatory rules</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The above algorithm can be shown to run in time O ( n 7 ) where n is the length of the input .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the length of the input</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The second form of production indicates that if a nonterminal A has a stack containing a sequence a then it can be rewritten to a terminal symbol a. The language generated by a LIG is the set of strings derived from the start symbol with an empty stack .</sentence>
+				<definiendum id="0">LIG</definiendum>
+				<definiens id="0">the set of strings derived from the start symbol with an empty stack</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Since ( ( A , ~ ) , T ) is a representation of possibly more than one category , several cases arise depending on ot and T. All these cases try to uncover the reasons why the recognizer placed thin entry in L\ [ i , j\ ] ~ , q\ ] .</sentence>
+				<definiendum id="0">T )</definiendum>
+				<definiens id="0">a representation of possibly more than one category</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>We used the DECIPHER system ( Weintraub et al. 1989 ) to label and time-align the speech , and verified that the sentences were , by this measure as well as by the earlier perceptual verification , truly ambiguous phonetically .</sentence>
+				<definiendum id="0">DECIPHER system</definiendum>
+				<definiens id="0">by this measure as well as by the earlier perceptual verification</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>We have used our system to gather data from the Lancasterslo-Bergen ( LOB ) corpus , generating parses which conform to a version of current Government-Binding theory , and aim to use the system to parse 25 million words of text The system consists of an interface to the LOB corpus , a part of speech disambiguator , and a novel parser .</sentence>
+				<definiendum id="0">LOB corpus</definiendum>
+				<definiens id="0">used our system to gather data from the Lancaster/Oslo-Bergen ( LOB ) corpus , generating parses which conform to a version of current Government-Binding theory , and aim to use the system to parse 25 million words of text The system consists of an interface to the</definiens>
+				<definiens id="1">a part of speech disambiguator</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>THE LOB CORPUS The Lancasterslo-Bergen Corpus is an online collection of more than 1,000,000 words of English text taken from a variety of sources , broken up into sentences which are often 50 or more words long .</sentence>
+				<definiendum id="0">Lancaster/Oslo-Bergen Corpus</definiendum>
+				<definiens id="0">an online collection of more than 1,000,000 words of English text taken from a variety of sources , broken up into sentences which are often 50 or more words long</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Foremost is a dictionary keying every word found in the corpus to the number of times it is used as a certain part of speech , which a/lows us to compute the probability that a word takes on a given part of speech .</sentence>
+				<definiendum id="0">Foremost</definiendum>
+				<definiens id="0">a dictionary keying every word found in the corpus to the number of times it is used as a certain part of speech , which a/lows us to compute the probability that a word takes on a given part of speech</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If a verb phrase recognition rule was firing in location 1 , it would get printed as ( VP0 a* 1 ) where VP0 is the name of the rule state .</sentence>
+				<definiendum id="0">VP0</definiendum>
+				<definiens id="0">the name of the rule state</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The next item on the queue is the newly created \ [ NP 0 3\ ] , but it neither fires a rule ( which would have to be in location 0 ) , finds any action in the single-phrase table , or pairs with any neighboring phrase to fire an action in the paired-phrase table , so no new phrases or rules are created .</sentence>
+				<definiendum id="0">rule</definiendum>
+				<definiens id="0">finds any action in the single-phrase table , or pairs with any neighboring phrase to fire an action in the paired-phrase table , so no new phrases or rules are created</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The VP is popped off the stack , but not attached to \ [ NP 0 3\ ] to form a sentence , because the pairedphrase table specifies that for those two phrases to connect to become an S , the verb phrase must have the feature ( expec't ; nil ) , indi ?</sentence>
+				<definiendum id="0">verb phrase</definiendum>
+				<definiens id="0">popped off the stack , but not attached to \ [ NP 0 3\ ] to form a sentence , because the pairedphrase table specifies that for those two phrases to connect to become an S , the</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>Divergence Translation Type Ezample Structural Conflational Lexical Categorial Thematic I saw John Via Juan ( I saw to John ) I like Mary Ich habe Marie gem ( I have Mary likingly ) I stabbed John Yo le di pufialadas a Juan ( I gave knife-wounds to John ) I am hungry Ieh habe Hunger ( I have hunger ) I like Mary Maria me gusta a mf ( Mary pleases me ) Figure 1 : Divergence Types in Machine Translation gence is conttational .</sentence>
+				<definiendum id="0">Divergence Translation</definiendum>
+				<definiendum id="1">Juan</definiendum>
+				<definiens id="0">Type Ezample Structural Conflational Lexical Categorial Thematic I saw John Via Juan ( I saw to John</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Conflation is the incorporation of necessary participants ( or arguments ) of a given action .</sentence>
+				<definiendum id="0">Conflation</definiendum>
+				<definiens id="0">the incorporation of necessary participants ( or arguments ) of a given action</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>4The terms complement , specifier , and adjunct have not been defined ; roughly , these correspond to syntactic object , 128 Definition 1 : An LCS is a lexical conceptual structure conforming to a modified version of Jackendoff 's well-formedness rules \ [ Jackendoff , 1983\ ] .</sentence>
+				<definiendum id="0">LCS</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Definition 2 : An RLCS is an uninstantiated LCS that is associated with a root word definition in the lexicon ( i.e. , an LCS with unfilled variable positions ) .</sentence>
+				<definiendum id="0">RLCS</definiendum>
+				<definiens id="0">an uninstantiated LCS that is associated with a root word definition in the lexicon</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>For example , an RLCS associated with the word like is : \ [ Sta* , BEId , ~ , ( \ [ Thla , X\ ] , \ [ Place ATIdoa , ( \ [ Thing X\ ] , \ [ Thing `` Y\ ] ) \ ] , \ [ M ... .. LIKINGLY\ ] ) \ ] Definition 3 : A CLCS is a composed ( instantiated ) LCS that is the result of combining two or more RLCS 's by means of unification ( roughly ) .</sentence>
+				<definiendum id="0">CLCS</definiendum>
+				<definiens id="0">a composed ( instantiated ) LCS that is the result of combining two or more RLCS 's by means of unification</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Definition 4 : An Internal Argument Position is a syntactic complement for a lexical word of category V , N , A , P , I , or C. s Definition 5 : An Ezternal Argument Position is a syntactic specifier of N for a lexical word of category N or a specifier of I for a lexical word of category V. Definition 6 : An Adjunct Argument Position is a syntactic modifier that is neither internal nor external with respect to a lexieal word .</sentence>
+				<definiendum id="0">Internal Argument Position</definiendum>
+				<definiendum id="1">Ezternal Argument Position</definiendum>
+				<definiendum id="2">Argument Position</definiendum>
+				<definiens id="0">a syntactic complement for a lexical word of category V</definiens>
+				<definiens id="1">a syntactic specifier of N for a lexical word of category N or a specifier of I for a lexical word of category V. Definition 6 : An Adjunct</definiens>
+				<definiens id="2">a syntactic modifier that is neither internal nor external with respect to a lexieal word</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The CLCS is the structure that results from combining the lexieal~ items of a source-language sentence into a single underlying pivot form .</sentence>
+				<definiendum id="0">CLCS</definiendum>
+				<definiens id="0">the structure that results from combining the lexieal~ items of a source-language</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>PIn general , a syntactic argument ul is the canonical syntactic realization ( CS~ ) of the corresponding CLCS argument u. The CS7~ function is a modified version of a routine proposed in \ [ Chomsky , 1986\ ] .</sentence>
+				<definiendum id="0">CS7~ function</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>A CLCS with logical subject w , non-subject arguments Zl , z2 , ... , z~ , ... , z= , and modifiers nl , n2 ... . , nz ... .. n , ~ will look like the structure shown in ( 4 ) , where the dominating head 7 ~ is a typed primitive ( e.g. , BEcirc ) : ( 4 ) \ [ 7~ w , zl , z2 ... . , zk , ... , z~ , nl , n2 , ... , n , ... , n , ~\ ] In order to derive the syntactic structure from the CLCS , we need a mapping or linking rule between the CLCS positions and the appropriate syntactic positions .</sentence>
+				<definiendum id="0">CLCS</definiendum>
+				<definiens id="0">a typed primitive ( e.g. , BEcirc ) : ( 4 ) \ [ 7~ w , zl , z2 ... . , zk , ... , z~ , nl , n2 , ... , n , ... , n</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>RLCS entry for ir : \ [ GO /Xl \ [ To \ [ AT \ [ Xl \ [ Villi RLCS entry for go : log IX\ ] \ [ TO \ [ AT \ [ Xl \ [ YIIII RLCS entry for soler : \ [ HABITUALLY : PROMOTE\ ] RLCS entry for usually .</sentence>
+				<definiendum id="0">RLCS entry for ir</definiendum>
+				<definiens id="0">PROMOTE\ ] RLCS entry for usually</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>{ Doff , 1987\ ] Bonnie J. Dorr , `` UNITRAN : A Principle-Based Approach to Machine Translation , '' AI Technical Report 1000 , Master of Science thesis , Department Electrical Engineering and Computer Science , Massachusetts Institute of Technology , Cambridge , MA , 1987 .</sentence>
+				<definiendum id="0">UNITRAN</definiendum>
+				<definiens id="0">A Principle-Based Approach to Machine Translation , '' AI Technical Report 1000</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>of a clause if ( A ) , or ( B ) , or ( E ) L is the top-level literal and X is `` in '' in it ( known a priori ) ; or ~ X occurs more than once in L and at s For a discussion on directed predicates in ~OLOO see ( Shoham and McDermott , 1984 ) , and ( Debray , 1989 ) .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">the top-level literal and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Let us assume further that R i occurs on rhs of some other clause , as shown below : e ( xl , ' '' , x. ) : ( C1 ) R 1 ( X1.1 , `` ' '' , Xl , kl ) , R2 ( X2,1 , ... , X2 , kz ) , R , ( X , , 1 , '' '' , X , ,k , ) : We want to compute MS , the set of active MSEA 's for P , as defined by ( C1 ) , where s _ &gt; 0 , assuming that we know the sets of active MSEA for each R i on the rhs .</sentence>
+				<definiendum id="0">R2 ( X2,1 , ... , X2</definiendum>
+				<definiendum id="1">R , ( X</definiendum>
+				<definiens id="0">We want to compute MS , the set of active MSEA 's for P</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Let T be a set of terms , that is , variables and functional expressions , then VAR ( T ) is the set of all variables occurring in the terms of T. Thus VAR ( { f ( X ) , Y , g ( c , f ( Z ) , X ) } ) = { X , ¥ , Z } .</sentence>
+				<definiendum id="0">Z</definiendum>
+				<definiens id="0">a set of terms , that is , variables and functional expressions</definiens>
+				<definiens id="1">the set of all variables occurring in the</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>j } , where X1j is an argument in R1 such that it is not already in m ~ , ~ and it is not always unifiable with its corresponding argument in P , and m 1 , kj is not a superset of any other m u remaining in MRUI , add m 1 .</sentence>
+				<definiendum id="0">X1j</definiendum>
+				<definiens id="0">an argument in R1 such that it is not already in m ~</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>r ( 6 ) In some i-th step , where l &lt; i &lt; s , and MSEA = lxi-l , , , let 's suppose that MRi and MRUi are the sets of active MSEA 's and their instantiations with actual arguments of R i , for the literal Ri on the rhs of ( C 1 ) . ( 7 ) If R i = P then for every mi. u E MRUi if every argument Yt e mi. u is always unifiable with its corresponding argument Xt in P then remove mi.u from MRUi. For every set mi.uj = mi.u u { Xij } where X u is an argument in R~ such that it is not already in mio u and it is not always unifiable with its corresponding argument in P and rai , uj is not a superset of any other rai , t remaining in MRUi , add mi. , j to MRU I. ( 8 ) Again , we compute the set MPi = { ! % .i I j=l ... r i } , where ~tid = ( VAR ( mij ) OUTi_l , k ) , where OUTi_I , ~ is the set of all `` out '' arguments in literals R 1 to Ri_ 1 . ( 9 ) For each I.t/d remaining in Me i where i $ .s do the following : ( a ) if lXij = O then : ( i ) compute the set OUTj of `` out '' arguments ofRi ; ( ii ) compute the union OUTi.j : = OUTj u OUTi-l.k ; ( iii ) call MSEAS ( MSi.j , ~ti_I.k , VP , i + I , OUTI.j ) ; Co ) otherwise , if ~ti.j * : 0 then find all distinct minimal size sets v , ~ VP such that whenever the arguments in v , are `` in '' , then the arguments in l % d are `` out '' . If such vt 's exist , then for every v , do : ( i ) assume vt is `` in '' in P ; ( ii ) compute the set OUT , .j , of `` out '' arguments in all literals from R1 to Ri ; ( iii ) call MSEAS ( MSi. h , la i_l , *t.mt , VP , i + 1 , OUTi , h ) ; ( c ) otherwise , if no such v , exist , MSid : = ~. ( 10 ) Compute MS : = k. ) MSi.y ; jfl..r ( 11 ) For i=s+l setMS : = { MSEA } . The procedure presented here can be modified to compute the set of all MSEA 's for P by considering all feasible orderings of literals on the rhs of ( C1 ) and using information about all MSEA 's for Ri's. This modified procedure would regard the rhs of ( C1 ) as an tmordered set of literals , and use various heuristics to consider only selected orderings. REORDERING LITERALS IN CLAUSES When attempting to expand a literal on the rhs of any clause the following basic rule should be observed : never expand a literal before at least one its active MSEA 's is `` in '' , which means that all arguments in at least one MSEA are bound. The following algorithm uses this simple principle to reorder rhs of parser clauses for reversed use in generation. This algorithm uses the information about `` in '' and `` out '' arguments for literals and sets of MSEA 's for predicates. If the `` in '' MSEA of a literal is not active then the rhs 's of every definition of this predicate is recursively reordered so that the selected MSEA becomes active. We proceed top-down altering definitions of predicates of the literals to make their MSEA 's active as necessary. When reversing a parser , we start with the top level predicate pa=a_gen ( S , P ) assuming that variable t , is bound to the regularized parse structure of a sentence. We explicitly identify and mark P as `` in '' and add the requirement that S must be marked `` out '' upon completion of rhs reordering. We proceed to adjust the definition of para_gen to reflect that now { P } is an active MSEA. We continue until we reach the level of atomic or non-reversible primitives such as concat , member , or dictionary look-up routines. If this top-down process succeeds at reversing predicate definitions at each level down to the primitives , and the primitives need no redefinition , then the process is successful , and the reversed-parser generator is obtained. The algorithm can be extended in many ways , including interclausal reordering of literals , which may be required in some situations ( Strzalkowski , 1989 ) . INVERSE ( `` head : old-rhs '' , ins , outs ) ; { ins and outs are subsets of VAR ( head ) which are `` in '' and are required to be `` out '' , respectively } begin compute M the set of all MSEA 's for head ; for every MSEA m e M do begin OUT : = ~ ; if m is an active MSEA such that me ins then begin compute `` out '' arguments in head ; add them to OUT ; if outs cOUT then DONEChead : -old-rhs '' ) end else if m is a non-active MSEA and m cins then begin new-rhs : = ~ ; QUIT : = false ; old-rhs-1 : = old-rhs ; for every literal L do M L : = O ; { done only once during the inversion } repeat mark `` in '' old-rhs-1 arguments which are either constants , or marked `` in '' in head , or marked `` in '' , or `` out '' in new-rhs ; 216 select a literal L in old-rhs-1 which has an `` in '' MSEA m L and if m L is not active in L then either M L = O or m L e ML ; set up a backtracking point containing all the remaining alternatives to select L from old-rhs-1 ; if L exists then begin if m L is non-active in L then begin if M L -~ then M L : = M L u { mL } ; for every clause `` L1 : rhsu '' such that L1 has the same predicate as L do begin INVERSECL1 : rhsm '' , ML , ~ ) ; if GIVEUP returned then backup , undoing all changes , to the latest backtracking point and select another alternative end end ; compute `` in '' and `` out '' arguments in L ; add `` out '' arguments to OUT ; new-rhs : = APPEND-AT-THE-END ( new-rhs , L ) ; old-rhs1 : = REMOVE ( old-rhs1 , L ) end { if } else begin backup , undoing all changes , to the latest backtracking point and select another alternative ; if no such backtracking point exists then QUIT : = true end { else } until old-rhs-1 = O or QUIT ; if outs cOUT and not QUIT then DONE ( `` head : -new-rhs '' ) end { elseif } end ; { for } GIVEUPCca n't invert as specified '' ) end ; THE IMPLEMENTATION We have implemented an interpreter , which translates Definite Clause Grammar dually into a parser and a generator. The interpreter first transforms a DCG grammar into equivalent PROLOG code , which is subsequently inverted into a generator. For each predicate we compute the minimal sets of essential arguments that would need to be active if the program were used in the generation mode. Next , we rearrange the order of the fight hand side literals for each clause in such a way that the set of essential arguments in each literal is guaranteed to be bound whenever the literal is chosen for expansion. To implement the algorithm efficiently , we compute the minimal sets of essential arguments and reorder the literals in the right-hand sides of clauses in one pass through the parser program. As an example , we consider the following rule in our DCG grammar : 11 assertion ( S ) - &gt; sa ( SI ) , subject ( Sb ) , sa ( $ 2 ) , verb ( V ) , { Sb : np : number : : V : number } , sa ( S3 ) , object ( O , V , Vp , Sb , Sp ) , sa ( $ 4 ) , { S.verb : head : : Vp : head } , { S : verb : number : : V : number } , { S : tense : : \ [ V : tense , O : tense\ ] } , { S : subject : : Sp } , { S : object : : O : core } , { S : sa : : \ [ $ 1 : sa , $ 2 : sa , $ 3 : sa , O : sa , S4 : sa\ ] } .</sentence>
+				<definiendum id="0">MRUi</definiendum>
+				<definiendum id="1">X u</definiendum>
+				<definiendum id="2">interpreter</definiendum>
+				<definiens id="0">recursively reordered so that the selected MSEA becomes active. We proceed top-down altering definitions of predicates of the literals to make their MSEA 's active as necessary. When reversing a parser</definiens>
+				<definiens id="1">an active MSEA. We continue until we reach the level of atomic or non-reversible primitives such as concat , member</definiens>
+				<definiens id="2">translates Definite Clause Grammar dually into a parser</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Nonterminal net stands for a string of sentence adjuncts , such as prepositional or adverbial phrases ; : : is a PROLOG-defined predicate .</sentence>
+				<definiendum id="0">Nonterminal net</definiendum>
+				<definiens id="0">a PROLOG-defined predicate</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Its MSEA is { Sl } , and since it is not a subset of the set of variables appearing in the head literal , this set can not receive a binding when the execution of assertion starts .</sentence>
+				<definiendum id="0">MSEA</definiendum>
+				<definiens id="0">{ Sl } , and since it is not a subset of the set of variables appearing in the head literal</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>In DARPA 's Fleet Command Center Battle Management Program ( FCCBMP ) , several applications ( call them underlying systems ) are involved , including a relational data base ( IDB ) , two expert systems ( CASES and FRESH ) , and a decision support system ( OSGP ) .</sentence>
+				<definiendum id="0">OSGP</definiendum>
+				<definiens id="0">several applications ( call them underlying systems ) are involved , including a relational data base ( IDB ) , two expert systems</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The execution plan takes the form of a limited class of data flow graphs for a virtual machine that includes the capabilities of all of the application systems .</sentence>
+				<definiendum id="0">execution plan</definiendum>
+				<definiens id="0">takes the form of a limited class of data flow graphs for a virtual machine that includes the capabilities of all of the application systems</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>of x ) ( location-of y ) ) ) ) cost : 1 In the example above , there are two competing services for computing distance between two ships : Great-circle-distance , which simply computes a great circle route between two points , and Land-avoidancedistance , which computes the distance of an actual path avoiding land and sticking to shipping lanes .</sentence>
+				<definiendum id="0">Great-circle-distance</definiendum>
+				<definiendum id="1">Land-avoidancedistance</definiendum>
+				<definiens id="0">computes the distance of an actual path avoiding land and sticking to shipping lanes</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Inherent in the collectio/ : of services covering a DNF expression is the data flow that combines the services into a program to fulfill the DNF request .</sentence>
+				<definiendum id="0">DNF expression</definiendum>
+				<definiens id="0">the data flow that combines the services into a program to fulfill the DNF request</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Schmolze , J.G. , Lipkis , T.A. Classification in the KL-ONE Knowledge Representation System .</sentence>
+				<definiendum id="0">T.A. Classification</definiendum>
+				<definiens id="0">in the KL-ONE Knowledge Representation System</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Answering Questions Posed in an Intensional Logic : A Multilevel Semantics Approach .</sentence>
+				<definiendum id="0">Intensional Logic</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>A Hybrid Approach to Representation in the Janus Natural Language Processor .</sentence>
+				<definiendum id="0">Hybrid Approach to Representation</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>I. DISAMBIGUATING DEFINITIONS We have chosen to concentrate initially on definitions of the tbrm 'to VERB with NW in Webster 's 7th New Collegiate Dictionary ( Merriam 1963 ; henceforth W7 ) .</sentence>
+				<definiendum id="0">Collegiate Dictionary</definiendum>
+				<definiens id="0">chosen to concentrate initially on definitions of the tbrm 'to VERB with NW in Webster 's 7th New</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Disambiguating these definitions consists of identifying the appropriate sense of 'with ( that is , the type of semantic relation linking the VERB to the NP ) and choosing , if possible , the appropriate senses of the VERB and the NP-head from among `` all their W7 senses .</sentence>
+				<definiendum id="0">'with</definiendum>
+				<definiens id="0">the type of semantic relation linking the VERB to the NP</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Our Disambiguation Module ( henceforth DM ) selects the most appropriate sense combination ( s ) in two parts : first , it tries to identify the semantic categories or types denoted by each sense of the VERB and the NP-head .</sentence>
+				<definiendum id="0">Disambiguation Module ( henceforth DM )</definiendum>
+				<definiens id="0">selects the most appropriate sense combination ( s ) in two</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The DM disambiguates a given string by classifying it as an instance of one of these six categories , and thus selecting the appropriate sense combination of the words in the string .</sentence>
+				<definiendum id="0">DM</definiendum>
+				<definiens id="0">disambiguates a given string by classifying it as an instance of one of these six categories</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The DM is an extended and modified version of an earlier prototype developed by Jensen and Binot for the resolution of prepositional-phrase attachment ambiguities ( Jensen &amp; Bmot 1987 ) .</sentence>
+				<definiendum id="0">DM</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Thus , DM determines that USE applies to `` to attack with bombs '' based on bomb ( n , l ) - '' an explosive device fused to detonate under .</sentence>
+				<definiendum id="0">USE</definiendum>
+				<definiens id="0">applies to `` to attack with bombs '' based on bomb ( n , l ) - '' an explosive device fused to detonate under</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The DM returns PHRASAL-VERB ( correct ) and ALTERATION ( incorrect ) for to charge with a crime , based on eharge with- ( especiaUy of an official or an official group ) to bring a charge against , ( someone ) for ( something wrong ) ; accuse of ; and eharge ( with ) - '' to ( cause to ) take in the correct amount of electricity '' .</sentence>
+				<definiendum id="0">especiaUy</definiendum>
+				<definiens id="0">of an official or an official group ) to bring a charge against , ( someone ) for ( something wrong ) ; accuse of</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>x Predicative Relations consist of two ( or several ) words repeatedly used together in a similar syntactic relation .</sentence>
+				<definiendum id="0">x Predicative Relations</definiendum>
+				<definiens id="0">consist of two ( or several ) words repeatedly used together in a similar syntactic relation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Given one or several words , Xconcord locates all sentences in the corpus containing them .</sentence>
+				<definiendum id="0">Xconcord</definiendum>
+				<definiens id="0">locates all sentences in the corpus containing them</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Xstat is the co-occurrence compiler .</sentence>
+				<definiendum id="0">Xstat</definiendum>
+				<definiens id="0">the co-occurrence compiler</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>`` Distance '' is the relative distance between the two words , wl and w2 ( e.g. , a distance of 1 means w~ occurs immediately after wx and a distance of-i means it occurs immediately before it ) .</sentence>
+				<definiendum id="0">Distance</definiendum>
+				<definiens id="0">a distance of 1 means w~ occurs immediately after wx and a distance of-i means it occurs immediately before it )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>254 open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound qeading industrialized countries '' `` the Dow Jones average of .90 industriais '' `` bear/buil market '' `` the Dow Jones industrial average '' `` The NYSE s composite indez of all it8 listed common stocks '' `` Advancing/winuing/losing/declluing issues '' `` The NASDAQ composite indez for the over the counter market '' `` stock market '' `` central bank 'qeveraged buyout '' `` the gross national product '' 'q~lue chip stocks '' `` White House spokesman Marlin Fitztoater '' `` takeover speculation/strategist/target/threat/attempt '' `` takeover bid /battle/ defense/ efforts/ flght /law /proposal / rumor '' Figure 1 : Some examples of open compounds noun adjective noun adjective noun adjective subject verb subject verb subject verb verb adverb verb object verb object verb particle verb verb verb verb examples `` heavy/Hght D tradlng/smoker/traffic '' `` hlgh/low ~ fertility/pressure/bounce '' `` large/small D crowd/retailer/client '' `` index ~ rose `` stock ~ \ [ rose , fell , closed , jumped , continued , declined , crashed , ... \ ] '' `` advancers D \ [ outnumbered , outpaced , overwhelmed , outstripped\ ] '' `` trade ¢~ actively , '' `` mix ¢~ narrowly , '' `` use ¢~ widely , '' `` watch ¢~ closely '' ~posted ~ gain '~momentum D \ [ pick up , build , carry over , gather , loose , gain\ ] '' `` take ~ from , '' `` raise ~ by , '' `` mix D with '' `` offer to \ [ acquire , buy '' \ ] `` agree to \ [ acquire , buy '' \ ] Figure 2 : Some examples of predicative collocations and `` strength '' resulting in a ranking of the two words for their `` distances '' .</sentence>
+				<definiendum id="0">open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open compound open</definiendum>
+				<definiens id="0">adjective subject verb subject verb subject verb verb adverb verb object verb object verb particle verb verb verb</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A sententiai entry is a whole sentence that should be used in a given context .</sentence>
+				<definiendum id="0">sententiai entry</definiendum>
+				<definiens id="0">a whole sentence that should be used in a given context</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+			<definition id="0">
+				<sentence>R allows the definition of a structure over the primitive symbols used in the grammar .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">allows the definition of a structure over the primitive symbols used in the grammar</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An FD describes a set of objects ( most often linguistic entities ) that satisfy certain properties .</sentence>
+				<definiendum id="0">FD</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>It is represented by a set of pairs \ [ a : v\ ] , called features , where a is an attribute ( the name of the property ) and v is a value , either an atomic s3anbol or recursively an FD .</sentence>
+				<definiendum id="0">v</definiendum>
+				<definiens id="0">the name of the property</definiens>
+				<definiens id="1">a value , either an atomic s3anbol or recursively an FD</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Note that NONE is best viewed as imposing constraints on the definition of A : an equation &lt; II ... ln &gt; =NONE means that &lt; ll ... ln &gt; ~ A. 158 • A constituent of a complex FD is a distinguished subset of features .</sentence>
+				<definiendum id="0">=NONE</definiendum>
+				<definiendum id="1">FD</definiendum>
+				<definiens id="0">best viewed as imposing constraints on the definition of A : an equation &lt; II ... ln &gt;</definiens>
+				<definiens id="1">a distinguished subset of features</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>In order to enforce the correct constraints , it is therefore necessary to use the meta-FD NONE ( which prevents the addition of unwanted features ) as shown in Figure There are two problems with this corrected FUG implementation .</sentence>
+				<definiendum id="0">meta-FD NONE</definiendum>
+				<definiens id="0">prevents the addition of unwanted features</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The set C is no longer a fiat set of symbols , but is viewed as a richly structured world .</sentence>
+				<definiendum id="0">set C</definiendum>
+				<definiens id="0">no longer a fiat set of symbols , but is viewed as a richly structured world</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Unification : a Multidisciplinary Survey .</sentence>
+				<definiendum id="0">Unification</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>Head-driven phrase structure grammar : an informal synopsis .</sentence>
+				<definiendum id="0">Head-driven phrase structure grammar</definiendum>
+				<definiens id="0">an informal synopsis</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>Natural language generation ( NLG ) systems should produce referring expressions and other object descriptions that are free of false implicatures , i.e. , that do not cause the user of the system to infer incorrect and unwanted conversational implicatures ( Grice 1975 ) .</sentence>
+				<definiendum id="0">Natural language generation</definiendum>
+				<definiendum id="1">NLG</definiendum>
+				<definiens id="0">other object descriptions that are free of false implicatures , i.e. , that do not cause the user of the system to infer incorrect and unwanted conversational implicatures</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Therefore , in the above situations the speaker , whether a human or a computer NLG system , should use utterances ( la ) and ( 2a ) , and should avoid utterances ( lb ) and ( 2b ) ; utterances ( la ) and ( 2a ) are free of false implicatures , while the utterances ( lb ) and ( 2b ) are not .</sentence>
+				<definiendum id="0">utterances</definiendum>
+				<definiens id="0">free of false implicatures</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Example : the current discourse context contains objects A , B , and C ( and no other objects ) , and these objects have the following classifications and attributes ( of which both the speaker and the hearer are aware ) : A ) Table with Material : Wood and Color : Brown .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">the current discourse context contains objects A , B , and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Local Brevity ( Section 4.2 ) is a weaker version of the brevity submaxim that can be incorporated into a polynomialtime algorithm for generating successful referring expressions .</sentence>
+				<definiendum id="0">Local Brevity ( Section 4.2 )</definiendum>
+				<definiens id="0">a weaker version of the brevity submaxim that can be incorporated into a polynomialtime algorithm for generating successful referring expressions</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>If description length is measured by number of components , 7 finding the minimal length referring expression is equivalent to solving a minimum set cover problem , where Excluded is the set being covered , and the Rules-Out ( Tj ) are the covering sets .</sentence>
+				<definiendum id="0">Excluded</definiendum>
+				<definiens id="0">the set being covered</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>It states that it should not be possible to generate a shorter successful referring expression by replacing a set of components by a single new componenL Formally , &gt; &gt; us is the transitive closure of &gt; &gt; us ' , where A &gt; &gt; us , B if size ( components ( A ) -components ( B ) ) = 1 , s and length ( A ) &lt; length ( B ) .</sentence>
+				<definiendum id="0">components</definiendum>
+				<definiens id="0">A ) -components ( B ) ) = 1 , s and length ( A ) &lt; length ( B )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The computational tractability of the no-unnecessary-elements principle depends on how and `` size '' means nmnher of members .</sentence>
+				<definiendum id="0">computational tractability of the no-unnecessary-elements principle</definiendum>
+				<definiens id="0">depends on how and `` size '' means nmnher of members</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>For example , WashingMachine is a basic-level class for some people , and it has a realization that uses two open-class words .</sentence>
+				<definiendum id="0">WashingMachine</definiendum>
+				<definiens id="0">a basic-level class for some people , and it has a realization that uses two open-class words</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>For the task of generating attributive descriptions as formalized in Reiter ( 1990a , 1990b ) , the Local Brevity , No Unnecessary Components , and Lexieal Preference rules are effective at prohibiting utterances that carry unwanted conversational implicatures , and also can be incorporated into a polynomial-time generation algorithm , provided that some restrictions are imposed on the underlying knowledge base .</sentence>
+				<definiendum id="0">Local Brevity</definiendum>
+				<definiens id="0">effective at prohibiting utterances that carry unwanted conversational implicatures</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>The nonlinguistic information for each scenario consists of a time-ordered sequence of scenes , each depicted via a conjunction of true and negated atomic formulas describing that scene .</sentence>
+				<definiendum id="0">nonlinguistic information for each scenario</definiendum>
+				<definiens id="0">consists of a time-ordered sequence of scenes , each depicted via a conjunction of true and negated atomic formulas describing that scene</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Likewise , the linguistic information for each scenario consists of a time-ordered sequence of sentences .</sentence>
+				<definiendum id="0">linguistic information for each scenario</definiendum>
+				<definiens id="0">consists of a time-ordered sequence of sentences</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Additionally , the linking rule maintains the constraint that the annotation of the root node , as well as any node which is a sister to a head , must be variable free .</sentence>
+				<definiendum id="0">linking rule</definiendum>
+				<definiens id="0">maintains the constraint that the annotation of the root node</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , Rule 1 states that if there is a sequence of scenes which can be divided into two concatenated subsequences of scenes , such that each subsequence contains at least one scene , and in every scene in that first subsequence , x is at 149 NP cup DET N cup I The cup S GO ( cup , \ [ FROM ( AT ( John ) ) , TO ( AT ( Mary ) ) \ ] ) VP GO ( z , \ [ FROM ( AT ( John ) ) , TO ( AT ( Mary ) ) I ) V PP PP GO ( x , \ [ y , z\ ] ) FROM ( AT ( John ) ) TO ( AT ( Mary ) ) P NP P NP slid FROM ( AT ( x ) ) John TO ( AT ( x ) ) Mary I I I I N N from John to Mary • I I John Mary Figure 6 : An example of the linking rule used by MAIMRA showing the derivation of conceptual structure for the sentence The cup slid from John to Mary from the conceptual structure meanings of the individual words , along with a syntactic structure for the sentence .</sentence>
+				<definiendum id="0">cup S GO</definiendum>
+				<definiens id="0">AT ( Mary ) ) I ) V PP PP GO ( x , \ [ y , z\ ] ) FROM ( AT ( John ) ) TO ( AT ( Mary ) ) P NP P NP slid FROM ( AT ( x )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>While the problem of finding satisfying assignments for a Boolean formula ( i.e. SAT ) is NP-complete , our experience is that in practice , the SAT problems generated by MAIMRA are easy to solve and that the fracturing process of generating the SAT problems takes far more time than actually solving them .</sentence>
+				<definiendum id="0">Boolean formula</definiendum>
+				<definiens id="0">easy to solve and that the fracturing process of generating the SAT problems takes far more time than actually solving them</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>From each scenario in isolation , MORAN infers what Salveter calls a Conceptual Meaning Structure ( CMS ) which attempts to capture the essence of the meaning of the verb in the sentence .</sentence>
+				<definiendum id="0">MORAN</definiendum>
+				<definiens id="0">infers what Salveter calls a Conceptual Meaning Structure ( CMS ) which attempts to capture the essence of the meaning of the verb in the sentence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>This CMS is a subset of the 4We are not claiming that such puzzle solving is conscious .</sentence>
+				<definiendum id="0">CMS</definiendum>
+				<definiens id="0">a subset of the 4We are not claiming that such puzzle solving is conscious</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In \ [ 13 , 14\ ] , Pustejovsky describes a system called TULLY , which also operates in a fashion similar to MAIMRA arid MORAN , learning word meanings from pairs of linguistic and non-linguistic input .</sentence>
+				<definiendum id="0">Pustejovsky</definiendum>
+				<definiens id="0">describes a system called TULLY , which also operates in a fashion similar to MAIMRA arid MORAN , learning word meanings from pairs of linguistic and non-linguistic input</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>Examination includes testing predictive powers of existing attachment theories against the data .</sentence>
+				<definiendum id="0">Examination</definiendum>
+				<definiens id="0">includes testing predictive powers of existing attachment theories against the data</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The attachment predictors tested were : RIGHT ASSOCIATION ( RA ) the tendency for constituents to associate with adjacent items to their right ( Kimball 1973 ) , also known as low attachment .</sentence>
+				<definiendum id="0">RIGHT ASSOCIATION ( RA )</definiendum>
+				<definiens id="0">the tendency for constituents to associate with adjacent items to their right ( Kimball 1973 ) , also known as low attachment</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>MINIMAL ATTACHMENT ( MA ) the tendency to attach in a manner in which the least number of syntactic rules are employed ( Frazier 1979 ) .</sentence>
+				<definiendum id="0">MINIMAL ATTACHMENT</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The accompanying notion of presupposition , in which PP attachment to definite NPs is avoided when no such NP+PP already exists in the discourse , would , numerically , need to be regarded as a semi-successful predictor of attachment site .</sentence>
+				<definiendum id="0">accompanying notion of presupposition</definiendum>
+				<definiens id="0">in which PP attachment to</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>MODIFYIN~ PPS ( OR 1 '' 1 '' L1 '' ) The verb and noun LP schemes demonstrated above were successful but only for the cases in which LP verbs and nouns appeared .</sentence>
+				<definiendum id="0">MODIFYIN~ PPS</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Apparently , PP Lexical Preferencing allowed PPs that were temporal or locative in nature to look for nouns and verbs that bore temporal or locative characteristics , respectively .</sentence>
+				<definiendum id="0">PP Lexical Preferencing</definiendum>
+				<definiens id="0">allowed PPs that were temporal or locative in nature to look for nouns and verbs that bore temporal or locative characteristics , respectively</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>When the complement is an accusative noun phrase , the definiteness marking on verb and noun phrase is the same .</sentence>
+				<definiendum id="0">noun phrase</definiendum>
+				<definiens id="0">an accusative noun phrase , the definiteness marking on verb and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>val ) ( 25 ) amit ( 18 ) Ez az a k/~nyv amelyiket akarta this that thebook which he-wanted that I-bring +DEF +DEF +DEF +DEF 'This is the book which he wanted me to bring . '</sentence>
+				<definiendum id="0">I-bring +DEF +DEF +DEF +DEF 'This</definiendum>
+				<definiens id="0">the book which he wanted me to bring</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Case : and non-disjunctive : a. z=y b. otherwise : but are non-disjunctive : a. 3MGU ( z , y ) b. otherwise : a. zny40 b. otherwise : z is a disjunction : a. y is a term in b. otherwise : y is a disjunction : NIL NIL Fail Fail MGU ( a~ , y ) NIL Fail Fail ( z , -z Ny , y *-zfly ) Fail Fail NIL Fail ( z * -- y ) NIL Fail a. z is a term in y ( y , -z ) NIL b. otherwise : Fail Fail where MGU ( z , y ) is the most general unifier of z , y ; NIL is the empty substitution expression ; and ( a , -- t ) indicates a substitution expression in which fl substitutes for a. 9 In examples ( 4 ) and ( 5 ) in German , and ( 16 ) - ( 19 ) in Hungarian , clause 1 applies .</sentence>
+				<definiendum id="0">y</definiendum>
+				<definiendum id="1">y</definiendum>
+				<definiendum id="2">NIL NIL Fail Fail MGU</definiendum>
+				<definiendum id="3">NIL Fail Fail</definiendum>
+				<definiendum id="4">MGU</definiendum>
+				<definiendum id="5">NIL</definiendum>
+				<definiens id="0">the most general unifier of z , y ;</definiens>
+				<definiens id="1">the empty substitution expression</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>cally of distinct categories , feature-percolation involves the matching of features between one constituent and a constituent which it dominates , where the dominating constituent is a projection of the dominated , in the sense of the X-Bar theory of phrase structure ( Choresky ( 1970 ) , lackendoff ( 1977 ) ) .</sentence>
+				<definiendum id="0">feature-percolation</definiendum>
+				<definiens id="0">involves the matching of features between one constituent and a constituent which it dominates , where the dominating constituent is a projection of the dominated , in the sense of the X-Bar theory of phrase structure</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The BBN ACFG formalism ( Boisen 1989a , b ) , a form of Definite Clause Grammar , already includes a type declaration system , which has proven very useful for maintaining the consistency of large grammars .</sentence>
+				<definiendum id="0">BBN ACFG formalism</definiendum>
+				<definiens id="0">a form of Definite Clause Grammar</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>`` Matching Effects in Free Relatives : A Parameter of Core Grammar '' , in A. Belletti , L. Brand .</sentence>
+				<definiendum id="0">Matching Effects</definiendum>
+				<definiens id="0">A Parameter of Core Grammar ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>ESG uses the UDIC'F lexicon ( Byrd 1983 , Klavans and Wacholder 1989 ) having over 60,000 lemmas , with an interface that produces slot frames .</sentence>
+				<definiendum id="0">ESG</definiendum>
+				<definiens id="0">uses the UDIC'F lexicon</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Formally , a phrase is represented by a term phrase ( X , H , Sense , Features , s IotFrame , Ext , Hods ) , where the components are as follows : ( 1 ) X is a logical variable called the marker of the phrase .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a logical variable called the marker of the phrase</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( 2 ) H is an integer representing the position of the head word o f the phrase .</sentence>
+				<definiendum id="0">H</definiendum>
+				<definiens id="0">an integer representing the position of the head word o f the phrase</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( 3 ) Sense is the word sense of the head word .</sentence>
+				<definiendum id="0">Sense</definiendum>
+				<definiens id="0">the word sense of the head word</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( 6 ) Ext is the list of slots that have been extraposed or raised to the level of the current phrase .</sentence>
+				<definiendum id="0">Ext</definiendum>
+				<definiens id="0">the list of slots that have been extraposed or raised to the level of the current phrase</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( 7 ) The last component Hods represents the modifiers ( daughters ) of the phrase , and is of the form mods ( LHods , RMods ) where LHods and RMods are Tile distinction between slot filler rules and ordering constraints parallels the difference between Immediate Dominance Rules and Linear Precedence Rules in GPSG .</sentence>
+				<definiendum id="0">LHods</definiendum>
+				<definiens id="0">the modifiers ( daughters ) of the phrase</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Each member of a modifier list is of the form Slot : Phrase where Slot is a slot and Phrase is a phrase which flUs Slot .</sentence>
+				<definiendum id="0">Slot</definiendum>
+				<definiendum id="1">Phrase</definiendum>
+				<definiens id="0">a slot</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The word sense predication consists of the sense name of the head word with the following arguments .</sentence>
+				<definiendum id="0">word sense predication</definiendum>
+				<definiens id="0">consists of the sense name of the head word with the following arguments</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>As an example for this clausal representation , the clause has ar g ( P , X ) says that phrase P has X one of its arguments ; i.e. , X is the slot marker variable for one of the complement slots of P. For the above sample parse , then , we would get clauses hasarg ( 5 , 'X2 ' ) , hasarg ( 5 , 'Xl2 ' ) .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">says that phrase P has X one of its arguments</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>We will also say that Pis in the adjunct domain of N iff N is an argument of a head tt , P is the object of a preposition PREP , and PREP is an adjunct of It .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">PREP</definiendum>
+				<definiens id="0">an adjunct of It</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>P is in the NP domain of N iff N is the determiner of a noun Qand ( i ) P is an argument of Q , or ( ii ) P is the object of a preposition PREP and Prep is an adjunct of Q. The six constraints are as follows .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiendum id="2">Prep</definiendum>
+				<definiens id="0">an argument of Q , or</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>P is an argument of a head H , N is not a pronoun , and N is contained in tt .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">an argument of a head H</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>P is the determiner of a noun Q , and N is contained in Q. The algorithm wlfich implements I-VI defines a predicate nonrefdep ( P , q ) wlfich is satisfied by a pair whose first element Is a pronoun and whose second element is an NP on which the pronoun can not be taken as referentially dependent , by virtue of the syntactic relation between them .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">the determiner of a noun Q , and</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Rules B , C , D , E , and F provide a disjunctive statement of the conditions under which the non-coreference goal ncorefpair ( P , Q ) is satisfied , and so const , tute the core of the algorithm .</sentence>
+				<definiendum id="0">F</definiendum>
+				<definiens id="0">provide a disjunctive statement of the conditions under which the non-coreference goal ncorefpair</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>complement clause subiect , tlowever , in Figure 4 , the infinitival clause IS an adjunct of 'lectured ' mid requires matrix subject control .</sentence>
+				<definiendum id="0">infinitival clause</definiendum>
+				<definiens id="0">IS an adjunct of 'lectured ' mid requires matrix subject control</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>LOI ) US creates a single discourse structure from the analyses of the S|0t Grammar parser for several sentences .</sentence>
+				<definiendum id="0">US</definiendum>
+				<definiens id="0">creates a single discourse structure from the analyses of the S|0t Grammar parser for several sentences</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The interface between our filter and LODUS embodies the sort of modular interaction of syntactic and semantic-pragmatic components which we see as important to the successful operation and efficiency of any anaphora resolution system .</sentence>
+				<definiendum id="0">LODUS</definiendum>
+				<definiens id="0">embodies the sort of modular interaction of syntactic and semantic-pragmatic components which we see as important to the successful operation and efficiency of any anaphora resolution system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1038">
+			<definition id="0">
+				<sentence>A Process Grammar ( PG ) defines a set of rules suited for bottom-up parsing and conceived as processes that are applied by a P G Processor .</sentence>
+				<definiendum id="0">Process Grammar ( PG )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The matching phase is a crucial step for process application , and a parsing structure for efficient matching is also presented .</sentence>
+				<definiendum id="0">matching phase</definiendum>
+				<definiens id="0">a crucial step for process application</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This is why the parser , called PG Processor , works following a nondeterministic parallel strategy , and only the Process Grammar has the power of altering and constraining this behaviour by means of some Kernel Functions that can modify the control structures of the PG Processor , thus 299 improving determinism of the parsing process , or avoiding construction of useless structures .</sentence>
+				<definiendum id="0">PG Processor</definiendum>
+				<definiens id="0">only the Process Grammar has the power of altering and constraining this behaviour by means of some Kernel Functions that can modify the control structures of the PG Processor</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A PGS is a triple ( Nr , Nr~ , T ) where N r is the set of the terminal nodes numbers { 0 , 1 ... .. n , n+l } ; N N is the set of the non-terminal nodes numbers { n+2 ... . } , and T is the set of the subtrees .</sentence>
+				<definiendum id="0">PGS</definiendum>
+				<definiendum id="1">N r</definiendum>
+				<definiendum id="2">N N</definiendum>
+				<definiendum id="3">T</definiendum>
+				<definiens id="0">a triple</definiens>
+				<definiens id="1">the set of the terminal nodes numbers { 0 , 1 ... .. n , n+l } ;</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>b. If ke Nr~ the subtree rooted in k T ( k ) is represented by T ( k ) = &lt; k , lcl ( k ) , rcl ( k ) , sons ( k ) , cat ( k ) &gt; , where k is the root node ; sons ( k ) = { s I ... .. sv } , sic NTuN s , i = 1 ... .. p , is the set of the direct descendants of k ; cat ( k ) = A , a non-terminal category assigned to the node .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiendum id="1">cat</definiendum>
+				<definiens id="0">k ) = &lt; k , lcl ( k ) , rcl ( k ) , sons ( k ) , cat ( k ) &gt;</definiens>
+				<definiens id="1">the root node ; sons ( k ) = { s I ... .. sv }</definiens>
+				<definiens id="2">the set of the direct descendants of k</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>If for some k~Nr~ , T ( k ) = &lt; k , lcl ( k ) , rcl ( k ) , { s 1 ... .. sp } , A &gt; , and T ( s ) = &lt; si , lcl ( sl ) , rcl ( s~ ) , { s n ... .. s~t } , zi &gt; e T , for i = 1 ... .. p0 are the direct descendants of k , then k has been reduced from s~ ... . , s t by some grammar rule whose reduction rule , as we shall see later , has the form ( A~ -- -z v .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">( k ) = &lt; k , lcl ( k ) , rcl ( k ) , { s 1 ... .. sp } , A &gt; , and T ( s ) = &lt; si , lcl ( sl ) , rcl ( s~ ) , { s n ... .. s~t } , zi &gt; e T , for i = 1 ... .. p0 are the direct descendants of k</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>If { s t ... .. s. } is a set of nodes in the PGS , then their subtrees T ( s a ) ... .. T ( ~p ) are said to be adjacent when rcl ( si ) = lcl ( si .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">a set of nodes in the PGS , then their subtrees T ( s a ) ... ..</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The parser scans the input string left-to-right , so reductions grow on the left of the scanner pointer , and for the efficiency 300 Adjacency Tree terminal node there is the corresponding list of the anchored nodes .</sentence>
+				<definiendum id="0">parser</definiendum>
+				<definiens id="0">scans the input string left-to-right , so reductions grow on the left of the scanner pointer</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>If ( Nr , Ns , T ) is a PGS , ( A~zl ... z v ) is a reduction rule whose right-hand side has to be matched , and T ( k ) ~ T such that cat ( k ) = z , then : a. the string z t ... zp is matc'hable iffp &lt; lcl ( k ) ; b. for i = p ... .. 1 , zt is partially matchable to a node Definition 2.10 .</sentence>
+				<definiendum id="0">Ns , T )</definiendum>
+				<definiendum id="1">T</definiendum>
+				<definiens id="0">a reduction rule whose right-hand side has to be matched</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The Process Grammar is an extension of the Augmented Context-Free Grammar such as APSG , oriented to bottomup parsing .</sentence>
+				<definiendum id="0">Process Grammar</definiendum>
+				<definiens id="0">an extension of the Augmented Context-Free Grammar such as APSG , oriented to bottomup parsing</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>V r is the set of terminal symbols ; V N is the set of non-terminal symbols ; S¢ V N is the Root Symbol of PG ; R = { r 1 ... . , rt } is the set of the rules .</sentence>
+				<definiendum id="0">V r</definiendum>
+				<definiendum id="1">V N</definiendum>
+				<definiens id="0">the set of terminal symbols</definiens>
+				<definiens id="1">the set of non-terminal symbols ; S¢ V N is the Root Symbol of PG ; R = { r 1 ... . , rt } is the set of the rules</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Any rule r i in R is of the form r i = &lt; red ( ri ) , st ( ri ) , t ( ri ) , a ( Q &gt; , where red ( ri ) is a reduction rule ( A~ -- -a ) , A~ Vr~ , ct~ ( VruVN ) + ; st ( r ) is the state of the rule that can be active or inactive ; t ( Q and a ( Q are the tests and the actions , respectively ; V s is a set of special symbols that can occur in a reduction rule and have a special meaning .</sentence>
+				<definiendum id="0">V s</definiendum>
+				<definiens id="0">a ( Q &gt; , where red ( ri ) is a reduction rule</definiens>
+				<definiens id="1">the state of the rule that can be active or inactive</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Such a definition extends classical APSG in some specific ways : first , a Process Grammar is suited for bottom-up parsing ; second , rules have a state concerning the applicability of a rule at a certain time ; third , we extend the CF structure of the reduction rule allowing null left-hand sides by means of e-reductions ; fourth , the set F is the strategic side that should provide the necessary functions to perform operations on the processor structures .</sentence>
+				<definiendum id="0">Process Grammar</definiendum>
+				<definiens id="0">the strategic side that should provide the necessary functions to perform operations on the processor structures</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Vce VsuV r such that 3 r~ R where red ( r ) = ( Ac -- -ac ) , AeVNu { e~ } , being c the right comer of the reduction rule , and lacl _ &lt; L , being L the size of the longest right-hand side having c as the right comer , the sets P ( c , i ) , P , ( c , i ) for i = 1 ... .. L , can be built as follows : P ( c , i ) = { re R I red ( r ) = ( At -- -cxc ) , 1 &lt; Itxcl _ &lt; i , st ( r ) =aclive } Pe ( c , i ) = { re R I red ( r ) = ( eac -- -ac ) , 1 &lt; lacl &lt; i , st ( r ) =active } Whenever a node he NruNr~ has been scanned or built and k=lcl ( h ) , then the process scheduler has to schedule the rules in P ( cat ( h ) , k ) uP , , ( cat ( h ) , k ) .</sentence>
+				<definiendum id="0">red</definiendum>
+				<definiens id="0">a node he NruNr~ has been scanned or built and k=lcl ( h )</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>A process descriptor is a triple PD=\ [ r , h , C\ ] where : m R is the rule involved ; he NruNsu { NIL } is either the right corner node from which the marcher starts or NIL ; C is a set of adjacent nodes or the empty set .</sentence>
+				<definiendum id="0">process descriptor</definiendum>
+				<definiendum id="1">R</definiendum>
+				<definiendum id="2">C</definiendum>
+				<definiens id="0">the rule involved ; he NruNsu { NIL } is either the right corner node from which the marcher starts or NIL</definiens>
+				<definiens id="1">a set of adjacent nodes or the empty set</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The PG processor operates by means of an operation Op on some internal structures that define the processor state ProcState , and on the parsing structures accessible by the process environment ProcEnv .</sentence>
+				<definiendum id="0">PG processor</definiendum>
+				<definiens id="0">operates by means of an operation Op on some internal structures that define the processor state ProcState</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>At this point the state is \ [ activate , pt , \ [ NILMIL , \ [ r , pt , \ [ } \ ] \ ] MIL , pn , \ [ } \ ] and the processor has to try reduction for the process in the stack s v thus Op &lt; -- reduce performing the following statements : reduce : rl PD &lt; -- -pop ( % ) ; \ [ reduce , pt , \ [ NIL , NIL , NIL\ ] , \ [ r , pt , { } \ ] , pn , { } \ ] r2 C0 -- match ( red ( r ) , pt ) ; C = { nl , ... , n vpt } r3 PD &lt; -Lir , pt , C\ ] ; 303 \ [ reduce , pt , \ [ Nfl. , MiL , NIL\ ] , \ [ r , pt , C\ ] , pn , { } \ ] r4 V rset~ C : r5 RSet ~rset ; \ [ reduce , pt , \ [ NiL , NILMIL\ ] , \ [ r , pt , { } \ ] , pn~RSet\ ] r6 if t ( r ) then pn &lt; -- pn + 1 ; r7 add subtree ( pn , red ( r ) , R S e0 ; r8 a ( r ) ; r9 schedule ( H ( cat ( pn ) , lcl ( pn ) ) ; \ [ reduce , pt , \ [ NIL , sv % \ ] , \ [ r , pt , { } \ ] , pn , RSet\ ] rl00p &lt; -- activate .</sentence>
+				<definiendum id="0">pt</definiendum>
+				<definiens id="0">pt , { } \ ] , pn , { } \ ] r2 C0 -- match ( red ( r ) , pt ) ; C = { nl , ... , n vpt } r3 PD &lt; -Lir , pt</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>The PG Processor must face this problem as well , and the example we give is a Process Grammar subset of rules that tries to resolve it .</sentence>
+				<definiendum id="0">PG Processor</definiendum>
+				<definiens id="0">a Process Grammar subset of rules that tries to resolve it</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Taken two nodes % , nje RSet where n , e N N such that we have cat ( n ) -- z , , cat ( nj ) =zj , and T ( n~ ) , T ( n ) are adjacent , i.e. , either j=i+ 1 or 304 j=i1 , then the function Add_Son_Rel of Fx= when called in a ( r ) as Add_Son_Rel ( zi~z ) has the effect of creating a new parent-son relation between % , the parent , and n , the son , altering the sets sons ( n ) , and either 1cI ( % ) or rcl ( n ) as follows : a ) sons ( n ) ~sons ( n ) u { nj } b ) lcl ( n ) ~ lcl ( nj ) ifj=i-1 c ) rcl ( n ) 6-rcl ( n ) ifj=i+l Such a function has the power of making an alteration in the structure of a subtree in the PGS extending its coverage to one of its adjacent subtrees .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">n ) are adjacent , i.e. , either j=i+ 1 or 304 j=i1 , then the function Add_Son_Rel of Fx= when called in a ( r</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>If this search succeeds the second phase is when the red ( r0 ) = ( X ~-D ) st ( r0 ) = active a ( r0 ) = iRE ( rl ) \ ] red ( rl ) = ( el &lt; -- C X ) st ( rl ) = inactive a ( rl ) = \ [ Add Son_Rel ( X , C ) ; RE ( r2 ) ; RD ( rl ) \ ] red ( a ) = B XO st ( r2 ) = inactive a ( r2 ) = \ [ Add_Son Rel ( X , B ) ; RE ( r3 ) ; RD ( r2 ) \ ] red ( r3 ) - ( el ¢ -- A X ) st ( r3 ) = inactive a ( r3 ) = \ [ Add Son_Rel ( X , A ) ; RD ( r3 ) \ ] Figure 6 .</sentence>
+				<definiendum id="0">RD</definiendum>
+				<definiendum id="1">X</definiendum>
+				<definiendum id="2">RD</definiendum>
+				<definiens id="0">B XO st ( r2 ) = inactive a ( r2 ) = \ [ Add_Son Rel ( X , B ) ; RE ( r3 ) ;</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>The resultant parser operates in linear time and allows for incremental semantic interpretation and determination of grammaticaiity .</sentence>
+				<definiendum id="0">resultant parser</definiendum>
+				<definiens id="0">operates in linear time and allows for incremental semantic interpretation and determination of grammaticaiity</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Cat is the syntactic category of the element licensed by this relation .</sentence>
+				<definiendum id="0">Cat</definiendum>
+				<definiens id="0">the syntactic category of the element licensed by this relation</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Functional selection is the relation which obtains between a functional head and the element for which it subcategorizes , i.e. between C and IP , I and VP , D and NP .</sentence>
+				<definiendum id="0">Functional selection</definiendum>
+				<definiens id="0">the relation which obtains between a functional head and the element for which it subcategorizes</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A chain consist of a list of nodes ( al ... . , a~ ) such that they share gives and needs and each ai c-commands each a~+l. The first element in the chain , al , the head , is the only element which can have phonological content .</sentence>
+				<definiendum id="0">chain</definiendum>
+				<definiens id="0">consist of a list of nodes ( al ... . , a~ ) such that they share gives and needs and each ai c-commands each a~+l. The first element in the chain</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>5In the examples which follow , gives are shown as 4-topics ( D , T~tpe , Val , SatBI/ ) where D is the direction , T~tpe is the type of licensing relation , Val is the licensing relation value and SatB~ is the node which satisfies the give ( marked as 7 , if the relation is as yet unsatisfied ) .</sentence>
+				<definiendum id="0">D</definiendum>
+				<definiendum id="1">T~tpe</definiendum>
+				<definiendum id="2">Val</definiendum>
+				<definiendum id="3">SatB~</definiendum>
+				<definiens id="0">the licensing relation value and</definiens>
+				<definiens id="1">the node which satisfies the give ( marked as 7 , if the relation is as yet unsatisfied )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>TAG accomplishes linguistic description by factoring recursion from local dependencies \ [ Joshi , 1985\ ] .</sentence>
+				<definiendum id="0">TAG</definiendum>
+				<definiens id="0">accomplishes linguistic description by factoring recursion from local dependencies \ [</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Kroch , in two remarkable papers \ [ 1986\ ] and \ [ 1987\ ] , has shown that even constraints on long distance dependencies , which intuitively demand a more `` global '' perspective , can be expressed using an entirely local ( i.e. within a single elementary lee ) formulation of the ECP and allows for the collapsing of the CED with the ECP .</sentence>
+				<definiendum id="0">Kroch</definiendum>
+				<definiens id="0">a single elementary lee ) formulation of the ECP and allows for the collapsing of the CED with the ECP</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>This model also handles control constructions , bare infinitives , ECM verbs and binding of anaphors , modification , genitive DPs and others .</sentence>
+				<definiendum id="0">ECM</definiendum>
+				<definiens id="0">verbs and binding of anaphors , modification , genitive DPs and others</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>However , in a recent paper , Searle \ [ 10\ ] forcefully criticizes the performative-as-assertion approach on the following grounds : • Assertions commit the speaker to the truth of what is asserted • Performative statements are self-referential • `` An essential feature of any illocutionary act is the intention to perform that act '' Searle claims that accounts based on selfreferential assertions are `` doomed to failure '' because one can not show that being committed to having the intention to be performing the named illocutionary act entails that one in fact has that intention .</sentence>
+				<definiendum id="0">illocutionary act</definiendum>
+				<definiens id="0">the intention to perform that act '' Searle claims that accounts based on selfreferential assertions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( DECLARATIVE s ) means that sentence s , a string of words , is a declarative .</sentence>
+				<definiendum id="0">DECLARATIVE</definiendum>
+				<definiens id="0">s ) means that sentence s , a string of words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( MAIN-VERB s v ) , ( TENSE s tense ) , ( COMPLEMENT s s ' ) , ( D-OBJECT s np ) , ( SUBJECT s np ) , are all syntactic predicates intended to have the obvious meanings .</sentence>
+				<definiendum id="0">TENSE</definiendum>
+				<definiendum id="1">COMPLEMENT</definiendum>
+				<definiens id="0">s s ' ) , ( D-OBJECT s np ) , ( SUBJECT s np ) , are all syntactic predicates intended to have the obvious meanings</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Definition 3 ( ABEL n x y p ) de__f ( BEL x ( BEL y ( BEL x ... ( BEL x p ) ... ) That is , ABEL characterizes the nth alternating belief between x and y that p , built up `` from outside in , '' i.e , starting with x 's belief that p. On this basis , one can define unilateral mutual belief -what one agent believes is mutually believed -as follows .</sentence>
+				<definiendum id="0">BEL y</definiendum>
+				<definiendum id="1">ABEL</definiendum>
+				<definiens id="0">characterizes the nth alternating belief between x and y that p , built up `` from outside in , '' i.e , starting with x 's belief that p. On this basis</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Definition 4 ( BMB x y p ) def= Vn ( ABEL n x y p ) In other words , ( BMB x y p ) is the infinite conjunction ( BEL x p ) A ( BEL x ( BEL y p ) ) ^ ... Finally , we define mutual belief and mutual knowledge as follows .</sentence>
+				<definiendum id="0">BMB x y p ) def= Vn ( ABEL n x y p</definiendum>
+				<definiendum id="1">BMB x y p )</definiendum>
+				<definiens id="0">the infinite conjunction ( BEL x p ) A ( BEL x ( BEL y p</definiens>
+				<definiens id="1">mutual belief and mutual knowledge as follows</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>7 Definition 6 ~ =~ ~ de_/ V spkr , obs , addr , e , s , n ( KNOW obs ( DONE spkr e ) A ( UTTER spkr addr s e ) A ( q~ s ) ) ^ , - , ( ABEL nobs spkr ( BEFORE • , - , ( GOAL spkr \ [ AFTER • ( KNOW addr ( BEFORE • o~ ) ) \ ] ) ) ) 2 ) ( ABEL nobs spkr ( BEFORE • t~ A ( GOAL spkr \ [ AFTER • ( KNOW addr ( BEFORE • a ) ) \ ] ) ) ) That is , • =~ ~ is an abbreviation for a quantified implication roughly to the effect that if an observer obs knows that • was just done , where • was an uttering to addressee addt of a sentence s in syntactic mood q~ , and obt does not believe that • was done when the speaker did not want the addressee to come to know that the core speakerattitude a associated with utterances of that type held , then obs believes that the speaker in fact wanted the addressee to know that o~ , and so he , the observer , believes that c~ held just prior to the utterance .</sentence>
+				<definiendum id="0">KNOW obs</definiendum>
+				<definiendum id="1">DONE spkr e</definiendum>
+				<definiendum id="2">UTTER spkr addr s e</definiendum>
+				<definiendum id="3">ABEL nobs spkr</definiendum>
+				<definiendum id="4">BEFORE</definiendum>
+				<definiens id="0">an abbreviation for a quantified implication roughly to the effect that if an observer obs knows that • was just done , where • was an uttering to addressee addt of a sentence s in syntactic mood q~ , and obt does not believe that • was done when the speaker did not want the addressee to come to know that the core speakerattitude a associated with utterances of that type held , then obs believes that the speaker in fact wanted the addressee to know that o~ , and so he , the observer , believes that c~ held just prior to the utterance</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Domain Axiom 1 Declaratives and Imperatives : A. ~=DECLARATIVE =~ ( BEL spkr ( TRUE s e ) ) B. I= IMPERATIVE : =~ ( GOAL x O3e ' ( DONE y e ' ) ^ ( FULFILL-CONDS s e ' e ) Below , we present our definitions of illocutionary acts .</sentence>
+				<definiendum id="0">BEL spkr</definiendum>
+				<definiendum id="1">TRUE</definiendum>
+				<definiens id="0">s e ) ) B. I= IMPERATIVE : =~ ( GOAL x O3e '</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The illocutionary act of asserting will be defined as an attempt to make the speaker 's believing the propositional content mutually believed .</sentence>
+				<definiendum id="0">illocutionary act of asserting</definiendum>
+				<definiens id="0">an attempt to make the speaker 's believing the propositional content mutually believed</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>; e ) ^ ( SUBJECT s ~ ) A ( D-OBJECT s y ) A ( REFERS z x e ) A ( REFERS y y e ) D ( TRUE s e ) ( DONE x { REQUEST x y e ~ tl } ) That is , if event • is happening and the sentence s is a present tense declarative sentence whose main verb is `` request , '' whose subject x refers to person x , and whose direct object Y refers to person y , then the sentence is true iff x is requesting the addressee y to fulfill the conditions of imperative sentence s ' .</sentence>
+				<definiendum id="0">sentence s</definiendum>
+				<definiens id="0">a present tense declarative sentence whose main verb is `` request</definiens>
+				<definiens id="1">requesting the addressee y to fulfill the conditions of imperative sentence s '</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Theorem 2 Perforrnatives Used as Assertions I : :V spkr , addr , e , n , tl , ( MK spkr addr ( DONE spkr tl ?</sentence>
+				<definiendum id="0">MK spkr addr</definiendum>
+				<definiens id="0">:V spkr , addr , e , n , tl</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>CULUS Natural Language Processing as deduction The architectures in this paper resemble the uniform architecture in Shieber ( 1988 ) because language processing is viewed as logical deduction , in analysis and generation : `` The generation of strings matching some criteria can equally well be thought of as a deductive process , namely a process of constructive proof of the existence of a string that matches the criteria . ''</sentence>
+				<definiendum id="0">CULUS Natural Language Processing</definiendum>
+				<definiens id="0">a deductive process</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Calder et al. conjecture that their algorithm `` ( ... ) extends naturally to the rules of composition , division and permutation of Combinatory Categorial Grammar ( Steedman , 1987 ) and the Lambek Calculus ( 1958 ) '' ( Calder et al. , 1989 , p. 23 ) .</sentence>
+				<definiendum id="0">Lambek Calculus</definiendum>
+				<definiens id="0">al. conjecture that their algorithm `` ( ... ) extends naturally to the rules of composition , division and permutation of Combinatory Categorial Grammar ( Steedman , 1987 ) and the</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Start with sequent P = &gt; \ [ Pros : np : the @ table\ ] lAssume suecedent is part of an axiom : \ [ Pros : np : the0t able\ ] = &gt; \ [ Pros : np : the @ table\ ] 2Match axiom with last subsequent of an inference rule : ( U , \ [ Pros_Fu : X/Y : Functor\ ] , \ [ T\ [ I~ , V ) = &gt; \ [ Z\ ] &lt; \ [ Pros_Fu : X/Y : Functor\ ] = &gt; \ [ Pros_Fu : X/Y : Functor\ ] &amp; \ [ T \ [ R\ ] = &gt; \ [ Pros_krg : Y : Arg\ ] &amp; ( U , \ [ ( Pros_Fu*Pros_Arg ) : X : Functor @ ~g\ ] , V ) = &gt; \ [ Z\ ] .</sentence>
+				<definiendum id="0">X/Y</definiendum>
+				<definiens id="0">the @ table\ ] lAssume suecedent is part of an axiom : \ [ Pros : np : the0t able\ ] = &gt; \ [ Pros : np : the @ table\ ] 2Match axiom with last subsequent of an inference rule</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>7Final derivation : the : np/n : the table : n : table = &gt; the*table : np.the @ table &lt; the : np/n : the = &gt; the : np/n : the &lt; the : np/n : the =1 &gt; the : np/n : the &lt; true table : n : table = &gt; table : n : table &lt; table : n : table =i &gt; tabls : n : table &lt; true the*table : np : the @ table = &gt; the*table : np : the @ table &lt; true 224 ing ( 7-3 ) , in order to axiomatize the head functor as soon as possible .</sentence>
+				<definiendum id="0">7Final derivation</definiendum>
+				<definiens id="0">table = &gt; table : n : table &lt; table : n : table =i &gt; tabls</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>Pronouns are a source of underspecification in a sentence which can be handled in logical form .</sentence>
+				<definiendum id="0">Pronouns</definiendum>
+				<definiens id="0">a source of underspecification in a sentence which can be handled in logical form</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Anaphoric definites can either depend on linguistic antecedents ( in either the same or previous sentences ) or can denote salient individuals in the environment of the speaker/hearer ( also called deictic use ) .</sentence>
+				<definiendum id="0">Anaphoric</definiendum>
+				<definiens id="0">in either the same or previous sentences ) or can denote salient individuals in the environment of the speaker/hearer ( also called deictic use )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Each definite function is defined by a unique name ( i.e. , defwith a unique integer appended to it ) , a list of arguments , and a restriction .</sentence>
+				<definiendum id="0">definite function</definiendum>
+				<definiens id="0">a unique name ( i.e. , defwith a unique integer appended to it ) , a list of arguments</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The argument list of the function consists of the variables associated with lambda operators that have scope over its position , any variables associated with non-subject quantified noun phrases that could bind a pronoun in that position , and any quantified variables associated with embedded quantified noun phrases that are not embedded in a relative clause attached to a noun phrase 2 .</sentence>
+				<definiendum id="0">argument list of the function</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The argument list of the function consists of the variables y and z 3 .</sentence>
+				<definiendum id="0">argument list of the function</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Vx : ( man x ) x , A ( y ) ( tell Y ( ( dell y ) I ( and ( psychiatrist ( dell y ) ) ( possess ( ( def2 y ) I ( and ( mother ( def2 y ) ) ( possess ( hisa y ) ( def2 y ) ) ( or ( = ( hisa y ) y ) ( = ( his3 y ) x ) ) ) ) ( dell y ) ) ) ) ( about ( ( def4 y ) \ [ ( and ( diary ( def4 y ) ) ( possess ( ( def5 y ) I ( old-lady ( def5 y ) ) ) ( def4 y ) ) ( = ( def5 y ) ( def2 y ) ) ) ) ) ) This example would be very difficult for an approach that uses either definite descriptions or definite quantifiers .</sentence>
+				<definiendum id="0">Vx</definiendum>
+				<definiens id="0">hisa y ) y ) ( = ( his3 y ) x ) ) ) ) ( dell y ) ) ) ) ( about ( ( def4 y ) \ [</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The definite function defl is a function of all of the variables that can potentially cause it to change .</sentence>
+				<definiendum id="0">definite function defl</definiendum>
+				<definiens id="0">a function of all of the variables that can potentially cause it to change</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Vx : ( man x ) x , A ( y ) ( show y ( ( defl y z ) \ [ ( and ( picture ( dell y z ) ) ( possess ( his2 y z ) ( defl y z ) ) ( = ( his2 y z ) z ) ) ) \ [ Vz : ( boy z ) z\ ] ) By using our argument reduction constraint , we can replace the function ( defl y z ) by a function of z ( since ( his2 y z ) is replaced with the variable z ) , as shown in 12 .</sentence>
+				<definiendum id="0">Vx</definiendum>
+				<definiens id="0">replaced with the variable z</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>( ( dell ) \ ] ( name ( dell ) Fred ) ) , A ( x ) ( tell x ( ( def2 x ) I ( and ( inst ( def2 x ) teacher ) ( def2 x ) , A ( y ) ( discuss Y \ [ V ( z ) : ( inst z student ) z\ ] ( with ( ( def3 X y Z ) I ( and ( inst ( def3 x y z ) • mother ) ( possess \ [ ( def2 x ) , A ( w ) ( record w ( ( def5 x w ) \ [ ( and ( inst ( defs x w ) response ) ( possess ( her6 x w ) ( defs x w ) ) ) ) ) \ ] ) antecedent for her .</sentence>
+				<definiendum id="0">A ( x )</definiendum>
+				<definiendum id="1">A ( w )</definiendum>
+				<definiens id="0">tell x ( ( def2 x ) I ( and ( inst ( def2 x ) teacher ) ( def2 x ) , A ( y ) ( discuss Y \ [ V ( z ) : ( inst z student ) z\ ] ( with ( ( def3 X y Z</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>3 A speaker S conversationally implicates Q to a hearer tI by saying U ( where U is a realization of a proposition P ) in a context C iff : b ... . a live one A third problem is that in order to derive ( lb ) from ( la ) it is necessary to consider the beliefs of speaker ( S ) and hearer ( H ) : e.g. S 's and H 's beliefs about why each said what they did , and about the appropriate state of the parrot .</sentence>
+				<definiendum id="0">speaker S</definiendum>
+				<definiendum id="1">U</definiendum>
+				<definiens id="0">a realization of a proposition P</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Informally speaking , the convention is that if speaker S makes a request that hearer H perform an action A on an entity E , and if S and tt mutually believe that S has a plan whose success depends on the E being in a certain state N ( which is the normal state for an E with respect to that plan ) and that S 's request is a step of that plan , then S is implicating a request for S to do A on an E in state N. In section 4 , I clarify the notion of normal state with respect to a plan by distinguishing it from the notions of stereotype and planindependent normal state .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">S 's request</definiendum>
+				<definiens id="0">if speaker S makes a request that hearer H perform an action A on an entity E , and if S and tt mutually believe that S has a plan whose success depends on the E being in a certain state</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>1 2 ) '' cooperative speakers will say as much as they truthfully can that is relevant to a conversational exchange '' ; and distinguished from other conversational implicatures by `` being dependent upon the identification of some salient relation that orders a concept referred to in an utterance with other concepts '' ; e.g. by saying ( 4a ) , B has scalar implicated ( 4b ) .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">relevant to a conversational exchange '' ; and distinguished from other conversational implicatures by `` being dependent upon the identification of some salient relation that orders a concept referred to in an utterance with other concepts ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In this section , I will argue that ( lb ) is a conversational implicature and propose a convention for identifying instances of that class of implicature , which I will call 'normal state implicature ' .</sentence>
+				<definiendum id="0">implicature</definiendum>
+				<definiens id="0">a conversational implicature and propose a convention for identifying instances of that class of</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The second extentrue if Agent has a plan in which Entity plays a role ; PRECOND ( Plan , Proposition ) is true if Plan has Proposition as a precondition ; STEP ( Plan , Action ) is true if Action is a step of Plan .</sentence>
+				<definiendum id="0">PRECOND</definiendum>
+				<definiendum id="1">STEP</definiendum>
+				<definiens id="0">a plan in which Entity plays a role ;</definiens>
+				<definiens id="1">true if Plan has Proposition as a precondition ;</definiens>
+				<definiens id="2">true if Action is a step of Plan</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Also , BMB ( A , B , Proposition ) is true if A believes that A and B mutually believe that Proposition ; REALIZE ( Utterance , Proposition ) is true if Utterance expresses Proposition ; REQUEST ( S , H , Action ) is true if S requests H to perform Action ; and SAY ( S , H , U , C ) is true if S says U to H in C. 6 SHOW ( A , B , C ) is true if A shows C to B. IN-STATE ( Entity , State ) is true if Entity is in the given State ; and NORMAL-STATE ( State , Plan , Entity ) is true if State is the normal state of Entity with respect to Plan .</sentence>
+				<definiendum id="0">BMB ( A , B , Proposition )</definiendum>
+				<definiendum id="1">SAY</definiendum>
+				<definiendum id="2">SHOW ( A , B , C )</definiendum>
+				<definiens id="0">true if A believes that A and B mutually believe that Proposition</definiens>
+				<definiens id="1">true if S requests H to perform Action</definiens>
+				<definiens id="2">true if Entity is in the given State</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Vb0 : K Vbl : \ [ ~b2 : K N ( b~ ) \ ] V g : PLAN BMB ( S , H , HAS-PLAN ( S , g , b0 ) A PRECOND ( g , IN-STATE ( b0 , N ) ) A NORMAL-STATE ( N , g , b0 ) A STEP ( g , SAY ( S , It , U , C ) ) ) A REALIZE ( U , REQUEST ( S , H , A ( b0 ) ) ) ¢~ NORMAL-STATE-IMP ( S , H , U , REQUEST ( S , I-I , A ( bl ) ) , C ) Unfortunately , if ( 6 ) is to be of maximum use , there are two problems to be solved .</sentence>
+				<definiendum id="0">PLAN BMB</definiendum>
+				<definiendum id="1">NORMAL-STATE</definiendum>
+				<definiens id="0">U , REQUEST ( S , H , A ( b0 ) ) ) ¢~ NORMAL-STATE-IMP ( S , H , U , REQUEST ( S , I-I , A ( bl ) )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Live is the state of an entity who has been born but has not yet died ; ready-to-use is the state of an artifact between its creation or repair and its destruction .</sentence>
+				<definiendum id="0">Live</definiendum>
+				<definiens id="0">the state of an artifact between its creation or repair and its destruction</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>For example , consider a situation where S is a restaurant customer ; H is a waiter ; S and H have mutual belief of the salience of an ordering such that warm precedes boiling hot ; and , S and H have mutual belief of S 's plan to make tea by steeping a tea bag in boiling hot water .</sentence>
+				<definiendum id="0">H</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiens id="0">consider a situation where S is a restaurant customer ;</definiens>
+				<definiens id="1">and H have mutual belief of S 's plan to make tea by steeping a tea bag in boiling hot water</definiens>
+			</definition>
+</paper>
+
+	</volume>

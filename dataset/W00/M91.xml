@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="M91">
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>KBIRD is a rule-based system for concept-spotting in free text [ 2 , 7 ] .</sentence>
+				<definiendum id="0">KBIRD</definiendum>
+				<definiens id="0">a rule-based system for concept-spotting in free</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>KBIRD rules are forward-chaining horn clauses whose antecedents are constituents discovered and recorded in a chart data structure and whose consequents are newly inferred constituents—concepts ( or facts ) —to be added to the chart .</sentence>
+				<definiendum id="0">KBIRD rules</definiendum>
+				<definiens id="0">forward-chaining horn clauses whose antecedents are constituents discovered and recorded in a chart data structure and whose consequents are newly inferred constituents—concepts ( or facts ) —to be added to the chart</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The KBIRD rules which propose slot fillers attach a score ( an integer between 0 and 100 ) to eac h candidate which represents the system 's confidence in that value .</sentence>
+				<definiendum id="0">KBIRD rules</definiendum>
+				<definiens id="0">an integer between 0 and 100 ) to eac h candidate which represents the system 's confidence in that value</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Thus , it can determine that in the sentence `` Castellar is the second mayor that has been murdered in Colombia in the last 3 days '' that Castellar is the subject of the copular verb in the matrix clause , and that Castellar should inherit properties asserted of the predicate nominal argument .</sentence>
+				<definiendum id="0">Castellar</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>216 TST1-MUC3-0099 LIMA , 25 OCT 89 ( EFE ) [ TEXT ] POLICE HAVE REPORTED THAT TERRORISTS TONIGH TBOMBED THE EMBASSIES OF THE PAC AND THE SOVIET UNION .</sentence>
+				<definiendum id="0">EFE</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>The GE NLTooLSET is a set of text interpretation tools designed to be easily adapted to new domains .</sentence>
+				<definiendum id="0">GE NLTooLSET</definiendum>
+				<definiens id="0">a set of text interpretation tools designed to be easily adapted to new domains</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Linguistic analysis parses each sentence and produces ( possibly alternative ) semantic interpretations at the sentence level .</sentence>
+				<definiendum id="0">Linguistic analysis</definiendum>
+				<definiens id="0">parses each sentence and produces ( possibly alternative ) semantic interpretations at the sentence level</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>TOKEN DANGER : Creating list NP from `` THE EMBASSIES PRC AND EMBASSIES THE SOVIET UNION '' Calling Trumpet with Sexp : ( VERB_REPORT1 ( R-PATIENT ( VERB_BOMB1 ( R-PATIENT ( COORDCONJ_AND1 ( R-PART1 ( NOUN_EMBASSY1 ( R-PART ( C-ENTITY ) ) ( R-NATIONALITY ( NATION-NAMECHINAI ( R-NAME CHINA ) ) ) ( R-DEFINITE ( DET_THE1 ) ) ) ) ( R-PART1 ( NOUN_EMBASSY1 ( R-PART ( C-ENTITY ) ) ( R-NATIONALITY ( NATION-NAMESOVIET-UNION1 ( R-NAME SOVIET-UNION ) ) ) ) ) ) ) ( R-DATE ( C-DATE-OF-OCCURRENCE ( R-RELATIVE NO ) ( R-YEAR NIL ) ( R-DAY 1251 ) ( R-MONTH OCT ) ) ) ( R-AGENT ( C-VERB TERRORIZEI-ER ) ) ( R-INSTRUMENT ( C-BOMB ) ) ) ) ( R-COMMUNICATOR ( NOUN_POLICE1 ) ) ) TRUMPET WARN : Breaking out core templates ( C-BOMBING-TEMPLATE ) Processing core template : ( C-BOMBING-TEMPLATE ( R-INSTRUMENT ( C-BOMB ) ) ( R-DATE ( C-DATE-OF-OCCURRENCE ( R-RELATIVE NO ) ( R-YEAR NIL ) ( R-DAY 1251 ) ( R-MONTH OCT ) ) ) ( R-TARGET ( COORDCONJ_AND1 ( R-PART1 ( NOUN_EMBASSY1 ( R-PART ( C-ENTITY ) ) ( R-NATIONALITY ( NATION-NAME_CHINA1 ( R-NAME CHINA ) ) ) ( R-DEFINITE ( DET_THE1 ) ) ) ) ( R-PART1 ( NOUN_EMBASSY1 ( R-PART ( C-ENTITY ) ) ( R-NATIONALITY ( NATION-NAME_SOVIET-UNION1 ( R-NAME SOVIET-UNION ) ) ) ) ) ) ) ( R-PERPETRATOR ( C-VERB TERRORIZE1-ER ) ) ) 147 Calling Trumpet with Sexp : ( C-CAUSING ( R-CAUSE ( C-BOMB ( R-DEFINITE ( DET_THE1 ) ) ) ) ( R-EFFECT ( COORDCONJ_BUT1 ( R-PART1 ( NOUN_DAMAGE1 ) ) ( R-PART2 ( C-INJURY ( R-POLARITY ( DET_NO1 ) ) ) ) ) ) ) TRUMPET WARN : Breaking out core templates ( C-INJURY-TEMPLATE C-DAMAGE-TEMPLATE ) Assuming C-BOMBING-TEMPLATE and C-INJURY-TEMPLATE have same R-INSTRUMENT Assuming C-BOMBING-TEMPLATE and C-DAMAGE-TEMPLATE have same R-INSTRUMENT Assuming C-BOMBING-TEMPLATE and C-INJURY-TEMPLATE have same R-DATE Assuming C-BOMBING-TEMPLATE and C-DAMAGE-TEMPLATE have same R-DATE Assuming C-BOMBING-TEMPLATE and C-INJURY-TEMPLATE have same R-PERPETRATOR Assuming C-BOMBING-TEMPLATE and C-DAMAGE-TEMPLATE have same R-PERPETRATOR Assuming C-BOMBING-TEMPLATE and C-INJURY-TEMPLATE have same R-TARGET Assuming C-BOMBING-TEMPLATE and C-DAMAGE-TEMPLATE have same R-TARGET Comparison of Program Answers with Answer Key The NLTooLsET results for TST1-0099 were the following templates : TST1-MUC3-0099 1 25 OCT 89 BOMBING TERRORIST ACT `` TERRORISTS '' `` MAOIST \ '' SHINING PATH\ '' GROUP '' `` GUEVARIST \ '' TUPAC AMARU REVOLUTIONARY MOVEMENT\ '' `` POSSIBLE : `` MAOIST \ '' SHINING PATH\ '' GROUP '' POSSIBLE : `` GUEVARIST \ '' TUPAC AMARU REVOLUTIONARY MOVEMENT\ '' `` `` VEHICLES '' `` EMBASSIES OF THE PRC '' `` EMBASSIES OF THE PRC AND THE SOVIET UNION '' 10 .</sentence>
+				<definiendum id="0">R-NATIONALITY ( NATION-NAMECHINAI ( R-NAME CHINA ) ) ) ( R-DEFINITE</definiendum>
+				<definiendum id="1">C-BOMBING-TEMPLATE</definiendum>
+				<definiendum id="2">R-NAME CHINA ) ) ) ( R-DEFINITE ( DET_THE1 ) ) ) ) ( R-PART1</definiendum>
+				<definiens id="0">R-RELATIVE NO ) ( R-YEAR NIL ) ( R-DAY 1251 ) ( R-MONTH OCT ) ) ) ( R-AGENT ( C-VERB TERRORIZEI-ER</definiens>
+				<definiens id="1">NATION-NAME_SOVIET-UNION1 ( R-NAME SOVIET-UNION ) ) ) ) ) ) ) ( R-PERPETRATOR ( C-VERB TERRORIZE1-ER )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>SUMMARY AND CONCLUSIO N MUC-3 is a very difficult task , involving a combination of language interpretation , conceptual and domain knowledge , along with many rules and strategies fo l. template filling .</sentence>
+				<definiendum id="0">CONCLUSIO N MUC-3</definiendum>
+				<definiens id="0">a very difficult task , involving a combination of language interpretation , conceptual and domain knowledge</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>System total recall score ( matched/missing ) as a function of time during MUC-3 development .</sentence>
+				<definiendum id="0">System total recall score</definiendum>
+				<definiens id="0">a function of time during MUC-3 development</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>( PAKTUS uses inflectional and derivational morphology if the root s erg in the lexicon . )</sentence>
+				<definiendum id="0">PAKTUS</definiendum>
+				<definiens id="0">uses inflectional and derivational morphology if the root s erg in the lexicon</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TRAINING AND IMPROVEMEN T We relied almost exclusively on the 100 messages in Test 1 for training after the February interim conference , as it had a reliable , consistent key .</sentence>
+				<definiendum id="0">TRAINING AND IMPROVEMEN T We</definiendum>
+				<definiens id="0">relied almost exclusively on the 100 messages in Test 1 for training after the February interim conference</definiens>
+			</definition>
+</paper>
+
+		<paper id="1041">
+			<definition id="0">
+				<sentence>EFFECT ON HUMAN TARGET ( S ) CIVILIAN : `` CIVILIAN `` GUATEMALA : LA EMINENCIA ( FARM ) * * TST 1-MUC3-000 1 3 02 FEB 90 ARSO N TERRORIST ACT `` GUERRILLAS '' `` GUATEMALAN NATIONAL REVOLUTIONARY UNITY '' / REPORTED AS FACT : `` GUATEMALAN NATIONAL `` FACILITIES `` PLURAL CIVILIAN RESIDENCE / OTHER : `` FACILITIES `` * GUATEMALA : LA EMINENCIA ( FARM ) SOME DAMAGE : `` FACILITIES '' TST1-MUC3-000 1 4 02 FEB 90 ROBBERY TERRORIST ACT `` GUERRILLAS '' `` GUATEMALAN NATIONAL REVOLUTIONARY UNITY '' / REPORTED AS FACT : `` GUATEMALAN NATIONAL `` \ '' LA EMINENCIA\ '' FARM '' / `` FARM `` 1 CIVILIAN RESIDENCE / OTHER : `` \ '' LA EMINENCIA\ '' GUATEMALA : LA EMINENCIA ( FARM ) PROPERTY TAKEN FROM TARGET : `` \ '' LA EMINENCIA\ '' E-2 O. MESSAGE ID TST 1-MUC3-000 1 1 .</sentence>
+				<definiendum id="0">EFFECT ON HUMAN TARGET</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>Other key aspects of DBG , for example , the incorporation of the sublanguage approach first defined by Zellig Harris in [ 5 ] and further developed by Naomi Sage r and the NYU Linguistic String Project in [ 10 ] , have made use of existing specialized natural language under standing techniques to solve the particular problems that we have faced , such as the challenge of building a generic system that could process messages from a variety of specialized military domains .</sentence>
+				<definiendum id="0">DBG</definiendum>
+				<definiendum id="1">Zellig Harris</definiendum>
+				<definiendum id="2">NYU Linguistic String Project</definiendum>
+				<definiens id="0">the challenge of building a generic system that could process messages from a variety of specialized military domains</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The DBG system consists of a series of modules that process message text in stages , and each major level o f analysis is contained in a separate module .</sentence>
+				<definiendum id="0">DBG system</definiendum>
+				<definiens id="0">consists of a series of modules that process message text in stages</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>At the lexical level , the Lexical Unexpected input module ( LUX ) corrects errors by allowing partial matches betwee n words in the text and the lexical entries stored in the lexicon .</sentence>
+				<definiendum id="0">Lexical Unexpected input module</definiendum>
+				<definiendum id="1">LUX</definiendum>
+				<definiens id="0">corrects errors by allowing partial matches betwee n words in the text and the lexical entries stored in the lexicon</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The new words can also be stored for later incorporation into the system by means of a second , more extensive mode of the Word Acquisition Module ( WAM2 ) , which operates off-line to allow periodic lexicon update by the System Administrator .</sentence>
+				<definiendum id="0">Word Acquisition Module</definiendum>
+				<definiens id="0">operates off-line to allow periodic lexicon update by the System Administrator</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Riley voice corpus , which consists of lower echelon voice communications collected during the four days of a training exercise , exemplifies this degree o f predictability .</sentence>
+				<definiendum id="0">Riley voice corpus</definiendum>
+				<definiens id="0">consists of lower echelon voice communications collected during the four days of a training exercise</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An example of a text grammar rule at the sentence level i s the following content rule for title sentences in launch messages from the Space Event corpus ( elements i n parentheses are optional ) : Sentence [ title ] -- &gt; Object ( Booster ) ( Action ) Launchsite ( Time ) Dat e This information may be actualized in the title sentence of a message in a variety of lexicosyntacti c configurations .</sentence>
+				<definiendum id="0">Space Event corpus</definiendum>
+				<definiens id="0">Dat e This information may be actualized in the title sentence of a message in a variety of lexicosyntacti c configurations</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>The semantic analyzer ( based on concepts embodied in PLUM , developed at th e University of Massachusetts by Wendy Lehnert [ 1 ] ) is the major component of the system .</sentence>
+				<definiendum id="0">semantic analyzer</definiendum>
+				<definiens id="0">the major component of the system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Agent-s is expected to be filled by an actor-p , found previously in the same sentence , andphysical-target-s is expected to be filled by a theme-p , found later in the same sentence .</sentence>
+				<definiendum id="0">Agent-s</definiendum>
+				<definiens id="0">expected to be filled by an actor-p , found previously in the same sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="1027">
+			<definition id="0">
+				<sentence>symbol Figure 4 : Rule Edito r Editor ) ( L : Open Knowledge use object EXTEND 18 1 INLET : Interactive Natural Language Engineering Tool SER : ( none ) ( KB editor ) ( Dictionary ) ( Text loot ) ( Options ) ( Qui ( ) ( So : Os ) DONA111 : ( none ) ( Add Vocabulary ANALYZER &gt; Text file : noscl Stat File : reject .</sentence>
+				<definiendum id="0">Text loot ) ( Options )</definiendum>
+				<definiens id="0">Interactive Natural Language Engineering Tool SER : ( none ) ( KB editor</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>The MITFP is a deterministic stochastic parser which does not attempt to generate a single syntactic interpretation of the whol e sentence , rather , it generates one or more parse fragments spanning the input sentence , deferring difficult decision s on attachment ambiguities .</sentence>
+				<definiendum id="0">MITFP</definiendum>
+				<definiens id="0">a deterministic stochastic parser which does not attempt to generate a single syntactic interpretation of the whol e sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>g. , that some entity is the object of an event ) .</sentence>
+				<definiendum id="0">g.</definiendum>
+				<definiens id="0">the object of an event )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Template Generatio n The template generator takes the event structure produced by discourse processing and fills out the application specific templates .</sentence>
+				<definiendum id="0">template generator</definiendum>
+				<definiens id="0">takes the event structure produced by discourse processing and fills out the application specific templates</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>Heriberto Hernandez the Colonel ( with titles that allow postposition , preposition without `` the '' is mor e normal than postposition with `` the '' ) the Colonel ( appositives and most titles can b e used without the proper nouns an d with determiners ) Colonel ( vocative ) ( most titles can be used as vocatives ) However , `` student '' and `` peasant '' are considered appositives because of th e following pattern similar to the pattern for `` critic '' above : student Mario Flores the student Mario Flores Mario Flores the studen t the studen t ?</sentence>
+				<definiendum id="0">Colonel</definiendum>
+				<definiens id="0">appositives and most titles can b e used without the proper nouns an d with determiners</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>App-Post &amp; App-Pre Recall -'Post Recall Pre Recall Figure 9 : The recall scores for postposed and preposed appositives show difference s in the scores but no clear trend as to which is easier to process .</sentence>
+				<definiendum id="0">App-Pre Recall -'Post Recall Pre Recall</definiendum>
+				<definiens id="0">The recall scores for postposed and preposed appositives show difference s in the scores but no clear trend as to which is easier to process</definiens>
+			</definition>
+</paper>
+
+		<paper id="1040">
+			<definition id="0">
+				<sentence>A REPORT PUBLISHED BY THE `` CERIGUA '' NEWS AGENCY -MOUTHPIECE OF THE GUATEMALAN NATIONAL REVOLUTIONARY UNITY ( URNG ) -WHOSE MAI N OFFICES ARE IN MEXICO , SAYS THAT A GUERRILLA COLUMN ATTACKED THE FARM HOWEVER , ARMED FORCES SPOKESMAN COLONEL LUIS ARTURO ISAACS SAI D THAT THE ATTACK , WHICH RESULTED IN THE DEATH OF A CIVILIAN WHO WA S PASSING BY AT THE TIME OF THE SKIRMISH , WAS NOT AGAINST THE FARM , AN D THAT PRESIDENT CEREZO IS SAFE AND SOUND .</sentence>
+				<definiendum id="0">REPORT PUBLISHED BY THE `` CERIGUA '' NEWS AGENCY -MOUTHPIECE OF THE GUATEMALAN NATIONAL REVOLUTIONARY UNITY</definiendum>
+				<definiens id="0">SAYS THAT A GUERRILLA COLUMN ATTACKED THE FARM HOWEVER , ARMED FORCES SPOKESMAN COLONEL LUIS ARTURO ISAACS SAI D THAT THE ATTACK , WHICH RESULTED IN THE DEATH OF A CIVILIAN WHO WA S PASSING BY AT THE TIME OF THE SKIRMISH</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>HISTORY IS MOVING FAST , AND THE TIME IS RIPE .</sentence>
+				<definiendum id="0">HISTORY</definiendum>
+				<definiens id="0">IS MOVING FAST , AND THE TIME IS RIPE</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A POLICE SPOKESPERSON CONFIRMED TODAY THAT THE BUS USED IN TH E TERRORIST ACTION WAS BOUGHT BY A MAN WHO IS A NATIVE OF MEDELLIN .</sentence>
+				<definiendum id="0">POLICE SPOKESPERSON CONFIRMED TODAY</definiendum>
+				<definiens id="0">THAT THE BUS USED IN TH E TERRORIST ACTION WAS BOUGHT BY A MAN WHO IS A NATIVE OF MEDELLIN</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>SI : ( POLICE HAVE REPORTED THAT TERRORISTS ON OCT_25_89 &gt; CO TONIGHT BOMBED TH E EMBASSIES OF THE PRC AND THE SOVIET UNION &gt; PE ) • TYPE = BOMBING • ACTOR = WS-TERRORIST • noun group = ( TERRORISTS ) • TARGET = WS-DIPLOMAT-OFFICE-OR-RESIDENC E • noun group = ( EMBASSIES ) • determiners = ( THE ) REL-LINK ( TIME ( OCT_25_89 ) ) ) Figure 5 : CIRCUS Output for SI It is important to understand that CIRCUS uses no sentence grammar , and does not produce a full syntactic analysis for any sentences processed .</sentence>
+				<definiendum id="0">SI</definiendum>
+				<definiens id="0">( POLICE HAVE REPORTED THAT TERRORISTS ON OCT_25_89 &gt; CO TONIGHT BOMBED TH E EMBASSIES OF THE PRC AND THE SOVIET UNION &gt; PE</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>*** *** DEV-MUC3-0099 1 25OCT89 BOMBING TERRORIST ACT `` TERRORISTS `` `` EMBASSIES OF THE PRC AND THE SOVIETUNION `` `` PRC EMBASSY '' PLURAL _ DIPLOMAT OFFICE OR RESIDENCE : `` EMBASSIES OF THE PRC AND THE SOVIET UNION '' DIPLOMAT OFFICE OR RESIDENCE : `` PRC EMBASSY '' PEOPLES REP OF CHINA : `` EMBASSIES OF THE PRC AND THE SOVIET UNION '' PEOPLES REP OF CHINA : `` PRC EMBASSY `` PERU : LIMA ( CITY ) : SAN ISIDRO ( NEIGHBORHOOD ) Figure 7 : Our Output Template Representation for Sl-S3 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -MERGE-WEAPON-BOMBIN G IF $ weapon structure and the weapon is an explosive and a BOMBING or ATTEMPTED-BOMBING template is on the stack in the current famil y and dates are compatible and locations are compatibl e THEN merge instruments , dates , and location s -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -MERGE-BOMBING-BOMBING IF $ bombing structure and BOMBING template is on the stack in the current family and dates are compatible and locations are compatibl e THEN merge perpetrators , human targets , physical targets , instruments , dates , and location s and also ... if there is a MURDER template with compatible victim ( on the stack in the same family ) with no instruments or the instruments are explosives then merge perpetrators , human targets , instruments , dates , and locations with the MURDE R -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -Figure 8 : Two Merging Rules from Rule-Based Consolidation 10 .</sentence>
+				<definiendum id="0">BOMBING TERRORIST ACT `` TERRORISTS</definiendum>
+				<definiendum id="1">weapon</definiendum>
+				<definiens id="0">an explosive and a BOMBING or ATTEMPTED-BOMBING template is on the stack in the current famil y and dates are compatible and locations are compatibl e THEN merge instruments , dates , and location s -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -MERGE-BOMBING-BOMBING IF $ bombing structure and BOMBING template is on the stack in the current family and dates are compatible and locations are compatibl e THEN merge perpetrators , human targets , physical targets , instruments , dates , and location s and also</definiens>
+				<definiens id="1">dates , and locations with the MURDE R -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Case-Based Consolidation The CBR component of consolidation is an optional part of our system , designed to increase recall rates by generating additional templates to augment the output of rule-based consolidation .</sentence>
+				<definiendum id="0">Case-Based Consolidation The CBR component of consolidation</definiendum>
+				<definiens id="0">an optional part of our system , designed to increase recall rates by generating additional templates to augment the output of rule-based consolidation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The CBR component uses a case base which draw s from 283 texts in the development corpus , and the 100 texts from TST1 for a total of 383 texts .</sentence>
+				<definiendum id="0">CBR component</definiendum>
+				<definiens id="0">uses a case base which draw s from 283 texts in the development corpus</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>and the corresponding regularized structure is ( S PERF REPORT ( SUBJECT ( NP POLICE PLURAL ( SN NP1227 ) ) ) ( OBJECT ( S PAST BOMB ( SUBJECT ( NP TERRORIST PLURAL ( SN NP1238 ) ) ) ( OBJECT ( NP EMBASSY PLURAL ( SN NP1242 ) ( T-POS THE ) ( OF ( AND ( NP PRC SINGULAR ( SN NP1231 ) ( T-POS THE ) ) ( NP USSR SINGULAR ( SN NP1235 ) ( T-POS THE ) ) ) ) ) ) ( PREP ( NP TONIGHT SINGULAR ( SN NP1237 ) ) ) ) ) ) The system uses a chart parser operating top-down , left-to-right .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">uses a chart parser operating top-down , left-to-right</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For the first sentence of DEV-0099 , the output is ( EVENT : TENSE-ASPECT ( PERF ) : IDENTIFIER E0000000085 : TOP-LEVEL-FLAG T : PREDICATE REPORT : AGENT ( ENTITY : SN NP1227 : SET T : IDENTIFIER N0000000086 : CLASS POLICE ) : EVENT ( EVENT : TENSE-ASPECT ( PAST ) : IDENTIFIER E0000000087 TOP-LEVEL-FLAG NIL PREDICATE BOMB-EVENT : AGENT ( ENTITY : SN NP1238 : SET T : IDENTIFIER N0000000089 : CLASS TERRORIST ) : PATIENT ( ENTITY : NATIONALITY ( ENTITY : IDENTIFIER N0000000093 : CLASS ( COUNTRY-NAME COUNTRY ) : SET T : MEMBERS ( ( ENTITY : SN NP1231 : IDENTIFIER N0000000091 : CLASS PRC ) ( ENTITY : SN NP1235 : IDENTIFIER N0000000092 : CLASS USSR ) ) ) : SN NP1242 : SET T : IDENTIFIER N0000000090 : CLASS EMBASSY ) INSTRUMENT ( ENTITY : ZEROED-P T : IDENTIFIER N000000008 8 : CLASS EXPLOSIVE-OBJECT ) : DATE ( ENTITY 188 : SN NP1237 : IDENTIFIER N0000000094 : CLASS TONIGHT ) ) ) : nationality ( entity : members ( ?</sentence>
+				<definiendum id="0">IDENTIFIER E0000000087 TOP-LEVEL-FLAG NIL PREDICATE BOMB-EVENT</definiendum>
+				<definiens id="0">IDENTIFIER E0000000085 : TOP-LEVEL-FLAG T : PREDICATE REPORT : AGENT ( ENTITY : SN NP1227 : SET T : IDENTIFIER N0000000086 : CLASS POLICE</definiens>
+				<definiens id="1">IDENTIFIER N0000000092 : CLASS USSR ) ) ) : SN NP1242 : SET T : IDENTIFIER N0000000090 : CLASS EMBASSY ) INSTRUMENT ( ENTITY : ZEROED-P T : IDENTIFIER N000000008 8 : CLASS EXPLOSIVE-OBJECT ) : DATE</definiens>
+			</definition>
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>BBN 'S PLUM : THE DISCOURSE COMPONEN T The discourse component of BBN 's PLUM message processing system ( also described in BBN 's Syste m Summary in these proceedings ) is responsible for extracting events of interest from what is normally ver y fragmentary syntactic and semantic information .</sentence>
+				<definiendum id="0">BBN 'S PLUM</definiendum>
+				<definiens id="0">THE DISCOURSE COMPONEN T The discourse component of BBN 's PLUM message processing system ( also described in BBN 's Syste m Summary in these proceedings</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Event slots are usually filled in directly , by finding a predicate in the semantic s which corresponds directly to a discourse-event slot , and relates the form which 'triggered ' the event with a filler .</sentence>
+				<definiendum id="0">Event slots</definiendum>
+				<definiens id="0">usually filled in directly , by finding a predicate in the semantic s which corresponds directly to a discourse-event slot , and relates the form which 'triggered ' the event with a filler</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>DPM DPM is a heuristically driven program that identifies segments of a story describing different domain events .</sentence>
+				<definiendum id="0">DPM DPM</definiendum>
+				<definiens id="0">a heuristically driven program that identifies segments of a story describing different domain events</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Three factors influence the decision as to whether a subsequent paragraph or sentenc e continues describing an event or starts describing a new event : ( 1 ) whether an event type that the current primary phrase has identified is different from the previous one ; for example , bombing versus robbery ( allac k is the only type that is in general consistent with all other event types ) ; ( 2 ) the definiteness of a primar y phrase ; for nouns , it usually coincides with the definiteness of the noun phrase that describes an event ; ( 3 ) the amount of text with no secondary phrases that separates the current and previous primary phrases .</sentence>
+				<definiendum id="0">allac k</definiendum>
+				<definiens id="0">influence the decision as to whether a subsequent paragraph or sentenc e continues describing an event or starts describing a new event : ( 1 ) whether an event type that the current primary phrase has identified is different from the previous one ; for example , bombing versus robbery</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>260 TRUMPET TRUMPET is a domain-driven program that coordinates with the parser in order to interpret connected text .</sentence>
+				<definiendum id="0">TRUMPET TRUMPET</definiendum>
+				<definiens id="0">a domain-driven program that coordinates with the parser in order to interpret connected text</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>If the current EStructs are not compatible , TRUMPET deactivates the current CEStruct and creates a new active CEStruct which is initialized wit h the current EStructs .</sentence>
+				<definiendum id="0">TRUMPET</definiendum>
+				<definiens id="0">deactivates the current CEStruct and creates a new active CEStruct which is initialized wit h the current EStructs</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>TRUMPET uses the text segmentation produced by DPM to separate conceptual representations concerning different events .</sentence>
+				<definiendum id="0">TRUMPET</definiendum>
+				<definiens id="0">uses the text segmentation produced by DPM to separate conceptual representations concerning different events</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>LSI 'S DBG MESSAGE UNDERSTANDING SYSTEM : DISCOURSE PROCESSIN G LSI 's approach to discourse processing is based on the notion of text grammar , which was originally defined by Propp [ 27 ] and has more recently been elaborated by van Dijk [ 9 ] , [ 10 ] , and others .</sentence>
+				<definiendum id="0">LSI 'S DBG MESSAGE UNDERSTANDING SYSTEM</definiendum>
+				<definiens id="0">DISCOURSE PROCESSIN G LSI 's approach to discourse processing is based on the notion of text grammar</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The DBG system output for the processing of each message is a text level knowledge representation fo r the message content consisting of a set of instantiated event and object frames called templates .</sentence>
+				<definiendum id="0">DBG system output</definiendum>
+				<definiens id="0">a text level knowledge representation fo r the message content consisting of a set of instantiated event</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The Report template is a `meta template ' , which considers the message itself as a reporting event over and above the actual event s described in the message .</sentence>
+				<definiendum id="0">Report template</definiendum>
+				<definiens id="0">a `meta template ' , which considers the message itself as a reporting event over and above the actual event s described in the message</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>In addition to header slots containing information about the reporting event itself , the Report template contains a set of slots that point to the internal ( DBG ) event/action templates generated for the text .</sentence>
+				<definiendum id="0">Report template</definiendum>
+				<definiens id="0">contains a set of slots that point to the internal ( DBG ) event/action templates generated for the text</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The Template Unexpected Input Module ( TUX ) of th e DBG system , which tries to fill empty template slots using unexpected information encountered in the text , uses discourse information about text ( e .</sentence>
+				<definiendum id="0">Template Unexpected Input Module</definiendum>
+				<definiens id="0">tries to fill empty template slots using unexpected information encountered in the text , uses discourse information about text ( e</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Military messages , for example , are typically designed to conve y particular types of information precisely , whereas the broader , journalistic function of the MUC-3 messages makes the particular details mentioned less predictable , and stylistic variation appears to be more highly valued in a non-military domain , such as MUC-3 .</sentence>
+				<definiendum id="0">Military messages</definiendum>
+				<definiens id="0">typically designed to conve y particular types of information precisely , whereas the broader</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Moreover , the sentences in the MUC-3 messages are characterized by a non-hypotactic or `loose ' syntactic structure , relying heavily on postposed apposition , coordination , and subordination , which makes them cumbersome to process .</sentence>
+				<definiendum id="0">subordination</definiendum>
+				<definiens id="0">makes them cumbersome to process</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>CBR allows us to benefit from th e development corpus by examining how parser output correlated with key templates in previous texts .</sentence>
+				<definiendum id="0">CBR</definiendum>
+				<definiens id="0">allows us to benefit from th e development corpus by examining how parser output correlated with key templates in previous texts</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>For this task , UMass uses an elaborate set of rules which reflect relevan t properties of the MUC-3 corpus and in certain cases embody knowledge about text structure .</sentence>
+				<definiendum id="0">UMass</definiendum>
+				<definiens id="0">uses an elaborate set of rules which reflect relevan t properties of the MUC-3 corpus and in certain cases embody knowledge about text structure</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>GE enhances merging with an initial pre parsing segmentation of a story into portions of text that are relevant for different events .</sentence>
+				<definiendum id="0">GE enhances</definiendum>
+				<definiens id="0">merging with an initial pre parsing segmentation of a story into portions of text that are relevant for different events</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>ITP uses knowledge about the world and relation s between entities in different situations to resolve pronouns .</sentence>
+				<definiendum id="0">ITP</definiendum>
+				<definiens id="0">uses knowledge about the world and relation s between entities in different situations to resolve pronouns</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>The sentence parser is a second parser that is responsible for constructing a single parse tree for eac h sentence in the message .</sentence>
+				<definiendum id="0">sentence parser</definiendum>
+				<definiens id="0">a second parser that is responsible for constructing a single parse tree for eac h sentence in the message</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>• TOKENIZER – A tokenizer module ( which comes as part of the NL-Builder system ) is used for markin g text into tokens and identifying patterns that may not be in the dictionary ( numbers , proper nouns , etc. ) .</sentence>
+				<definiendum id="0">TOKENIZER – A tokenizer module</definiendum>
+				<definiens id="0">comes as part of the NL-Builder system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Notice that the phrase interpreter has established mappings ( via 'SI , ' or Semantic Interpretation , links ) between the syntactic nodes produced by the phrase parser , and concept nodes in the semantic net : NP1110063B20 ISA NP ; HEAD `` SHINING PATH '' ; DETERMINER `` A '' ; NUMBER SINGULAR ; PERSON THIRD ; SI ORGANIZATION35 ; VP1110063B40 ISA VP ; VERB `` BOMBING '' ; SI BOMB .</sentence>
+				<definiendum id="0">DETERMINER</definiendum>
+				<definiens id="0">the syntactic nodes produced by the phrase parser , and concept nodes in the semantic net : NP1110063B20 ISA NP</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Here is a portion of it s output from this sentence : BOMBJ~CTION.56 ISA BOMBJ~CTION ; HASJ'ERPETRATOR ORGANIZATION-55 ( S : SUBJECT ) ; Notice that the sentence interpreter has identified the Shining Path organization as the perpetrator of th e bombing action .</sentence>
+				<definiendum id="0">HASJ'ERPETRATOR ORGANIZATION-55</definiendum>
+				<definiens id="0">the sentence interpreter has identified the Shining Path organization as the perpetrator of th e bombing action</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Recall is a measure of the completeness of the template fill .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">a measure of the completeness of the template fill</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Recall is a measure of completeness and was calculated as follows .</sentence>
+				<definiendum id="0">Recall</definiendum>
+				<definiens id="0">a measure of completeness and was calculated as follows</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>PRE=COR + ( PAR X 0 .5 ) ACT 39 + ( 0 x 0 .5 ) 4 1 3 9 4 1 = 0.95 Overgeneration is a measure of spurious generation and was calculated a s follows .</sentence>
+				<definiendum id="0">PRE=COR +</definiendum>
+				<definiendum id="1">Overgeneration</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>OVG = ACT ' 2 1 109 = 0 .1 9 Fallout is a measure of the false alarm rate .</sentence>
+				<definiendum id="0">Fallout</definiendum>
+				<definiens id="0">a measure of the false alarm rate</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>E ( IUI Ikeyvall ) keyva l where keyval stands for each of the key values including blanks , IUI is th e cardinality of the finite set U of possible slot fillers , and Ikeyvall is the number of key values corresponding to the response .</sentence>
+				<definiendum id="0">E</definiendum>
+				<definiendum id="1">keyval</definiendum>
+				<definiendum id="2">IUI</definiendum>
+				<definiendum id="3">Ikeyvall</definiendum>
+				<definiens id="0">th e cardinality of the finite set U of possible slot fillers</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Precision is the accuracy with which a system extracts data .</sentence>
+				<definiendum id="0">Precision</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>The features selected for BOMBING ( an incident type filler ) fit one 's intuitions of what good feature s should look like .</sentence>
+				<definiendum id="0">BOMBING</definiendum>
+				<definiens id="0">an incident type filler ) fit one 's intuitions of what good feature s should look like</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>Also complicating a `` pure '' test is the penalty for spurious fills included in those slots where the appositives were present ; again , an error unrelated to the fill that contained the appositive .</sentence>
+				<definiendum id="0">pure '' test</definiendum>
+				<definiens id="0">the penalty for spurious fills included in those slots where the appositives were present</definiens>
+			</definition>
+</paper>
+
+		<paper id="1020">
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>A topic is a set of contiguous sentences with the same computed value for TYPE OF INCIDENT .</sentence>
+				<definiendum id="0">topic</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A relevant sentence shares the same topic with the previous sentence or contains no competin g topic .</sentence>
+				<definiendum id="0">relevant sentence</definiendum>
+				<definiens id="0">shares the same topic with the previous sentence or contains no competin g topic</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( feature : embassy-w `` EMBASSY '' ) ( feature : commercial-target-w `` WAREHOUSE '' ) ( feature : human-individual-w `` MEMBERS '' ) ( feature : terrorist-act-org `` THE HONDURAN LEFT '' ) ( feature : civilian-w `` PEOPLE '' ) ( feature : month-name-w `` APRIL '' ) ( feature : favoring-w `` FOR '' ) ( feature : place-name `` UNITED STATES '' ) ) Comparing the strings in the retrieved template with the strings for the indexing features , TTSMUC3 looks for a feature in the new sentence that matches the features ( FEATURE : EMBASSYW `` EMBASSY '' ) .</sentence>
+				<definiendum id="0">TTSMUC3</definiendum>
+				<definiens id="0">place-name `` UNITED STATES '' ) ) Comparing the strings in the retrieved template with the strings for the indexing features</definiens>
+				<definiens id="1">a feature in the new sentence that matches the features ( FEATURE : EMBASSYW `` EMBASSY '' )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>1 The semantic interpreter finds a semantic analysis for the fragments produced by MITFP .</sentence>
+				<definiendum id="0">semantic interpreter</definiendum>
+				<definiens id="0">finds a semantic analysis for the fragments produced by MITFP</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The semantic interpreter uses structural rules , almost all created after 25 February 1991 .</sentence>
+				<definiendum id="0">semantic interpreter</definiendum>
+				<definiens id="0">uses structural rules , almost all created after 25 February 1991</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>The MUC-3 frames component includes 3485 frames and 257 classe s of items .</sentence>
+				<definiendum id="0">MUC-3 frames component</definiendum>
+				<definiens id="0">includes 3485 frames and 257 classe s of items</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>e. , time , people , cpu cycles , and knowledge ( interpreted as limitations on system use of available knowledge ) , as discussed below .</sentence>
+				<definiendum id="0">knowledge (</definiendum>
+				<definiens id="0">interpreted as limitations on system use of available knowledge</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>'Vicemaxl'+ ( 1 .0 ) : Vicemax ( Vicebar ( Aux ( ( was ) : aux ) , Vmax ( Vbar ( Vbar ( V ( [ kidnapped ] : pastpart ) , Argmax ( Argbar ( 'Arg ' : '*empty* ' ) ) ) , Pmax ( Pbar ( P ( [ by ] : prep ) , Amax ( Abar ( A ( [ colombian ] : adj ) , Nmax ( Nbar ( N ( [ 'army of national liberation ' ] : noun ) , Nmax ( Nbar ( N ( ( guerrillas ] : plural ) ) ) ) ) ) ) ) ) ) ) ) ) .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiendum id="1">Nmax ( Nbar ( N</definiendum>
+				<definiens id="0">guerrillas ] : plural ) ) ) ) ) ) ) ) ) ) ) ) )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>( S^EN ( AKO ( JSUFF ) ) ( APPLIES-TO ( LAADJ ) ) ( LEX-CHANGE ( ( LAADJ LAMONOTRANSLAINTRANS ) ) ) ( ROOT-PREP ( S^R7 ) ) ( LEX ( `` EN '' ) ) CON-MAP ( ( LAINTRANS C^BECOME-ROOT ) ( LAMONOTRANS C^CAUSE-BE-ROOT Figure 3 : Morphological information associated with the suffix `` en '' in PAKTUS .</sentence>
+				<definiendum id="0">S^EN</definiendum>
+				<definiendum id="1">AKO</definiendum>
+				<definiendum id="2">LEX</definiendum>
+				<definiendum id="3">C^BECOME-ROOT )</definiendum>
+				<definiens id="0">Morphological information associated with the suffix `` en '' in PAKTUS</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The conceptual analyzer then maps the syntactic configurations into conceptual frames ( concept structures with roles filled by phrase constituents ) , usually resolving much ambiguity in th e process .</sentence>
+				<definiendum id="0">conceptual analyzer then</definiendum>
+				<definiens id="0">maps the syntactic configurations into conceptual frames ( concept structures with roles filled by phrase constituents ) , usually resolving much ambiguity in th e process</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( C '' PRIMITIV E ( CABOUN D C '' BEGIN C '' END C^EVER C '' WHOLE ) ( C '' CHANG ECA AID C '' DAMAGE C '' VARY C '' LAW C ALEAD C APOWER C ASUBJUGCAGO CA EVENT C ANEW C '' T1ME CAREST CAWEAK ) ( C '' LIFE CABODY C AANIMAL CABUG C^LIVE CAFOOD CASIP C AVEGT CASOMA CAGARB CAHOME C '' HOLY CAKIN CALADY C AYOUN G CACRIME CASICK CAEDUCATE C '' MALE CAMEDIC CAMART C^MONEY C^WORK ; C '' PLAY CASEX ) ( C '' ARTIFACT CAFURN CAMECHAN CAVEHIC ) ( CASTUF F CAFABRIC CAMATERIAL CAVAPOR C '' ION C '' EARTH ) ( C '' INTER-RE L C '' PROX C '' REL-LOC C '' HOLLOW CAJOIN CAHAVE C ALACK C AGROUP CASEPAR CAWE ) ( C^SELF-RE L C^PURITY CAAMBIENCE C '' PSYCH CAGOODNESS ) ( CAINFO CAHEAR C '' VIEW C AIDEA CAMEASUR E C '' TALK CAWRITE CAMUSIC C ACOMPUTE C ATRUTH ) ( CAGRADE CAMUCH CALARGE C '' LITTLE CAQUICK CASOME CAEASY CASOLE ) ( CAPHYSIC CABULGE CAFLOW CAPATH C '' PLACE C AASTRON ) C '' UNKNOWN ) Figure 4 : First two levels of the PAKTUS concept network .</sentence>
+				<definiendum id="0">WHOLE ) ( C '' CHANG ECA AID C '' DAMAGE C '' VARY C '' LAW C ALEAD C APOWER C ASUBJUGCAGO CA EVENT C ANEW C '' T1ME CAREST CAWEAK ) ( C '' LIFE CABODY C AANIMAL CABUG C^LIVE CAFOOD CASIP C AVEGT CASOMA CAGARB CAHOME C '' HOLY CAKIN CALADY C AYOUN G CACRIME CASICK CAEDUCATE C</definiendum>
+				<definiens id="0">CASTUF F CAFABRIC CAMATERIAL CAVAPOR C '' ION C '' EARTH ) ( C '' INTER-RE L C '' PROX C '' REL-LOC C '' HOLLOW CAJOIN CAHAVE C ALACK C AGROUP CASEPAR CAWE ) ( C^SELF-RE L C^PURITY CAAMBIENCE C '' PSYCH CAGOODNESS ) ( CAINFO CAHEAR C '' VIEW C AIDEA CAMEASUR E C '' TALK CAWRITE CAMUSIC C ACOMPUTE C ATRUTH ) ( CAGRADE CAMUCH CALARGE C '' LITTLE CAQUICK CASOME CAEASY CASOLE ) ( CAPHYSIC CABULGE CAFLOW CAPATH C '' PLACE C AASTRON ) C '' UNKNOWN ) Figure 4 : First two levels of the PAKTUS concept network</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>g. , `` ReportAMonotrans '' ) , or as a simple structure involving a root , lexical category , inflectional mark , and sometimes a conceptual derivation ( e .</sentence>
+				<definiendum id="0">conceptual derivation</definiendum>
+				<definiens id="0">a simple structure involving a root</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Conceptual frame : ( CAAssert ( `` R AAgentO9 '' ( F409 ( `` Head1 0 '' Police^Specialist ) ) ) ( `` R AProposition93 `` ( C ADamage ( `` RAAgentO5 '' ( F405 ( `` Head06 '' ( TerrorAEmotion LAUser SAS CAUses ) ) ) ) ( `` R AAffected95 '' ( CAAttend ( `` Head03 '' ( EmbassyABuilding LABuilding SAS ) ) ( `` R AFocus96 '' ( F396 ( `` Head01 '' ChinaANation ) ( `` Conj97 '' ( F397 ( `` Head98 '' RussiaANation ) ) ) ( `` Conjoiner00 '' AndAConj ) ) ) ( `` R APlace95 '' `` @ F395 '' ) ( `` RAPlace95 '' `` @ F395 '' ) ) ) ( `` RAOpponent95 `` ( C AAttend ( `` Head03 '' ( Embass yABuilding LABuilding SAS ) ) ( `` RAFocus96 '' ( F396 ( `` Head01 '' China ANation ) ( `` Conj97 '' ( F397 ( `` Head98 '' RussiaANation ) ) ) ( `` ConjoinerOO '' And AConj ) ) ) ( `` RAPlace95 '' `` @ F395 '' ) ( `` RAPlace95 '' `` @ F395 '' ) ) ) ( `` R AWhen-adv94 '' ( `` 25-Oct-1989 '' LATime-date Base ) ) ) ) ) Figure 10 : Conceptual analysis of the first sentence .</sentence>
+				<definiendum id="0">R AProposition93 `` ( C ADamage</definiendum>
+				<definiendum id="1">TerrorAEmotion LAUser SAS CAUses</definiendum>
+				<definiendum id="2">F396</definiendum>
+				<definiendum id="3">ChinaANation )</definiendum>
+				<definiendum id="4">RussiaANation ) ) ) ( `` ConjoinerOO '' And AConj ) ) )</definiendum>
+				<definiens id="0">R AWhen-adv94 '' ( `` 25-Oct-1989 '' LATime-date Base ) ) ) ) ) Figure 10 : Conceptual analysis of the first sentence</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Syntax : ( S ( `` Main-verb64 '' ( Take2 '' Monotrans L '' Monotrans Past-part ) ) ( `` Subject62 '' ( Np ( `` Head63 '' Someone ASome ) ) ) ( `` Do39 '' ( Np ( `` Head59 '' ( `` Estevez '' L '' Espn-person BaseCAUnknowrl ) ) ( `` Desc6l `` Jaime^Male ) ( `` 944 ( Np ( `` I-lead57 '' Bread '' Food ) ( `` Det58 '' TheADet ) ( `` Conj42 '' ( Np ( `` Head55 '' Land '' Geographical-area ) ( `` Conj43 '' ( Np ( `` Head53 '' WorkAActivity ) ( `` Conj44 '' ( Np ( `` Head5O '' ( MoveAlntrans LAAbstract Base C '' Act-of ) ) ( `` Desc46 '' ( Free '' Subst-compar L '' Abstract Base C '' Situation-of ) ) ( `` App47 '' ( Np ( `` Head48 '' ( `` MPTL '' L '' Common Base CAUnknowrl ) ) ) ) ) ) ) ) ) ) ( `` Quant4l '' Member '' Body-part ) ) ) ( `` Mods78 '' ( Pp ( `` Prep79 '' To^Prep ) ( `` Prep-obj26 '' ( Np ( `` Head35 '' Jail '' Dwelling ) ( `` Det38 '' The '' Det ) ( `` Desc37 '' Usulutan '' City-or-town ) ( `` Prop27 '' ( Z^ ( `` Main-verb32 '' ( MurderAMonotrans LAMonotrans SAEd ) ) ( `` Subject3O '' ( Np ( `` Head3l `` Someone^Some ) ) ) ( `` Do28 '' ( Np ( `` Head29 '' SomeoneASome ) ) ) ) ) ) ) ) ) ( `` Conj65 `` ( Conj^ ( `` Main-verb76 '' ( `` Suppos '' LAMonotrans SAEd C AUnknown ) ) ( `` Subject69 '' ( Np ( `` Head70 '' Someone '' Some ) ) ) ( `` Do73 '' ( Np ( `` Head74 '' Crime '' Activity ) ( `` Det75 '' The '' Det ) ) ) ( `` Aps66 '' ( Z '' ( `` Main-verb7l '' Go '' Copula ) ( `` Subject69 '' ( Np ( `` Head70 '' Someone '' Some ) ) ) ( `` Comp67 '' ( Np ( `` Head68 '' ( Notice '' Monotrans L '' Effect-mark Base C '' Not C '' It-got ) ) ) ) ) ) ) ) ) Figure 14 : Sample sentence with unknown words , as parsed by PAKTUS .</sentence>
+				<definiendum id="0">Np</definiendum>
+				<definiens id="0">MPTL '' L '' Common Base CAUnknowrl ) ) ) ) ) ) ) ) ) ) ( `` Quant4l '' Member '' Body-part</definiens>
+			</definition>
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>The test message indexing involves the determination of which of the single terms and phrase s in the system vocabulary are contained in the message .</sentence>
+				<definiendum id="0">test message indexing</definiendum>
+				<definiens id="0">involves the determination of which of the single terms and phrase s in the system vocabulary are contained in the message</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Jr. , S. Radhakrishnan , `` PORTREP : A portable repeated string finder '' , Software Practice and Experience , Vol .</sentence>
+				<definiendum id="0">PORTREP</definiendum>
+				<definiens id="0">A portable repeated string finder ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+</paper>
+
+		<paper id="1043">
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>The scoring program maintains a log of interaction s that can be used in later scoring runs and augmented by the user as the system i s updated and the system-generated templates change .</sentence>
+				<definiendum id="0">scoring program</definiendum>
+				<definiens id="0">maintains a log of interaction s that can be used in later scoring runs and augmented by the user as the system i s updated and the system-generated templates change</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Figure GI gives the most general picture of the results of MUC-3 fina l testing .</sentence>
+				<definiendum id="0">GI</definiendum>
+				<definiens id="0">gives the most general picture of the results of MUC-3 fina l testing</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The `` non-parsing '' systems are ADS , HU , MDC , UNI , UNL , UNL-01 , and UNL-02 , and the `` parsing '' systems are BBN , BBN-O , GE , GTE , ITP , LSI , NYU , NYU-01 , NYU-02 , PRC , SRI , SYN , UMA , and UMA-O .</sentence>
+				<definiendum id="0">SRI</definiendum>
+				<definiens id="0">ADS , HU , MDC , UNI , UNL , UNL-01 , and UNL-02 , and the `` parsing '' systems are BBN , BBN-O , GE , GTE , ITP , LSI , NYU , NYU-01 , NYU-02 , PRC ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>SLOT POS ACT COR PAR INC ICR IPA SPU MIS NON REC PRE OVG FA L template-id 118 221 97 0 0 0 0 124 21 17 82 44 5 6 incident-date 114 0 0 0 0 0 0 0 114 4 0 * * incident-type 118 97 75 11 11 0 11 0 21 0 68 83 0 0 category 83 0 0 0 0 0 0 0 83 35 0 * * 0 indiv-perps 97 0 0 0 0 0 0 0 97 54 0 * * org-perps 70 0 0 0 0 0 0 0 70 56 0 * * perp-confidence 70 0 0 0 0 0 0 0 70 56 0 * * 0 phys-target-ids 55 0 0 0 0 0 0 0 55 79 0 * * phys-target-num 38 0 0 0 0 0 0 0 38 80 0 * phys-target-types 55 0 0 0 0 0 0 0 55 79 0 * * 0 human-target-ids 152 0 0 0 0 0 0 0 152 22 0 * * haman-target-num 96 0 0 0 0 0 0 0 96 22 0 * human-target-types 152 0 0 0 0 0 0 0 152 22 0 * * 0 target-nationality 18 0 0 0 0 0 0 0 18 105 0 * * 0 instrument-types 25 0 0 0 0 0 0 0 25 93 0 * * 0 incident-location 118 0 0 0 0 0 0 0 118 0 0 * * phys-effects 37 0 0 0 0 0 0 0 37 93 0 * * 0 human-effects 56 0 0 0 0 0 0 0 56 83 0 * * 0 MATCHED ONLY 1237 318 172 11 11 0 11 124 1043 761 14 56 39 MATCHED/MISSING 1472 318 172 11 11 0 11 124 1278 900 12 56 39 ALL TEMPLATES 1472 442 172 11 11 0 11 248 1278 2884 12 40 56 SET FILLS ONLY 614 97 75 11 11 0 11 0 517 566 13 83 0 0 Table 1 : Total Slot Scores Because of unanticipated system engineering issues associated with the scale-up to a lexicon of the size required for MUC-3 , we were unable to run the parser/analyzer on the TST2 message set .</sentence>
+				<definiendum id="0">SLOT POS ACT COR PAR INC ICR IPA SPU MIS NON REC PRE OVG FA</definiendum>
+				<definiens id="0">105 0 * * 0 instrument-types 25 0 0 0 0 0 0 0 25 93 0 * * 0 incident-location 118 0 0 0 0 0 0 0 118 0 0 * * phys-effects 37 0 0 0 0 0 0 0 37 93 0 * * 0 human-effects 56 0 0 0 0 0 0 0 56 83 0 * * 0 MATCHED</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The C/Lisp implementation used in MUC-3 was designed to facilitate knowledge engineering and experimentation with parameters and algorithm s that will at least partially automate adaptation to new domains and applications .</sentence>
+				<definiendum id="0">C/Lisp implementation</definiendum>
+				<definiens id="0">used in MUC-3 was designed to facilitate knowledge engineering and experimentation with parameters and algorithm s that will at least partially automate adaptation to new domains and applications</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>The Cognitive Model contains specific reference marker s identifying events and individuals in the text .</sentence>
+				<definiendum id="0">Cognitive Model</definiendum>
+				<definiens id="0">contains specific reference marker s identifying events and individuals in the text</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Cognitive Model distinguishe s between events , individuals and sets .</sentence>
+				<definiendum id="0">Cognitive Model distinguishe</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Finally , the Cognitive Model indicated discourse segments .</sentence>
+				<definiendum id="0">Cognitive Model</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1044">
+</paper>
+
+		<paper id="1030">
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>Case-based consolidation generates additional templates that might have been missed o r dismissed during the rule-based analysis , and thereby reduces the number of missing templates .</sentence>
+				<definiendum id="0">Case-based consolidation</definiendum>
+				<definiens id="0">generates additional templates that might have been missed o r dismissed during the rule-based analysis , and thereby reduces the number of missing templates</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>LICKs describe syntactic and semantic interactions within CIRCUS as it interprets embedded clauses .</sentence>
+				<definiendum id="0">LICKs</definiendum>
+				<definiens id="0">describe syntactic and semantic interactions within CIRCUS as it interprets embedded clauses</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>S14 introduces new temporal information , today , which introduces a new segment containing an event occurring o n October 24 , 1989 .</sentence>
+				<definiendum id="0">today</definiendum>
+				<definiens id="0">introduces a new segment containing an event occurring o n October 24</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The ITP Segmentation Module enables the Template Reasoning Module to recognize five possibl e templates , discard Segment 3 and Segment 4 as irrelevant incidents , and precisely choose th e correct three templates from Segments 1 , 2 , and 5 .</sentence>
+				<definiendum id="0">ITP Segmentation Module</definiendum>
+				<definiens id="0">enables the Template Reasoning Module to recognize five possibl e templates , discard Segment 3 and Segment 4 as irrelevant incidents</definiens>
+			</definition>
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>INSTRUMENT : TYPE ( S ) -The device used by the perpetrator ( s ) i n carrying out the terrorist act .</sentence>
+				<definiendum id="0">INSTRUMENT</definiendum>
+				<definiens id="0">TYPE ( S ) -The device used by the perpetrator ( s ) i n carrying out the terrorist act</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Text string : A string extracted from the text and placed inside double quote s in the slot .</sentence>
+				<definiendum id="0">Text string</definiendum>
+				<definiens id="0">A string extracted from the text and placed inside double quote s in the slot</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Applicability : Applicable to all types of incident s Number of fillers : One filler per template , or NULL ( hyphen ) if nature o f perpetrator can not be determined .</sentence>
+				<definiendum id="0">Applicability</definiendum>
+				<definiendum id="1">NULL</definiendum>
+				<definiens id="0">Applicable to all types of incident s Number of fillers : One filler per template , or</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Cross-referencing : Include cross-reference to PHYSICAL TARGET : ID ( S ) .</sentence>
+				<definiendum id="0">Cross-referencing</definiendum>
+				<definiens id="0">Include cross-reference to PHYSICAL TARGET : ID ( S )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>INTRODUCTION GTE has actively participated in the Third Annual Message Understanding Conference ( MUC-3 ) sponsored by the Naval Ocean System Center ( NOSC ) for the past 7 months using its natural language processing system , TIA ( Text Interpretation Aid ) [ 5 ] .</sentence>
+				<definiendum id="0">TIA ( Text Interpretation Aid</definiendum>
+				<definiens id="0">actively participated in the Third Annual Message Understanding Conference ( MUC-3 ) sponsored by the Naval Ocean System Center</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Recall Recall is a maximized scoring metric which measures the amount of data extracted from messages and inserte d into message templates during the parsing and extraction processes .</sentence>
+				<definiendum id="0">Recall Recall</definiendum>
+				<definiens id="0">a maximized scoring metric which measures the amount of data extracted from messages and inserte d into message templates during the parsing and extraction processes</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Precision ( PRE ) measures the correctness of the information extracted from the messages and placed in the templates during the parsing processes .</sentence>
+				<definiendum id="0">Precision ( PRE )</definiendum>
+				<definiens id="0">measures the correctness of the information extracted from the messages and placed in the templates during the parsing processes</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>OverGeneration Overgeneration is the scoring metric which measures extraneous template fills , i.e. , the percentage of templates which were incorrectly spawned during the parsing and extraction processes .</sentence>
+				<definiendum id="0">OverGeneration Overgeneration</definiendum>
+				<definiens id="0">the scoring metric which measures extraneous template fills , i.e. , the percentage of templates which were incorrectly spawned during the parsing and extraction processes</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>SLOT POS ACT COR PAR INC SPII MIS REC PRE OVG template-id 109 84 40 0 0 44 69 37 48 52 incident-date 105 34 22 6 6 0 71 24 74 0 incident-type 109 40 24 14 2 0 69 28 78 0 category 77 40 15 0 13 12 49 19 38 30 indiv-perps 93 9 1 0 4 4 88 1 11 44 org-perps 62 4 2 0 1 1 59 3 50 25 perp-confidence 62 40 0 8 11 21 43 6 10 52 phys-target-ids 56 8 0 1 2 5 53 1 6 62 phys-target-num 38 19 2 0 2 15 34 5 10 79 phys-target-types 56 2 0 0 0 2 56 0 0 100 human-target-ids 134 10 1 3 3 3 127 2 25 30 human-target-num 87 21 10 0 10 1 67 11 48 5 human-target-types 134 2 0 0 2 0 132 0 0 0 target-nationality 16 1 0 0 0 1 16 0 0 100 instrument-types 25 0 0 0 0 0 25 0 * * incident-location 109 22 11 5 6 0 87 12 61 0 phys-effects 36 3 0 1 0 2 35 1 17 67 human-effects 56 3 0 1 0 2 55 1 17 67 MATCHED ONLY 526 342 128 39 62 113 297 28 43 33 MATCHED/MISSING 1364 342 128 39 62 113 1135 11 43 33 ALL TEMPLATES 1364 593 128 39 62 364 1135 11 25 61 SET FILLS ONLY 571 131 39 24 28 40 480 9 39 30 Table 1 .0 : Official TST2-MUC3 Phase II Scores INC SPII MIS REC PRE OVGSLOT POS ACT COR PAR template-id 95 135 59 0 0 76 36 62 44 56 incident-date 92 56 15 25 16 0 36 30 49 0 incident-type 95 59 36 1 22 0 36 38 62 0 category 66 59 29 0 12 18 25 44 49 30 indiv-perps 87 14 1 1 11 1 74 2 11 7 org-perps 58 15 7 3 2 3 46 15 57 20 perp-confidence 98 59 28 2 20 9 48 30 49 15 phys-target-ids 52 0 0 0 0 0 52 0 100 0 phys-target-num 40 26 2 0 4 20 34 5 8 77 phys-target-types 47 0 0 0 0 0 47 0 100 0 human-target-ids 94 32 2 4 17 9 71 4 12 28 7 0 human-target-num 68 32 12 0 15 5 41 18 38 16 human-target-types 76 31 15 1 8 7 52 20 50 22 target-nationality 23 0 0 0 0 0 23 0 100 0 instrument-types 17 0 0 0 0 0 17 0 100 0 incident-location 95 32 8 12 12 0 63 15 44 0 phys-effects 29 0 0 0 0 0 29 0 100 0 human-effects 29 30 2 2 6 20 19 10 10 67 GRAND TOTAL 1161 580 216 51 145 168 749 21 42 29 Table 2 .0 : TST1-MUC3 after Phase I development INC SPU MIS REC PRE OVGSLOT POS ACT COR PAR template-id 91 85 27 0 0 58 64 30 32 68 incident-date 88 25 12 9 4 0 63 19 66 0 incident-type 91 27 18 0 9 0 64 20 67 0 category 62 27 10 0 7 10 45 16 37 37 indiv-perps 82 14 4 0 5 5 73 5 28 36 org-perps 57 5 3 0 0 2 54 5 60 40 perp-confidence 94 27 14 3 6 4 71 16 57 15 phys-target-ids 52 8 4 0 0 4 48 8 50 50 phys-target-num 40 17 2 0 3 12 35 5 12 70 phys-target-types 47 5 4 0 0 1 43 8 80 20 human-target-ids 89 2 1 0 1 0 87 1 50 0 human-target-num 64 12 1 0 9 2 54 2 8 17 human-target-types 72 2 0 1 1 0 70 1 25 0 target-nationality 23 2 0 0 2 0 21 0 0 0 instrument-types 17 0 0 0 0 0 17 0 * incident-location 91 22 9 6 7 0 69 13 54 0 phys-effects 29 3 1 1 1 0 26 5 50 0 human-effects 28 1 0 0 0 1 28 0 0 100 MATCHED ONLY 382 284 110 20 55 99 197 31 42 35 MATCHED/MISSING 1117 284 110 20 55 99 932 11 42 35 ALL TEMPLATES 1117 665 110 20 55 480 932 11 18 72 SET FILLS ONLY 463 94 47 5 26 16 385 11 53 17 Table 3.0 : TST1-MUC3 rescored after Phase II developmen t JUSTIFICATION AND ANALYSIS OF SCORE S Although the above stated scores seem rather discouraging or low , there are several valid justifications for suc h occurrences .</sentence>
+				<definiendum id="0">SLOT POS ACT COR PAR INC SPII MIS REC PRE</definiendum>
+				<definiendum id="1">INC SPU MIS REC PRE OVGSLOT POS ACT COR PAR</definiendum>
+				<definiens id="0">0 0 0 0 0 17 0 * incident-location 91 22 9 6 7 0 69 13 54 0 phys-effects 29 3 1 1 1 0 26 5 50 0 human-effects 28 1 0 0 0 1 28 0 0</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>After further review of TIA 's internal representation of the message , a murder -p structured concept wa s properly instantiated with , '' JECAR NEGHME '' , a SPOKESMAN for the MIR , thereby properly identifying the appropriate human target .</sentence>
+				<definiendum id="0">SPOKESMAN</definiendum>
+				<definiens id="0">for the MIR , thereby properly identifying the appropriate human target</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Lexicon Learner and Sorter Tools The lexicon learner tool/utility automates the process of entering unknown ( essentially undefined ) words and/or phrases into the appropriate syntactic lexicon with the appropriate syntactic and semantic features .</sentence>
+				<definiendum id="0">lexicon learner tool/utility</definiendum>
+				<definiens id="0">automates the process of entering unknown ( essentially undefined ) words and/or phrases into the appropriate syntactic lexicon with the appropriate syntactic and semantic features</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The city Achi is defined by a Def-Region macro which maintains fields for grammar , syntax , part-of , and type .</sentence>
+				<definiendum id="0">Def-Region macro</definiendum>
+				<definiens id="0">maintains fields for grammar , syntax , part-of , and type</definiens>
+			</definition>
+</paper>
+
+		<paper id="1039">
+			<definition id="0">
+				<sentence>EXAMPLE : TEXT `` X OCCURRED ON AUGUST 30 , 1989 , AND Y OCCURRED A WEEK LATER '' RESPONSE ( for Y ) 06 SEP 89 KEY ( for Y ) 30 AUG 89 15 SEP 89 ( where the latter date is the date of the article ) PARTIALLY CORRECT : occurred between two dates or if the filler in the key is a default value , i .</sentence>
+				<definiendum id="0">EXAMPLE</definiendum>
+				<definiendum id="1">Y OCCURRED A WEEK LATER</definiendum>
+				<definiendum id="2">key</definiendum>
+				<definiens id="0">the date of the article ) PARTIALLY CORRECT : occurred between two dates or if the filler in the</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>EXAMPLES : RESPONSE 26 AUG 89 KEY 25 AUG 89-26 AUG 89 RESPONSE 26 AUG 89 KEY 26 AUG 89 ( default fill ) RESPONSE 25 AUG 89 KEY -26 AUG 89 ( default fill ) System response is a default-looking value ( as described above ) and the ke y is a bounded range that has the date of the message dateline as the uppe r anchor .</sentence>
+				<definiendum id="0">ke y</definiendum>
+				<definiens id="0">a bounded range that has the date of the message dateline as the uppe r anchor</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>NOTE : The scoring program will automatically score the system response partially correct in the case where the system generates SUSPECTED OR ACCUSED instead o f SUSPECTED OR ACCUSED BY AUTHORITIES .</sentence>
+				<definiendum id="0">NOTE</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>SLOT POS ACT COR PAR INC ICR IPA SPU MIS NON REC PRE OVG FAL template-id 118 221 97 0 0 0 0 124 21 17 82 44 56 incident-date 114 0 0 0 0 0 0 0 114 4 0 * * incident-type 118 97 75 11 11 0 11 0 21 0 68 83 0 0 category 83 0 0 0 0 0 0 0 83 35 0 * * 0 indiv-perps 97 0 0 0 0 0 0 0 97 54 0 * * org-perps 70 0 0 0 0 0 0 0 70 56 0 * perp-confidence 70 0 0 0 0 0 0 0 70 56 0 * 0 phys-target-ids 55 0 0 0 0 0 0 0 55 79 0 * phys-target-num 38 0 0 0 0 0 0 0 38 80 0 * * phys-target-types 55 0 0 0 0 0 0 0 55 79 0 * 0 human-target-ids 152 0 0 0 0 0 0 0 152 22 0 * human-target-num 96 0 0 0 0 0 0 0 96 22 0 human-target-types 152 0 0 0 0 0 0 0 152 22 0 * * 0 target-nationality 18 0 0 0 0 0 0 0 18 105 0 * 0 instrument-types 25 0 0 0 0 0 0 0 25 93 0 * 0 incident-location 118 0 0 0 0 0 0 0 118 0 0 phys-effects 37 0 0 0 0 0 0 0 37 93 0 * 0 human-effects 56 0 0 0 0 0 0 0 56 83 0 * 0 MATCHED ONLY 1237 318 172 11 11 0 11 124 1043 761 14 56 39 MATCHED/MISSING 1472 318 172 11 11 0 11 124 1278 900 12 56 39 ALL TEMPLATES 1472 442 172 11 11 0 11 248 1278 2884 12 40 56 SET FILLS ONLY 614 97 75 11 11 0 11 0 517 566 13 83 0 0 Table Fl .</sentence>
+				<definiendum id="0">SLOT POS ACT COR PAR INC ICR IPA SPU MIS NON REC PRE OVG</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1038">
+</paper>
+
+		<paper id="1015">
+</paper>
+
+		<paper id="1012">
+</paper>
+
+	</volume>

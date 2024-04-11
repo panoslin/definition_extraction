@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J80">
+
+		<paper id="2006">
+</paper>
+
+		<paper id="2005">
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>A planning system consists of a class of parameterized procedures called operators , whose execution can modify the world .</sentence>
+				<definiendum id="0">planning system</definiendum>
+				<definiens id="0">consists of a class of parameterized procedures called operators , whose execution can modify the world</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A plan construction algorithm is a procedure which , given a description of some initial state of the world and a goal state to be achieved , constructs a plan , or sequence of operators , to achieve it .</sentence>
+				<definiendum id="0">plan construction algorithm</definiendum>
+				<definiens id="0">a procedure which , given a</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Notice that the complex rule is obtained by introducing `` S believes A wants '' in the antecedent and consequent of the simple rule , and by interpreting `` S recognizes A 's intention '' as `` S comes to believe that A wants '' .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">believes A wants '' in the antecedent and consequent of the simple rule , and by interpreting `` S recognizes A 's intention '' as `` S comes to believe that A wants ''</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In the first case , S assumes that A simply wanted to know whether S could tell the secret , then infers that A in fact wants to know the secret and , helpfully , decides to tell it .</sentence>
+				<definiendum id="0">S</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>We add to a first-order language with equality the operator B , and B ( A , P ) ( usually written BA ( P ) ) is to be read `` A believes that P '' , for any formula P. The B operator is assumed to satisfy the following axiom schemas ( inspired by Hintikka \ [ 1962\ ] ) , where P and Q are schema variables ranging over propositions , and A ranges over agents : ( B.0 ) all theorems of First Order Predicate Calculus ( B.1 ) BA ( P ) -~ BA ( BA ( P ) ) ( B.2 ) BA ( P ) ^ BA ( Q ) ~ .</sentence>
+				<definiendum id="0">B ( A , P )</definiendum>
+				<definiens id="0">a first-order language with equality the operator B , and</definiens>
+				<definiens id="1">schema variables ranging over propositions</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>~ BA ( P ^ Q ) ( B.3 ) BA ( P ) v BA ( Q ) ~ BA ( P v Q ) ( B.4 ) BA ( ~P ) ~ ~BA ( P ) ( B.5 ) ( 3x ) BA ( P ( x ) ) =~ BA ( ( ~x ) P ( x ) ) ( B.6 ) ( BA ( P =~ Q ) A BA ( P ) ) ~-~ BA ( Q ) The rules of inference are Modus Ponens and : If T is a theorem , then BA ( T ) is a theorem , for every agent A. i.e. every agent believes every valid consequence of the logical axioms .</sentence>
+				<definiendum id="0">BA ( P ( x ) ) =~ BA</definiendum>
+				<definiendum id="1">BA</definiendum>
+				<definiens id="0">a theorem</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>KNOWREF ( A , P ( x ) ) ( \ ] y ) ( ( Vz ) P ( z ) -- y= z ) ^ BA ( ( Vz ) P ( z ) ~ y = z ) A KNOWREF the departure time of TRAIN1 if TRAIN1 has a unique departure time y , and if A believes that y is TRAINI 's unique departure time .</sentence>
+				<definiendum id="0">KNOWREF ( A , P (</definiendum>
+				<definiendum id="1">KNOWREF</definiendum>
+				<definiens id="0">the departure time of TRAIN1 if TRAIN1 has a unique departure time y , and if A believes that y is TRAINI 's unique departure time</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In the latter case , if ACT is the name of an action , WA ( ACT ( b ) ) means `` A wants b to do ACT '' .</sentence>
+				<definiendum id="0">WA ( ACT</definiendum>
+				<definiens id="0">the name of an action</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>An action schema consists of a name , a set of parameters with constraints and a set of labelled formulas in the following classes : Effects : Conditions that become true after the execution of the procedure .</sentence>
+				<definiendum id="0">action schema</definiendum>
+				<definiens id="0">consists of a name , a set of parameters with constraints and a set of labelled formulas in the following classes : Effects : Conditions that become true after the execution of the procedure</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The constraints on the parameters consist of type specifications , and necessary parameter interdependenties .</sentence>
+				<definiendum id="0">constraints on the parameters</definiendum>
+				<definiens id="0">consist of type specifications , and necessary parameter interdependenties</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>For agent A to plan that agent S should perform action ACT , A must achieve that S should believe that the precondition of ACT holds , and S 's beliefs should not be inconsistent with A 's , i.e. it must be true that BA ( KNOW ( S , P ) ) , where P is the precondition of ACT .</sentence>
+				<definiendum id="0">BA</definiendum>
+				<definiendum id="1">P</definiendum>
+				<definiens id="0">the precondition of ACT holds , and S 's beliefs should not be inconsistent with A 's</definiens>
+				<definiens id="1">the precondition of ACT</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>AB ) \ [ Action-body rule\ ] For any agent A , if A wants an action Y to be done , and if X is a part of the body of Y then it is plausible that S will want X to be done .</sentence>
+				<definiendum id="0">X</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>PA ) \ [ Precondition-action rule\ ] For all agents S and A , if X is a precondition of action Y and if S believes A wants X to obtain , then it is plausible that S believes that A wants Y to be done .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a precondition of action Y and if S believes A wants X to obtain , then it is plausible that S believes that A wants Y to be done</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>W is the special case of the precondition-action rule where the precondition is the want precondition : ( PI .</sentence>
+				<definiendum id="0">W</definiendum>
+			</definition>
+			<definition id="14">
+				<sentence>A hearer S identifies the illocutionary force of an utterance by recognizing that the speaker A has certain intentions , namely that S should recognize some intention P of A 's .</sentence>
+				<definiendum id="0">hearer S</definiendum>
+				<definiens id="0">identifies the illocutionary force of an utterance by recognizing that the speaker A has certain intentions</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>( EI.3 ) If Ws ( Y ) =e= &gt; Ws ( X ) is a PC rule , then BsWA ( BsWA ( Ws ( Y ) ) ) =i= &gt; BsWA ( BsWA ( Ws ( X ) ) ) is a PI rule .</sentence>
+				<definiendum id="0">BsWA</definiendum>
+				<definiens id="0">a PC rule</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>INFORM ( speaker , hearer , P ) prec : KNOW ( speaker , P ) ^ W ( speaker , INFORM ( speaker , hearer , P ) ) effect : KNOW ( hearer , P ) body : B ( hearer , W ( speaker , KNOW ( hearer , P ) ) ) For A to sincerely inform S that P is true , A must believe A knows that P is true and want to inform S that P ( the preconditions ) , and must intend to get S to know that P is true ( the effect ) , which is done by constructing a plan that will achieve S 's recognition of this intention ( i.e. that Bs ( WA ( KNOW ( S , P ) ) ~ ) .</sentence>
+				<definiendum id="0">INFORM</definiendum>
+				<definiens id="0">true ( the effect ) , which is done by constructing a plan that will achieve S 's recognition of this intention</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>INFORMREF ( speaker , hearer , D ( x ) ) pree : KNOWREF ( speaker , D ( x ) ) ^ W ( speaker , INFORMREF ( speaker , hearer , D ( x ) ) ) effect : KNOWREF ( hearer , D ( x ) ) body : B ( hearer , W ( speaker , KNOWREF ( hearer , D ( x ) ) ) ) Request is defined as : REQUEST ( speaker , hearer , action ) constraint : hearer is agent of action prec : W ( speaker , action ( hearer ) ) effect : W ( hearer , aetion ( hearer ) ) body : B ( hearer , W ( speaker , action ( hearer ) ) ) The intention of a request is to get the hearer to want to do the action , and this is accomplished by getting the hearer to believe that the speaker wants the hearer to do the action and then depending on the hearer to decide to do it .</sentence>
+				<definiendum id="0">INFORMREF ( speaker</definiendum>
+				<definiendum id="1">D ( x ) ) ) ) Request</definiendum>
+				<definiendum id="2">hearer</definiendum>
+				<definiendum id="3">action</definiendum>
+				<definiendum id="4">W ( speaker , action</definiendum>
+				<definiendum id="5">intention of a request</definiendum>
+			</definition>
+			<definition id="18">
+				<sentence>The action-effect rule applied to the starting formula yields one of the form BsWA ( BsWA ( P ) ) , i.e. S believes that A wants S to recognize A 's intention that P. The inferencing process searches for plausible formulas of the form BsWA ( IA ( A ) ) where IA is an illocutionary level act .</sentence>
+				<definiendum id="0">BsWA</definiendum>
+				<definiendum id="1">BsWA</definiendum>
+				<definiendum id="2">IA</definiendum>
+				<definiendum id="3">IA</definiendum>
+				<definiens id="0">an illocutionary level act</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>In the literal case , S infers A 's goal from the literal interpretation , and may tell the secret simply by being helpful ( lines 4-9 ) .</sentence>
+				<definiendum id="0">S</definiendum>
+			</definition>
+			<definition id="20">
+				<sentence>In the indirect case , S recognizes A 's intention that S inform A of the secret ( lines 1-6 ) .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">recognizes A 's intention that S inform A of the secret</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Two sets of PI rules are applicable to formulas of the form BsWABsWA ( P ) : the simple rules PI.1 to PI.6 operating `` within '' the prefix BsW A , and the rules generated by EI.1 and EI.3 which allow the simple rules to apply within the prefix BsWABsW A. To reflect the underlying assumption in our model that intention will always be attributed if possible , the inferences at the most deeply nested level should be preferred .</sentence>
+				<definiendum id="0">prefix BsW</definiendum>
+				<definiens id="0">the simple rules PI.1 to PI.6 operating `` within '' the</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>Because the action is the `` obvious '' way of achieving the goal , S believes that A intended him to infer it .</sentence>
+				<definiendum id="0">S</definiendum>
+			</definition>
+			<definition id="23">
+				<sentence>In Example 10 , S recognizes that A intended to tell him that John wants him to leave .</sentence>
+				<definiendum id="0">S</definiendum>
+				<definiens id="0">recognizes that A intended to tell him that John wants him to leave</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>BA ( 1 ) S.INFORM ( A , S , REQUEST ( J , A , REQUEST ( A , S , LEAVE ( S ) ) ) ) ( 2 ) BsWA ( Bs ( REQUEST ( J , A , REQUEST ( A , S , LEAVE ( S ) ) ) ) ) ( 3 ) BsWA ( BsWA ( REQUEST ( A , S , LEAVE ( S ) ) ) ) ( 4 ) BsWA ( BsWA ( Ws ( LEAVE ( S ) ) ) ) ( 5 ) BsWA ( BsWA ( LEAVE ( S ) ) ) ( 6 ) BsWA ( REQUEST ( LEAVE ( S ) ) ) ( 7 ) BsWA ( Ws ( LEAVE ( S ) ) ( 8 ) BsWA ( LEAVE ( S ) ) ( 9 ) REQUEST ( A , S , LEAVE ( S ) ) Example 9 .</sentence>
+				<definiendum id="0">S.INFORM ( A , S , REQUEST ( J</definiendum>
+				<definiendum id="1">REQUEST ( A , S , LEAVE ( S</definiendum>
+				<definiendum id="2">REQUEST</definiendum>
+				<definiendum id="3">REQUEST</definiendum>
+				<definiendum id="4">BsWA ( BsWA ( REQUEST ( A , S , LEAVE ( S ) ) ) )</definiendum>
+				<definiendum id="5">Ws ( LEAVE</definiendum>
+				<definiens id="0">BsWA ( Ws ( LEAVE ( S ) ) ) ) ( 5 ) BsWA ( BsWA ( LEAVE ( S ) ) ) ( 6 ) BsWA ( REQUEST ( LEAVE ( S )</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>Schiffer \ [ 1972\ ] gives a series of counterexamples to show that no finite number of conditions of the form BsWA ( BsWA ( ... ( KNOW ( S , P ) ) ) is sufficient either .</sentence>
+				<definiendum id="0">BsWA</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>A left-recursive rule is a rule of the form X -- &gt; X Y1 ... Yn .</sentence>
+				<definiendum id="0">left-recursive rule</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A phrase status element is a triple of the form ( Yk ... Yn , X , F ) where , for some symbols Y1 , ... , Yk-1 , there is a grammar rule of the form X -- &gt; Y1 ... Yk-1 Yk ... Yn , and F is a flag that has one of the values n , e , or p , which stand for `` new '' , `` extendible '' and `` progressing '' , respectively .</sentence>
+				<definiendum id="0">phrase status element</definiendum>
+				<definiendum id="1">F</definiendum>
+				<definiendum id="2">p</definiendum>
+				<definiens id="0">a flag that has one of the values n , e , or</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In this example the PP phrase can be attached to the NP1 phrase `` the cheese '' , which 92 American Journal of Computational Linguistics , Volume 6 , Number 2 , April-June 1980 Daniel Chester A Parsing Algorithm That Extends Phrases STEP I 2 3 4 5 6 7 8 9 I0 11 12 13 14 15 16 17 18 19 2O 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 ELEMENT LIST OPERATION ( , the , n ) ( , the , p ) ( , Det , n ) ( , Det , n ) ( , Det , p ) ( N , NPI , n ) ( N , NPI , n ) ( , cat , n ) ( N , NPI. , n ) ( , cat , p ) ( , N , n ) ( N , NPI , n ) ( , N , n ) ( N , NPI , n ) ( , N , p ) ( , NPl , n ) ( , NPl , n ) ( , NPl , p ) ( * RelPro VP , NP , n ) ( PP , NPI , e ) ( * RelPro VP , NP , n ) ( PP , NPI , e ) ( RelPro VP , NP , e ) ( , NP , n ) ( NP , VP , n ) ( PP , NPl , e ) ( RelPro VP , NP , e ) ( , NP , p ) ( , VP , n ) ( , this , n ) 5 ( , this , p ) ( , Pro , n ) 4 ( , Pro , n ) 2 ( , Pro , p ) ( , NP , n ) 4 ( , NP , n ) 2 ( , NP , p ) ( VP , S , n ) 4 ( VP , S , n ) 2 ( , is , n ) ( VP , S , n ) 5 ( , is , p ) ( , V , n ) ( VP , S , n ) 4 ( , V , n ) ( VP , S , n ) 2 ( , V , p ) ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 2 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 2 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 2 ( NP , VP , n ) ( VP , S , n ) 5 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 2 ( NP , VP , n ) ( VP , S , n ) 3 ( NP , VP , n ) ( VP , S , n ) 2 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 2 ( VP , S , n ) I ( VP , S , n ) 3 ( PP , NPI , e ) ( RelPro VP , NP , e ) ( , VP , n ) ( VP , S , n ) ( PP , NPI , e ) ( RelPro VP , NP , e ) ( , VP , p ) ( , S , n ) ( PP , NPl , e ) ( RelPro VP , NP , e ) ( , S , n ) ( , that , n ) ( PP , NPI , e ) ( RelPro VP , NP , e ) ( , S , n ) ( , that , p ) ( , RelPro , n ) ( PP , NPI , .</sentence>
+				<definiendum id="0">PP phrase</definiendum>
+				<definiendum id="1">n ) (</definiendum>
+				<definiendum id="2">NP</definiendum>
+				<definiendum id="3">n ) ( PP , NPI , e )</definiendum>
+				<definiendum id="4">p ) ( , V , n ) ( VP , S , n ) 4 ( , V , n ) ( VP , S , n ) 2 ( , V , p ) ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S</definiendum>
+				<definiendum id="5">NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S</definiendum>
+				<definiendum id="6">NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S</definiendum>
+				<definiendum id="7">NP , VP , n ) ( VP , S , n ) 5 ( NP , VP , n ) ( VP , S , n ) 4 ( NP , VP , n ) ( VP , S</definiendum>
+				<definiendum id="8">NP , VP , n ) ( VP , S</definiendum>
+				<definiens id="0">e ) ( , NP , n ) ( NP , VP , n ) ( PP , NPl , e ) ( RelPro VP , NP , e ) ( , NP , p ) ( , VP , n ) ( , this</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The component ( X ( Z ( U ) ( V ) ) ) in this list structure means that a Y phrase can be followed by a Z phrase and then either a U phrase or a V phrase to make an X phrase .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiendum id="1">Y phrase</definiendum>
+				<definiens id="0">either a U phrase or a V phrase to make an X phrase</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The variable SENSE holds the sense of WORD or of the noun phrase of which WORD is the head .</sentence>
+				<definiendum id="0">variable SENSE</definiendum>
+				<definiens id="0">holds the sense of WORD or of the noun phrase of which WORD is the head</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>The question , `` What books describe how President Truman died '' , has a presupposition that President Truman died .</sentence>
+				<definiendum id="0">President Truman</definiendum>
+				<definiens id="0">a presupposition that President Truman died</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Research reported in Joshi and Weischedel ( 1977 ) and Weischedel ( 1979 ) demonstrated how to organize an augmented transition network and lexicon to compute the given and new information of a sentence .</sentence>
+				<definiendum id="0">Research</definiendum>
+				<definiens id="0">1979 ) demonstrated how to organize an augmented transition network and lexicon to compute the given and new information of a sentence</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The `` length of a path '' is defined to be the number of arcs traversed other than PUSH or JUMP arcs with the universally ( vacuously ) true test , since those arcs make no test on the input string nor consume any part of it , ( The pseudo-arcs POP are counted . )</sentence>
+				<definiendum id="0">length of a path</definiendum>
+				<definiens id="0">the number of arcs traversed other than PUSH or JUMP arcs with the universally ( vacuously ) true test , since those arcs make no test on the input string nor consume any part of it</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>LIFER allows naive users the ability to add synonyms for previously known words and to define new syntactic forms for sentences by the user presenting a sentence in the new form and an equivalent sentence which is already parsable .</sentence>
+				<definiendum id="0">LIFER</definiendum>
+				<definiens id="0">allows naive users the ability to add synonyms for previously known words and to define new syntactic forms for sentences by the user presenting a sentence in the new form and an equivalent sentence</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Seventh , the longest path heuristic adds only a small fraction to the computing time and memory usage during parsing .</sentence>
+				<definiendum id="0">Seventh</definiendum>
+				<definiens id="0">a small fraction to the computing time and memory usage during parsing</definiens>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>Each rule consists of sets of thematically , causally , or temporally related propositions .</sentence>
+				<definiendum id="0">rule</definiendum>
+				<definiens id="0">consists of sets of thematically , causally , or temporally related propositions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The resulting structure , called the Story Tree , represents a set of textual structures .</sentence>
+				<definiendum id="0">Story Tree ,</definiendum>
+				<definiens id="0">represents a set of textual structures</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The lowest level of a discourse textual representation is the set of input propositions that corresponds semantically to the text sentences , clauses and/or phrases .</sentence>
+				<definiendum id="0">lowest level of a discourse textual representation</definiendum>
+				<definiens id="0">the set of input propositions that corresponds semantically to the text sentences , clauses and/or phrases</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Kintsch and van Dijk introduce a number of rules for relating these macrostructures to sets of input textual propositions : information reduction ( generalization ) , deletion ( of less important propositions ) , integration ( combining events with their preand postconditions ) , and construction ( which relates complex propositions to their component sub-propositions ) .</sentence>
+				<definiendum id="0">construction</definiendum>
+				<definiens id="0">information reduction ( generalization ) , deletion ( of less important propositions ) , integration ( combining events with their preand postconditions</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The lowest level summary is the original text itself ; the highest level ( the root ) is a title for the text .</sentence>
+				<definiendum id="0">lowest level summary</definiendum>
+				<definiendum id="1">highest level</definiendum>
+				<definiens id="0">a title for the text</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For example , the rule : ( TRADINGVOYAGE A RUFOLO WITH GOODS IN SHIP TO CYPRUS ) &lt; = ( BUY A RUFOLO TH SHIP ) ( BUY A RUFOLO TH GOODS ) ( LOAD A RUFOLO TH SHIP WITH GOODS ) ( SAIL A RUFOLO TO CYPRUS MEANS SHIP ) is a meaningful rule .</sentence>
+				<definiendum id="0">RUFOLO TH GOODS )</definiendum>
+				<definiens id="0">a meaningful rule</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Therefore , we can break the TRADINGVOYAGE rule into several natural groupings : TRADINGVOYAGE RULE : HEAD : ( TRADINGVOYAGE A RUFOLO WITH GOODS IN SHIP TO CYPRUS ) PRE : ( POSSESS A RUFOLO TH WEALTH ) EXP : ( MAKE A RUFOLO TH ( CALCULATIONS MOD MERCHANTS TYPE USUAL ) ) ( BUY A RUFOLO A SHIP ) ( BUY A RUFOLO TH GOODS ) ( LOAD A RUFOLO TH SHIP WITH GOODS ) ( SAIL A RUFOLO TH SHIP TO CYPRUS ) POST : ( MAKE A RUFOLO TH PROFIT ) Structurally , this rule form will be referred to as an `` extended '' Horn clause ( EHC ) .</sentence>
+				<definiendum id="0">RUFOLO TH PROFIT ) Structurally</definiendum>
+				<definiens id="0">TRADINGVOYAGE RULE : HEAD : ( TRADINGVOYAGE A RUFOLO WITH GOODS IN SHIP TO CYPRUS ) PRE : ( POSSESS A RUFOLO TH WEALTH ) EXP : ( MAKE A RUFOLO TH ( CALCULATIONS MOD MERCHANTS TYPE USUAL ) ) ( BUY A RUFOLO A SHIP ) ( BUY A RUFOLO TH GOODS ) ( LOAD A RUFOLO TH SHIP WITH GOODS</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The expansion consists of the actions normally taken during the invocation of the rule .</sentence>
+				<definiendum id="0">expansion</definiendum>
+				<definiens id="0">consists of the actions normally taken during the invocation of the rule</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Thus a rule for watching a drive-in movie could have the form WATCH DRIVE-IN MOVIE RULE : HEAD : ( WATCH A PERSON TH DRIVE-IN MOVIE ) PRE : ( OR ( ( PERSON IN CAR ) ( CAR IN DRIVE-IN ) ) ( ( SEE A PERSON TH SCREEN ) ( CAN A PERSON TH ( READ A PERSON TH LIPS ) ) ) ) A rule may also have several expansions attached to it , one for each potential instantiation of the rule .</sentence>
+				<definiendum id="0">PERSON TH</definiendum>
+				<definiens id="0">HEAD : ( WATCH A PERSON TH DRIVE-IN MOVIE</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Each rule node ( or instantiation of one ) in the network may have an arc for each part of an EHC rule : precondition , expansion , and postcondition .</sentence>
+				<definiendum id="0">rule node</definiendum>
+				<definiens id="0">precondition , expansion , and postcondition</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The TRADE rule describes a trading scenario under conditions of heavy competition : TRADE RULE : HEAD : ( TRADE** A X TH Y FOR Z ) PRE : ( Z ISA PRICE MOD GOOD ) EXP : ( ADVERSE-TRADE** A X TH Y ) ( SELL* A X TH Y FOR Z ) ( NOT OF ( POSSESS** A X TH Y ) ) POST : ( MAKE* A X TH ( PROFIT MOD GREAT ) ) ADVERSE-TRADE RULE : HEAD : ( ADVERSE-TRADE** A X TH Y ) PRE : ( X ISA MERCHANT ) EXP : ( DISCOVER* A X TH ( SHIP NBR MANY MOD DOCKED POSSBY ( MERCHANT NBR SOME MOD OTHER ) ) ) ( CARRY* INSTR SHIP TH ( GOODS SAMEAS Y ) ) It should be noted that the postcondition of the TRADE rule , the MAKE** , will fail because Rufolo does not SELL* his goods for a profit .</sentence>
+				<definiendum id="0">TRADE RULE</definiendum>
+				<definiendum id="1">X TH Y</definiendum>
+				<definiendum id="2">X TH</definiendum>
+				<definiendum id="3">X TH Y</definiendum>
+				<definiendum id="4">X TH</definiendum>
+				<definiens id="0">HEAD : ( TRADE** A X TH Y FOR Z ) PRE : ( Z ISA PRICE MOD GOOD ) EXP : ( ADVERSE-TRADE** A X TH Y ) ( SELL* A X TH Y FOR Z ) ( NOT OF ( POSSESS** A</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>PIRATEVOYAGE RULE : HEAD : ( PIRATEVOYAGE** A X TH Y MEANS Z ) PRE : ( Z ISA SHIP TYPE PIRATE MUD LIGHT ) ( POSSESS** A X TH Z ) ( Y ISA WEALTH ) ( W ISA WEALTH VAL ( TWICE* RI W R2 Y ) ) ( U ISA NATIONALITY ) EXP : ( FITOUT* A X TH Z WITH ( EQUIPMENT MOD BESTSUITED ) ) ( SEIZE* A X TH ( SHIP NBR MANY POSSBY U DURATION YEAR ) ) POST : ( NOT OF ( WANT* A X TH ( DOUBLE* A X TH Y ) ) ) DOUBLE* A X TH Y ) POSSESS* A X TH W ) The first thing that Rufolo must do is to come to possess a pirate ship , which he does by selling his merchant vessel and using the funds to buy a light vessel : POSSESS RULE : HEAD : ( POSSESS** A X TH Y ) PRE : ( NOT OF ( POSSESS* A X TH WEALTH ) ) ( POSSESS** A X TH Z ) EXP : ( SELL* A X TH Z ) ( BUY* A X TH Y ) POST : ( NOT OF ( POSSESS* A X TH Z ) ) Note that the two POSSESS** rules above would be combined into a single rule in the database .</sentence>
+				<definiendum id="0">PIRATEVOYAGE RULE</definiendum>
+				<definiens id="0">HEAD : ( PIRATEVOYAGE** A X TH Y MEANS Z ) PRE : ( Z ISA SHIP TYPE PIRATE MUD LIGHT ) ( POSSESS** A X TH Z ) ( Y ISA WEALTH ) ( W ISA WEALTH VAL ( TWICE* RI W R2 Y ) ) ( U ISA NATIONALITY ) EXP : ( FITOUT* A X TH Z WITH ( EQUIPMENT MOD BESTSUITED ) ) ( SEIZE* A X TH ( SHIP NBR MANY POSSBY U DURATION YEAR ) ) POST : ( NOT OF ( WANT* A X TH ( DOUBLE* A X TH Y )</definiens>
+				<definiens id="1">using the funds to buy a light vessel : POSSESS RULE : HEAD : ( POSSESS** A X TH Y ) PRE : ( NOT OF ( POSSESS* A X TH WEALTH ) ) ( POSSESS** A X TH Z ) EXP : ( SELL* A X TH Z ) ( BUY* A X TH Y ) POST : ( NOT OF ( POSSESS* A X TH Z ) ) Note that the two</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Many narratives consist of a series of episodes in pursuit of a goal ; often each episode , except the last , represents an instance of a failed rule .</sentence>
+				<definiendum id="0">Many narratives</definiendum>
+				<definiens id="0">consist of a series of episodes in pursuit of a goal</definiens>
+				<definiens id="1">an instance of a failed rule</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>For example , the rule , MARRY RULE : HEAD : ( ASK-MARRY** A X TH Y ) PRE : ( X ISA MAN ) ( Y ISA WOMAN ) ( WANT* A X TH ( MARRY* A Y TH X ) ) EXP : ( GO* A X TO Y ) ( ASK* A X TH Y IF ( MARRY* A Y TH X ) ) ( ACCEPT* A Y TH X ) POST : ( MARRY* A Y TH X ) is a rule that can be activated if some X , who must be a man , WANTs Y , who must be a woman , to marry X. Each rule could contain propositions in its preconditions that restrict the set of objects that can instantiate the variables of the rule .</sentence>
+				<definiendum id="0">X TH ( MARRY* A Y TH X</definiendum>
+				<definiendum id="1">X TH Y IF</definiendum>
+				<definiens id="0">restrict the set of objects that can instantiate the variables of the rule</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>TELLTALE generates stories ( sequences of propositions ) based on such rules contained in its database , either under user control or directed by the program itself .</sentence>
+				<definiendum id="0">TELLTALE</definiendum>
+				<definiens id="0">generates stories ( sequences of propositions ) based on such rules contained in its database , either under user control or directed by the program itself</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>BUILDTALE is a program that combines the topdown and bottom-up approaches .</sentence>
+				<definiendum id="0">BUILDTALE</definiendum>
+				<definiens id="0">a program that combines the topdown and bottom-up approaches</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Appendix A Rule-base for Fairytale FAIRYTALE RULE : HEAD : ( FAIRYTALE* ) EXP : ( FAIRYSTORY** A X TH Y ) FAIRYSTORY RULE : HEAD : ( FAIRYSTORY** A X TH Y ) EXP : ( SETTING A X ) ( EPISODE A X TH Y ) POST : ( LIVE* A X TH Y MANNER HAPPILY_EVER_AFTER ) SETTING RULE : HEAD : ( SETTING A X ) PRE : ( LIVE* A X LOC Y DURING Z ) LIVE RULE : HEAD : ( LIVE* A X LOC Y DURING Z ) PRE : ( CHAR INST X ) ( Y ISA PLACE ) ( Z ISA TIME ) CHAR RULE : HEAD : ( CHAR INST X ) PRE : ( OR ( X ISA KNIGHT SEX MALE PERSON T ) ( X ISA PRINCE SEX MALE PERSON T ) ) EXP : ( OR ( X MOD BRAVE ) ( X MOD HANDSOME ) ) EPISODE RULE : HEAD : ( EPISODE A X TH Y ) EXP : ( MOTIVE A X TH Y ) ( ACTION A X TH Y ) MOTIVE RULE : HEAD : ( MOTIVE A X TH Y ) PRE : ( DESIRE* A X TH Y ) EXP : ( WANT* TO POSSESS A X TH Y ) DESIRE RULE : HEAD : ( DESIRE A X TH Y ) PRE : ( CHAR INST X ) EXP : ( OR ( Y ISA PRINCESS SEX FEMALE PERSON T MOD BEAUTIFUL ) ( Y ISA HOLY OBJECT MOD LOST ) ) ACTION RULE : HEAD : ( ACTION A X TH Y ) EXP : ( OR ( ASK-MARRY** A X TH Y ) ( RESCUE** A X TH Y FROM Z ) ( QUEST** A X TH Y ) ( PRAY** PART FOR A X TH Y ) ) ASK RULE : HEAD : ( ASK-MARRY** A X TH Y ) PRE : ( WANT* TO POSSESS A X TH Y ) ( Y ISA PRINCESS ) EXP : ( GO* A X TO Y ) ( ASK* A X TH Y IF ( MARRY* A Y TH X ) ) ( ACCEPT* A Y TH X ) POST : ( MARRY* A Y TH X ) RESCUE RULE : HEAD : ( RESCUE** A X TH Y FROM Z ) PRE : ( WANT* TO POSSESS A X TH Y ) ( Y ISA PRINCESS ) ( THREATEN** A Z TH Y ) EXP : ( GO* A X TO Z ) ( SLAY* A X TH Z ) ( RESCUE* A X TH Y ) POST : ( MARRY* A Y TH X ) American Journal of Computational Linguistics , Volume 6 , Number 3-4 , July-December 1980 147 Alfred Correira Computing Story Trees THREATEN RULE : HEAD : ( THREATENSS A X TH Y ) PRE : ( X ISA DRAGON ANIMATE T ) ( X SOD EVIL ) ( Y ISA PRINCESS ) ( WANT • TO POSSESS A X TH Y ) EXP : ( CARRY s~ PART OFF A X TH Y TO Z ) CARRY RULE : HEAD : ( CARRY ss PART OFF A X TH Y TO Z ) PRE : ( X ISA DRAGON ) ( Y ISA PRINCESS ) ( Z ISA DEN POBJ T ) EXP : ( GO~ A X TO Y ) ( CAPTURE • A X TH Y ) ( FLYS A X TH Y TO Z ) QUEST RULE : HEAD : ( QUEST s~ A X TH Y ) PRE : ( CHAR INST X ) ( Y ISA HOLY OBJECT MOD LOST ) ( WANT • TO POSSESS A X TH Y ) EXP : ( GO • A X TO ORACLE ) ( REVEAL • A ORACLE TH PLACE OF Y ) ( GO s A X TO PLACE ) ( FIND s A X TH Y ) POST : ( POSSESS s A X TH Y ) PRAY RULE : HEAD : ( pRAyss PART FOR A X TH Y ) PRE : ( CHAR INST X ) ( WANT s TO POSSESS A X TH Y ) ( Z ISA GOD ) ( W ISA CHURCH POBJ T ) EXP : ( OR ( ( GOS A X TO W ) ( KNEEL s A X PREP ( IN TH ( FRONT PREP ( OF TH ALTER ) ) ) ) ( pRAys A X PREP ( TO TH Z ) PREP ( FOR TH Y ) ) ( ( U ISA PRIEST SEX MALE PERSON T ) ( GO • A X TO U ) ( PAY • A X TH U EXPECT ( INTERCEDE s A U PREP ( WITH TH Z ) PREP ( FOR TH Y ) ) ) ( pRAys A U TO Z FOR Y ) ( GRANT s A Z TH ( PRAYER POSSBY U ) ) ) ) POST : ( POSSESSS A X TH Y ) JOHN ISA PRINCE SEX MALE PERSON T ) GEORGE ISA KNIGHT SEX MALE PERSON T ) LANCELOT ISA KNIGHT SEX MALE PERSON T ) PARSIFAL ISA KNIGHT SEX MALE PERSON T ) MARY ISA PRINCESS SEX FEMALE PERSON T ) GUENEVIERE ISA PRINCESS SEX FEMALE PERSON T ) ( HOLY_GRAIL ISA HOLY_OBJECT POBJ T ) ( SACRED_CROSS ISA HOLY_OBJECT POBJ T ) ( CAMELOT ISA PLACE ) ( MONTSALVAT ISA PLACE ) ( ONCE_UPON A TIME ISA TIME ) ( IRVING ISA DRAGON ANIMATE T ) ( CARMEN ISA DRAGON ANIMATE T ) Appendix B Text of Fairytale ( FAIRYTALE*I ) ( LIVES2 A ( GEORGEI ISA KNIGHTI SEX MALE2 PERSON T MOD BRAVEI ) LOC ( CAMELOTI ISA PLACEI ) DURING ( ONCE_UPON A TIMEI ISA TIMEI ) ) DESIRES2 A GEORGEI TH ( MARYI ISA PRINCESSI SEX FEMALEI PERSON T MOD BEAUTIFULI ) ) ( WANT~I TO POSSESSI A GEORGEI TH MARYI ) ( GOal PART TOI A GEORGEI TO MARYI ) ) ( ASKSl A GEORGEI TH MARYI IF ( MARRY~I A MARYI TH GEORGEI ) ) ( NOT OF ( ACCEPTSl A MARYI TH GEORGEI ) ) ( NOT OF ( MARRYS2 A MARYI TH GEORGEI ) ) ( WANTS2 TO POSSESS2 A ( IRVINGI ISA DRAGONI ANIMATE T MOD EVILI ) TH MARYI ) ( GOS2 PART TO2 A IRVINGI TO MARYI ) ( CAPTURESl A IRVINGI TH MARYI ) ( FLYSl A IRVINGI TH MARYI PREP ( TO TH DENI ) ) ( GO~3 PART TO3 A GEORGEI TO IRVINGI ) ( SLAYSl A GEORGEI TH IRVINGI ( RESCUESl A GEORGEI TH MARYI ( MARRYS4 A MARYI TH GEORGEI ) ( LIVES3 A GEORGEI TH MARYI MANNER HAPPILY EVER AFTERI ) Appendix C Summaries of Fairytale ( FAIRYTALESl ) ( ( LIVES2 A ( GEORGEI ISA KNIGHTI SEX MALE2 PERSON T MOD BRAVEI ) LOC ( CAMELOTI ISA PLACEI ) DURING ( ONCE_UPON_TIMEI ISA TIMEI ) ) ( DESIRES2 A GEORGEI TH ( MARYI ISA PRINCESSI SEX FEMALEI PERSON T MOD BEAUTIFULI ) ) 148 American Journal of Computational Linguistics , Volume 8 , Number 3-4 , July-December 1980 Alfred Correira Computing Story Trees WANT*\ ] TO POSSESS*I A GEORGEI TH MARYI ) GO*I PART TO1 A GEORGEI TO MARYI ) ASK*I A GEORGEI TH MARYJ IF MARRY*I A MARYI TH GEORGEI ) ) NOT OF ( ACCEPT*I A MARYI TH GEORGEI ) ) NOT OF ( MARRY*2 A MARYI TH GEORGE1 ) ) TO POSSESS2 A IRVINGI ISA DRAGONI MOD EVILI ) TH MARY I ) CARRY**2 PART OFFI A IRVINGI TH MARYI TO DEN\ ] ) ( GO*3 PART TO3 A GEORGEI TO IRVINGI ) ( SLAY*I A GEORGEI TH IRVINGI ( RESCUE*I A GEORGEI TH MARYI ( MARRY*4 A MARYI TH GEORGEI ) ( LIVE*3 A GEORGEq TH MARYI MANNER HAPPILY EVER AFTERI ) ( FAIRYTALE* I ) ( ( LIVE*2 A ( GEORGEI ISA KNIGHTI SEX MALE2 PERSON T MOD BRAVEI ) LOC ( CAMELOTI ISA PLACEq ) DURING ( ONCE_UPON A TIME1 ISA TIMEI ) ) ( DESIRE*2 A GEORGE1 TH ( MARYI ISA PRINCESSI SEX FEMALEI PERSON T MOD BEAUTIFULI ) ) ( WANT*I TO POSSESSI A GEORGEI TH MARYI ) ( ASK-MARRY**2 A GEORGEI TH MARYI ) ( NOT OF ( MARRY*2 A MARYI TH GEORGE\ ] ) ) ( RESCUE**2 A GEORGE\ ] TH MARYI FROM ( IRVINGI ISA DRAGONI ANIMATE T MOD EVILq ) ) MARRY*4 A MARYI TH GEORGEI ) LIVE*3 A GEORGEI TH MARYI MANNER HAPPILY EVER AFTER\ ] ) )</sentence>
+				<definiendum id="0">X )</definiendum>
+				<definiendum id="1">X TO ORACLE )</definiendum>
+				<definiendum id="2">GO</definiendum>
+				<definiendum id="3">GEORGEI TH MARYI )</definiendum>
+				<definiendum id="4">IRVINGI TH MARYI PREP</definiendum>
+				<definiendum id="5">GEORGEI TH</definiendum>
+				<definiendum id="6">GEORGEI TH IRVINGI</definiendum>
+				<definiens id="0">A X TH Y MANNER HAPPILY_EVER_AFTER ) SETTING RULE : HEAD : ( SETTING A X ) PRE : ( LIVE* A X LOC Y DURING Z ) LIVE RULE : HEAD : ( LIVE* A X LOC Y DURING Z ) PRE : ( CHAR INST X</definiens>
+				<definiens id="1">OR ( X MOD BRAVE ) ( X MOD HANDSOME ) ) EPISODE RULE : HEAD : ( EPISODE A X TH Y ) EXP : ( MOTIVE A X TH Y )</definiens>
+				<definiens id="2">THREATEN** A Z TH Y ) EXP : ( GO* A X TO Z ) ( SLAY* A X TH Z ) ( RESCUE* A X TH Y ) POST : ( MARRY* A Y TH X</definiens>
+				<definiens id="3">s A X TO PLACE ) ( FIND s A X TH Y ) POST : ( POSSESS s A X TH Y ) PRAY RULE : HEAD : ( pRAyss PART FOR A X TH Y ) PRE : ( CHAR INST X ) ( WANT s TO POSSESS A X TH Y ) ( Z ISA GOD ) ( W ISA CHURCH POBJ T ) EXP : ( OR ( ( GOS A X TO W ) ( KNEEL s A X PREP ( IN TH ( FRONT PREP ( OF TH ALTER ) ) ) ) ( pRAys A X PREP ( TO TH Z ) PREP ( FOR TH Y ) ) ( ( U ISA PRIEST SEX MALE PERSON T ) ( GO • A X TO U ) ( PAY • A X TH U EXPECT ( INTERCEDE s A U PREP ( WITH TH Z ) PREP ( FOR TH Y ) ) ) ( pRAys A U TO Z FOR Y ) ( GRANT s A Z TH ( PRAYER POSSBY U ) ) ) ) POST : ( POSSESSS A X TH Y ) JOHN ISA PRINCE SEX MALE PERSON T ) GEORGE ISA KNIGHT SEX MALE PERSON T ) LANCELOT ISA KNIGHT SEX MALE PERSON T ) PARSIFAL ISA KNIGHT SEX MALE PERSON T ) MARY ISA PRINCESS SEX FEMALE PERSON T ) GUENEVIERE ISA PRINCESS SEX FEMALE PERSON T ) ( HOLY_GRAIL ISA HOLY_OBJECT POBJ T ) ( SACRED_CROSS ISA HOLY_OBJECT POBJ T ) ( CAMELOT ISA PLACE ) ( MONTSALVAT ISA PLACE ) ( ONCE_UPON A TIME ISA TIME ) ( IRVING ISA DRAGON ANIMATE T ) ( CARMEN ISA DRAGON ANIMATE T ) Appendix B Text of Fairytale ( FAIRYTALE*I ) ( LIVES2 A ( GEORGEI ISA KNIGHTI SEX MALE2 PERSON T MOD BRAVEI ) LOC ( CAMELOTI ISA PLACEI ) DURING ( ONCE_UPON A TIMEI ISA TIMEI ) ) DESIRES2 A GEORGEI TH ( MARYI ISA PRINCESSI SEX FEMALEI PERSON T MOD BEAUTIFULI</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="1005">
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>A stative prerequisite of an action is a condition that must obtain before that action is carried out .</sentence>
+				<definiendum id="0">stative prerequisite of an action</definiendum>
+				<definiens id="0">a condition that must obtain before that action is carried out</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Speech act representations therefore have semantic input cases , which typically include cases for the participants in the conversation and a case for what Searle calls the propositional content condition of the speech act ( very roughly , what the speech act is `` about '' ) \ [ 24\ ] .</sentence>
+				<definiendum id="0">act</definiendum>
+				<definiens id="0">the participants in the conversation and a case for what Searle calls the propositional content condition of the speech act ( very roughly , what the speech</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>4 In these preconditions and throughout the paper , P1 is the originator of the utterance ( or written message ) and P2 is the receiver .</sentence>
+				<definiendum id="0">P1</definiendum>
+				<definiendum id="1">P2</definiendum>
+				<definiens id="0">the originator of the utterance ( or written message</definiens>
+				<definiens id="1">the receiver</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Given this formulation , P1 has the right to invoke the obligation to drive carefully because P1 is one of the parties to the obligation , even if P1 is not named explicitly.5 Philosophical controversy surrounds several of these terms , and a complete and detailed definition for any of them is a research project in itself .</sentence>
+				<definiendum id="0">P1</definiendum>
+				<definiens id="0">one of the parties to the obligation</definiens>
+				<definiens id="1">a research project in itself</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>NECESSARY-ASSERT exemplifies the first strategy , in which P1 tells what he or she knows about the necessity of the speech act .</sentence>
+				<definiendum id="0">NECESSARY-ASSERT</definiendum>
+				<definiens id="0">exemplifies the first strategy , in which P1 tells what he or she knows about the necessity of the speech act</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>P1 can convey a speech act indirectly by -Rule P1-ASSERT : -asserting a Pl-based precondition of the speech act ; e.g. , `` I want you to water the plants . ''</sentence>
+				<definiendum id="0">-Rule P1-ASSERT</definiendum>
+				<definiens id="0">-asserting a Pl-based precondition of the speech act</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The case where P1 does know and merely wants to know if P2 knows -and where P2 knows that P1 knows -is classed as another speech act .</sentence>
+				<definiendum id="0">P1</definiendum>
+				<definiens id="0">-and where P2 knows that P1 knows -is classed as another speech act</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>P1 wants P2 to perform some action that complements Pl 's part of the action .</sentence>
+				<definiendum id="0">P1</definiendum>
+				<definiens id="0">wants P2 to perform some action that complements Pl 's part of the action</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Beyond , this , however , P2 has an obligation to help further P1 's goals by virtue of a general social obligation to be cooperative .</sentence>
+				<definiendum id="0">Beyond</definiendum>
+				<definiendum id="1">P2</definiendum>
+				<definiens id="0">an obligation to help further P1 's goals by virtue of a general social obligation to be cooperative</definiens>
+			</definition>
+</paper>
+
+		<paper id="3006">
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>Instead of classifying verbs by features like transitive , one can just initialize the ASLOTS register of the VP frame so that it contains the slot OBJ .</sentence>
+				<definiendum id="0">ASLOTS register</definiendum>
+				<definiens id="0">of the VP frame so that it contains the slot OBJ</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Two VP levels and a PP down , there is a slot OBJ which is the object of the preposition in .</sentence>
+				<definiendum id="0">slot OBJ</definiendum>
+				<definiens id="0">the object of the preposition in</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>RAISE is a possible action , and is illustrated as follows .</sentence>
+				<definiendum id="0">RAISE</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>CAT contains the atom which is the phrase-type , such as VP , or , in the case of words , the basic part of speech , such as V or N. WORD , in the case of lexical frames , contains the actual ( inflected ) word , and ROOT contains the root form .</sentence>
+				<definiendum id="0">CAT</definiendum>
+				<definiendum id="1">ROOT</definiendum>
+				<definiens id="0">contains the atom which is the phrase-type , such as VP , or , in the case of words</definiens>
+				<definiens id="1">contains the root form</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>FEATURES contains the list of atoms treated as features .</sentence>
+				<definiendum id="0">FEATURES</definiendum>
+				<definiens id="0">contains the list of atoms treated as features</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A boundary is an atom representing the space between two words in the input sentence , or the start or end .</sentence>
+				<definiendum id="0">boundary</definiendum>
+				<definiens id="0">an atom representing the space between two words in the input sentence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Register is the general term for one of the variables in our association lists .</sentence>
+				<definiendum id="0">Register</definiendum>
+				<definiens id="0">the general term for one of the variables in our association lists</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>SYNTAX stores the slot-rule of a slot on the property list of the slot ( under the property RULE ) .</sentence>
+				<definiendum id="0">SYNTAX</definiendum>
+				<definiens id="0">stores the slot-rule of a slot on the property list of the slot</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>For instance , the LEX list for HAS in the trial grammars consists of a word frame which might become a filler for the AUXL slot in some VP , as well as a VP frame in which HAS is the main verb .</sentence>
+				<definiendum id="0">LEX list for HAS</definiendum>
+				<definiens id="0">consists of a word frame which might become a filler for the AUXL slot in some VP , as well as a VP frame in which HAS is the main verb</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The FTEST employed for agreement uses a ( FEXPR ) function CHECK , which is called as follows : ( CHECK slot test ) For example , the filler frame for the verb has has in the FTEST register : ( CHECK SUBJ ( NEGF IT PL ) ) Here the NEGF test requires that the subject does not have the feature PL ( plural ) .</sentence>
+				<definiendum id="0">FTEST</definiendum>
+				<definiendum id="1">FEXPR</definiendum>
+				<definiens id="0">) function CHECK , which is called as follows : ( CHECK slot test</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The VP syntax is an extension of the grammar shown earlier in diagram ( 12 ) .</sentence>
+				<definiendum id="0">VP syntax</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>The SD form for SEEM causes the default slot-rule for COMP to be re ( LEXICON JOHN N SG ( SD ) ) HE N PRON SG ( SD ) ) CHAIR N ( NM CHAIRS ) WHAT N WH ( SD ) ) LARGE ADJ ) THE DET ) A DET ( TEST ( NEGF FRAME PL ) ) ) WHICH DET WH ) THAT DET ( TEST ( NEGF FRAME PL ) ) ) THAT SUBJUNCTION ) IN PREP ( SD ) ) ( ALMOST ADV ) ( THINK V ( VM THINKS THINKING THOUGHT ( SD ( COMB ) ) ) GIVE V ( VM GIVES GIVING GAVE GIVEN ( SD ( IOBJ ) ( OBJ ) ) ) ( SEEM V ( VM SEEMS SEEMING SEEMED ) ( SD ( COMB ( FLR ADJ ) ) ) ) ( HAVE V AUX ( VM HAS HAVING HAD ) ( SD ( OBJ ) ) ( TEST ( AND ( ISF ( $ VERBI ) EN ) ( NEGF FRAME DO-AUX MODAL ) ( ADDF PERF ) ) ) ) ( DO V AUX ( VM DOES DOING DID DONE ) ( SD ( OBJ ) ) ( TEST ( AND ( NEGF ( $ VERB I ) SG ING EN ED ) ( NEGF FRAME MODAL PERF PROG PASS ( ADDF DO-AUX ) ) ) ) ) Figure 4 .</sentence>
+				<definiendum id="0">SD form for SEEM</definiendum>
+				<definiendum id="1">SD ) ) ( ALMOST ADV ) ( THINK V ( VM THINKS THINKING THOUGHT ( SD ( COMB ) ) ) GIVE V ( VM GIVES GIVING GAVE GIVEN ( SD ( IOBJ ) ( OBJ ) ) ) ( SEEM V ( VM SEEMS SEEMING SEEMED ) ( SD ( COMB ( FLR ADJ ) ) ) ) ( HAVE V AUX ( VM HAS HAVING HAD</definiendum>
+				<definiens id="0">causes the default slot-rule for COMP to be re ( LEXICON JOHN N SG ( SD ) ) HE N PRON SG ( SD ) ) CHAIR N ( NM CHAIRS ) WHAT N WH ( SD ) ) LARGE ADJ ) THE DET ) A DET ( TEST ( NEGF FRAME PL ) ) ) WHICH DET WH ) THAT DET ( TEST ( NEGF FRAME PL ) ) ) THAT SUBJUNCTION ) IN PREP (</definiens>
+				<definiens id="1">NEGF FRAME DO-AUX MODAL ) ( ADDF PERF ) ) ) ) ( DO V AUX ( VM DOES DOING DID DONE ) ( SD ( OBJ ) ) ( TEST ( AND ( NEGF ( $ VERB I ) SG ING EN ED ) ( NEGF FRAME MODAL PERF PROG PASS ( ADDF DO-AUX ) ) ) ) ) Figure 4</definiens>
+			</definition>
+</paper>
+
+		<paper id="3005">
+</paper>
+
+		<paper id="1004">
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>FRUMP knows what it needs to find in a story .</sentence>
+				<definiendum id="0">FRUMP</definiendum>
+				<definiens id="0">knows what it needs to find in a story</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>ARABIC is listed in the dictionary as a word that is skippable when it has been preceded by a skippable word , so it is skipped and placed in STM .</sentence>
+				<definiendum id="0">ARABIC</definiendum>
+				<definiens id="0">a word that is skippable when it has been preceded by a skippable word , so it is skipped and placed in STM</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A request is a form of production , or test-action pair .</sentence>
+				<definiendum id="0">request</definiendum>
+				<definiens id="0">a form of production , or test-action pair</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>As an example , gunman creates expectations which look for the terrorist , hijack , and robbery scripts .</sentence>
+				<definiendum id="0">gunman</definiendum>
+				<definiens id="0">creates expectations which look for the terrorist , hijack , and robbery scripts</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( DEF-REQ FIND- $ HIJACK TEST ( HIJACK-INSTANTIATOR *NEW-ITEM* ) ACTION ( REQ-EVENT 8 ( SCRIPT SHIJACK ACTOR NIL DEMANDS NIL FROM NIL DESTINATION NIL TO NIL PASSENGERS NIL VEHICLE NIL ) ~ Test looks for words which ~ indicate the hijack script ~ Action builds an event for ~ the hijack script of ~ interest 8 , with the slots shown here .</sentence>
+				<definiendum id="0">HIJACK TEST ( HIJACK-INSTANTIATOR *NEW-ITEM* ) ACTION</definiendum>
+				<definiens id="0">SCRIPT SHIJACK ACTOR NIL DEMANDS NIL FROM NIL DESTINATION NIL TO NIL PASSENGERS NIL VEHICLE NIL ) ~ Test looks for words which ~ indicate the hijack script</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>IPP keeps track of a story 's main event .</sentence>
+				<definiendum id="0">IPP</definiendum>
+				<definiens id="0">keeps track of a story 's main event</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>This Sumps Dmtionary Entry ( A1 ) WORD-DEF OCCUPIED INTEREST 5 TYPE EB SUBCLASS TEMPLATE FILL REQS SEB SCRIPT SDEMONSTRATE N OCCUPIED builds a structure ACTOR NIL ~ specifying the demonstrate OBJECT NIL script with an occupy DEMANDS NIL ~ scene METHOD ( SCENE $ OCCUPY ACTOR NIL LOCATION NIL ) ) ( ( ACTOR ) ( TOP-OF *ACTOR-STACK* ) ) ACTOR slots ( ( METHOD ACTOR ) ( TOP-OF *ACTOR-STACK* ) ) ) ~ are filled .</sentence>
+				<definiendum id="0">scene METHOD</definiendum>
+				<definiendum id="1">OCCUPY ACTOR NIL LOCATION NIL ) ) ( ( ACTOR )</definiendum>
+				<definiens id="0">the demonstrate OBJECT NIL script with an occupy DEMANDS NIL ~</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Yale TOPS-20 Command processor 3 ( 414 ) @ DO IPP * ( PARSE SI ) Input : ( AN ARABIC SPEAKING GUNMAN SHOT HIS WAY INTO THE IRAQI EMBASSY HERE THIS MORNING HELD HOSTAGES THROUGHOUT MOST OF THE DAY BEFORE SURRENDERING TO FRENCH POLICEMEN AND THEN WAS SHOT BY IRAQI SECURITY OFFICIALS AS HE WAS LED AWAY BY FRENCH OFFICERS ) ** MAIN EVENT ** SCRIPT STERRORISM ACTOR ARAB GUNMAN PLACE IRAQI EMBASSY CITY PARIS TIME MORNING SCENES SCRIPT SHOLD-HOSTAGES ACTOR ARAB GUNMAN PLACE IRAQI EMBASSY SCRIPT $ CAPTURE ACTOR POLICEMEN OBJECT ARAB GUNMAN PLACE IRAQI EMBASSY AFTER SHOLD-HOSTAGES SCENE ** UNEXPECTED EVENTS ** SCRIPT $ SHOOT ACTOR IRAQI OFFICIALS OBJECT ARAB GUNMAN AFTER $ CAPTURE SCENE RESULT STATE DEAD ACTOR ARAB GUNMAN * ( PARSE $ 2 ) Input : ( A GUNMAN WHO DIVERTED A VERMONT BOUND BUS WITH MORE THAN TWENTYFIVE PASSENGERS FROM THE BRONX TO KENNEDY INTERNATIONAL AIRPORT AND KILLED TWO HOSTAGES SURRENDERED ON A RUNWAY LATE LAST NIGHT ENDING A DAYLONG SIEGE OF TERROR AND GUNFIRE ) Output : ** MAIN EVENT ** SCRIPT $ HIJACK ACTOR GUNMAN FROM BRONX TO AIRPORT CARRYING PASSENGERS VEHICLE BUS SCENES SCRIPT SKILL ACTOR GUNMAN VICTIM HOSTAGES SCRIPT $ CAPTURE OBJECT GUNMAN ACTOR POLICE TIME NIGHT ** UNEXPECTED EVENTS ** NONE Output : * ( PARSE $ 3 ) American Journal of Computational Linguistics , Volume 6 , Number 1 , January-March 1980 27 Roger C. Schank , Michael Lebowitz , and Lawrence Birnbaum An Integrated Understander Input : ( ABOUT TWENTY PERSONS OCCUPIED THE OFFICE OF AMNESTY-INTERNATIONAL SEEKING BETTER JAIL CONDITIONS FOR THREE ALLEGED WEST-GERMAN TERRORISTS ) Output : ** MAIN EVENT ** SCRIPT OBJECT DEMANDS SDEMONSTRATE AMNESTY-INTERNATIONAL IMPROVED JAIL CONDITIONS FOR WEST-GERMAN TERRORISTS METHOD SCRIPT $ OCCUPY ** UNEXPECTED EVENTS ** NONE \ [ PHOTO : terminated Thu 16-Nov-78 8:27AM\ ] The next two examples , the first from the Boston G~be and the second from the New York ~mes , illustrate how stories with simUar content are processed similarly by IPP , despite differences in syntax .</sentence>
+				<definiendum id="0">MAIN EVENT ** SCRIPT STERRORISM ACTOR ARAB GUNMAN PLACE IRAQI EMBASSY CITY PARIS TIME MORNING SCENES SCRIPT SHOLD-HOSTAGES ACTOR ARAB GUNMAN PLACE IRAQI EMBASSY SCRIPT $ CAPTURE ACTOR POLICEMEN OBJECT ARAB GUNMAN PLACE IRAQI EMBASSY AFTER SHOLD-HOSTAGES SCENE</definiendum>
+				<definiendum id="1">PASSENGERS VEHICLE BUS SCENES SCRIPT SKILL ACTOR GUNMAN VICTIM HOSTAGES SCRIPT $ CAPTURE OBJECT GUNMAN ACTOR POLICE TIME NIGHT ** UNEXPECTED EVENTS ** NONE</definiendum>
+				<definiens id="0">A GUNMAN WHO DIVERTED A VERMONT BOUND BUS WITH MORE THAN TWENTYFIVE PASSENGERS FROM THE BRONX TO KENNEDY INTERNATIONAL AIRPORT AND KILLED TWO HOSTAGES SURRENDERED ON A RUNWAY LATE LAST NIGHT ENDING A DAYLONG SIEGE OF TERROR AND GUNFIRE ) Output : ** MAIN EVENT ** SCRIPT $ HIJACK ACTOR GUNMAN FROM BRONX TO AIRPORT CARRYING</definiens>
+				<definiens id="1">OCCUPIED THE OFFICE OF AMNESTY-INTERNATIONAL SEEKING BETTER JAIL CONDITIONS FOR THREE ALLEGED WEST-GERMAN TERRORISTS ) Output : ** MAIN EVENT ** SCRIPT OBJECT DEMANDS SDEMONSTRATE AMNESTY-INTERNATIONAL IMPROVED JAIL CONDITIONS FOR WEST-GERMAN TERRORISTS METHOD SCRIPT $ OCCUPY ** UNEXPECTED EVENTS ** NONE \</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Yale TOPS-20 Command processor 3A ( 415 ) @ DO IPP * ( PARSE $ 4 ) Input : ( IRISH REPUBLICAN ARMY GUERRILLAS AMBUSHED A MILITARY PATROL IN WEST BELFAST YESTERDAY KILLING ONE BRITISH SOLDIER AND BADLY WOUNDING ANOTHER ARMY HEADQUARTERS REPORTED ) Output : ** MAIN EVENT ** SCRIPT STERRORISM ACTOR IRA GUERRILLAS PLACE BELFAST TIME YESTERDAY SCENES SCRIPT SKILL ACTOR IRA GUERRILLAS VICTIM I ENGLISH SOLDIER PLACE BELFAST SCRIPT SWOUND ACTOR IRA GUERRILLAS PLACE BELFAST ** UNEXPECTED EVENTS ** NONE * ( PARSE S5 ) Input : ( GUNMEN BELIEVED TO BE BASQUE GUERRILLAS TODAY SHOT AND SERIOUSLY WOUNDED A PROVINCIAL SECRETARY OF THE RIGHT-WING POPULAR ALLIANCE PARTY POLICE SOURCES SAID ) Output : ** MAIN EVENT ** SCRIPT STERRORISM ACTOR BASQUE GUERRILLAS TIME TODAY SCENES SCRIPT $ SHOOT VICTIM SECRETARY ACTOR BASQUE GUERRILLAS SCRIPT SWOUND ACTOR BASQUE GUERRILLAS VICTIM SECRETARY EXTENT GREATERTHAN-*NORM* ** UNEXPECTED EVENTS ** NONE \ [ PHOTO : terminated Tue 5-Jun-79 I:08PM\ ] Notice that in $ 5 , the primary designation of the actor is given in the participial phrase , `` believed to be Basque guerrillas , '' while in $ 4 `` Irish Republican Army Guerrillas '' is simply the subject of the sentence .</sentence>
+				<definiendum id="0">Yale TOPS-20 Command processor 3A</definiendum>
+				<definiendum id="1">MAIN EVENT ** SCRIPT STERRORISM ACTOR IRA GUERRILLAS PLACE BELFAST TIME YESTERDAY SCENES SCRIPT SKILL ACTOR IRA</definiendum>
+				<definiendum id="2">SCRIPT STERRORISM ACTOR BASQUE GUERRILLAS TIME TODAY SCENES SCRIPT $ SHOOT VICTIM SECRETARY ACTOR BASQUE GUERRILLAS SCRIPT SWOUND ACTOR BASQUE GUERRILLAS VICTIM SECRETARY EXTENT GREATERTHAN-*NORM*</definiendum>
+				<definiens id="0">GUNMEN BELIEVED TO BE BASQUE GUERRILLAS TODAY SHOT AND SERIOUSLY WOUNDED A PROVINCIAL SECRETARY OF THE RIGHT-WING POPULAR ALLIANCE PARTY POLICE SOURCES SAID ) Output : ** MAIN EVENT **</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>IPP identifies the actors in the same way , just as people would normally do .</sentence>
+				<definiendum id="0">IPP</definiendum>
+				<definiens id="0">identifies the actors in the same way</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>ATN grammars , as presented in Woods ( 1970 ) , are a form of augmented pushdown store automata , augmented to carry a set of register contents in addition to state and stack information and to permit arbitrary computational tests and actions associated with the state transitions .</sentence>
+				<definiendum id="0">ATN grammars</definiendum>
+				<definiens id="0">a form of augmented pushdown store automata , augmented to carry a set of register contents in addition to state and stack information and to permit arbitrary computational tests and actions associated with the state transitions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Conceptually , an ATN consists of a network of states with connecting arcs between them .</sentence>
+				<definiendum id="0">ATN</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Transitions are of three basic types , as indicated by three different types of arc .</sentence>
+				<definiendum id="0">Transitions</definiendum>
+				<definiens id="0">indicated by three different types of arc</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A CATN consists of a sequence of ATN transducers each of which takes its input from the output of the previous .</sentence>
+				<definiendum id="0">CATN</definiendum>
+				<definiens id="0">consists of a sequence of ATN transducers each of which takes its input from the output of the previous</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>When one begins to represent the details of supporting auxiliaries that are present in interrogatives but not in declaratives , the commonalities these modalities have with imperatives , and the interaction of all three with the various possibilities following the verb ( depending on whether it is transitive or intransitive , takes an indirect object or complement , etc. ) , this kind of factoring becomes increasingly more important .</sentence>
+				<definiendum id="0">)</definiendum>
+				<definiens id="0">takes an indirect object or complement , etc.</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>American Journal of Computational Linguistics , Volume 6 , Number 1 , January-March 1980 3 William A. Woods Cascaded ATN Grammars &lt; ATN &gt; - &gt; ( &lt; machinename &gt; ( accepts &lt; phrasetype &gt; * ) &lt; statespec &gt; * ) ; an ATN is a list consisting of a machine name , a ; specification of the phrasetypes which it will ; accept , and a list of sta£e specifications .</sentence>
+				<definiendum id="0">ATN</definiendum>
+				<definiens id="0">a list consisting of a machine name</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>As mentioned previously , a CATN is a sequence of ordinary ATN 's that include among the actions on their arcs an operation TRANSMIT , which transmits an element to the next machine in the sequence .</sentence>
+				<definiendum id="0">CATN</definiendum>
+				<definiens id="0">a sequence of ordinary ATN 's that include among the actions on their arcs an operation TRANSMIT , which transmits an element to the next machine in the sequence</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>A configuration of a CATN consists of a vector of state configurations of the successive machines , plus a pointer to the input string where the first machine is about to take input .</sentence>
+				<definiendum id="0">configuration of a CATN</definiendum>
+				<definiens id="0">consists of a vector of state configurations of the successive machines , plus a pointer to the input string where the first machine is about to take input</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The transition function ( nondeterministic ) operates as follows : I. A distinguished register C is set ( possibly nondeterministically ) to the next input element to be consumed and the pointer in the input string is advanced .</sentence>
+				<definiendum id="0">transition function</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>In short , a stage of an ATN cascade can mirror the activity of any given transformational rule .</sentence>
+				<definiendum id="0">ATN cascade</definiendum>
+				<definiens id="0">mirror the activity of any given transformational rule</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The example implements a subset of the semantic rules of the airline flight schedules system of Woods ( 1967 ) , a predecessor of the LUNAR system ( Woods et a1.,1972 ) .</sentence>
+				<definiendum id="0">LUNAR system</definiendum>
+				<definiens id="0">a subset of the semantic rules of the airline flight schedules system of Woods</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>( m2 ( accepts designators ) ( dl ( initial designator ) ( J d2 ( setr vbl ( getnewvar ) ) ) ( d2 ( 'flight , 'plane d/flight ( setr head 'FLIGHT ) ) ( 'jet d/flight ( setr head 'FLIGHT ) ( addr mods ' ( JET !</sentence>
+				<definiendum id="0">m2</definiendum>
+				<definiens id="0">accepts designators ) ( dl ( initial designator )</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The function sem-quant is a function that performs the sem-quant pair manipulations described in Woods ( 1978b ) .</sentence>
+				<definiendum id="0">function sem-quant</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>If the tree is balanced , then this leads to the selection of the desired individual leaf in log ( n ) tests rather than n tests , where n is the number of leaves of the tree .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the selection of the desired individual leaf in log ( n ) tests rather than n tests</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>A CATN consists of a sequence of ATN transducers the later stages of which take input from the output of the previous stage .</sentence>
+				<definiendum id="0">CATN</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3004">
+</paper>
+
+		<paper id="2004">
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>Each dictionary entry consists of a set of pairs of features .</sentence>
+				<definiendum id="0">dictionary entry</definiendum>
+				<definiens id="0">consists of a set of pairs of features</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>`` Bottom '' in this example is the place from which the ordinal processor begins counting .</sentence>
+				<definiendum id="0">Bottom</definiendum>
+				<definiens id="0">the place from which the ordinal processor begins counting</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The characteristic language feature appearing in each of the above sentences is the independent clause : declarative ( rather than imperative ) in nature , and requiring the evaluation of a Boolean ( i.e. , a condition whose truth or falsity is to be determined ) .</sentence>
+				<definiendum id="0">Boolean</definiendum>
+				<definiens id="0">a condition whose truth or falsity is to be determined )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Appendix : A Natural Language Program and Its PL/I Equivalent The following `` pivot '' routine uses a computational technique described in Gallie and Ramm\ [ 12\ ] and gives an example of a nontrivial usage of the system .</sentence>
+				<definiendum id="0">Appendix</definiendum>
+				<definiens id="0">A Natural Language Program and Its PL/I Equivalent The following `` pivot '' routine uses a computational technique described in Gallie and Ramm\ [ 12\ ] and gives an example of a nontrivial usage of the system</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Plath , W.J. `` REQUEST : A Natural Language QuestionAnswering System '' , IBM J. Res .</sentence>
+				<definiendum id="0">Plath , W.J. `` REQUEST</definiendum>
+				<definiens id="0">A Natural Language QuestionAnswering System ''</definiens>
+			</definition>
+</paper>
+
+	</volume>

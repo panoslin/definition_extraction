@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="X96">
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>EVALUATION DRIVEN RESEARCH : TIPSTER Style So how well has TIPSTER adhered to the Evaluation Driven Research Paradigm as described in this preceding section ?</sentence>
+				<definiendum id="0">EVALUATION DRIVEN RESEARCH</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1022">
+			<definition id="0">
+				<sentence>INTRODUCTION The Prototype Information Dissemination System ( PRIDES ) is a TIPSTER technology insertion project sponsored by the Office of Research and Development ( ORD ) .</sentence>
+				<definiendum id="0">Prototype Information Dissemination System</definiendum>
+				<definiendum id="1">PRIDES )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>PRIDES FUNCTIONS FBIS collects , translates , and disseminates selected foreign media content , including newspaper and magazine articles and television and radio broadcasts .</sentence>
+				<definiendum id="0">PRIDES FUNCTIONS FBIS</definiendum>
+				<definiens id="0">collects , translates , and disseminates selected foreign media content , including newspaper and magazine articles and television and radio broadcasts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>PRIDES seeks to provide both timely dissemination , customized to a user 's particular interests , and comprehensive retrospective search support .</sentence>
+				<definiendum id="0">PRIDES</definiendum>
+				<definiens id="0">seeks to provide both timely dissemination , customized to a user 's particular interests , and comprehensive retrospective search support</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>PRIDES provides a World Wide Web interface , suitable for deployment on the Intemet or an intelligence community intranet .</sentence>
+				<definiendum id="0">PRIDES</definiendum>
+				<definiens id="0">provides a World Wide Web interface , suitable for deployment on the Intemet or an intelligence community intranet</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The PRIDES User Interface Layer ( PUI ) is responsible for creating and managing the screen displays that comprise the PRIDES user interface .</sentence>
+				<definiendum id="0">PRIDES User Interface Layer ( PUI</definiendum>
+				<definiens id="0">responsible for creating and managing the screen displays that comprise the PRIDES user interface</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>PUI calls the PRIDES Application Layer ( PA ) to service requests and collects and formats that data for easy use .</sentence>
+				<definiendum id="0">PUI</definiendum>
+				<definiens id="0">calls the PRIDES Application Layer ( PA ) to service requests and collects and formats that data for easy use</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>PA provides an external message interface to the incoming FBIS documents .</sentence>
+				<definiendum id="0">PA</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The TDA consists of a set of TIPSTERcompliant search engines and database management software .</sentence>
+				<definiendum id="0">TDA</definiendum>
+				<definiens id="0">consists of a set of TIPSTERcompliant search engines and database management software</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>INQUERY is an information retrieval system based upon a Bayesian inference network model of information retrieval .</sentence>
+				<definiendum id="0">INQUERY</definiendum>
+				<definiens id="0">an information retrieval system based upon a Bayesian inference network model of information retrieval</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>InRoute is an inference network system tailored for document filtering .</sentence>
+				<definiendum id="0">InRoute</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>While INQUERY is optimized for quickly searching one or more multi-gigabyte document collections , InRoute is optimized for quickly comparing a steady stream of documents to a large number of profiles .</sentence>
+				<definiendum id="0">InRoute</definiendum>
+				<definiens id="0">optimized for quickly searching one or more multi-gigabyte document collections</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>A CGI is a standalone script or program invoked by a Web Server to provide services beyond those included in its suite .</sentence>
+				<definiendum id="0">CGI</definiendum>
+				<definiens id="0">a standalone script</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>PRIDES end users use a Web Browser to communicate with the Web Server .</sentence>
+				<definiendum id="0">PRIDES end users</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>PRIDES is a pilot effort which will serve users operationally for six months , between July 1996 and January 1997 .</sentence>
+				<definiendum id="0">PRIDES</definiendum>
+				<definiens id="0">a pilot effort which will serve users operationally for six months</definiens>
+			</definition>
+</paper>
+
+		<paper id="1048">
+			<definition id="0">
+				<sentence>EVALUATION TASKS A basic characterization of the challenge presented by each evaluation task is as follows : • Named Entity ( NE ) -Insert SGML tags into the text to mark each string that represents a person , organization , or location name , or a date or time stamp , or a currency or percentage figure .</sentence>
+				<definiendum id="0">EVALUATION</definiendum>
+				<definiens id="0">TASKS A basic characterization of the challenge presented by each evaluation task is as follows : • Named Entity ( NE ) -Insert SGML tags into the text to mark each string that represents a person , organization , or location name , or a date or time stamp , or a currency or percentage figure</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A TYPE attribute accompanies each tag element and identifies the subtype of each tagged string : for ENAMEX , the TYPE value can be ORGANIZATION , PERSON , or LOCATION ; for TIMEX , the TYPE value can be DATE or TIME ; and for NUMEX , the TYPE value can be MONEY or PERCENT .</sentence>
+				<definiendum id="0">TYPE attribute</definiendum>
+				<definiendum id="1">LOCATION</definiendum>
+				<definiendum id="2">TIMEX</definiendum>
+				<definiens id="0">accompanies each tag element and identifies the subtype of each tagged string : for ENAMEX , the TYPE value can be ORGANIZATION , PERSON , or</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>NE subcategory scores ( ERR metric ) , in order of decreasing overall F-Measure ( P &amp; R ) complete and may not match the name as it is realized in the text ( e.g. , may not cover the needed abbreviated form of an organization name , may not cover the complete person name ) , etc .</sentence>
+				<definiendum id="0">NE subcategory scores ( ERR metric</definiendum>
+				<definiens id="0">P &amp; R ) complete and may not match the name as it is realized in the text ( e.g. , may not cover the needed abbreviated form of an organization name</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>NE document subsection scores ( ERR metric ) , in order of decreasing overall F-measure ( P &amp; R ) headlines was a conservative one : tag a string in the headline as a name only if the system had found it in the body of the text or if the system had predicted the name based on truncation of names found in the body of the text .</sentence>
+				<definiendum id="0">NE document subsection scores ( ERR metric</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>TEMPLATE ELEMENT The Template Element ( TE ) task requires extraction of certain general types of information about entities and merging of the information about any given entity before presentation in the form of a template ( or `` object '' ) .</sentence>
+				<definiendum id="0">Template Element</definiendum>
+				<definiens id="0">information about entities and merging of the information about any given entity before presentation in the form of a template ( or `` object '' )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>430 slots only for the string representing the person name ( PER_NAME ) , for strings representing any abbreviated versions of the name ( PERALIAS ) , and for strings representing a very limited range of titles ( PER_TITLE ) .</sentence>
+				<definiendum id="0">PER_NAME</definiendum>
+				<definiens id="0">any abbreviated versions of the name ( PERALIAS ) , and for strings representing a very limited range of titles</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The management succession template consists of four object types , which are linked together via one-way pointers to form a hierarchical structure .</sentence>
+				<definiendum id="0">management succession template</definiendum>
+				<definiens id="0">consists of four object types , which are linked together via one-way pointers to form a hierarchical structure</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The organization pointed to by the event object is the organization where the relevant management post exists ; the organization pointed to by the relational object is the organization that the person who is moving in or out of the post is coming from or going to .</sentence>
+				<definiendum id="0">event object</definiendum>
+				<definiens id="0">the organization where the relevant management post exists ; the organization pointed to by the relational object is the organization that the person who is moving in or out of the post is coming from or going to</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Systems are measured for their performance on distinguishing relevant from nonrelevant texts via the text filtering metric , which uses the classic information retrieval definitions of recall and precision .</sentence>
+				<definiendum id="0">Systems</definiendum>
+				<definiens id="0">uses the classic information retrieval definitions of recall and precision</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Whereas the Text Filter row in the score report shows the system 's ability to do text filtering ( document detection ) , the All Objects row and the individual Slot rows show the system 's ability to do information extraction .</sentence>
+				<definiendum id="0">Text Filter row</definiendum>
+				<definiens id="0">the system 's ability to do text filtering ( document detection ) , the All Objects row and the individual Slot rows show the system 's ability to do information extraction</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The identification of a name as that of an organization ( hence , instantiation of an ORGANIZATION object ) or as a person ( PERSON object ) is a named entity identification task .</sentence>
+				<definiendum id="0">identification of a name</definiendum>
+				<definiendum id="1">instantiation of an ORGANIZATION object</definiendum>
+				<definiendum id="2">PERSON object )</definiendum>
+				<definiens id="0">a named entity identification task</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>Architecture Support SRI participated in the Architecture Working Group ( AWG ) meetings and aided in the design , testing , and implementation of the TIPSTER document manager architecture .</sentence>
+				<definiendum id="0">Architecture Support SRI</definiendum>
+				<definiens id="0">participated in the Architecture Working Group ( AWG ) meetings and aided in the design , testing , and implementation of the TIPSTER document manager architecture</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>FastSpec is one of the influences on standardizing a community-wide pattern specification language .</sentence>
+				<definiendum id="0">FastSpec</definiendum>
+				<definiens id="0">one of the influences on standardizing a community-wide pattern specification language</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>\ [ 1\ ] Hobbs , J. R. , Appelt , D. E. , Bear , J. , Israel , D. , Kameyama , M. , Stickel , M. and Tyson , M. ; `` FASTUS : A Cascaded Finite-State Transducer for Extracting Information from Natural-Language Text ; '' in Roche , E. and Schabes , Y. , eds. ; Finite-State Devices for Natural Language Processing ; MIT Press ; Cambridge , Mass. ; 1996 .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiendum id="1">eds.</definiendum>
+				<definiens id="0">A Cascaded Finite-State Transducer for Extracting Information from Natural-Language Text ; '' in Roche , E. and Schabes , Y. ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1058">
+			<definition id="0">
+				<sentence>FastSpec enables a fast cycle of rule specification , compilation , and testing during development \ [ 21 .</sentence>
+				<definiendum id="0">FastSpec</definiendum>
+				<definiens id="0">enables a fast cycle of rule specification , compilation , and testing during development \ [ 21</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The ASCII Tokenizer is identical to the English FASTUS Tokenizer , which recognizes alphabetic , alphanumeric , numeric , and separator tokens as well as SGML tag tokens .</sentence>
+				<definiendum id="0">ASCII Tokenizer</definiendum>
+				<definiendum id="1">FASTUS Tokenizer</definiendum>
+				<definiens id="0">recognizes alphabetic , alphanumeric , numeric , and separator tokens as well as SGML tag tokens</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>At the end of each sentence loop , the Merger merges the new and existing template objects produced from the document so far .</sentence>
+				<definiendum id="0">Merger</definiendum>
+				<definiens id="0">merges the new and existing template objects produced from the document so far</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>FASTUS uses dictionary entries as the smallest linguistic units that are combined to create more complex patterns .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">uses dictionary entries as the smallest linguistic units that are combined to create more complex patterns</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Organization , Person , and Location names comprise a majority of the names to be recognized , and a special difficulty arises when they occur in similar linguistic contexts .</sentence>
+				<definiendum id="0">Organization</definiendum>
+				<definiendum id="1">Location names</definiendum>
+				<definiens id="0">comprise a majority of the names to be recognized</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>FASTUS : A Cascaded Finite-State Transducer for Extracting Information from NaturalLanguage Text .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">A Cascaded Finite-State Transducer for Extracting Information from NaturalLanguage Text</definiens>
+			</definition>
+</paper>
+
+		<paper id="1047">
+			<definition id="0">
+				<sentence>BRIDGESTONE SPORTS HAS SO FAR BEEN ENTRUSTING PRODUCTION OF GOLF CLUB PARTS WITH UNION PRECISION CASTING AND OTHER TAIWAN COMPANIES .</sentence>
+				<definiendum id="0">BRIDGESTONE SPORTS</definiendum>
+				<definiens id="0">HAS SO FAR BEEN ENTRUSTING PRODUCTION OF GOLF CLUB PARTS WITH UNION PRECISION CASTING AND OTHER TAIWAN COMPANIES</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The PERSON and ORGANIZATION objects are the `` template element '' objects , which are invariant across scenarios .</sentence>
+				<definiendum id="0">ORGANIZATION objects</definiendum>
+				<definiens id="0">the `` template element '' objects , which are invariant across scenarios</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>Cable Abstracting and INdexing S_ystem ( CANIS ) Prototype Ira Sider Jeffrey Baker Deborah Brady Lynne Higbie Tom Howard Lockheed Martin Corporation P.O. Box 8048 Philadelphia , PA 19101 sider , j baker , brady_d , higbie , howard @ mds.lmco.com The CANIS customer receives cables from sites world-wide , indexes the entities mentioned in these cables and stores that information for access by analysts at a later date .</sentence>
+				<definiendum id="0">INdexing S_ystem</definiendum>
+				<definiens id="0">( CANIS ) Prototype Ira Sider Jeffrey Baker Deborah Brady Lynne Higbie Tom Howard Lockheed Martin Corporation P.O. Box 8048 Philadelphia , PA 19101 sider , j baker</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>CANIS runs on the customer-specified hardware and software plaffozms .</sentence>
+				<definiendum id="0">CANIS</definiendum>
+				<definiens id="0">runs on the customer-specified hardware and software plaffozms</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Comm Process CSCI retrieves the Cable Data from the Cable Delivery System Server at a constant given rate via a software timer .</sentence>
+				<definiendum id="0">Comm Process CSCI</definiendum>
+				<definiens id="0">retrieves the Cable Data from the Cable Delivery System Server at a constant given rate via a software timer</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Comm Process CSCI creates a Document from the Cable Data and passes the Document to the Document Manager Process CSCI which stores this information in a Document Collection .</sentence>
+				<definiendum id="0">Comm Process CSCI</definiendum>
+				<definiens id="0">creates a Document from the Cable Data and passes the Document to the Document Manager Process CSCI which stores this information in a Document Collection</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Comm Process CSCI sends the Collection Identifier and Document Identifier to the Extraction Process CSCI .</sentence>
+				<definiendum id="0">Comm Process CSCI</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The Extraction Process CSCI processes each Collection Identifier and Document Identifier passed to it .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+				<definiens id="0">processes each Collection Identifier and Document Identifier passed to it</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The Extraction Process CSCI passes the Collection and Document Identifiers to the Document Manager CSCI which retrieves and returns the document text .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The Extraction Process CSCI extracts biographical entities found within the document using Lockheed Martin 's NLToolset .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+				<definiens id="0">extracts biographical entities found within the document using Lockheed Martin 's NLToolset</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The Extraction Process CSCI passes the extracted entities to the Document Manager Process CSCI , which stores them as Annotations on the Document .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+				<definiens id="0">passes the extracted entities to the Document Manager Process CSCI , which stores them as Annotations on the Document</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The Extraction Process CSCI sends the Collection Identifier and Document Identifier to the Analyst Data Setup Process CSCI .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+				<definiens id="0">sends the Collection Identifier and Document Identifier to the Analyst Data Setup Process CSCI</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Upon initialization , the Extraction Process CSCI spawns the NLToolset Server Object , which ties all the NLToolset 's data resources together into a single object , and loads into it the NLToolset System Specification File .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+				<definiendum id="1">NLToolset Server Object</definiendum>
+				<definiens id="0">ties all the NLToolset 's data resources together into a single object , and loads into it the NLToolset System Specification File</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The primary resources that are loaded are : • Lexicon • Ontology • Gazetteer • Abbreviation • Special Term List • Set of Lexiccr-Semantic Rule Packages The Extraction Process CSCI passes a Document through a series of NLToolset functions to perform the extraction .</sentence>
+				<definiendum id="0">Extraction Process CSCI</definiendum>
+				<definiens id="0">passes a Document through a series of NLToolset functions to perform the extraction</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The process will link the following entity information : Family ( persons to family ) , Employment ( persons to organizations ) , and Affiliation ( persons to associations ) .</sentence>
+				<definiendum id="0">Employment (</definiendum>
+				<definiens id="0">persons to organizations</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The Analyst Data Setup Process CSCI validates File Numbers against existing relations and connects them to named entities .</sentence>
+				<definiendum id="0">Analyst Data Setup Process CSCI</definiendum>
+				<definiens id="0">validates File Numbers against existing relations and connects them to named entities</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The Analyst Interface Process CSCI displays a summary list of the named entities associated with the selected Document .</sentence>
+				<definiendum id="0">Analyst Interface Process CSCI</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>The Document Manager Process CSCI is a set of library routines which provide a standard interface between the CANIS Prototype and the persistent storage of documents .</sentence>
+				<definiendum id="0">Document Manager Process CSCI</definiendum>
+				<definiens id="0">a set of library routines which provide a standard interface between the CANIS Prototype and the persistent storage of documents</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The Document Manager conforms to the concepts and specifications of the TIPSTER Phase II Architecture Design Document ( version 1.15 ) .</sentence>
+				<definiendum id="0">Document Manager</definiendum>
+			</definition>
+			<definition id="17">
+				<sentence>The Library routines of the Document Manager Process provides all CSCI 's of the CANIS Prototype with a standard interface ( APD for accessing docmnents , and communicaring annotation information about those documents .</sentence>
+				<definiendum id="0">Library</definiendum>
+				<definiens id="0">routines of the Document Manager Process provides all CSCI 's of the CANIS Prototype with a standard interface</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The Document Manager Process CSCI uses Microsoft 's ODBC library .</sentence>
+				<definiendum id="0">Document Manager Process CSCI</definiendum>
+			</definition>
+			<definition id="19">
+				<sentence>The NLToolset is a framework of tools , techniques and resources for building text processing applications .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">a framework of tools , techniques and resources for building text processing applications</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>The NLToolset is portable , extensible , robust , genetic and language independent .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">portable , extensible , robust , genetic and language independent</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>The NLToolset combines artificial intelligence ( AD methods , especially NL processing , knowledge-based systems and information retrieval techniques , with simpler methods , such as finite state machines , lexical analysis and word-based text 73 search to provide broad functionality without sacrificing robustness and speed .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">combines artificial intelligence ( AD methods , especially NL processing , knowledge-based systems and information retrieval techniques , with simpler methods</definiens>
+				<definiens id="1">lexical analysis and word-based text 73 search to provide broad functionality without sacrificing robustness and speed</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>The NLToolset is coded in C++ and uses the COOL Object Library .</sentence>
+				<definiendum id="0">NLToolset</definiendum>
+				<definiens id="0">coded in C++ and uses the COOL Object Library</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>74 APPENDIX A. ANNOTATION DESIGN SPECIFICATION annotation type r-fnllname annotation type r-descriptor annotation type r-surname annotation type r-birth-date annotation type r-rifle annotation type r-occupation-field annotation type r-occupation-text annotation type r-file-number annotation type r-phone-number annotation type r-org-name annotation type r-conntry annotation type r-address annotation type r-city annotation type r-id-number annotation type r-gender annotation type r-state annotatiOn type r-mailcode annotation type r-subject-line annotation type r-date annotation type r-text annotation type r-phone-text annotation type c-tperson { r-fidlname : r-fullname r-variation : sequence of r-filllname r-descriptor : r-descriptor r-surname : r-gl .</sentence>
+				<definiendum id="0">r-descriptor r-surname</definiendum>
+				<definiens id="0">SPECIFICATION annotation type r-fnllname annotation type r-descriptor annotation type r-surname annotation type r-birth-date annotation type r-rifle annotation type r-occupation-field annotation type r-occupation-text annotation type r-file-number annotation type r-phone-number annotation type r-org-name annotation type r-conntry annotation type r-address annotation type r-city annotation type r-id-number annotation type r-gender annotation type r-state annotatiOn type r-mailcode annotation type</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>me : r-suillame r-taddress : sequence of c-taddress r-tphone : sequence of c-tphoue r-associated { Y } } annotation type c-parent-assoc { r-child : c-tperson r-parent : c-tperson r-descriptor : r-descriptor } annotation type c-fathex-assoc { r-child : c-tperson r-father : c-tperson r-descriptor : r-descriptor } 75 annotation type c-mother-assoc { r -- child : c-tperson r-mother : c-tperson r-descriptor : r-descriptor \ ] annotation type c-brother-assoc { r-sibling : c-tperson r-brother : c-tperson r-descriptor : r-descriptor \ ] annotation type c-sister-assoc { r-sibling : c-tperson r-sister : c-tperson r-descriptor : r-descriptor \ ] annotation type c-sibling-assoc { r-sibling-a : c-tperson r-sibling-b : c-tperson r-descriptor : r-descriptor \ ] annotation type c-married-assoc { r-spouse-a : c-tperson r-spouse-b : c-tpersou r-descriptor : r-descriptor l annotation type c-family-other-assoc ) { r-person-a : c-tperson r-person-b : c-tperson r-descriptor : r-descriptor ) annotation type c-family-member-assoc { r-family : c-ffamily r-family-member : c-tperson r-descriptor : r-descriptor \ ] Annotation type c-maiden-persona-assoc { r-person-a : c-tperson r-person-b : c-tperson r-descriptor : r-descriptor \ ] annotation type c-other-persona-assoc { r-person-a : c-tperson r-person-b : c-tperson r-descriptor : r-descriptor } annotation type c-employment-assoc { r-person : c-tpersou r-organization : c-torganizafion r-descriptor : r-descriptor ) annotation type c-affiliafion-assoc { r-person : c-tperson r-organization : c-torganizafion r-affiliated-with : c-torganizafion r-descriptor : r-descriptor } annotation type c-tdocument { r-subject-line : r-subject-line r-reference-line : r-reference-line r-categories-type : sequence of { DRUGS , POLITICS , TERRORIST , OTHER\ ] } r-associations : sequence of c-agfiliation-assoc or c-employment-assoc or c-coutact-assoc or c-persona-assoc or c-family-member-assoc or c-family-other-assoc or c-married-assoc or c-sibling-assoc or c-sister-assoc or c-brother-assoc or c-mother-assoc or c-father-assoc or c-parent-assoc r-unassocpersons : sequence of c-tpersou r-unassocorgs : sequence of c-torganizafion r-unassocaddr : sequence of c-taddress r-tmassocphone : sequence of c-tphoue r-unassocidnum : sequence of c-fidnum r-unassocfamily : sequence of c-ffamily 76 May 30 , 1995 .</sentence>
+				<definiendum id="0">c-tperson r-descriptor</definiendum>
+				<definiens id="0">c-tpersou r-descriptor : r-descriptor l annotation type c-family-other-assoc</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+</paper>
+
+		<paper id="1040">
+</paper>
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>The types of queries produced by this system typically showed the repetition of key terminology combined with the elimination of irrelevant terms .</sentence>
+				<definiendum id="0">queries</definiendum>
+				<definiens id="0">produced by this system typically showed the repetition of key terminology combined with the elimination of irrelevant terms</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Mundial is a query interface to Infoseek and Yahoo that takes queries in English , translates them to Spanish and submits the resulting queries to the Infoseek and Yahoo search engines directly .</sentence>
+				<definiendum id="0">Mundial</definiendum>
+				<definiens id="0">takes queries in English , translates them to Spanish and submits the resulting queries to the Infoseek and Yahoo search engines directly</definiens>
+			</definition>
+</paper>
+
+		<paper id="1041">
+			<definition id="0">
+				<sentence>TUIT is a software library that can be used to construct multilingual TIPSTER user interfaces for a set of common user tasks .</sentence>
+				<definiendum id="0">TUIT</definiendum>
+				<definiens id="0">a software library that can be used to construct multilingual TIPSTER user interfaces for a set of common user tasks</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The TUIT Editor ( TED ) is a GUI that can be used to view and edit multilingual texts .</sentence>
+				<definiendum id="0">TUIT Editor ( TED</definiendum>
+				<definiens id="0">a GUI that can be used to view and edit multilingual texts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>TED takes advantage of the Computing Research Laboratory 's X-multi-attributed-text ( Xmat ) widget .</sentence>
+				<definiendum id="0">TED</definiendum>
+				<definiens id="0">takes advantage of the Computing Research Laboratory 's X-multi-attributed-text ( Xmat ) widget</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The TUIT API supports the creation of windows , menus , and dialogs .</sentence>
+				<definiendum id="0">TUIT API</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1056">
+</paper>
+
+		<paper id="1057">
+			<definition id="0">
+				<sentence>Erie is a name recognition system developed for the Multilingual Entity Task ( MET ) in MUC-6 .</sentence>
+				<definiendum id="0">Erie</definiendum>
+				<definiens id="0">a name recognition system developed for the Multilingual Entity Task ( MET ) in MUC-6</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Erie solves these problems by generating a pattern matching engine in C language directly from the defined patterns .</sentence>
+				<definiendum id="0">Erie</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>Detection to Extraction : query-specific extraction run and retrieved subcollection to increase precision Our integration effort concentrated on mode I , and the following issues : extractions and disambiguation in place of a full syntactic parser to index a retrieval collection learning arbitrary concepts LEXlCO-SEMANTIC PATTERN MATCHING FOR SHALLOW NLP The lexico-semantic pattern matching method allows for capturing of word sequences in text using a simple pattern language that can be compiled into a set of non-deterministic finite automata .</sentence>
+				<definiendum id="0">PATTERN MATCHING</definiendum>
+				<definiens id="0">extractions and disambiguation in place of a full syntactic parser to index a retrieval collection learning arbitrary concepts LEXlCO-SEMANTIC</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>As an example , let 's consider building a spotter for company names , starting with seeds as illustrated in the following fragments ( with seed contexts highlighted ) : ... HENRY KAUFMAN is president of Henry Kaufman Co. , a ... Gabelli , chairman of Gabelli Funds Inc. ; Claude N. Rosenberg ... . is named president of Skandinaviska Enskilda Banken ... become vice chairman of the state-owned electronics giant Thomson S.A ... . banking group , said the formal merger of Skanska Banken into ... water maker Source Perrier S.A. , according to French stock ... Having `` Co. '' , `` Inc. '' to pick out `` 'Henry Kaufman Co. '' and `` Gabelli Funds Inc. '' as seeds , we proceed to find new evidence in the training corpus , using an unsupervised learning process , and discover that `` 'chairman of '' and `` 'president of '' are very likely to precede company names .</sentence>
+				<definiendum id="0">HENRY KAUFMAN</definiendum>
+				<definiens id="0">proceed to find new evidence in the training corpus , using an unsupervised learning process , and discover that `` 'chairman of '' and `` 'president of '' are very likely to precede company names</definiens>
+			</definition>
+</paper>
+
+		<paper id="1045">
+			<definition id="0">
+				<sentence>The TIPSTER CM process imposes two control gates , PDR and FOC , on the TIPSTER Application development lifecycle , as shown in Figure 1-2 .</sentence>
+				<definiendum id="0">TIPSTER CM process</definiendum>
+				<definiens id="0">imposes two control gates , PDR and FOC , on the TIPSTER Application development lifecycle</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Changes are categorized as either Class I , which is a change to the current Architecture baseline , or Class II , which is all other changes , such as correction of document typographical errors , resolution of ambiguities , and changes that clearly do not qualify as a Class I. Deviations are defined as discrepancies wherein an application does not conform to the particular Architectural standard .</sentence>
+				<definiendum id="0">Changes</definiendum>
+				<definiendum id="1">Class I</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>CM provides a means to identify , control , audit , and report on the configuration and status of the TIPSTER Architecture .</sentence>
+				<definiendum id="0">CM</definiendum>
+				<definiens id="0">provides a means to identify , control , audit , and report on the configuration and status of the TIPSTER Architecture</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>This complex structure consists of the multi-agency Executive Committee and Architecture Committee , architecture contractors , demonstration and prototype development contractors , COTRs and the SE/CM contractor .</sentence>
+				<definiendum id="0">COTRs</definiendum>
+				<definiens id="0">the multi-agency Executive Committee and Architecture Committee , architecture contractors , demonstration and prototype development contractors</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>~tion Management I I Configuration Management Manager Validation and Verification Testing Engineer Figure 3-3 Organizational Structure of TIPSTER II SE/CM Support 354 The Program Manager ( PM ) assists the Chair of the Architecture Committee in meeting the objectives of the TIPSTER Architecture and Demonstration programs , with respect to requirements definition , coordination of disparate contractors and approaches , and supervision of the configuration management and verification/validation efforts .</sentence>
+				<definiendum id="0">PM )</definiendum>
+				<definiens id="0">assists the Chair of the Architecture Committee in meeting the objectives of the TIPSTER Architecture and Demonstration programs , with respect to requirements definition , coordination of disparate contractors and approaches , and supervision of the configuration management and verification/validation efforts</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The CMM is a regular participant in all ERB and CCB meetings .</sentence>
+				<definiendum id="0">CMM</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The Verification and Validation ( V &amp; V ) Testing Engineer will develop and implement tests to determine if modules in TIPSTER Applications are consistent with the Architecture Design Document by ensuring that they conform to the specifics in the Architecture Design Document .</sentence>
+				<definiendum id="0">Verification</definiendum>
+				<definiens id="0">V &amp; V ) Testing Engineer will develop and implement tests to determine if modules in TIPSTER Applications are consistent with the Architecture Design Document by ensuring that they conform to the specifics in the Architecture Design Document</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>However , the CCB is a non-voting board .</sentence>
+				<definiendum id="0">CCB</definiendum>
+				<definiens id="0">a non-voting board</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The ERB is an internal TIPSTER II Architecture review and action panel comprised of personnel from all project groups .</sentence>
+				<definiendum id="0">ERB</definiendum>
+				<definiens id="0">an internal TIPSTER II Architecture review and action panel comprised of personnel from all project groups</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The ERB reviews each Class II change and then takes appropriate action for its disposition .</sentence>
+				<definiendum id="0">ERB</definiendum>
+				<definiens id="0">reviews each Class II change and then takes appropriate action for its disposition</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>However , the ERB is a non-voting board .</sentence>
+				<definiendum id="0">ERB</definiendum>
+				<definiens id="0">a non-voting board</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The Architecture Committee has final authority over the TIPSTER Architecture and in this role can accept or reject any Change Directive reported by the CCB .</sentence>
+				<definiendum id="0">Architecture Committee</definiendum>
+				<definiens id="0">has final authority over the TIPSTER Architecture and in this role can accept or reject any Change Directive reported by the CCB</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The TIPSTER Phase II evaluation working group ( EWG ) is tasked with designing , implementing , and coordinating evaluations intended to demonstrate the effectiveness of TIPSTER architectural approaches ; thus , the EWG will be a user of the results of the CM process by using the appropriate Architectural version in their evaluations .</sentence>
+				<definiendum id="0">EWG</definiendum>
+				<definiens id="0">tasked with designing , implementing , and coordinating evaluations intended to demonstrate the effectiveness of TIPSTER architectural approaches ; thus , the EWG will be a user of the results of the CM process by using the appropriate Architectural version in their evaluations</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Architecture files contain all written materials and documentation on the TIPSTER II Architecture .</sentence>
+				<definiendum id="0">Architecture files</definiendum>
+			</definition>
+			<definition id="14">
+				<sentence>API ARPA AWG BBN CCB CI CIA CM CMM CMP COTR CSA CSCI DIA ERB EWG FCA FOC GE ICD MMC MUC NSA PCA PDR PM PO QA RFC SE SE/CM TACAD Application Program Interface Advanced Research Projects Agency Architecture Working Group Bolt Beranek and Newman Configuration Control Board Configuration Item Central Intelligence Agency Configuration Management Configuration Management Manager Configuration Management Procedures Contracting Officer 's Technical Representative Configuration Status Accounting Computer Software Configuration Item Defense Intelligence Agency Engineering Review Board Evaluation Working Group Functional Configuration Audit Final Operating Capability General Electric Interface Control Document Martin Marietta Corporation Message Understanding Conference National Security Agency Physical Configuration Audit Preliminary Design Review Program Manager Program Office Quality Assurance Request For Change Systems Engineering Systems Engineering/Configuration Management TIPSTER Application Conformance Assessment Document 365 TBD TREC UMass V &amp; V To Be Decided Text Retrieval Conference University of Massachusetts Verification and Validation 366 APPENDIX A TACAD DESCRIPTION TIPSTER Design Application Module Comment Module Get Document Next Message Fully Compliant Find Name Namer Partially Compliant see section 13.4 for details .</sentence>
+				<definiendum id="0">API ARPA AWG BBN CCB CI CIA CM CMM CMP COTR CSA CSCI DIA ERB EWG FCA FOC GE ICD MMC MUC NSA PCA PDR PM PO QA RFC SE SE/CM TACAD</definiendum>
+				<definiens id="0">Application Program Interface Advanced Research Projects Agency Architecture Working Group Bolt Beranek and Newman Configuration Control Board Configuration Item Central Intelligence Agency Configuration Management Configuration Management Manager Configuration Management Procedures Contracting Officer 's Technical Representative Configuration Status Accounting Computer Software Configuration Item Defense Intelligence Agency Engineering Review Board Evaluation Working Group Functional Configuration Audit Final Operating Capability General Electric Interface Control Document Martin Marietta Corporation Message Understanding Conference National Security Agency Physical Configuration Audit Preliminary Design Review Program Manager Program Office Quality Assurance Request For Change Systems Engineering Systems Engineering/Configuration Management TIPSTER Application Conformance Assessment Document 365 TBD TREC UMass V &amp; V To Be Decided Text Retrieval Conference University of Massachusetts Verification and Validation 366 APPENDIX A TACAD DESCRIPTION TIPSTER Design Application Module Comment Module Get Document Next Message Fully Compliant Find Name Namer Partially Compliant see section 13.4 for details</definiens>
+			</definition>
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>NAMETAG OVERVIEW NameTag consists of a software engine that applies name recognition rules to text , supported by lexical resources and limited lists of proper names .</sentence>
+				<definiendum id="0">NAMETAG OVERVIEW NameTag</definiendum>
+				<definiens id="0">consists of a software engine that applies name recognition rules to text , supported by lexical resources and limited lists of proper names</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A name recognition rule consists of a pattern and an action .</sentence>
+				<definiendum id="0">name recognition rule</definiendum>
+				<definiens id="0">consists of a pattern and an action</definiens>
+			</definition>
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>TIPSTER is an ARPA sponsored program that seeks to develop methods and tools that support analysts in their efforts to filter , process , and analyze ever increasing quantities of text-based information .</sentence>
+				<definiendum id="0">TIPSTER</definiendum>
+				<definiens id="0">an ARPA sponsored program that seeks to develop methods and tools that support analysts in their efforts to filter , process , and analyze ever increasing quantities of text-based information</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Computing Research Laboratory ( CRL ) is a longtime contributor to TIPSTER .</sentence>
+				<definiendum id="0">Computing Research Laboratory ( CRL )</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>CRL is using TIPSTER technology to develop OLEADA , which is an integrated set of computer tools designed to support language learners , and instructors .</sentence>
+				<definiendum id="0">CRL</definiendum>
+				<definiendum id="1">OLEADA</definiendum>
+				<definiens id="0">an integrated set of computer tools designed to support language learners , and instructors</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Research Laboratory Information extraction is a relatively new application of natural language processing techniques in which basic information and relationships are found and extracted from text .</sentence>
+				<definiendum id="0">Research Laboratory Information extraction</definiendum>
+				<definiens id="0">a relatively new application of natural language processing techniques in which basic information and relationships are found and extracted from text</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>TIPSTER II is a joint effort among many sites to develop working systems that integrate information retrieval and information extraction .</sentence>
+				<definiendum id="0">TIPSTER II</definiendum>
+				<definiens id="0">a joint effort among many sites to develop working systems that integrate information retrieval and information extraction</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The TIPSTER II architecture makes it possible to integrate a variety of information retrieval , extraction , and text processing systems in ways that help analysts address more complex problems .</sentence>
+				<definiendum id="0">TIPSTER II architecture</definiendum>
+				<definiens id="0">makes it possible to integrate a variety of information retrieval , extraction , and text processing systems in ways that help analysts address more complex problems</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Currently , OLEADA provides a multi-windowed side-by-side presentation of source and target language texts ( as opposed , for example , to the top-bottom presentation of texts on some PC 's ) with editing capabilities in the target text window .</sentence>
+				<definiendum id="0">OLEADA</definiendum>
+				<definiens id="0">provides a multi-windowed side-by-side presentation of source and target language texts</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>To support editing of text displayed in multiple languages , OLEADA utilizes CRL 's multi-attributed text widget .</sentence>
+				<definiendum id="0">OLEADA</definiendum>
+				<definiens id="0">utilizes CRL 's multi-attributed text widget</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Headword lists consist primarily of the root form of a word , however searches can be performed using morphological variants .</sentence>
+				<definiendum id="0">Headword lists</definiendum>
+				<definiens id="0">consist primarily of the root form of a word , however searches can be performed using morphological variants</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>OLEADA has morphological analysis component that enables the system to return information on morphological variants of a search term .</sentence>
+				<definiendum id="0">OLEADA</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>More importantly , OLEADA offers an informational technology alternative to traditional language instruction .</sentence>
+				<definiendum id="0">OLEADA</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1010">
+</paper>
+
+		<paper id="1055">
+			<definition id="0">
+				<sentence>The components common to both languages are the message reader , which dealt with the input format and SGML conventions via a declarative format description ; the part-of-speech tagger ( BBN POST ) ; a lexical pattern matcher driven by knowledge bases of patterns and lexicons specific to each language ; and the SGML annotation generator .</sentence>
+				<definiendum id="0">message reader</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The current probability model is a hidden Markov model ( HMM ) which is more complex than is typically used in partof-speech tagging and is therefore more general .</sentence>
+				<definiendum id="0">current probability model</definiendum>
+				<definiendum id="1">HMM</definiendum>
+				<definiens id="0">a hidden Markov model (</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>The InFinder technology constructs an automatic related-term database which attacks the two problems of currency relevance with the same mechanism .</sentence>
+				<definiendum id="0">InFinder technology</definiendum>
+				<definiens id="0">constructs an automatic related-term database which attacks the two problems of currency relevance with the same mechanism</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In addition , for both character sets , the XAT library supports several different input methods for both character sets , including both PRC and Cantonese pinyin and the Standard Telegraphic Code ( STC ) 4-digit numeric representation .</sentence>
+				<definiendum id="0">Telegraphic Code</definiendum>
+				<definiens id="0">for both character sets , the XAT library supports several different input methods for both character sets , including both PRC and Cantonese pinyin and the Standard</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The message wader module determines message boundaries , identifies the message header information , and determines paragraph and sentence boundaries .</sentence>
+				<definiendum id="0">message wader module</definiendum>
+				<definiens id="0">determines message boundaries , identifies the message header information , and determines paragraph and sentence boundaries</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The FPP is a near-deterministic parser which generates one or more non-overlapping parse fragments With '' Relevanc'e ' Feedback ' '' No_Se 8 Hand_Seg Auto_Se 8 96.7 ( 16.13 % ) 100 ( 20.09 % ) 100 ( 20.09 % ) 96.7 ( 28.98 % ) 93.3 ( 24.44 % ) 91.7 ( 22.31 % ) 87.8 ( 14.52 % ) 90.0 ( 17.39 % ) 88.9 ( 15.95 % ) 83.3 ( 14.94 % ) 87.5 ( 20.:73 % ) 85.8 ( 18.39 % ) 78.0 ( 12.6 % ) 82.7 ( 19.38 % ) 82.7 ( 19.38 % ) 74.4 ( 11.59 % ) 80.0 ( 19.99 % ) 78.9 ( 18.34 % ) 69.5 ( 8.13 % ) 78.6 ( 22.28 % ) 76.2 ( 18.55 % ) 67.5 ( 11.06 % ) 75.4 ( 24.06 % ) 74.2 ( 22.08 % ) 65.5 ( 10.69 % ) 73.7 ( 24.54 % ) 73.3 ( 23.86 % ) 64.0 ( 12.33 % ) 71.3 ( 25.13 % ) 70.0 ( 22.85 % ) 113 spanning the input sentence , deferring any difficult decisions on attachment ambiguities .</sentence>
+				<definiendum id="0">FPP</definiendum>
+				<definiens id="0">a near-deterministic parser which generates one or more non-overlapping parse fragments With '' Relevanc'e ' Feedback</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A semantic rule creates a semantic representation of the phrase stored with the syntactic parse .</sentence>
+				<definiendum id="0">semantic rule</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>The message level representation is a list of discourse domain objects ( DDOs ) for the top-level events of interest in the message ( e.g. , SUCCESSION events in the MUC-6 domain ) .</sentence>
+				<definiendum id="0">message level representation</definiendum>
+				<definiens id="0">a list of discourse domain objects ( DDOs ) for the top-level events of interest in the message ( e.g. , SUCCESSION events in the MUC-6 domain )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The discourse component creates two primary structures : a discourse predicate database and the DDOs .</sentence>
+				<definiendum id="0">discourse component</definiendum>
+				<definiens id="0">creates two primary structures : a discourse predicate database and the DDOs</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>For full template output , the output generator takes the DDOs produced by discourse processing and fills out the application-specific templates .</sentence>
+				<definiendum id="0">output generator</definiendum>
+				<definiens id="0">takes the DDOs produced by discourse processing and fills out the application-specific templates</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Next , the slots in those objects are filled using information in the DDO , the discourse predicate database , other sources of information such as the message header ( e.g. , document number ) , or from heuristics ( e.g. , in MUC-6 terms , the type of an organization object is most likely to be COMPANY ) .</sentence>
+				<definiendum id="0">organization object</definiendum>
+				<definiens id="0">the discourse predicate database , other sources of information such as the message header ( e.g. , document number ) , or from heuristics</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+			<definition id="0">
+				<sentence>Similarly , the MUC-6 TE ( properties of organizations and persons ) configuration of PLUM uses no information regarding succession of corporate officers , and therefore can be used on other domains .</sentence>
+				<definiendum id="0">MUC-6 TE (</definiendum>
+				<definiens id="0">properties of organizations and persons ) configuration of PLUM uses no information regarding succession of corporate officers</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>• Text Description Editor ( TDE ) : Maintains the Text Description Factbase , a data file containing knowledge about the structure of messages , i.e. where word , sentence , and paragraph boundaries fall .</sentence>
+				<definiendum id="0">Text Description Editor</definiendum>
+				<definiens id="0">Maintains the Text Description Factbase , a data file containing knowledge about the structure of messages , i.e. where word , sentence</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Also , maintains the Fill Rule Factbase , a data file containing knowledge describing how to fill fields of output records when they are generated by a trigger in the Trigger Rule Factbase .</sentence>
+				<definiendum id="0">Fill Rule Factbase</definiendum>
+				<definiens id="0">a data file containing knowledge describing how to fill fields of output records when they are generated by a trigger in the Trigger Rule Factbase</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Application Generator ( AG ) : Compiles the different factbases into an NLU Application .</sentence>
+				<definiendum id="0">Application Generator</definiendum>
+				<definiens id="0">Compiles the different factbases into an NLU Application</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The NLU Shell provides a way for non-programmers to build and maintain language processing applications .</sentence>
+				<definiendum id="0">NLU Shell</definiendum>
+				<definiens id="0">provides a way for non-programmers to build and maintain language processing applications</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>To the extent covered by this evaluation , the NLU Shell is a successful first prototype of a GUI-based natural language processing application builder .</sentence>
+				<definiendum id="0">NLU Shell</definiendum>
+				<definiens id="0">a successful first prototype of a GUI-based natural language processing application builder</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The TE task takes the entity names found by the NE system , and merges multiple references to the same entity using syntactic and semantic information .</sentence>
+				<definiendum id="0">TE task</definiendum>
+				<definiens id="0">takes the entity names found by the NE system , and merges multiple references to the same entity using syntactic and semantic information</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Weischedel , R. , Ayuso , D.M. , Bobrow , R. , Boisen , S. , Fox , H. , Matsukawa , T. , MacLaughlin , D. , Papageorgiou , C. , Sakai , T. , Abe , J. , Hoshi , H. , Miyamoto , Y. , and Miller , S. , `` BBN 's PLUM Probabilistic Language Understanding System '' , Proceedings of the TIPSTER Text Program ( Phase 1 ) , 1993 .</sentence>
+				<definiendum id="0">TIPSTER Text Program</definiendum>
+				<definiens id="0">Ayuso , D.M. , Bobrow , R. , Boisen , S. , Fox , H. , Matsukawa , T. , MacLaughlin , D. , Papageorgiou , C. , Sakai , T. , Abe , J. , Hoshi , H. , Miyamoto , Y. , and Miller , S. , `` BBN 's PLUM Probabilistic Language Understanding System ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1006">
+</paper>
+
+		<paper id="1039">
+</paper>
+
+		<paper id="1027">
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>Spot has been designed to interface to multiple search engines through an object-oriented search engine abstraction layer .</sentence>
+				<definiendum id="0">Spot</definiendum>
+				<definiens id="0">designed to interface to multiple search engines through an object-oriented search engine abstraction layer</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Our user community consists of native-English speakers , who want the menus and buttons to appear in English , but require support for dewing foreign-language documents in their native scripts , as well as entering foreign-language query terms in their native 95 scripts .</sentence>
+				<definiendum id="0">user community</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Some of the goals of Spot include the following : support multiple search engines by allowing users to select the search engine they desire , support for multiple languages within the same tool without requiring different versions of Spot or different operating system support , query generation tools to assist nonnative speakers in creating foreign-language queries , capability of browsing foreign-language text using their native script , and support for utilities to aid Analysts .</sentence>
+				<definiendum id="0">support</definiendum>
+				<definiens id="0">capability of browsing foreign-language text using their native script , and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Spot consists of a Search Server Interface layer that uses an object-oriented approach to abstract the details of each search engine from the user 96 interface portion of Spot .</sentence>
+				<definiendum id="0">Spot</definiendum>
+				<definiens id="0">consists of a Search Server Interface layer that uses an object-oriented approach to abstract the details of each search engine from the user 96 interface portion of Spot</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>~ilure 1 : Multiple search engines in Spot The Search Server Interface consists of a package of code routines that act as a broker for the search engine functions for Spot .</sentence>
+				<definiendum id="0">Search Server Interface</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Spot uses this feature to allow users to expand the character sets across which to search .</sentence>
+				<definiendum id="0">Spot</definiendum>
+				<definiens id="0">uses this feature to allow users to expand the character sets across which to search</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Our English-to-Japanese transliteration scheme is an example of an exp~n~iom Here 's a description of the `` Japanese-katakana '' expansion : Foreign loan words and proper nouns are represented in the Japanese katakana phonetic alphabet , based on its pronunciation .</sentence>
+				<definiendum id="0">English-to-Japanese transliteration scheme</definiendum>
+				<definiens id="0">Foreign loan words and proper nouns are represented in the Japanese katakana phonetic alphabet , based on its pronunciation</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>JFDF used the Fast Data Finder search engine to search Japanese language data and used Sun 's Japanese Language Environment ( JLE ) Operating System support for handling the Japanese query entry and browsing .</sentence>
+				<definiendum id="0">JFDF</definiendum>
+				<definiens id="0">used the Fast Data Finder search engine to search Japanese language data and used Sun 's Japanese Language Environment ( JLE ) Operating System support for handling the Japanese query entry and browsing</definiens>
+			</definition>
+</paper>
+
+		<paper id="1050">
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>ABSTRACT Over the past few years , HNC has developed a neural network based , vector space approach to text retrieval .</sentence>
+				<definiendum id="0">ABSTRACT</definiendum>
+				<definiendum id="1">HNC</definiendum>
+				<definiens id="0">developed a neural network based , vector space approach to text retrieval</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The MatchPlus system uses a neural network based , constrained sel~organization technique to learn word stem interrelationships directly 3~om a training corpus , thereby eliminating the need for hand crafted linguistic knowledge bases and their often substantial maintenance requirements .</sentence>
+				<definiendum id="0">MatchPlus system</definiendum>
+				<definiens id="0">uses a neural network based , constrained sel~organization technique to learn word stem interrelationships directly 3~om a training corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The time requirements for training this set of vectors scale as O ( Nn ) where N is the number of word stems in the vocabulary and n is the average number of word stems found to co-occur ( and/or be related to ) any given word stem ( usually on the order of several hundred ) .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">the number of word stems in the vocabulary and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>MatchPlus computes the dot product of every other word vector in the vocabulary to the selected word .</sentence>
+				<definiendum id="0">MatchPlus</definiendum>
+				<definiens id="0">computes the dot product of every other word vector in the vocabulary to the selected word</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The time requirements for training this set of vectors scale as O ( Nn ) where N is the number of word stems in the vocabulary and n is the average number of word stems found to co-occur ( and/or be related to ) any given word stem ( usually on the order of several hundred ) .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">n</definiendum>
+				<definiens id="0">the number of word stems in the vocabulary and</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>With this approximation , the time requirements for the current learning law scale as O ( kNn ) where k is the number of iterations required for convergence .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">the number of iterations required for convergence</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The true test is the stem trees for non-tie-words .</sentence>
+				<definiendum id="0">true test</definiendum>
+				<definiens id="0">the stem trees for non-tie-words</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+			<definition id="0">
+				<sentence>but dependency on a particular domain and type of text is a natural limitation of machine-translation systems , and a GBMT is no exception .</sentence>
+				<definiendum id="0">GBMT</definiendum>
+				<definiens id="0">a natural limitation of machine-translation systems</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>First , each word in a sentence is looked up in a large English dictionary , Comlex Syntax , which provides syntactic information about each word .</sentence>
+				<definiendum id="0">Comlex Syntax</definiendum>
+				<definiens id="0">provides syntactic information about each word</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>, relative clauses ( `` Fred , who runs IBM , ... '' and `` IBM , which is headed by Fred , ... '' ) , reduced relative clauses ( `` IBM , headed by Fred , ... '' ) and conjoined verb phrases ( `` ... and runs IBM '' , `` and is run by Fred '' ) .</sentence>
+				<definiendum id="0">relative clauses</definiendum>
+				<definiens id="0">runs IBM , ... '' and `` IBM , which is headed by Fred , ... '' ) , reduced relative clauses ( `` IBM , headed by Fred , ... ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1051">
+			<definition id="0">
+				<sentence>\ [ 1\ ] However , to date the Tipster scoring categories ( correct , partial , incorrect , spurious , missing , and noncommittal ) have not been applied to classes of data based on structural distinctions in the language , or on semantic subclasses more finely differentiated than the NE types ( person , location , organization , time , date , money , and percent ) .</sentence>
+				<definiendum id="0">However</definiendum>
+				<definiens id="0">been applied to classes of data based on structural distinctions in the language , or on semantic subclasses more finely differentiated than the NE types ( person , location , organization , time , date , money , and percent )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Step 2 : Count NE Occurrences by Subtype Tagged names were searched by NE `` type '' ( person / location / organization ) using a concordance tool ( NMSU 's `` XConcord '' ) , then copied to files representing each of the posited subtype classes , or to a catch-all `` residual '' class .</sentence>
+				<definiendum id="0">concordance tool</definiendum>
+				<definiens id="0">Count NE Occurrences by Subtype Tagged names were searched by NE</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Apparently only a small percentage of taggable NE 's fall into the `` residual '' subclasses ( see Table 1 ) , and these tend to correspond to data that is `` hard to get '' for the MET participants \ [ 6\ ] .</sentence>
+				<definiendum id="0">residual '' subclasses</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A similar generalization appears to govern language patterns as well as words , that is , a small number of high-frequency patterns apparently can account for a disproportionately large share of types such as organiTafion names , with the specification of new patterns eventually reaching a point of everdiminishing returns .</sentence>
+				<definiendum id="0">similar generalization</definiendum>
+				<definiens id="0">appears to govern language patterns as well as words</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>Evaluation incorporates all aspects of the technology transfer project : ( 1 ) management , ( 2 ) relations with the user and IS staff , ( 3 ) development costs and schedule , ( 4 ) user interface , ( 5 ) work flow , ( 6 ) robustness of the software , ( 7 ) throughput , ( 8 ) accuracy , ( 9 ) ease of integration , ( 10 ) ease of maintenance , ( 11 ) use of the architecture .</sentence>
+				<definiendum id="0">Evaluation</definiendum>
+				<definiens id="0">incorporates all aspects of the technology transfer project : ( 1 ) management , ( 2 ) relations with the user and IS staff</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Technology transfer is a complex process and the number of issues that must be addressed is large .</sentence>
+				<definiendum id="0">Technology transfer</definiendum>
+				<definiens id="0">a complex process and the number of issues that must be addressed is large</definiens>
+			</definition>
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>Architecture Effort Dr. Ralph Grishman steered the Architecture Working Group , and led its subset , the Contractors ' Architecture Working Group ( CAWG ) , in the development of the Architecture Design and the implementation of that design in the two Architecture demonstrations , the first shown at the TIPSTER Phase II 6-Month Workshop in November 1994 , and the second at the 12-Month Workshop in May 1995 .</sentence>
+				<definiendum id="0">Architecture Effort</definiendum>
+				<definiens id="0">Dr. Ralph Grishman steered the Architecture Working Group , and led its subset , the Contractors ' Architecture Working Group ( CAWG ) , in the development of the Architecture Design and the implementation of that design in the two Architecture demonstrations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>NYU uses a modified version of NIST 's Prise engine in its experiments .</sentence>
+				<definiendum id="0">NYU</definiendum>
+				<definiens id="0">uses a modified version of NIST 's Prise engine in its experiments</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+</paper>
+
+		<paper id="1054">
+			<definition id="0">
+				<sentence>NameTag is an automated text indexing system that recognizes and classifies names and other key phrases such as time and numeric expressions .</sentence>
+				<definiendum id="0">NameTag</definiendum>
+				<definiens id="0">an automated text indexing system that recognizes and classifies names and other key phrases such as time and numeric expressions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>NameTag combines dynamic pattern recognition with static lexical look-up to achieve high recall and precision at high speed .</sentence>
+				<definiendum id="0">NameTag</definiendum>
+				<definiens id="0">combines dynamic pattern recognition with static lexical look-up to achieve high recall</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>NameTag has several unique features beside being able to handle multiple languages .</sentence>
+				<definiendum id="0">NameTag</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Finally , NameTag provides a GUI-based multilingual development environment which facilitates rapid development of patterns .</sentence>
+				<definiendum id="0">NameTag</definiendum>
+				<definiens id="0">provides a GUI-based multilingual development environment which facilitates rapid development of patterns</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Another chicken-and-egg problem was encountered in constructions where a person name and an organization name appear next to each other in a sentence and there is no delimiter between the two ( e.g. `` ABCDEFG '' where ABC is a person name and DEFG an organization name with no space or other punctuation in-between . )</sentence>
+				<definiendum id="0">ABC</definiendum>
+				<definiendum id="1">DEFG</definiendum>
+				<definiens id="0">a person name</definiens>
+			</definition>
+</paper>
+
+		<paper id="1009">
+</paper>
+
+		<paper id="1043">
+			<definition id="0">
+				<sentence>The architecture includes the notion 'sequence of X ' , where X is a type , as one of the possible values of an argument to an operation or the value of a property .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a type</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This is a list of feature-value pairs , where the feature names are arbitrary strings and the values can be any of a number of types : Class Attribute Properties Name : string Value : AttributeValue Operations CreateAttribute ( name : string , value : AttributeValue ) : Attribute Class AttributeValue Properties Abstract Class AttributedObject Properties Attributes : sequence of Attribute Operations PutAttribute ( AttributedObject , name : string , value : AttributeValue ) 256 assign value as the current value of attribute name of object , overwriting any prior assignment of a value to that attribute GetAttribute ( AttributedObject , name : string ) : AttributeValue OR nil if attribute name of object has been assigned a value by a prior PutAttribute operation , return that value , else return nil RemoveAttribute ( AttributedObject , name : string ) if AttributedObject has an Attribute whose Name property is name , remove that attribute from AttributedObject ( otherwise do nothing ) The TIPSTER Architecture assumes a name space of persistent objects ; each persistent object is assigned a unique name ( a string ) .</sentence>
+				<definiendum id="0">AttributedObject Properties Attributes</definiendum>
+				<definiens id="0">Class Attribute Properties Name : string Value : AttributeValue Operations CreateAttribute ( name : string , value : AttributeValue ) : Attribute Class AttributeValue Properties Abstract Class</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>PersistentObject ( name : string ) : PersistentObject creates a new object of a specified class , and returns that object ( it is an error if name is the name of an existing persistent object ) Open .</sentence>
+				<definiendum id="0">PersistentObject ( name : string</definiendum>
+				<definiendum id="1">PersistentObject</definiendum>
+				<definiens id="0">creates a new object of a specified class , and returns that object ( it is an error if name is the name of an existing persistent object ) Open</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>PersistentObject ( name : string ) : PersistentObject name should be the name of an object of class PersistentObject , created by a prior Create .</sentence>
+				<definiendum id="0">PersistentObject ( name : string</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>The byte-sequence may include subsequences representing text in multiple languages , as well as non-text material such as pictures , audio , and tables Annotations : AnnotationSet information about portions of the document ( information about the document as a whole is stored in Attributes ; a Document inherits an Attributes property by virtue of being a type of Attributed Object ) Operations CreateDocument ( Parent : Collection , Externalld : string , RawData : ByteSequence , annotations : AnnotationSet , attributes : sequence of Attribute ) : Document creates a new document within the Collection Parent and assigns the document a new unique Id CopyBareDocument ( NewParent : Collection , Document ) : Document makes a copy of Document , including only its internal Id , Externalld , and RawData , and places the copy in collection NewParent .</sentence>
+				<definiendum id="0">Document</definiendum>
+				<definiens id="0">inherits an Attributes property by virtue of being a type of Attributed Object ) Operations CreateDocument ( Parent : Collection</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>AnnotationPrecedence , which is a list of annotation types , is used to resolve conflicts when two annotations cover the same span : the tag corresponding to the annotation type which appears first in the list is written out first .</sentence>
+				<definiendum id="0">AnnotationPrecedence</definiendum>
+				<definiens id="0">a list of annotation types , is used to resolve conflicts when two annotations cover the same span : the tag corresponding to the annotation type</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>260 Length ( Collection ) : integer returns the number of documents in a collection RemoveDocument ( Collection , Id : string ) removes the Document with Id Id from the Collection ; if no such Document is present , the Collection is unchanged GetDocument ( Collection , Id : string ) : Document OR nil returns the Document in the Collection with the given Id , or nil if no such Document exists FirstDocument ( Collection ) : Document OR nil returns the `` first ' document within a collection and initializes data structures internal to the collection so that NextDocument can be used to iterate through the documents in a collection .</sentence>
+				<definiendum id="0">Collection</definiendum>
+				<definiens id="0">unchanged GetDocument ( Collection , Id : string ) : Document OR nil returns the Document in the Collection with the given Id , or nil if no such Document exists FirstDocument ( Collection )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>AnnotateCollection ( which : Collection , destination : Collection , AnnotatorName : string ) invokes annotation procedure AnnotatorName on a subset of Collection destination ; see Section 5.6 for further information .</sentence>
+				<definiendum id="0">AnnotateCollection</definiendum>
+				<definiendum id="1">AnnotatorName</definiendum>
+				<definiens id="0">string ) invokes annotation procedure AnnotatorName on a subset of Collection destination</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Each span consists in turn of a pair of integers specifying the starting and ending byte positions in the RawData of the document ( with the first byte of the document counting as byte 0 ) .</sentence>
+				<definiendum id="0">span</definiendum>
+				<definiens id="0">consists in turn of a pair of integers specifying the starting and ending byte positions in the RawData of the document ( with the first byte of the document counting as byte 0 )</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>However , once a text has been segmented into text and non-text portions , and the text portion into segments involving different character codes , it should be possible to provide operations at the character level ( i.e. , operations which are sensitive to the different sizes of characters in different codes ) .</sentence>
+				<definiendum id="0">character level</definiendum>
+				<definiens id="0">segmented into text and non-text portions , and the text portion into segments involving different character codes</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>RemoveAnnotation ( Document OR AnnotationSet , Id : string ) removes the annotation with the specified Id from the Document or AnnotationSet .</sentence>
+				<definiendum id="0">RemoveAnnotation</definiendum>
+				<definiens id="0">string ) removes the annotation with the specified Id from the Document or AnnotationSet</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Length ( AnnotationSet ) : integer returns a count of the number of annotations in AnnotationSet Nth ( AnnotationSet , n : integer ) : Annotation returns the Nth annotation in AnnotationSct , where the first annotation has index 0 .</sentence>
+				<definiendum id="0">Length</definiendum>
+				<definiens id="0">integer returns a count of the number of annotations in AnnotationSet Nth ( AnnotationSet , n : integer ) : Annotation returns the Nth annotation in AnnotationSct</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>SclectAnnotations ( Document OR AnnotationSet , type : swing OR nil , constraint : sequence of Attribute ) : AnnotationSet returns the ( possibly empty ) set of annotations from the Document or AnnotationSet which are of type type and which satisfy constraint , constraint is a sequence of attributes , where the ith attribute has name a i and value vi .</sentence>
+				<definiendum id="0">SclectAnnotations</definiendum>
+				<definiendum id="1">constraint</definiendum>
+				<definiens id="0">sequence of Attribute ) : AnnotationSet returns the ( possibly empty ) set of annotations from the Document or AnnotationSet which are of type type</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>AnnotationsAt ( Document OR AnnotationSet , Position : integer ) : AnnotationSet returns the set of annotations from Document or AnnotationSet which start at the specified position .</sentence>
+				<definiendum id="0">AnnotationsAt</definiendum>
+				<definiendum id="1">AnnotationSet</definiendum>
+			</definition>
+			<definition id="14">
+				<sentence>A simple illustration would be the decomposition of a sentence into tokens .</sentence>
+				<definiendum id="0">simple illustration</definiendum>
+				<definiens id="0">the decomposition of a sentence into tokens</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>271 The TIPSTER Architecture defines a number of standard annotations ; these are divided into structural and linguistic annotations .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+				<definiens id="0">a number of standard annotations</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>A DetectionNeed is a type of Document , and so partakes of all the operations which can be applied to Documents .</sentence>
+				<definiendum id="0">DetectionNeed</definiendum>
+				<definiens id="0">a type of Document , and so partakes of all the operations which can be applied to Documents</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>&lt; OPERATOR &gt; argument + &lt; PERATOR &gt; That is , an operator consists of an operator field marker ( e.g. &lt; OPERATOR &gt; ) , one or more arguments , and an ending field marker ( e.g. &lt; PERATOR &gt; ) .</sentence>
+				<definiendum id="0">operator</definiendum>
+				<definiens id="0">consists of an operator field marker ( e.g. &lt; OPERATOR &gt; ) , one or more arguments , and an ending field marker ( e.g. &lt; /OPERATOR &gt; )</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Operations Augment ( DocumentCollectionIndex , Collection ) adds all the documents in Collection to the DocumentCollectionIndex RetrieveDocuments ( sequence of DocumentCollectionlndex , RetrievalQuery , NumberToRetrieve : integer , Monitor or nil ) : Collection returns a collection of Documents ( of maximal length NumberToRetrieve ) which are most closely related to the DetectionNeed from which the Retrieval Query is derived .</sentence>
+				<definiendum id="0">Collection )</definiendum>
+			</definition>
+			<definition id="19">
+				<sentence>Class QueryCollectionIndex Type of PersistentObject Description the translation of a collection of RoutingQueries into a format which is efficient for performing document routing Operations AddQuery ( QueryCollectionlndex , RoutingQuery ) adds a single query ( in the form of an RoutingQuery ) to a QueryCollectionlndex ; if an existing query in the QueryCollectionlndex is based on the same DetectionNeed as RoutingQuery , the existing query is replaced by RoutingQuery RemoveQuery ( QueryCollectionlndex , RoutingQuery ) if QueryCollectionlndex includes a query based on the same DetectionNeed as RoutingQuery , that query is removed from the Index RetrieveQueries ( sequence of QueryCollectionlndex , Document , NumberToRetrieve : integer ) : DetectionNeedCollection returns the collection of DetectionNeeds ( of maximal length NumberToRetrieve ) which are most closely related to Document The Monitor object is intended as an advisory object in the Architecture .</sentence>
+				<definiendum id="0">RoutingQuery</definiendum>
+				<definiendum id="1">DetectionNeedCollection</definiendum>
+				<definiens id="0">returns the collection of DetectionNeeds ( of maximal length NumberToRetrieve ) which are most closely related to Document The Monitor object is intended as an advisory object in the Architecture</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Some programmatic control is provided via StatusType and IntervalType Properties StatusType : one of { NumDocs ( number of documents processed ) , Time ( estimated time to complete seconds ) , Percent ( % of documents processed ) } IntervalType : one of { NumDocs ( number of documents processed ) , Time ( interval in seconds between status reports ) , Percent ( % of documents processed ) } Interval : Integer ClientData : set of string Operations CreateMonitor ( StatusType : one of { NumDocs , Time , Percent } , IntervalType : one of { NumDocs , Time , Percent } , Interval : integer , ClientData : set of string ) : Monitor StatusType is the type of report requested .</sentence>
+				<definiendum id="0">Monitor StatusType</definiendum>
+				<definiens id="0">number of documents processed ) , Time ( estimated time to complete seconds</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Interval indicates the frequency of status information .</sentence>
+				<definiendum id="0">Interval</definiendum>
+				<definiens id="0">indicates the frequency of status information</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>ClientData is optional user data for the MonitorProgress operation MonitorProgress ( Monitor , DCIName : string , Status : integer , MaxStatus : integer , Type : one of { NumDocs , Time , Percent } ) : Boolean DCIName is the name of the DocumentCollectionlndex which is being monitored .</sentence>
+				<definiendum id="0">ClientData</definiendum>
+				<definiendum id="1">operation MonitorProgress</definiendum>
+				<definiendum id="2">MaxStatus</definiendum>
+				<definiendum id="3">Boolean DCIName</definiendum>
+				<definiens id="0">optional user data for the MonitorProgress</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>Status is the current status consistent with type .</sentence>
+				<definiendum id="0">Status</definiendum>
+				<definiens id="0">the current status consistent with type</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>This is done using a Relevance Recorder , which is not part of the Architecture but would be part of any application system which wished to support relevance feedback .</sentence>
+				<definiendum id="0">Relevance Recorder</definiendum>
+				<definiens id="0">not part of the Architecture but would be part of any application system which wished to support relevance feedback</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>An extraction engine adds annotations describing the events and their participants .</sentence>
+				<definiendum id="0">extraction engine</definiendum>
+			</definition>
+			<definition id="26">
+				<sentence>The Extraction Need would include annotation type declarations for the annotations to be produced .</sentence>
+				<definiendum id="0">Extraction Need</definiendum>
+				<definiens id="0">the annotations to be produced</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>For the present , however , an ExtractionNeed is a kind of TypeDeclarationDocument : Class ExtractionNeed Type of TypeDeclarationDocument Class CustomizedExtractionSystem Description a system-specific structure , containing patterns , rules , etc .</sentence>
+				<definiendum id="0">ExtractionNeed</definiendum>
+			</definition>
+			<definition id="28">
+				<sentence>Operations Customize ( ExtractionNeed ) : CustomizedExtractionSystem an interactive process which will guide the user in converting an ExtractionNeed CustomizedExtractionSystem Extract ( which : Collection , destination : Collection , CustomizedExtractionSystem ) into a 289 the operation which generates templates from documents .</sentence>
+				<definiendum id="0">Operations Customize</definiendum>
+				<definiens id="0">CustomizedExtractionSystem an interactive process which will guide the user in converting an ExtractionNeed CustomizedExtractionSystem Extract ( which : Collection , destination : Collection , CustomizedExtractionSystem ) into a 289 the operation which generates templates from documents</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>Extraction is a special type of annotation , and accordingly the Extract operation is a variant of the Annotate operation ( Section 5.6 ) .</sentence>
+				<definiendum id="0">Extraction</definiendum>
+			</definition>
+			<definition id="30">
+				<sentence>Class Annotation Operations CreateAnnotation ( Type : string , Spans : sequence of Span , attributes : sequence of Attribute ) : Annotation GetAttribute ( Annotation , name : string ) : AttfibuteValue OR nil GetAttributes ( Annotation ) : sequence of Attribute GetId ( Annotation ) : string GetSpans ( Annotation ) : sequence of Span GetType ( Annotation ) : string PutAttribute ( Annotation , name : string , value : AttributeValue ) RemoveAttribute ( Annotation , name : string ) APPENDIX C C LANGUAGE HEADER FILE This appendix shows the C language header file corresponding to the classes defined in the TIPSTER Architecture .</sentence>
+				<definiendum id="0">Class Annotation Operations CreateAnnotation</definiendum>
+				<definiendum id="1">GetType ( Annotation )</definiendum>
+				<definiens id="0">string ) : AttfibuteValue OR nil GetAttributes ( Annotation ) : sequence of Attribute GetId ( Annotation ) : string GetSpans ( Annotation ) : sequence of Span</definiens>
+			</definition>
+</paper>
+
+		<paper id="1032">
+			<definition id="0">
+				<sentence>Context vectors ( CVs ) are high dimensional information representations that encode the semantic content of the textual entities they represent .</sentence>
+				<definiendum id="0">CVs</definiendum>
+				<definiens id="0">high dimensional information representations that encode the semantic content of the textual entities they represent</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Typically , the SOM consists of a collection of nodes arranged in a regular two dimensional grid .</sentence>
+				<definiendum id="0">SOM</definiendum>
+				<definiens id="0">consists of a collection of nodes arranged in a regular two dimensional grid</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The SNAP comes in a variety of configurations .</sentence>
+				<definiendum id="0">SNAP</definiendum>
+				<definiens id="0">comes in a variety of configurations</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Stemming is the process of representing similar word forms as the base form of the words ( i.e. words like driver , driving , drives , driven , and drove are all stemmed to the word drive ) .</sentence>
+				<definiendum id="0">Stemming</definiendum>
+				<definiens id="0">the process of representing similar word forms as the base form of the words</definiens>
+			</definition>
+</paper>
+
+		<paper id="1015">
+			<definition id="0">
+				<sentence>Spot has been designed to interface to multiple search engines through an object-oriented search engine abstraction layer .</sentence>
+				<definiendum id="0">Spot</definiendum>
+				<definiens id="0">designed to interface to multiple search engines through an object-oriented search engine abstraction layer</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Our user community consists of native-English speakers , who want the menus and buttons to appear in English , but require support for viewing foreign-language documents in their native scripts , as well as entering foreign-language query terms in their native 57 scripts .</sentence>
+				<definiendum id="0">user community</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1049">
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>Project HOOKAH is a TIPSTER Implementation Project with the Drug Enforcement Administration to extract information from DEA field reports in support of populating a database .</sentence>
+				<definiendum id="0">Project HOOKAH</definiendum>
+				<definiens id="0">a TIPSTER Implementation Project with the Drug Enforcement Administration to extract information from DEA field reports in support of populating a database</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+</paper>
+
+		<paper id="1020">
+</paper>
+
+		<paper id="1044">
+			<definition id="0">
+				<sentence>When possible , the source documents , shown as ( n ) , indicate the basis for the TIPSTER requirement : Application is a group of components and modules , both internal and external to the TIPSTER Architecture , that operates on documents to answer a User 's request for information from documents .</sentence>
+				<definiendum id="0">Application</definiendum>
+				<definiens id="0">a group of components</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>An Application is a `` complete package '' including any processing necessary to setup documents for TIPSTER processing and the User interface component .</sentence>
+				<definiendum id="0">Application</definiendum>
+				<definiens id="0">a `` complete package '' including any processing necessary to setup documents for TIPSTER processing and the User interface component</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Compiled Query is the Detection Component specific form of a query generated by a Detection Component from a Statement of Relevance and is understandable only by the Detection Component .</sentence>
+				<definiendum id="0">Compiled Query</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>A CSC is a distinct part of a Computer Software Component Item ( CSCI ) .</sentence>
+				<definiendum id="0">CSC</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Detection Component is a component that selects documents from a Collection based upon the Detection Criteria .</sentence>
+				<definiendum id="0">Detection Component</definiendum>
+				<definiens id="0">a component that selects documents from a Collection based upon the Detection Criteria</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Detection Criteria is the User statement of information need and may include Selection Statements , short form free text queries , Boolean keyword queries or example documents Document Attribute is a characteristic of a document as represented by a single specific value or a set of values of the same type e.g. , date received or authors .</sentence>
+				<definiendum id="0">Detection Criteria</definiendum>
+				<definiens id="0">the User statement of information need and may include Selection Statements , short form free text queries , Boolean keyword queries or example documents Document Attribute is a characteristic of a document as represented by a single specific value or a set of values of the same type e.g.</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Document Collection is an unordered set of documents .</sentence>
+				<definiendum id="0">Document Collection</definiendum>
+				<definiens id="0">an unordered set of documents</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Document List is an ordered list of document identifiers and optional document attributes or computational result for each list entry .</sentence>
+				<definiendum id="0">Document List</definiendum>
+				<definiens id="0">an ordered list of document identifiers and optional document attributes or computational result for each list entry</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>307 Extraction Component is a component that selects information from a document or a list of documents based upon the Template structure , Fill Rules and Patterns .</sentence>
+				<definiendum id="0">Extraction Component</definiendum>
+				<definiens id="0">a component that selects information from a document or a list of documents based upon the Template structure , Fill Rules and Patterns</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>A CSU is an element specified in the design of a CSC that is separately testable .</sentence>
+				<definiendum id="0">CSU</definiendum>
+				<definiens id="0">an element specified in the design of a CSC that is separately testable</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Pattern is an expression of a specific form that is used for matching text during the Extraction process .</sentence>
+				<definiendum id="0">Pattern</definiendum>
+				<definiens id="0">an expression of a specific form that is used for matching text during the Extraction process</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Query is the Detection Component specific form of a query generated by a Detection Component in the component 's unique structure and language .</sentence>
+				<definiendum id="0">Query</definiendum>
+				<definiens id="0">the Detection Component specific form of a query generated by a Detection Component in the component 's unique structure and language</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Selection Statement is a high level textual description of the needed information as specified by the User .</sentence>
+				<definiendum id="0">Selection Statement</definiendum>
+				<definiens id="0">a high level textual description of the needed information as specified by the User</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Template is a form or structure which identifies one or more objects that are associated together as the result of an extraction process .</sentence>
+				<definiendum id="0">Template</definiendum>
+				<definiens id="0">a form or structure which identifies one or more objects</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Template Object is a group of associated slots .</sentence>
+				<definiendum id="0">Template Object</definiendum>
+				<definiens id="0">a group of associated slots</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The Architecture provides a 'shopping list ' of capabilities that may be included in the Application Requirement Document , as appropriate .</sentence>
+				<definiendum id="0">Architecture</definiendum>
+				<definiendum id="1">Requirement Document</definiendum>
+				<definiens id="0">provides a 'shopping list ' of capabilities that may be included in the Application</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>311 The Persistent Knowledge Repository is a common place ( storage device ) where information may be retained .</sentence>
+				<definiendum id="0">Persistent Knowledge Repository</definiendum>
+				<definiens id="0">a common place ( storage device ) where information may be retained</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Detection criteria may be stated as Boolean keyword criteria and negative operators to exclude documents .</sentence>
+				<definiendum id="0">Detection criteria</definiendum>
+				<definiens id="0">Boolean keyword criteria and negative operators to exclude documents</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The Extraction process shall use Templates , Fill Rules , Patterns or other methods in conjunction with Document Management , Detection and the Persistent Knowledge Repository to extract desired information from documents in Document Collections .</sentence>
+				<definiendum id="0">Extraction process</definiendum>
+			</definition>
+			<definition id="19">
+				<sentence>Annotation Collection list Correction Document attribute Attribute list Document collection Document list Document part tag Fill Rules Form 3 Document Form 4 Document Index ( inverted , general ) List ( general ) Persistent Knowledge Repository Item Pattern Profile Query Relevance value Saved item ( File ) SGML Tag Template Statement of Relevance User request command User output information This list is 343</sentence>
+				<definiendum id="0">Annotation Collection</definiendum>
+				<definiens id="0">general ) Persistent Knowledge Repository Item Pattern Profile Query Relevance value Saved item</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+			<definition id="0">
+				<sentence>A weight is calculated for each of the classes for each term , and the weight is the probability of the term occurrence in the class .</sentence>
+				<definiendum id="0">weight</definiendum>
+				<definiens id="0">the probability of the term occurrence in the class</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>score = og ( ) ( ni x log ( weighti ) ) nl\ [ ... Ilk\ [ Ilk+l\ [ ill n -number of words in document k = number of classes ni = number of terms from the i th set nk+l = number of words which do not match any set For routing , the score is the probability for each class calculated given the words in the document .</sentence>
+				<definiendum id="0">score</definiendum>
+				<definiens id="0">Ilk\ [ Ilk+l\ [ ill n -number of words in document k = number of classes ni = number of terms from the i th set nk+l = number of words which do not match any set For routing , the</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>idf and Cosine methods all calculate the weight using the number of classes which contain the term , while the Multinomial Distribution method calculates the weight using the term probabilities .</sentence>
+				<definiendum id="0">idf</definiendum>
+				<definiendum id="1">Cosine</definiendum>
+				<definiens id="0">methods all calculate the weight using the number of classes which contain the term</definiens>
+			</definition>
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>A notable exception is the new massive query expansion module used in routing experiments , which replaces a prototype extension used in the TREC-3 system .</sentence>
+				<definiendum id="0">notable exception</definiendum>
+				<definiens id="0">replaces a prototype extension used in the TREC-3 system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>OVERALL DESIGN Our information retrieval system consists of a traditional statistical backbone ( NIST 's PRISE system \ [ 2\ ] ) augmented with various natural language processing components that assist the system in database processing ( stemming , indexing , word and phrase clustering , selectional restrictions ) , and translate a user 's information request into an effective query .</sentence>
+				<definiendum id="0">retrieval system</definiendum>
+				<definiens id="0">consists of a traditional statistical backbone ( NIST 's PRISE system \ [ 2\ ] ) augmented with various natural language processing components that assist the system in database processing ( stemming , indexing , word and phrase clustering , selectional restrictions ) , and translate a user 's information request into an effective query</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>`` TIP : A Fast and Robust Parser for Natural Language . ''</sentence>
+				<definiendum id="0">TIP</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>The TIPSTER Architecture is a software architecture for providing Document Detection ( i.e. Information Retrieval and Message Routing ) and Information Extraction functions to text handling applications .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+				<definiens id="0">a software architecture for providing Document Detection ( i.e. Information Retrieval and Message Routing ) and Information Extraction functions to text handling applications</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The TIPSTER Architecture is intended to facilitate the deployment into the workplace of advanced Document Detection and Information Extraction software .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+				<definiens id="0">intended to facilitate the deployment into the workplace of advanced Document Detection and Information Extraction software</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>• Detection encompasses the technology which does text or message dissemination and text retrieval .</sentence>
+				<definiendum id="0">• Detection</definiendum>
+				<definiens id="0">encompasses the technology which does text or message dissemination and text retrieval</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>• Extraction encompasses the technology which identifies specific entities and the relationships between entities in free text .</sentence>
+				<definiendum id="0">Extraction</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Provide Application Program Interfaces ( APIs ) so that document detection and data extraction can either jointly or singly import , process , and export data • Allow the building of applications to handle one or more human languages .</sentence>
+				<definiendum id="0">Provide Application Program Interfaces</definiendum>
+				<definiens id="0">APIs ) so that document detection and data extraction can either jointly or singly import , process , and export data • Allow the building of applications to handle one or more human languages</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>An Architecture is a description of all functional activities to be performed to achieve the desired mission , the system { components } needed to perform the functions , and the designation of performance levels of those system { components } .</sentence>
+				<definiendum id="0">Architecture</definiendum>
+				<definiens id="0">a description of all functional activities to be performed to achieve the desired mission , the system { components } needed to perform the functions</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>An Application is a group of modules , both internal and external to the TIPSTER Architecture , that operates on documents to answer a User 's request for information from documents .</sentence>
+				<definiendum id="0">Application</definiendum>
+				<definiens id="0">a group of modules , both internal and external to the TIPSTER Architecture , that operates on documents to answer a User 's request for information from documents</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>A TIPSTER Application is an application which uses TIPSTER technology .</sentence>
+				<definiendum id="0">TIPSTER Application</definiendum>
+				<definiens id="0">an application which uses TIPSTER technology</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>A Component is an aggregation of software that satisfies an end use function , such as detection , extraction , clustering , or user interface .</sentence>
+				<definiendum id="0">Component</definiendum>
+				<definiens id="0">an aggregation of software that satisfies an end use function , such as detection , extraction , clustering , or user interface</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>A Detection Component is a component that selects documents from a collection or routes documents to a User .</sentence>
+				<definiendum id="0">Detection Component</definiendum>
+				<definiens id="0">a component that selects documents from a collection or routes documents to a User</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>An Extraction Component is a component that extracts information from documents .</sentence>
+				<definiendum id="0">Extraction Component</definiendum>
+				<definiens id="0">a component that extracts information from documents</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>A Clustering Component is a component that groups similar documents together without user-specified detection criteria .</sentence>
+				<definiendum id="0">Clustering Component</definiendum>
+				<definiens id="0">a component that groups similar documents together without user-specified detection criteria</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>A Module is a logical element in the design of a component .</sentence>
+				<definiendum id="0">Module</definiendum>
+				<definiens id="0">a logical element in the design of a component</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>A TIPSTER module is a module whose input and output specifications are defined in the TIPSTER Interface Control Document .</sentence>
+				<definiendum id="0">TIPSTER module</definiendum>
+				<definiens id="0">a module whose input and output specifications are defined in the TIPSTER Interface Control Document</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>224 The TIPSTER Architecture is a flexible , cost-effective , technology-independent framework for building textprocessing applications for Government analysts .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>The TIPSTER Configuration Control Board has the responsibility for determining compliance with and extensions to the Architecture .</sentence>
+				<definiendum id="0">TIPSTER Configuration Control Board</definiendum>
+				<definiens id="0">has the responsibility for determining compliance with and extensions to the Architecture</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The Architecture provides a means for handling many types of information within documents ( e.g. , different types of formatted text vs. free text ; text in different languages ; and text at different security levels ) .</sentence>
+				<definiendum id="0">Architecture</definiendum>
+				<definiens id="0">provides a means for handling many types of information within documents ( e.g. , different types of formatted text vs. free text ; text in different languages</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>226 The TIPSTER Architecture is general and designed for use in a variety of software and hardware environments .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+				<definiens id="0">general and designed for use in a variety of software and hardware environments</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The selection of the computing environment is the responsibility of the application• The TIPSTER ICD defines interfaces ( inputs and outputs ) between modules .</sentence>
+				<definiendum id="0">TIPSTER ICD</definiendum>
+				<definiens id="0">defines interfaces ( inputs and outputs ) between modules</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>( The TIPSTER Configuration Management Plan describes the procedures involved . )</sentence>
+				<definiendum id="0">TIPSTER Configuration Management Plan</definiendum>
+				<definiens id="0">describes the procedures involved</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>The TIPSTER Architecture gives the developer several sources of help .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+				<definiens id="0">gives the developer several sources of help</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>The End User is the person whose needs the application is designed to meet .</sentence>
+				<definiendum id="0">End User</definiendum>
+				<definiens id="0">the person whose needs the application is designed to meet</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>The End User is the person who most directly benefits from an operational , useful , efficient application .</sentence>
+				<definiendum id="0">End User</definiendum>
+				<definiens id="0">the person who most directly benefits from an operational , useful , efficient application</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>The basic TIPSTER Architecture distinguishes between two types of information : • information conveyed through the conventions of a particular natural language ( `` text '' ) , and • information conveyed through other conventions .</sentence>
+				<definiendum id="0">TIPSTER Architecture</definiendum>
+				<definiens id="0">distinguishes between two types of information : • information conveyed through the conventions of a particular natural language ( `` text '' ) , and • information conveyed through other conventions</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>A Document Part will be defined as a portion of a document which requires a particular type of processing , in order to exploit its information .</sentence>
+				<definiendum id="0">Document Part</definiendum>
+				<definiens id="0">a portion of a document which requires a particular type of processing</definiens>
+			</definition>
+</paper>
+
+		<paper id="1052">
+			<definition id="0">
+				<sentence>REC , in this context , is the number of correct tags divided by the number of possible tags .</sentence>
+				<definiendum id="0">REC</definiendum>
+				<definiens id="0">the number of correct tags divided by the number of possible tags</definiens>
+			</definition>
+</paper>
+
+		<paper id="1053">
+</paper>
+
+		<paper id="1038">
+</paper>
+
+		<paper id="1008">
+</paper>
+
+		<paper id="1059">
+			<definition id="0">
+				<sentence>Amorph recognizes NE items in two stages : dictionary lookup and rule application .</sentence>
+				<definiendum id="0">Amorph</definiendum>
+				<definiens id="0">recognizes NE items in two stages : dictionary lookup and rule application</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>These ~Wakao is a visiting researcher at NEC Information Technology Research Labs in 1996 key words are words which indicate that the segment is a part of a Named Entity item , or the segment is immediately before or after an NE item .</sentence>
+				<definiendum id="0">~Wakao</definiendum>
+				<definiens id="0">a visiting researcher at NEC Information Technology Research Labs in 1996 key words are words which indicate that the segment is a part of a Named Entity item , or the segment is immediately before or after an NE item</definiens>
+			</definition>
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>FASTUS is a cascade of finite-state transducers .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">a cascade of finite-state transducers</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>They also have a semantic part , which specifies how attributes are to be set in the output objects of the phase .</sentence>
+				<definiendum id="0">semantic part</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>`` FASTUS : A System for Extracting Information from Natural-Language Text '' , SKI Technical Note 519 , SRI International , Menlo Park , California , November 1992 .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">A System for Extracting Information from Natural-Language Text ''</definiens>
+			</definition>
+</paper>
+
+		<paper id="1061">
+</paper>
+
+		<paper id="1007">
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>The Advanced Data Extraction and Preparation via Tipster ( ADEPT ) Program \ [ Contract Number 95-F147400-000\ ] is a TIPSTER II demonstration project aimed at alleviating problems currently being faced by the Office of Information Resources ( OIR ) .</sentence>
+				<definiendum id="0">Advanced Data Extraction</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>OIR has been chartered to implement enterprise-wide systems to collect , archive , distribute , and manage information obtained from unclassified data sources typically called `` Open Sources . ''</sentence>
+				<definiendum id="0">OIR</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>ADEPT tags documents in a uniform fashion , using Standard Generalized Markup ( SGML ) according to OIR standards .</sentence>
+				<definiendum id="0">ADEPT</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Problem Detection and Diagnosis : ADEPT recognizes problems in the input documents and , offers deep diagnostics and suggestions to the Data Administrator for fixing those problems .</sentence>
+				<definiendum id="0">ADEPT</definiendum>
+				<definiens id="0">recognizes problems in the input documents and , offers deep diagnostics and suggestions to the Data Administrator for fixing those problems</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Error Handling and Document Viewing : ADEPT maintains a problem queue and provides GUI windows to aid the Data Administrator with both evaluating the source of problems ( data error or new/changed format ) 61 and resolving them .</sentence>
+				<definiendum id="0">ADEPT</definiendum>
+				<definiens id="0">maintains a problem queue and provides GUI windows to aid the Data Administrator with both evaluating the source of problems ( data error or new/changed format</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A Data Administrator can manually change the value of a tag and resubmit resolved document ( s ) for reprocessing by the system .</sentence>
+				<definiendum id="0">Data Administrator</definiendum>
+				<definiens id="0">s ) for reprocessing by the system</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Appendix C depicts the SGML tags which will be identified by ADEPT .</sentence>
+				<definiendum id="0">Appendix C</definiendum>
+				<definiens id="0">depicts the SGML tags which will be identified by ADEPT</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>ADEPT Document Parser separates the ROSE Feed stream into documents .</sentence>
+				<definiendum id="0">ADEPT Document Parser</definiendum>
+				<definiens id="0">separates the ROSE Feed stream into documents</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>For each problem SGML tag , DP generates diagnostic information .</sentence>
+				<definiendum id="0">DP</definiendum>
+				<definiens id="0">generates diagnostic information</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The DM is TIPSTER compliant and utilizes Open Database Connective ( ODBC ) to store document and document relevant information in the Sybase System 11 database .</sentence>
+				<definiendum id="0">DM</definiendum>
+				<definiens id="0">TIPSTER compliant and utilizes Open Database Connective ( ODBC ) to store document and document relevant information in the Sybase System 11 database</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Manager ( MISM ) The MISM process manages the quantitative MIS Statistical data used to monitor and evaluate ADEPT .</sentence>
+				<definiendum id="0">Manager</definiendum>
+				<definiendum id="1">MISM process</definiendum>
+				<definiens id="0">manages the quantitative MIS Statistical data used to monitor and evaluate ADEPT</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The problem queue is a visual representation of all problem document information contained in the database .</sentence>
+				<definiendum id="0">problem queue</definiendum>
+				<definiens id="0">a visual representation of all problem document information contained in the database</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The document viewer allows one to modify problem tags based on system supplied corrective actions .</sentence>
+				<definiendum id="0">document viewer</definiendum>
+				<definiens id="0">allows one to modify problem tags based on system supplied corrective actions</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The SAM process provides the capability to create , modify , and associate mapping templates with a specific data source .</sentence>
+				<definiendum id="0">SAM process</definiendum>
+			</definition>
+			<definition id="14">
+				<sentence>A mapping template contains the directions on how to parse a specific data source .</sentence>
+				<definiendum id="0">mapping template</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>Once created , SAM allows the Data Administrator to test their mapping template changes against sample files of documents .</sentence>
+				<definiendum id="0">SAM</definiendum>
+				<definiens id="0">allows the Data Administrator to test their mapping template changes against sample files of documents</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The AM manages the routine system administration of ADEPT .</sentence>
+				<definiendum id="0">AM</definiendum>
+				<definiens id="0">manages the routine system administration of ADEPT</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>AM provides login control and user permissions , maintains the system 's security and audit log , and enables backups/restores of the system databases .</sentence>
+				<definiendum id="0">AM</definiendum>
+				<definiens id="0">provides login control and user permissions , maintains the system 's security and audit log , and enables backups/restores of the system databases</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>The OM manages the output of successfully tagged documents for ADEPT .</sentence>
+				<definiendum id="0">OM</definiendum>
+				<definiens id="0">manages the output of successfully tagged documents for ADEPT</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>For each document , OM walks through the annotations ( SGML tags ) accessing their associated SGML tag value .</sentence>
+				<definiendum id="0">OM</definiendum>
+				<definiens id="0">walks through the annotations ( SGML tags ) accessing their associated SGML tag value</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>ADDED KEYWORDS : GOLD ; MINERAL EXPLORATION ; INDONESIA CORPORATE NAME : Bre-X Minerals Ltd. ( T/BRH ) Copyright : The Financial Post &lt; /BODY &gt; &lt; /DOC &gt; 67 APPENDIX C : SGML TAG LISTING SGML Tag Description &lt; DOC &gt; Signals start of SGML tagged document &lt; SEQ &gt; Unique ID # of document , internally generated &lt; DATE &gt; Date document received by ROSE-Feed I &lt; TITLE &gt; Title of document &lt; AUTHOR &gt; Author/editor of document &lt; PUBNAME &gt; Name of publication ( e.g. , New York ~mes ) &lt; DOCTYPE &gt; Type of information .</sentence>
+				<definiendum id="0">ADDED KEYWORDS</definiendum>
+				<definiendum id="1">INDONESIA CORPORATE NAME</definiendum>
+				<definiens id="0">SGML TAG LISTING SGML Tag Description &lt; DOC &gt; Signals start of SGML tagged document &lt; SEQ &gt; Unique ID # of document , internally generated &lt; DATE &gt; Date document received by ROSE-Feed I &lt; TITLE &gt; Title of document &lt; AUTHOR &gt; Author/editor of document &lt; PUBNAME &gt; Name of publication</definiens>
+			</definition>
+</paper>
+
+		<paper id="1060">
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>American Express , the large financial institution , also known as Amex , will open an office in Peking .</sentence>
+				<definiendum id="0">American Express</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The corpus for the MUC6 Template Element task consists of approximately 200 documents for development ( preand post-dry-run ) and 100 documents for scoring .</sentence>
+				<definiendum id="0">corpus for the MUC6 Template Element task</definiendum>
+				<definiens id="0">consists of approximately 200 documents for development ( preand post-dry-run</definiens>
+			</definition>
+</paper>
+
+		<paper id="1046">
+			<definition id="0">
+				<sentence>The multilingual track represents an extension of the adhoc task to a second language ( Spanish ) .</sentence>
+				<definiendum id="0">multilingual track</definiendum>
+				<definiens id="0">represents an extension of the adhoc task to a second language ( Spanish )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>First , there was a desire to allow a wide range of query construction methods by keeping the topic ( the need statement ) distinct from the query ( the actual text submitted to the system ) .</sentence>
+				<definiendum id="0">topic</definiendum>
+				<definiens id="0">the need statement ) distinct from the query ( the actual text submitted to the system )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>379 Sample TREC-3 topic &lt; num &gt; Number : 168 &lt; title &gt; Topic : Financing AMTRAK &lt; desc &gt; Description : A document will address the ngle of the Federal Government in financing the operation of the National Railroad Transportation Corporation ( AMTRAK ) .</sentence>
+				<definiendum id="0">Description</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>&lt; narr &gt; Narrative : A relevant document must provide information on the government 's responsibility to make AMTRAK an economically viable enti~ .</sentence>
+				<definiendum id="0">Narrative</definiendum>
+				<definiens id="0">A relevant document must provide information on the government 's responsibility to make</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The x axis plots the recall values at fixed levels of recall , where Recall = number of relevant items retrieved total number of relevant items in collection The y axis plots the average precision values at those given recall values , where precision is calculated by Precision = number of relevant items retrieved total number of items retrieved These curves represent averages over the 50 topics .</sentence>
+				<definiendum id="0">x axis</definiendum>
+				<definiens id="0">plots the recall values at fixed levels of recall , where Recall = number of relevant items retrieved total number of relevant items in collection The y axis plots the average precision values at those given recall values</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>cityal -City University , London ( `` Okapi at TREC-3 '' by S.E. Robertson , S. Walker , S. Jones , M.M. HancockBeaulieu and M. Gatford ) used a probabilistic term weighting scheme similar to that used in TREC-2 , but expanded the topics by up to 40 terms ( average around 20 ) automatically selected from the top 30 documents retrieved .</sentence>
+				<definiendum id="0">London</definiendum>
+				<definiens id="0">a probabilistic term weighting scheme similar to that used in TREC-2 , but expanded the topics by up to 40 terms ( average around 20</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Their basic term weighting formula ( and query processing ) was simplified from that used in TREC-2 , and they also used passage retrieval and whole document information in their ranking .</sentence>
+				<definiendum id="0">basic term weighting formula</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>westpl -West Publishing Company ( `` TREC-3 Ad Hoc Retrieval and Routing Experiments using the WIN System '' by Paul Thompson , Howard Turtle , Bokyung Yang and James Flood ) used their commercial product ( WIN ) which is based on the same inference method used in 1NQIO1 .</sentence>
+				<definiendum id="0">westpl -West Publishing Company</definiendum>
+				<definiens id="0">using the WIN System '' by Paul Thompson , Howard Turtle , Bokyung Yang and James Flood ) used their commercial product ( WIN ) which is based on the same inference method used in 1NQIO1</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>INQUERY and Cornell use overlapped passages of fixed length ( 200 words ) as compared to City 's non-overlapped passages of 4 to 30 paragraphs in length .</sentence>
+				<definiendum id="0">INQUERY</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>In comparison to the ComeU expansion results ( CrnlEA ) , the main problems appear to be missed relevant documents for all 17 of the topics where the Cornell results were superior .</sentence>
+				<definiendum id="0">CrnlEA</definiendum>
+				<definiens id="0">missed relevant documents for all 17 of the topics where the Cornell results were superior</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>VTc2s2 -Virginia Tech ( `` Combination of Multiple Searches '' by Joseph A. Shaw and Edward A. Fox ) used a combination of multiple types of queries , with 2 types of natural language vector-space queries and 3 types of manually constructed P-Norm ( soft Boolean ) queries .</sentence>
+				<definiendum id="0">VTc2s2 -Virginia Tech ( `` Combination of Multiple Searches</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>The Virginia Tech group ( VTc2s2 ) combined the results of up to 5 different types of query constraction ( 3 P-Norms with different P values and 2 vector-space , one short and one manually expanded ) to create their results .</sentence>
+				<definiendum id="0">Virginia Tech group</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>pircsl -Queens College , CUNY ( `` TREC-4 Ad-Hoc , Routing Retrieval and Filtering Experiments using PIRCS '' by K.L. Kwok and L. Gmnfeld ) used a spreading activation model on subdocuments ( 550-word chunks ) .</sentence>
+				<definiendum id="0">CUNY ( `` TREC-4 Ad-Hoc</definiendum>
+				<definiens id="0">Filtering Experiments using PIRCS '' by K.L. Kwok and L. Gmnfeld ) used a spreading activation model on subdocuments ( 550-word chunks )</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>cityal -City University , London ( `` Okapi at TREC-4 '' by S.E. Robertson , S. Walker , M.M. Beaulieu , M. Gatford and A , Payne '' ) used a probabilistic term weighting scheme similar to that used in TREC-3 .</sentence>
+				<definiendum id="0">London</definiendum>
+				<definiens id="0">a probabilistic term weighting scheme similar to that used in TREC-3</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>pircs2 -Queens College , CUNY ( `` TREC-4 Ad-Hoc , Routing Retrieval and Filtering Experiments using PIRCS '' by K.L. Kwok and L. Grunfeld ) is a manual modification of the automatic queries in pircsl .</sentence>
+				<definiendum id="0">CUNY ( `` TREC-4 Ad-Hoc</definiendum>
+				<definiens id="0">a manual modification of the automatic queries in pircsl</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>The basic retrieval system is a logistic regression model that combines information from 6 measures of document relevancy based on term matches and term distribution .</sentence>
+				<definiendum id="0">basic retrieval system</definiendum>
+				<definiens id="0">a logistic regression model that combines information from 6 measures of document relevancy based on term matches and term distribution</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>DCUSPO -Dublin City University ( `` TREC-4 Experiments at Dublin City University : Thresholding Posting Lists , Query Expansion with WordNet and POS Tagging in Spanish '' by Alan F. Smeaton , Fergus Kelledy and Ruairi O'Donnell ) used the NMSU part-of-speech tagger ( at NMSU ) as input to the SMART system .</sentence>
+				<definiendum id="0">DCUSPO -Dublin City University</definiendum>
+			</definition>
+			<definition id="17">
+				<sentence>The second pair ( the second and fifth bars ) correspond ~o the balanced ( medium precision/medium recall ) run , and the third pair ( high recall/low precision run ) are shown in the middle two bars .</sentence>
+				<definiendum id="0">second pair</definiendum>
+				<definiens id="0">the second and fifth bars ) correspond ~o the balanced ( medium precision/medium recall</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>UoJTol -University of Toronto ( `` Is Recall Relevant ?</sentence>
+				<definiendum id="0">UoJTol -University of Toronto ( ``</definiendum>
+			</definition>
+</paper>
+
+	</volume>

@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J05">
+
+		<paper id="2005">
+			<definition id="0">
+				<sentence>Cause–effect because ; and so Violated expectation although ; but ; while Condition if . . . ( then ) ; as long as ; while Similarity and ; ( and ) similarly Contrast by contrast ; but Temporal sequence ( and ) then ; first , second , ... ; before ; after ; while Attribution accordingto ... ; ... said ; claimthat ... ; maintainthat ... ; statedthat ... Example for example ; for instance Elaboration also ; furthermore ; in addition ; note ( furthermore ) that ; ( for , in , on , against , with , ... ) which ; who ; ( for , in , on , against , with , ... ) whom Generalization in general However , we also assumed that contentful coordinating and subordinating conjunctions ( cf. Table 1 ) can delimit discourse segments .</sentence>
+				<definiendum id="0">note ( furthermore</definiendum>
+				<definiens id="0">for , in , on , against , with , ... ) which ; who</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In example ( 6 ) ( constructed ) , discourse segment 2 states an event that will take place if the event described by discourse segment 1 also takes place : ( 6 ) Condition In a third type of causal relation , the violated expectation relation ( also violated expectation in Hobbs [ 1985 ] ) , a causal relation between two discourse segments that normally would be present is absent .</sentence>
+				<definiendum id="0">] )</definiendum>
+				<definiens id="0">a causal relation between two discourse segments that normally</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>In example ( 7 ) ( constructed ) , discourse segment 1 normally would be a cause for everyone’s being happy ; this expectation is violated by what is stated by discourse segment 2 : ( 7 ) Violated expectation Other possible coherence relations include similarity ( parallel in Hobbs [ 1985 ] ) or contrast ( also contrast in Hobbs [ 1985 ] ) relations , in which similarities or contrasts are determined between corresponding sets of entities or events , such as between discourse segments 1 and 2 in example ( 8 ) ( constructed ) and discourse segments 1 and 2 in example ( 9 ) ( constructed ) , respectively : ( 8 ) Similarity ( 9 ) Contrast Discourse segments might also elaborate ( also elaboration in Hobbs [ 1985 ] ) on other sentences , as in example ( 10 ) ( constructed ) , in which discourse segment 2 elaborates on discourse segment 1 : ( 10 ) Elaboration late December .</sentence>
+				<definiendum id="0">] ) relations</definiendum>
+				<definiens id="0">in which similarities or contrasts are determined between corresponding sets of entities or events</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Hobbs ( 1985 ) Our annotation scheme Occasion Temporal sequence Cause Cause–effect : cause stated first , then effect ; directionality indicated by directed arcs in a coherence graph Explanation Cause–effect : effect stated first , then cause ; directionality indicated by directed arcs in a coherence graph — Condition Evaluation Elaboration Background Elaboration Exemplification : example stated first , then Example general case ; directionality indicated by directed arcs in a coherence graph Exemplification : general case stated first , then Generalization example ; directionality indicated by directed arcs in a coherence graph Elaboration Elaboration Parallel Similarity Contrast Contrast Violated expectation Violated expectation — Attribution — Same a114 Attribution : from the discourse segment stating the source to the attributed statement a114 Temporal sequence : from the discourse segment stating the event that happened first to the discourse segment stating the event that happened second This definition of directionality is related to Mann and Thompson’s ( 1988 ) notion of nucleus and satellite nodes ( where the nodes can represent [ groups of ] discourse segments ) : For asymmetrical or directed relations , the directionality is from satellite to nucleus node ; by contrast , symmetrical or undirected relations hold between two nucleus nodes .</sentence>
+				<definiendum id="0">directionality indicated</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>If these discourse segments are part of a text that has five discourse segments total ( i.e. , 1 to 5 ) , has to follow from any discourse segment x to any discourse segment y to which discourse segment x is related via a coherence relation .</sentence>
+				<definiendum id="0">total</definiendum>
+				<definiens id="0">part of a text that has five discourse segments</definiens>
+				<definiens id="1">has to follow from any discourse segment x to any discourse segment y to which discourse segment x is related via a coherence relation</definiens>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>We use the following evaluation measures : Precision is the number of correct assignments divided by the number of assignments , recall is the number of correct assignments divided by the number of anaphors , and F-measure is based on equal weighting of precision and recall .</sentence>
+				<definiendum id="0">Precision</definiendum>
+				<definiens id="0">the number of correct assignments divided by the number of assignments</definiens>
+				<definiens id="1">the number of correct assignments divided by the number of anaphors</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The second variation ( baselineSTR v2 ) uses the replacements for named entities for string matching ; again a back-off version ( baselineSTR ∗ v2 ) uses a recency back-off .</sentence>
+				<definiendum id="0">baselineSTR v2 )</definiendum>
+				<definiens id="0">uses the replacements for named entities for string matching ; again a back-off version ( baselineSTR ∗ v2 ) uses a recency back-off</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>If exactly one element of A WM anaid matches ana , select this one and stop ; if several match ana , select the closest to ana within these matching antecedents and stop ; if none match , select the closest to ana within A WM anaid and stop ; ( iv ) otherwise , if A WM anaid is empty , make no assigment and stop .</sentence>
+				<definiendum id="0">WM anaid</definiendum>
+				<definiendum id="1">WM anaid</definiendum>
+				<definiens id="0">the closest to ana within these matching antecedents and stop ; if none match , select the closest to ana within A WM anaid and stop</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , BNC scores are again in general much lower than Web scores , as measured by means , medians , and zero scores .</sentence>
+				<definiendum id="0">BNC scores</definiendum>
+				<definiens id="0">measured by means , medians , and zero scores</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>On the other hand , a semantic requirement ( also known as selection restriction ) is characterized by both a position and a semantic condition , which presupposes a syntactic one .</sentence>
+				<definiendum id="0">semantic requirement</definiendum>
+				<definiendum id="1">semantic condition</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A pair like bbright , approveÀ , lawÀ matches those expressions containing a form of lemma law ( e.g. , law , laws , Law , Laws ) appearing to the right of the verb approve ( to be more precise , to the right of any form of lemma approve ) .</sentence>
+				<definiendum id="0">lawÀ</definiendum>
+				<definiens id="0">matches those expressions containing a form of lemma law ( e.g. , law , laws</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Expressions ( 7 ) and ( 8 ) introduce the linguistic contexts in which agreement denotes a document containing legal information .</sentence>
+				<definiendum id="0">Expressions</definiendum>
+				<definiens id="0">the linguistic contexts in which agreement denotes a document containing legal information</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Given a requirement bbloc , wÀ , condÀ , we define a semantic condition , cond , as the set of words that can occur in position bloc , wÀ .</sentence>
+				<definiendum id="0">cond</definiendum>
+				<definiens id="0">the set of words that can occur in position bloc</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The grammatical relations between the two words are expressed by both robj , which stands for the nominal object appearing to the right of the verb , 2 and mod , which stands for the noun-adjective dependency .</sentence>
+				<definiendum id="0">mod</definiendum>
+				<definiens id="0">stands for the nominal object appearing to the right of the verb</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Relation lobj designates the nominal object appearing to the left of verb , robj represents the nominal object appearing to the right of the verb , iobj_prepname introduces a nominal after a verb and a preposition , aobj_prepname represents a nominal after an adjective and a preposition , prepname corresponds to a nominal following a noun and a preposition , and mod refers to the adjective modification of nouns .</sentence>
+				<definiendum id="0">Relation lobj</definiendum>
+				<definiendum id="1">aobj_prepname</definiendum>
+				<definiens id="0">designates the nominal object appearing to the left of verb , robj represents the nominal object appearing to the right of the verb</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Dependencies Contexts ( robj ; ratify , , law j ) brobj_down , ratifyÀ brobj_up , lawÀ ( mod ; dinner , , long j ) bmod_down , dinnerÀ bmod_up , longÀ as either a direct object or a subject .</sentence>
+				<definiendum id="0">Dependencies Contexts</definiendum>
+				<definiens id="0">either a direct object or a subject</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Attachment Heuristic RA : An attachment heuristic based on right association ( RA ) is applied to chunk sequences in order to combine pairs of chunks .</sentence>
+				<definiendum id="0">Attachment Heuristic RA</definiendum>
+				<definiens id="0">An attachment heuristic based on right association</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>biobj_em_down , citar : vppÀ ( be cited in [ _ ] ) ( nota53 ) ( parecer7 ) ( conclusa‹ o3 ) ( informac $ a‹ o2 ) ( regulamento1 ) ( artigo1 ) ( apoio 1 ) ( sentido 1 ) note , report , conclusion , information , regulation , article , support , sense biobj_em_up , parecerÀ ( afirmar : vpp9 ) ( defender : vpp7 ) ( citar : vpp7 ) ( analisar : vpp7 ) ( escrever3 ) ( reafirmar : vpp2 ) ( esclarecer : vpp1 ) ( notar : vpp1 ) ( publicar : vpp1 ) ( concluir : vpp1 ) ( assinalar : vpp1 ) ( [ _ ] in the report ) be affirmed , be defended , be cited , be analyzed , writer , be affirmed again , be clarified , be noted , be published , be concluded , be pointed out prepositional locution nosentidode ( in the sense that ) , which is attached to the whole sentence .</sentence>
+				<definiendum id="0">writer</definiendum>
+				<definiens id="0">apoio 1 ) ( sentido 1 ) note , report , conclusion , information , regulation , article , support , sense biobj_em_up , parecerÀ ( afirmar : vpp9 ) ( defender : vpp7 ) ( citar : vpp7 ) ( analisar : vpp7 ) ( escrever3 ) ( reafirmar : vpp2 ) ( esclarecer : vpp1 ) ( notar : vpp1 ) ( publicar : vpp1 ) ( concluir : vpp1 ) ( assinalar : vpp1 )</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>So given a cluster of positions , the set of its features is basically defined as the union of their co-occurring words .</sentence>
+				<definiendum id="0">cluster of positions</definiendum>
+				<definiens id="0">the union of their co-occurring words</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The weighted Jaccard similarity ( WJ ) between two words , w 1 and w 2 , is computed by WJðw 1 , w 2 Þ¼ P i minðAssocðw 1 , p i Þ , Assocðw 2 , p i ÞÞ P i maxðAssocðw 1 , p i Þ , Assocðw 2 , p i ÞÞ ð20Þ In ( 20 ) , the weight Assoc is the result of multiplying a local and a global weight , whose definitions are analogous to those given in formulas ( 17 ) and ( 18 ) .</sentence>
+				<definiendum id="0">weight Assoc</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>secreta ¤ rio ( secretary ) SUBCAT &amp; bde_up , secreta´rioÀ ( [ _ ] of secretary ) = cargo , carreira , categoria , compete “ ncia , escala‹ o , estatuto , funa $ a‹ o , remuneraca‹ o , trabalho , vencimento ( post , career , category , qualification , rank , status , function , remuneration , job , salary ) &amp; bde_down , secreta´rioÀ ( secretary of [ _ ] ) = administrac $ a‹ o , assembleia , autoridade , conselho , direcc $ a‹ o , empresa , entidade , estado , governo , instituto , juiz , ministro , ministe ¤ rio , presidente , servic $ o , tribunalo ¤ rga‹ o ( administration , assembly , authority , council direction , company , entity , state , government , institute , judge , minister , ministery , president , service , tribunal organ ) &amp; biobj_a_up , secreta´rioÀ ( [ _ ] to the secretary ) = aludir , aplicar : ref1 , atender , atribuir , concernir , corresponder , determinar , presidir , recorrer , referir : ref1 , respeitar ( allude , apply , attend , assign , concern , correspond , determine , resort , refer , relate ) &amp; biobj_a_up , secreta´rioÀ ( [ _ ] to the secretary ) = caber , competir , conceder : vpp , conferir , confiar : vpp , dirigir : vpp , incumbir , pertencer ( concern , be incumbent , be conceded , confer , be trusted , be sent , be incumbent , belong ) &amp; biobj_por_up , secreta´rioÀ ( [ _ ] by the secretary ) = assinar : vpp , conceder : vpp , conferir : vpp , homologar : vpp , louvar : vpp , subscrito ( be signed , be conceded , be conferred , be homologated , be complimented , subscribe ) &amp; blobj_up , secreta´rioÀ ( the secretary [ _ ] ) = definir , estabelecer , fazer , fixar , indicar , prever , referir ( define , establish , make , fix , indicate , foresee , refer ) SENSE &amp; administrac $ a‹ o , assembleia , autoridade , chefe , comandante , comissa‹ o , conselho , director , direcc $ a‹ o , entidade , estado , funciona ¤ rio , gabinete , governador , governo , instituto , juiz , membro , ministro , ministe ¤ rio , presidente , provedor , secreteria , secreta ¤ rio , senhor , servic $ o , tribunal , o ¤ rga‹ o ( administration , assembly , authority , chief , commander , commission , council , director , direction , entity , state , official , cabinet , governor , government , institute , judge , member , minister , ministry , president , purveyor , secretary , secretary , mister , service , tribunal , organ ) &amp; primeiro-ministro , autoridade , entidade , estado , membro , ministro , ministe ¤ rio , presidente , secreta ¤ rio ( prime minister , authority , entity , state , member , minister , ministry , president , secretary ) Gamallo , Agustini , and Lopes Clustering Syntactic Positions The learning method provides a lexicon with syntactic and semantic information .</sentence>
+				<definiendum id="0">biobj_a_up , secreta´rioÀ</definiendum>
+				<definiens id="0">entity , state , government , institute , judge , minister , ministery , president , service , tribunal organ ) &amp; biobj_a_up , secreta´rioÀ ( [ _ ] to the secretary ) = aludir , aplicar : ref1 , atender , atribuir , concernir , corresponder , determinar , presidir , recorrer , referir : ref1 , respeitar ( allude , apply , attend , assign , concern , correspond , determine</definiens>
+				<definiens id="1">authority , chief , commander , commission , council , director , direction , entity , state , official , cabinet , governor , government , institute , judge , member , minister , ministry , president , purveyor , secretary , secretary , mister , service , tribunal , organ ) &amp; primeiro-ministro , autoridade , entidade</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>SUBCAT is the repository of syntactic and semantic requirements .</sentence>
+				<definiendum id="0">SUBCAT</definiendum>
+				<definiens id="0">the repository of syntactic and semantic requirements</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Taking into account these variables , precision is defined as the number of true decisions suggested by the system divided by the number of total suggestions .</sentence>
+				<definiendum id="0">precision</definiendum>
+				<definiens id="0">the number of true decisions suggested by the system divided by the number of total suggestions</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>CR Decision A : biobj_ por_D , assistirÀ requires representante : YES biobj_ por_H , represantanteÀ requires assistir : YES Result : tp Decision B : biobj_ por_D , assistirÀ requires Estado-Membro : NO biobj_ por_H , Estado–MembroÀ requires assistir : NO bde_D , representanteÀ requires Estado-Membro : YES bde_H , Estado – MembroÀ requires representante : YES Result : tp LA sim Decision A : LA sim ( biobj_ por_D , assistirÀ , representante ) : 0 LA sim ( biobj_ por_H , representanteÀ , assistir ) : 0 Result : np Decision B : LA sim ( biobj_ por_D , assistirÀ , Estado-Membro ) : 0 LA sim ( biobj_ por_H , Estado – MembroÀ , assistir ) : 0 LA sim ( bde_D , representanteÀ , Estado-Membro ) : 136.70 LA sim ( bde_H , Estado – MembroÀ , representante ) : 176.38 Result : tp RA Decision A : [ vp assistir [ pp por o representate ] ] : YES Result : tp Decision B : [ pp por o representate [ pp de os Estados-Membros ] ] : YES Result : tp Gamallo , Agustini , and Lopes Clustering Syntactic Positions Concerning the differences among the three methods , Table 11 averages the results of the three methods over the two corpora and the three phrase sequences .</sentence>
+				<definiendum id="0">np Decision</definiendum>
+				<definiendum id="1">tp Decision B</definiendum>
+				<definiens id="0">tp RA Decision A : [ vp assistir</definiens>
+			</definition>
+</paper>
+
+		<paper id="2004">
+			<definition id="0">
+				<sentence>Litotes is a special case in which a word is replaced by the negation of its opposite ( e.g. , not bad for ‘good’ ) .</sentence>
+				<definiendum id="0">Litotes</definiendum>
+				<definiens id="0">a special case in which a word is replaced by the negation of its opposite ( e.g.</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>One way of testing this rule is by plotting log ( N s ) against s , where N s is the number of words in the dictionary with exactly s senses .</sentence>
+				<definiendum id="0">N s</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>In the following section we present a mathematical model which explains the nearexponential distribution of word senses observed in English and French dictionaries .</sentence>
+				<definiendum id="0">mathematical model</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Let L D be a language as defined by the set of 〈word , sense〉 pairs in a 235 Computational Linguistics Volume 31 , Number 2 dictionary D. We consider the evolution of the language L D over time .</sentence>
+				<definiendum id="0">L D</definiendum>
+				<definiens id="0">a language as defined by the set of 〈word , sense〉 pairs in a 235 Computational Linguistics Volume 31 , Number 2 dictionary D. We consider the evolution of the language L D over time</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>We can now state a third assumption : to a new sense for a word w by association is proportional to the number of concepts represented by w in L D , which is assumed to be on average 1 +α ( s − 1 ) , where s is the number of senses of w and α is a constant .</sentence>
+				<definiendum id="0">s</definiendum>
+				<definiens id="0">a constant</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We can also express δ s , the expected net increase in N s , in terms of the probabilities p in ( s ) andp out ( s ) , which gives the following equation : ( 1 − 2t ) P ( s ) /m = −p in ( s ) − p out ( s ) + p in ( s − 1 ) + p out ( s + 1 ) ( 3 ) since N s is decremented when a word with s senses gains or loses a sense and N s is incremented when a word with s − 1 senses gains a sense or a word with s + 1 senses loses a sense .</sentence>
+				<definiendum id="0">N s</definiendum>
+				<definiens id="0">s ) /m = −p in ( s ) − p out ( s ) + p in ( s − 1 ) + p out ( s + 1</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Table 2 Average number m of meanings listed per word , concept-creation factor α , and average number c of concepts per word for various dictionaries .</sentence>
+				<definiendum id="0">meanings</definiendum>
+				<definiens id="0">listed per word , concept-creation factor α , and average number c of concepts per word for various dictionaries</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Basque is a well-known language isolate .</sentence>
+				<definiendum id="0">Basque</definiendum>
+				<definiens id="0">a well-known language isolate</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>In our own experiments with grammatical relation data extracted by a Robust Accurate Statistical Parser ( RASP ) ( Briscoe and Carroll 1995 ; Carroll and Briscoe 1996 ) from the British National Corpus ( BNC ) , we found that 14 % of noun-verb direct-object co-occurrence tokens and 49 % of noun-verb direct-object co-occurrence types in one half of the data set were not seen in the other half .</sentence>
+				<definiendum id="0">National Corpus</definiendum>
+				<definiens id="0">direct-object co-occurrence types in one half of the data set were not seen in the other half</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , a cottage is a type of building and a brother is a type of person , and so the co-occurrence of any type of building and any type of person might increase the probability that the PP in example ( 1 ) attaches to the verb .</sentence>
+				<definiendum id="0">brother</definiendum>
+				<definiens id="0">a type of person , and so the co-occurrence of any type of building and any type of person might increase the probability that the PP in example ( 1 ) attaches to the verb</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>When B occurs in contexts that word A does not , the result is a loss of precision , but B may remain a high-recall neighbor .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">occurs in contexts that word A does not , the result is a loss of precision , but B may remain a high-recall neighbor</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>This work extends the previous work by also considering weighted mutual information ( WMI ) ( Fung and McKeown 1997 ) , the t-test ( Manning and Sch ¨utze 1999 ) , the z-test ( Fontenelle et al. 1994 ) , and an approximation to the log-likelihood ratio ( Manning and Sch ¨utze 1999 ) as weight functions .</sentence>
+				<definiendum id="0">t-test</definiendum>
+				<definiendum id="1">z-test</definiendum>
+				<definiens id="0">the previous work by also considering weighted mutual information ( WMI ) ( Fung and McKeown 1997 ) , the</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The shared features of word w 1 and word w 2 are referred to as the set of True Positives , TP ( w 1 , w 2 ) , which will be abbreviated to TP in the rest of this article : TP ( w 1 , w 2 ) = F ( w 1 ) ∩ F ( w 2 ) ( 2 ) The precision of w 1 ’s retrieval of w 2 ’s features is the proportion of w 1 ’s features that are shared by both words , where each feature is weighted by its relative importance according to w 1 : P add ( w 1 , w 2 ) = summationtext TP D ( w 1 , c ) summationtext F ( w 1 ) D ( w 1 , c ) ( 3 ) The recall of w 1 ’s retrieval of w 2 ’s features is the proportion of w 2 ’s features that are shared by both words , where each feature is weighted by its relative importance according to w 2 : R add ( w 1 , w 2 ) = summationtext TP D ( w 2 , c ) summationtext F ( w 2 ) D ( w 2 , c ) ( 4 ) 445 Computational Linguistics Volume 31 , Number 4 Table 1 Weight functions .</sentence>
+				<definiendum id="0">P add</definiendum>
+				<definiens id="0">the proportion of w 2 ’s features that are shared by both words , where each feature is weighted by its relative importance according to w 2 : R add</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>H 0 : P ( c|w ) = p = P ( c|¬w ) ( 9 ) H 1 : P ( c|w ) = p 1 negationslash= p 2 = P ( c|¬n ) ( 10 ) If f ( w , c ) is the frequency of w and c occurring together , f ( w ) is the total frequency of w occurring in any context , f ( c ) is the total frequency of c occurring with any word , and N is the grand total of co-occurrences , then the log-likelihood ratio can be written : Logλ ( w , c ) = −2 .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the total frequency of w occurring in any context</definiens>
+				<definiens id="1">the total frequency of c occurring with any word , and</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>First , we define an extent function , E ( w , c ) , which is the extent to which w 1 goes with c and which may be , but is not necessarily , the same as the weight function D ( n , w ) .</sentence>
+				<definiendum id="0">c )</definiendum>
+				<definiens id="0">the extent to which w 1 goes with c and which may be</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Precision and recall can be computed once for every pair of words ( and every model ) whereas similarity depends on the values of β and γ .</sentence>
+				<definiendum id="0">Precision</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>Jaccard’s Coefficient ( Salton and McGill 1983 ) , also known as the Tanimoto Coefficient ( Resnik 1993 ) , is another popular combinatorial similarity measure .</sentence>
+				<definiendum id="0">Jaccard’s Coefficient ( Salton</definiendum>
+				<definiens id="0">McGill 1983 ) , also known as the Tanimoto Coefficient ( Resnik 1993 ) , is another popular combinatorial similarity measure</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>It can be defined as the proportion of features belonging to either word that are shared by both words ; that is , the ratio between the size of the intersection of the feature sets and the size of the union of feature sets : sim jacc ( w 1 , w 2 ) = |F ( w 1 ) ∩ F ( w 2 ) | |F ( w 1 ) ∪ F ( w 2 ) | ( 31 ) As with the Dice Coefficient , the similarity between words with no shared cooccurrences is zero and the similarity between words with identical features is 1 .</sentence>
+				<definiendum id="0">sim jacc</definiendum>
+				<definiens id="0">the proportion of features belonging to either word that are shared by both words ; that is , the ratio between the size of the intersection of the feature sets and the size of the union of feature sets</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Hindle ( 1990 ) proposed an MI-based measure , which he used to show that nouns could be reliably clustered based on their verb co-occurrences .</sentence>
+				<definiendum id="0">MI-based measure</definiendum>
+				<definiens id="0">he used to show that nouns could be reliably clustered based on their verb co-occurrences</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>An underlying assumption of this approach is that WordNet is a gold standard for semantic similarity , which , as is discussed by Weeds ( 2003 ) , is unrealistic .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiens id="0">a gold standard for semantic similarity</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>In previous work ( Weeds and Weir 2003b ) , we used the WordNet-based similarity measure first proposed in Lin ( 1997 ) and used in Lin ( 1998a ) : wn sim lin ( w 1 , w 2 ) = max c 1 ∈S ( w 1 ) ∧c 2 ∈S ( w 2 ) parenleftbigg max c∈sup ( c 1 ) ∩sup ( c 2 ) 2logP ( c ) log ( P ( c 1 ) ) + log ( P ( c 2 ) ) parenrightbigg ( 49 ) where S ( w ) is the set of senses of the word w in WordNet , sup ( c ) is the set of possibly indirect super-classes of concept c in WordNet , and P ( c ) is the probability that a randomly selected word refers to an instance of concept c ( estimated over some corpus such as SemCor [ Miller et al. 1994 ] ) .</sentence>
+				<definiendum id="0">sup ( c )</definiendum>
+				<definiendum id="1">P ( c )</definiendum>
+				<definiens id="0">c ) log ( P ( c 1 ) ) + log ( P ( c 2 ) ) parenrightbigg ( 49 ) where S ( w ) is the set of senses of the word w in WordNet</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>However , in other research ( Budanitsky and Hirst 2001 ; Patwardhan , Banerjee , and Pedersen 2003 ; McCarthy , Koeling , and Weeds 2004 ) , it has been shown that the distance measure of Jiang and Conrath ( 1997 ) ( referred to herein as the “JC measure” ) is a superior WordNet-based semantic similarity measure : wn dist JC ( w 1 , w 2 ) = max c 1 ∈S ( w 1 ) ∧c 2 ∈S ( w 2 ) parenleftbigg max c∈sup ( c 1 ) ∩sup ( c 2 ) 2log ( c ) − log P ( c 1 ) − log P ( c 2 ) parenrightbigg ( 50 ) In our work , we make an empirical comparison of neighbors derived using a WordNet-based measure and each of the distributional similarity measures using the technique discussed in Section 3 .</sentence>
+				<definiendum id="0">wn dist JC</definiendum>
+				<definiens id="0">a superior WordNet-based semantic similarity measure</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>In the case of the CRMs , the parameters that are optimized are β , γ , and k ( the number of nearest neighbors ) .</sentence>
+				<definiendum id="0">k</definiendum>
+				<definiens id="0">the number of nearest neighbors )</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Error rate = 1 T parenleftBig # of incorrect choices + # ofties 2 parenrightBig ( 51 ) where T is the number of test instances and a tie results when the neighbors can not decide between the two alternatives .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">the number of test instances and a tie results when the neighbors can not decide between the two alternatives</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>When B occurs in contexts that word A does not , precision is lost but B may remain a high-recall neighbor of word A. When B does not occur in contexts that A does , recall is lost but B may remain a high-precision neighbor of word A. Through our experimental work , which is more thorough than that presented in Weeds and Weir ( 2003b ) , we have shown that the kind of neighbor preferred appears to depend on the application in hand .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiens id="0">occurs in contexts that word A does not , precision is lost but B may remain a high-recall neighbor of word A. When B does not occur in contexts that A does</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>Weeds , Weir , and McCarthy ( 2004 ) give preliminary results on the the use of precision and recall to distinguish between hypernyms and hyponyms in sets of distributionally related words .</sentence>
+				<definiendum id="0">McCarthy</definiendum>
+				<definiens id="0">give preliminary results on the the use of precision and recall to distinguish between hypernyms and hyponyms in sets of distributionally related words</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Selection and Information : A Class-Based Approach to Lexical Relationships .</sentence>
+				<definiendum id="0">Selection</definiendum>
+				<definiendum id="1">Information</definiendum>
+			</definition>
+</paper>
+
+		<paper id="4004">
+			<definition id="0">
+				<sentence>Sub-corpus Annotated Abstracts Documents Abstracts Documents Documents 2033 45 Sentences 13k 82k 244 2k Words 261k 2.5M 6.4k 49k Unique words 14k 42k 1.9k 5.9k 45k 6k Sentences/Doc 6.28 40.83 5.42 45.3 Words/Doc 128.52 1229.71 142.33 1986.16 Words/Sent 20.47 28.36 26.25 24.20 In order to decide how to design an alignment model and to judge the quality of the alignments produced by a system , we first need to create a set of “gold standard” alignments .</sentence>
+				<definiendum id="0">Sub-corpus Annotated Abstracts Documents Abstracts</definiendum>
+				<definiens id="0">decide how to design an alignment model and to judge the quality of the alignments produced by a system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The model described by these independence assumptions very much resembles that of a hidden Markov model ( HMM ) , where states in the state space are document ranges and emissions are summary words .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">document ranges and emissions are summary words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A semi-HMM is 513 Computational Linguistics Volume 31 , Number 4 fully defined by a state space ( with designated start and end states ) , an output alphabet , transition probabilities , and observation probabilities .</sentence>
+				<definiendum id="0">semi-HMM</definiendum>
+				<definiens id="0">an output alphabet , transition probabilities , and observation probabilities</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The output alphabet consists of each word found in S , plus the end-of-sentence word ω .</sentence>
+				<definiendum id="0">output alphabet</definiendum>
+				<definiens id="0">consists of each word found in S , plus the end-of-sentence word ω</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Expectation maximization is a general technique for learning in such chicken-and-egg situations ( Dempster , Laird , and Rubin 1977 ; Boyles 1983 ; Wu 1983 ) .</sentence>
+				<definiendum id="0">Expectation maximization</definiendum>
+				<definiens id="0">a general technique for learning in such chicken-and-egg situations</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The basic idea is to compute the probability of generating a prefix of the summary and ending up at a particular position in the document ( this is known as the forward probability ) .</sentence>
+				<definiendum id="0">basic idea</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The computational complexity for the Viterbi algorithm and for the parameter reestimation is O parenleftbig N 2 T 2 parenrightbig , where N is the length of the summary and T is the number of states ( in our case , T is roughly the length of the document times the maximum phrase length allowed ) .</sentence>
+				<definiendum id="0">computational complexity</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiendum id="2">T</definiendum>
+				<definiens id="0">the length of the summary and</definiens>
+				<definiens id="1">the number of states ( in our case , T is roughly the length of the document times the maximum phrase length allowed )</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The latter phrase is a full syntactic constituent , while the first phrase is just a collection of nearby words .</sentence>
+				<definiendum id="0">latter phrase</definiendum>
+				<definiens id="0">a full syntactic constituent</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Furthermore , the latter phrase is a prepositional phrase ( and prepositional phrases might be more likely dropped than other phrases ) , while the former phrase includes a verb , a pronoun , a possessive marker , and a plain noun .</sentence>
+				<definiendum id="0">latter phrase</definiendum>
+				<definiens id="0">a prepositional phrase</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The four rewrite distributions used are : id is a word identity model , which favors alignment of identical words ; stem is a model designed to capture the notion that matches at the stem level are often sufficient for alignment ( i.e. , walk and walked are likely to be aligned ) ; wn is a rewrite model based on similarity according to WordNet ; and wr is the basic rewrite model , similar to a translation table in machine translation .</sentence>
+				<definiendum id="0">stem</definiendum>
+				<definiendum id="1">wn</definiendum>
+				<definiendum id="2">wr</definiendum>
+				<definiens id="0">a word identity model , which favors alignment of identical words</definiens>
+				<definiens id="1">a model designed to capture the notion that matches at the stem level are often sufficient for alignment ( i.e. , walk and walked are likely to be aligned</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>It is analogous to a translation-table ( t-table ) in statistical machine translation ( we will continue to use this terminology for the remainder of the article ) , and simply computes a matrix of ( fractional ) counts corresponding to all possible phrase pairs .</sentence>
+				<definiendum id="0">translation-table</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>While 520 Daum´e and Marcu Alignments for Automatic Document Summarization ML optimizes the probability of the data given the parameters ( the likelihood ) , MAP optimizes the product of the probability of the parameters with the likelihood ( the unnormalized posterior ) .</sentence>
+				<definiendum id="0">MAP</definiendum>
+				<definiens id="0">the probability of the data given the parameters ( the likelihood )</definiens>
+				<definiens id="1">optimizes the product of the probability of the parameters with the likelihood ( the unnormalized posterior )</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The Dirichlet distribution can be used as a prior distribution over multinomial parameters and has density : p ( θ|α ) = Γ parenleftBig summationtext J j=1 α j parenrightBig producttext J j=1 Γ ( α j ) productdisplay J j=1 θ α j −1 j .</sentence>
+				<definiendum id="0">Dirichlet distribution</definiendum>
+				<definiens id="0">a prior distribution over multinomial parameters and has density : p ( θ|α ) = Γ parenleftBig summationtext J j=1 α j parenrightBig producttext J j=1 Γ ( α j</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The soft precision metric induces a new , soft F-Score , labeled SoftF .</sentence>
+				<definiendum id="0">soft precision metric</definiendum>
+				<definiens id="0">induces a new , soft F-Score , labeled SoftF</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Each pair was ranked as 0 ( document sentences contain little to none of the information in the abstract sentence ) , 1 ( document sentences contain some of the information in the abstract sentence ) or 2 ( document sentences contain all of the 522 Daum´e and Marcu Alignments for Automatic Document Summarization Figure 7 Pictorial representation of the conversion of the 〈document , abstract〉 corpus to an 〈extract , abstract〉 corpus .</sentence>
+				<definiendum id="0">document sentences</definiendum>
+				<definiens id="0">contain some of the information in the abstract sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>1 D2S consists of two modules : ( 1 ) a language generation module ( LGM ) and ( 2 ) a speech generation module ( SGM ) which turns the generated text into a speech signal .</sentence>
+				<definiendum id="0">D2S</definiendum>
+				<definiens id="0">consists of two modules : ( 1 ) a language generation module ( LGM ) and ( 2 ) a speech generation module ( SGM ) which turns the generated text into a speech signal</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>van Deemter , Krahmer , and Theune Real versus Template-Based NLG Formally , a syntactic template s = bS , E , C , TÀ , where S is a syntax tree ( typically for a sentence ) with open slots in it , E is a set of links to additional syntactic structures ( typically NPs and PPs ) which may be substituted in the gaps of S , C is a condition on the applicability of s , and T is a set of topics .</sentence>
+				<definiendum id="0">Theune Real</definiendum>
+				<definiendum id="1">E</definiendum>
+				<definiendum id="2">T</definiendum>
+				<definiens id="0">a syntactic template s = bS , E , C , TÀ , where S is a syntax tree ( typically for a sentence ) with open slots in it ,</definiens>
+				<definiens id="1">a set of links to additional syntactic structures ( typically NPs and PPs ) which may be substituted in the gaps of S</definiens>
+				<definiens id="2">a condition on the applicability of s , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The right-hand side of Figure 2 shows an example Express function , namely , ExpressObject , which generates a set of NP trees and is used to generate fillers for the player and goal slots in the template of Figure 1 .</sentence>
+				<definiendum id="0">ExpressObject</definiendum>
+				<definiens id="0">generates a set of NP trees and is used to generate fillers for the player</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The left-hand side of Figure 2 shows the function ApplyTemplate , which handles the choice among all possible combinations of slot fillers .</sentence>
+				<definiendum id="0">ApplyTemplate</definiendum>
+				<definiens id="0">handles the choice among all possible combinations of slot fillers</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>van Deemter , Krahmer , and Theune Real versus Template-Based NLG As for the generation of referring expressions , template-based systems vary widely : The simplest of them ( e.g. , MSWord-based systems for mail merge ) can fill their gaps with only a limited number of phrases , but more sophisticated systems ( called ‘‘hybrid’’ systems in Reiter [ 1995 ] ) have long existed ; these effectively use standard NLG to fill their gaps .</sentence>
+				<definiendum id="0">Theune Real</definiendum>
+				<definiens id="0">The simplest of them ( e.g. , MSWord-based systems for mail merge ) can fill their gaps with only a limited number of phrases</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>One should not , however , let one’s judgment depend on accidental properties of one or two systems : Nothing keeps the designer of a template-based system from adding morphological rules ; witness systems like YAG ( McRoy , Channarukul , and Ali 2003 ) and XTRAGEN ( Stenzhorn 2002 ) .</sentence>
+				<definiendum id="0">witness systems</definiendum>
+				<definiens id="0">let one’s judgment depend on accidental properties of one or two systems : Nothing keeps the designer of a template-based system from adding morphological rules ;</definiens>
+			</definition>
+</paper>
+
+		<paper id="4005">
+			<definition id="0">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach formation retrieval ( IR ) systems prefer shorter “words” to obtain higher recall rates ( Wu 2003 ) .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+				<definiendum id="1">IR</definiendum>
+				<definiens id="0">A Pragmatic Approach formation retrieval</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Other frameworks of Chinese word segmentation , which are similar to the linear models , include maximum entropy models ( Xue 2003 ) and conditional random fields ( Peng , Feng , and McCallum 2004 ) .</sentence>
+				<definiendum id="0">Chinese word segmentation</definiendum>
+				<definiendum id="1">maximum entropy models</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach ( NWs ) .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>a114 For MDWs , their morphological patterns and stems are detected , e.g. , ABFNGK‘friend+s’ is derived by affixation of the plural affixGKto the noun ( stem ) ABFN ( MA S indicates a suffixation pattern ) , andG0G0D8D8‘happily’ is a reduplication of the stemG0D8‘happy’ ( MR AABB indicates an AABB reduplication pattern ) .</sentence>
+				<definiendum id="0">MA S</definiendum>
+				<definiendum id="1">andG0G0D8D8‘happily’</definiendum>
+				<definiens id="0">indicates a suffixation pattern</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>LWs ( lexicon words ) : Although some previous research has suggested carrying out Chinese word segmentation without the use of dictionaries ( e.g. , Sproat and Shih 1990 ; Sun , Shen and Tsou 1998 ) , we believe that a dictionary is an essential component of many applications .</sentence>
+				<definiendum id="0">LWs</definiendum>
+				<definiens id="0">an essential component of many applications</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>MDWs ( morphologically derived words ) : Chinese words of this type have the following two characteristics .</sentence>
+				<definiendum id="0">MDWs</definiendum>
+				<definiens id="0">morphologically derived words</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>NWs ( new words ) : NWs are OOV words that are neither recognized as named entities or factoids nor derived by morphological rules .</sentence>
+				<definiendum id="0">NWs</definiendum>
+				<definiens id="0">NWs are OOV words that are neither recognized as named entities or factoids nor derived by morphological rules</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach Figure 2 Taxonomy of morphologically derived words ( MDWs ) in MSRSeg .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+				<definiens id="0">A Pragmatic Approach Figure 2 Taxonomy of morphologically derived words ( MDWs ) in MSRSeg</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>There are two general guidelines for the development of the standard : which some representative examples are Chinese text input , IR , TTS , ASR , and MT. representative examples are the Chinese NE standards in ET/ER-99 , the Mainland standard ( GB/T ) , Taiwan’s ROCLING standard ( CNS14366 ; Huang et al. 1997 ) , and the UPenn Chinese Treebank ( Xia 1999 ) , as much as possible .</sentence>
+				<definiendum id="0">MT. representative examples</definiendum>
+				<definiendum id="1">Mainland standard</definiendum>
+				<definiendum id="2">Taiwan’s ROCLING standard</definiendum>
+				<definiens id="0">some representative examples are Chinese text input , IR , TTS , ASR , and</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The MSR standard consists of a set of specific rules that aims at unambiguously determining the word segmentation of a Chinese sentence , given a reference lexicon .</sentence>
+				<definiendum id="0">MSR standard</definiendum>
+				<definiens id="0">consists of a set of specific rules that aims at unambiguously determining the word segmentation of a Chinese sentence</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>ER99 is an extension of MET , though it is not as universally used as MET ( http : //www.nist.gov/speech/tests/ie-er/er 99/er 99 .</sentence>
+				<definiendum id="0">ER99</definiendum>
+				<definiendum id="1">MET ( http</definiendum>
+				<definiens id="0">an extension of MET</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The segmentation of the gold test set depends upon a reference lexicon , which is the combination of several lexicons that are used in Microsoft applications , including a Chinese text input system ( Gao et al. 2002 ) , ASR ( Chang et al. 2001 ) , TTS ( Chu et al. 2003 ) , and the MSR-NLP Chinese parser ( Wu and Jiang 2000 ) .</sentence>
+				<definiendum id="0">segmentation of the gold test</definiendum>
+				<definiendum id="1">MSR-NLP Chinese parser</definiendum>
+				<definiens id="0">the combination of several lexicons that are used in Microsoft applications</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>In the Bakeoff corpora , OOV is defined as the set of words in the test corpus not occurring in the training corpus .</sentence>
+				<definiendum id="0">OOV</definiendum>
+				<definiens id="0">the set of words in the test corpus not occurring in the training corpus</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach adaptive segmenter such as MSRSeg ) should be adopted .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+				<definiens id="0">A Pragmatic Approach adaptive segmenter such as MSRSeg</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>The performance of MSRSeg is measured through multiple precision–recall ( P/R ) pairs , and F-measures ( defined as 2PR/ ( P+R ) ) , each for one word type .</sentence>
+				<definiendum id="0">performance of MSRSeg</definiendum>
+				<definiens id="0">measured through multiple precision–recall ( P/R ) pairs , and F-measures ( defined as 2PR/ ( P+R ) ) , each for one word type</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>Riv is the recall of in-vocabulary words .</sentence>
+				<definiendum id="0">Riv</definiendum>
+				<definiens id="0">the recall of in-vocabulary words</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Roov is the recall of OOV words .</sentence>
+				<definiendum id="0">Roov</definiendum>
+			</definition>
+			<definition id="17">
+				<sentence>543 Computational Linguistics Volume 31 , Number 4 Definition 2 A character string AB is called a combination ambiguity string ( CAS ) if A , B , and AB are words .</sentence>
+				<definiendum id="0">AB</definiendum>
+				<definiens id="0">called a combination ambiguity string ( CAS ) if A , B , and</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>A segmenter’s job is to choose the most likely word class sequence w ∗ among all possible candidates into which s could have been segmented : w ∗ = arg max w∈GEN ( s ) P ( w|s ) = arg max w∈GEN ( s ) P ( w ) P ( s|w ) ( 1 ) where GEN ( s ) denotes the candidate set given s. Equation ( 1 ) is the basic form of source–channel models for Chinese word segmentation .</sentence>
+				<definiendum id="0">segmenter’s job</definiendum>
+				<definiens id="0">to choose the most likely word class sequence w ∗ among all possible candidates into which s could have been segmented : w ∗ = arg max w∈GEN ( s ) P ( w|s ) = arg max w∈GEN ( s ) P ( w ) P ( s|w ) ( 1 ) where GEN ( s ) denotes the candidate set given s. Equation ( 1 ) is the basic form of source–channel models for Chinese word segmentation</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Word class Model Feature functions , f ( s , w ) Context model Word class trigram , P ( w ) log ( P ( w ) ) LW Lexicon TRIE Number of LW in w. MDW Morph-lexicon TRIE Number of MDW in w. NE Character/word bigram , each for Σ s prime ∈A log ( P ( s prime |NE ) ) , where A is the set of one type , P ( s prime |NE ) , where s prime is a substrings that are NE of a particular type substring of s , and forms an NE .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">( w ) ) LW Lexicon TRIE Number of LW in w. MDW Morph-lexicon TRIE Number of MDW in w. NE Character/word bigram , each for Σ s prime ∈A log ( P ( s prime |NE ) )</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Using vector notation , we have f ( s , w ) ∈Rfractur D+1 , where f ( s , w ) = { f 0 ( s , w ) , f 1 ( s , w ) , ... , f D ( s , w ) } .</sentence>
+				<definiendum id="0">f ( s</definiendum>
+				<definiens id="0">w ) , f 1 ( s , w ) , ... , f D ( s , w</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>The likelihood score of a word class sequence w can be written as Score ( w , s , λ ) =λf ( w , s ) = D summationdisplay d=0 λ d f d ( w , s ) · ( 2 ) We see that Equation ( 2 ) is yet another representation of the source–channel models described in Section 4.1 by introducing class weights ( i.e. , adjust P ( s|w ) toP ( s|w ) λ ) and taking the logarithm of all probabilities .</sentence>
+				<definiendum id="0">likelihood score</definiendum>
+				<definiens id="0">yet another representation of the source–channel models described in Section 4.1 by introducing class weights ( i.e. , adjust P ( s|w ) toP ( s|w ) λ ) and taking the logarithm of all probabilities</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>The training criterion that directly minimizes the segmentation errors over the training data is λ ∗ = arg min λ summationdisplay i=1 ... M Er ( w R i , w ( s i , λ ) ) , ( 4 ) where w ( s i , λ ) is the segmentation determined by Equation ( 3 ) , where it is denoted as w ∗ .</sentence>
+				<definiendum id="0">M Er</definiendum>
+				<definiendum id="1">λ )</definiendum>
+				<definiens id="0">the segmentation errors over the training data is λ ∗ = arg min λ summationdisplay i=1 ...</definiens>
+				<definiens id="1">the segmentation determined by Equation</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>The delta rule in its component form is λ d = λ d −ηG ( λ d ) , ( 6 ) where η is the step size , and G is the gradient of MSELoss .</sentence>
+				<definiendum id="0">η</definiendum>
+				<definiendum id="1">G</definiendum>
+				<definiens id="0">the step size , and</definiens>
+				<definiens id="1">the gradient of MSELoss</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>The update rule increases the parameter values for word classes whose models were “underestimated” ( i.e. , expected feature value f ( s , w ) is less than observed feature value f ( s , w R ) ) , and decreases the parameter values whose models were “overestimated” ( i.e. , f ( s , w ) is larger than f ( s , w R ) ) .</sentence>
+				<definiendum id="0">update rule</definiendum>
+			</definition>
+			<definition id="25">
+				<sentence>The robustness issue concerns how well the minimal error rate in the training set preserves in the test set .</sentence>
+				<definiendum id="0">robustness issue</definiendum>
+				<definiens id="0">concerns how well the minimal error rate in the training set preserves in the test set</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>More specifically , we can modify Equation ( 8 ) as follows G ( λ d ) = ( Score ( w R i , λ ) − Score ( w i , λ ) −δ ) ( f d ( w R i ) − f d ( w i ) ) , ( 10 ) where δ is the desired margin that can either be an absolute value or a quantity proportional to the score of the correct segmentation ( Su and Lee 1994 ) .</sentence>
+				<definiendum id="0">δ</definiendum>
+				<definiens id="0">follows G ( λ d ) = ( Score ( w R i , λ ) − Score ( w i , λ ) −δ )</definiens>
+				<definiens id="1">the desired margin that can either be an absolute value or a quantity proportional to the score of the correct segmentation</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>MSRSeg consists of two components : a generic segmenter and a set of output adaptors .</sentence>
+				<definiendum id="0">MSRSeg</definiendum>
+				<definiens id="0">consists of two components : a generic segmenter and a set of output adaptors</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>Each candidate is assigned to its word class and the class model score , e.g. , log P ( s prime |w ) , where s’ is any substring of s. Figure 5 Overall architecture of MSRSeg .</sentence>
+				<definiendum id="0">s’</definiendum>
+				<definiens id="0">prime |w )</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>We consider four types of named entities : person names ( PNs ) , location names ( LNs ) , organization names ( ONs ) , and transliterations of foreign names ( FNs ) .</sentence>
+				<definiendum id="0">PNs</definiendum>
+				<definiens id="0">location names ( LNs ) , organization names ( ONs ) , and transliterations of foreign names ( FNs )</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>Class models are defined as generative models that are estimated on their corresponding named entity lists using MLE , together with a backoff smoothing schema , as described in Section 4.1.1 .</sentence>
+				<definiendum id="0">Class models</definiendum>
+			</definition>
+			<definition id="31">
+				<sentence>The Chinese person-name model is a modified version of that described in Sproat et al. ( 1996 ) .</sentence>
+				<definiendum id="0">Chinese person-name model</definiendum>
+				<definiens id="0">a modified version of that described in Sproat et al. ( 1996 )</definiens>
+			</definition>
+			<definition id="32">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach Like the identification of LNs , an ON candidate is only generated given a character string s ( less than 15 characters long ) , if it ends in a keyword in a 1,355-entry ON keyword list ( e.g. , D0GW ‘corporation’ ) .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+				<definiens id="0">A Pragmatic Approach Like the identification of LNs , an ON candidate is only generated given a character string s ( less than 15 characters long</definiens>
+			</definition>
+			<definition id="33">
+				<sentence>Therefore , an FN candidate would be generated given s if it contains only characters stored in a transliterated name character list ( which contains 618 Chinese characters ) .</sentence>
+				<definiendum id="0">FN candidate</definiendum>
+				<definiens id="0">contains only characters stored in a transliterated name character list ( which contains 618 Chinese characters</definiens>
+			</definition>
+			<definition id="34">
+				<sentence>The probability P ( s|FN ) is estimated using a character bigram model .</sentence>
+				<definiendum id="0">probability P ( s|FN</definiendum>
+				<definiens id="0">estimated using a character bigram model</definiens>
+			</definition>
+			<definition id="35">
+				<sentence>We assume that a character is a candidate of SCPN ( or SCLN ) only when it is included in a predefined SCPN ( or SCLN ) list , which 553 Computational Linguistics Volume 31 , Number 4 contains 151 ( or 177 ) characters .</sentence>
+				<definiendum id="0">list</definiendum>
+				<definiens id="0">a candidate of SCPN ( or SCLN ) only when it is included in a predefined SCPN ( or SCLN</definiens>
+			</definition>
+			<definition id="36">
+				<sentence>The class model probabilities are assigned by unigram models as P ( s|SCPN ) = C ( s ) summationtext i=1 ... N C ( s i ) , P ( s|SCLN ) = C ( s ) summationtext i=1 ... N C ( s i ) , ( 11 ) where C ( s ) is the count of the SCPN ( or SCLN ) s in an annotated training set and N is the size of the SCPN ( or SCLN ) list .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">P ( s|SCPN ) = C ( s ) summationtext i=1 ... N C ( s i ) , P ( s|SCLN ) = C ( s ) summationtext i=1 ... N C ( s i ) , ( 11 ) where C ( s ) is the count of the SCPN ( or SCLN ) s in an annotated training set and</definiens>
+				<definiens id="1">the size of the SCPN ( or SCLN ) list</definiens>
+			</definition>
+			<definition id="37">
+				<sentence>Condition ( ON ) Generated patterns ( ONA ) Examples ON = w 1 ... w N ( N ≥ 2 ) ONA = s 11 s 21 , or ANES/EUBH/B3CU→ANEU ONA = s 11 s 21 s 31 , or ... ANES/EUBH/B3CU→ANEUB3 ONA = s 11 s 21 ... s N1 ON = w 1 w 2 , andw 1 isnotanLN ONA= w 1 A5C6/B3CU→ A5C6 ON = w 1 w 2 w 3 , andw 1 is not an LN ONA = w 1 , or GXEC/BHAH/D0GW→GXEC ONA = w 1 w 2 GXEC/BHAH/D0GW→GXEC/BHAH ON = w 1 w 2 w 3 , andw 1 is an LN ONA = w 2 ANES/H1DT/AV→H1DT 554 Gao et al .</sentence>
+				<definiendum id="0">Condition</definiendum>
+				<definiens id="0">s 11 s 21 , or ANES/EUBH/B3CU→ANEU ONA = s 11 s 21 s 31 , or ... ANES/EUBH/B3CU→ANEUB3 ONA = s 11 s 21 ... s N1 ON = w 1 w 2</definiens>
+			</definition>
+			<definition id="38">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach regular expressions .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+				<definiens id="0">A Pragmatic Approach regular expressions</definiens>
+			</definition>
+			<definition id="39">
+				<sentence>IWP ( independent word probability ) is a real-valued feature .</sentence>
+				<definiendum id="0">IWP ( independent word probability )</definiendum>
+			</definition>
+			<definition id="40">
+				<sentence>The IWP of a single character is the likelihood of this character to appear as an independent word in texts ( Wu and Jiang 2000 ) : IWP ( x ) = C ( x , W ) C ( x ) , ( 12 ) where C ( x , W ) is the number of occurrences of the character x as an independent word in training data , and C ( x ) is the total number of occurrences of x in training data .</sentence>
+				<definiendum id="0">IWP of a single character</definiendum>
+				<definiendum id="1">C</definiendum>
+				<definiens id="0">the likelihood of this character to appear as an independent word in texts ( Wu and Jiang 2000 ) : IWP ( x ) = C ( x , W ) C ( x )</definiens>
+				<definiens id="1">the number of occurrences of the character x as an independent word in training data</definiens>
+				<definiens id="2">the total number of occurrences of x in training data</definiens>
+			</definition>
+			<definition id="41">
+				<sentence>AWP ( anti-word pair ) is a binary feature derived from IWP .</sentence>
+				<definiendum id="0">AWP ( anti-word pair )</definiendum>
+				<definiens id="0">a binary feature derived from IWP</definiens>
+			</definition>
+			<definition id="42">
+				<sentence>WFA ( word formation analogy ) is a binary feature .</sentence>
+				<definiendum id="0">WFA</definiendum>
+			</definition>
+			<definition id="43">
+				<sentence>Given a character pair ( x , y ) , a character ( or a multicharacter string ) z is called the common stem of ( x , y ) ifatleastone of the following two conditions hold : ( 1 ) character strings xz and yz are lexical words ( i.e. , x and y as prefixes ) ; and ( 2 ) character strings zx and zy are lexical words ( i.e. , x and y as suffixes ) .</sentence>
+				<definiendum id="0">character pair</definiendum>
+				<definiens id="0">y ) , a character ( or a multicharacter string ) z is called the common stem of ( x , y ) ifatleastone of the following two conditions hold : ( 1 ) character strings xz and yz are lexical words ( i.e. , x and y as prefixes</definiens>
+			</definition>
+			<definition id="44">
+				<sentence>MP ( morphological productivity ) is a real-valued feature .</sentence>
+				<definiendum id="0">MP</definiendum>
+			</definition>
+			<definition id="45">
+				<sentence>Here , N is the number of tokens of a particular construction found in a corpus , e.g. , the number of tokens of all nouns ending in -GK , andn 1 is the number of types of that construction , e.g. , the number of unique nouns ending in -GK .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiens id="0">the number of tokens of a particular construction found in a corpus</definiens>
+				<definiens id="1">the number of types of that construction</definiens>
+			</definition>
+			<definition id="46">
+				<sentence>α and β are parameters that can be fitusingthe observed mean λ and the observed inverse document frequency IDF as follows : λ = cf N , IDF = log N df , β = λ× 2 IDF − 1 = cf − df df , anda = λ β , ( 16 ) where cf is the total number of occurrence of word w i in training data , df is the number of documents in training data in which w i occurs , and N is the total number of documents .</sentence>
+				<definiendum id="0">cf</definiendum>
+				<definiendum id="1">df</definiendum>
+				<definiendum id="2">N</definiendum>
+				<definiens id="0">parameters that can be fitusingthe observed mean λ and the observed inverse document frequency IDF as follows : λ = cf N</definiens>
+				<definiens id="1">the total number of occurrence of word w i in training data ,</definiens>
+				<definiens id="2">the number of documents in training data in which w i occurs , and</definiens>
+				<definiens id="3">the total number of documents</definiens>
+			</definition>
+			<definition id="47">
+				<sentence>We can see that unified approaches ( i.e. , using the NWI component as a feature function ) significantly outperform consecutive approaches ( i.e. , using the NWI component as a post-processor ) consistently , in terms of both Roov and P/R/F of the overall word segmentation .</sentence>
+				<definiendum id="0">NWI component</definiendum>
+				<definiens id="0">using the NWI component as a feature function ) significantly outperform consecutive approaches</definiens>
+			</definition>
+			<definition id="48">
+				<sentence>Each element in the lattice is a 5-tuple ( w , i , l , t , s ) , where w is the word candidate , i is the starting position of w in the sentence , l is the length of w , t is the word class tag , and s is the class model score of w assigned by its feature function in Table 6 .</sentence>
+				<definiendum id="0">w</definiendum>
+				<definiendum id="1">s</definiendum>
+				<definiens id="0">the class model score of w assigned by its feature function in Table 6</definiens>
+			</definition>
+			<definition id="49">
+				<sentence>Chinese Word Segmentation : A Pragmatic Approach Table 13 Comparison scores for PK open and CTB open .</sentence>
+				<definiendum id="0">Chinese Word Segmentation</definiendum>
+				<definiens id="0">A Pragmatic Approach Table 13 Comparison scores for PK open and CTB open</definiens>
+			</definition>
+			<definition id="50">
+				<sentence>Similarly , the BMM ( backward maximum matching ) algorithm processes the sentence from right to left .</sentence>
+				<definiendum id="0">BMM ( backward maximum matching ) algorithm</definiendum>
+				<definiens id="0">processes the sentence from right to left</definiens>
+			</definition>
+			<definition id="51">
+				<sentence>Similarly , let IDF1 ( s , w ) ( or IDF2 ( s , w ) ) be 1 if w only occurs in the case that s is a 1-word ( or 2-word ) string .</sentence>
+				<definiendum id="0">w )</definiendum>
+				<definiendum id="1">w )</definiendum>
+				<definiens id="0">a 1-word ( or 2-word ) string</definiens>
+			</definition>
+			<definition id="52">
+				<sentence>MSWS first conducts word breaking using MM ( augmented by heuristic rules for disambiguation ) , and then conducts factoid detection and NER using rules .</sentence>
+				<definiendum id="0">MM</definiendum>
+				<definiens id="0">augmented by heuristic rules for disambiguation ) , and then conducts factoid detection</definiens>
+			</definition>
+			<definition id="53">
+				<sentence>Column Site-Avg is the average F-measure over the data sets on which a segmenter reported results of open runs , where a bolded entry indicates the segmenter outperforms MSRSeg .</sentence>
+				<definiendum id="0">Column Site-Avg</definiendum>
+			</definition>
+			<definition id="54">
+				<sentence>Column Our-Avg is the average F-measure of MSRSeg over the same data sets , where a bolded entry indicates that MSRSeg outperforms the other segmenter .</sentence>
+				<definiendum id="0">Column Our-Avg</definiendum>
+				<definiens id="0">the average F-measure of MSRSeg over the same data sets , where a bolded entry indicates that MSRSeg outperforms the other segmenter</definiens>
+			</definition>
+			<definition id="55">
+				<sentence>Column SiteAvg is the average F-measure over the data sets on which a segmenter reported results of open runs , where a bolded entry indicates the segmenter outperforms MSRSeg .</sentence>
+				<definiendum id="0">Column SiteAvg</definiendum>
+			</definition>
+			<definition id="56">
+				<sentence>Column Our-Avg is the average F-measure of MSRSeg over the same data sets , where a bolded entry indicates that MSRSeg outperforms the other segmenter .</sentence>
+				<definiendum id="0">Column Our-Avg</definiendum>
+				<definiens id="0">the average F-measure of MSRSeg over the same data sets , where a bolded entry indicates that MSRSeg outperforms the other segmenter</definiens>
+			</definition>
+			<definition id="57">
+				<sentence>From these results , we conclude that MSRSeg is an adaptive word segmenter that achieves stateof-the-art performance on different data sets , corresponding to different domains and standards .</sentence>
+				<definiendum id="0">MSRSeg</definiendum>
+				<definiens id="0">an adaptive word segmenter that achieves stateof-the-art performance on different data sets , corresponding to different domains and standards</definiens>
+			</definition>
+			<definition id="58">
+				<sentence>MSRSeg is a hybrid system that takes advantage of both approaches .</sentence>
+				<definiendum id="0">MSRSeg</definiendum>
+				<definiens id="0">a hybrid system that takes advantage of both approaches</definiens>
+			</definition>
+			<definition id="59">
+				<sentence>This pragmatic system consists of two components : ( 1 ) a generic segmenter that is based on the mathematical framework of word segmentation and unknown word detection , and that can adapt to different domain-specific vocabularies , and ( 2 ) a set of output adaptors for adapting the output of the former to different application-specific standards .</sentence>
+				<definiendum id="0">pragmatic system</definiendum>
+				<definiens id="0">consists of two components : ( 1 ) a generic segmenter that is based on the mathematical framework of word segmentation and unknown word detection , and that can adapt to different domain-specific vocabularies , and ( 2 ) a set of output adaptors for adapting the output of the former to different application-specific standards</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>The Proposition Bank aims to provide a broad-coverage hand-annotated corpus of such phenomena , enabling the development of better domain-independent language understanding systems and the quantitative study of how and why these syntactic alternations take place .</sentence>
+				<definiendum id="0">Proposition Bank</definiendum>
+				<definiens id="0">aims to provide a broad-coverage hand-annotated corpus of such phenomena , enabling the development of better domain-independent language understanding systems and the quantitative study of how and why these syntactic alternations take place</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Over the past decade , most work in the field of information extraction has shifted from complex rule-based systems designed to handle a wide variety of semantic phenomena , including quantification , anaphora , aspect , and modality ( e.g. , Alshawi 1992 ) , to more robust finite-state or statistical systems ( Hobbs et al. 1997 ; Miller et al. 1998 ) .</sentence>
+				<definiendum id="0">modality</definiendum>
+				<definiens id="0">complex rule-based systems designed to handle a wide variety of semantic phenomena , including quantification , anaphora , aspect , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>On this principle , Levin defines verb classes based on the ability of particular verbs to occur or not occur in pairs of syntactic frames that are in some sense meaning-preserving ( diathesis alternations ) .</sentence>
+				<definiendum id="0">Levin</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The argument list consists of thematic labels from a set of 20 such possible labels ( Agent , Patient , Theme , Experiencer , etc. ) .</sentence>
+				<definiendum id="0">argument list</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>But without an annotated corpus of semantic roles , this line of research has not been able to measure the frequency of alternations directly , or more generally , to ascertain how well the classes defined by Levin correspond to real-world data .</sentence>
+				<definiendum id="0">an annotated corpus</definiendum>
+				<definiens id="0">been able to measure the frequency of alternations directly , or more generally , to ascertain how well the classes defined by Levin correspond to real-world data</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For a particular verb , Arg0 is generally the argument exhibiting features of a Prototypical Agent ( Dowty 1991 ) , while Arg1 is a Prototypical Patient or Theme .</sentence>
+				<definiendum id="0">Arg1</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Thus , for the role identification kappa , the interannotator agreement probability PðAÞ is the number of node observation agreements divided by the total number of nodes considered , which is the number of nodes in each parse tree multiplied by the number of predicates annotated in the sentence .</sentence>
+				<definiendum id="0">interannotator agreement probability PðAÞ</definiendum>
+				<definiens id="0">the number of nodes in each parse tree multiplied by the number of predicates annotated in the sentence</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>FrameNet is focused on semantic frames , 8 which are defined as a schematic representation of situations involving various participants , props , and other conceptual roles ( Fillmore 1976 ) .</sentence>
+				<definiendum id="0">FrameNet</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>10 New York University is currently in the process of annotating nominalizations in the Penn Treebank using the PropBank frames files and annotation interface , creating a resource to be known as NomBank .</sentence>
+				<definiendum id="0">PropBank</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>We hypothesize that PropBank data will confirm unaccusative and unergative verbs but only one role ( Arg0 ) for object-drop verbs ; unaccusatives than they do for intransitive unergatives .</sentence>
+				<definiendum id="0">Arg0</definiendum>
+				<definiens id="0">object-drop verbs ; unaccusatives than they do for intransitive unergatives</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The stated goal of the PropBank is to provide training data for supervised automatic role labelers , and the project description can not be considered complete without a discussion of PropBank’s suitability for this purpose .</sentence>
+				<definiendum id="0">PropBank</definiendum>
+				<definiens id="0">to provide training data for supervised automatic role labelers</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Probabilities of a parse constituent belonging to a given semantic role are calculated from the following features : The phrase type feature indicates the syntactic type of the phrase expressing the semantic roles : Examples include noun phrase ( NP ) , verb phrase ( VP ) , and clause ( S ) .</sentence>
+				<definiendum id="0">VP</definiendum>
+				<definiens id="0">the syntactic type of the phrase expressing the semantic roles : Examples include noun phrase ( NP ) , verb phrase</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The conversion process uses the treebank’s trace information to make underlying syntactic relations explicit .</sentence>
+				<definiendum id="0">conversion process</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>The Proposition Bank takes the comprehensive corpus annotation of the Penn Treebank one step closer to a detailed semantic representation by adding semantic-role labels .</sentence>
+				<definiendum id="0">Proposition Bank</definiendum>
+				<definiens id="0">takes the comprehensive corpus annotation of the Penn Treebank one step closer to a detailed semantic representation by adding semantic-role labels</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>FASTUS : A cascaded finite-state transducer for extracting information from natural-language text .</sentence>
+				<definiendum id="0">FASTUS</definiendum>
+				<definiens id="0">A cascaded finite-state transducer for extracting information from natural-language text</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>MultiGen follows a pipeline architecture , shown in Figure 2 .</sentence>
+				<definiendum id="0">MultiGen</definiendum>
+				<definiens id="0">follows a pipeline architecture</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>When T is a tree with root node v , weletc ( T ) denote the set containing all children of v. For a tree T containing a node s , thesubtreeofT which has s as its root node is denoted by T s .</sentence>
+				<definiendum id="0">T</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>305 Computational Linguistics Volume 31 , Number 3 Given two trees T and T prime with root nodes v and v prime , respectively , the similarity Sim ( T , T prime ) between the trees is defined to be the maximum of the three expressions NodeCompare ( T , T prime ) , max s∈c ( T ) Sim ( T s , T prime ) , and max s prime ∈c ( T prime ) Sim ( T , T prime s prime ) .</sentence>
+				<definiendum id="0">T ) Sim ( T</definiendum>
+				<definiens id="0">T prime with root nodes v and v prime</definiens>
+				<definiens id="1">s , T prime ) , and max s prime ∈c ( T prime</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The remaining expressions , max s∈c ( T ) Sim ( T s , T prime ) , and max s prime ∈c ( T prime ) Sim ( T , T prime s prime ) , capture mappings in which the top of one tree is aligned with one of the children of the top node of the other tree ( the bottom of Figure 4 ) .</sentence>
+				<definiendum id="0">other tree</definiendum>
+				<definiens id="0">s , T prime ) , and max s prime ∈c ( T prime ) Sim ( T , T prime s prime ) , capture mappings in which the top of one tree is aligned with one of the children of the top node of the</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The maximization in the NodeCompare formula searches for the best possible alignment for the child nodes of the given pair of nodes and is defined by NodeCompare ( T , T prime ) =NodeSimilarity ( v , v prime ) + max m∈M ( c ( T ) , c ( T prime ) )   summationdisplay ( s , s prime ) ∈m ( EdgeSimilarity ( ( v , s ) , ( v prime , s prime ) ) + Sim ( T s , T prime s prime ) )   where M ( A , A prime ) is the set of all possible matchings between A and A prime , and a matching ( between A and A prime ) isasubsetm of A × A prime such that for any two distinct elements ( a , a prime ) , ( b , b prime ) ∈ m , botha negationslash= b and a prime negationslash= b prime .</sentence>
+				<definiendum id="0">prime )</definiendum>
+				<definiens id="0">The maximization in the NodeCompare formula searches for the best possible alignment for the child nodes of the given pair of nodes and is defined by NodeCompare ( T , T prime ) =NodeSimilarity ( v , v prime ) + max m∈M ( c ( T ) , c ( T prime ) )   summationdisplay ( s , s prime ) ∈m ( EdgeSimilarity ( ( v , s ) , ( v prime , s prime ) ) + Sim ( T s , T prime s prime ) )   where M</definiens>
+				<definiens id="1">the set of all possible matchings between A and A prime , and a matching ( between A and A prime ) isasubsetm of A × A prime such that for any two distinct elements ( a , a prime ) , ( b , b prime ) ∈ m , botha negationslash= b and a prime negationslash= b prime</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The similarity score NodeSimilarity ( v , v prime ) of atomic nodes depends on whether the corresponding words are identical , paraphrases , or unrelated .</sentence>
+				<definiendum id="0">similarity score NodeSimilarity</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>tical linearization component , which handles uncertainty and noise in the input in a more robust way .</sentence>
+				<definiendum id="0">tical linearization component</definiendum>
+				<definiens id="0">handles uncertainty and noise in the input in a more robust way</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>To remove themes irrelevant for fusion evaluation , we introduced two 11 DUC is a community-based evaluation of summarization systems organized by DARPA .</sentence>
+				<definiendum id="0">DUC</definiendum>
+				<definiens id="0">a community-based evaluation of summarization systems organized by DARPA</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The performance of baseline 1 and baseline 2 demonstrates that neither the shortest sentence nor the basis sentence is an adequate substitution for fusion in terms of content selection .</sentence>
+				<definiendum id="0">basis sentence</definiendum>
+				<definiens id="0">an adequate substitution for fusion in terms of content selection</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Sentence fusion exhibits similarities with compression algorithms in the ways in which it copes with the lack of semantic data in the generation process , relying on shallow analysis of the input and statistics derived from a corpus .</sentence>
+				<definiendum id="0">Sentence fusion</definiendum>
+				<definiens id="0">exhibits similarities with compression algorithms in the ways in which it copes with the lack of semantic data in the generation process</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Function : MapChildren ( tree 1 , tree 2 ) memoized Returns : Given two dependency trees , MapChildren finds the optimal alignment of tree children .</sentence>
+				<definiendum id="0">MapChildren</definiendum>
+				<definiens id="0">Given two dependency trees</definiens>
+				<definiens id="1">finds the optimal alignment of tree children</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>top ) ; /*If one of the trees is of height one , return the NodeSim score between two tops */ if is leaf ( tree 1 ) or is leaf ( tree 2 ) then return 〈node-sim , 〈tree 1 , tree 2 〉〉 ; else /*Find an optimal alignment of the children nodes */ res ← MapChildren ( tree 1 , tree 2 ) ; /*The alignment score is computed as a sum of the similarity of top nodes and the score of the optimal alignment of node .</sentence>
+				<definiendum id="0">/*The alignment score</definiendum>
+				<definiens id="0">a sum of the similarity of top nodes and the score of the optimal alignment of node</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>An overview of surge : A reusable comprehensive syntactic realization component .</sentence>
+				<definiendum id="0">overview of surge</definiendum>
+				<definiens id="0">A reusable comprehensive syntactic realization component</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Albany : State University of NewYorkPress .</sentence>
+				<definiendum id="0">Albany</definiendum>
+				<definiens id="0">State University of NewYorkPress</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Introduction to WordNet : An on-line lexical database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>Cohen’s kappa calculates expected chance agreement , based on the individual coders’ distributions , in a manner similar to association measures , such as chi–square .</sentence>
+				<definiendum id="0">Cohen’s kappa</definiendum>
+				<definiens id="0">calculates expected chance agreement , based on the individual coders’ distributions</definiens>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>A context-free grammar G is a 4-tuple ( Σ , N , S , R ) , where Σ and N are two finite disjoint sets of terminals and nonterminals , respectively , S ∈ N is the start symbol , and R is a finite set of rules , each of the form A → α , where A ∈ N and α ∈ ( Σ∪ N ) ∗ .</sentence>
+				<definiendum id="0">context-free grammar G</definiendum>
+				<definiendum id="1">R</definiendum>
+				<definiens id="0">a 4-tuple ( Σ , N , S , R ) , where Σ and N are two finite disjoint sets of terminals and nonterminals , respectively , S ∈ N is the start symbol</definiens>
+				<definiens id="1">a finite set of rules , each of the form A → α</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A probabilistic context-free grammar G is a 5-tuple ( Σ , N , S , R , p G ) , where Σ , N , S and R are as above , and p G is a function from rules in R to probabilities .</sentence>
+				<definiendum id="0">probabilistic context-free grammar G</definiendum>
+				<definiens id="0">a 5-tuple ( Σ , N , S , R , p G ) , where Σ , N , S and R are as above , and p G is a function from rules in R to probabilities</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The symbol epsilon1 denotes the empty string .</sentence>
+				<definiendum id="0">symbol epsilon1</definiendum>
+				<definiens id="0">the empty string</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>If α 0 ρ 1 ⇒ ··· ρ m ⇒ α m for some α 0 , ... , α m ∈ ( Σ∪ N ) ∗ , then we say that d = ρ 1 ···ρ m derives α m from α 0 , and we write α 0 d ⇒ α m ; epsilon1 derives any α 0 ∈ ( Σ∪ N ) ∗ from itself .</sentence>
+				<definiendum id="0">epsilon1</definiendum>
+				<definiens id="0">derives any α 0 ∈ ( Σ∪ N ) ∗ from itself</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The probability p G ( w ) of a string w ∈Σ ∗ is defined to be summationtext d p G ( S d ⇒ w ) .</sentence>
+				<definiendum id="0">probability p G</definiendum>
+				<definiens id="0">summationtext d p G ( S d ⇒ w )</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A finite automaton M is a 5-tuple ( Σ , Q , q 0 , q f , T ) , where Σ and Q are two finite sets of terminals and states , respectively , q 0 , q f ∈ Q are the initial and final states , respectively , and T is a finite set of transitions , each of the form r a mapsto→ s , where r ∈ Q − { q f } , s ∈ Q , anda ∈Σ .</sentence>
+				<definiendum id="0">T</definiendum>
+				<definiens id="0">a 5-tuple ( Σ , Q , q 0 , q f</definiens>
+				<definiens id="1">the initial and final states</definiens>
+				<definiens id="2">a mapsto→ s , where r ∈ Q − { q f } , s ∈ Q</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>2 A probabilistic finite automaton M is a 6-tuple ( Σ , Q , q 0 , q f , T , p M ) , whereΣ , Q , q 0 , q f , andT are as above , and p M is a function from transitions in T to probabilities .</sentence>
+				<definiendum id="0">p M</definiendum>
+				<definiens id="0">a 6-tuple ( Σ , Q , q 0 , q f</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Similarly , we can derive a recursive definition of outer : outer ( S ) = 1 ( 9 ) outer ( A ) = summationdisplay ρ , B , α , β : ρ= ( B→αAβ ) outer ( B ) · p G ( ρ ) · inner ( α ) · inner ( β ) ( 10 ) for A negationslash= S. In general , there may be cyclic dependencies in the equations for inner and outer ; that is , for certain nonterminals A , inner ( A ) andouter ( A ) may be defined in terms of themselves .</sentence>
+				<definiendum id="0">inner</definiendum>
+				<definiens id="0">outer ( S ) = 1 ( 9 ) outer ( A ) = summationdisplay ρ , B , α , β : ρ= ( B→αAβ ) outer ( B ) · p G ( ρ ) · inner</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The output is a PCFG G ∩ = ( Σ , N ∩ , S ∩ , R ∩ , p ∩ ) , where N ∩ , S ∩ , andR ∩ are as before , and p ∩ is defined by p ∩ ( ( r 0 , A , r m ) → ( r 0 , X 1 , r 1 ) ··· ( r m−1 , X m , r m ) ) = p G ( A → X 1 ···X m ) ( 15 ) p ∩ ( ( r , a , s ) → a ) = p M ( r a mapsto→ s ) ( 16 ) If d ∩ , d , andc are such that h ( d ∩ ) = ( d , c ) , then clearly p ∩ ( d ∩ ) = p G ( d ) · p M ( c ) .</sentence>
+				<definiendum id="0">p ∩</definiendum>
+				<definiens id="0">a PCFG G ∩ = ( Σ , N ∩ , S ∩ , R ∩ , p ∩ ) , where N ∩ , S ∩ , andR ∩ are as before , and</definiens>
+				<definiens id="1">r m−1 , X m , r m ) ) = p G ( A → X 1 ···X m ) ( 15 ) p ∩ ( ( r , a , s ) → a ) = p M ( r a mapsto→ s ) ( 16 ) If d ∩ , d , andc are such that h ( d ∩ ) = ( d , c ) , then clearly p ∩ ( d ∩ ) = p G ( d ) · p M ( c )</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>On the basis of the 179 Computational Linguistics Volume 31 , Number 2 properties of function h , we can now rewrite E ( τ ) as E ( τ ) = summationdisplay d , w , c , c prime p G ( S d ⇒ w ) ·1 ( ( q 0 , w ) cτc prime turnstileleft ( q f , epsilon1 ) ) = summationdisplay e , d , w , c , c prime : h ( e ) = ( d , cτc prime ) p G ( S d ⇒ w ) ·1 ( ( q 0 , w ) cτc prime turnstileleft ( q f , epsilon1 ) ) = summationdisplay e , e prime , w p ∩ ( S ∩ eρe prime ⇒ w ) = E ( ρ ) ( 18 ) Hereby we have expressed the expected frequency of a transition τ = ( r a mapsto→ s ) in terms of the expected frequency of rule ρ = ( ( r , a , s ) → a ) in derivations in PCFG G ∩ .</sentence>
+				<definiendum id="0">c prime</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Therefore , E ( τ ) = outer ( ( r , a , s ) ) · p ∩ ( ρ ) · inner ( a ) = outer ( ( r , a , s ) ) ( 19 ) To obtain the required PFA ( Σ , Q , q 0 , q f , T , p M ) , we now define the probability function p M for each τ = ( r a mapsto→ s ) ∈ T as p M ( τ ) = outer ( ( r , a , s ) ) summationtext a prime , s prime : ( r a prime mapsto→s prime ) ∈T outer ( ( r , a prime , s prime ) ) ( 20 ) That such a relative frequency estimator p M minimizes the KL distance between p G and p M on the domain L ( M ) is proven in the appendix .</sentence>
+				<definiendum id="0">∈T outer ( ( r</definiendum>
+				<definiens id="0">such a relative frequency estimator p M minimizes the KL distance between p G and p M on the domain L ( M ) is proven in the appendix</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>We rewrite ( 30 ) as productdisplay τ p M ( τ ) E ( τ ) = productdisplay τ p M ( τ ) summationtext w p G ( w ) · # τ ( w ) = productdisplay w productdisplay τ p M ( τ ) p G ( w ) · # τ ( w ) = productdisplay w parenleftBigg productdisplay τ p M ( τ ) # τ ( w ) parenrightBigg p G ( w ) = productdisplay w : p M ( w ) &gt; 0 p M ( w ) p G ( w ) = productdisplay w : p M ( w ) &gt; 0 2 p G ( w ) ·log p M ( w ) = productdisplay w : p M ( w ) &gt; 0 2 p G ( w ) ·log p M ( w ) −p G ( w ) ·log p G ( w ) +p G ( w ) ·log p G ( w ) = productdisplay w : p M ( w ) &gt; 0 2 −p G ( w ) ·log p G ( w ) p M ( w ) +p G ( w ) ·log p G ( w ) = 2 − summationtext w : p M ( w ) &gt; 0 p G ( w ) ·log p G ( w ) p M ( w ) · 2 summationtext w : p M ( w ) &gt; 0 p G ( w ) ·log p G ( w ) ( 32 ) We have already seen that the choice of p M that maximizes ( 30 ) is given by ( 31 ) , and ( 31 ) implies p M ( w ) &gt; 0 for all w such that w ∈ L ( M ) andp G ( w ) &gt; 0 .</sentence>
+				<definiendum id="0">p M</definiendum>
+				<definiendum id="1">p M</definiendum>
+				<definiendum id="2">w ) ·log p G ( w ) p M</definiendum>
+				<definiens id="0">w ∈ L ( M ) andp G ( w ) &gt; 0</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>In modern syntactic theories ( e.g. , lexical-functional grammar [ LFG ] [ Kaplan and Bresnan 1982 ; Bresnan 2001 ; Dalrymple 2001 ] , head-driven phrase structure grammar [ HPSG ] [ Pollard and Sag 1994 ] , tree-adjoining grammar [ TAG ] [ Joshi 1988 ] , and combinatory categorial grammar [ CCG ] [ Ades and Steedman 1982 ] ) , the lexicon is the central repository for much morphological , syntactic , and semantic information .</sentence>
+				<definiendum id="0">] )</definiendum>
+				<definiens id="0">lexical-functional grammar [ LFG ] [ Kaplan and Bresnan 1982 ; Bresnan 2001 ; Dalrymple 2001 ] , head-driven phrase structure grammar [ HPSG ] [ Pollard and Sag 1994 ] , tree-adjoining grammar [ TAG ] [ Joshi 1988 ] , and combinatory categorial grammar [ CCG ] [ Ades and Steedman 1982</definiens>
+				<definiens id="1">the central repository for much morphological , syntactic , and semantic information</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Lexical functional grammar ( Kaplan and Bresnan 1982 ; Bresnan 2001 ; Dalrymple 2001 ) is a member of the family of constraint-based grammars .</sentence>
+				<definiendum id="0">Lexical functional grammar</definiendum>
+				<definiens id="0">a member of the family of constraint-based grammars</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The value of the PRED attribute in an f-structure is a semantic form Π〈gf 1 , gf 2 , ... , gf n 〉 , where Π is a lemma and gf a grammatical function .</sentence>
+				<definiendum id="0">Π</definiendum>
+				<definiens id="0">a semantic form Π〈gf 1 , gf 2 , ... , gf n 〉</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>COMP , XCOMP , andXADJ are all clausal functions which differ in the way in which they are controlled .</sentence>
+				<definiendum id="0">COMP</definiendum>
+				<definiens id="0">all clausal functions which differ in the way in which they are controlled</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A COMP is a closed function which contains its own internal SUBJ : The judge thinks [ COMP that it will resume ] .</sentence>
+				<definiendum id="0">COMP</definiendum>
+				<definiendum id="1">COMP</definiendum>
+				<definiens id="0">a closed function which contains its own internal SUBJ : The judge thinks [</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The extraction procedure consists of three steps : First , the bracketing of the trees in the Penn Treebank is corrected and extended based on the approaches of Magerman ( 1994 ) and Collins ( 1997 ) .</sentence>
+				<definiendum id="0">extraction procedure</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>The Penn Treebank employs a rich arsenal of traces and empty productions ( nodes which do not realize any lexical material ) to coindex displaced material with the position where it should be interpreted semantically .</sentence>
+				<definiendum id="0">Penn Treebank</definiendum>
+				<definiens id="0">employs a rich arsenal of traces and empty productions ( nodes which do not realize any lexical material ) to coindex displaced material with the position where it should be interpreted semantically</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>OBL prep includes the prepositional head of the PP , PART includes the actual particle which occurs , for example , add ( [ subj , obj , part : up ] ) .</sentence>
+				<definiendum id="0">OBL prep</definiendum>
+				<definiendum id="1">PART</definiendum>
+				<definiens id="0">includes the actual particle which occurs , for example , add ( [ subj , obj , part : up ] )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The first symbol ( i.e. , VERB ) gives the part of speech .</sentence>
+				<definiendum id="0">symbol</definiendum>
+				<definiendum id="1">VERB )</definiendum>
+				<definiens id="0">gives the part of speech</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>What makes the COMLEX resource particularly suitable for our evaluation is that each of the complement types ( NP-NP , NP-PP , andNP ) which make up the value of the : SUBC feature is associated with a formal frame definition which looks like the following : ( vp-frame np-np : cs ( ( np 2 ) ( np 3 ) ) : gs ( : subject 1 : obj 2 : obj2 3 ) : ex “she asked him his name” ) The value of the : cs feature is the constituent structure of the subcategorization frame , which lists the syntactic CF-PSG constituents in sequence ( omitting the subject , again ) .</sentence>
+				<definiendum id="0">andNP</definiendum>
+				<definiendum id="1">cs</definiendum>
+				<definiens id="0">lists the syntactic CF-PSG constituents in sequence ( omitting the subject</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>We calculate the number of true positives ( tps ) ( where our semantic forms and those from COMLEX are the same ) , the number of false negatives ( fns ) ( those frames which appeared in COMLEX but were not produced by our system ) , and the number of false positives ( fps ) ( those frames does not rank frames by probabilities , which are essential in disambiguation .</sentence>
+				<definiendum id="0">false negatives ( fns )</definiendum>
+				<definiendum id="1">fps )</definiendum>
+				<definiens id="0">those frames which appeared in COMLEX but were not produced by our system</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Precision Recall F-score Mapping II Baseline Induced Baseline Induced Baseline Induced Experiment 1 72.1 % 83.5 % 58.5 % 54.7 % 64.6 % 66.1 % Experiment 2 65.2 % 81.4 % 37.4 % 44.8 % 47.5 % 57.8 % Experiment 2a 65.2 % 80.9 % 32.7 % 39.0 % 43.6 % 52.6 % Experiment 3 65.2 % 75.9 % 15.2 % 19.7 % 24.7 % 31.3 % Experiment 3a 65.2 % 75.5 % 13.6 % 17.4 % 22.5 % 28.3 % We applied lexical-redundancy rules ( Kaplan and Bresnan 1982 ) to automatically convert the active COMLEX frames to their passive counterparts : For example , subjects are demoted to optional by oblique agents , and direct objects become subjects .</sentence>
+				<definiendum id="0">COMLEX</definiendum>
+			</definition>
+			<definition id="12">
+				<sentence>Penn-III consists of the WSJ section from Penn-II as well as a parse-annotated subset of the Brown corpus .</sentence>
+				<definiendum id="0">Penn-III</definiendum>
+			</definition>
+			<definition id="13">
+				<sentence>The Brown corpus comprises 24,242 trees compiled from a variety of text genres including popular lore , general fiction , science fiction , mystery and detective fiction , and humor .</sentence>
+				<definiendum id="0">Brown corpus</definiendum>
+				<definiens id="0">comprises 24,242 trees compiled from a variety of text genres including popular lore , general fiction , science fiction , mystery and detective fiction , and humor</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>Given this mapping , the probability of a tree can be written as Pðx , yÞ¼ Y i¼1 : : : n Pðd i ) Fðd 1 : : : d iC01 ÞÞ Here , ðd 1 : : : d iC01 Þ is the history for the ith decision .</sentence>
+				<definiendum id="0">iC01 Þ</definiendum>
+				<definiens id="0">the history for the ith decision</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>F is a function which groups histories into equivalence classes , thereby making independence assumptions in the model .</sentence>
+				<definiendum id="0">F</definiendum>
+				<definiens id="0">a function which groups histories into equivalence classes , thereby making independence assumptions in the model</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>28 Similar arguments apply to conditional history-based models , which define conditional probabilities Pðy j xÞ through a definition Pðy j xÞ¼ Y i¼1 : : : n Pðd i j Fðd 1 : : : d iC01 , xÞÞ where d 1 ... d n are again the decisions made in building a parse , and F is a function that groups histories into equivalence classes .</sentence>
+				<definiendum id="0">F</definiendum>
+				<definiens id="0">a function that groups histories into equivalence classes</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Each feature h k ðx , yÞ is the count of a different ‘‘event’’ or fragment within the tree .</sentence>
+				<definiendum id="0">yÞ</definiendum>
+				<definiens id="0">the count of a different ‘‘event’’ or fragment within the tree</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The negative log-likelihood , LogLoss ( ¯a ) , is defined as LogLossð¯aÞ¼C0 X n i¼1 log Pðy i j x i , ¯aÞ¼C0 X n i¼1 log e y i Fðx i , ¯aÞ 1 þ e y i Fðx i , ¯aÞ C18C19 ¼ X n i¼1 log 1 þ e C0y i Fðx i , ¯aÞ C16C17 ð4Þ There are many methods in the literature for minimizing LogLoss ( ¯a ) with respect to ¯a , for example , generalized or improved iterative scaling ( Berger , Della Pietra , and if a constant ‘‘bias’’ feature h mþ1 ðxÞ¼1 for all x is added to the representation , a hyperplane passing through the origin in this new space is equivalent to a hyperplane in general position in the original m-dimensional space .</sentence>
+				<definiendum id="0">LogLoss</definiendum>
+				<definiens id="0">LogLossð¯aÞ¼C0 X n i¼1 log Pðy i j x i , ¯aÞ¼C0 X n i¼1 log e y i Fðx i , ¯aÞ 1 þ e y i Fðx i , ¯aÞ C18C19 ¼ X n i¼1 log 1 þ e C0y i Fðx i , ¯aÞ C16C17 ð4Þ There are many methods in the literature for minimizing LogLoss ( ¯a ) with respect to ¯a , for example , generalized or improved iterative scaling ( Berger , Della Pietra , and if a constant ‘‘bias’’ feature h mþ1 ðxÞ¼1 for all x is added to the representation , a hyperplane passing through the origin in this new space is equivalent to a hyperplane in general position in the original m-dimensional space</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Error ( ¯a ) is the number of incorrectly classified training examples under parameter values ¯a. Finally , it will be useful to define the margin on the ith training example , given parameter values ¯a , as M i ð¯aÞ¼y i Fðx i , ¯aÞð8Þ With these definitions , the three loss functions can be written in the following form : LogLossð¯aÞ¼ X n i¼1 fðM i ð¯aÞÞ , where fðzÞ¼logð1 þ e C0z Þ ExpLossð¯aÞ¼ X n i¼1 fðM i ð¯aÞÞ , where fðzÞ¼e C0z Errorð¯aÞ¼ X n i¼1 fðM i ð¯aÞÞ , where fðzÞ¼gz C20 0Ä The three loss functions differ only in their choice of an underlying ‘‘potential function’’ of the margins , f ( z ) .</sentence>
+				<definiendum id="0">Error</definiendum>
+				<definiendum id="1">f ( z</definiendum>
+				<definiens id="0">the number of incorrectly classified training examples under parameter values ¯a. Finally , it will be useful to define the margin on the ith training example , given parameter values ¯a</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The graph labeled ExpLoss is a plot of fðzÞ¼e C0z for z ¼½C01:5 : ::1:5C138 ; LogLoss shows a similar plot for fðzÞ¼logð1 þ e C0z Þ ; Error is a plot of fðzÞ¼gz C20 0Ä .</sentence>
+				<definiendum id="0">ExpLoss</definiendum>
+				<definiendum id="1">LogLoss</definiendum>
+				<definiendum id="2">Error</definiendum>
+				<definiens id="0">a plot of fðzÞ¼gz C20 0Ä</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The ranking function for a parse tree x implied by a parameter vector ¯a is defined as Fðx , ¯aÞ¼a 0 LðxÞþ X m k¼1 a k h k ðxÞ Given a new test sentence s , with parses x j for j =1 , : : : , N , the output of the model is the highest-scoring tree under the ranking function arg max xZfx 1 : : : x N g Fðx , ¯aÞ Thus Fðx , ¯aÞ can be interpreted as a measure of how plausible a parse x is , with higher scores meaning that x is more plausible .</sentence>
+				<definiendum id="0">ranking function</definiendum>
+				<definiens id="0">Fðx , ¯aÞ¼a 0 LðxÞþ X m k¼1 a k h k ðxÞ Given a new test sentence s , with parses x j for j =1 , : : : , N , the output of the model is the highest-scoring tree under the ranking function arg max xZfx 1 : : : x N g Fðx</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Again , the loss function is a function of the margins on training data : ExpLossð¯aÞ¼ X i X n i j¼2 e C0ðFðx i,1 , ¯aÞC0Fðx i , j , ¯aÞÞ ¼ X i X n i j¼2 e C0M i , j ð¯aÞ ð10Þ Note the similarity of equation ( 10 ) to the ExpLoss function for classification in equation ( 6 ) .</sentence>
+				<definiendum id="0">loss function</definiendum>
+				<definiens id="0">a function of the margins on training data : ExpLossð¯aÞ¼ X i X n i j¼2 e C0ðFðx i,1 , ¯aÞC0Fðx i</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>We define BestWtðk , ¯aÞ as the optimal update for the kth feature ( it must be calculated for all features k =1 , ... , m ) : BestWtðk , ¯aÞ¼arg min d LossðUpdð¯a , k , dÞÞ The next step is to calculate the Loss for each feature with its optimal update , which we will call BestLossðk , ¯aÞ¼min d LossðUpdð¯a , k , dÞÞ ¼ LossðUpdð¯a , k , BestWtðk , ¯aÞÞÞ BestWt and BestLoss for each feature having been computed , the optimal feature/ weight pair can be found : k C3 ¼ arg min k BestLossðk , ¯aÞ , d C3 ¼ BestWtðk C3 , ¯aÞ The next sections describe how BestWt and BestLoss can be computed for the two loss functions .</sentence>
+				<definiendum id="0">k C3 ¼ arg min k BestLossðk</definiendum>
+				<definiens id="0">next sections describe how BestWt and BestLoss can be computed for the two loss functions</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>In the experiments we used the following definition for the Score of the parse : Scoreðx i , j Þ¼ F C0 measureðx i , j Þ 100 C2 Sizeðx i , j Þ where F-measure ( x i , j ) is the F 1 score 14 of the parse when compared to the goldstandard parse ( a value between 0 and 100 ) , and Size ( x i , j ) is the number of constituents in the gold-standard parse for the ith sentence .</sentence>
+				<definiendum id="0">F-measure</definiendum>
+				<definiendum id="1">Size</definiendum>
+				<definiens id="0">the number of constituents in the gold-standard parse for the ith sentence</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The y-axis is the level of accuracy ( 100 is the baseline score ) , and the x-axis is the number of rounds of boosting .</sentence>
+				<definiendum id="0">y-axis</definiendum>
+				<definiens id="0">the level of accuracy ( 100 is the baseline score ) , and the x-axis is the number of rounds of boosting</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>‘‘LR’’ is labeled recall ; ‘‘LP’’ is labeled precision ; ‘‘CBs’’ is the average number of crossing brackets per sentence ; ‘‘0 CBs’’ is the percentage of sentences with 0 crossing brackets ; ‘‘2 CBs’’ is the percentage of sentences with two or more crossing brackets .</sentence>
+				<definiendum id="0">‘‘LP’’</definiendum>
+				<definiendum id="1">‘‘CBs’’</definiendum>
+				<definiens id="0">the percentage of sentences with 0 crossing brackets</definiens>
+				<definiens id="1">the percentage of sentences with two or more crossing brackets</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>We define the following quantities : WorkðnÞ¼ X n t¼1 C t T ð24Þ SavingsðnÞ¼ nT P n t¼1 C t ð25Þ Savingsða , bÞ¼ ð1 þ b C0 aÞT P b t¼a C t ð26Þ Here , WorkðnÞ is the computation required for n rounds of feature selection , where a single unit of computation corresponds to a pass over the entire training set .</sentence>
+				<definiendum id="0">WorkðnÞ</definiendum>
+				<definiens id="0">a pass over the entire training set</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>60 Computational Linguistics Volume 31 , Number 1 61 Assuming that selection of a feature takes one pass over the training set and that fitting a model takes p passes over the training set , these methods require f C2ðp +1Þ passes over the training set , where f is the number of features selected .</sentence>
+				<definiendum id="0">f</definiendum>
+				<definiens id="0">Assuming that selection of a feature takes one pass over the training set and that fitting a model takes p passes over the training set , these methods require f C2ðp +1Þ passes over the training set</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>See Collins ( 2004 ) for a discussion of many of these methods , including an overview of statistical bounds for the boosting , perceptron , and SVM methods , as well as a discussion of the computational issues involved in the different algorithms .</sentence>
+				<definiendum id="0">SVM methods</definiendum>
+				<definiens id="0">a discussion of the computational issues involved in the different algorithms</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>Note that this is now an approximation , in that BestLossðk , ¯a ) is an upper bound on the log-likelihood which may or may not be tight .</sentence>
+				<definiendum id="0">¯a )</definiendum>
+				<definiens id="0">an upper bound on the log-likelihood which may or may not be tight</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>Tree-adjoining grammar ( TAG ) is a tree-rewriting formalism originally defined by Joshi , Levy , and Takahashi ( 1975 ) .</sentence>
+				<definiendum id="0">Tree-adjoining grammar</definiendum>
+				<definiendum id="1">TAG</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>SegTAG uses an operation on trees called segmented adjunction that consists partly of a standard TAG adjunction and partly of a kind of tree merging or tree unification .</sentence>
+				<definiendum id="0">SegTAG</definiendum>
+				<definiens id="0">uses an operation on trees called segmented adjunction that consists partly of a standard TAG adjunction</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This article proposes a local TAG variant that can deal with scrambling ( at least with an arbitrarily large set of scrambling phenomena ) , that is polynomially parsable , and that properly extends TAG in the sense that the set of all TALs is a proper subset of the languages it generates .</sentence>
+				<definiendum id="0">TALs</definiendum>
+				<definiens id="0">a local TAG variant that can deal with scrambling ( at least with an arbitrarily large set of scrambling phenomena )</definiens>
+				<definiens id="1">a proper subset of the languages it generates</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Now we formally introduce multicomponent tree-adjoining grammars ( Joshi 1987 ; Weir 1988 ) : Definition 1 A multicomponent tree-adjoining grammar is a tuple G =〈I , A , N , T , A〉 such that a114 G TAG : =〈I , A , N , T〉 is a TAG ; a114 A ⊆ P ( I ∪ A ) isasetofsubsetsofI ∪ A , the set of elementary tree sets .</sentence>
+				<definiendum id="0">tree-adjoining grammars</definiendum>
+				<definiendum id="1">multicomponent tree-adjoining grammar</definiendum>
+				<definiendum id="2">T〉</definiendum>
+				<definiens id="0">a TAG</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Since they are added to pairwise different prime ] is defined as follows : If γ prime is ( derived from ) an initial tree and the node at position p in γ is a substitution node , then γ [ p , γ prime ] is the tree one obtains by substitution of γ prime into γ at node position p.Ifγ prime is ( derived from ) an auxiliary tree and the node at position p in γ is an internal node , then γ [ p , γ prime ] is the tree one obtains by adjunction of γ prime to γ at node position p.Otherwiseγ [ p , γ prime ] is undefined .</sentence>
+				<definiendum id="0">p.Ifγ prime</definiendum>
+				<definiens id="0">follows : If γ prime is ( derived from ) an initial tree and the node at position p in γ is a substitution node</definiens>
+				<definiens id="1">the tree one obtains by substitution of γ prime into γ at node position</definiens>
+				<definiens id="2">derived from ) an auxiliary tree and the node at position p in γ is an internal node</definiens>
+				<definiens id="3">the tree one obtains by adjunction of γ prime to γ at node position p.Otherwiseγ [ p , γ prime ] is undefined</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>195 Computational Linguistics Volume 31 , Number 2 nodes , one can just as well add them one after the other ; that is , each multicomponent derivation in an MCTAG G =〈I , A , N , T , A〉 corresponds to a derivation in the TAG G TAG : =〈I , A , N , T〉 .</sentence>
+				<definiendum id="0">TAG</definiendum>
+				<definiens id="0">a derivation in the TAG G</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>G is a tree-local MCTAG with shared nodes iff the set of trees generated by G , L T ( G ) , is defined as the set of those trees that can be derived with an SN-tree-local multicomponent TAG derivation tree in G. As usual , the string language L S ( G ) is then defined as the set of strings yielded by the trees in L T ( G ) .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiendum id="1">L T ( G</definiendum>
+				<definiens id="0">a tree-local MCTAG with shared nodes iff the set of trees generated by G</definiens>
+				<definiens id="1">the set of those trees that can be derived with an SN-tree-local multicomponent TAG derivation tree in G. As usual , the string language L S ( G</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Figure 5 shows an SN-MCTAG generating a language that can not even be generated by linear context-free rewriting systems ( see Becker , Rambow , and Niv [ 1992 ] for a proof ) , and therefore not by set-local MCTAG .</sentence>
+				<definiendum id="0">SN-MCTAG</definiendum>
+				<definiens id="0">generating a language that can not even be generated by linear context-free rewriting systems</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>We think , Figure 5 SN-MCTAG for { n π ( k ) ... n π ( 1 ) v k ... v 1 |k ≥ 0 , n i = n , v i = v , andn i and v i are in the same elementary tree set and they were added in the ith derivation step for all i,1≤ i ≤ k , andπ is a permutation of ( 1 , ... , k ) } .</sentence>
+				<definiendum id="0">andπ</definiendum>
+				<definiens id="0">k ) ... n π ( 1 ) v k ... v 1 |k ≥ 0 , n i = n , v i = v , andn i and v i are in the same elementary tree set and they were added in the ith derivation step for all i,1≤ i ≤ k ,</definiens>
+				<definiens id="1">a permutation of ( 1 , ... , k ) }</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Consequently , for scrambling data ( without extraposition ) , one rather wants to generate the following language : SCR : = { w = π ( n 1 ... n k v 1 ... v k ) |k ≥ 1 , n i = n , v i = v , for all 1 ≤ i ≤ k , andπ is a permutation of n 1 ... n k v 1 ... v k such that n i precedes v i in w for all 1 ≤ i ≤ k and v i precedes v i−1 in w for all 1 &lt; i ≤ k } with the derivation structure in Figure 6 .</sentence>
+				<definiendum id="0">andπ</definiendum>
+				<definiens id="0">for scrambling data ( without extraposition ) , one rather wants to generate the following language : SCR : = { w = π ( n 1 ... n k v 1 ... v k ) |k ≥ 1 , n i = n , v i = v</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>a114 An MCTAG G is called a restricted SN-MCTAG iff the set of trees generated by G , L T ( G ) , is defined as the set of those trees that can be derived with an RSN-tree-local multicomponent TAG derivation tree in G. 201 Computational Linguistics Volume 31 , Number 2 The first condition of the definition says that the grammar is SN-tree-local , and the second condition ensures that at least one of the relevant SN-daughters of γ is a primary SN-daughter , that is , an actual daughter of γ .</sentence>
+				<definiendum id="0">L T</definiendum>
+				<definiens id="0">called a restricted SN-MCTAG iff the set of trees generated by G</definiens>
+				<definiens id="1">ensures that at least one of the relevant SN-daughters of γ is a primary SN-daughter , that is , an actual daughter of γ</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>But the grammar in Figure 7 for the language SCR is an RSN-MCTAG .</sentence>
+				<definiendum id="0">SCR</definiendum>
+				<definiens id="0">an RSN-MCTAG</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>14 Definition 7 A range concatenation grammar is a tuple G =〈N , T , V , S , P〉 such that a114 N is a finite set of predicates , each with a fixed arity ; a114 T and V are disjoint finite sets of terminals and of variables ; a114 S ∈ N is the start predicate , a predicate of arity 1 ; a114 P is a finite set clauses of the form A 0 ( x 01 , ... , x 0a 0 ) → epsilon1 , or A 0 ( x 01 , ... , x 0a 0 ) → A 1 ( x 11 , ... , x 1a 1 ) ... A n ( x n1 , ... , x na n ) , with n ≥ 1andA i ∈ N , x ij ∈ ( T ∪ V ) ∗ and a i being the arity of A i .</sentence>
+				<definiendum id="0">range concatenation grammar</definiendum>
+				<definiens id="0">a tuple G =〈N , T , V , S , P〉 such that a114 N is a finite set of predicates , each with a fixed arity ; a114 T and V are disjoint finite sets of terminals and of variables ; a114 S ∈ N is the start predicate , a predicate of arity 1 ; a114 P is a finite set clauses of the form A 0 ( x 01 , ... , x 0a 0 ) → epsilon1 , or A 0 ( x 01 , ... , x 0a 0 ) → A 1 ( x 11 , ... , x 1a 1 ) ... A n ( x n1 , ... , x na n ) , with n ≥ 1andA i ∈ N , x ij ∈ ( T ∪ V ) ∗ and a i being the arity of A i</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The language of an RCG G is the set of strings that can be reduced to the empty word , that is , { w|S ( 〈0 , |w|〉 ) ∗ ⇒ epsilon1 with respect to w } .</sentence>
+				<definiendum id="0">language of an RCG G</definiendum>
+				<definiens id="0">the set of strings that can be reduced to the empty word</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>15 An RCG with maximal predicate arity n is called an RCG of arity n. For illustration , let us consider a sample RCG : The RCG with N = { S , A , B } , T = { a , b } , V = { X , Y , Z } , start predicate S , and clauses S ( XYZ ) → A ( X , Z ) B ( Y ) , A ( aX , aY ) → A ( X , Y ) , B ( bX ) → B ( X ) , A ( epsilon1 , epsilon1 ) → epsilon1 , B ( epsilon1 ) → epsilon1 has the string language { a n b k a n |k , n ∈ IN } .</sentence>
+				<definiendum id="0">aY ) → A</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>The RCG contains predicates 〈α〉 ( X ) and〈β〉 ( L , R ) for initial and auxiliary trees , respectively .</sentence>
+				<definiendum id="0">RCG</definiendum>
+				<definiens id="0">contains predicates 〈α〉 ( X ) and〈β〉 ( L , R ) for initial and auxiliary trees , respectively</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>X covers the yield of α and all trees added to α , andL and R cover those parts of the yield of β ( including all trees added to β ) that are to the left and the right of the foot node of β .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">covers the yield of α and all trees added to α</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>G is a restricted tree-local MCTAG with shared nodes of arity n iff the set of trees generated by G , L T ( G ) , is defined as the set of those trees that can be derived in G with an RSN-tree-local multicomponent TAG derivation tree such that the corresponding SN-derivation structure is of arity n. 212 Kallmeyer Multicomponent TAGs with Shared Nodes Figure 15 Sample RSN-MCTAG of arity four .</sentence>
+				<definiendum id="0">G</definiendum>
+				<definiens id="0">a restricted tree-local MCTAG with shared nodes of arity n iff the set of trees generated by G</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>Theorem 1 For each RSN-MCTAG G of arity n , a simple RCG G prime of arity n can be constructed such that L ( G ) = L ( G prime ) .</sentence>
+				<definiendum id="0">arity n</definiendum>
+				<definiens id="0">a simple RCG G prime of</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>Predicates : Let k 1 be the maximal number of nodes in an elementary tree in G and k 2 be the maximal number of trees in an elementary tree set .</sentence>
+				<definiendum id="0">Predicates</definiendum>
+				<definiens id="0">Let k 1 be the maximal number of nodes in an elementary tree in G and k 2 be the maximal number of trees in an elementary tree set</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Define the decoration string σ γ of an elementary tree γ as in Boullier ( 1999 ) , except that a root node µ has n variables , L µ 1 ... L µ n 2 on the left and R µ n 2 ... R µ 1 on the right .</sentence>
+				<definiendum id="0">Define the decoration string σ</definiendum>
+				<definiens id="0">a root node µ has n variables , L µ 1 ... L µ n 2 on the left and R µ n 2 ... R µ 1 on the right</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>iff There is a 〈γ 1 γ 2 ···γ m 〉-clause as described in paragraph 3 of the construction above such that there is an instantiation f of the clause such that a114 If γ 1 is initial , then f ( x 1 ) = l 1 , ... , f ( x n 2 −1 ) = l n 2 −1 , f ( x n 2 XR ( x n 2 ) ) = x , f ( R ( x n 2 −1 ) ) = r n 2 −1 , ... , f ( R ( x 1 ) ) = r 1 , andifγ 1 is auxiliary , then f ( x 1 ) = l 1 , ... , f ( x n 2 ) = l n 2 1 , f ( R ( x n 2 ) ) = r n 2 , ... , f ( R ( x 1 ) ) = r 1 .</sentence>
+				<definiendum id="0">... , f</definiendum>
+				<definiendum id="1">f</definiendum>
+				<definiendum id="2">, f</definiendum>
+				<definiens id="0">auxiliary , then f ( x 1 ) = l 1 , ...</definiens>
+				<definiens id="1">r n 2 , ... , f ( R ( x 1 ) ) = r 1</definiens>
+			</definition>
+</paper>
+
+	</volume>

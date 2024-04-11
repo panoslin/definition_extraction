@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J90">
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>According to Martin Kay ( personal communication ) , the STREP machine translation project at the Center for the Study of Language and Information uses a version of our algorithm to generate with respect to grammars based on head-driven phrase structure grammar ( HPSG ) .</sentence>
+				<definiendum id="0">Information</definiendum>
+				<definiens id="0">personal communication</definiens>
+				<definiens id="1">uses a version of our algorithm to generate with respect to grammars based on head-driven phrase structure grammar</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In particular , the infix function symbol / will be used to form categories of the form Syn/Sem where Syn is the syntactic category of the expression and Sere is an encoding of its semantics as a logical form ; the previous rule uses this notation , for example .</sentence>
+				<definiendum id="0">Syn</definiendum>
+				<definiendum id="1">Sere</definiendum>
+				<definiens id="0">an encoding of its semantics as a logical form</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>As before , a term of the form node ( Cat , P0-P ) represents a phrase with the syntactic and semantic information given by Cat starting at position P0 and ending at position P in the string being generated .</sentence>
+				<definiendum id="0">P0-P )</definiendum>
+				<definiens id="0">represents a phrase with the syntactic and semantic information given by Cat starting at position P0 and ending at position P in the string being generated</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , here is the rule for sentences : s ( Form , GO-G , Store ) /quani ( O , X , R , S ) -- - &gt; ( 8 ) s ( Form , GO-G , \ [ qterm ( Q , X , R ) lStore\ ] ) /S. The term quant ( Q , X , R , S ) represents a quantified formula with quantifier Q , bound variable X , restriction R , and scope S ; qterm ( Q , X , R ) is the corresponding store element .</sentence>
+				<definiendum id="0">S )</definiendum>
+				<definiens id="0">the rule for sentences : s ( Form , GO-G , Store ) /quani ( O , X , R , S ) -- - &gt; ( 8 ) s ( Form , GO-G , \ [ qterm ( Q , X , R ) lStore\ ] ) /S. The term quant ( Q , X , R ,</definiens>
+				<definiens id="1">a quantified formula with quantifier Q , bound variable X , restriction R , and scope S</definiens>
+				<definiens id="2">the corresponding store element</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Semantic Head-Driven Grammar sentence/ \ [ a\ ] des1 ( quant ( no , p , prog ( p ) , quant ( eve~ , s , sent ( s ) , gen ( p , s } } ) } T S ( finite , \ [ \ ] } / \ [ b\ ] quant ( no , p , prog ( p ) , q~ant ( eve~y , s , sent ( s ) , gen ( p , s ) ) ) ~1 ( 8 ) \ [ el s ( finite , \ [ ~erm ( no , p , pro~ ( p ) ) \ ] ) 1 quant ( evQ~ , • , sent ( s ) , gln ( p , s ) ) ~1 ( s ) \ [ d\ ] s ( finite , \ [ qterm ( no , p , prog ( p ) ) , c/term ( every , s , sent ( s } } \ ] ) /gen 1\ [ p , s } \ [ c\ ] np ( 3-sing , \ [ qterm~ \ [ qt|no , p , prog ( p ) T ~ ( finite , \ [ np ( 3-sing , \ [ qtermlno , p , prog ( p ) ) \ ] ) /p\ ] , Y \ [ h\ ] n ( 3-sing , p ) /prog ( s } \ [ i\ ] \ [ qterm ( no , p , prog ( p ) } , no ~ qterm ( every , s , sent ( s ) ) \ ] ) /gen ( p , s ) ~1 vPlfinite , \ [ npl3-slng , ( qtemlevtry , s , stnt ( sl ) If/s , ~\ ] npl3-sing , \ [ qterm ( every , s , sent ( el ) \ ] ) /s np ( 3-sing , ( qterm ( no , p , pzog ( p ) ) \ ] ) /Pl , ( qterm ( no , p , prog ( p ) ) , q~ ( ev ?</sentence>
+				<definiendum id="0">quant</definiendum>
+				<definiendum id="1">] quant</definiendum>
+				<definiens id="0">finite , \ [ ~erm ( no , p</definiens>
+				<definiens id="1">finite , \ [ qterm ( no , p , prog ( p ) ) , c/term ( every , s , sent ( s } } \ ] ) /gen 1\ [ p , s } \ [ c\ ] np ( 3-sing , \ [ qterm~ \ [ qt|no , p , prog ( p ) T ~ ( finite , \ [ np ( 3-sing , \ [ qtermlno , p</definiens>
+			</definition>
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>The Dictionnaire Explicatif et Combinatoire du Fran~ais Contemporain ( DECFC ) is an attempt to provide a formally complete and adequate description of the French lexicon .</sentence>
+				<definiendum id="0">Contemporain ( DECFC )</definiendum>
+				<definiens id="0">an attempt to provide a formally complete and adequate description of the French lexicon</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In MTT , an utterance u is represented at seven levels : • the Sem ( antic ) R ( epresentation ) , which is a linguistic object , an utterance in a pictorial language .</sentence>
+				<definiendum id="0">Sem</definiendum>
+				<definiens id="0">a linguistic object , an utterance in a pictorial language</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A semantic graph is a connected directed graph with labeled nodes and arcs .</sentence>
+				<definiendum id="0">semantic graph</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>Each , lexical entry of the DECFC gives two basic kinds of information : semantic information , a systematic and rigor146 Computational Linguistics Volume 16 , Number 3 , September 1990 Michel D~cary and Guy Lapalme An Editor for the DECFC ous description of the meanings of words and phrases , and combinatorial information , a description of the way individual words can combine syntactically and lexically .</sentence>
+				<definiendum id="0">DECFC</definiendum>
+				<definiens id="0">gives two basic kinds of information : semantic information</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A lexeme is a single word taken in only one precise meaning , which is a practice that differs from the traditional dictionaries .</sentence>
+				<definiendum id="0">lexeme</definiendum>
+				<definiens id="0">a practice that differs from the traditional dictionaries</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A vocable is the set of all lexemes that have the same form ( they are written the same way ) and share a nontrivial meaning component .</sentence>
+				<definiendum id="0">vocable</definiendum>
+				<definiens id="0">the set of all lexemes that have the same form ( they are written the same way ) and share a nontrivial meaning component</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Func 0 represents a semantically empty verb taking the lexeme as its subject .</sentence>
+				<definiendum id="0">Func 0</definiendum>
+				<definiens id="0">represents a semantically empty verb taking the lexeme as its subject</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>One of the objectives of the DECFC is to find those primitives .</sentence>
+				<definiendum id="0">DECFC</definiendum>
+				<definiens id="0">to find those primitives</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>send ( john , x , mary ) ) for `` John sent no roses to Mary , '' { N I N &lt; SKroso , M~.send ( john , x , mary ) ) for `` John sent less than 5 roses to Mary , '' and INI 3 N'.N &lt; N ' &amp; { N'\ ] ( rose , Xx.rose ( x ) ddn ( x , garden ) ) } ( rose , hx.send ( iohn , x , mary ) ) for `` John sent fewer roses to Mary than there were roses in the garden. '' Formulas like the third one above will occur frequently in Section 3 , and we advise the reader to spend a minute at this point making sure that she understands the notation. ASSUMPTIONS The basic scheme , or some not too distant relative , is the one used in many large-scale implemented systems ; as examples , we can quote TEAM ( Grosz et al. 1987 ) , PUNDIT ( Dahl et al. 1987 ) , TACITUS ( Hobbs et al. 1988 ) , MODL ( McCord 1987 ) , CLE ( Alshawi et al. 1989 ) , and SNACK-85 ( Rayner and Banks 1986 ) . It also has close links with theoretical work in situation semantics ( Pollard and Sag 1988 ; Fenstad et al. 1987 ) . We start by enumerating tlhe basic syntactic constituents S , NP , VP , DET , AP , ADVF ' , PP ; as far as our ontological commitments go , we need a set of THINGS , a set of EVENTS , and a set of DEGREES. We will assume that DEGREES are isomorphic to some kind of numbers. An NP will consist of a DET and a CN ( we borrow this nonstandard term for N-bar from Montague grammar ) . A DET will semantically correspond to a generalized determiner , and a CN to a subset of THINGS. An NP will thus become a generalized quantifier. A VP consists of a VERB , followed by a list of VERBARGs ( or just ARGs ) , by which we mean its obligatory and optional complements. An ARG is represented at QLF level as a pair ( arg-type , arg-value ) . We will need at least the following kinds of complements : NP , PP , S-COMP ( a suitab\ ] ~e S ) , VP-COMP ( a suitable VP ) , APs. Semantically , a verb will be associated with a subset of EVENTS , which we can think of as a type of event , state , or situation. The VALUE of each ARG will also be semantically represented by a suitable object , and the ARG-TYPE will translate to a relation between the verb-object and the representation of the ARG-VALUE. We will require a special kind of QLF node , called an abstraction , to represent VPs , APs , and other constituents whose denotation is a function from individuals to propositions ; one component of the abstraction node will be the abstracted variable. A scalar adjective A translates to a two-place predicate A ' ( x , d ) on OBJECTS × DEGREES , with the interpretation : the object x is A ' to degree d. Similarly , a scalar adverb A translates to a two-place predicate A ' ( x , d ) on EVENTS X DEGREES , with the interpretation : the event x is A ' to degree d. We will assume that degree expressions like `` more , '' `` less , ' '' or `` at least twice as much as much as '' translate to two-place predicates on DEGREES × DEGREES. Since we are assuming that DEGREES are numbers , it will also make sense to use a generalized quantifier as the second argume n't to an adjective : for example , A ( x , { N IN &lt; 2 } ) will be interpreted as `` x is ( less than 2 ) A. '' We will also need to be able to form `` slash categories '' or something similar. In particular , the following will be required ( in each example the `` gap '' is represented as an underscore ) : S/DET ( e.g. `` John bought _ vases '' ) S/NP ( e.g. `` John gave _ to Mary '' ) S/S-COMP ( e.g. `` John probably believed _ `` ) S/VP-COMP ( e.g. `` John presumably meant to _ `` ) A rnore exact formulation of the basic question we are attacking is thus : In terms of the above framework , state rules by which we can systematically calculate the denotation of a complex expression involving a comparative construction in terms of 88 Computational Linguistics Volume 16 , Number 2 , June 1990 Mammy Rayner and Amelie Banks An Implementable Semantics for Comparative Constructions the denotation of its scalar adjectives and adverbs , the denotations of its degree expressions , and the denotations of its other constituents. This section will summarize relevant previous work on comparatives ; we begin by listing sources. So far , there has been a surprisingly small amount of work done in computational frameworks : the only major attempts known to us that integrate syntactic and semantic processing are those reported in Ballard ( 1988 ) and Friedmann ( 1989 ) . Limited syntactic/semantic coverage has appeared in some other systems ( e.g. DIALOGIC \ [ Robinson 1982\ ] and CLE \ [ Alshawi et al. 1989\ ] ) , and the Linguistic String Project ( Sager 1981 ) has an advanced syntactic coverage. On the theoretical front , we have been considerably influenced by Bresnan ( 1973 ) , Hankamer ( 1973 ) , Pinkham ( 1985 ) , and Klein ( 1980 ) , especially the last three ; we were also surprised to discover at a late stage of our research that unpublished work by Heim ( 1985 ) and Krifka ( 1987 ) had pursued a course almost parallel to our own. We now go on to describe what we regard as relationships between these treatments and ours. We will start by looking at clausal comparatives , where the immediate problem is clearly to account for the apparent `` missing material '' in the comparative clause. An early and still very influential study of comparative constructions is that of Bresnan ( 1972 ; 1973 ; 1977 ) , working within transformational grammar ; the key concept is the introduction of the rule of Comparative Subdeletion , which will for example derive sentences like la ) and 2a ) by deleting the bracketed material from the base forms 1 b ) and 2b ) . 1 a ) John bought more books than Mary bought. 1 b ) John bought more books than Mary bought \ [ x many books\ ] . 2a ) John bought more books than Mary bought records. 2b ) John bought more books than Mary bought \ [ x many\ ] records. Although Comparative Subdeletion explains many of the facts , it makes a number of erroneous predictions. A very long and thorough criticism was advanced in Pinkham ( 1985 ) , where reasons are given to believe that it is preferable to adopt an analysis that represents the `` missing '' material as ( in English ) null proforms ; these are bound to the head of the comparison by a mechanism that Pinkham calls Quantifier Binding. Pinkham 's view of the clausal comparative has many points in common with that proposed in Klein ( 1980 ) , in the context ofa GPSG/Montague grammar framework , although Klein only really considers sentences of the type in example 2 ) ; our own treatment will in this respect be similar to Pinkham 's and Klein's. Like Bresnan and Pinkham , but unlike Friedmann ( 1989 ) , we will also regard the comparative clause as in general modifying the comparative head in the main clause , as opposed to treating the two clauses as parallel ; we discuss further in Section 4 the reasons behind this decision. Moving on to phrasal comparatives , there would appear to be two basic approaches. The earlier and more common one is to treat these as reduced forms of clausal comparatives ; for example , Hankamer ( 1971 ) introduces a rule of `` C-ellipsis , '' which deletes material from the comparative clause under identity with material in the main clause. Thus for example , 3a ) and 4a ) would be regarded as reduced forms of 3b ) and 4b ) , where the bracketed material has been deleted : 3a ) John bought more books than Mary. 3b ) John bought more books than Mary \ [ bought x many books\ ] . 4a ) John bought more books than Mary thought. 4b ) John bought more books than Mary thought \ [ that he bought x many books\ ] . In a computational treatment , this means that the deletion rule has to be `` reversed , '' so as to reconstruct the deleted material from the phrasal remnant : this is the method used in Sager ( 1981 ) and Friedmann ( 1989 ) . However , a number of researchers have showed that there are drawbacks to the `` C-ellipsis '' account. Although both Hankamer and Pinkham use C-ellipsis in their theories , they also provide strong evidence for the existence of at least some comparatives that are not elliptic in nature ( Hankamer 1973 ; Pinkham 1985 ) . Three examples are shown in 5 ) -7 ) , where Pinkham in each case argues that there are severe difficulties involved in deriving a sentence of this type from a clausal comparative ; the natural choice in a transformational framework is to regard the italicized portions as base-generated phrasal. 5 ) I invited more men than women. 6 ) John ran faster than the world record. 7 ) Mary looks taller than John when she wears high heels. Of particular interest here is Pinkham 's treatment of examples like 5 ) , which are interpreted using a rule that she calls `` distributive copying. '' 5 ) receives the logical form 5a ) , which after distributive copying becomes 5b ) . Although the details of the solution are not fully worked out ( in particular , the notation is never given a formal semantics ) , the intuitive idea is clearly that of duplicating a `` shared '' or `` matrix '' predicate , substituting in the two compared elements in a suitable way. 5a ) I INVITED ( MORE \ [ ql ( ql men ) , q2 ( q2 women ) \ ] ) 5b ) MORE \ [ ql ( I INVITED ql men ) , q2 ( I INVITED q2 women ) \ ] Similar suggestions have also been made in a rather different context by Keenan and Stavi ( 1986 ; 282-284 ) ; considering the semantics of comparative adjectival constructions like that in 8a ) , they argue convincingly that these are to be regarded as directly interpreted , rather than as reduced forms of sentences like 8b ) or 8c ) : Computational Linguistics Volume 16 , Number 2 , June 1990 89 Mammy Ra~er and AmeHe ~nks An Implement~ble Semantics for Comparative Cons~ucfiomus 8a ) More male than female students passed the exam. 8b ) More male students than female students passed the exam. 8c ) More male students passed the exam than female students passed the exam. We should also mention the work of M cCord ( 1981 ; 1985 ; 1987 ) on `` focalizers '' ; the key notion we borrow is the use of rewriting rules on semantic representations , to produce a logical form in which contrasted items appear at the same level. Although McCord does not attempt , as we do , to justify his operations formally , the intuitions behind them clearly overlap to a large extent with ours. In our own treatment of phrasal comparatives , we take all these ideas to their logical conclusion : we dispense with the C-ellipsis rule altogether , and regard all nonclausal comparatives as essentially phrasal , interpreting them by a method analogous to Pinkham 's distributive copying. The abstract scheme is concretely implemented in the form of rewriting rules , which are applied to an intermediate quasilogical form. A solution along these lines , which builds on previously reported work ( Banks 1986 ; Banks and Rayner 1987 ; Rayner and Banks 1988 ) , is described in Section 3. As we complete this article , we discover that a similar approach for German comparatives has independently been suggested by Krifka ( 1987 ) ; Krifka also proceeds by using direct interpretation rules involving contrasting of compared constituents , although the details of his analysis are in some respects fairly different. The following is a typical example : 9a ) is given the semantics represented by 9b ) , where pdO ( d ) is to be read as `` the maximum d , for which O ( d ) holds , '' and KOMP ( x , y , f ) is defined by KOMP ( x , y , ~ ) , ~. &lt; I , ( x ) &gt; ~y ) 9a ) Ich babe ihr bessere ZahNrtze I have him better dentist empfohlen als du .</sentence>
+				<definiendum id="0">send ( john</definiendum>
+				<definiendum id="1">, VP-COMP (</definiendum>
+				<definiens id="0">x , mary ) ) for `` John sent no roses to Mary , '' { N I N &lt; SKroso , M~.send ( john , x , mary ) ) for `` John sent less than 5 roses to Mary , '' and INI 3 N'.N &lt; N ' &amp; { N'\ ] ( rose , Xx.rose ( x ) ddn ( x , garden ) ) } ( rose , hx.send ( iohn , x , mary ) ) for `` John sent fewer roses to Mary than there were roses in the garden. '' Formulas like the third one above will occur frequently in Section 3 , and we advise the reader to spend a minute at this point making sure that she understands the notation. ASSUMPTIONS The basic scheme , or some not too distant relative , is the one used in many large-scale implemented systems ; as examples , we can quote TEAM ( Grosz et al. 1987 ) , PUNDIT ( Dahl et al. 1987 ) , TACITUS ( Hobbs et al. 1988 ) , MODL ( McCord 1987 ) , CLE ( Alshawi et al. 1989 ) , and SNACK-85 ( Rayner and Banks 1986 ) . It also has close links with theoretical work in situation semantics ( Pollard and Sag 1988 ; Fenstad et al. 1987 ) . We start by enumerating tlhe basic syntactic constituents S , NP , VP , DET , AP , ADVF ' , PP ; as far as our ontological commitments go , we need a set of THINGS , a set of EVENTS , and a set of DEGREES. We will assume that DEGREES are isomorphic to some kind of numbers. An NP will consist of a DET and a CN ( we borrow this nonstandard term for N-bar from Montague grammar ) . A DET will semantically correspond to a generalized determiner , and a CN to a subset of THINGS. An NP will thus become a generalized quantifier. A VP consists of a VERB , followed by a list of VERBARGs ( or just ARGs ) , by which we mean its obligatory and optional complements. An ARG is represented at QLF level as a pair ( arg-type , arg-value ) . We will need at least the following kinds of complements : NP , PP , S-COMP ( a suitab\ ] ~e S )</definiens>
+				<definiens id="1">a suitable VP ) , APs. Semantically , a verb will be associated with a subset of EVENTS , which we can think of as a type of event , state , or situation. The VALUE of each ARG will also be semantically represented by a suitable object , and the ARG-TYPE will translate to a relation between the verb-object and the representation of the ARG-VALUE. We will require a special kind of QLF node , called an abstraction , to represent VPs , APs , and other constituents whose denotation is a function from individuals to propositions ; one component of the abstraction node will be the abstracted variable. A scalar adjective A translates to a two-place predicate A ' ( x , d ) on OBJECTS × DEGREES , with the interpretation : the object x is A ' to degree d. Similarly , a scalar adverb A translates to a two-place predicate A ' ( x , d ) on EVENTS X DEGREES , with the interpretation : the event x is A ' to degree d. We will assume that degree expressions like `` more , '' `` less , ' '' or `` at least twice as much as much as '' translate to two-place predicates on DEGREES × DEGREES. Since we are assuming that DEGREES are numbers , it will also make sense to use a generalized quantifier as the second argume n't to an adjective : for example , A ( x , { N IN &lt; 2 } ) will be interpreted as `` x is ( less than 2 ) A. '' We will also need to be able to form `` slash categories '' or something similar. In particular , the following will be required ( in each example the `` gap '' is represented as an underscore ) : S/DET ( e.g. `` John bought _ vases '' ) S/NP ( e.g. `` John gave _ to Mary '' ) S/S-COMP ( e.g. `` John probably believed _ `` ) S/VP-COMP ( e.g. `` John presumably meant to _ `` ) A rnore exact formulation of the basic question we are attacking is thus : In terms of the above framework , state rules by which we can systematically calculate the denotation of a complex expression involving a comparative construction in terms of 88 Computational Linguistics Volume 16 , Number 2 , June 1990 Mammy Rayner and Amelie Banks An Implementable Semantics for Comparative Constructions the denotation of its scalar adjectives and adverbs , the denotations of its degree expressions , and the denotations of its other constituents. This section will summarize relevant previous work on comparatives ; we begin by listing sources. So far , there has been a surprisingly small amount of work done in computational frameworks : the only major attempts known to us that integrate syntactic and semantic processing are those reported in Ballard ( 1988 ) and Friedmann ( 1989 ) . Limited syntactic/semantic coverage has appeared in some other systems ( e.g. DIALOGIC \ [ Robinson 1982\ ] and CLE \ [ Alshawi et al. 1989\ ] ) , and the Linguistic String Project ( Sager 1981 ) has an advanced syntactic coverage. On the theoretical front , we have been considerably influenced by Bresnan ( 1973 ) , Hankamer ( 1973 ) , Pinkham ( 1985 ) , and Klein ( 1980 ) , especially the last three ; we were also surprised to discover at a late stage of our research that unpublished work by Heim ( 1985 ) and Krifka ( 1987 ) had pursued a course almost parallel to our own. We now go on to describe what we regard as relationships between these treatments and ours. We will start by looking at clausal comparatives , where the immediate problem is clearly to account for the apparent `` missing material '' in the comparative clause. An early and still very influential study of comparative constructions is that of Bresnan ( 1972 ; 1973 ; 1977 ) , working within transformational grammar ; the key concept is the introduction of the rule of Comparative Subdeletion , which will for example derive sentences like la ) and 2a ) by deleting the bracketed material from the base forms 1 b ) and 2b ) . 1 a ) John bought more books than Mary bought. 1 b ) John bought more books than Mary bought \ [ x many books\ ] . 2a ) John bought more books than Mary bought records. 2b ) John bought more books than Mary bought \ [ x many\ ] records. Although Comparative Subdeletion explains many of the facts , it makes a number of erroneous predictions. A very long and thorough criticism was advanced in Pinkham ( 1985 ) , where reasons are given to believe that it is preferable to adopt an analysis that represents the `` missing '' material as ( in English ) null proforms ; these are bound to the head of the comparison by a mechanism that Pinkham calls Quantifier Binding. Pinkham 's view of the clausal comparative has many points in common with that proposed in Klein ( 1980 ) , in the context ofa GPSG/Montague grammar framework , although Klein only really considers sentences of the type in example 2 ) ; our own treatment will in this respect be similar to Pinkham 's and Klein's. Like Bresnan and Pinkham , but unlike Friedmann ( 1989 ) , we will also regard the comparative clause as in general modifying the comparative head in the main clause , as opposed to treating the two clauses as parallel ; we discuss further in Section 4 the reasons behind this decision. Moving on to phrasal comparatives , there would appear to be two basic approaches. The earlier and more common one is to treat these as reduced forms of clausal comparatives ; for example , Hankamer ( 1971 ) introduces a rule of `` C-ellipsis , '' which deletes material from the comparative clause under identity with material in the main clause. Thus for example , 3a ) and 4a ) would be regarded as reduced forms of 3b ) and 4b ) , where the bracketed material has been deleted : 3a ) John bought more books than Mary. 3b ) John bought more books than Mary \ [ bought x many books\ ] . 4a ) John bought more books than Mary thought. 4b ) John bought more books than Mary thought \ [ that he bought x many books\ ] . In a computational treatment , this means that the deletion rule has to be `` reversed , '' so as to reconstruct the deleted material from the phrasal remnant : this is the method used in Sager ( 1981 ) and Friedmann ( 1989 ) . However , a number of researchers have showed that there are drawbacks to the `` C-ellipsis '' account. Although both Hankamer and Pinkham use C-ellipsis in their theories , they also provide strong evidence for the existence of at least some comparatives that are not elliptic in nature ( Hankamer 1973 ; Pinkham 1985 ) . Three examples are shown in 5 ) -7 ) , where Pinkham in each case argues that there are severe difficulties involved in deriving a sentence of this type from a clausal comparative ; the natural choice in a transformational framework is to regard the italicized portions as base-generated phrasal. 5 ) I invited more men than women. 6 ) John ran faster than the world record. 7 ) Mary looks taller than John when she wears high heels. Of particular interest here is Pinkham 's treatment of examples like 5 ) , which are interpreted using a rule that she calls `` distributive copying. '' 5 ) receives the logical form 5a ) , which after distributive copying becomes 5b ) . Although the details of the solution are not fully worked out ( in particular , the notation is never given a formal semantics ) , the intuitive idea is clearly that of duplicating a `` shared '' or `` matrix '' predicate , substituting in the two compared elements in a suitable way. 5a ) I INVITED ( MORE \ [ ql ( ql men ) , q2 ( q2 women ) \ ] ) 5b ) MORE \ [ ql ( I INVITED ql men ) , q2 ( I INVITED q2 women ) \ ] Similar suggestions have also been made in a rather different context by Keenan and Stavi ( 1986 ; 282-284 ) ; considering the semantics of comparative adjectival constructions like that in 8a ) , they argue convincingly that these are to be regarded as directly interpreted , rather than as reduced forms of sentences like 8b ) or 8c ) : Computational Linguistics Volume 16 , Number 2 , June 1990 89 Mammy Ra~er and AmeHe ~nks An Implement~ble Semantics for Comparative Cons~ucfiomus 8a ) More male than female students passed the exam. 8b ) More male students than female students passed the exam. 8c ) More male students passed the exam than female students passed the exam. We should also mention the work of M cCord ( 1981 ; 1985 ; 1987 ) on `` focalizers '' ; the key notion we borrow is the use of rewriting rules on semantic representations , to produce a logical form in which contrasted items appear at the same level. Although McCord does not attempt , as we do , to justify his operations formally , the intuitions behind them clearly overlap to a large extent with ours. In our own treatment of phrasal comparatives , we take all these ideas to their logical conclusion : we dispense with the C-ellipsis rule altogether , and regard all nonclausal comparatives as essentially phrasal , interpreting them by a method analogous to Pinkham 's distributive copying. The abstract scheme is concretely implemented in the form of rewriting rules , which are applied to an intermediate quasilogical form. A solution along these lines , which builds on previously reported work ( Banks 1986 ; Banks and Rayner 1987 ; Rayner and Banks 1988 ) , is described in Section 3. As we complete this article , we discover that a similar approach for German comparatives has independently been suggested by Krifka ( 1987 ) ; Krifka also proceeds by using direct interpretation rules involving contrasting of compared constituents , although the details of his analysis are in some respects fairly different. The following is a typical example : 9a ) is given the semantics represented by 9b ) , where pdO ( d ) is to be read as `` the maximum d , for which O ( d ) holds , '' and KOMP ( x , y , f ) is defined by KOMP ( x , y , ~ ) , ~. &lt; I , ( x ) &gt; ~y ) 9a ) Ich babe ihr bessere ZahNrtze I have him better dentist empfohlen als du</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The comparison node is constructed from the c-complement , c-operator , c and q ; the `` contrast '' component is that corresponding to a pronoun with associated variable x , where x is the abstracted variable in the new abstraction node .</sentence>
+				<definiendum id="0">x</definiendum>
+				<definiens id="0">the abstracted variable in the new abstraction node</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Similarly , 1~ ( an NP denotation ) takes a single argument of the same type .</sentence>
+				<definiendum id="0">NP denotation )</definiendum>
+				<definiens id="0">takes a single argument of the same type</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>tall ( x , Q ) , where Q is a generalized determiner , and that formula ( *** ) is used when deriving 5 from 3 and 4 .</sentence>
+				<definiendum id="0">Q</definiendum>
+				<definiens id="0">a generalized determiner , and that formula ( ***</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>a ) aQ b ) an NP whose determiner is a Q , and whose CN is a copy of the CN in the NP where H occurs .</sentence>
+				<definiendum id="0">CN</definiendum>
+				<definiens id="0">a Q , and whose</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>then B is a Q modifying a copy of A. modifying a copy of A. position in an NP N , then B is a copy of N , where H has been replaced by a Q. The rules above are a considerable simplification of Pinkham 's , and there are in particular two major omissions .</sentence>
+				<definiendum id="0">B</definiendum>
+				<definiendum id="1">H</definiendum>
+				<definiens id="0">a Q modifying a copy of A. modifying a copy of A. position in an NP N , then B is a copy of N , where</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>TEAM : An Experiment in the Design of Transportable NaturalLanguage Inferfaces .</sentence>
+				<definiendum id="0">TEAM</definiendum>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>The symbol o~ is a special variable ranging over names .</sentence>
+				<definiendum id="0">symbol o~</definiendum>
+				<definiens id="0">a special variable ranging over names</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>If \ [ p , l , w\ ] is a triple in the extension of the predicate `` believe , '' then p is the agent who has the belief , l is a list of entities x~ ... xn that the belief is about , and w is a wff of the target language .</sentence>
+				<definiendum id="0">w</definiendum>
+				<definiens id="0">a triple in the extension of the predicate</definiens>
+				<definiens id="1">a wff of the target language</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>v , be a list of the free variables ofp in order of their first occurrence .</sentence>
+				<definiendum id="0">v</definiendum>
+				<definiens id="0">a list of the free variables ofp in order of their first occurrence</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Then the extension of the predicate `` believe '' is defined as follows• Let s be an agent , \ [ x~ ... x , \ ] a list of entities from the domain of discourse , and p a wff of the target language• Suppose that p has exactly n free variables , and let v I ... v , be the free variables ofp in order of their first occurrence• Suppose that t~ ... t n are closed terms such that t i represents x~ to s , for i from 1 to n. Suppose the simple belief relation holds between s and the sentence formed by substituting t 1 ... t , for free occurrences v 1 ... v , in p. Then the extension of the predicate `` believe '' includes the triple containing s , \ [ x I ... x , \ ] , and p. As an example , suppose the term `` personl '' represents Mary to John , and John believes `` fool ( personl ) . ''</sentence>
+				<definiendum id="0">extension of the predicate `` believe ''</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>P is a meta-variable ranging over sentences of the language .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">a meta-variable ranging over sentences of the language</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Formally , suppose the constant c denotes the sentence -- 7 true ( c ) .</sentence>
+				<definiendum id="0">constant c</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Since true ( q ( mR ) ) ~ mR is a theorem of Perlis 's system , ( 33 ) implies -- hR .</sentence>
+				<definiendum id="0">mR ) ) ~ mR</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>The notation is as follows : ~P is a variable ranging over all formulas of the language , &lt; ~P &gt; is a constant denoting ( the G6del number of ) ~P , and a ( &lt; ~P &gt; ) means that the agent believes ~P. This axiom says that for every formula ~o , the agent believes ( 36 ) a ( &lt; ~o &gt; ) ~ ~p. This sentence says that if the agent believes ~o , ~o must be true .</sentence>
+				<definiendum id="0">~P</definiendum>
+				<definiendum id="1">~P &gt;</definiendum>
+				<definiens id="0">a variable ranging over all formulas of the language</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Then 'f denotes f. Thus 'john is a meta-language constant that denotes a target-language constant , while 'x is a meta-language constant that denotes a target-language variable .</sentence>
+				<definiendum id="0">Thus 'john</definiendum>
+				<definiendum id="1">'x</definiendum>
+				<definiens id="0">a meta-language constant that denotes a target-language constant</definiens>
+				<definiens id="1">a meta-language constant that denotes a target-language variable</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The predicate apply_quants ( QLI , Wffl , QL2 , Wff2 ) means that QL1 is a list of quantifiers , Wffl is a wff , Wff2 is the result of applying some of the quantifiers in QL1 to Wffl , and QL2 contains the remaining quantifiers .</sentence>
+				<definiendum id="0">Wffl</definiendum>
+				<definiendum id="1">Wff2</definiendum>
+				<definiendum id="2">QL2</definiendum>
+				<definiens id="0">a list of quantifiers</definiens>
+				<definiens id="1">a wff</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Wffl is the scope of the quantifier , and v ( N ) is the highest bound variable of Wffl .</sentence>
+				<definiendum id="0">Wffl</definiendum>
+				<definiens id="0">the scope of the quantifier , and v</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Thus if L2 is a tail of L1 , L1-L2 is the list difference of L 1 and L2 : the list formed by removing L2 from the end of L1 .</sentence>
+				<definiendum id="0">L2</definiendum>
+				<definiens id="0">a tail of L1</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>V is the bound variable of the NP .</sentence>
+				<definiendum id="0">V</definiendum>
+				<definiens id="0">the bound variable of the NP</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>Finally , VL is a list of target-language variables representing NPs that are available for reference by a pronoun , which we will call the pronoun reference list .</sentence>
+				<definiendum id="0">VL</definiendum>
+				<definiens id="0">a list of target-language variables representing NPs that are available for reference by a pronoun</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>Then for determiners we have ( R3a ) det ( V2 , Range , p ( Wffl , some ( V2 , Range , Wffl ) ) ) -- -~ \ [ a\ ] ( R3b ) det ( V2 , Range , p ( Wffl , all ( V2 , Range , Wffl ) ) ) -- * \ [ every\ ] ( R3c ) det ( V2 , Range , p ( Wffl , unique ( V2 , Range , Wffl ) ) ) \ [ the\ ] ( R3d ) det ( V2 , Range , p ( Wffl , not ( some ( V2 , Range , Wffl ) ) ) ) -- -\ [ no\ ] .</sentence>
+				<definiendum id="0">p ( Wffl</definiendum>
+			</definition>
+			<definition id="15">
+				<sentence>That is , `` he and John '' is an NP that binds V and maps Wffl to ( 7:3 ) and ( let ( V , V 1 , Wffl ) , unique ( V , name ( V , john ) , Wffl ) 224 Computational Linguistics Volume 16 , Number 4 , December 1990 Andrew R. Haas Sentential Semantics for Propositional Attitudes where V1 is chosen from the pronoun reference list .</sentence>
+				<definiendum id="0">V1</definiendum>
+				<definiens id="0">binds V and maps Wffl to ( 7:3 ) and ( let ( V , V 1 , Wffl ) , unique ( V , name ( V , john )</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>The above rule achieves this result by concatenating difference lists in the usual way : if QL1-QL2 is the tail of the first NP 's quantifier list , and QL2-QL3 is the tail of the second NP 's quantifier list , then QL 1-QL3 is the concatenation of the tails .</sentence>
+				<definiendum id="0">QL2-QL3</definiendum>
+				<definiens id="0">the concatenation of the tails</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>V1 is a variable representing the subject , and V2 is a variable representing the object .</sentence>
+				<definiendum id="0">V1</definiendum>
+				<definiendum id="1">V2</definiendum>
+				<definiens id="0">a variable representing the subject</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>QL1 is the quantifier store of the object .</sentence>
+				<definiendum id="0">QL1</definiendum>
+			</definition>
+			<definition id="19">
+				<sentence>QL2 is a list of quantifiers remaining after the verb has built its logical form .</sentence>
+				<definiendum id="0">QL2</definiendum>
+				<definiens id="0">a list of quantifiers remaining after the verb has built its logical form</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Wffl is the logical form of the verb .</sentence>
+				<definiendum id="0">Wffl</definiendum>
+			</definition>
+			<definition id="21">
+				<sentence>The variable V represents the subject , so it becomes the first argument of the VP .</sentence>
+				<definiendum id="0">variable V</definiendum>
+				<definiens id="0">the subject</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>QL1-QL3 is the concatenation of the quantifier stores from the subject and the VP .</sentence>
+				<definiendum id="0">QL1-QL3</definiendum>
+				<definiens id="0">the concatenation of the quantifier stores from the subject and the VP</definiens>
+			</definition>
+			<definition id="23">
+				<sentence>The subject quantifier binds a variable that occurs free in the range restriction of the object quantifier , so one must apply the object quantifier first in order to eliminate all free variables .</sentence>
+				<definiendum id="0">subject quantifier</definiendum>
+				<definiens id="0">binds a variable that occurs free in the range restriction of the object quantifier</definiens>
+			</definition>
+			<definition id="24">
+				<sentence>The list difference QL-QL is the empty list , so the quantifier store of the gap is empty .</sentence>
+				<definiendum id="0">list difference QL-QL</definiendum>
+				<definiens id="0">the empty list , so the quantifier store of the gap is empty</definiens>
+			</definition>
+			<definition id="25">
+				<sentence>The main verb takes the subject variable and the logical form of the embedded S and builds a wff Wff2 .</sentence>
+				<definiendum id="0">main verb</definiendum>
+				<definiens id="0">takes the subject variable and the logical form of the embedded S and builds a wff Wff2</definiens>
+			</definition>
+			<definition id="26">
+				<sentence>Resolving ( 103 ) , ( R14a ) , and ( 104 ) against the right side of ( R 15 ) gives ( 105 ) vp ( V2 , Wff3 , QL-QL , Fx-Fx , L ) \ [ knows who Mary likes\ ] , { apply_quants ( \ [ p ( Wffl , some ( Vl , person ( V1 ) , Wffl ) ) I QL\ ] -QL , know ( V2 , Vars 1 , q ( unique ( x , name ( x , mary ) , like ( x , Vl ) ) ) , QL-QL , Wff3 ) , { free_vars ( unique ( x , name ( x , mary ) , like ( x , V 1 ) ) , Vars 1 ) } .</sentence>
+				<definiendum id="0">mary )</definiendum>
+				<definiendum id="1">free_vars ( unique</definiendum>
+				<definiens id="0">15 ) gives ( 105 ) vp ( V2 , Wff3 , QL-QL , Fx-Fx , L ) \ [ knows who Mary likes\ ]</definiens>
+			</definition>
+			<definition id="27">
+				<sentence>Otherwise , QL2 is the empty list .</sentence>
+				<definiendum id="0">QL2</definiendum>
+				<definiens id="0">the empty list</definiens>
+			</definition>
+			<definition id="28">
+				<sentence>Resolving ( 110 ) and ( 111 ) against the left side of ( R7 ) give , ; ( 112 ) vp ( V 1 , wish ( V 1 , Vars 1 , q ( Wffl ) ) , QL2 , FxFx , VL ) -- -\ [ wants a porsche\ ] , { apply_quants ( \ [ p ( Wff0 , some ( V2 , porsche ( V2 ) , Wff0 ) ) l QL\ ] -QL , have ( V1 , V2 ) , QL2 , Wffl ) , free_vars ( Wffl , Varsl ) I. One solution of the `` apply_quants '' subgoal is ( 113 ) Wffl = some ( x , porsche ( x ) , have ( Vl , x ) ) QL2 = QL0-QL0 .</sentence>
+				<definiendum id="0">, { apply_quants</definiendum>
+				<definiens id="0">Wffl ) ) , QL2 , FxFx , VL ) -- -\ [ wants a porsche\ ]</definiens>
+			</definition>
+			<definition id="29">
+				<sentence>wish ( V1 , Varsl , q ( some ( x , porsche ( x ) , have ( V 1 , x ) ) ) ) where V1 is the subject variable and the `` free_vars '' subgoal has been postponed .</sentence>
+				<definiendum id="0">V1</definiendum>
+				<definiens id="0">the subject variable and the</definiens>
+			</definition>
+			<definition id="30">
+				<sentence>This means that there exist terms T1 and T2 such that T1 represents John to himself , T2 represents some Porsche to John , and the sentence John wishes to be true is ( 122 ) have ( T1 , T2 ) This is a de re reading , in which John wants some particular Porsche .</sentence>
+				<definiendum id="0">T2</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>The proposed statistical description has a large number of potentially important applications , including : ( a ) constraining the language model both for speech recognition and optical character recognition ( OCR ) , ( b ) providing disambiguation cues for parsing highly ambiguous syntactic structures such as noun compounds , conjunctions , and prepositional phrases , ( c ) retrieving texts from large databases ( e.g. newspapers , patents ) , ( d ) enhancing the productivity of computational linguists in compiling lexicons of lexicosynWctic facts , and ( e ) enhancing the productivity of lexicographers in identifying normal and conventional usage .</sentence>
+				<definiendum id="0">OCR</definiendum>
+				<definiens id="0">a ) constraining the language model both for speech recognition and optical character recognition (</definiens>
+				<definiens id="1">enhancing the productivity of computational linguists in compiling lexicons of lexicosynWctic facts , and ( e ) enhancing the productivity of lexicographers in identifying normal and conventional usage</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>In our application , word probabilities P ( x ) and P ( y ) are estimated by counting the number of observations of x and y in a corpus , f ( x ) andf ( y ) , and normalizing by N , the size of the corpus .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">( y ) are estimated by counting the number of observations of x and y in a corpus</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Using Sinclair 's estimates P ( set ) ~ 250 x 10 -6 , P ( off ) ~556 x 10 -6 , and P ( set , off ) ~ 70/ ( 7.3 x 106 ) , we would estimate the mutual information to be I ( set ; off ) = log2P ( set , off ) / ( P ( set ) P ( off ) ) ~ 6.1 .</sentence>
+				<definiendum id="0">P ( set</definiendum>
+				<definiens id="0">estimates P ( set ) ~ 250 x 10 -6 , P ( off ) ~556 x 10 -6 , and</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Johnson ( 1987 ) defined an Attribute Value Logic ( AVL ) , similar to the Rounds-Kasper Logic , that included a classical form of negation .</sentence>
+				<definiendum id="0">Attribute Value Logic</definiendum>
+				<definiens id="0">similar to the Rounds-Kasper Logic , that included a classical form of negation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Given a set of automata K , a formula 4 ) , and A such that A ~ K , A forces in K ~4 ) ( A F K -- -~ ) if and only if for all B E K such that A E_ B , B does not force 4 ) in K. Thus , to show that a formula , 4 ) , is satisfiable , we have to find a set K and an automaton A such that A forces in K 4 ) .</sentence>
+				<definiendum id="0">K</definiendum>
+				<definiens id="0">A forces in K ~4 ) ( A F K -- -~ ) if and only if for all B E K such that A E_ B , B does not force 4 ) in K. Thus , to show that a formula</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For instance , Kasper states that an automaton A satisfies a formula f : v if it is defined forfwith value v ; it is incompatible with f : v if it is defined forfwith value x ( x ~ v ) and it is merely compatible with f : v if it is not defined forf .</sentence>
+				<definiendum id="0">Kasper</definiendum>
+				<definiens id="0">states that an automaton A satisfies a formula f : v if it is defined forfwith value v ; it is incompatible with f : v if it is defined forfwith value x</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>An acyclic finite automaton is an 8-tuple ,4 == ( Q , ~ , F , 6 , qo , F , X , S ) , where : transition function ) , 16 Computational Linguistics Volume 16 , Number 1 , March 1990 Anuj Dawar and K. Vijay-Shanker An Interpretation of Negation in Feature Structure Descriptions states to finite subsets of Z , for some I ~ Z , 6 ( p , l ) = q , 10 .</sentence>
+				<definiendum id="0">acyclic finite automaton</definiendum>
+				<definiens id="0">K. Vijay-Shanker An Interpretation of Negation in Feature Structure Descriptions states to finite subsets of Z</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The ( revised ) partial interpretation function I is defined as follows : I ( a , A ) = False if A is atomic with k ( q0 ) : ~ a or if A is complex l ( a , A ) is undefined otherwise ; I ( l : 4~ , A ) = False if l C S ( qo ) or if A is atomic I ( l : 4~ , A ) is undefined otherwise ; if 1 ( q~1 , A ) = True and l ( q~2 , A ) = True I ( 4~ A ( a2 , A ) = False if l ( 4h , A ) = False or I ( 4~2 , A ) = False I ( ~b I /~ ~b2 , A ) is undefined otherwise ; if I ( ~bl , A ) = True or I ( q~2 , A ) = True I ( q~l V 4~2 , A ) = False if I ( 4h , A ) = False and I ( q~2 , A ) = False I ( ~b~ V 4~2 , A ) is undefined otherwise ; I ( -74~ , A ) = False if I ( q~ , A ) = True I ( -- -~ , A ) is undefined otherwise ; if 6 ( qo , Px ) and ~ ( q0 , P2 ) are defined and 6 ( q o , Pl ) = 6 ( qo , P2 ) I ( Pl ~ '' P2 , A ) = False if Alp x and A/p 2 are both defined and are not unifiable or Pl = wlx and 1 ~ S ( 6 ( q o , w ) ) , or P2 = wlx and I ~ S ( 6 ( q o , w ) ) I ( p~ ~P2 , A ) is undefined otherwise ( see Note 4 ) .</sentence>
+				<definiendum id="0">atomic I</definiendum>
+				<definiendum id="1">a2</definiendum>
+				<definiens id="0">follows : I ( a , A ) = False if A is atomic with k ( q0 ) : ~ a or if A is complex l</definiens>
+				<definiens id="1">A ) = False or I ( 4~2 , A ) = False I ( ~b I /~ ~b2 , A ) is undefined otherwise ; if I ( ~bl , A ) = True or I ( q~2 , A ) = True I ( q~l V 4~2 , A ) = False if I ( 4h , A ) = False and I ( q~2 , A ) = False I ( ~b~ V 4~2 , A ) is undefined otherwise ; I ( -74~ , A ) = False if I ( q~ , A ) = True I ( -- -~ , A ) is undefined otherwise ; if 6 ( qo</definiens>
+				<definiens id="2">q o , w ) ) , or P2 = wlx and I ~ S ( 6 ( q o , w ) ) I ( p~ ~P2 , A ) is undefined otherwise</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>We express it in terms of the knowledge ( or information ) ordering -- &lt; k on the truth values { _1_ , True , False } defined by _1_ &lt; k True , _1_ k False , True ~t k False and False ~t k True. In the following , I ( ~b , A ) = _t_ is used for I ( 4 &gt; , A ) undefined .</sentence>
+				<definiendum id="0">~b</definiendum>
+				<definiens id="0">it in terms of the knowledge ( or information ) ordering -- &lt; k on the truth values { _1_ , True , False } defined by _1_ &lt; k True , _1_ k False</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Theorem 3.1 A E B if and only if for every formula , q~ , I ( q~ , A ) - &lt; k I ( ~b , B ) . Proof. ~ Suppose for every formula , 4~ , I ( q~ , A ) -- &lt; k I ( ~b , B ) . Every pathp defined in A must also be defined in B , since I ( p : NIL , A ) = True and hence I ( p : NIL , B ) = True. Since for every state qi in A , there is a path pf such that qi = 6A ( qOA , Pi ) we can define a map h such that h ( qi ) = 6B ( qon , Pi ) . To see that this map is indeed functional , note that , if there is a q E QA such that q = 6A ( q0A , Pl ) = 6A ( q0.1 , P2 ) for distinct Pl and P2 , then I ( Pl ~ '' P2 , A ) = True. Thus l ( p 1 ~ P2 , B ) = True and 6B ( qos , Pl ) and 6n ( qo s , P2 ) do indeed describe the same state. One can immediately see that this map satisfies properties 1 and 2 of being a homomorphism given above in the definition of subsumption. To verify the other two conditions , note that if hA ( qi ) = a for some qi E A , then , I ( pt : a , A ) = True. Hence I ( pi : a , B ) = True and XB ( 6n ( q0n , Pi ) ) = a. Thus condition 3 is satisfied. The argument for condition 4 is similar. We have , therefore , established that h is a homomorphism and hence that A v-B. =~ The consequent is trivially true with I ( 4~ , A ) = _1_ , so we will only consider the case when it is either True Computational Linguistics Volume 16 , Number 1 , March 1990 17 Anuj Dawar and K. Vijay-Shanker An Interpretation of Negation in Feature Structure Descriptions or False. The proof is by induction on the structure of the formula. Basis : NIL Trivial , since I ( NIL , A ) = True , for all A. TOP Trivial , since I ( TOP , A ) = False , for all A. a Note that ifA is atomic and A C B , then A = B. 1° Thus , if I ( a , A ) = True , then A = B and we are done. If I ( a , A ) = False , either A is atomic and the argument is the same as before , or A is complex. But then , since A E B , B is also complex and I ( a , B ) = False. Pl ~-P2 If I ( p I ~ P2 , h ) = True then there is a q E QA such that q = 6 A ( qoa , Pl ) = 6a ( qoA , P2 ) '' Let h be a homomorphism witnessing A E_ B. Then , by the definition of a homomorphism , h ( q ) = 6n ( qon , Pl ) = 6B ( qon , P2 ) and therefore , I ( p I ~P2 , B ) = True. In the case in which l ( p I ~ P2 , A ) = False , we have two possibilities. Either Alp I and Alp 2 are both defined and not unifiable , in which case , clearly by the definition of subsumption , the same will be true of B , or pl = wlx ( choosing Px without loss of generality ) , for some label l and some paths ( possibly empty ) w and x such that I E Sa ( 6a ( qo A , w ) ) . But then , as we pointed out earlier , this would mean that the path wl and hence the path Pl can not be defined in B either. Thus , in either case , l ( pl ~P2 , B ) = False. Induction Step : 1:4 , Since A r '' B , if All is defined , so is B/I and All E B/1. But then , by induction hypothesis , I ( ep , All ) &lt; -k I \ [ ( 4~ , B/l ) and therefore I ( 1 : c~ , A ) &lt; -k I\ ] ( l : q~ , B ) . If All is not defined and I ( l : ¢k , A ) = False , one of two possible cases applies : either A is atomic , in which case A = B or l E Sa ( qoA ) , in which case I E Sn ( qo B ) by the definition of subsumption , and we are done. If I ( 4~/~ ~b , A ) = True , then I ( 4~ , A ) = True and I ( ~b , A ) = True. But then , by induction hypothesis , I ( 4~ , B ) = True and I ( ~b , B ) = True. Thus I ( ~b /~ ~k , B ) = True. Similarly , if I ( 4~ A ~b , A ) = False , I ( cb , A ) = False or I ( ~b , A ) = False. Hence , by induction hypothesis , I ( ~ , B ) = False or I ( ff , A ) = False , and therefore I ( q~ /~ ¢z , B ) = False. The argument is similar to the one in the previous case. -- q , Since I ( -- ~ , A ) = True if and only if I ( cb , A ) = False and vice versa , clearly I ( -- ~ , A ) __ &lt; k I ( -- ~ , B ) , since I ( ~b , A ) _ &lt; k I ( 4~ , B ) .~ The following simple corollary corresponds to the monotonicity result we established for our original three-valued semantics. Corollary. For all 4~ , Tset ( 4~ ) is an upward-closed set. As we mentioned earlier in this section , Langholm ( 1989 ) describes negatively extended feature structures in a fashion very similar to what is described above. The interpretation he chooses for the description language is , however , intuRionistic in character. We believe that the modifications that we suggested to our interpretation ( in Section which forcing is always done with respect to K* , when applied to our new interpretation yield exactly the interpretation described by Langholm. In this section , we give a proof system for the logic described above that is essentially an adaptation of the tableau proof system described by Moshier and Rounds ( 1987 ) for their intuitionistic interpretation of the feature logic. The proof system works , not with individual formulae , but with sets of labeled signed formulae. The MoshierRounds tableau proof method worked with sets of sets of labeled signed formulae. However , this extra level of complexity ! is not needed here. We first introduce the notion of a labeled signed formula : Definition 9. A labeled signed formula is a triplet ( w , X , q~ ) , where w ~ L * , X ~ { True , False } and q~ WFF. ( w , True , dp ) will be written as wT4~ , and ( w , False , 4a ) as wF4~. We can now define the notion of an f-structure satisfying a labeled signed formulae : Definition 10. An f-structure , A , satisfies a labeled signed formula ~ ( written A ~ ~ ) in the following cases : A t = wTep if and only ifA/w is defined and I ( 4~ , A/w ) = True A t = wFcb if and only ifA/w is defined and I ( 4~ , A/w ) = False Definition 11. A set c of labeled signed formulae is closed if and only if at least one of the following holds : • wT4~ , wF4~ ~ c , • wTa , wTb C c , • wTa , wxTc~ ~ e , • wTa , wTI : NIL ~ c , • wT ( p ~ px ) ~ c , • wFNIL ~ c , or • wTTOP ~ c forsome/~ L , w , p ~ L* , x ~ L ÷ , a , b E A and~b WFF. Lemma 1. Any closed set of labeled signed formulae is unsatisfiable. Proof. Immediate from the definition of a closed set. \ [ \ ] Definition 12. A set of labeled signed formulae , c , is downward-saturated if and only if c is not closed , and 18 Computational Linguistics Volume 16 , Number 1 , March 1990 Anuj Dawar and K. Vijay-Shanker An Interpretation of Negation in Feature Structure Descriptions wT-'adp ~ c wF~ ( ~ ~ c wT ( l:4~ ) ~ c wF ( l : dp ) ~ c wlT ( p~ ~ P2 ) ~ c wlF ( p~ ~ P2 ) ~ c wT ( px ~P2 ) ~ c wT ( p I ~. p2 ) ~ c wT ( p~ ~. P2 ) , wT ( P2 ~ P3 ) ~ c =~wFq~ ~ c =wT4~ ~ c =~wlT4a ~ c and wTI : NIL ~ c =~wlF~ ~ corwFl : NIL ~ c ~wT ( lpx ~ lp2 ) ~ c ~wF ( lp~ ~lp2 ) ~ c ~wTp~ : NIL ~ c and wTp2 : NIL ~ c =~wT ( p2 ~ '' Pl ) ~ c =wT ( p~ ~'P3 ) ~ c wT ( pl ~ P2 ) , wpl Tdp ~ c~wp2Td p ~ c wT ( pl ~ '' P2 ) , wp1F~ E c~wp2F ( b ~ C wF ( pl ~ P2 ) , wPl Ta E c= &gt; wp2Fa ~ c wT ( 4~ /~ ~b ) ~ c = &gt; wTdp C c and wT~b E c wF ( ep /~ ~ ) ~ c ~wFdp ~ c or wF~b ~ c wT ( ~ W ~k ) ~ c =~wT ( ~ ~ c or wT~k ~ c wF ( c~ V ~b ) ~ c =~wF~ ~ c and wF~k ~ c Lemlna 2 .</sentence>
+				<definiendum id="0">k I</definiendum>
+				<definiendum id="1">NIL</definiendum>
+				<definiens id="0">atomic and A C B</definiens>
+				<definiens id="1">¢k , A ) = False , one of two possible cases applies : either A is atomic , in which case A = B or l E Sa ( qoA ) , in which case I E Sn ( qo B ) by the definition of subsumption</definiens>
+				<definiens id="2">the notion of an f-structure satisfying a labeled signed formulae : Definition 10. An f-structure , A , satisfies a labeled signed formula ~</definiens>
+				<definiens id="3">a , b E A and~b WFF. Lemma 1. Any closed set of labeled signed formulae is unsatisfiable. Proof. Immediate from the definition of a closed set. \ [ \ ] Definition 12. A set of labeled signed formulae , c</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Claim 2 : The automaton so constructed satisfies all the labeled signed formulae in c. We establish this claim by induction over the structure of the formulae in c. For the base cases ( namely labeled signed formulae of the forms : wXa , wXNIL , wFI : NIL , and wX ( p~ ~ P2 ) ) it follows immediately from the construction that they are satisfied by A. For the other cases ( wX ( q~ V ~b ) , wX ( 4J A ~b ) , and wX~ ~b ) , their subformulae are also in c since it is downward-saturated .</sentence>
+				<definiendum id="0">wFI</definiendum>
+				<definiens id="0">The automaton so constructed satisfies all the labeled signed formulae in c. We establish this claim by induction over the structure of the formulae in c. For the base cases ( namely labeled signed formulae of the forms</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>It follows from the proof of Lemma 3 that the length of any derivation c I-* d is bounded by n 2 , where n is the sum of the lengths of the formulae in c. Since this bound is polynomial , the problem is in NP .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the sum of the lengths of the formulae in c. Since this bound is polynomial , the problem is in NP</definiens>
+			</definition>
+</paper>
+
+		<paper id="3004">
+			<definition id="0">
+				<sentence>A wide variety of notations have been used in this context-PROLOG terms , PATR-II specifications , FUG functional descriptors , GPSG category specifications , and so on ( Pereira and Warren 1980 ; Shieber 1986 ; Kay 1985 ; Gazdar et al. 1985 ) .</sentence>
+				<definiendum id="0">PATR-II</definiendum>
+				<definiens id="0">specifications , FUG functional descriptors</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>FUG , for instance , permits the description of a lexical item to contain a pattern that describes its complements , and UCG ( Calder 1988 ) even goes so far as to specify that for many lexical items the major category is the subcategorization frame .</sentence>
+				<definiendum id="0">FUG</definiendum>
+				<definiens id="0">permits the description of a lexical item to contain a pattern that describes its complements</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>`` Lexicase parsing : a lex : icon-driven approach to syntactic analysis .</sentence>
+				<definiendum id="0">Lexicase parsing</definiendum>
+				<definiens id="0">a lex : icon-driven approach to syntactic analysis</definiens>
+			</definition>
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>The QLF language is a superset of the LF ( logical form ) language used in the CLE ( Alshawi and van Eijck 1989 ) .</sentence>
+				<definiendum id="0">QLF language</definiendum>
+				<definiens id="0">a superset of the LF ( logical form ) language used in the CLE</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>For example , the sentence She met a friend of John has the following QLF representation in which the a_term is the semantic analysis for she , the q_term is the analysis of the quantified noun phrase a friend of John , and the a_form is the analysis of friend of John : 1 \ [ meet , a_term ( ( t = ref , p = pro , l = she , n = sing , a = ( ) ) , Y , \ [ female , Y\ ] ) , q_term ( ( t = quant , n = sing , 1 = a ) , X , a_ { orm ( ( t =prod , p = genii ) , R , \ [ and , \ [ friend , X\ ] , \ [ R , john , X\ ] \ ] ) \ ] ) \ ] ) .</sentence>
+				<definiendum id="0">q_term</definiendum>
+				<definiens id="0">the semantic analysis for she</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Basically , the process of QLF resolution involves determining possible LF terms to replace each QLF a___term or definite description , possible quantifiers to replace the determiners for q_terms , and possible formulae to replace each QLF a_form .</sentence>
+				<definiendum id="0">QLF resolution</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>In addition to the CLE procedures for proposing referents , checking constraints , and updating the salience model , the CLE provides an interface in terms of a set of application definable procedures ( Section 5.2 ) for performing these functions .</sentence>
+				<definiendum id="0">CLE</definiendum>
+				<definiens id="0">provides an interface in terms of a set of application definable procedures</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The QLF expression appearing in a rule is a term that can unify with either an a_term , a q_term or an a_form .</sentence>
+				<definiendum id="0">a_term</definiendum>
+				<definiens id="0">a term that can unify with either an</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Set quantification variables range over sets of individuals .</sentence>
+				<definiendum id="0">Set quantification variables</definiendum>
+				<definiens id="0">range over sets of individuals</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>For such a quantificatien to be true , Q must hold of the cardinality of the union of sets satisfying the restriction , and the cardinality of the maximal subset of this union that satisfies the body ) The QLF for the sentence , before seeping , is \ [ carry , q_term ( ( t = quant , n= sing,1 =ex ) , E , \ [ event , E\ ] ) , q_term ( ( t = quant , p = det , n = number ( 2 ) , 1 = 2 ) , B , \ [ boy , B\ [ ) , john\ ] , in which the determiner is resolved to the set quantifier according to the first of the following declarations : reflex ( N , ( t = quant , p = det , n = number ( N ) , l = N ) , set ( R ^ I ^ \ [ geq , I , N\ ] ) ) reflex ( several , ( t = quant , p = det , n = plur , 1 = several ) , set ( R '' I A \ [ geq , I,3\ ] ) ) .</sentence>
+				<definiendum id="0">N , ( t</definiendum>
+				<definiens id="0">n = number ( N ) , l = N ) , set ( R ^ I ^ \ [ geq</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The interaction of seeping alternatives with the collective/ distributive readings allowed by the declarations matching several and 2 gives several possible LFs for a sentence like 2 girls met several boys , of which the following involves two ( or more ) girls , a meeting event for each girl , each event involving three or more boys : quant ( R ^ I '' \ [ geq , l,2\ ] , G , \ [ girl , G\ ] , quant ( exists , E , \ [ event , E\ ] , quant ( set ( R '' I A \ [ geq , I,3\ ] ) , B , \ [ boy , B\ ] , \ [ meet , E , G , B\ ] ) ) ) .</sentence>
+				<definiendum id="0">E\ ] , quant ( set</definiendum>
+				<definiendum id="1">I,3\ ] ) , B ,</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>However , the CLE external context interface ( Section 5.2 ) allows collections , such as the set of answers to a database query , to be included in the model .</sentence>
+				<definiendum id="0">CLE external context interface</definiendum>
+				<definiens id="0">the set of answers to a database query , to be included in the model</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The seeped QLF representation for John met his mother is quant ( ( t = ref , p = def , l = the , n = sing , a = ( john ) ) , X , a_form ( ( t = pred , p = poss ) , R , \ [ and , \ [ mother , X\ ] , \ [ R , a_term ( ( t = ref , p = pro , 1 = he , n = sing , a = ( john ) ) , Y , \ [ male , Y\ ] ) , X\ ] \ ] ) , \ [ meet , john , X\ ] ) .</sentence>
+				<definiendum id="0">n = sing</definiendum>
+				<definiens id="0">t = pred , p = poss ) , R , \ [ and , \ [ mother</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The resolution process involves replacing the body of the a_form with a resolved conjunct , in this case the one obtained by instantiating P to jumper , giving the following LF for the sentence : quant ( exists , X , \ [ and , \ [ jumper , X\ ] , \ [ grey , X\ ] \ ] , \ [ knit , john , X\ ] ) .</sentence>
+				<definiendum id="0">resolution process</definiendum>
+				<definiens id="0">quant ( exists</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>The CLE maintains a simple model of context , consisting of a set of entities with associated salience weights .</sentence>
+				<definiendum id="0">CLE</definiendum>
+				<definiens id="0">maintains a simple model of context , consisting of a set of entities with associated salience weights</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Updating the context model involves changing the set of items in the model and updating their salience weights .</sentence>
+				<definiendum id="0">Updating the context model involves</definiendum>
+				<definiens id="0">changing the set of items in the model and updating their salience weights</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The normal mode of operation of the CLE is therefore to assume that the first proposed logical form to pass the plausibility constraints is the intended interpretation .</sentence>
+				<definiendum id="0">constraints</definiendum>
+				<definiens id="0">the intended interpretation</definiens>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>Slots are symbols like subi , obi , and iobi representing grammatical relations , and are associated with a word Computational Linguistics Volume 16 , Number 4 , December 1990 197 Shalom Lappin and Michael McCord Anaphora Resolution in Slot Grammar ( sense ) in two ways .</sentence>
+				<definiendum id="0">Slots</definiendum>
+				<definiens id="0">symbols like subi , obi , and iobi representing grammatical relations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>ESG uses two lexicons : ( 1 ) a hand-coded lexicon of about 3,700 common words , and ( 2 ) the UDICT lexicon ( Byrd 1983 ; Klavans and Wacholder 1989 ) having over 60,000 lemmas , with a heuristic interface that produces Slot Grammarstyle entries .</sentence>
+				<definiendum id="0">ESG</definiendum>
+				<definiens id="0">uses two lexicons : ( 1 ) a hand-coded lexicon of about 3,700 common words</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( 2 ) H is an integer representing the position of the head word of the phrase .</sentence>
+				<definiendum id="0">H</definiendum>
+				<definiens id="0">an integer representing the position of the head word of the phrase</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( 3 ) Sense is the word sense of the head word .</sentence>
+				<definiendum id="0">Sense</definiendum>
+				<definiens id="0">the word sense of the head word</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( 5 ) SlotFrame is the list of complement slots , each slot being in the internal form slot ( Slot , Ob , X ) , where Slot is the slot name , Ob shows whether it is an obligatory form of Slot , and X is the slot marker .</sentence>
+				<definiendum id="0">SlotFrame</definiendum>
+				<definiendum id="1">Slot</definiendum>
+				<definiendum id="2">X</definiendum>
+				<definiens id="0">the slot name</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( 6 ) Ext is the list of slots that have been extraposed or raised to the level of the current phrase .</sentence>
+				<definiendum id="0">Ext</definiendum>
+				<definiens id="0">the list of slots that have been extraposed or raised to the level of the current phrase</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Each member of a modifier list is of the form Slot : Phrase where Slot is a slot and Phrase is a phrase that fills Slot .</sentence>
+				<definiendum id="0">Slot</definiendum>
+				<definiendum id="1">Phrase</definiendum>
+				<definiens id="0">a slot</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The word sense predication consists of the sense name of the head word with the 198 Comimtational Linguistics Volume 16 , Number 4 , December 1990 Shalom Lappin and Michael McCord Anaphora Resolution in Slot Grammar Who did John say wanted to try to find him ?</sentence>
+				<definiendum id="0">word sense predication</definiendum>
+			</definition>
+			<definition id="8">
+				<sentence>As an example of this clausal representation , the clause hasarg ( P , X ) says that phrase P has X as one of its arguments ; i.e. , X is the slot marker variable for one of the complement slots of P. For the above sample parse , then , we would get clauses hasarg ( S , 'X2 ' ) , hasarg ( 5 , 'X12 ' ) .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">says that phrase P has X as one of its arguments</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>May proposes to solve this problem by applying the operation of quantifier raising ( QR ) to the object NP in derive the LF representation 2 .</sentence>
+				<definiendum id="0">May</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>P is contained in Q iff ( i ) P is immediately contained in Q , or ( ii ) P is immediately contained in a head R , and ( the phrase with head ) R is contained in Q. The following is a schematic description of our algorithm for VP anaphora resolution .</sentence>
+				<definiendum id="0">R</definiendum>
+				<definiens id="0">immediately contained in a head R , and ( the phrase with head )</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>following relations : a. V is contained in the clausal complement of a subordinate conjunction SC , and the SC-phrase is either ( i ) an adjunct of A , or ( ii ) an adjunct of a noun N and N heads an NP argument of A , or N heads the NP argument of an adjunct of A. b. V is contained in a relative clause that modifies a head noun N , N is contained in A , and , if a verb A ' is contained in A and N is contained in A ' , then A ' is an infinitival complement of A or of a verb contained in A. c. V is contained in the right conjunct of a sentential conjunction S , and A is contained in the left conjunct of S. B. Generate a new tree in which A is substituted for V as the head of the elliptical verb phrase VP ' that V heads , and A is assigned the agreement features required by the head of VP ' .</sentence>
+				<definiendum id="0">SC-phrase</definiendum>
+				<definiens id="0">the head of the elliptical verb phrase VP ' that V heads</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The relation relcont ( V , N ) holds if V is contained in a relative clause adjunct of noun N. The predicate pharg ( P , Q ) , which says that P is an argument of Q , was defined in Section 2 in terms of the network representation .</sentence>
+				<definiendum id="0">relation relcont</definiendum>
+				<definiens id="0">says that P is an argument of Q</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The relation phadjunet ( P , Q ) says that P is an adjunct of Q , and is also straightforwardly defined in terms of the network .</sentence>
+				<definiendum id="0">relation phadjunet</definiendum>
+				<definiens id="0">an adjunct of Q , and is also straightforwardly defined in terms of the network</definiens>
+			</definition>
+			<definition id="14">
+				<sentence>X2 : ,nwh ) : top suspect ( XI , X4 , X5 ) verb ( Ein~pers3 , X2 , past , X3 ) ) u-r -- ob\ ] everyone ( X5 ) noun ( pron ( all ) , ,acc .</sentence>
+				<definiendum id="0">X2</definiendum>
+				<definiens id="0">,nwh ) : top suspect ( XI , X4 , X5 ) verb ( Ein~pers3 , X2 , past</definiens>
+			</definition>
+			<definition id="15">
+				<sentence>We will say that P is in the adjunct domain of N iff N is an argument of a head H , P is the object of a preposition PREP , and PREP is an adjunct of H. P is the NP domain of N iff N is the determiner of a noun Q and ( i ) P is an argument of Q , or ( ii ) P is the object of a preposition PREP and PREP is an adjunct of Q. A pronoun P is noncoreferential with a ( nonreflexive or nonreciprocal ) noun phrase N if any of the following conditions hold .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">PREP</definiendum>
+				<definiendum id="2">P</definiendum>
+				<definiendum id="3">PREP</definiendum>
+				<definiens id="0">the object of a preposition PREP</definiens>
+				<definiens id="1">an argument of Q</definiens>
+			</definition>
+			<definition id="16">
+				<sentence>P is an argument of a head H , N is not a pronoun , and N is contained in H. V. P is in the NP domain of N. VI .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">an argument of a head H</definiens>
+			</definition>
+			<definition id="17">
+				<sentence>P is a determiner of a noun Q , and N is contained in Q. Condition I rules out coreference between a pronoun and an NP with incompatible agreement features .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiens id="0">a determiner of a noun Q , and</definiens>
+			</definition>
+			<definition id="18">
+				<sentence>subj &gt; agent &gt; obj &gt; ( iobj I pobj ) subj is the surface subject slot , agent is the deep subject slot of a verb heading a passive VP , obj is the direct object slot , iobj is the indirect object slot , and pobj is the object of a PP complement of a verb , as in `` put NP on NP . ''</sentence>
+				<definiendum id="0">subj</definiendum>
+				<definiendum id="1">obj</definiendum>
+				<definiendum id="2">pobj</definiendum>
+				<definiens id="0">the deep subject slot of a verb heading a passive VP ,</definiens>
+				<definiens id="1">the direct object slot</definiens>
+			</definition>
+			<definition id="19">
+				<sentence>N is an argument of a verb V , there is an NP Q in the argument domain or the adjunct domain of N such that Q has no noun determiner , and A is ( i ) an argument of Q , or ( ii ) A is an argument of a preposition PREP and PREP is an adjunct of Q. V. A is a determiner of a noun Q , and ( i ) Q is in the argument domain of N and N fills a higher argument slot than Q , or ( ii ) Q is in the adjunct domain of N. Conditions I and II cover anaphoric binding in cases like 33-34 , respectively .</sentence>
+				<definiendum id="0">N</definiendum>
+				<definiendum id="1">PREP</definiendum>
+				<definiens id="0">an argument of a verb V , there is an NP Q in the argument domain or the adjunct domain of N such that Q has no noun determiner</definiens>
+				<definiens id="1">an adjunct of Q. V. A is a determiner of a noun Q</definiens>
+				<definiens id="2">in the adjunct domain of N. Conditions I and II cover anaphoric binding in cases like 33-34 , respectively</definiens>
+			</definition>
+			<definition id="20">
+				<sentence>Antecedent verb -- elliptical verb pairs : send.2 do2.8 Elliptical verb-new argument pairs : send.8 John.3 Elliptical verb-new adjunct pairs : none Interpreted VP anaphora tree : Mary ( X3 ) send ( X I , X3 , X4 , X5 ) John ( X4 ) to ( X6 , XS ) everyone ( X5 ) who ( XS ) he ( X9 ) send ( X8 , X9 , X4 , X5 ) Computational Linguistics Volume 16 , Number 4 , December 1990 207 Shalom Lappin and Michael McCord Anaphora Resolution in Slot Grammar 39 .</sentence>
+				<definiendum id="0">XS ) everyone</definiendum>
+				<definiens id="0">elliptical verb pairs : send.2 do2.8 Elliptical verb-new argument pairs : send.8 John.3 Elliptical verb-new adjunct pairs : none Interpreted VP anaphora tree : Mary ( X3 ) send ( X I</definiens>
+			</definition>
+			<definition id="21">
+				<sentence>Haik presents an LF analysis of VP anaphora that classifies an empty antecedent-contained VP as a variable bound by a wh- ( or empty ) operator at S-structure .</sentence>
+				<definiendum id="0">Haik</definiendum>
+				<definiens id="0">presents an LF analysis of VP anaphora that classifies an empty antecedent-contained VP as a variable bound by a wh- ( or empty ) operator at S-structure</definiens>
+			</definition>
+			<definition id="22">
+				<sentence>The VP anaphora algorithm identifies an elided VP by the presence of a bare auxiliary or infinitival complementizer .</sentence>
+				<definiendum id="0">VP anaphora algorithm</definiendum>
+				<definiens id="0">identifies an elided VP by the presence of a bare auxiliary or infinitival complementizer</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>The Hirschberg and Litman studies identify a specific discourse distinction that relates to phrasing .</sentence>
+				<definiendum id="0">Litman studies</definiendum>
+				<definiens id="0">identify a specific discourse distinction that relates to phrasing</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>7 Each phonological phrase consists of a syntactic head and the material that intervenes between it and a preceding head ( usually , the pre-head modifiers , e.g. pre-nominal adjectives , pre-verbal adverbs ) .</sentence>
+				<definiendum id="0">phonological phrase</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Our analysis generally follows G &amp; G , who propose the following rule , where , in their formulation , X is a prosodic constituent or null , Visa verb , Yis a nonsentential complement , and C refers to phonological word count .</sentence>
+				<definiendum id="0">X</definiendum>
+				<definiens id="0">a prosodic constituent or null , Visa verb</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In one case , if a phrase , P1 , consists of a single phonological word , it is adjoined to the most recently created phrase , PO ( usually a prosodic verb phrase ) .</sentence>
+				<definiendum id="0">P1</definiendum>
+				<definiendum id="1">PO</definiendum>
+				<definiens id="0">if a phrase ,</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Boundary salience rules assign a relative strength , or perceptibility , to each phrase boundary according to syntactic labeling , length , and adjacency ; they ignore verb phrase and clausal constituency and predicate-argument relations .</sentence>
+				<definiendum id="0">Boundary salience rules</definiendum>
+				<definiens id="0">a relative strength , or perceptibility , to each phrase boundary according to syntactic labeling , length , and adjacency ; they ignore verb phrase and clausal constituency and predicate-argument relations</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Length is an independent phonological factor .</sentence>
+				<definiendum id="0">Length</definiendum>
+				<definiens id="0">an independent phonological factor</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A stress foot contains one stressed syllable and zero or more unstressed syllables .</sentence>
+				<definiendum id="0">stress foot</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>The Mu system ( Nagao et al. 1985 ) has two specific restructuring functions , before and after the transfer phase , mainly to handle exceptional cases .</sentence>
+				<definiendum id="0">Mu system</definiendum>
+				<definiens id="0">specific restructuring functions , before and after the transfer phase</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>verbal noun + of + noun ( 7-a ) The DOS/VSE SCP is designed to make efficient use of a hardware system .</sentence>
+				<definiendum id="0">DOS/VSE SCP</definiendum>
+				<definiens id="0">designed to make efficient use of a hardware system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Montague grammar is one of the theoretical bases of the principle , and some work applying Montague grammar to machine translation has been reported ( Landsbergen 1982 ; Nishida and Doshita 1983 ) .</sentence>
+				<definiendum id="0">Montague grammar</definiendum>
+				<definiens id="0">one of the theoretical bases of the principle</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The basic transfer consists of lexical transfer and reordering of words .</sentence>
+				<definiendum id="0">basic transfer</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>AND THEIR APPLICATIONS A wide-range restructuring rule consists of a pair of a matching pattern and a target pattern .</sentence>
+				<definiendum id="0">THEIR APPLICATIONS A wide-range restructuring rule</definiendum>
+				<definiens id="0">consists of a pair of a matching pattern and a target pattern</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( P ADJ ) denotes that the part of speech of the root node should be ADJ ( i.e. , adjective ) .</sentence>
+				<definiendum id="0">P ADJ )</definiendum>
+				<definiens id="0">the part of speech of the root node should be ADJ ( i.e. , adjective )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>SN NP ) results in a new node name , NPXXX ( XXX is a unique number in a LISP environment ) for identification .</sentence>
+				<definiendum id="0">NPXXX ( XXX</definiendum>
+				<definiens id="0">a unique number in a LISP environment ) for identification</definiens>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>A derivation is a tree with each node n labeled by a type assignment q~ ( n ) ( the conclusion of the node ) and by a set F ( n ) of type assignments giving the assumptions of ~ ( n ) .</sentence>
+				<definiendum id="0">derivation</definiendum>
+				<definiens id="0">a tree with each node n labeled by a type assignment q~ ( n ) ( the conclusion of the node</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>and x : /3 for the same variable x. If n is the root node of a derivation D , we say that D is a derivation of ~b ( n ) from the assumptions r ( n ) and write r ( n ) k ~ ( n ) .</sentence>
+				<definiendum id="0">n</definiendum>
+				<definiens id="0">the root node of a derivation D</definiens>
+				<definiens id="1">a derivation of ~b ( n</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>r ( x ) =~ s ( x ) , and the meaning of the noun phrase every man hs .</sentence>
+				<definiendum id="0">r ( x ) =~ s (</definiendum>
+			</definition>
+</paper>
+
+		<paper id="3005">
+			<definition id="0">
+				<sentence>Beth Sundheim ( NOSC ) proposed a black box evaluation of message understanding systems consisting of a training set of 100 messages from a specific domain , and two separate test sets , one consisting of 20 messages and another of 10 .</sentence>
+				<definiendum id="0">NOSC</definiendum>
+				<definiens id="0">a black box evaluation of message understanding systems consisting of a training set of 100 messages from a specific domain , and two separate test sets , one consisting of 20 messages and another of 10</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>One way to evaluate a potential MRL is to have a standard set of Computational Linguistics Volume 16 , Number 3 , September 1990 179 Martha Palmer and Tim Finin Natural Language Processing Systems • theory lJ there an underlying theory which gives meaning to the xa &amp; R system ?</sentence>
+				<definiendum id="0">MRL</definiendum>
+			</definition>
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>The job of a translator is to render in one language the meaning expressed by a passage of text in another language .</sentence>
+				<definiendum id="0">job of a translator</definiendum>
+				<definiens id="0">to render in one language the meaning expressed by a passage of text in another language</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Garside , R. G. ; Leech , G. N. ; and Sampson , G. R. 1987 The Computational Analysis of English : A Corpus-Based Approach .</sentence>
+				<definiendum id="0">English</definiendum>
+			</definition>
+</paper>
+
+	</volume>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="J81">
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>The network node ATTACH PUMP represents the set of pump-attaching actions .</sentence>
+				<definiendum id="0">network node ATTACH PUMP</definiendum>
+				<definiens id="0">the set of pump-attaching actions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The DELIN arc links the schema to the ATTACH PUMP node .</sentence>
+				<definiendum id="0">DELIN arc</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Currently the bottom-up algorithm consists of a search for the most specific occurrence of an event in the model whose participants are compatible with those in the utterance .</sentence>
+				<definiendum id="0">bottom-up algorithm</definiendum>
+				<definiens id="0">consists of a search for the most specific occurrence of an event in the model whose participants are compatible with those in the utterance</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The utterance also causes focusing to shift to the pump ( PU ) and the platform ( PL ) with the pump ( PU ) as the expected immediate focus , t2 The hierarchy of focused entities ( Grosz , 1977a , 1977b ) is illustrated in the two levels of focusing shown here .</sentence>
+				<definiendum id="0">PU</definiendum>
+				<definiens id="0">the expected immediate focus</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>We have very good reasons here for expecting that Fragment-and-Compose is an appropriate paradigm for natural language knowledge delivery .</sentence>
+				<definiendum id="0">Fragment-and-Compose</definiendum>
+				<definiens id="0">an appropriate paradigm for natural language knowledge delivery</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Scene is a `` semantic net , '' a collection of LISP expressions that refer to the same objects . )</sentence>
+				<definiendum id="0">Scene</definiendum>
+				<definiens id="0">a `` semantic net , '' a collection of LISP expressions that refer to the same objects</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Major Modules of KDS KDS consists of five major modules , as indicated in Figure 4 .</sentence>
+				<definiendum id="0">KDS KDS</definiendum>
+				<definiens id="0">consists of five major modules</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( ( CONSTIT ( WHEN ( CALLS NIL WELLS-FARGO ) ( CALLS WELLS-FARGO FIRE-DEPT ) ) ) ... ) ( ( CONSTIT ( WHENEVER ( STARTS NIL ALARM-SYSTEM ) ( PROB ( SOUNDS ALARM-SYSTEM BELL ) ... ) These fragments encode : `` When { unspecified } calls Wells Fargo , Wells Fargo calls the Fire Department . ''</sentence>
+				<definiendum id="0">CONSTIT</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>American Journal of Computational Linguistics , Volume 7 , Number 1 , January-March 1981 23 William C. Mann and James A. Moore Computer Generation of Multiparagraph English Text The Problem Solver takes in the Sayset produced by the Fragmenter and the Expressive Goal given to the system and produces a Saylist , which is an ordered list of the protosentences , some of which have been marked with Advice .</sentence>
+				<definiendum id="0">Problem Solver</definiendum>
+				<definiens id="0">takes in the Sayset produced by the Fragmenter and the Expressive Goal given to the system and produces a Saylist , which is an ordered list of the</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Sometimes the Problem Solver knows some attribute of the final text that ought to be achieved , perhaps because of a demand of the chosen style , but it has no way to effect this directly .</sentence>
+				<definiendum id="0">Problem Solver</definiendum>
+				<definiens id="0">knows some attribute of the final text that ought to be achieved</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Instructional-narrate uses a presentational technique that makes the reader a participant in the text .</sentence>
+				<definiendum id="0">Instructional-narrate</definiendum>
+				<definiens id="0">uses a presentational technique that makes the reader a participant in the text</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In our example the Knowledge Filter produces the DON'T-EXPRESS advice in the following element of the Saylist : ( ( CONSTIT ( WHENEVER ( SOUNDS NIL ALARM-BELL ) ( HEARS YOU ALARM-BELL ) ( PROB ) ) ) ... ( ADVISORS INST-NARRATE NONEXP ) ( ADVICE ( GOOD YOU ) DON'T-EXPRESS ) ) In this case , the involvement of the reader in ( HEARS YOU ALARM-BELL ) arises from the Advice-giving rule for Instructional-Narrate .</sentence>
+				<definiendum id="0">Knowledge Filter</definiendum>
+				<definiens id="0">produces the DON'T-EXPRESS advice in the following element of the Saylist : ( ( CONSTIT ( WHENEVER ( SOUNDS NIL ALARM-BELL ) ( HEARS YOU ALARM-BELL ) ( PROB ) ) ) ... ( ADVISORS INST-NARRATE NONEXP ) ( ADVICE ( GOOD YOU ) DON'T-EXPRESS</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Each Aggregation rule consumes one or more protosentences and produces one protosentence .</sentence>
+				<definiendum id="0">Aggregation rule</definiendum>
+				<definiens id="0">consumes one or more protosentences and produces one protosentence</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The output of the Hill Climber is a Say26 American Journal of Computational Linguistics , Volume 7 , Number 1 , January-March 1981 William C. Mann and James A. Moore Computer Generation of Multiparagraph English Text ( SAYLIST ) Primitive protosentences HILL CLIMBING I ALGORITHM / Aggregation Rule Applier AGGREGATION RULES ( The allowable clausecombining methods of English ) -~ ( SAYLIST ) Primitive and composite protosentences Preference Rule Appller PREFERENCE RULES ( A numerical score for each protosentence ) ( ADVICE taken here ) Figure 10 .</sentence>
+				<definiendum id="0">PREFERENCE RULES</definiendum>
+				<definiens id="0">a Say26 American Journal of Computational Linguistics , Volume 7 , Number 1 , January-March 1981 William C. Mann and James A. Moore Computer Generation of Multiparagraph English Text ( SAYLIST ) Primitive protosentences HILL CLIMBING I ALGORITHM / Aggregation Rule Applier AGGREGATION RULES ( The allowable clausecombining methods of English ) -~ ( SAYLIST ) Primitive and composite protosentences Preference Rule Appller</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>The Hill Climber selects the rule application to use based on an equation that includes competitive terms .</sentence>
+				<definiendum id="0">Hill Climber</definiendum>
+				<definiens id="0">selects the rule application to use based on an equation that includes competitive terms</definiens>
+			</definition>
+</paper>
+
+		<paper id="4006">
+</paper>
+
+		<paper id="3001">
+			<definition id="0">
+				<sentence>That is , ( 3a ) ARCH may-be-described-as STRUCTURE ( 3b ) ARCH-1 inherits-from ARCH are analogous to ( 4a ) the set of all ARCHes is a subset of the set of all STRUCTUREs ( 4b ) ARCH-1 is a member of the set of all ARCHes However , there is an important difference in the semantic interpretation : may-be-described-as links are interpreted as relating intensions expressed by generic nodes , whereas subset relations operate on sets of 138 American Journal of Computational Linguistics , Volume 7 , Number 3 , July-September 1981 William A. Martin Roles , Co-Descriptors , and the Formal Representation of Quantified English Expressions individuals .</sentence>
+				<definiendum id="0">ARCHes</definiendum>
+				<definiens id="0">a subset of the set of all STRUCTUREs ( 4b ) ARCH-1 is a member of the set of all ARCHes However , there is an important difference in the semantic interpretation : may-be-described-as links are interpreted as relating intensions expressed by generic nodes , whereas subset relations operate on sets</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>SURFACE STRUCTURES : I. ( ( AT ( ( WH SOME ) ( PLACE X\ ] I ) ) ) BE ( THE ( ( ( GAS_STATION = $ 17 ) X4 ) ( IN ( TRAFFIC_ZONE 579 ( ( GAS STATION = $ 17 ) X4 ) ) ( IN ( TRAFFIC_ZONE 579 UNDERLY I NG STRUCTURES : I. ( BD LOCATED ( THE ( ( ( GAS STATION = $ 17 ) X4 ) ( * BD LOCATED X4 ( TRAFFIC ZONE 579 ) BD * ) ) ) ( ( WH SOME ) ( PLACE X11 ) ) BD ) QUERY STRUCTURES : ( THE ( ( ( GAS STATION 553 ) X4 ) ( * BD TRAFFIC ZONE 579 X4 BD * ) ) ) BD ) LOGICAL FORM : ( setx 'Xll ' ( foratleast @ I 'X63 ( setx 'X4 ' ( and ( testfct ' @ 579 ' ( 'TRAFZ X4 ' @ 1976 ) '= ) ( testfct '0553 ' ( 'LUC X4 ' @ 1976 ) ' : ) ) ) ' ( testfct X11 ' ( 'ADDRESS X63 ' @ 1976 ) ' : ) ) ) ANSWER : ADDRESS 1976 2 06300 02000 122 S LEXINGTON AV 2 06600 00100 101W POST RD 2 05500 09300 102 W POST RD 2 07100 03300 109 W POST RD 2 07100 02900 115 W POST RD ) ) ?</sentence>
+				<definiendum id="0">SURFACE STRUCTURES</definiendum>
+				<definiens id="0">I. ( BD LOCATED ( THE ( ( ( GAS STATION = $ 17 ) X4 ) ( * BD LOCATED X4 ( TRAFFIC ZONE 579 ) BD * )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Many of the feature names should be obvious , but , e.g. , PL stands for `` place '' , PAG for parcel aggregate , i.e. , an aggregate of separate parcels , and CINS for `` cardinal insertion ' , i.e. , can be followed by a cardinal number .</sentence>
+				<definiendum id="0">PL</definiendum>
+				<definiens id="0">stands for `` place ''</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>( ( where ( ( ( RP ( ( + WH ) ( + LOC ) ) ) ( ( NOM ) ( ( NOUN ( ( + REL ) ( HU ) ( + PL ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( xo ) ) ) ) ) ) ) ) ( are ( ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ) ) ( the ( ( ( gET ) ( ( THE ) ) ) ) ) ( gas_station ( ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( v ) ( ( GAS STATION ) ) ) ( ( =S17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ) ) ) ) ) ( in ( ( ( PREP ) ( ( IN ) ) ) ) ) ( traffic zone ( ( ( NOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( CONST ) ( + CINS ) ) ) ) ) ) ) ) ( 579 ( ( ( VADJ ( ( + ADJ ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ( ?</sentence>
+				<definiendum id="0">) ) ( 579 ( ( ( VADJ</definiendum>
+				<definiens id="0">where ( ( ( RP ( ( + WH ) ( + LOC ) ) ) ( ( NOM ) ( ( NOUN ( ( + REL ) ( HU ) ( + PL ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( xo ) ) ) ) ) ) ) ) ( are ( ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ) ) ( the ( ( ( gET ) ( ( THE ) ) ) ) ) ( gas_station ( ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( v ) ( ( GAS STATION ) ) ) ( ( =S17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ) ) ) ) ) ( in ( ( ( PREP ) ( ( IN ) ) ) ) ) ( traffic zone ( ( ( NOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( CONST ) ( + CINS ) ) ) ) ) )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>( ( ST ) ( ( PP ) ( ( NSPREP ) ( ( AT ) ) ) ( ( NP ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xll ) ) ) ) ) ) ) ) ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ( ( DET ) ( ( THE ) ) ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS STATION ) ) ) ( ( = $ 17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ( ( NSPREP ) ( ( IN ) ) ) ( ( PROPNOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( + CONST ) ) ) ( ( VADJ ( ( + ADJ ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ) ( ( PUNCT ( ( + QUES ) ) ) ( ( ? ) ) ) )</sentence>
+				<definiendum id="0">) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG )</definiendum>
+				<definiendum id="1">PUNCT</definiendum>
+				<definiens id="0">ST ) ( ( PP ) ( ( NSPREP ) ( ( AT ) ) ) ( ( NP ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xll ) ) ) ) ) ) ) ) ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ( ( DET ) ( ( THE ) )</definiens>
+				<definiens id="1">INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ( ( NSPREP ) ( ( IN ) ) ) ( ( PROPNOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( + CONST</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>( ( $ 1 ) ( ( PP ) ( ( NSPREP ) ( ( AT ) ) ) ( ( NP ) ( ( NOM ) ( iV ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ( ( NOM ) ( ( NOUN ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xli ) ) ) ) ) ) ) ) ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ( ( NP ) ( ( DETX ) ( ( DET ) ( ( THE ) ) ) ) ( ( NOMX ) ( ( NOMZ ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS_STATION ) ) ) ( ( = $ 17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( x4 ) ) ) ) ) ( ( Z1 ) ( ( PP3X ) ( ( PP ) ( ( NSPREP ) ( ( IN ) ) ) ( ( RPX ) ( ( NP ) ( ( PROPNOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( + CONST ) ) ) ( ( VADJ ( ( + ADd ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ) ) ) ) ) ) ) ) ) ( ( PUNCT ( ( + QUES ) ) ) ( ( ? ) ) ) )</sentence>
+				<definiendum id="0">PP ) ( ( NSPREP ) ( ( AT ) ) ) ( ( NP ) ( ( NOM ) ( iV</definiendum>
+				<definiens id="0">( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ( ( NOM ) ( ( NOUN ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xli ) ) ) ) ) ) ) ) ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ( ( NP ) ( ( DETX ) ( ( DET ) ( ( THE ) ) ) ) ( ( NOMX ) ( ( NOMZ ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS_STATION ) ) ) ( ( = $ 17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( x4 ) ) ) ) ) ( ( Z1 ) ( ( PP3X ) ( ( PP ) ( ( NSPREP ) ( ( IN ) ) ) ( ( RPX ) ( ( NP ) ( ( PROPNOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( + CONST</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( ( $ 1 ) ( ( PP ) ( ( NSPREP ) ( ( AT ) ) ) ( ( NP ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( x11 ) ) ) ) ) ) ) ) ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ( ( NP ) ( ( DETX ) ( ( DET ) ( ( THE ) ) ) ) ( ( NOMX ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS_STATION ) ) ) ( ( =S17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ) ) ( ( PP4X ) ( ( PP ) ( ( NSPREP ) ( ( IN ) ) ) ( ( RPX ) ( ( NP ) ( ( PROPNOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC_ZONE ) ) ) ( ( INDEX ( ( + CONST ) ) ) ( ( VADJ ( ( + ADJ ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ) ) ) ) ) ( ( S2PCX ) ( ( PUNCT ( ( + QUES ) ) ) ( ( ? ) ) ) ) )</sentence>
+				<definiendum id="0">) ) ( ( RPX ) ( ( NP ) ( ( PROPNOM ) ( ( NOUN</definiendum>
+				<definiendum id="1">TRAFFIC_ZONE ) ) ) ( ( INDEX</definiendum>
+				<definiens id="0">PP ) ( ( NSPREP ) ( ( AT ) ) ) ( ( NP ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( x11 ) ) ) ) ) ) ) ) ( ( BAUX ( ( PAST ) ( SG ) ) ) ( ( BE ) ) ) ( ( NP ) ( ( DETX ) ( ( DET ) ( ( THE ) ) ) ) ( ( NOMX ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS_STATION ) ) ) ( ( =S17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ) ) ( ( PP4X ) ( ( PP ) ( ( NSPREP ) ( ( IN )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Query structures are similar to underlying structures in form , but reflect the particular meaning I. ( BD LOCATED ( THE ( ( ( GAS_STATION : S17 ) X4 ) ( * BD LOCATED X4 ( TRAFFIC ZONE 579 ) BD * ) ) ) ( ( WH SOME ) ( PLACE X11 ) ) BD ) ( ( $ I ( ( PAST ) ( + WH ) ( + QUES ) ( + TOP ) ) ) ( ( BD ) ) ( ( V ( ( + ADJ ) ( + EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( LOCATED ) ) ) ( ( NP ) ( ( DET ) ( ( THE ) ) ) ( ( NOM ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS STATION ) ) ) ( ( : $ 17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ( ( Si ) ( ( BD ) ) ( ( V ( ( + ADd ) ( +'EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( LOCATED ) ) ) ( ( NP ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ) ( ( NP ( ( + IN ) ( + LOC ) ) ) ( ( NOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( V ( ( + OGEN ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( INDEX ( ( + CONST ) ) ) ( iV ( ( + ADJ ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ) ) BD ) ) ) ) ) ( NP ( ( + AT ) ( + LOC ) ) ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xll ) ) ) ) ) ) ) ( ( BD ) ) ) Figure 3f .</sentence>
+				<definiendum id="0">NOM ) ( ( NOUN</definiendum>
+				<definiendum id="1">WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( PLACE ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xll ) ) ) ) ) ) )</definiendum>
+				<definiens id="0">PAST ) ( + WH ) ( + QUES ) ( + TOP ) ) ) ( ( BD ) ) ( ( V ( ( + ADJ ) ( + EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( LOCATED ) ) ) ( ( NP ) ( ( DET ) ( ( THE ) ) ) ( ( NOM ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( v ) ( ( V ) ( ( GAS STATION ) ) ) ( ( : $ 17 ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ( ( Si ) ( ( BD ) ) ( ( V ( ( + ADd ) ( +'EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( LOCATED ) ) ) ( ( NP ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ) ( ( NP ( ( + IN ) ( + LOC</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>In Figure 3g , one can see that the first instance of LOCATED has been changed to the 34 American Journal of Computational Linguistics , Volume 7 , Number 1 , January-March 1981 Fred J. Damerau Operating Statistics for the Transformational Question Answering System ( THE ( ( ( GAS STATION 553 ) X4 ) ( * BD TRAFFIC ZONE 579 X4 BD * ) ) ) BD ) ( ( $ I ( ( PAST ) ( + WH ) ( + QUES ) ( + TOP ) ) ) ( ( BD ) ) ( ( V ( ( + ADJ ) ( + EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( ADDRESS ) ) ) ( ( NP ( ( + AT ) ( + LOC ) ) ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( THING ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xll ) ) ) ) ) ) ) ( ( NP ) ( ( DET ) ( ( THE ) ) ) ( ( NOM ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( V ) ( ( V ) ( ( GAS_STATION ) ) ) ( ( LUC ) ( ( 553 ) ) ) ) ( INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ( ( s1 ( ( BD ) ) ( ( V ( ( + ADJ ) ( + EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( NP ( ( + IN ) ( + LOC ) ) ) ( ( NOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( INDEX ( ( + CONST ) ) ) ( ( V ( ( + ADJ ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ) ) ( ( NP ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( x4 ) ) ) ) ) ) ( ( BD ) ) ) ) ) ( ( BD ) ) ) Figure 3g .</sentence>
+				<definiendum id="0">) ) ( ( NOM ) ( ( NOUN ( ( HU ) ( + SG ) ( + PL ) ( + PAG ) ( + GEO ) ) ) ( ( INDEX ( ( + CONST ) ) ) ( ( V ( ( + ADJ ) ( + CARD ) ( + D3 ) ) ) ( ( 579 ) ) ) ) ) ) ) ( ( NP ) ( ( NOM ) ( ( NOUN ( ( HU ) ( SG ) ( + PL ) ( + SV ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( x4 ) ) ) ) ) ) ( ( BD ) ) ) ) ) ( ( BD</definiendum>
+				<definiens id="0">PAST ) ( + WH ) ( + QUES ) ( + TOP ) ) ) ( ( BD ) ) ( ( V ( ( + ADJ ) ( + EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( ADDRESS ) ) ) ( ( NP ( ( + AT ) ( + LOC ) ) ) ( ( NOM ) ( ( V ( ( + ADJ ) ( + QUANT ) ) ) ( ( WH ) ) ( ( SOME ) ) ) ( ( NOM ) ( ( NOUN ( ( + SG ) ( HU ) ( + PL ) ) ) ( ( V ) ( ( THING ) ) ) ( ( INDEX ( ( CONST ) ) ) ( ( Xll ) ) ) ) ) ) ) ( ( NP ) ( ( DET ) ( ( THE )</definiens>
+				<definiens id="1">INDEX ( ( CONST ) ) ) ( ( X4 ) ) ) ) ) ( ( s1 ( ( BD ) ) ( ( V ( ( + ADJ ) ( + EN ) ( + LOC ) ( + TEMP ) ( + PSUBJ ) ( + POBJ ) ) ) ( ( TRAFFIC ZONE ) ) ) ( ( NP ( ( + IN ) ( + LOC )</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The RSS provides the capability to generate a data base of n-ary relations , with indexes on any field of the relation , and low-level access commands like OPEN , NEXT , CLOSE , with appropriate parameters , to retrieve information from such a data base .</sentence>
+				<definiendum id="0">RSS</definiendum>
+				<definiens id="0">provides the capability to generate a data base of n-ary relations , with indexes on any field of the relation , and low-level access commands like OPEN , NEXT , CLOSE , with appropriate parameters , to retrieve information from such a data base</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The LISP programs examine the logical form to establish relationships between variables and to generate requests to the data base component to find items with specified properties .</sentence>
+				<definiendum id="0">LISP programs</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>COMPLETED is the number of queries which resulted in access to the data base and a resulting response to the user .</sentence>
+				<definiendum id="0">COMPLETED</definiendum>
+				<definiens id="0">the number of queries</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>LOOKUP FAILURES is the number of times the user typed a word which was not in the lexicon and was not capitalized .</sentence>
+				<definiendum id="0">LOOKUP FAILURES</definiendum>
+				<definiens id="0">the number of times the user typed a word which was not in the lexicon and was not capitalized</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>The category LEXICAL CHOICE indicates how often the system asked the user to clarify the meaning of a word .</sentence>
+				<definiendum id="0">LEXICAL CHOICE</definiendum>
+				<definiens id="0">indicates how often the system asked the user to clarify the meaning of a word</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>American Journal of Computational Linguistics , Volume 7 , Number 1 , January-March 1981 41 Fred J. Damerau Operating Statistics for the Transformational Question Answering System at their first submission , and Appendix C is a list which failed for some reason other than parsing at their first submission .</sentence>
+				<definiendum id="0">Appendix C</definiendum>
+				<definiens id="0">a list which failed for some reason other than parsing at their first submission</definiens>
+			</definition>
+</paper>
+
+		<paper id="2003">
+			<definition id="0">
+				<sentence>The data base management system is an implementation of the relational model , the Peterlee Relational Test Vehicle ( PRTV , Todd , 1975 ) with its data base language ISBL .</sentence>
+				<definiendum id="0">base management system</definiendum>
+				<definiens id="0">an implementation of the relational model , the Peterlee Relational Test Vehicle ( PRTV , Todd , 1975 ) with its data base language ISBL</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>A prompting routine guides the vocabulary definition and makes sure that all information needed by the system is entered .</sentence>
+				<definiendum id="0">prompting routine</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>a first interpretation addresses the OF-column of MANAGER and compares the contents of that column with the list of secretaries : `` Is there a manager of somebody , is that somebody a secretary , and if so , who is the manager ' The set of x , such that x is a manager of y and y is a secretary : { x\ [ Ey ( M ( x , y ) A S ( y ) ) } This interpretation is valid only where secretaries are managed by the people whose secretary they are , but fails for : Which manager has room 35 ?</sentence>
+				<definiendum id="0">y</definiendum>
+				<definiendum id="1">S</definiendum>
+				<definiens id="0">a manager of y and</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The set of x such that y is musician of x and y is a secretary and x is a manager : { xlEy ( Mu ( y , x ) A M ( x ) A S ( y ) ) } The first solution could be used as an escape if the other interpretation does not yield a result , but it leads to multiple interpretations with the same result for relations that are defined as converses of one another .</sentence>
+				<definiendum id="0">y</definiendum>
+				<definiendum id="1">x ) A M ( x ) A S ( y</definiendum>
+				<definiens id="0">a secretary and x is a manager : { xlEy ( Mu ( y ,</definiens>
+				<definiens id="1">an escape if the other interpretation does not yield a result , but it leads to multiple interpretations with the same result for relations that are defined as converses of one another</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>ifer Peter Notation : NOM relation/value in the nominative of HAVE ACC relation/value in the accusative of HAVE APP relation/value in the apposition NOMnom NOM-column of the relation in the nominative OFnom OF-column of the relation in the nominative NOMacc NOM-column of the relation in the accusative OFacc OF-column of the relation in the accusative NOMapp NOM-column of the relation in the apposition OFapp OF-column of the relation in the apposition NOMwh NOM-eotumn of the relation with interrogative NOMrel NOM-column of the relation governing the relative pronoun MA relation MANAGER SEK relation SECRETARY NOMma NOM-column of the relation manager , similarly NOMsek , OFma , OFsek , NOMmus x join operator ; select operator % project operator subtract = equal &amp; and The string ( ( NOMxACC ) ; NOMnom=OFacc ) % NOMwh reads as `` join the relations addressed by the nominative and accusative of HAVE , select those tuples where the NOM-column of the relation in the nominative equals the OF-column of the relation in the accusative , and project for printing the NOM-column of those relations where the noun phrases contain interrogatives . ''</sentence>
+				<definiendum id="0">select operator</definiendum>
+				<definiens id="0">NOM relation/value in the nominative of HAVE ACC relation/value in the accusative of HAVE APP relation/value in the apposition NOMnom NOM-column of the relation in the nominative OFnom OF-column of the relation in the nominative NOMacc NOM-column of the relation in the accusative OFacc OF-column of the relation in the accusative NOMapp NOM-column of the relation in the apposition OFapp OF-column of the relation in the apposition NOMwh NOM-eotumn of the relation with interrogative NOMrel NOM-column of the relation governing the relative</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>If the resulting list is empty , there is no manager of Moser and the answer is YES , if it is not , the answer is NO. 2 The test cases are ordered as follows : A. No negation a. Two relations : subject and object are nouns b. Relation and interrogative pronoun : subject or object is an interrogative pronoun c. Relation and name : subject or object is a name d. Apposition , two relations , one in the nominative e. Apposition , two relations in the accusative f. Apposition , three relations g. Apposition , name in the accusative h. Apposition , name in the nominative i. Apposition and two interrogative pronouns the apposition belongs to one of the pronouns NO confuses those speakers who use NO to answer negated questions in the affirmative .</sentence>
+				<definiendum id="0">object</definiendum>
+				<definiens id="0">subject and object are nouns b. Relation and interrogative pronoun : subject or</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Sekretiirin , die der Sauer nicht hat Secretary whom Sauer does not have ( NOMsek ( ( SEK ; OFsek=Sauer ) % NOMsek ) ) Moser Moser Sauer Sauer Moser Mahl e Koni g Mahl e Mai er Kufer Mai er Prepositional phrases containing WITH and WITHOUT can also be related to OF-phrases ( Lees 1960:93 ) and to HAVE ( Poldauf I967:33f. ) , unless the prepositions are governed by the verb or are part of instrumental , comitative , or adverbial phrases .</sentence>
+				<definiendum id="0">Sekretiirin</definiendum>
+				<definiens id="0">unless the prepositions are governed by the verb or are part of instrumental , comitative , or adverbial phrases</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Where WITH-phrases are defined as prepositional complements of nouns , verbs or adjectives , they are related to the corresponding WITH-column in the corresponding relation .</sentence>
+				<definiendum id="0">WITH-phrases</definiendum>
+				<definiens id="0">prepositional complements of nouns , verbs or adjectives</definiens>
+			</definition>
+</paper>
+
+		<paper id="4001">
+			<definition id="0">
+				<sentence>Anaphor interpretation can be studied as a computational process that uses the already existing specification of a phrase to find the specification for an anaphor .</sentence>
+				<definiendum id="0">Anaphor interpretation</definiendum>
+				<definiens id="0">a computational process that uses the already existing specification of a phrase to find the specification for an anaphor</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Charniak , attempting to resolve this problem , American Journal of Computational Linguistics , Volume 7 , Number 4 , October-December 1981 219 Candace L. Sidner Focusing for Interpretation of Pronouns proposed demons that would `` wake up '' in the appropriate situation ( that is , processes which could themselves notice when they were to begin processing ) .</sentence>
+				<definiendum id="0">Charniak</definiendum>
+				<definiens id="0">'' in the appropriate situation ( that is , processes which could themselves notice when they were to begin processing )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The hearer follows a focus and checks to see if the anaphoric expressions which the speaker uses either co-specify with the hearer 's representation of that focus or specify a representation discourse focus is defined by the effects of several focusing algorithms ; for details , see Sidner 1979 .</sentence>
+				<definiendum id="0">hearer</definiendum>
+				<definiens id="0">follows a focus and checks to see if the anaphoric expressions which the speaker uses either co-specify with the hearer 's representation of that focus or specify a representation discourse focus is defined by the effects of several focusing algorithms</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A third process updates the loci by decisions that depend on anaphoric interpretations chosen by the pronoun interpreter .</sentence>
+				<definiendum id="0">third process</definiendum>
+				<definiens id="0">updates the loci by decisions that depend on anaphoric interpretations chosen by the pronoun interpreter</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>R1 is a naive formulation and fails to predict accurately over a wide range of phenomena .</sentence>
+				<definiendum id="0">R1</definiendum>
+				<definiens id="0">a naive formulation and fails to predict accurately over a wide range of phenomena</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In D5-2a below , `` he '' co-specifies with `` John '' ( the actor focus ) but if D5-2b followed D5-1 , `` he '' may cospecify with either John or Mike ( the discourse focus ) .</sentence>
+				<definiendum id="0">Mike</definiendum>
+				<definiens id="0">the discourse focus )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>A potential actor is a noun phrase which specifies a database element marked as animate and which does not occur in agent position .</sentence>
+				<definiendum id="0">potential actor</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>A computational system that makes such judgments must have a very rich knowledge base ( e.g. , to know that Monty is a male name , and that professors may be male ) and must be able to infer which actor is preferable from that base .</sentence>
+				<definiendum id="0">computational system</definiendum>
+				<definiens id="0">a male name</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The stacked focus constraint is a consequence of the movement of focus in the focus machinery .</sentence>
+				<definiendum id="0">stacked focus constraint</definiendum>
+				<definiens id="0">a consequence of the movement of focus in the focus machinery</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Pronouns used with their co-specifiers appearing after the occurrence of the pronoun have been called backward anaphora in the linguistic literature ; I refer to them as forward co-specifiers .</sentence>
+				<definiendum id="0">Pronouns</definiendum>
+				<definiens id="0">used with their co-specifiers appearing after the occurrence of the pronoun have been called backward anaphora in the linguistic literature</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Recency rule : When a pronoun is in subject position and is the initial phrase in a sentence , and if a member of the potential ( discourse or actor ) foci occurs as the last phrase in the previous sentence , test the pronoun for co-specifying with that potential focus .</sentence>
+				<definiendum id="0">Recency rule</definiendum>
+				<definiens id="0">When a pronoun is in subject position and is the initial phrase in a sentence</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>Recency rule : When a pronoun is in subject position and is the initial phrase in a sentence , and if a member of the potential ( discourse or actor ) foci occurs as the last phrase in the previous sentence , test the pronoun for co-specifying with that potential focus .</sentence>
+				<definiendum id="0">Recency rule</definiendum>
+				<definiens id="0">When a pronoun is in subject position and is the initial phrase in a sentence</definiens>
+			</definition>
+</paper>
+
+		<paper id="3003">
+			<definition id="0">
+				<sentence>Word Synthesis ( WS ) derives a TD word for each reading produced by WA .</sentence>
+				<definiendum id="0">Word Synthesis ( WS )</definiendum>
+				<definiens id="0">derives a TD word for each reading produced by WA</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Four tables of examples will now be given ( with fewer stages ) which illustrate cases in which a TD root replaces an SD root which has different properties 170 American Journal of Computational Linguistics , Volume 7 , Number 3 , July-September 1981 David J. Weber and William C. Mann Prospects for Computer-Assisted Dialect Adaptation Given : SD orthographic form : WA develops , in succession : length converted : segmentation : morphophonemic form : plurality handled : WS develops , in succession : re-pluralization : allomorph selection : TD orthographic form : ( 1 ) aywarkaykan ( 1 ' ) aywarkaarinanpaq ( 2 ) aywarkaykan ( 3 ) aywa-rka-yka-n ( 4 ) *aywa-RKA-YKA : -3 ( 5 ) ( *aywa-YKA : -3 ) +PL ( 2 ' ) aywarka : rinanpaq ( 3 ' ) aywa-rka- : ri-na-n-paq ( 4 ' ) * aywa-RKU- : RI-NA-3 P-PAQ ( 5 ' ) ( *aywa-RKU-NA-3P-PAQ ) +PL ( 6 ) *aywa-YKA : -YA : -3 ( 7 ) aywa-yka : -ya-n ( 8 ) aywaykaayan 'they are going ' ( 6 ' ) *aywa-RKU-YA : -NA-3P-PAQ ( 7 ' ) aywa-rku-ya : -na-n-paq ( 8 ' ) aywarkuyaananpaq 'in order that they go ' Table 2 .</sentence>
+				<definiendum id="0">allomorph selection : TD orthographic</definiendum>
+				<definiens id="0">given ( with fewer stages ) which illustrate cases in which a TD root replaces an SD root which has different properties</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>suffix follows in the word which causes morphophonemic lowering .</sentence>
+				<definiendum id="0">suffix</definiendum>
+				<definiens id="0">follows in the word which causes morphophonemic lowering</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The case is HgQ wasi-ta hata-ra-chi ( houseACC stand-RI-cause- ) 'to raise a house ' ( literally , 'to cause a house to stand ' ) .</sentence>
+				<definiendum id="0">HgQ wasi-ta hata-ra-chi</definiendum>
+				<definiens id="0">cause a house to stand ' )</definiens>
+			</definition>
+</paper>
+
+		<paper id="2004">
+</paper>
+
+		<paper id="3002">
+			<definition id="0">
+				<sentence>We can first represent the sentence through a three-branched quantification of the form : q ( x , fl , f2 ) where q is a quantifier into which the determiner translates , fl is the noun phrase 's translation , and f2 is the verb phrase 's translation .</sentence>
+				<definiendum id="0">q</definiendum>
+				<definiendum id="1">f2</definiendum>
+				<definiens id="0">a quantifier into which the determiner translates</definiens>
+				<definiens id="1">the verb phrase 's translation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The analyser uses a syntactic variant of PROLOG , called ( normalized ) metamorphosis grammars ( MGs ) \ [ 5\ ] .</sentence>
+				<definiendum id="0">analyser</definiendum>
+				<definiens id="0">uses a syntactic variant of PROLOG , called ( normalized ) metamorphosis grammars ( MGs</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Fixed vocabulary Determiners : el la los las un una unos unas the a some ningfm todo i no every any cardinal number Prepositions : all Spanish prepositions Conjunction : y and Relative pronouns : que quien donde cuyo cual ( es ) ~ : which who where whose Interrogative pronouns : qu6 cu~nto ( s ) d6nde qui6n cu~l which how much/many where who which Negative particle : no Variable vocabulary .</sentence>
+				<definiendum id="0">Fixed vocabulary Determiners</definiendum>
+				<definiens id="0">any cardinal number Prepositions : all Spanish prepositions Conjunction : y and Relative pronouns : que quien donde cuyo cual ( es ) ~ : which who where whose Interrogative pronouns : qu6 cu~nto ( s ) d6nde qui6n cu~l which how much/many where who which Negative particle : no Variable vocabulary</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A declarative sentence consists of a subject , an optional negation particle , a verb and its modifiers ( in the restricted sense described below ) .</sentence>
+				<definiendum id="0">declarative sentence</definiendum>
+				<definiens id="0">consists of a subject , an optional negation particle , a verb and its modifiers ( in the restricted sense described below )</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>A subject consists of a noun phrase .</sentence>
+				<definiendum id="0">subject</definiendum>
+				<definiens id="0">consists of a noun phrase</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>A noun phrase 's kernel consists of an optional determiner , an optional series of adjectives , a noun , and possibly a series of adjectival groups .</sentence>
+				<definiendum id="0">kernel</definiendum>
+				<definiens id="0">consists of an optional determiner , an optional series of adjectives</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>An adjectival group is an adjective with modifiers .</sentence>
+				<definiendum id="0">adjectival group</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>It can take any of the forms : r ( tl ... .. tn ) where r is an n-ary predicate symbol corresponding to a distributive , collective or respective relation .</sentence>
+				<definiendum id="0">r</definiendum>
+				<definiens id="0">an n-ary predicate symbol corresponding to a distributive , collective or respective relation</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>and ( sl , s2 ) if ( s 1 , s2 ) not ( s ) equal ( nl , n2 ) greater-than ( nl , n2 ) an integer formula nl denotes an integer number , and can take one of the forms : j where j is an integer such that j &gt; 0 card ( t ) Further details can be found in \ [ 11\ ] .</sentence>
+				<definiendum id="0">integer formula nl</definiendum>
+			</definition>
+			<definition id="9">
+				<sentence>MGs are a powerful formalism for describing and processing languages , in which : context-sensitive rewriting rules can be described .</sentence>
+				<definiendum id="0">MGs</definiendum>
+				<definiens id="0">a powerful formalism for describing and processing languages , in which : context-sensitive rewriting rules can be described</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Statement ( x ) I SIx &lt; -s ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .. I Pr-noun ( k ) I L9 1 k &lt; -tom I tomas I Verb ( k , l , s ) I Compls ( nil , s ) I VI C1 I I X I I Compls ( l , s ) I C2 I ... ... ... ... ... ... ... ... ..</sentence>
+				<definiendum id="0">Statement ( x</definiendum>
+				<definiens id="0">k ) I L9 1 k &lt; -tom I tomas I Verb ( k , l , s ) I Compls ( nil , s ) I VI C1 I I X I</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>160 American Journal of Computational Linguistics , Volume 7 , Number 3 , July-September 1981 Veronica Dahl Translating Spanish into Logic through Logic To handle negation , we can replace rule S by : S ) Statement ( s ) -- &gt; Kernel ( l , sl , s2 , s ) Compls ( l , sl , s2 ) K ) Kernel ( l , sl , s2 , s ) -- &gt; Noun-phrase ( k , s3 , s ) Neg ( s2 , s3 ) Verb ( k , l , sl ) G1 ) Neg ( s , s ) -- &gt; G2 ) Neg ( s , not ( s ) ) -- &gt; no where the Neg `` device '' takes a formula s and produces either s itself or not ( s ) , according to whether the negation particle `` no '' is absent or present .</sentence>
+				<definiendum id="0">s3 ) Verb</definiendum>
+				<definiens id="0">s , s ) -- &gt; G2 ) Neg ( s , not ( s ) ) -- &gt; no where the Neg `` device '' takes a formula s and produces either s itself or not ( s ) , according to whether the negation particle `` no ''</definiens>
+			</definition>
+			<definition id="12">
+				<sentence>Our rules are augmented as follows : K ) Kernel ( l , sl , s2 , s ) -- &gt; Modifier ( subject-k , s3 , s ) Neg ( s2 , s3 ) Verb ( k , l , s l ) M ) Modifier ( c-k , sl , s2 ) -- &gt; Case ( c ) Noun-phrase ( k , s l , s2 ) The subject-verb inversion rule is as follows .</sentence>
+				<definiendum id="0">inversion rule</definiendum>
+				<definiens id="0">augmented as follows : K ) Kernel ( l , sl , s2 , s ) -- &gt; Modifier ( subject-k , s3 , s ) Neg</definiens>
+			</definition>
+			<definition id="13">
+				<sentence>The non-terminal Case ( c ) is important also in handling complement noun phrases .</sentence>
+				<definiendum id="0">non-terminal Case ( c</definiendum>
+				<definiens id="0">important also in handling complement noun phrases</definiens>
+			</definition>
+</paper>
+
+		<paper id="3005">
+</paper>
+
+		<paper id="4005">
+</paper>
+
+		<paper id="1004">
+</paper>
+
+		<paper id="4004">
+</paper>
+
+		<paper id="3004">
+</paper>
+
+		<paper id="2002">
+			<definition id="0">
+				<sentence>Test relaxation occurs when the test portion of an arc contains a relaxable predicate and the test fails .</sentence>
+				<definiendum id="0">Test relaxation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>Typically , PUSH arcs will relax to PUSH arcs , CAT arcs to CAT or PUSH arcs , and WRD or MEM arcs to CAT arcs .</sentence>
+				<definiendum id="0">CAT</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The form of the basic expected response could be shown by the following pattern , where AUX refers to an arc that identifies auxiliary verbs : ( PAT ( ( PERSON &gt; AUX &gt; TRANS-ACT &gt; OBJ ) OPTIONAL ) T ... ) This would serve to identify the three elliptical responses as well as others .</sentence>
+				<definiendum id="0">AUX</definiendum>
+				<definiens id="0">an arc that identifies auxiliary verbs : ( PAT ( ( PERSON &gt; AUX &gt; TRANS-ACT &gt; OBJ ) OPTIONAL ) T ... ) This would serve to identify the three elliptical responses as well as others</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A pattern here might be the following , where IMP-ACT is an arc that identifies the typical action , and SET 104 American Journal of Computational Linguistics , Volume 7 , Number 2 , April-June 1981 Stan C. Kwasny and Norman K. Sondheimer Relaxation Techniques for Parsing Ill-Formed Input identifies a set description : ( PAT ( ( &gt; IMP-ACT SET ) OPTIONAL ) T ... ) Generally , patterns of usage must be identified , say in a study like that of Malhotra ( 1975 ) , so that appropriate patterns can be constructed .</sentence>
+				<definiendum id="0">IMP-ACT</definiendum>
+				<definiens id="0">Norman K. Sondheimer Relaxation Techniques for Parsing Ill-Formed Input identifies a set description : ( PAT ( ( &gt; IMP-ACT SET ) OPTIONAL ) T ... ) Generally , patterns of usage must be identified</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>An example of much of what was just described is the following macro arc : ( WRD* AND T ( BUILDQ ( PAT ( &gt; OPTIONAL ) T ( SETR S ( BUILDQ ( AND + * ) ) ) ) s ) ) This WRD* macro arc attempts to find the word AND at the current position of processing the input .</sentence>
+				<definiendum id="0">BUILDQ</definiendum>
+				<definiendum id="1">SETR S ( BUILDQ</definiendum>
+				<definiens id="0">AND + * ) ) ) ) s ) ) This WRD* macro arc attempts to find the word AND at the current position of processing the input</definiens>
+			</definition>
+</paper>
+
+		<paper id="4002">
+			<definition id="0">
+				<sentence>The LIFER \ [ 11\ ] system uses the strong constraints typically provided by its semantic grammar in this way to reduce the range of possibilities for spelling correction .</sentence>
+				<definiendum id="0">LIFER</definiendum>
+				<definiens id="0">] system uses the strong constraints typically provided by its semantic grammar in this way to reduce the range of possibilities for spelling correction</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The grammar of the parser is a set of rewrite or production rules ; the left-hand side of one of these rules is a linear pattern of constituents ( lexical or higher level ) and the right-hand side defines a result constituent .</sentence>
+				<definiendum id="0">right-hand side</definiendum>
+				<definiens id="0">a set of rewrite or production rules</definiens>
+				<definiens id="1">a linear pattern of constituents ( lexical or higher level</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>FlexP employs the technique of suspending a parse with the possibility of later continuation to help with the recognition of interjections , restarts , and implicit terminations .</sentence>
+				<definiendum id="0">FlexP</definiendum>
+				<definiens id="0">employs the technique of suspending a parse with the possibility of later continuation to help with the recognition of interjections , restarts , and implicit terminations</definiens>
+			</definition>
+</paper>
+
+		<paper id="4003">
+			<definition id="0">
+				<sentence>The XG formalism is an extension of the definite clause grammar ( DCG ) \ [ 6\ ] formalism , which is itself a restriction of Colmerauer 's formalism of metamorphosis grammars ( MGs ) \ [ 2\ ] .</sentence>
+				<definiendum id="0">XG formalism</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>P is the head of the clause , Q1 ... .. Qn are goals , forming the body of the clause .</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">the head of the clause</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A literal has a predicate symbol , and possibly some arguments ( in parentheses , separated by commas ) , e.g. father ( X , Y ) false number ( O ) A literal is to be interpreted as denoting a relation between its arguments ; e.g. `` father ( X , Y ) '' denotes the relation 'father ' between X and Y. Arguments are terms , standing for partially specified objects .</sentence>
+				<definiendum id="0">literal</definiendum>
+				<definiens id="0">has a predicate symbol , and possibly some arguments ( in parentheses , separated by commas ) , e.g. father ( X , Y ) false number ( O ) A literal is to be interpreted as denoting a relation between its arguments</definiens>
+				<definiens id="1">the relation 'father ' between X and Y. Arguments are terms , standing for partially specified objects</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>may be read as `` X is grandfather of Z if X is father of Y and Y is a parent of Z '' ; the clause father ( john , mary ) .</sentence>
+				<definiendum id="0">Y</definiendum>
+				<definiens id="0">a parent of Z ''</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Where a DCG is a CFG with logic terms for grammar symbols , a MG is a somewhat restricted type-0 grammar with logic terms for grammar symbols .</sentence>
+				<definiendum id="0">DCG</definiendum>
+				<definiendum id="1">MG</definiendum>
+				<definiens id="0">a CFG with logic terms for grammar symbols , a</definiens>
+				<definiens id="1">a somewhat restricted type-0 grammar with logic terms for grammar symbols</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Sk_ 1 ... s k -- &gt; r. ( 3 ) Here each segment s i ( separated from other segments by ' ... ' ) is a sequence of terminals and non-terminals ( written in DCG notation , with ' , ' for concatenation ) .</sentence>
+				<definiendum id="0">)</definiendum>
+				<definiens id="0">s k -- &gt; r. ( 3 ) Here each segment s i ( separated from other segments by ' ... '</definiens>
+				<definiens id="1">a sequence of terminals and non-terminals ( written in DCG notation , with ' , ' for concatenation )</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Each element of the extraposition list represents a symbol being repositioned as a 4-tuple x ( context , type , symbol , xlist ) where context is either 'gap ' , if the symbol was preceded by ' ... ' in the rule where it originated , or 'nogap ' , if the symbol was preceded by ' , ' ; type may be 'terminal ' or 'nonterminal ' , with the obvious meaning ; symbol is the symbol proper ; xlist is the remainder of the extraposition list ( an empty list being represented by '\ [ \ ] ' ) .</sentence>
+				<definiendum id="0">context</definiendum>
+				<definiendum id="1">symbol</definiendum>
+				<definiendum id="2">xlist</definiendum>
+				<definiens id="0">a symbol being repositioned as a 4-tuple x ( context , type , symbol</definiens>
+				<definiens id="1">the symbol proper ;</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>Furthermore , for each distinct non-leading nonterminal nt ( with arity n ) in the left-hand side of a rule of the XG , the translation includes the clause n/ ( Vl ... .. Vn , S , S , XO , X ) : virtual ( n/ ( Vl ... .. Vn ) , XO , X ) .</sentence>
+				<definiendum id="0">X )</definiendum>
+				<definiens id="0">the translation includes the clause n/ ( Vl ... .. Vn , S , S , XO ,</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>where 'virtual ( C , X0 , X ) ' , defined later , can be read as `` C is the constituent between X0 and X in the extraposition list '' , and the variables Vi transfer the arguments of the symbol in the extraposition list to the predicate which translates that symbol .</sentence>
+				<definiendum id="0">'virtual</definiendum>
+				<definiens id="0">transfer the arguments of the symbol in the extraposition list to the predicate which translates that symbol</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Finally , the two auxiliary predicates 'virtual ' and 'terminal ' are defined as follows : virtual ( NT , x ( C , nonterminal , NT , X ) , X ) .</sentence>
+				<definiendum id="0">NT , X</definiendum>
+				<definiens id="0">virtual ( NT , x ( C , nonterminal ,</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>* relative ( 6,9 , X , X ) * open ( 6,6 , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) ) * rel_marker ( 6,7 , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close x ( gap , nt , trace x ( gap , nt , trace rel_pronoun ( 6,7 , X \ [ that\ ] sentence ( 7,9 , x ( gap x ( gap , nt , trace x ( gap , nt , close , \ [ \ ] ) ) ) , , x ( gap , nt , close , , x ( gap , nt , close , \ [ \ ] ) ) ) ) ) , X ) , nt , trace , x ( gap , nt , close , , x ( gap , nt , close , \ [ \ ] ) ) ) ) , , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) ) * noun_phrase ( 7,7 , x ( gap , nt , trace , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) ) , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) ) * trace ( 7,7 , x ( gap , nt , trace , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) ) , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) ) * verb_phrase ( 7,9 , X , X ) * verb ( 7,8 , X , X ) \ [ likes\ ] * noun_phrase ( 8,9 , X , X ) * determiner ( 8,8 , X , X ) * noun ( 8,9 , X , X ) \ [ fish\ ] * relative ( 9,9 , X , X ) * close ( 9,9 , x ( gap , nt , close , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) , x ( gap , nt , trace , x ( gap , nt , close , \ [ \ ] ) ) ) Figure 10.1 .</sentence>
+				<definiendum id="0">trace x</definiendum>
+				<definiens id="0">nt , trace , x ( gap , nt , close , , x ( gap , nt , close , \ [ \ ] ) ) ) ) , , x</definiens>
+			</definition>
+</paper>
+
+		<paper id="2001">
+			<definition id="0">
+				<sentence>In Kantor 's terms , a hard-to-understand pronoun is an example of inconsiderate discourse , and speakers ( or , more usually , writers ) who produce such pronouns lack secondary llinguistic\ ] competence .</sentence>
+				<definiendum id="0">hard-to-understand pronoun</definiendum>
+				<definiens id="0">an example of inconsiderate discourse , and speakers ( or , more usually , writers ) who produce such pronouns lack secondary llinguistic\ ] competence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Kantor identifies a continuum of factors affecting the comprehension of pronouns .</sentence>
+				<definiendum id="0">Kantor</definiendum>
+				<definiens id="0">identifies a continuum of factors affecting the comprehension of pronouns</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>This is not as vacuous as it at first sounds ; Kantor provides an analysis of some subtle factors which affect expectation .</sentence>
+				<definiendum id="0">Kantor</definiendum>
+				<definiens id="0">provides an analysis of some subtle factors which affect expectation</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>It follows that the factors Kantor finds relevant for activatedness and comprehensibility of pronouns are also important for those of us who would maintain focus in computerbased natural language understanding ( NLU ) systems ; we will have to discover discourse topic and topic shifts , generate pronominalization expectations , and so forth .</sentence>
+				<definiendum id="0">NLU</definiendum>
+				<definiens id="0">the factors Kantor finds relevant for activatedness and comprehensibility of pronouns</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The PAL personal assistant program ( Bullwinkle 1977a ) is a system designed to accept natural language requests for scheduling activities .</sentence>
+				<definiendum id="0">PAL personal assistant program</definiendum>
+				<definiens id="0">a system designed to accept natural language requests for scheduling activities</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Fx where C is an arbitrary predicate on individuals and Fx an arbitrary open sentence in which x is free , evokes an entity whose representation is of this form : 13 One-anaphors are those such as those , one , and some uses of it that refer to a description rather than a specific entity .</sentence>
+				<definiendum id="0">C</definiendum>
+				<definiens id="0">an arbitrary predicate on individuals and Fx an arbitrary open sentence in which x is free , evokes an entity whose representation</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Expansion includes relations like EFFECT , CAUSE , SYLLOGISM , ELABORATION , CONTRAST , PARALLEL and EXEMPLIFICATION .</sentence>
+				<definiendum id="0">Expansion</definiendum>
+				<definiens id="0">includes relations like EFFECT , CAUSE , SYLLOGISM , ELABORATION , CONTRAST , PARALLEL and EXEMPLIFICATION</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>His contextual reference resolution algorithm ( CRRA ) works as follows : The structure to be built is a tree , initially null , of which each node is a sentence and each edge a coherence relation .</sentence>
+				<definiendum id="0">CRRA</definiendum>
+				<definiens id="0">a sentence and each edge a coherence relation</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Lockman assumes the existence of a judgment mechanism that generates and tests hypotheses as to how the new sentence may be feasibly connected to the node being tested .</sentence>
+				<definiendum id="0">Lockman</definiendum>
+				<definiens id="0">assumes the existence of a judgment mechanism that generates and tests hypotheses as to how the new sentence may be feasibly connected to the node being tested</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>Graeme Hirst is a doctoral candidate in the Department of Computer Science at Brown University .</sentence>
+				<definiendum id="0">Graeme Hirst</definiendum>
+				<definiens id="0">a doctoral candidate in the Department of Computer Science at Brown University</definiens>
+			</definition>
+</paper>
+
+		<paper id="1005">
+</paper>
+
+	</volume>

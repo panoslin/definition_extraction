@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<volume id="H01">
+
+		<paper id="1049">
+			<definition id="0">
+				<sentence>Camden , NJ 08102 { jdaniels , bbell @ atl.lmco.com } ABSTRACT Listen-Communicate-Show ( LCS ) is a new paradigm for human interaction with data sources .</sentence>
+				<definiendum id="0">LCS</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The LCS-Marine system employs a spoken language understanding system ( SLS ) for assisting the user in placing a request and mobile , intelligent agents for information access to implement the LCS paradigm .</sentence>
+				<definiendum id="0">LCS-Marine system</definiendum>
+				<definiens id="0">employs a spoken language understanding system ( SLS ) for assisting the user in placing a request and mobile , intelligent agents for information access to implement the LCS paradigm</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The LCS-Marine system consists of four major components : an SLS , a collection of agents for information access , real-world operational databases , and communications networks to connect the user to the SLS and the agents to the databases .</sentence>
+				<definiendum id="0">LCS-Marine system</definiendum>
+				<definiens id="0">an SLS , a collection of agents for information access , real-world operational databases , and communications networks to connect the user to the SLS and the agents to the databases</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Turn Manager ( TM ) determines how to proceed with the conversations and generates a response .</sentence>
+				<definiendum id="0">Turn Manager ( TM )</definiendum>
+				<definiens id="0">determines how to proceed with the conversations and generates a response</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>TINA InfoServer GENESIS Text-to-Speech Conversion Text-to-Speech Conversion HUB SUMMIT SAPI Audio Server Audio Server Context Tracking Context Tracking Speech Recognition Speech Recognition Frame Construction Frame Construction Language Generation Language Generation Turn Manager Turn Manager Agent Server Agent Server Figure 1 .</sentence>
+				<definiendum id="0">TINA InfoServer GENESIS Text-to-Speech Conversion Text-to-Speech Conversion HUB SUMMIT SAPI Audio Server Audio Server</definiendum>
+				<definiens id="0">Context Tracking Context Tracking Speech Recognition Speech Recognition Frame Construction Frame Construction Language Generation Language Generation Turn Manager Turn Manager Agent Server Agent Server Figure 1</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The IFEs ranged from a pilot study that featured scripted dialogue , replicated databases , and testing in the lab with prior military personnel , to field experiments where active duty Marines used the system operationally over a series of days as their sole means of interaction with the logistics system for rapid requests .</sentence>
+				<definiendum id="0">IFEs</definiendum>
+				<definiens id="0">ranged from a pilot study that featured scripted dialogue , replicated databases , and testing in the lab with prior military personnel , to field experiments where active duty Marines used the system operationally over a series of days as their sole means of interaction with the logistics system for rapid requests</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>RF LAN VOICE AND DATA Rover�s Sustainment and Distribution Teams ( SDT ) AMMO PEOPLE FSSG CSSOC ( MAIN ) BSSG/CSSD CSSOC ( MEDIUM ) V IX III I IV VIII II BE01567N10234E TKS ON ROAD BE01567N10234E TRPS IN OPEN BE01567N10234E 4xTEL�SBE01567N10234E 12 MTI MOV NE BE01567N10234E ADA SITEBE01567N10234E UNK MOV SE BE01567N10234E 4xTEL�S BE01567N10234E 12 MTI MOV NEBE01567N10234E UNK MOV SE BE01567N10234E TKS ON ROAD CIS ECS NT Server ( s ) MSSG/MCSSD CSSOC ( SMALL ) V III VIII I WAN 1-5MBS Replicated DBMS Of CSS Data/Status CIS BE01567N10234E TKS ON ROAD BE01567N10234E TRPS IN OPEN BE01567N10234E 4xTEL�S BE01567N10234E 12 MTI MOV NE BE01567N10234E ADA SITE BE01567N10234E UNK MOV SE BE01567N10234E 4xTEL�S BE01567N10234E 12 MTI MOV NEBE01567N10234E UNK MOV SE BE01567N10234E TKS ON ROAD ECS NT Server ( s ) Figure 2 .</sentence>
+				<definiendum id="0">RF LAN VOICE AND DATA Rover�s Sustainment</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>CSSOC User/HMMWV Database , Agents Spoken Language System , Agents SINCGARS ( data ) V I III Mobile Agent DB Figure 6 .</sentence>
+				<definiendum id="0">SINCGARS</definiendum>
+				<definiens id="0">data ) V I III Mobile Agent DB Figure 6</definiens>
+			</definition>
+</paper>
+
+		<paper id="1013">
+			<definition id="0">
+				<sentence>HTML Application Server Client HTTP Server HTML Servlet Web Server Network ( HTTP ) Presentation Manager Dialog Manager Acti on Manager Quick Parser Response Generator Vector Space Engine Product Database Business Rules Concepts Data Management ( Off line ) User Interface Concept Interpreter Explanation Model Presentation Strategies Dialog Strategies Action Strategies input output Communication Acts Communication Acts Action Specs Online Interaction Discourse Analyzer Extended PD Database Query Discourse History ActionResults State Interprete r</sentence>
+				<definiendum id="0">HTML Application Server Client HTTP Server HTML Servlet Web Server Network</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1061">
+			<definition id="0">
+				<sentence>A story is the description of one or more events that happened in a single day and that are reported in a single article by a daily news source the next day .</sentence>
+				<definiendum id="0">story</definiendum>
+				<definiens id="0">the description of one or more events that happened in a single day</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Sentence Alignment As part of the infrastructure needed to incorporate cross-lingual information into language models , we are employing statistical MT systems to generate English/German and English/Czech alignments of sentences in the FBIS Newstext Collection .</sentence>
+				<definiendum id="0">Sentence Alignment</definiendum>
+				<definiens id="0">As part of the infrastructure needed to incorporate cross-lingual information into language models</definiens>
+			</definition>
+</paper>
+
+		<paper id="1074">
+			<definition id="0">
+				<sentence>a1 Daniel Pack is an associate professor of Electrical Engineering from the Air Force Academy on his sabbatical leave .</sentence>
+				<definiendum id="0">Daniel Pack</definiendum>
+				<definiens id="0">an associate professor of Electrical Engineering from the Air Force Academy on his sabbatical leave</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Segment Score a2 Normalized Original Score a3 Current Pair Proximity Score a3 Processed Term Score where Normalized Original Score represents the score generated by the Extraction of the Candidate Segment module and Current Pair Proximity Score a2 a4 a5 diff a5 a6 a4 x std max x a7 number of term pairs in query Processed Term Score a2 current score x number of term pairs processed in query number of term pairs in query where symbol max is a normalization factor and symbol diff is the proximity difference between a query and a candidate segment for a given pair of keywords .</sentence>
+				<definiendum id="0">Normalized Original Score</definiendum>
+				<definiendum id="1">symbol max</definiendum>
+				<definiens id="0">the score generated by the Extraction of the Candidate Segment module</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Symbol std is the standard deviation of the distance values between two keywords in the candidate segments .</sentence>
+				<definiendum id="0">Symbol std</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1006">
+			<definition id="0">
+				<sentence>Virtual Annotation uses a combination of knowledge-based techniques using an ontology , and statistical techniques using a large corpus to achieve high precision .</sentence>
+				<definiendum id="0">Virtual Annotation</definiendum>
+				<definiens id="0">uses a combination of knowledge-based techniques using an ontology</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>WordNet has three senses for sake : good ( in the sense of welfare ) , wine ( the Japanese drink ) and aim/end , with computed scores of 122 , 29 and 87/99 respectively .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+				<definiendum id="1">wine</definiendum>
+				<definiens id="0">the Japanese drink ) and aim/end , with computed scores of 122 , 29 and 87/99 respectively</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The original question Q = “What is ( a/an ) X” is converted to Q’ = “DEFINE $ X H” where DEFINE $ is a virtual QA-Token that was never seen at indexing time , does not annotate any text and does not occur in the index .</sentence>
+				<definiendum id="0">DEFINE $</definiendum>
+				<definiens id="0">a virtual QA-Token that was never seen at indexing time , does not annotate any text and does not occur in the index</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A submission’s overall score is the mean reciprocal rank ( MRR ) over all questions .</sentence>
+				<definiendum id="0">MRR</definiendum>
+				<definiens id="0">the mean reciprocal rank (</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>[ 3 ] Miller , G. “WordNet : A Lexical Database for English” , Communications of the ACM 38 ( 11 ) pp .</sentence>
+				<definiendum id="0">G. “WordNet</definiendum>
+				<definiens id="0">A Lexical Database for English”</definiens>
+			</definition>
+</paper>
+
+		<paper id="1035">
+			<definition id="0">
+				<sentence>The induced morphological analyzer achieves over 99 % lemmatization accuracy on the complete French verbal system .</sentence>
+				<definiendum id="0">morphological analyzer</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>French Induced Tags NN O ... salon ... Les lois ... DT NNS Tagger Output English ... living room ... VBG NNThe laws ... DT NNS ... veterans ... ... anciens combattants ... NNS NNS NNS ( JJ ) ( NNS ) ... potatoes ... ... pommes de terre ... NNS NNS NNSNNS ( IN ) ( NN ) ( NNS ) Tagger Output English French Induced Tag Correct Tag Les lois ... NNS ( DT ) ( NNS ) O Laws ... NNS O Les lois ... Laws ... NNS NNS ( DT ) ( NNS ) NNS b a ba bc a Figure 3 : French POS tag projection scenarios Even at the relatively low tagset granularity of English , direct projection of core POS tags onto French achieves only 76 % accuracy using EGYPT’s automatic word alignments ( as shown in Table 1 ) .</sentence>
+				<definiendum id="0">NNS NNS NNS</definiendum>
+				<definiens id="0">NNS ) Tagger Output English French Induced Tag Correct Tag Les lois ... NNS ( DT ) ( NNS ) O Laws ... NNS O Les lois ... Laws</definiens>
+			</definition>
+</paper>
+
+		<paper id="1003">
+			<definition id="0">
+				<sentence>MAM estimates an acoustic mapping on the log-spectral domain in order to compensate for noise condition mismatches between training and test .</sentence>
+				<definiendum id="0">MAM</definiendum>
+				<definiens id="0">estimates an acoustic mapping on the log-spectral domain in order to compensate for noise condition mismatches between training and test</definiens>
+			</definition>
+</paper>
+
+		<paper id="1073">
+			<definition id="0">
+				<sentence>The telephony hardware consists of an external serial modem device that connects to the microphone input and speaker output terminals on the host computer .</sentence>
+				<definiendum id="0">telephony hardware</definiendum>
+				<definiens id="0">consists of an external serial modem device that connects to the microphone input and speaker output terminals on the host computer</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>More recently , we have developed a dialog context dependent language model ( LM ) combining stochastic context free grammars ( SCFGs ) and n-grams [ 6,7 ] .</sentence>
+				<definiendum id="0">LM</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>Based on a spoken language production model in which a user picks a set of concepts with respective values and constructs word sequences using phrase generators associated with each concept in accordance with the dialog context , this LM computes the probability of a word , P ( W ) , as P ( W ) = P ( W/C ) P ( C/S ) ( 1 ) where W is the sequence of words , C is the sequence of concepts and S is the dialog context .</sentence>
+				<definiendum id="0">W</definiendum>
+				<definiendum id="1">C</definiendum>
+				<definiendum id="2">S</definiendum>
+				<definiens id="0">Based on a spoken language production model in which a user picks a set of concepts with respective values and constructs word sequences using phrase generators associated with each concept in accordance with the dialog context , this LM computes the probability of a word</definiens>
+				<definiens id="1">the sequence of words</definiens>
+				<definiens id="2">the dialog context</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>A Phoenix frame is a named set of slots , where the slots represent related pieces of information .</sentence>
+				<definiendum id="0">Phoenix frame</definiendum>
+				<definiens id="0">a named set of slots , where the slots represent related pieces of information</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The Dialogue Manager receives the extracted parse .</sentence>
+				<definiendum id="0">Dialogue Manager</definiendum>
+			</definition>
+			<definition id="5">
+				<sentence>Context consists of a set of frames and a set of global variables .</sentence>
+				<definiendum id="0">Context</definiendum>
+				<definiens id="0">consists of a set of frames and a set of global variables</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>The Prompt string is the template for prompting for the node information .</sentence>
+				<definiendum id="0">Prompt string</definiendum>
+				<definiens id="0">the template for prompting for the node information</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>The Confirm string is a template to prompt the user to confirm the values .</sentence>
+				<definiendum id="0">Confirm string</definiendum>
+				<definiens id="0">a template to prompt the user to confirm the values</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>The dynamic information content consists of database tables for car , hotel , and airline flights .</sentence>
+				<definiendum id="0">dynamic information content</definiendum>
+				<definiens id="0">consists of database tables for car , hotel , and airline flights</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>NIST Multi-Site Data Collection During the months of June and July of 2000 , The National Institute of Standards ( NIST ) conducted a multi-site data collection effort for the nine DARPA Communicator participants .</sentence>
+				<definiendum id="0">NIST Multi-Site Data Collection During</definiendum>
+			</definition>
+			<definition id="10">
+				<sentence>Overall , the system had a word error rate ( WER ) of 26.0 % when parallel gender-dependent decoders were utilized .</sentence>
+				<definiendum id="0">WER</definiendum>
+				<definiens id="0">parallel gender-dependent decoders were utilized</definiens>
+			</definition>
+</paper>
+
+		<paper id="1002">
+			<definition id="0">
+				<sentence>Coverage is the percentage of the input text for which a translation is produced by a particular translation method ( since the EBMT engine does not generally produce hypotheses that cover every word of input ) , while average phrase length is a crude indication of translation quality – the longer the phrase that is translated , the more context is incorporated and the less likely it is that the wrong sense will be used in the translation or that ( for EBMT ) the alignment will be incorrect .</sentence>
+				<definiendum id="0">Coverage</definiendum>
+				<definiens id="0">the percentage of the input text for which a translation is produced by a particular translation method</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Automated Dictionary Extraction for “Knowledge-Free” Example-Based Translation .</sentence>
+				<definiendum id="0">Automated Dictionary Extraction for</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>In Machine Translation and the Information Soup : Proceedings of the Third Conference of the Association for Machine Translation in the Americas ( AMTA ’98 ) , volume 1529 of Lecture Notes in Artificial Intelligence , pages 113–123 .</sentence>
+				<definiendum id="0">Information Soup</definiendum>
+				<definiens id="0">Proceedings of the Third Conference of the Association for Machine Translation in the Americas ( AMTA ’98 ) , volume 1529 of Lecture Notes in Artificial Intelligence , pages 113–123</definiens>
+			</definition>
+</paper>
+
+		<paper id="1004">
+			<definition id="0">
+				<sentence>A Wizard of Oz experiment is one in which no real automatic speech recognition ( ASR ) or natural language understanding ( NLU ) is used .</sentence>
+				<definiendum id="0">NLU</definiendum>
+				<definiens id="0">one in which no real automatic speech recognition ( ASR ) or natural language understanding</definiens>
+			</definition>
+</paper>
+
+		<paper id="1023">
+			<definition id="0">
+				<sentence>Talk’n’Travel is a fully conversational , mixedinitiative system that allows the user to specify the constraints on his travel plan in arbitrary order , ask questions , etc. , in general spoken English .</sentence>
+				<definiendum id="0">Talk’n’Travel</definiendum>
+				<definiens id="0">a fully conversational , mixedinitiative system that allows the user to specify the constraints on his travel plan in arbitrary order , ask questions , etc. , in general spoken English</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Talk’n’Travel is a research prototype system sponsored under the DARPA Communicator program ( MITRE , 1999 ) .</sentence>
+				<definiendum id="0">Talk’n’Travel</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1001">
+			<definition id="0">
+				<sentence>Santa Barbara ( SBC ) is a corpus released by the LDC and 7 out of 12 rejoinders have been annotated .</sentence>
+				<definiendum id="0">SBC</definiendum>
+				<definiens id="0">a corpus released by the LDC</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The probability mass function q ( rjd ) is estimated on a separate training set by a neural network based classier 6 .</sentence>
+				<definiendum id="0">probability mass function q</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>A similar attempt can be made for dominance ( Linell et al. , 1988 ) distributions : Dominance is easy to understand for the user of an information access system and it can be determined automatically with high accuracy .</sentence>
+				<definiendum id="0">Dominance</definiendum>
+				<definiens id="0">easy to understand for the user of an information access system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1047">
+			<definition id="0">
+				<sentence>Linguatronic is the brand name used in Europe of a speech dialogue system that allows completely hands-free operation of the car’s mobile phone , including number dialing ( with connected digit dialog ) , number storing , userdefined telephone directory entry name , name dialing , and directory editing .</sentence>
+				<definiendum id="0">Linguatronic</definiendum>
+				<definiens id="0">the brand name used in Europe of a speech dialogue system that allows completely hands-free operation of the car’s mobile phone , including number dialing ( with connected digit dialog ) , number storing , userdefined telephone directory entry name , name dialing , and directory editing</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Temic system supports the most common automotive bus systems like D2B , CAN , I-Bus and in the near future MOST .</sentence>
+				<definiendum id="0">Temic system</definiendum>
+				<definiens id="0">supports the most common automotive bus systems like D2B , CAN , I-Bus and in the near future MOST</definiens>
+			</definition>
+</paper>
+
+		<paper id="1016">
+			<definition id="0">
+				<sentence>`` TINA : A Natural Language System for Spoken Language Applications , '' Computational Linguistics , Vol .</sentence>
+				<definiendum id="0">TINA</definiendum>
+				<definiens id="0">A Natural Language System for Spoken Language Applications</definiens>
+			</definition>
+</paper>
+
+		<paper id="1048">
+</paper>
+
+		<paper id="1063">
+			<definition id="0">
+				<sentence>Previous work includes the use of semantic interpretation rules for natural language understanding , where the rules are learnt by decision trees known as Semantic Classification Trees ( SCTs ) [ 6 ] .</sentence>
+				<definiendum id="0">Previous work</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>A dialog system can be described as a sequential decision process that has states and actions .</sentence>
+				<definiendum id="0">dialog system</definiendum>
+				<definiens id="0">a sequential decision process that has states and actions</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>CU FOREX is a bilingual ( English and Cantonese ) conversational hotline that supports inquiries regarding foreign exchange .</sentence>
+				<definiendum id="0">CU FOREX</definiendum>
+				<definiens id="0">a bilingual ( English and Cantonese ) conversational hotline that supports inquiries regarding foreign exchange</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>ATIS is a common task in the ARPA ( Advanced Research Projects Agency ) Speech and Language Program in the US .</sentence>
+				<definiendum id="0">ATIS</definiendum>
+				<definiens id="0">a common task in the ARPA ( Advanced Research Projects Agency ) Speech and Language Program in the US</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>[ 3 ] Meng , H. , S. Lee and C. Wai , “CU FOREX : A Bilingual Spoken Dialog System for the Foreign Exchange Domain , ” Proceedings of ICASSP , 2000 .</sentence>
+				<definiendum id="0">“CU FOREX</definiendum>
+				<definiens id="0">A Bilingual Spoken Dialog System for the Foreign Exchange Domain , ” Proceedings of ICASSP , 2000</definiens>
+			</definition>
+</paper>
+
+		<paper id="1029">
+			<definition id="0">
+				<sentence>The estimate used is given by : ( ) Rw Rw fn n Rwp /1 1 ) ( ˆ + + =∈ ∈ where Rw n ∈ is the number of times w appeared in R in the training data ; w n is the total number of occurrences of w ; and R f is the fraction of all tokens of w that occurred in the region .</sentence>
+				<definiendum id="0">Rw n ∈</definiendum>
+				<definiendum id="1">; w n</definiendum>
+				<definiendum id="2">R f</definiendum>
+				<definiens id="0">the number of times w appeared in R in the training data</definiens>
+				<definiens id="1">the total number of occurrences of w ;</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>If it does pear in the buffer , the value is -log ( s w /s ) , where s w is the number stories in which the word appears , and s is the total number of ories , in the training data .</sentence>
+				<definiendum id="0">s w</definiendum>
+				<definiendum id="1">s</definiendum>
+				<definiens id="0">the number stories in which the word appears , and</definiens>
+				<definiens id="1">the total number of ories , in the training data</definiens>
+			</definition>
+</paper>
+
+		<paper id="1031">
+			<definition id="0">
+				<sentence>Applications that can benefit from such an annotated corpus include information extraction ( e.g. , normalizing temporal references for database entry ) , question answering ( answering “when” questions ) , summarization ( temporally ordering information ) , machine translation ( translating and normalizing temporal references ) , and information visualization ( viewing event chronologies ) .</sentence>
+				<definiendum id="0">information visualization</definiendum>
+				<definiens id="0">database entry ) , question answering ( answering “when” questions ) , summarization ( temporally ordering information ) , machine translation ( translating and normalizing temporal references</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Applications that can benefit from such an annotated corpus include information extraction ( e.g. , normalizing temporal references for database entry ) , question answering ( answering “when” questions ) , summarization ( temporally ordering information ) , machine translation ( translating and normalizing temporal references ) , and information visualization ( viewing event chronologies ) .</sentence>
+				<definiendum id="0">information visualization</definiendum>
+				<definiens id="0">database entry ) , question answering ( answering “when” questions ) , summarization ( temporally ordering information ) , machine translation ( translating and normalizing temporal references</definiens>
+			</definition>
+</paper>
+
+		<paper id="1057">
+			<definition id="0">
+				<sentence>RIPPER algorithm is a propositional learning algorithm that constructs a set of rules while Winnow algorithm is a weighted-majority learning algorithm that learns a network , where each node in the network is called a specialist .</sentence>
+				<definiendum id="0">RIPPER algorithm</definiendum>
+				<definiens id="0">a weighted-majority learning algorithm that learns a network , where each node in the network is called a specialist</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>This certainty factor is the number that identifies how certain the answer at each terminal node is .</sentence>
+				<definiendum id="0">certainty factor</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The general formula for the certainty factor ( CF ) is shown as follow : CFi = Total number of the answer elements at leaf node i Total number of all elements at leaf node i We also calculate the recall , precision , and accuracy as defined below : Precision = number of correct ‘|’s in the system answer number of ‘|’s in the system answer Recall = number of correct ‘|’s in the system answer number of ‘|’s in the correct answer Accuracy = number of correct segmented units in system answer total number of segmented units in correct answer |เท|ศ|ไท|ย|และ|ป|ระ|เท|ศ| !</sentence>
+				<definiendum id="0">CF</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1030">
+			<definition id="0">
+				<sentence>Our composite document representation consists of a concept representation ( based on the lexical chains derived from a text ) and free text representation ( using traditional keyword index terms ) .</sentence>
+				<definiendum id="0">composite document representation</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>First story detection ( or online new event detection [ 1 ] ) is one aspect of the detection problem which constitutes one of the three technical tasks defined by the TDT initiative ( the other two being segmentation and tracking ) .</sentence>
+				<definiendum id="0">story detection</definiendum>
+				<definiendum id="1">] )</definiendum>
+				<definiens id="0">one aspect of the detection problem which constitutes one of the three technical tasks defined by the TDT initiative ( the other two being segmentation and tracking )</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A lexical chain is a set of semantically related words in a text .</sentence>
+				<definiendum id="0">lexical chain</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>So the overall similarity between a document D and a cluster C is a linear combination of the similarities for each sub-vector formally defined as : where Sim ( X , Y ) is the cosine similarity measure for two vectors X and Y , and w is a coefficient that biases the weight of evidence each document representation j , contributes to the similarity measure .</sentence>
+				<definiendum id="0">cluster C</definiendum>
+				<definiendum id="1">Sim ( X , Y )</definiendum>
+				<definiens id="0">a linear combination of the similarities for each sub-vector formally defined as : where</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The TRAD system [ 13 ] , our benchmark system in these experiments is a basic FSD system that classifies news stories based on the syntactic similarity between documents and clusters .</sentence>
+				<definiendum id="0">TRAD</definiendum>
+				<definiens id="0">a basic FSD system that classifies news stories based on the syntactic similarity between documents and clusters</definiens>
+			</definition>
+</paper>
+
+		<paper id="1007">
+			<definition id="0">
+				<sentence>The communication between the mediator and each HLT server consists mainly of linear PCM audio packets ( some text and control messages are also supported and are described later in this section ) .</sentence>
+				<definiendum id="0">HLT server</definiendum>
+				<definiens id="0">consists mainly of linear PCM audio packets ( some text and control messages are also supported</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Machine Translation : A Knowledge-Based Approach .</sentence>
+				<definiendum id="0">Machine Translation</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1053">
+			<definition id="0">
+				<sentence>persistent from Figure 1 , though one of the marked topics ( “Strawberry cancer colon Yankee” ) is no longer in the largest 50 so does not appear .</sentence>
+				<definiendum id="0">“Strawberry cancer colon Yankee” )</definiendum>
+				<definiens id="0">no longer in the largest 50 so does not appear</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Lighthouse : Showing the way to relevant information .</sentence>
+				<definiendum id="0">Lighthouse</definiendum>
+				<definiens id="0">Showing the way to relevant information</definiens>
+			</definition>
+</paper>
+
+		<paper id="1024">
+</paper>
+
+		<paper id="1072">
+			<definition id="0">
+				<sentence>process chunk ( chunk , treebank ) : words : = string yield ( chunk ) tree : = complete match ( words , treebank ) if ( tree is not empty ) direct hit , then output ( tree ) i.e. complete chunk found in treebank else tree : = partial match ( words , treebank ) if ( tree is not empty ) then if ( tree = postfix of chunk ) then tree1 : = attach next chunk ( tree , treebank ) if ( tree is not empty ) then tree : = tree1 if ( ( chunk tree ) is not empty ) if attach next chunk succeeded then tree : = extend tree ( chunk tree , tree , treebank ) chunk might consist of both chunks output ( tree ) if ( ( chunk tree ) is not empty ) chunk might consist of both chunks ( s.a. ) then process chunk ( chunk tree , treebank ) i.e. process remaining chunk else back off to POS sequence pos : = pos yield ( chunk ) tree : = complete match ( pos , treebank ) if ( tree is not empty ) then output ( tree ) else back off to subchunks while ( chunk is not empty ) do remove first subchunk c1 from chunk process chunk ( c1 , treebank ) Figure 4 : Pseudo-code for tree construction , subroutine process chunk .</sentence>
+				<definiendum id="0">treebank )</definiendum>
+				<definiens id="0">process chunk ( chunk tree , treebank ) i.e. process remaining chunk else back off to POS sequence pos : = pos yield</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>T¨uSBL currently uses an overlap metric , the most basic metric for instances with symbolic features , as its similarity metric .</sentence>
+				<definiendum id="0">T¨uSBL</definiendum>
+				<definiens id="0">uses an overlap metric , the most basic metric for instances with symbolic features</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>HD HD HD HD HD − HD NX − NX HD VXFIN HD − NX HD NX HD PX FOPP − NX HD PX HD PX − NX ON PX V−MOD VF − LK − MF − SIMPX Figure 10 : A partially grouped tree output of the T ¨ USBL system similarity metric .</sentence>
+				<definiendum id="0">HD HD HD HD HD − HD NX − NX HD VXFIN HD − NX HD NX HD PX FOPP − NX HD PX HD PX − NX ON PX V−MOD</definiendum>
+				<definiens id="0">A partially grouped tree output of the T ¨ USBL system similarity metric</definiens>
+			</definition>
+</paper>
+
+		<paper id="1075">
+			<definition id="0">
+				<sentence>SUP targets the stage at which children have learned the letter to sound rules but are still struggling to gain vocabulary and fluency .</sentence>
+				<definiendum id="0">SUP</definiendum>
+				<definiens id="0">targets the stage at which children have learned the letter to sound rules but are still struggling to gain vocabulary and fluency</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>“SUPplementing” text with the Reading Resource , which includes word definitions , sample sentences , graphics and multimedia can create an engaging environment for learning .</sentence>
+				<definiendum id="0">Reading Resource</definiendum>
+				<definiens id="0">includes word definitions , sample sentences</definiens>
+			</definition>
+</paper>
+
+		<paper id="1010">
+			<definition id="0">
+				<sentence>Tree grammar template for progressive auxiliary verb , licensing discontinuity in main verb tree When a template has been identified , it is instantiated with the lexical items that occur in its predicate and argument positions .</sentence>
+				<definiendum id="0">Tree grammar template</definiendum>
+				<definiens id="0">instantiated with the lexical items that occur in its predicate and argument positions</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The penn treebank : A revised corpus design for extracting predicate argument structure .</sentence>
+				<definiendum id="0">penn treebank</definiendum>
+				<definiens id="0">A revised corpus design for extracting predicate argument structure</definiens>
+			</definition>
+</paper>
+
+		<paper id="1011">
+			<definition id="0">
+				<sentence>For an automatically generated title Tauto , F1 is measured against corresponding human assigned title Thuman as follows : F1 = 2×precision×recall / ( precision + recall ) Here , precision and recall is measured respectively as the number of identical words in Tauto and Thuman over the number of words in Tauto and the number of words in Thuman .</sentence>
+				<definiendum id="0">F1</definiendum>
+				<definiens id="0">the number of identical words in Tauto and Thuman over the number of words in Tauto and the number of words in Thuman</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>TF is the frequency of words occurring in the document and IDF is logarithm of the total number of documents divided by the number of documents containing this word .</sentence>
+				<definiendum id="0">TF</definiendum>
+				<definiendum id="1">IDF</definiendum>
+				<definiens id="0">the frequency of words occurring in the document and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Ultra-Summarization : A Statistical Approach to Generating Highly Condensed Non-Extractive Summaries .</sentence>
+				<definiendum id="0">Ultra-Summarization</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1009">
+			<definition id="0">
+				<sentence>TION ( TBP ) Definition Tree-based representation of patterns ( TBP ) is a representation of patterns based on the dependency tree of a sentence .</sentence>
+				<definiendum id="0">TION ( TBP ) Definition Tree-based representation of patterns</definiendum>
+				<definiendum id="1">TBP</definiendum>
+				<definiens id="0">a representation of patterns based on the dependency tree of a sentence</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The dependency tree is a directed tree whose nodes are bunsetsus or phrasal units , and whose directed arcs denote the dependency between two bunsetsus : AAXB denotes A’s dependency on B ( e.g .</sentence>
+				<definiendum id="0">dependency tree</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>TF/IDF score of word w is : D7CRD3D6CTB4DBB5BP B4 CCBYB4DBB5A1 D0D3CVB4C6B7BCBMBHB5 BWBYB4DBB5 D0D3CVB4C6B7BDB5 if w is Noun , Verb or Named Entity BC otherwise where N is the number of documents in the collection , TF ( w ) is the term frequency of w in the relevant document set and DF ( w ) is the document frequency of w in the collection .</sentence>
+				<definiendum id="0">TF/IDF score of word w</definiendum>
+				<definiendum id="1">N</definiendum>
+				<definiendum id="2">DF ( w )</definiendum>
+				<definiens id="0">the number of documents in the collection</definiens>
+				<definiens id="1">the term frequency of w in the relevant document set</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>However , unusually short sentences and BE IREX Homepage : http : //cs.nyu.edu/cs/projects/proteus/irex Dependency Tree Tree-Based Pattern CU CU CU CU CU A0 A0 A0 A0 A0 A0 A0 BS BS BS BS BS BS BS A0 A0 A0 A0 A0 A0 A0 BS BS BS BS BS BS BS BOorganizationBQ-wa BOorganizationBQ-TOPIC BOpersonBQ-ga BOpersonBQ-SUBJ BOpostBQ-kara BOpostBQ-FROM taininsuru ( retire ) happyosuru ( announce ) A0 A0 A0 A0A9 1 BS BS BS BSCA 3 BS BS BS BS BS A0 A0 A0 A0 A0A9 2 CU CU CU CU CU CU CU B9 B9 B9 B9 happyosuru ( announce ) taininsuru ( retire ) BOorganizationBQ-wa ( BOorganizationBQ-TOPIC ) BOpersonBQ-ga ( BOpersonBQ-SUBJ ) BOpostBQ-kara ( BOpostBQ-FROM ) 1 2 3 Figure 1 : Tree-Based Pattern Representation Word-order Pattern A B C D E F BI Pattern [ B * F ] F E BA D C AH AH BF C8 C8 C8 C8D5 AH AH AHBF C9 C9D7 B9 Pattern [ BAXF ] C8 C8 C8 C8 C8 C8 C8 C8 C8D5 Pattern [ CAXEAXF ] TBP Figure 2 : Extraction using Tree-Based Pattern Representation unusually long sentences will be penalized .</sentence>
+				<definiendum id="0">BOpostBQ-kara BOpostBQ-FROM taininsuru</definiendum>
+				<definiendum id="1">CU CU CU CU CU CU CU</definiendum>
+				<definiendum id="2">BOorganizationBQ-TOPIC</definiendum>
+				<definiendum id="3">BOpersonBQ-SUBJ ) BOpostBQ-kara</definiendum>
+				<definiendum id="4">Tree-Based Pattern Representation Word-order Pattern A B C D E F BI</definiendum>
+				<definiens id="0">//cs.nyu.edu/cs/projects/proteus/irex Dependency Tree Tree-Based Pattern CU CU CU CU CU A0 A0 A0 A0 A0 A0 A0 BS BS BS BS BS BS BS A0 A0 A0 A0 A0 A0 A0 BS BS BS BS BS BS BS BOorganizationBQ-wa BOorganizationBQ-TOPIC BOpersonBQ-ga BOpersonBQ-SUBJ</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The TF/IDF score of sentence s is : D7CRD3D6CTB4D7B5BP C8 DBBED7 D7CRD3D6CTB4DBB5 D0CTD2CVD8CWB4D7B5B7CYD0CTD2CVD8CWB4D7B5A0BTCEBXCY where length ( s ) is the number of words in s , and AVE is the average number of words in a sentence .</sentence>
+				<definiendum id="0">length ( s )</definiendum>
+				<definiendum id="1">AVE</definiendum>
+				<definiens id="0">the number of words in s</definiens>
+				<definiens id="1">the average number of words in a sentence</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Although the overall recall is low , TBP achieved higher precision and recall ( as high as 30 % recall at 40 % of precision ) than the baseline except at the anomalous point where both TBP and the baseline got a small number of perfect slot-fillers by a highly ranked pattern , namely “gotoyogi-de AX taihosuru ( to arrest 0 2040608010 Precision 0 20 40 60 Recall + + + + + + + + + + + + + + + * * * * * * * * * * ** + ... TBP * ... Baseline ( PA ) Figure 6 : Result on Management Succession Scenario Scenario Patterns Executive Succession : BOpostBQ-ni AX shokakusuru ( to be promoted to BOpostBQ ) BOpostBQ-ni AX shuninsuru ( to assume BOpostBQ ) BOpostBQ-ni AX shokakusuru AX ( to announce an informal decision of promoting BOjinjiBQ-o AX happyosuru somebody to BOpostBQ ) Robbery Arrest : satsujin-yogi-de AX taihosuru ( to arrest in suspicion of murder ) BOdateBQ AX taihosuru ( to arrest on BOdateBQ ) satsujin-yogi-de AX taihosuru ( to arrest in suspicion of murder ) BOpersonBQ-yogisha AX # -o AX taihosuru ( to arrest the suspect , BOpersonBQ , age # ) Figure 5 : Acquired Patterns 0 2040608010 Precision 0 20 40 60 Recall + + + +++ + + +++ * * * ** ** **** **** + ... TBP * ... Baseline ( PA ) Figure 7 : Result on Robbery Arrest Scenario on suspicion of robbery ) ” for the baseline and “BOpersonBQ yogisha AX BOnumberBQ-o AX taihosuru ( to arrest the suspect , BOpersonBQ , age BOnumberBQ ) ” .</sentence>
+				<definiendum id="0">BOdateBQ AX taihosuru</definiendum>
+				<definiens id="0">Precision 0 20 40 60 Recall + + + + + + + + + + + + + + + * * * * * * * * * * ** +</definiens>
+			</definition>
+</paper>
+
+		<paper id="1028">
+</paper>
+
+		<paper id="1005">
+			<definition id="0">
+				<sentence>ABSTRACT Annotation graphs provide an efficient and expressive data model for linguistic annotations of time-series data .</sentence>
+				<definiendum id="0">ABSTRACT Annotation graphs</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The transcription editor is an annotation component which is specialized for a particular coding task .</sentence>
+				<definiendum id="0">transcription editor</definiendum>
+				<definiens id="0">an annotation component which is specialized for a particular coding task</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Multi-level annotation of speech : An overview of the emu speech database management system .</sentence>
+				<definiendum id="0">Multi-level annotation of speech</definiendum>
+				<definiens id="0">An overview of the emu speech database management system</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The CHILDES Project : Tools for Analyzing Talk .</sentence>
+				<definiendum id="0">CHILDES Project</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>WaveSurfer – an open source speech tool .</sentence>
+				<definiendum id="0">WaveSurfer</definiendum>
+				<definiens id="0">an open source speech tool</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>APPENDIX A. IDL DEFINITION FOR FLAT AG API interface AG { typedef string Id ; // generic identifier typedef string AGSetId ; // AGSet identifier typedef string AGId ; // AG identifier typedef string AGIds ; // AG identifiers ( space separated list ) typedef string AnnotationId ; // Annotation identifier typedef string AnnotationType ; // Annotation type typedef string AnnotationIds ; // Annotation identifiers ( list ) typedef string AnchorId ; // Anchor identifier typedef string AnchorIds ; // Anchor identifiers ( list ) typedef string TimelineId ; // Timeline identifier typedef string SignalId ; // Signal identifier typedef string SignalIds ; // Signal identifiers ( list ) typedef string FeatureName ; // feature name typedef string FeatureNames ; // feature name ( list ) typedef string FeatureValue ; // feature value typedef string Features ; // feature=value pairs ( list ) typedef string URI ; // a uniform resource identifier typedef string MimeClass ; // the MIME class typedef string MimeType ; // the MIME type typedef string Encoding ; // the signal encoding typedef string Unit ; // the unit for offsets typedef string AnnotationRef ; // an annotation reference typedef float Offset ; // the offset into a signal //// AGSet //// // Id is AGSetId or AGId AGId CreateAG ( in Id id in TimelineId timelineId ) ; boolean ExistsAG ( in AGId agId ) ; void DeleteAG ( in AGId agId ) ; AGIds GetAGIds ( in AGSetId agSetId ) ; //// Signals //// TimelineId CreateTimeline ( in URI uri , in MimeClass mimeClass , in MimeType mimeType , in Encoding encoding , in Unit unit , in Track track ) ; TimelineId CreateTimeline ( in TimelineId timelineId , in URI uri , in MimeClass mimeClass , in MimeType mimeType , in Encoding encoding , in Unit unit , in Track track ) ; boolean ExistsTimeline ( in TimelineId timelineId ) ; void DeleteTimeline ( in TimelineId timelineId ) ; // Id may be TimelineId or SignalId SignalId CreateSignal ( in Id id , in URI uri , in MimeClass mimeClass , in MimeType mimeType , in Encoding encoding , in Unit unit , in Track track ) ; boolean ExistsSignal ( in SignalId signalId ) ; void DeleteSignal ( in SignalId signalId ) ; SignalIds GetSignals ( in TimelineId timelineId ) ; MimeClass GetSignalMimeClass ( in SignalId signalId ) ; MimeType GetSignalMimeType ( in SignalId signalId ) ; Encoding GetSignalEncoding ( in SignalId signalId ) ; string GetSignalXlinkType ( in SignalId signalId ) ; string GetSignalXlinkHref ( in SignalId signalId ) ; string GetSignalUnit ( in SignalId signalId ) ; Track GetSignalTrack ( in SignalId signalId ) ; //// Annotation //// // Id may be AGId or AnnotationId AnnotationId CreateAnnotation ( in Id id , in AnchorId anchorId1 , in AnchorId anchorId2 , in AnnotationType annotationType ) ; boolean ExistsAnnotation ( in AnnotationId annotationId ) ; void DeleteAnnotation ( in AnnotationId annotationId ) ; AnnotationId CopyAnnotation ( in AnnotationId annotationId ) ; AnnotationIds SplitAnnotation ( in AnnotationId annotationId ) ; AnnotationIds NSplitAnnotation ( in AnnotationId annotationId , in short N ) ; AnchorId GetStartAnchor ( in AnnotationId annotationId ) ; AnchorId GetEndAnchor ( in AnnotationId annotationId ) ; void SetStartAnchor ( in AnnotationId annotationId , in AnchorId anchorId ) ; void SetEndAnchor ( in AnnotationId annotationId , in AnchorId anchorId ) ; Offset GetStartOffset ( in AnnotationId annotationId ) ; Offset GetEndOffset ( in AnnotationId annotationId ) ; void SetStartOffset ( in AnnotationId annotationId , in Offset offset ) ; void SetEndOffset ( in AnnotationId annotationId , in Offset offset ) ; // this might be necessary to package up an id // into a durable reference AnnotationRef GetRef ( in Id id ) ; //// Features //// // this is for both the content of an annotation , // and for the metadata associated with AGSets , // AGs , Timelines and Signals .</sentence>
+				<definiendum id="0">ExistsAG</definiendum>
+				<definiendum id="1">void DeleteAG</definiendum>
+				<definiendum id="2">AGIds GetAGIds</definiendum>
+				<definiendum id="3">TimelineId CreateTimeline</definiendum>
+				<definiendum id="4">ExistsTimeline</definiendum>
+				<definiendum id="5">void DeleteTimeline</definiendum>
+				<definiendum id="6">ExistsSignal</definiendum>
+				<definiendum id="7">void DeleteSignal</definiendum>
+				<definiendum id="8">MimeClass GetSignalMimeClass</definiendum>
+				<definiendum id="9">MimeType GetSignalMimeType</definiendum>
+				<definiendum id="10">Encoding GetSignalEncoding</definiendum>
+				<definiendum id="11">boolean ExistsAnnotation</definiendum>
+				<definiendum id="12">void DeleteAnnotation</definiendum>
+				<definiendum id="13">AnnotationId CopyAnnotation</definiendum>
+				<definiendum id="14">AnnotationIds SplitAnnotation</definiendum>
+				<definiendum id="15">AnnotationIds NSplitAnnotation</definiendum>
+				<definiendum id="16">AnchorId GetStartAnchor</definiendum>
+				<definiendum id="17">AnchorId GetEndAnchor</definiendum>
+				<definiendum id="18">void SetStartAnchor</definiendum>
+				<definiendum id="19">void SetEndAnchor</definiendum>
+				<definiendum id="20">void SetStartOffset</definiendum>
+				<definiendum id="21">SetEndOffset</definiendum>
+				<definiens id="0">typedef string Id ; // generic identifier typedef string AGSetId ; // AGSet identifier typedef string AGId ; // AG identifier typedef string AGIds ; // AG identifiers ( space separated list ) typedef string AnnotationId ; // Annotation identifier typedef string AnnotationType ; // Annotation type typedef string AnnotationIds ; // Annotation identifiers ( list ) typedef string AnchorId ; // Anchor identifier typedef string AnchorIds ; // Anchor identifiers ( list ) typedef string TimelineId ; // Timeline identifier typedef string SignalId ; // Signal identifier typedef string SignalIds ; // Signal identifiers ( list ) typedef string FeatureName ; // feature name typedef string FeatureNames ; // feature name ( list ) typedef string FeatureValue ; // feature value typedef string Features ; // feature=value pairs ( list ) typedef string URI ; // a uniform resource identifier typedef string MimeClass ; // the MIME class typedef string MimeType ; // the MIME type typedef string Encoding ; // the signal encoding typedef string Unit ; // the unit for offsets typedef string AnnotationRef ; // an annotation reference typedef float Offset</definiens>
+			</definition>
+</paper>
+
+		<paper id="1066">
+</paper>
+
+		<paper id="1067">
+</paper>
+
+		<paper id="1015">
+</paper>
+
+		<paper id="1050">
+</paper>
+
+		<paper id="1062">
+			<definition id="0">
+				<sentence>Among all possible target strings , we will choose the string with the highest probability which is given by Bayes decision rule [ 5 ] : ˆeI1 = argmax eI1 fPr ( eI1jfJ1 ) g = argmax eI1 fPr ( eI1 ) ¢Pr ( fJ1 jeI1 ) g : Here , Pr ( eI1 ) is the language model of the target language , and Pr ( fJ1 jeI1 ) is the string translation model which will be decomposedintolexiconandalignmentmodels .</sentence>
+				<definiendum id="0">Pr ( eI1</definiendum>
+				<definiendum id="1">Pr ( fJ1 jeI1 )</definiendum>
+				<definiens id="0">the language model of the target language , and</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Theargmax operation denotes the search problem , i.e. the generation of the output sentence in the target language .</sentence>
+				<definiendum id="0">Theargmax operation</definiendum>
+				<definiens id="0">the search problem , i.e. the generation of the output sentence in the target language</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The vocabulary size is the number of distinct full-form words seen in the training corpus .</sentence>
+				<definiendum id="0">vocabulary size</definiendum>
+				<definiens id="0">the number of distinct full-form words seen in the training corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The extended vocabulary is the vocabulary after adding the manual bilingual lexicon .</sentence>
+				<definiendum id="0">vocabulary</definiendum>
+				<definiens id="0">the vocabulary after adding the manual bilingual lexicon</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>† SSER ( subjective sentence error rate ) : Each translated sentence is judged by a human examiner according to an error scale from 0.0 ( semantically and syntactically correct ) to 1.0 ( completely wrong ) .</sentence>
+				<definiendum id="0">† SSER</definiendum>
+				<definiens id="0">Each translated sentence is judged by a human examiner according to an error scale from 0.0 ( semantically and syntactically correct ) to 1.0 ( completely wrong )</definiens>
+			</definition>
+</paper>
+
+		<paper id="1068">
+			<definition id="0">
+				<sentence>User satisfaction is a set of subjective measures that introduces user perceptions into the assessment of the system .</sentence>
+				<definiendum id="0">User satisfaction</definiendum>
+				<definiens id="0">a set of subjective measures that introduces user perceptions into the assessment of the system</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Success , in this case , is defined as completion of a task and segments of the task utilizing the information supplied by the user .</sentence>
+				<definiendum id="0">Success</definiendum>
+				<definiens id="0">completion of a task and segments of the task utilizing the information supplied by the user</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>A session is a continuous period of user interaction with the spoken dialogue system .</sentence>
+				<definiendum id="0">session</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>The Task Completion metric consists of success scores for the overall task and the segments of the task .</sentence>
+				<definiendum id="0">Task Completion metric</definiendum>
+				<definiens id="0">consists of success scores for the overall task and the segments of the task</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Dialogue is the collection of utterances spoken to accomplish the given task .</sentence>
+				<definiendum id="0">Dialogue</definiendum>
+				<definiens id="0">the collection of utterances spoken to accomplish the given task</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>For example , if the user�s utterance consists of delivery time and delivery location for a particular Marine logistic request , the time and location are the concepts of that turn .</sentence>
+				<definiendum id="0">utterance</definiendum>
+				<definiens id="0">consists of delivery time and delivery location for a particular Marine logistic request , the time and location are the concepts of that turn</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>Mission metrics Metric Description Measurement Task Completion Success rate of a given task � correct segments� � items Task Complexity Ideal minimal information required to accomplish a task � ideal concepts� task Dialogue Complexity Ideal amount of interaction with the system necessary to complete a task � ideal turns� task Task Efficiency Amount of extraneous information in dialogue � ideal concepts�� � actual concepts Dialogue Efficiency Number of extraneous turns in dialogue � ideal turns�� � actual turns Task Pace Real world time spent entering information into the system to accomplish the task � elapsed time�� task complexity Dialogue Pace Actual amount of system interaction spent entering segments of a task � turns���������� task complexity User Frustration Ratio of repairs and repeats to useful turns � ( rephrases + repeats ) �� � relevant turns Intervention Rate How often the user needs help to use the system � ( user questions + moderator corrections + system crashes ) Some component performance metrics rely upon measurements from multiple components .</sentence>
+				<definiendum id="0">Mission metrics Metric Description Measurement Task Completion Success rate</definiendum>
+				<definiendum id="1">crashes</definiendum>
+				<definiens id="0">actual turns Task Pace Real world time spent entering information into the system to accomplish the task � elapsed time�� task complexity Dialogue Pace Actual amount of system interaction spent entering segments of a task � turns���������� task complexity User Frustration Ratio of repairs and repeats to useful turns � ( rephrases + repeats ) �� � relevant turns Intervention Rate How often the user needs help to use the system � ( user questions + moderator corrections + system</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>For example , Processing Errors combines data transfer errors , logic errors , and agent errors .</sentence>
+				<definiendum id="0">Processing Errors</definiendum>
+				<definiens id="0">combines data transfer errors , logic errors , and agent errors</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>Galaxy II is a distributed , plug and play component-based architecture in which specialized servers handle specific tasks , such as translating audio data to text , that communicate through a central server ( Hub ) .</sentence>
+				<definiendum id="0">Galaxy II</definiendum>
+				<definiens id="0">a distributed , plug and play component-based architecture in which specialized servers handle specific tasks , such as translating audio data to text , that communicate through a central server ( Hub )</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>The LCS system shown in Figure 2 includes servers for speech recording and playback ( Audio I ) , speech synthesis ( Synthesis ) , speech recognition ( Recognizer ) , natural language processing ( NL ) , discourse/ response logic ( Turn Manager ) , and an agent server ( Mobile Agents ) for application/database interaction .</sentence>
+				<definiendum id="0">LCS system</definiendum>
+				<definiens id="0">speech recording and playback ( Audio I/O ) , speech synthesis ( Synthesis ) , speech recognition ( Recognizer ) , natural language processing ( NL ) , discourse/ response logic ( Turn Manager ) , and an agent server ( Mobile Agents ) for application/database interaction</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>Community standardization entails a logging format , an annotation standard , and calculation tools common to the DARPA Communicator project [ 4 ] , several of which have been developed , but we are still working to incorporate them .</sentence>
+				<definiendum id="0">Community standardization</definiendum>
+			</definition>
+			<definition id="11">
+				<sentence>[ 5 ] Walker , M. Litman , Kamm , D.C. and Abella , A. PARADISE : A Framework for Evaluating Spoken Dialogue Agents .</sentence>
+				<definiendum id="0">PARADISE</definiendum>
+				<definiens id="0">A Framework for Evaluating Spoken Dialogue Agents</definiens>
+			</definition>
+</paper>
+
+		<paper id="1022">
+</paper>
+
+		<paper id="1025">
+			<definition id="0">
+				<sentence>A crucial enabling technology for the DARPA Communicator program is the Galaxy Communicator software infrastructure ( GCSI ) , which provides a common software platform for dialogue system development .</sentence>
+				<definiendum id="0">GCSI</definiendum>
+				<definiens id="0">provides a common software platform for dialogue system development</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The GCSI is a distributed hub-and-spoke infrastructure which allows the programmer to develop Communicator-compliant servers in C , C++ , Java , Python , or Allegro Common Lisp .</sentence>
+				<definiendum id="0">GCSI</definiendum>
+				<definiens id="0">a distributed hub-and-spoke infrastructure which allows the programmer to develop Communicator-compliant servers in C , C++ , Java , Python , or Allegro Common Lisp</definiens>
+			</definition>
+</paper>
+
+		<paper id="1046">
+			<definition id="0">
+				<sentence>ABSTRACT LaTaT is a Language and Text Analysis Toolset .</sentence>
+				<definiendum id="0">ABSTRACT LaTaT</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>LaTaT is a Language and Text Analysis Toolset that demonstrates this iterative learning process .</sentence>
+				<definiendum id="0">LaTaT</definiendum>
+				<definiens id="0">a Language and Text Analysis Toolset that demonstrates this iterative learning process</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The frequency counts are then injected into Minipar to help it rank candidate parse trees ; • A thesaurus constructor ( Lin , 1998 ) that automatically computes the word similarities based on the distributional characteristics of words in the parsed corpus .</sentence>
+				<definiendum id="0">thesaurus constructor</definiendum>
+				<definiens id="0">the word similarities based on the distributional characteristics of words in the parsed corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Minipar is a principle-based English parser ( Berwick et al , 1991 ) .</sentence>
+				<definiendum id="0">Minipar</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>Like Principar ( Lin , 1993 ) , Minipar represents its grammar as a network where nodes represent grammatical categories and links represent types of syntactic ( dependency ) relationships .</sentence>
+				<definiendum id="0">Minipar represents</definiendum>
+				<definiens id="0">its grammar as a network where nodes represent grammatical categories and links represent types of syntactic ( dependency ) relationships</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The grammar network consists of 35 nodes and 59 links .</sentence>
+				<definiendum id="0">grammar network</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>Minipar employs a message passing algorithm that essentially implements distributed chart parsing .</sentence>
+				<definiendum id="0">Minipar</definiendum>
+				<definiens id="0">employs a message passing algorithm that essentially implements distributed chart parsing</definiens>
+			</definition>
+			<definition id="7">
+				<sentence>LaTaT includes an algorithm called UNICON ( UNsupervised Induction of CONcepts ) that clusters similar words to create semantic classes ( Lin and Pantel , 2001a ) .</sentence>
+				<definiendum id="0">LaTaT</definiendum>
+				<definiens id="0">includes an algorithm called UNICON ( UNsupervised Induction of CONcepts</definiens>
+			</definition>
+			<definition id="8">
+				<sentence>UNICON uses a heuristic maximal-clique algorithm , called CLIMAX , to find clusters in the similar words of a given word .</sentence>
+				<definiendum id="0">UNICON</definiendum>
+				<definiens id="0">uses a heuristic maximal-clique algorithm , called CLIMAX , to find clusters in the similar words of a given word</definiens>
+			</definition>
+			<definition id="9">
+				<sentence>LaTaT includes an unsupervised method for discovering paraphrase inference rules from text , such as �X is author of Y ≈ X wrote Y� , �X solved Y ≈ X found a solution to Y� , and �X caused Y ≈ Y is triggered by X� ( Lin and Pantel , 2001b ) .</sentence>
+				<definiendum id="0">LaTaT</definiendum>
+				<definiens id="0">includes an unsupervised method for discovering paraphrase inference rules from text</definiens>
+			</definition>
+			<definition id="10">
+				<sentence>A path allows us to represent indirect semantic relationships between two content words .</sentence>
+				<definiendum id="0">path</definiendum>
+				<definiens id="0">allows us to represent indirect semantic relationships between two content words</definiens>
+			</definition>
+			<definition id="11">
+				<sentence>WordNet : An Online Lexical Database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1032">
+</paper>
+
+		<paper id="1064">
+			<definition id="0">
+				<sentence>An Email server sends the original message plus its ASR transcription to a mailing address specified in the user’s profile .</sentence>
+				<definiendum id="0">Email server</definiendum>
+				<definiens id="0">sends the original message plus its ASR transcription to a mailing address specified in the user’s profile</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The system uses a 14k vocabulary , automatically generated by the AT &amp; T Labs NextGen Text To Speech system .</sentence>
+				<definiendum id="0">system</definiendum>
+				<definiens id="0">uses a 14k vocabulary , automatically generated by the AT &amp; T Labs NextGen Text To Speech system</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>SMART preprocesses the automatic transcriptions of each new message by tokenizing the text into words , removing common words that appear on its stop-list , and performing stemming on the remaining words to derive a set of terms , against which later user queries can be compared .</sentence>
+				<definiendum id="0">SMART</definiendum>
+				<definiens id="0">preprocesses the automatic transcriptions of each new message by tokenizing the text into words</definiens>
+			</definition>
+</paper>
+
+		<paper id="1044">
+</paper>
+
+		<paper id="1041">
+			<definition id="0">
+				<sentence>The CCLINC Korean-to-English translation system consists of two core modules , language understanding and generation modules mediated by a language neutral meaning representation called a semantic frame .</sentence>
+				<definiendum id="0">CCLINC Korean-to-English translation system</definiendum>
+				<definiens id="0">consists of two core modules , language understanding and generation modules mediated by a language neutral meaning representation called a semantic frame</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>OTHER LANGUAGES SEMANTIC FRAMES ( COMMON COALITION LANGUAGE ) SEMANTIC FRAMES ( COMMON COALITION LANGUAGE ) UNDERSTANDING UNDERSTANDING UNDERSTANDING UNDERSTANDING GENERATION GENERATION GENERATION GENERATION C4I INFORMATION ACCESS C4I INFORMATION ACCESS ENGLISH TEXT OR SPEECH KOREAN TEXT OR SPEECH The CCLINC parsing module , TINA [ 16 ] , implements the topdown chart parsing and the best-first search techniques , driven by context free grammars rules compiled into a recursive transition network augmented by features , [ 8 ] .</sentence>
+				<definiendum id="0">OTHER LANGUAGES SEMANTIC FRAMES ( COMMON COALITION LANGUAGE ) SEMANTIC FRAMES ( COMMON COALITION LANGUAGE ) UNDERSTANDING UNDERSTANDING UNDERSTANDING UNDERSTANDING GENERATION GENERATION GENERATION GENERATION C4I INFORMATION ACCESS C4I INFORMATION ACCESS ENGLISH TEXT OR SPEECH KOREAN TEXT</definiendum>
+				<definiens id="0">implements the topdown chart parsing and the best-first search techniques , driven by context free grammars rules compiled into a recursive transition network augmented by features</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>One apparent limitation of the technique , however , is that it still requires the manual acquisition of corpus-specific rules ( i.e. the patterns which do not fall under the linguistic generalization ) .</sentence>
+				<definiendum id="0">corpus-specific rules</definiendum>
+				<definiens id="0">the patterns which do not fall under the linguistic generalization )</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Score 3 : Translation is accurate with minor grammatical errors which do not affect the intended meaning of the input , e.g. morphological errors such as “swam vs. swimmed.”</sentence>
+				<definiendum id="0">Translation</definiendum>
+				<definiens id="0">accurate with minor grammatical errors which do not affect the intended meaning of the input</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Translation quality evaluations on the training and test data indicate that the current system produces translation sufficient for content understanding of a document in the training domains .</sentence>
+				<definiendum id="0">Translation quality</definiendum>
+				<definiens id="0">evaluations on the training and test data indicate that the current system produces translation sufficient for content understanding of a document in the training domains</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>“Semantic Similarity in a Taxonomy : An Information-Based Measure and Its Application to Problems of Ambiguity in Natural Language , ” Journal of Artificial Intelligence Research ( JAIR ) 11 .</sentence>
+				<definiendum id="0">“Semantic Similarity</definiendum>
+				<definiens id="0">An Information-Based Measure and Its Application to Problems of Ambiguity in Natural Language , ” Journal of Artificial Intelligence Research ( JAIR ) 11</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>“TINA : A Natural Language System for Spoken Language Applications , ” Computational Linguistics 18 ( 1 ) .</sentence>
+				<definiendum id="0">“TINA</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1027">
+</paper>
+
+		<paper id="1069">
+			<definition id="0">
+				<sentence>See [ 9 ] Parsing segments : CONTEX parses each sentence of the top-ranked 100 segments ( Section 4 ) .</sentence>
+				<definiendum id="0">CONTEX</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>CONTEX is a deterministic machine-learning based grammar learner/parser that was originally built for MT [ 6 ] .</sentence>
+				<definiendum id="0">CONTEX</definiendum>
+				<definiens id="0">a deterministic machine-learning based grammar learner/parser</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The TREC-8 and TREC-9 questions were divided into 5 subsets , used in a five-fold cross validation test in which the system was trained on all but the test questions , and then evaluated on the test questions .</sentence>
+				<definiendum id="0">TREC-9</definiendum>
+			</definition>
+			<definition id="3">
+				<sentence>P ( A ) P ( A ) = Σ all trees ( # nodes that may express a true A ) / ( number of nodes in tree ) P ( Q|A ) = Σ all QA tree pairs ( number of covarying nodes in Q and A trees ) / ( number of nodes in A tree ) As usual , many variations are possible , including how to determine likelihood of expressing a true answer ; whether to consider all nodes or just certain major syntactic ones ( N , NP , VP , etc. ) ; which information within each node to consider ( syntactic ?</sentence>
+				<definiendum id="0">P</definiendum>
+				<definiens id="0">of nodes in tree ) P ( Q|A ) = Σ all QA tree pairs ( number of covarying nodes in Q and A trees ) / ( number of nodes in A tree ) As usual , many variations are possible , including how to determine likelihood of expressing a true answer ; whether to consider all nodes or just certain major syntactic ones</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Figure 4 provides an answer parse tree that indicates likely Location nodes , determined by appropriate syntactic class , semantic type , and syntactic role in the sentence .</sentence>
+				<definiendum id="0">Location</definiendum>
+				<definiens id="0">nodes , determined by appropriate syntactic class , semantic type</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>WordNet : An Electronic Lexical Database .</sentence>
+				<definiendum id="0">WordNet</definiendum>
+			</definition>
+			<definition id="6">
+				<sentence>CAT S-SNT CLASS I-EV-BE CLASSES ( I-EV-BE ) LEX be SCORE 0 SURF Luxor CAT S-NP CLASS I-EN-LUXOR CLASSES ( I-EN-LUXOR I-EN-CITY I-EN-PLACE I-EN-AGENT I-EN-PROPER-NAMED-ENTITY ) LEX Luxor ROLES ( SUBJ ) SCORE 4 SURF is CAT S-AUX CLASS I-EV-BE CLASSES ( I-EV-BE ) LEX be ROLES ( PRED ) SCORE 1 SURF famed CAT S-ADJP CLASS I-EADJ-FAMED CLASSES ( I-EADJ-FAMED ) LEX famed ROLES ( COMPL ) GRADE UNGRADED SCORE 0 SURF for its Valley of the Kings Pharaonic necropolis and the Karnak temple complex CAT S-PP CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( MOD ) SCORE 3 SURF .</sentence>
+				<definiendum id="0">CAT S-SNT CLASS I-EV-BE CLASSES</definiendum>
+				<definiendum id="1">SURF Luxor CAT S-NP CLASS I-EN-LUXOR CLASSES</definiendum>
+			</definition>
+			<definition id="7">
+				<sentence>ROLES ( DUMMY ) SCORE 0 SURF Luxor CAT S-PROPER-NAME CLASS I-EN-LUXOR CLASSES ( I-EN-LUXOR I-EN-CITY I-EN-PLACE I-EN-AGENT I-EN-PROPER-NAMED-ENTITY ) LEX Luxor ROLES ( PRED ) SCORE 5 SURF famed CAT S-ADJ CLASS I-EADJ-FAMED CLASSES ( I-EADJ-FAMED ) LEX famed ROLES ( PRED ) GRADE UNGRADED SCORE 1 SURF for CAT S-PREP CLASS I-EP-FOR CLASSES ( I-EP-FOR ) LEX for ROLES ( P ) SCORE 0 SURF its Valley of the Kings Pharaonic necropolis and the Karnak temple complex CAT S-NP CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 3 SURF its Valley of the Kings Pharaonic necropolis CAT S-NP CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 3 SURF and CAT S-COORD-CONJ CLASS I-EC-AND CLASSES ( I-EC-AND ) LEX and ROLES ( CONJ ) SCORE 0 SURF the Karnak temple complex CAT S-NP CLASS I-EN-COMPLEX CLASSES ( I-EN-COMPLEX ) LEX complex ROLES ( COORD ) SCORE 2 SURF its CAT S-POSS-PRON CLASS I-EN-POSS-PRONOUN CLASSES ( I-EN-POSS-PRONOUN ) LEX POSS-PRON ROLES ( DET ) SCORE 0 SURF Valley of the Kings Pharaonic necropolis CAT S-NOUN CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 1 SURF Valley of the Kings CAT S-PROPER-NAME CLASS I-EN-PROPER-ORGANIZATION CLASSES ( I-EN-PROPER-ORGANIZATION I-EN-ORGANIZATION I-EN-AGENT I-EN-PROPER-NAMED-ENTITY ) LEX Valley of the Kings ROLES ( MOD ) NAMED-ENTITY-UNIT-P TRUE SCORE 4 SURF Pharaonic CAT S-PROPER-NAME CLASS I-EN-PHARAONIC CLASSES ( I-EN-PHARAONIC ) LEX Pharaonic ROLES ( MOD ) SCORE 3 SURF necropolis CAT S-NOUN CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 1 SURF Valley CAT S-NP CLASS I-EN-VALLEY CLASSES ( I-EN-VALLEY I-EN-PLACE ) LEX valley ROLES ( PRED ) SCORE 5 SURF of the Kings CAT S-PP CLASS I-EN-KING-NAME CLASSES ( I-EN-KING-NAME I-EN-AGENT ) LEX King ROLES ( MOD ) SCORE 3 SURF Valley CAT S-COUNT-NOUN CLASS I-EN-VALLEY CLASSES ( I-EN-VALLEY I-EN-PLACE ) LEX valley ROLES ( PRED ) SCORE 3 SURF of CAT S-PREP CLASS I-EP-OF CLASSES ( I-EP-OF ) LEX of ROLES ( P ) SCORE 0 SURF the Kings CAT S-NP CLASS I-EN-KING-NAME CLASSES ( I-EN-KING-NAME I-EN-AGENT ) LEX King ROLES ( PRED ) SCORE 3 SURF the CAT S-DEF-ART CLASS I-EART-DEF-ART CLASSES ( I-EART-DEF-ART ) LEX the ROLES ( DET ) SCORE 0 SURF Kings CAT S-PROPER-NAME CLASS I-EN-KING-NAME CLASSES ( I-EN-KING-NAME I-EN-AGENT ) LEX King ROLES ( PRED ) SCORE 3 SURF the CAT S-DEF-ART CLASS I-EART-DEF-ART CLASSES ( I-EART-DEF-ART ) LEX the ROLES ( DET ) SCORE 0 SURF Karnak temple complex CAT S-COUNT-NOUN CLASS I-EN-COMPLEX CLASSES ( I-EN-COMPLEX ) LEX complex ROLES ( PRED ) SCORE 1 SURF Karnak temple CAT S-NOUN CLASS I-EN-TEMPLE CLASSES ( I-EN-TEMPLE ) LEX temple ROLES ( MOD ) SCORE 1 SURF complex CAT S-COUNT-NOUN CLASS I-EN-COMPLEX CLASSES ( I-EN-COMPLEX ) LEX complex ROLES ( PRED ) SCORE 1 SURF Karnak CAT S-NOUN CLASS I-EN-KARNAK CLASSES ( I-EN-KARNAK ) LEX karnak ROLES ( MOD ) SCORE 1 SURF temple CAT S-NOUN CLASS I-EN-TEMPLE CLASSES ( I-EN-TEMPLE ) LEX temple ROLES ( PRED ) SCORE 1 Figure 4 .</sentence>
+				<definiendum id="0">ROLES</definiendum>
+				<definiendum id="1">SURF Luxor CAT S-PROPER-NAME CLASS I-EN-LUXOR CLASSES</definiendum>
+				<definiendum id="2">CAT S-ADJ CLASS I-EADJ-FAMED CLASSES ( I-EADJ-FAMED ) LEX famed ROLES</definiendum>
+				<definiendum id="3">temple complex CAT S-NP CLASS I-EN-NECROPOLIS CLASSES</definiendum>
+				<definiendum id="4">Kings Pharaonic</definiendum>
+				<definiendum id="5">CAT S-COORD-CONJ CLASS I-EC-AND CLASSES</definiendum>
+				<definiendum id="6">SURF its CAT S-POSS-PRON CLASS I-EN-POSS-PRONOUN CLASSES</definiendum>
+				<definiendum id="7">Kings CAT S-NP CLASS I-EN-KING-NAME CLASSES</definiendum>
+				<definiendum id="8">CAT S-DEF-ART CLASS I-EART-DEF-ART CLASSES</definiendum>
+				<definiendum id="9">CAT S-DEF-ART CLASS I-EART-DEF-ART CLASSES</definiendum>
+				<definiens id="0">necropolis CAT S-NP CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 3 SURF and</definiens>
+				<definiens id="1">DET ) SCORE 0 SURF Valley of the Kings Pharaonic necropolis CAT S-NOUN CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 1 SURF Valley of the Kings CAT S-PROPER-NAME CLASS I-EN-PROPER-ORGANIZATION CLASSES ( I-EN-PROPER-ORGANIZATION I-EN-ORGANIZATION I-EN-AGENT I-EN-PROPER-NAMED-ENTITY ) LEX Valley of the Kings ROLES ( MOD ) NAMED-ENTITY-UNIT-P TRUE SCORE 4 SURF Pharaonic CAT S-PROPER-NAME CLASS I-EN-PHARAONIC CLASSES ( I-EN-PHARAONIC ) LEX Pharaonic ROLES ( MOD ) SCORE 3 SURF necropolis CAT S-NOUN CLASS I-EN-NECROPOLIS CLASSES ( I-EN-NECROPOLIS ) LEX necropolis ROLES ( PRED ) SCORE 1 SURF Valley CAT S-NP CLASS I-EN-VALLEY CLASSES ( I-EN-VALLEY I-EN-PLACE ) LEX valley ROLES ( PRED ) SCORE 5 SURF of the Kings CAT S-PP CLASS I-EN-KING-NAME CLASSES ( I-EN-KING-NAME I-EN-AGENT ) LEX King ROLES ( MOD</definiens>
+			</definition>
+</paper>
+
+		<paper id="1038">
+			<definition id="0">
+				<sentence>ABSTRACT As part of MITRE’s work under the DARPA TIDES ( Translingual Information Detection , Extraction and Summarization ) program , we are preparing a series of demonstrations to showcase the TIDES Integrated Feasibility Experiment on Bio-Security ( IFE-Bio ) .</sentence>
+				<definiendum id="0">DARPA TIDES ( Translingual Information Detection</definiendum>
+				<definiens id="0">preparing a series of demonstrations to showcase the TIDES Integrated Feasibility Experiment on Bio-Security ( IFE-Bio )</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>KA MP ALA : The dreaded Eb ola virus that struck over 300 people in Kikwit , in the D emocratic Republic of Congo in 1995 , has killed 31 people in northe rn Uga n da .</sentence>
+				<definiendum id="0">KA MP ALA</definiendum>
+				<definiens id="0">The dreaded Eb ola virus that struck over 300 people in Kikwit , in the D emocratic Republic of Congo in 1995</definiens>
+			</definition>
+</paper>
+
+		<paper id="1071">
+</paper>
+
+		<paper id="1012">
+			<definition id="0">
+				<sentence>Conversational interfaces permit users to ask queries directly in their own words .</sentence>
+				<definiendum id="0">Conversational interfaces</definiendum>
+				<definiens id="0">permit users to ask queries directly in their own words</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The Presentation Manager interprets user input and generates system responses .</sentence>
+				<definiendum id="0">Presentation Manager</definiendum>
+				<definiens id="0">interprets user input and generates system responses</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The Dialog Manager uses the current requirements and formulates action plans for the Action Manager to perform back-end operations ( e.g. , database access 1 ) .</sentence>
+				<definiendum id="0">Dialog Manager</definiendum>
+				<definiens id="0">uses the current requirements and formulates action plans for the Action Manager to perform back-end operations</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The Dialog Manager constructs a response to the user based on the results from the Action Manager and the discourse history and sends the system response to the Presentation Manager that displays it to the user .</sentence>
+				<definiendum id="0">Dialog Manager</definiendum>
+				<definiens id="0">constructs a response to the user based on the results from the Action Manager and the discourse history and sends the system response to the Presentation Manager that displays it to the user</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Personalization can be defined as the process of presenting each user of an automated system with an interface uniquely tailored to his/her preference of content and style of interaction .</sentence>
+				<definiendum id="0">Personalization</definiendum>
+				<definiens id="0">the process of presenting each user of an automated system with an interface uniquely tailored to his/her preference of content and style of interaction</definiens>
+			</definition>
+</paper>
+
+		<paper id="1070">
+			<definition id="0">
+				<sentence>The languageidentification process starts when a non-space character is typed after a space .</sentence>
+				<definiendum id="0">languageidentification process</definiendum>
+				<definiens id="0">starts when a non-space character is typed after a space</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Tprob = G14 G14 G14 G0CG0B − = + G50 G4C G4CG4CG37 G2EG2EG53 Eprob = G14 G14 G14 G0CG0B − = + G50 G4C G4CG4CG28 G2EG2EG53 where G0CG0B G37 G53 is the probability of the bi-gram key buttons considered in Thai texts .</sentence>
+				<definiendum id="0">G0CG0B G37 G53</definiendum>
+				<definiens id="0">the probability of the bi-gram key buttons considered in Thai texts</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Tprob is the probability of the considered key-button sequence to be Thai .</sentence>
+				<definiendum id="0">Tprob</definiendum>
+				<definiens id="0">the probability of the considered key-button sequence to be Thai</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Eprob is the probability of the considered key-button sequence to be English .</sentence>
+				<definiendum id="0">Eprob</definiendum>
+				<definiens id="0">the probability of the considered key-button sequence to be English</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>The problem of the Thai key prediction can be defined as : G0CG5FG0BG11G0CG0FG5FG0BG50G44G5BG44G55G4A G15G10G14G10 G14 G11G11G0FG15G0FG14 G4CG4CG4CG4CG4C G51 G4C G46G46G46 G46G2EG53G46G46G46G53 G51 = Π=τ where τ is the sequence of characters that maximizes the character string sequence probability , c is the possible input character for the key button K , K is the key button , n is the length of the token considered .</sentence>
+				<definiendum id="0">Thai key prediction</definiendum>
+				<definiendum id="1">τ</definiendum>
+				<definiendum id="2">c</definiendum>
+				<definiendum id="3">K</definiendum>
+				<definiendum id="4">n</definiendum>
+				<definiens id="0">the sequence of characters that maximizes the character string sequence probability</definiens>
+				<definiens id="1">the possible input character for the key button K</definiens>
+				<definiens id="2">the key button</definiens>
+				<definiens id="3">the length of the token considered</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>( ) ( ) ( ) ( zpxp zxp zxLm y y y = , ) ( ) ( ) ( ) ( zpxp zxp zxRm y y y = , where xyz is the pattern being considered , x is the leftmost character of xyz , y is the middle substring of xyz , z is the rightmost character of xyz , p ( ) is the probability function .</sentence>
+				<definiendum id="0">xyz</definiendum>
+				<definiendum id="1">y</definiendum>
+				<definiendum id="2">z</definiendum>
+				<definiens id="0">y y = , ) ( ) ( ) ( ) ( zpxp zxp zxRm y y y =</definiens>
+				<definiens id="1">the pattern being considered</definiens>
+				<definiens id="2">the leftmost character of xyz ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1043">
+</paper>
+
+		<paper id="1021">
+			<definition id="0">
+				<sentence>Marsha consists of three main components : the query processing module , the Hanquery search engine , and the answer extraction module .</sentence>
+				<definiendum id="0">Marsha</definiendum>
+				<definiens id="0">consists of three main components : the query processing module , the Hanquery search engine , and the answer extraction module</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Question answering has a long history in natural language processing , and Salton’s first book ( Salton , 1968 ) contains a detailed discussion of the relationship between information retrieval and questionanswering systems .</sentence>
+				<definiendum id="0">Question answering</definiendum>
+				<definiens id="0">contains a detailed discussion of the relationship between information retrieval and questionanswering systems</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The threshold is defined as follows : threshold = count_q if count_q &lt; 4 threshold = count_q/2.0+1.0 if 4 &lt; =count_q &lt; =8 threshold = count_q/3.0+2.0 if count_q &gt; 8 count_q is the number of words in the query .</sentence>
+				<definiendum id="0">count_q</definiendum>
+				<definiens id="0">the number of words in the query</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>For example , if the question type is LOCATION , then each location marked by IdentiFinder is an answer candidate .</sentence>
+				<definiendum id="0">LOCATION</definiendum>
+				<definiens id="0">an answer candidate</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>Passage 1 is the passage that has the right answer “ ” .</sentence>
+				<definiendum id="0">Passage 1</definiendum>
+				<definiens id="0">the passage that has the right answer “ ”</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>Marsha has the ability of providing answers to eight types of questions : PERSON , LOCATION , ORGANIZATION , DATE , TIME , MONEY , PERCENTAGE , and NUMBER .</sentence>
+				<definiendum id="0">Marsha</definiendum>
+				<definiens id="0">has the ability of providing answers to eight types of questions : PERSON , LOCATION , ORGANIZATION , DATE , TIME , MONEY , PERCENTAGE , and NUMBER</definiens>
+			</definition>
+</paper>
+
+		<paper id="1034">
+			<definition id="0">
+				<sentence>Most NLP approaches to spoken language data , such as broadcast news and telephone conversations , have consisted of applying text-based systems to the output of an automatic speech recognition ( ASR ) system ; research on improving these approaches has focused on either improving the ASR accuracy or improving the textbased system ( or both ) .</sentence>
+				<definiendum id="0">NLP</definiendum>
+				<definiens id="0">approaches to spoken language data , such as broadcast news and telephone conversations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>More specifically , a93 a25a27a26 a18a27a10a22a3a29a28 incorporates a scaling term as follows : a93 a25a27a26 a67a24a38 a6a37a23a43a40 a8 a4a65a94a59a10a22a20a2a23a32a28a64a4 a54 a95a97a96 a25a27a26 a67a24a38 a6a37a23a41a40 a8 a4a65a94a59a10a22a20a2a23a32a28 ( 6 ) where a95a98a96 is the number of different error words observed after a94 in the training set and a25a27a26 a67a24a38 a94a59a10a33a20a24a23a42a28 is trained by collapsing all different errors into a single label a67 .</sentence>
+				<definiendum id="0">a93 a25a27a26 a18a27a10a22a3a29a28</definiendum>
+				<definiens id="0">incorporates a scaling term as follows : a93 a25a27a26 a67a24a38 a6a37a23a43a40 a8 a4a65a94a59a10a22a20a2a23a32a28a64a4 a54 a95a97a96 a25a27a26 a67a24a38 a6a37a23a41a40 a8 a4a65a94a59a10a22a20a2a23a32a28 ( 6 ) where a95a98a96 is the number of different error words observed after a94 in the training set and a25a27a26 a67a24a38 a94a59a10a33a20a24a23a42a28 is trained by collapsing all different errors into a single label a67</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Looking at the data another way , the percentage of name words that are OOV is an order of magnitude larger than words in the “other” phrase category , as described in more detail in [ 6 ] .</sentence>
+				<definiendum id="0">OOV</definiendum>
+				<definiens id="0">an order of magnitude larger than words in the “other” phrase category</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Since the evaluation criterion involves a weighted average of content , type and extent errors , there is an upper bound of 86.4 for the F-measure given the errors in the recognizer output .</sentence>
+				<definiendum id="0">F-measure</definiendum>
+				<definiens id="0">given the errors in the recognizer output</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>[ 4 ] Y. Gotoh , S. Renals , “Information Extraction From Broadcast News , ”Philosophical Transactions of the Royal Society , series A : Mathematical , Physical and Engineering Sciences , 358 ( 1769 ) :1295–1308 , 2000 .</sentence>
+				<definiendum id="0">Physical</definiendum>
+				<definiens id="0">“Information Extraction From Broadcast News , ”Philosophical Transactions of the Royal Society , series A : Mathematical ,</definiens>
+			</definition>
+</paper>
+
+		<paper id="1014">
+			<definition id="0">
+				<sentence>For example , the entry ( S right S/VP ) in the head percolation table says that the head child 1 of an S node is the first child of the node from the right with the label S or VP .</sentence>
+				<definiendum id="0">S node</definiendum>
+				<definiens id="0">the first child of the node from the right with the label S or VP</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>2 To make the phrase structure more readable , we use N’ and NP as the X’ and XP for all kinds of POS tags for nouns ( e.g. , NNP , NN , and CD ) .</sentence>
+				<definiendum id="0">CD</definiendum>
+				<definiens id="0">the X’ and XP for all kinds of POS tags for nouns ( e.g. , NNP , NN , and</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For example , when a 3 If a dependent Y has its own dependents , it projects to YP and YP is a sister of the head X ; otherwise , Y is a sister of the head X. 4 S is similar to IP ( IP is the maximal projection of INFL ) in GB theory , so is SBAR to CP ( CP is the maximal projection of Comp ) ; therefore , it could be argued that only VP is a projection of verbs in the PTB .</sentence>
+				<definiendum id="0">YP</definiendum>
+				<definiendum id="1">Y</definiendum>
+				<definiendum id="2">IP</definiendum>
+				<definiendum id="3">CP</definiendum>
+				<definiens id="0">a sister of the head X</definiens>
+				<definiens id="1">the maximal projection of INFL ) in GB theory</definiens>
+				<definiens id="2">the maximal projection of Comp</definiens>
+				<definiens id="3">a projection of verbs in the PTB</definiens>
+			</definition>
+</paper>
+
+		<paper id="1026">
+			<definition id="0">
+				<sentence>Ratnaparkhi [ 12 ] has found that choosing ( by oracle ) the best parse out of the 20 highest-ranked parses boosts labeled recall and precision ( IP ( NP ( DP ( DTCHC2 ) ) these ( NP ( NNGGAI ) ) ) businesses ( VP ( VP ( ADVP ( ADEK ) ) also ( VP ( BAEY ) BA ( IP ( NP ( QP ( CDEUEAAODD ) 36,000 ( CLP ( MBD ) ) ) item ( CP ( WHNP ( -NONE*OP* ) ) ( CP ( IP ( VP ( VVD4DV ) possess ( NP ( NNA7FO ) to be one’s own master ( NNDJAZ ) knowledge ( NNE7CH ) ) ) ) property rights ( DECDF ) ) ) DE ( NP ( NNA5CQ ) ) ) technologies ( VP ( PP ( PBH ) tad ( NP ( DP ( DT G1FJ ) ) other ( NP ( NN GGAI ) businesses ( PUA1 ) ( NN GDGG ) ) ) ) organizations ( VP ( VVG5AZ ) ) ) ) ) ) transfer ( CCCI ) and ( VP ( VVCYEX ) spread ( IP ( VP ( PUFJ ) ( VP ( VVADA5 ) create ( NP ( NNBUEC ) ) income ( QP ( CDǱARǱEAEUBJ ) 4.43 billion ( CLP ( MFF ) ) ) ) ) ) ) ) RMB ( PU A2 ) ) Figure 2 : Parser output .</sentence>
+				<definiendum id="0">IP</definiendum>
+				<definiendum id="1">CLP</definiendum>
+				<definiendum id="2">CP</definiendum>
+				<definiendum id="3">QP</definiendum>
+				<definiendum id="4">CLP ( MFF ) ) ) ) ) ) ) ) RMB ( PU A2</definiendum>
+				<definiens id="0">one’s own master ( NNDJAZ ) knowledge ( NNE7CH ) ) ) ) property rights ( DECDF ) ) ) DE ( NP ( NNA5CQ ) ) ) technologies ( VP ( PP ( PBH ) tad ( NP ( DP ( DT G1FJ ) ) other ( NP ( NN GGAI ) businesses ( PUA1 ) ( NN GDGG ) ) ) ) organizations</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>( IP ( NP-SBJ ( DP ( DTCHC2 ) ) these ( NP ( NNGGAI ) ) ) businesses ( VP ( ADVP ( AD EK ) ) also ( VP ( VP ( BAEY ) BA ( IP-OBJ ( NP-SBJ ( QP ( CDEUEAAODD ) 36,000 ( CLP ( MBD ) ) ) item ( CP ( WHNP-1 ( -NONE*OP* ) ) ( CP ( IP ( NP-SBJ ( -NONE*T*-1 ) ) ( VP ( VVD4DV ) possess ( NP-OBJ ( NN A7FO ) to be one’s own master ( NN DJAZ ) knowledge ( NN E7CH ) ) ) ) property rights ( DECDF ) ) ) DE ( NP ( NNA5CQ ) ) ) technologies ( VP ( PP-DIR ( PBH ) tad ( NP ( DP ( DTG1FJ ) ) other ( NP ( NNGGAI ) businesses ( PUA1 ) ( NNGDGG ) ) ) ) organizations ( VP ( VP ( VV G5AZ ) ) transfer ( CC CI ) a ( VP ( VV CYEX ) ) ) ) ) ) spread ( PUFJ ) ( VP ( VVADA5 ) create ( NP-OBJ ( NN BUEC ) ) income ( QP-EXT ( CDǱARǱEAEUBJ ) 4.43 billion ( CLP ( MFF ) ) ) ) ) ) RMB ( PU A2 ) ) Figure 3 : Corrected parse for sentence of Figure 2 .</sentence>
+				<definiendum id="0">IP</definiendum>
+				<definiendum id="1">DP</definiendum>
+				<definiendum id="2">VP</definiendum>
+				<definiendum id="3">CLP</definiendum>
+				<definiendum id="4">NN A7FO )</definiendum>
+				<definiendum id="5">) DE ( NP ( NNA5CQ ) ) ) technologies ( VP ( PP-DIR ( PBH ) tad ( NP</definiendum>
+				<definiendum id="6">CI ) a ( VP</definiendum>
+				<definiendum id="7">CLP</definiendum>
+				<definiens id="0">one’s own master ( NN DJAZ ) knowledge ( NN E7CH ) ) ) ) property rights ( DECDF ) )</definiens>
+				<definiens id="1">DP ( DTG1FJ ) ) other ( NP ( NNGGAI ) businesses ( PUA1 ) ( NNGDGG ) ) ) ) organizations ( VP ( VP ( VV G5AZ ) ) transfer ( CC</definiens>
+			</definition>
+</paper>
+
+		<paper id="1019">
+			<definition id="0">
+				<sentence>INFORMATION RETRIEVAL When faced with the situation of a language mismatch between the target documents and the query ( information need statement ) of a user , one could reduce them to a common representation language for retrieval purposes by automatically translating the query to the document language , by translating the documents to the query language , or by converting both to a third representation language [ 1 ] .</sentence>
+				<definiendum id="0">INFORMATION RETRIEVAL</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>SYSTEM PIRCS ( Probabilistic Indexing and Retrieval – Components – System ) is our in-house developed document retrieval system that has participated in all previous TREC large-scale blind retrieval experiments with consistently good results .</sentence>
+				<definiendum id="0">SYSTEM PIRCS</definiendum>
+				<definiens id="0">our in-house developed document retrieval system that has participated in all previous TREC large-scale blind retrieval experiments with consistently good results</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>English-Chinese CLIR is an important topic in Human Language Technology and has great utility .</sentence>
+				<definiendum id="0">English-Chinese CLIR</definiendum>
+				<definiens id="0">an important topic in Human Language Technology and has great utility</definiens>
+			</definition>
+</paper>
+
+		<paper id="1042">
+			<definition id="0">
+				<sentence>Toward a Scoring Function for Quality-Driven Machine Translation .</sentence>
+				<definiendum id="0">Scoring Function</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1060">
+			<definition id="0">
+				<sentence>1 Our language-independent architecture consists of two main components : We describe each of these components , demonstrate their effectiveness for information retrieval tasks , and then concludeby describing our experience with adding French , German and Italian document collections to a system that was originally developed for Chinese .</sentence>
+				<definiendum id="0">language-independent architecture</definiendum>
+				<definiens id="0">consists of two main components</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Document summaries consist of the date and a gloss translation of the document title .</sentence>
+				<definiendum id="0">Document summaries</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1008">
+			<definition id="0">
+				<sentence>( 2 ) ) _ ( ) _ ( ) ( namelastPnamefirstPnameP ⋅= ( 3 ) ( ) 1 ) ( 1 ) _ ( +⋅ = namePH matchnameP where H = size of human population likely to be referenced by the collection .</sentence>
+				<definiendum id="0">_ ( ) _ ( )</definiendum>
+				<definiens id="0">+⋅ = namePH matchnameP where H = size of human population likely to be referenced by the collection</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Both empirically and intuitively , match probability is a better predictor of relevance here than idf .</sentence>
+				<definiendum id="0">match probability</definiendum>
+				<definiens id="0">a better predictor of relevance here than idf</definiens>
+			</definition>
+</paper>
+
+		<paper id="1065">
+</paper>
+
+		<paper id="1020">
+</paper>
+
+		<paper id="1059">
+			<definition id="0">
+				<sentence>Corpus Test Year Task Train ( # spkr ) Test ( # spkr ) Textual Resources Best WER BN 98 TV &amp; Radio News 200h 3h Closed-captions , commercial transcripts , manual transcripts of audio data 13.5 TI-digits 93 Small Vocabulary 3.5h ( 112 ) 4h ( 113 ) 0.2 ATIS 93 H-M Dialog 40h ( 137 ) 5h ( 24 ) Transcriptions 2.5 WSJ 95 News Dictation 100h ( 355 ) 45mn ( 20 ) Newspaper , newswire 6.6 S9 WSJ 93 Spontaneous Dictation 43mn ( 10 ) Newspaper , newswire 19.1 ditions , i.e. , by recognizing task-specific data with a recognizer developed for a different task .</sentence>
+				<definiendum id="0">Corpus Test Year Task Train</definiendum>
+				<definiens id="0"># spkr ) Test ( # spkr ) Textual Resources Best WER BN 98 TV &amp; Radio News 200h 3h Closed-captions , commercial transcripts</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The acoustic training data consist of 100 hours of speech from a total of 355 speakers taken from the WSJ0 and WSJ1 corpora .</sentence>
+				<definiendum id="0">acoustic training data</definiendum>
+				<definiens id="0">consist of 100 hours of speech from a total of 355 speakers taken from the WSJ0 and WSJ1 corpora</definiens>
+			</definition>
+</paper>
+
+		<paper id="1036">
+			<definition id="0">
+				<sentence>The passage retrieval component collects arbitrary substrings of a document in the corpus .</sentence>
+				<definiendum id="0">passage retrieval component</definiendum>
+				<definiens id="0">collects arbitrary substrings of a document in the corpus</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>The information extraction component locates possible answers in the top ten passages .</sentence>
+				<definiendum id="0">information extraction component</definiendum>
+				<definiens id="0">locates possible answers in the top ten passages</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Each term’s weight is calculated by the following formula : a44 a33 a5a50a49 a33a52a51 a21a54a53a56a55a20a57a59a58a16a60 a33a62a61 ( 1 ) where a60 a33 is the number of times the term is in the corpus , a49 a33 is the number of times the term is in the set of passages , and a57 is the total number of terms in the corpus .</sentence>
+				<definiendum id="0">a57</definiendum>
+				<definiens id="0">calculated by the following formula : a44 a33 a5a50a49 a33a52a51 a21a54a53a56a55a20a57a59a58a16a60 a33a62a61 ( 1 ) where a60 a33 is the number of times the term is in the corpus</definiens>
+				<definiens id="1">the number of times the term is in the set of passages , and</definiens>
+				<definiens id="2">the total number of terms in the corpus</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>Overall , the information extraction component improves the question answering system .</sentence>
+				<definiendum id="0">information extraction component</definiendum>
+				<definiens id="0">improves the question answering system</definiens>
+			</definition>
+</paper>
+
+		<paper id="1056">
+</paper>
+
+		<paper id="1039">
+			<definition id="0">
+				<sentence>The IIM class model is embedded in a Model-View-Controller architecture [ 5 ] , which allows the system to be run with or without the graphical interface .</sentence>
+				<definiendum id="0">IIM class model</definiendum>
+				<definiens id="0">allows the system to be run with or without the graphical interface</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>IIM allows the user to export a portion of a node chain as a macro node to be loaded into the Node Library and inserted into a new chain as a single node .</sentence>
+				<definiendum id="0">IIM</definiendum>
+				<definiendum id="1">Library</definiendum>
+				<definiens id="0">allows the user to export a portion of a node chain as a macro node to be loaded into the Node</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The component loader examines each loaded class using Java’s reflection capabilities , and places it in the appropriate place ( s ) in the component tree according to which of the Node subinterfaces it implements .</sentence>
+				<definiendum id="0">component loader</definiendum>
+				<definiens id="0">examines each loaded class using Java’s reflection capabilities , and places it in the appropriate place ( s ) in the component tree according to which of the Node subinterfaces it implements</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>IIM uses a tape transport metaphor to model the operation of the node chain on a given data source .</sentence>
+				<definiendum id="0">IIM</definiendum>
+				<definiens id="0">uses a tape transport metaphor to model the operation of the node chain on a given data source</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>IIM provides a class called Options , which contains a set of optional interfaces that can be implemented to customize a node’s behavior .</sentence>
+				<definiendum id="0">IIM</definiendum>
+				<definiens id="0">contains a set of optional interfaces that can be implemented to customize a node’s behavior</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>The current version of IIM lacks the explicit document management component found in systems like GATE [ 4 ] and Corelli [ 20 ] ; we are in the process of adding this functionality for the official release of IIM .</sentence>
+				<definiendum id="0">IIM</definiendum>
+				<definiens id="0">lacks the explicit document management component found in systems</definiens>
+			</definition>
+</paper>
+
+		<paper id="1055">
+			<definition id="0">
+				<sentence>a2 MERGE identifies the verbs and arguments of two lexico-syntactic structures which differ only in adjuncts .</sentence>
+				<definiendum id="0">a2 MERGE</definiendum>
+				<definiens id="0">identifies the verbs and arguments of two lexico-syntactic structures which differ only in adjuncts</definiens>
+			</definition>
+</paper>
+
+		<paper id="1052">
+			<definition id="0">
+				<sentence>100,000 400,000 700,000 1,000,000 Training Corpus Size ( words ) T e st A ccu r a c y Figure 1 : An Initial Learning Curve for Confusable Disambiguation This work attempts to address two questions – at what point will learners cease to benefit from additional data , and what is the nature of the errors which remain at that point .</sentence>
+				<definiendum id="0">Training Corpus Size</definiendum>
+				<definiens id="0">An Initial Learning Curve for Confusable</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Decision lists for lexical ambiguity resolution : Application to accent restoration in Spanish and French .</sentence>
+				<definiendum id="0">Decision lists</definiendum>
+			</definition>
+</paper>
+
+		<paper id="1040">
+			<definition id="0">
+				<sentence>Information extraction ( IE ) technology , as promoted and defined by the DARPA Message Understanding Conferences [ 4 , 5 ] and the current ACE component of TIDES [ 1 ] , has resulted in impressive new abilities to extract structured information from texts , and complements more traditional information retrieval ( IR ) technology which retrieves documents or passages of relevance from text collections and leaves information seekers to browse the retrieved sub-collection ( e.g. [ 2 ] ) .</sentence>
+				<definiendum id="0">Information extraction</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>a4 Scrip is the trademark of PJB Publications Ltd .</sentence>
+				<definiendum id="0">a4 Scrip</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>It runs an IE System ( the LaSIE system , developed for participation in the MUC evaluations [ 6 ] ) , which yields as output Named Entity ( NE ) tagged texts and Scenario Templates .</sentence>
+				<definiendum id="0">] )</definiendum>
+				<definiens id="0">yields as output Named Entity ( NE ) tagged texts</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The on-line component of TRESTLE is a dynamic web page creation process which responds to the users’ information seeking behaviour , expressed as clicks on hypertext links in a browser-based interface , by generating web pages from the information held in the indexed IE results and the original Scrip texts .</sentence>
+				<definiendum id="0">on-line component of TRESTLE</definiendum>
+				<definiens id="0">a dynamic web page creation process which responds to the users’ information seeking behaviour , expressed as clicks on hypertext links in a browser-based interface</definiens>
+			</definition>
+			<definition id="4">
+				<sentence>An additional frame ( the “head frame” ) is located at the top displaying the date range options , as well as information about where the user currently is in the system .</sentence>
+				<definiendum id="0">additional frame</definiendum>
+				<definiens id="0">information about where the user currently is in the system</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>In this paper we have described such a prototype , the TRESTLE system , which exploits named entity and scenario template IE technology to offer users novel ways to access textual information .</sentence>
+				<definiendum id="0">TRESTLE system</definiendum>
+				<definiens id="0">exploits named entity</definiens>
+			</definition>
+			<definition id="6">
+				<sentence>[ 1 ] ACE : Automatic Content Extraction .</sentence>
+				<definiendum id="0">ACE</definiendum>
+				<definiens id="0">Automatic Content Extraction</definiens>
+			</definition>
+</paper>
+
+		<paper id="1018">
+			<definition id="0">
+				<sentence>The analysis component takes a sentence as input and produces an interlingua representation as output .</sentence>
+				<definiendum id="0">analysis component</definiendum>
+				<definiens id="0">takes a sentence as input and produces an interlingua representation as output</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>XDM indicates nodes that were produced by cross-domain rules .</sentence>
+				<definiendum id="0">XDM</definiendum>
+				<definiens id="0">indicates nodes that were produced by cross-domain rules</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>For example , it might have covered The headaches started [ request-information+existence+body-state ] : :MED ( WH-PHRASES : :XDM ( [ q : duration= ] : :XDM ( [ dur : question ] : :XDM ( how long ) ) ) HAVE-GET-FEEL : :MED ( GET ( have ) ) you HAVE-GET-FEEL : :MED ( HAS ( had ) ) [ super_body-state-spec= ] : :MED ( [ body-state-spec= ] : :MED ( ID-WHOSE : :MED ( [ identifiability= ] ( [ id : non-distant ] ( this ) ) ) BODY-STATE : :MED ( [ pain ] : :MED ( pain ) ) ) ) ) Figure 1 : Parser output with nodes produced by medical and cross-domain grammars .</sentence>
+				<definiendum id="0">:XDM</definiendum>
+				<definiendum id="1">GET</definiendum>
+				<definiendum id="2">:MED ( HAS</definiendum>
+				<definiens id="0">:MED ( pain ) ) ) ) ) Figure 1 : Parser output with nodes produced by medical and cross-domain grammars</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>PORTING THE SPEECH RECOGNIZER TO NEW DOMAINS When the speech recognition components ( acoustic models , pronunciation dictionary , vocabulary , and language model ) are ported across domains and languages mainly three types of mismatches Speech Act Classification Accuracy for 16-fold Cross-Validation 0 500 1000 2000 3000 4000 5000 6009 Training Set Size Mean Accuracy Concept Sequence Classification Accuracy for 16fold Cross-Validation 0 500 1000 2000 3000 4000 5000 6009 Training Set Size Mean Accuracy Dialog Act Classification Accuracy for 16-fold Cross-Validation 0 500 1000 2000 3000 4000 5000 6009 Training Set Size Mean Accuracy Figure 3 : Performance of Speech-Act , Concept , and Domain-Action Classifiers Using Increasing Amounts of Training Data Baseline Systems WER on Different Tasks [ % ] BN ( Broadcast News ) h4e98 1 , all F-conditions 18.5 ESST ( scheduling and travel planning domain ) 24.3 BN+ESST 18.4 C-STAR ( travel planning domain ) 20.2 Adaptation !</sentence>
+				<definiendum id="0">BN</definiendum>
+				<definiens id="0">Speech-Act , Concept , and Domain-Action Classifiers Using Increasing Amounts of Training Data Baseline Systems WER on Different Tasks [ % ]</definiens>
+			</definition>
+</paper>
+
+		<paper id="1045">
+			<definition id="0">
+				<sentence>The Descriptive Phrase Finder ( DPF ) is a system that retrieves descriptions of a query term from free text .</sentence>
+				<definiendum id="0">Descriptive Phrase Finder ( DPF )</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>The Web front end simply routed queries to a Web search engine ( Google ) , and the text of the top 600 documents returned by the engine was fetched , split into sentences ( using a locally developed sentence splitter ) , and those sentences holding the query term were passed onto the DPF .</sentence>
+				<definiendum id="0">Google</definiendum>
+				<definiens id="0">using a locally developed sentence splitter ) , and those sentences holding the query term were passed onto the DPF</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Specifically , the DPF is searching for the key phrase in proximity to a query noun ( qn ) to locate a descriptive phrase ( dp ) e.g. • ... dp such as qn ... other key phrases used , some suggested by [ 2 ] , were • ... such dp as qn ... • ... qn ( and | or ) other dp ... • ... dp ( especially | including ) qn ... • ... qn ( dp ) ... • ... qn is a dp ... • .</sentence>
+				<definiendum id="0">DPF</definiendum>
+				<definiendum id="1">qn</definiendum>
+				<definiens id="0">searching for the key phrase in proximity to a query noun ( qn ) to locate a descriptive phrase ( dp ) e.g. • ... dp such as qn ... other key phrases used</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>To illustrate , the sentence “Tony Blair is the current Prime Minister of the United Kingdom.”</sentence>
+				<definiendum id="0">sentence “Tony Blair</definiendum>
+			</definition>
+			<definition id="4">
+				<sentence>It is also significant that the search engine used was Google , which uses the page rank authority measure ( [ 1 ] ) to enhance its ranking .</sentence>
+				<definiendum id="0">Google</definiendum>
+				<definiens id="0">uses the page rank authority measure</definiens>
+			</definition>
+			<definition id="5">
+				<sentence>[ 2 ] Hearst , M.A. Automated Discovery of WordNet Relations , in WordNet : an electronic lexical database , C. Fellbaum ( ed . )</sentence>
+				<definiendum id="0">Fellbaum</definiendum>
+				<definiens id="0">an electronic lexical database</definiens>
+			</definition>
+</paper>
+
+		<paper id="1054">
+</paper>
+
+		<paper id="1058">
+			<definition id="0">
+				<sentence>Statistical language models ( LMs ) are essential in speech recognition and understanding systems for high word and semantic accuracy , not to mention robustness and portability .</sentence>
+				<definiendum id="0">Statistical language models</definiendum>
+				<definiendum id="1">LMs</definiendum>
+				<definiens id="0">essential in speech recognition and understanding systems for high word and semantic accuracy , not to mention robustness and portability</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>That is , C8B4CFBPBVB5 BP C9 C3 CXBPBD C8B4D7 CX BPCR CX B5 BP C9 C3 CXBPBD C9 C5 CX CYBPBD C8B4D6 CY BPCR CX B5 where D7 CX is a substring in CF BP DB BD BNDB BE BMBMDB C4 BP D7 BD BNBMBMD7 BE BND7 C3 ( C3 AK C4 ) and D6 BD BND6 BE BNBMBMBMD6 C5 CX are the production rules that construct D7 CX .</sentence>
+				<definiendum id="0">D7 CX</definiendum>
+			</definition>
+			<definition id="2">
+				<sentence>The log-linear interpolation suggests an LM , again at sentence level , given by C8B4CFB5BP BD CIB4ALB5 C5 CH CXBPBD C8 CX B4CFB5 AL CX ( 3 ) where CIB4ALB5 is the normalization factor and it is a function of the interpolation weights .</sentence>
+				<definiendum id="0">log-linear interpolation</definiendum>
+				<definiens id="0">suggests an LM , again at sentence level , given by C8B4CFB5BP BD CIB4ALB5 C5 CH CXBPBD C8 CX B4CFB5 AL CX ( 3 ) where CIB4ALB5 is the normalization factor</definiens>
+				<definiens id="1">a function of the interpolation weights</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>The framework for N-best list rescoring is the following MAP decision : CF A3 BP argmax D4 BT C8B4CFBPBV CF B5C8B4BV CF BPCBB5 ( 4 ) CF BE C4 C6 where D4 BT is the acoustic probability from the first pass , BV CF is the unique concept sequence associated with CF , and C4 C6 denotes the N-best list .</sentence>
+				<definiendum id="0">D4 BT</definiendum>
+				<definiendum id="1">BV CF</definiendum>
+				<definiendum id="2">C4 C6</definiendum>
+				<definiens id="0">the acoustic probability from the first pass</definiens>
+				<definiens id="1">the N-best list</definiens>
+			</definition>
+</paper>
+
+		<paper id="1051">
+			<definition id="0">
+				<sentence>In this approach , the HMM consists of two main states , one representing “speech” and one representing “nonspeech” and a number of intermediate states that are used to model the time constraints of the transitions between the two main states .</sentence>
+				<definiendum id="0">HMM</definiendum>
+				<definiens id="0">consists of two main states , one representing “speech” and one representing “nonspeech” and a number of intermediate states that are used to model the time constraints of the transitions between the two main states</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Switchboard scores refer to an internal SRI development testset that is a representative subset of the development data for the 2001 hub-5 evals .</sentence>
+				<definiendum id="0">Switchboard scores</definiendum>
+				<definiens id="0">a representative subset of the development data for the 2001 hub-5 evals</definiens>
+			</definition>
+</paper>
+
+		<paper id="1017">
+			<definition id="0">
+				<sentence>The Galaxy Communicator software infrastructure ( GCSI ) is an elaboration and extension of MIT 's Galaxy-II distributed infrastructure for dialogue interaction [ 3 ] .</sentence>
+				<definiendum id="0">Galaxy Communicator software infrastructure</definiendum>
+				<definiendum id="1">GCSI</definiendum>
+			</definition>
+			<definition id="1">
+				<sentence>• Flexibility : the infrastructure should be flexible enough to encompass the range of interaction strategies that the various Communicator sites might experiment with • Obtainability : the infrastructure should be easy to get and to install • Learnability : the infrastructure should be easy to learn to use • Embeddability : the infrastructure should be easy to embed into other software programs • Maintenance : the infrastructure should be supported and maintained for the Communicator program • Leverage : the infrastructure should support longer-term program and research goals for distributed dialogue systems The GCSI is a distributed hub-and-spoke architecture based on message-passing .</sentence>
+				<definiendum id="0">GCSI</definiendum>
+				<definiens id="0">a distributed hub-and-spoke architecture based on message-passing</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>The GCSI includes libraries and templates to create Communicator-compliant servers in C , Java , Python , and Allegro Common Lisp .</sentence>
+				<definiendum id="0">GCSI</definiendum>
+				<definiens id="0">includes libraries and templates to create Communicator-compliant servers in C , Java , Python , and Allegro Common Lisp</definiens>
+			</definition>
+</paper>
+
+		<paper id="1033">
+</paper>
+
+		<paper id="1037">
+			<definition id="0">
+				<sentence>The IFE process consists of six steps that guide development and experimentation .</sentence>
+				<definiendum id="0">IFE process</definiendum>
+				<definiens id="0">consists of six steps that guide development and experimentation</definiens>
+			</definition>
+			<definition id="1">
+				<sentence>Innovation must be allowed to fail just as long as the process moves forward and is informed in a positive way by the failure .</sentence>
+				<definiendum id="0">Innovation</definiendum>
+				<definiens id="0">the process moves forward and is informed in a positive way by the failure</definiens>
+			</definition>
+			<definition id="2">
+				<sentence>Strong Angel concepts of operation actually required continuous processing of streaming information from multiple sources .</sentence>
+				<definiendum id="0">Strong Angel</definiendum>
+				<definiens id="0">concepts of operation actually required continuous processing of streaming information from multiple sources</definiens>
+			</definition>
+			<definition id="3">
+				<sentence>In addition the DARPA Communicator is using the IFE process to help in the development and transformation process for dialogue interaction .</sentence>
+				<definiendum id="0">DARPA Communicator</definiendum>
+				<definiens id="0">using the IFE process to help in the development and transformation process for dialogue interaction</definiens>
+			</definition>
+</paper>
+
+	</volume>
