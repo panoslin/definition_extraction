@@ -1,0 +1,38 @@
+@startuml
+skinparam componentStyle uml2
+
+' Define components
+component [DEFT Dataset] as Input
+component [Pre-trained Word Embeddings (GloVe)] as WordEmb
+component [POS Embeddings] as POSEmb
+component [BiLSTM Network] as BiLSTM
+component [Forward LSTM] as FLSTM
+component [Backward LSTM] as BLSTM
+component [Graph Convolutional Neural Network] as GCN
+component [Conditional Random Field (CRF) Layer] as CRF
+component [Max Pooling Layer] as MaxPooling
+component [2-layer Feed Forward Neural Network] as FFNN
+component [Softmax Layer] as Softmax
+component [Output: Sequence Tags] as SeqOutput
+component [Output: Sentence Classification] as ClassOutput
+
+' Connect components
+Input --> POSEmb
+WordEmb --> BiLSTM
+POSEmb --> BiLSTM : "concatenated\nembeddings"
+BiLSTM --> FLSTM : "processes forward context"
+BiLSTM --> BLSTM : "processes backward context"
+FLSTM --> GCN : "forward contextual embeddings"
+BLSTM --> GCN : "backward contextual embeddings"
+GCN --> CRF : "syntactic enriched\nembeddings"
+GCN --> MaxPooling : "embeddings for\nsentence-level"
+MaxPooling --> FFNN : "aggregates features"
+FFNN --> Softmax : "computes probabilities"
+Softmax --> ClassOutput : "Term-Definition pair exist or not"
+CRF --> SeqOutput : "BIO tags for each word"
+
+' Add some notes
+'note right of FFNN : Consists of two layers\nand processes pooled\nfeatures for classification
+'note right of Softmax : Normalizes output to\na probability distribution\nover classes
+
+@enduml
