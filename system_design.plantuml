@@ -18,8 +18,9 @@ component [Output: Sentence Classification] as ClassOutput
 
 ' Connect components
 Input --> POSEmb
-WordEmb --> BiLSTM
-POSEmb --> BiLSTM : "concatenated\nembeddings"
+Input --> WordEmb
+WordEmb --> BiLSTM : "concatenated\nembeddings"
+POSEmb --> BiLSTM
 BiLSTM --> FLSTM : "processes forward context"
 BiLSTM --> BLSTM : "processes backward context"
 FLSTM --> GCN : "forward contextual embeddings"

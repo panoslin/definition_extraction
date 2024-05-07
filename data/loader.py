@@ -36,10 +36,12 @@ class DataLoader:
         self.sent_id2label = dict([(v, k) for k, v in constant.SENT_LABEL_TO_ID.items()])
         self.labels = [[self.id2label[l]] for d in data for l in d[-2]]
         self.sent_labels = [self.sent_id2label[d[-1]] for d in data]
-        self.size = len(data)
 
         # chunk into batches
-        data = [data[i:i + opt['batch_size']] for i in range(0, len(data), opt['batch_size'])]
+        data = [
+            data[idx:idx + opt['batch_size']]
+            for idx in range(0, len(data), opt['batch_size'])
+        ]
         self.data = data
         print(f"{len(data)} batches created for {filename}")
 
@@ -103,15 +105,9 @@ class DataLoader:
     def __len__(self):
         return len(self.data)
 
-    def __getitem__(self, key):
+    def __getitem__(self, index):
         """ Get a batch with index. """
-        if not isinstance(key, int):
-            raise TypeError
-
-        if key < 0 or key >= len(self.data):
-            raise IndexError
-
-        batch = self.data[key]
+        batch = self.data[index]
         batch_size = len(batch)
         batch = list(zip(*batch))
         assert len(batch) == 9

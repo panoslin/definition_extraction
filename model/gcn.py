@@ -127,10 +127,6 @@ class GCNRelationModel(nn.Module):
 
         h, pool_mask, gcn_outputs = self.gcn(adj, inputs)
 
-        # pooling
-        # pool_type = self.opt['pooling']
-        # h_out = pool(h, pool_mask, type=pool_type)
-        # outputs = torch.cat([h_out], dim=1)
         outputs = self.out_mlp(h)
         gcn_outputs = self.gcn_out_mlp(gcn_outputs)
         return outputs, gcn_outputs
@@ -152,7 +148,7 @@ class GCN(nn.Module):
         # rnn layer
         if self.opt.get('rnn', False):
             input_size = self.in_dim
-            self.rnn = nn.LSTM(input_size, opt['rnn_hidden'], opt['rnn_layers'], batch_first=True, \
+            self.rnn = nn.LSTM(input_size, opt['rnn_hidden'], opt['rnn_layers'], batch_first=True,
                                dropout=opt['rnn_dropout'], bidirectional=True)
             self.in_dim = opt['rnn_hidden'] * 2
             self.rnn_drop = nn.Dropout(opt['rnn_dropout'])  # use on last layer output
